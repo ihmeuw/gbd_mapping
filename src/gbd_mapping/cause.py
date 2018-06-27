@@ -9,6 +9,8 @@ from .base_template import Restrictions
 from .cause_template import Cause, Causes
 
 
+from .sequela import sequelae
+from .etiology import etiologies
 causes = Causes(**{
     'all_causes': Cause(
         name='all_causes',

@@ -9,7 +9,7 @@ base_types = {
     'Cause': {
         'attrs': (('name', 'str'),
                   ('gbd_id', 'cid'),
-                  ('dismod_id', 'Union[meid, UNKNOWN]'),
+                  ('dismod_id', 'Union[meid, _Unknown]'),
                   ('restrictions', 'Restrictions'),
                   ('sequelae', 'Tuple[Sequela, ...] = None'),
                   ('etiologies', 'Tuple[Etiology, ...] = None'),),
@@ -74,7 +74,7 @@ def make_causes(causes_list):
 def build_mapping_template():
     out = make_module_docstring('Mapping templates for GBD causes.', __file__)
     out += make_import('typing', ['Union', 'Tuple']) + '\n'
-    out += make_import('.id', ['cid', 'meid', 'UNKNOWN'])
+    out += make_import('.id', ['cid', 'meid', '_Unknown'])
     out += make_import('.base_template', ['Restrictions', 'ModelableEntity', 'GbdRecord'])
     out += make_import('.sequela_template', ['Sequela'])
     out += make_import('.etiology_template', ['Etiology'])
@@ -90,5 +90,7 @@ def build_mapping():
     out += make_import('.id', ['cid', 'meid', 'UNKNOWN', 'scalar'])
     out += make_import('.base_template', ['Restrictions'])
     out += make_import('.cause_template', ['Cause', 'Causes']) + SPACING
+    out += make_import('.sequela', ['sequelae'])
+    out += make_import('.etiology', ['etiologies'])
     out += make_causes(get_cause_data())
     return out

@@ -8,7 +8,7 @@ IMPORTABLES_DEFINED = ('Sequela', 'Healthstate', 'sequelae')
 base_types = {
     'Healthstate': {
         'attrs': (('name', 'str'),
-                  ('gbd_id', 'hid'),),
+                  ('gbd_id', 'hsid'),),
         'superclass': ('ModelableEntity', modelable_entity_attrs),
         'docstring': 'Container for healthstate GBD ids and metadata.',
     },
@@ -54,7 +54,7 @@ def make_sequelae(sequela_list):
 
 def build_mapping_template():
     out = make_module_docstring('Mapping templates for GBD sequelae.', __file__)
-    out += make_import('.id', ['sid', 'meid'])
+    out += make_import('.id', ['sid', 'meid', 'hsid'])
     out += make_import('.base_template', ['ModelableEntity', 'GbdRecord'])
 
     for entity, info in base_types.items():
