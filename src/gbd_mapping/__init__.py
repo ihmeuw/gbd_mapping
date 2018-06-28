@@ -4,3 +4,4 @@ from .cause import Cause, causes
 from .sequela import Sequela, Healthstate, sequelae
 from .etiology import Etiology, etiologies
 from .risk import Risk, risks
+from .covariate import Covariate, covariates

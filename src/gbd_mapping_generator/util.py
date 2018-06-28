@@ -59,9 +59,22 @@ def text_wrap(start_string, items, sep=', ', implicit=False):
 
 
 def clean_entity_list(raw_entity_series):
-    replace_with_underscore_chars = ['/', '(', ')', ' – ', ' - ', '-', ' ', ',', '–', '____', '___', '__']
+    replace_with_underscore_chars = ['/', '(', ')', ' – ', ' - ', '-', ' ', ',', '–', '____', '___', '__', '=']
     replace_chars = {char: '_' for char in replace_with_underscore_chars}
-    replace_chars.update({"'": '', 'é': 'e', '<': 'less_than_', '>': 'greater_than_'})
+    replace_chars.update({"'": '',
+                          '’': '',
+                          'é': 'e',
+                          '<': 'less_than_',
+                          '>': 'greater_than_',
+                          '+': '_and_up',
+                          'I$': 'income',
+                          '%': '_percent',
+                          '90th': 'ninetieth',
+                          '*': 'x',
+                          ':': '',
+                          '10_year': 'ten_year',
+                          'year.': 'year',
+                          'PM2.5': 'pm_2_5'})
     cleaned_up_entities = []
     for entity in list(raw_entity_series):
         entity = str(entity)

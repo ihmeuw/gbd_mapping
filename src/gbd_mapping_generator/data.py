@@ -49,9 +49,16 @@ def get_risks():
     return risks.sort_values('rei_id')
 
 
+def get_covariates():
+    covariates = gbd.get_covariate_metadata().reset_index(drop=True)
+    covariates = pd.DataFrame({'covariate_name': clean_entity_list(covariates.covariate_name),
+                               'covariate_id': covariates.covariate_id})
+    return covariates.sort_values('covariate_id')
+
 #####################################
 # Lists of entity names in id order #
 #####################################
+
 
 def get_sequela_list():
     return get_sequelae().sequela_name.tolist()
@@ -67,6 +74,10 @@ def get_cause_list():
 
 def get_risk_list():
     return get_risks().rei_name.tolist()
+
+
+def get_covariate_list():
+    return get_covariates().covariate_name.tolist()
 
 
 #####################################################
@@ -282,4 +293,12 @@ def get_risk_data():
     return out
 
 
-
+def get_covariate_data():
+    covariates = gbd.get_covariate_metadata()
+    return list(zip(clean_entity_list(covariates.covariate_name),
+                    covariates.covariate_id,
+                    covariates.group_display,
+                    covariates.covariate_type,
+                    covariates.by_age,
+                    covariates.by_sex,
+                    covariates.dichotomous,))

@@ -137,11 +137,10 @@ def get_cause_risk_mapping(cause_risk_set_version_id: int) -> pd.DataFrame:
     from db_tools import ezfuncs
     warnings.filterwarnings("default", module="db_tools")
 
-    q = f"""
-         SELECT cause_id,
-                rei_id
-         FROM shared.cause_risk_hierarchy_history
-         WHERE cause_risk_set_version_id = {cause_risk_set_version_id}
+    q = f"""SELECT cause_id,
+                    rei_id
+            FROM shared.cause_risk_hierarchy_history
+            WHERE cause_risk_set_version_id = {cause_risk_set_version_id}
          """
     return ezfuncs.query(q, conn_def='epi')
 
@@ -151,14 +150,13 @@ def get_sequela_id_mapping(model_version: int) -> pd.DataFrame:
     from db_tools import ezfuncs
     warnings.filterwarnings("default", module="db_tools")
 
-    q = f"""
-        SELECT sequela_id,
-               sequela_name,
-               modelable_entity_id,
-               cause_id, 
-               healthstate_id
-        FROM epi.sequela_hierarchy_history
-        WHERE sequela_set_version_id = {model_version}"""
+    q = f"""SELECT sequela_id,
+                   sequela_name,
+                   modelable_entity_id,
+                   cause_id, 
+                   healthstate_id
+            FROM epi.sequela_hierarchy_history
+            WHERE sequela_set_version_id = {model_version}"""
     return ezfuncs.query(q, conn_def='epi')
 
 
@@ -184,3 +182,20 @@ def get_risk(risk_id: int):  # FIXME: I don't know how to properly annotate the 
     warnings.filterwarnings("default", module="risk_utils")
 
     return risk(risk_id=risk_id, gbd_round_id=GBD_ROUND_ID)
+
+
+def get_covariate_metadata() -> pd.DataFrame:
+    from db_tools import ezfuncs
+    warnings.filterwarnings("default", module="db_tools")
+
+    q = """SELECT covariate_id,
+                  covariate_name,
+                  group_display,
+                  by_age, 
+                  by_sex,
+                  dichotomous,
+                  covariate_type
+           FROM shared.covariate
+           JOIN shared.covariate_type USING (covariate_type_id)
+           WHERE inactive = 0"""
+    return ezfuncs.query(q, conn_def='epi')
