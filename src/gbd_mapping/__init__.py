@@ -5,3 +5,4 @@ from .sequela import Sequela, Healthstate, sequelae
 from .etiology import Etiology, etiologies
 from .risk import Risk, risks
 from .covariate import Covariate, covariates
+from .coverage_gap import CoverageGap, coverage_gaps

@@ -1,5 +1,8 @@
+from pathlib import Path
+
 import pandas as pd
 import numpy as np
+import yaml
 
 import gbd_mapping_generator.gbd_access as gbd
 from .util import clean_entity_list, clean_risk_me
@@ -9,6 +12,9 @@ GBD_ROUND_ID = gbd.GBD_ROUND_ID
 CAUSE_SET_ID = 3
 REI_SET_ID = 2
 ETIOLOGY_SET_ID = 3
+AUXILIARY_DATA_PATH = Path(
+    '/home/j/Project/Cost_Effectiveness/CEAM/Auxiliary_Data/GBD_2016_corrected/02_processed_data')
+
 
 
 ###############################################
@@ -55,6 +61,7 @@ def get_covariates():
                                'covariate_id': covariates.covariate_id})
     return covariates.sort_values('covariate_id')
 
+
 #####################################
 # Lists of entity names in id order #
 #####################################
@@ -78,6 +85,20 @@ def get_risk_list():
 
 def get_covariate_list():
     return get_covariates().covariate_name.tolist()
+
+
+def get_coverage_gap_list():
+    relevant_measures = ['relative_risk', 'exposure']
+    coverage_gaps = None
+
+    for m in relevant_measures[1:]:
+        measure = set(i.parts[-1] for i in (AUXILIARY_DATA_PATH/f'{m}/coverage_gap').iterdir()
+                      if 'rst' not in i.parts[-1])
+        if coverage_gaps is not None:
+            coverage_gaps &= measure
+        else:
+            coverage_gaps = measure
+    return list(coverage_gaps)
 
 
 #####################################################
@@ -302,3 +323,22 @@ def get_covariate_data():
                     covariates.by_age,
                     covariates.by_sex,
                     covariates.dichotomous,))
+
+
+def get_coverage_gap_metadata(coverage_gap):
+    path = AUXILIARY_DATA_PATH / f'exposure/coverage_gap/{coverage_gap}/metadata.yaml'
+    with path.open() as file:
+        metadata = yaml.load(file)
+    return metadata
+
+def get_coverage_gap_data():
+    out = []
+
+    for c in get_coverage_gap_list():
+        metadata = get_coverage_gap_metadata(c)
+        restrictions = tuple((k, v) for k, v in metadata['restrictions'].items())
+        levels = tuple((k, v) for k, v in metadata['levels'].items())
+        out.append((c, metadata['distribution'], restrictions, levels,
+                    metadata['affected_causes'], metadata['affected_risks']))
+
+    return out

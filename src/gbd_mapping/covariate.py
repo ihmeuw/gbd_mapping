@@ -8,8 +8,8 @@ from .id import covid
 from .covariate_template import Covariate, Covariates
 
 
-covariates = Covariates(
-    legality_of_abortion=Covariate(
+covariates = Covariates(**{
+    'legality_of_abortion': Covariate(
         name='legality_of_abortion',
         gbd_id=covid(2),
         group='Abortion',
@@ -18,7 +18,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    absolute_value_of_average_latitude=Covariate(
+    'absolute_value_of_average_latitude': Covariate(
         name='absolute_value_of_average_latitude',
         gbd_id=covid(3),
         group='Latitude',
@@ -27,7 +27,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    adult_hiv_death_rate=Covariate(
+    'adult_hiv_death_rate': Covariate(
         name='adult_hiv_death_rate',
         gbd_id=covid(5),
         group='HIV',
@@ -36,7 +36,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    alcohol_liters_per_capita=Covariate(
+    'alcohol_liters_per_capita': Covariate(
         name='alcohol_liters_per_capita',
         gbd_id=covid(6),
         group='Alcohol',
@@ -45,7 +45,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    antenatal_care_1_visit_coverage_proportion=Covariate(
+    'antenatal_care_1_visit_coverage_proportion': Covariate(
         name='antenatal_care_1_visit_coverage_proportion',
         gbd_id=covid(7),
         group='ANC',
@@ -54,7 +54,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    antenatal_care_4_visits_coverage_proportion=Covariate(
+    'antenatal_care_4_visits_coverage_proportion': Covariate(
         name='antenatal_care_4_visits_coverage_proportion',
         gbd_id=covid(8),
         group='ANC',
@@ -63,7 +63,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    asbestos_production_binary=Covariate(
+    'asbestos_production_binary': Covariate(
         name='asbestos_production_binary',
         gbd_id=covid(11),
         group='Asbestos',
@@ -72,7 +72,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    asbestos_production_kg_per_capita=Covariate(
+    'asbestos_production_kg_per_capita': Covariate(
         name='asbestos_production_kg_per_capita',
         gbd_id=covid(12),
         group='Asbestos',
@@ -81,7 +81,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    age_specific_fertility_rate=Covariate(
+    'age_specific_fertility_rate': Covariate(
         name='age_specific_fertility_rate',
         gbd_id=covid(13),
         group='Fertility Rate',
@@ -90,7 +90,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    tobacco_cigarettes_per_capita=Covariate(
+    'tobacco_cigarettes_per_capita': Covariate(
         name='tobacco_cigarettes_per_capita',
         gbd_id=covid(14),
         group='Cigarettes',
@@ -99,7 +99,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    coal_production_per_capita=Covariate(
+    'coal_production_per_capita': Covariate(
         name='coal_production_per_capita',
         gbd_id=covid(15),
         group='Coal',
@@ -108,7 +108,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    coastal_population_within_10km_proportion=Covariate(
+    'coastal_population_within_10km_proportion': Covariate(
         name='coastal_population_within_10km_proportion',
         gbd_id=covid(16),
         group='Coastal',
@@ -117,7 +117,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    completeness_of_vital_registration=Covariate(
+    'completeness_of_vital_registration': Covariate(
         name='completeness_of_vital_registration',
         gbd_id=covid(17),
         group='Completeness',
@@ -126,7 +126,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    contraception_modern_prevalence_proportion_by_age=Covariate(
+    'contraception_modern_prevalence_proportion_by_age': Covariate(
         name='contraception_modern_prevalence_proportion_by_age',
         gbd_id=covid(18),
         group='Contraception',
@@ -135,7 +135,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    contraception_modern_prevalence_proportion=Covariate(
+    'contraception_modern_prevalence_proportion': Covariate(
         name='contraception_modern_prevalence_proportion',
         gbd_id=covid(19),
         group='Contraception',
@@ -144,7 +144,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    cumulative_cigarettes_10_years=Covariate(
+    'cumulative_cigarettes_10_years': Covariate(
         name='cumulative_cigarettes_10_years',
         gbd_id=covid(24),
         group='Cigarettes',
@@ -153,7 +153,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    cumulative_cigarettes_15_years=Covariate(
+    'cumulative_cigarettes_15_years': Covariate(
         name='cumulative_cigarettes_15_years',
         gbd_id=covid(25),
         group='Cigarettes',
@@ -162,7 +162,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    cumulative_cigarettes_20_years=Covariate(
+    'cumulative_cigarettes_20_years': Covariate(
         name='cumulative_cigarettes_20_years',
         gbd_id=covid(26),
         group='Cigarettes',
@@ -171,7 +171,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    cumulative_cigarettes_5_years=Covariate(
+    'cumulative_cigarettes_5_years': Covariate(
         name='cumulative_cigarettes_5_years',
         gbd_id=covid(27),
         group='Cigarettes',
@@ -180,7 +180,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    diabetes_fasting_plasma_glucose_mmol_l=Covariate(
+    'diabetes_fasting_plasma_glucose_mmol_l': Covariate(
         name='diabetes_fasting_plasma_glucose_mmol_l',
         gbd_id=covid(28),
         group='Diabetes',
@@ -189,7 +189,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    diabetes_age_standardized_prevalence_proportion=Covariate(
+    'diabetes_age_standardized_prevalence_proportion': Covariate(
         name='diabetes_age_standardized_prevalence_proportion',
         gbd_id=covid(29),
         group='Diabetes',
@@ -198,7 +198,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    diabetes_age_specific_prevalence_proportion=Covariate(
+    'diabetes_age_specific_prevalence_proportion': Covariate(
         name='diabetes_age_specific_prevalence_proportion',
         gbd_id=covid(30),
         group='Diabetes',
@@ -207,7 +207,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    disaster_deaths_rate_per_1000=Covariate(
+    'disaster_deaths_rate_per_1000': Covariate(
         name='disaster_deaths_rate_per_1000',
         gbd_id=covid(31),
         group='Disasters',
@@ -216,7 +216,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    dtp3_coverage_proportion=Covariate(
+    'dtp3_coverage_proportion': Covariate(
         name='dtp3_coverage_proportion',
         gbd_id=covid(32),
         group='DTP3',
@@ -225,7 +225,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    education_years_per_capita=Covariate(
+    'education_years_per_capita': Covariate(
         name='education_years_per_capita',
         gbd_id=covid(33),
         group='Education',
@@ -234,7 +234,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    famine_binary=Covariate(
+    'famine_binary': Covariate(
         name='famine_binary',
         gbd_id=covid(34),
         group='Shocks',
@@ -243,7 +243,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    female_hiv_death_rate_per_1_for_ages_15_49=Covariate(
+    'female_hiv_death_rate_per_1_for_ages_15_49': Covariate(
         name='female_hiv_death_rate_per_1_for_ages_15_49',
         gbd_id=covid(39),
         group='HIV',
@@ -252,7 +252,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    fertility_15_19_year_olds=Covariate(
+    'fertility_15_19_year_olds': Covariate(
         name='fertility_15_19_year_olds',
         gbd_id=covid(40),
         group='Births',
@@ -261,7 +261,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    gold_production_binary=Covariate(
+    'gold_production_binary': Covariate(
         name='gold_production_binary',
         gbd_id=covid(42),
         group='Gold',
@@ -270,7 +270,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    gold_production_kg_per_capita=Covariate(
+    'gold_production_kg_per_capita': Covariate(
         name='gold_production_kg_per_capita',
         gbd_id=covid(43),
         group='Gold',
@@ -279,7 +279,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    health_system_access_unitless=Covariate(
+    'health_system_access_unitless': Covariate(
         name='health_system_access_unitless',
         gbd_id=covid(44),
         group='Health System',
@@ -288,7 +288,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    health_system_access_2_unitless=Covariate(
+    'health_system_access_2_unitless': Covariate(
         name='health_system_access_2_unitless',
         gbd_id=covid(45),
         group='Health System',
@@ -297,7 +297,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    proportion_of_households_using_iodized_salt_adjusted=Covariate(
+    'proportion_of_households_using_iodized_salt_adjusted': Covariate(
         name='proportion_of_households_using_iodized_salt_adjusted',
         gbd_id=covid(46),
         group='Iodized salt',
@@ -306,7 +306,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    hib3_vaccine_coverage_proportion=Covariate(
+    'hib3_vaccine_coverage_proportion': Covariate(
         name='hib3_vaccine_coverage_proportion',
         gbd_id=covid(47),
         group='Hib3',
@@ -315,7 +315,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    hiv_prevalence_unadjusted_proportion=Covariate(
+    'hiv_prevalence_unadjusted_proportion': Covariate(
         name='hiv_prevalence_unadjusted_proportion',
         gbd_id=covid(49),
         group='HIV',
@@ -324,7 +324,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    hospital_beds_per_1000=Covariate(
+    'hospital_beds_per_1000': Covariate(
         name='hospital_beds_per_1000',
         gbd_id=covid(50),
         group='Hospital beds',
@@ -333,7 +333,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    in_facility_delivery_proportion=Covariate(
+    'in_facility_delivery_proportion': Covariate(
         name='in_facility_delivery_proportion',
         gbd_id=covid(51),
         group='In Facility Birth',
@@ -342,7 +342,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    landlocked_nation_binary=Covariate(
+    'landlocked_nation_binary': Covariate(
         name='landlocked_nation_binary',
         gbd_id=covid(55),
         group='Landlocked',
@@ -351,7 +351,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    average_latitude=Covariate(
+    'average_latitude': Covariate(
         name='average_latitude',
         gbd_id=covid(56),
         group='Population Latitude',
@@ -360,7 +360,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    ldi_income_per_capita=Covariate(
+    'ldi_income_per_capita': Covariate(
         name='ldi_income_per_capita',
         gbd_id=covid(57),
         group='LDI',
@@ -369,7 +369,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    lead_gas_outphase_binary=Covariate(
+    'lead_gas_outphase_binary': Covariate(
         name='lead_gas_outphase_binary',
         gbd_id=covid(58),
         group='Lead Gas',
@@ -378,7 +378,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    live_births_thousands=Covariate(
+    'live_births_thousands': Covariate(
         name='live_births_thousands',
         gbd_id=covid(60),
         group='Fertility Rate',
@@ -387,7 +387,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    underweight_proportion_less_than_2sd_weight_for_age_less_than_5_years=Covariate(
+    'underweight_proportion_less_than_2sd_weight_for_age_less_than_5_years': Covariate(
         name='underweight_proportion_less_than_2sd_weight_for_age_less_than_5_years',
         gbd_id=covid(66),
         group='Malnutrition',
@@ -396,7 +396,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    mean_bmi=Covariate(
+    'mean_bmi': Covariate(
         name='mean_bmi',
         gbd_id=covid(68),
         group='BMI',
@@ -405,7 +405,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    cholesterol_total_mean_per_capita=Covariate(
+    'cholesterol_total_mean_per_capita': Covariate(
         name='cholesterol_total_mean_per_capita',
         gbd_id=covid(69),
         group='Cholesterol',
@@ -414,7 +414,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    systolic_blood_pressure_mmhg=Covariate(
+    'systolic_blood_pressure_mmhg': Covariate(
         name='systolic_blood_pressure_mmhg',
         gbd_id=covid(70),
         group='SBP',
@@ -423,7 +423,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    population_weighted_mean_temperature=Covariate(
+    'population_weighted_mean_temperature': Covariate(
         name='population_weighted_mean_temperature',
         gbd_id=covid(71),
         group='Temperature',
@@ -432,7 +432,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    measles_vaccine_coverage_proportion=Covariate(
+    'measles_vaccine_coverage_proportion': Covariate(
         name='measles_vaccine_coverage_proportion',
         gbd_id=covid(75),
         group='Measles',
@@ -441,7 +441,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    meningitis_belt_binary=Covariate(
+    'meningitis_belt_binary': Covariate(
         name='meningitis_belt_binary',
         gbd_id=covid(77),
         group='Meningitis',
@@ -450,7 +450,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    mortality_rate_due_to_death_shocks_in_last_10_years_per_1_person=Covariate(
+    'mortality_rate_due_to_death_shocks_in_last_10_years_per_1_person': Covariate(
         name='mortality_rate_due_to_death_shocks_in_last_10_years_per_1_person',
         gbd_id=covid(79),
         group='Shocks',
@@ -459,7 +459,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    opium_cultivation_binary=Covariate(
+    'opium_cultivation_binary': Covariate(
         name='opium_cultivation_binary',
         gbd_id=covid(82),
         group='Opium',
@@ -468,7 +468,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    live_births_35_and_up_proportion=Covariate(
+    'live_births_35_and_up_proportion': Covariate(
         name='live_births_35_and_up_proportion',
         gbd_id=covid(84),
         group='Births',
@@ -477,7 +477,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    live_births_40_and_up_proportion=Covariate(
+    'live_births_40_and_up_proportion': Covariate(
         name='live_births_40_and_up_proportion',
         gbd_id=covid(85),
         group='Births',
@@ -486,7 +486,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    pig_meat_kg_per_capita=Covariate(
+    'pig_meat_kg_per_capita': Covariate(
         name='pig_meat_kg_per_capita',
         gbd_id=covid(99),
         group='Pig Meat',
@@ -495,7 +495,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    pigs_per_capita=Covariate(
+    'pigs_per_capita': Covariate(
         name='pigs_per_capita',
         gbd_id=covid(100),
         group='Livestock',
@@ -504,7 +504,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    indoor_air_pollution_all_cooking_fuels=Covariate(
+    'indoor_air_pollution_all_cooking_fuels': Covariate(
         name='indoor_air_pollution_all_cooking_fuels',
         gbd_id=covid(105),
         group='Indoor Air Pollution',
@@ -513,7 +513,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    outdoor_air_pollution_pm_2_5=Covariate(
+    'outdoor_air_pollution_pm_2_5': Covariate(
         name='outdoor_air_pollution_pm_2_5',
         gbd_id=covid(106),
         group='Outdoor Air Pollution',
@@ -522,7 +522,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    latitude_under_15_proportion=Covariate(
+    'latitude_under_15_proportion': Covariate(
         name='latitude_under_15_proportion',
         gbd_id=covid(107),
         group='Population Latitude',
@@ -531,7 +531,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    elevation_100_to_500m_proportion=Covariate(
+    'elevation_100_to_500m_proportion': Covariate(
         name='elevation_100_to_500m_proportion',
         gbd_id=covid(108),
         group='Elevation',
@@ -540,7 +540,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    elevation_over_1500m_proportion=Covariate(
+    'elevation_over_1500m_proportion': Covariate(
         name='elevation_over_1500m_proportion',
         gbd_id=covid(109),
         group='Population Elevation',
@@ -549,7 +549,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    population_15_to_30_proportion=Covariate(
+    'population_15_to_30_proportion': Covariate(
         name='population_15_to_30_proportion',
         gbd_id=covid(110),
         group='Population',
@@ -558,7 +558,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    latitude_15_to_30_proportion=Covariate(
+    'latitude_15_to_30_proportion': Covariate(
         name='latitude_15_to_30_proportion',
         gbd_id=covid(111),
         group='Population Latitude',
@@ -567,7 +567,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    latitude_30_to_45_proportion=Covariate(
+    'latitude_30_to_45_proportion': Covariate(
         name='latitude_30_to_45_proportion',
         gbd_id=covid(112),
         group='Population Latitude',
@@ -576,7 +576,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    latitude_over_45_proportion=Covariate(
+    'latitude_over_45_proportion': Covariate(
         name='latitude_over_45_proportion',
         gbd_id=covid(113),
         group='Population Latitude',
@@ -585,7 +585,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    elevation_500_to_1500m_proportion=Covariate(
+    'elevation_500_to_1500m_proportion': Covariate(
         name='elevation_500_to_1500m_proportion',
         gbd_id=covid(114),
         group='Elevation',
@@ -594,7 +594,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    population_density_150_300_ppl_sqkm_proportion=Covariate(
+    'population_density_150_300_ppl_sqkm_proportion': Covariate(
         name='population_density_150_300_ppl_sqkm_proportion',
         gbd_id=covid(115),
         group='Population Density',
@@ -603,7 +603,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    population_density_300_500_ppl_sqkm_proportion=Covariate(
+    'population_density_300_500_ppl_sqkm_proportion': Covariate(
         name='population_density_300_500_ppl_sqkm_proportion',
         gbd_id=covid(116),
         group='Population Density',
@@ -612,7 +612,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    population_density_500_1000_ppl_sqkm_proportion=Covariate(
+    'population_density_500_1000_ppl_sqkm_proportion': Covariate(
         name='population_density_500_1000_ppl_sqkm_proportion',
         gbd_id=covid(117),
         group='Population Density',
@@ -621,7 +621,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    population_density_over_1000_ppl_sqkm_proportion=Covariate(
+    'population_density_over_1000_ppl_sqkm_proportion': Covariate(
         name='population_density_over_1000_ppl_sqkm_proportion',
         gbd_id=covid(118),
         group='Population Density',
@@ -630,7 +630,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    population_density_under_150_ppl_sqkm_proportion=Covariate(
+    'population_density_under_150_ppl_sqkm_proportion': Covariate(
         name='population_density_under_150_ppl_sqkm_proportion',
         gbd_id=covid(119),
         group='Population Density',
@@ -639,7 +639,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    population_over_65_proportion=Covariate(
+    'population_over_65_proportion': Covariate(
         name='population_over_65_proportion',
         gbd_id=covid(120),
         group='Population',
@@ -648,7 +648,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    elevation_under_100m_proportion=Covariate(
+    'elevation_under_100m_proportion': Covariate(
         name='elevation_under_100m_proportion',
         gbd_id=covid(121),
         group='Elevation',
@@ -657,7 +657,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    population_under_30_proportion=Covariate(
+    'population_under_30_proportion': Covariate(
         name='population_under_30_proportion',
         gbd_id=covid(122),
         group='Population',
@@ -666,7 +666,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    rainfall_population_weighted_mm_yr=Covariate(
+    'rainfall_population_weighted_mm_yr': Covariate(
         name='rainfall_population_weighted_mm_yr',
         gbd_id=covid(127),
         group='Rainfall',
@@ -675,7 +675,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    rainfall_quintiles_2_5=Covariate(
+    'rainfall_quintiles_2_5': Covariate(
         name='rainfall_quintiles_2_5',
         gbd_id=covid(128),
         group='Rainfall',
@@ -684,7 +684,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    rainfall_quintiles_3_5=Covariate(
+    'rainfall_quintiles_3_5': Covariate(
         name='rainfall_quintiles_3_5',
         gbd_id=covid(129),
         group='Rainfall',
@@ -693,7 +693,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    rainfall_quintiles_4_5=Covariate(
+    'rainfall_quintiles_4_5': Covariate(
         name='rainfall_quintiles_4_5',
         gbd_id=covid(130),
         group='Rainfall',
@@ -702,7 +702,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    rainfall_quintile_1_proportion=Covariate(
+    'rainfall_quintile_1_proportion': Covariate(
         name='rainfall_quintile_1_proportion',
         gbd_id=covid(131),
         group='Rainfall',
@@ -711,7 +711,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    rainfall_quintile_2_proportion=Covariate(
+    'rainfall_quintile_2_proportion': Covariate(
         name='rainfall_quintile_2_proportion',
         gbd_id=covid(132),
         group='Rainfall',
@@ -720,7 +720,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    rainfall_quintile_3_proportion=Covariate(
+    'rainfall_quintile_3_proportion': Covariate(
         name='rainfall_quintile_3_proportion',
         gbd_id=covid(133),
         group='Rainfall',
@@ -729,7 +729,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    rainfall_quintile_4_proportion=Covariate(
+    'rainfall_quintile_4_proportion': Covariate(
         name='rainfall_quintile_4_proportion',
         gbd_id=covid(134),
         group='Rainfall',
@@ -738,7 +738,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    rainfall_quintile_5_proportion=Covariate(
+    'rainfall_quintile_5_proportion': Covariate(
         name='rainfall_quintile_5_proportion',
         gbd_id=covid(135),
         group='Rainfall',
@@ -747,7 +747,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    religion_binary_greater_than_50_percent_muslim=Covariate(
+    'religion_binary_greater_than_50_percent_muslim': Covariate(
         name='religion_binary_greater_than_50_percent_muslim',
         gbd_id=covid(137),
         group='Religion',
@@ -756,7 +756,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    rotavirus_vaccine_introduced_binary=Covariate(
+    'rotavirus_vaccine_introduced_binary': Covariate(
         name='rotavirus_vaccine_introduced_binary',
         gbd_id=covid(140),
         group='Rotavirus',
@@ -765,7 +765,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    sahel_region_of_africa_binary=Covariate(
+    'sahel_region_of_africa_binary': Covariate(
         name='sahel_region_of_africa_binary',
         gbd_id=covid(141),
         group='Geography',
@@ -774,7 +774,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    sanitation_proportion_with_access=Covariate(
+    'sanitation_proportion_with_access': Covariate(
         name='sanitation_proportion_with_access',
         gbd_id=covid(142),
         group='Sanitation',
@@ -783,7 +783,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    skilled_birth_attendance_proportion=Covariate(
+    'skilled_birth_attendance_proportion': Covariate(
         name='skilled_birth_attendance_proportion',
         gbd_id=covid(143),
         group='Skilled Birth Attendance',
@@ -792,7 +792,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    smoking_prevalence=Covariate(
+    'smoking_prevalence': Covariate(
         name='smoking_prevalence',
         gbd_id=covid(145),
         group='Smoking',
@@ -801,7 +801,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    smoking_prevalence_reproductive_age_standardized=Covariate(
+    'smoking_prevalence_reproductive_age_standardized': Covariate(
         name='smoking_prevalence_reproductive_age_standardized',
         gbd_id=covid(146),
         group='Smoking',
@@ -810,7 +810,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    ninetieth_percentile_climatic_temperature_in_the_given_country_year=Covariate(
+    'ninetieth_percentile_climatic_temperature_in_the_given_country_year': Covariate(
         name='ninetieth_percentile_climatic_temperature_in_the_given_country_year',
         gbd_id=covid(147),
         group='Temperature',
@@ -819,7 +819,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    tetanus_toxoid_coverage_smooth_proportion=Covariate(
+    'tetanus_toxoid_coverage_smooth_proportion': Covariate(
         name='tetanus_toxoid_coverage_smooth_proportion',
         gbd_id=covid(148),
         group='Tetanus',
@@ -828,7 +828,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    total_fertility_rate=Covariate(
+    'total_fertility_rate': Covariate(
         name='total_fertility_rate',
         gbd_id=covid(149),
         group='Fertility Rate',
@@ -837,7 +837,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    vehicles_2_and_up4_wheels_per_capita=Covariate(
+    'vehicles_2_and_up4_wheels_per_capita': Covariate(
         name='vehicles_2_and_up4_wheels_per_capita',
         gbd_id=covid(154),
         group='Vehicles',
@@ -846,7 +846,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    vehicles_2_wheels_per_capita=Covariate(
+    'vehicles_2_wheels_per_capita': Covariate(
         name='vehicles_2_wheels_per_capita',
         gbd_id=covid(155),
         group='Vehicles',
@@ -855,7 +855,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    vehicles_4_wheels_per_capita=Covariate(
+    'vehicles_4_wheels_per_capita': Covariate(
         name='vehicles_4_wheels_per_capita',
         gbd_id=covid(156),
         group='Vehicles',
@@ -864,7 +864,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    vehicles_2_wheels_fraction_proportion=Covariate(
+    'vehicles_2_wheels_fraction_proportion': Covariate(
         name='vehicles_2_wheels_fraction_proportion',
         gbd_id=covid(157),
         group='Vehicles',
@@ -873,7 +873,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    mortality_rate_due_to_war_shocks_per_1_person=Covariate(
+    'mortality_rate_due_to_war_shocks_per_1_person': Covariate(
         name='mortality_rate_due_to_war_shocks_per_1_person',
         gbd_id=covid(159),
         group='War',
@@ -882,7 +882,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    improved_water_source_proportion_with_access=Covariate(
+    'improved_water_source_proportion_with_access': Covariate(
         name='improved_water_source_proportion_with_access',
         gbd_id=covid(160),
         group='Water',
@@ -891,7 +891,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    malaria_lysenko_pfpr_5_epidemic=Covariate(
+    'malaria_lysenko_pfpr_5_epidemic': Covariate(
         name='malaria_lysenko_pfpr_5_epidemic',
         gbd_id=covid(175),
         group='Malaria',
@@ -900,7 +900,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    malaria_lysenko_pfpr_1_holoendemic=Covariate(
+    'malaria_lysenko_pfpr_1_holoendemic': Covariate(
         name='malaria_lysenko_pfpr_1_holoendemic',
         gbd_id=covid(183),
         group='Malaria',
@@ -909,7 +909,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    malaria_lysenko_pfpr_2_highest_endemicity=Covariate(
+    'malaria_lysenko_pfpr_2_highest_endemicity': Covariate(
         name='malaria_lysenko_pfpr_2_highest_endemicity',
         gbd_id=covid(184),
         group='Malaria',
@@ -918,7 +918,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    malaria_pfpr_rate=Covariate(
+    'malaria_pfpr_rate': Covariate(
         name='malaria_pfpr_rate',
         gbd_id=covid(188),
         group='Malaria',
@@ -927,7 +927,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    significant_leishmaniasis_endemicity_binary=Covariate(
+    'significant_leishmaniasis_endemicity_binary': Covariate(
         name='significant_leishmaniasis_endemicity_binary',
         gbd_id=covid(192),
         group='Leishmaniasis',
@@ -936,7 +936,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    leprosy_endemic_binary=Covariate(
+    'leprosy_endemic_binary': Covariate(
         name='leprosy_endemic_binary',
         gbd_id=covid(193),
         group='Leprosy',
@@ -945,7 +945,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year=Covariate(
+    'year': Covariate(
         name='year',
         gbd_id=covid(195),
         group='Year',
@@ -954,7 +954,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    chagas_population_at_risk_2_proportion=Covariate(
+    'chagas_population_at_risk_2_proportion': Covariate(
         name='chagas_population_at_risk_2_proportion',
         gbd_id=covid(196),
         group='Chagas',
@@ -963,7 +963,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    birth_prevalence_of_chd=Covariate(
+    'birth_prevalence_of_chd': Covariate(
         name='birth_prevalence_of_chd',
         gbd_id=covid(197),
         group='Congenital CVD',
@@ -972,7 +972,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    birth_prevalence_of_congenital_chromosomal_anomalies=Covariate(
+    'birth_prevalence_of_congenital_chromosomal_anomalies': Covariate(
         name='birth_prevalence_of_congenital_chromosomal_anomalies',
         gbd_id=covid(198),
         group='Congenital Chromosomal Abnormalities',
@@ -981,7 +981,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    hemoglobinopathies_prevalence_x_excess_mortality=Covariate(
+    'hemoglobinopathies_prevalence_x_excess_mortality': Covariate(
         name='hemoglobinopathies_prevalence_x_excess_mortality',
         gbd_id=covid(200),
         group='Hemoglobinopathies',
@@ -990,7 +990,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    age_standardize_prevalence_of_severe_anemia=Covariate(
+    'age_standardize_prevalence_of_severe_anemia': Covariate(
         name='age_standardize_prevalence_of_severe_anemia',
         gbd_id=covid(205),
         group='',
@@ -999,7 +999,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    schistosomiasis_prevalence_proportion=Covariate(
+    'schistosomiasis_prevalence_proportion': Covariate(
         name='schistosomiasis_prevalence_proportion',
         gbd_id=covid(206),
         group='Schistosomiasis',
@@ -1008,7 +1008,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    health_system_access_capped=Covariate(
+    'health_system_access_capped': Covariate(
         name='health_system_access_capped',
         gbd_id=covid(208),
         group='Health System',
@@ -1017,7 +1017,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    neonatal_death_rate_modeled_2_per_1000=Covariate(
+    'neonatal_death_rate_modeled_2_per_1000': Covariate(
         name='neonatal_death_rate_modeled_2_per_1000',
         gbd_id=covid(209),
         group='Neonatal',
@@ -1026,7 +1026,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    pcv3_coverage_proportion=Covariate(
+    'pcv3_coverage_proportion': Covariate(
         name='pcv3_coverage_proportion',
         gbd_id=covid(210),
         group='PCV3',
@@ -1035,7 +1035,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    presence_of_leishmaniasis_binary=Covariate(
+    'presence_of_leishmaniasis_binary': Covariate(
         name='presence_of_leishmaniasis_binary',
         gbd_id=covid(211),
         group='Leishmaniasis',
@@ -1044,7 +1044,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    potential_for_leishmaniasis_transmission_binary=Covariate(
+    'potential_for_leishmaniasis_transmission_binary': Covariate(
         name='potential_for_leishmaniasis_transmission_binary',
         gbd_id=covid(212),
         group='Leishmaniasis',
@@ -1053,7 +1053,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    high_leishmaniasis_endemicity_binary=Covariate(
+    'high_leishmaniasis_endemicity_binary': Covariate(
         name='high_leishmaniasis_endemicity_binary',
         gbd_id=covid(213),
         group='Leishmaniasis',
@@ -1062,7 +1062,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    under_5_hiv_death_rate=Covariate(
+    'under_5_hiv_death_rate': Covariate(
         name='under_5_hiv_death_rate',
         gbd_id=covid(214),
         group='HIV',
@@ -1071,7 +1071,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    interaction_of_malaria_itn_and_pfpr_rate_covariates=Covariate(
+    'interaction_of_malaria_itn_and_pfpr_rate_covariates': Covariate(
         name='interaction_of_malaria_itn_and_pfpr_rate_covariates',
         gbd_id=covid(215),
         group='Malaria',
@@ -1080,7 +1080,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    interaction_of_malaria_itn_and_log_pfpr_covariates=Covariate(
+    'interaction_of_malaria_itn_and_log_pfpr_covariates': Covariate(
         name='interaction_of_malaria_itn_and_log_pfpr_covariates',
         gbd_id=covid(216),
         group='Malaria',
@@ -1089,7 +1089,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    malaria_pfpr_adjusted_for_itn_and_irs_coverage=Covariate(
+    'malaria_pfpr_adjusted_for_itn_and_irs_coverage': Covariate(
         name='malaria_pfpr_adjusted_for_itn_and_irs_coverage',
         gbd_id=covid(217),
         group='Malaria',
@@ -1098,7 +1098,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    syphilis_prevalence_proportion=Covariate(
+    'syphilis_prevalence_proportion': Covariate(
         name='syphilis_prevalence_proportion',
         gbd_id=covid(218),
         group='Prevalence/Incidence/PAR',
@@ -1107,7 +1107,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_region_5=Covariate(
+    'year_x_gbd_analytical_region_5': Covariate(
         name='year_x_gbd_analytical_region_5',
         gbd_id=covid(219),
         group='Year',
@@ -1116,7 +1116,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_region_9=Covariate(
+    'year_x_gbd_analytical_region_9': Covariate(
         name='year_x_gbd_analytical_region_9',
         gbd_id=covid(220),
         group='Year',
@@ -1125,7 +1125,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_region_21=Covariate(
+    'year_x_gbd_analytical_region_21': Covariate(
         name='year_x_gbd_analytical_region_21',
         gbd_id=covid(221),
         group='Year',
@@ -1134,7 +1134,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_region_32=Covariate(
+    'year_x_gbd_analytical_region_32': Covariate(
         name='year_x_gbd_analytical_region_32',
         gbd_id=covid(222),
         group='Year',
@@ -1143,7 +1143,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_region_42=Covariate(
+    'year_x_gbd_analytical_region_42': Covariate(
         name='year_x_gbd_analytical_region_42',
         gbd_id=covid(223),
         group='Year',
@@ -1152,7 +1152,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_region_56=Covariate(
+    'year_x_gbd_analytical_region_56': Covariate(
         name='year_x_gbd_analytical_region_56',
         gbd_id=covid(224),
         group='Year',
@@ -1161,7 +1161,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_region_65=Covariate(
+    'year_x_gbd_analytical_region_65': Covariate(
         name='year_x_gbd_analytical_region_65',
         gbd_id=covid(225),
         group='Year',
@@ -1170,7 +1170,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_region_70=Covariate(
+    'year_x_gbd_analytical_region_70': Covariate(
         name='year_x_gbd_analytical_region_70',
         gbd_id=covid(226),
         group='Year',
@@ -1179,7 +1179,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_region_73=Covariate(
+    'year_x_gbd_analytical_region_73': Covariate(
         name='year_x_gbd_analytical_region_73',
         gbd_id=covid(227),
         group='Year',
@@ -1188,7 +1188,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_region_96=Covariate(
+    'year_x_gbd_analytical_region_96': Covariate(
         name='year_x_gbd_analytical_region_96',
         gbd_id=covid(228),
         group='Year',
@@ -1197,7 +1197,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_region_100=Covariate(
+    'year_x_gbd_analytical_region_100': Covariate(
         name='year_x_gbd_analytical_region_100',
         gbd_id=covid(229),
         group='Year',
@@ -1206,7 +1206,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_region_104=Covariate(
+    'year_x_gbd_analytical_region_104': Covariate(
         name='year_x_gbd_analytical_region_104',
         gbd_id=covid(230),
         group='Year',
@@ -1215,7 +1215,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_region_120=Covariate(
+    'year_x_gbd_analytical_region_120': Covariate(
         name='year_x_gbd_analytical_region_120',
         gbd_id=covid(231),
         group='Year',
@@ -1224,7 +1224,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_region_124=Covariate(
+    'year_x_gbd_analytical_region_124': Covariate(
         name='year_x_gbd_analytical_region_124',
         gbd_id=covid(232),
         group='Year',
@@ -1233,7 +1233,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_region_134=Covariate(
+    'year_x_gbd_analytical_region_134': Covariate(
         name='year_x_gbd_analytical_region_134',
         gbd_id=covid(233),
         group='Year',
@@ -1242,7 +1242,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_region_138=Covariate(
+    'year_x_gbd_analytical_region_138': Covariate(
         name='year_x_gbd_analytical_region_138',
         gbd_id=covid(234),
         group='Year',
@@ -1251,7 +1251,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_region_159=Covariate(
+    'year_x_gbd_analytical_region_159': Covariate(
         name='year_x_gbd_analytical_region_159',
         gbd_id=covid(235),
         group='Year',
@@ -1260,7 +1260,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_region_167=Covariate(
+    'year_x_gbd_analytical_region_167': Covariate(
         name='year_x_gbd_analytical_region_167',
         gbd_id=covid(236),
         group='Year',
@@ -1269,7 +1269,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_region_174=Covariate(
+    'year_x_gbd_analytical_region_174': Covariate(
         name='year_x_gbd_analytical_region_174',
         gbd_id=covid(237),
         group='Year',
@@ -1278,7 +1278,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_region_192=Covariate(
+    'year_x_gbd_analytical_region_192': Covariate(
         name='year_x_gbd_analytical_region_192',
         gbd_id=covid(238),
         group='Year',
@@ -1287,7 +1287,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_region_199=Covariate(
+    'year_x_gbd_analytical_region_199': Covariate(
         name='year_x_gbd_analytical_region_199',
         gbd_id=covid(239),
         group='Year',
@@ -1296,7 +1296,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_superregion_4=Covariate(
+    'year_x_gbd_analytical_superregion_4': Covariate(
         name='year_x_gbd_analytical_superregion_4',
         gbd_id=covid(240),
         group='Year',
@@ -1305,7 +1305,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_superregion_31=Covariate(
+    'year_x_gbd_analytical_superregion_31': Covariate(
         name='year_x_gbd_analytical_superregion_31',
         gbd_id=covid(241),
         group='Year',
@@ -1314,7 +1314,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_superregion_64=Covariate(
+    'year_x_gbd_analytical_superregion_64': Covariate(
         name='year_x_gbd_analytical_superregion_64',
         gbd_id=covid(242),
         group='Year',
@@ -1323,7 +1323,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_superregion_103=Covariate(
+    'year_x_gbd_analytical_superregion_103': Covariate(
         name='year_x_gbd_analytical_superregion_103',
         gbd_id=covid(243),
         group='Year',
@@ -1332,7 +1332,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_superregion_137=Covariate(
+    'year_x_gbd_analytical_superregion_137': Covariate(
         name='year_x_gbd_analytical_superregion_137',
         gbd_id=covid(244),
         group='Year',
@@ -1341,7 +1341,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_superregion_158=Covariate(
+    'year_x_gbd_analytical_superregion_158': Covariate(
         name='year_x_gbd_analytical_superregion_158',
         gbd_id=covid(245),
         group='Year',
@@ -1350,7 +1350,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    year_x_gbd_analytical_superregion_166=Covariate(
+    'year_x_gbd_analytical_superregion_166': Covariate(
         name='year_x_gbd_analytical_superregion_166',
         gbd_id=covid(246),
         group='Year',
@@ -1359,7 +1359,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    population_weighted_probability_of_dengue_transmission=Covariate(
+    'population_weighted_probability_of_dengue_transmission': Covariate(
         name='population_weighted_probability_of_dengue_transmission',
         gbd_id=covid(247),
         group='Prevalence/Incidence/PAR',
@@ -1368,7 +1368,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    dengue_outbreaks_binary=Covariate(
+    'dengue_outbreaks_binary': Covariate(
         name='dengue_outbreaks_binary',
         gbd_id=covid(248),
         group='Dengue',
@@ -1377,7 +1377,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    exponentiated_version_of_dengue_anomalies=Covariate(
+    'exponentiated_version_of_dengue_anomalies': Covariate(
         name='exponentiated_version_of_dengue_anomalies',
         gbd_id=covid(249),
         group='Dengue',
@@ -1386,7 +1386,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    proportion_of_the_population_living_in_the_classic_monsoon_region=Covariate(
+    'proportion_of_the_population_living_in_the_classic_monsoon_region': Covariate(
         name='proportion_of_the_population_living_in_the_classic_monsoon_region',
         gbd_id=covid(250),
         group='NA',
@@ -1395,7 +1395,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    proportion_of_the_population_living_in_the_classic_monsoon_region_low_income_countries=Covariate(
+    'proportion_of_the_population_living_in_the_classic_monsoon_region_low_income_countries': Covariate(
         name='proportion_of_the_population_living_in_the_classic_monsoon_region_low_income_countries',
         gbd_id=covid(251),
         group='Dengue',
@@ -1404,7 +1404,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    dengue_anomalies_deviation_from_mean_dengue_incidence_rate=Covariate(
+    'dengue_anomalies_deviation_from_mean_dengue_incidence_rate': Covariate(
         name='dengue_anomalies_deviation_from_mean_dengue_incidence_rate',
         gbd_id=covid(252),
         group='Dengue',
@@ -1413,7 +1413,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    total_pc_treatments_per_person_at_risk_for_lf_infection_1999_2012=Covariate(
+    'total_pc_treatments_per_person_at_risk_for_lf_infection_1999_2012': Covariate(
         name='total_pc_treatments_per_person_at_risk_for_lf_infection_1999_2012',
         gbd_id=covid(255),
         group='Prevalence/Incidence/PAR',
@@ -1422,7 +1422,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    smoking_prevalence_age_standardized_females=Covariate(
+    'smoking_prevalence_age_standardized_females': Covariate(
         name='smoking_prevalence_age_standardized_females',
         gbd_id=covid(256),
         group='Smoking',
@@ -1431,7 +1431,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    smoking_prevalence_age_standardized_males=Covariate(
+    'smoking_prevalence_age_standardized_males': Covariate(
         name='smoking_prevalence_age_standardized_males',
         gbd_id=covid(257),
         group='Smoking',
@@ -1440,7 +1440,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    hiv_prevalence_during_pregnancy_by_age=Covariate(
+    'hiv_prevalence_during_pregnancy_by_age': Covariate(
         name='hiv_prevalence_during_pregnancy_by_age',
         gbd_id=covid(258),
         group='HIV',
@@ -1449,7 +1449,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    indicator_for_high_income_superregion_location_id_64=Covariate(
+    'indicator_for_high_income_superregion_location_id_64': Covariate(
         name='indicator_for_high_income_superregion_location_id_64',
         gbd_id=covid(260),
         group='Binary',
@@ -1458,7 +1458,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    vitamin_a_supplementation_coverage_rate=Covariate(
+    'vitamin_a_supplementation_coverage_rate': Covariate(
         name='vitamin_a_supplementation_coverage_rate',
         gbd_id=covid(261),
         group='Diet',
@@ -1467,7 +1467,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    hemoglobinopathies_prevalence_x_excess_mortality_excluding_g6pd_deficiency=Covariate(
+    'hemoglobinopathies_prevalence_x_excess_mortality_excluding_g6pd_deficiency': Covariate(
         name='hemoglobinopathies_prevalence_x_excess_mortality_excluding_g6pd_deficiency',
         gbd_id=covid(262),
         group='Hemoglobinopathies',
@@ -1476,7 +1476,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    indicator_for_southeast_asia_east_asia_and_oceania_superregion_location_id_4=Covariate(
+    'indicator_for_southeast_asia_east_asia_and_oceania_superregion_location_id_4': Covariate(
         name='indicator_for_southeast_asia_east_asia_and_oceania_superregion_location_id_4',
         gbd_id=covid(266),
         group='Binary',
@@ -1485,7 +1485,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    indicator_for_central_europe_eastern_europe_and_central_asia_superregion_location_id_31=Covariate(
+    'indicator_for_central_europe_eastern_europe_and_central_asia_superregion_location_id_31': Covariate(
         name='indicator_for_central_europe_eastern_europe_and_central_asia_superregion_location_id_31',
         gbd_id=covid(267),
         group='Binary',
@@ -1494,7 +1494,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    indicator_for_latin_america_and_caribbean_superregion_location_id_103=Covariate(
+    'indicator_for_latin_america_and_caribbean_superregion_location_id_103': Covariate(
         name='indicator_for_latin_america_and_caribbean_superregion_location_id_103',
         gbd_id=covid(268),
         group='Binary',
@@ -1503,7 +1503,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    indicator_for_north_africa_and_middle_east_superregion_location_id_137=Covariate(
+    'indicator_for_north_africa_and_middle_east_superregion_location_id_137': Covariate(
         name='indicator_for_north_africa_and_middle_east_superregion_location_id_137',
         gbd_id=covid(269),
         group='Binary',
@@ -1512,7 +1512,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    indicator_for_south_asia_superregion_location_id_158=Covariate(
+    'indicator_for_south_asia_superregion_location_id_158': Covariate(
         name='indicator_for_south_asia_superregion_location_id_158',
         gbd_id=covid(270),
         group='Binary',
@@ -1521,7 +1521,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    indicator_for_sub_saharan_africa_superregion_location_id_166=Covariate(
+    'indicator_for_sub_saharan_africa_superregion_location_id_166': Covariate(
         name='indicator_for_sub_saharan_africa_superregion_location_id_166',
         gbd_id=covid(271),
         group='Binary',
@@ -1530,7 +1530,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    alcohol_binge_drinker_proportion_age_standardized=Covariate(
+    'alcohol_binge_drinker_proportion_age_standardized': Covariate(
         name='alcohol_binge_drinker_proportion_age_standardized',
         gbd_id=covid(273),
         group='Alcohol',
@@ -1539,7 +1539,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    smoking_prevalence_age_standardized_both_sexes=Covariate(
+    'smoking_prevalence_age_standardized_both_sexes': Covariate(
         name='smoking_prevalence_age_standardized_both_sexes',
         gbd_id=covid(282),
         group='Smoking',
@@ -1548,7 +1548,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    proportion_of_the_population_living_in_the_indian_ocean_monsoon_belt=Covariate(
+    'proportion_of_the_population_living_in_the_indian_ocean_monsoon_belt': Covariate(
         name='proportion_of_the_population_living_in_the_indian_ocean_monsoon_belt',
         gbd_id=covid(441),
         group='Dengue',
@@ -1557,7 +1557,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    vitamin_a_deficiency_prevalence_age_standardized=Covariate(
+    'vitamin_a_deficiency_prevalence_age_standardized': Covariate(
         name='vitamin_a_deficiency_prevalence_age_standardized',
         gbd_id=covid(442),
         group='Vitamin A',
@@ -1566,7 +1566,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    prevalence_of_obesity=Covariate(
+    'prevalence_of_obesity': Covariate(
         name='prevalence_of_obesity',
         gbd_id=covid(453),
         group='Metabolics',
@@ -1575,7 +1575,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    prevalence_of_overweight_and_obesity=Covariate(
+    'prevalence_of_overweight_and_obesity': Covariate(
         name='prevalence_of_overweight_and_obesity',
         gbd_id=covid(454),
         group='Metabolics',
@@ -1584,7 +1584,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    prevalence_of_obesity_age_standardized=Covariate(
+    'prevalence_of_obesity_age_standardized': Covariate(
         name='prevalence_of_obesity_age_standardized',
         gbd_id=covid(455),
         group='Metabolics',
@@ -1593,7 +1593,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    age_standardized_prevalence_of_ckd_stage_3=Covariate(
+    'age_standardized_prevalence_of_ckd_stage_3': Covariate(
         name='age_standardized_prevalence_of_ckd_stage_3',
         gbd_id=covid(456),
         group='Prevalence/Incidence/PAR',
@@ -1602,7 +1602,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    age_standardized_prevalence_of_ckd_stage_4=Covariate(
+    'age_standardized_prevalence_of_ckd_stage_4': Covariate(
         name='age_standardized_prevalence_of_ckd_stage_4',
         gbd_id=covid(460),
         group='Prevalence/Incidence/PAR',
@@ -1611,7 +1611,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    maternal_education_years_per_capita=Covariate(
+    'maternal_education_years_per_capita': Covariate(
         name='maternal_education_years_per_capita',
         gbd_id=covid(463),
         group='Experimental',
@@ -1620,7 +1620,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    chagasprevpaho=Covariate(
+    'chagasprevpaho': Covariate(
         name='chagasprevpaho',
         gbd_id=covid(467),
         group='Experimental',
@@ -1629,7 +1629,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    clay_fraction_in_the_soil_mean=Covariate(
+    'clay_fraction_in_the_soil_mean': Covariate(
         name='clay_fraction_in_the_soil_mean',
         gbd_id=covid(473),
         group='Experimental',
@@ -1638,7 +1638,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    silt_fraction_in_the_soil_mean=Covariate(
+    'silt_fraction_in_the_soil_mean': Covariate(
         name='silt_fraction_in_the_soil_mean',
         gbd_id=covid(476),
         group='Experimental',
@@ -1647,7 +1647,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    enhanced_vegetation_index_long_term_average_2000_2012_mean=Covariate(
+    'enhanced_vegetation_index_long_term_average_2000_2012_mean': Covariate(
         name='enhanced_vegetation_index_long_term_average_2000_2012_mean',
         gbd_id=covid(479),
         group='Experimental',
@@ -1656,7 +1656,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    slope_of_the_land_in_degrees_terrain_steepness_mean=Covariate(
+    'slope_of_the_land_in_degrees_terrain_steepness_mean': Covariate(
         name='slope_of_the_land_in_degrees_terrain_steepness_mean',
         gbd_id=covid(482),
         group='Experimental',
@@ -1665,7 +1665,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_tb=Covariate(
+    'log_transformed_sev_scalar_tb': Covariate(
         name='log_transformed_sev_scalar_tb',
         gbd_id=covid(483),
         group='SEV',
@@ -1674,7 +1674,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_oth_hiv=Covariate(
+    'log_transformed_sev_scalar_oth_hiv': Covariate(
         name='log_transformed_sev_scalar_oth_hiv',
         gbd_id=covid(485),
         group='SEV',
@@ -1683,7 +1683,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_diarrhea=Covariate(
+    'log_transformed_sev_scalar_diarrhea': Covariate(
         name='log_transformed_sev_scalar_diarrhea',
         gbd_id=covid(486),
         group='SEV',
@@ -1692,7 +1692,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_lri=Covariate(
+    'log_transformed_sev_scalar_lri': Covariate(
         name='log_transformed_sev_scalar_lri',
         gbd_id=covid(491),
         group='SEV',
@@ -1701,7 +1701,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_uri=Covariate(
+    'log_transformed_sev_scalar_uri': Covariate(
         name='log_transformed_sev_scalar_uri',
         gbd_id=covid(492),
         group='SEV',
@@ -1710,7 +1710,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_otitis=Covariate(
+    'log_transformed_sev_scalar_otitis': Covariate(
         name='log_transformed_sev_scalar_otitis',
         gbd_id=covid(493),
         group='SEV',
@@ -1719,7 +1719,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_measles=Covariate(
+    'log_transformed_sev_scalar_measles': Covariate(
         name='log_transformed_sev_scalar_measles',
         gbd_id=covid(503),
         group='SEV',
@@ -1728,7 +1728,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_mat_hem=Covariate(
+    'log_transformed_sev_scalar_mat_hem': Covariate(
         name='log_transformed_sev_scalar_mat_hem',
         gbd_id=covid(526),
         group='SEV',
@@ -1737,7 +1737,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_mat_sepsis=Covariate(
+    'log_transformed_sev_scalar_mat_sepsis': Covariate(
         name='log_transformed_sev_scalar_mat_sepsis',
         gbd_id=covid(527),
         group='SEV',
@@ -1746,7 +1746,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_mat_abort=Covariate(
+    'log_transformed_sev_scalar_mat_abort': Covariate(
         name='log_transformed_sev_scalar_mat_abort',
         gbd_id=covid(530),
         group='SEV',
@@ -1755,7 +1755,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_hep=Covariate(
+    'log_transformed_sev_scalar_hep': Covariate(
         name='log_transformed_sev_scalar_hep',
         gbd_id=covid(541),
         group='SEV',
@@ -1764,7 +1764,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_hep_b=Covariate(
+    'log_transformed_sev_scalar_hep_b': Covariate(
         name='log_transformed_sev_scalar_hep_b',
         gbd_id=covid(543),
         group='SEV',
@@ -1773,7 +1773,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_hep_c=Covariate(
+    'log_transformed_sev_scalar_hep_c': Covariate(
         name='log_transformed_sev_scalar_hep_c',
         gbd_id=covid(544),
         group='SEV',
@@ -1782,7 +1782,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_esophag_c=Covariate(
+    'log_transformed_sev_scalar_esophag_c': Covariate(
         name='log_transformed_sev_scalar_esophag_c',
         gbd_id=covid(548),
         group='SEV',
@@ -1791,7 +1791,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_stomach_c=Covariate(
+    'log_transformed_sev_scalar_stomach_c': Covariate(
         name='log_transformed_sev_scalar_stomach_c',
         gbd_id=covid(549),
         group='SEV',
@@ -1800,7 +1800,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_liver_c=Covariate(
+    'log_transformed_sev_scalar_liver_c': Covariate(
         name='log_transformed_sev_scalar_liver_c',
         gbd_id=covid(550),
         group='SEV',
@@ -1809,7 +1809,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_liver_c_hepb=Covariate(
+    'log_transformed_sev_scalar_liver_c_hepb': Covariate(
         name='log_transformed_sev_scalar_liver_c_hepb',
         gbd_id=covid(551),
         group='SEV',
@@ -1818,7 +1818,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_liver_c_hepc=Covariate(
+    'log_transformed_sev_scalar_liver_c_hepc': Covariate(
         name='log_transformed_sev_scalar_liver_c_hepc',
         gbd_id=covid(552),
         group='SEV',
@@ -1827,7 +1827,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_oth_liver_c=Covariate(
+    'log_transformed_sev_scalar_oth_liver_c': Covariate(
         name='log_transformed_sev_scalar_oth_liver_c',
         gbd_id=covid(553),
         group='SEV',
@@ -1836,7 +1836,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_larynx_c=Covariate(
+    'log_transformed_sev_scalar_larynx_c': Covariate(
         name='log_transformed_sev_scalar_larynx_c',
         gbd_id=covid(554),
         group='SEV',
@@ -1845,7 +1845,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_lung_c=Covariate(
+    'log_transformed_sev_scalar_lung_c': Covariate(
         name='log_transformed_sev_scalar_lung_c',
         gbd_id=covid(555),
         group='SEV',
@@ -1854,7 +1854,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_breast_c=Covariate(
+    'log_transformed_sev_scalar_breast_c': Covariate(
         name='log_transformed_sev_scalar_breast_c',
         gbd_id=covid(556),
         group='SEV',
@@ -1863,7 +1863,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_uterus_c=Covariate(
+    'log_transformed_sev_scalar_uterus_c': Covariate(
         name='log_transformed_sev_scalar_uterus_c',
         gbd_id=covid(557),
         group='SEV',
@@ -1872,7 +1872,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_prostate_c=Covariate(
+    'log_transformed_sev_scalar_prostate_c': Covariate(
         name='log_transformed_sev_scalar_prostate_c',
         gbd_id=covid(558),
         group='SEV',
@@ -1881,7 +1881,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_colorect_c=Covariate(
+    'log_transformed_sev_scalar_colorect_c': Covariate(
         name='log_transformed_sev_scalar_colorect_c',
         gbd_id=covid(559),
         group='SEV',
@@ -1890,7 +1890,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_mouth_c=Covariate(
+    'log_transformed_sev_scalar_mouth_c': Covariate(
         name='log_transformed_sev_scalar_mouth_c',
         gbd_id=covid(560),
         group='SEV',
@@ -1899,7 +1899,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_nasoph_c=Covariate(
+    'log_transformed_sev_scalar_nasoph_c': Covariate(
         name='log_transformed_sev_scalar_nasoph_c',
         gbd_id=covid(561),
         group='SEV',
@@ -1908,7 +1908,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_oth_phar_c=Covariate(
+    'log_transformed_sev_scalar_oth_phar_c': Covariate(
         name='log_transformed_sev_scalar_oth_phar_c',
         gbd_id=covid(562),
         group='SEV',
@@ -1917,7 +1917,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_gallblad_c=Covariate(
+    'log_transformed_sev_scalar_gallblad_c': Covariate(
         name='log_transformed_sev_scalar_gallblad_c',
         gbd_id=covid(563),
         group='SEV',
@@ -1926,7 +1926,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_pancreas_c=Covariate(
+    'log_transformed_sev_scalar_pancreas_c': Covariate(
         name='log_transformed_sev_scalar_pancreas_c',
         gbd_id=covid(564),
         group='SEV',
@@ -1935,7 +1935,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_ovary_c=Covariate(
+    'log_transformed_sev_scalar_ovary_c': Covariate(
         name='log_transformed_sev_scalar_ovary_c',
         gbd_id=covid(567),
         group='SEV',
@@ -1944,7 +1944,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_kidney_c=Covariate(
+    'log_transformed_sev_scalar_kidney_c': Covariate(
         name='log_transformed_sev_scalar_kidney_c',
         gbd_id=covid(569),
         group='SEV',
@@ -1953,7 +1953,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_bladder_c=Covariate(
+    'log_transformed_sev_scalar_bladder_c': Covariate(
         name='log_transformed_sev_scalar_bladder_c',
         gbd_id=covid(570),
         group='SEV',
@@ -1962,7 +1962,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_thyroid_c=Covariate(
+    'log_transformed_sev_scalar_thyroid_c': Covariate(
         name='log_transformed_sev_scalar_thyroid_c',
         gbd_id=covid(572),
         group='SEV',
@@ -1971,7 +1971,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_mesothel=Covariate(
+    'log_transformed_sev_scalar_mesothel': Covariate(
         name='log_transformed_sev_scalar_mesothel',
         gbd_id=covid(573),
         group='SEV',
@@ -1980,7 +1980,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_leukemia=Covariate(
+    'log_transformed_sev_scalar_leukemia': Covariate(
         name='log_transformed_sev_scalar_leukemia',
         gbd_id=covid(577),
         group='SEV',
@@ -1989,7 +1989,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_rhd=Covariate(
+    'log_transformed_sev_scalar_rhd': Covariate(
         name='log_transformed_sev_scalar_rhd',
         gbd_id=covid(579),
         group='SEV',
@@ -1998,7 +1998,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_ihd=Covariate(
+    'log_transformed_sev_scalar_ihd': Covariate(
         name='log_transformed_sev_scalar_ihd',
         gbd_id=covid(580),
         group='SEV',
@@ -2007,7 +2007,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_stroke=Covariate(
+    'log_transformed_sev_scalar_stroke': Covariate(
         name='log_transformed_sev_scalar_stroke',
         gbd_id=covid(581),
         group='SEV',
@@ -2016,7 +2016,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_isch_stroke=Covariate(
+    'log_transformed_sev_scalar_isch_stroke': Covariate(
         name='log_transformed_sev_scalar_isch_stroke',
         gbd_id=covid(582),
         group='SEV',
@@ -2025,7 +2025,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_hem_stroke=Covariate(
+    'log_transformed_sev_scalar_hem_stroke': Covariate(
         name='log_transformed_sev_scalar_hem_stroke',
         gbd_id=covid(583),
         group='SEV',
@@ -2034,7 +2034,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_cmp=Covariate(
+    'log_transformed_sev_scalar_cmp': Covariate(
         name='log_transformed_sev_scalar_cmp',
         gbd_id=covid(584),
         group='SEV',
@@ -2043,7 +2043,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_a_fib=Covariate(
+    'log_transformed_sev_scalar_a_fib': Covariate(
         name='log_transformed_sev_scalar_a_fib',
         gbd_id=covid(585),
         group='SEV',
@@ -2052,7 +2052,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_aort_an=Covariate(
+    'log_transformed_sev_scalar_aort_an': Covariate(
         name='log_transformed_sev_scalar_aort_an',
         gbd_id=covid(586),
         group='SEV',
@@ -2061,7 +2061,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_pvd=Covariate(
+    'log_transformed_sev_scalar_pvd': Covariate(
         name='log_transformed_sev_scalar_pvd',
         gbd_id=covid(587),
         group='SEV',
@@ -2070,7 +2070,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_endocar=Covariate(
+    'log_transformed_sev_scalar_endocar': Covariate(
         name='log_transformed_sev_scalar_endocar',
         gbd_id=covid(588),
         group='SEV',
@@ -2079,7 +2079,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_oth_cardio=Covariate(
+    'log_transformed_sev_scalar_oth_cardio': Covariate(
         name='log_transformed_sev_scalar_oth_cardio',
         gbd_id=covid(589),
         group='SEV',
@@ -2088,7 +2088,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_copd=Covariate(
+    'log_transformed_sev_scalar_copd': Covariate(
         name='log_transformed_sev_scalar_copd',
         gbd_id=covid(590),
         group='SEV',
@@ -2097,7 +2097,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_asthma=Covariate(
+    'log_transformed_sev_scalar_asthma': Covariate(
         name='log_transformed_sev_scalar_asthma',
         gbd_id=covid(596),
         group='SEV',
@@ -2106,7 +2106,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_oth_resp=Covariate(
+    'log_transformed_sev_scalar_oth_resp': Covariate(
         name='log_transformed_sev_scalar_oth_resp',
         gbd_id=covid(598),
         group='SEV',
@@ -2115,7 +2115,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_cirr_hepb=Covariate(
+    'log_transformed_sev_scalar_cirr_hepb': Covariate(
         name='log_transformed_sev_scalar_cirr_hepb',
         gbd_id=covid(599),
         group='SEV',
@@ -2124,7 +2124,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_cirr_hepc=Covariate(
+    'log_transformed_sev_scalar_cirr_hepc': Covariate(
         name='log_transformed_sev_scalar_cirr_hepc',
         gbd_id=covid(600),
         group='SEV',
@@ -2133,7 +2133,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_pancreatit=Covariate(
+    'log_transformed_sev_scalar_pancreatit': Covariate(
         name='log_transformed_sev_scalar_pancreatit',
         gbd_id=covid(610),
         group='SEV',
@@ -2142,7 +2142,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_epilepsy=Covariate(
+    'log_transformed_sev_scalar_epilepsy': Covariate(
         name='log_transformed_sev_scalar_epilepsy',
         gbd_id=covid(614),
         group='SEV',
@@ -2151,7 +2151,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_depression=Covariate(
+    'log_transformed_sev_scalar_depression': Covariate(
         name='log_transformed_sev_scalar_depression',
         gbd_id=covid(621),
         group='SEV',
@@ -2160,7 +2160,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_mdd=Covariate(
+    'log_transformed_sev_scalar_mdd': Covariate(
         name='log_transformed_sev_scalar_mdd',
         gbd_id=covid(622),
         group='SEV',
@@ -2169,7 +2169,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_id=Covariate(
+    'log_transformed_sev_scalar_id': Covariate(
         name='log_transformed_sev_scalar_id',
         gbd_id=covid(634),
         group='SEV',
@@ -2178,7 +2178,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_osteoarth=Covariate(
+    'log_transformed_sev_scalar_osteoarth': Covariate(
         name='log_transformed_sev_scalar_osteoarth',
         gbd_id=covid(658),
         group='SEV',
@@ -2187,7 +2187,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_back_and_upneck=Covariate(
+    'log_transformed_sev_scalar_back_and_upneck': Covariate(
         name='log_transformed_sev_scalar_back_and_upneck',
         gbd_id=covid(659),
         group='SEV',
@@ -2196,7 +2196,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_back_pain=Covariate(
+    'log_transformed_sev_scalar_back_pain': Covariate(
         name='log_transformed_sev_scalar_back_pain',
         gbd_id=covid(660),
         group='SEV',
@@ -2205,7 +2205,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_gout=Covariate(
+    'log_transformed_sev_scalar_gout': Covariate(
         name='log_transformed_sev_scalar_gout',
         gbd_id=covid(662),
         group='SEV',
@@ -2214,7 +2214,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_sense=Covariate(
+    'log_transformed_sev_scalar_sense': Covariate(
         name='log_transformed_sev_scalar_sense',
         gbd_id=covid(687),
         group='SEV',
@@ -2223,7 +2223,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_cataract=Covariate(
+    'log_transformed_sev_scalar_cataract': Covariate(
         name='log_transformed_sev_scalar_cataract',
         gbd_id=covid(689),
         group='SEV',
@@ -2232,7 +2232,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_hearing=Covariate(
+    'log_transformed_sev_scalar_hearing': Covariate(
         name='log_transformed_sev_scalar_hearing',
         gbd_id=covid(692),
         group='SEV',
@@ -2241,7 +2241,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_road_inj=Covariate(
+    'log_transformed_sev_scalar_road_inj': Covariate(
         name='log_transformed_sev_scalar_road_inj',
         gbd_id=covid(702),
         group='SEV',
@@ -2250,7 +2250,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_pedest=Covariate(
+    'log_transformed_sev_scalar_pedest': Covariate(
         name='log_transformed_sev_scalar_pedest',
         gbd_id=covid(703),
         group='SEV',
@@ -2259,7 +2259,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_cyclist=Covariate(
+    'log_transformed_sev_scalar_cyclist': Covariate(
         name='log_transformed_sev_scalar_cyclist',
         gbd_id=covid(704),
         group='SEV',
@@ -2268,7 +2268,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_mot_cyc=Covariate(
+    'log_transformed_sev_scalar_mot_cyc': Covariate(
         name='log_transformed_sev_scalar_mot_cyc',
         gbd_id=covid(705),
         group='SEV',
@@ -2277,7 +2277,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_mot_veh=Covariate(
+    'log_transformed_sev_scalar_mot_veh': Covariate(
         name='log_transformed_sev_scalar_mot_veh',
         gbd_id=covid(706),
         group='SEV',
@@ -2286,7 +2286,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_oth_road=Covariate(
+    'log_transformed_sev_scalar_oth_road': Covariate(
         name='log_transformed_sev_scalar_oth_road',
         gbd_id=covid(707),
         group='SEV',
@@ -2295,7 +2295,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_oth_trans=Covariate(
+    'log_transformed_sev_scalar_oth_trans': Covariate(
         name='log_transformed_sev_scalar_oth_trans',
         gbd_id=covid(708),
         group='SEV',
@@ -2304,7 +2304,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_falls=Covariate(
+    'log_transformed_sev_scalar_falls': Covariate(
         name='log_transformed_sev_scalar_falls',
         gbd_id=covid(709),
         group='SEV',
@@ -2313,7 +2313,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_drown=Covariate(
+    'log_transformed_sev_scalar_drown': Covariate(
         name='log_transformed_sev_scalar_drown',
         gbd_id=covid(710),
         group='SEV',
@@ -2322,7 +2322,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_fire=Covariate(
+    'log_transformed_sev_scalar_fire': Covariate(
         name='log_transformed_sev_scalar_fire',
         gbd_id=covid(711),
         group='SEV',
@@ -2331,7 +2331,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_poison=Covariate(
+    'log_transformed_sev_scalar_poison': Covariate(
         name='log_transformed_sev_scalar_poison',
         gbd_id=covid(712),
         group='SEV',
@@ -2340,7 +2340,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_mech=Covariate(
+    'log_transformed_sev_scalar_mech': Covariate(
         name='log_transformed_sev_scalar_mech',
         gbd_id=covid(713),
         group='SEV',
@@ -2349,7 +2349,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_mech_gun=Covariate(
+    'log_transformed_sev_scalar_mech_gun': Covariate(
         name='log_transformed_sev_scalar_mech_gun',
         gbd_id=covid(714),
         group='SEV',
@@ -2358,7 +2358,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_mech_suff=Covariate(
+    'log_transformed_sev_scalar_mech_suff': Covariate(
         name='log_transformed_sev_scalar_mech_suff',
         gbd_id=covid(715),
         group='SEV',
@@ -2367,7 +2367,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_oth_mech=Covariate(
+    'log_transformed_sev_scalar_oth_mech': Covariate(
         name='log_transformed_sev_scalar_oth_mech',
         gbd_id=covid(716),
         group='SEV',
@@ -2376,7 +2376,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_animal=Covariate(
+    'log_transformed_sev_scalar_animal': Covariate(
         name='log_transformed_sev_scalar_animal',
         gbd_id=covid(718),
         group='SEV',
@@ -2385,7 +2385,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_venom=Covariate(
+    'log_transformed_sev_scalar_venom': Covariate(
         name='log_transformed_sev_scalar_venom',
         gbd_id=covid(719),
         group='SEV',
@@ -2394,7 +2394,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_non_ven=Covariate(
+    'log_transformed_sev_scalar_non_ven': Covariate(
         name='log_transformed_sev_scalar_non_ven',
         gbd_id=covid(720),
         group='SEV',
@@ -2403,7 +2403,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_f_body=Covariate(
+    'log_transformed_sev_scalar_f_body': Covariate(
         name='log_transformed_sev_scalar_f_body',
         gbd_id=covid(721),
         group='SEV',
@@ -2412,7 +2412,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_f_body_asp=Covariate(
+    'log_transformed_sev_scalar_f_body_asp': Covariate(
         name='log_transformed_sev_scalar_f_body_asp',
         gbd_id=covid(722),
         group='SEV',
@@ -2421,7 +2421,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_oth_f_body=Covariate(
+    'log_transformed_sev_scalar_oth_f_body': Covariate(
         name='log_transformed_sev_scalar_oth_f_body',
         gbd_id=covid(724),
         group='SEV',
@@ -2430,7 +2430,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_oth_unint=Covariate(
+    'log_transformed_sev_scalar_oth_unint': Covariate(
         name='log_transformed_sev_scalar_oth_unint',
         gbd_id=covid(725),
         group='SEV',
@@ -2439,7 +2439,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_self_harm=Covariate(
+    'log_transformed_sev_scalar_self_harm': Covariate(
         name='log_transformed_sev_scalar_self_harm',
         gbd_id=covid(726),
         group='SEV',
@@ -2448,7 +2448,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_violence=Covariate(
+    'log_transformed_sev_scalar_violence': Covariate(
         name='log_transformed_sev_scalar_violence',
         gbd_id=covid(727),
         group='SEV',
@@ -2457,7 +2457,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_viol_gun=Covariate(
+    'log_transformed_sev_scalar_viol_gun': Covariate(
         name='log_transformed_sev_scalar_viol_gun',
         gbd_id=covid(728),
         group='SEV',
@@ -2466,7 +2466,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_viol_knife=Covariate(
+    'log_transformed_sev_scalar_viol_knife': Covariate(
         name='log_transformed_sev_scalar_viol_knife',
         gbd_id=covid(729),
         group='SEV',
@@ -2475,7 +2475,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_oth_viol=Covariate(
+    'log_transformed_sev_scalar_oth_viol': Covariate(
         name='log_transformed_sev_scalar_oth_viol',
         gbd_id=covid(730),
         group='SEV',
@@ -2484,7 +2484,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_tb=Covariate(
+    'log_transformed_age_standardized_sev_scalar_tb': Covariate(
         name='log_transformed_age_standardized_sev_scalar_tb',
         gbd_id=covid(737),
         group='SEV',
@@ -2493,7 +2493,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_oth_hiv=Covariate(
+    'log_transformed_age_standardized_sev_scalar_oth_hiv': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_hiv',
         gbd_id=covid(739),
         group='SEV',
@@ -2502,7 +2502,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_diarrhea=Covariate(
+    'log_transformed_age_standardized_sev_scalar_diarrhea': Covariate(
         name='log_transformed_age_standardized_sev_scalar_diarrhea',
         gbd_id=covid(740),
         group='SEV',
@@ -2511,7 +2511,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_lri=Covariate(
+    'log_transformed_age_standardized_sev_scalar_lri': Covariate(
         name='log_transformed_age_standardized_sev_scalar_lri',
         gbd_id=covid(744),
         group='SEV',
@@ -2520,7 +2520,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_uri=Covariate(
+    'log_transformed_age_standardized_sev_scalar_uri': Covariate(
         name='log_transformed_age_standardized_sev_scalar_uri',
         gbd_id=covid(745),
         group='SEV',
@@ -2529,7 +2529,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_otitis=Covariate(
+    'log_transformed_age_standardized_sev_scalar_otitis': Covariate(
         name='log_transformed_age_standardized_sev_scalar_otitis',
         gbd_id=covid(746),
         group='SEV',
@@ -2538,7 +2538,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_measles=Covariate(
+    'log_transformed_age_standardized_sev_scalar_measles': Covariate(
         name='log_transformed_age_standardized_sev_scalar_measles',
         gbd_id=covid(747),
         group='SEV',
@@ -2547,7 +2547,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_mat_hem=Covariate(
+    'log_transformed_age_standardized_sev_scalar_mat_hem': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mat_hem',
         gbd_id=covid(748),
         group='SEV',
@@ -2556,7 +2556,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_mat_sepsis=Covariate(
+    'log_transformed_age_standardized_sev_scalar_mat_sepsis': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mat_sepsis',
         gbd_id=covid(749),
         group='SEV',
@@ -2565,7 +2565,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_mat_abort=Covariate(
+    'log_transformed_age_standardized_sev_scalar_mat_abort': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mat_abort',
         gbd_id=covid(750),
         group='SEV',
@@ -2574,7 +2574,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_hep=Covariate(
+    'log_transformed_age_standardized_sev_scalar_hep': Covariate(
         name='log_transformed_age_standardized_sev_scalar_hep',
         gbd_id=covid(751),
         group='SEV',
@@ -2583,7 +2583,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_hep_b=Covariate(
+    'log_transformed_age_standardized_sev_scalar_hep_b': Covariate(
         name='log_transformed_age_standardized_sev_scalar_hep_b',
         gbd_id=covid(752),
         group='SEV',
@@ -2592,7 +2592,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_hep_c=Covariate(
+    'log_transformed_age_standardized_sev_scalar_hep_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_hep_c',
         gbd_id=covid(753),
         group='SEV',
@@ -2601,7 +2601,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_esophag_c=Covariate(
+    'log_transformed_age_standardized_sev_scalar_esophag_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_esophag_c',
         gbd_id=covid(754),
         group='SEV',
@@ -2610,7 +2610,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_stomach_c=Covariate(
+    'log_transformed_age_standardized_sev_scalar_stomach_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_stomach_c',
         gbd_id=covid(755),
         group='SEV',
@@ -2619,7 +2619,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_liver_c=Covariate(
+    'log_transformed_age_standardized_sev_scalar_liver_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_liver_c',
         gbd_id=covid(756),
         group='SEV',
@@ -2628,7 +2628,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_liver_c_hepb=Covariate(
+    'log_transformed_age_standardized_sev_scalar_liver_c_hepb': Covariate(
         name='log_transformed_age_standardized_sev_scalar_liver_c_hepb',
         gbd_id=covid(757),
         group='SEV',
@@ -2637,7 +2637,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_liver_c_hepc=Covariate(
+    'log_transformed_age_standardized_sev_scalar_liver_c_hepc': Covariate(
         name='log_transformed_age_standardized_sev_scalar_liver_c_hepc',
         gbd_id=covid(758),
         group='SEV',
@@ -2646,7 +2646,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_oth_liver_c=Covariate(
+    'log_transformed_age_standardized_sev_scalar_oth_liver_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_liver_c',
         gbd_id=covid(759),
         group='SEV',
@@ -2655,7 +2655,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_larynx_c=Covariate(
+    'log_transformed_age_standardized_sev_scalar_larynx_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_larynx_c',
         gbd_id=covid(760),
         group='SEV',
@@ -2664,7 +2664,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_lung_c=Covariate(
+    'log_transformed_age_standardized_sev_scalar_lung_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_lung_c',
         gbd_id=covid(761),
         group='SEV',
@@ -2673,7 +2673,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_breast_c=Covariate(
+    'log_transformed_age_standardized_sev_scalar_breast_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_breast_c',
         gbd_id=covid(762),
         group='SEV',
@@ -2682,7 +2682,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_uterus_c=Covariate(
+    'log_transformed_age_standardized_sev_scalar_uterus_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_uterus_c',
         gbd_id=covid(763),
         group='SEV',
@@ -2691,7 +2691,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_prostate_c=Covariate(
+    'log_transformed_age_standardized_sev_scalar_prostate_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_prostate_c',
         gbd_id=covid(764),
         group='SEV',
@@ -2700,7 +2700,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_colorect_c=Covariate(
+    'log_transformed_age_standardized_sev_scalar_colorect_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_colorect_c',
         gbd_id=covid(765),
         group='SEV',
@@ -2709,7 +2709,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_mouth_c=Covariate(
+    'log_transformed_age_standardized_sev_scalar_mouth_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mouth_c',
         gbd_id=covid(766),
         group='SEV',
@@ -2718,7 +2718,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_nasoph_c=Covariate(
+    'log_transformed_age_standardized_sev_scalar_nasoph_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_nasoph_c',
         gbd_id=covid(767),
         group='SEV',
@@ -2727,7 +2727,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_oth_phar_c=Covariate(
+    'log_transformed_age_standardized_sev_scalar_oth_phar_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_phar_c',
         gbd_id=covid(768),
         group='SEV',
@@ -2736,7 +2736,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_gallblad_c=Covariate(
+    'log_transformed_age_standardized_sev_scalar_gallblad_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_gallblad_c',
         gbd_id=covid(769),
         group='SEV',
@@ -2745,7 +2745,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_pancreas_c=Covariate(
+    'log_transformed_age_standardized_sev_scalar_pancreas_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_pancreas_c',
         gbd_id=covid(770),
         group='SEV',
@@ -2754,7 +2754,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_ovary_c=Covariate(
+    'log_transformed_age_standardized_sev_scalar_ovary_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_ovary_c',
         gbd_id=covid(771),
         group='SEV',
@@ -2763,7 +2763,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_kidney_c=Covariate(
+    'log_transformed_age_standardized_sev_scalar_kidney_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_kidney_c',
         gbd_id=covid(772),
         group='SEV',
@@ -2772,7 +2772,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_bladder_c=Covariate(
+    'log_transformed_age_standardized_sev_scalar_bladder_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_bladder_c',
         gbd_id=covid(773),
         group='SEV',
@@ -2781,7 +2781,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_thyroid_c=Covariate(
+    'log_transformed_age_standardized_sev_scalar_thyroid_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_thyroid_c',
         gbd_id=covid(774),
         group='SEV',
@@ -2790,7 +2790,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_mesothel=Covariate(
+    'log_transformed_age_standardized_sev_scalar_mesothel': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mesothel',
         gbd_id=covid(775),
         group='SEV',
@@ -2799,7 +2799,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_leukemia=Covariate(
+    'log_transformed_age_standardized_sev_scalar_leukemia': Covariate(
         name='log_transformed_age_standardized_sev_scalar_leukemia',
         gbd_id=covid(776),
         group='SEV',
@@ -2808,7 +2808,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_rhd=Covariate(
+    'log_transformed_age_standardized_sev_scalar_rhd': Covariate(
         name='log_transformed_age_standardized_sev_scalar_rhd',
         gbd_id=covid(777),
         group='SEV',
@@ -2817,7 +2817,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_ihd=Covariate(
+    'log_transformed_age_standardized_sev_scalar_ihd': Covariate(
         name='log_transformed_age_standardized_sev_scalar_ihd',
         gbd_id=covid(778),
         group='SEV',
@@ -2826,7 +2826,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_stroke=Covariate(
+    'log_transformed_age_standardized_sev_scalar_stroke': Covariate(
         name='log_transformed_age_standardized_sev_scalar_stroke',
         gbd_id=covid(779),
         group='SEV',
@@ -2835,7 +2835,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_isch_stroke=Covariate(
+    'log_transformed_age_standardized_sev_scalar_isch_stroke': Covariate(
         name='log_transformed_age_standardized_sev_scalar_isch_stroke',
         gbd_id=covid(780),
         group='SEV',
@@ -2844,7 +2844,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_hem_stroke=Covariate(
+    'log_transformed_age_standardized_sev_scalar_hem_stroke': Covariate(
         name='log_transformed_age_standardized_sev_scalar_hem_stroke',
         gbd_id=covid(781),
         group='SEV',
@@ -2853,7 +2853,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_cmp=Covariate(
+    'log_transformed_age_standardized_sev_scalar_cmp': Covariate(
         name='log_transformed_age_standardized_sev_scalar_cmp',
         gbd_id=covid(782),
         group='SEV',
@@ -2862,7 +2862,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_a_fib=Covariate(
+    'log_transformed_age_standardized_sev_scalar_a_fib': Covariate(
         name='log_transformed_age_standardized_sev_scalar_a_fib',
         gbd_id=covid(783),
         group='SEV',
@@ -2871,7 +2871,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_aort_an=Covariate(
+    'log_transformed_age_standardized_sev_scalar_aort_an': Covariate(
         name='log_transformed_age_standardized_sev_scalar_aort_an',
         gbd_id=covid(784),
         group='SEV',
@@ -2880,7 +2880,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_pvd=Covariate(
+    'log_transformed_age_standardized_sev_scalar_pvd': Covariate(
         name='log_transformed_age_standardized_sev_scalar_pvd',
         gbd_id=covid(785),
         group='SEV',
@@ -2889,7 +2889,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_endocar=Covariate(
+    'log_transformed_age_standardized_sev_scalar_endocar': Covariate(
         name='log_transformed_age_standardized_sev_scalar_endocar',
         gbd_id=covid(786),
         group='SEV',
@@ -2898,7 +2898,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_oth_cardio=Covariate(
+    'log_transformed_age_standardized_sev_scalar_oth_cardio': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_cardio',
         gbd_id=covid(787),
         group='SEV',
@@ -2907,7 +2907,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_copd=Covariate(
+    'log_transformed_age_standardized_sev_scalar_copd': Covariate(
         name='log_transformed_age_standardized_sev_scalar_copd',
         gbd_id=covid(788),
         group='SEV',
@@ -2916,7 +2916,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_asthma=Covariate(
+    'log_transformed_age_standardized_sev_scalar_asthma': Covariate(
         name='log_transformed_age_standardized_sev_scalar_asthma',
         gbd_id=covid(794),
         group='SEV',
@@ -2925,7 +2925,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_oth_resp=Covariate(
+    'log_transformed_age_standardized_sev_scalar_oth_resp': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_resp',
         gbd_id=covid(796),
         group='SEV',
@@ -2934,7 +2934,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_cirr_hepb=Covariate(
+    'log_transformed_age_standardized_sev_scalar_cirr_hepb': Covariate(
         name='log_transformed_age_standardized_sev_scalar_cirr_hepb',
         gbd_id=covid(797),
         group='SEV',
@@ -2943,7 +2943,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_cirr_hepc=Covariate(
+    'log_transformed_age_standardized_sev_scalar_cirr_hepc': Covariate(
         name='log_transformed_age_standardized_sev_scalar_cirr_hepc',
         gbd_id=covid(798),
         group='SEV',
@@ -2952,7 +2952,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_pancreatit=Covariate(
+    'log_transformed_age_standardized_sev_scalar_pancreatit': Covariate(
         name='log_transformed_age_standardized_sev_scalar_pancreatit',
         gbd_id=covid(800),
         group='SEV',
@@ -2961,7 +2961,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_epilepsy=Covariate(
+    'log_transformed_age_standardized_sev_scalar_epilepsy': Covariate(
         name='log_transformed_age_standardized_sev_scalar_epilepsy',
         gbd_id=covid(801),
         group='SEV',
@@ -2970,7 +2970,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_depression=Covariate(
+    'log_transformed_age_standardized_sev_scalar_depression': Covariate(
         name='log_transformed_age_standardized_sev_scalar_depression',
         gbd_id=covid(802),
         group='SEV',
@@ -2979,7 +2979,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_mdd=Covariate(
+    'log_transformed_age_standardized_sev_scalar_mdd': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mdd',
         gbd_id=covid(803),
         group='SEV',
@@ -2988,7 +2988,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_id=Covariate(
+    'log_transformed_age_standardized_sev_scalar_id': Covariate(
         name='log_transformed_age_standardized_sev_scalar_id',
         gbd_id=covid(805),
         group='SEV',
@@ -2997,7 +2997,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_osteoarth=Covariate(
+    'log_transformed_age_standardized_sev_scalar_osteoarth': Covariate(
         name='log_transformed_age_standardized_sev_scalar_osteoarth',
         gbd_id=covid(806),
         group='SEV',
@@ -3006,7 +3006,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_back_and_upneck=Covariate(
+    'log_transformed_age_standardized_sev_scalar_back_and_upneck': Covariate(
         name='log_transformed_age_standardized_sev_scalar_back_and_upneck',
         gbd_id=covid(807),
         group='SEV',
@@ -3015,7 +3015,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_back_pain=Covariate(
+    'log_transformed_age_standardized_sev_scalar_back_pain': Covariate(
         name='log_transformed_age_standardized_sev_scalar_back_pain',
         gbd_id=covid(808),
         group='SEV',
@@ -3024,7 +3024,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_gout=Covariate(
+    'log_transformed_age_standardized_sev_scalar_gout': Covariate(
         name='log_transformed_age_standardized_sev_scalar_gout',
         gbd_id=covid(809),
         group='SEV',
@@ -3033,7 +3033,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_sense=Covariate(
+    'log_transformed_age_standardized_sev_scalar_sense': Covariate(
         name='log_transformed_age_standardized_sev_scalar_sense',
         gbd_id=covid(810),
         group='SEV',
@@ -3042,7 +3042,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_cataract=Covariate(
+    'log_transformed_age_standardized_sev_scalar_cataract': Covariate(
         name='log_transformed_age_standardized_sev_scalar_cataract',
         gbd_id=covid(811),
         group='SEV',
@@ -3051,7 +3051,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_hearing=Covariate(
+    'log_transformed_age_standardized_sev_scalar_hearing': Covariate(
         name='log_transformed_age_standardized_sev_scalar_hearing',
         gbd_id=covid(812),
         group='SEV',
@@ -3060,7 +3060,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_road_inj=Covariate(
+    'log_transformed_age_standardized_sev_scalar_road_inj': Covariate(
         name='log_transformed_age_standardized_sev_scalar_road_inj',
         gbd_id=covid(813),
         group='SEV',
@@ -3069,7 +3069,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_pedest=Covariate(
+    'log_transformed_age_standardized_sev_scalar_pedest': Covariate(
         name='log_transformed_age_standardized_sev_scalar_pedest',
         gbd_id=covid(814),
         group='SEV',
@@ -3078,7 +3078,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_cyclist=Covariate(
+    'log_transformed_age_standardized_sev_scalar_cyclist': Covariate(
         name='log_transformed_age_standardized_sev_scalar_cyclist',
         gbd_id=covid(815),
         group='SEV',
@@ -3087,7 +3087,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_mot_cyc=Covariate(
+    'log_transformed_age_standardized_sev_scalar_mot_cyc': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mot_cyc',
         gbd_id=covid(816),
         group='SEV',
@@ -3096,7 +3096,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_mot_veh=Covariate(
+    'log_transformed_age_standardized_sev_scalar_mot_veh': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mot_veh',
         gbd_id=covid(817),
         group='SEV',
@@ -3105,7 +3105,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_oth_road=Covariate(
+    'log_transformed_age_standardized_sev_scalar_oth_road': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_road',
         gbd_id=covid(818),
         group='SEV',
@@ -3114,7 +3114,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_oth_trans=Covariate(
+    'log_transformed_age_standardized_sev_scalar_oth_trans': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_trans',
         gbd_id=covid(819),
         group='SEV',
@@ -3123,7 +3123,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_falls=Covariate(
+    'log_transformed_age_standardized_sev_scalar_falls': Covariate(
         name='log_transformed_age_standardized_sev_scalar_falls',
         gbd_id=covid(820),
         group='SEV',
@@ -3132,7 +3132,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_drown=Covariate(
+    'log_transformed_age_standardized_sev_scalar_drown': Covariate(
         name='log_transformed_age_standardized_sev_scalar_drown',
         gbd_id=covid(821),
         group='SEV',
@@ -3141,7 +3141,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_fire=Covariate(
+    'log_transformed_age_standardized_sev_scalar_fire': Covariate(
         name='log_transformed_age_standardized_sev_scalar_fire',
         gbd_id=covid(822),
         group='SEV',
@@ -3150,7 +3150,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_poison=Covariate(
+    'log_transformed_age_standardized_sev_scalar_poison': Covariate(
         name='log_transformed_age_standardized_sev_scalar_poison',
         gbd_id=covid(823),
         group='SEV',
@@ -3159,7 +3159,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_mech=Covariate(
+    'log_transformed_age_standardized_sev_scalar_mech': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mech',
         gbd_id=covid(824),
         group='SEV',
@@ -3168,7 +3168,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_mech_gun=Covariate(
+    'log_transformed_age_standardized_sev_scalar_mech_gun': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mech_gun',
         gbd_id=covid(825),
         group='SEV',
@@ -3177,7 +3177,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_mech_suff=Covariate(
+    'log_transformed_age_standardized_sev_scalar_mech_suff': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mech_suff',
         gbd_id=covid(826),
         group='SEV',
@@ -3186,7 +3186,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_oth_mech=Covariate(
+    'log_transformed_age_standardized_sev_scalar_oth_mech': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_mech',
         gbd_id=covid(827),
         group='SEV',
@@ -3195,7 +3195,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_animal=Covariate(
+    'log_transformed_age_standardized_sev_scalar_animal': Covariate(
         name='log_transformed_age_standardized_sev_scalar_animal',
         gbd_id=covid(828),
         group='SEV',
@@ -3204,7 +3204,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_venom=Covariate(
+    'log_transformed_age_standardized_sev_scalar_venom': Covariate(
         name='log_transformed_age_standardized_sev_scalar_venom',
         gbd_id=covid(829),
         group='SEV',
@@ -3213,7 +3213,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_non_ven=Covariate(
+    'log_transformed_age_standardized_sev_scalar_non_ven': Covariate(
         name='log_transformed_age_standardized_sev_scalar_non_ven',
         gbd_id=covid(830),
         group='SEV',
@@ -3222,7 +3222,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_f_body=Covariate(
+    'log_transformed_age_standardized_sev_scalar_f_body': Covariate(
         name='log_transformed_age_standardized_sev_scalar_f_body',
         gbd_id=covid(831),
         group='SEV',
@@ -3231,7 +3231,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_f_body_asp=Covariate(
+    'log_transformed_age_standardized_sev_scalar_f_body_asp': Covariate(
         name='log_transformed_age_standardized_sev_scalar_f_body_asp',
         gbd_id=covid(832),
         group='SEV',
@@ -3240,7 +3240,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_oth_f_body=Covariate(
+    'log_transformed_age_standardized_sev_scalar_oth_f_body': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_f_body',
         gbd_id=covid(834),
         group='SEV',
@@ -3249,7 +3249,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_oth_unint=Covariate(
+    'log_transformed_age_standardized_sev_scalar_oth_unint': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_unint',
         gbd_id=covid(835),
         group='SEV',
@@ -3258,7 +3258,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_self_harm=Covariate(
+    'log_transformed_age_standardized_sev_scalar_self_harm': Covariate(
         name='log_transformed_age_standardized_sev_scalar_self_harm',
         gbd_id=covid(836),
         group='SEV',
@@ -3267,7 +3267,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_violence=Covariate(
+    'log_transformed_age_standardized_sev_scalar_violence': Covariate(
         name='log_transformed_age_standardized_sev_scalar_violence',
         gbd_id=covid(837),
         group='SEV',
@@ -3276,7 +3276,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_viol_gun=Covariate(
+    'log_transformed_age_standardized_sev_scalar_viol_gun': Covariate(
         name='log_transformed_age_standardized_sev_scalar_viol_gun',
         gbd_id=covid(838),
         group='SEV',
@@ -3285,7 +3285,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_viol_knife=Covariate(
+    'log_transformed_age_standardized_sev_scalar_viol_knife': Covariate(
         name='log_transformed_age_standardized_sev_scalar_viol_knife',
         gbd_id=covid(839),
         group='SEV',
@@ -3294,7 +3294,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_oth_viol=Covariate(
+    'log_transformed_age_standardized_sev_scalar_oth_viol': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_viol',
         gbd_id=covid(840),
         group='SEV',
@@ -3303,7 +3303,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    h5n1_epidemic_years_binary=Covariate(
+    'h5n1_epidemic_years_binary': Covariate(
         name='h5n1_epidemic_years_binary',
         gbd_id=covid(842),
         group='Experimental',
@@ -3312,7 +3312,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=True,
     ),
-    education_age_standardized=Covariate(
+    'education_age_standardized': Covariate(
         name='education_age_standardized',
         gbd_id=covid(845),
         group='Education',
@@ -3321,7 +3321,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    meningitis_belt_proportion=Covariate(
+    'meningitis_belt_proportion': Covariate(
         name='meningitis_belt_proportion',
         gbd_id=covid(848),
         group='Experimental',
@@ -3330,7 +3330,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    gdp_per_capita_base_2010=Covariate(
+    'gdp_per_capita_base_2010': Covariate(
         name='gdp_per_capita_base_2010',
         gbd_id=covid(851),
         group='Experimental',
@@ -3339,7 +3339,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    urbanicity=Covariate(
+    'urbanicity': Covariate(
         name='urbanicity',
         gbd_id=covid(854),
         group='Experimental',
@@ -3348,7 +3348,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    sev_unsafe_water=Covariate(
+    'sev_unsafe_water': Covariate(
         name='sev_unsafe_water',
         gbd_id=covid(863),
         group='Experimental',
@@ -3357,7 +3357,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    sev_unsafe_sanitation=Covariate(
+    'sev_unsafe_sanitation': Covariate(
         name='sev_unsafe_sanitation',
         gbd_id=covid(866),
         group='Experimental',
@@ -3366,7 +3366,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    malaria_incidence_from_map_estimates_africa=Covariate(
+    'malaria_incidence_from_map_estimates_africa': Covariate(
         name='malaria_incidence_from_map_estimates_africa',
         gbd_id=covid(869),
         group='Experimental',
@@ -3375,7 +3375,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    dengue_reporting_trends_transformed_into_relative_risks_relative_to_that_countrys_mean_incidence=Covariate(
+    'dengue_reporting_trends_transformed_into_relative_risks_relative_to_that_countrys_mean_incidence': Covariate(
         name='dengue_reporting_trends_transformed_into_relative_risks_relative_to_that_countrys_mean_incidence',
         gbd_id=covid(872),
         group='Experimental',
@@ -3384,7 +3384,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    echinococcosis_endemicity=Covariate(
+    'echinococcosis_endemicity': Covariate(
         name='echinococcosis_endemicity',
         gbd_id=covid(875),
         group='Experimental',
@@ -3393,7 +3393,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    socio_demographic_index=Covariate(
+    'socio_demographic_index': Covariate(
         name='socio_demographic_index',
         gbd_id=covid(881),
         group='Experimental',
@@ -3402,7 +3402,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    japanese_encelphalitis_endemic_area_binary=Covariate(
+    'japanese_encelphalitis_endemic_area_binary': Covariate(
         name='japanese_encelphalitis_endemic_area_binary',
         gbd_id=covid(884),
         group='Experimental',
@@ -3411,7 +3411,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=True,
     ),
-    calcium_adjusted_g=Covariate(
+    'calcium_adjusted_g': Covariate(
         name='calcium_adjusted_g',
         gbd_id=covid(887),
         group='Experimental',
@@ -3420,7 +3420,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    calcium_unadjusted_g=Covariate(
+    'calcium_unadjusted_g': Covariate(
         name='calcium_unadjusted_g',
         gbd_id=covid(890),
         group='Experimental',
@@ -3429,7 +3429,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    fiber_adjusted_g=Covariate(
+    'fiber_adjusted_g': Covariate(
         name='fiber_adjusted_g',
         gbd_id=covid(899),
         group='Experimental',
@@ -3438,7 +3438,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    fiber_unadjusted_g=Covariate(
+    'fiber_unadjusted_g': Covariate(
         name='fiber_unadjusted_g',
         gbd_id=covid(902),
         group='Experimental',
@@ -3447,7 +3447,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    omega_3_adjusted_g=Covariate(
+    'omega_3_adjusted_g': Covariate(
         name='omega_3_adjusted_g',
         gbd_id=covid(905),
         group='Experimental',
@@ -3456,7 +3456,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    fruits_adjusted_g=Covariate(
+    'fruits_adjusted_g': Covariate(
         name='fruits_adjusted_g',
         gbd_id=covid(911),
         group='Experimental',
@@ -3465,7 +3465,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    fruits_unadjusted_g=Covariate(
+    'fruits_unadjusted_g': Covariate(
         name='fruits_unadjusted_g',
         gbd_id=covid(914),
         group='Experimental',
@@ -3474,7 +3474,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    milk_adjusted_g=Covariate(
+    'milk_adjusted_g': Covariate(
         name='milk_adjusted_g',
         gbd_id=covid(917),
         group='Experimental',
@@ -3483,7 +3483,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    milk_unadjusted_g=Covariate(
+    'milk_unadjusted_g': Covariate(
         name='milk_unadjusted_g',
         gbd_id=covid(920),
         group='Experimental',
@@ -3492,7 +3492,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    nuts_seeds_adjusted_g=Covariate(
+    'nuts_seeds_adjusted_g': Covariate(
         name='nuts_seeds_adjusted_g',
         gbd_id=covid(923),
         group='Experimental',
@@ -3501,7 +3501,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    pufa_adjusted_percent=Covariate(
+    'pufa_adjusted_percent': Covariate(
         name='pufa_adjusted_percent',
         gbd_id=covid(929),
         group='Experimental',
@@ -3510,7 +3510,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    pulses_legumes_adjusted_g=Covariate(
+    'pulses_legumes_adjusted_g': Covariate(
         name='pulses_legumes_adjusted_g',
         gbd_id=covid(932),
         group='Experimental',
@@ -3519,7 +3519,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    red_meats_adjusted_g=Covariate(
+    'red_meats_adjusted_g': Covariate(
         name='red_meats_adjusted_g',
         gbd_id=covid(938),
         group='Experimental',
@@ -3528,7 +3528,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    red_meats_unadjusted_g=Covariate(
+    'red_meats_unadjusted_g': Covariate(
         name='red_meats_unadjusted_g',
         gbd_id=covid(941),
         group='Experimental',
@@ -3537,7 +3537,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    saturated_fats_adjusted_percent=Covariate(
+    'saturated_fats_adjusted_percent': Covariate(
         name='saturated_fats_adjusted_percent',
         gbd_id=covid(950),
         group='Experimental',
@@ -3546,7 +3546,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    sugar_adjusted_g=Covariate(
+    'sugar_adjusted_g': Covariate(
         name='sugar_adjusted_g',
         gbd_id=covid(959),
         group='Experimental',
@@ -3555,7 +3555,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    sugar_unadjusted_g=Covariate(
+    'sugar_unadjusted_g': Covariate(
         name='sugar_unadjusted_g',
         gbd_id=covid(962),
         group='Experimental',
@@ -3564,7 +3564,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    vegetables_adjusted_g=Covariate(
+    'vegetables_adjusted_g': Covariate(
         name='vegetables_adjusted_g',
         gbd_id=covid(965),
         group='Experimental',
@@ -3573,7 +3573,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    vegetables_unadjusted_g=Covariate(
+    'vegetables_unadjusted_g': Covariate(
         name='vegetables_unadjusted_g',
         gbd_id=covid(968),
         group='Experimental',
@@ -3582,7 +3582,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    energy_unadjusted_kcal=Covariate(
+    'energy_unadjusted_kcal': Covariate(
         name='energy_unadjusted_kcal',
         gbd_id=covid(977),
         group='Experimental',
@@ -3591,7 +3591,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    interaction_of_prevalence_weighted_drug_resistance_and_malaria_incidence=Covariate(
+    'interaction_of_prevalence_weighted_drug_resistance_and_malaria_incidence': Covariate(
         name='interaction_of_prevalence_weighted_drug_resistance_and_malaria_incidence',
         gbd_id=covid(980),
         group='Experimental',
@@ -3600,7 +3600,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    migration_rate_per_1000_population=Covariate(
+    'migration_rate_per_1000_population': Covariate(
         name='migration_rate_per_1000_population',
         gbd_id=covid(983),
         group='Experimental',
@@ -3609,7 +3609,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    hiv_mortality_females_10_54=Covariate(
+    'hiv_mortality_females_10_54': Covariate(
         name='hiv_mortality_females_10_54',
         gbd_id=covid(986),
         group='Experimental',
@@ -3618,7 +3618,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    hiv_age_standardized_prevalence=Covariate(
+    'hiv_age_standardized_prevalence': Covariate(
         name='hiv_age_standardized_prevalence',
         gbd_id=covid(1016),
         group='Experimental',
@@ -3627,7 +3627,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_maternal=Covariate(
+    'log_transformed_age_standardized_sev_scalar_maternal': Covariate(
         name='log_transformed_age_standardized_sev_scalar_maternal',
         gbd_id=covid(1019),
         group='SEV',
@@ -3636,7 +3636,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_cvd=Covariate(
+    'log_transformed_age_standardized_sev_scalar_cvd': Covariate(
         name='log_transformed_age_standardized_sev_scalar_cvd',
         gbd_id=covid(1022),
         group='SEV',
@@ -3645,7 +3645,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_chr_resp=Covariate(
+    'log_transformed_age_standardized_sev_scalar_chr_resp': Covariate(
         name='log_transformed_age_standardized_sev_scalar_chr_resp',
         gbd_id=covid(1025),
         group='SEV',
@@ -3654,7 +3654,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_cirrhosis=Covariate(
+    'log_transformed_age_standardized_sev_scalar_cirrhosis': Covariate(
         name='log_transformed_age_standardized_sev_scalar_cirrhosis',
         gbd_id=covid(1028),
         group='SEV',
@@ -3663,7 +3663,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_digestive=Covariate(
+    'log_transformed_age_standardized_sev_scalar_digestive': Covariate(
         name='log_transformed_age_standardized_sev_scalar_digestive',
         gbd_id=covid(1031),
         group='SEV',
@@ -3672,7 +3672,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_msk=Covariate(
+    'log_transformed_age_standardized_sev_scalar_msk': Covariate(
         name='log_transformed_age_standardized_sev_scalar_msk',
         gbd_id=covid(1034),
         group='SEV',
@@ -3681,7 +3681,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_trans_inj=Covariate(
+    'log_transformed_age_standardized_sev_scalar_trans_inj': Covariate(
         name='log_transformed_age_standardized_sev_scalar_trans_inj',
         gbd_id=covid(1037),
         group='SEV',
@@ -3690,7 +3690,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_maternal=Covariate(
+    'log_transformed_sev_scalar_maternal': Covariate(
         name='log_transformed_sev_scalar_maternal',
         gbd_id=covid(1040),
         group='SEV',
@@ -3699,7 +3699,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_cvd=Covariate(
+    'log_transformed_sev_scalar_cvd': Covariate(
         name='log_transformed_sev_scalar_cvd',
         gbd_id=covid(1043),
         group='SEV',
@@ -3708,7 +3708,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_chr_resp=Covariate(
+    'log_transformed_sev_scalar_chr_resp': Covariate(
         name='log_transformed_sev_scalar_chr_resp',
         gbd_id=covid(1046),
         group='SEV',
@@ -3717,7 +3717,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_cirrhosis=Covariate(
+    'log_transformed_sev_scalar_cirrhosis': Covariate(
         name='log_transformed_sev_scalar_cirrhosis',
         gbd_id=covid(1049),
         group='SEV',
@@ -3726,7 +3726,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_digestive=Covariate(
+    'log_transformed_sev_scalar_digestive': Covariate(
         name='log_transformed_sev_scalar_digestive',
         gbd_id=covid(1052),
         group='SEV',
@@ -3735,7 +3735,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_msk=Covariate(
+    'log_transformed_sev_scalar_msk': Covariate(
         name='log_transformed_sev_scalar_msk',
         gbd_id=covid(1055),
         group='SEV',
@@ -3744,7 +3744,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_trans_inj=Covariate(
+    'log_transformed_sev_scalar_trans_inj': Covariate(
         name='log_transformed_sev_scalar_trans_inj',
         gbd_id=covid(1058),
         group='SEV',
@@ -3753,7 +3753,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    proportion_of_total_population_in_japanese_encephalitis_endemic_area_india=Covariate(
+    'proportion_of_total_population_in_japanese_encephalitis_endemic_area_india': Covariate(
         name='proportion_of_total_population_in_japanese_encephalitis_endemic_area_india',
         gbd_id=covid(1061),
         group='Experimental',
@@ -3762,7 +3762,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    vitamin_a_unadjusted_iu=Covariate(
+    'vitamin_a_unadjusted_iu': Covariate(
         name='vitamin_a_unadjusted_iu',
         gbd_id=covid(1062),
         group='Experimental',
@@ -3771,7 +3771,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    vitamin_a_rae_unadjusted_ug=Covariate(
+    'vitamin_a_rae_unadjusted_ug': Covariate(
         name='vitamin_a_rae_unadjusted_ug',
         gbd_id=covid(1063),
         group='Experimental',
@@ -3780,7 +3780,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    vitamin_a_retinol_unadjusted_ug=Covariate(
+    'vitamin_a_retinol_unadjusted_ug': Covariate(
         name='vitamin_a_retinol_unadjusted_ug',
         gbd_id=covid(1064),
         group='Experimental',
@@ -3789,7 +3789,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    dietary_zinc_unadjusted_mg=Covariate(
+    'dietary_zinc_unadjusted_mg': Covariate(
         name='dietary_zinc_unadjusted_mg',
         gbd_id=covid(1065),
         group='Experimental',
@@ -3798,7 +3798,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    death_and_ncc_prevalence_ratio=Covariate(
+    'death_and_ncc_prevalence_ratio': Covariate(
         name='death_and_ncc_prevalence_ratio',
         gbd_id=covid(1066),
         group='Experimental',
@@ -3807,7 +3807,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    proportion_of_total_population_covered_by_menafrivac_initiative_meningitis_meningococcal_type_a_vaccine=Covariate(
+    'proportion_of_total_population_covered_by_menafrivac_initiative_meningitis_meningococcal_type_a_vaccine': Covariate(
         name='proportion_of_total_population_covered_by_menafrivac_initiative_meningitis_meningococcal_type_a_vaccine',
         gbd_id=covid(1068),
         group='Experimental',
@@ -3816,7 +3816,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    stunting_proportion_less_than_2sd_height_for_age_less_than_5_years=Covariate(
+    'stunting_proportion_less_than_2sd_height_for_age_less_than_5_years': Covariate(
         name='stunting_proportion_less_than_2sd_height_for_age_less_than_5_years',
         gbd_id=covid(1069),
         group='Malnutrition',
@@ -3825,7 +3825,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    wasting_proportion_less_than_2sd_weight_for_height_less_than_5_years=Covariate(
+    'wasting_proportion_less_than_2sd_weight_for_height_less_than_5_years': Covariate(
         name='wasting_proportion_less_than_2sd_weight_for_height_less_than_5_years',
         gbd_id=covid(1070),
         group='Malnutrition',
@@ -3834,7 +3834,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    malaria_incidence_adjusted_for_antimalarial_coverage_and_drug_effectiveness=Covariate(
+    'malaria_incidence_adjusted_for_antimalarial_coverage_and_drug_effectiveness': Covariate(
         name='malaria_incidence_adjusted_for_antimalarial_coverage_and_drug_effectiveness',
         gbd_id=covid(1072),
         group='Experimental',
@@ -3843,7 +3843,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    hepatitis_b_hbsag_seroprevalence=Covariate(
+    'hepatitis_b_hbsag_seroprevalence': Covariate(
         name='hepatitis_b_hbsag_seroprevalence',
         gbd_id=covid(1073),
         group='Experimental',
@@ -3852,7 +3852,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    hepatitis_c_igg_seroprevalence=Covariate(
+    'hepatitis_c_igg_seroprevalence': Covariate(
         name='hepatitis_c_igg_seroprevalence',
         gbd_id=covid(1074),
         group='Experimental',
@@ -3861,7 +3861,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    rotavirus_coverage_proportion=Covariate(
+    'rotavirus_coverage_proportion': Covariate(
         name='rotavirus_coverage_proportion',
         gbd_id=covid(1075),
         group='Experimental',
@@ -3870,7 +3870,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    proportion_of_cirrhosis_due_to_alcohol=Covariate(
+    'proportion_of_cirrhosis_due_to_alcohol': Covariate(
         name='proportion_of_cirrhosis_due_to_alcohol',
         gbd_id=covid(1076),
         group='Experimental',
@@ -3879,7 +3879,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    proportion_of_cirrhosis_due_to_hepatitis_b=Covariate(
+    'proportion_of_cirrhosis_due_to_hepatitis_b': Covariate(
         name='proportion_of_cirrhosis_due_to_hepatitis_b',
         gbd_id=covid(1077),
         group='Experimental',
@@ -3888,7 +3888,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    proportion_of_cirrhosis_due_to_hepatitis_c=Covariate(
+    'proportion_of_cirrhosis_due_to_hepatitis_c': Covariate(
         name='proportion_of_cirrhosis_due_to_hepatitis_c',
         gbd_id=covid(1078),
         group='Experimental',
@@ -3897,7 +3897,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    proportion_of_cirrhosis_due_to_other_causes=Covariate(
+    'proportion_of_cirrhosis_due_to_other_causes': Covariate(
         name='proportion_of_cirrhosis_due_to_other_causes',
         gbd_id=covid(1079),
         group='Experimental',
@@ -3906,7 +3906,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    proportion_of_liver_cancer_due_to_alcohol_age_standardized=Covariate(
+    'proportion_of_liver_cancer_due_to_alcohol_age_standardized': Covariate(
         name='proportion_of_liver_cancer_due_to_alcohol_age_standardized',
         gbd_id=covid(1080),
         group='Experimental',
@@ -3915,7 +3915,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    proportion_of_liver_cancer_due_to_hepatitis_b_age_standardized=Covariate(
+    'proportion_of_liver_cancer_due_to_hepatitis_b_age_standardized': Covariate(
         name='proportion_of_liver_cancer_due_to_hepatitis_b_age_standardized',
         gbd_id=covid(1081),
         group='Experimental',
@@ -3924,7 +3924,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    proportion_of_liver_cancer_due_to_hepatitis_c_age_standardized=Covariate(
+    'proportion_of_liver_cancer_due_to_hepatitis_c_age_standardized': Covariate(
         name='proportion_of_liver_cancer_due_to_hepatitis_c_age_standardized',
         gbd_id=covid(1082),
         group='Experimental',
@@ -3933,7 +3933,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    proportion_of_liver_cancer_due_to_other_causes_age_standardized=Covariate(
+    'proportion_of_liver_cancer_due_to_other_causes_age_standardized': Covariate(
         name='proportion_of_liver_cancer_due_to_other_causes_age_standardized',
         gbd_id=covid(1083),
         group='Experimental',
@@ -3942,7 +3942,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    seroprevalence_of_anti_hav_igg=Covariate(
+    'seroprevalence_of_anti_hav_igg': Covariate(
         name='seroprevalence_of_anti_hav_igg',
         gbd_id=covid(1084),
         group='Experimental',
@@ -3951,7 +3951,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    seroprevalence_of_anti_hev_igg=Covariate(
+    'seroprevalence_of_anti_hev_igg': Covariate(
         name='seroprevalence_of_anti_hev_igg',
         gbd_id=covid(1085),
         group='Experimental',
@@ -3960,7 +3960,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    major_depressive_disorder=Covariate(
+    'major_depressive_disorder': Covariate(
         name='major_depressive_disorder',
         gbd_id=covid(1086),
         group='Experimental',
@@ -3969,7 +3969,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    proportion_of_population_involved_in_agricultural_activities=Covariate(
+    'proportion_of_population_involved_in_agricultural_activities': Covariate(
         name='proportion_of_population_involved_in_agricultural_activities',
         gbd_id=covid(1087),
         group='Experimental',
@@ -3978,7 +3978,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    oop_health_expenditure_per_capita=Covariate(
+    'oop_health_expenditure_per_capita': Covariate(
         name='oop_health_expenditure_per_capita',
         gbd_id=covid(1092),
         group='Experimental',
@@ -3987,7 +3987,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    fraction_of_oop_health_expenditure=Covariate(
+    'fraction_of_oop_health_expenditure': Covariate(
         name='fraction_of_oop_health_expenditure',
         gbd_id=covid(1093),
         group='Experimental',
@@ -3996,7 +3996,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    art_coverage=Covariate(
+    'art_coverage': Covariate(
         name='art_coverage',
         gbd_id=covid(1095),
         group='HIV/AIDS',
@@ -4005,7 +4005,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    tuberculosis_case_detection=Covariate(
+    'tuberculosis_case_detection': Covariate(
         name='tuberculosis_case_detection',
         gbd_id=covid(1096),
         group='Tuberculosis',
@@ -4014,7 +4014,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    universal_health_coverage=Covariate(
+    'universal_health_coverage': Covariate(
         name='universal_health_coverage',
         gbd_id=covid(1097),
         group='SDGs',
@@ -4023,7 +4023,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    maternal_alcohol_consumption_during_pregnancy_proportion=Covariate(
+    'maternal_alcohol_consumption_during_pregnancy_proportion': Covariate(
         name='maternal_alcohol_consumption_during_pregnancy_proportion',
         gbd_id=covid(1098),
         group='Experimental',
@@ -4032,7 +4032,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    healthcare_access_and_quality_index=Covariate(
+    'healthcare_access_and_quality_index': Covariate(
         name='healthcare_access_and_quality_index',
         gbd_id=covid(1099),
         group='Experimental',
@@ -4041,7 +4041,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    age_standardized_proportion_adult_underweight=Covariate(
+    'age_standardized_proportion_adult_underweight': Covariate(
         name='age_standardized_proportion_adult_underweight',
         gbd_id=covid(1100),
         group='BMI',
@@ -4050,7 +4050,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    ors_oral_rehydration=Covariate(
+    'ors_oral_rehydration': Covariate(
         name='ors_oral_rehydration',
         gbd_id=covid(1102),
         group='Treatment',
@@ -4059,7 +4059,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    antibiotics_for_lri=Covariate(
+    'antibiotics_for_lri': Covariate(
         name='antibiotics_for_lri',
         gbd_id=covid(1103),
         group='Treatment',
@@ -4068,7 +4068,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    live_births_by_sex=Covariate(
+    'live_births_by_sex': Covariate(
         name='live_births_by_sex',
         gbd_id=covid(1106),
         group='Births',
@@ -4077,7 +4077,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    age_standardized_melanoma=Covariate(
+    'age_standardized_melanoma': Covariate(
         name='age_standardized_melanoma',
         gbd_id=covid(1107),
         group='Cancer',
@@ -4086,7 +4086,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    measles_vaccine_coverage_2_doses_proportion=Covariate(
+    'measles_vaccine_coverage_2_doses_proportion': Covariate(
         name='measles_vaccine_coverage_2_doses_proportion',
         gbd_id=covid(1108),
         group='Coverage',
@@ -4095,7 +4095,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    schisto_cumulative_treatments=Covariate(
+    'schisto_cumulative_treatments': Covariate(
         name='schisto_cumulative_treatments',
         gbd_id=covid(1110),
         group='Treatment',
@@ -4104,7 +4104,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    health_worker_density=Covariate(
+    'health_worker_density': Covariate(
         name='health_worker_density',
         gbd_id=covid(1111),
         group='Health System',
@@ -4113,7 +4113,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    iron_energy_unadjusted_mg=Covariate(
+    'iron_energy_unadjusted_mg': Covariate(
         name='iron_energy_unadjusted_mg',
         gbd_id=covid(1113),
         group='Diet',
@@ -4122,7 +4122,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    poultry_energy_adjusted_g=Covariate(
+    'poultry_energy_adjusted_g': Covariate(
         name='poultry_energy_adjusted_g',
         gbd_id=covid(1122),
         group='Diet',
@@ -4131,7 +4131,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    poultry_energy_unadjusted_g=Covariate(
+    'poultry_energy_unadjusted_g': Covariate(
         name='poultry_energy_unadjusted_g',
         gbd_id=covid(1123),
         group='Diet',
@@ -4140,7 +4140,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    malaria_pfpr_map=Covariate(
+    'malaria_pfpr_map': Covariate(
         name='malaria_pfpr_map',
         gbd_id=covid(1129),
         group='Malaria',
@@ -4149,7 +4149,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    malaria_incidence_map=Covariate(
+    'malaria_incidence_map': Covariate(
         name='malaria_incidence_map',
         gbd_id=covid(1130),
         group='Malaria',
@@ -4158,7 +4158,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    antimalarial_effective_treatment_ratio_map=Covariate(
+    'antimalarial_effective_treatment_ratio_map': Covariate(
         name='antimalarial_effective_treatment_ratio_map',
         gbd_id=covid(1131),
         group='Malaria',
@@ -4167,7 +4167,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    antimalarial_effective_treatment_map=Covariate(
+    'antimalarial_effective_treatment_map': Covariate(
         name='antimalarial_effective_treatment_map',
         gbd_id=covid(1132),
         group='Malaria',
@@ -4176,7 +4176,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    mean_birth_weight=Covariate(
+    'mean_birth_weight': Covariate(
         name='mean_birth_weight',
         gbd_id=covid(1136),
         group='Experimental',
@@ -4185,7 +4185,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    mean_hemoglobin_concentration_age_standardized=Covariate(
+    'mean_hemoglobin_concentration_age_standardized': Covariate(
         name='mean_hemoglobin_concentration_age_standardized',
         gbd_id=covid(1140),
         group='Experimental',
@@ -4194,7 +4194,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    age_standardized_prevalence_of_cocaine_dependence_in_women_of_reproductive_age=Covariate(
+    'age_standardized_prevalence_of_cocaine_dependence_in_women_of_reproductive_age': Covariate(
         name='age_standardized_prevalence_of_cocaine_dependence_in_women_of_reproductive_age',
         gbd_id=covid(1142),
         group='Experimental',
@@ -4203,7 +4203,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    age_standardized_prevalence_of_amphetamine_dependence_in_women_of_reproductive_age=Covariate(
+    'age_standardized_prevalence_of_amphetamine_dependence_in_women_of_reproductive_age': Covariate(
         name='age_standardized_prevalence_of_amphetamine_dependence_in_women_of_reproductive_age',
         gbd_id=covid(1143),
         group='Experimental',
@@ -4212,7 +4212,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    age_standardized_prevalence_of_opioid_dependence_in_women_of_reproductive_age=Covariate(
+    'age_standardized_prevalence_of_opioid_dependence_in_women_of_reproductive_age': Covariate(
         name='age_standardized_prevalence_of_opioid_dependence_in_women_of_reproductive_age',
         gbd_id=covid(1144),
         group='Experimental',
@@ -4221,7 +4221,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    age_standardized_prevalence_of_cannabis_dependence_in_women_of_reproductive_age=Covariate(
+    'age_standardized_prevalence_of_cannabis_dependence_in_women_of_reproductive_age': Covariate(
         name='age_standardized_prevalence_of_cannabis_dependence_in_women_of_reproductive_age',
         gbd_id=covid(1145),
         group='Experimental',
@@ -4230,7 +4230,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    age_standardized_prevalence_of_total_drug_dependence_in_women_of_reproductive_age=Covariate(
+    'age_standardized_prevalence_of_total_drug_dependence_in_women_of_reproductive_age': Covariate(
         name='age_standardized_prevalence_of_total_drug_dependence_in_women_of_reproductive_age',
         gbd_id=covid(1146),
         group='Experimental',
@@ -4239,7 +4239,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    rubella_vaccine_coverage_proportion=Covariate(
+    'rubella_vaccine_coverage_proportion': Covariate(
         name='rubella_vaccine_coverage_proportion',
         gbd_id=covid(1147),
         group='Coverage',
@@ -4248,7 +4248,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    tuberculosis_infection_risk_weighted_prevalence_age_standardized=Covariate(
+    'tuberculosis_infection_risk_weighted_prevalence_age_standardized': Covariate(
         name='tuberculosis_infection_risk_weighted_prevalence_age_standardized',
         gbd_id=covid(1148),
         group='Tuberculosis',
@@ -4257,7 +4257,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    presenting_vision_impairment=Covariate(
+    'presenting_vision_impairment': Covariate(
         name='presenting_vision_impairment',
         gbd_id=covid(1149),
         group='Vision',
@@ -4266,7 +4266,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    ten_year_lag_distributed_energy_per_capita=Covariate(
+    'ten_year_lag_distributed_energy_per_capita': Covariate(
         name='ten_year_lag_distributed_energy_per_capita',
         gbd_id=covid(1150),
         group='FAO',
@@ -4275,7 +4275,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    folic_acid_unadjusted_ug=Covariate(
+    'folic_acid_unadjusted_ug': Covariate(
         name='folic_acid_unadjusted_ug',
         gbd_id=covid(1153),
         group='Diet',
@@ -4284,7 +4284,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    smooth_outphase_of_leaded_gasoline=Covariate(
+    'smooth_outphase_of_leaded_gasoline': Covariate(
         name='smooth_outphase_of_leaded_gasoline',
         gbd_id=covid(1154),
         group='Experimental',
@@ -4293,7 +4293,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    no_access_to_handwashing_facility=Covariate(
+    'no_access_to_handwashing_facility': Covariate(
         name='no_access_to_handwashing_facility',
         gbd_id=covid(1155),
         group='Handwashing',
@@ -4302,7 +4302,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    residential_radon=Covariate(
+    'residential_radon': Covariate(
         name='residential_radon',
         gbd_id=covid(1156),
         group='Experimental',
@@ -4311,7 +4311,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    lead_exposure=Covariate(
+    'lead_exposure': Covariate(
         name='lead_exposure',
         gbd_id=covid(1157),
         group='Experimental',
@@ -4320,7 +4320,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    discontinued_breastfeeding_sev=Covariate(
+    'discontinued_breastfeeding_sev': Covariate(
         name='discontinued_breastfeeding_sev',
         gbd_id=covid(1158),
         group='Experimental',
@@ -4329,7 +4329,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    zinc_deficiency=Covariate(
+    'zinc_deficiency': Covariate(
         name='zinc_deficiency',
         gbd_id=covid(1159),
         group='Experimental',
@@ -4338,7 +4338,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    diet_high_in_trans_fatty_acids=Covariate(
+    'diet_high_in_trans_fatty_acids': Covariate(
         name='diet_high_in_trans_fatty_acids',
         gbd_id=covid(1162),
         group='Experimental',
@@ -4347,7 +4347,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    diet_high_in_sodium=Covariate(
+    'diet_high_in_sodium': Covariate(
         name='diet_high_in_sodium',
         gbd_id=covid(1163),
         group='Experimental',
@@ -4356,7 +4356,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    tuberculosis_prevalence_age_standardized=Covariate(
+    'tuberculosis_prevalence_age_standardized': Covariate(
         name='tuberculosis_prevalence_age_standardized',
         gbd_id=covid(1165),
         group='Tuberculosis',
@@ -4365,7 +4365,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    low_bone_mineral_density=Covariate(
+    'low_bone_mineral_density': Covariate(
         name='low_bone_mineral_density',
         gbd_id=covid(1166),
         group='Experimental',
@@ -4374,7 +4374,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    age_standardized_bone_mineral_density_among_population_age_60_and_up_years=Covariate(
+    'age_standardized_bone_mineral_density_among_population_age_60_and_up_years': Covariate(
         name='age_standardized_bone_mineral_density_among_population_age_60_and_up_years',
         gbd_id=covid(1168),
         group='Experimental',
@@ -4383,7 +4383,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    malnutrition_shock_log_transformed_mortality_rate=Covariate(
+    'malnutrition_shock_log_transformed_mortality_rate': Covariate(
         name='malnutrition_shock_log_transformed_mortality_rate',
         gbd_id=covid(1169),
         group='Malnutrition',
@@ -4392,7 +4392,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    malnutrition_shock_mortality_rate=Covariate(
+    'malnutrition_shock_mortality_rate': Covariate(
         name='malnutrition_shock_mortality_rate',
         gbd_id=covid(1170),
         group='Malnutrition',
@@ -4401,7 +4401,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    mean_war_mortality_rate_in_the_previous_ten_years=Covariate(
+    'mean_war_mortality_rate_in_the_previous_ten_years': Covariate(
         name='mean_war_mortality_rate_in_the_previous_ten_years',
         gbd_id=covid(1171),
         group='War',
@@ -4410,7 +4410,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    shock_log_transformed_mortality_rate=Covariate(
+    'shock_log_transformed_mortality_rate': Covariate(
         name='shock_log_transformed_mortality_rate',
         gbd_id=covid(1172),
         group='Shocks',
@@ -4419,7 +4419,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    shock_mortality_rate=Covariate(
+    'shock_mortality_rate': Covariate(
         name='shock_mortality_rate',
         gbd_id=covid(1173),
         group='Shocks',
@@ -4428,7 +4428,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    disaster_log_transformed_mortality_rate=Covariate(
+    'disaster_log_transformed_mortality_rate': Covariate(
         name='disaster_log_transformed_mortality_rate',
         gbd_id=covid(1174),
         group='Disasters',
@@ -4437,7 +4437,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    disaster_mortality_rate=Covariate(
+    'disaster_mortality_rate': Covariate(
         name='disaster_mortality_rate',
         gbd_id=covid(1175),
         group='Disasters',
@@ -4446,7 +4446,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    war_log_transformed_mortality_rate=Covariate(
+    'war_log_transformed_mortality_rate': Covariate(
         name='war_log_transformed_mortality_rate',
         gbd_id=covid(1178),
         group='War',
@@ -4455,7 +4455,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    alcohol_abstainer_proportion_age_standardized=Covariate(
+    'alcohol_abstainer_proportion_age_standardized': Covariate(
         name='alcohol_abstainer_proportion_age_standardized',
         gbd_id=covid(1181),
         group='Alcohol',
@@ -4464,7 +4464,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_for_both_sexes_combined_tb=Covariate(
+    'log_transformed_age_standardized_sev_scalar_for_both_sexes_combined_tb': Covariate(
         name='log_transformed_age_standardized_sev_scalar_for_both_sexes_combined_tb',
         gbd_id=covid(1182),
         group='SEV',
@@ -4473,7 +4473,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    secondhand_smoke=Covariate(
+    'secondhand_smoke': Covariate(
         name='secondhand_smoke',
         gbd_id=covid(1183),
         group='Smoking',
@@ -4482,7 +4482,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    asbestos_consumption_metric_tons_per_year_per_capita=Covariate(
+    'asbestos_consumption_metric_tons_per_year_per_capita': Covariate(
         name='asbestos_consumption_metric_tons_per_year_per_capita',
         gbd_id=covid(1185),
         group='Asbestos',
@@ -4491,7 +4491,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    visceral_leishmaniasis_incidence=Covariate(
+    'visceral_leishmaniasis_incidence': Covariate(
         name='visceral_leishmaniasis_incidence',
         gbd_id=covid(1186),
         group='Leishmaniasis',
@@ -4500,7 +4500,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    homicide_rate_sex_specific=Covariate(
+    'homicide_rate_sex_specific': Covariate(
         name='homicide_rate_sex_specific',
         gbd_id=covid(1187),
         group='Experimental',
@@ -4509,7 +4509,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    op_visits_per_cap=Covariate(
+    'op_visits_per_cap': Covariate(
         name='op_visits_per_cap',
         gbd_id=covid(1188),
         group='Experimental',
@@ -4518,7 +4518,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    ip_admissons_per_cap=Covariate(
+    'ip_admissons_per_cap': Covariate(
         name='ip_admissons_per_cap',
         gbd_id=covid(1189),
         group='Experimental',
@@ -4527,7 +4527,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    non_partner_lifetime_prevalence_of_sexual_violence_female_only=Covariate(
+    'non_partner_lifetime_prevalence_of_sexual_violence_female_only': Covariate(
         name='non_partner_lifetime_prevalence_of_sexual_violence_female_only',
         gbd_id=covid(1190),
         group='Experimental',
@@ -4536,7 +4536,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    all_age_underweight=Covariate(
+    'all_age_underweight': Covariate(
         name='all_age_underweight',
         gbd_id=covid(1191),
         group='BMI',
@@ -4545,7 +4545,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    zinc_treatment_for_diarrhea=Covariate(
+    'zinc_treatment_for_diarrhea': Covariate(
         name='zinc_treatment_for_diarrhea',
         gbd_id=covid(1193),
         group='Experimental',
@@ -4554,7 +4554,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    fortification_standard=Covariate(
+    'fortification_standard': Covariate(
         name='fortification_standard',
         gbd_id=covid(1194),
         group='Fortification',
@@ -4563,7 +4563,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=True,
     ),
-    fortification_standard_including_folic_acid=Covariate(
+    'fortification_standard_including_folic_acid': Covariate(
         name='fortification_standard_including_folic_acid',
         gbd_id=covid(1195),
         group='Fortification',
@@ -4572,7 +4572,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=True,
     ),
-    adult_hiv_crude_death_rate=Covariate(
+    'adult_hiv_crude_death_rate': Covariate(
         name='adult_hiv_crude_death_rate',
         gbd_id=covid(1196),
         group='HIV',
@@ -4581,7 +4581,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    demand_for_contraception_satisfied_with_modern_methods=Covariate(
+    'demand_for_contraception_satisfied_with_modern_methods': Covariate(
         name='demand_for_contraception_satisfied_with_modern_methods',
         gbd_id=covid(1197),
         group='Experimental',
@@ -4590,7 +4590,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    demand_for_contraception_satisfied_with_modern_methods_by_age=Covariate(
+    'demand_for_contraception_satisfied_with_modern_methods_by_age': Covariate(
         name='demand_for_contraception_satisfied_with_modern_methods_by_age',
         gbd_id=covid(1198),
         group='Experimental',
@@ -4599,7 +4599,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    long_term_population_weighted_mean_temperature=Covariate(
+    'long_term_population_weighted_mean_temperature': Covariate(
         name='long_term_population_weighted_mean_temperature',
         gbd_id=covid(1199),
         group='Experimental',
@@ -4608,7 +4608,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    polio_3_dose_coverage_proportion=Covariate(
+    'polio_3_dose_coverage_proportion': Covariate(
         name='polio_3_dose_coverage_proportion',
         gbd_id=covid(1200),
         group='Experimental',
@@ -4617,7 +4617,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    hepatitis_b_3_dose_coverage_proportion=Covariate(
+    'hepatitis_b_3_dose_coverage_proportion': Covariate(
         name='hepatitis_b_3_dose_coverage_proportion',
         gbd_id=covid(1201),
         group='Experimental',
@@ -4626,7 +4626,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    proportion_of_the_population_from_east_africa_india_central_asia=Covariate(
+    'proportion_of_the_population_from_east_africa_india_central_asia': Covariate(
         name='proportion_of_the_population_from_east_africa_india_central_asia',
         gbd_id=covid(1202),
         group='Experimental',
@@ -4635,7 +4635,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    proportion_of_the_population_from_west_africa=Covariate(
+    'proportion_of_the_population_from_west_africa': Covariate(
         name='proportion_of_the_population_from_west_africa',
         gbd_id=covid(1203),
         group='Experimental',
@@ -4644,7 +4644,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    proportion_of_the_population_from_euro_america=Covariate(
+    'proportion_of_the_population_from_euro_america': Covariate(
         name='proportion_of_the_population_from_euro_america',
         gbd_id=covid(1204),
         group='Experimental',
@@ -4653,7 +4653,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    proportion_of_the_population_from_east_asia=Covariate(
+    'proportion_of_the_population_from_east_asia': Covariate(
         name='proportion_of_the_population_from_east_asia',
         gbd_id=covid(1205),
         group='Experimental',
@@ -4662,7 +4662,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    proportion_of_the_population_from_indo_oceania=Covariate(
+    'proportion_of_the_population_from_indo_oceania': Covariate(
         name='proportion_of_the_population_from_indo_oceania',
         gbd_id=covid(1206),
         group='Experimental',
@@ -4671,7 +4671,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    composite_fortification_standard_and_folic_acid_inclusion=Covariate(
+    'composite_fortification_standard_and_folic_acid_inclusion': Covariate(
         name='composite_fortification_standard_and_folic_acid_inclusion',
         gbd_id=covid(1207),
         group='Fortification',
@@ -4680,7 +4680,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    intravenous_drug_use_proportion_by_age=Covariate(
+    'intravenous_drug_use_proportion_by_age': Covariate(
         name='intravenous_drug_use_proportion_by_age',
         gbd_id=covid(1208),
         group='Experimental',
@@ -4689,7 +4689,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    intravenous_drug_use_age_standardized_proportion=Covariate(
+    'intravenous_drug_use_age_standardized_proportion': Covariate(
         name='intravenous_drug_use_age_standardized_proportion',
         gbd_id=covid(1209),
         group='Experimental',
@@ -4698,7 +4698,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    hepatitis_a_infection_incidence=Covariate(
+    'hepatitis_a_infection_incidence': Covariate(
         name='hepatitis_a_infection_incidence',
         gbd_id=covid(1210),
         group='Experimental',
@@ -4707,7 +4707,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    alcohol_consumption_age_standardized_in_grams_per_day=Covariate(
+    'alcohol_consumption_age_standardized_in_grams_per_day': Covariate(
         name='alcohol_consumption_age_standardized_in_grams_per_day',
         gbd_id=covid(1211),
         group='Alcohol',
@@ -4716,7 +4716,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    alcohol_drinker_proportion_age_standardized=Covariate(
+    'alcohol_drinker_proportion_age_standardized': Covariate(
         name='alcohol_drinker_proportion_age_standardized',
         gbd_id=covid(1212),
         group='Alcohol',
@@ -4725,7 +4725,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    hepatitis_b_infection_incidence=Covariate(
+    'hepatitis_b_infection_incidence': Covariate(
         name='hepatitis_b_infection_incidence',
         gbd_id=covid(1213),
         group='Experimental',
@@ -4734,7 +4734,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    hepatitis_c_infection_incidence=Covariate(
+    'hepatitis_c_infection_incidence': Covariate(
         name='hepatitis_c_infection_incidence',
         gbd_id=covid(1214),
         group='Experimental',
@@ -4743,7 +4743,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    hepatitis_e_infection_incidence=Covariate(
+    'hepatitis_e_infection_incidence': Covariate(
         name='hepatitis_e_infection_incidence',
         gbd_id=covid(1215),
         group='Experimental',
@@ -4752,7 +4752,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    proportion_of_liver_cancer_due_to_nash_age_standardized=Covariate(
+    'proportion_of_liver_cancer_due_to_nash_age_standardized': Covariate(
         name='proportion_of_liver_cancer_due_to_nash_age_standardized',
         gbd_id=covid(1216),
         group='Experimental',
@@ -4761,7 +4761,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    proportion_of_cirrhosis_due_to_nash=Covariate(
+    'proportion_of_cirrhosis_due_to_nash': Covariate(
         name='proportion_of_cirrhosis_due_to_nash',
         gbd_id=covid(1217),
         group='Experimental',
@@ -4770,7 +4770,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    muslim_religion_proportion_of_population=Covariate(
+    'muslim_religion_proportion_of_population': Covariate(
         name='muslim_religion_proportion_of_population',
         gbd_id=covid(1218),
         group='Religion',
@@ -4779,7 +4779,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    tb_strain_prevalence_weighted_transmission_rr=Covariate(
+    'tb_strain_prevalence_weighted_transmission_rr': Covariate(
         name='tb_strain_prevalence_weighted_transmission_rr',
         gbd_id=covid(1222),
         group='Experimental',
@@ -4788,7 +4788,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    tb_strain_prevalence_weighted_treatment_failure_rr=Covariate(
+    'tb_strain_prevalence_weighted_treatment_failure_rr': Covariate(
         name='tb_strain_prevalence_weighted_treatment_failure_rr',
         gbd_id=covid(1223),
         group='Experimental',
@@ -4797,7 +4797,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    tb_strain_prevalence_weighted_treatment_delay_rr=Covariate(
+    'tb_strain_prevalence_weighted_treatment_delay_rr': Covariate(
         name='tb_strain_prevalence_weighted_treatment_delay_rr',
         gbd_id=covid(1224),
         group='Experimental',
@@ -4806,7 +4806,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    preterm_birth_prevalence_less_than_37_weeks_of_gestation=Covariate(
+    'preterm_birth_prevalence_less_than_37_weeks_of_gestation': Covariate(
         name='preterm_birth_prevalence_less_than_37_weeks_of_gestation',
         gbd_id=covid(1225),
         group='Experimental',
@@ -4815,7 +4815,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    extremely_preterm_birth_prevalence_less_than_28_weeks_of_gestation=Covariate(
+    'extremely_preterm_birth_prevalence_less_than_28_weeks_of_gestation': Covariate(
         name='extremely_preterm_birth_prevalence_less_than_28_weeks_of_gestation',
         gbd_id=covid(1226),
         group='Experimental',
@@ -4824,7 +4824,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    short_gestation_sev_all_ages_by_sex=Covariate(
+    'short_gestation_sev_all_ages_by_sex': Covariate(
         name='short_gestation_sev_all_ages_by_sex',
         gbd_id=covid(1227),
         group='Experimental',
@@ -4833,7 +4833,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    age_and_sex_specific_underweight_weight_for_age_sev=Covariate(
+    'age_and_sex_specific_underweight_weight_for_age_sev': Covariate(
         name='age_and_sex_specific_underweight_weight_for_age_sev',
         gbd_id=covid(1229),
         group='Experimental',
@@ -4842,7 +4842,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    age_standardized_underweight_weight_for_age_sev=Covariate(
+    'age_standardized_underweight_weight_for_age_sev': Covariate(
         name='age_standardized_underweight_weight_for_age_sev',
         gbd_id=covid(1230),
         group='Experimental',
@@ -4851,7 +4851,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    age_and_sex_specific_stunting_height_for_age_sev=Covariate(
+    'age_and_sex_specific_stunting_height_for_age_sev': Covariate(
         name='age_and_sex_specific_stunting_height_for_age_sev',
         gbd_id=covid(1231),
         group='Experimental',
@@ -4860,7 +4860,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    age_standardized_stunting_height_for_age_sev=Covariate(
+    'age_standardized_stunting_height_for_age_sev': Covariate(
         name='age_standardized_stunting_height_for_age_sev',
         gbd_id=covid(1232),
         group='Experimental',
@@ -4869,7 +4869,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    age_and_sex_specific_wasting_weight_for_height_sev=Covariate(
+    'age_and_sex_specific_wasting_weight_for_height_sev': Covariate(
         name='age_and_sex_specific_wasting_weight_for_height_sev',
         gbd_id=covid(1233),
         group='Experimental',
@@ -4878,7 +4878,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    age_standardized_wasting_weight_for_height_sev=Covariate(
+    'age_standardized_wasting_weight_for_height_sev': Covariate(
         name='age_standardized_wasting_weight_for_height_sev',
         gbd_id=covid(1234),
         group='Experimental',
@@ -4887,7 +4887,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    low_birth_weight_sev_all_ages_by_sex=Covariate(
+    'low_birth_weight_sev_all_ages_by_sex': Covariate(
         name='low_birth_weight_sev_all_ages_by_sex',
         gbd_id=covid(1235),
         group='Experimental',
@@ -4896,7 +4896,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    low_birth_weight_and_short_gestation_sev_all_ages_by_sex=Covariate(
+    'low_birth_weight_and_short_gestation_sev_all_ages_by_sex': Covariate(
         name='low_birth_weight_and_short_gestation_sev_all_ages_by_sex',
         gbd_id=covid(1236),
         group='Experimental',
@@ -4905,7 +4905,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    preeclampsia_incidence_ratio_all_ages=Covariate(
+    'preeclampsia_incidence_ratio_all_ages': Covariate(
         name='preeclampsia_incidence_ratio_all_ages',
         gbd_id=covid(1237),
         group='Experimental',
@@ -4914,7 +4914,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    abo_blood_type_mismatch_at_birth=Covariate(
+    'abo_blood_type_mismatch_at_birth': Covariate(
         name='abo_blood_type_mismatch_at_birth',
         gbd_id=covid(1238),
         group='Experimental',
@@ -4923,7 +4923,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    rhesus_blood_type_mismatch_at_birth=Covariate(
+    'rhesus_blood_type_mismatch_at_birth': Covariate(
         name='rhesus_blood_type_mismatch_at_birth',
         gbd_id=covid(1239),
         group='Experimental',
@@ -4932,7 +4932,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    adult_hiv_death_rate_both_sexes=Covariate(
+    'adult_hiv_death_rate_both_sexes': Covariate(
         name='adult_hiv_death_rate_both_sexes',
         gbd_id=covid(1240),
         group='Experimental',
@@ -4941,7 +4941,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    fortification_standard_including_iron=Covariate(
+    'fortification_standard_including_iron': Covariate(
         name='fortification_standard_including_iron',
         gbd_id=covid(1241),
         group='Fortification',
@@ -4950,7 +4950,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=True,
     ),
-    composite_fortification_standard_and_iron_inclusion=Covariate(
+    'composite_fortification_standard_and_iron_inclusion': Covariate(
         name='composite_fortification_standard_and_iron_inclusion',
         gbd_id=covid(1242),
         group='Fortification',
@@ -4959,7 +4959,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    pelvic_inflammatory_disease_age_standardized_prevalence=Covariate(
+    'pelvic_inflammatory_disease_age_standardized_prevalence': Covariate(
         name='pelvic_inflammatory_disease_age_standardized_prevalence',
         gbd_id=covid(1243),
         group='PID',
@@ -4968,7 +4968,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    pelvic_inflammatory_disease_all_age_prevalence=Covariate(
+    'pelvic_inflammatory_disease_all_age_prevalence': Covariate(
         name='pelvic_inflammatory_disease_all_age_prevalence',
         gbd_id=covid(1244),
         group='PID',
@@ -4977,7 +4977,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    nafld_nash_prevalence=Covariate(
+    'nafld_nash_prevalence': Covariate(
         name='nafld_nash_prevalence',
         gbd_id=covid(1245),
         group='Experimental',
@@ -4986,7 +4986,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    hepatitis_b_3_dose_coverage_proportion_lagged_5_years=Covariate(
+    'hepatitis_b_3_dose_coverage_proportion_lagged_5_years': Covariate(
         name='hepatitis_b_3_dose_coverage_proportion_lagged_5_years',
         gbd_id=covid(1246),
         group='Coverage',
@@ -4995,7 +4995,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    hepatitis_b_3_dose_coverage_proportion_lagged_ten_years=Covariate(
+    'hepatitis_b_3_dose_coverage_proportion_lagged_ten_years': Covariate(
         name='hepatitis_b_3_dose_coverage_proportion_lagged_ten_years',
         gbd_id=covid(1247),
         group='Coverage',
@@ -5004,7 +5004,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    interaction_between_sdi_and_2_and_up4_wheeled_vehicles_per_capita=Covariate(
+    'interaction_between_sdi_and_2_and_up4_wheeled_vehicles_per_capita': Covariate(
         name='interaction_between_sdi_and_2_and_up4_wheeled_vehicles_per_capita',
         gbd_id=covid(1248),
         group='Vehicles',
@@ -5013,7 +5013,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    age_standardized_death_rate_of_diabetes_0_15_years_per_100_000=Covariate(
+    'age_standardized_death_rate_of_diabetes_0_15_years_per_100_000': Covariate(
         name='age_standardized_death_rate_of_diabetes_0_15_years_per_100_000',
         gbd_id=covid(1249),
         group='Diabetes',
@@ -5022,7 +5022,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    alcohol_sev_age_and_sex_specific=Covariate(
+    'alcohol_sev_age_and_sex_specific': Covariate(
         name='alcohol_sev_age_and_sex_specific',
         gbd_id=covid(1250),
         group='Alcohol',
@@ -5031,7 +5031,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    alcohol_sev_age_standardized=Covariate(
+    'alcohol_sev_age_standardized': Covariate(
         name='alcohol_sev_age_standardized',
         gbd_id=covid(1251),
         group='Alcohol',
@@ -5040,7 +5040,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    underweight_women_of_reproductive_age=Covariate(
+    'underweight_women_of_reproductive_age': Covariate(
         name='underweight_women_of_reproductive_age',
         gbd_id=covid(1252),
         group='Experimental',
@@ -5049,7 +5049,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    underweight_women_age_specific=Covariate(
+    'underweight_women_age_specific': Covariate(
         name='underweight_women_age_specific',
         gbd_id=covid(1253),
         group='Experimental',
@@ -5058,7 +5058,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    underweight_men_age_specific=Covariate(
+    'underweight_men_age_specific': Covariate(
         name='underweight_men_age_specific',
         gbd_id=covid(1254),
         group='Experimental',
@@ -5067,7 +5067,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    opioids_per_million_population_per_day=Covariate(
+    'opioids_per_million_population_per_day': Covariate(
         name='opioids_per_million_population_per_day',
         gbd_id=covid(1255),
         group='Experimental',
@@ -5076,7 +5076,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    prevalence_of_mtbc_lineage_1_strains_proportion=Covariate(
+    'prevalence_of_mtbc_lineage_1_strains_proportion': Covariate(
         name='prevalence_of_mtbc_lineage_1_strains_proportion',
         gbd_id=covid(1256),
         group='Experimental',
@@ -5085,7 +5085,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    prevalence_of_mtbc_lineage_2_strains_proportion=Covariate(
+    'prevalence_of_mtbc_lineage_2_strains_proportion': Covariate(
         name='prevalence_of_mtbc_lineage_2_strains_proportion',
         gbd_id=covid(1257),
         group='Experimental',
@@ -5094,7 +5094,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    prevalence_of_mtbc_lineage_3_strains_proportion=Covariate(
+    'prevalence_of_mtbc_lineage_3_strains_proportion': Covariate(
         name='prevalence_of_mtbc_lineage_3_strains_proportion',
         gbd_id=covid(1258),
         group='Experimental',
@@ -5103,7 +5103,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    prevalence_of_mtbc_lineage_4_strains_proportion=Covariate(
+    'prevalence_of_mtbc_lineage_4_strains_proportion': Covariate(
         name='prevalence_of_mtbc_lineage_4_strains_proportion',
         gbd_id=covid(1259),
         group='Experimental',
@@ -5112,7 +5112,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    prevalence_of_maf_lineage_5_and_6_proportion=Covariate(
+    'prevalence_of_maf_lineage_5_and_6_proportion': Covariate(
         name='prevalence_of_maf_lineage_5_and_6_proportion',
         gbd_id=covid(1260),
         group='Experimental',
@@ -5121,7 +5121,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_tb_other=Covariate(
+    'log_transformed_sev_scalar_tb_other': Covariate(
         name='log_transformed_sev_scalar_tb_other',
         gbd_id=covid(1832),
         group='SEV',
@@ -5130,7 +5130,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_tb_mdr=Covariate(
+    'log_transformed_sev_scalar_tb_mdr': Covariate(
         name='log_transformed_sev_scalar_tb_mdr',
         gbd_id=covid(1833),
         group='SEV',
@@ -5139,7 +5139,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_hiv=Covariate(
+    'log_transformed_sev_scalar_hiv': Covariate(
         name='log_transformed_sev_scalar_hiv',
         gbd_id=covid(1835),
         group='SEV',
@@ -5148,7 +5148,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_hiv_tb_other=Covariate(
+    'log_transformed_sev_scalar_hiv_tb_other': Covariate(
         name='log_transformed_sev_scalar_hiv_tb_other',
         gbd_id=covid(1836),
         group='SEV',
@@ -5157,7 +5157,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_hiv_tb_mdr=Covariate(
+    'log_transformed_sev_scalar_hiv_tb_mdr': Covariate(
         name='log_transformed_sev_scalar_hiv_tb_mdr',
         gbd_id=covid(1837),
         group='SEV',
@@ -5166,7 +5166,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_meningitis_pneumo=Covariate(
+    'log_transformed_sev_scalar_meningitis_pneumo': Covariate(
         name='log_transformed_sev_scalar_meningitis_pneumo',
         gbd_id=covid(1839),
         group='SEV',
@@ -5175,7 +5175,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_meningitis_hib=Covariate(
+    'log_transformed_sev_scalar_meningitis_hib': Covariate(
         name='log_transformed_sev_scalar_meningitis_hib',
         gbd_id=covid(1840),
         group='SEV',
@@ -5184,7 +5184,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_meningitis_meningo=Covariate(
+    'log_transformed_sev_scalar_meningitis_meningo': Covariate(
         name='log_transformed_sev_scalar_meningitis_meningo',
         gbd_id=covid(1841),
         group='SEV',
@@ -5193,7 +5193,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_meningitis_other=Covariate(
+    'log_transformed_sev_scalar_meningitis_other': Covariate(
         name='log_transformed_sev_scalar_meningitis_other',
         gbd_id=covid(1842),
         group='SEV',
@@ -5202,7 +5202,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_encephalitis=Covariate(
+    'log_transformed_sev_scalar_encephalitis': Covariate(
         name='log_transformed_sev_scalar_encephalitis',
         gbd_id=covid(1843),
         group='SEV',
@@ -5211,7 +5211,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_neonatal_enceph=Covariate(
+    'log_transformed_sev_scalar_neonatal_enceph': Covariate(
         name='log_transformed_sev_scalar_neonatal_enceph',
         gbd_id=covid(1846),
         group='SEV',
@@ -5220,7 +5220,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_neonatal_sepsis=Covariate(
+    'log_transformed_sev_scalar_neonatal_sepsis': Covariate(
         name='log_transformed_sev_scalar_neonatal_sepsis',
         gbd_id=covid(1847),
         group='SEV',
@@ -5229,7 +5229,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_neonatal_hemolytic=Covariate(
+    'log_transformed_sev_scalar_neonatal_hemolytic': Covariate(
         name='log_transformed_sev_scalar_neonatal_hemolytic',
         gbd_id=covid(1848),
         group='SEV',
@@ -5238,7 +5238,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_neonatal_other=Covariate(
+    'log_transformed_sev_scalar_neonatal_other': Covariate(
         name='log_transformed_sev_scalar_neonatal_other',
         gbd_id=covid(1849),
         group='SEV',
@@ -5247,7 +5247,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_neo_lymphoma=Covariate(
+    'log_transformed_sev_scalar_neo_lymphoma': Covariate(
         name='log_transformed_sev_scalar_neo_lymphoma',
         gbd_id=covid(1863),
         group='SEV',
@@ -5256,7 +5256,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_neo_myeloma=Covariate(
+    'log_transformed_sev_scalar_neo_myeloma': Covariate(
         name='log_transformed_sev_scalar_neo_myeloma',
         gbd_id=covid(1864),
         group='SEV',
@@ -5265,7 +5265,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_neo_leukemia_ll_acute=Covariate(
+    'log_transformed_sev_scalar_neo_leukemia_ll_acute': Covariate(
         name='log_transformed_sev_scalar_neo_leukemia_ll_acute',
         gbd_id=covid(1865),
         group='SEV',
@@ -5274,7 +5274,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_neo_leukemia_ll_chronic=Covariate(
+    'log_transformed_sev_scalar_neo_leukemia_ll_chronic': Covariate(
         name='log_transformed_sev_scalar_neo_leukemia_ll_chronic',
         gbd_id=covid(1866),
         group='SEV',
@@ -5283,7 +5283,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_neo_leukemia_ml_acute=Covariate(
+    'log_transformed_sev_scalar_neo_leukemia_ml_acute': Covariate(
         name='log_transformed_sev_scalar_neo_leukemia_ml_acute',
         gbd_id=covid(1867),
         group='SEV',
@@ -5292,7 +5292,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_neo_leukemia_ml_chronic=Covariate(
+    'log_transformed_sev_scalar_neo_leukemia_ml_chronic': Covariate(
         name='log_transformed_sev_scalar_neo_leukemia_ml_chronic',
         gbd_id=covid(1868),
         group='SEV',
@@ -5301,7 +5301,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_neo_leukemia_other=Covariate(
+    'log_transformed_sev_scalar_neo_leukemia_other': Covariate(
         name='log_transformed_sev_scalar_neo_leukemia_other',
         gbd_id=covid(1869),
         group='SEV',
@@ -5310,7 +5310,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_cvd_cmp_other=Covariate(
+    'log_transformed_sev_scalar_cvd_cmp_other': Covariate(
         name='log_transformed_sev_scalar_cvd_cmp_other',
         gbd_id=covid(1872),
         group='SEV',
@@ -5319,7 +5319,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_digest_pud=Covariate(
+    'log_transformed_sev_scalar_digest_pud': Covariate(
         name='log_transformed_sev_scalar_digest_pud',
         gbd_id=covid(1874),
         group='SEV',
@@ -5328,7 +5328,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_digest_bile=Covariate(
+    'log_transformed_sev_scalar_digest_bile': Covariate(
         name='log_transformed_sev_scalar_digest_bile',
         gbd_id=covid(1875),
         group='SEV',
@@ -5337,7 +5337,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_neuro_dementia=Covariate(
+    'log_transformed_sev_scalar_neuro_dementia': Covariate(
         name='log_transformed_sev_scalar_neuro_dementia',
         gbd_id=covid(1876),
         group='SEV',
@@ -5346,7 +5346,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_neuro_ms=Covariate(
+    'log_transformed_sev_scalar_neuro_ms': Covariate(
         name='log_transformed_sev_scalar_neuro_ms',
         gbd_id=covid(1878),
         group='SEV',
@@ -5355,7 +5355,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_msk_rheumarthritis=Covariate(
+    'log_transformed_sev_scalar_msk_rheumarthritis': Covariate(
         name='log_transformed_sev_scalar_msk_rheumarthritis',
         gbd_id=covid(1892),
         group='SEV',
@@ -5364,7 +5364,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_sense_glaucoma=Covariate(
+    'log_transformed_sev_scalar_sense_glaucoma': Covariate(
         name='log_transformed_sev_scalar_sense_glaucoma',
         gbd_id=covid(1893),
         group='SEV',
@@ -5373,7 +5373,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_sense_macular=Covariate(
+    'log_transformed_sev_scalar_sense_macular': Covariate(
         name='log_transformed_sev_scalar_sense_macular',
         gbd_id=covid(1894),
         group='SEV',
@@ -5382,7 +5382,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_inj_suicide_firearm=Covariate(
+    'log_transformed_sev_scalar_inj_suicide_firearm': Covariate(
         name='log_transformed_sev_scalar_inj_suicide_firearm',
         gbd_id=covid(1896),
         group='SEV',
@@ -5391,7 +5391,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_sev_scalar_inj_suicide_other=Covariate(
+    'log_transformed_sev_scalar_inj_suicide_other': Covariate(
         name='log_transformed_sev_scalar_inj_suicide_other',
         gbd_id=covid(1897),
         group='SEV',
@@ -5400,7 +5400,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_tb_other=Covariate(
+    'log_transformed_age_standardized_sev_scalar_tb_other': Covariate(
         name='log_transformed_age_standardized_sev_scalar_tb_other',
         gbd_id=covid(1900),
         group='SEV',
@@ -5409,7 +5409,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_tb_mdr=Covariate(
+    'log_transformed_age_standardized_sev_scalar_tb_mdr': Covariate(
         name='log_transformed_age_standardized_sev_scalar_tb_mdr',
         gbd_id=covid(1901),
         group='SEV',
@@ -5418,7 +5418,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_hiv=Covariate(
+    'log_transformed_age_standardized_sev_scalar_hiv': Covariate(
         name='log_transformed_age_standardized_sev_scalar_hiv',
         gbd_id=covid(1903),
         group='SEV',
@@ -5427,7 +5427,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_hiv_tb_other=Covariate(
+    'log_transformed_age_standardized_sev_scalar_hiv_tb_other': Covariate(
         name='log_transformed_age_standardized_sev_scalar_hiv_tb_other',
         gbd_id=covid(1904),
         group='SEV',
@@ -5436,7 +5436,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_hiv_tb_mdr=Covariate(
+    'log_transformed_age_standardized_sev_scalar_hiv_tb_mdr': Covariate(
         name='log_transformed_age_standardized_sev_scalar_hiv_tb_mdr',
         gbd_id=covid(1905),
         group='SEV',
@@ -5445,7 +5445,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_meningitis=Covariate(
+    'log_transformed_age_standardized_sev_scalar_meningitis': Covariate(
         name='log_transformed_age_standardized_sev_scalar_meningitis',
         gbd_id=covid(1907),
         group='SEV',
@@ -5454,7 +5454,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_meningitis_pneumo=Covariate(
+    'log_transformed_age_standardized_sev_scalar_meningitis_pneumo': Covariate(
         name='log_transformed_age_standardized_sev_scalar_meningitis_pneumo',
         gbd_id=covid(1908),
         group='SEV',
@@ -5463,7 +5463,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_meningitis_hib=Covariate(
+    'log_transformed_age_standardized_sev_scalar_meningitis_hib': Covariate(
         name='log_transformed_age_standardized_sev_scalar_meningitis_hib',
         gbd_id=covid(1909),
         group='SEV',
@@ -5472,7 +5472,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_meningitis_meningo=Covariate(
+    'log_transformed_age_standardized_sev_scalar_meningitis_meningo': Covariate(
         name='log_transformed_age_standardized_sev_scalar_meningitis_meningo',
         gbd_id=covid(1910),
         group='SEV',
@@ -5481,7 +5481,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_meningitis_other=Covariate(
+    'log_transformed_age_standardized_sev_scalar_meningitis_other': Covariate(
         name='log_transformed_age_standardized_sev_scalar_meningitis_other',
         gbd_id=covid(1911),
         group='SEV',
@@ -5490,7 +5490,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_encephalitis=Covariate(
+    'log_transformed_age_standardized_sev_scalar_encephalitis': Covariate(
         name='log_transformed_age_standardized_sev_scalar_encephalitis',
         gbd_id=covid(1912),
         group='SEV',
@@ -5499,7 +5499,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_neonatal_enceph=Covariate(
+    'log_transformed_age_standardized_sev_scalar_neonatal_enceph': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neonatal_enceph',
         gbd_id=covid(1917),
         group='SEV',
@@ -5508,7 +5508,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_neonatal_sepsis=Covariate(
+    'log_transformed_age_standardized_sev_scalar_neonatal_sepsis': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neonatal_sepsis',
         gbd_id=covid(1918),
         group='SEV',
@@ -5517,7 +5517,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_neonatal_hemolytic=Covariate(
+    'log_transformed_age_standardized_sev_scalar_neonatal_hemolytic': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neonatal_hemolytic',
         gbd_id=covid(1919),
         group='SEV',
@@ -5526,7 +5526,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_neonatal_other=Covariate(
+    'log_transformed_age_standardized_sev_scalar_neonatal_other': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neonatal_other',
         gbd_id=covid(1920),
         group='SEV',
@@ -5535,7 +5535,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_neo_lymphoma=Covariate(
+    'log_transformed_age_standardized_sev_scalar_neo_lymphoma': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neo_lymphoma',
         gbd_id=covid(1934),
         group='SEV',
@@ -5544,7 +5544,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_neo_myeloma=Covariate(
+    'log_transformed_age_standardized_sev_scalar_neo_myeloma': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neo_myeloma',
         gbd_id=covid(1935),
         group='SEV',
@@ -5553,7 +5553,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_neo_leukemia_ll_acute=Covariate(
+    'log_transformed_age_standardized_sev_scalar_neo_leukemia_ll_acute': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neo_leukemia_ll_acute',
         gbd_id=covid(1936),
         group='SEV',
@@ -5562,7 +5562,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_neo_leukemia_ll_chronic=Covariate(
+    'log_transformed_age_standardized_sev_scalar_neo_leukemia_ll_chronic': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neo_leukemia_ll_chronic',
         gbd_id=covid(1937),
         group='SEV',
@@ -5571,7 +5571,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_neo_leukemia_ml_acute=Covariate(
+    'log_transformed_age_standardized_sev_scalar_neo_leukemia_ml_acute': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neo_leukemia_ml_acute',
         gbd_id=covid(1938),
         group='SEV',
@@ -5580,7 +5580,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_neo_leukemia_ml_chronic=Covariate(
+    'log_transformed_age_standardized_sev_scalar_neo_leukemia_ml_chronic': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neo_leukemia_ml_chronic',
         gbd_id=covid(1939),
         group='SEV',
@@ -5589,7 +5589,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_neo_leukemia_other=Covariate(
+    'log_transformed_age_standardized_sev_scalar_neo_leukemia_other': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neo_leukemia_other',
         gbd_id=covid(1940),
         group='SEV',
@@ -5598,7 +5598,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_cvd_cmp_other=Covariate(
+    'log_transformed_age_standardized_sev_scalar_cvd_cmp_other': Covariate(
         name='log_transformed_age_standardized_sev_scalar_cvd_cmp_other',
         gbd_id=covid(1943),
         group='SEV',
@@ -5607,7 +5607,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_digest_pud=Covariate(
+    'log_transformed_age_standardized_sev_scalar_digest_pud': Covariate(
         name='log_transformed_age_standardized_sev_scalar_digest_pud',
         gbd_id=covid(1945),
         group='SEV',
@@ -5616,7 +5616,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_digest_bile=Covariate(
+    'log_transformed_age_standardized_sev_scalar_digest_bile': Covariate(
         name='log_transformed_age_standardized_sev_scalar_digest_bile',
         gbd_id=covid(1946),
         group='SEV',
@@ -5625,7 +5625,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_neuro_dementia=Covariate(
+    'log_transformed_age_standardized_sev_scalar_neuro_dementia': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neuro_dementia',
         gbd_id=covid(1947),
         group='SEV',
@@ -5634,7 +5634,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_neuro_ms=Covariate(
+    'log_transformed_age_standardized_sev_scalar_neuro_ms': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neuro_ms',
         gbd_id=covid(1949),
         group='SEV',
@@ -5643,7 +5643,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_msk_rheumarthritis=Covariate(
+    'log_transformed_age_standardized_sev_scalar_msk_rheumarthritis': Covariate(
         name='log_transformed_age_standardized_sev_scalar_msk_rheumarthritis',
         gbd_id=covid(1963),
         group='SEV',
@@ -5652,7 +5652,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_sense_glaucoma=Covariate(
+    'log_transformed_age_standardized_sev_scalar_sense_glaucoma': Covariate(
         name='log_transformed_age_standardized_sev_scalar_sense_glaucoma',
         gbd_id=covid(1964),
         group='SEV',
@@ -5661,7 +5661,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_sense_macular=Covariate(
+    'log_transformed_age_standardized_sev_scalar_sense_macular': Covariate(
         name='log_transformed_age_standardized_sev_scalar_sense_macular',
         gbd_id=covid(1965),
         group='SEV',
@@ -5670,7 +5670,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_sids=Covariate(
+    'log_transformed_age_standardized_sev_scalar_sids': Covariate(
         name='log_transformed_age_standardized_sev_scalar_sids',
         gbd_id=covid(1966),
         group='SEV',
@@ -5679,7 +5679,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_inj_suicide_firearm=Covariate(
+    'log_transformed_age_standardized_sev_scalar_inj_suicide_firearm': Covariate(
         name='log_transformed_age_standardized_sev_scalar_inj_suicide_firearm',
         gbd_id=covid(1968),
         group='SEV',
@@ -5688,7 +5688,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    log_transformed_age_standardized_sev_scalar_inj_suicide_other=Covariate(
+    'log_transformed_age_standardized_sev_scalar_inj_suicide_other': Covariate(
         name='log_transformed_age_standardized_sev_scalar_inj_suicide_other',
         gbd_id=covid(1969),
         group='SEV',
@@ -5697,7 +5697,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    opioids_per_million_population_per_day_5_year_lag=Covariate(
+    'opioids_per_million_population_per_day_5_year_lag': Covariate(
         name='opioids_per_million_population_per_day_5_year_lag',
         gbd_id=covid(1971),
         group='Experimental',
@@ -5706,7 +5706,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    opioids_per_million_population_per_day_ten_year_lag=Covariate(
+    'opioids_per_million_population_per_day_ten_year_lag': Covariate(
         name='opioids_per_million_population_per_day_ten_year_lag',
         gbd_id=covid(1972),
         group='Experimental',
@@ -5715,7 +5715,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    occupation_professionals=Covariate(
+    'occupation_professionals': Covariate(
         name='occupation_professionals',
         gbd_id=covid(1973),
         group='Experimental',
@@ -5724,7 +5724,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    health_industry_workers=Covariate(
+    'health_industry_workers': Covariate(
         name='health_industry_workers',
         gbd_id=covid(1974),
         group='Experimental',
@@ -5733,7 +5733,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    education_years_per_capita_aggregated_by_age_15_and_up_and_sex=Covariate(
+    'education_years_per_capita_aggregated_by_age_15_and_up_and_sex': Covariate(
         name='education_years_per_capita_aggregated_by_age_15_and_up_and_sex',
         gbd_id=covid(1975),
         group='Education',
@@ -5742,7 +5742,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    underweight_age_and_sex_specific=Covariate(
+    'underweight_age_and_sex_specific': Covariate(
         name='underweight_age_and_sex_specific',
         gbd_id=covid(1976),
         group='Experimental',
@@ -5751,7 +5751,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    total_physical_activity_met_min_week_age_specific=Covariate(
+    'total_physical_activity_met_min_week_age_specific': Covariate(
         name='total_physical_activity_met_min_week_age_specific',
         gbd_id=covid(1977),
         group='Experimental',
@@ -5760,7 +5760,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    total_physical_activity_met_min_week_age_standardized=Covariate(
+    'total_physical_activity_met_min_week_age_standardized': Covariate(
         name='total_physical_activity_met_min_week_age_standardized',
         gbd_id=covid(1978),
         group='Experimental',
@@ -5769,7 +5769,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    full_vaccine_coverage_indicator_proportion=Covariate(
+    'full_vaccine_coverage_indicator_proportion': Covariate(
         name='full_vaccine_coverage_indicator_proportion',
         gbd_id=covid(1979),
         group='Experimental',
@@ -5778,7 +5778,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    bacille_calmette_guerin_bcg_vaccine_coverage_proportion=Covariate(
+    'bacille_calmette_guerin_bcg_vaccine_coverage_proportion': Covariate(
         name='bacille_calmette_guerin_bcg_vaccine_coverage_proportion',
         gbd_id=covid(1980),
         group='Experimental',
@@ -5787,7 +5787,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    hepatitis_b_vaccine_coverage_proportion_aged_through_time=Covariate(
+    'hepatitis_b_vaccine_coverage_proportion_aged_through_time': Covariate(
         name='hepatitis_b_vaccine_coverage_proportion_aged_through_time',
         gbd_id=covid(1981),
         group='Experimental',
@@ -5796,7 +5796,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    adolescent_birth_rates_10_19_years_of_age=Covariate(
+    'adolescent_birth_rates_10_19_years_of_age': Covariate(
         name='adolescent_birth_rates_10_19_years_of_age',
         gbd_id=covid(1982),
         group='Experimental',
@@ -5805,7 +5805,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    percent_well_certified=Covariate(
+    'percent_well_certified': Covariate(
         name='percent_well_certified',
         gbd_id=covid(1983),
         group='Experimental',
@@ -5814,7 +5814,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    log_total_health_expenditure_per_capita=Covariate(
+    'log_total_health_expenditure_per_capita': Covariate(
         name='log_total_health_expenditure_per_capita',
         gbd_id=covid(1984),
         group='Experimental',
@@ -5823,7 +5823,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    count_of_population_censuses=Covariate(
+    'count_of_population_censuses': Covariate(
         name='count_of_population_censuses',
         gbd_id=covid(1985),
         group='Experimental',
@@ -5832,7 +5832,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=True,
     ),
-    birth_registry_completeness=Covariate(
+    'birth_registry_completeness': Covariate(
         name='birth_registry_completeness',
         gbd_id=covid(1986),
         group='Experimental',
@@ -5841,7 +5841,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    pigs_raised_in_extensive_agricultural_systems_per_capita=Covariate(
+    'pigs_raised_in_extensive_agricultural_systems_per_capita': Covariate(
         name='pigs_raised_in_extensive_agricultural_systems_per_capita',
         gbd_id=covid(1987),
         group='Pigs',
@@ -5850,7 +5850,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    pigs_raised_in_semi_extensive_agricultural_systems_per_capita=Covariate(
+    'pigs_raised_in_semi_extensive_agricultural_systems_per_capita': Covariate(
         name='pigs_raised_in_semi_extensive_agricultural_systems_per_capita',
         gbd_id=covid(1988),
         group='Pigs',
@@ -5859,7 +5859,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    pigs_raised_in_intensive_industrial_agricultural_systems_per_capita=Covariate(
+    'pigs_raised_in_intensive_industrial_agricultural_systems_per_capita': Covariate(
         name='pigs_raised_in_intensive_industrial_agricultural_systems_per_capita',
         gbd_id=covid(1989),
         group='Pigs',
@@ -5868,7 +5868,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    implicit_versus_explicitly_defined_nash=Covariate(
+    'implicit_versus_explicitly_defined_nash': Covariate(
         name='implicit_versus_explicitly_defined_nash',
         gbd_id=covid(1991),
         group='Experimental',
@@ -5877,7 +5877,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=True,
     ),
-    mean_hemoglobin_age_sex_specific=Covariate(
+    'mean_hemoglobin_age_sex_specific': Covariate(
         name='mean_hemoglobin_age_sex_specific',
         gbd_id=covid(1992),
         group='Experimental',
@@ -5886,7 +5886,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    physicians_per_capita=Covariate(
+    'physicians_per_capita': Covariate(
         name='physicians_per_capita',
         gbd_id=covid(1993),
         group='Experimental',
@@ -5895,7 +5895,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    nurses_and_midwives_per_capita=Covariate(
+    'nurses_and_midwives_per_capita': Covariate(
         name='nurses_and_midwives_per_capita',
         gbd_id=covid(1994),
         group='Experimental',
@@ -5904,7 +5904,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    pharmacists_per_capita=Covariate(
+    'pharmacists_per_capita': Covariate(
         name='pharmacists_per_capita',
         gbd_id=covid(1995),
         group='Experimental',
@@ -5913,7 +5913,7 @@ covariates = Covariates(
         by_sex=False,
         dichotomous=False,
     ),
-    hiv_mortality_rate=Covariate(
+    'hiv_mortality_rate': Covariate(
         name='hiv_mortality_rate',
         gbd_id=covid(1996),
         group='HIV',
@@ -5922,7 +5922,7 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-    untreated_hiv=Covariate(
+    'untreated_hiv': Covariate(
         name='untreated_hiv',
         gbd_id=covid(1997),
         group='HIV',
@@ -5931,4 +5931,4 @@ covariates = Covariates(
         by_sex=True,
         dichotomous=False,
     ),
-)
+})

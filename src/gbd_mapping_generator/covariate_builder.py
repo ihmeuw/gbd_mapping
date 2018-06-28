@@ -27,7 +27,7 @@ base_types = {
 
 def make_covariate(name, covid, group, cov_type, by_age, by_sex, dichotomous):
     out = ""
-    out += TAB + f"{name}=Covariate(\n"
+    out += TAB + f"'{name}': Covariate(\n"
     out += TAB*2 + f"name='{name}',\n"
     out += TAB*2 + f"gbd_id=covid({covid}),\n"
     out += TAB*2 + f"group='{group}',\n"
@@ -40,10 +40,10 @@ def make_covariate(name, covid, group, cov_type, by_age, by_sex, dichotomous):
 
 
 def make_covariates(covariate_list):
-    out = "covariates = Covariates(\n"
+    out = "covariates = Covariates(**{\n"
     for name, covid, group, cov_type, by_age, by_sex, dichotomous in covariate_list:
         out += make_covariate(name, covid, group, cov_type, by_age, by_sex, dichotomous)
-    out += ")\n"
+    out += "})\n"
     return out
 
 
