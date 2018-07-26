@@ -4,10 +4,6 @@ import warnings
 
 import pandas as pd
 
-from db_tools import ezfuncs
-import db_queries
-# TODO: Change to using gbd_artifacts
-from risk_utils.classes import risk
 
 GBD_ROUND_ID = 4
 
@@ -61,6 +57,7 @@ def get_data_from_auxiliary_file(file_name: str, **kwargs) -> pd.DataFrame:
 
 def get_sequela_set_version_id(gbd_round_id: int) -> int:
     """Grabs the sequela set version associated with a particular gbd round."""
+    from db_tools import ezfuncs
 
     warnings.filterwarnings("default", module="db_tools")
 
@@ -74,6 +71,7 @@ def get_sequela_set_version_id(gbd_round_id: int) -> int:
 
 def get_cause_risk_set_version_id(gbd_round_id: int) -> int:
     """Grabs the version id associated with a cause risk mapping for a particular gbd round."""
+    from db_tools import ezfuncs
     warnings.filterwarnings("default", module="db_tools")
 
     q = f"""
@@ -86,6 +84,7 @@ def get_cause_risk_set_version_id(gbd_round_id: int) -> int:
 
 def get_cause_etiology_mapping(gbd_round_id: int) -> pd.DataFrame:
     """Get a mapping between the diarrhea and lri cause ids and the rei_ids associated with their etiologies."""
+    from db_tools import ezfuncs
     warnings.filterwarnings("default", module="db_tools")
 
     # FIXME: This table has not been updated with the round 4 mapping, but Joe Wagner assures
@@ -111,6 +110,7 @@ def get_healthstate_mapping() -> pd.DataFrame:
     -----
     This mapping is stable between gbd rounds.
     """
+    from db_tools import ezfuncs
     warnings.filterwarnings("default", module="db_tools")
 
     q = """
@@ -123,6 +123,7 @@ def get_healthstate_mapping() -> pd.DataFrame:
 
 def get_cause_me_id_mapping() -> pd.DataFrame:
     """Get a mapping between causes and epi/dismod models"""
+    from db_tools import ezfuncs
     warnings.filterwarnings("default", module="db_tools")
 
     q = """SELECT modelable_entity_id,
@@ -135,6 +136,7 @@ def get_cause_me_id_mapping() -> pd.DataFrame:
 
 def get_cause_risk_mapping(cause_risk_set_version_id: int) -> pd.DataFrame:
     """Get a mapping between risk ids and cause ids for a particular gbd round."""
+    from db_tools import ezfuncs
     warnings.filterwarnings("default", module="db_tools")
 
     q = f"""SELECT cause_id,
@@ -147,6 +149,7 @@ def get_cause_risk_mapping(cause_risk_set_version_id: int) -> pd.DataFrame:
 
 def get_sequela_id_mapping(model_version: int) -> pd.DataFrame:
     """Grabs a mapping between sequelae ids and their associated names, me_ids, cause_ids, and healthstate_ids."""
+    from db_tools import ezfuncs
     warnings.filterwarnings("default", module="db_tools")
 
     q = f"""SELECT sequela_id,
@@ -161,6 +164,7 @@ def get_sequela_id_mapping(model_version: int) -> pd.DataFrame:
 
 def get_rei_metadata(rei_set_id: int) -> pd.DataFrame:
     """Gets a whole host of metadata associated with a particular rei set and gbd round"""
+    import db_queries
     warnings.filterwarnings("default", module="db_queries")
 
     return db_queries.get_rei_metadata(rei_set_id=rei_set_id, gbd_round_id=GBD_ROUND_ID)
@@ -168,6 +172,7 @@ def get_rei_metadata(rei_set_id: int) -> pd.DataFrame:
 
 def get_cause_metadata(cause_set_id: int) -> pd.DataFrame:
     """Gets a whole host of metadata associated with a particular cause set and gbd round"""
+    import db_queries
     warnings.filterwarnings("default", module="db_queries")
 
     return db_queries.get_cause_metadata(cause_set_id=cause_set_id, gbd_round_id=GBD_ROUND_ID)
@@ -175,6 +180,8 @@ def get_cause_metadata(cause_set_id: int) -> pd.DataFrame:
 
 def get_risk(risk_id: int):  # FIXME: I don't know how to properly annotate the return type
     """Gets a risk object containing info about the exposure distribution type and names of exposure categories."""
+    # TODO: Change to using gbd_artifacts
+    from risk_utils.classes import risk
 
     warnings.filterwarnings("default", module="risk_utils")
 
@@ -182,6 +189,7 @@ def get_risk(risk_id: int):  # FIXME: I don't know how to properly annotate the 
 
 
 def get_covariate_metadata() -> pd.DataFrame:
+    from db_tools import ezfuncs
     warnings.filterwarnings("default", module="db_tools")
 
     q = """SELECT covariate_id,
