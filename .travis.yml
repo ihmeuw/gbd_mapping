@@ -4,8 +4,6 @@ python:
 install:
 - pip install -r requirements-dev.txt
 - pip install .
-script:
-- pytest
 deploy:
   provider: pypi
   user: collijk
