@@ -1,6 +1,14 @@
 GBD Mapping
 ===========
 
+.. image:: https://travis-ci.org/ihmeuw/gbd_mapping.svg?branch=master
+    :target: https://travis-ci.org/ihmeuw/gbd_mapping
+    :alt: Latest Version
+
+.. image:: https://readthedocs.org/projects/gbd_mapping/badge/?version=latest
+    :target: https://gbd_mapping.readthedocs.io/en/latest/?badge=latest
+    :alt: Latest Docs
+
 Mapping of GBD entities to their metadata.
 
 There are two packages offered in this distribution.  The first, the ``gbd_mapping_generator``
