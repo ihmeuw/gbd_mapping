@@ -4,7 +4,7 @@ __all__ = [
 
 __title__ = "gbd_mapping"
 __summary__ = "A programmatically accessible mapping of gbd entities."
-__uri__ = "https://stash.ihme.washington.edu/projects/CSTE/repos/gbd_mapping/browse"
+__uri__ = "https://github.com/ihmeuw/gbd_mapping"
 
 __version__ = "1.0.2"
 
