@@ -1,6 +1,9 @@
 GBD Mapping
 ===========
 
+.. image:: https://badge.fury.io/py/gbd-mapping.svg
+    :target: https://badge.fury.io/py/gbd-mapping
+
 .. image:: https://travis-ci.org/ihmeuw/gbd_mapping.svg?branch=master
     :target: https://travis-ci.org/ihmeuw/gbd_mapping
     :alt: Latest Version
