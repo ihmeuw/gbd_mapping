@@ -2,7 +2,3 @@ click
 numpy
 pandas
 pyyaml
-
-db_tools
-db_queries
-risk_utils
