@@ -6,7 +6,7 @@ __title__ = "gbd_mapping"
 __summary__ = "A programmatically accessible mapping of gbd entities."
 __uri__ = "https://stash.ihme.washington.edu/projects/CSTE/repos/gbd_mapping/browse"
 
-__version__ = "1.0.0"
+__version__ = "1.0.3"
 
 __author__ = "James Collins"
 __email__ = "collijk@uw.edu"
