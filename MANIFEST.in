@@ -1,0 +1,9 @@
+include CHANGELOG.rst
+include README.rst
+
+recursive-include docs *
+prune docs/_build
+
+recursive-include src/gbd_mapping *.py
+recursive-include src/gbd_mapping_generator *.py
+recursive-include tests *.py *txt *.yaml
