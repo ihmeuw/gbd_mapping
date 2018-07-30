@@ -66,4 +66,6 @@ if __name__ == "__main__":
                 [console_scripts]
                 build_mapping=gbd_mapping_generator.build_mapping:build_mapping
             """,
+
+        zip_safe=False,
     )
