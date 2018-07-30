@@ -10,7 +10,7 @@ if __name__ == "__main__":
     src_dir = os.path.join(base_dir, "src")
 
     about = {}
-    with open(os.path.join(src_dir, "__about__.py")) as f:
+    with open(os.path.join(src_dir, "gbd_mapping", "__about__.py")) as f:
         exec(f.read(), about)
 
     with open(os.path.join(base_dir, "README.rst")) as f:
