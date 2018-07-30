@@ -18,6 +18,7 @@ import sys
 import gbd_mapping
 src_dir = os.path.dirname(os.path.dirname(gbd_mapping.__file__))
 
+assert False, os.listdir(src_dir)
 about = {}
 with open(os.path.join(src_dir, "__about__.py")) as f:
     exec(f.read(), about)
