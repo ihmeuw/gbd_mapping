@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pandas as pd
 import numpy as np
 import yaml
@@ -12,10 +10,6 @@ GBD_ROUND_ID = gbd.GBD_ROUND_ID
 CAUSE_SET_ID = 3
 REI_SET_ID = 2
 ETIOLOGY_SET_ID = 3
-AUXILIARY_DATA_PATH = Path(
-    '/home/j/Project/Cost_Effectiveness/CEAM/Auxiliary_Data/GBD_2016_corrected/02_processed_data')
-
-
 
 ###############################################
 # Canonical mappings between entities and ids #
@@ -85,20 +79,6 @@ def get_risk_list():
 
 def get_covariate_list():
     return get_covariates().covariate_name.tolist()
-
-
-def get_coverage_gap_list():
-    relevant_measures = ['relative_risk', 'exposure']
-    coverage_gaps = None
-
-    for m in relevant_measures[1:]:
-        measure = set(i.parts[-1] for i in (AUXILIARY_DATA_PATH/f'{m}/coverage_gap').iterdir()
-                      if 'rst' not in i.parts[-1])
-        if coverage_gaps is not None:
-            coverage_gaps &= measure
-        else:
-            coverage_gaps = measure
-    return list(coverage_gaps)
 
 
 #####################################################
@@ -326,15 +306,13 @@ def get_covariate_data():
 
 
 def get_coverage_gap_metadata(coverage_gap):
-    path = AUXILIARY_DATA_PATH / f'exposure/coverage_gap/{coverage_gap}/metadata.yaml'
-    with path.open() as file:
-        metadata = yaml.load(file)
-    return metadata
+    return gbd.get_coverage_gap_metadata(coverage_gap)
+
 
 def get_coverage_gap_data():
     out = []
 
-    for c in get_coverage_gap_list():
+    for c in gbd.get_coverage_gap_list():
         metadata = get_coverage_gap_metadata(c)
         restrictions = tuple((k, v) for k, v in metadata['restrictions'].items())
         levels = tuple((k, v) for k, v in metadata['levels'].items())
