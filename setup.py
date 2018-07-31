@@ -24,9 +24,7 @@ if __name__ == "__main__":
     ]
 
     data_requires = [
-        'db_tools',
-        'db_queries',
-        'risk_utils',
+        'vivarium-gbd-access',
     ]
 
     test_requirements = [

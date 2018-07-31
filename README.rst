@@ -43,4 +43,20 @@ or build it from source with
 
   ``> cd gbd_mapping``
 
-  ``> python setup.py install``
+  ``> pip install .``
+
+
+Development and Mapping Generation
+++++++++++++++++++++++++++++++++++
+
+In order to generate or regenerate the mappings from data, you must have access to
+the Institute for Health Metrics and Evaluation cluster and internal PyPI server.
+Contact <collijk@uw.edu> if you need further instructions on that.
+
+Given proper permissions, you can set up this library in development mode with
+
+    ``> git clone https://github.com/ihmeuw/gbd_mapping.git``
+
+    ``> cd gbd_mapping``
+
+    ``> pip install -e .['dev']``
