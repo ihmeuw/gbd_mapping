@@ -1,4 +1,1 @@
-click
-numpy
-pandas
-pyyaml
+-e .
