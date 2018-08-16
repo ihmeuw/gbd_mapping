@@ -315,7 +315,6 @@ _SPECIAL_COVERAGE_GAPS = [
      []),
 ]
 
-
 def get_coverage_gap_list():
     return [c[0] for c in _SPECIAL_COVERAGE_GAPS] + gbd.get_coverage_gap_list()
 
