@@ -325,6 +325,9 @@ def get_coverage_gap_data():
         metadata = get_coverage_gap_metadata(c)
         restrictions = tuple((k, v) for k, v in metadata['exposure']['restrictions'].items())
         levels = tuple((k, v) for k, v in metadata['exposure']['levels'].items())
-        out.append((c, metadata['exposure']['distribution'], restrictions, levels,
-                    metadata['relative_risk']['affected_causes'], metadata['relative_risk']['affected_risks']))
+
+        out.append((c, metadata['exposure']['distribution'], restrictions, levels))
+        if metadata.get('relative_risk'):
+            out.append((metadata['relative_risk']['affected_causes'], metadata['relative_risk']['affected_risks']))
+
     return out
