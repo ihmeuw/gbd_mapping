@@ -65,11 +65,15 @@ def make_gbd_record():
     
     def to_dict(self):
         out = {}
-        for item in self:
-            if isinstance(getattr(self, item), GbdRecord):
-                out[item] = getattr(self, item).to_dict()
+        for item in self.__slots__:
+            attr = getattr(self, item)
+            if isinstance(attr, GbdRecord):
+                out[item] = attr.to_dict()
+            elif isinstance(attr, Tuple):
+                if isinstance(attr[0], GbdRecord):
+                    out[item] = tuple(r.to_dict() for r in attr)
             else:
-                out[item] = getattr(self, item)
+                out[item] = attr
         return out        
 
     def __contains__(self, item):
@@ -103,7 +107,7 @@ def make_gbd_record():
 
 def build_mapping():
     templates = make_module_docstring('Template classes for GBD entities', __file__)
-    templates += make_import('typing', ['Union', ])
+    templates += make_import('typing', ['Union', 'Tuple',])
     templates += make_import('.id', ['cid', 'sid', 'hsid', 'meid', 'covid', 'reiid', 'scalar', ]) + SPACING
     templates += make_gbd_record()
 

@@ -308,8 +308,10 @@ def get_covariate_data():
 def get_coverage_gap_metadata(coverage_gap):
     return gbd.get_coverage_gap_metadata(coverage_gap)
 
+
 def get_coverage_gap_list():
     return gbd.get_coverage_gap_list()
+
 
 def get_coverage_gap_data():
     out = []
