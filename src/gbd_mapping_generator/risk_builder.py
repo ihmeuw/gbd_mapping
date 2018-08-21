@@ -17,7 +17,6 @@ base_types = {
                   ('distribution', 'str'),
                   ('affected_causes', 'Tuple[Cause, ...]'),
                   ('restrictions', 'Restrictions'),
-                  ('using_2017_data', 'bool'),
                   ('levels', 'Levels = None'),
                   ('tmred', 'Tmred = None'),
                   ('exposure_parameters', 'ExposureParameters = None'),),
