@@ -159,7 +159,7 @@ def get_cause_data():
 
 def load_risk_params():
     # Read in our parameter data sheet and filter out etiologies/aggregate risks/impairments
-    risk_params = gbd.get_data_from_auxiliary_file('Risk Data', gbd_round='GBD_2016')
+    risk_params = gbd.get_auxiliary_data(measure='metadata', entity_type='risk_factor', entity_name='risk_variables')
     risk_params = risk_params[~np.isnan(risk_params.rei_id)]
 
     risk_params.loc[risk_params.risk_type == 0, 'calc_type'] = 'unknown'
@@ -195,9 +195,6 @@ def get_cause_risk_mapping():
 
 def get_risk_data():
     risks = load_risk_params()
-    # FIXME: This is here until exposure standard deviations are available by rei id instead of just meid -J.C.
-    exposure_sd_map = gbd.get_data_from_auxiliary_file(
-        'Risk Standard Deviation Meids').set_index('rei_id')['modelable_entity_id']
     cause_risk_mapping = get_cause_risk_mapping()
 
     out = []
@@ -228,9 +225,7 @@ def get_risk_data():
                      ('min', risk['tmred_para1']),
                      ('max', risk['tmred_para2']),
                      ('inverted', inv_exp))
-            dismod_id = exposure_sd_map[rid] if rid in exposure_sd_map.index else None
-            exp_params = (('dismod_id', dismod_id),
-                          ('scale', risk['rr_scalar']),
+            exp_params = (('scale', risk['rr_scalar']),
                           ('max_rr', risk['maxrr']),)
 
         elif r.dichotomous:

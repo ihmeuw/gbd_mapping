@@ -7,7 +7,7 @@ from .base_template_builder import modelable_entity_attrs, gbd_record_attrs
 from .util import make_import, make_module_docstring, make_record, SPACING, TAB, TEXTWIDTH
 
 
-IMPORTABLES_DEFINED = ('Risk', 'risks')
+IMPORTABLES_DEFINED = ('Risk', 'risk_factors')
 
 
 base_types = {
@@ -86,7 +86,7 @@ def make_risk(name, reiid, distribution, restrictions, cause_list,
 
 
 def make_risks(riskfactor_data):
-    out = "risks = Risks(\n"
+    out = "risk_factors = Risks(\n"
     for name, reiid, distribution, restrictions, cause_list, levels, tmred, exposure_parameters in riskfactor_data:
         out += make_risk(name, reiid, distribution, restrictions, cause_list,
                                 levels, tmred, exposure_parameters)

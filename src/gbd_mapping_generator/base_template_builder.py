@@ -19,8 +19,7 @@ tmred_attrs = (('distribution', 'str'),
                ('max', 'scalar'),
                ('inverted', 'bool'),)
 levels_attrs = tuple([('cat1', 'str'), ('cat2', 'str')] + [(f'cat{i}', 'str = None') for i in range(3, 60)])
-exposure_parameters_attrs = (('dismod_id', 'meid = None'),
-                             ('scale', 'scalar = None'),
+exposure_parameters_attrs = (('scale', 'scalar = None'),
                              ('max_rr', 'scalar = None'),)
 
 
