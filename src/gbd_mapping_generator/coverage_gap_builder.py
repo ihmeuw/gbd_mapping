@@ -112,6 +112,6 @@ def build_mapping():
     out += make_import('.base_template', ['Levels', 'Restrictions'])
     out += make_import('.coverage_gap_template', ['CoverageGap', 'CoverageGaps'])
     out += make_import('.cause', ['causes'])
-    out += make_import('.risk', ['risks']) + SPACING
+    out += make_import('.risk', ['risk_factors']) + SPACING
     out += make_coverage_gaps(get_coverage_gap_data())
     return out

@@ -7,7 +7,7 @@ Any manual changes will be lost.
 from .base_template import Levels, Restrictions
 from .coverage_gap_template import CoverageGap, CoverageGaps
 from .cause import causes
-from .risk import risks
+from .risk import risk_factors
 
 
 coverage_gaps = CoverageGaps(
