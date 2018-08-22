@@ -304,18 +304,30 @@ def get_coverage_gap_metadata(coverage_gap):
     return gbd.get_coverage_gap_metadata(coverage_gap)
 
 
+_SPECIAL_COVERAGE_GAPS = [
+    # HACK: This is in the rei hierarchy but doesn't actually get used and breaks all our patterns
+    ('low_measles_vaccine_coverage_first_dose',
+     318,
+     'dichotomous',
+     (('male_only', False), ('female_only', False), ('yll_only', False), ('yld_only', False)),
+     (('cat1', 'exposed'), ('cat2', 'unexposed')),
+     ['measles', ],
+     []),
+]
+
+
 def get_coverage_gap_list():
-    return gbd.get_coverage_gap_list()
+    return [c[0] for c in _SPECIAL_COVERAGE_GAPS] + gbd.get_coverage_gap_list()
 
 
 def get_coverage_gap_data():
-    out = []
+    out = _SPECIAL_COVERAGE_GAPS
 
     for c in gbd.get_coverage_gap_list():
         metadata = get_coverage_gap_metadata(c)['exposure']
         restrictions = tuple((k, v) for k, v in metadata['restrictions'].items())
         levels = tuple((k, v) for k, v in metadata['levels'].items())
-        out.append((c, metadata['distribution'], restrictions, levels,
+        out.append((c, None, metadata['distribution'], restrictions, levels,
                     metadata['affected_causes'], metadata['affected_risks']))
 
     return out
