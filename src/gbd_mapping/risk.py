@@ -10,7 +10,7 @@ from .risk_template import Risk, Risks
 from .cause import causes
 
 
-risks = Risks(
+risk_factors = Risks(
     unsafe_water_source=Risk(
         name='unsafe_water_source',
         gbd_id=reiid(83),
@@ -103,7 +103,6 @@ risks = Risks(
             inverted=False,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=None,
             scale=scalar(10.0),
             max_rr=scalar(100.0),
         ),
@@ -126,7 +125,6 @@ risks = Risks(
             inverted=False,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=meid(18685),
             scale=scalar(1.0),
             max_rr=scalar(10000.0),
         ),
@@ -168,7 +166,6 @@ risks = Risks(
             inverted=True,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=meid(10488),
             scale=scalar(10.0),
             max_rr=scalar(5000.0),
         ),
@@ -273,7 +270,6 @@ risks = Risks(
             inverted=False,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=meid(15789),
             scale=scalar(1.0),
             max_rr=scalar(10.0),
         ),
@@ -296,7 +292,6 @@ risks = Risks(
             inverted=False,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=meid(15788),
             scale=scalar(10.0),
             max_rr=scalar(200.0),
         ),
@@ -327,7 +322,6 @@ risks = Risks(
             inverted=False,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=meid(18706),
             scale=scalar(5.0),
             max_rr=scalar(50.0),
         ),
@@ -365,7 +359,6 @@ risks = Risks(
             inverted=True,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=meid(2444),
             scale=scalar(0.1),
             max_rr=scalar(5.0),
         ),
@@ -392,7 +385,6 @@ risks = Risks(
             inverted=True,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=meid(18689),
             scale=scalar(100.0),
             max_rr=scalar(400.0),
         ),
@@ -418,7 +410,6 @@ risks = Risks(
             inverted=True,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=meid(18690),
             scale=scalar(100.0),
             max_rr=scalar(450.0),
         ),
@@ -441,7 +432,6 @@ risks = Risks(
             inverted=True,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=meid(18692),
             scale=scalar(50.0),
             max_rr=scalar(150.0),
         ),
@@ -465,7 +455,6 @@ risks = Risks(
             inverted=True,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=meid(18693),
             scale=scalar(4.05),
             max_rr=scalar(24.0),
         ),
@@ -488,7 +477,6 @@ risks = Risks(
             inverted=True,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=meid(18694),
             scale=scalar(226.8),
             max_rr=scalar(680.0),
         ),
@@ -511,7 +499,6 @@ risks = Risks(
             inverted=False,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=meid(18695),
             scale=scalar(100.0),
             max_rr=scalar(1000.0),
         ),
@@ -534,7 +521,6 @@ risks = Risks(
             inverted=False,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=meid(18696),
             scale=scalar(50.0),
             max_rr=scalar(1000.0),
         ),
@@ -557,7 +543,6 @@ risks = Risks(
             inverted=False,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=None,
             scale=scalar(226.8),
             max_rr=scalar(5000.0),
         ),
@@ -595,7 +580,6 @@ risks = Risks(
             inverted=True,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=meid(18697),
             scale=scalar(20.0),
             max_rr=scalar(32.0),
         ),
@@ -618,7 +602,6 @@ risks = Risks(
             inverted=True,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=meid(18699),
             scale=scalar(100.0),
             max_rr=scalar(1000.0),
         ),
@@ -641,7 +624,6 @@ risks = Risks(
             inverted=True,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=meid(18700),
             scale=scalar(0.05),
             max_rr=scalar(0.149),
         ),
@@ -664,7 +646,6 @@ risks = Risks(
             inverted=False,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=meid(18702),
             scale=scalar(0.02),
             max_rr=scalar(1.0),
         ),
@@ -687,7 +668,6 @@ risks = Risks(
             inverted=False,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=meid(18703),
             scale=scalar(1.0),
             max_rr=scalar(50.0),
         ),
@@ -718,7 +698,6 @@ risks = Risks(
             inverted=True,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=meid(18704),
             scale=scalar(600.0),
             max_rr=scalar(5000.0),
         ),
@@ -907,7 +886,6 @@ risks = Risks(
             inverted=False,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=meid(18705),
             scale=scalar(1.0),
             max_rr=scalar(30.0),
         ),
@@ -956,7 +934,6 @@ risks = Risks(
             inverted=True,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=meid(18698),
             scale=scalar(1.0),
             max_rr=scalar(50.0),
         ),
@@ -1392,7 +1369,6 @@ risks = Risks(
             inverted=True,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=None,
             scale=scalar(1.0),
             max_rr=UNKNOWN,
         ),
@@ -1415,7 +1391,6 @@ risks = Risks(
             inverted=False,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=meid(18687),
             scale=scalar(10.0),
             max_rr=scalar(500.0),
         ),
@@ -1494,7 +1469,6 @@ risks = Risks(
             inverted=True,
         ),
         exposure_parameters=ExposureParameters(
-            dismod_id=meid(18691),
             scale=scalar(50.0),
             max_rr=scalar(450.0),
         ),

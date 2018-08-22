@@ -50,8 +50,8 @@ def build_mapping(mapping_type, with_debugger):
             import traceback
             traceback.print_exc()
             pdb.post_mortem()
-
-
+        else:
+            raise
 
 
 def make_dirs_and_init(mapping_type):

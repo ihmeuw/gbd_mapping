@@ -238,13 +238,11 @@ class Levels(GbdRecord):
 
 class ExposureParameters(GbdRecord):
     """Container for continuous risk exposure distribution parameters"""
-    __slots__ = ('dismod_id', 'scale', 'max_rr', )
+    __slots__ = ('scale', 'max_rr', )
 
     def __init__(self,
-                 dismod_id: meid = None,
                  scale: scalar = None,
                  max_rr: scalar = None, ):
         super().__init__()
-        self.dismod_id = dismod_id
         self.scale = scale
         self.max_rr = max_rr
