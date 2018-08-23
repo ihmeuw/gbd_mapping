@@ -1,3 +1,12 @@
+**1.0.3 - 08/22/18**
+
+ - Use __about__ in docs
+ - Split gbd_access into a separate package
+ - Removing lingering paths
+ - Fix GbdRecord.to_dict
+ - Update auxiliary data calls
+ - Add measles
+
 **1.0.2 - 07/26/18**
 
  - Fix deployment issues
