@@ -315,6 +315,7 @@ _SPECIAL_COVERAGE_GAPS = [
      []),
 ]
 
+
 def get_coverage_gap_list():
     return [c[0] for c in _SPECIAL_COVERAGE_GAPS] + gbd.get_coverage_gap_list()
 
@@ -331,6 +332,7 @@ def get_coverage_gap_data():
         if metadata.get('relative_risk'):
             affected_causes += metadata['relative_risk']['affected_causes']
             affected_risks += metadata['relative_risk']['affected_risks']
-        out.append((c, metadata['exposure']['distribution'], restrictions, levels, affected_causes, affected_risks))
+        out.append((c, metadata['exposure']['gbd_id'], metadata['exposure']['distribution'], restrictions, levels,
+                    affected_causes, affected_risks))
 
     return out
