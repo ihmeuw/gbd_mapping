@@ -326,14 +326,14 @@ def get_coverage_gap_data():
     for c in gbd.get_coverage_gap_list():
         metadata = get_coverage_gap_metadata(c)
 
+        gbd_id = metadata['gbd_id'] if 'gbd_id' in metadata else None
         restrictions = tuple((k, v) for k, v in metadata['restrictions'].items())
         levels = tuple((k, v) for k, v in metadata['levels'].items())
 
         affected_causes = metadata.get('affected_causes') if 'affected_causes' in metadata else []
         affected_risks = metadata.get('affected_risks') if 'affected_risks' in metadata else []
 
-        out.append((c, metadata['gbd_id'], metadata['distribution'], restrictions, levels, affected_causes,
+        out.append((c, gbd_id, metadata['distribution'], restrictions, levels, affected_causes,
                     affected_risks))
 
     return out
-
