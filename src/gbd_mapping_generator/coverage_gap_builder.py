@@ -93,8 +93,7 @@ def make_coverage_gap(name, gbd_id, distribution, restrictions, levels=None, aff
 
 def make_coverage_gaps(coverage_gap_data):
     out = "coverage_gaps = CoverageGaps(\n"
-    for data in coverage_gap_data:
-        name, gbd_id, distribution, restrictions, levels, affected_causes, affected_risks = data
+    for name, gbd_id, distribution, restrictions, levels, affected_causes, affected_risks in coverage_gap_data:
         out += make_coverage_gap(name, gbd_id, distribution, restrictions, levels, affected_causes, affected_risks)
     out += ")\n"
     return out
