@@ -67,7 +67,7 @@ def make_coverage_gap(name, gbd_id, distribution, restrictions, levels=None, aff
         elif field:
             out += 2*TAB + f"{field_name}={field},\n"
 
-    for entity_type, entity_list in zip(['causes', 'risks'], [affected_causes, affected_risks]):
+    for entity_type, entity_list in zip(['causes', 'risk_factors'], [affected_causes, affected_risks]):
         field = 2 * TAB + f"affected_{entity_type}=("
         offset = len(field)
 
