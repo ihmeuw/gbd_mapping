@@ -24,7 +24,7 @@ class HealthcareTechnology(GbdRecord):
 
 class CoverageGap(GbdRecord):
     """Container for coverage gap GBD ids and metadata."""
-    __slots__ = ('name', 'gbd_id', 'restrictions', 'distribution', 'levels', 'affected_causes', 'affected_risks',
+    __slots__ = ('name', 'gbd_id', 'restrictions', 'distribution', 'levels', 'affected_causes', 'affected_risk_factors',
                  'healthcare_technologies', )
 
     def __init__(self,
@@ -34,7 +34,7 @@ class CoverageGap(GbdRecord):
                  distribution: str,
                  levels: Levels,
                  affected_causes: Tuple[Cause, ...] = None,
-                 affected_risks: Tuple[Risk, ...] = None,
+                 affected_risk_factors: Tuple[Risk, ...] = None,
                  healthcare_technologies: Tuple[HealthcareTechnology, ...] = None, ):
         super().__init__()
         self.name = name
@@ -43,7 +43,7 @@ class CoverageGap(GbdRecord):
         self.distribution = distribution
         self.levels = levels
         self.affected_causes = affected_causes
-        self.affected_risks = affected_risks
+        self.affected_risk_factors = affected_risk_factors
         self.healthcare_technologies = healthcare_technologies
 
 
