@@ -23,7 +23,7 @@ base_types = {
                   ('distribution', 'str'),
                   ('levels', 'Levels'),
                   ('affected_causes', 'Tuple[Cause, ...] = None'),
-                  ('affected_risks', 'Tuple[Risk, ...] = None'),
+                  ('affected_risk_factors', 'Tuple[Risk, ...] = None'),
                   ('healthcare_technologies', 'Tuple[HealthcareTechnology, ...] = None')),
         'superclass': ('GbdRecord', gbd_record_attrs),
         'docstring': 'Container for coverage gap GBD ids and metadata.'
@@ -36,7 +36,7 @@ base_types = {
 }
 
 
-def make_coverage_gap(name, gbd_id, distribution, restrictions, levels=None, affected_causes=None, affected_risks=None):
+def make_coverage_gap(name, gbd_id, distribution, restrictions, levels=None, affected_causes=None, affected_risk_factors=None):
     out = ""
     out += TAB + f"{name}=CoverageGap(\n"
     out += 2*TAB + f"name='{name}',\n"
@@ -67,7 +67,7 @@ def make_coverage_gap(name, gbd_id, distribution, restrictions, levels=None, aff
         elif field:
             out += 2*TAB + f"{field_name}={field},\n"
 
-    for entity_type, entity_list in zip(['causes', 'risks'], [affected_causes, affected_risks]):
+    for entity_type, entity_list in zip(['causes', 'risk_factors'], [affected_causes, affected_risk_factors]):
         field = 2 * TAB + f"affected_{entity_type}=("
         offset = len(field)
 
@@ -93,8 +93,8 @@ def make_coverage_gap(name, gbd_id, distribution, restrictions, levels=None, aff
 
 def make_coverage_gaps(coverage_gap_data):
     out = "coverage_gaps = CoverageGaps(\n"
-    for name, gbd_id, distribution, restrictions, levels, affected_causes, affected_risks in coverage_gap_data:
-        out += make_coverage_gap(name, gbd_id, distribution, restrictions, levels, affected_causes, affected_risks)
+    for name, gbd_id, distribution, restrictions, levels, affected_causes, affected_risk_factors in coverage_gap_data:
+        out += make_coverage_gap(name, gbd_id, distribution, restrictions, levels, affected_causes, affected_risk_factors)
     out += ")\n"
     return out
 

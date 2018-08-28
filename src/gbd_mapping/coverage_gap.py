@@ -27,7 +27,7 @@ coverage_gaps = CoverageGaps(
             cat2='unexposed',
         ),
         affected_causes=(causes.measles, ),
-        affected_risks=(),
+        affected_risk_factors=(),
     ),
     low_oral_rehydration_solution_coverage=CoverageGap(
         name='low_oral_rehydration_solution_coverage',
@@ -44,7 +44,7 @@ coverage_gaps = CoverageGaps(
             cat2='unexposed',
         ),
         affected_causes=(causes.diarrheal_diseases, ),
-        affected_risks=(),
+        affected_risk_factors=(),
     ),
     lack_of_hiv_positive_antiretroviral_treatment=CoverageGap(
         name='lack_of_hiv_positive_antiretroviral_treatment',
@@ -61,6 +61,6 @@ coverage_gaps = CoverageGaps(
             cat2='unexposed',
         ),
         affected_causes=(causes.hiv_aids_resulting_in_other_diseases, ),
-        affected_risks=(),
+        affected_risk_factors=(),
     ),
 )
