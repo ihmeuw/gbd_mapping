@@ -38,6 +38,7 @@ def get_causes():
     causes = causes.append(pd.DataFrame({'cause_name': ['all_causes'], 'cause_id': [294]}), ignore_index=True)
     causes = pd.DataFrame({'cause_name': clean_entity_list(causes.cause_name),
                            'cause_id': causes.cause_id})
+    causes = causes[causes['cause_name'] != 'none']
     return causes.sort_values('cause_id')
 
 

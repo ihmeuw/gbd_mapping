@@ -114,9 +114,9 @@ class Causes(GbdRecord):
                  'foreign_body_in_other_body_part', 'other_unintentional_injuries', 'self_harm_by_firearm',
                  'self_harm_by_other_specified_means', 'physical_violence_by_firearm',
                  'physical_violence_by_sharp_object', 'physical_violence_by_other_means',
-                 'exposure_to_forces_of_nature', 'none', 'maternal_deaths_aggravated_by_hiv_aids',
-                 'thalassemias_trait', 'sickle_cell_trait', 'g6pd_trait', 'environmental_heat_and_cold_exposure',
-                 'ebola', 'acute_lymphoid_leukemia', 'chronic_lymphoid_leukemia', 'acute_myeloid_leukemia',
+                 'exposure_to_forces_of_nature', 'maternal_deaths_aggravated_by_hiv_aids', 'thalassemias_trait',
+                 'sickle_cell_trait', 'g6pd_trait', 'environmental_heat_and_cold_exposure', 'ebola',
+                 'acute_lymphoid_leukemia', 'chronic_lymphoid_leukemia', 'acute_myeloid_leukemia',
                  'chronic_myeloid_leukemia', 'non_melanoma_skin_cancer_squamous_cell_carcinoma',
                  'non_melanoma_skin_cancer_basal_cell_carcinoma', 'executions_and_police_conflict',
                  'drug_susceptible_tuberculosis', 'zika_virus', 'guinea_worm_disease', 'alcoholic_cardiomyopathy',
@@ -377,7 +377,6 @@ class Causes(GbdRecord):
         self.physical_violence_by_sharp_object = kwargs.get('physical_violence_by_sharp_object')
         self.physical_violence_by_other_means = kwargs.get('physical_violence_by_other_means')
         self.exposure_to_forces_of_nature = kwargs.get('exposure_to_forces_of_nature')
-        self.none = kwargs.get('none')
         self.maternal_deaths_aggravated_by_hiv_aids = kwargs.get('maternal_deaths_aggravated_by_hiv_aids')
         self.thalassemias_trait = kwargs.get('thalassemias_trait')
         self.sickle_cell_trait = kwargs.get('sickle_cell_trait')
