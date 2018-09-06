@@ -1,3 +1,9 @@
+**1.0.4 - 09/06/18**
+
+ - Remove none from causes
+ - Change risks to risk_factors
+ - Make coverage_gap available
+
 **1.0.3 - 08/22/18**
 
  - Use __about__ in docs
@@ -14,3 +20,4 @@
 **1.0.0 - 07/25/18**
 
  - Initial release
+s
