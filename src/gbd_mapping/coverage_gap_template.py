@@ -24,8 +24,8 @@ class HealthcareTechnology(GbdRecord):
 
 class CoverageGap(GbdRecord):
     """Container for coverage gap GBD ids and metadata."""
-    __slots__ = ('name', 'gbd_id', 'restrictions', 'distribution', 'levels', 'affected_causes', 'affected_risk_factors',
-                 'healthcare_technologies', )
+    __slots__ = ('name', 'gbd_id', 'restrictions', 'distribution', 'levels', 'affected_causes',
+                 'affected_risk_factors', 'healthcare_technologies', )
 
     def __init__(self,
                  name: str,
@@ -49,14 +49,19 @@ class CoverageGap(GbdRecord):
 
 class CoverageGaps(GbdRecord):
     """Container for coverage gap data."""
-    __slots__ = ('low_measles_vaccine_coverage_first_dose', 'low_oral_rehydration_solution_coverage',
-                 'lack_of_hiv_positive_antiretroviral_treatment', )
+    __slots__ = ('low_measles_vaccine_coverage_first_dose', 'lack_of_hiv_positive_antiretroviral_treatment',
+                 'lack_of_breastfeeding_promotion', 'low_oral_rehydration_solution_coverage',
+                 'lack_of_lipid_lowering_therapy', )
 
     def __init__(self,
                  low_measles_vaccine_coverage_first_dose: CoverageGap,
+                 lack_of_hiv_positive_antiretroviral_treatment: CoverageGap,
+                 lack_of_breastfeeding_promotion: CoverageGap,
                  low_oral_rehydration_solution_coverage: CoverageGap,
-                 lack_of_hiv_positive_antiretroviral_treatment: CoverageGap, ):
+                 lack_of_lipid_lowering_therapy: CoverageGap, ):
         super().__init__()
         self.low_measles_vaccine_coverage_first_dose = low_measles_vaccine_coverage_first_dose
-        self.low_oral_rehydration_solution_coverage = low_oral_rehydration_solution_coverage
         self.lack_of_hiv_positive_antiretroviral_treatment = lack_of_hiv_positive_antiretroviral_treatment
+        self.lack_of_breastfeeding_promotion = lack_of_breastfeeding_promotion
+        self.low_oral_rehydration_solution_coverage = low_oral_rehydration_solution_coverage
+        self.lack_of_lipid_lowering_therapy = lack_of_lipid_lowering_therapy
