@@ -1,3 +1,8 @@
+**1.0.5 - 09/12/18**
+
+ - Add coverage_gap of lack_of_breastfeeding_promotion exposure
+ - Add coverage_gap of lack_of_lipid_lowering_therapy exposure
+
 **1.0.4 - 09/06/18**
 
  - Remove none from causes
