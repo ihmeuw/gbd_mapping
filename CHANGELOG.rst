@@ -1,3 +1,7 @@
+**1.0.6 - 10/12/18**
+
+ - Fix requirements.txt (add the click version)
+
 **1.0.5 - 09/12/18**
 
  - Add coverage_gap of lack_of_breastfeeding_promotion exposure
