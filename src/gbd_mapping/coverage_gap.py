@@ -29,6 +29,23 @@ coverage_gaps = CoverageGaps(
         affected_causes=(causes.measles, ),
         affected_risk_factors=(),
     ),
+    lack_of_immediate_assessment_and_stimulation=CoverageGap(
+        name='lack_of_immediate_assessment_and_stimulation',
+        gbd_id=None,
+        distribution='dichotomous',
+        restrictions=Restrictions(
+            female_only=False,
+            male_only=False,
+            yld_only=False,
+            yll_only=False,
+        ),
+        levels=Levels(
+            cat1='exposed',
+            cat2='unexposed',
+        ),
+        affected_causes=(causes.neonatal_preterm_birth_complications, ),
+        affected_risk_factors=(),
+    ),
     lack_of_hiv_positive_antiretroviral_treatment=CoverageGap(
         name='lack_of_hiv_positive_antiretroviral_treatment',
         gbd_id=None,
@@ -44,40 +61,6 @@ coverage_gaps = CoverageGaps(
             cat2='unexposed',
         ),
         affected_causes=(causes.hiv_aids_resulting_in_other_diseases, ),
-        affected_risk_factors=(),
-    ),
-    lack_of_breastfeeding_promotion=CoverageGap(
-        name='lack_of_breastfeeding_promotion',
-        gbd_id=None,
-        distribution='dichotomous',
-        restrictions=Restrictions(
-            female_only=False,
-            male_only=False,
-            yld_only=False,
-            yll_only=False,
-        ),
-        levels=Levels(
-            cat1='exposed',
-            cat2='unexposed',
-        ),
-        affected_causes=(),
-        affected_risk_factors=(),
-    ),
-    low_oral_rehydration_solution_coverage=CoverageGap(
-        name='low_oral_rehydration_solution_coverage',
-        gbd_id=None,
-        distribution='dichotomous',
-        restrictions=Restrictions(
-            male_only=False,
-            female_only=False,
-            yll_only=False,
-            yld_only=False,
-        ),
-        levels=Levels(
-            cat1='exposed',
-            cat2='unexposed',
-        ),
-        affected_causes=(causes.diarrheal_diseases, ),
         affected_risk_factors=(),
     ),
     lack_of_lipid_lowering_therapy=CoverageGap(
@@ -143,6 +126,40 @@ coverage_gaps = CoverageGaps(
             cat9='PRAVASTATIN_20',
         ),
         affected_causes=(),
+        affected_risk_factors=(),
+    ),
+    lack_of_breastfeeding_promotion=CoverageGap(
+        name='lack_of_breastfeeding_promotion',
+        gbd_id=None,
+        distribution='dichotomous',
+        restrictions=Restrictions(
+            female_only=False,
+            male_only=False,
+            yld_only=False,
+            yll_only=False,
+        ),
+        levels=Levels(
+            cat1='exposed',
+            cat2='unexposed',
+        ),
+        affected_causes=(),
+        affected_risk_factors=(risk_factors.discontinued_breastfeeding, ),
+    ),
+    low_oral_rehydration_solution_coverage=CoverageGap(
+        name='low_oral_rehydration_solution_coverage',
+        gbd_id=None,
+        distribution='dichotomous',
+        restrictions=Restrictions(
+            male_only=False,
+            female_only=False,
+            yll_only=False,
+            yld_only=False,
+        ),
+        levels=Levels(
+            cat1='exposed',
+            cat2='unexposed',
+        ),
+        affected_causes=(causes.diarrheal_diseases, ),
         affected_risk_factors=(),
     ),
 )
