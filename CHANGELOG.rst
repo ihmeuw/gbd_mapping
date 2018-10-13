@@ -1,3 +1,9 @@
+**1.0.7 - 10/12/18**
+
+ - Change setup.py
+ - Add coverage_gap of lack_of_immediate_assessment_and_stimulation exposure
+ - Add coverage_gap of lack_of_immediate_assessment_and_stimulation relative risk to (neonatal_preterm_birth_complications)
+
 **1.0.6 - 10/12/18**
 
  - Fix requirements.txt (add the click version)

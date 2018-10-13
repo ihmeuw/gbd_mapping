@@ -17,7 +17,7 @@ if __name__ == "__main__":
         long_description = f.read()
 
     install_requirements = [
-        'click',
+        'click<=6.7',
         'numpy',
         'pandas',
         'pyyaml',
