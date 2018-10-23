@@ -13,6 +13,7 @@ from .cause import causes
 risk_factors = Risks(
     unsafe_water_source=Risk(
         name='unsafe_water_source',
+        type='risk_factor',
         gbd_id=reiid(83),
         distribution='polytomous',
         restrictions=Restrictions(
@@ -39,6 +40,7 @@ risk_factors = Risks(
     ),
     unsafe_sanitation=Risk(
         name='unsafe_sanitation',
+        type='risk_factor',
         gbd_id=reiid(84),
         distribution='polytomous',
         restrictions=Restrictions(
@@ -56,6 +58,7 @@ risk_factors = Risks(
     ),
     ambient_particulate_matter_pollution=Risk(
         name='ambient_particulate_matter_pollution',
+        type='risk_factor',
         gbd_id=reiid(86),
         distribution=UNKNOWN,
         restrictions=Restrictions(
@@ -70,6 +73,7 @@ risk_factors = Risks(
     ),
     household_air_pollution_from_solid_fuels=Risk(
         name='household_air_pollution_from_solid_fuels',
+        type='risk_factor',
         gbd_id=reiid(87),
         distribution='dichotomous',
         restrictions=Restrictions(
@@ -88,6 +92,7 @@ risk_factors = Risks(
     ),
     ambient_ozone_pollution=Risk(
         name='ambient_ozone_pollution',
+        type='risk_factor',
         gbd_id=reiid(88),
         distribution='unknown_continuous',
         restrictions=Restrictions(
@@ -110,6 +115,7 @@ risk_factors = Risks(
     ),
     residential_radon=Risk(
         name='residential_radon',
+        type='risk_factor',
         gbd_id=reiid(90),
         distribution='lognormal',
         restrictions=Restrictions(
@@ -132,6 +138,7 @@ risk_factors = Risks(
     ),
     child_underweight=Risk(
         name='child_underweight',
+        type='risk_factor',
         gbd_id=reiid(94),
         distribution='polytomous',
         restrictions=Restrictions(
@@ -151,6 +158,7 @@ risk_factors = Risks(
     ),
     iron_deficiency=Risk(
         name='iron_deficiency',
+        type='risk_factor',
         gbd_id=reiid(95),
         distribution='normal',
         restrictions=Restrictions(
@@ -174,6 +182,7 @@ risk_factors = Risks(
     ),
     vitamin_a_deficiency=Risk(
         name='vitamin_a_deficiency',
+        type='risk_factor',
         gbd_id=reiid(96),
         distribution='dichotomous',
         restrictions=Restrictions(
@@ -190,6 +199,7 @@ risk_factors = Risks(
     ),
     zinc_deficiency=Risk(
         name='zinc_deficiency',
+        type='risk_factor',
         gbd_id=reiid(97),
         distribution='dichotomous',
         restrictions=Restrictions(
@@ -206,6 +216,7 @@ risk_factors = Risks(
     ),
     secondhand_smoke=Risk(
         name='secondhand_smoke',
+        type='risk_factor',
         gbd_id=reiid(100),
         distribution='dichotomous',
         restrictions=Restrictions(
@@ -225,6 +236,7 @@ risk_factors = Risks(
     ),
     alcohol_use=Risk(
         name='alcohol_use',
+        type='risk_factor',
         gbd_id=reiid(102),
         distribution=UNKNOWN,
         restrictions=Restrictions(
@@ -255,6 +267,7 @@ risk_factors = Risks(
     ),
     high_total_cholesterol=Risk(
         name='high_total_cholesterol',
+        type='risk_factor',
         gbd_id=reiid(106),
         distribution='ensemble',
         restrictions=Restrictions(
@@ -277,6 +290,7 @@ risk_factors = Risks(
     ),
     high_systolic_blood_pressure=Risk(
         name='high_systolic_blood_pressure',
+        type='risk_factor',
         gbd_id=reiid(107),
         distribution='ensemble',
         restrictions=Restrictions(
@@ -307,6 +321,7 @@ risk_factors = Risks(
     ),
     high_body_mass_index=Risk(
         name='high_body_mass_index',
+        type='risk_factor',
         gbd_id=reiid(108),
         distribution='ensemble',
         restrictions=Restrictions(
@@ -344,6 +359,7 @@ risk_factors = Risks(
     ),
     low_bone_mineral_density=Risk(
         name='low_bone_mineral_density',
+        type='risk_factor',
         gbd_id=reiid(109),
         distribution='ensemble',
         restrictions=Restrictions(
@@ -370,6 +386,7 @@ risk_factors = Risks(
     ),
     diet_low_in_fruits=Risk(
         name='diet_low_in_fruits',
+        type='risk_factor',
         gbd_id=reiid(111),
         distribution='ensemble',
         restrictions=Restrictions(
@@ -395,6 +412,7 @@ risk_factors = Risks(
     ),
     diet_low_in_vegetables=Risk(
         name='diet_low_in_vegetables',
+        type='risk_factor',
         gbd_id=reiid(112),
         distribution='ensemble',
         restrictions=Restrictions(
@@ -417,6 +435,7 @@ risk_factors = Risks(
     ),
     diet_low_in_whole_grains=Risk(
         name='diet_low_in_whole_grains',
+        type='risk_factor',
         gbd_id=reiid(113),
         distribution='ensemble',
         restrictions=Restrictions(
@@ -440,6 +459,7 @@ risk_factors = Risks(
     ),
     diet_low_in_nuts_and_seeds=Risk(
         name='diet_low_in_nuts_and_seeds',
+        type='risk_factor',
         gbd_id=reiid(114),
         distribution='ensemble',
         restrictions=Restrictions(
@@ -462,6 +482,7 @@ risk_factors = Risks(
     ),
     diet_low_in_milk=Risk(
         name='diet_low_in_milk',
+        type='risk_factor',
         gbd_id=reiid(115),
         distribution='ensemble',
         restrictions=Restrictions(
@@ -484,6 +505,7 @@ risk_factors = Risks(
     ),
     diet_high_in_red_meat=Risk(
         name='diet_high_in_red_meat',
+        type='risk_factor',
         gbd_id=reiid(116),
         distribution='ensemble',
         restrictions=Restrictions(
@@ -506,6 +528,7 @@ risk_factors = Risks(
     ),
     diet_high_in_processed_meat=Risk(
         name='diet_high_in_processed_meat',
+        type='risk_factor',
         gbd_id=reiid(117),
         distribution='ensemble',
         restrictions=Restrictions(
@@ -528,6 +551,7 @@ risk_factors = Risks(
     ),
     diet_high_in_sugar_sweetened_beverages=Risk(
         name='diet_high_in_sugar_sweetened_beverages',
+        type='risk_factor',
         gbd_id=reiid(118),
         distribution='ensemble',
         restrictions=Restrictions(
@@ -565,6 +589,7 @@ risk_factors = Risks(
     ),
     diet_low_in_fiber=Risk(
         name='diet_low_in_fiber',
+        type='risk_factor',
         gbd_id=reiid(119),
         distribution='ensemble',
         restrictions=Restrictions(
@@ -587,6 +612,7 @@ risk_factors = Risks(
     ),
     diet_low_in_seafood_omega_3_fatty_acids=Risk(
         name='diet_low_in_seafood_omega_3_fatty_acids',
+        type='risk_factor',
         gbd_id=reiid(121),
         distribution='ensemble',
         restrictions=Restrictions(
@@ -609,6 +635,7 @@ risk_factors = Risks(
     ),
     diet_low_in_polyunsaturated_fatty_acids=Risk(
         name='diet_low_in_polyunsaturated_fatty_acids',
+        type='risk_factor',
         gbd_id=reiid(122),
         distribution='ensemble',
         restrictions=Restrictions(
@@ -631,6 +658,7 @@ risk_factors = Risks(
     ),
     diet_high_in_trans_fatty_acids=Risk(
         name='diet_high_in_trans_fatty_acids',
+        type='risk_factor',
         gbd_id=reiid(123),
         distribution='ensemble',
         restrictions=Restrictions(
@@ -653,6 +681,7 @@ risk_factors = Risks(
     ),
     diet_high_in_sodium=Risk(
         name='diet_high_in_sodium',
+        type='risk_factor',
         gbd_id=reiid(124),
         distribution='ensemble',
         restrictions=Restrictions(
@@ -683,6 +712,7 @@ risk_factors = Risks(
     ),
     low_physical_activity=Risk(
         name='low_physical_activity',
+        type='risk_factor',
         gbd_id=reiid(125),
         distribution='ensemble',
         restrictions=Restrictions(
@@ -706,6 +736,7 @@ risk_factors = Risks(
     ),
     occupational_asthmagens=Risk(
         name='occupational_asthmagens',
+        type='risk_factor',
         gbd_id=reiid(128),
         distribution='polytomous',
         restrictions=Restrictions(
@@ -729,6 +760,7 @@ risk_factors = Risks(
     ),
     occupational_particulate_matter_gases_and_fumes=Risk(
         name='occupational_particulate_matter_gases_and_fumes',
+        type='risk_factor',
         gbd_id=reiid(129),
         distribution='polytomous',
         restrictions=Restrictions(
@@ -747,6 +779,7 @@ risk_factors = Risks(
     ),
     occupational_noise=Risk(
         name='occupational_noise',
+        type='risk_factor',
         gbd_id=reiid(130),
         distribution='polytomous',
         restrictions=Restrictions(
@@ -764,6 +797,7 @@ risk_factors = Risks(
     ),
     occupational_injuries=Risk(
         name='occupational_injuries',
+        type='risk_factor',
         gbd_id=reiid(131),
         distribution=UNKNOWN,
         restrictions=Restrictions(
@@ -783,6 +817,7 @@ risk_factors = Risks(
     ),
     occupational_ergonomic_factors=Risk(
         name='occupational_ergonomic_factors',
+        type='risk_factor',
         gbd_id=reiid(132),
         distribution='polytomous',
         restrictions=Restrictions(
@@ -805,6 +840,7 @@ risk_factors = Risks(
     ),
     non_exclusive_breastfeeding=Risk(
         name='non_exclusive_breastfeeding',
+        type='risk_factor',
         gbd_id=reiid(136),
         distribution='polytomous',
         restrictions=Restrictions(
@@ -823,6 +859,7 @@ risk_factors = Risks(
     ),
     discontinued_breastfeeding=Risk(
         name='discontinued_breastfeeding',
+        type='risk_factor',
         gbd_id=reiid(137),
         distribution='dichotomous',
         restrictions=Restrictions(
@@ -839,6 +876,7 @@ risk_factors = Risks(
     ),
     drug_use_dependence_and_blood_borne_viruses=Risk(
         name='drug_use_dependence_and_blood_borne_viruses',
+        type='risk_factor',
         gbd_id=reiid(138),
         distribution=UNKNOWN,
         restrictions=Restrictions(
@@ -859,6 +897,7 @@ risk_factors = Risks(
     ),
     suicide_due_to_drug_use_disorders=Risk(
         name='suicide_due_to_drug_use_disorders',
+        type='risk_factor',
         gbd_id=reiid(140),
         distribution=UNKNOWN,
         restrictions=Restrictions(
@@ -871,6 +910,7 @@ risk_factors = Risks(
     ),
     high_fasting_plasma_glucose_continuous=Risk(
         name='high_fasting_plasma_glucose_continuous',
+        type='risk_factor',
         gbd_id=reiid(141),
         distribution='ensemble',
         restrictions=Restrictions(
@@ -897,6 +937,7 @@ risk_factors = Risks(
     ),
     high_fasting_plasma_glucose_categorical=Risk(
         name='high_fasting_plasma_glucose_categorical',
+        type='risk_factor',
         gbd_id=reiid(142),
         distribution='dichotomous',
         restrictions=Restrictions(
@@ -919,6 +960,7 @@ risk_factors = Risks(
     ),
     diet_low_in_calcium=Risk(
         name='diet_low_in_calcium',
+        type='risk_factor',
         gbd_id=reiid(147),
         distribution='ensemble',
         restrictions=Restrictions(
@@ -941,6 +983,7 @@ risk_factors = Risks(
     ),
     occupational_exposure_to_asbestos=Risk(
         name='occupational_exposure_to_asbestos',
+        type='risk_factor',
         gbd_id=reiid(150),
         distribution='dichotomous',
         restrictions=Restrictions(
@@ -958,6 +1001,7 @@ risk_factors = Risks(
     ),
     occupational_exposure_to_arsenic=Risk(
         name='occupational_exposure_to_arsenic',
+        type='risk_factor',
         gbd_id=reiid(151),
         distribution='polytomous',
         restrictions=Restrictions(
@@ -975,6 +1019,7 @@ risk_factors = Risks(
     ),
     occupational_exposure_to_benzene=Risk(
         name='occupational_exposure_to_benzene',
+        type='risk_factor',
         gbd_id=reiid(152),
         distribution='polytomous',
         restrictions=Restrictions(
@@ -993,6 +1038,7 @@ risk_factors = Risks(
     ),
     occupational_exposure_to_beryllium=Risk(
         name='occupational_exposure_to_beryllium',
+        type='risk_factor',
         gbd_id=reiid(153),
         distribution='polytomous',
         restrictions=Restrictions(
@@ -1010,6 +1056,7 @@ risk_factors = Risks(
     ),
     occupational_exposure_to_cadmium=Risk(
         name='occupational_exposure_to_cadmium',
+        type='risk_factor',
         gbd_id=reiid(154),
         distribution='polytomous',
         restrictions=Restrictions(
@@ -1027,6 +1074,7 @@ risk_factors = Risks(
     ),
     occupational_exposure_to_chromium=Risk(
         name='occupational_exposure_to_chromium',
+        type='risk_factor',
         gbd_id=reiid(155),
         distribution='polytomous',
         restrictions=Restrictions(
@@ -1044,6 +1092,7 @@ risk_factors = Risks(
     ),
     occupational_exposure_to_diesel_engine_exhaust=Risk(
         name='occupational_exposure_to_diesel_engine_exhaust',
+        type='risk_factor',
         gbd_id=reiid(156),
         distribution='polytomous',
         restrictions=Restrictions(
@@ -1061,6 +1110,7 @@ risk_factors = Risks(
     ),
     occupational_exposure_to_secondhand_smoke=Risk(
         name='occupational_exposure_to_secondhand_smoke',
+        type='risk_factor',
         gbd_id=reiid(157),
         distribution='polytomous',
         restrictions=Restrictions(
@@ -1081,6 +1131,7 @@ risk_factors = Risks(
     ),
     occupational_exposure_to_formaldehyde=Risk(
         name='occupational_exposure_to_formaldehyde',
+        type='risk_factor',
         gbd_id=reiid(158),
         distribution='polytomous',
         restrictions=Restrictions(
@@ -1099,6 +1150,7 @@ risk_factors = Risks(
     ),
     occupational_exposure_to_nickel=Risk(
         name='occupational_exposure_to_nickel',
+        type='risk_factor',
         gbd_id=reiid(159),
         distribution='polytomous',
         restrictions=Restrictions(
@@ -1116,6 +1168,7 @@ risk_factors = Risks(
     ),
     occupational_exposure_to_polycyclic_aromatic_hydrocarbons=Risk(
         name='occupational_exposure_to_polycyclic_aromatic_hydrocarbons',
+        type='risk_factor',
         gbd_id=reiid(160),
         distribution='polytomous',
         restrictions=Restrictions(
@@ -1133,6 +1186,7 @@ risk_factors = Risks(
     ),
     occupational_exposure_to_silica=Risk(
         name='occupational_exposure_to_silica',
+        type='risk_factor',
         gbd_id=reiid(161),
         distribution='polytomous',
         restrictions=Restrictions(
@@ -1150,6 +1204,7 @@ risk_factors = Risks(
     ),
     occupational_exposure_to_sulfuric_acid=Risk(
         name='occupational_exposure_to_sulfuric_acid',
+        type='risk_factor',
         gbd_id=reiid(162),
         distribution='polytomous',
         restrictions=Restrictions(
@@ -1167,6 +1222,7 @@ risk_factors = Risks(
     ),
     smoking_sir_approach=Risk(
         name='smoking_sir_approach',
+        type='risk_factor',
         gbd_id=reiid(165),
         distribution='dichotomous',
         restrictions=Restrictions(
@@ -1192,6 +1248,7 @@ risk_factors = Risks(
     ),
     smoking_prevalence_approach=Risk(
         name='smoking_prevalence_approach',
+        type='risk_factor',
         gbd_id=reiid(166),
         distribution='dichotomous',
         restrictions=Restrictions(
@@ -1223,6 +1280,7 @@ risk_factors = Risks(
     ),
     intimate_partner_violence_exposure_approach=Risk(
         name='intimate_partner_violence_exposure_approach',
+        type='risk_factor',
         gbd_id=reiid(167),
         distribution='dichotomous',
         restrictions=Restrictions(
@@ -1240,6 +1298,7 @@ risk_factors = Risks(
     ),
     intimate_partner_violence_direct_paf_approach=Risk(
         name='intimate_partner_violence_direct_paf_approach',
+        type='risk_factor',
         gbd_id=reiid(168),
         distribution=UNKNOWN,
         restrictions=Restrictions(
@@ -1253,6 +1312,7 @@ risk_factors = Risks(
     ),
     unsafe_sex=Risk(
         name='unsafe_sex',
+        type='risk_factor',
         gbd_id=reiid(170),
         distribution=UNKNOWN,
         restrictions=Restrictions(
@@ -1270,6 +1330,7 @@ risk_factors = Risks(
     ),
     intimate_partner_violence_hiv_paf_approach=Risk(
         name='intimate_partner_violence_hiv_paf_approach',
+        type='risk_factor',
         gbd_id=reiid(201),
         distribution=UNKNOWN,
         restrictions=Restrictions(
@@ -1284,6 +1345,7 @@ risk_factors = Risks(
     ),
     occupational_exposure_to_trichloroethylene=Risk(
         name='occupational_exposure_to_trichloroethylene',
+        type='risk_factor',
         gbd_id=reiid(237),
         distribution='polytomous',
         restrictions=Restrictions(
@@ -1301,6 +1363,7 @@ risk_factors = Risks(
     ),
     no_access_to_handwashing_facility=Risk(
         name='no_access_to_handwashing_facility',
+        type='risk_factor',
         gbd_id=reiid(238),
         distribution='dichotomous',
         restrictions=Restrictions(
@@ -1317,6 +1380,7 @@ risk_factors = Risks(
     ),
     child_wasting=Risk(
         name='child_wasting',
+        type='risk_factor',
         gbd_id=reiid(240),
         distribution='polytomous',
         restrictions=Restrictions(
@@ -1336,6 +1400,7 @@ risk_factors = Risks(
     ),
     child_stunting=Risk(
         name='child_stunting',
+        type='risk_factor',
         gbd_id=reiid(241),
         distribution='polytomous',
         restrictions=Restrictions(
@@ -1354,6 +1419,7 @@ risk_factors = Risks(
     ),
     lead_exposure_in_blood=Risk(
         name='lead_exposure_in_blood',
+        type='risk_factor',
         gbd_id=reiid(242),
         distribution='unknown_continuous',
         restrictions=Restrictions(
@@ -1376,6 +1442,7 @@ risk_factors = Risks(
     ),
     lead_exposure_in_bone=Risk(
         name='lead_exposure_in_bone',
+        type='risk_factor',
         gbd_id=reiid(243),
         distribution='ensemble',
         restrictions=Restrictions(
@@ -1406,6 +1473,7 @@ risk_factors = Risks(
     ),
     childhood_sexual_abuse_against_females=Risk(
         name='childhood_sexual_abuse_against_females',
+        type='risk_factor',
         gbd_id=reiid(244),
         distribution='dichotomous',
         restrictions=Restrictions(
@@ -1422,6 +1490,7 @@ risk_factors = Risks(
     ),
     childhood_sexual_abuse_against_males=Risk(
         name='childhood_sexual_abuse_against_males',
+        type='risk_factor',
         gbd_id=reiid(245),
         distribution='dichotomous',
         restrictions=Restrictions(
@@ -1438,6 +1507,7 @@ risk_factors = Risks(
     ),
     smokeless_tobacco=Risk(
         name='smokeless_tobacco',
+        type='risk_factor',
         gbd_id=reiid(332),
         distribution='dichotomous',
         restrictions=Restrictions(
@@ -1454,6 +1524,7 @@ risk_factors = Risks(
     ),
     diet_low_in_legumes=Risk(
         name='diet_low_in_legumes',
+        type='risk_factor',
         gbd_id=reiid(333),
         distribution='ensemble',
         restrictions=Restrictions(
@@ -1476,6 +1547,7 @@ risk_factors = Risks(
     ),
     low_birth_weight_and_short_gestation=Risk(
         name='low_birth_weight_and_short_gestation',
+        type='risk_factor',
         gbd_id=reiid(339),
         distribution='polytomous',
         restrictions=Restrictions(
@@ -1550,6 +1622,7 @@ risk_factors = Risks(
     ),
     impaired_kidney_function=Risk(
         name='impaired_kidney_function',
+        type='risk_factor',
         gbd_id=reiid(341),
         distribution='polytomous',
         restrictions=Restrictions(

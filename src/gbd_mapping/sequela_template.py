@@ -23,16 +23,18 @@ class Healthstate(ModelableEntity):
 
 class Sequela(ModelableEntity):
     """Container for sequela GBD ids and metadata."""
-    __slots__ = ('name', 'gbd_id', 'dismod_id', 'healthstate', )
+    __slots__ = ('name', 'type', 'gbd_id', 'dismod_id', 'healthstate', )
 
     def __init__(self,
                  name: str,
+                 type: str,
                  gbd_id: sid,
                  dismod_id: meid,
                  healthstate: Healthstate, ):
         super().__init__(name=name,
                          gbd_id=gbd_id)
         self.name = name
+        self.type = type
         self.gbd_id = gbd_id
         self.dismod_id = dismod_id
         self.healthstate = healthstate

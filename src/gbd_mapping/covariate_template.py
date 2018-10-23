@@ -12,22 +12,24 @@ from .base_template import ModelableEntity, GbdRecord
 
 class Covariate(ModelableEntity):
     """Container for covariate GBD ids and metadata."""
-    __slots__ = ('name', 'gbd_id', 'group', 'type', 'by_age', 'by_sex', 'dichotomous', )
+    __slots__ = ('name', 'type', 'gbd_id', 'group', 'status', 'by_age', 'by_sex', 'dichotomous', )
 
     def __init__(self,
                  name: str,
+                 type: str,
                  gbd_id: Union[covid, None],
                  group: str,
-                 type: str,
+                 status: str,
                  by_age: bool,
                  by_sex: bool,
                  dichotomous: bool, ):
         super().__init__(name=name,
                          gbd_id=gbd_id)
         self.name = name
+        self.type = type
         self.gbd_id = gbd_id
         self.group = group
-        self.type = type
+        self.status = status
         self.by_age = by_age
         self.by_sex = by_sex
         self.dichotomous = dichotomous
@@ -442,7 +444,8 @@ class Covariates(GbdRecord):
                  'pigs_raised_in_intensive_industrial_agricultural_systems_per_capita',
                  'implicit_versus_explicitly_defined_nash', 'mean_hemoglobin_age_sex_specific',
                  'physicians_per_capita', 'nurses_and_midwives_per_capita', 'pharmacists_per_capita',
-                 'hiv_mortality_rate', 'untreated_hiv', )
+                 'hiv_mortality_rate', 'untreated_hiv', 'medical_schools', 'dentists_per_capita',
+                 'full_vaccine_coverage_indicator_proportion_sage_method_dtp3_pcv3_mcv2', 'net_reproductive_rate', )
 
     def __init__(self, **kwargs):
         super().__init__()
@@ -1104,3 +1107,7 @@ class Covariates(GbdRecord):
         self.pharmacists_per_capita = kwargs.get('pharmacists_per_capita')
         self.hiv_mortality_rate = kwargs.get('hiv_mortality_rate')
         self.untreated_hiv = kwargs.get('untreated_hiv')
+        self.medical_schools = kwargs.get('medical_schools')
+        self.dentists_per_capita = kwargs.get('dentists_per_capita')
+        self.full_vaccine_coverage_indicator_proportion_sage_method_dtp3_pcv3_mcv2 = kwargs.get('full_vaccine_coverage_indicator_proportion_sage_method_dtp3_pcv3_mcv2')
+        self.net_reproductive_rate = kwargs.get('net_reproductive_rate')

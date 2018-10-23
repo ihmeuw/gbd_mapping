@@ -8,9 +8,10 @@ IMPORTABLES_DEFINED = ('Covariate', 'covariates')
 base_types = {
     'Covariate': {
         'attrs': (('name', 'str'),
+                  ('type', 'str'),
                   ('gbd_id', 'Union[covid, None]'),
                   ('group', 'str'),
-                  ('type', 'str'),
+                  ('status', 'str'),
                   ('by_age', 'bool'),
                   ('by_sex', 'bool'),
                   ('dichotomous', 'bool')),
@@ -29,9 +30,10 @@ def make_covariate(name, covid, group, cov_type, by_age, by_sex, dichotomous):
     out = ""
     out += TAB + f"'{name}': Covariate(\n"
     out += TAB*2 + f"name='{name}',\n"
+    out += TAB * 2 + "type='covariate',\n"
     out += TAB*2 + f"gbd_id=covid({covid}),\n"
     out += TAB*2 + f"group='{group}',\n"
-    out += TAB*2 + f"type='{cov_type}',\n"
+    out += TAB*2 + f"status='{cov_type}',\n"
     out += TAB*2 + f"by_age={bool(by_age)},\n"
     out += TAB*2 + f"by_sex={bool(by_sex)},\n"
     out += TAB*2 + f"dichotomous={bool(dichotomous)},\n"

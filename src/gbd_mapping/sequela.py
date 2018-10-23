@@ -11,6 +11,7 @@ from .sequela_template import Healthstate, Sequela, Sequelae
 sequelae = Sequelae(**{
     'acute_typhoid_infection': Sequela(
         name='acute_typhoid_infection',
+        type='sequela',
         gbd_id=sid(7),
         dismod_id=meid(1249),
         healthstate=Healthstate(
@@ -20,6 +21,7 @@ sequelae = Sequelae(**{
     ),
     'severe_typhoid_fever': Sequela(
         name='severe_typhoid_fever',
+        type='sequela',
         gbd_id=sid(8),
         dismod_id=meid(1250),
         healthstate=Healthstate(
@@ -29,6 +31,7 @@ sequelae = Sequelae(**{
     ),
     'intestinal_perforation_due_to_typhoid': Sequela(
         name='intestinal_perforation_due_to_typhoid',
+        type='sequela',
         gbd_id=sid(9),
         dismod_id=meid(1251),
         healthstate=Healthstate(
@@ -38,6 +41,7 @@ sequelae = Sequelae(**{
     ),
     'acute_paratyphoid_infection': Sequela(
         name='acute_paratyphoid_infection',
+        type='sequela',
         gbd_id=sid(10),
         dismod_id=meid(1253),
         healthstate=Healthstate(
@@ -47,6 +51,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_paratyphoid_fever': Sequela(
         name='moderate_paratyphoid_fever',
+        type='sequela',
         gbd_id=sid(11),
         dismod_id=meid(1254),
         healthstate=Healthstate(
@@ -56,6 +61,7 @@ sequelae = Sequelae(**{
     ),
     'severe_paratyphoid_fever': Sequela(
         name='severe_paratyphoid_fever',
+        type='sequela',
         gbd_id=sid(12),
         dismod_id=meid(1255),
         healthstate=Healthstate(
@@ -65,6 +71,7 @@ sequelae = Sequelae(**{
     ),
     'intestinal_perforation_due_to_paratyphoid': Sequela(
         name='intestinal_perforation_due_to_paratyphoid',
+        type='sequela',
         gbd_id=sid(13),
         dismod_id=meid(1256),
         healthstate=Healthstate(
@@ -74,6 +81,7 @@ sequelae = Sequelae(**{
     ),
     'other_intestinal_infectious_diseases': Sequela(
         name='other_intestinal_infectious_diseases',
+        type='sequela',
         gbd_id=sid(14),
         dismod_id=meid(1257),
         healthstate=Healthstate(
@@ -83,6 +91,7 @@ sequelae = Sequelae(**{
     ),
     'mild_upper_respiratory_infections': Sequela(
         name='mild_upper_respiratory_infections',
+        type='sequela',
         gbd_id=sid(15),
         dismod_id=meid(1277),
         healthstate=Healthstate(
@@ -92,6 +101,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_upper_respiratory_infections': Sequela(
         name='moderate_upper_respiratory_infections',
+        type='sequela',
         gbd_id=sid(16),
         dismod_id=meid(1278),
         healthstate=Healthstate(
@@ -101,6 +111,7 @@ sequelae = Sequelae(**{
     ),
     'guillain_barre_syndrome_due_to_upper_respiratory_infections': Sequela(
         name='guillain_barre_syndrome_due_to_upper_respiratory_infections',
+        type='sequela',
         gbd_id=sid(17),
         dismod_id=meid(1280),
         healthstate=Healthstate(
@@ -110,6 +121,7 @@ sequelae = Sequelae(**{
     ),
     'acute_otitis_media': Sequela(
         name='acute_otitis_media',
+        type='sequela',
         gbd_id=sid(18),
         dismod_id=meid(1281),
         healthstate=Healthstate(
@@ -119,6 +131,7 @@ sequelae = Sequelae(**{
     ),
     'acute_pneumococcal_meningitis': Sequela(
         name='acute_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(19),
         dismod_id=meid(1299),
         healthstate=Healthstate(
@@ -128,6 +141,7 @@ sequelae = Sequelae(**{
     ),
     'mild_behavioral_problems_due_to_pneumococcal_meningitis': Sequela(
         name='mild_behavioral_problems_due_to_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(20),
         dismod_id=meid(1300),
         healthstate=Healthstate(
@@ -137,6 +151,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_due_to_long_term_due_to_pneumococcal_meningitis': Sequela(
         name='mild_motor_impairment_due_to_long_term_due_to_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(21),
         dismod_id=meid(3362),
         healthstate=Healthstate(
@@ -146,6 +161,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_plus_cognitive_impairments_due_to_pneumococcal_meningitis': Sequela(
         name='mild_motor_plus_cognitive_impairments_due_to_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(22),
         dismod_id=meid(7723),
         healthstate=Healthstate(
@@ -155,6 +171,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_due_to_pneumococcal_meningitis': Sequela(
         name='borderline_intellectual_disability_due_to_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(23),
         dismod_id=meid(3368),
         healthstate=Healthstate(
@@ -164,6 +181,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_due_to_pneumococcal_meningitis': Sequela(
         name='mild_intellectual_disability_due_to_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(24),
         dismod_id=meid(3371),
         healthstate=Healthstate(
@@ -173,6 +191,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_due_to_pneumococcal_meningitis': Sequela(
         name='moderate_motor_impairment_due_to_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(25),
         dismod_id=meid(3374),
         healthstate=Healthstate(
@@ -182,6 +201,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_due_to_pneumococcal_meningitis': Sequela(
         name='severe_motor_impairment_due_to_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(26),
         dismod_id=meid(3377),
         healthstate=Healthstate(
@@ -191,6 +211,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairments_due_to_pneumococcal_meningitis': Sequela(
         name='moderate_motor_plus_cognitive_impairments_due_to_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(27),
         dismod_id=meid(3380),
         healthstate=Healthstate(
@@ -200,6 +221,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairments_due_to_pneumococcal_meningitis': Sequela(
         name='severe_motor_plus_cognitive_impairments_due_to_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(28),
         dismod_id=meid(3383),
         healthstate=Healthstate(
@@ -209,6 +231,7 @@ sequelae = Sequelae(**{
     ),
     'epilepsy_due_to_pneumococcal_meningitis': Sequela(
         name='epilepsy_due_to_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(29),
         dismod_id=meid(3386),
         healthstate=Healthstate(
@@ -218,6 +241,7 @@ sequelae = Sequelae(**{
     ),
     'mild_hearing_loss_due_to_pneumococcal_meningitis': Sequela(
         name='mild_hearing_loss_due_to_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(30),
         dismod_id=meid(1316),
         healthstate=Healthstate(
@@ -227,6 +251,7 @@ sequelae = Sequelae(**{
     ),
     'mild_hearing_loss_with_ringing_due_to_pneumococcal_meningitis': Sequela(
         name='mild_hearing_loss_with_ringing_due_to_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(31),
         dismod_id=meid(1317),
         healthstate=Healthstate(
@@ -236,6 +261,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_hearing_loss_due_to_pneumococcal_meningitis': Sequela(
         name='moderate_hearing_loss_due_to_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(32),
         dismod_id=meid(1318),
         healthstate=Healthstate(
@@ -245,6 +271,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_hearing_loss_with_ringing_due_to_pneumococcal_meningitis': Sequela(
         name='moderate_hearing_loss_with_ringing_due_to_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(33),
         dismod_id=meid(1319),
         healthstate=Healthstate(
@@ -254,6 +281,7 @@ sequelae = Sequelae(**{
     ),
     'moderately_severe_hearing_loss_due_to_pneumococcal_meningitis': Sequela(
         name='moderately_severe_hearing_loss_due_to_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(34),
         dismod_id=meid(1320),
         healthstate=Healthstate(
@@ -263,6 +291,7 @@ sequelae = Sequelae(**{
     ),
     'moderately_severe_hearing_loss_with_ringing_due_to_pneumococcal_meningitis': Sequela(
         name='moderately_severe_hearing_loss_with_ringing_due_to_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(35),
         dismod_id=meid(1321),
         healthstate=Healthstate(
@@ -272,6 +301,7 @@ sequelae = Sequelae(**{
     ),
     'severe_hearing_loss_due_to_pneumococcal_meningitis': Sequela(
         name='severe_hearing_loss_due_to_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(36),
         dismod_id=meid(1322),
         healthstate=Healthstate(
@@ -281,6 +311,7 @@ sequelae = Sequelae(**{
     ),
     'severe_hearing_loss_with_ringing_due_to_pneumococcal_meningitis': Sequela(
         name='severe_hearing_loss_with_ringing_due_to_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(37),
         dismod_id=meid(1323),
         healthstate=Healthstate(
@@ -290,6 +321,7 @@ sequelae = Sequelae(**{
     ),
     'profound_hearing_loss_due_to_pneumococcal_meningitis': Sequela(
         name='profound_hearing_loss_due_to_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(38),
         dismod_id=meid(1324),
         healthstate=Healthstate(
@@ -299,6 +331,7 @@ sequelae = Sequelae(**{
     ),
     'profound_hearing_loss_with_ringing_due_to_pneumococcal_meningitis': Sequela(
         name='profound_hearing_loss_with_ringing_due_to_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(39),
         dismod_id=meid(1325),
         healthstate=Healthstate(
@@ -308,6 +341,7 @@ sequelae = Sequelae(**{
     ),
     'complete_hearing_loss_due_to_pneumococcal_meningitis': Sequela(
         name='complete_hearing_loss_due_to_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(40),
         dismod_id=meid(1326),
         healthstate=Healthstate(
@@ -317,6 +351,7 @@ sequelae = Sequelae(**{
     ),
     'complete_hearing_loss_with_ringing_due_to_pneumococcal_meningitis': Sequela(
         name='complete_hearing_loss_with_ringing_due_to_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(41),
         dismod_id=meid(1327),
         healthstate=Healthstate(
@@ -326,6 +361,7 @@ sequelae = Sequelae(**{
     ),
     'acute_h_influenzae_type_b_meningitis': Sequela(
         name='acute_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(42),
         dismod_id=meid(1329),
         healthstate=Healthstate(
@@ -335,6 +371,7 @@ sequelae = Sequelae(**{
     ),
     'mild_behavioral_problems_due_to_h_influenzae_type_b_meningitis': Sequela(
         name='mild_behavioral_problems_due_to_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(43),
         dismod_id=meid(1330),
         healthstate=Healthstate(
@@ -344,6 +381,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_due_to_long_term_due_to_h_influenzae_type_b_meningitis': Sequela(
         name='mild_motor_impairment_due_to_long_term_due_to_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(44),
         dismod_id=meid(3392),
         healthstate=Healthstate(
@@ -353,6 +391,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_plus_cognitive_impairments_due_to_h_influenzae_type_b_meningitis': Sequela(
         name='mild_motor_plus_cognitive_impairments_due_to_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(45),
         dismod_id=meid(3395),
         healthstate=Healthstate(
@@ -362,6 +401,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_due_to_h_influenzae_type_b_meningitis': Sequela(
         name='borderline_intellectual_disability_due_to_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(46),
         dismod_id=meid(3398),
         healthstate=Healthstate(
@@ -371,6 +411,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_due_to_h_influenzae_type_b_meningitis': Sequela(
         name='mild_intellectual_disability_due_to_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(47),
         dismod_id=meid(3401),
         healthstate=Healthstate(
@@ -380,6 +421,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_due_to_h_influenzae_type_b_meningitis': Sequela(
         name='moderate_motor_impairment_due_to_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(48),
         dismod_id=meid(3404),
         healthstate=Healthstate(
@@ -389,6 +431,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_due_to_h_influenzae_type_b_meningitis': Sequela(
         name='severe_motor_impairment_due_to_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(49),
         dismod_id=meid(3407),
         healthstate=Healthstate(
@@ -398,6 +441,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairments_due_to_h_influenzae_type_b_meningitis': Sequela(
         name='moderate_motor_plus_cognitive_impairments_due_to_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(50),
         dismod_id=meid(3410),
         healthstate=Healthstate(
@@ -407,6 +451,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairments_due_to_h_influenzae_type_b_meningitis': Sequela(
         name='severe_motor_plus_cognitive_impairments_due_to_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(51),
         dismod_id=meid(3413),
         healthstate=Healthstate(
@@ -416,6 +461,7 @@ sequelae = Sequelae(**{
     ),
     'epilepsy_due_to_h_influenzae_type_b_meningitis': Sequela(
         name='epilepsy_due_to_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(52),
         dismod_id=meid(3416),
         healthstate=Healthstate(
@@ -425,6 +471,7 @@ sequelae = Sequelae(**{
     ),
     'mild_hearing_loss_due_to_h_influenzae_type_b_meningitis': Sequela(
         name='mild_hearing_loss_due_to_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(53),
         dismod_id=meid(1346),
         healthstate=Healthstate(
@@ -434,6 +481,7 @@ sequelae = Sequelae(**{
     ),
     'mild_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis': Sequela(
         name='mild_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(54),
         dismod_id=meid(1347),
         healthstate=Healthstate(
@@ -443,6 +491,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_hearing_loss_due_to_h_influenzae_type_b_meningitis': Sequela(
         name='moderate_hearing_loss_due_to_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(55),
         dismod_id=meid(1348),
         healthstate=Healthstate(
@@ -452,6 +501,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis': Sequela(
         name='moderate_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(56),
         dismod_id=meid(1349),
         healthstate=Healthstate(
@@ -461,6 +511,7 @@ sequelae = Sequelae(**{
     ),
     'moderately_severe_hearing_loss_due_to_h_influenzae_type_b_meningitis': Sequela(
         name='moderately_severe_hearing_loss_due_to_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(57),
         dismod_id=meid(1350),
         healthstate=Healthstate(
@@ -470,6 +521,7 @@ sequelae = Sequelae(**{
     ),
     'moderately_severe_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis': Sequela(
         name='moderately_severe_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(58),
         dismod_id=meid(1351),
         healthstate=Healthstate(
@@ -479,6 +531,7 @@ sequelae = Sequelae(**{
     ),
     'severe_hearing_loss_due_to_h_influenzae_type_b_meningitis': Sequela(
         name='severe_hearing_loss_due_to_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(59),
         dismod_id=meid(1352),
         healthstate=Healthstate(
@@ -488,6 +541,7 @@ sequelae = Sequelae(**{
     ),
     'severe_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis': Sequela(
         name='severe_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(60),
         dismod_id=meid(1353),
         healthstate=Healthstate(
@@ -497,6 +551,7 @@ sequelae = Sequelae(**{
     ),
     'profound_hearing_loss_due_to_h_influenzae_type_b_meningitis': Sequela(
         name='profound_hearing_loss_due_to_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(61),
         dismod_id=meid(1354),
         healthstate=Healthstate(
@@ -506,6 +561,7 @@ sequelae = Sequelae(**{
     ),
     'profound_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis': Sequela(
         name='profound_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(62),
         dismod_id=meid(1355),
         healthstate=Healthstate(
@@ -515,6 +571,7 @@ sequelae = Sequelae(**{
     ),
     'complete_hearing_loss_due_to_h_influenzae_type_b_meningitis': Sequela(
         name='complete_hearing_loss_due_to_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(63),
         dismod_id=meid(1356),
         healthstate=Healthstate(
@@ -524,6 +581,7 @@ sequelae = Sequelae(**{
     ),
     'complete_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis': Sequela(
         name='complete_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(64),
         dismod_id=meid(1357),
         healthstate=Healthstate(
@@ -533,6 +591,7 @@ sequelae = Sequelae(**{
     ),
     'acute_meningococcal_meningitis': Sequela(
         name='acute_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(65),
         dismod_id=meid(1359),
         healthstate=Healthstate(
@@ -542,6 +601,7 @@ sequelae = Sequelae(**{
     ),
     'mild_behavioral_problems_due_to_meningococcal_meningitis': Sequela(
         name='mild_behavioral_problems_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(66),
         dismod_id=meid(1360),
         healthstate=Healthstate(
@@ -551,6 +611,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_due_to_long_term_due_to_meningococcal_meningitis': Sequela(
         name='mild_motor_impairment_due_to_long_term_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(67),
         dismod_id=meid(3422),
         healthstate=Healthstate(
@@ -560,6 +621,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_plus_cognitive_impairments_due_to_meningococcal_meningitis': Sequela(
         name='mild_motor_plus_cognitive_impairments_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(68),
         dismod_id=meid(3425),
         healthstate=Healthstate(
@@ -569,6 +631,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_due_to_meningococcal_meningitis': Sequela(
         name='borderline_intellectual_disability_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(69),
         dismod_id=meid(3428),
         healthstate=Healthstate(
@@ -578,6 +641,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_due_to_meningococcal_meningitis': Sequela(
         name='mild_intellectual_disability_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(70),
         dismod_id=meid(3431),
         healthstate=Healthstate(
@@ -587,6 +651,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_due_to_meningococcal_meningitis': Sequela(
         name='moderate_motor_impairment_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(71),
         dismod_id=meid(3434),
         healthstate=Healthstate(
@@ -596,6 +661,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_due_to_meningococcal_meningitis': Sequela(
         name='severe_motor_impairment_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(72),
         dismod_id=meid(3437),
         healthstate=Healthstate(
@@ -605,6 +671,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairments_due_to_meningococcal_meningitis': Sequela(
         name='moderate_motor_plus_cognitive_impairments_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(73),
         dismod_id=meid(3440),
         healthstate=Healthstate(
@@ -614,6 +681,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairments_due_to_meningococcal_meningitis': Sequela(
         name='severe_motor_plus_cognitive_impairments_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(74),
         dismod_id=meid(3443),
         healthstate=Healthstate(
@@ -623,6 +691,7 @@ sequelae = Sequelae(**{
     ),
     'epilepsy_due_to_meningococcal_meningitis': Sequela(
         name='epilepsy_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(75),
         dismod_id=meid(3446),
         healthstate=Healthstate(
@@ -632,6 +701,7 @@ sequelae = Sequelae(**{
     ),
     'mild_hearing_loss_due_to_meningococcal_meningitis': Sequela(
         name='mild_hearing_loss_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(76),
         dismod_id=meid(1376),
         healthstate=Healthstate(
@@ -641,6 +711,7 @@ sequelae = Sequelae(**{
     ),
     'mild_hearing_loss_with_ringing_due_to_meningococcal_meningitis': Sequela(
         name='mild_hearing_loss_with_ringing_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(77),
         dismod_id=meid(1377),
         healthstate=Healthstate(
@@ -650,6 +721,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_hearing_loss_due_to_meningococcal_meningitis': Sequela(
         name='moderate_hearing_loss_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(78),
         dismod_id=meid(1378),
         healthstate=Healthstate(
@@ -659,6 +731,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_hearing_loss_with_ringing_due_to_meningococcal_meningitis': Sequela(
         name='moderate_hearing_loss_with_ringing_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(79),
         dismod_id=meid(1379),
         healthstate=Healthstate(
@@ -668,6 +741,7 @@ sequelae = Sequelae(**{
     ),
     'moderately_severe_hearing_loss_due_to_meningococcal_meningitis': Sequela(
         name='moderately_severe_hearing_loss_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(80),
         dismod_id=meid(1380),
         healthstate=Healthstate(
@@ -677,6 +751,7 @@ sequelae = Sequelae(**{
     ),
     'moderately_severe_hearing_loss_with_ringing_due_to_meningococcal_meningitis': Sequela(
         name='moderately_severe_hearing_loss_with_ringing_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(81),
         dismod_id=meid(1381),
         healthstate=Healthstate(
@@ -686,6 +761,7 @@ sequelae = Sequelae(**{
     ),
     'severe_hearing_loss_due_to_meningococcal_meningitis': Sequela(
         name='severe_hearing_loss_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(82),
         dismod_id=meid(1382),
         healthstate=Healthstate(
@@ -695,6 +771,7 @@ sequelae = Sequelae(**{
     ),
     'severe_hearing_loss_with_ringing_due_to_meningococcal_meningitis': Sequela(
         name='severe_hearing_loss_with_ringing_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(83),
         dismod_id=meid(1383),
         healthstate=Healthstate(
@@ -704,6 +781,7 @@ sequelae = Sequelae(**{
     ),
     'profound_hearing_loss_due_to_meningococcal_meningitis': Sequela(
         name='profound_hearing_loss_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(84),
         dismod_id=meid(1384),
         healthstate=Healthstate(
@@ -713,6 +791,7 @@ sequelae = Sequelae(**{
     ),
     'profound_hearing_loss_with_ringing_due_to_meningococcal_meningitis': Sequela(
         name='profound_hearing_loss_with_ringing_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(85),
         dismod_id=meid(1385),
         healthstate=Healthstate(
@@ -722,6 +801,7 @@ sequelae = Sequelae(**{
     ),
     'complete_hearing_loss_due_to_meningococcal_meningitis': Sequela(
         name='complete_hearing_loss_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(86),
         dismod_id=meid(1386),
         healthstate=Healthstate(
@@ -731,6 +811,7 @@ sequelae = Sequelae(**{
     ),
     'complete_hearing_loss_with_ringing_due_to_meningococcal_meningitis': Sequela(
         name='complete_hearing_loss_with_ringing_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(87),
         dismod_id=meid(1387),
         healthstate=Healthstate(
@@ -740,6 +821,7 @@ sequelae = Sequelae(**{
     ),
     'other_acute_bacterial_meningitis': Sequela(
         name='other_acute_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(88),
         dismod_id=meid(1389),
         healthstate=Healthstate(
@@ -749,6 +831,7 @@ sequelae = Sequelae(**{
     ),
     'mild_behavioral_problems_due_to_other_bacterial_meningitis': Sequela(
         name='mild_behavioral_problems_due_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(89),
         dismod_id=meid(1390),
         healthstate=Healthstate(
@@ -758,6 +841,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_due_to_long_term_due_to_other_bacterial_meningitis': Sequela(
         name='mild_motor_impairment_due_to_long_term_due_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(90),
         dismod_id=meid(3452),
         healthstate=Healthstate(
@@ -767,6 +851,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_plus_cognitive_impairments_due_to_other_bacterial_meningitis': Sequela(
         name='mild_motor_plus_cognitive_impairments_due_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(91),
         dismod_id=meid(3455),
         healthstate=Healthstate(
@@ -776,6 +861,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_due_to_other_bacterial_meningitis': Sequela(
         name='borderline_intellectual_disability_due_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(92),
         dismod_id=meid(3458),
         healthstate=Healthstate(
@@ -785,6 +871,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_due_to_other_bacterial_meningitis': Sequela(
         name='mild_intellectual_disability_due_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(93),
         dismod_id=meid(3461),
         healthstate=Healthstate(
@@ -794,6 +881,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_due_to_other_bacterial_meningitis': Sequela(
         name='moderate_motor_impairment_due_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(94),
         dismod_id=meid(3464),
         healthstate=Healthstate(
@@ -803,6 +891,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_due_to_other_bacterial_meningitis': Sequela(
         name='severe_motor_impairment_due_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(95),
         dismod_id=meid(3467),
         healthstate=Healthstate(
@@ -812,6 +901,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairments_due_to_other_bacterial_meningitis': Sequela(
         name='moderate_motor_plus_cognitive_impairments_due_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(96),
         dismod_id=meid(3470),
         healthstate=Healthstate(
@@ -821,6 +911,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairments_due_to_other_bacterial_meningitis': Sequela(
         name='severe_motor_plus_cognitive_impairments_due_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(97),
         dismod_id=meid(3473),
         healthstate=Healthstate(
@@ -830,6 +921,7 @@ sequelae = Sequelae(**{
     ),
     'epilepsy_due_to_other_meningitis': Sequela(
         name='epilepsy_due_to_other_meningitis',
+        type='sequela',
         gbd_id=sid(98),
         dismod_id=meid(3476),
         healthstate=Healthstate(
@@ -839,6 +931,7 @@ sequelae = Sequelae(**{
     ),
     'mild_hearing_loss_due_to_other_bacterial_meningitis': Sequela(
         name='mild_hearing_loss_due_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(99),
         dismod_id=meid(1406),
         healthstate=Healthstate(
@@ -848,6 +941,7 @@ sequelae = Sequelae(**{
     ),
     'mild_hearing_loss_due_with_ringing_to_other_bacterial_meningitis': Sequela(
         name='mild_hearing_loss_due_with_ringing_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(100),
         dismod_id=meid(1407),
         healthstate=Healthstate(
@@ -857,6 +951,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_hearing_loss_due_to_other_bacterial_meningitis': Sequela(
         name='moderate_hearing_loss_due_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(101),
         dismod_id=meid(1408),
         healthstate=Healthstate(
@@ -866,6 +961,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_hearing_loss_with_ringing_due_to_other_bacterial_meningitis': Sequela(
         name='moderate_hearing_loss_with_ringing_due_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(102),
         dismod_id=meid(1409),
         healthstate=Healthstate(
@@ -875,6 +971,7 @@ sequelae = Sequelae(**{
     ),
     'moderately_severe_hearing_loss_due_to_other_bacterial_meningitis': Sequela(
         name='moderately_severe_hearing_loss_due_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(103),
         dismod_id=meid(1410),
         healthstate=Healthstate(
@@ -884,6 +981,7 @@ sequelae = Sequelae(**{
     ),
     'moderately_severe_hearing_loss_with_ringing_due_to_other_bacterial_meningitis': Sequela(
         name='moderately_severe_hearing_loss_with_ringing_due_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(104),
         dismod_id=meid(1411),
         healthstate=Healthstate(
@@ -893,6 +991,7 @@ sequelae = Sequelae(**{
     ),
     'severe_hearing_loss_due_to_other_bacterial_meningitis': Sequela(
         name='severe_hearing_loss_due_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(105),
         dismod_id=meid(1412),
         healthstate=Healthstate(
@@ -902,6 +1001,7 @@ sequelae = Sequelae(**{
     ),
     'severe_hearing_loss_with_ringing_due_to_other_bacterial_meningitis': Sequela(
         name='severe_hearing_loss_with_ringing_due_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(106),
         dismod_id=meid(1413),
         healthstate=Healthstate(
@@ -911,6 +1011,7 @@ sequelae = Sequelae(**{
     ),
     'profound_hearing_loss_due_to_other_bacterial_meningitis': Sequela(
         name='profound_hearing_loss_due_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(107),
         dismod_id=meid(1414),
         healthstate=Healthstate(
@@ -920,6 +1021,7 @@ sequelae = Sequelae(**{
     ),
     'profound_hearing_loss_with_ringing_due_to_other_bacterial_meningitis': Sequela(
         name='profound_hearing_loss_with_ringing_due_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(108),
         dismod_id=meid(1415),
         healthstate=Healthstate(
@@ -929,6 +1031,7 @@ sequelae = Sequelae(**{
     ),
     'complete_hearing_loss_due_to_other_bacterial_meningitis': Sequela(
         name='complete_hearing_loss_due_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(109),
         dismod_id=meid(1416),
         healthstate=Healthstate(
@@ -938,6 +1041,7 @@ sequelae = Sequelae(**{
     ),
     'complete_hearing_loss_with_ringing_due_to_other_bacterial_meningitis': Sequela(
         name='complete_hearing_loss_with_ringing_due_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(110),
         dismod_id=meid(1417),
         healthstate=Healthstate(
@@ -947,6 +1051,7 @@ sequelae = Sequelae(**{
     ),
     'acute_viral_meningitis': Sequela(
         name='acute_viral_meningitis',
+        type='sequela',
         gbd_id=sid(111),
         dismod_id=meid(1418),
         healthstate=Healthstate(
@@ -956,6 +1061,7 @@ sequelae = Sequelae(**{
     ),
     'acute_encephalitis': Sequela(
         name='acute_encephalitis',
+        type='sequela',
         gbd_id=sid(112),
         dismod_id=meid(1419),
         healthstate=Healthstate(
@@ -965,6 +1071,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_diphtheria': Sequela(
         name='moderate_diphtheria',
+        type='sequela',
         gbd_id=sid(113),
         dismod_id=meid(1422),
         healthstate=Healthstate(
@@ -974,6 +1081,7 @@ sequelae = Sequelae(**{
     ),
     'severe_diphtheria': Sequela(
         name='severe_diphtheria',
+        type='sequela',
         gbd_id=sid(114),
         dismod_id=meid(1423),
         healthstate=Healthstate(
@@ -983,6 +1091,7 @@ sequelae = Sequelae(**{
     ),
     'whooping_cough': Sequela(
         name='whooping_cough',
+        type='sequela',
         gbd_id=sid(115),
         dismod_id=meid(1424),
         healthstate=Healthstate(
@@ -992,6 +1101,7 @@ sequelae = Sequelae(**{
     ),
     'severe_tetanus': Sequela(
         name='severe_tetanus',
+        type='sequela',
         gbd_id=sid(116),
         dismod_id=meid(1426),
         healthstate=Healthstate(
@@ -1001,6 +1111,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_measles': Sequela(
         name='moderate_measles',
+        type='sequela',
         gbd_id=sid(117),
         dismod_id=meid(1437),
         healthstate=Healthstate(
@@ -1010,6 +1121,7 @@ sequelae = Sequelae(**{
     ),
     'severe_measles': Sequela(
         name='severe_measles',
+        type='sequela',
         gbd_id=sid(118),
         dismod_id=meid(1438),
         healthstate=Healthstate(
@@ -1019,6 +1131,7 @@ sequelae = Sequelae(**{
     ),
     'chickenpox': Sequela(
         name='chickenpox',
+        type='sequela',
         gbd_id=sid(119),
         dismod_id=meid(1440),
         healthstate=Healthstate(
@@ -1028,6 +1141,7 @@ sequelae = Sequelae(**{
     ),
     'herpes_zoster': Sequela(
         name='herpes_zoster',
+        type='sequela',
         gbd_id=sid(120),
         dismod_id=meid(1441),
         healthstate=Healthstate(
@@ -1037,6 +1151,7 @@ sequelae = Sequelae(**{
     ),
     'mild_malaria': Sequela(
         name='mild_malaria',
+        type='sequela',
         gbd_id=sid(121),
         dismod_id=meid(9762),
         healthstate=Healthstate(
@@ -1046,6 +1161,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_malaria': Sequela(
         name='moderate_malaria',
+        type='sequela',
         gbd_id=sid(122),
         dismod_id=meid(9763),
         healthstate=Healthstate(
@@ -1055,6 +1171,7 @@ sequelae = Sequelae(**{
     ),
     'severe_malaria': Sequela(
         name='severe_malaria',
+        type='sequela',
         gbd_id=sid(123),
         dismod_id=meid(9764),
         healthstate=Healthstate(
@@ -1064,6 +1181,7 @@ sequelae = Sequelae(**{
     ),
     'acute_chagas_disease': Sequela(
         name='acute_chagas_disease',
+        type='sequela',
         gbd_id=sid(124),
         dismod_id=meid(1451),
         healthstate=Healthstate(
@@ -1073,6 +1191,7 @@ sequelae = Sequelae(**{
     ),
     'atrial_fibrillation_and_flutter_due_to_chagas_disease': Sequela(
         name='atrial_fibrillation_and_flutter_due_to_chagas_disease',
+        type='sequela',
         gbd_id=sid(125),
         dismod_id=meid(1452),
         healthstate=Healthstate(
@@ -1082,6 +1201,7 @@ sequelae = Sequelae(**{
     ),
     'mild_chronic_digestive_disease_due_to_chagas_disease': Sequela(
         name='mild_chronic_digestive_disease_due_to_chagas_disease',
+        type='sequela',
         gbd_id=sid(126),
         dismod_id=meid(1453),
         healthstate=Healthstate(
@@ -1091,6 +1211,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_chronic_digestive_disease_due_to_chagas_disease': Sequela(
         name='moderate_chronic_digestive_disease_due_to_chagas_disease',
+        type='sequela',
         gbd_id=sid(127),
         dismod_id=meid(1454),
         healthstate=Healthstate(
@@ -1100,6 +1221,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_and_mild_heart_failure_due_to_chagas_disease': Sequela(
         name='asymptomatic_and_mild_heart_failure_due_to_chagas_disease',
+        type='sequela',
         gbd_id=sid(128),
         dismod_id=meid(1455),
         healthstate=Healthstate(
@@ -1109,6 +1231,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_heart_failure_due_to_chagas_disease': Sequela(
         name='moderate_heart_failure_due_to_chagas_disease',
+        type='sequela',
         gbd_id=sid(129),
         dismod_id=meid(1456),
         healthstate=Healthstate(
@@ -1118,6 +1241,7 @@ sequelae = Sequelae(**{
     ),
     'severe_heart_failure_due_to_chagas_disease': Sequela(
         name='severe_heart_failure_due_to_chagas_disease',
+        type='sequela',
         gbd_id=sid(130),
         dismod_id=meid(1457),
         healthstate=Healthstate(
@@ -1127,6 +1251,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_visceral_leishmaniasis': Sequela(
         name='moderate_visceral_leishmaniasis',
+        type='sequela',
         gbd_id=sid(131),
         dismod_id=meid(1459),
         healthstate=Healthstate(
@@ -1136,6 +1261,7 @@ sequelae = Sequelae(**{
     ),
     'severe_visceral_leishmaniasis': Sequela(
         name='severe_visceral_leishmaniasis',
+        type='sequela',
         gbd_id=sid(132),
         dismod_id=meid(1460),
         healthstate=Healthstate(
@@ -1145,6 +1271,7 @@ sequelae = Sequelae(**{
     ),
     'cutaneous_and_mucocutaneous_leishmaniasis': Sequela(
         name='cutaneous_and_mucocutaneous_leishmaniasis',
+        type='sequela',
         gbd_id=sid(133),
         dismod_id=meid(1461),
         healthstate=Healthstate(
@@ -1154,6 +1281,7 @@ sequelae = Sequelae(**{
     ),
     'mild_schistosomiasis': Sequela(
         name='mild_schistosomiasis',
+        type='sequela',
         gbd_id=sid(136),
         dismod_id=meid(1468),
         healthstate=Healthstate(
@@ -1163,6 +1291,7 @@ sequelae = Sequelae(**{
     ),
     'mild_diarrhea_due_to_schistosomiasis': Sequela(
         name='mild_diarrhea_due_to_schistosomiasis',
+        type='sequela',
         gbd_id=sid(137),
         dismod_id=meid(1469),
         healthstate=Healthstate(
@@ -1172,6 +1301,7 @@ sequelae = Sequelae(**{
     ),
     'hematemesis_due_to_schistosomiasis': Sequela(
         name='hematemesis_due_to_schistosomiasis',
+        type='sequela',
         gbd_id=sid(138),
         dismod_id=meid(1470),
         healthstate=Healthstate(
@@ -1181,6 +1311,7 @@ sequelae = Sequelae(**{
     ),
     'hepatomegaly_due_to_schistosomiasis': Sequela(
         name='hepatomegaly_due_to_schistosomiasis',
+        type='sequela',
         gbd_id=sid(139),
         dismod_id=meid(1471),
         healthstate=Healthstate(
@@ -1190,6 +1321,7 @@ sequelae = Sequelae(**{
     ),
     'ascites_due_to_schistosomiasis': Sequela(
         name='ascites_due_to_schistosomiasis',
+        type='sequela',
         gbd_id=sid(140),
         dismod_id=meid(1472),
         healthstate=Healthstate(
@@ -1199,6 +1331,7 @@ sequelae = Sequelae(**{
     ),
     'dysuria_due_to_schistosomiasis': Sequela(
         name='dysuria_due_to_schistosomiasis',
+        type='sequela',
         gbd_id=sid(141),
         dismod_id=meid(1473),
         healthstate=Healthstate(
@@ -1208,6 +1341,7 @@ sequelae = Sequelae(**{
     ),
     'bladder_pathology_due_to_schistosomiasis': Sequela(
         name='bladder_pathology_due_to_schistosomiasis',
+        type='sequela',
         gbd_id=sid(142),
         dismod_id=meid(1474),
         healthstate=Healthstate(
@@ -1217,6 +1351,7 @@ sequelae = Sequelae(**{
     ),
     'hydronephrosis_due_to_schistosomiasis': Sequela(
         name='hydronephrosis_due_to_schistosomiasis',
+        type='sequela',
         gbd_id=sid(143),
         dismod_id=meid(1475),
         healthstate=Healthstate(
@@ -1226,6 +1361,7 @@ sequelae = Sequelae(**{
     ),
     'mild_anemia_due_to_schistosomiasis': Sequela(
         name='mild_anemia_due_to_schistosomiasis',
+        type='sequela',
         gbd_id=sid(144),
         dismod_id=meid(1476),
         healthstate=Healthstate(
@@ -1235,6 +1371,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_anemia_due_to_schistosomiasis': Sequela(
         name='moderate_anemia_due_to_schistosomiasis',
+        type='sequela',
         gbd_id=sid(145),
         dismod_id=meid(1477),
         healthstate=Healthstate(
@@ -1244,6 +1381,7 @@ sequelae = Sequelae(**{
     ),
     'severe_anemia_due_to_schistosomiasis': Sequela(
         name='severe_anemia_due_to_schistosomiasis',
+        type='sequela',
         gbd_id=sid(146),
         dismod_id=meid(1478),
         healthstate=Healthstate(
@@ -1253,6 +1391,7 @@ sequelae = Sequelae(**{
     ),
     'abdominal_problems_due_to_cystic_echinococcosis': Sequela(
         name='abdominal_problems_due_to_cystic_echinococcosis',
+        type='sequela',
         gbd_id=sid(147),
         dismod_id=meid(1485),
         healthstate=Healthstate(
@@ -1262,6 +1401,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_respiratory_disease_due_to_cystic_echinococcosis': Sequela(
         name='chronic_respiratory_disease_due_to_cystic_echinococcosis',
+        type='sequela',
         gbd_id=sid(148),
         dismod_id=meid(1486),
         healthstate=Healthstate(
@@ -1271,6 +1411,7 @@ sequelae = Sequelae(**{
     ),
     'prevalence_of_detectable_microfiliaria_due_to_lymphatic_filariasis': Sequela(
         name='prevalence_of_detectable_microfiliaria_due_to_lymphatic_filariasis',
+        type='sequela',
         gbd_id=sid(149),
         dismod_id=meid(10519),
         healthstate=Healthstate(
@@ -1280,6 +1421,7 @@ sequelae = Sequelae(**{
     ),
     'lymphedema_due_to_lymphatic_filariasis': Sequela(
         name='lymphedema_due_to_lymphatic_filariasis',
+        type='sequela',
         gbd_id=sid(150),
         dismod_id=meid(1492),
         healthstate=Healthstate(
@@ -1289,6 +1431,7 @@ sequelae = Sequelae(**{
     ),
     'hydrocele_due_to_lymphatic_filariasis': Sequela(
         name='hydrocele_due_to_lymphatic_filariasis',
+        type='sequela',
         gbd_id=sid(151),
         dismod_id=meid(1493),
         healthstate=Healthstate(
@@ -1298,6 +1441,7 @@ sequelae = Sequelae(**{
     ),
     'mild_skin_disease_due_to_onchocerciasis': Sequela(
         name='mild_skin_disease_due_to_onchocerciasis',
+        type='sequela',
         gbd_id=sid(152),
         dismod_id=meid(1495),
         healthstate=Healthstate(
@@ -1307,6 +1451,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_skin_disease_due_to_onchocerciasis': Sequela(
         name='moderate_skin_disease_due_to_onchocerciasis',
+        type='sequela',
         gbd_id=sid(153),
         dismod_id=meid(1496),
         healthstate=Healthstate(
@@ -1316,6 +1461,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_vision_impairment_due_to_trachoma': Sequela(
         name='moderate_vision_impairment_due_to_trachoma',
+        type='sequela',
         gbd_id=sid(154),
         dismod_id=meid(1501),
         healthstate=Healthstate(
@@ -1325,6 +1471,7 @@ sequelae = Sequelae(**{
     ),
     'severe_vision_impairment_due_to_trachoma': Sequela(
         name='severe_vision_impairment_due_to_trachoma',
+        type='sequela',
         gbd_id=sid(155),
         dismod_id=meid(1502),
         healthstate=Healthstate(
@@ -1334,6 +1481,7 @@ sequelae = Sequelae(**{
     ),
     'blindness_due_to_trachoma': Sequela(
         name='blindness_due_to_trachoma',
+        type='sequela',
         gbd_id=sid(156),
         dismod_id=meid(3614),
         healthstate=Healthstate(
@@ -1343,6 +1491,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_dengue': Sequela(
         name='moderate_dengue',
+        type='sequela',
         gbd_id=sid(157),
         dismod_id=meid(1506),
         healthstate=Healthstate(
@@ -1352,6 +1501,7 @@ sequelae = Sequelae(**{
     ),
     'severe_dengue': Sequela(
         name='severe_dengue',
+        type='sequela',
         gbd_id=sid(158),
         dismod_id=meid(1507),
         healthstate=Healthstate(
@@ -1361,6 +1511,7 @@ sequelae = Sequelae(**{
     ),
     'post_dengue_chronic_fatigue_syndrome': Sequela(
         name='post_dengue_chronic_fatigue_syndrome',
+        type='sequela',
         gbd_id=sid(159),
         dismod_id=meid(1508),
         healthstate=Healthstate(
@@ -1370,6 +1521,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_yellow_fever': Sequela(
         name='moderate_yellow_fever',
+        type='sequela',
         gbd_id=sid(160),
         dismod_id=meid(1510),
         healthstate=Healthstate(
@@ -1379,6 +1531,7 @@ sequelae = Sequelae(**{
     ),
     'severe_yellow_fever': Sequela(
         name='severe_yellow_fever',
+        type='sequela',
         gbd_id=sid(161),
         dismod_id=meid(1511),
         healthstate=Healthstate(
@@ -1388,6 +1541,7 @@ sequelae = Sequelae(**{
     ),
     'rabies': Sequela(
         name='rabies',
+        type='sequela',
         gbd_id=sid(162),
         dismod_id=meid(1512),
         healthstate=Healthstate(
@@ -1397,6 +1551,7 @@ sequelae = Sequelae(**{
     ),
     'heavy_infestation_of_ascariasis': Sequela(
         name='heavy_infestation_of_ascariasis',
+        type='sequela',
         gbd_id=sid(163),
         dismod_id=meid(1513),
         healthstate=Healthstate(
@@ -1406,6 +1561,7 @@ sequelae = Sequelae(**{
     ),
     'mild_abdominopelvic_problems_due_to_ascariasis': Sequela(
         name='mild_abdominopelvic_problems_due_to_ascariasis',
+        type='sequela',
         gbd_id=sid(164),
         dismod_id=meid(1514),
         healthstate=Healthstate(
@@ -1415,6 +1571,7 @@ sequelae = Sequelae(**{
     ),
     'severe_wasting_due_to_ascariasis': Sequela(
         name='severe_wasting_due_to_ascariasis',
+        type='sequela',
         gbd_id=sid(165),
         dismod_id=meid(1515),
         healthstate=Healthstate(
@@ -1424,6 +1581,7 @@ sequelae = Sequelae(**{
     ),
     'heavy_infestation_of_trichuriasis': Sequela(
         name='heavy_infestation_of_trichuriasis',
+        type='sequela',
         gbd_id=sid(166),
         dismod_id=meid(1516),
         healthstate=Healthstate(
@@ -1433,6 +1591,7 @@ sequelae = Sequelae(**{
     ),
     'mild_abdominopelvic_problems_due_to_trichuriasis': Sequela(
         name='mild_abdominopelvic_problems_due_to_trichuriasis',
+        type='sequela',
         gbd_id=sid(167),
         dismod_id=meid(1517),
         healthstate=Healthstate(
@@ -1442,6 +1601,7 @@ sequelae = Sequelae(**{
     ),
     'severe_wasting_due_to_trichuriasis': Sequela(
         name='severe_wasting_due_to_trichuriasis',
+        type='sequela',
         gbd_id=sid(168),
         dismod_id=meid(1518),
         healthstate=Healthstate(
@@ -1451,6 +1611,7 @@ sequelae = Sequelae(**{
     ),
     'heavy_infestation_of_hookworm': Sequela(
         name='heavy_infestation_of_hookworm',
+        type='sequela',
         gbd_id=sid(169),
         dismod_id=meid(1519),
         healthstate=Healthstate(
@@ -1460,6 +1621,7 @@ sequelae = Sequelae(**{
     ),
     'mild_abdominopelvic_problems_due_to_hookworm_disease': Sequela(
         name='mild_abdominopelvic_problems_due_to_hookworm_disease',
+        type='sequela',
         gbd_id=sid(170),
         dismod_id=meid(1520),
         healthstate=Healthstate(
@@ -1469,6 +1631,7 @@ sequelae = Sequelae(**{
     ),
     'severe_wasting_due_to_hookworm_disease': Sequela(
         name='severe_wasting_due_to_hookworm_disease',
+        type='sequela',
         gbd_id=sid(171),
         dismod_id=meid(1521),
         healthstate=Healthstate(
@@ -1478,6 +1641,7 @@ sequelae = Sequelae(**{
     ),
     'mild_anemia_due_to_hookworm_disease': Sequela(
         name='mild_anemia_due_to_hookworm_disease',
+        type='sequela',
         gbd_id=sid(172),
         dismod_id=meid(1522),
         healthstate=Healthstate(
@@ -1487,6 +1651,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_anemia_due_to_hookworm_disease': Sequela(
         name='moderate_anemia_due_to_hookworm_disease',
+        type='sequela',
         gbd_id=sid(173),
         dismod_id=meid(1523),
         healthstate=Healthstate(
@@ -1496,6 +1661,7 @@ sequelae = Sequelae(**{
     ),
     'severe_anemia_due_to_hookworm_disease': Sequela(
         name='severe_anemia_due_to_hookworm_disease',
+        type='sequela',
         gbd_id=sid(174),
         dismod_id=meid(1524),
         healthstate=Healthstate(
@@ -1505,6 +1671,7 @@ sequelae = Sequelae(**{
     ),
     'cerebral_paragonimiasis': Sequela(
         name='cerebral_paragonimiasis',
+        type='sequela',
         gbd_id=sid(175),
         dismod_id=meid(3617),
         healthstate=Healthstate(
@@ -1514,6 +1681,7 @@ sequelae = Sequelae(**{
     ),
     'acute_infection_due_to_other_neglected_tropical_diseases': Sequela(
         name='acute_infection_due_to_other_neglected_tropical_diseases',
+        type='sequela',
         gbd_id=sid(176),
         dismod_id=meid(1531),
         healthstate=Healthstate(
@@ -1523,6 +1691,7 @@ sequelae = Sequelae(**{
     ),
     'mild_anemia_due_to_other_neglected_tropical_diseases': Sequela(
         name='mild_anemia_due_to_other_neglected_tropical_diseases',
+        type='sequela',
         gbd_id=sid(177),
         dismod_id=meid(1532),
         healthstate=Healthstate(
@@ -1532,6 +1701,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_anemia_due_to_other_neglected_tropical_diseases': Sequela(
         name='moderate_anemia_due_to_other_neglected_tropical_diseases',
+        type='sequela',
         gbd_id=sid(178),
         dismod_id=meid(1533),
         healthstate=Healthstate(
@@ -1541,6 +1711,7 @@ sequelae = Sequelae(**{
     ),
     'severe_anemia_due_to_other_neglected_tropical_diseases': Sequela(
         name='severe_anemia_due_to_other_neglected_tropical_diseases',
+        type='sequela',
         gbd_id=sid(179),
         dismod_id=meid(1534),
         healthstate=Healthstate(
@@ -1550,6 +1721,7 @@ sequelae = Sequelae(**{
     ),
     'maternal_hemorrhage_less_than__1l_blood_lost': Sequela(
         name='maternal_hemorrhage_less_than__1l_blood_lost',
+        type='sequela',
         gbd_id=sid(180),
         dismod_id=meid(1536),
         healthstate=Healthstate(
@@ -1559,6 +1731,7 @@ sequelae = Sequelae(**{
     ),
     'maternal_hemorrhage_greater_than__1l_blood_lost': Sequela(
         name='maternal_hemorrhage_greater_than__1l_blood_lost',
+        type='sequela',
         gbd_id=sid(181),
         dismod_id=meid(1537),
         healthstate=Healthstate(
@@ -1568,6 +1741,7 @@ sequelae = Sequelae(**{
     ),
     'mild_anemia_due_to_maternal_hemorrhage': Sequela(
         name='mild_anemia_due_to_maternal_hemorrhage',
+        type='sequela',
         gbd_id=sid(182),
         dismod_id=meid(1538),
         healthstate=Healthstate(
@@ -1577,6 +1751,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_anemia_due_to_maternal_hemorrhage': Sequela(
         name='moderate_anemia_due_to_maternal_hemorrhage',
+        type='sequela',
         gbd_id=sid(183),
         dismod_id=meid(1539),
         healthstate=Healthstate(
@@ -1586,6 +1761,7 @@ sequelae = Sequelae(**{
     ),
     'severe_anemia_due_to_maternal_hemorrhage': Sequela(
         name='severe_anemia_due_to_maternal_hemorrhage',
+        type='sequela',
         gbd_id=sid(184),
         dismod_id=meid(1540),
         healthstate=Healthstate(
@@ -1595,6 +1771,7 @@ sequelae = Sequelae(**{
     ),
     'severe_pre_eclampsia': Sequela(
         name='severe_pre_eclampsia',
+        type='sequela',
         gbd_id=sid(185),
         dismod_id=meid(1542),
         healthstate=Healthstate(
@@ -1604,6 +1781,7 @@ sequelae = Sequelae(**{
     ),
     'eclampsia': Sequela(
         name='eclampsia',
+        type='sequela',
         gbd_id=sid(186),
         dismod_id=meid(3635),
         healthstate=Healthstate(
@@ -1613,6 +1791,7 @@ sequelae = Sequelae(**{
     ),
     'long_term_sequelae_of_severe_pre_eclampsia': Sequela(
         name='long_term_sequelae_of_severe_pre_eclampsia',
+        type='sequela',
         gbd_id=sid(187),
         dismod_id=meid(1546),
         healthstate=Healthstate(
@@ -1622,6 +1801,7 @@ sequelae = Sequelae(**{
     ),
     'obstructed_labor_acute_event': Sequela(
         name='obstructed_labor_acute_event',
+        type='sequela',
         gbd_id=sid(188),
         dismod_id=meid(3641),
         healthstate=Healthstate(
@@ -1631,6 +1811,7 @@ sequelae = Sequelae(**{
     ),
     'rectovaginal_fistula': Sequela(
         name='rectovaginal_fistula',
+        type='sequela',
         gbd_id=sid(189),
         dismod_id=meid(1553),
         healthstate=Healthstate(
@@ -1640,6 +1821,7 @@ sequelae = Sequelae(**{
     ),
     'vesicovaginal_fistula': Sequela(
         name='vesicovaginal_fistula',
+        type='sequela',
         gbd_id=sid(190),
         dismod_id=meid(1554),
         healthstate=Healthstate(
@@ -1649,6 +1831,7 @@ sequelae = Sequelae(**{
     ),
     'maternal_abortive_outcome': Sequela(
         name='maternal_abortive_outcome',
+        type='sequela',
         gbd_id=sid(191),
         dismod_id=meid(3644),
         healthstate=Healthstate(
@@ -1658,6 +1841,7 @@ sequelae = Sequelae(**{
     ),
     'other_maternal_disorders': Sequela(
         name='other_maternal_disorders',
+        type='sequela',
         gbd_id=sid(192),
         dismod_id=meid(1556),
         healthstate=Healthstate(
@@ -1667,6 +1851,7 @@ sequelae = Sequelae(**{
     ),
     'mild_vision_impairment_due_to_retinopathy_of_prematurity': Sequela(
         name='mild_vision_impairment_due_to_retinopathy_of_prematurity',
+        type='sequela',
         gbd_id=sid(193),
         dismod_id=meid(1577),
         healthstate=Healthstate(
@@ -1676,6 +1861,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_plus_cognitive_impairments_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
         name='mild_motor_plus_cognitive_impairments_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma',
+        type='sequela',
         gbd_id=sid(194),
         dismod_id=meid(3794),
         healthstate=Healthstate(
@@ -1685,6 +1871,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
         name='mild_motor_impairment_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma',
+        type='sequela',
         gbd_id=sid(195),
         dismod_id=meid(3797),
         healthstate=Healthstate(
@@ -1694,6 +1881,7 @@ sequelae = Sequelae(**{
     ),
     'severe_infection_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
         name='severe_infection_due_to_neonatal_sepsis_and_other_neonatal_infections',
+        type='sequela',
         gbd_id=sid(196),
         dismod_id=meid(1594),
         healthstate=Healthstate(
@@ -1703,6 +1891,7 @@ sequelae = Sequelae(**{
     ),
     'other_neonatal_disorders': Sequela(
         name='other_neonatal_disorders',
+        type='sequela',
         gbd_id=sid(197),
         dismod_id=meid(1605),
         healthstate=Healthstate(
@@ -1712,6 +1901,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_wasting_with_edema': Sequela(
         name='moderate_wasting_with_edema',
+        type='sequela',
         gbd_id=sid(198),
         dismod_id=meid(1606),
         healthstate=Healthstate(
@@ -1721,6 +1911,7 @@ sequelae = Sequelae(**{
     ),
     'severe_wasting_without_edema': Sequela(
         name='severe_wasting_without_edema',
+        type='sequela',
         gbd_id=sid(199),
         dismod_id=meid(1607),
         healthstate=Healthstate(
@@ -1730,6 +1921,7 @@ sequelae = Sequelae(**{
     ),
     'visible_goiter_without_symptoms': Sequela(
         name='visible_goiter_without_symptoms',
+        type='sequela',
         gbd_id=sid(200),
         dismod_id=meid(1611),
         healthstate=Healthstate(
@@ -1739,6 +1931,7 @@ sequelae = Sequelae(**{
     ),
     'visible_goiter_with_severe_intellectual_disability_due_to_iodine_deficiency': Sequela(
         name='visible_goiter_with_severe_intellectual_disability_due_to_iodine_deficiency',
+        type='sequela',
         gbd_id=sid(201),
         dismod_id=meid(1612),
         healthstate=Healthstate(
@@ -1748,6 +1941,7 @@ sequelae = Sequelae(**{
     ),
     'visible_goiter_with_profound_intellectual_disability_due_to_iodine_deficiency': Sequela(
         name='visible_goiter_with_profound_intellectual_disability_due_to_iodine_deficiency',
+        type='sequela',
         gbd_id=sid(202),
         dismod_id=meid(1613),
         healthstate=Healthstate(
@@ -1757,6 +1951,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_vision_impairment_loss_due_to_vitamin_a_deficiency': Sequela(
         name='moderate_vision_impairment_loss_due_to_vitamin_a_deficiency',
+        type='sequela',
         gbd_id=sid(203),
         dismod_id=meid(1618),
         healthstate=Healthstate(
@@ -1766,6 +1961,7 @@ sequelae = Sequelae(**{
     ),
     'severe_vision_impairment_loss_due_to_vitamin_a_deficiency': Sequela(
         name='severe_vision_impairment_loss_due_to_vitamin_a_deficiency',
+        type='sequela',
         gbd_id=sid(204),
         dismod_id=meid(1619),
         healthstate=Healthstate(
@@ -1775,6 +1971,7 @@ sequelae = Sequelae(**{
     ),
     'blindness_due_to_vitamin_a_deficiency': Sequela(
         name='blindness_due_to_vitamin_a_deficiency',
+        type='sequela',
         gbd_id=sid(205),
         dismod_id=meid(3887),
         healthstate=Healthstate(
@@ -1784,6 +1981,7 @@ sequelae = Sequelae(**{
     ),
     'mild_iron_deficiency_anemia': Sequela(
         name='mild_iron_deficiency_anemia',
+        type='sequela',
         gbd_id=sid(206),
         dismod_id=meid(1621),
         healthstate=Healthstate(
@@ -1793,6 +1991,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_iron_deficiency_anemia': Sequela(
         name='moderate_iron_deficiency_anemia',
+        type='sequela',
         gbd_id=sid(207),
         dismod_id=meid(1622),
         healthstate=Healthstate(
@@ -1802,6 +2001,7 @@ sequelae = Sequelae(**{
     ),
     'severe_iron_deficiency_anemia': Sequela(
         name='severe_iron_deficiency_anemia',
+        type='sequela',
         gbd_id=sid(208),
         dismod_id=meid(1623),
         healthstate=Healthstate(
@@ -1811,6 +2011,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_and_mild_heart_failure_due_to_iron_deficiency_anemia': Sequela(
         name='asymptomatic_and_mild_heart_failure_due_to_iron_deficiency_anemia',
+        type='sequela',
         gbd_id=sid(209),
         dismod_id=meid(1624),
         healthstate=Healthstate(
@@ -1820,6 +2021,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_heart_failure_due_to_iron_deficiency_anemia': Sequela(
         name='moderate_heart_failure_due_to_iron_deficiency_anemia',
+        type='sequela',
         gbd_id=sid(210),
         dismod_id=meid(1625),
         healthstate=Healthstate(
@@ -1829,6 +2031,7 @@ sequelae = Sequelae(**{
     ),
     'severe_heart_failure_due_to_iron_deficiency_anemia': Sequela(
         name='severe_heart_failure_due_to_iron_deficiency_anemia',
+        type='sequela',
         gbd_id=sid(211),
         dismod_id=meid(1626),
         healthstate=Healthstate(
@@ -1838,6 +2041,7 @@ sequelae = Sequelae(**{
     ),
     'other_nutritional_deficiencies': Sequela(
         name='other_nutritional_deficiencies',
+        type='sequela',
         gbd_id=sid(212),
         dismod_id=meid(1627),
         healthstate=Healthstate(
@@ -1847,6 +2051,7 @@ sequelae = Sequelae(**{
     ),
     'epididymo_orchitis_due_to_chlamydial_infection': Sequela(
         name='epididymo_orchitis_due_to_chlamydial_infection',
+        type='sequela',
         gbd_id=sid(214),
         dismod_id=meid(1630),
         healthstate=Healthstate(
@@ -1856,6 +2061,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_pelvic_inflammatory_diseases_due_to_chlamydial_infection': Sequela(
         name='moderate_pelvic_inflammatory_diseases_due_to_chlamydial_infection',
+        type='sequela',
         gbd_id=sid(215),
         dismod_id=meid(1631),
         healthstate=Healthstate(
@@ -1865,6 +2071,7 @@ sequelae = Sequelae(**{
     ),
     'severe_pelvic_inflammatory_diseases_due_to_chlamydial_infection': Sequela(
         name='severe_pelvic_inflammatory_diseases_due_to_chlamydial_infection',
+        type='sequela',
         gbd_id=sid(216),
         dismod_id=meid(1632),
         healthstate=Healthstate(
@@ -1874,6 +2081,7 @@ sequelae = Sequelae(**{
     ),
     'primary_infertility_due_to_chlamydial_infection': Sequela(
         name='primary_infertility_due_to_chlamydial_infection',
+        type='sequela',
         gbd_id=sid(217),
         dismod_id=meid(1633),
         healthstate=Healthstate(
@@ -1883,6 +2091,7 @@ sequelae = Sequelae(**{
     ),
     'secondary_infertility_due_to_chlamydial_infection': Sequela(
         name='secondary_infertility_due_to_chlamydial_infection',
+        type='sequela',
         gbd_id=sid(218),
         dismod_id=meid(1634),
         healthstate=Healthstate(
@@ -1892,6 +2101,7 @@ sequelae = Sequelae(**{
     ),
     'epididymo_orchitis_due_to_gonococcal_infection': Sequela(
         name='epididymo_orchitis_due_to_gonococcal_infection',
+        type='sequela',
         gbd_id=sid(219),
         dismod_id=meid(1636),
         healthstate=Healthstate(
@@ -1901,6 +2111,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_pelvic_inflammatory_diseases_due_to_gonococcal_infection': Sequela(
         name='moderate_pelvic_inflammatory_diseases_due_to_gonococcal_infection',
+        type='sequela',
         gbd_id=sid(220),
         dismod_id=meid(1637),
         healthstate=Healthstate(
@@ -1910,6 +2121,7 @@ sequelae = Sequelae(**{
     ),
     'severe_pelvic_inflammatory_diseases_due_to_gonococcal_infection': Sequela(
         name='severe_pelvic_inflammatory_diseases_due_to_gonococcal_infection',
+        type='sequela',
         gbd_id=sid(221),
         dismod_id=meid(1638),
         healthstate=Healthstate(
@@ -1919,6 +2131,7 @@ sequelae = Sequelae(**{
     ),
     'primary_infertility_due_to_gonococcal_infection': Sequela(
         name='primary_infertility_due_to_gonococcal_infection',
+        type='sequela',
         gbd_id=sid(222),
         dismod_id=meid(1639),
         healthstate=Healthstate(
@@ -1928,6 +2141,7 @@ sequelae = Sequelae(**{
     ),
     'secondary_infertility_due_to_gonococcal_infection': Sequela(
         name='secondary_infertility_due_to_gonococcal_infection',
+        type='sequela',
         gbd_id=sid(223),
         dismod_id=meid(1640),
         healthstate=Healthstate(
@@ -1937,6 +2151,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_pelvic_inflammatory_diseases_due_to_other_sexually_transmitted_diseases': Sequela(
         name='moderate_pelvic_inflammatory_diseases_due_to_other_sexually_transmitted_diseases',
+        type='sequela',
         gbd_id=sid(224),
         dismod_id=meid(1643),
         healthstate=Healthstate(
@@ -1946,6 +2161,7 @@ sequelae = Sequelae(**{
     ),
     'severe_pelvic_inflammatory_diseases_due_to_other_sexually_transmitted_diseases': Sequela(
         name='severe_pelvic_inflammatory_diseases_due_to_other_sexually_transmitted_diseases',
+        type='sequela',
         gbd_id=sid(225),
         dismod_id=meid(1644),
         healthstate=Healthstate(
@@ -1955,6 +2171,7 @@ sequelae = Sequelae(**{
     ),
     'primary_infertility_due_to_other_sexually_transmitted_diseases': Sequela(
         name='primary_infertility_due_to_other_sexually_transmitted_diseases',
+        type='sequela',
         gbd_id=sid(226),
         dismod_id=meid(1645),
         healthstate=Healthstate(
@@ -1964,6 +2181,7 @@ sequelae = Sequelae(**{
     ),
     'secondary_infertility_due_to_other_sexually_transmitted_diseases': Sequela(
         name='secondary_infertility_due_to_other_sexually_transmitted_diseases',
+        type='sequela',
         gbd_id=sid(227),
         dismod_id=meid(1646),
         healthstate=Healthstate(
@@ -1973,6 +2191,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_acute_hepatitis_a': Sequela(
         name='moderate_acute_hepatitis_a',
+        type='sequela',
         gbd_id=sid(229),
         dismod_id=meid(1649),
         healthstate=Healthstate(
@@ -1982,6 +2201,7 @@ sequelae = Sequelae(**{
     ),
     'severe_acute_hepatitis_a': Sequela(
         name='severe_acute_hepatitis_a',
+        type='sequela',
         gbd_id=sid(230),
         dismod_id=meid(1650),
         healthstate=Healthstate(
@@ -1991,6 +2211,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_acute_hepatitis_b': Sequela(
         name='moderate_acute_hepatitis_b',
+        type='sequela',
         gbd_id=sid(231),
         dismod_id=meid(1653),
         healthstate=Healthstate(
@@ -2000,6 +2221,7 @@ sequelae = Sequelae(**{
     ),
     'severe_acute_hepatitis_b': Sequela(
         name='severe_acute_hepatitis_b',
+        type='sequela',
         gbd_id=sid(232),
         dismod_id=meid(1654),
         healthstate=Healthstate(
@@ -2009,6 +2231,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_acute_hepatitis_c': Sequela(
         name='moderate_acute_hepatitis_c',
+        type='sequela',
         gbd_id=sid(233),
         dismod_id=meid(1657),
         healthstate=Healthstate(
@@ -2018,6 +2241,7 @@ sequelae = Sequelae(**{
     ),
     'severe_acute_hepatitis_c': Sequela(
         name='severe_acute_hepatitis_c',
+        type='sequela',
         gbd_id=sid(234),
         dismod_id=meid(1658),
         healthstate=Healthstate(
@@ -2027,6 +2251,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_acute_hepatitis_e': Sequela(
         name='moderate_acute_hepatitis_e',
+        type='sequela',
         gbd_id=sid(235),
         dismod_id=meid(1660),
         healthstate=Healthstate(
@@ -2036,6 +2261,7 @@ sequelae = Sequelae(**{
     ),
     'severe_acute_hepatitis_e': Sequela(
         name='severe_acute_hepatitis_e',
+        type='sequela',
         gbd_id=sid(236),
         dismod_id=meid(1661),
         healthstate=Healthstate(
@@ -2045,6 +2271,7 @@ sequelae = Sequelae(**{
     ),
     'disfigurement_level_1_due_to_leprosy': Sequela(
         name='disfigurement_level_1_due_to_leprosy',
+        type='sequela',
         gbd_id=sid(237),
         dismod_id=meid(1663),
         healthstate=Healthstate(
@@ -2054,6 +2281,7 @@ sequelae = Sequelae(**{
     ),
     'disfigurement_level_2_due_to_leprosy': Sequela(
         name='disfigurement_level_2_due_to_leprosy',
+        type='sequela',
         gbd_id=sid(238),
         dismod_id=meid(1664),
         healthstate=Healthstate(
@@ -2063,6 +2291,7 @@ sequelae = Sequelae(**{
     ),
     'mild_anemia_due_to_other_infectious_diseases': Sequela(
         name='mild_anemia_due_to_other_infectious_diseases',
+        type='sequela',
         gbd_id=sid(240),
         dismod_id=meid(1666),
         healthstate=Healthstate(
@@ -2072,6 +2301,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_anemia_due_to_other_infectious_diseases': Sequela(
         name='moderate_anemia_due_to_other_infectious_diseases',
+        type='sequela',
         gbd_id=sid(241),
         dismod_id=meid(1667),
         healthstate=Healthstate(
@@ -2081,6 +2311,7 @@ sequelae = Sequelae(**{
     ),
     'severe_anemia_due_to_other_infectious_diseases': Sequela(
         name='severe_anemia_due_to_other_infectious_diseases',
+        type='sequela',
         gbd_id=sid(242),
         dismod_id=meid(1668),
         healthstate=Healthstate(
@@ -2090,6 +2321,7 @@ sequelae = Sequelae(**{
     ),
     'guillain_barre_syndrome_due_to_other_infectious_diseases': Sequela(
         name='guillain_barre_syndrome_due_to_other_infectious_diseases',
+        type='sequela',
         gbd_id=sid(243),
         dismod_id=meid(1669),
         healthstate=Healthstate(
@@ -2099,6 +2331,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_esophageal_cancer': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_esophageal_cancer',
+        type='sequela',
         gbd_id=sid(244),
         dismod_id=meid(1670),
         healthstate=Healthstate(
@@ -2108,15 +2341,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_esophageal_cancer': Sequela(
         name='controlled_phase_of_esophageal_cancer',
+        type='sequela',
         gbd_id=sid(245),
         dismod_id=meid(1671),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_esophageal_cancer': Sequela(
         name='metastatic_phase_of_esophageal_cancer',
+        type='sequela',
         gbd_id=sid(246),
         dismod_id=meid(1672),
         healthstate=Healthstate(
@@ -2126,6 +2361,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_esophageal_cancer': Sequela(
         name='terminal_phase_of_esophageal_cancer',
+        type='sequela',
         gbd_id=sid(247),
         dismod_id=meid(1673),
         healthstate=Healthstate(
@@ -2135,6 +2371,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_stomach_cancer': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_stomach_cancer',
+        type='sequela',
         gbd_id=sid(248),
         dismod_id=meid(1674),
         healthstate=Healthstate(
@@ -2144,15 +2381,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_stomach_cancer': Sequela(
         name='controlled_phase_of_stomach_cancer',
+        type='sequela',
         gbd_id=sid(249),
         dismod_id=meid(1675),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_stomach_cancer': Sequela(
         name='metastatic_phase_of_stomach_cancer',
+        type='sequela',
         gbd_id=sid(250),
         dismod_id=meid(1676),
         healthstate=Healthstate(
@@ -2162,6 +2401,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_stomach_cancer': Sequela(
         name='terminal_phase_of_stomach_cancer',
+        type='sequela',
         gbd_id=sid(251),
         dismod_id=meid(1677),
         healthstate=Healthstate(
@@ -2171,6 +2411,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_hepatitis_b': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_hepatitis_b',
+        type='sequela',
         gbd_id=sid(252),
         dismod_id=meid(1682),
         healthstate=Healthstate(
@@ -2180,15 +2421,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_liver_cancer_due_to_hepatitis_b': Sequela(
         name='controlled_phase_of_liver_cancer_due_to_hepatitis_b',
+        type='sequela',
         gbd_id=sid(253),
         dismod_id=meid(1683),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_liver_cancer_due_to_hepatitis_b': Sequela(
         name='metastatic_phase_of_liver_cancer_due_to_hepatitis_b',
+        type='sequela',
         gbd_id=sid(254),
         dismod_id=meid(1684),
         healthstate=Healthstate(
@@ -2198,6 +2441,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_liver_cancer_due_to_hepatitis_b': Sequela(
         name='terminal_phase_of_liver_cancer_due_to_hepatitis_b',
+        type='sequela',
         gbd_id=sid(255),
         dismod_id=meid(1685),
         healthstate=Healthstate(
@@ -2207,6 +2451,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_hepatitis_c': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_hepatitis_c',
+        type='sequela',
         gbd_id=sid(256),
         dismod_id=meid(1686),
         healthstate=Healthstate(
@@ -2216,15 +2461,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_liver_cancer_due_to_hepatitis_c': Sequela(
         name='controlled_phase_of_liver_cancer_due_to_hepatitis_c',
+        type='sequela',
         gbd_id=sid(257),
         dismod_id=meid(1687),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_liver_cancer_due_to_hepatitis_c': Sequela(
         name='metastatic_phase_of_liver_cancer_due_to_hepatitis_c',
+        type='sequela',
         gbd_id=sid(258),
         dismod_id=meid(1688),
         healthstate=Healthstate(
@@ -2234,6 +2481,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_liver_cancer_due_to_hepatitis_c': Sequela(
         name='terminal_phase_of_liver_cancer_due_to_hepatitis_c',
+        type='sequela',
         gbd_id=sid(259),
         dismod_id=meid(1689),
         healthstate=Healthstate(
@@ -2243,6 +2491,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_alcohol_use': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_alcohol_use',
+        type='sequela',
         gbd_id=sid(260),
         dismod_id=meid(1690),
         healthstate=Healthstate(
@@ -2252,15 +2501,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_liver_cancer_due_to_alcohol_use': Sequela(
         name='controlled_phase_of_liver_cancer_due_to_alcohol_use',
+        type='sequela',
         gbd_id=sid(261),
         dismod_id=meid(1691),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_liver_cancer_due_to_alcohol_use': Sequela(
         name='metastatic_phase_of_liver_cancer_due_to_alcohol_use',
+        type='sequela',
         gbd_id=sid(262),
         dismod_id=meid(1692),
         healthstate=Healthstate(
@@ -2270,6 +2521,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_liver_cancer_due_to_alcohol_use': Sequela(
         name='terminal_phase_of_liver_cancer_due_to_alcohol_use',
+        type='sequela',
         gbd_id=sid(263),
         dismod_id=meid(1693),
         healthstate=Healthstate(
@@ -2279,6 +2531,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_other_causes': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_other_causes',
+        type='sequela',
         gbd_id=sid(264),
         dismod_id=meid(1694),
         healthstate=Healthstate(
@@ -2288,15 +2541,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_liver_cancer_due_to_other_causes': Sequela(
         name='controlled_phase_of_liver_cancer_due_to_other_causes',
+        type='sequela',
         gbd_id=sid(265),
         dismod_id=meid(1695),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_liver_cancer_due_to_other_causes': Sequela(
         name='metastatic_phase_of_liver_cancer_due_to_other_causes',
+        type='sequela',
         gbd_id=sid(266),
         dismod_id=meid(1696),
         healthstate=Healthstate(
@@ -2306,6 +2561,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_liver_cancer_due_to_other_causes': Sequela(
         name='terminal_phase_of_liver_cancer_due_to_other_causes',
+        type='sequela',
         gbd_id=sid(267),
         dismod_id=meid(1697),
         healthstate=Healthstate(
@@ -2315,6 +2571,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_larynx_cancer': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_larynx_cancer',
+        type='sequela',
         gbd_id=sid(268),
         dismod_id=meid(1698),
         healthstate=Healthstate(
@@ -2324,15 +2581,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_larynx_cancer': Sequela(
         name='controlled_phase_of_larynx_cancer',
+        type='sequela',
         gbd_id=sid(269),
         dismod_id=meid(1699),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_larynx_cancer': Sequela(
         name='metastatic_phase_of_larynx_cancer',
+        type='sequela',
         gbd_id=sid(270),
         dismod_id=meid(1700),
         healthstate=Healthstate(
@@ -2342,6 +2601,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_larynx_cancer': Sequela(
         name='terminal_phase_of_larynx_cancer',
+        type='sequela',
         gbd_id=sid(271),
         dismod_id=meid(1701),
         healthstate=Healthstate(
@@ -2351,6 +2611,7 @@ sequelae = Sequelae(**{
     ),
     'laryngectomy_due_to_larynx_cancer': Sequela(
         name='laryngectomy_due_to_larynx_cancer',
+        type='sequela',
         gbd_id=sid(272),
         dismod_id=meid(1702),
         healthstate=Healthstate(
@@ -2360,6 +2621,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_lung_bronchus_and_trachea_cancer': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_lung_bronchus_and_trachea_cancer',
+        type='sequela',
         gbd_id=sid(273),
         dismod_id=meid(1703),
         healthstate=Healthstate(
@@ -2369,15 +2631,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_lung_bronchus_and_trachea_cancer': Sequela(
         name='controlled_phase_of_lung_bronchus_and_trachea_cancer',
+        type='sequela',
         gbd_id=sid(274),
         dismod_id=meid(1704),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_lung_bronchus_and_trachea_cancer': Sequela(
         name='metastatic_phase_of_lung_bronchus_and_trachea_cancer',
+        type='sequela',
         gbd_id=sid(275),
         dismod_id=meid(1705),
         healthstate=Healthstate(
@@ -2387,6 +2651,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_lung_bronchus_and_trachea_cancer': Sequela(
         name='terminal_phase_of_lung_bronchus_and_trachea_cancer',
+        type='sequela',
         gbd_id=sid(276),
         dismod_id=meid(1706),
         healthstate=Healthstate(
@@ -2396,6 +2661,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_breast_cancer': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_breast_cancer',
+        type='sequela',
         gbd_id=sid(277),
         dismod_id=meid(1707),
         healthstate=Healthstate(
@@ -2405,15 +2671,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_breast_cancer': Sequela(
         name='controlled_phase_of_breast_cancer',
+        type='sequela',
         gbd_id=sid(278),
         dismod_id=meid(1708),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_breast_cancer': Sequela(
         name='metastatic_phase_of_breast_cancer',
+        type='sequela',
         gbd_id=sid(279),
         dismod_id=meid(1709),
         healthstate=Healthstate(
@@ -2423,6 +2691,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_breast_cancer': Sequela(
         name='terminal_phase_of_breast_cancer',
+        type='sequela',
         gbd_id=sid(280),
         dismod_id=meid(1710),
         healthstate=Healthstate(
@@ -2432,6 +2701,7 @@ sequelae = Sequelae(**{
     ),
     'mastectomy_due_to_breast_cancer': Sequela(
         name='mastectomy_due_to_breast_cancer',
+        type='sequela',
         gbd_id=sid(281),
         dismod_id=meid(1711),
         healthstate=Healthstate(
@@ -2441,6 +2711,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_cervical_cancer': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_cervical_cancer',
+        type='sequela',
         gbd_id=sid(282),
         dismod_id=meid(1712),
         healthstate=Healthstate(
@@ -2450,15 +2721,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_cervical_cancer': Sequela(
         name='controlled_phase_of_cervical_cancer',
+        type='sequela',
         gbd_id=sid(283),
         dismod_id=meid(1713),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_cervical_cancer': Sequela(
         name='metastatic_phase_of_cervical_cancer',
+        type='sequela',
         gbd_id=sid(284),
         dismod_id=meid(1714),
         healthstate=Healthstate(
@@ -2468,6 +2741,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_cervical_cancer': Sequela(
         name='terminal_phase_of_cervical_cancer',
+        type='sequela',
         gbd_id=sid(285),
         dismod_id=meid(1715),
         healthstate=Healthstate(
@@ -2477,6 +2751,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_uterine_cancer': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_uterine_cancer',
+        type='sequela',
         gbd_id=sid(286),
         dismod_id=meid(1716),
         healthstate=Healthstate(
@@ -2486,15 +2761,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_uterine_cancer': Sequela(
         name='controlled_phase_of_uterine_cancer',
+        type='sequela',
         gbd_id=sid(287),
         dismod_id=meid(1717),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_uterine_cancer': Sequela(
         name='metastatic_phase_of_uterine_cancer',
+        type='sequela',
         gbd_id=sid(288),
         dismod_id=meid(1718),
         healthstate=Healthstate(
@@ -2504,6 +2781,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_uterine_cancer': Sequela(
         name='terminal_phase_of_uterine_cancer',
+        type='sequela',
         gbd_id=sid(289),
         dismod_id=meid(1719),
         healthstate=Healthstate(
@@ -2513,6 +2791,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_prostate_cancer': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_prostate_cancer',
+        type='sequela',
         gbd_id=sid(290),
         dismod_id=meid(1720),
         healthstate=Healthstate(
@@ -2522,15 +2801,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_prostate_cancer': Sequela(
         name='controlled_phase_of_prostate_cancer',
+        type='sequela',
         gbd_id=sid(291),
         dismod_id=meid(1721),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_prostate_cancer': Sequela(
         name='metastatic_phase_of_prostate_cancer',
+        type='sequela',
         gbd_id=sid(292),
         dismod_id=meid(1722),
         healthstate=Healthstate(
@@ -2540,6 +2821,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_prostate_cancer': Sequela(
         name='terminal_phase_of_prostate_cancer',
+        type='sequela',
         gbd_id=sid(293),
         dismod_id=meid(1723),
         healthstate=Healthstate(
@@ -2549,6 +2831,7 @@ sequelae = Sequelae(**{
     ),
     'impotence_due_to_prostate_cancer': Sequela(
         name='impotence_due_to_prostate_cancer',
+        type='sequela',
         gbd_id=sid(294),
         dismod_id=meid(1725),
         healthstate=Healthstate(
@@ -2558,6 +2841,7 @@ sequelae = Sequelae(**{
     ),
     'incontinence_due_to_prostate_cancer': Sequela(
         name='incontinence_due_to_prostate_cancer',
+        type='sequela',
         gbd_id=sid(295),
         dismod_id=meid(1726),
         healthstate=Healthstate(
@@ -2567,6 +2851,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_colon_and_rectum_cancers': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_colon_and_rectum_cancers',
+        type='sequela',
         gbd_id=sid(296),
         dismod_id=meid(1727),
         healthstate=Healthstate(
@@ -2576,15 +2861,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_colon_and_rectum_cancers': Sequela(
         name='controlled_phase_of_colon_and_rectum_cancers',
+        type='sequela',
         gbd_id=sid(297),
         dismod_id=meid(1728),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_colon_and_rectum_cancers': Sequela(
         name='metastatic_phase_of_colon_and_rectum_cancers',
+        type='sequela',
         gbd_id=sid(298),
         dismod_id=meid(1729),
         healthstate=Healthstate(
@@ -2594,6 +2881,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_colon_and_rectum_cancers': Sequela(
         name='terminal_phase_of_colon_and_rectum_cancers',
+        type='sequela',
         gbd_id=sid(299),
         dismod_id=meid(1730),
         healthstate=Healthstate(
@@ -2603,6 +2891,7 @@ sequelae = Sequelae(**{
     ),
     'stoma_due_to_colon_and_rectum_cancer': Sequela(
         name='stoma_due_to_colon_and_rectum_cancer',
+        type='sequela',
         gbd_id=sid(300),
         dismod_id=meid(1731),
         healthstate=Healthstate(
@@ -2612,6 +2901,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_mouth_cancer': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_mouth_cancer',
+        type='sequela',
         gbd_id=sid(301),
         dismod_id=meid(1732),
         healthstate=Healthstate(
@@ -2621,15 +2911,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_mouth_cancer': Sequela(
         name='controlled_phase_of_mouth_cancer',
+        type='sequela',
         gbd_id=sid(302),
         dismod_id=meid(1733),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_mouth_cancer': Sequela(
         name='metastatic_phase_of_mouth_cancer',
+        type='sequela',
         gbd_id=sid(303),
         dismod_id=meid(1734),
         healthstate=Healthstate(
@@ -2639,6 +2931,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_mouth_cancer': Sequela(
         name='terminal_phase_of_mouth_cancer',
+        type='sequela',
         gbd_id=sid(304),
         dismod_id=meid(1735),
         healthstate=Healthstate(
@@ -2648,6 +2941,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_nasopharynx_cancer': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_nasopharynx_cancer',
+        type='sequela',
         gbd_id=sid(305),
         dismod_id=meid(1736),
         healthstate=Healthstate(
@@ -2657,15 +2951,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_nasopharynx_cancer': Sequela(
         name='controlled_phase_of_nasopharynx_cancer',
+        type='sequela',
         gbd_id=sid(306),
         dismod_id=meid(1737),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_nasopharynx_cancer': Sequela(
         name='metastatic_phase_of_nasopharynx_cancer',
+        type='sequela',
         gbd_id=sid(307),
         dismod_id=meid(1738),
         healthstate=Healthstate(
@@ -2675,6 +2971,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_nasopharynx_cancer': Sequela(
         name='terminal_phase_of_nasopharynx_cancer',
+        type='sequela',
         gbd_id=sid(308),
         dismod_id=meid(1739),
         healthstate=Healthstate(
@@ -2684,6 +2981,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_other_pharynx_cancer': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_other_pharynx_cancer',
+        type='sequela',
         gbd_id=sid(309),
         dismod_id=meid(1740),
         healthstate=Healthstate(
@@ -2693,15 +2991,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_other_pharynx_cancer': Sequela(
         name='controlled_phase_of_other_pharynx_cancer',
+        type='sequela',
         gbd_id=sid(310),
         dismod_id=meid(1741),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_other_pharynx_cancer': Sequela(
         name='metastatic_phase_of_other_pharynx_cancer',
+        type='sequela',
         gbd_id=sid(311),
         dismod_id=meid(1742),
         healthstate=Healthstate(
@@ -2711,6 +3011,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_other_pharynx_cancer': Sequela(
         name='terminal_phase_of_other_pharynx_cancer',
+        type='sequela',
         gbd_id=sid(312),
         dismod_id=meid(1743),
         healthstate=Healthstate(
@@ -2720,6 +3021,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_gallbladder_and_biliary_tract_cancer': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_gallbladder_and_biliary_tract_cancer',
+        type='sequela',
         gbd_id=sid(313),
         dismod_id=meid(1744),
         healthstate=Healthstate(
@@ -2729,15 +3031,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_gallbladder_and_biliary_tract_cancer': Sequela(
         name='controlled_phase_of_gallbladder_and_biliary_tract_cancer',
+        type='sequela',
         gbd_id=sid(314),
         dismod_id=meid(1745),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_gallbladder_and_biliary_tract_cancer': Sequela(
         name='metastatic_phase_of_gallbladder_and_biliary_tract_cancer',
+        type='sequela',
         gbd_id=sid(315),
         dismod_id=meid(1746),
         healthstate=Healthstate(
@@ -2747,6 +3051,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_gallbladder_and_biliary_tract_cancer': Sequela(
         name='terminal_phase_of_gallbladder_and_biliary_tract_cancer',
+        type='sequela',
         gbd_id=sid(316),
         dismod_id=meid(1747),
         healthstate=Healthstate(
@@ -2756,6 +3061,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_pancreatic_cancer': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_pancreatic_cancer',
+        type='sequela',
         gbd_id=sid(317),
         dismod_id=meid(1748),
         healthstate=Healthstate(
@@ -2765,15 +3071,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_pancreatic_cancer': Sequela(
         name='controlled_phase_of_pancreatic_cancer',
+        type='sequela',
         gbd_id=sid(318),
         dismod_id=meid(1749),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_pancreatic_cancer': Sequela(
         name='metastatic_phase_of_pancreatic_cancer',
+        type='sequela',
         gbd_id=sid(319),
         dismod_id=meid(1750),
         healthstate=Healthstate(
@@ -2783,6 +3091,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_pancreatic_cancer': Sequela(
         name='terminal_phase_of_pancreatic_cancer',
+        type='sequela',
         gbd_id=sid(320),
         dismod_id=meid(1751),
         healthstate=Healthstate(
@@ -2792,6 +3101,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_malignant_skin_melanoma': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_malignant_skin_melanoma',
+        type='sequela',
         gbd_id=sid(321),
         dismod_id=meid(1752),
         healthstate=Healthstate(
@@ -2801,15 +3111,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_malignant_skin_melanoma': Sequela(
         name='controlled_phase_of_malignant_skin_melanoma',
+        type='sequela',
         gbd_id=sid(322),
         dismod_id=meid(1753),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_malignant_skin_melanoma': Sequela(
         name='metastatic_phase_of_malignant_skin_melanoma',
+        type='sequela',
         gbd_id=sid(323),
         dismod_id=meid(1754),
         healthstate=Healthstate(
@@ -2819,6 +3131,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_malignant_skin_melanoma': Sequela(
         name='terminal_phase_of_malignant_skin_melanoma',
+        type='sequela',
         gbd_id=sid(324),
         dismod_id=meid(1755),
         healthstate=Healthstate(
@@ -2828,6 +3141,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_ovarian_cancer': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_ovarian_cancer',
+        type='sequela',
         gbd_id=sid(329),
         dismod_id=meid(1761),
         healthstate=Healthstate(
@@ -2837,15 +3151,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_ovarian_cancer': Sequela(
         name='controlled_phase_of_ovarian_cancer',
+        type='sequela',
         gbd_id=sid(330),
         dismod_id=meid(1762),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_ovarian_cancer': Sequela(
         name='metastatic_phase_of_ovarian_cancer',
+        type='sequela',
         gbd_id=sid(331),
         dismod_id=meid(1763),
         healthstate=Healthstate(
@@ -2855,6 +3171,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_ovarian_cancer': Sequela(
         name='terminal_phase_of_ovarian_cancer',
+        type='sequela',
         gbd_id=sid(332),
         dismod_id=meid(1764),
         healthstate=Healthstate(
@@ -2864,6 +3181,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_testicular_cancer': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_testicular_cancer',
+        type='sequela',
         gbd_id=sid(333),
         dismod_id=meid(1765),
         healthstate=Healthstate(
@@ -2873,15 +3191,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_testicular_cancer': Sequela(
         name='controlled_phase_of_testicular_cancer',
+        type='sequela',
         gbd_id=sid(334),
         dismod_id=meid(1766),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_testicular_cancer': Sequela(
         name='metastatic_phase_of_testicular_cancer',
+        type='sequela',
         gbd_id=sid(335),
         dismod_id=meid(1767),
         healthstate=Healthstate(
@@ -2891,6 +3211,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_testicular_cancer': Sequela(
         name='terminal_phase_of_testicular_cancer',
+        type='sequela',
         gbd_id=sid(336),
         dismod_id=meid(1768),
         healthstate=Healthstate(
@@ -2900,6 +3221,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_kidney_cancer': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_kidney_cancer',
+        type='sequela',
         gbd_id=sid(337),
         dismod_id=meid(1769),
         healthstate=Healthstate(
@@ -2909,15 +3231,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_kidney_cancer': Sequela(
         name='controlled_phase_of_kidney_cancer',
+        type='sequela',
         gbd_id=sid(338),
         dismod_id=meid(1770),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_kidney_cancer': Sequela(
         name='metastatic_phase_of_kidney_cancer',
+        type='sequela',
         gbd_id=sid(339),
         dismod_id=meid(1771),
         healthstate=Healthstate(
@@ -2927,6 +3251,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_kidney_cancer': Sequela(
         name='terminal_phase_of_kidney_cancer',
+        type='sequela',
         gbd_id=sid(340),
         dismod_id=meid(1772),
         healthstate=Healthstate(
@@ -2936,6 +3261,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_bladder_cancer': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_bladder_cancer',
+        type='sequela',
         gbd_id=sid(341),
         dismod_id=meid(1773),
         healthstate=Healthstate(
@@ -2945,15 +3271,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_bladder_cancer': Sequela(
         name='controlled_phase_of_bladder_cancer',
+        type='sequela',
         gbd_id=sid(342),
         dismod_id=meid(1774),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_bladder_cancer': Sequela(
         name='metastatic_phase_of_bladder_cancer',
+        type='sequela',
         gbd_id=sid(343),
         dismod_id=meid(1775),
         healthstate=Healthstate(
@@ -2963,6 +3291,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_bladder_cancer': Sequela(
         name='terminal_phase_of_bladder_cancer',
+        type='sequela',
         gbd_id=sid(344),
         dismod_id=meid(1776),
         healthstate=Healthstate(
@@ -2972,6 +3301,7 @@ sequelae = Sequelae(**{
     ),
     'urinary_incontinence_due_to_bladder_cancer': Sequela(
         name='urinary_incontinence_due_to_bladder_cancer',
+        type='sequela',
         gbd_id=sid(345),
         dismod_id=meid(1777),
         healthstate=Healthstate(
@@ -2981,6 +3311,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_brain_and_nervous_system_cancers': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_brain_and_nervous_system_cancers',
+        type='sequela',
         gbd_id=sid(346),
         dismod_id=meid(1778),
         healthstate=Healthstate(
@@ -2990,15 +3321,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_brain_and_nervous_system_cancers': Sequela(
         name='controlled_phase_of_brain_and_nervous_system_cancers',
+        type='sequela',
         gbd_id=sid(347),
         dismod_id=meid(1779),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_brain_and_nervous_system_cancers': Sequela(
         name='metastatic_phase_of_brain_and_nervous_system_cancers',
+        type='sequela',
         gbd_id=sid(348),
         dismod_id=meid(1780),
         healthstate=Healthstate(
@@ -3008,6 +3341,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_brain_and_nervous_system_cancers': Sequela(
         name='terminal_phase_of_brain_and_nervous_system_cancers',
+        type='sequela',
         gbd_id=sid(349),
         dismod_id=meid(1781),
         healthstate=Healthstate(
@@ -3017,6 +3351,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_thyroid_cancer': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_thyroid_cancer',
+        type='sequela',
         gbd_id=sid(350),
         dismod_id=meid(1782),
         healthstate=Healthstate(
@@ -3026,15 +3361,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_thyroid_cancer': Sequela(
         name='controlled_phase_of_thyroid_cancer',
+        type='sequela',
         gbd_id=sid(351),
         dismod_id=meid(1783),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_thyroid_cancer': Sequela(
         name='metastatic_phase_of_thyroid_cancer',
+        type='sequela',
         gbd_id=sid(352),
         dismod_id=meid(1784),
         healthstate=Healthstate(
@@ -3044,6 +3381,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_thyroid_cancer': Sequela(
         name='terminal_phase_of_thyroid_cancer',
+        type='sequela',
         gbd_id=sid(353),
         dismod_id=meid(1785),
         healthstate=Healthstate(
@@ -3053,6 +3391,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_mesothelioma': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_mesothelioma',
+        type='sequela',
         gbd_id=sid(354),
         dismod_id=meid(1786),
         healthstate=Healthstate(
@@ -3062,15 +3401,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_mesothelioma': Sequela(
         name='controlled_phase_of_mesothelioma',
+        type='sequela',
         gbd_id=sid(355),
         dismod_id=meid(1787),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_mesothelioma': Sequela(
         name='metastatic_phase_of_mesothelioma',
+        type='sequela',
         gbd_id=sid(356),
         dismod_id=meid(1788),
         healthstate=Healthstate(
@@ -3080,6 +3421,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_mesothelioma': Sequela(
         name='terminal_phase_of_mesothelioma',
+        type='sequela',
         gbd_id=sid(357),
         dismod_id=meid(1789),
         healthstate=Healthstate(
@@ -3089,6 +3431,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_hodgkin_disease': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_hodgkin_disease',
+        type='sequela',
         gbd_id=sid(358),
         dismod_id=meid(1790),
         healthstate=Healthstate(
@@ -3098,15 +3441,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_hodgkin_disease': Sequela(
         name='controlled_phase_of_hodgkin_disease',
+        type='sequela',
         gbd_id=sid(359),
         dismod_id=meid(1791),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_hodgkin_disease': Sequela(
         name='metastatic_phase_of_hodgkin_disease',
+        type='sequela',
         gbd_id=sid(360),
         dismod_id=meid(1792),
         healthstate=Healthstate(
@@ -3116,6 +3461,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_hodgkin_disease': Sequela(
         name='terminal_phase_of_hodgkin_disease',
+        type='sequela',
         gbd_id=sid(361),
         dismod_id=meid(1793),
         healthstate=Healthstate(
@@ -3125,6 +3471,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_non_hodgkin_lymphoma': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_non_hodgkin_lymphoma',
+        type='sequela',
         gbd_id=sid(362),
         dismod_id=meid(1794),
         healthstate=Healthstate(
@@ -3134,15 +3481,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_non_hodgkin_lymphoma': Sequela(
         name='controlled_phase_of_non_hodgkin_lymphoma',
+        type='sequela',
         gbd_id=sid(363),
         dismod_id=meid(1795),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_non_hodgkin_lymphoma': Sequela(
         name='metastatic_phase_of_non_hodgkin_lymphoma',
+        type='sequela',
         gbd_id=sid(364),
         dismod_id=meid(1796),
         healthstate=Healthstate(
@@ -3152,6 +3501,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_non_hodgkin_lymphoma': Sequela(
         name='terminal_phase_of_non_hodgkin_lymphoma',
+        type='sequela',
         gbd_id=sid(365),
         dismod_id=meid(1797),
         healthstate=Healthstate(
@@ -3161,6 +3511,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_multiple_myeloma': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_multiple_myeloma',
+        type='sequela',
         gbd_id=sid(366),
         dismod_id=meid(1798),
         healthstate=Healthstate(
@@ -3170,15 +3521,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_multiple_myeloma': Sequela(
         name='controlled_phase_of_multiple_myeloma',
+        type='sequela',
         gbd_id=sid(367),
         dismod_id=meid(1799),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_multiple_myeloma': Sequela(
         name='metastatic_phase_of_multiple_myeloma',
+        type='sequela',
         gbd_id=sid(368),
         dismod_id=meid(1800),
         healthstate=Healthstate(
@@ -3188,6 +3541,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_multiple_myeloma': Sequela(
         name='terminal_phase_of_multiple_myeloma',
+        type='sequela',
         gbd_id=sid(369),
         dismod_id=meid(1801),
         healthstate=Healthstate(
@@ -3197,6 +3551,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_other_neoplasms': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_other_neoplasms',
+        type='sequela',
         gbd_id=sid(374),
         dismod_id=meid(1806),
         healthstate=Healthstate(
@@ -3206,15 +3561,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_other_neoplasms': Sequela(
         name='controlled_phase_of_other_neoplasms',
+        type='sequela',
         gbd_id=sid(375),
         dismod_id=meid(1807),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_other_neoplasms': Sequela(
         name='metastatic_phase_of_other_neoplasms',
+        type='sequela',
         gbd_id=sid(376),
         dismod_id=meid(1808),
         healthstate=Healthstate(
@@ -3224,6 +3581,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_other_neoplasms': Sequela(
         name='terminal_phase_of_other_neoplasms',
+        type='sequela',
         gbd_id=sid(377),
         dismod_id=meid(1809),
         healthstate=Healthstate(
@@ -3233,6 +3591,7 @@ sequelae = Sequelae(**{
     ),
     'acute_myocardial_infarction_first_2_days': Sequela(
         name='acute_myocardial_infarction_first_2_days',
+        type='sequela',
         gbd_id=sid(378),
         dismod_id=meid(1815),
         healthstate=Healthstate(
@@ -3242,6 +3601,7 @@ sequelae = Sequelae(**{
     ),
     'acute_myocardial_infarction_3_to_28_days': Sequela(
         name='acute_myocardial_infarction_3_to_28_days',
+        type='sequela',
         gbd_id=sid(379),
         dismod_id=meid(1816),
         healthstate=Healthstate(
@@ -3251,6 +3611,7 @@ sequelae = Sequelae(**{
     ),
     'mild_angina_due_to_ischemic_heart_disease': Sequela(
         name='mild_angina_due_to_ischemic_heart_disease',
+        type='sequela',
         gbd_id=sid(380),
         dismod_id=meid(1818),
         healthstate=Healthstate(
@@ -3260,6 +3621,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_angina_due_to_ischemic_heart_disease': Sequela(
         name='moderate_angina_due_to_ischemic_heart_disease',
+        type='sequela',
         gbd_id=sid(381),
         dismod_id=meid(1819),
         healthstate=Healthstate(
@@ -3269,6 +3631,7 @@ sequelae = Sequelae(**{
     ),
     'severe_angina_due_to_ischemic_heart_disease': Sequela(
         name='severe_angina_due_to_ischemic_heart_disease',
+        type='sequela',
         gbd_id=sid(382),
         dismod_id=meid(1820),
         healthstate=Healthstate(
@@ -3278,6 +3641,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_and_mild_heart_failure_due_to_ischemic_heart_disease': Sequela(
         name='asymptomatic_and_mild_heart_failure_due_to_ischemic_heart_disease',
+        type='sequela',
         gbd_id=sid(383),
         dismod_id=meid(1821),
         healthstate=Healthstate(
@@ -3287,6 +3651,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_heart_failure_due_to_ischemic_heart_disease': Sequela(
         name='moderate_heart_failure_due_to_ischemic_heart_disease',
+        type='sequela',
         gbd_id=sid(384),
         dismod_id=meid(1822),
         healthstate=Healthstate(
@@ -3296,6 +3661,7 @@ sequelae = Sequelae(**{
     ),
     'severe_heart_failure_due_to_ischemic_heart_disease': Sequela(
         name='severe_heart_failure_due_to_ischemic_heart_disease',
+        type='sequela',
         gbd_id=sid(385),
         dismod_id=meid(1823),
         healthstate=Healthstate(
@@ -3305,6 +3671,7 @@ sequelae = Sequelae(**{
     ),
     'acute_ischemic_stroke_severity_level_1': Sequela(
         name='acute_ischemic_stroke_severity_level_1',
+        type='sequela',
         gbd_id=sid(386),
         dismod_id=meid(1827),
         healthstate=Healthstate(
@@ -3314,6 +3681,7 @@ sequelae = Sequelae(**{
     ),
     'acute_ischemic_stroke_severity_level_2': Sequela(
         name='acute_ischemic_stroke_severity_level_2',
+        type='sequela',
         gbd_id=sid(387),
         dismod_id=meid(1828),
         healthstate=Healthstate(
@@ -3323,6 +3691,7 @@ sequelae = Sequelae(**{
     ),
     'acute_ischemic_stroke_severity_level_4': Sequela(
         name='acute_ischemic_stroke_severity_level_4',
+        type='sequela',
         gbd_id=sid(388),
         dismod_id=meid(1829),
         healthstate=Healthstate(
@@ -3332,6 +3701,7 @@ sequelae = Sequelae(**{
     ),
     'acute_ischemic_stroke_severity_level_3': Sequela(
         name='acute_ischemic_stroke_severity_level_3',
+        type='sequela',
         gbd_id=sid(389),
         dismod_id=meid(1830),
         healthstate=Healthstate(
@@ -3341,6 +3711,7 @@ sequelae = Sequelae(**{
     ),
     'acute_ischemic_stroke_severity_level_5': Sequela(
         name='acute_ischemic_stroke_severity_level_5',
+        type='sequela',
         gbd_id=sid(390),
         dismod_id=meid(1831),
         healthstate=Healthstate(
@@ -3350,6 +3721,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_ischemic_stroke_severity_level_1': Sequela(
         name='chronic_ischemic_stroke_severity_level_1',
+        type='sequela',
         gbd_id=sid(391),
         dismod_id=meid(1833),
         healthstate=Healthstate(
@@ -3359,6 +3731,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_ischemic_stroke_severity_level_2': Sequela(
         name='chronic_ischemic_stroke_severity_level_2',
+        type='sequela',
         gbd_id=sid(392),
         dismod_id=meid(1834),
         healthstate=Healthstate(
@@ -3368,6 +3741,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_ischemic_stroke_severity_level_4': Sequela(
         name='chronic_ischemic_stroke_severity_level_4',
+        type='sequela',
         gbd_id=sid(393),
         dismod_id=meid(1835),
         healthstate=Healthstate(
@@ -3377,6 +3751,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_ischemic_stroke_severity_level_3': Sequela(
         name='chronic_ischemic_stroke_severity_level_3',
+        type='sequela',
         gbd_id=sid(394),
         dismod_id=meid(1836),
         healthstate=Healthstate(
@@ -3386,6 +3761,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_ischemic_stroke_severity_level_5': Sequela(
         name='chronic_ischemic_stroke_severity_level_5',
+        type='sequela',
         gbd_id=sid(395),
         dismod_id=meid(1837),
         healthstate=Healthstate(
@@ -3395,6 +3771,7 @@ sequelae = Sequelae(**{
     ),
     'acute_hemorrhagic_stroke_severity_level_1': Sequela(
         name='acute_hemorrhagic_stroke_severity_level_1',
+        type='sequela',
         gbd_id=sid(396),
         dismod_id=meid(1839),
         healthstate=Healthstate(
@@ -3404,6 +3781,7 @@ sequelae = Sequelae(**{
     ),
     'acute_hemorrhagic_stroke_severity_level_2': Sequela(
         name='acute_hemorrhagic_stroke_severity_level_2',
+        type='sequela',
         gbd_id=sid(397),
         dismod_id=meid(1840),
         healthstate=Healthstate(
@@ -3413,6 +3791,7 @@ sequelae = Sequelae(**{
     ),
     'acute_hemorrhagic_stroke_severity_level_4': Sequela(
         name='acute_hemorrhagic_stroke_severity_level_4',
+        type='sequela',
         gbd_id=sid(398),
         dismod_id=meid(1841),
         healthstate=Healthstate(
@@ -3422,6 +3801,7 @@ sequelae = Sequelae(**{
     ),
     'acute_hemorrhagic_stroke_severity_level_3': Sequela(
         name='acute_hemorrhagic_stroke_severity_level_3',
+        type='sequela',
         gbd_id=sid(399),
         dismod_id=meid(1842),
         healthstate=Healthstate(
@@ -3431,6 +3811,7 @@ sequelae = Sequelae(**{
     ),
     'acute_hemorrhagic_stroke_severity_level_5': Sequela(
         name='acute_hemorrhagic_stroke_severity_level_5',
+        type='sequela',
         gbd_id=sid(400),
         dismod_id=meid(1843),
         healthstate=Healthstate(
@@ -3440,6 +3821,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_hemorrhagic_stroke_severity_level_1': Sequela(
         name='chronic_hemorrhagic_stroke_severity_level_1',
+        type='sequela',
         gbd_id=sid(401),
         dismod_id=meid(1845),
         healthstate=Healthstate(
@@ -3449,6 +3831,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_hemorrhagic_stroke_severity_level_2': Sequela(
         name='chronic_hemorrhagic_stroke_severity_level_2',
+        type='sequela',
         gbd_id=sid(402),
         dismod_id=meid(1846),
         healthstate=Healthstate(
@@ -3458,6 +3841,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_hemorrhagic_stroke_severity_level_4': Sequela(
         name='chronic_hemorrhagic_stroke_severity_level_4',
+        type='sequela',
         gbd_id=sid(403),
         dismod_id=meid(1847),
         healthstate=Healthstate(
@@ -3467,6 +3851,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_hemorrhagic_stroke_severity_level_3': Sequela(
         name='chronic_hemorrhagic_stroke_severity_level_3',
+        type='sequela',
         gbd_id=sid(404),
         dismod_id=meid(1848),
         healthstate=Healthstate(
@@ -3476,6 +3861,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_hemorrhagic_stroke_severity_level_5': Sequela(
         name='chronic_hemorrhagic_stroke_severity_level_5',
+        type='sequela',
         gbd_id=sid(405),
         dismod_id=meid(1849),
         healthstate=Healthstate(
@@ -3485,6 +3871,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_and_mild_heart_failure_due_to_hypertensive_heart_disease': Sequela(
         name='asymptomatic_and_mild_heart_failure_due_to_hypertensive_heart_disease',
+        type='sequela',
         gbd_id=sid(406),
         dismod_id=meid(1850),
         healthstate=Healthstate(
@@ -3494,6 +3881,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_heart_failure_due_to_hypertensive_heart_disease': Sequela(
         name='moderate_heart_failure_due_to_hypertensive_heart_disease',
+        type='sequela',
         gbd_id=sid(407),
         dismod_id=meid(1851),
         healthstate=Healthstate(
@@ -3503,6 +3891,7 @@ sequelae = Sequelae(**{
     ),
     'severe_heart_failure_due_to_hypertensive_heart_disease': Sequela(
         name='severe_heart_failure_due_to_hypertensive_heart_disease',
+        type='sequela',
         gbd_id=sid(408),
         dismod_id=meid(1852),
         healthstate=Healthstate(
@@ -3512,6 +3901,7 @@ sequelae = Sequelae(**{
     ),
     'acute_myocarditis': Sequela(
         name='acute_myocarditis',
+        type='sequela',
         gbd_id=sid(409),
         dismod_id=meid(1855),
         healthstate=Healthstate(
@@ -3521,6 +3911,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_endocarditis': Sequela(
         name='moderate_endocarditis',
+        type='sequela',
         gbd_id=sid(413),
         dismod_id=meid(1863),
         healthstate=Healthstate(
@@ -3530,6 +3921,7 @@ sequelae = Sequelae(**{
     ),
     'severe_endocarditis': Sequela(
         name='severe_endocarditis',
+        type='sequela',
         gbd_id=sid(414),
         dismod_id=meid(1864),
         healthstate=Healthstate(
@@ -3539,6 +3931,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_and_mild_heart_failure_due_to_endocarditis': Sequela(
         name='asymptomatic_and_mild_heart_failure_due_to_endocarditis',
+        type='sequela',
         gbd_id=sid(415),
         dismod_id=meid(1865),
         healthstate=Healthstate(
@@ -3548,6 +3941,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_heart_failure_due_to_endocarditis': Sequela(
         name='moderate_heart_failure_due_to_endocarditis',
+        type='sequela',
         gbd_id=sid(416),
         dismod_id=meid(1866),
         healthstate=Healthstate(
@@ -3557,6 +3951,7 @@ sequelae = Sequelae(**{
     ),
     'severe_heart_failure_due_to_endocarditis': Sequela(
         name='severe_heart_failure_due_to_endocarditis',
+        type='sequela',
         gbd_id=sid(417),
         dismod_id=meid(1867),
         healthstate=Healthstate(
@@ -3566,6 +3961,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_and_mild_heart_failure_due_to_other_cardiovascular_diseases': Sequela(
         name='asymptomatic_and_mild_heart_failure_due_to_other_cardiovascular_diseases',
+        type='sequela',
         gbd_id=sid(418),
         dismod_id=meid(1869),
         healthstate=Healthstate(
@@ -3575,6 +3971,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_heart_failure_due_to_other_cardiovascular_diseases': Sequela(
         name='moderate_heart_failure_due_to_other_cardiovascular_diseases',
+        type='sequela',
         gbd_id=sid(419),
         dismod_id=meid(1870),
         healthstate=Healthstate(
@@ -3584,6 +3981,7 @@ sequelae = Sequelae(**{
     ),
     'severe_heart_failure_due_to_other_cardiovascular_diseases': Sequela(
         name='severe_heart_failure_due_to_other_cardiovascular_diseases',
+        type='sequela',
         gbd_id=sid(420),
         dismod_id=meid(1871),
         healthstate=Healthstate(
@@ -3593,6 +3991,7 @@ sequelae = Sequelae(**{
     ),
     'mild_chronic_obstructive_pulmonary_disease': Sequela(
         name='mild_chronic_obstructive_pulmonary_disease',
+        type='sequela',
         gbd_id=sid(421),
         dismod_id=meid(1873),
         healthstate=Healthstate(
@@ -3602,6 +4001,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_chronic_obstructive_pulmonary_disease': Sequela(
         name='moderate_chronic_obstructive_pulmonary_disease',
+        type='sequela',
         gbd_id=sid(422),
         dismod_id=meid(1874),
         healthstate=Healthstate(
@@ -3611,6 +4011,7 @@ sequelae = Sequelae(**{
     ),
     'mild_silicosis': Sequela(
         name='mild_silicosis',
+        type='sequela',
         gbd_id=sid(423),
         dismod_id=meid(1880),
         healthstate=Healthstate(
@@ -3620,6 +4021,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_silicosis': Sequela(
         name='moderate_silicosis',
+        type='sequela',
         gbd_id=sid(424),
         dismod_id=meid(1881),
         healthstate=Healthstate(
@@ -3629,6 +4031,7 @@ sequelae = Sequelae(**{
     ),
     'mild_asbestosis': Sequela(
         name='mild_asbestosis',
+        type='sequela',
         gbd_id=sid(425),
         dismod_id=meid(1887),
         healthstate=Healthstate(
@@ -3638,6 +4041,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_asbestosis': Sequela(
         name='moderate_asbestosis',
+        type='sequela',
         gbd_id=sid(426),
         dismod_id=meid(1888),
         healthstate=Healthstate(
@@ -3647,6 +4051,7 @@ sequelae = Sequelae(**{
     ),
     'mild_coal_workers_pneumoconiosis': Sequela(
         name='mild_coal_workers_pneumoconiosis',
+        type='sequela',
         gbd_id=sid(427),
         dismod_id=meid(1894),
         healthstate=Healthstate(
@@ -3656,6 +4061,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_coal_workers_pneumoconiosis': Sequela(
         name='moderate_coal_workers_pneumoconiosis',
+        type='sequela',
         gbd_id=sid(428),
         dismod_id=meid(1895),
         healthstate=Healthstate(
@@ -3665,6 +4071,7 @@ sequelae = Sequelae(**{
     ),
     'mild_other_pneumoconiosis': Sequela(
         name='mild_other_pneumoconiosis',
+        type='sequela',
         gbd_id=sid(429),
         dismod_id=meid(1901),
         healthstate=Healthstate(
@@ -3674,6 +4081,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_other_pneumoconiosis': Sequela(
         name='moderate_other_pneumoconiosis',
+        type='sequela',
         gbd_id=sid(430),
         dismod_id=meid(1902),
         healthstate=Healthstate(
@@ -3683,6 +4091,7 @@ sequelae = Sequelae(**{
     ),
     'controlled_asthma': Sequela(
         name='controlled_asthma',
+        type='sequela',
         gbd_id=sid(431),
         dismod_id=meid(1908),
         healthstate=Healthstate(
@@ -3692,6 +4101,7 @@ sequelae = Sequelae(**{
     ),
     'partially_controlled_asthma': Sequela(
         name='partially_controlled_asthma',
+        type='sequela',
         gbd_id=sid(432),
         dismod_id=meid(1909),
         healthstate=Healthstate(
@@ -3701,6 +4111,7 @@ sequelae = Sequelae(**{
     ),
     'uncontrolled_asthma': Sequela(
         name='uncontrolled_asthma',
+        type='sequela',
         gbd_id=sid(433),
         dismod_id=meid(1910),
         healthstate=Healthstate(
@@ -3710,6 +4121,7 @@ sequelae = Sequelae(**{
     ),
     'mild_interstitial_lung_disease_and_pulmonary_sarcoidosis': Sequela(
         name='mild_interstitial_lung_disease_and_pulmonary_sarcoidosis',
+        type='sequela',
         gbd_id=sid(434),
         dismod_id=meid(1912),
         healthstate=Healthstate(
@@ -3719,6 +4131,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_interstitial_lung_disease_and_pulmonary_sarcoidosis': Sequela(
         name='moderate_interstitial_lung_disease_and_pulmonary_sarcoidosis',
+        type='sequela',
         gbd_id=sid(435),
         dismod_id=meid(1913),
         healthstate=Healthstate(
@@ -3728,6 +4141,7 @@ sequelae = Sequelae(**{
     ),
     'other_chronic_respiratory_diseases': Sequela(
         name='other_chronic_respiratory_diseases',
+        type='sequela',
         gbd_id=sid(436),
         dismod_id=meid(1918),
         healthstate=Healthstate(
@@ -3737,6 +4151,7 @@ sequelae = Sequelae(**{
     ),
     'mild_anemia_due_to_peptic_ulcer_disease': Sequela(
         name='mild_anemia_due_to_peptic_ulcer_disease',
+        type='sequela',
         gbd_id=sid(438),
         dismod_id=meid(1925),
         healthstate=Healthstate(
@@ -3746,6 +4161,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_anemia_due_to_peptic_ulcer_disease': Sequela(
         name='moderate_anemia_due_to_peptic_ulcer_disease',
+        type='sequela',
         gbd_id=sid(439),
         dismod_id=meid(1926),
         healthstate=Healthstate(
@@ -3755,6 +4171,7 @@ sequelae = Sequelae(**{
     ),
     'severe_anemia_due_to_peptic_ulcer_disease': Sequela(
         name='severe_anemia_due_to_peptic_ulcer_disease',
+        type='sequela',
         gbd_id=sid(440),
         dismod_id=meid(1927),
         healthstate=Healthstate(
@@ -3764,6 +4181,7 @@ sequelae = Sequelae(**{
     ),
     'mild_anemia_due_to_gastritis_and_duodenitis': Sequela(
         name='mild_anemia_due_to_gastritis_and_duodenitis',
+        type='sequela',
         gbd_id=sid(442),
         dismod_id=meid(1929),
         healthstate=Healthstate(
@@ -3773,6 +4191,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_anemia_due_to_gastritis_and_duodenitis': Sequela(
         name='moderate_anemia_due_to_gastritis_and_duodenitis',
+        type='sequela',
         gbd_id=sid(443),
         dismod_id=meid(1930),
         healthstate=Healthstate(
@@ -3782,6 +4201,7 @@ sequelae = Sequelae(**{
     ),
     'severe_anemia_due_to_gastritis_and_duodenitis': Sequela(
         name='severe_anemia_due_to_gastritis_and_duodenitis',
+        type='sequela',
         gbd_id=sid(444),
         dismod_id=meid(1931),
         healthstate=Healthstate(
@@ -3791,6 +4211,7 @@ sequelae = Sequelae(**{
     ),
     'appendicitis': Sequela(
         name='appendicitis',
+        type='sequela',
         gbd_id=sid(445),
         dismod_id=meid(1932),
         healthstate=Healthstate(
@@ -3800,6 +4221,7 @@ sequelae = Sequelae(**{
     ),
     'paralytic_ileus_and_intestinal_obstruction': Sequela(
         name='paralytic_ileus_and_intestinal_obstruction',
+        type='sequela',
         gbd_id=sid(446),
         dismod_id=meid(1933),
         healthstate=Healthstate(
@@ -3809,6 +4231,7 @@ sequelae = Sequelae(**{
     ),
     'vascular_intestinal_disorders': Sequela(
         name='vascular_intestinal_disorders',
+        type='sequela',
         gbd_id=sid(448),
         dismod_id=meid(1939),
         healthstate=Healthstate(
@@ -3818,6 +4241,7 @@ sequelae = Sequelae(**{
     ),
     'other_digestive_diseases': Sequela(
         name='other_digestive_diseases',
+        type='sequela',
         gbd_id=sid(451),
         dismod_id=meid(1942),
         healthstate=Healthstate(
@@ -3827,6 +4251,7 @@ sequelae = Sequelae(**{
     ),
     'mild_alzheimer_disease_and_other_dementias': Sequela(
         name='mild_alzheimer_disease_and_other_dementias',
+        type='sequela',
         gbd_id=sid(452),
         dismod_id=meid(1944),
         healthstate=Healthstate(
@@ -3836,6 +4261,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_alzheimer_disease_and_other_dementias': Sequela(
         name='moderate_alzheimer_disease_and_other_dementias',
+        type='sequela',
         gbd_id=sid(453),
         dismod_id=meid(1945),
         healthstate=Healthstate(
@@ -3845,6 +4271,7 @@ sequelae = Sequelae(**{
     ),
     'severe_alzheimer_disease_and_other_dementias': Sequela(
         name='severe_alzheimer_disease_and_other_dementias',
+        type='sequela',
         gbd_id=sid(454),
         dismod_id=meid(1946),
         healthstate=Healthstate(
@@ -3854,6 +4281,7 @@ sequelae = Sequelae(**{
     ),
     'mild_parkinson_disease': Sequela(
         name='mild_parkinson_disease',
+        type='sequela',
         gbd_id=sid(455),
         dismod_id=meid(1948),
         healthstate=Healthstate(
@@ -3863,6 +4291,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_parkinson_disease': Sequela(
         name='moderate_parkinson_disease',
+        type='sequela',
         gbd_id=sid(456),
         dismod_id=meid(1949),
         healthstate=Healthstate(
@@ -3872,6 +4301,7 @@ sequelae = Sequelae(**{
     ),
     'severe_parkinson_disease': Sequela(
         name='severe_parkinson_disease',
+        type='sequela',
         gbd_id=sid(457),
         dismod_id=meid(1950),
         healthstate=Healthstate(
@@ -3881,15 +4311,17 @@ sequelae = Sequelae(**{
     ),
     'seizure_free_treated_epilepsy': Sequela(
         name='seizure_free_treated_epilepsy',
+        type='sequela',
         gbd_id=sid(458),
         dismod_id=meid(1951),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'less_severe_epilepsy': Sequela(
         name='less_severe_epilepsy',
+        type='sequela',
         gbd_id=sid(459),
         dismod_id=meid(1952),
         healthstate=Healthstate(
@@ -3899,15 +4331,17 @@ sequelae = Sequelae(**{
     ),
     'severe_epilepsy': Sequela(
         name='severe_epilepsy',
+        type='sequela',
         gbd_id=sid(460),
         dismod_id=meid(1953),
         healthstate=Healthstate(
-            name='epilepsy_seizures_greater_than_=_once_a_month',
+            name='epilepsy_seizures_greater_than___once_a_month',
             gbd_id=hsid(745),
         ),
     ),
     'mild_multiple_sclerosis': Sequela(
         name='mild_multiple_sclerosis',
+        type='sequela',
         gbd_id=sid(461),
         dismod_id=meid(1956),
         healthstate=Healthstate(
@@ -3917,6 +4351,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_multiple_sclerosis': Sequela(
         name='moderate_multiple_sclerosis',
+        type='sequela',
         gbd_id=sid(462),
         dismod_id=meid(1957),
         healthstate=Healthstate(
@@ -3926,6 +4361,7 @@ sequelae = Sequelae(**{
     ),
     'severe_multiple_sclerosis': Sequela(
         name='severe_multiple_sclerosis',
+        type='sequela',
         gbd_id=sid(463),
         dismod_id=meid(1958),
         healthstate=Healthstate(
@@ -3935,6 +4371,7 @@ sequelae = Sequelae(**{
     ),
     'other_neurological_disorders': Sequela(
         name='other_neurological_disorders',
+        type='sequela',
         gbd_id=sid(464),
         dismod_id=meid(1962),
         healthstate=Healthstate(
@@ -3944,6 +4381,7 @@ sequelae = Sequelae(**{
     ),
     'guillain_barre_syndrome_due_to_other_neurological_disorders': Sequela(
         name='guillain_barre_syndrome_due_to_other_neurological_disorders',
+        type='sequela',
         gbd_id=sid(465),
         dismod_id=meid(1963),
         healthstate=Healthstate(
@@ -3953,6 +4391,7 @@ sequelae = Sequelae(**{
     ),
     'schizophrenia_acute_state': Sequela(
         name='schizophrenia_acute_state',
+        type='sequela',
         gbd_id=sid(466),
         dismod_id=meid(1965),
         healthstate=Healthstate(
@@ -3962,6 +4401,7 @@ sequelae = Sequelae(**{
     ),
     'schizophrenia_residual_state': Sequela(
         name='schizophrenia_residual_state',
+        type='sequela',
         gbd_id=sid(467),
         dismod_id=meid(1966),
         healthstate=Healthstate(
@@ -3971,6 +4411,7 @@ sequelae = Sequelae(**{
     ),
     'mild_alcohol_dependence': Sequela(
         name='mild_alcohol_dependence',
+        type='sequela',
         gbd_id=sid(468),
         dismod_id=meid(1968),
         healthstate=Healthstate(
@@ -3980,6 +4421,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_alcohol_dependence': Sequela(
         name='moderate_alcohol_dependence',
+        type='sequela',
         gbd_id=sid(469),
         dismod_id=meid(1969),
         healthstate=Healthstate(
@@ -3989,6 +4431,7 @@ sequelae = Sequelae(**{
     ),
     'severe_alcohol_dependence': Sequela(
         name='severe_alcohol_dependence',
+        type='sequela',
         gbd_id=sid(470),
         dismod_id=meid(1970),
         healthstate=Healthstate(
@@ -3998,6 +4441,7 @@ sequelae = Sequelae(**{
     ),
     'mild_fetal_alcohol_syndrome': Sequela(
         name='mild_fetal_alcohol_syndrome',
+        type='sequela',
         gbd_id=sid(471),
         dismod_id=meid(9970),
         healthstate=Healthstate(
@@ -4007,6 +4451,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_fetal_alcohol_syndrome': Sequela(
         name='moderate_fetal_alcohol_syndrome',
+        type='sequela',
         gbd_id=sid(472),
         dismod_id=meid(3905),
         healthstate=Healthstate(
@@ -4016,6 +4461,7 @@ sequelae = Sequelae(**{
     ),
     'severe_fetal_alcohol_syndrome': Sequela(
         name='severe_fetal_alcohol_syndrome',
+        type='sequela',
         gbd_id=sid(473),
         dismod_id=meid(3908),
         healthstate=Healthstate(
@@ -4025,6 +4471,7 @@ sequelae = Sequelae(**{
     ),
     'other_drug_use_disorders': Sequela(
         name='other_drug_use_disorders',
+        type='sequela',
         gbd_id=sid(474),
         dismod_id=meid(10720),
         healthstate=Healthstate(
@@ -4034,6 +4481,7 @@ sequelae = Sequelae(**{
     ),
     'mild_major_depressive_disorder': Sequela(
         name='mild_major_depressive_disorder',
+        type='sequela',
         gbd_id=sid(475),
         dismod_id=meid(1982),
         healthstate=Healthstate(
@@ -4043,6 +4491,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_major_depressive_disorder': Sequela(
         name='moderate_major_depressive_disorder',
+        type='sequela',
         gbd_id=sid(476),
         dismod_id=meid(1983),
         healthstate=Healthstate(
@@ -4052,6 +4501,7 @@ sequelae = Sequelae(**{
     ),
     'severe_major_depressive_disorder': Sequela(
         name='severe_major_depressive_disorder',
+        type='sequela',
         gbd_id=sid(477),
         dismod_id=meid(1984),
         healthstate=Healthstate(
@@ -4061,6 +4511,7 @@ sequelae = Sequelae(**{
     ),
     'bipolar_disorder_manic_state': Sequela(
         name='bipolar_disorder_manic_state',
+        type='sequela',
         gbd_id=sid(478),
         dismod_id=meid(1987),
         healthstate=Healthstate(
@@ -4070,6 +4521,7 @@ sequelae = Sequelae(**{
     ),
     'bipolar_disorder_residual_state': Sequela(
         name='bipolar_disorder_residual_state',
+        type='sequela',
         gbd_id=sid(479),
         dismod_id=meid(1988),
         healthstate=Healthstate(
@@ -4079,6 +4531,7 @@ sequelae = Sequelae(**{
     ),
     'mild_anxiety_disorders': Sequela(
         name='mild_anxiety_disorders',
+        type='sequela',
         gbd_id=sid(480),
         dismod_id=meid(1990),
         healthstate=Healthstate(
@@ -4088,6 +4541,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_anxiety_disorders': Sequela(
         name='moderate_anxiety_disorders',
+        type='sequela',
         gbd_id=sid(481),
         dismod_id=meid(1991),
         healthstate=Healthstate(
@@ -4097,6 +4551,7 @@ sequelae = Sequelae(**{
     ),
     'severe_anxiety_disorders': Sequela(
         name='severe_anxiety_disorders',
+        type='sequela',
         gbd_id=sid(482),
         dismod_id=meid(1992),
         healthstate=Healthstate(
@@ -4106,6 +4561,7 @@ sequelae = Sequelae(**{
     ),
     'anorexia_nervosa': Sequela(
         name='anorexia_nervosa',
+        type='sequela',
         gbd_id=sid(483),
         dismod_id=meid(1993),
         healthstate=Healthstate(
@@ -4115,6 +4571,7 @@ sequelae = Sequelae(**{
     ),
     'bulimia_nervosa': Sequela(
         name='bulimia_nervosa',
+        type='sequela',
         gbd_id=sid(484),
         dismod_id=meid(1994),
         healthstate=Healthstate(
@@ -4124,6 +4581,7 @@ sequelae = Sequelae(**{
     ),
     'asperger_syndrome_and_other_autistic_spectrum_disorders': Sequela(
         name='asperger_syndrome_and_other_autistic_spectrum_disorders',
+        type='sequela',
         gbd_id=sid(486),
         dismod_id=meid(1996),
         healthstate=Healthstate(
@@ -4133,6 +4591,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_idiopathic_developmental_intellectual_disability': Sequela(
         name='borderline_idiopathic_developmental_intellectual_disability',
+        type='sequela',
         gbd_id=sid(487),
         dismod_id=meid(1999),
         healthstate=Healthstate(
@@ -4142,6 +4601,7 @@ sequelae = Sequelae(**{
     ),
     'mild_idiopathic_developmental_intellectual_disability': Sequela(
         name='mild_idiopathic_developmental_intellectual_disability',
+        type='sequela',
         gbd_id=sid(488),
         dismod_id=meid(2000),
         healthstate=Healthstate(
@@ -4151,6 +4611,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_idiopathic_developmental_intellectual_disability': Sequela(
         name='moderate_idiopathic_developmental_intellectual_disability',
+        type='sequela',
         gbd_id=sid(489),
         dismod_id=meid(2001),
         healthstate=Healthstate(
@@ -4160,6 +4621,7 @@ sequelae = Sequelae(**{
     ),
     'severe_idiopathic_developmental_intellectual_disability': Sequela(
         name='severe_idiopathic_developmental_intellectual_disability',
+        type='sequela',
         gbd_id=sid(490),
         dismod_id=meid(2002),
         healthstate=Healthstate(
@@ -4169,6 +4631,7 @@ sequelae = Sequelae(**{
     ),
     'profound_idiopathic_developmental_intellectual_disability': Sequela(
         name='profound_idiopathic_developmental_intellectual_disability',
+        type='sequela',
         gbd_id=sid(491),
         dismod_id=meid(2003),
         healthstate=Healthstate(
@@ -4178,6 +4641,7 @@ sequelae = Sequelae(**{
     ),
     'mild_other_mental_disorders': Sequela(
         name='mild_other_mental_disorders',
+        type='sequela',
         gbd_id=sid(492),
         dismod_id=meid(2004),
         healthstate=Healthstate(
@@ -4187,15 +4651,17 @@ sequelae = Sequelae(**{
     ),
     'uncomplicated_diabetes_mellitus': Sequela(
         name='uncomplicated_diabetes_mellitus',
+        type='sequela',
         gbd_id=sid(493),
         dismod_id=meid(2006),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'moderate_vision_impairment_due_to_diabetes_mellitus': Sequela(
         name='moderate_vision_impairment_due_to_diabetes_mellitus',
+        type='sequela',
         gbd_id=sid(494),
         dismod_id=meid(2014),
         healthstate=Healthstate(
@@ -4205,6 +4671,7 @@ sequelae = Sequelae(**{
     ),
     'severe_vision_impairment_due_to_diabetes_mellitus': Sequela(
         name='severe_vision_impairment_due_to_diabetes_mellitus',
+        type='sequela',
         gbd_id=sid(495),
         dismod_id=meid(2015),
         healthstate=Healthstate(
@@ -4214,6 +4681,7 @@ sequelae = Sequelae(**{
     ),
     'blindness_due_to_diabetes_mellitus': Sequela(
         name='blindness_due_to_diabetes_mellitus',
+        type='sequela',
         gbd_id=sid(496),
         dismod_id=meid(3914),
         healthstate=Healthstate(
@@ -4223,6 +4691,7 @@ sequelae = Sequelae(**{
     ),
     'acute_glomerulonephritis': Sequela(
         name='acute_glomerulonephritis',
+        type='sequela',
         gbd_id=sid(497),
         dismod_id=meid(2017),
         healthstate=Healthstate(
@@ -4232,6 +4701,7 @@ sequelae = Sequelae(**{
     ),
     'end_stage_renal_disease_after_transplant_due_to_diabetes_mellitus': Sequela(
         name='end_stage_renal_disease_after_transplant_due_to_diabetes_mellitus',
+        type='sequela',
         gbd_id=sid(498),
         dismod_id=meid(2025),
         healthstate=Healthstate(
@@ -4241,6 +4711,7 @@ sequelae = Sequelae(**{
     ),
     'end_stage_renal_disease_on_dialysis_due_to_diabetes_mellitus': Sequela(
         name='end_stage_renal_disease_on_dialysis_due_to_diabetes_mellitus',
+        type='sequela',
         gbd_id=sid(499),
         dismod_id=meid(2026),
         healthstate=Healthstate(
@@ -4250,6 +4721,7 @@ sequelae = Sequelae(**{
     ),
     'end_stage_renal_disease_after_transplant_due_to_hypertension': Sequela(
         name='end_stage_renal_disease_after_transplant_due_to_hypertension',
+        type='sequela',
         gbd_id=sid(501),
         dismod_id=meid(2033),
         healthstate=Healthstate(
@@ -4259,6 +4731,7 @@ sequelae = Sequelae(**{
     ),
     'end_stage_renal_disease_on_dialysis_due_to_hypertension': Sequela(
         name='end_stage_renal_disease_on_dialysis_due_to_hypertension',
+        type='sequela',
         gbd_id=sid(502),
         dismod_id=meid(2034),
         healthstate=Healthstate(
@@ -4268,6 +4741,7 @@ sequelae = Sequelae(**{
     ),
     'end_stage_renal_disease_after_transplant_due_to_glomerulonephritis': Sequela(
         name='end_stage_renal_disease_after_transplant_due_to_glomerulonephritis',
+        type='sequela',
         gbd_id=sid(504),
         dismod_id=meid(2041),
         healthstate=Healthstate(
@@ -4277,6 +4751,7 @@ sequelae = Sequelae(**{
     ),
     'end_stage_renal_disease_on_dialysis_due_to_glomerulonephritis': Sequela(
         name='end_stage_renal_disease_on_dialysis_due_to_glomerulonephritis',
+        type='sequela',
         gbd_id=sid(505),
         dismod_id=meid(2042),
         healthstate=Healthstate(
@@ -4286,6 +4761,7 @@ sequelae = Sequelae(**{
     ),
     'end_stage_renal_disease_after_transplant_due_to_other_causes': Sequela(
         name='end_stage_renal_disease_after_transplant_due_to_other_causes',
+        type='sequela',
         gbd_id=sid(507),
         dismod_id=meid(2049),
         healthstate=Healthstate(
@@ -4295,6 +4771,7 @@ sequelae = Sequelae(**{
     ),
     'end_stage_renal_disease_on_dialysis_due_to_other_causes': Sequela(
         name='end_stage_renal_disease_on_dialysis_due_to_other_causes',
+        type='sequela',
         gbd_id=sid(508),
         dismod_id=meid(2050),
         healthstate=Healthstate(
@@ -4304,6 +4781,7 @@ sequelae = Sequelae(**{
     ),
     'mild_interstitial_nephritis_and_urinary_tract_infections': Sequela(
         name='mild_interstitial_nephritis_and_urinary_tract_infections',
+        type='sequela',
         gbd_id=sid(510),
         dismod_id=meid(2056),
         healthstate=Healthstate(
@@ -4313,6 +4791,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_interstitial_nephritis_and_urinary_tract_infections': Sequela(
         name='moderate_interstitial_nephritis_and_urinary_tract_infections',
+        type='sequela',
         gbd_id=sid(511),
         dismod_id=meid(2057),
         healthstate=Healthstate(
@@ -4322,6 +4801,7 @@ sequelae = Sequelae(**{
     ),
     'primary_male_infertility': Sequela(
         name='primary_male_infertility',
+        type='sequela',
         gbd_id=sid(514),
         dismod_id=meid(2061),
         healthstate=Healthstate(
@@ -4331,6 +4811,7 @@ sequelae = Sequelae(**{
     ),
     'secondary_male_infertility': Sequela(
         name='secondary_male_infertility',
+        type='sequela',
         gbd_id=sid(515),
         dismod_id=meid(2062),
         healthstate=Healthstate(
@@ -4340,6 +4821,7 @@ sequelae = Sequelae(**{
     ),
     'other_urinary_diseases': Sequela(
         name='other_urinary_diseases',
+        type='sequela',
         gbd_id=sid(516),
         dismod_id=meid(2063),
         healthstate=Healthstate(
@@ -4349,6 +4831,7 @@ sequelae = Sequelae(**{
     ),
     'primary_infertility_due_to_polycystic_ovarian_syndrome': Sequela(
         name='primary_infertility_due_to_polycystic_ovarian_syndrome',
+        type='sequela',
         gbd_id=sid(517),
         dismod_id=meid(2069),
         healthstate=Healthstate(
@@ -4358,6 +4841,7 @@ sequelae = Sequelae(**{
     ),
     'idiopathic_primary_female_infertility': Sequela(
         name='idiopathic_primary_female_infertility',
+        type='sequela',
         gbd_id=sid(518),
         dismod_id=meid(2071),
         healthstate=Healthstate(
@@ -4367,6 +4851,7 @@ sequelae = Sequelae(**{
     ),
     'idiopathic_secondary_female_infertility': Sequela(
         name='idiopathic_secondary_female_infertility',
+        type='sequela',
         gbd_id=sid(519),
         dismod_id=meid(2072),
         healthstate=Healthstate(
@@ -4376,6 +4861,7 @@ sequelae = Sequelae(**{
     ),
     'mild_abdominal_pain_due_to_endometriosis': Sequela(
         name='mild_abdominal_pain_due_to_endometriosis',
+        type='sequela',
         gbd_id=sid(520),
         dismod_id=meid(9745),
         healthstate=Healthstate(
@@ -4385,6 +4871,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_abdominal_pain_due_to_endometriosis': Sequela(
         name='moderate_abdominal_pain_due_to_endometriosis',
+        type='sequela',
         gbd_id=sid(521),
         dismod_id=meid(9746),
         healthstate=Healthstate(
@@ -4394,6 +4881,7 @@ sequelae = Sequelae(**{
     ),
     'primary_infertility_due_to_endometriosis': Sequela(
         name='primary_infertility_due_to_endometriosis',
+        type='sequela',
         gbd_id=sid(522),
         dismod_id=meid(2076),
         healthstate=Healthstate(
@@ -4403,6 +4891,7 @@ sequelae = Sequelae(**{
     ),
     'secondary_infertility_due_to_endometriosis': Sequela(
         name='secondary_infertility_due_to_endometriosis',
+        type='sequela',
         gbd_id=sid(523),
         dismod_id=meid(2077),
         healthstate=Healthstate(
@@ -4412,6 +4901,7 @@ sequelae = Sequelae(**{
     ),
     'abdominal_pain_due_to_premenstrual_syndrome': Sequela(
         name='abdominal_pain_due_to_premenstrual_syndrome',
+        type='sequela',
         gbd_id=sid(524),
         dismod_id=meid(2081),
         healthstate=Healthstate(
@@ -4421,6 +4911,7 @@ sequelae = Sequelae(**{
     ),
     'mild_anemia_due_to_other_gynecological_diseases': Sequela(
         name='mild_anemia_due_to_other_gynecological_diseases',
+        type='sequela',
         gbd_id=sid(525),
         dismod_id=meid(2082),
         healthstate=Healthstate(
@@ -4430,6 +4921,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_anemia_due_to_other_gynecological_diseases': Sequela(
         name='moderate_anemia_due_to_other_gynecological_diseases',
+        type='sequela',
         gbd_id=sid(526),
         dismod_id=meid(2083),
         healthstate=Healthstate(
@@ -4439,6 +4931,7 @@ sequelae = Sequelae(**{
     ),
     'severe_anemia_due_to_other_gynecological_diseases': Sequela(
         name='severe_anemia_due_to_other_gynecological_diseases',
+        type='sequela',
         gbd_id=sid(527),
         dismod_id=meid(2084),
         healthstate=Healthstate(
@@ -4448,6 +4941,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_and_mild_heart_failure_due_to_thalassemias': Sequela(
         name='asymptomatic_and_mild_heart_failure_due_to_thalassemias',
+        type='sequela',
         gbd_id=sid(528),
         dismod_id=meid(2094),
         healthstate=Healthstate(
@@ -4457,6 +4951,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_heart_failure_due_to_thalassemias': Sequela(
         name='moderate_heart_failure_due_to_thalassemias',
+        type='sequela',
         gbd_id=sid(529),
         dismod_id=meid(2095),
         healthstate=Healthstate(
@@ -4466,6 +4961,7 @@ sequelae = Sequelae(**{
     ),
     'severe_heart_failure_due_to_thalassemias': Sequela(
         name='severe_heart_failure_due_to_thalassemias',
+        type='sequela',
         gbd_id=sid(530),
         dismod_id=meid(2096),
         healthstate=Healthstate(
@@ -4475,6 +4971,7 @@ sequelae = Sequelae(**{
     ),
     'mild_anemia_due_to_other_hemoglobinopathies_and_hemolytic_anemias': Sequela(
         name='mild_anemia_due_to_other_hemoglobinopathies_and_hemolytic_anemias',
+        type='sequela',
         gbd_id=sid(531),
         dismod_id=meid(2119),
         healthstate=Healthstate(
@@ -4484,6 +4981,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_anemia_due_to_other_hemoglobinopathies_and_hemolytic_anemias': Sequela(
         name='moderate_anemia_due_to_other_hemoglobinopathies_and_hemolytic_anemias',
+        type='sequela',
         gbd_id=sid(532),
         dismod_id=meid(2120),
         healthstate=Healthstate(
@@ -4493,6 +4991,7 @@ sequelae = Sequelae(**{
     ),
     'severe_anemia_due_to_other_hemoglobinopathies_and_hemolytic_anemias': Sequela(
         name='severe_anemia_due_to_other_hemoglobinopathies_and_hemolytic_anemias',
+        type='sequela',
         gbd_id=sid(533),
         dismod_id=meid(2121),
         healthstate=Healthstate(
@@ -4502,6 +5001,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_and_mild_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias': Sequela(
         name='asymptomatic_and_mild_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias',
+        type='sequela',
         gbd_id=sid(534),
         dismod_id=meid(2122),
         healthstate=Healthstate(
@@ -4511,6 +5011,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias': Sequela(
         name='moderate_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias',
+        type='sequela',
         gbd_id=sid(535),
         dismod_id=meid(2123),
         healthstate=Healthstate(
@@ -4520,6 +5021,7 @@ sequelae = Sequelae(**{
     ),
     'severe_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias': Sequela(
         name='severe_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias',
+        type='sequela',
         gbd_id=sid(536),
         dismod_id=meid(2124),
         healthstate=Healthstate(
@@ -4529,6 +5031,7 @@ sequelae = Sequelae(**{
     ),
     'mild_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders': Sequela(
         name='mild_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders',
+        type='sequela',
         gbd_id=sid(537),
         dismod_id=meid(2131),
         healthstate=Healthstate(
@@ -4538,6 +5041,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders': Sequela(
         name='moderate_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders',
+        type='sequela',
         gbd_id=sid(538),
         dismod_id=meid(2132),
         healthstate=Healthstate(
@@ -4547,6 +5051,7 @@ sequelae = Sequelae(**{
     ),
     'severe_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders': Sequela(
         name='severe_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders',
+        type='sequela',
         gbd_id=sid(539),
         dismod_id=meid(2133),
         healthstate=Healthstate(
@@ -4556,6 +5061,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_and_mild_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders': Sequela(
         name='asymptomatic_and_mild_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders',
+        type='sequela',
         gbd_id=sid(540),
         dismod_id=meid(2134),
         healthstate=Healthstate(
@@ -4565,6 +5071,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders': Sequela(
         name='moderate_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders',
+        type='sequela',
         gbd_id=sid(541),
         dismod_id=meid(2135),
         healthstate=Healthstate(
@@ -4574,6 +5081,7 @@ sequelae = Sequelae(**{
     ),
     'severe_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders': Sequela(
         name='severe_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders',
+        type='sequela',
         gbd_id=sid(542),
         dismod_id=meid(2136),
         healthstate=Healthstate(
@@ -4583,6 +5091,7 @@ sequelae = Sequelae(**{
     ),
     'mild_rheumatoid_arthritis': Sequela(
         name='mild_rheumatoid_arthritis',
+        type='sequela',
         gbd_id=sid(543),
         dismod_id=meid(2138),
         healthstate=Healthstate(
@@ -4592,6 +5101,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_rheumatoid_arthritis': Sequela(
         name='moderate_rheumatoid_arthritis',
+        type='sequela',
         gbd_id=sid(544),
         dismod_id=meid(2139),
         healthstate=Healthstate(
@@ -4601,6 +5111,7 @@ sequelae = Sequelae(**{
     ),
     'severe_rheumatoid_arthritis': Sequela(
         name='severe_rheumatoid_arthritis',
+        type='sequela',
         gbd_id=sid(545),
         dismod_id=meid(2140),
         healthstate=Healthstate(
@@ -4610,6 +5121,7 @@ sequelae = Sequelae(**{
     ),
     'mild_osteoarthritis_of_the_hip': Sequela(
         name='mild_osteoarthritis_of_the_hip',
+        type='sequela',
         gbd_id=sid(546),
         dismod_id=meid(2142),
         healthstate=Healthstate(
@@ -4619,6 +5131,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_osteoarthritis_of_the_hip': Sequela(
         name='moderate_osteoarthritis_of_the_hip',
+        type='sequela',
         gbd_id=sid(547),
         dismod_id=meid(2143),
         healthstate=Healthstate(
@@ -4628,6 +5141,7 @@ sequelae = Sequelae(**{
     ),
     'severe_osteoarthritis_of_the_hip': Sequela(
         name='severe_osteoarthritis_of_the_hip',
+        type='sequela',
         gbd_id=sid(548),
         dismod_id=meid(2144),
         healthstate=Healthstate(
@@ -4637,6 +5151,7 @@ sequelae = Sequelae(**{
     ),
     'mild_osteoarthritis_of_the_knee': Sequela(
         name='mild_osteoarthritis_of_the_knee',
+        type='sequela',
         gbd_id=sid(549),
         dismod_id=meid(2146),
         healthstate=Healthstate(
@@ -4646,6 +5161,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_osteoarthritis_of_the_knee': Sequela(
         name='moderate_osteoarthritis_of_the_knee',
+        type='sequela',
         gbd_id=sid(550),
         dismod_id=meid(2147),
         healthstate=Healthstate(
@@ -4655,6 +5171,7 @@ sequelae = Sequelae(**{
     ),
     'severe_osteoarthritis_of_the_knee': Sequela(
         name='severe_osteoarthritis_of_the_knee',
+        type='sequela',
         gbd_id=sid(551),
         dismod_id=meid(2148),
         healthstate=Healthstate(
@@ -4664,6 +5181,7 @@ sequelae = Sequelae(**{
     ),
     'severe_low_back_pain_with_leg_pain': Sequela(
         name='severe_low_back_pain_with_leg_pain',
+        type='sequela',
         gbd_id=sid(552),
         dismod_id=meid(2150),
         healthstate=Healthstate(
@@ -4673,6 +5191,7 @@ sequelae = Sequelae(**{
     ),
     'severe_low_back_pain_without_leg_pain': Sequela(
         name='severe_low_back_pain_without_leg_pain',
+        type='sequela',
         gbd_id=sid(553),
         dismod_id=meid(2151),
         healthstate=Healthstate(
@@ -4682,6 +5201,7 @@ sequelae = Sequelae(**{
     ),
     'most_severe_low_back_pain_with_leg_pain': Sequela(
         name='most_severe_low_back_pain_with_leg_pain',
+        type='sequela',
         gbd_id=sid(554),
         dismod_id=meid(2152),
         healthstate=Healthstate(
@@ -4691,6 +5211,7 @@ sequelae = Sequelae(**{
     ),
     'most_severe_low_back_pain_without_leg_pain': Sequela(
         name='most_severe_low_back_pain_without_leg_pain',
+        type='sequela',
         gbd_id=sid(555),
         dismod_id=meid(2153),
         healthstate=Healthstate(
@@ -4700,6 +5221,7 @@ sequelae = Sequelae(**{
     ),
     'mild_neck_pain': Sequela(
         name='mild_neck_pain',
+        type='sequela',
         gbd_id=sid(556),
         dismod_id=meid(2155),
         healthstate=Healthstate(
@@ -4709,6 +5231,7 @@ sequelae = Sequelae(**{
     ),
     'severe_neck_pain': Sequela(
         name='severe_neck_pain',
+        type='sequela',
         gbd_id=sid(557),
         dismod_id=meid(2156),
         healthstate=Healthstate(
@@ -4718,6 +5241,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_neck_pain': Sequela(
         name='moderate_neck_pain',
+        type='sequela',
         gbd_id=sid(558),
         dismod_id=meid(2157),
         healthstate=Healthstate(
@@ -4727,6 +5251,7 @@ sequelae = Sequelae(**{
     ),
     'most_severe_neck_pain': Sequela(
         name='most_severe_neck_pain',
+        type='sequela',
         gbd_id=sid(559),
         dismod_id=meid(2158),
         healthstate=Healthstate(
@@ -4736,6 +5261,7 @@ sequelae = Sequelae(**{
     ),
     'polyarticular_gout': Sequela(
         name='polyarticular_gout',
+        type='sequela',
         gbd_id=sid(560),
         dismod_id=meid(2160),
         healthstate=Healthstate(
@@ -4745,6 +5271,7 @@ sequelae = Sequelae(**{
     ),
     'other_musculoskeletal_disorders_severity_level_2': Sequela(
         name='other_musculoskeletal_disorders_severity_level_2',
+        type='sequela',
         gbd_id=sid(561),
         dismod_id=meid(2162),
         healthstate=Healthstate(
@@ -4754,6 +5281,7 @@ sequelae = Sequelae(**{
     ),
     'other_musculoskeletal_disorders_severity_level_3': Sequela(
         name='other_musculoskeletal_disorders_severity_level_3',
+        type='sequela',
         gbd_id=sid(562),
         dismod_id=meid(2163),
         healthstate=Healthstate(
@@ -4763,6 +5291,7 @@ sequelae = Sequelae(**{
     ),
     'other_musculoskeletal_disorders_severity_level_5': Sequela(
         name='other_musculoskeletal_disorders_severity_level_5',
+        type='sequela',
         gbd_id=sid(563),
         dismod_id=meid(2164),
         healthstate=Healthstate(
@@ -4772,6 +5301,7 @@ sequelae = Sequelae(**{
     ),
     'other_musculoskeletal_disorders_severity_level_6': Sequela(
         name='other_musculoskeletal_disorders_severity_level_6',
+        type='sequela',
         gbd_id=sid(564),
         dismod_id=meid(2165),
         healthstate=Healthstate(
@@ -4781,6 +5311,7 @@ sequelae = Sequelae(**{
     ),
     'other_musculoskeletal_disorders_severity_level_1': Sequela(
         name='other_musculoskeletal_disorders_severity_level_1',
+        type='sequela',
         gbd_id=sid(565),
         dismod_id=meid(2166),
         healthstate=Healthstate(
@@ -4790,6 +5321,7 @@ sequelae = Sequelae(**{
     ),
     'other_musculoskeletal_disorders_severity_level_4': Sequela(
         name='other_musculoskeletal_disorders_severity_level_4',
+        type='sequela',
         gbd_id=sid(566),
         dismod_id=meid(2167),
         healthstate=Healthstate(
@@ -4799,6 +5331,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_due_to_turner_syndrome': Sequela(
         name='congenital_heart_disease_due_to_turner_syndrome',
+        type='sequela',
         gbd_id=sid(570),
         dismod_id=meid(2207),
         healthstate=Healthstate(
@@ -4808,6 +5341,7 @@ sequelae = Sequelae(**{
     ),
     'primary_infertility_due_to_turner_syndrome': Sequela(
         name='primary_infertility_due_to_turner_syndrome',
+        type='sequela',
         gbd_id=sid(571),
         dismod_id=meid(2208),
         healthstate=Healthstate(
@@ -4817,6 +5351,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_due_to_klinefelter_syndrome': Sequela(
         name='borderline_intellectual_disability_due_to_klinefelter_syndrome',
+        type='sequela',
         gbd_id=sid(572),
         dismod_id=meid(2213),
         healthstate=Healthstate(
@@ -4826,6 +5361,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_due_to_klinefelter_syndrome': Sequela(
         name='mild_intellectual_disability_due_to_klinefelter_syndrome',
+        type='sequela',
         gbd_id=sid(573),
         dismod_id=meid(2214),
         healthstate=Healthstate(
@@ -4835,6 +5371,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_with_infertility_due_to_klinefelter_syndrome': Sequela(
         name='mild_intellectual_disability_with_infertility_due_to_klinefelter_syndrome',
+        type='sequela',
         gbd_id=sid(574),
         dismod_id=meid(2218),
         healthstate=Healthstate(
@@ -4844,6 +5381,7 @@ sequelae = Sequelae(**{
     ),
     'mild_hearing_loss_due_to_other_congenital_anomalies': Sequela(
         name='mild_hearing_loss_due_to_other_congenital_anomalies',
+        type='sequela',
         gbd_id=sid(576),
         dismod_id=meid(2235),
         healthstate=Healthstate(
@@ -4853,6 +5391,7 @@ sequelae = Sequelae(**{
     ),
     'mild_hearing_loss_with_ringing_due_to_other_congenital_anomalies': Sequela(
         name='mild_hearing_loss_with_ringing_due_to_other_congenital_anomalies',
+        type='sequela',
         gbd_id=sid(577),
         dismod_id=meid(2236),
         healthstate=Healthstate(
@@ -4862,6 +5401,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_hearing_loss_due_to_other_congenital_anomalies': Sequela(
         name='moderate_hearing_loss_due_to_other_congenital_anomalies',
+        type='sequela',
         gbd_id=sid(578),
         dismod_id=meid(2237),
         healthstate=Healthstate(
@@ -4871,6 +5411,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_hearing_loss_with_ringing_due_to_other_congenital_anomalies': Sequela(
         name='moderate_hearing_loss_with_ringing_due_to_other_congenital_anomalies',
+        type='sequela',
         gbd_id=sid(579),
         dismod_id=meid(2238),
         healthstate=Healthstate(
@@ -4880,6 +5421,7 @@ sequelae = Sequelae(**{
     ),
     'severe_hearing_loss_with_ringing_due_to_other_congenital_anomalies': Sequela(
         name='severe_hearing_loss_with_ringing_due_to_other_congenital_anomalies',
+        type='sequela',
         gbd_id=sid(580),
         dismod_id=meid(2239),
         healthstate=Healthstate(
@@ -4889,6 +5431,7 @@ sequelae = Sequelae(**{
     ),
     'severe_hearing_loss_due_to_other_congenital_anomalies': Sequela(
         name='severe_hearing_loss_due_to_other_congenital_anomalies',
+        type='sequela',
         gbd_id=sid(581),
         dismod_id=meid(2240),
         healthstate=Healthstate(
@@ -4898,6 +5441,7 @@ sequelae = Sequelae(**{
     ),
     'complete_hearing_loss_due_to_other_congenital_anomalies': Sequela(
         name='complete_hearing_loss_due_to_other_congenital_anomalies',
+        type='sequela',
         gbd_id=sid(582),
         dismod_id=meid(2241),
         healthstate=Healthstate(
@@ -4907,6 +5451,7 @@ sequelae = Sequelae(**{
     ),
     'complete_hearing_loss_with_ringing_due_to_other_congenital_anomalies': Sequela(
         name='complete_hearing_loss_with_ringing_due_to_other_congenital_anomalies',
+        type='sequela',
         gbd_id=sid(583),
         dismod_id=meid(2242),
         healthstate=Healthstate(
@@ -4916,6 +5461,7 @@ sequelae = Sequelae(**{
     ),
     'moderately_severe_hearing_loss_due_to_other_congenital_anomalies': Sequela(
         name='moderately_severe_hearing_loss_due_to_other_congenital_anomalies',
+        type='sequela',
         gbd_id=sid(584),
         dismod_id=meid(2243),
         healthstate=Healthstate(
@@ -4925,6 +5471,7 @@ sequelae = Sequelae(**{
     ),
     'moderately_severe_hearing_loss_with_ringing_due_to_other_congenital_anomalies': Sequela(
         name='moderately_severe_hearing_loss_with_ringing_due_to_other_congenital_anomalies',
+        type='sequela',
         gbd_id=sid(585),
         dismod_id=meid(2244),
         healthstate=Healthstate(
@@ -4934,6 +5481,7 @@ sequelae = Sequelae(**{
     ),
     'profound_hearing_loss_due_to_other_congenital_anomalies': Sequela(
         name='profound_hearing_loss_due_to_other_congenital_anomalies',
+        type='sequela',
         gbd_id=sid(586),
         dismod_id=meid(2245),
         healthstate=Healthstate(
@@ -4943,6 +5491,7 @@ sequelae = Sequelae(**{
     ),
     'profound_hearing_loss_with_ringing_due_to_other_congenital_anomalies': Sequela(
         name='profound_hearing_loss_with_ringing_due_to_other_congenital_anomalies',
+        type='sequela',
         gbd_id=sid(587),
         dismod_id=meid(2246),
         healthstate=Healthstate(
@@ -4952,6 +5501,7 @@ sequelae = Sequelae(**{
     ),
     'mild_atopic_dermatitis': Sequela(
         name='mild_atopic_dermatitis',
+        type='sequela',
         gbd_id=sid(588),
         dismod_id=meid(2248),
         healthstate=Healthstate(
@@ -4961,6 +5511,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_atopic_dermatitis': Sequela(
         name='moderate_atopic_dermatitis',
+        type='sequela',
         gbd_id=sid(589),
         dismod_id=meid(2249),
         healthstate=Healthstate(
@@ -4970,6 +5521,7 @@ sequelae = Sequelae(**{
     ),
     'severe_atopic_dermatitis': Sequela(
         name='severe_atopic_dermatitis',
+        type='sequela',
         gbd_id=sid(590),
         dismod_id=meid(2250),
         healthstate=Healthstate(
@@ -4979,6 +5531,7 @@ sequelae = Sequelae(**{
     ),
     'mild_psoriasis': Sequela(
         name='mild_psoriasis',
+        type='sequela',
         gbd_id=sid(591),
         dismod_id=meid(2252),
         healthstate=Healthstate(
@@ -4988,6 +5541,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_psoriasis': Sequela(
         name='moderate_psoriasis',
+        type='sequela',
         gbd_id=sid(592),
         dismod_id=meid(2253),
         healthstate=Healthstate(
@@ -4997,6 +5551,7 @@ sequelae = Sequelae(**{
     ),
     'severe_psoriasis': Sequela(
         name='severe_psoriasis',
+        type='sequela',
         gbd_id=sid(593),
         dismod_id=meid(2254),
         healthstate=Healthstate(
@@ -5006,6 +5561,7 @@ sequelae = Sequelae(**{
     ),
     'impetigo': Sequela(
         name='impetigo',
+        type='sequela',
         gbd_id=sid(594),
         dismod_id=meid(2258),
         healthstate=Healthstate(
@@ -5015,6 +5571,7 @@ sequelae = Sequelae(**{
     ),
     'abscess_and_other_bacterial_skin_diseases': Sequela(
         name='abscess_and_other_bacterial_skin_diseases',
+        type='sequela',
         gbd_id=sid(595),
         dismod_id=meid(2261),
         healthstate=Healthstate(
@@ -5024,6 +5581,7 @@ sequelae = Sequelae(**{
     ),
     'scabies': Sequela(
         name='scabies',
+        type='sequela',
         gbd_id=sid(596),
         dismod_id=meid(2262),
         healthstate=Healthstate(
@@ -5033,6 +5591,7 @@ sequelae = Sequelae(**{
     ),
     'tinea_capitis': Sequela(
         name='tinea_capitis',
+        type='sequela',
         gbd_id=sid(597),
         dismod_id=meid(2265),
         healthstate=Healthstate(
@@ -5042,6 +5601,7 @@ sequelae = Sequelae(**{
     ),
     'mild_viral_warts': Sequela(
         name='mild_viral_warts',
+        type='sequela',
         gbd_id=sid(598),
         dismod_id=meid(2270),
         healthstate=Healthstate(
@@ -5051,6 +5611,7 @@ sequelae = Sequelae(**{
     ),
     'severe_viral_warts': Sequela(
         name='severe_viral_warts',
+        type='sequela',
         gbd_id=sid(599),
         dismod_id=meid(2272),
         healthstate=Healthstate(
@@ -5060,6 +5621,7 @@ sequelae = Sequelae(**{
     ),
     'mild_alopecia_areata': Sequela(
         name='mild_alopecia_areata',
+        type='sequela',
         gbd_id=sid(601),
         dismod_id=meid(2277),
         healthstate=Healthstate(
@@ -5069,6 +5631,7 @@ sequelae = Sequelae(**{
     ),
     'severe_alopecia_areata': Sequela(
         name='severe_alopecia_areata',
+        type='sequela',
         gbd_id=sid(602),
         dismod_id=meid(2278),
         healthstate=Healthstate(
@@ -5078,6 +5641,7 @@ sequelae = Sequelae(**{
     ),
     'pruritus': Sequela(
         name='pruritus',
+        type='sequela',
         gbd_id=sid(603),
         dismod_id=meid(2280),
         healthstate=Healthstate(
@@ -5087,6 +5651,7 @@ sequelae = Sequelae(**{
     ),
     'mild_urticaria': Sequela(
         name='mild_urticaria',
+        type='sequela',
         gbd_id=sid(604),
         dismod_id=meid(2284),
         healthstate=Healthstate(
@@ -5096,6 +5661,7 @@ sequelae = Sequelae(**{
     ),
     'severe_urticaria': Sequela(
         name='severe_urticaria',
+        type='sequela',
         gbd_id=sid(605),
         dismod_id=meid(2285),
         healthstate=Healthstate(
@@ -5105,6 +5671,7 @@ sequelae = Sequelae(**{
     ),
     'mild_decubitus_ulcer': Sequela(
         name='mild_decubitus_ulcer',
+        type='sequela',
         gbd_id=sid(606),
         dismod_id=meid(2287),
         healthstate=Healthstate(
@@ -5114,6 +5681,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_decubitus_ulcer': Sequela(
         name='moderate_decubitus_ulcer',
+        type='sequela',
         gbd_id=sid(607),
         dismod_id=meid(2288),
         healthstate=Healthstate(
@@ -5123,6 +5691,7 @@ sequelae = Sequelae(**{
     ),
     'severe_decubitus_ulcer': Sequela(
         name='severe_decubitus_ulcer',
+        type='sequela',
         gbd_id=sid(608),
         dismod_id=meid(2289),
         healthstate=Healthstate(
@@ -5132,6 +5701,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_vision_impairment_due_to_glaucoma': Sequela(
         name='moderate_vision_impairment_due_to_glaucoma',
+        type='sequela',
         gbd_id=sid(609),
         dismod_id=meid(2292),
         healthstate=Healthstate(
@@ -5141,6 +5711,7 @@ sequelae = Sequelae(**{
     ),
     'severe_vision_impairment_due_to_glaucoma': Sequela(
         name='severe_vision_impairment_due_to_glaucoma',
+        type='sequela',
         gbd_id=sid(610),
         dismod_id=meid(2293),
         healthstate=Healthstate(
@@ -5150,6 +5721,7 @@ sequelae = Sequelae(**{
     ),
     'blindness_due_to_glaucoma': Sequela(
         name='blindness_due_to_glaucoma',
+        type='sequela',
         gbd_id=sid(611),
         dismod_id=meid(3917),
         healthstate=Healthstate(
@@ -5159,6 +5731,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_vision_impairment_due_to_cataract': Sequela(
         name='moderate_vision_impairment_due_to_cataract',
+        type='sequela',
         gbd_id=sid(612),
         dismod_id=meid(2297),
         healthstate=Healthstate(
@@ -5168,6 +5741,7 @@ sequelae = Sequelae(**{
     ),
     'severe_vision_impairment_due_to_cataract': Sequela(
         name='severe_vision_impairment_due_to_cataract',
+        type='sequela',
         gbd_id=sid(613),
         dismod_id=meid(2298),
         healthstate=Healthstate(
@@ -5177,6 +5751,7 @@ sequelae = Sequelae(**{
     ),
     'blindness_due_to_cataract': Sequela(
         name='blindness_due_to_cataract',
+        type='sequela',
         gbd_id=sid(614),
         dismod_id=meid(3920),
         healthstate=Healthstate(
@@ -5186,6 +5761,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_vision_impairment_due_to_macular_degeneration': Sequela(
         name='moderate_vision_impairment_due_to_macular_degeneration',
+        type='sequela',
         gbd_id=sid(615),
         dismod_id=meid(2302),
         healthstate=Healthstate(
@@ -5195,6 +5771,7 @@ sequelae = Sequelae(**{
     ),
     'severe_vision_impairment_due_to_macular_degeneration': Sequela(
         name='severe_vision_impairment_due_to_macular_degeneration',
+        type='sequela',
         gbd_id=sid(616),
         dismod_id=meid(2303),
         healthstate=Healthstate(
@@ -5204,6 +5781,7 @@ sequelae = Sequelae(**{
     ),
     'blindness_due_to_macular_degeneration': Sequela(
         name='blindness_due_to_macular_degeneration',
+        type='sequela',
         gbd_id=sid(617),
         dismod_id=meid(3923),
         healthstate=Healthstate(
@@ -5213,6 +5791,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_vision_impairment_due_to_uncorrected_refractive_error': Sequela(
         name='moderate_vision_impairment_due_to_uncorrected_refractive_error',
+        type='sequela',
         gbd_id=sid(618),
         dismod_id=meid(2307),
         healthstate=Healthstate(
@@ -5222,6 +5801,7 @@ sequelae = Sequelae(**{
     ),
     'severe_vision_impairment_due_to_uncorrected_refractive_error': Sequela(
         name='severe_vision_impairment_due_to_uncorrected_refractive_error',
+        type='sequela',
         gbd_id=sid(619),
         dismod_id=meid(2308),
         healthstate=Healthstate(
@@ -5231,6 +5811,7 @@ sequelae = Sequelae(**{
     ),
     'blindness_due_to_uncorrected_refractive_error': Sequela(
         name='blindness_due_to_uncorrected_refractive_error',
+        type='sequela',
         gbd_id=sid(620),
         dismod_id=meid(2310),
         healthstate=Healthstate(
@@ -5240,6 +5821,7 @@ sequelae = Sequelae(**{
     ),
     'mild_hearing_loss_due_to_age_related_and_other_hearing_loss': Sequela(
         name='mild_hearing_loss_due_to_age_related_and_other_hearing_loss',
+        type='sequela',
         gbd_id=sid(621),
         dismod_id=meid(2312),
         healthstate=Healthstate(
@@ -5249,6 +5831,7 @@ sequelae = Sequelae(**{
     ),
     'mild_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss': Sequela(
         name='mild_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss',
+        type='sequela',
         gbd_id=sid(622),
         dismod_id=meid(2313),
         healthstate=Healthstate(
@@ -5258,6 +5841,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_hearing_loss_due_to_age_related_and_other_hearing_loss': Sequela(
         name='moderate_hearing_loss_due_to_age_related_and_other_hearing_loss',
+        type='sequela',
         gbd_id=sid(623),
         dismod_id=meid(2314),
         healthstate=Healthstate(
@@ -5267,6 +5851,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss': Sequela(
         name='moderate_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss',
+        type='sequela',
         gbd_id=sid(624),
         dismod_id=meid(2315),
         healthstate=Healthstate(
@@ -5276,6 +5861,7 @@ sequelae = Sequelae(**{
     ),
     'moderately_severe_hearing_loss_due_to_age_related_and_other_hearing_loss': Sequela(
         name='moderately_severe_hearing_loss_due_to_age_related_and_other_hearing_loss',
+        type='sequela',
         gbd_id=sid(625),
         dismod_id=meid(2316),
         healthstate=Healthstate(
@@ -5285,6 +5871,7 @@ sequelae = Sequelae(**{
     ),
     'moderately_severe_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss': Sequela(
         name='moderately_severe_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss',
+        type='sequela',
         gbd_id=sid(626),
         dismod_id=meid(2317),
         healthstate=Healthstate(
@@ -5294,6 +5881,7 @@ sequelae = Sequelae(**{
     ),
     'severe_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss': Sequela(
         name='severe_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss',
+        type='sequela',
         gbd_id=sid(627),
         dismod_id=meid(2318),
         healthstate=Healthstate(
@@ -5303,6 +5891,7 @@ sequelae = Sequelae(**{
     ),
     'severe_hearing_loss_due_to_age_related_and_other_hearing_loss': Sequela(
         name='severe_hearing_loss_due_to_age_related_and_other_hearing_loss',
+        type='sequela',
         gbd_id=sid(628),
         dismod_id=meid(2319),
         healthstate=Healthstate(
@@ -5312,6 +5901,7 @@ sequelae = Sequelae(**{
     ),
     'profound_hearing_loss_due_to_age_related_and_other_hearing_loss': Sequela(
         name='profound_hearing_loss_due_to_age_related_and_other_hearing_loss',
+        type='sequela',
         gbd_id=sid(629),
         dismod_id=meid(2320),
         healthstate=Healthstate(
@@ -5321,6 +5911,7 @@ sequelae = Sequelae(**{
     ),
     'profound_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss': Sequela(
         name='profound_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss',
+        type='sequela',
         gbd_id=sid(630),
         dismod_id=meid(2321),
         healthstate=Healthstate(
@@ -5330,6 +5921,7 @@ sequelae = Sequelae(**{
     ),
     'complete_hearing_loss_due_to_age_related_and_other_hearing_loss': Sequela(
         name='complete_hearing_loss_due_to_age_related_and_other_hearing_loss',
+        type='sequela',
         gbd_id=sid(631),
         dismod_id=meid(2322),
         healthstate=Healthstate(
@@ -5339,6 +5931,7 @@ sequelae = Sequelae(**{
     ),
     'complete_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss': Sequela(
         name='complete_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss',
+        type='sequela',
         gbd_id=sid(632),
         dismod_id=meid(2323),
         healthstate=Healthstate(
@@ -5348,6 +5941,7 @@ sequelae = Sequelae(**{
     ),
     'near_vision_impairment': Sequela(
         name='near_vision_impairment',
+        type='sequela',
         gbd_id=sid(633),
         dismod_id=meid(2324),
         healthstate=Healthstate(
@@ -5357,6 +5951,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_vision_impairment_due_to_other_vision_loss': Sequela(
         name='moderate_vision_impairment_due_to_other_vision_loss',
+        type='sequela',
         gbd_id=sid(634),
         dismod_id=meid(2326),
         healthstate=Healthstate(
@@ -5366,6 +5961,7 @@ sequelae = Sequelae(**{
     ),
     'severe_vision_impairment_due_to_other_vision_loss': Sequela(
         name='severe_vision_impairment_due_to_other_vision_loss',
+        type='sequela',
         gbd_id=sid(635),
         dismod_id=meid(2327),
         healthstate=Healthstate(
@@ -5375,6 +5971,7 @@ sequelae = Sequelae(**{
     ),
     'blindness_due_to_other_vision_loss': Sequela(
         name='blindness_due_to_other_vision_loss',
+        type='sequela',
         gbd_id=sid(636),
         dismod_id=meid(3926),
         healthstate=Healthstate(
@@ -5384,6 +5981,7 @@ sequelae = Sequelae(**{
     ),
     'monocular_distance_vision_loss_due_to_pneumococcal_meningitis': Sequela(
         name='monocular_distance_vision_loss_due_to_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(640),
         dismod_id=meid(2466),
         healthstate=Healthstate(
@@ -5393,6 +5991,7 @@ sequelae = Sequelae(**{
     ),
     'monocular_distance_vision_loss_due_to_h_influenzae_type_b_meningitis': Sequela(
         name='monocular_distance_vision_loss_due_to_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(641),
         dismod_id=meid(2467),
         healthstate=Healthstate(
@@ -5402,6 +6001,7 @@ sequelae = Sequelae(**{
     ),
     'monocular_distance_vision_loss_due_to_meningococcal_meningitis': Sequela(
         name='monocular_distance_vision_loss_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(642),
         dismod_id=meid(2468),
         healthstate=Healthstate(
@@ -5411,6 +6011,7 @@ sequelae = Sequelae(**{
     ),
     'monocular_distance_vision_loss_due_to_other_bacterial_meningitis': Sequela(
         name='monocular_distance_vision_loss_due_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(643),
         dismod_id=meid(2469),
         healthstate=Healthstate(
@@ -5420,6 +6021,7 @@ sequelae = Sequelae(**{
     ),
     'bipolar_disorder_depressive_state': Sequela(
         name='bipolar_disorder_depressive_state',
+        type='sequela',
         gbd_id=sid(644),
         dismod_id=meid(2474),
         healthstate=Healthstate(
@@ -5429,6 +6031,7 @@ sequelae = Sequelae(**{
     ),
     'mild_anemia_due_to_b_thalassemia_trait': Sequela(
         name='mild_anemia_due_to_b_thalassemia_trait',
+        type='sequela',
         gbd_id=sid(645),
         dismod_id=meid(2485),
         healthstate=Healthstate(
@@ -5438,6 +6041,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_anemia_due_to_b_thalassemia_trait': Sequela(
         name='moderate_anemia_due_to_b_thalassemia_trait',
+        type='sequela',
         gbd_id=sid(646),
         dismod_id=meid(2486),
         healthstate=Healthstate(
@@ -5447,6 +6051,7 @@ sequelae = Sequelae(**{
     ),
     'severe_anemia_due_to_b_thalassemia_trait': Sequela(
         name='severe_anemia_due_to_b_thalassemia_trait',
+        type='sequela',
         gbd_id=sid(647),
         dismod_id=meid(2487),
         healthstate=Healthstate(
@@ -5456,6 +6061,7 @@ sequelae = Sequelae(**{
     ),
     'mild_anemia_due_to_hemoglobin_e_trait': Sequela(
         name='mild_anemia_due_to_hemoglobin_e_trait',
+        type='sequela',
         gbd_id=sid(648),
         dismod_id=meid(2489),
         healthstate=Healthstate(
@@ -5465,6 +6071,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_anemia_due_to_hemoglobin_e_trait': Sequela(
         name='moderate_anemia_due_to_hemoglobin_e_trait',
+        type='sequela',
         gbd_id=sid(649),
         dismod_id=meid(2490),
         healthstate=Healthstate(
@@ -5474,6 +6081,7 @@ sequelae = Sequelae(**{
     ),
     'severe_anemia_due_to_hemoglobin_e_trait': Sequela(
         name='severe_anemia_due_to_hemoglobin_e_trait',
+        type='sequela',
         gbd_id=sid(650),
         dismod_id=meid(2491),
         healthstate=Healthstate(
@@ -5483,6 +6091,7 @@ sequelae = Sequelae(**{
     ),
     'mild_anemia_due_to_sickle_cell_trait': Sequela(
         name='mild_anemia_due_to_sickle_cell_trait',
+        type='sequela',
         gbd_id=sid(651),
         dismod_id=meid(2502),
         healthstate=Healthstate(
@@ -5492,6 +6101,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_anemia_due_to_sickle_cell_trait': Sequela(
         name='moderate_anemia_due_to_sickle_cell_trait',
+        type='sequela',
         gbd_id=sid(652),
         dismod_id=meid(2503),
         healthstate=Healthstate(
@@ -5501,6 +6111,7 @@ sequelae = Sequelae(**{
     ),
     'severe_anemia_due_to_sickle_cell_trait': Sequela(
         name='severe_anemia_due_to_sickle_cell_trait',
+        type='sequela',
         gbd_id=sid(653),
         dismod_id=meid(2504),
         healthstate=Healthstate(
@@ -5510,6 +6121,7 @@ sequelae = Sequelae(**{
     ),
     'mild_anemia_due_to_hemizygous_g6pd_deficiency': Sequela(
         name='mild_anemia_due_to_hemizygous_g6pd_deficiency',
+        type='sequela',
         gbd_id=sid(654),
         dismod_id=meid(2506),
         healthstate=Healthstate(
@@ -5519,6 +6131,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_anemia_due_to_hemizygous_g6pd_deficiency': Sequela(
         name='moderate_anemia_due_to_hemizygous_g6pd_deficiency',
+        type='sequela',
         gbd_id=sid(655),
         dismod_id=meid(2507),
         healthstate=Healthstate(
@@ -5528,6 +6141,7 @@ sequelae = Sequelae(**{
     ),
     'severe_anemia_due_to_hemizygous_g6pd_deficiency': Sequela(
         name='severe_anemia_due_to_hemizygous_g6pd_deficiency',
+        type='sequela',
         gbd_id=sid(656),
         dismod_id=meid(2508),
         healthstate=Healthstate(
@@ -5537,6 +6151,7 @@ sequelae = Sequelae(**{
     ),
     'disfigurement_due_to_basal_cell_carcinoma': Sequela(
         name='disfigurement_due_to_basal_cell_carcinoma',
+        type='sequela',
         gbd_id=sid(657),
         dismod_id=meid(2514),
         healthstate=Healthstate(
@@ -5546,6 +6161,7 @@ sequelae = Sequelae(**{
     ),
     'severe_skin_disease_due_to_onchocerciasis': Sequela(
         name='severe_skin_disease_due_to_onchocerciasis',
+        type='sequela',
         gbd_id=sid(658),
         dismod_id=meid(2515),
         healthstate=Healthstate(
@@ -5555,6 +6171,7 @@ sequelae = Sequelae(**{
     ),
     'mild_contact_dermatitis': Sequela(
         name='mild_contact_dermatitis',
+        type='sequela',
         gbd_id=sid(659),
         dismod_id=meid(2575),
         healthstate=Healthstate(
@@ -5564,6 +6181,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_contact_dermatitis': Sequela(
         name='moderate_contact_dermatitis',
+        type='sequela',
         gbd_id=sid(660),
         dismod_id=meid(2576),
         healthstate=Healthstate(
@@ -5573,6 +6191,7 @@ sequelae = Sequelae(**{
     ),
     'symptomatic_seborrhoeic_dermatitis': Sequela(
         name='symptomatic_seborrhoeic_dermatitis',
+        type='sequela',
         gbd_id=sid(661),
         dismod_id=meid(2579),
         healthstate=Healthstate(
@@ -5582,6 +6201,7 @@ sequelae = Sequelae(**{
     ),
     'pain_due_to_caries_of_deciduous_teeth': Sequela(
         name='pain_due_to_caries_of_deciduous_teeth',
+        type='sequela',
         gbd_id=sid(662),
         dismod_id=meid(2582),
         healthstate=Healthstate(
@@ -5591,6 +6211,7 @@ sequelae = Sequelae(**{
     ),
     'pain_due_to_caries_of_permanent_teeth': Sequela(
         name='pain_due_to_caries_of_permanent_teeth',
+        type='sequela',
         gbd_id=sid(663),
         dismod_id=meid(2583),
         healthstate=Healthstate(
@@ -5600,6 +6221,7 @@ sequelae = Sequelae(**{
     ),
     'difficulty_eating_due_to_edentulism_and_severe_tooth_loss': Sequela(
         name='difficulty_eating_due_to_edentulism_and_severe_tooth_loss',
+        type='sequela',
         gbd_id=sid(664),
         dismod_id=meid(2584),
         healthstate=Healthstate(
@@ -5609,6 +6231,7 @@ sequelae = Sequelae(**{
     ),
     'mild_diarrheal_diseases': Sequela(
         name='mild_diarrheal_diseases',
+        type='sequela',
         gbd_id=sid(665),
         dismod_id=meid(2608),
         healthstate=Healthstate(
@@ -5618,6 +6241,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_diarrheal_diseases': Sequela(
         name='moderate_diarrheal_diseases',
+        type='sequela',
         gbd_id=sid(666),
         dismod_id=meid(2609),
         healthstate=Healthstate(
@@ -5627,6 +6251,7 @@ sequelae = Sequelae(**{
     ),
     'severe_diarrheal_diseases': Sequela(
         name='severe_diarrheal_diseases',
+        type='sequela',
         gbd_id=sid(667),
         dismod_id=meid(2610),
         healthstate=Healthstate(
@@ -5636,6 +6261,7 @@ sequelae = Sequelae(**{
     ),
     'guillain_barre_syndrome_due_to_diarrheal_diseases': Sequela(
         name='guillain_barre_syndrome_due_to_diarrheal_diseases',
+        type='sequela',
         gbd_id=sid(668),
         dismod_id=meid(2611),
         healthstate=Healthstate(
@@ -5645,6 +6271,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_lower_respiratory_infections': Sequela(
         name='moderate_lower_respiratory_infections',
+        type='sequela',
         gbd_id=sid(669),
         dismod_id=meid(2613),
         healthstate=Healthstate(
@@ -5654,6 +6281,7 @@ sequelae = Sequelae(**{
     ),
     'severe_lower_respiratory_infections': Sequela(
         name='severe_lower_respiratory_infections',
+        type='sequela',
         gbd_id=sid(670),
         dismod_id=meid(2614),
         healthstate=Healthstate(
@@ -5663,6 +6291,7 @@ sequelae = Sequelae(**{
     ),
     'guillain_barre_syndrome_due_to_lower_respiratory_infections': Sequela(
         name='guillain_barre_syndrome_due_to_lower_respiratory_infections',
+        type='sequela',
         gbd_id=sid(671),
         dismod_id=meid(2615),
         healthstate=Healthstate(
@@ -5672,6 +6301,7 @@ sequelae = Sequelae(**{
     ),
     'other_fungal_skin_diseases': Sequela(
         name='other_fungal_skin_diseases',
+        type='sequela',
         gbd_id=sid(672),
         dismod_id=meid(2616),
         healthstate=Healthstate(
@@ -5681,6 +6311,7 @@ sequelae = Sequelae(**{
     ),
     'mild_skin_disease_without_itch_due_to_onchocerciasis': Sequela(
         name='mild_skin_disease_without_itch_due_to_onchocerciasis',
+        type='sequela',
         gbd_id=sid(673),
         dismod_id=meid(2620),
         healthstate=Healthstate(
@@ -5690,6 +6321,7 @@ sequelae = Sequelae(**{
     ),
     'severe_skin_disease_without_itch_due_to_onchocerciasis': Sequela(
         name='severe_skin_disease_without_itch_due_to_onchocerciasis',
+        type='sequela',
         gbd_id=sid(674),
         dismod_id=meid(2621),
         healthstate=Healthstate(
@@ -5699,6 +6331,7 @@ sequelae = Sequelae(**{
     ),
     'infertility_due_to_puerperal_sepsis': Sequela(
         name='infertility_due_to_puerperal_sepsis',
+        type='sequela',
         gbd_id=sid(675),
         dismod_id=meid(2624),
         healthstate=Healthstate(
@@ -5708,15 +6341,17 @@ sequelae = Sequelae(**{
     ),
     'other_hypertensive_disorders_of_pregnancy': Sequela(
         name='other_hypertensive_disorders_of_pregnancy',
+        type='sequela',
         gbd_id=sid(676),
         dismod_id=meid(2625),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'long_term_sequelae_of_eclampsia': Sequela(
         name='long_term_sequelae_of_eclampsia',
+        type='sequela',
         gbd_id=sid(677),
         dismod_id=meid(2627),
         healthstate=Healthstate(
@@ -5726,6 +6361,7 @@ sequelae = Sequelae(**{
     ),
     'very_mild_alcohol_dependence': Sequela(
         name='very_mild_alcohol_dependence',
+        type='sequela',
         gbd_id=sid(678),
         dismod_id=meid(2643),
         healthstate=Healthstate(
@@ -5735,6 +6371,7 @@ sequelae = Sequelae(**{
     ),
     'mild_amphetamine_dependence': Sequela(
         name='mild_amphetamine_dependence',
+        type='sequela',
         gbd_id=sid(679),
         dismod_id=meid(2644),
         healthstate=Healthstate(
@@ -5744,6 +6381,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_other_mental_disorders': Sequela(
         name='moderate_other_mental_disorders',
+        type='sequela',
         gbd_id=sid(680),
         dismod_id=meid(2645),
         healthstate=Healthstate(
@@ -5753,6 +6391,7 @@ sequelae = Sequelae(**{
     ),
     'severe_other_mental_disorders': Sequela(
         name='severe_other_mental_disorders',
+        type='sequela',
         gbd_id=sid(681),
         dismod_id=meid(2646),
         healthstate=Healthstate(
@@ -5762,6 +6401,7 @@ sequelae = Sequelae(**{
     ),
     'mild_low_back_pain_with_leg_pain': Sequela(
         name='mild_low_back_pain_with_leg_pain',
+        type='sequela',
         gbd_id=sid(682),
         dismod_id=meid(2647),
         healthstate=Healthstate(
@@ -5771,6 +6411,7 @@ sequelae = Sequelae(**{
     ),
     'mild_low_back_pain_without_leg_pain': Sequela(
         name='mild_low_back_pain_without_leg_pain',
+        type='sequela',
         gbd_id=sid(683),
         dismod_id=meid(2648),
         healthstate=Healthstate(
@@ -5780,6 +6421,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_low_back_pain_with_leg_pain': Sequela(
         name='moderate_low_back_pain_with_leg_pain',
+        type='sequela',
         gbd_id=sid(684),
         dismod_id=meid(2649),
         healthstate=Healthstate(
@@ -5789,6 +6431,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_low_back_pain_without_leg_pain': Sequela(
         name='moderate_low_back_pain_without_leg_pain',
+        type='sequela',
         gbd_id=sid(685),
         dismod_id=meid(2650),
         healthstate=Healthstate(
@@ -5798,6 +6441,7 @@ sequelae = Sequelae(**{
     ),
     'mild_cannabis_dependence': Sequela(
         name='mild_cannabis_dependence',
+        type='sequela',
         gbd_id=sid(686),
         dismod_id=meid(2651),
         healthstate=Healthstate(
@@ -5807,6 +6451,7 @@ sequelae = Sequelae(**{
     ),
     'mild_cocaine_dependence': Sequela(
         name='mild_cocaine_dependence',
+        type='sequela',
         gbd_id=sid(687),
         dismod_id=meid(2652),
         healthstate=Healthstate(
@@ -5816,6 +6461,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_with_infertility_due_to_turner_syndrome': Sequela(
         name='congenital_heart_disease_with_infertility_due_to_turner_syndrome',
+        type='sequela',
         gbd_id=sid(688),
         dismod_id=meid(2653),
         healthstate=Healthstate(
@@ -5825,6 +6471,7 @@ sequelae = Sequelae(**{
     ),
     'neurocysticercosis_with_epilepsy': Sequela(
         name='neurocysticercosis_with_epilepsy',
+        type='sequela',
         gbd_id=sid(689),
         dismod_id=meid(3605),
         healthstate=Healthstate(
@@ -5834,6 +6481,7 @@ sequelae = Sequelae(**{
     ),
     'mild_opioid_dependence': Sequela(
         name='mild_opioid_dependence',
+        type='sequela',
         gbd_id=sid(690),
         dismod_id=meid(2658),
         healthstate=Healthstate(
@@ -5843,6 +6491,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_with_infertility_due_to_klinefelter_syndrome': Sequela(
         name='borderline_intellectual_disability_with_infertility_due_to_klinefelter_syndrome',
+        type='sequela',
         gbd_id=sid(691),
         dismod_id=meid(2659),
         healthstate=Healthstate(
@@ -5852,6 +6501,7 @@ sequelae = Sequelae(**{
     ),
     'depression_due_to_premenstrual_syndrome': Sequela(
         name='depression_due_to_premenstrual_syndrome',
+        type='sequela',
         gbd_id=sid(700),
         dismod_id=meid(2676),
         healthstate=Healthstate(
@@ -5861,6 +6511,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
         name='moderate_motor_plus_cognitive_impairment_with_blindness_due_to_hemolytic_disease_and_other_neonatal_jaundice',
+        type='sequela',
         gbd_id=sid(701),
         dismod_id=meid(3854),
         healthstate=Healthstate(
@@ -5870,6 +6521,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
         name='moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_28_32wks',
+        type='sequela',
         gbd_id=sid(702),
         dismod_id=meid(3722),
         healthstate=Healthstate(
@@ -5879,6 +6531,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
         name='moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_less_than_28wks',
+        type='sequela',
         gbd_id=sid(703),
         dismod_id=meid(3680),
         healthstate=Healthstate(
@@ -5888,6 +6541,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
         name='moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_32_36wks',
+        type='sequela',
         gbd_id=sid(704),
         dismod_id=meid(3764),
         healthstate=Healthstate(
@@ -5897,6 +6551,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
         name='moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma',
+        type='sequela',
         gbd_id=sid(705),
         dismod_id=meid(3812),
         healthstate=Healthstate(
@@ -5906,6 +6561,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_tetanus': Sequela(
         name='moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_tetanus',
+        type='sequela',
         gbd_id=sid(706),
         dismod_id=meid(3530),
         healthstate=Healthstate(
@@ -5915,6 +6571,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
         name='moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks',
+        type='sequela',
         gbd_id=sid(707),
         dismod_id=meid(3770),
         healthstate=Healthstate(
@@ -5924,6 +6581,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
         name='moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks',
+        type='sequela',
         gbd_id=sid(708),
         dismod_id=meid(3686),
         healthstate=Healthstate(
@@ -5933,6 +6591,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
         name='moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks',
+        type='sequela',
         gbd_id=sid(709),
         dismod_id=meid(3728),
         healthstate=Healthstate(
@@ -5942,6 +6601,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_tetanus': Sequela(
         name='moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_tetanus',
+        type='sequela',
         gbd_id=sid(710),
         dismod_id=meid(3536),
         healthstate=Healthstate(
@@ -5951,6 +6611,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
         name='moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice',
+        type='sequela',
         gbd_id=sid(711),
         dismod_id=meid(3860),
         healthstate=Healthstate(
@@ -5960,6 +6621,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
         name='moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma',
+        type='sequela',
         gbd_id=sid(712),
         dismod_id=meid(3818),
         healthstate=Healthstate(
@@ -5969,6 +6631,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
         name='moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks',
+        type='sequela',
         gbd_id=sid(713),
         dismod_id=meid(3767),
         healthstate=Healthstate(
@@ -5978,6 +6641,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_tetanus': Sequela(
         name='moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_tetanus',
+        type='sequela',
         gbd_id=sid(714),
         dismod_id=meid(3533),
         healthstate=Healthstate(
@@ -5987,6 +6651,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
         name='moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice',
+        type='sequela',
         gbd_id=sid(715),
         dismod_id=meid(3857),
         healthstate=Healthstate(
@@ -5996,6 +6661,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
         name='moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma',
+        type='sequela',
         gbd_id=sid(716),
         dismod_id=meid(3815),
         healthstate=Healthstate(
@@ -6005,6 +6671,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
         name='moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks',
+        type='sequela',
         gbd_id=sid(717),
         dismod_id=meid(3683),
         healthstate=Healthstate(
@@ -6014,6 +6681,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
         name='moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks',
+        type='sequela',
         gbd_id=sid(718),
         dismod_id=meid(3725),
         healthstate=Healthstate(
@@ -6023,6 +6691,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_tetanus': Sequela(
         name='severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_tetanus',
+        type='sequela',
         gbd_id=sid(719),
         dismod_id=meid(3551),
         healthstate=Healthstate(
@@ -6032,6 +6701,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
         name='severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_28_32wks',
+        type='sequela',
         gbd_id=sid(720),
         dismod_id=meid(3743),
         healthstate=Healthstate(
@@ -6041,6 +6711,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
         name='severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_32_36wks',
+        type='sequela',
         gbd_id=sid(721),
         dismod_id=meid(3785),
         healthstate=Healthstate(
@@ -6050,6 +6721,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
         name='severe_motor_plus_cognitive_impairment_with_blindness_due_to_hemolytic_disease_and_other_neonatal_jaundice',
+        type='sequela',
         gbd_id=sid(722),
         dismod_id=meid(3875),
         healthstate=Healthstate(
@@ -6059,6 +6731,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
         name='severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma',
+        type='sequela',
         gbd_id=sid(723),
         dismod_id=meid(3833),
         healthstate=Healthstate(
@@ -6068,6 +6741,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
         name='severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_less_than_28wks',
+        type='sequela',
         gbd_id=sid(724),
         dismod_id=meid(3701),
         healthstate=Healthstate(
@@ -6077,6 +6751,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
         name='severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks',
+        type='sequela',
         gbd_id=sid(725),
         dismod_id=meid(3749),
         healthstate=Healthstate(
@@ -6086,6 +6761,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
         name='severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks',
+        type='sequela',
         gbd_id=sid(726),
         dismod_id=meid(3707),
         healthstate=Healthstate(
@@ -6095,6 +6771,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
         name='severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice',
+        type='sequela',
         gbd_id=sid(727),
         dismod_id=meid(3881),
         healthstate=Healthstate(
@@ -6104,6 +6781,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
         name='severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma',
+        type='sequela',
         gbd_id=sid(728),
         dismod_id=meid(3839),
         healthstate=Healthstate(
@@ -6113,6 +6791,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
         name='severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks',
+        type='sequela',
         gbd_id=sid(729),
         dismod_id=meid(3791),
         healthstate=Healthstate(
@@ -6122,6 +6801,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_tetanus': Sequela(
         name='severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_tetanus',
+        type='sequela',
         gbd_id=sid(730),
         dismod_id=meid(3557),
         healthstate=Healthstate(
@@ -6131,6 +6811,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
         name='severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks',
+        type='sequela',
         gbd_id=sid(731),
         dismod_id=meid(3704),
         healthstate=Healthstate(
@@ -6140,6 +6821,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
         name='severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma',
+        type='sequela',
         gbd_id=sid(732),
         dismod_id=meid(3836),
         healthstate=Healthstate(
@@ -6149,6 +6831,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
         name='severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice',
+        type='sequela',
         gbd_id=sid(733),
         dismod_id=meid(3878),
         healthstate=Healthstate(
@@ -6158,6 +6841,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
         name='severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks',
+        type='sequela',
         gbd_id=sid(734),
         dismod_id=meid(3788),
         healthstate=Healthstate(
@@ -6167,6 +6851,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
         name='severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks',
+        type='sequela',
         gbd_id=sid(735),
         dismod_id=meid(3746),
         healthstate=Healthstate(
@@ -6176,6 +6861,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_tetanus': Sequela(
         name='severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_tetanus',
+        type='sequela',
         gbd_id=sid(736),
         dismod_id=meid(3554),
         healthstate=Healthstate(
@@ -6185,6 +6871,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_due_to_neonatal_tetanus': Sequela(
         name='moderate_motor_impairment_due_to_neonatal_tetanus',
+        type='sequela',
         gbd_id=sid(737),
         dismod_id=meid(3518),
         healthstate=Healthstate(
@@ -6194,6 +6881,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
         name='moderate_motor_impairment_due_to_hemolytic_disease_and_other_neonatal_jaundice',
+        type='sequela',
         gbd_id=sid(738),
         dismod_id=meid(3842),
         healthstate=Healthstate(
@@ -6203,6 +6891,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
         name='moderate_motor_impairment_due_to_neonatal_preterm_birth_complications_28_32wks',
+        type='sequela',
         gbd_id=sid(739),
         dismod_id=meid(3710),
         healthstate=Healthstate(
@@ -6212,6 +6901,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
         name='moderate_motor_impairment_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma',
+        type='sequela',
         gbd_id=sid(740),
         dismod_id=meid(3800),
         healthstate=Healthstate(
@@ -6221,6 +6911,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
         name='moderate_motor_impairment_due_to_neonatal_preterm_birth_complications_less_than_28wks',
+        type='sequela',
         gbd_id=sid(741),
         dismod_id=meid(3668),
         healthstate=Healthstate(
@@ -6230,6 +6921,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
         name='moderate_motor_impairment_due_to_neonatal_preterm_birth_complications_32_36wks',
+        type='sequela',
         gbd_id=sid(742),
         dismod_id=meid(3752),
         healthstate=Healthstate(
@@ -6239,6 +6931,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
         name='moderate_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_less_than_28wks',
+        type='sequela',
         gbd_id=sid(743),
         dismod_id=meid(3671),
         healthstate=Healthstate(
@@ -6248,6 +6941,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
         name='moderate_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_28_32wks',
+        type='sequela',
         gbd_id=sid(744),
         dismod_id=meid(3713),
         healthstate=Healthstate(
@@ -6257,6 +6951,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
         name='moderate_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_32_36wks',
+        type='sequela',
         gbd_id=sid(745),
         dismod_id=meid(3755),
         healthstate=Healthstate(
@@ -6266,6 +6961,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_with_blindness_due_to_neonatal_tetanus': Sequela(
         name='moderate_motor_impairment_with_blindness_due_to_neonatal_tetanus',
+        type='sequela',
         gbd_id=sid(746),
         dismod_id=meid(3521),
         healthstate=Healthstate(
@@ -6275,6 +6971,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_with_blindness_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
         name='moderate_motor_impairment_with_blindness_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma',
+        type='sequela',
         gbd_id=sid(747),
         dismod_id=meid(3803),
         healthstate=Healthstate(
@@ -6284,6 +6981,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_with_blindness_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
         name='moderate_motor_impairment_with_blindness_due_to_hemolytic_disease_and_other_neonatal_jaundice',
+        type='sequela',
         gbd_id=sid(748),
         dismod_id=meid(3845),
         healthstate=Healthstate(
@@ -6293,6 +6991,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_with_blindness_and_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
         name='moderate_motor_impairment_with_blindness_and_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice',
+        type='sequela',
         gbd_id=sid(749),
         dismod_id=meid(3851),
         healthstate=Healthstate(
@@ -6302,6 +7001,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
         name='moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma',
+        type='sequela',
         gbd_id=sid(750),
         dismod_id=meid(3809),
         healthstate=Healthstate(
@@ -6311,6 +7011,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
         name='moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks',
+        type='sequela',
         gbd_id=sid(751),
         dismod_id=meid(3761),
         healthstate=Healthstate(
@@ -6320,6 +7021,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
         name='moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks',
+        type='sequela',
         gbd_id=sid(752),
         dismod_id=meid(3719),
         healthstate=Healthstate(
@@ -6329,6 +7031,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
         name='moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks',
+        type='sequela',
         gbd_id=sid(753),
         dismod_id=meid(3677),
         healthstate=Healthstate(
@@ -6338,6 +7041,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_tetanus': Sequela(
         name='moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_tetanus',
+        type='sequela',
         gbd_id=sid(754),
         dismod_id=meid(3527),
         healthstate=Healthstate(
@@ -6347,6 +7051,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
         name='moderate_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks',
+        type='sequela',
         gbd_id=sid(755),
         dismod_id=meid(3758),
         healthstate=Healthstate(
@@ -6356,6 +7061,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_with_epilepsy_due_to_neonatal_tetanus': Sequela(
         name='moderate_motor_impairment_with_epilepsy_due_to_neonatal_tetanus',
+        type='sequela',
         gbd_id=sid(756),
         dismod_id=meid(3524),
         healthstate=Healthstate(
@@ -6365,6 +7071,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
         name='moderate_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks',
+        type='sequela',
         gbd_id=sid(757),
         dismod_id=meid(3716),
         healthstate=Healthstate(
@@ -6374,6 +7081,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_with_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
         name='moderate_motor_impairment_with_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma',
+        type='sequela',
         gbd_id=sid(758),
         dismod_id=meid(3806),
         healthstate=Healthstate(
@@ -6383,6 +7091,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
         name='moderate_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks',
+        type='sequela',
         gbd_id=sid(759),
         dismod_id=meid(3674),
         healthstate=Healthstate(
@@ -6392,6 +7101,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_with_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
         name='moderate_motor_impairment_with_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice',
+        type='sequela',
         gbd_id=sid(760),
         dismod_id=meid(3848),
         healthstate=Healthstate(
@@ -6401,6 +7111,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
         name='severe_motor_impairment_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma',
+        type='sequela',
         gbd_id=sid(761),
         dismod_id=meid(3821),
         healthstate=Healthstate(
@@ -6410,6 +7121,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_severe_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
         name='severe_motor_impairment_severe_due_to_hemolytic_disease_and_other_neonatal_jaundice',
+        type='sequela',
         gbd_id=sid(762),
         dismod_id=meid(3863),
         healthstate=Healthstate(
@@ -6419,6 +7131,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
         name='severe_motor_impairment_due_to_neonatal_preterm_birth_complications_less_than_28wks',
+        type='sequela',
         gbd_id=sid(763),
         dismod_id=meid(3689),
         healthstate=Healthstate(
@@ -6428,6 +7141,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
         name='severe_motor_impairment_due_to_neonatal_preterm_birth_complications_32_36wks',
+        type='sequela',
         gbd_id=sid(764),
         dismod_id=meid(3773),
         healthstate=Healthstate(
@@ -6437,6 +7151,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
         name='severe_motor_impairment_due_to_neonatal_preterm_birth_complications_28_32wks',
+        type='sequela',
         gbd_id=sid(765),
         dismod_id=meid(3731),
         healthstate=Healthstate(
@@ -6446,6 +7161,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_due_to_neonatal_tetanus': Sequela(
         name='severe_motor_impairment_due_to_neonatal_tetanus',
+        type='sequela',
         gbd_id=sid(766),
         dismod_id=meid(3539),
         healthstate=Healthstate(
@@ -6455,6 +7171,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
         name='severe_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_28_32wks',
+        type='sequela',
         gbd_id=sid(767),
         dismod_id=meid(3734),
         healthstate=Healthstate(
@@ -6464,6 +7181,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_with_blindness_due_to_neonatal_tetanus': Sequela(
         name='severe_motor_impairment_with_blindness_due_to_neonatal_tetanus',
+        type='sequela',
         gbd_id=sid(768),
         dismod_id=meid(3542),
         healthstate=Healthstate(
@@ -6473,6 +7191,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_with_blindness_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
         name='severe_motor_impairment_with_blindness_due_to_hemolytic_disease_and_other_neonatal_jaundice',
+        type='sequela',
         gbd_id=sid(769),
         dismod_id=meid(3866),
         healthstate=Healthstate(
@@ -6482,6 +7201,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
         name='severe_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_less_than_28wks',
+        type='sequela',
         gbd_id=sid(770),
         dismod_id=meid(3692),
         healthstate=Healthstate(
@@ -6491,6 +7211,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
         name='severe_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_32_36wks',
+        type='sequela',
         gbd_id=sid(771),
         dismod_id=meid(3776),
         healthstate=Healthstate(
@@ -6500,6 +7221,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_with_blindness_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
         name='severe_motor_impairment_with_blindness_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma',
+        type='sequela',
         gbd_id=sid(772),
         dismod_id=meid(3824),
         healthstate=Healthstate(
@@ -6509,6 +7231,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_tetanus': Sequela(
         name='severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_tetanus',
+        type='sequela',
         gbd_id=sid(773),
         dismod_id=meid(3548),
         healthstate=Healthstate(
@@ -6518,6 +7241,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
         name='severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks',
+        type='sequela',
         gbd_id=sid(774),
         dismod_id=meid(3698),
         healthstate=Healthstate(
@@ -6527,6 +7251,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
         name='severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks',
+        type='sequela',
         gbd_id=sid(775),
         dismod_id=meid(3740),
         healthstate=Healthstate(
@@ -6536,6 +7261,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_with_blindness_and_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
         name='severe_motor_impairment_with_blindness_and_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice',
+        type='sequela',
         gbd_id=sid(776),
         dismod_id=meid(3872),
         healthstate=Healthstate(
@@ -6545,6 +7271,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
         name='severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks',
+        type='sequela',
         gbd_id=sid(777),
         dismod_id=meid(3782),
         healthstate=Healthstate(
@@ -6554,6 +7281,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
         name='severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma',
+        type='sequela',
         gbd_id=sid(778),
         dismod_id=meid(3830),
         healthstate=Healthstate(
@@ -6563,6 +7291,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_with_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
         name='severe_motor_impairment_with_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma',
+        type='sequela',
         gbd_id=sid(779),
         dismod_id=meid(3827),
         healthstate=Healthstate(
@@ -6572,6 +7301,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
         name='severe_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks',
+        type='sequela',
         gbd_id=sid(780),
         dismod_id=meid(3779),
         healthstate=Healthstate(
@@ -6581,6 +7311,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_with_epilepsy_due_to_neonatal_tetanus': Sequela(
         name='severe_motor_impairment_with_epilepsy_due_to_neonatal_tetanus',
+        type='sequela',
         gbd_id=sid(781),
         dismod_id=meid(3545),
         healthstate=Healthstate(
@@ -6590,6 +7321,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
         name='severe_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks',
+        type='sequela',
         gbd_id=sid(782),
         dismod_id=meid(3695),
         healthstate=Healthstate(
@@ -6599,6 +7331,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
         name='severe_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks',
+        type='sequela',
         gbd_id=sid(783),
         dismod_id=meid(3737),
         healthstate=Healthstate(
@@ -6608,6 +7341,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_with_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
         name='severe_motor_impairment_with_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice',
+        type='sequela',
         gbd_id=sid(784),
         dismod_id=meid(3869),
         healthstate=Healthstate(
@@ -6617,6 +7351,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_due_to_neonatal_tetanus': Sequela(
         name='mild_motor_impairment_due_to_neonatal_tetanus',
+        type='sequela',
         gbd_id=sid(785),
         dismod_id=meid(3512),
         healthstate=Healthstate(
@@ -6626,6 +7361,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_plus_cognitive_impairments_due_to_neonatal_tetanus': Sequela(
         name='mild_motor_plus_cognitive_impairments_due_to_neonatal_tetanus',
+        type='sequela',
         gbd_id=sid(786),
         dismod_id=meid(3515),
         healthstate=Healthstate(
@@ -6635,6 +7371,7 @@ sequelae = Sequelae(**{
     ),
     'epilepsy_due_to_echinococcosis': Sequela(
         name='epilepsy_due_to_echinococcosis',
+        type='sequela',
         gbd_id=sid(787),
         dismod_id=meid(3608),
         healthstate=Healthstate(
@@ -6644,6 +7381,7 @@ sequelae = Sequelae(**{
     ),
     'symptomatic_genital_herpes': Sequela(
         name='symptomatic_genital_herpes',
+        type='sequela',
         gbd_id=sid(788),
         dismod_id=meid(2799),
         healthstate=Healthstate(
@@ -6653,6 +7391,7 @@ sequelae = Sequelae(**{
     ),
     'other_hemoglobinopathies_and_hemolytic_anemias': Sequela(
         name='other_hemoglobinopathies_and_hemolytic_anemias',
+        type='sequela',
         gbd_id=sid(789),
         dismod_id=meid(2800),
         healthstate=Healthstate(
@@ -6662,6 +7401,7 @@ sequelae = Sequelae(**{
     ),
     'mild_behavioral_problems_due_to_encephalitis': Sequela(
         name='mild_behavioral_problems_due_to_encephalitis',
+        type='sequela',
         gbd_id=sid(793),
         dismod_id=meid(2810),
         healthstate=Healthstate(
@@ -6671,6 +7411,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_due_to_long_term_due_to_encephalitis': Sequela(
         name='mild_motor_impairment_due_to_long_term_due_to_encephalitis',
+        type='sequela',
         gbd_id=sid(794),
         dismod_id=meid(3482),
         healthstate=Healthstate(
@@ -6680,6 +7421,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_plus_cognitive_impairments_due_to_encephalitis': Sequela(
         name='mild_motor_plus_cognitive_impairments_due_to_encephalitis',
+        type='sequela',
         gbd_id=sid(795),
         dismod_id=meid(3485),
         healthstate=Healthstate(
@@ -6689,6 +7431,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_due_to_encephalitis': Sequela(
         name='borderline_intellectual_disability_due_to_encephalitis',
+        type='sequela',
         gbd_id=sid(796),
         dismod_id=meid(3488),
         healthstate=Healthstate(
@@ -6698,6 +7441,7 @@ sequelae = Sequelae(**{
     ),
     'monocular_distance_vision_loss_due_to_encephalitis': Sequela(
         name='monocular_distance_vision_loss_due_to_encephalitis',
+        type='sequela',
         gbd_id=sid(797),
         dismod_id=meid(2814),
         healthstate=Healthstate(
@@ -6707,6 +7451,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_due_to_encephalitis': Sequela(
         name='mild_intellectual_disability_due_to_encephalitis',
+        type='sequela',
         gbd_id=sid(798),
         dismod_id=meid(3491),
         healthstate=Healthstate(
@@ -6716,6 +7461,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_due_to_encephalitis': Sequela(
         name='moderate_motor_impairment_due_to_encephalitis',
+        type='sequela',
         gbd_id=sid(799),
         dismod_id=meid(3494),
         healthstate=Healthstate(
@@ -6725,6 +7471,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_due_to_encephalitis': Sequela(
         name='severe_motor_impairment_due_to_encephalitis',
+        type='sequela',
         gbd_id=sid(800),
         dismod_id=meid(3497),
         healthstate=Healthstate(
@@ -6734,6 +7481,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairments_due_to_encephalitis': Sequela(
         name='moderate_motor_plus_cognitive_impairments_due_to_encephalitis',
+        type='sequela',
         gbd_id=sid(801),
         dismod_id=meid(3500),
         healthstate=Healthstate(
@@ -6743,6 +7491,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairments_due_to_encephalitis': Sequela(
         name='severe_motor_plus_cognitive_impairments_due_to_encephalitis',
+        type='sequela',
         gbd_id=sid(802),
         dismod_id=meid(3503),
         healthstate=Healthstate(
@@ -6752,6 +7501,7 @@ sequelae = Sequelae(**{
     ),
     'epilepsy_due_to_encephalitis': Sequela(
         name='epilepsy_due_to_encephalitis',
+        type='sequela',
         gbd_id=sid(803),
         dismod_id=meid(3506),
         healthstate=Healthstate(
@@ -6761,6 +7511,7 @@ sequelae = Sequelae(**{
     ),
     'severe_opioid_dependence': Sequela(
         name='severe_opioid_dependence',
+        type='sequela',
         gbd_id=sid(804),
         dismod_id=meid(2827),
         healthstate=Healthstate(
@@ -6770,6 +7521,7 @@ sequelae = Sequelae(**{
     ),
     'severe_cocaine_dependence': Sequela(
         name='severe_cocaine_dependence',
+        type='sequela',
         gbd_id=sid(805),
         dismod_id=meid(2828),
         healthstate=Healthstate(
@@ -6779,6 +7531,7 @@ sequelae = Sequelae(**{
     ),
     'severe_amphetamine_dependence': Sequela(
         name='severe_amphetamine_dependence',
+        type='sequela',
         gbd_id=sid(806),
         dismod_id=meid(2829),
         healthstate=Healthstate(
@@ -6788,6 +7541,7 @@ sequelae = Sequelae(**{
     ),
     'severe_cannabis_dependence': Sequela(
         name='severe_cannabis_dependence',
+        type='sequela',
         gbd_id=sid(807),
         dismod_id=meid(2830),
         healthstate=Healthstate(
@@ -6797,6 +7551,7 @@ sequelae = Sequelae(**{
     ),
     'other_sexually_transmitted_diseases': Sequela(
         name='other_sexually_transmitted_diseases',
+        type='sequela',
         gbd_id=sid(808),
         dismod_id=meid(2831),
         healthstate=Healthstate(
@@ -6806,6 +7561,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_atrial_fibrillation_and_flutter': Sequela(
         name='asymptomatic_atrial_fibrillation_and_flutter',
+        type='sequela',
         gbd_id=sid(809),
         dismod_id=meid(2837),
         healthstate=Healthstate(
@@ -6815,6 +7571,7 @@ sequelae = Sequelae(**{
     ),
     'symptomatic_attention_deficit_hyperactivity_disorder': Sequela(
         name='symptomatic_attention_deficit_hyperactivity_disorder',
+        type='sequela',
         gbd_id=sid(810),
         dismod_id=meid(2852),
         healthstate=Healthstate(
@@ -6824,6 +7581,7 @@ sequelae = Sequelae(**{
     ),
     'attention_deficit_hyperactivity_disorder_currently_without_symptoms': Sequela(
         name='attention_deficit_hyperactivity_disorder_currently_without_symptoms',
+        type='sequela',
         gbd_id=sid(811),
         dismod_id=meid(2853),
         healthstate=Healthstate(
@@ -6833,6 +7591,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_alcohol_dependence': Sequela(
         name='asymptomatic_alcohol_dependence',
+        type='sequela',
         gbd_id=sid(812),
         dismod_id=meid(2854),
         healthstate=Healthstate(
@@ -6842,6 +7601,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_fetal_alcohol_syndrome': Sequela(
         name='asymptomatic_fetal_alcohol_syndrome',
+        type='sequela',
         gbd_id=sid(813),
         dismod_id=meid(2855),
         healthstate=Healthstate(
@@ -6851,6 +7611,7 @@ sequelae = Sequelae(**{
     ),
     'anxiety_disorders_currently_without_symptoms': Sequela(
         name='anxiety_disorders_currently_without_symptoms',
+        type='sequela',
         gbd_id=sid(814),
         dismod_id=meid(2856),
         healthstate=Healthstate(
@@ -6860,6 +7621,7 @@ sequelae = Sequelae(**{
     ),
     'symptomatic_conduct_disorder': Sequela(
         name='symptomatic_conduct_disorder',
+        type='sequela',
         gbd_id=sid(815),
         dismod_id=meid(2857),
         healthstate=Healthstate(
@@ -6869,6 +7631,7 @@ sequelae = Sequelae(**{
     ),
     'conduct_disorder_currently_without_symptoms': Sequela(
         name='conduct_disorder_currently_without_symptoms',
+        type='sequela',
         gbd_id=sid(816),
         dismod_id=meid(2858),
         healthstate=Healthstate(
@@ -6878,6 +7641,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_cannabis_dependence': Sequela(
         name='asymptomatic_cannabis_dependence',
+        type='sequela',
         gbd_id=sid(817),
         dismod_id=meid(2859),
         healthstate=Healthstate(
@@ -6887,6 +7651,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_opioid_dependence': Sequela(
         name='asymptomatic_opioid_dependence',
+        type='sequela',
         gbd_id=sid(818),
         dismod_id=meid(2860),
         healthstate=Healthstate(
@@ -6896,6 +7661,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_cocaine_dependence': Sequela(
         name='asymptomatic_cocaine_dependence',
+        type='sequela',
         gbd_id=sid(819),
         dismod_id=meid(2861),
         healthstate=Healthstate(
@@ -6905,6 +7671,7 @@ sequelae = Sequelae(**{
     ),
     'symptomatic_dysthymia': Sequela(
         name='symptomatic_dysthymia',
+        type='sequela',
         gbd_id=sid(820),
         dismod_id=meid(2862),
         healthstate=Healthstate(
@@ -6914,6 +7681,7 @@ sequelae = Sequelae(**{
     ),
     'dysthymia_currently_without_symptoms': Sequela(
         name='dysthymia_currently_without_symptoms',
+        type='sequela',
         gbd_id=sid(821),
         dismod_id=meid(2863),
         healthstate=Healthstate(
@@ -6923,6 +7691,7 @@ sequelae = Sequelae(**{
     ),
     'major_depressive_disorder_currently_without_symptoms': Sequela(
         name='major_depressive_disorder_currently_without_symptoms',
+        type='sequela',
         gbd_id=sid(822),
         dismod_id=meid(2864),
         healthstate=Healthstate(
@@ -6932,6 +7701,7 @@ sequelae = Sequelae(**{
     ),
     'symptomatic_episodes_of_gout': Sequela(
         name='symptomatic_episodes_of_gout',
+        type='sequela',
         gbd_id=sid(823),
         dismod_id=meid(2865),
         healthstate=Healthstate(
@@ -6941,6 +7711,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_gout': Sequela(
         name='asymptomatic_gout',
+        type='sequela',
         gbd_id=sid(824),
         dismod_id=meid(2866),
         healthstate=Healthstate(
@@ -6950,6 +7721,7 @@ sequelae = Sequelae(**{
     ),
     'symptomatic_migraine': Sequela(
         name='symptomatic_migraine',
+        type='sequela',
         gbd_id=sid(825),
         dismod_id=meid(2867),
         healthstate=Healthstate(
@@ -6959,6 +7731,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_migraine': Sequela(
         name='asymptomatic_migraine',
+        type='sequela',
         gbd_id=sid(826),
         dismod_id=meid(2868),
         healthstate=Healthstate(
@@ -6968,6 +7741,7 @@ sequelae = Sequelae(**{
     ),
     'symptomatic_tension_type_headache': Sequela(
         name='symptomatic_tension_type_headache',
+        type='sequela',
         gbd_id=sid(827),
         dismod_id=meid(2869),
         healthstate=Healthstate(
@@ -6977,6 +7751,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_tension_type_headache': Sequela(
         name='asymptomatic_tension_type_headache',
+        type='sequela',
         gbd_id=sid(828),
         dismod_id=meid(2870),
         healthstate=Healthstate(
@@ -6986,6 +7761,7 @@ sequelae = Sequelae(**{
     ),
     'severe_infectious_complications_due_to_chronic_otitis_media': Sequela(
         name='severe_infectious_complications_due_to_chronic_otitis_media',
+        type='sequela',
         gbd_id=sid(829),
         dismod_id=meid(2871),
         healthstate=Healthstate(
@@ -6995,6 +7771,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_asthma': Sequela(
         name='asymptomatic_asthma',
+        type='sequela',
         gbd_id=sid(830),
         dismod_id=meid(2873),
         healthstate=Healthstate(
@@ -7004,6 +7781,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_genital_herpes': Sequela(
         name='asymptomatic_genital_herpes',
+        type='sequela',
         gbd_id=sid(831),
         dismod_id=meid(2888),
         healthstate=Healthstate(
@@ -7013,6 +7791,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_endometriosis': Sequela(
         name='asymptomatic_endometriosis',
+        type='sequela',
         gbd_id=sid(832),
         dismod_id=meid(9744),
         healthstate=Healthstate(
@@ -7022,6 +7801,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_amphetamine_dependence': Sequela(
         name='asymptomatic_amphetamine_dependence',
+        type='sequela',
         gbd_id=sid(833),
         dismod_id=meid(2890),
         healthstate=Healthstate(
@@ -7031,6 +7811,7 @@ sequelae = Sequelae(**{
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated': Sequela(
         name='cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated',
+        type='sequela',
         gbd_id=sid(834),
         dismod_id=meid(2891),
         healthstate=Healthstate(
@@ -7040,6 +7821,7 @@ sequelae = Sequelae(**{
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated': Sequela(
         name='cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated',
+        type='sequela',
         gbd_id=sid(835),
         dismod_id=meid(2892),
         healthstate=Healthstate(
@@ -7049,6 +7831,7 @@ sequelae = Sequelae(**{
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated': Sequela(
         name='cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated',
+        type='sequela',
         gbd_id=sid(836),
         dismod_id=meid(2893),
         healthstate=Healthstate(
@@ -7058,6 +7841,7 @@ sequelae = Sequelae(**{
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated': Sequela(
         name='cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated',
+        type='sequela',
         gbd_id=sid(837),
         dismod_id=meid(2894),
         healthstate=Healthstate(
@@ -7067,6 +7851,7 @@ sequelae = Sequelae(**{
     ),
     'isolated_congenital_heart_disease_due_to_down_syndrome': Sequela(
         name='isolated_congenital_heart_disease_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(838),
         dismod_id=meid(9830),
         healthstate=Healthstate(
@@ -7076,6 +7861,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_other_cardiovascular_diseases': Sequela(
         name='asymptomatic_other_cardiovascular_diseases',
+        type='sequela',
         gbd_id=sid(839),
         dismod_id=meid(2909),
         healthstate=Healthstate(
@@ -7085,6 +7871,7 @@ sequelae = Sequelae(**{
     ),
     'mild_other_cardiovascular_diseases': Sequela(
         name='mild_other_cardiovascular_diseases',
+        type='sequela',
         gbd_id=sid(840),
         dismod_id=meid(2910),
         healthstate=Healthstate(
@@ -7094,6 +7881,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_other_cardiovascular_diseases': Sequela(
         name='moderate_other_cardiovascular_diseases',
+        type='sequela',
         gbd_id=sid(841),
         dismod_id=meid(2911),
         healthstate=Healthstate(
@@ -7103,6 +7891,7 @@ sequelae = Sequelae(**{
     ),
     'severe_other_cardiovascular_diseases': Sequela(
         name='severe_other_cardiovascular_diseases',
+        type='sequela',
         gbd_id=sid(842),
         dismod_id=meid(2912),
         healthstate=Healthstate(
@@ -7112,6 +7901,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_other_gynecological_disorders': Sequela(
         name='asymptomatic_other_gynecological_disorders',
+        type='sequela',
         gbd_id=sid(843),
         dismod_id=meid(2914),
         healthstate=Healthstate(
@@ -7121,6 +7911,7 @@ sequelae = Sequelae(**{
     ),
     'mild_other_gynecological_disorders': Sequela(
         name='mild_other_gynecological_disorders',
+        type='sequela',
         gbd_id=sid(844),
         dismod_id=meid(2915),
         healthstate=Healthstate(
@@ -7130,6 +7921,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_other_gynecological_disorders': Sequela(
         name='moderate_other_gynecological_disorders',
+        type='sequela',
         gbd_id=sid(845),
         dismod_id=meid(2916),
         healthstate=Healthstate(
@@ -7139,6 +7931,7 @@ sequelae = Sequelae(**{
     ),
     'severe_other_gynecological_disorders': Sequela(
         name='severe_other_gynecological_disorders',
+        type='sequela',
         gbd_id=sid(846),
         dismod_id=meid(2917),
         healthstate=Healthstate(
@@ -7148,6 +7941,7 @@ sequelae = Sequelae(**{
     ),
     'blindness_due_to_h_influenzae_type_b_meningitis': Sequela(
         name='blindness_due_to_h_influenzae_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(847),
         dismod_id=meid(3419),
         healthstate=Healthstate(
@@ -7157,6 +7951,7 @@ sequelae = Sequelae(**{
     ),
     'blindness_due_to_meningococcal_meningitis': Sequela(
         name='blindness_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(848),
         dismod_id=meid(3449),
         healthstate=Healthstate(
@@ -7166,6 +7961,7 @@ sequelae = Sequelae(**{
     ),
     'blindness_due_to_other_bacterial_meningitis': Sequela(
         name='blindness_due_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(849),
         dismod_id=meid(3479),
         healthstate=Healthstate(
@@ -7175,6 +7971,7 @@ sequelae = Sequelae(**{
     ),
     'blindness_due_to_pneumococcal_meningitis': Sequela(
         name='blindness_due_to_pneumococcal_meningitis',
+        type='sequela',
         gbd_id=sid(850),
         dismod_id=meid(3389),
         healthstate=Healthstate(
@@ -7184,6 +7981,7 @@ sequelae = Sequelae(**{
     ),
     'other_mental_disorders_currently_without_symptoms': Sequela(
         name='other_mental_disorders_currently_without_symptoms',
+        type='sequela',
         gbd_id=sid(851),
         dismod_id=meid(2927),
         healthstate=Healthstate(
@@ -7193,6 +7991,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_premenstrual_syndrome': Sequela(
         name='asymptomatic_premenstrual_syndrome',
+        type='sequela',
         gbd_id=sid(853),
         dismod_id=meid(2934),
         healthstate=Healthstate(
@@ -7202,6 +8001,7 @@ sequelae = Sequelae(**{
     ),
     'abdominal_pain_and_depression_due_to_premenstrual_syndrome': Sequela(
         name='abdominal_pain_and_depression_due_to_premenstrual_syndrome',
+        type='sequela',
         gbd_id=sid(854),
         dismod_id=meid(2935),
         healthstate=Healthstate(
@@ -7211,6 +8011,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_polycystic_ovarian_syndrome': Sequela(
         name='asymptomatic_polycystic_ovarian_syndrome',
+        type='sequela',
         gbd_id=sid(855),
         dismod_id=meid(9741),
         healthstate=Healthstate(
@@ -7220,6 +8021,7 @@ sequelae = Sequelae(**{
     ),
     'hirsutism_due_to_polycystic_ovarian_syndrome': Sequela(
         name='hirsutism_due_to_polycystic_ovarian_syndrome',
+        type='sequela',
         gbd_id=sid(856),
         dismod_id=meid(9742),
         healthstate=Healthstate(
@@ -7229,6 +8031,7 @@ sequelae = Sequelae(**{
     ),
     'hirsutism_and_primary_infertility_due_to_polycystic_ovarian_syndrome': Sequela(
         name='hirsutism_and_primary_infertility_due_to_polycystic_ovarian_syndrome',
+        type='sequela',
         gbd_id=sid(857),
         dismod_id=meid(2938),
         healthstate=Healthstate(
@@ -7238,6 +8041,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_genital_prolapse': Sequela(
         name='asymptomatic_genital_prolapse',
+        type='sequela',
         gbd_id=sid(858),
         dismod_id=meid(2939),
         healthstate=Healthstate(
@@ -7247,6 +8051,7 @@ sequelae = Sequelae(**{
     ),
     'abdominal_pain_due_to_genital_prolapse': Sequela(
         name='abdominal_pain_due_to_genital_prolapse',
+        type='sequela',
         gbd_id=sid(859),
         dismod_id=meid(2940),
         healthstate=Healthstate(
@@ -7256,6 +8061,7 @@ sequelae = Sequelae(**{
     ),
     'stress_incontinence_due_to_genital_prolapse': Sequela(
         name='stress_incontinence_due_to_genital_prolapse',
+        type='sequela',
         gbd_id=sid(860),
         dismod_id=meid(2941),
         healthstate=Healthstate(
@@ -7265,6 +8071,7 @@ sequelae = Sequelae(**{
     ),
     'abdominal_pain_and_stress_incontinence_due_to_genital_prolapse': Sequela(
         name='abdominal_pain_and_stress_incontinence_due_to_genital_prolapse',
+        type='sequela',
         gbd_id=sid(861),
         dismod_id=meid(2942),
         healthstate=Healthstate(
@@ -7274,6 +8081,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_acute_hepatitis_a': Sequela(
         name='asymptomatic_acute_hepatitis_a',
+        type='sequela',
         gbd_id=sid(862),
         dismod_id=meid(2943),
         healthstate=Healthstate(
@@ -7283,6 +8091,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_acute_hepatitis_b': Sequela(
         name='asymptomatic_acute_hepatitis_b',
+        type='sequela',
         gbd_id=sid(863),
         dismod_id=meid(2944),
         healthstate=Healthstate(
@@ -7292,6 +8101,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_acute_hepatitis_c': Sequela(
         name='asymptomatic_acute_hepatitis_c',
+        type='sequela',
         gbd_id=sid(864),
         dismod_id=meid(2945),
         healthstate=Healthstate(
@@ -7301,6 +8111,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_acute_hepatitis_e': Sequela(
         name='asymptomatic_acute_hepatitis_e',
+        type='sequela',
         gbd_id=sid(865),
         dismod_id=meid(2946),
         healthstate=Healthstate(
@@ -7310,6 +8121,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_retinopathy_of_prematurity': Sequela(
         name='asymptomatic_retinopathy_of_prematurity',
+        type='sequela',
         gbd_id=sid(866),
         dismod_id=meid(2947),
         healthstate=Healthstate(
@@ -7319,6 +8131,7 @@ sequelae = Sequelae(**{
     ),
     'blindness_due_to_retinopathy_of_prematurity': Sequela(
         name='blindness_due_to_retinopathy_of_prematurity',
+        type='sequela',
         gbd_id=sid(867),
         dismod_id=meid(3647),
         healthstate=Healthstate(
@@ -7328,6 +8141,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
         name='mild_motor_impairment_due_to_neonatal_preterm_birth_complications_less_than_28wks',
+        type='sequela',
         gbd_id=sid(868),
         dismod_id=meid(3650),
         healthstate=Healthstate(
@@ -7337,6 +8151,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
         name='mild_motor_impairment_due_to_neonatal_preterm_birth_complications_28_32wks',
+        type='sequela',
         gbd_id=sid(869),
         dismod_id=meid(3656),
         healthstate=Healthstate(
@@ -7346,6 +8161,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
         name='mild_motor_impairment_due_to_neonatal_preterm_birth_complications_32_36wks',
+        type='sequela',
         gbd_id=sid(870),
         dismod_id=meid(3662),
         healthstate=Healthstate(
@@ -7355,6 +8171,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_plus_cognitive_impairments_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
         name='mild_motor_plus_cognitive_impairments_due_to_neonatal_preterm_birth_complications_less_than_28wks',
+        type='sequela',
         gbd_id=sid(871),
         dismod_id=meid(3653),
         healthstate=Healthstate(
@@ -7364,6 +8181,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_plus_cognitive_impairments_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
         name='mild_motor_plus_cognitive_impairments_due_to_neonatal_preterm_birth_complications_28_32wks',
+        type='sequela',
         gbd_id=sid(872),
         dismod_id=meid(3659),
         healthstate=Healthstate(
@@ -7373,6 +8191,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_plus_cognitive_impairments_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
         name='mild_motor_plus_cognitive_impairments_due_to_neonatal_preterm_birth_complications_32_36wks',
+        type='sequela',
         gbd_id=sid(873),
         dismod_id=meid(3665),
         healthstate=Healthstate(
@@ -7382,6 +8201,7 @@ sequelae = Sequelae(**{
     ),
     'blindness_due_to_encephalitis': Sequela(
         name='blindness_due_to_encephalitis',
+        type='sequela',
         gbd_id=sid(874),
         dismod_id=meid(3509),
         healthstate=Healthstate(
@@ -7391,6 +8211,7 @@ sequelae = Sequelae(**{
     ),
     'blindness_due_to_onchocerciasis': Sequela(
         name='blindness_due_to_onchocerciasis',
+        type='sequela',
         gbd_id=sid(875),
         dismod_id=meid(3611),
         healthstate=Healthstate(
@@ -7400,6 +8221,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_vision_impairment_due_to_onchocerciasis': Sequela(
         name='moderate_vision_impairment_due_to_onchocerciasis',
+        type='sequela',
         gbd_id=sid(876),
         dismod_id=meid(2957),
         healthstate=Healthstate(
@@ -7409,6 +8231,7 @@ sequelae = Sequelae(**{
     ),
     'severe_vision_impairment_due_to_onchocerciasis': Sequela(
         name='severe_vision_impairment_due_to_onchocerciasis',
+        type='sequela',
         gbd_id=sid(877),
         dismod_id=meid(2958),
         healthstate=Healthstate(
@@ -7418,6 +8241,7 @@ sequelae = Sequelae(**{
     ),
     'mild_abdominal_pain_and_primary_infertility_due_to_endometriosis': Sequela(
         name='mild_abdominal_pain_and_primary_infertility_due_to_endometriosis',
+        type='sequela',
         gbd_id=sid(878),
         dismod_id=meid(2959),
         healthstate=Healthstate(
@@ -7427,6 +8251,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_abdominal_pain_and_primary_infertility_due_to_endometriosis': Sequela(
         name='moderate_abdominal_pain_and_primary_infertility_due_to_endometriosis',
+        type='sequela',
         gbd_id=sid(879),
         dismod_id=meid(2960),
         healthstate=Healthstate(
@@ -7436,6 +8261,7 @@ sequelae = Sequelae(**{
     ),
     'severe_abdominal_pain_and_primary_infertility_due_to_endometriosis': Sequela(
         name='severe_abdominal_pain_and_primary_infertility_due_to_endometriosis',
+        type='sequela',
         gbd_id=sid(880),
         dismod_id=meid(2961),
         healthstate=Healthstate(
@@ -7445,6 +8271,7 @@ sequelae = Sequelae(**{
     ),
     'mild_abdominal_pain_and_secondary_infertility_due_to_endometriosis': Sequela(
         name='mild_abdominal_pain_and_secondary_infertility_due_to_endometriosis',
+        type='sequela',
         gbd_id=sid(881),
         dismod_id=meid(2962),
         healthstate=Healthstate(
@@ -7454,6 +8281,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_abdominal_pain_and_secondary_infertility_due_to_endometriosis': Sequela(
         name='moderate_abdominal_pain_and_secondary_infertility_due_to_endometriosis',
+        type='sequela',
         gbd_id=sid(882),
         dismod_id=meid(2963),
         healthstate=Healthstate(
@@ -7463,6 +8291,7 @@ sequelae = Sequelae(**{
     ),
     'severe_abdominal_pain_and_secondary_infertility_due_to_endometriosis': Sequela(
         name='severe_abdominal_pain_and_secondary_infertility_due_to_endometriosis',
+        type='sequela',
         gbd_id=sid(883),
         dismod_id=meid(2964),
         healthstate=Healthstate(
@@ -7472,6 +8301,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_due_to_malaria': Sequela(
         name='moderate_motor_impairment_due_to_malaria',
+        type='sequela',
         gbd_id=sid(884),
         dismod_id=meid(3560),
         healthstate=Healthstate(
@@ -7481,6 +8311,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_with_blindness_due_to_malaria': Sequela(
         name='moderate_motor_impairment_with_blindness_due_to_malaria',
+        type='sequela',
         gbd_id=sid(885),
         dismod_id=meid(3563),
         healthstate=Healthstate(
@@ -7490,6 +8321,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_with_epilepsy_due_to_malaria': Sequela(
         name='moderate_motor_impairment_with_epilepsy_due_to_malaria',
+        type='sequela',
         gbd_id=sid(886),
         dismod_id=meid(3566),
         healthstate=Healthstate(
@@ -7499,6 +8331,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_with_blindness_and_epilepsy_due_to_malaria': Sequela(
         name='moderate_motor_impairment_with_blindness_and_epilepsy_due_to_malaria',
+        type='sequela',
         gbd_id=sid(887),
         dismod_id=meid(3569),
         healthstate=Healthstate(
@@ -7508,6 +8341,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_due_to_malaria': Sequela(
         name='moderate_motor_plus_cognitive_impairment_with_blindness_due_to_malaria',
+        type='sequela',
         gbd_id=sid(888),
         dismod_id=meid(3572),
         healthstate=Healthstate(
@@ -7517,6 +8351,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_malaria': Sequela(
         name='moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_malaria',
+        type='sequela',
         gbd_id=sid(889),
         dismod_id=meid(3575),
         healthstate=Healthstate(
@@ -7526,6 +8361,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_malaria': Sequela(
         name='moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_malaria',
+        type='sequela',
         gbd_id=sid(890),
         dismod_id=meid(3578),
         healthstate=Healthstate(
@@ -7535,6 +8371,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_due_to_malaria': Sequela(
         name='severe_motor_impairment_due_to_malaria',
+        type='sequela',
         gbd_id=sid(891),
         dismod_id=meid(3581),
         healthstate=Healthstate(
@@ -7544,6 +8381,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_with_blindness_due_to_malaria': Sequela(
         name='severe_motor_impairment_with_blindness_due_to_malaria',
+        type='sequela',
         gbd_id=sid(892),
         dismod_id=meid(3584),
         healthstate=Healthstate(
@@ -7553,6 +8391,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_with_epilepsy_due_to_malaria': Sequela(
         name='severe_motor_impairment_with_epilepsy_due_to_malaria',
+        type='sequela',
         gbd_id=sid(893),
         dismod_id=meid(3587),
         healthstate=Healthstate(
@@ -7562,6 +8401,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_with_blindness_and_epilepsy_due_to_malaria': Sequela(
         name='severe_motor_impairment_with_blindness_and_epilepsy_due_to_malaria',
+        type='sequela',
         gbd_id=sid(894),
         dismod_id=meid(3590),
         healthstate=Healthstate(
@@ -7571,6 +8411,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_due_to_malaria': Sequela(
         name='severe_motor_plus_cognitive_impairment_with_blindness_due_to_malaria',
+        type='sequela',
         gbd_id=sid(895),
         dismod_id=meid(3593),
         healthstate=Healthstate(
@@ -7580,6 +8421,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_malaria': Sequela(
         name='severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_malaria',
+        type='sequela',
         gbd_id=sid(896),
         dismod_id=meid(3596),
         healthstate=Healthstate(
@@ -7589,6 +8431,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_malaria': Sequela(
         name='severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_malaria',
+        type='sequela',
         gbd_id=sid(897),
         dismod_id=meid(3599),
         healthstate=Healthstate(
@@ -7598,6 +8441,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_other_skin_and_subcutaneous_diseases': Sequela(
         name='asymptomatic_other_skin_and_subcutaneous_diseases',
+        type='sequela',
         gbd_id=sid(898),
         dismod_id=meid(2981),
         healthstate=Healthstate(
@@ -7607,6 +8451,7 @@ sequelae = Sequelae(**{
     ),
     'symptomatic_other_skin_and_subcutaneous_diseases': Sequela(
         name='symptomatic_other_skin_and_subcutaneous_diseases',
+        type='sequela',
         gbd_id=sid(899),
         dismod_id=meid(2982),
         healthstate=Healthstate(
@@ -7616,6 +8461,7 @@ sequelae = Sequelae(**{
     ),
     'mild_molluscum_contagiosum': Sequela(
         name='mild_molluscum_contagiosum',
+        type='sequela',
         gbd_id=sid(900),
         dismod_id=meid(2984),
         healthstate=Healthstate(
@@ -7625,6 +8471,7 @@ sequelae = Sequelae(**{
     ),
     'severe_molluscum_contagiosum': Sequela(
         name='severe_molluscum_contagiosum',
+        type='sequela',
         gbd_id=sid(901),
         dismod_id=meid(2985),
         healthstate=Healthstate(
@@ -7634,6 +8481,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_hepatitis_b': Sequela(
         name='chronic_hepatitis_b',
+        type='sequela',
         gbd_id=sid(902),
         dismod_id=meid(2993),
         healthstate=Healthstate(
@@ -7643,6 +8491,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_hepatitis_c': Sequela(
         name='chronic_hepatitis_c',
+        type='sequela',
         gbd_id=sid(903),
         dismod_id=meid(2994),
         healthstate=Healthstate(
@@ -7652,6 +8501,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_endocrine_metabolic_blood_and_immune_disorders': Sequela(
         name='asymptomatic_endocrine_metabolic_blood_and_immune_disorders',
+        type='sequela',
         gbd_id=sid(904),
         dismod_id=meid(2995),
         healthstate=Healthstate(
@@ -7661,6 +8511,7 @@ sequelae = Sequelae(**{
     ),
     'mild_endocrine_metabolic_blood_and_immune_disorders': Sequela(
         name='mild_endocrine_metabolic_blood_and_immune_disorders',
+        type='sequela',
         gbd_id=sid(905),
         dismod_id=meid(2996),
         healthstate=Healthstate(
@@ -7670,6 +8521,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_endocrine_metabolic_blood_and_immune_disorders': Sequela(
         name='moderate_endocrine_metabolic_blood_and_immune_disorders',
+        type='sequela',
         gbd_id=sid(906),
         dismod_id=meid(2997),
         healthstate=Healthstate(
@@ -7679,6 +8531,7 @@ sequelae = Sequelae(**{
     ),
     'severe_endocrine_metabolic_blood_and_immune_disorders': Sequela(
         name='severe_endocrine_metabolic_blood_and_immune_disorders',
+        type='sequela',
         gbd_id=sid(907),
         dismod_id=meid(2998),
         healthstate=Healthstate(
@@ -7688,6 +8541,7 @@ sequelae = Sequelae(**{
     ),
     'heavy_clonorchiasis_due_to_food_borne_trematodiases': Sequela(
         name='heavy_clonorchiasis_due_to_food_borne_trematodiases',
+        type='sequela',
         gbd_id=sid(908),
         dismod_id=meid(3002),
         healthstate=Healthstate(
@@ -7697,6 +8551,7 @@ sequelae = Sequelae(**{
     ),
     'heavy_fascioliasis_due_to_food_borne_trematodiases': Sequela(
         name='heavy_fascioliasis_due_to_food_borne_trematodiases',
+        type='sequela',
         gbd_id=sid(909),
         dismod_id=meid(3003),
         healthstate=Healthstate(
@@ -7706,6 +8561,7 @@ sequelae = Sequelae(**{
     ),
     'heavy_intestinal_fluke_infection_due_to_food_borne_trematodiases': Sequela(
         name='heavy_intestinal_fluke_infection_due_to_food_borne_trematodiases',
+        type='sequela',
         gbd_id=sid(910),
         dismod_id=meid(3004),
         healthstate=Healthstate(
@@ -7715,6 +8571,7 @@ sequelae = Sequelae(**{
     ),
     'heavy_opisthorchiasis_due_to_food_borne_trematodiases': Sequela(
         name='heavy_opisthorchiasis_due_to_food_borne_trematodiases',
+        type='sequela',
         gbd_id=sid(911),
         dismod_id=meid(3005),
         healthstate=Healthstate(
@@ -7724,6 +8581,7 @@ sequelae = Sequelae(**{
     ),
     'symptomatic_atrial_fibrillation_and_flutter': Sequela(
         name='symptomatic_atrial_fibrillation_and_flutter',
+        type='sequela',
         gbd_id=sid(913),
         dismod_id=meid(3007),
         healthstate=Healthstate(
@@ -7733,6 +8591,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_turner_syndrome': Sequela(
         name='asymptomatic_turner_syndrome',
+        type='sequela',
         gbd_id=sid(914),
         dismod_id=meid(3021),
         healthstate=Healthstate(
@@ -7742,6 +8601,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_vision_impairment_due_to_retinopathy_of_prematurity': Sequela(
         name='moderate_vision_impairment_due_to_retinopathy_of_prematurity',
+        type='sequela',
         gbd_id=sid(915),
         dismod_id=meid(3027),
         healthstate=Healthstate(
@@ -7751,6 +8611,7 @@ sequelae = Sequelae(**{
     ),
     'severe_vision_impairment_due_to_retinopathy_of_prematurity': Sequela(
         name='severe_vision_impairment_due_to_retinopathy_of_prematurity',
+        type='sequela',
         gbd_id=sid(916),
         dismod_id=meid(3028),
         healthstate=Healthstate(
@@ -7760,6 +8621,7 @@ sequelae = Sequelae(**{
     ),
     'mild_chlamydial_infection': Sequela(
         name='mild_chlamydial_infection',
+        type='sequela',
         gbd_id=sid(917),
         dismod_id=meid(3042),
         healthstate=Healthstate(
@@ -7769,6 +8631,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_chlamydial_infection': Sequela(
         name='asymptomatic_chlamydial_infection',
+        type='sequela',
         gbd_id=sid(918),
         dismod_id=meid(3043),
         healthstate=Healthstate(
@@ -7778,6 +8641,7 @@ sequelae = Sequelae(**{
     ),
     'mild_gonococcal_infection': Sequela(
         name='mild_gonococcal_infection',
+        type='sequela',
         gbd_id=sid(919),
         dismod_id=meid(3044),
         healthstate=Healthstate(
@@ -7787,6 +8651,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_gonococcal_infection': Sequela(
         name='asymptomatic_gonococcal_infection',
+        type='sequela',
         gbd_id=sid(920),
         dismod_id=meid(3045),
         healthstate=Healthstate(
@@ -7796,6 +8661,7 @@ sequelae = Sequelae(**{
     ),
     'acute_trichomoniasis_infection': Sequela(
         name='acute_trichomoniasis_infection',
+        type='sequela',
         gbd_id=sid(921),
         dismod_id=meid(3046),
         healthstate=Healthstate(
@@ -7805,6 +8671,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_trichomoniasis_infection': Sequela(
         name='asymptomatic_trichomoniasis_infection',
+        type='sequela',
         gbd_id=sid(922),
         dismod_id=meid(3047),
         healthstate=Healthstate(
@@ -7814,6 +8681,7 @@ sequelae = Sequelae(**{
     ),
     'disfigurement_level_1_due_to_orofacial_clefts': Sequela(
         name='disfigurement_level_1_due_to_orofacial_clefts',
+        type='sequela',
         gbd_id=sid(923),
         dismod_id=meid(3056),
         healthstate=Healthstate(
@@ -7823,6 +8691,7 @@ sequelae = Sequelae(**{
     ),
     'disfigurement_level_2_due_to_orofacial_clefts': Sequela(
         name='disfigurement_level_2_due_to_orofacial_clefts',
+        type='sequela',
         gbd_id=sid(924),
         dismod_id=meid(3057),
         healthstate=Healthstate(
@@ -7832,6 +8701,7 @@ sequelae = Sequelae(**{
     ),
     'disfigurement_level_2_and_speech_problems_due_to_orofacial_clefts': Sequela(
         name='disfigurement_level_2_and_speech_problems_due_to_orofacial_clefts',
+        type='sequela',
         gbd_id=sid(925),
         dismod_id=meid(3058),
         healthstate=Healthstate(
@@ -7841,6 +8711,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_orofacial_clefts': Sequela(
         name='asymptomatic_orofacial_clefts',
+        type='sequela',
         gbd_id=sid(926),
         dismod_id=meid(3059),
         healthstate=Healthstate(
@@ -7850,6 +8721,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_chronic_obstructive_pulmonary_disease': Sequela(
         name='asymptomatic_chronic_obstructive_pulmonary_disease',
+        type='sequela',
         gbd_id=sid(929),
         dismod_id=meid(3065),
         healthstate=Healthstate(
@@ -7859,6 +8731,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_down_syndrome': Sequela(
         name='asymptomatic_down_syndrome',
+        type='sequela',
         gbd_id=sid(930),
         dismod_id=meid(9829),
         healthstate=Healthstate(
@@ -7868,6 +8741,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_other_chromosomal_abnormalities': Sequela(
         name='asymptomatic_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(931),
         dismod_id=meid(9854),
         healthstate=Healthstate(
@@ -7877,6 +8751,7 @@ sequelae = Sequelae(**{
     ),
     'primary_infertility_due_to_klinefelter_syndrome': Sequela(
         name='primary_infertility_due_to_klinefelter_syndrome',
+        type='sequela',
         gbd_id=sid(932),
         dismod_id=meid(3069),
         healthstate=Healthstate(
@@ -7886,6 +8761,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_klinefelter_syndrome': Sequela(
         name='asymptomatic_klinefelter_syndrome',
+        type='sequela',
         gbd_id=sid(933),
         dismod_id=meid(3070),
         healthstate=Healthstate(
@@ -7895,6 +8771,7 @@ sequelae = Sequelae(**{
     ),
     'isolated_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
         name='isolated_congenital_heart_disease_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(934),
         dismod_id=meid(9855),
         healthstate=Healthstate(
@@ -7904,6 +8781,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_chagas_disease': Sequela(
         name='asymptomatic_chagas_disease',
+        type='sequela',
         gbd_id=sid(935),
         dismod_id=meid(3077),
         healthstate=Healthstate(
@@ -7913,6 +8791,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_periodontal_diseases': Sequela(
         name='chronic_periodontal_diseases',
+        type='sequela',
         gbd_id=sid(936),
         dismod_id=meid(3083),
         healthstate=Healthstate(
@@ -7922,6 +8801,7 @@ sequelae = Sequelae(**{
     ),
     'puerperal_sepsis': Sequela(
         name='puerperal_sepsis',
+        type='sequela',
         gbd_id=sid(937),
         dismod_id=meid(3623),
         healthstate=Healthstate(
@@ -7931,6 +8811,7 @@ sequelae = Sequelae(**{
     ),
     'other_maternal_infections': Sequela(
         name='other_maternal_infections',
+        type='sequela',
         gbd_id=sid(938),
         dismod_id=meid(3626),
         healthstate=Healthstate(
@@ -7940,6 +8821,7 @@ sequelae = Sequelae(**{
     ),
     'hirsutism_and_secondary_infertility_due_to_polycystic_ovarian_syndrome': Sequela(
         name='hirsutism_and_secondary_infertility_due_to_polycystic_ovarian_syndrome',
+        type='sequela',
         gbd_id=sid(939),
         dismod_id=meid(3087),
         healthstate=Healthstate(
@@ -7949,6 +8831,7 @@ sequelae = Sequelae(**{
     ),
     'secondary_infertility_due_to_polycystic_ovarian_syndrome': Sequela(
         name='secondary_infertility_due_to_polycystic_ovarian_syndrome',
+        type='sequela',
         gbd_id=sid(940),
         dismod_id=meid(3088),
         healthstate=Healthstate(
@@ -7958,6 +8841,7 @@ sequelae = Sequelae(**{
     ),
     'severe_endometriosis': Sequela(
         name='severe_endometriosis',
+        type='sequela',
         gbd_id=sid(941),
         dismod_id=meid(9747),
         healthstate=Healthstate(
@@ -7967,6 +8851,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_infection_due_to_initial_genital_herpes_episode': Sequela(
         name='moderate_infection_due_to_initial_genital_herpes_episode',
+        type='sequela',
         gbd_id=sid(942),
         dismod_id=meid(3090),
         healthstate=Healthstate(
@@ -7976,6 +8861,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_caries_of_deciduous_teeth': Sequela(
         name='asymptomatic_caries_of_deciduous_teeth',
+        type='sequela',
         gbd_id=sid(943),
         dismod_id=meid(3091),
         healthstate=Healthstate(
@@ -7985,6 +8871,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_caries_of_permanent_teeth': Sequela(
         name='asymptomatic_caries_of_permanent_teeth',
+        type='sequela',
         gbd_id=sid(944),
         dismod_id=meid(3092),
         healthstate=Healthstate(
@@ -7994,6 +8881,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_edentulism_and_severe_tooth_loss': Sequela(
         name='asymptomatic_edentulism_and_severe_tooth_loss',
+        type='sequela',
         gbd_id=sid(945),
         dismod_id=meid(3093),
         healthstate=Healthstate(
@@ -8003,6 +8891,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_chronic_ischemic_stroke': Sequela(
         name='asymptomatic_chronic_ischemic_stroke',
+        type='sequela',
         gbd_id=sid(946),
         dismod_id=meid(3095),
         healthstate=Healthstate(
@@ -8012,6 +8901,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_chronic_hemorrhagic_stroke': Sequela(
         name='asymptomatic_chronic_hemorrhagic_stroke',
+        type='sequela',
         gbd_id=sid(947),
         dismod_id=meid(3096),
         healthstate=Healthstate(
@@ -8021,6 +8911,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_silicosis': Sequela(
         name='asymptomatic_silicosis',
+        type='sequela',
         gbd_id=sid(948),
         dismod_id=meid(3097),
         healthstate=Healthstate(
@@ -8030,6 +8921,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_asbestosis': Sequela(
         name='asymptomatic_asbestosis',
+        type='sequela',
         gbd_id=sid(949),
         dismod_id=meid(3098),
         healthstate=Healthstate(
@@ -8039,6 +8931,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_coal_workers_pneumoconiosis': Sequela(
         name='asymptomatic_coal_workers_pneumoconiosis',
+        type='sequela',
         gbd_id=sid(950),
         dismod_id=meid(3099),
         healthstate=Healthstate(
@@ -8048,6 +8941,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_other_pneumoconiosis': Sequela(
         name='asymptomatic_other_pneumoconiosis',
+        type='sequela',
         gbd_id=sid(951),
         dismod_id=meid(3100),
         healthstate=Healthstate(
@@ -8057,6 +8951,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_interstitial_lung_disease_and_pulmonary_sarcoidosis': Sequela(
         name='asymptomatic_interstitial_lung_disease_and_pulmonary_sarcoidosis',
+        type='sequela',
         gbd_id=sid(952),
         dismod_id=meid(3101),
         healthstate=Healthstate(
@@ -8066,6 +8961,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_angina_due_to_ischemic_heart_disease': Sequela(
         name='asymptomatic_angina_due_to_ischemic_heart_disease',
+        type='sequela',
         gbd_id=sid(953),
         dismod_id=meid(3102),
         healthstate=Healthstate(
@@ -8075,6 +8971,7 @@ sequelae = Sequelae(**{
     ),
     'ulcerative_colitis': Sequela(
         name='ulcerative_colitis',
+        type='sequela',
         gbd_id=sid(954),
         dismod_id=meid(16290),
         healthstate=Healthstate(
@@ -8084,6 +8981,7 @@ sequelae = Sequelae(**{
     ),
     'crohns_disease': Sequela(
         name='crohns_disease',
+        type='sequela',
         gbd_id=sid(955),
         dismod_id=meid(16292),
         healthstate=Healthstate(
@@ -8093,6 +8991,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_onchocerciasis': Sequela(
         name='asymptomatic_onchocerciasis',
+        type='sequela',
         gbd_id=sid(956),
         dismod_id=meid(3107),
         healthstate=Healthstate(
@@ -8102,6 +9001,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_ascariasis': Sequela(
         name='asymptomatic_ascariasis',
+        type='sequela',
         gbd_id=sid(957),
         dismod_id=meid(3109),
         healthstate=Healthstate(
@@ -8111,6 +9011,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_trichuriasis': Sequela(
         name='asymptomatic_trichuriasis',
+        type='sequela',
         gbd_id=sid(958),
         dismod_id=meid(3110),
         healthstate=Healthstate(
@@ -8120,6 +9021,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_clonorchiasis': Sequela(
         name='asymptomatic_clonorchiasis',
+        type='sequela',
         gbd_id=sid(959),
         dismod_id=meid(3112),
         healthstate=Healthstate(
@@ -8129,6 +9031,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_fascioliasis': Sequela(
         name='asymptomatic_fascioliasis',
+        type='sequela',
         gbd_id=sid(960),
         dismod_id=meid(3113),
         healthstate=Healthstate(
@@ -8138,6 +9041,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_intestinal_fluke_infection': Sequela(
         name='asymptomatic_intestinal_fluke_infection',
+        type='sequela',
         gbd_id=sid(961),
         dismod_id=meid(3114),
         healthstate=Healthstate(
@@ -8147,6 +9051,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_opisthorchiasis': Sequela(
         name='asymptomatic_opisthorchiasis',
+        type='sequela',
         gbd_id=sid(962),
         dismod_id=meid(3115),
         healthstate=Healthstate(
@@ -8156,6 +9061,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_paragonimiasis': Sequela(
         name='asymptomatic_paragonimiasis',
+        type='sequela',
         gbd_id=sid(963),
         dismod_id=meid(3116),
         healthstate=Healthstate(
@@ -8165,6 +9071,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_peripheral_vascular_disease': Sequela(
         name='asymptomatic_peripheral_vascular_disease',
+        type='sequela',
         gbd_id=sid(964),
         dismod_id=meid(3118),
         healthstate=Healthstate(
@@ -8174,6 +9081,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_benign_prostatic_hyperplasia': Sequela(
         name='asymptomatic_benign_prostatic_hyperplasia',
+        type='sequela',
         gbd_id=sid(965),
         dismod_id=meid(3119),
         healthstate=Healthstate(
@@ -8183,6 +9091,7 @@ sequelae = Sequelae(**{
     ),
     'symptomatic_benign_prostatic_hyperplasia': Sequela(
         name='symptomatic_benign_prostatic_hyperplasia',
+        type='sequela',
         gbd_id=sid(966),
         dismod_id=meid(3120),
         healthstate=Healthstate(
@@ -8192,6 +9101,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_uterine_fibroids': Sequela(
         name='asymptomatic_uterine_fibroids',
+        type='sequela',
         gbd_id=sid(967),
         dismod_id=meid(3121),
         healthstate=Healthstate(
@@ -8201,6 +9111,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_other_musculoskeletal_disorders': Sequela(
         name='asymptomatic_other_musculoskeletal_disorders',
+        type='sequela',
         gbd_id=sid(968),
         dismod_id=meid(3123),
         healthstate=Healthstate(
@@ -8210,6 +9121,7 @@ sequelae = Sequelae(**{
     ),
     'mild_cellulitis': Sequela(
         name='mild_cellulitis',
+        type='sequela',
         gbd_id=sid(969),
         dismod_id=meid(3125),
         healthstate=Healthstate(
@@ -8219,6 +9131,7 @@ sequelae = Sequelae(**{
     ),
     'severe_cellulitis': Sequela(
         name='severe_cellulitis',
+        type='sequela',
         gbd_id=sid(970),
         dismod_id=meid(3126),
         healthstate=Healthstate(
@@ -8228,6 +9141,7 @@ sequelae = Sequelae(**{
     ),
     'gastrointestinal_bleeding_due_to_typhoid': Sequela(
         name='gastrointestinal_bleeding_due_to_typhoid',
+        type='sequela',
         gbd_id=sid(971),
         dismod_id=meid(3134),
         healthstate=Healthstate(
@@ -8237,6 +9151,7 @@ sequelae = Sequelae(**{
     ),
     'vertigo_with_mild_hearing_loss_due_to_chronic_otitis_media': Sequela(
         name='vertigo_with_mild_hearing_loss_due_to_chronic_otitis_media',
+        type='sequela',
         gbd_id=sid(972),
         dismod_id=meid(3137),
         healthstate=Healthstate(
@@ -8246,6 +9161,7 @@ sequelae = Sequelae(**{
     ),
     'vertigo_with_mild_hearing_loss_and_ringing_due_to_chronic_otitis_media': Sequela(
         name='vertigo_with_mild_hearing_loss_and_ringing_due_to_chronic_otitis_media',
+        type='sequela',
         gbd_id=sid(973),
         dismod_id=meid(3138),
         healthstate=Healthstate(
@@ -8255,6 +9171,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_hookworm_disease': Sequela(
         name='asymptomatic_hookworm_disease',
+        type='sequela',
         gbd_id=sid(974),
         dismod_id=meid(3139),
         healthstate=Healthstate(
@@ -8264,6 +9181,7 @@ sequelae = Sequelae(**{
     ),
     'visible_goiter_with_profound_intellectual_disability_and_mild_heart_failure_due_to_iodine_deficiency': Sequela(
         name='visible_goiter_with_profound_intellectual_disability_and_mild_heart_failure_due_to_iodine_deficiency',
+        type='sequela',
         gbd_id=sid(976),
         dismod_id=meid(15816),
         healthstate=Healthstate(
@@ -8273,6 +9191,7 @@ sequelae = Sequelae(**{
     ),
     'visible_goiter_with_profound_intellectual_disability_and_moderate_heart_failure_due_to_iodine_deficiency': Sequela(
         name='visible_goiter_with_profound_intellectual_disability_and_moderate_heart_failure_due_to_iodine_deficiency',
+        type='sequela',
         gbd_id=sid(977),
         dismod_id=meid(15817),
         healthstate=Healthstate(
@@ -8282,6 +9201,7 @@ sequelae = Sequelae(**{
     ),
     'visible_goiter_with_profound_intellectual_disability_with_severe_heart_failure_due_to_iodine_deficiency': Sequela(
         name='visible_goiter_with_profound_intellectual_disability_with_severe_heart_failure_due_to_iodine_deficiency',
+        type='sequela',
         gbd_id=sid(978),
         dismod_id=meid(15818),
         healthstate=Healthstate(
@@ -8291,6 +9211,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_and_mild_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease': Sequela(
         name='asymptomatic_and_mild_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease',
+        type='sequela',
         gbd_id=sid(980),
         dismod_id=meid(3149),
         healthstate=Healthstate(
@@ -8300,6 +9221,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease': Sequela(
         name='moderate_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease',
+        type='sequela',
         gbd_id=sid(981),
         dismod_id=meid(3150),
         healthstate=Healthstate(
@@ -8309,6 +9231,7 @@ sequelae = Sequelae(**{
     ),
     'severe_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease': Sequela(
         name='severe_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease',
+        type='sequela',
         gbd_id=sid(982),
         dismod_id=meid(3151),
         healthstate=Healthstate(
@@ -8318,6 +9241,7 @@ sequelae = Sequelae(**{
     ),
     'severe_chronic_obstructive_pulmonary_disease_without_heart_failure': Sequela(
         name='severe_chronic_obstructive_pulmonary_disease_without_heart_failure',
+        type='sequela',
         gbd_id=sid(983),
         dismod_id=meid(3152),
         healthstate=Healthstate(
@@ -8327,6 +9251,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_and_mild_heart_failure_due_to_severe_silicosis': Sequela(
         name='asymptomatic_and_mild_heart_failure_due_to_severe_silicosis',
+        type='sequela',
         gbd_id=sid(984),
         dismod_id=meid(3153),
         healthstate=Healthstate(
@@ -8336,6 +9261,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_heart_failure_due_to_severe_silicosis': Sequela(
         name='moderate_heart_failure_due_to_severe_silicosis',
+        type='sequela',
         gbd_id=sid(985),
         dismod_id=meid(3154),
         healthstate=Healthstate(
@@ -8345,6 +9271,7 @@ sequelae = Sequelae(**{
     ),
     'severe_heart_failure_due_to_severe_silicosis': Sequela(
         name='severe_heart_failure_due_to_severe_silicosis',
+        type='sequela',
         gbd_id=sid(986),
         dismod_id=meid(3155),
         healthstate=Healthstate(
@@ -8354,6 +9281,7 @@ sequelae = Sequelae(**{
     ),
     'severe_silicosis_without_heart_failure': Sequela(
         name='severe_silicosis_without_heart_failure',
+        type='sequela',
         gbd_id=sid(987),
         dismod_id=meid(3156),
         healthstate=Healthstate(
@@ -8363,6 +9291,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_and_mild_heart_failure_due_to_severe_asbestosis': Sequela(
         name='asymptomatic_and_mild_heart_failure_due_to_severe_asbestosis',
+        type='sequela',
         gbd_id=sid(988),
         dismod_id=meid(3157),
         healthstate=Healthstate(
@@ -8372,6 +9301,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_heart_failure_due_to_severe_asbestosis': Sequela(
         name='moderate_heart_failure_due_to_severe_asbestosis',
+        type='sequela',
         gbd_id=sid(989),
         dismod_id=meid(3158),
         healthstate=Healthstate(
@@ -8381,6 +9311,7 @@ sequelae = Sequelae(**{
     ),
     'severe_heart_failure_due_to_severe_asbestosis': Sequela(
         name='severe_heart_failure_due_to_severe_asbestosis',
+        type='sequela',
         gbd_id=sid(990),
         dismod_id=meid(3159),
         healthstate=Healthstate(
@@ -8390,6 +9321,7 @@ sequelae = Sequelae(**{
     ),
     'severe_asbestosis_without_heart_failure': Sequela(
         name='severe_asbestosis_without_heart_failure',
+        type='sequela',
         gbd_id=sid(991),
         dismod_id=meid(3160),
         healthstate=Healthstate(
@@ -8399,6 +9331,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_and_mild_heart_failure_due_to_severe_coal_workers_pneumoconiosis': Sequela(
         name='asymptomatic_and_mild_heart_failure_due_to_severe_coal_workers_pneumoconiosis',
+        type='sequela',
         gbd_id=sid(992),
         dismod_id=meid(3161),
         healthstate=Healthstate(
@@ -8408,6 +9341,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_heart_failure_due_to_severe_coal_workers_pneumoconiosis': Sequela(
         name='moderate_heart_failure_due_to_severe_coal_workers_pneumoconiosis',
+        type='sequela',
         gbd_id=sid(993),
         dismod_id=meid(3162),
         healthstate=Healthstate(
@@ -8417,6 +9351,7 @@ sequelae = Sequelae(**{
     ),
     'severe_heart_failure_due_to_severe_coal_workers_pneumoconiosis': Sequela(
         name='severe_heart_failure_due_to_severe_coal_workers_pneumoconiosis',
+        type='sequela',
         gbd_id=sid(994),
         dismod_id=meid(3163),
         healthstate=Healthstate(
@@ -8426,6 +9361,7 @@ sequelae = Sequelae(**{
     ),
     'severe_coal_workers_pneumoconiosis_without_heart_failure': Sequela(
         name='severe_coal_workers_pneumoconiosis_without_heart_failure',
+        type='sequela',
         gbd_id=sid(995),
         dismod_id=meid(3164),
         healthstate=Healthstate(
@@ -8435,6 +9371,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_and_mild_heart_failure_due_to_severe_other_pneumoconiosis': Sequela(
         name='asymptomatic_and_mild_heart_failure_due_to_severe_other_pneumoconiosis',
+        type='sequela',
         gbd_id=sid(996),
         dismod_id=meid(3165),
         healthstate=Healthstate(
@@ -8444,6 +9381,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_heart_failure_due_to_severe_other_pneumoconiosis': Sequela(
         name='moderate_heart_failure_due_to_severe_other_pneumoconiosis',
+        type='sequela',
         gbd_id=sid(997),
         dismod_id=meid(3166),
         healthstate=Healthstate(
@@ -8453,6 +9391,7 @@ sequelae = Sequelae(**{
     ),
     'severe_heart_failure_due_to_severe_other_pneumoconiosis': Sequela(
         name='severe_heart_failure_due_to_severe_other_pneumoconiosis',
+        type='sequela',
         gbd_id=sid(998),
         dismod_id=meid(3167),
         healthstate=Healthstate(
@@ -8462,6 +9401,7 @@ sequelae = Sequelae(**{
     ),
     'severe_other_pneumoconiosis_without_heart_failure': Sequela(
         name='severe_other_pneumoconiosis_without_heart_failure',
+        type='sequela',
         gbd_id=sid(999),
         dismod_id=meid(3168),
         healthstate=Healthstate(
@@ -8471,6 +9411,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_and_mild_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis': Sequela(
         name='asymptomatic_and_mild_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis',
+        type='sequela',
         gbd_id=sid(1000),
         dismod_id=meid(3169),
         healthstate=Healthstate(
@@ -8480,6 +9421,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis': Sequela(
         name='moderate_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis',
+        type='sequela',
         gbd_id=sid(1001),
         dismod_id=meid(3170),
         healthstate=Healthstate(
@@ -8489,6 +9431,7 @@ sequelae = Sequelae(**{
     ),
     'severe_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis': Sequela(
         name='severe_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis',
+        type='sequela',
         gbd_id=sid(1002),
         dismod_id=meid(3171),
         healthstate=Healthstate(
@@ -8498,6 +9441,7 @@ sequelae = Sequelae(**{
     ),
     'severe_interstitial_lung_disease_and_pulmonary_sarcoidosis_without_heart_failure': Sequela(
         name='severe_interstitial_lung_disease_and_pulmonary_sarcoidosis_without_heart_failure',
+        type='sequela',
         gbd_id=sid(1003),
         dismod_id=meid(3172),
         healthstate=Healthstate(
@@ -8507,6 +9451,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_diabetes_mellitus': Sequela(
         name='stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_diabetes_mellitus',
+        type='sequela',
         gbd_id=sid(1008),
         dismod_id=meid(3180),
         healthstate=Healthstate(
@@ -8516,6 +9461,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_diabetes_mellitus': Sequela(
         name='stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_diabetes_mellitus',
+        type='sequela',
         gbd_id=sid(1009),
         dismod_id=meid(3181),
         healthstate=Healthstate(
@@ -8525,6 +9471,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_diabetes_mellitus': Sequela(
         name='stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_diabetes_mellitus',
+        type='sequela',
         gbd_id=sid(1010),
         dismod_id=meid(3182),
         healthstate=Healthstate(
@@ -8534,6 +9481,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iii_chronic_kidney_disease_without_anemia_due_to_diabetes_mellitus': Sequela(
         name='stage_iii_chronic_kidney_disease_without_anemia_due_to_diabetes_mellitus',
+        type='sequela',
         gbd_id=sid(1011),
         dismod_id=meid(3183),
         healthstate=Healthstate(
@@ -8543,6 +9491,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_hypertension': Sequela(
         name='stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_hypertension',
+        type='sequela',
         gbd_id=sid(1016),
         dismod_id=meid(3191),
         healthstate=Healthstate(
@@ -8552,6 +9501,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_hypertension': Sequela(
         name='stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_hypertension',
+        type='sequela',
         gbd_id=sid(1017),
         dismod_id=meid(3192),
         healthstate=Healthstate(
@@ -8561,6 +9511,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_hypertension': Sequela(
         name='stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_hypertension',
+        type='sequela',
         gbd_id=sid(1018),
         dismod_id=meid(3193),
         healthstate=Healthstate(
@@ -8570,6 +9521,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iii_chronic_kidney_disease_without_anemia_due_to_hypertension': Sequela(
         name='stage_iii_chronic_kidney_disease_without_anemia_due_to_hypertension',
+        type='sequela',
         gbd_id=sid(1019),
         dismod_id=meid(3194),
         healthstate=Healthstate(
@@ -8579,6 +9531,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_glomerulonephritis': Sequela(
         name='stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_glomerulonephritis',
+        type='sequela',
         gbd_id=sid(1024),
         dismod_id=meid(3202),
         healthstate=Healthstate(
@@ -8588,6 +9541,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_glomerulonephritis': Sequela(
         name='stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_glomerulonephritis',
+        type='sequela',
         gbd_id=sid(1025),
         dismod_id=meid(3203),
         healthstate=Healthstate(
@@ -8597,6 +9551,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_glomerulonephritis': Sequela(
         name='stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_glomerulonephritis',
+        type='sequela',
         gbd_id=sid(1026),
         dismod_id=meid(3204),
         healthstate=Healthstate(
@@ -8606,6 +9561,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iii_chronic_kidney_disease_without_anemia_due_to_glomerulonephritis': Sequela(
         name='stage_iii_chronic_kidney_disease_without_anemia_due_to_glomerulonephritis',
+        type='sequela',
         gbd_id=sid(1027),
         dismod_id=meid(3205),
         healthstate=Healthstate(
@@ -8615,6 +9571,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_other_causes': Sequela(
         name='stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_other_causes',
+        type='sequela',
         gbd_id=sid(1032),
         dismod_id=meid(3213),
         healthstate=Healthstate(
@@ -8624,6 +9581,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_other_causes': Sequela(
         name='stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_other_causes',
+        type='sequela',
         gbd_id=sid(1033),
         dismod_id=meid(3214),
         healthstate=Healthstate(
@@ -8633,6 +9591,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_other_causes': Sequela(
         name='stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_other_causes',
+        type='sequela',
         gbd_id=sid(1034),
         dismod_id=meid(3215),
         healthstate=Healthstate(
@@ -8642,6 +9601,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iii_chronic_kidney_disease_without_anemia_due_to_other_causes': Sequela(
         name='stage_iii_chronic_kidney_disease_without_anemia_due_to_other_causes',
+        type='sequela',
         gbd_id=sid(1035),
         dismod_id=meid(3216),
         healthstate=Healthstate(
@@ -8651,6 +9611,7 @@ sequelae = Sequelae(**{
     ),
     'diabetic_foot_due_to_neuropathy': Sequela(
         name='diabetic_foot_due_to_neuropathy',
+        type='sequela',
         gbd_id=sid(1036),
         dismod_id=meid(3217),
         healthstate=Healthstate(
@@ -8660,6 +9621,7 @@ sequelae = Sequelae(**{
     ),
     'diabetic_neuropathy': Sequela(
         name='diabetic_neuropathy',
+        type='sequela',
         gbd_id=sid(1037),
         dismod_id=meid(3218),
         healthstate=Healthstate(
@@ -8669,6 +9631,7 @@ sequelae = Sequelae(**{
     ),
     'diabetic_neuropathy_and_amputation_with_treatment': Sequela(
         name='diabetic_neuropathy_and_amputation_with_treatment',
+        type='sequela',
         gbd_id=sid(1038),
         dismod_id=meid(3219),
         healthstate=Healthstate(
@@ -8678,6 +9641,7 @@ sequelae = Sequelae(**{
     ),
     'diabetic_neuropathy_and_amputation_without_treatment': Sequela(
         name='diabetic_neuropathy_and_amputation_without_treatment',
+        type='sequela',
         gbd_id=sid(1039),
         dismod_id=meid(3220),
         healthstate=Healthstate(
@@ -8687,6 +9651,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_ischemic_heart_disease_following_myocardial_infarction': Sequela(
         name='asymptomatic_ischemic_heart_disease_following_myocardial_infarction',
+        type='sequela',
         gbd_id=sid(1040),
         dismod_id=meid(3233),
         healthstate=Healthstate(
@@ -8696,6 +9661,7 @@ sequelae = Sequelae(**{
     ),
     'symptomatic_claudication_due_to_peripheral_vascular_disease': Sequela(
         name='symptomatic_claudication_due_to_peripheral_vascular_disease',
+        type='sequela',
         gbd_id=sid(1041),
         dismod_id=meid(3234),
         healthstate=Healthstate(
@@ -8705,6 +9671,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_seborrhoeic_dermatitis': Sequela(
         name='asymptomatic_seborrhoeic_dermatitis',
+        type='sequela',
         gbd_id=sid(1046),
         dismod_id=meid(3250),
         healthstate=Healthstate(
@@ -8714,6 +9681,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_contact_dermatitis': Sequela(
         name='asymptomatic_contact_dermatitis',
+        type='sequela',
         gbd_id=sid(1047),
         dismod_id=meid(3251),
         healthstate=Healthstate(
@@ -8723,6 +9691,7 @@ sequelae = Sequelae(**{
     ),
     'mild_other_oral_disorders': Sequela(
         name='mild_other_oral_disorders',
+        type='sequela',
         gbd_id=sid(1048),
         dismod_id=meid(3252),
         healthstate=Healthstate(
@@ -8732,6 +9701,7 @@ sequelae = Sequelae(**{
     ),
     'severe_other_oral_disorders': Sequela(
         name='severe_other_oral_disorders',
+        type='sequela',
         gbd_id=sid(1049),
         dismod_id=meid(3253),
         healthstate=Healthstate(
@@ -8741,6 +9711,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_b_thalassemia_trait': Sequela(
         name='asymptomatic_b_thalassemia_trait',
+        type='sequela',
         gbd_id=sid(1050),
         dismod_id=meid(3255),
         healthstate=Healthstate(
@@ -8750,6 +9721,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_hemoglobin_e_trait': Sequela(
         name='asymptomatic_hemoglobin_e_trait',
+        type='sequela',
         gbd_id=sid(1051),
         dismod_id=meid(3256),
         healthstate=Healthstate(
@@ -8759,6 +9731,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_sickle_cell_trait': Sequela(
         name='asymptomatic_sickle_cell_trait',
+        type='sequela',
         gbd_id=sid(1052),
         dismod_id=meid(3257),
         healthstate=Healthstate(
@@ -8768,6 +9741,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_hemizygous_g6pd_deficiency': Sequela(
         name='asymptomatic_hemizygous_g6pd_deficiency',
+        type='sequela',
         gbd_id=sid(1053),
         dismod_id=meid(3258),
         healthstate=Healthstate(
@@ -8777,6 +9751,7 @@ sequelae = Sequelae(**{
     ),
     'mild_hearing_loss_due_to_chronic_otitis_media': Sequela(
         name='mild_hearing_loss_due_to_chronic_otitis_media',
+        type='sequela',
         gbd_id=sid(1054),
         dismod_id=meid(3261),
         healthstate=Healthstate(
@@ -8786,6 +9761,7 @@ sequelae = Sequelae(**{
     ),
     'mild_hearing_loss_with_ringing_due_to_chronic_otitis_media': Sequela(
         name='mild_hearing_loss_with_ringing_due_to_chronic_otitis_media',
+        type='sequela',
         gbd_id=sid(1055),
         dismod_id=meid(3262),
         healthstate=Healthstate(
@@ -8795,6 +9771,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_malaria_parasitemia_pfpr': Sequela(
         name='asymptomatic_malaria_parasitemia_pfpr',
+        type='sequela',
         gbd_id=sid(1056),
         dismod_id=meid(3266),
         healthstate=Healthstate(
@@ -8804,6 +9781,7 @@ sequelae = Sequelae(**{
     ),
     'mild_anemia_due_to_malaria_parasitemia_pfpr': Sequela(
         name='mild_anemia_due_to_malaria_parasitemia_pfpr',
+        type='sequela',
         gbd_id=sid(1057),
         dismod_id=meid(3267),
         healthstate=Healthstate(
@@ -8813,6 +9791,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_anemia_due_to_malaria_parasitemia_pfpr': Sequela(
         name='moderate_anemia_due_to_malaria_parasitemia_pfpr',
+        type='sequela',
         gbd_id=sid(1058),
         dismod_id=meid(3268),
         healthstate=Healthstate(
@@ -8822,6 +9801,7 @@ sequelae = Sequelae(**{
     ),
     'severe_anemia_due_to_malaria_parasitemia_pfpr': Sequela(
         name='severe_anemia_due_to_malaria_parasitemia_pfpr',
+        type='sequela',
         gbd_id=sid(1059),
         dismod_id=meid(3269),
         healthstate=Healthstate(
@@ -8831,6 +9811,7 @@ sequelae = Sequelae(**{
     ),
     'beta_thalassemia_major_severe_infection_with_severe_anemia': Sequela(
         name='beta_thalassemia_major_severe_infection_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(1060),
         dismod_id=meid(3270),
         healthstate=Healthstate(
@@ -8840,6 +9821,7 @@ sequelae = Sequelae(**{
     ),
     'beta_thalassemia_major_with_mild_anemia': Sequela(
         name='beta_thalassemia_major_with_mild_anemia',
+        type='sequela',
         gbd_id=sid(1061),
         dismod_id=meid(3271),
         healthstate=Healthstate(
@@ -8849,6 +9831,7 @@ sequelae = Sequelae(**{
     ),
     'beta_thalassemia_major_with_moderate_anemia': Sequela(
         name='beta_thalassemia_major_with_moderate_anemia',
+        type='sequela',
         gbd_id=sid(1062),
         dismod_id=meid(3272),
         healthstate=Healthstate(
@@ -8858,6 +9841,7 @@ sequelae = Sequelae(**{
     ),
     'beta_thalassemia_major_with_severe_anemia': Sequela(
         name='beta_thalassemia_major_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(1063),
         dismod_id=meid(3273),
         healthstate=Healthstate(
@@ -8867,6 +9851,7 @@ sequelae = Sequelae(**{
     ),
     'hemoglobin_e_beta_thalassemia_severe_infection_with_severe_anemia': Sequela(
         name='hemoglobin_e_beta_thalassemia_severe_infection_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(1064),
         dismod_id=meid(3277),
         healthstate=Healthstate(
@@ -8876,6 +9861,7 @@ sequelae = Sequelae(**{
     ),
     'hemoglobin_e_beta_thalassemia_with_mild_anemia': Sequela(
         name='hemoglobin_e_beta_thalassemia_with_mild_anemia',
+        type='sequela',
         gbd_id=sid(1065),
         dismod_id=meid(3278),
         healthstate=Healthstate(
@@ -8885,6 +9871,7 @@ sequelae = Sequelae(**{
     ),
     'hemoglobin_e_beta_thalassemia_with_moderate_anemia': Sequela(
         name='hemoglobin_e_beta_thalassemia_with_moderate_anemia',
+        type='sequela',
         gbd_id=sid(1066),
         dismod_id=meid(3279),
         healthstate=Healthstate(
@@ -8894,6 +9881,7 @@ sequelae = Sequelae(**{
     ),
     'hemoglobin_e_beta_thalassemia_with_severe_anemia': Sequela(
         name='hemoglobin_e_beta_thalassemia_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(1067),
         dismod_id=meid(3280),
         healthstate=Healthstate(
@@ -8903,6 +9891,7 @@ sequelae = Sequelae(**{
     ),
     'hemoglobin_h_disease_severe_infection_with_severe_anemia': Sequela(
         name='hemoglobin_h_disease_severe_infection_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(1068),
         dismod_id=meid(3284),
         healthstate=Healthstate(
@@ -8912,6 +9901,7 @@ sequelae = Sequelae(**{
     ),
     'hemoglobin_h_disease_with_mild_anemia': Sequela(
         name='hemoglobin_h_disease_with_mild_anemia',
+        type='sequela',
         gbd_id=sid(1069),
         dismod_id=meid(3285),
         healthstate=Healthstate(
@@ -8921,6 +9911,7 @@ sequelae = Sequelae(**{
     ),
     'hemoglobin_h_disease_with_moderate_anemia': Sequela(
         name='hemoglobin_h_disease_with_moderate_anemia',
+        type='sequela',
         gbd_id=sid(1070),
         dismod_id=meid(3286),
         healthstate=Healthstate(
@@ -8930,6 +9921,7 @@ sequelae = Sequelae(**{
     ),
     'hemoglobin_h_disease_with_severe_anemia': Sequela(
         name='hemoglobin_h_disease_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(1071),
         dismod_id=meid(3287),
         healthstate=Healthstate(
@@ -8939,15 +9931,17 @@ sequelae = Sequelae(**{
     ),
     'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_without_anemia': Sequela(
         name='homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_without_anemia',
+        type='sequela',
         gbd_id=sid(1072),
         dismod_id=meid(3294),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_anxiety_about_diagnosis',
+            name='generic_uncomplicated_disease_anxiety_about_diagnosis',
             gbd_id=hsid(560),
         ),
     ),
     'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_without_anemia': Sequela(
         name='homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_without_anemia',
+        type='sequela',
         gbd_id=sid(1073),
         dismod_id=meid(3295),
         healthstate=Healthstate(
@@ -8957,6 +9951,7 @@ sequelae = Sequelae(**{
     ),
     'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_severe_anemia': Sequela(
         name='homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_severe_anemia',
+        type='sequela',
         gbd_id=sid(1074),
         dismod_id=meid(3296),
         healthstate=Healthstate(
@@ -8966,6 +9961,7 @@ sequelae = Sequelae(**{
     ),
     'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_stroke_and_severe_anemia': Sequela(
         name='homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_stroke_and_severe_anemia',
+        type='sequela',
         gbd_id=sid(1075),
         dismod_id=meid(3297),
         healthstate=Healthstate(
@@ -8975,6 +9971,7 @@ sequelae = Sequelae(**{
     ),
     'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_stroke_without_anemia': Sequela(
         name='homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_stroke_without_anemia',
+        type='sequela',
         gbd_id=sid(1076),
         dismod_id=meid(3298),
         healthstate=Healthstate(
@@ -8984,6 +9981,7 @@ sequelae = Sequelae(**{
     ),
     'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_stroke_and_severe_anemia': Sequela(
         name='homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_stroke_and_severe_anemia',
+        type='sequela',
         gbd_id=sid(1077),
         dismod_id=meid(3299),
         healthstate=Healthstate(
@@ -8993,6 +9991,7 @@ sequelae = Sequelae(**{
     ),
     'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_stroke_without_anemia': Sequela(
         name='homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_stroke_without_anemia',
+        type='sequela',
         gbd_id=sid(1078),
         dismod_id=meid(3300),
         healthstate=Healthstate(
@@ -9002,6 +10001,7 @@ sequelae = Sequelae(**{
     ),
     'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_mild_anemia': Sequela(
         name='homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_mild_anemia',
+        type='sequela',
         gbd_id=sid(1079),
         dismod_id=meid(3301),
         healthstate=Healthstate(
@@ -9011,6 +10011,7 @@ sequelae = Sequelae(**{
     ),
     'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_moderate_anemia': Sequela(
         name='homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_moderate_anemia',
+        type='sequela',
         gbd_id=sid(1080),
         dismod_id=meid(3302),
         healthstate=Healthstate(
@@ -9020,6 +10021,7 @@ sequelae = Sequelae(**{
     ),
     'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_severe_anemia': Sequela(
         name='homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(1081),
         dismod_id=meid(3303),
         healthstate=Healthstate(
@@ -9029,15 +10031,17 @@ sequelae = Sequelae(**{
     ),
     'hemoglobin_sc_disease_without_anemia': Sequela(
         name='hemoglobin_sc_disease_without_anemia',
+        type='sequela',
         gbd_id=sid(1082),
         dismod_id=meid(3304),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_anxiety_about_diagnosis',
+            name='generic_uncomplicated_disease_anxiety_about_diagnosis',
             gbd_id=hsid(560),
         ),
     ),
     'hemoglobin_sc_disease_with_vaso_occlusive_crisis_and_severe_anemia': Sequela(
         name='hemoglobin_sc_disease_with_vaso_occlusive_crisis_and_severe_anemia',
+        type='sequela',
         gbd_id=sid(1083),
         dismod_id=meid(3305),
         healthstate=Healthstate(
@@ -9047,6 +10051,7 @@ sequelae = Sequelae(**{
     ),
     'hemoglobin_sc_disease_with_vaso_occlusive_crisis_without_anemia': Sequela(
         name='hemoglobin_sc_disease_with_vaso_occlusive_crisis_without_anemia',
+        type='sequela',
         gbd_id=sid(1084),
         dismod_id=meid(3306),
         healthstate=Healthstate(
@@ -9056,6 +10061,7 @@ sequelae = Sequelae(**{
     ),
     'hemoglobin_sc_disease_with_stroke_and_severe_anemia': Sequela(
         name='hemoglobin_sc_disease_with_stroke_and_severe_anemia',
+        type='sequela',
         gbd_id=sid(1085),
         dismod_id=meid(3307),
         healthstate=Healthstate(
@@ -9065,6 +10071,7 @@ sequelae = Sequelae(**{
     ),
     'hemoglobin_sc_disease_with_stroke_without_anemia': Sequela(
         name='hemoglobin_sc_disease_with_stroke_without_anemia',
+        type='sequela',
         gbd_id=sid(1086),
         dismod_id=meid(3308),
         healthstate=Healthstate(
@@ -9074,6 +10081,7 @@ sequelae = Sequelae(**{
     ),
     'hemoglobin_sc_disease_with_vaso_occlusive_crisis_stroke_and_severe_anemia': Sequela(
         name='hemoglobin_sc_disease_with_vaso_occlusive_crisis_stroke_and_severe_anemia',
+        type='sequela',
         gbd_id=sid(1087),
         dismod_id=meid(3309),
         healthstate=Healthstate(
@@ -9083,6 +10091,7 @@ sequelae = Sequelae(**{
     ),
     'hemoglobin_sc_disease_with_vaso_occlusive_crisis_and_stroke_without_anemia': Sequela(
         name='hemoglobin_sc_disease_with_vaso_occlusive_crisis_and_stroke_without_anemia',
+        type='sequela',
         gbd_id=sid(1088),
         dismod_id=meid(3310),
         healthstate=Healthstate(
@@ -9092,6 +10101,7 @@ sequelae = Sequelae(**{
     ),
     'hemoglobin_sc_disease_with_mild_anemia': Sequela(
         name='hemoglobin_sc_disease_with_mild_anemia',
+        type='sequela',
         gbd_id=sid(1089),
         dismod_id=meid(3311),
         healthstate=Healthstate(
@@ -9101,6 +10111,7 @@ sequelae = Sequelae(**{
     ),
     'hemoglobin_sc_disease_with_moderate_anemia': Sequela(
         name='hemoglobin_sc_disease_with_moderate_anemia',
+        type='sequela',
         gbd_id=sid(1090),
         dismod_id=meid(3312),
         healthstate=Healthstate(
@@ -9110,6 +10121,7 @@ sequelae = Sequelae(**{
     ),
     'hemoglobin_sc_disease_with_severe_anemia': Sequela(
         name='hemoglobin_sc_disease_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(1091),
         dismod_id=meid(3313),
         healthstate=Healthstate(
@@ -9119,15 +10131,17 @@ sequelae = Sequelae(**{
     ),
     'mild_sickle_cell_beta_thalassemia_without_anemia': Sequela(
         name='mild_sickle_cell_beta_thalassemia_without_anemia',
+        type='sequela',
         gbd_id=sid(1092),
         dismod_id=meid(3314),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_anxiety_about_diagnosis',
+            name='generic_uncomplicated_disease_anxiety_about_diagnosis',
             gbd_id=hsid(560),
         ),
     ),
     'mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_severe_anemia': Sequela(
         name='mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_severe_anemia',
+        type='sequela',
         gbd_id=sid(1093),
         dismod_id=meid(3315),
         healthstate=Healthstate(
@@ -9137,6 +10151,7 @@ sequelae = Sequelae(**{
     ),
     'mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_without_anemia': Sequela(
         name='mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_without_anemia',
+        type='sequela',
         gbd_id=sid(1094),
         dismod_id=meid(3316),
         healthstate=Healthstate(
@@ -9146,6 +10161,7 @@ sequelae = Sequelae(**{
     ),
     'mild_sickle_cell_beta_thalassemia_with_stroke_and_severe_anemia': Sequela(
         name='mild_sickle_cell_beta_thalassemia_with_stroke_and_severe_anemia',
+        type='sequela',
         gbd_id=sid(1095),
         dismod_id=meid(3317),
         healthstate=Healthstate(
@@ -9155,6 +10171,7 @@ sequelae = Sequelae(**{
     ),
     'mild_sickle_cell_beta_thalassemia_with_stroke_without_anemia': Sequela(
         name='mild_sickle_cell_beta_thalassemia_with_stroke_without_anemia',
+        type='sequela',
         gbd_id=sid(1096),
         dismod_id=meid(3318),
         healthstate=Healthstate(
@@ -9164,6 +10181,7 @@ sequelae = Sequelae(**{
     ),
     'mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_stroke_and_severe_anemia': Sequela(
         name='mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_stroke_and_severe_anemia',
+        type='sequela',
         gbd_id=sid(1097),
         dismod_id=meid(3319),
         healthstate=Healthstate(
@@ -9173,6 +10191,7 @@ sequelae = Sequelae(**{
     ),
     'mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_stroke_without_anemia': Sequela(
         name='mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_stroke_without_anemia',
+        type='sequela',
         gbd_id=sid(1098),
         dismod_id=meid(3320),
         healthstate=Healthstate(
@@ -9182,6 +10201,7 @@ sequelae = Sequelae(**{
     ),
     'mild_sickle_cell_beta_thalassemia_with_mild_anemia': Sequela(
         name='mild_sickle_cell_beta_thalassemia_with_mild_anemia',
+        type='sequela',
         gbd_id=sid(1099),
         dismod_id=meid(3321),
         healthstate=Healthstate(
@@ -9191,6 +10211,7 @@ sequelae = Sequelae(**{
     ),
     'mild_sickle_cell_beta_thalassemia_with_moderate_anemia': Sequela(
         name='mild_sickle_cell_beta_thalassemia_with_moderate_anemia',
+        type='sequela',
         gbd_id=sid(1100),
         dismod_id=meid(3322),
         healthstate=Healthstate(
@@ -9200,6 +10221,7 @@ sequelae = Sequelae(**{
     ),
     'mild_sickle_cell_beta_thalassemia_with_severe_anemia': Sequela(
         name='mild_sickle_cell_beta_thalassemia_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(1101),
         dismod_id=meid(3323),
         healthstate=Healthstate(
@@ -9209,6 +10231,7 @@ sequelae = Sequelae(**{
     ),
     'vertigo_with_moderate_hearing_loss_due_to_chronic_otitis_media': Sequela(
         name='vertigo_with_moderate_hearing_loss_due_to_chronic_otitis_media',
+        type='sequela',
         gbd_id=sid(1102),
         dismod_id=meid(3324),
         healthstate=Healthstate(
@@ -9218,6 +10241,7 @@ sequelae = Sequelae(**{
     ),
     'vertigo_with_moderate_hearing_loss_and_ringing_due_to_chronic_otitis_media': Sequela(
         name='vertigo_with_moderate_hearing_loss_and_ringing_due_to_chronic_otitis_media',
+        type='sequela',
         gbd_id=sid(1103),
         dismod_id=meid(3325),
         healthstate=Healthstate(
@@ -9227,6 +10251,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_hearing_loss_due_to_chronic_otitis_media': Sequela(
         name='moderate_hearing_loss_due_to_chronic_otitis_media',
+        type='sequela',
         gbd_id=sid(1104),
         dismod_id=meid(3326),
         healthstate=Healthstate(
@@ -9236,6 +10261,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_hearing_loss_with_ringing_due_to_chronic_otitis_media': Sequela(
         name='moderate_hearing_loss_with_ringing_due_to_chronic_otitis_media',
+        type='sequela',
         gbd_id=sid(1105),
         dismod_id=meid(3327),
         healthstate=Healthstate(
@@ -9245,6 +10271,7 @@ sequelae = Sequelae(**{
     ),
     'mild_abdominal_pain_due_to_uterine_fibroids_with_mild_anemia': Sequela(
         name='mild_abdominal_pain_due_to_uterine_fibroids_with_mild_anemia',
+        type='sequela',
         gbd_id=sid(1106),
         dismod_id=meid(3328),
         healthstate=Healthstate(
@@ -9254,6 +10281,7 @@ sequelae = Sequelae(**{
     ),
     'mild_abdominal_pain_due_to_uterine_fibroids_with_moderate_anemia': Sequela(
         name='mild_abdominal_pain_due_to_uterine_fibroids_with_moderate_anemia',
+        type='sequela',
         gbd_id=sid(1107),
         dismod_id=meid(3329),
         healthstate=Healthstate(
@@ -9263,6 +10291,7 @@ sequelae = Sequelae(**{
     ),
     'mild_abdominal_pain_due_to_uterine_fibroids_with_severe_anemia': Sequela(
         name='mild_abdominal_pain_due_to_uterine_fibroids_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(1108),
         dismod_id=meid(3330),
         healthstate=Healthstate(
@@ -9272,6 +10301,7 @@ sequelae = Sequelae(**{
     ),
     'mild_abdominal_pain_due_to_uterine_fibroids_without_anemia': Sequela(
         name='mild_abdominal_pain_due_to_uterine_fibroids_without_anemia',
+        type='sequela',
         gbd_id=sid(1109),
         dismod_id=meid(3331),
         healthstate=Healthstate(
@@ -9281,6 +10311,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_yellow_fever': Sequela(
         name='asymptomatic_yellow_fever',
+        type='sequela',
         gbd_id=sid(1112),
         dismod_id=meid(3338),
         healthstate=Healthstate(
@@ -9290,42 +10321,47 @@ sequelae = Sequelae(**{
     ),
     'hemoglobin_h_disease_without_anemia': Sequela(
         name='hemoglobin_h_disease_without_anemia',
+        type='sequela',
         gbd_id=sid(1113),
         dismod_id=meid(3343),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_anxiety_about_diagnosis',
+            name='generic_uncomplicated_disease_anxiety_about_diagnosis',
             gbd_id=hsid(560),
         ),
     ),
     'beta_thalassemia_major_without_anemia': Sequela(
         name='beta_thalassemia_major_without_anemia',
+        type='sequela',
         gbd_id=sid(1114),
         dismod_id=meid(3344),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_anxiety_about_diagnosis',
+            name='generic_uncomplicated_disease_anxiety_about_diagnosis',
             gbd_id=hsid(560),
         ),
     ),
     'hemoglobin_e_beta_thalassemia_without_anemia': Sequela(
         name='hemoglobin_e_beta_thalassemia_without_anemia',
+        type='sequela',
         gbd_id=sid(1115),
         dismod_id=meid(3345),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_anxiety_about_diagnosis',
+            name='generic_uncomplicated_disease_anxiety_about_diagnosis',
             gbd_id=hsid(560),
         ),
     ),
     'rheumatic_heart_disease_without_heart_failure': Sequela(
         name='rheumatic_heart_disease_without_heart_failure',
+        type='sequela',
         gbd_id=sid(1116),
         dismod_id=meid(3346),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'asymptomatic_and_mild_heart_failure_due_to_rheumatic_heart_disease': Sequela(
         name='asymptomatic_and_mild_heart_failure_due_to_rheumatic_heart_disease',
+        type='sequela',
         gbd_id=sid(1117),
         dismod_id=meid(3347),
         healthstate=Healthstate(
@@ -9335,6 +10371,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_heart_failure_due_to_rheumatic_heart_disease': Sequela(
         name='moderate_heart_failure_due_to_rheumatic_heart_disease',
+        type='sequela',
         gbd_id=sid(1118),
         dismod_id=meid(3348),
         healthstate=Healthstate(
@@ -9344,6 +10381,7 @@ sequelae = Sequelae(**{
     ),
     'severe_heart_failure_due_to_rheumatic_heart_disease': Sequela(
         name='severe_heart_failure_due_to_rheumatic_heart_disease',
+        type='sequela',
         gbd_id=sid(1119),
         dismod_id=meid(3349),
         healthstate=Healthstate(
@@ -9353,6 +10391,7 @@ sequelae = Sequelae(**{
     ),
     'mild_anemia_due_to_g6pd_deficiency': Sequela(
         name='mild_anemia_due_to_g6pd_deficiency',
+        type='sequela',
         gbd_id=sid(1120),
         dismod_id=meid(3350),
         healthstate=Healthstate(
@@ -9362,6 +10401,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_anemia_due_to_g6pd_deficiency': Sequela(
         name='moderate_anemia_due_to_g6pd_deficiency',
+        type='sequela',
         gbd_id=sid(1121),
         dismod_id=meid(3351),
         healthstate=Healthstate(
@@ -9371,6 +10411,7 @@ sequelae = Sequelae(**{
     ),
     'severe_anemia_due_to_g6pd_deficiency': Sequela(
         name='severe_anemia_due_to_g6pd_deficiency',
+        type='sequela',
         gbd_id=sid(1122),
         dismod_id=meid(3352),
         healthstate=Healthstate(
@@ -9380,6 +10421,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_and_mild_heart_failure_due_to_g6pd_deficiency': Sequela(
         name='asymptomatic_and_mild_heart_failure_due_to_g6pd_deficiency',
+        type='sequela',
         gbd_id=sid(1123),
         dismod_id=meid(3353),
         healthstate=Healthstate(
@@ -9389,6 +10431,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_heart_failure_due_to_g6pd_deficiency': Sequela(
         name='moderate_heart_failure_due_to_g6pd_deficiency',
+        type='sequela',
         gbd_id=sid(1124),
         dismod_id=meid(3354),
         healthstate=Healthstate(
@@ -9398,6 +10441,7 @@ sequelae = Sequelae(**{
     ),
     'severe_heart_failure_due_to_g6pd_deficiency': Sequela(
         name='severe_heart_failure_due_to_g6pd_deficiency',
+        type='sequela',
         gbd_id=sid(1125),
         dismod_id=meid(3355),
         healthstate=Healthstate(
@@ -9407,6 +10451,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_g6pd_deficiency': Sequela(
         name='asymptomatic_g6pd_deficiency',
+        type='sequela',
         gbd_id=sid(1126),
         dismod_id=meid(3356),
         healthstate=Healthstate(
@@ -9416,6 +10461,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_gallbladder_and_biliary_diseases': Sequela(
         name='asymptomatic_gallbladder_and_biliary_diseases',
+        type='sequela',
         gbd_id=sid(1135),
         dismod_id=meid(9535),
         healthstate=Healthstate(
@@ -9425,6 +10471,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_inguinal_femoral_and_abdominal_hernia': Sequela(
         name='asymptomatic_inguinal_femoral_and_abdominal_hernia',
+        type='sequela',
         gbd_id=sid(1139),
         dismod_id=meid(9542),
         healthstate=Healthstate(
@@ -9434,6 +10481,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_vision_impairment_due_to_pneumococcol_meningitis': Sequela(
         name='moderate_vision_impairment_due_to_pneumococcol_meningitis',
+        type='sequela',
         gbd_id=sid(1143),
         dismod_id=meid(9430),
         healthstate=Healthstate(
@@ -9443,6 +10491,7 @@ sequelae = Sequelae(**{
     ),
     'severe_vision_impairment_due_to_pneumococcol_meningitis': Sequela(
         name='severe_vision_impairment_due_to_pneumococcol_meningitis',
+        type='sequela',
         gbd_id=sid(1144),
         dismod_id=meid(9431),
         healthstate=Healthstate(
@@ -9452,6 +10501,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_vision_impairment_due_to_h_influenza_type_b_meningitis': Sequela(
         name='moderate_vision_impairment_due_to_h_influenza_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(1145),
         dismod_id=meid(9433),
         healthstate=Healthstate(
@@ -9461,6 +10511,7 @@ sequelae = Sequelae(**{
     ),
     'severe_vision_impairment_due_to_h_influenza_type_b_meningitis': Sequela(
         name='severe_vision_impairment_due_to_h_influenza_type_b_meningitis',
+        type='sequela',
         gbd_id=sid(1146),
         dismod_id=meid(9434),
         healthstate=Healthstate(
@@ -9470,6 +10521,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_vision_impairment_due_to_meningococcal_meningitis': Sequela(
         name='moderate_vision_impairment_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(1147),
         dismod_id=meid(9436),
         healthstate=Healthstate(
@@ -9479,6 +10531,7 @@ sequelae = Sequelae(**{
     ),
     'severe_vision_impairment_due_to_meningococcal_meningitis': Sequela(
         name='severe_vision_impairment_due_to_meningococcal_meningitis',
+        type='sequela',
         gbd_id=sid(1148),
         dismod_id=meid(9437),
         healthstate=Healthstate(
@@ -9488,6 +10541,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_vision_impairment_due_to_other_bacterial_meningitis': Sequela(
         name='moderate_vision_impairment_due_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(1149),
         dismod_id=meid(9439),
         healthstate=Healthstate(
@@ -9497,6 +10551,7 @@ sequelae = Sequelae(**{
     ),
     'severe_vision_impairment_due_to_other_bacterial_meningitis': Sequela(
         name='severe_vision_impairment_due_to_other_bacterial_meningitis',
+        type='sequela',
         gbd_id=sid(1150),
         dismod_id=meid(9440),
         healthstate=Healthstate(
@@ -9506,6 +10561,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_vision_impairment_due_to_encephalitis': Sequela(
         name='moderate_vision_impairment_due_to_encephalitis',
+        type='sequela',
         gbd_id=sid(1151),
         dismod_id=meid(9462),
         healthstate=Healthstate(
@@ -9515,6 +10571,7 @@ sequelae = Sequelae(**{
     ),
     'severe_vision_impairment_due_to_encephalitis': Sequela(
         name='severe_vision_impairment_due_to_encephalitis',
+        type='sequela',
         gbd_id=sid(1152),
         dismod_id=meid(9463),
         healthstate=Healthstate(
@@ -9524,6 +10581,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_mild_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease': Sequela(
         name='mild_motor_impairment_mild_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1153),
         dismod_id=meid(9679),
         healthstate=Healthstate(
@@ -9533,6 +10591,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_moderate_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease': Sequela(
         name='mild_motor_impairment_moderate_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1154),
         dismod_id=meid(9680),
         healthstate=Healthstate(
@@ -9542,6 +10601,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_severe_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease': Sequela(
         name='mild_motor_impairment_severe_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1155),
         dismod_id=meid(9681),
         healthstate=Healthstate(
@@ -9551,6 +10611,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_and_speech_problems_due_to_motor_neuron_disease': Sequela(
         name='mild_motor_impairment_and_speech_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1156),
         dismod_id=meid(9682),
         healthstate=Healthstate(
@@ -9560,6 +10621,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_mild_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease': Sequela(
         name='moderate_motor_impairment_mild_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1157),
         dismod_id=meid(9683),
         healthstate=Healthstate(
@@ -9569,6 +10631,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_moderate_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease': Sequela(
         name='moderate_motor_impairment_moderate_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1158),
         dismod_id=meid(9684),
         healthstate=Healthstate(
@@ -9578,6 +10641,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_severe_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease': Sequela(
         name='moderate_motor_impairment_severe_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1159),
         dismod_id=meid(9685),
         healthstate=Healthstate(
@@ -9587,6 +10651,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_mild_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease': Sequela(
         name='severe_motor_impairment_mild_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1160),
         dismod_id=meid(9687),
         healthstate=Healthstate(
@@ -9596,6 +10661,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_moderate_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease': Sequela(
         name='severe_motor_impairment_moderate_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1161),
         dismod_id=meid(9688),
         healthstate=Healthstate(
@@ -9605,6 +10671,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_severe_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease': Sequela(
         name='severe_motor_impairment_severe_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1162),
         dismod_id=meid(9689),
         healthstate=Healthstate(
@@ -9614,6 +10681,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_and_mild_respiratory_problems_due_to_motor_neuron_disease': Sequela(
         name='mild_motor_impairment_and_mild_respiratory_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1163),
         dismod_id=meid(9695),
         healthstate=Healthstate(
@@ -9623,6 +10691,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_and_severe_respiratory_problems_due_to_motor_neuron_disease': Sequela(
         name='mild_motor_impairment_and_severe_respiratory_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1164),
         dismod_id=meid(9697),
         healthstate=Healthstate(
@@ -9632,6 +10701,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_and_mild_respiratory_problems_due_to_motor_neuron_disease': Sequela(
         name='moderate_motor_impairment_and_mild_respiratory_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1165),
         dismod_id=meid(9699),
         healthstate=Healthstate(
@@ -9641,6 +10711,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_and_moderate_respiratory_problems_due_to_motor_neuron_disease': Sequela(
         name='moderate_motor_impairment_and_moderate_respiratory_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1166),
         dismod_id=meid(9700),
         healthstate=Healthstate(
@@ -9650,6 +10721,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_and_severe_respiratory_problems_due_to_motor_neuron_disease': Sequela(
         name='moderate_motor_impairment_and_severe_respiratory_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1167),
         dismod_id=meid(9701),
         healthstate=Healthstate(
@@ -9659,6 +10731,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_and_mild_respiratory_problems_due_to_motor_neuron_disease': Sequela(
         name='severe_motor_impairment_and_mild_respiratory_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1168),
         dismod_id=meid(9703),
         healthstate=Healthstate(
@@ -9668,6 +10741,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_and_moderate_respiratory_problems_due_to_motor_neuron_disease': Sequela(
         name='severe_motor_impairment_and_moderate_respiratory_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1169),
         dismod_id=meid(9704),
         healthstate=Healthstate(
@@ -9677,6 +10751,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_and_severe_respiratory_problems_due_to_motor_neuron_disease': Sequela(
         name='severe_motor_impairment_and_severe_respiratory_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1170),
         dismod_id=meid(9705),
         healthstate=Healthstate(
@@ -9686,6 +10761,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_and_speech_problems_due_to_motor_neuron_disease': Sequela(
         name='moderate_motor_impairment_and_speech_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1171),
         dismod_id=meid(9686),
         healthstate=Healthstate(
@@ -9695,6 +10771,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_and_speech_problems_due_to_motor_neuron_disease': Sequela(
         name='severe_motor_impairment_and_speech_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1172),
         dismod_id=meid(9690),
         healthstate=Healthstate(
@@ -9704,6 +10781,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_due_to_motor_neuron_disease': Sequela(
         name='mild_motor_impairment_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1173),
         dismod_id=meid(9698),
         healthstate=Healthstate(
@@ -9713,6 +10791,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_due_to_motor_neuron_disease': Sequela(
         name='moderate_motor_impairment_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1174),
         dismod_id=meid(9702),
         healthstate=Healthstate(
@@ -9722,6 +10801,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_due_to_motor_neuron_disease': Sequela(
         name='severe_motor_impairment_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1175),
         dismod_id=meid(9706),
         healthstate=Healthstate(
@@ -9731,6 +10811,7 @@ sequelae = Sequelae(**{
     ),
     'mild_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease': Sequela(
         name='mild_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1176),
         dismod_id=meid(9691),
         healthstate=Healthstate(
@@ -9740,6 +10821,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease': Sequela(
         name='moderate_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1177),
         dismod_id=meid(9692),
         healthstate=Healthstate(
@@ -9749,6 +10831,7 @@ sequelae = Sequelae(**{
     ),
     'severe_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease': Sequela(
         name='severe_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1178),
         dismod_id=meid(9693),
         healthstate=Healthstate(
@@ -9758,6 +10841,7 @@ sequelae = Sequelae(**{
     ),
     'mild_respiratory_problems_due_to_motor_neuron_disease': Sequela(
         name='mild_respiratory_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1179),
         dismod_id=meid(9707),
         healthstate=Healthstate(
@@ -9767,6 +10851,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_respiratory_problems_due_to_motor_neuron_disease': Sequela(
         name='moderate_respiratory_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1180),
         dismod_id=meid(9708),
         healthstate=Healthstate(
@@ -9776,6 +10861,7 @@ sequelae = Sequelae(**{
     ),
     'severe_respiratory_problems_due_to_motor_neuron_disease': Sequela(
         name='severe_respiratory_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1181),
         dismod_id=meid(9709),
         healthstate=Healthstate(
@@ -9785,6 +10871,7 @@ sequelae = Sequelae(**{
     ),
     'speech_problems_due_to_motor_neuron_disease': Sequela(
         name='speech_problems_due_to_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1182),
         dismod_id=meid(9694),
         healthstate=Healthstate(
@@ -9794,15 +10881,17 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_of_motor_neuron_disease': Sequela(
         name='diagnosis_of_motor_neuron_disease',
+        type='sequela',
         gbd_id=sid(1183),
         dismod_id=meid(9710),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_anxiety_about_diagnosis',
+            name='generic_uncomplicated_disease_anxiety_about_diagnosis',
             gbd_id=hsid(560),
         ),
     ),
     'ebola_cases': Sequela(
         name='ebola_cases',
+        type='sequela',
         gbd_id=sid(1184),
         dismod_id=meid(9668),
         healthstate=Healthstate(
@@ -9812,6 +10901,7 @@ sequelae = Sequelae(**{
     ),
     'post_ebola_chronic_fatigue_syndrome': Sequela(
         name='post_ebola_chronic_fatigue_syndrome',
+        type='sequela',
         gbd_id=sid(1185),
         dismod_id=meid(9669),
         healthstate=Healthstate(
@@ -9821,6 +10911,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_acute_lymphoid_leukemia': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_acute_lymphoid_leukemia',
+        type='sequela',
         gbd_id=sid(1186),
         dismod_id=meid(9476),
         healthstate=Healthstate(
@@ -9830,6 +10921,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_acute_myeloid_leukemia': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_acute_myeloid_leukemia',
+        type='sequela',
         gbd_id=sid(1187),
         dismod_id=meid(9486),
         healthstate=Healthstate(
@@ -9839,6 +10931,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_chronic_lymphoid_leukemia': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_chronic_lymphoid_leukemia',
+        type='sequela',
         gbd_id=sid(1188),
         dismod_id=meid(9481),
         healthstate=Healthstate(
@@ -9848,6 +10941,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_chronic_myeloid_leukemia': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_chronic_myeloid_leukemia',
+        type='sequela',
         gbd_id=sid(1189),
         dismod_id=meid(9491),
         healthstate=Healthstate(
@@ -9857,42 +10951,47 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_acute_lymphoid_leukemia': Sequela(
         name='controlled_phase_of_acute_lymphoid_leukemia',
+        type='sequela',
         gbd_id=sid(1190),
         dismod_id=meid(9477),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'controlled_phase_of_acute_myeloid_leukemia': Sequela(
         name='controlled_phase_of_acute_myeloid_leukemia',
+        type='sequela',
         gbd_id=sid(1191),
         dismod_id=meid(9487),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'controlled_phase_of_chronic_lymphoid_leukemia': Sequela(
         name='controlled_phase_of_chronic_lymphoid_leukemia',
+        type='sequela',
         gbd_id=sid(1192),
         dismod_id=meid(9482),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'controlled_phase_of_chronic_myeloid_leukemia': Sequela(
         name='controlled_phase_of_chronic_myeloid_leukemia',
+        type='sequela',
         gbd_id=sid(1193),
         dismod_id=meid(9492),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'metastatic_phase_of_acute_lymphoid_leukemia': Sequela(
         name='metastatic_phase_of_acute_lymphoid_leukemia',
+        type='sequela',
         gbd_id=sid(1194),
         dismod_id=meid(9478),
         healthstate=Healthstate(
@@ -9902,6 +11001,7 @@ sequelae = Sequelae(**{
     ),
     'metastatic_phase_of_acute_myeloid_leukemia': Sequela(
         name='metastatic_phase_of_acute_myeloid_leukemia',
+        type='sequela',
         gbd_id=sid(1195),
         dismod_id=meid(9488),
         healthstate=Healthstate(
@@ -9911,6 +11011,7 @@ sequelae = Sequelae(**{
     ),
     'metastatic_phase_of_chronic_lymphoid_leukemia': Sequela(
         name='metastatic_phase_of_chronic_lymphoid_leukemia',
+        type='sequela',
         gbd_id=sid(1196),
         dismod_id=meid(9483),
         healthstate=Healthstate(
@@ -9920,6 +11021,7 @@ sequelae = Sequelae(**{
     ),
     'metastatic_phase_of_chronic_myeloid_leukemia': Sequela(
         name='metastatic_phase_of_chronic_myeloid_leukemia',
+        type='sequela',
         gbd_id=sid(1197),
         dismod_id=meid(9493),
         healthstate=Healthstate(
@@ -9929,6 +11031,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_acute_lymphoid_leukemia': Sequela(
         name='terminal_phase_of_acute_lymphoid_leukemia',
+        type='sequela',
         gbd_id=sid(1198),
         dismod_id=meid(9479),
         healthstate=Healthstate(
@@ -9938,6 +11041,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_acute_myeloid_leukemia': Sequela(
         name='terminal_phase_of_acute_myeloid_leukemia',
+        type='sequela',
         gbd_id=sid(1199),
         dismod_id=meid(9489),
         healthstate=Healthstate(
@@ -9947,6 +11051,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_chronic_lymphoid_leukemia': Sequela(
         name='terminal_phase_of_chronic_lymphoid_leukemia',
+        type='sequela',
         gbd_id=sid(1200),
         dismod_id=meid(9484),
         healthstate=Healthstate(
@@ -9956,6 +11061,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_chronic_myeloid_leukemia': Sequela(
         name='terminal_phase_of_chronic_myeloid_leukemia',
+        type='sequela',
         gbd_id=sid(1201),
         dismod_id=meid(9494),
         healthstate=Healthstate(
@@ -9965,6 +11071,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_early_syphilis_infection': Sequela(
         name='asymptomatic_early_syphilis_infection',
+        type='sequela',
         gbd_id=sid(1202),
         dismod_id=meid(3949),
         healthstate=Healthstate(
@@ -9974,6 +11081,7 @@ sequelae = Sequelae(**{
     ),
     'mild_early_syphilis_infection': Sequela(
         name='mild_early_syphilis_infection',
+        type='sequela',
         gbd_id=sid(1203),
         dismod_id=meid(3950),
         healthstate=Healthstate(
@@ -9983,6 +11091,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_due_to_down_syndrome': Sequela(
         name='borderline_intellectual_disability_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1212),
         dismod_id=meid(9819),
         healthstate=Healthstate(
@@ -9992,6 +11101,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_due_to_down_syndrome': Sequela(
         name='mild_intellectual_disability_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1213),
         dismod_id=meid(9820),
         healthstate=Healthstate(
@@ -10001,6 +11111,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_intellectual_disability_due_to_down_syndrome': Sequela(
         name='moderate_intellectual_disability_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1214),
         dismod_id=meid(9821),
         healthstate=Healthstate(
@@ -10010,6 +11121,7 @@ sequelae = Sequelae(**{
     ),
     'severe_intellectual_disability_due_to_down_syndrome': Sequela(
         name='severe_intellectual_disability_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1215),
         dismod_id=meid(9822),
         healthstate=Healthstate(
@@ -10019,6 +11131,7 @@ sequelae = Sequelae(**{
     ),
     'profound_intellectual_disability_due_to_down_syndrome': Sequela(
         name='profound_intellectual_disability_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1216),
         dismod_id=meid(9823),
         healthstate=Healthstate(
@@ -10028,6 +11141,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome': Sequela(
         name='borderline_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1217),
         dismod_id=meid(9824),
         healthstate=Healthstate(
@@ -10037,6 +11151,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome': Sequela(
         name='mild_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1218),
         dismod_id=meid(9825),
         healthstate=Healthstate(
@@ -10046,6 +11161,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome': Sequela(
         name='moderate_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1219),
         dismod_id=meid(9826),
         healthstate=Healthstate(
@@ -10055,6 +11171,7 @@ sequelae = Sequelae(**{
     ),
     'severe_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome': Sequela(
         name='severe_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1220),
         dismod_id=meid(9827),
         healthstate=Healthstate(
@@ -10064,6 +11181,7 @@ sequelae = Sequelae(**{
     ),
     'profound_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome': Sequela(
         name='profound_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1221),
         dismod_id=meid(9828),
         healthstate=Healthstate(
@@ -10073,6 +11191,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_due_to_other_chromosomal_abnormalities': Sequela(
         name='borderline_intellectual_disability_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1223),
         dismod_id=meid(9843),
         healthstate=Healthstate(
@@ -10082,6 +11201,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_due_to_other_chromosomal_abnormalities': Sequela(
         name='mild_intellectual_disability_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1224),
         dismod_id=meid(9844),
         healthstate=Healthstate(
@@ -10091,6 +11211,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_intellectual_disability_due_to_other_chromosomal_abnormalities': Sequela(
         name='moderate_intellectual_disability_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1225),
         dismod_id=meid(9845),
         healthstate=Healthstate(
@@ -10100,6 +11221,7 @@ sequelae = Sequelae(**{
     ),
     'severe_intellectual_disability_due_to_other_chromosomal_abnormalities': Sequela(
         name='severe_intellectual_disability_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1226),
         dismod_id=meid(9846),
         healthstate=Healthstate(
@@ -10109,6 +11231,7 @@ sequelae = Sequelae(**{
     ),
     'profound_intellectual_disability_due_to_other_chromosomal_abnormalities': Sequela(
         name='profound_intellectual_disability_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1227),
         dismod_id=meid(9847),
         healthstate=Healthstate(
@@ -10118,6 +11241,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
         name='borderline_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1228),
         dismod_id=meid(9848),
         healthstate=Healthstate(
@@ -10127,6 +11251,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
         name='mild_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1229),
         dismod_id=meid(9849),
         healthstate=Healthstate(
@@ -10136,6 +11261,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
         name='moderate_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1230),
         dismod_id=meid(9850),
         healthstate=Healthstate(
@@ -10145,6 +11271,7 @@ sequelae = Sequelae(**{
     ),
     'severe_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
         name='severe_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1231),
         dismod_id=meid(9851),
         healthstate=Healthstate(
@@ -10154,6 +11281,7 @@ sequelae = Sequelae(**{
     ),
     'profound_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
         name='profound_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1232),
         dismod_id=meid(9852),
         healthstate=Healthstate(
@@ -10163,6 +11291,7 @@ sequelae = Sequelae(**{
     ),
     'mild_dementia_due_to_down_syndrome': Sequela(
         name='mild_dementia_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1234),
         dismod_id=meid(9938),
         healthstate=Healthstate(
@@ -10172,6 +11301,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_dementia_due_to_down_syndrome': Sequela(
         name='moderate_dementia_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1235),
         dismod_id=meid(9939),
         healthstate=Healthstate(
@@ -10181,6 +11311,7 @@ sequelae = Sequelae(**{
     ),
     'severe_dementia_due_to_down_syndrome': Sequela(
         name='severe_dementia_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1236),
         dismod_id=meid(9940),
         healthstate=Healthstate(
@@ -10190,6 +11321,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_mild_dementia_due_to_down_syndrome': Sequela(
         name='congenital_heart_disease_and_mild_dementia_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1237),
         dismod_id=meid(9818),
         healthstate=Healthstate(
@@ -10199,6 +11331,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_moderate_dementia_due_to_down_syndrome': Sequela(
         name='congenital_heart_disease_and_moderate_dementia_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1238),
         dismod_id=meid(9944),
         healthstate=Healthstate(
@@ -10208,6 +11341,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_severe_dementia_due_to_down_syndrome': Sequela(
         name='congenital_heart_disease_and_severe_dementia_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1239),
         dismod_id=meid(9945),
         healthstate=Healthstate(
@@ -10217,6 +11351,7 @@ sequelae = Sequelae(**{
     ),
     'mild_dementia_due_to_other_chromosomal_abnormalities': Sequela(
         name='mild_dementia_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1240),
         dismod_id=meid(9948),
         healthstate=Healthstate(
@@ -10226,6 +11361,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_dementia_due_to_other_chromosomal_abnormalities': Sequela(
         name='moderate_dementia_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1241),
         dismod_id=meid(9949),
         healthstate=Healthstate(
@@ -10235,6 +11371,7 @@ sequelae = Sequelae(**{
     ),
     'severe_dementia_due_to_other_chromosomal_abnormalities': Sequela(
         name='severe_dementia_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1242),
         dismod_id=meid(9950),
         healthstate=Healthstate(
@@ -10244,6 +11381,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_mild_dementia_due_to_other_chromosomal_abnormalities': Sequela(
         name='congenital_heart_disease_and_mild_dementia_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1243),
         dismod_id=meid(9842),
         healthstate=Healthstate(
@@ -10253,6 +11391,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_moderate_dementia_due_to_other_chromosomal_abnormalities': Sequela(
         name='congenital_heart_disease_and_moderate_dementia_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1244),
         dismod_id=meid(9954),
         healthstate=Healthstate(
@@ -10262,6 +11401,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_severe_dementia_due_to_other_chromosomal_abnormalities': Sequela(
         name='congenital_heart_disease_and_severe_dementia_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1245),
         dismod_id=meid(9955),
         healthstate=Healthstate(
@@ -10271,6 +11411,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_neonatla_preterm_birth_less_than_28wks': Sequela(
         name='asymptomatic_neonatla_preterm_birth_less_than_28wks',
+        type='sequela',
         gbd_id=sid(1246),
         dismod_id=meid(9978),
         healthstate=Healthstate(
@@ -10280,6 +11421,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_neonatal_preterm_birth_28_less_than_32_wks': Sequela(
         name='asymptomatic_neonatal_preterm_birth_28_less_than_32_wks',
+        type='sequela',
         gbd_id=sid(1247),
         dismod_id=meid(9979),
         healthstate=Healthstate(
@@ -10289,6 +11431,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_neonatal_preterm_birth_32_less_than_37wks': Sequela(
         name='asymptomatic_neonatal_preterm_birth_32_less_than_37wks',
+        type='sequela',
         gbd_id=sid(1248),
         dismod_id=meid(9980),
         healthstate=Healthstate(
@@ -10298,6 +11441,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
         name='asymptomatic_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma',
+        type='sequela',
         gbd_id=sid(1249),
         dismod_id=meid(9981),
         healthstate=Healthstate(
@@ -10307,6 +11451,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_neonatal_sepsis_and_other_neonatal_infections': Sequela(
         name='asymptomatic_neonatal_sepsis_and_other_neonatal_infections',
+        type='sequela',
         gbd_id=sid(1250),
         dismod_id=meid(9982),
         healthstate=Healthstate(
@@ -10316,6 +11461,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_plus_cognitive_impairments_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
         name='mild_motor_plus_cognitive_impairments_due_to_neonatal_sepsis_and_other_neonatal_infections',
+        type='sequela',
         gbd_id=sid(1251),
         dismod_id=meid(9617),
         healthstate=Healthstate(
@@ -10325,6 +11471,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
         name='mild_motor_impairment_due_to_neonatal_sepsis_and_other_neonatal_infections',
+        type='sequela',
         gbd_id=sid(1252),
         dismod_id=meid(9618),
         healthstate=Healthstate(
@@ -10334,6 +11481,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
         name='moderate_motor_impairment_due_to_neonatal_sepsis_and_other_neonatal_infections',
+        type='sequela',
         gbd_id=sid(1253),
         dismod_id=meid(9619),
         healthstate=Healthstate(
@@ -10343,6 +11491,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_with_blindness_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
         name='moderate_motor_impairment_with_blindness_due_to_neonatal_sepsis_and_other_neonatal_infections',
+        type='sequela',
         gbd_id=sid(1254),
         dismod_id=meid(9620),
         healthstate=Healthstate(
@@ -10352,6 +11501,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_with_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
         name='moderate_motor_impairment_with_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections',
+        type='sequela',
         gbd_id=sid(1255),
         dismod_id=meid(9621),
         healthstate=Healthstate(
@@ -10361,6 +11511,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
         name='moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections',
+        type='sequela',
         gbd_id=sid(1256),
         dismod_id=meid(9622),
         healthstate=Healthstate(
@@ -10370,6 +11521,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
         name='moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_sepsis_and_other_neonatal_infections',
+        type='sequela',
         gbd_id=sid(1257),
         dismod_id=meid(9623),
         healthstate=Healthstate(
@@ -10379,6 +11531,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
         name='moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections',
+        type='sequela',
         gbd_id=sid(1258),
         dismod_id=meid(9624),
         healthstate=Healthstate(
@@ -10388,6 +11541,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
         name='moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections',
+        type='sequela',
         gbd_id=sid(1259),
         dismod_id=meid(9625),
         healthstate=Healthstate(
@@ -10397,6 +11551,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
         name='severe_motor_impairment_due_to_neonatal_sepsis_and_other_neonatal_infections',
+        type='sequela',
         gbd_id=sid(1260),
         dismod_id=meid(9626),
         healthstate=Healthstate(
@@ -10406,6 +11561,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_with_blindness_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
         name='severe_motor_impairment_with_blindness_due_to_neonatal_sepsis_and_other_neonatal_infections',
+        type='sequela',
         gbd_id=sid(1261),
         dismod_id=meid(9627),
         healthstate=Healthstate(
@@ -10415,6 +11571,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_with_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
         name='severe_motor_impairment_with_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections',
+        type='sequela',
         gbd_id=sid(1262),
         dismod_id=meid(9628),
         healthstate=Healthstate(
@@ -10424,6 +11581,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
         name='severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections',
+        type='sequela',
         gbd_id=sid(1263),
         dismod_id=meid(9629),
         healthstate=Healthstate(
@@ -10433,6 +11591,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
         name='severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_sepsis_and_other_neonatal_infections',
+        type='sequela',
         gbd_id=sid(1264),
         dismod_id=meid(9630),
         healthstate=Healthstate(
@@ -10442,6 +11601,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
         name='severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections',
+        type='sequela',
         gbd_id=sid(1265),
         dismod_id=meid(9631),
         healthstate=Healthstate(
@@ -10451,6 +11611,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
         name='severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections',
+        type='sequela',
         gbd_id=sid(1266),
         dismod_id=meid(9632),
         healthstate=Healthstate(
@@ -10460,6 +11621,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
         name='borderline_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1267),
         dismod_id=meid(10157),
         healthstate=Healthstate(
@@ -10469,6 +11631,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
         name='mild_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1268),
         dismod_id=meid(10158),
         healthstate=Healthstate(
@@ -10478,6 +11641,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
         name='moderate_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1269),
         dismod_id=meid(10159),
         healthstate=Healthstate(
@@ -10487,6 +11651,7 @@ sequelae = Sequelae(**{
     ),
     'severe_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
         name='severe_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1270),
         dismod_id=meid(10160),
         healthstate=Healthstate(
@@ -10496,6 +11661,7 @@ sequelae = Sequelae(**{
     ),
     'profound_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
         name='profound_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1271),
         dismod_id=meid(10161),
         healthstate=Healthstate(
@@ -10505,6 +11671,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
         name='borderline_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1272),
         dismod_id=meid(10162),
         healthstate=Healthstate(
@@ -10514,6 +11681,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
         name='mild_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1273),
         dismod_id=meid(10163),
         healthstate=Healthstate(
@@ -10523,6 +11691,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
         name='moderate_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1274),
         dismod_id=meid(10164),
         healthstate=Healthstate(
@@ -10532,6 +11701,7 @@ sequelae = Sequelae(**{
     ),
     'severe_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
         name='severe_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1275),
         dismod_id=meid(10165),
         healthstate=Healthstate(
@@ -10541,6 +11711,7 @@ sequelae = Sequelae(**{
     ),
     'profound_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
         name='profound_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1276),
         dismod_id=meid(10166),
         healthstate=Healthstate(
@@ -10550,6 +11721,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
         name='borderline_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1277),
         dismod_id=meid(10167),
         healthstate=Healthstate(
@@ -10559,6 +11731,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
         name='mild_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1278),
         dismod_id=meid(10168),
         healthstate=Healthstate(
@@ -10568,6 +11741,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
         name='moderate_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1279),
         dismod_id=meid(10169),
         healthstate=Healthstate(
@@ -10577,6 +11751,7 @@ sequelae = Sequelae(**{
     ),
     'severe_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
         name='severe_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1280),
         dismod_id=meid(10170),
         healthstate=Healthstate(
@@ -10586,6 +11761,7 @@ sequelae = Sequelae(**{
     ),
     'profound_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
         name='profound_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1281),
         dismod_id=meid(10171),
         healthstate=Healthstate(
@@ -10595,6 +11771,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
         name='borderline_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1282),
         dismod_id=meid(10187),
         healthstate=Healthstate(
@@ -10604,6 +11781,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
         name='mild_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1283),
         dismod_id=meid(10188),
         healthstate=Healthstate(
@@ -10613,6 +11791,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
         name='moderate_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1284),
         dismod_id=meid(10189),
         healthstate=Healthstate(
@@ -10622,6 +11801,7 @@ sequelae = Sequelae(**{
     ),
     'severe_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
         name='severe_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1285),
         dismod_id=meid(10190),
         healthstate=Healthstate(
@@ -10631,6 +11811,7 @@ sequelae = Sequelae(**{
     ),
     'profound_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
         name='profound_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1286),
         dismod_id=meid(10191),
         healthstate=Healthstate(
@@ -10640,6 +11821,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
         name='borderline_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1287),
         dismod_id=meid(10192),
         healthstate=Healthstate(
@@ -10649,6 +11831,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
         name='mild_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1288),
         dismod_id=meid(10193),
         healthstate=Healthstate(
@@ -10658,6 +11841,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
         name='moderate_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1289),
         dismod_id=meid(10194),
         healthstate=Healthstate(
@@ -10667,6 +11851,7 @@ sequelae = Sequelae(**{
     ),
     'severe_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
         name='severe_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1290),
         dismod_id=meid(10195),
         healthstate=Healthstate(
@@ -10676,6 +11861,7 @@ sequelae = Sequelae(**{
     ),
     'profound_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
         name='profound_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1291),
         dismod_id=meid(10196),
         healthstate=Healthstate(
@@ -10685,6 +11871,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
         name='borderline_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1292),
         dismod_id=meid(10197),
         healthstate=Healthstate(
@@ -10694,6 +11881,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
         name='mild_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1293),
         dismod_id=meid(10198),
         healthstate=Healthstate(
@@ -10703,6 +11891,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
         name='moderate_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1294),
         dismod_id=meid(10199),
         healthstate=Healthstate(
@@ -10712,6 +11901,7 @@ sequelae = Sequelae(**{
     ),
     'severe_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
         name='severe_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1295),
         dismod_id=meid(10200),
         healthstate=Healthstate(
@@ -10721,6 +11911,7 @@ sequelae = Sequelae(**{
     ),
     'profound_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
         name='profound_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1296),
         dismod_id=meid(10201),
         healthstate=Healthstate(
@@ -10730,6 +11921,7 @@ sequelae = Sequelae(**{
     ),
     'profound_intellectual_disability_and_mild_dementia_due_to_down_syndrome': Sequela(
         name='profound_intellectual_disability_and_mild_dementia_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1297),
         dismod_id=meid(10248),
         healthstate=Healthstate(
@@ -10739,6 +11931,7 @@ sequelae = Sequelae(**{
     ),
     'severe_intellectual_disability_and_mild_dementia_due_to_down_syndrome': Sequela(
         name='severe_intellectual_disability_and_mild_dementia_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1298),
         dismod_id=meid(10249),
         healthstate=Healthstate(
@@ -10748,6 +11941,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_intellectual_disability_and_mild_dementia_due_to_down_syndrome': Sequela(
         name='moderate_intellectual_disability_and_mild_dementia_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1299),
         dismod_id=meid(10250),
         healthstate=Healthstate(
@@ -10757,6 +11951,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_and_mild_dementia_due_to_down_syndrome': Sequela(
         name='mild_intellectual_disability_and_mild_dementia_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1300),
         dismod_id=meid(10251),
         healthstate=Healthstate(
@@ -10766,6 +11961,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_and_mild_dementia_due_to_down_syndrome': Sequela(
         name='borderline_intellectual_disability_and_mild_dementia_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1301),
         dismod_id=meid(10252),
         healthstate=Healthstate(
@@ -10775,6 +11971,7 @@ sequelae = Sequelae(**{
     ),
     'profound_intellectual_disability_and_moderate_dementia_due_to_down_syndrome': Sequela(
         name='profound_intellectual_disability_and_moderate_dementia_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1302),
         dismod_id=meid(10253),
         healthstate=Healthstate(
@@ -10784,6 +11981,7 @@ sequelae = Sequelae(**{
     ),
     'severe_intellectual_disability_and_moderate_dementia_due_to_down_syndrome': Sequela(
         name='severe_intellectual_disability_and_moderate_dementia_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1303),
         dismod_id=meid(10254),
         healthstate=Healthstate(
@@ -10793,6 +11991,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_intellectual_disability_and_moderate_dementia_due_to_down_syndrome': Sequela(
         name='moderate_intellectual_disability_and_moderate_dementia_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1304),
         dismod_id=meid(10255),
         healthstate=Healthstate(
@@ -10802,6 +12001,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_and_moderate_dementia_due_to_down_syndrome': Sequela(
         name='mild_intellectual_disability_and_moderate_dementia_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1305),
         dismod_id=meid(10256),
         healthstate=Healthstate(
@@ -10811,6 +12011,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_and_moderate_dementia_due_to_down_syndrome': Sequela(
         name='borderline_intellectual_disability_and_moderate_dementia_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1306),
         dismod_id=meid(10257),
         healthstate=Healthstate(
@@ -10820,6 +12021,7 @@ sequelae = Sequelae(**{
     ),
     'profound_intellectual_disability_and_severe_dementia_due_to_down_syndrome': Sequela(
         name='profound_intellectual_disability_and_severe_dementia_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1307),
         dismod_id=meid(10258),
         healthstate=Healthstate(
@@ -10829,6 +12031,7 @@ sequelae = Sequelae(**{
     ),
     'severe_intellectual_disability_and_severe_dementia_due_to_down_syndrome': Sequela(
         name='severe_intellectual_disability_and_severe_dementia_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1308),
         dismod_id=meid(10259),
         healthstate=Healthstate(
@@ -10838,6 +12041,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_intellectual_disability_and_severe_dementia_due_to_down_syndrome': Sequela(
         name='moderate_intellectual_disability_and_severe_dementia_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1309),
         dismod_id=meid(10260),
         healthstate=Healthstate(
@@ -10847,6 +12051,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_and_severe_dementia_due_to_down_syndrome': Sequela(
         name='mild_intellectual_disability_and_severe_dementia_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1310),
         dismod_id=meid(10261),
         healthstate=Healthstate(
@@ -10856,6 +12061,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_and_severe_dementia_due_to_down_syndrome': Sequela(
         name='borderline_intellectual_disability_and_severe_dementia_due_to_down_syndrome',
+        type='sequela',
         gbd_id=sid(1311),
         dismod_id=meid(10262),
         healthstate=Healthstate(
@@ -10865,6 +12071,7 @@ sequelae = Sequelae(**{
     ),
     'profound_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities': Sequela(
         name='profound_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1312),
         dismod_id=meid(10278),
         healthstate=Healthstate(
@@ -10874,6 +12081,7 @@ sequelae = Sequelae(**{
     ),
     'severe_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities': Sequela(
         name='severe_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1313),
         dismod_id=meid(10279),
         healthstate=Healthstate(
@@ -10883,6 +12091,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities': Sequela(
         name='moderate_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1314),
         dismod_id=meid(10280),
         healthstate=Healthstate(
@@ -10892,6 +12101,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities': Sequela(
         name='mild_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1315),
         dismod_id=meid(10281),
         healthstate=Healthstate(
@@ -10901,6 +12111,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities': Sequela(
         name='borderline_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1316),
         dismod_id=meid(10282),
         healthstate=Healthstate(
@@ -10910,6 +12121,7 @@ sequelae = Sequelae(**{
     ),
     'profound_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities': Sequela(
         name='profound_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1317),
         dismod_id=meid(10283),
         healthstate=Healthstate(
@@ -10919,6 +12131,7 @@ sequelae = Sequelae(**{
     ),
     'severe_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities': Sequela(
         name='severe_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1318),
         dismod_id=meid(10284),
         healthstate=Healthstate(
@@ -10928,6 +12141,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities': Sequela(
         name='moderate_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1319),
         dismod_id=meid(10285),
         healthstate=Healthstate(
@@ -10937,6 +12151,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities': Sequela(
         name='mild_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1320),
         dismod_id=meid(10286),
         healthstate=Healthstate(
@@ -10946,6 +12161,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities': Sequela(
         name='borderline_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1321),
         dismod_id=meid(10287),
         healthstate=Healthstate(
@@ -10955,6 +12171,7 @@ sequelae = Sequelae(**{
     ),
     'profound_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities': Sequela(
         name='profound_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1322),
         dismod_id=meid(10288),
         healthstate=Healthstate(
@@ -10964,6 +12181,7 @@ sequelae = Sequelae(**{
     ),
     'severe_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities': Sequela(
         name='severe_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1323),
         dismod_id=meid(10289),
         healthstate=Healthstate(
@@ -10973,6 +12191,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities': Sequela(
         name='moderate_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1324),
         dismod_id=meid(10290),
         healthstate=Healthstate(
@@ -10982,6 +12201,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities': Sequela(
         name='mild_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1325),
         dismod_id=meid(10291),
         healthstate=Healthstate(
@@ -10991,6 +12211,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities': Sequela(
         name='borderline_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities',
+        type='sequela',
         gbd_id=sid(1326),
         dismod_id=meid(10292),
         healthstate=Healthstate(
@@ -11000,6 +12221,7 @@ sequelae = Sequelae(**{
     ),
     'autism_without_intellectual_disability': Sequela(
         name='autism_without_intellectual_disability',
+        type='sequela',
         gbd_id=sid(1327),
         dismod_id=meid(10302),
         healthstate=Healthstate(
@@ -11009,6 +12231,7 @@ sequelae = Sequelae(**{
     ),
     'autism_with_borderline_intellectual_disability': Sequela(
         name='autism_with_borderline_intellectual_disability',
+        type='sequela',
         gbd_id=sid(1328),
         dismod_id=meid(10303),
         healthstate=Healthstate(
@@ -11018,6 +12241,7 @@ sequelae = Sequelae(**{
     ),
     'autism_with_mild_intellectual_disability': Sequela(
         name='autism_with_mild_intellectual_disability',
+        type='sequela',
         gbd_id=sid(1329),
         dismod_id=meid(10304),
         healthstate=Healthstate(
@@ -11027,6 +12251,7 @@ sequelae = Sequelae(**{
     ),
     'autism_with_moderate_intellectual_disability': Sequela(
         name='autism_with_moderate_intellectual_disability',
+        type='sequela',
         gbd_id=sid(1330),
         dismod_id=meid(10305),
         healthstate=Healthstate(
@@ -11036,6 +12261,7 @@ sequelae = Sequelae(**{
     ),
     'autism_with_severe_intellectual_disability': Sequela(
         name='autism_with_severe_intellectual_disability',
+        type='sequela',
         gbd_id=sid(1331),
         dismod_id=meid(10306),
         healthstate=Healthstate(
@@ -11045,6 +12271,7 @@ sequelae = Sequelae(**{
     ),
     'autism_with_profound_intellectual_disability': Sequela(
         name='autism_with_profound_intellectual_disability',
+        type='sequela',
         gbd_id=sid(1332),
         dismod_id=meid(10307),
         healthstate=Healthstate(
@@ -11054,6 +12281,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_acute_sense_organ_diseases': Sequela(
         name='asymptomatic_acute_sense_organ_diseases',
+        type='sequela',
         gbd_id=sid(1333),
         dismod_id=meid(10311),
         healthstate=Healthstate(
@@ -11063,6 +12291,7 @@ sequelae = Sequelae(**{
     ),
     'mild_acute_sense_organ_diseases': Sequela(
         name='mild_acute_sense_organ_diseases',
+        type='sequela',
         gbd_id=sid(1334),
         dismod_id=meid(10312),
         healthstate=Healthstate(
@@ -11072,6 +12301,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_acute_sense_organ_diseases': Sequela(
         name='moderate_acute_sense_organ_diseases',
+        type='sequela',
         gbd_id=sid(1335),
         dismod_id=meid(10313),
         healthstate=Healthstate(
@@ -11081,6 +12311,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_chronic_sense_organ_diseases': Sequela(
         name='asymptomatic_chronic_sense_organ_diseases',
+        type='sequela',
         gbd_id=sid(1337),
         dismod_id=meid(10315),
         healthstate=Healthstate(
@@ -11090,6 +12321,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_chronic_sense_organ_diseases': Sequela(
         name='moderate_chronic_sense_organ_diseases',
+        type='sequela',
         gbd_id=sid(1339),
         dismod_id=meid(10317),
         healthstate=Healthstate(
@@ -11099,6 +12331,7 @@ sequelae = Sequelae(**{
     ),
     'severe_chronic_sense_organ_diseases': Sequela(
         name='severe_chronic_sense_organ_diseases',
+        type='sequela',
         gbd_id=sid(1340),
         dismod_id=meid(10318),
         healthstate=Healthstate(
@@ -11108,6 +12341,7 @@ sequelae = Sequelae(**{
     ),
     'mild_paragonimiasis_due_to_food_borne_trematodiases': Sequela(
         name='mild_paragonimiasis_due_to_food_borne_trematodiases',
+        type='sequela',
         gbd_id=sid(1341),
         dismod_id=meid(10327),
         healthstate=Healthstate(
@@ -11117,6 +12351,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_paragonimiasis_due_to_food_borne_trematodiases': Sequela(
         name='moderate_paragonimiasis_due_to_food_borne_trematodiases',
+        type='sequela',
         gbd_id=sid(1342),
         dismod_id=meid(10328),
         healthstate=Healthstate(
@@ -11126,6 +12361,7 @@ sequelae = Sequelae(**{
     ),
     'severe_paragonimiasis_due_to_food_borne_trematodiases': Sequela(
         name='severe_paragonimiasis_due_to_food_borne_trematodiases',
+        type='sequela',
         gbd_id=sid(1343),
         dismod_id=meid(10329),
         healthstate=Healthstate(
@@ -11135,6 +12371,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_medication_overuse_headache_due_to_migraine': Sequela(
         name='asymptomatic_medication_overuse_headache_due_to_migraine',
+        type='sequela',
         gbd_id=sid(1346),
         dismod_id=meid(10848),
         healthstate=Healthstate(
@@ -11144,6 +12381,7 @@ sequelae = Sequelae(**{
     ),
     'symptomatic_medication_overuse_headache_due_to_migraine': Sequela(
         name='symptomatic_medication_overuse_headache_due_to_migraine',
+        type='sequela',
         gbd_id=sid(1349),
         dismod_id=meid(10849),
         healthstate=Healthstate(
@@ -11153,6 +12391,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_medication_overuse_headache_due_to_tension_type_headache': Sequela(
         name='asymptomatic_medication_overuse_headache_due_to_tension_type_headache',
+        type='sequela',
         gbd_id=sid(1352),
         dismod_id=meid(10851),
         healthstate=Healthstate(
@@ -11162,6 +12401,7 @@ sequelae = Sequelae(**{
     ),
     'symptomatic_medication_overuse_headache_due_to_tension_type_headache': Sequela(
         name='symptomatic_medication_overuse_headache_due_to_tension_type_headache',
+        type='sequela',
         gbd_id=sid(1355),
         dismod_id=meid(10852),
         healthstate=Healthstate(
@@ -11171,6 +12411,7 @@ sequelae = Sequelae(**{
     ),
     'stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_diabetes_mellitus': Sequela(
         name='stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_diabetes_mellitus',
+        type='sequela',
         gbd_id=sid(1358),
         dismod_id=meid(10865),
         healthstate=Healthstate(
@@ -11180,6 +12421,7 @@ sequelae = Sequelae(**{
     ),
     'stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_diabetes_mellitus': Sequela(
         name='stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_diabetes_mellitus',
+        type='sequela',
         gbd_id=sid(1361),
         dismod_id=meid(10866),
         healthstate=Healthstate(
@@ -11189,6 +12431,7 @@ sequelae = Sequelae(**{
     ),
     'stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_diabetes_mellitus': Sequela(
         name='stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_diabetes_mellitus',
+        type='sequela',
         gbd_id=sid(1364),
         dismod_id=meid(10867),
         healthstate=Healthstate(
@@ -11198,6 +12441,7 @@ sequelae = Sequelae(**{
     ),
     'stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_diabetes_mellitus': Sequela(
         name='stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_diabetes_mellitus',
+        type='sequela',
         gbd_id=sid(1367),
         dismod_id=meid(10868),
         healthstate=Healthstate(
@@ -11207,6 +12451,7 @@ sequelae = Sequelae(**{
     ),
     'stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_hypertension': Sequela(
         name='stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_hypertension',
+        type='sequela',
         gbd_id=sid(1370),
         dismod_id=meid(10869),
         healthstate=Healthstate(
@@ -11216,6 +12461,7 @@ sequelae = Sequelae(**{
     ),
     'stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_hypertension': Sequela(
         name='stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_hypertension',
+        type='sequela',
         gbd_id=sid(1373),
         dismod_id=meid(10870),
         healthstate=Healthstate(
@@ -11225,6 +12471,7 @@ sequelae = Sequelae(**{
     ),
     'stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_hypertension': Sequela(
         name='stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_hypertension',
+        type='sequela',
         gbd_id=sid(1376),
         dismod_id=meid(10871),
         healthstate=Healthstate(
@@ -11234,6 +12481,7 @@ sequelae = Sequelae(**{
     ),
     'stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_hypertension': Sequela(
         name='stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_hypertension',
+        type='sequela',
         gbd_id=sid(1379),
         dismod_id=meid(10872),
         healthstate=Healthstate(
@@ -11243,6 +12491,7 @@ sequelae = Sequelae(**{
     ),
     'stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_glomerulonephritis': Sequela(
         name='stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_glomerulonephritis',
+        type='sequela',
         gbd_id=sid(1382),
         dismod_id=meid(10873),
         healthstate=Healthstate(
@@ -11252,6 +12501,7 @@ sequelae = Sequelae(**{
     ),
     'stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_glomerulonephritis': Sequela(
         name='stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_glomerulonephritis',
+        type='sequela',
         gbd_id=sid(1385),
         dismod_id=meid(10874),
         healthstate=Healthstate(
@@ -11261,6 +12511,7 @@ sequelae = Sequelae(**{
     ),
     'stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_glomerulonephritis': Sequela(
         name='stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_glomerulonephritis',
+        type='sequela',
         gbd_id=sid(1388),
         dismod_id=meid(10875),
         healthstate=Healthstate(
@@ -11270,6 +12521,7 @@ sequelae = Sequelae(**{
     ),
     'stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_glomerulonephritis': Sequela(
         name='stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_glomerulonephritis',
+        type='sequela',
         gbd_id=sid(1391),
         dismod_id=meid(10876),
         healthstate=Healthstate(
@@ -11279,6 +12531,7 @@ sequelae = Sequelae(**{
     ),
     'stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_other_causes': Sequela(
         name='stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_other_causes',
+        type='sequela',
         gbd_id=sid(1394),
         dismod_id=meid(10877),
         healthstate=Healthstate(
@@ -11288,6 +12541,7 @@ sequelae = Sequelae(**{
     ),
     'stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_causes': Sequela(
         name='stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_causes',
+        type='sequela',
         gbd_id=sid(1397),
         dismod_id=meid(10878),
         healthstate=Healthstate(
@@ -11297,6 +12551,7 @@ sequelae = Sequelae(**{
     ),
     'stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_causes': Sequela(
         name='stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_causes',
+        type='sequela',
         gbd_id=sid(1400),
         dismod_id=meid(10879),
         healthstate=Healthstate(
@@ -11306,6 +12561,7 @@ sequelae = Sequelae(**{
     ),
     'stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_causes': Sequela(
         name='stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_causes',
+        type='sequela',
         gbd_id=sid(1403),
         dismod_id=meid(10880),
         healthstate=Healthstate(
@@ -11315,6 +12571,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_diabetes_mellitus': Sequela(
         name='stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_diabetes_mellitus',
+        type='sequela',
         gbd_id=sid(1406),
         dismod_id=meid(10893),
         healthstate=Healthstate(
@@ -11324,6 +12581,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_diabetes_mellitus': Sequela(
         name='stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_diabetes_mellitus',
+        type='sequela',
         gbd_id=sid(1409),
         dismod_id=meid(10894),
         healthstate=Healthstate(
@@ -11333,6 +12591,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_diabetes_mellitus': Sequela(
         name='stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_diabetes_mellitus',
+        type='sequela',
         gbd_id=sid(1412),
         dismod_id=meid(10895),
         healthstate=Healthstate(
@@ -11342,6 +12601,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_diabetes_mellitus': Sequela(
         name='stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_diabetes_mellitus',
+        type='sequela',
         gbd_id=sid(1415),
         dismod_id=meid(10896),
         healthstate=Healthstate(
@@ -11351,6 +12611,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_hypertension': Sequela(
         name='stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_hypertension',
+        type='sequela',
         gbd_id=sid(1418),
         dismod_id=meid(10897),
         healthstate=Healthstate(
@@ -11360,6 +12621,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_hypertension': Sequela(
         name='stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_hypertension',
+        type='sequela',
         gbd_id=sid(1421),
         dismod_id=meid(10898),
         healthstate=Healthstate(
@@ -11369,6 +12631,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_hypertension': Sequela(
         name='stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_hypertension',
+        type='sequela',
         gbd_id=sid(1424),
         dismod_id=meid(10899),
         healthstate=Healthstate(
@@ -11378,6 +12641,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_hypertension': Sequela(
         name='stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_hypertension',
+        type='sequela',
         gbd_id=sid(1427),
         dismod_id=meid(10900),
         healthstate=Healthstate(
@@ -11387,6 +12651,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_glomerulonephritis': Sequela(
         name='stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_glomerulonephritis',
+        type='sequela',
         gbd_id=sid(1430),
         dismod_id=meid(10901),
         healthstate=Healthstate(
@@ -11396,6 +12661,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_glomerulonephritis': Sequela(
         name='stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_glomerulonephritis',
+        type='sequela',
         gbd_id=sid(1433),
         dismod_id=meid(10902),
         healthstate=Healthstate(
@@ -11405,6 +12671,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_glomerulonephritis': Sequela(
         name='stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_glomerulonephritis',
+        type='sequela',
         gbd_id=sid(1436),
         dismod_id=meid(10903),
         healthstate=Healthstate(
@@ -11414,6 +12681,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_glomerulonephritis': Sequela(
         name='stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_glomerulonephritis',
+        type='sequela',
         gbd_id=sid(1439),
         dismod_id=meid(10904),
         healthstate=Healthstate(
@@ -11423,6 +12691,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_other_causes': Sequela(
         name='stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_other_causes',
+        type='sequela',
         gbd_id=sid(1442),
         dismod_id=meid(10905),
         healthstate=Healthstate(
@@ -11432,6 +12701,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_causes': Sequela(
         name='stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_causes',
+        type='sequela',
         gbd_id=sid(1445),
         dismod_id=meid(10906),
         healthstate=Healthstate(
@@ -11441,6 +12711,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_causes': Sequela(
         name='stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_causes',
+        type='sequela',
         gbd_id=sid(1448),
         dismod_id=meid(10907),
         healthstate=Healthstate(
@@ -11450,6 +12721,7 @@ sequelae = Sequelae(**{
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_causes': Sequela(
         name='stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_causes',
+        type='sequela',
         gbd_id=sid(1451),
         dismod_id=meid(10908),
         healthstate=Healthstate(
@@ -11459,6 +12731,7 @@ sequelae = Sequelae(**{
     ),
     'skin_disfigurement_due_to_trypanosoma_brucei_gambiense': Sequela(
         name='skin_disfigurement_due_to_trypanosoma_brucei_gambiense',
+        type='sequela',
         gbd_id=sid(1454),
         dismod_id=meid(10918),
         healthstate=Healthstate(
@@ -11468,6 +12741,7 @@ sequelae = Sequelae(**{
     ),
     'sleeping_sickness_due_to_trypanosoma_brucei_gambiense': Sequela(
         name='sleeping_sickness_due_to_trypanosoma_brucei_gambiense',
+        type='sequela',
         gbd_id=sid(1457),
         dismod_id=meid(10919),
         healthstate=Healthstate(
@@ -11477,6 +12751,7 @@ sequelae = Sequelae(**{
     ),
     'sleeping_sickness_due_to_trypanosoma_brucei_rhodesiense': Sequela(
         name='sleeping_sickness_due_to_trypanosoma_brucei_rhodesiense',
+        type='sequela',
         gbd_id=sid(1460),
         dismod_id=meid(10921),
         healthstate=Healthstate(
@@ -11486,6 +12761,7 @@ sequelae = Sequelae(**{
     ),
     'skin_disfigurement_due_to_trypanosoma_brucei_rhodesiense': Sequela(
         name='skin_disfigurement_due_to_trypanosoma_brucei_rhodesiense',
+        type='sequela',
         gbd_id=sid(1463),
         dismod_id=meid(10920),
         healthstate=Healthstate(
@@ -11495,6 +12771,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_pain_due_to_guinea_worm_emergence': Sequela(
         name='moderate_pain_due_to_guinea_worm_emergence',
+        type='sequela',
         gbd_id=sid(1469),
         dismod_id=meid(11646),
         healthstate=Healthstate(
@@ -11504,6 +12781,7 @@ sequelae = Sequelae(**{
     ),
     'metastatic_phase_of_other_leukemia': Sequela(
         name='metastatic_phase_of_other_leukemia',
+        type='sequela',
         gbd_id=sid(1481),
         dismod_id=meid(10739),
         healthstate=Healthstate(
@@ -11513,6 +12791,7 @@ sequelae = Sequelae(**{
     ),
     'diagnosis_and_primary_therapy_phase_of_other_leukemia': Sequela(
         name='diagnosis_and_primary_therapy_phase_of_other_leukemia',
+        type='sequela',
         gbd_id=sid(1484),
         dismod_id=meid(10737),
         healthstate=Healthstate(
@@ -11522,6 +12801,7 @@ sequelae = Sequelae(**{
     ),
     'terminal_phase_of_other_leukemia': Sequela(
         name='terminal_phase_of_other_leukemia',
+        type='sequela',
         gbd_id=sid(1487),
         dismod_id=meid(10740),
         healthstate=Healthstate(
@@ -11531,15 +12811,17 @@ sequelae = Sequelae(**{
     ),
     'controlled_phase_of_other_leukemia': Sequela(
         name='controlled_phase_of_other_leukemia',
+        type='sequela',
         gbd_id=sid(1490),
         dismod_id=meid(10738),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
     'drug_susceptible_tuberculosis': Sequela(
         name='drug_susceptible_tuberculosis',
+        type='sequela',
         gbd_id=sid(1493),
         dismod_id=meid(10829),
         healthstate=Healthstate(
@@ -11549,6 +12831,7 @@ sequelae = Sequelae(**{
     ),
     'multidrug_resistant_tuberculosis_without_extensive_drug_resistance': Sequela(
         name='multidrug_resistant_tuberculosis_without_extensive_drug_resistance',
+        type='sequela',
         gbd_id=sid(1496),
         dismod_id=meid(10830),
         healthstate=Healthstate(
@@ -11558,6 +12841,7 @@ sequelae = Sequelae(**{
     ),
     'extensively_drug_resistant_tuberculosis': Sequela(
         name='extensively_drug_resistant_tuberculosis',
+        type='sequela',
         gbd_id=sid(1499),
         dismod_id=meid(10831),
         healthstate=Healthstate(
@@ -11567,6 +12851,7 @@ sequelae = Sequelae(**{
     ),
     'acute_zika_infection': Sequela(
         name='acute_zika_infection',
+        type='sequela',
         gbd_id=sid(1511),
         dismod_id=meid(10401),
         healthstate=Healthstate(
@@ -11576,6 +12861,7 @@ sequelae = Sequelae(**{
     ),
     'guillain_barre_syndrome_due_to_zika_infection': Sequela(
         name='guillain_barre_syndrome_due_to_zika_infection',
+        type='sequela',
         gbd_id=sid(1514),
         dismod_id=meid(10402),
         healthstate=Healthstate(
@@ -11585,6 +12871,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_zika_syndrome': Sequela(
         name='congenital_zika_syndrome',
+        type='sequela',
         gbd_id=sid(1517),
         dismod_id=meid(10403),
         healthstate=Healthstate(
@@ -11594,6 +12881,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_zika_infection': Sequela(
         name='asymptomatic_zika_infection',
+        type='sequela',
         gbd_id=sid(1520),
         dismod_id=meid(11028),
         healthstate=Healthstate(
@@ -11603,6 +12891,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_and_mild_heart_failure_due_to_myocarditis': Sequela(
         name='asymptomatic_and_mild_heart_failure_due_to_myocarditis',
+        type='sequela',
         gbd_id=sid(1523),
         dismod_id=meid(11216),
         healthstate=Healthstate(
@@ -11612,6 +12901,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_heart_failure_due_to_myocarditis': Sequela(
         name='moderate_heart_failure_due_to_myocarditis',
+        type='sequela',
         gbd_id=sid(1526),
         dismod_id=meid(11217),
         healthstate=Healthstate(
@@ -11621,6 +12911,7 @@ sequelae = Sequelae(**{
     ),
     'severe_heart_failure_due_to_myocarditis': Sequela(
         name='severe_heart_failure_due_to_myocarditis',
+        type='sequela',
         gbd_id=sid(1529),
         dismod_id=meid(11218),
         healthstate=Healthstate(
@@ -11630,6 +12921,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_and_mild_heart_failure_due_to_alcoholic_cardiomyopathy': Sequela(
         name='asymptomatic_and_mild_heart_failure_due_to_alcoholic_cardiomyopathy',
+        type='sequela',
         gbd_id=sid(1532),
         dismod_id=meid(11219),
         healthstate=Healthstate(
@@ -11639,6 +12931,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_heart_failure_due_to_alcoholic_cardiomyopathy': Sequela(
         name='moderate_heart_failure_due_to_alcoholic_cardiomyopathy',
+        type='sequela',
         gbd_id=sid(1535),
         dismod_id=meid(11220),
         healthstate=Healthstate(
@@ -11648,6 +12941,7 @@ sequelae = Sequelae(**{
     ),
     'severe_heart_failure_due_to_alcoholic_cardiomyopathy': Sequela(
         name='severe_heart_failure_due_to_alcoholic_cardiomyopathy',
+        type='sequela',
         gbd_id=sid(1538),
         dismod_id=meid(11221),
         healthstate=Healthstate(
@@ -11657,6 +12951,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_and_mild_heart_failure_due_to_other_cardiomyopathy': Sequela(
         name='asymptomatic_and_mild_heart_failure_due_to_other_cardiomyopathy',
+        type='sequela',
         gbd_id=sid(1541),
         dismod_id=meid(11222),
         healthstate=Healthstate(
@@ -11666,6 +12961,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_heart_failure_due_to_other_cardiomyopathy': Sequela(
         name='moderate_heart_failure_due_to_other_cardiomyopathy',
+        type='sequela',
         gbd_id=sid(1544),
         dismod_id=meid(11223),
         healthstate=Healthstate(
@@ -11675,6 +12971,7 @@ sequelae = Sequelae(**{
     ),
     'severe_heart_failure_due_to_other_cardiomyopathy': Sequela(
         name='severe_heart_failure_due_to_other_cardiomyopathy',
+        type='sequela',
         gbd_id=sid(1547),
         dismod_id=meid(11224),
         healthstate=Healthstate(
@@ -11684,6 +12981,7 @@ sequelae = Sequelae(**{
     ),
     'disfigurement_level_1_due_to_polydactyly_and_syndactyly': Sequela(
         name='disfigurement_level_1_due_to_polydactyly_and_syndactyly',
+        type='sequela',
         gbd_id=sid(1550),
         dismod_id=meid(11108),
         healthstate=Healthstate(
@@ -11693,6 +12991,7 @@ sequelae = Sequelae(**{
     ),
     'disfigurement_level_2_due_to_congenital_limb_deficiency': Sequela(
         name='disfigurement_level_2_due_to_congenital_limb_deficiency',
+        type='sequela',
         gbd_id=sid(1553),
         dismod_id=meid(11109),
         healthstate=Healthstate(
@@ -11702,6 +13001,7 @@ sequelae = Sequelae(**{
     ),
     'disfigurement_level_2_with_pain_due_to_congenital_limb_deficiency': Sequela(
         name='disfigurement_level_2_with_pain_due_to_congenital_limb_deficiency',
+        type='sequela',
         gbd_id=sid(1556),
         dismod_id=meid(11110),
         healthstate=Healthstate(
@@ -11711,6 +13011,7 @@ sequelae = Sequelae(**{
     ),
     'disfigurement_level_2_and_mild_motor_impairment_due_to_congenital_limb_deficiency': Sequela(
         name='disfigurement_level_2_and_mild_motor_impairment_due_to_congenital_limb_deficiency',
+        type='sequela',
         gbd_id=sid(1565),
         dismod_id=meid(11113),
         healthstate=Healthstate(
@@ -11720,6 +13021,7 @@ sequelae = Sequelae(**{
     ),
     'disfigurement_level_2_and_moderate_motor_impairment_due_to_congenital_limb_deficiency': Sequela(
         name='disfigurement_level_2_and_moderate_motor_impairment_due_to_congenital_limb_deficiency',
+        type='sequela',
         gbd_id=sid(1568),
         dismod_id=meid(11114),
         healthstate=Healthstate(
@@ -11729,6 +13031,7 @@ sequelae = Sequelae(**{
     ),
     'disfigurement_level_2_with_pain_and_mild_motor_impairment_due_to_congenital_limb_deficiency': Sequela(
         name='disfigurement_level_2_with_pain_and_mild_motor_impairment_due_to_congenital_limb_deficiency',
+        type='sequela',
         gbd_id=sid(1571),
         dismod_id=meid(11115),
         healthstate=Healthstate(
@@ -11738,6 +13041,7 @@ sequelae = Sequelae(**{
     ),
     'disfigurement_level_2_with_pain_and_moderate_motor_impairment_due_to_congenital_limb_deficiency': Sequela(
         name='disfigurement_level_2_with_pain_and_moderate_motor_impairment_due_to_congenital_limb_deficiency',
+        type='sequela',
         gbd_id=sid(1574),
         dismod_id=meid(11116),
         healthstate=Healthstate(
@@ -11747,6 +13051,7 @@ sequelae = Sequelae(**{
     ),
     'disfigurement_level_2_due_to_other_congenital_musculoskeletal_anomalies': Sequela(
         name='disfigurement_level_2_due_to_other_congenital_musculoskeletal_anomalies',
+        type='sequela',
         gbd_id=sid(1577),
         dismod_id=meid(11117),
         healthstate=Healthstate(
@@ -11756,6 +13061,7 @@ sequelae = Sequelae(**{
     ),
     'disfigurement_level_2_with_pain_due_to_other_congenital_musculoskeletal_anomalies': Sequela(
         name='disfigurement_level_2_with_pain_due_to_other_congenital_musculoskeletal_anomalies',
+        type='sequela',
         gbd_id=sid(1580),
         dismod_id=meid(11118),
         healthstate=Healthstate(
@@ -11765,6 +13071,7 @@ sequelae = Sequelae(**{
     ),
     'disfigurement_level_2_and_mild_motor_impairment_due_to_other_congenital_musculoskeletal_anomalies': Sequela(
         name='disfigurement_level_2_and_mild_motor_impairment_due_to_other_congenital_musculoskeletal_anomalies',
+        type='sequela',
         gbd_id=sid(1589),
         dismod_id=meid(11121),
         healthstate=Healthstate(
@@ -11774,6 +13081,7 @@ sequelae = Sequelae(**{
     ),
     'disfigurement_level_2_and_moderate_motor_impairment_due_to_other_congenital_musculoskeletal_anomalies': Sequela(
         name='disfigurement_level_2_and_moderate_motor_impairment_due_to_other_congenital_musculoskeletal_anomalies',
+        type='sequela',
         gbd_id=sid(1592),
         dismod_id=meid(11122),
         healthstate=Healthstate(
@@ -11783,6 +13091,7 @@ sequelae = Sequelae(**{
     ),
     'disfigurement_level_2_with_pain_and_mild_motor_impairment_due_to_other_congenital_musculoskeletal_anomalies': Sequela(
         name='disfigurement_level_2_with_pain_and_mild_motor_impairment_due_to_other_congenital_musculoskeletal_anomalies',
+        type='sequela',
         gbd_id=sid(1595),
         dismod_id=meid(11123),
         healthstate=Healthstate(
@@ -11792,6 +13101,7 @@ sequelae = Sequelae(**{
     ),
     'disfigurement_level_2_with_pain_and_moderate_motor_impairment_due_to_other_congenital_musculoskeletal_anomalies': Sequela(
         name='disfigurement_level_2_with_pain_and_moderate_motor_impairment_due_to_other_congenital_musculoskeletal_anomalies',
+        type='sequela',
         gbd_id=sid(1598),
         dismod_id=meid(11124),
         healthstate=Healthstate(
@@ -11801,6 +13111,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_congenital_diaphragmatic_hernia': Sequela(
         name='asymptomatic_congenital_diaphragmatic_hernia',
+        type='sequela',
         gbd_id=sid(1601),
         dismod_id=meid(11077),
         healthstate=Healthstate(
@@ -11810,6 +13121,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_abdominal_pain_due_to_congenital_diaphragmatic_hernia': Sequela(
         name='chronic_abdominal_pain_due_to_congenital_diaphragmatic_hernia',
+        type='sequela',
         gbd_id=sid(1604),
         dismod_id=meid(11078),
         healthstate=Healthstate(
@@ -11819,6 +13131,7 @@ sequelae = Sequelae(**{
     ),
     'disfigurement_due_to_congenital_diaphragmatic_hernia': Sequela(
         name='disfigurement_due_to_congenital_diaphragmatic_hernia',
+        type='sequela',
         gbd_id=sid(1607),
         dismod_id=meid(11079),
         healthstate=Healthstate(
@@ -11828,6 +13141,7 @@ sequelae = Sequelae(**{
     ),
     'mild_chronic_respiratory_problems_and_breathlessness_due_to_congenital_diaphragmatic_hernia': Sequela(
         name='mild_chronic_respiratory_problems_and_breathlessness_due_to_congenital_diaphragmatic_hernia',
+        type='sequela',
         gbd_id=sid(1610),
         dismod_id=meid(11080),
         healthstate=Healthstate(
@@ -11837,6 +13151,7 @@ sequelae = Sequelae(**{
     ),
     'developmental_delay_or_mild_intellectual_disability_due_to_congenital_diaphragmatic_hernia': Sequela(
         name='developmental_delay_or_mild_intellectual_disability_due_to_congenital_diaphragmatic_hernia',
+        type='sequela',
         gbd_id=sid(1613),
         dismod_id=meid(11081),
         healthstate=Healthstate(
@@ -11846,6 +13161,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_abdominal_pain_and_disfigurement_due_to_congenital_diaphragmatic_hernia': Sequela(
         name='chronic_abdominal_pain_and_disfigurement_due_to_congenital_diaphragmatic_hernia',
+        type='sequela',
         gbd_id=sid(1616),
         dismod_id=meid(11082),
         healthstate=Healthstate(
@@ -11855,6 +13171,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_abdominal_pain_and_mild_chronic_respiratory_problems_due_to_congenital_diaphragmatic_hernia': Sequela(
         name='chronic_abdominal_pain_and_mild_chronic_respiratory_problems_due_to_congenital_diaphragmatic_hernia',
+        type='sequela',
         gbd_id=sid(1619),
         dismod_id=meid(11083),
         healthstate=Healthstate(
@@ -11864,6 +13181,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_abdominal_pain_and_developmental_delay_due_to_congenital_diaphragmatic_hernia': Sequela(
         name='chronic_abdominal_pain_and_developmental_delay_due_to_congenital_diaphragmatic_hernia',
+        type='sequela',
         gbd_id=sid(1622),
         dismod_id=meid(11084),
         healthstate=Healthstate(
@@ -11873,6 +13191,7 @@ sequelae = Sequelae(**{
     ),
     'disfigurement_and_mild_chronic_respiratory_problems_due_to_congenital_diaphragmatic_hernia': Sequela(
         name='disfigurement_and_mild_chronic_respiratory_problems_due_to_congenital_diaphragmatic_hernia',
+        type='sequela',
         gbd_id=sid(1625),
         dismod_id=meid(11085),
         healthstate=Healthstate(
@@ -11882,6 +13201,7 @@ sequelae = Sequelae(**{
     ),
     'disfigurement_and_developmental_delay_due_to_congenital_diaphragmatic_hernia': Sequela(
         name='disfigurement_and_developmental_delay_due_to_congenital_diaphragmatic_hernia',
+        type='sequela',
         gbd_id=sid(1628),
         dismod_id=meid(11086),
         healthstate=Healthstate(
@@ -11891,6 +13211,7 @@ sequelae = Sequelae(**{
     ),
     '_mild_chronic_respiratory_problems_and_developmental_delay_due_to_congenital_diaphragmatic_hernia': Sequela(
         name='_mild_chronic_respiratory_problems_and_developmental_delay_due_to_congenital_diaphragmatic_hernia',
+        type='sequela',
         gbd_id=sid(1631),
         dismod_id=meid(11087),
         healthstate=Healthstate(
@@ -11900,6 +13221,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_abdominal_pain_disfigurement_and_chronic_respiratory_problems_due_to_congenital_diaphragmatic_hernia': Sequela(
         name='chronic_abdominal_pain_disfigurement_and_chronic_respiratory_problems_due_to_congenital_diaphragmatic_hernia',
+        type='sequela',
         gbd_id=sid(1634),
         dismod_id=meid(11088),
         healthstate=Healthstate(
@@ -11909,6 +13231,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_abdominal_pain_disfigurement_and_developmental_delay_due_to_congenital_diaphragmatic_hernia': Sequela(
         name='chronic_abdominal_pain_disfigurement_and_developmental_delay_due_to_congenital_diaphragmatic_hernia',
+        type='sequela',
         gbd_id=sid(1637),
         dismod_id=meid(11089),
         healthstate=Healthstate(
@@ -11918,6 +13241,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_abdominal_pain_chronic_respiratory_problems_and_developmental_delay_due_to_congenital_diaphragmatic_hernia': Sequela(
         name='chronic_abdominal_pain_chronic_respiratory_problems_and_developmental_delay_due_to_congenital_diaphragmatic_hernia',
+        type='sequela',
         gbd_id=sid(1640),
         dismod_id=meid(11090),
         healthstate=Healthstate(
@@ -11927,6 +13251,7 @@ sequelae = Sequelae(**{
     ),
     'disfigurement_chronic_respiratory_problems_and_developmental_delay_due_to_congenital_diaphragmatic_hernia': Sequela(
         name='disfigurement_chronic_respiratory_problems_and_developmental_delay_due_to_congenital_diaphragmatic_hernia',
+        type='sequela',
         gbd_id=sid(1643),
         dismod_id=meid(11091),
         healthstate=Healthstate(
@@ -11936,6 +13261,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_abdominal_pain_disfigurement_developmental_delay_and_chronic_respiratory_problems_due_to_congenital_diaphragmatic_hernia': Sequela(
         name='chronic_abdominal_pain_disfigurement_developmental_delay_and_chronic_respiratory_problems_due_to_congenital_diaphragmatic_hernia',
+        type='sequela',
         gbd_id=sid(1646),
         dismod_id=meid(11092),
         healthstate=Healthstate(
@@ -11945,6 +13271,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_congenital_atresia_and_or_stenosis_of_the_digestive_tract': Sequela(
         name='asymptomatic_congenital_atresia_and_or_stenosis_of_the_digestive_tract',
+        type='sequela',
         gbd_id=sid(1649),
         dismod_id=meid(11154),
         healthstate=Healthstate(
@@ -11954,6 +13281,7 @@ sequelae = Sequelae(**{
     ),
     'dysphagia_or_acid_reflux_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract': Sequela(
         name='dysphagia_or_acid_reflux_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract',
+        type='sequela',
         gbd_id=sid(1652),
         dismod_id=meid(11155),
         healthstate=Healthstate(
@@ -11963,6 +13291,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_abdominal_pain_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract': Sequela(
         name='chronic_abdominal_pain_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract',
+        type='sequela',
         gbd_id=sid(1655),
         dismod_id=meid(11156),
         healthstate=Healthstate(
@@ -11972,6 +13301,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_respiratory_problems_including_difficulty_breaking_and_recurrent_upper_respiratory_infections_due_to_atresia_and_or_stenosis_of_the_digestive_tract': Sequela(
         name='chronic_respiratory_problems_including_difficulty_breaking_and_recurrent_upper_respiratory_infections_due_to_atresia_and_or_stenosis_of_the_digestive_tract',
+        type='sequela',
         gbd_id=sid(1658),
         dismod_id=meid(11157),
         healthstate=Healthstate(
@@ -11981,6 +13311,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_respiratory_problems_and_dysphagia_or_acid_reflux_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract': Sequela(
         name='chronic_respiratory_problems_and_dysphagia_or_acid_reflux_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract',
+        type='sequela',
         gbd_id=sid(1661),
         dismod_id=meid(11158),
         healthstate=Healthstate(
@@ -11990,6 +13321,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_respiratory_problems_and_abdominal_pain_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract': Sequela(
         name='chronic_respiratory_problems_and_abdominal_pain_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract',
+        type='sequela',
         gbd_id=sid(1664),
         dismod_id=meid(11159),
         healthstate=Healthstate(
@@ -11999,6 +13331,7 @@ sequelae = Sequelae(**{
     ),
     'dysphagia_or_acid_reflux_and_chronic_abdominal_pain_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract': Sequela(
         name='dysphagia_or_acid_reflux_and_chronic_abdominal_pain_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract',
+        type='sequela',
         gbd_id=sid(1667),
         dismod_id=meid(11160),
         healthstate=Healthstate(
@@ -12008,6 +13341,7 @@ sequelae = Sequelae(**{
     ),
     'dysphagia_or_acid_reflux_chronic_abdominal_pain_and_chronic_respiratory_problems_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract': Sequela(
         name='dysphagia_or_acid_reflux_chronic_abdominal_pain_and_chronic_respiratory_problems_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract',
+        type='sequela',
         gbd_id=sid(1670),
         dismod_id=meid(11161),
         healthstate=Healthstate(
@@ -12017,6 +13351,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_congenital_malformations_of_the_abdominal_wall_after_treatment': Sequela(
         name='asymptomatic_congenital_malformations_of_the_abdominal_wall_after_treatment',
+        type='sequela',
         gbd_id=sid(1673),
         dismod_id=meid(11162),
         healthstate=Healthstate(
@@ -12026,6 +13361,7 @@ sequelae = Sequelae(**{
     ),
     'disfigurement_from_scars_following_treatment_for_congenital_malformations_of_the_abdominal_wall': Sequela(
         name='disfigurement_from_scars_following_treatment_for_congenital_malformations_of_the_abdominal_wall',
+        type='sequela',
         gbd_id=sid(1676),
         dismod_id=meid(11163),
         healthstate=Healthstate(
@@ -12035,6 +13371,7 @@ sequelae = Sequelae(**{
     ),
     'constipation_due_to_congenital_malformations_of_the_abdominal_wall': Sequela(
         name='constipation_due_to_congenital_malformations_of_the_abdominal_wall',
+        type='sequela',
         gbd_id=sid(1679),
         dismod_id=meid(11164),
         healthstate=Healthstate(
@@ -12044,6 +13381,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_abdominal_pain_due_to_congenital_malformations_of_the_abdominal_wall': Sequela(
         name='chronic_abdominal_pain_due_to_congenital_malformations_of_the_abdominal_wall',
+        type='sequela',
         gbd_id=sid(1682),
         dismod_id=meid(11165),
         healthstate=Healthstate(
@@ -12053,6 +13391,7 @@ sequelae = Sequelae(**{
     ),
     'constipation_and_concern_about_scars_due_to_congenital_malformations_of_the_abdominal_wall': Sequela(
         name='constipation_and_concern_about_scars_due_to_congenital_malformations_of_the_abdominal_wall',
+        type='sequela',
         gbd_id=sid(1685),
         dismod_id=meid(11166),
         healthstate=Healthstate(
@@ -12062,6 +13401,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_abdominal_pain_and_concern_about_scars_due_to_congenital_malformations_of_the_abdominal_wall': Sequela(
         name='chronic_abdominal_pain_and_concern_about_scars_due_to_congenital_malformations_of_the_abdominal_wall',
+        type='sequela',
         gbd_id=sid(1688),
         dismod_id=meid(11167),
         healthstate=Healthstate(
@@ -12071,6 +13411,7 @@ sequelae = Sequelae(**{
     ),
     'constipation_and_chronic_abdominal_pain_due_to_congenital_malformations_of_the_abdominal_wall': Sequela(
         name='constipation_and_chronic_abdominal_pain_due_to_congenital_malformations_of_the_abdominal_wall',
+        type='sequela',
         gbd_id=sid(1691),
         dismod_id=meid(11168),
         healthstate=Healthstate(
@@ -12080,6 +13421,7 @@ sequelae = Sequelae(**{
     ),
     'constipation_chronic_abdominal_pain_and_concern_about_scars_due_to_congenital_malformations_of_the_abdominal_wall': Sequela(
         name='constipation_chronic_abdominal_pain_and_concern_about_scars_due_to_congenital_malformations_of_the_abdominal_wall',
+        type='sequela',
         gbd_id=sid(1694),
         dismod_id=meid(11169),
         healthstate=Healthstate(
@@ -12089,6 +13431,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_other_congenital_malformations_of_the_digestive_tract': Sequela(
         name='asymptomatic_other_congenital_malformations_of_the_digestive_tract',
+        type='sequela',
         gbd_id=sid(1697),
         dismod_id=meid(11170),
         healthstate=Healthstate(
@@ -12098,6 +13441,7 @@ sequelae = Sequelae(**{
     ),
     'acid_reflux_dyspahgia_and_or_constipation_due_to_other_congenital_malformations_of_the_digestive_tract': Sequela(
         name='acid_reflux_dyspahgia_and_or_constipation_due_to_other_congenital_malformations_of_the_digestive_tract',
+        type='sequela',
         gbd_id=sid(1700),
         dismod_id=meid(11171),
         healthstate=Healthstate(
@@ -12107,6 +13451,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_abdominal_pain_and_or_nausea_due_to_other_congenital_malformations_of_the_digestive_tract': Sequela(
         name='chronic_abdominal_pain_and_or_nausea_due_to_other_congenital_malformations_of_the_digestive_tract',
+        type='sequela',
         gbd_id=sid(1703),
         dismod_id=meid(11172),
         healthstate=Healthstate(
@@ -12116,6 +13461,7 @@ sequelae = Sequelae(**{
     ),
     'chronic_abdominal_pain_and_or_nausea_with_acid_reflux_dyspahgia_and_or_constipation_due_to_other_congenital_malformations_of_the_digestive_tract': Sequela(
         name='chronic_abdominal_pain_and_or_nausea_with_acid_reflux_dyspahgia_and_or_constipation_due_to_other_congenital_malformations_of_the_digestive_tract',
+        type='sequela',
         gbd_id=sid(1706),
         dismod_id=meid(11173),
         healthstate=Healthstate(
@@ -12125,6 +13471,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_congenital_genital_anomalies': Sequela(
         name='asymptomatic_congenital_genital_anomalies',
+        type='sequela',
         gbd_id=sid(1709),
         dismod_id=meid(11031),
         healthstate=Healthstate(
@@ -12134,6 +13481,7 @@ sequelae = Sequelae(**{
     ),
     'atypical_genitalia_due_to_congenital_genital_anomalies': Sequela(
         name='atypical_genitalia_due_to_congenital_genital_anomalies',
+        type='sequela',
         gbd_id=sid(1712),
         dismod_id=meid(11032),
         healthstate=Healthstate(
@@ -12143,6 +13491,7 @@ sequelae = Sequelae(**{
     ),
     'primary_infertility_due_to_congenital_genital_anomalies': Sequela(
         name='primary_infertility_due_to_congenital_genital_anomalies',
+        type='sequela',
         gbd_id=sid(1715),
         dismod_id=meid(11033),
         healthstate=Healthstate(
@@ -12152,6 +13501,7 @@ sequelae = Sequelae(**{
     ),
     'impotence_due_to_congenital_genital_anomalies': Sequela(
         name='impotence_due_to_congenital_genital_anomalies',
+        type='sequela',
         gbd_id=sid(1718),
         dismod_id=meid(11034),
         healthstate=Healthstate(
@@ -12161,6 +13511,7 @@ sequelae = Sequelae(**{
     ),
     'recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_genital_anomalies': Sequela(
         name='recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_genital_anomalies',
+        type='sequela',
         gbd_id=sid(1721),
         dismod_id=meid(11035),
         healthstate=Healthstate(
@@ -12170,6 +13521,7 @@ sequelae = Sequelae(**{
     ),
     'atypical_genital_and_recurrent_urinary_tract_infections_and_other_abdominal_issues_due_to_congenital_genital_anomalies': Sequela(
         name='atypical_genital_and_recurrent_urinary_tract_infections_and_other_abdominal_issues_due_to_congenital_genital_anomalies',
+        type='sequela',
         gbd_id=sid(1724),
         dismod_id=meid(11036),
         healthstate=Healthstate(
@@ -12179,6 +13531,7 @@ sequelae = Sequelae(**{
     ),
     'atypical_genitalia_and_primary_infertility_due_to_congenital_genital_anomalies': Sequela(
         name='atypical_genitalia_and_primary_infertility_due_to_congenital_genital_anomalies',
+        type='sequela',
         gbd_id=sid(1727),
         dismod_id=meid(11037),
         healthstate=Healthstate(
@@ -12188,6 +13541,7 @@ sequelae = Sequelae(**{
     ),
     'atypical_genitalia_and_impotence_due_to_congenital_genital_anomalies': Sequela(
         name='atypical_genitalia_and_impotence_due_to_congenital_genital_anomalies',
+        type='sequela',
         gbd_id=sid(1730),
         dismod_id=meid(11038),
         healthstate=Healthstate(
@@ -12197,6 +13551,7 @@ sequelae = Sequelae(**{
     ),
     'primary_infertility_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_genital_anomalies': Sequela(
         name='primary_infertility_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_genital_anomalies',
+        type='sequela',
         gbd_id=sid(1733),
         dismod_id=meid(11039),
         healthstate=Healthstate(
@@ -12206,6 +13561,7 @@ sequelae = Sequelae(**{
     ),
     'impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_genital_anomalies': Sequela(
         name='impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_genital_anomalies',
+        type='sequela',
         gbd_id=sid(1736),
         dismod_id=meid(11040),
         healthstate=Healthstate(
@@ -12215,6 +13571,7 @@ sequelae = Sequelae(**{
     ),
     'infertility_and_impotence_due_to_congenital_genital_anomalies': Sequela(
         name='infertility_and_impotence_due_to_congenital_genital_anomalies',
+        type='sequela',
         gbd_id=sid(1739),
         dismod_id=meid(11041),
         healthstate=Healthstate(
@@ -12224,6 +13581,7 @@ sequelae = Sequelae(**{
     ),
     'atypical_genitalia_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_infertility_due_to_congenital_genital_anomalies': Sequela(
         name='atypical_genitalia_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_infertility_due_to_congenital_genital_anomalies',
+        type='sequela',
         gbd_id=sid(1742),
         dismod_id=meid(11042),
         healthstate=Healthstate(
@@ -12233,6 +13591,7 @@ sequelae = Sequelae(**{
     ),
     'atypical_genitalia_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_genital_anomalies': Sequela(
         name='atypical_genitalia_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_genital_anomalies',
+        type='sequela',
         gbd_id=sid(1745),
         dismod_id=meid(11043),
         healthstate=Healthstate(
@@ -12242,6 +13601,7 @@ sequelae = Sequelae(**{
     ),
     'atypical_genitalia_infertility_and_impotence_due_to_congenital_genital_anomalies': Sequela(
         name='atypical_genitalia_infertility_and_impotence_due_to_congenital_genital_anomalies',
+        type='sequela',
         gbd_id=sid(1748),
         dismod_id=meid(11044),
         healthstate=Healthstate(
@@ -12251,6 +13611,7 @@ sequelae = Sequelae(**{
     ),
     'infertility_impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_genital_anomalies': Sequela(
         name='infertility_impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_genital_anomalies',
+        type='sequela',
         gbd_id=sid(1751),
         dismod_id=meid(11045),
         healthstate=Healthstate(
@@ -12260,6 +13621,7 @@ sequelae = Sequelae(**{
     ),
     'atypical_genitalia_infertility_impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_genital_anomalies': Sequela(
         name='atypical_genitalia_infertility_impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_genital_anomalies',
+        type='sequela',
         gbd_id=sid(1754),
         dismod_id=meid(11046),
         healthstate=Healthstate(
@@ -12269,6 +13631,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='asymptomatic_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(1757),
         dismod_id=meid(11392),
         healthstate=Healthstate(
@@ -12278,6 +13641,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_congenital_anomalies_of_the_urinary_tract': Sequela(
         name='asymptomatic_congenital_anomalies_of_the_urinary_tract',
+        type='sequela',
         gbd_id=sid(1850),
         dismod_id=meid(11361),
         healthstate=Healthstate(
@@ -12287,6 +13651,7 @@ sequelae = Sequelae(**{
     ),
     'atypical_genitalia_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
         name='atypical_genitalia_due_to_congenital_anomalies_of_the_urinary_tract',
+        type='sequela',
         gbd_id=sid(1853),
         dismod_id=meid(11362),
         healthstate=Healthstate(
@@ -12296,6 +13661,7 @@ sequelae = Sequelae(**{
     ),
     'incontinence_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
         name='incontinence_due_to_congenital_anomalies_of_the_urinary_tract',
+        type='sequela',
         gbd_id=sid(1856),
         dismod_id=meid(11363),
         healthstate=Healthstate(
@@ -12305,6 +13671,7 @@ sequelae = Sequelae(**{
     ),
     'impotence_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
         name='impotence_due_to_congenital_anomalies_of_the_urinary_tract',
+        type='sequela',
         gbd_id=sid(1859),
         dismod_id=meid(11364),
         healthstate=Healthstate(
@@ -12314,6 +13681,7 @@ sequelae = Sequelae(**{
     ),
     'recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
         name='recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_anomalies_of_the_urinary_tract',
+        type='sequela',
         gbd_id=sid(1862),
         dismod_id=meid(11365),
         healthstate=Healthstate(
@@ -12323,6 +13691,7 @@ sequelae = Sequelae(**{
     ),
     'atypical_genital_and_recurrent_urinary_tract_infections_and_other_abdominal_issues_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
         name='atypical_genital_and_recurrent_urinary_tract_infections_and_other_abdominal_issues_due_to_congenital_anomalies_of_the_urinary_tract',
+        type='sequela',
         gbd_id=sid(1865),
         dismod_id=meid(11366),
         healthstate=Healthstate(
@@ -12332,6 +13701,7 @@ sequelae = Sequelae(**{
     ),
     'atypical_genitalia_and_incontinence_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
         name='atypical_genitalia_and_incontinence_due_to_congenital_anomalies_of_the_urinary_tract',
+        type='sequela',
         gbd_id=sid(1868),
         dismod_id=meid(11367),
         healthstate=Healthstate(
@@ -12341,6 +13711,7 @@ sequelae = Sequelae(**{
     ),
     'atypical_genitalia_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
         name='atypical_genitalia_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract',
+        type='sequela',
         gbd_id=sid(1871),
         dismod_id=meid(11368),
         healthstate=Healthstate(
@@ -12350,6 +13721,7 @@ sequelae = Sequelae(**{
     ),
     'incontinence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
         name='incontinence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_anomalies_of_the_urinary_tract',
+        type='sequela',
         gbd_id=sid(1874),
         dismod_id=meid(11369),
         healthstate=Healthstate(
@@ -12359,6 +13731,7 @@ sequelae = Sequelae(**{
     ),
     'impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
         name='impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_anomalies_of_the_urinary_tract',
+        type='sequela',
         gbd_id=sid(1877),
         dismod_id=meid(11370),
         healthstate=Healthstate(
@@ -12368,6 +13741,7 @@ sequelae = Sequelae(**{
     ),
     'incontinence_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
         name='incontinence_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract',
+        type='sequela',
         gbd_id=sid(1880),
         dismod_id=meid(11371),
         healthstate=Healthstate(
@@ -12377,6 +13751,7 @@ sequelae = Sequelae(**{
     ),
     'atypical_genitalia_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_incontinence_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
         name='atypical_genitalia_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_incontinence_due_to_congenital_anomalies_of_the_urinary_tract',
+        type='sequela',
         gbd_id=sid(1883),
         dismod_id=meid(11372),
         healthstate=Healthstate(
@@ -12386,6 +13761,7 @@ sequelae = Sequelae(**{
     ),
     'atypical_genitalia_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
         name='atypical_genitalia_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract',
+        type='sequela',
         gbd_id=sid(1886),
         dismod_id=meid(11373),
         healthstate=Healthstate(
@@ -12395,6 +13771,7 @@ sequelae = Sequelae(**{
     ),
     'atypical_genitalia_incontinence_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
         name='atypical_genitalia_incontinence_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract',
+        type='sequela',
         gbd_id=sid(1889),
         dismod_id=meid(11374),
         healthstate=Healthstate(
@@ -12404,6 +13781,7 @@ sequelae = Sequelae(**{
     ),
     'incontinence_impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
         name='incontinence_impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract',
+        type='sequela',
         gbd_id=sid(1892),
         dismod_id=meid(11375),
         healthstate=Healthstate(
@@ -12413,6 +13791,7 @@ sequelae = Sequelae(**{
     ),
     'atypical_genitalia_incontinence_impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
         name='atypical_genitalia_incontinence_impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract',
+        type='sequela',
         gbd_id=sid(1895),
         dismod_id=meid(11376),
         healthstate=Healthstate(
@@ -12422,6 +13801,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_and_cognitive_impairment_due_to_edward_syndrome_or_patau_syndrome': Sequela(
         name='severe_motor_and_cognitive_impairment_due_to_edward_syndrome_or_patau_syndrome',
+        type='sequela',
         gbd_id=sid(1898),
         dismod_id=meid(11310),
         healthstate=Healthstate(
@@ -12431,6 +13811,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_and_cognitive_impairment_with_congenital_heart_disease_due_to_edward_syndrome_or_patau_syndrome': Sequela(
         name='severe_motor_and_cognitive_impairment_with_congenital_heart_disease_due_to_edward_syndrome_or_patau_syndrome',
+        type='sequela',
         gbd_id=sid(1901),
         dismod_id=meid(11311),
         healthstate=Healthstate(
@@ -12440,6 +13821,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_and_cognitive_impairment_due_to_anencephaly': Sequela(
         name='severe_motor_and_cognitive_impairment_due_to_anencephaly',
+        type='sequela',
         gbd_id=sid(1904),
         dismod_id=meid(10942),
         healthstate=Healthstate(
@@ -12449,6 +13831,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_encephalocele_following_treatment': Sequela(
         name='asymptomatic_encephalocele_following_treatment',
+        type='sequela',
         gbd_id=sid(1907),
         dismod_id=meid(11268),
         healthstate=Healthstate(
@@ -12458,6 +13841,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_due_to_encephalocele': Sequela(
         name='borderline_intellectual_disability_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(1910),
         dismod_id=meid(11269),
         healthstate=Healthstate(
@@ -12467,6 +13851,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_due_to_encephalocele': Sequela(
         name='mild_intellectual_disability_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(1913),
         dismod_id=meid(11270),
         healthstate=Healthstate(
@@ -12476,6 +13861,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_intellectual_disability_due_to_encephalocele': Sequela(
         name='moderate_intellectual_disability_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(1916),
         dismod_id=meid(11271),
         healthstate=Healthstate(
@@ -12485,6 +13871,7 @@ sequelae = Sequelae(**{
     ),
     'severe_intellectual_disability_due_to_encephalocele': Sequela(
         name='severe_intellectual_disability_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(1919),
         dismod_id=meid(11272),
         healthstate=Healthstate(
@@ -12494,6 +13881,7 @@ sequelae = Sequelae(**{
     ),
     'profound_intellectual_disability_due_to_encephalocele': Sequela(
         name='profound_intellectual_disability_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(1922),
         dismod_id=meid(11273),
         healthstate=Healthstate(
@@ -12503,6 +13891,7 @@ sequelae = Sequelae(**{
     ),
     'incontinence_due_to_encephalocele': Sequela(
         name='incontinence_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(1925),
         dismod_id=meid(11274),
         healthstate=Healthstate(
@@ -12512,6 +13901,7 @@ sequelae = Sequelae(**{
     ),
     'borderline_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
         name='borderline_intellectual_disability_and_incontinence_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(1928),
         dismod_id=meid(11275),
         healthstate=Healthstate(
@@ -12521,6 +13911,7 @@ sequelae = Sequelae(**{
     ),
     'mild_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
         name='mild_intellectual_disability_and_incontinence_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(1931),
         dismod_id=meid(11276),
         healthstate=Healthstate(
@@ -12530,6 +13921,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
         name='moderate_intellectual_disability_and_incontinence_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(1934),
         dismod_id=meid(11277),
         healthstate=Healthstate(
@@ -12539,6 +13931,7 @@ sequelae = Sequelae(**{
     ),
     'severe_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
         name='severe_intellectual_disability_and_incontinence_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(1937),
         dismod_id=meid(11278),
         healthstate=Healthstate(
@@ -12548,6 +13941,7 @@ sequelae = Sequelae(**{
     ),
     'profound_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
         name='profound_intellectual_disability_and_incontinence_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(1940),
         dismod_id=meid(11279),
         healthstate=Healthstate(
@@ -12557,6 +13951,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_due_to_spina_bifida': Sequela(
         name='mild_motor_impairment_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(1943),
         dismod_id=meid(11280),
         healthstate=Healthstate(
@@ -12566,6 +13961,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_due_to_spina_bifida': Sequela(
         name='moderate_motor_impairment_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(1946),
         dismod_id=meid(11281),
         healthstate=Healthstate(
@@ -12575,6 +13971,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_due_to_spina_bifida': Sequela(
         name='severe_motor_impairment_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(1949),
         dismod_id=meid(11282),
         healthstate=Healthstate(
@@ -12584,6 +13981,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_and_borderline_intellectual_disability_due_to_spina_bifida': Sequela(
         name='mild_motor_impairment_and_borderline_intellectual_disability_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(1952),
         dismod_id=meid(11283),
         healthstate=Healthstate(
@@ -12593,6 +13991,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_and_borderline_intellectual_disability_due_to_spina_bifida': Sequela(
         name='moderate_motor_impairment_and_borderline_intellectual_disability_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(1955),
         dismod_id=meid(11284),
         healthstate=Healthstate(
@@ -12602,6 +14001,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_and_borderline_intellectual_disability_due_to_spina_bifida': Sequela(
         name='severe_motor_impairment_and_borderline_intellectual_disability_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(1958),
         dismod_id=meid(11285),
         healthstate=Healthstate(
@@ -12611,6 +14011,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_and_mild_intellectual_disability_due_to_spina_bifida': Sequela(
         name='mild_motor_impairment_and_mild_intellectual_disability_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(1961),
         dismod_id=meid(11286),
         healthstate=Healthstate(
@@ -12620,6 +14021,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_and_mild_intellectual_disability_due_to_spina_bifida': Sequela(
         name='moderate_motor_impairment_and_mild_intellectual_disability_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(1964),
         dismod_id=meid(11287),
         healthstate=Healthstate(
@@ -12629,6 +14031,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_and_mild_intellectual_disability_due_to_spina_bifida': Sequela(
         name='severe_motor_impairment_and_mild_intellectual_disability_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(1967),
         dismod_id=meid(11288),
         healthstate=Healthstate(
@@ -12638,6 +14041,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_and_moderate_intellectual_disability_due_to_spina_bifida': Sequela(
         name='mild_motor_impairment_and_moderate_intellectual_disability_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(1970),
         dismod_id=meid(11289),
         healthstate=Healthstate(
@@ -12647,6 +14051,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_and_moderate_intellectual_disability_due_to_spina_bifida': Sequela(
         name='moderate_motor_impairment_and_moderate_intellectual_disability_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(1973),
         dismod_id=meid(11290),
         healthstate=Healthstate(
@@ -12656,6 +14061,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_and_moderate_intellectual_disability_due_to_spina_bifida': Sequela(
         name='severe_motor_impairment_and_moderate_intellectual_disability_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(1976),
         dismod_id=meid(11291),
         healthstate=Healthstate(
@@ -12665,6 +14071,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_and_severe_intellectual_disability_due_to_spina_bifida': Sequela(
         name='mild_motor_impairment_and_severe_intellectual_disability_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(1979),
         dismod_id=meid(11292),
         healthstate=Healthstate(
@@ -12674,6 +14081,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_and_severe_intellectual_disability_due_to_spina_bifida': Sequela(
         name='moderate_motor_impairment_and_severe_intellectual_disability_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(1982),
         dismod_id=meid(11293),
         healthstate=Healthstate(
@@ -12683,6 +14091,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_and_severe_intellectual_disability_due_to_spina_bifida': Sequela(
         name='severe_motor_impairment_and_severe_intellectual_disability_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(1985),
         dismod_id=meid(11294),
         healthstate=Healthstate(
@@ -12692,6 +14101,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
         name='mild_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(1988),
         dismod_id=meid(11295),
         healthstate=Healthstate(
@@ -12701,6 +14111,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
         name='moderate_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(1991),
         dismod_id=meid(11296),
         healthstate=Healthstate(
@@ -12710,6 +14121,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
         name='severe_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(1994),
         dismod_id=meid(11297),
         healthstate=Healthstate(
@@ -12719,6 +14131,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
         name='mild_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(1997),
         dismod_id=meid(11298),
         healthstate=Healthstate(
@@ -12728,6 +14141,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
         name='moderate_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(2000),
         dismod_id=meid(11299),
         healthstate=Healthstate(
@@ -12737,6 +14151,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
         name='severe_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(2003),
         dismod_id=meid(11300),
         healthstate=Healthstate(
@@ -12746,6 +14161,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
         name='mild_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(2006),
         dismod_id=meid(11301),
         healthstate=Healthstate(
@@ -12755,6 +14171,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
         name='moderate_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(2009),
         dismod_id=meid(11302),
         healthstate=Healthstate(
@@ -12764,6 +14181,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
         name='severe_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(2012),
         dismod_id=meid(11303),
         healthstate=Healthstate(
@@ -12773,6 +14191,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
         name='mild_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(2015),
         dismod_id=meid(11304),
         healthstate=Healthstate(
@@ -12782,6 +14201,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
         name='moderate_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(2018),
         dismod_id=meid(11305),
         healthstate=Healthstate(
@@ -12791,6 +14211,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
         name='severe_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(2021),
         dismod_id=meid(11306),
         healthstate=Healthstate(
@@ -12800,6 +14221,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_and_incontinence_due_to_spina_bifida': Sequela(
         name='mild_motor_impairment_and_incontinence_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(2024),
         dismod_id=meid(11307),
         healthstate=Healthstate(
@@ -12809,6 +14231,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_and_incontinence_due_to_spina_bifida': Sequela(
         name='moderate_motor_impairment_and_incontinence_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(2027),
         dismod_id=meid(11308),
         healthstate=Healthstate(
@@ -12818,6 +14241,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_and_incontinence_due_to_spina_bifida': Sequela(
         name='severe_motor_impairment_and_incontinence_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(2030),
         dismod_id=meid(11309),
         healthstate=Healthstate(
@@ -12827,6 +14251,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_wasting_without_edema': Sequela(
         name='moderate_wasting_without_edema',
+        type='sequela',
         gbd_id=sid(2033),
         dismod_id=meid(10981),
         healthstate=Healthstate(
@@ -12836,6 +14261,7 @@ sequelae = Sequelae(**{
     ),
     'severe_wasting_with_edema': Sequela(
         name='severe_wasting_with_edema',
+        type='sequela',
         gbd_id=sid(2036),
         dismod_id=meid(1608),
         healthstate=Healthstate(
@@ -12845,6 +14271,7 @@ sequelae = Sequelae(**{
     ),
     'mild_disfigurement_due_to_squamous_cell_carcinoma': Sequela(
         name='mild_disfigurement_due_to_squamous_cell_carcinoma',
+        type='sequela',
         gbd_id=sid(2039),
         dismod_id=meid(11519),
         healthstate=Healthstate(
@@ -12854,6 +14281,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_disfigurement_due_to_squamous_cell_carcinoma': Sequela(
         name='moderate_disfigurement_due_to_squamous_cell_carcinoma',
+        type='sequela',
         gbd_id=sid(2042),
         dismod_id=meid(11520),
         healthstate=Healthstate(
@@ -12863,6 +14291,7 @@ sequelae = Sequelae(**{
     ),
     'severe_disfigurement_due_to_squamous_cell_carcinoma': Sequela(
         name='severe_disfigurement_due_to_squamous_cell_carcinoma',
+        type='sequela',
         gbd_id=sid(2045),
         dismod_id=meid(11521),
         healthstate=Healthstate(
@@ -12872,6 +14301,7 @@ sequelae = Sequelae(**{
     ),
     'neurological_problems_and_cardiovascular_complications_due_to_adult_tertiary_syphilis': Sequela(
         name='neurological_problems_and_cardiovascular_complications_due_to_adult_tertiary_syphilis',
+        type='sequela',
         gbd_id=sid(2048),
         dismod_id=meid(16413),
         healthstate=Healthstate(
@@ -12881,6 +14311,7 @@ sequelae = Sequelae(**{
     ),
     'severe_disfigurement_and_cardiovascular_complications_due_to_adult_tertiary_syphilis': Sequela(
         name='severe_disfigurement_and_cardiovascular_complications_due_to_adult_tertiary_syphilis',
+        type='sequela',
         gbd_id=sid(2051),
         dismod_id=meid(16411),
         healthstate=Healthstate(
@@ -12890,6 +14321,7 @@ sequelae = Sequelae(**{
     ),
     'severe_disfigurement_and_neurological_problems_due_to_adult_tertiary_syphilis': Sequela(
         name='severe_disfigurement_and_neurological_problems_due_to_adult_tertiary_syphilis',
+        type='sequela',
         gbd_id=sid(2054),
         dismod_id=meid(16410),
         healthstate=Healthstate(
@@ -12899,6 +14331,7 @@ sequelae = Sequelae(**{
     ),
     'severe_disfigurement_neurological_problems_and_cardiovascular_complications_due_to_adult_tertiary_syphilis': Sequela(
         name='severe_disfigurement_neurological_problems_and_cardiovascular_complications_due_to_adult_tertiary_syphilis',
+        type='sequela',
         gbd_id=sid(2057),
         dismod_id=meid(16409),
         healthstate=Healthstate(
@@ -12908,6 +14341,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_and_profound_intellectual_disability_due_to_spina_bifida': Sequela(
         name='mild_motor_impairment_and_profound_intellectual_disability_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(2060),
         dismod_id=meid(11523),
         healthstate=Healthstate(
@@ -12917,6 +14351,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_and_profound_intellectual_disability_due_to_spina_bifida': Sequela(
         name='moderate_motor_impairment_and_profound_intellectual_disability_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(2063),
         dismod_id=meid(11524),
         healthstate=Healthstate(
@@ -12926,6 +14361,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_and_profound_intellectual_disability_due_to_spina_bifida': Sequela(
         name='severe_motor_impairment_and_profound_intellectual_disability_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(2066),
         dismod_id=meid(11525),
         healthstate=Healthstate(
@@ -12935,6 +14371,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
         name='mild_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(2069),
         dismod_id=meid(11526),
         healthstate=Healthstate(
@@ -12944,6 +14381,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
         name='moderate_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(2072),
         dismod_id=meid(11527),
         healthstate=Healthstate(
@@ -12953,6 +14391,7 @@ sequelae = Sequelae(**{
     ),
     'profound_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
         name='profound_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida',
+        type='sequela',
         gbd_id=sid(2075),
         dismod_id=meid(11528),
         healthstate=Healthstate(
@@ -12962,6 +14401,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_due_to_encephalocele': Sequela(
         name='mild_motor_impairment_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2078),
         dismod_id=meid(11530),
         healthstate=Healthstate(
@@ -12971,6 +14411,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_due_to_encephalocele': Sequela(
         name='moderate_motor_impairment_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2081),
         dismod_id=meid(11531),
         healthstate=Healthstate(
@@ -12980,6 +14421,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_due_to_encephalocele': Sequela(
         name='severe_motor_impairment_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2084),
         dismod_id=meid(11532),
         healthstate=Healthstate(
@@ -12989,6 +14431,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_and_incontinence_due_to_encephalocele': Sequela(
         name='mild_motor_impairment_and_incontinence_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2087),
         dismod_id=meid(11533),
         healthstate=Healthstate(
@@ -12998,6 +14441,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_and_incontinence_due_to_encephalocele': Sequela(
         name='moderate_motor_impairment_and_incontinence_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2090),
         dismod_id=meid(11534),
         healthstate=Healthstate(
@@ -13007,6 +14451,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_and_incontinence_due_to_encephalocele': Sequela(
         name='severe_motor_impairment_and_incontinence_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2093),
         dismod_id=meid(11535),
         healthstate=Healthstate(
@@ -13016,6 +14461,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_and_borderline_intellectual_disability_due_to_encephalocele': Sequela(
         name='mild_motor_impairment_and_borderline_intellectual_disability_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2096),
         dismod_id=meid(11536),
         healthstate=Healthstate(
@@ -13025,6 +14471,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_and_borderline_intellectual_disability_due_to_encephalocele': Sequela(
         name='moderate_motor_impairment_and_borderline_intellectual_disability_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2099),
         dismod_id=meid(11537),
         healthstate=Healthstate(
@@ -13034,6 +14481,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_and_borderline_intellectual_disability_due_to_encephalocele': Sequela(
         name='severe_motor_impairment_and_borderline_intellectual_disability_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2102),
         dismod_id=meid(11538),
         healthstate=Healthstate(
@@ -13043,6 +14491,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_and_mild_intellectual_disability_due_to_encephalocele': Sequela(
         name='mild_motor_impairment_and_mild_intellectual_disability_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2105),
         dismod_id=meid(11539),
         healthstate=Healthstate(
@@ -13052,6 +14501,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_and_mild_intellectual_disability_due_to_encephalocele': Sequela(
         name='moderate_motor_impairment_and_mild_intellectual_disability_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2108),
         dismod_id=meid(11540),
         healthstate=Healthstate(
@@ -13061,6 +14511,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_and_mild_intellectual_disability_due_to_encephalocele': Sequela(
         name='severe_motor_impairment_and_mild_intellectual_disability_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2111),
         dismod_id=meid(11541),
         healthstate=Healthstate(
@@ -13070,6 +14521,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_and_moderate_intellectual_disability_due_to_encephalocele': Sequela(
         name='mild_motor_impairment_and_moderate_intellectual_disability_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2114),
         dismod_id=meid(11542),
         healthstate=Healthstate(
@@ -13079,6 +14531,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_and_moderate_intellectual_disability_due_to_encephalocele': Sequela(
         name='moderate_motor_impairment_and_moderate_intellectual_disability_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2117),
         dismod_id=meid(11543),
         healthstate=Healthstate(
@@ -13088,6 +14541,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_and_moderate_intellectual_disability_due_to_encephalocele': Sequela(
         name='severe_motor_impairment_and_moderate_intellectual_disability_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2120),
         dismod_id=meid(11544),
         healthstate=Healthstate(
@@ -13097,6 +14551,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_and_severe_intellectual_disability_due_to_encephalocele': Sequela(
         name='mild_motor_impairment_and_severe_intellectual_disability_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2123),
         dismod_id=meid(11545),
         healthstate=Healthstate(
@@ -13106,6 +14561,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_and_severe_intellectual_disability_due_to_encephalocele': Sequela(
         name='moderate_motor_impairment_and_severe_intellectual_disability_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2126),
         dismod_id=meid(11546),
         healthstate=Healthstate(
@@ -13115,6 +14571,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_and_severe_intellectual_disability_due_to_encephalocele': Sequela(
         name='severe_motor_impairment_and_severe_intellectual_disability_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2129),
         dismod_id=meid(11547),
         healthstate=Healthstate(
@@ -13124,6 +14581,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_and_profound_intellectual_disability_due_to_encephalocele': Sequela(
         name='mild_motor_impairment_and_profound_intellectual_disability_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2132),
         dismod_id=meid(11548),
         healthstate=Healthstate(
@@ -13133,6 +14591,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_and_profound_intellectual_disability_due_to_encephalocele': Sequela(
         name='moderate_motor_impairment_and_profound_intellectual_disability_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2135),
         dismod_id=meid(11549),
         healthstate=Healthstate(
@@ -13142,6 +14601,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_and_profound_intellectual_disability_due_to_encephalocele': Sequela(
         name='severe_motor_impairment_and_profound_intellectual_disability_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2138),
         dismod_id=meid(11550),
         healthstate=Healthstate(
@@ -13151,6 +14611,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
         name='mild_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2141),
         dismod_id=meid(11551),
         healthstate=Healthstate(
@@ -13160,6 +14621,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
         name='moderate_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2144),
         dismod_id=meid(11552),
         healthstate=Healthstate(
@@ -13169,6 +14631,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
         name='severe_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2147),
         dismod_id=meid(11553),
         healthstate=Healthstate(
@@ -13178,6 +14641,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
         name='mild_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2150),
         dismod_id=meid(11554),
         healthstate=Healthstate(
@@ -13187,6 +14651,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
         name='moderate_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2153),
         dismod_id=meid(11555),
         healthstate=Healthstate(
@@ -13196,6 +14661,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
         name='severe_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2156),
         dismod_id=meid(11556),
         healthstate=Healthstate(
@@ -13205,6 +14671,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
         name='mild_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2159),
         dismod_id=meid(11557),
         healthstate=Healthstate(
@@ -13214,6 +14681,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
         name='moderate_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2162),
         dismod_id=meid(11558),
         healthstate=Healthstate(
@@ -13223,6 +14691,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
         name='severe_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2165),
         dismod_id=meid(11559),
         healthstate=Healthstate(
@@ -13232,6 +14701,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
         name='mild_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2168),
         dismod_id=meid(11560),
         healthstate=Healthstate(
@@ -13241,6 +14711,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
         name='moderate_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2171),
         dismod_id=meid(11561),
         healthstate=Healthstate(
@@ -13250,6 +14721,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
         name='severe_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2174),
         dismod_id=meid(11562),
         healthstate=Healthstate(
@@ -13259,6 +14731,7 @@ sequelae = Sequelae(**{
     ),
     'mild_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
         name='mild_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2177),
         dismod_id=meid(11563),
         healthstate=Healthstate(
@@ -13268,6 +14741,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
         name='moderate_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2180),
         dismod_id=meid(11564),
         healthstate=Healthstate(
@@ -13277,6 +14751,7 @@ sequelae = Sequelae(**{
     ),
     'severe_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
         name='severe_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele',
+        type='sequela',
         gbd_id=sid(2183),
         dismod_id=meid(11565),
         healthstate=Healthstate(
@@ -13286,6 +14761,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_vitamin_a_deficiency': Sequela(
         name='asymptomatic_vitamin_a_deficiency',
+        type='sequela',
         gbd_id=sid(2189),
         dismod_id=meid(11610),
         healthstate=Healthstate(
@@ -13295,6 +14771,7 @@ sequelae = Sequelae(**{
     ),
     'latent_tuberculosis_infection': Sequela(
         name='latent_tuberculosis_infection',
+        type='sequela',
         gbd_id=sid(2192),
         dismod_id=meid(10352),
         healthstate=Healthstate(
@@ -13304,6 +14781,7 @@ sequelae = Sequelae(**{
     ),
     'mild_pain_due_to_guinea_worm_emergence': Sequela(
         name='mild_pain_due_to_guinea_worm_emergence',
+        type='sequela',
         gbd_id=sid(2204),
         dismod_id=meid(11647),
         healthstate=Healthstate(
@@ -13313,6 +14791,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_reduced_mobility_due_to_guinea_worm_emergence': Sequela(
         name='moderate_reduced_mobility_due_to_guinea_worm_emergence',
+        type='sequela',
         gbd_id=sid(2207),
         dismod_id=meid(11648),
         healthstate=Healthstate(
@@ -13322,6 +14801,7 @@ sequelae = Sequelae(**{
     ),
     'visible_goiter_with_symptoms_without_intellectual_disability_or_heart_failure': Sequela(
         name='visible_goiter_with_symptoms_without_intellectual_disability_or_heart_failure',
+        type='sequela',
         gbd_id=sid(4583),
         dismod_id=meid(15813),
         healthstate=Healthstate(
@@ -13331,6 +14811,7 @@ sequelae = Sequelae(**{
     ),
     'mild_symptomatic_episodes_gallbladder_and_biliary_diseases': Sequela(
         name='mild_symptomatic_episodes_gallbladder_and_biliary_diseases',
+        type='sequela',
         gbd_id=sid(4586),
         dismod_id=meid(16283),
         healthstate=Healthstate(
@@ -13340,6 +14821,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_symptomatic_episodes_gallbladder_and_biliary_diseases': Sequela(
         name='moderate_symptomatic_episodes_gallbladder_and_biliary_diseases',
+        type='sequela',
         gbd_id=sid(4589),
         dismod_id=meid(16284),
         healthstate=Healthstate(
@@ -13349,6 +14831,7 @@ sequelae = Sequelae(**{
     ),
     'severe_symptomatic_episodes_gallbladder_and_biliary_diseases': Sequela(
         name='severe_symptomatic_episodes_gallbladder_and_biliary_diseases',
+        type='sequela',
         gbd_id=sid(4592),
         dismod_id=meid(16285),
         healthstate=Healthstate(
@@ -13358,6 +14841,7 @@ sequelae = Sequelae(**{
     ),
     'mild_symptomatic_inguinal_femoral_and_abdominal_hernia': Sequela(
         name='mild_symptomatic_inguinal_femoral_and_abdominal_hernia',
+        type='sequela',
         gbd_id=sid(4595),
         dismod_id=meid(16286),
         healthstate=Healthstate(
@@ -13367,6 +14851,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_symptomatic_inguinal_femoral_and_abdominal_hernia': Sequela(
         name='moderate_symptomatic_inguinal_femoral_and_abdominal_hernia',
+        type='sequela',
         gbd_id=sid(4598),
         dismod_id=meid(16287),
         healthstate=Healthstate(
@@ -13376,6 +14861,7 @@ sequelae = Sequelae(**{
     ),
     'severe_symptomatic_inguinal_femoral_and_abdominal_hernia': Sequela(
         name='severe_symptomatic_inguinal_femoral_and_abdominal_hernia',
+        type='sequela',
         gbd_id=sid(4601),
         dismod_id=meid(16288),
         healthstate=Healthstate(
@@ -13385,6 +14871,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_ulcerative_colitis': Sequela(
         name='asymptomatic_ulcerative_colitis',
+        type='sequela',
         gbd_id=sid(4604),
         dismod_id=meid(16289),
         healthstate=Healthstate(
@@ -13394,6 +14881,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_crohns_disease': Sequela(
         name='asymptomatic_crohns_disease',
+        type='sequela',
         gbd_id=sid(4607),
         dismod_id=meid(16291),
         healthstate=Healthstate(
@@ -13403,6 +14891,7 @@ sequelae = Sequelae(**{
     ),
     'mild_pancreatitis_episodes': Sequela(
         name='mild_pancreatitis_episodes',
+        type='sequela',
         gbd_id=sid(4610),
         dismod_id=meid(16293),
         healthstate=Healthstate(
@@ -13412,6 +14901,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_pancreatitis_episodes': Sequela(
         name='moderate_pancreatitis_episodes',
+        type='sequela',
         gbd_id=sid(4613),
         dismod_id=meid(16294),
         healthstate=Healthstate(
@@ -13421,6 +14911,7 @@ sequelae = Sequelae(**{
     ),
     'severe_pancreatitis_episodes': Sequela(
         name='severe_pancreatitis_episodes',
+        type='sequela',
         gbd_id=sid(4616),
         dismod_id=meid(16295),
         healthstate=Healthstate(
@@ -13430,6 +14921,7 @@ sequelae = Sequelae(**{
     ),
     'mild_acne_vulgaris': Sequela(
         name='mild_acne_vulgaris',
+        type='sequela',
         gbd_id=sid(4619),
         dismod_id=meid(16296),
         healthstate=Healthstate(
@@ -13439,6 +14931,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_acne_vulgaris': Sequela(
         name='moderate_acne_vulgaris',
+        type='sequela',
         gbd_id=sid(4622),
         dismod_id=meid(16297),
         healthstate=Healthstate(
@@ -13448,6 +14941,7 @@ sequelae = Sequelae(**{
     ),
     'severe_acne_vulgaris': Sequela(
         name='severe_acne_vulgaris',
+        type='sequela',
         gbd_id=sid(4625),
         dismod_id=meid(16298),
         healthstate=Healthstate(
@@ -13457,6 +14951,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_cellulitis': Sequela(
         name='moderate_cellulitis',
+        type='sequela',
         gbd_id=sid(4628),
         dismod_id=meid(16299),
         healthstate=Healthstate(
@@ -13466,6 +14961,7 @@ sequelae = Sequelae(**{
     ),
     'mild_urolithiasis_episodes': Sequela(
         name='mild_urolithiasis_episodes',
+        type='sequela',
         gbd_id=sid(4631),
         dismod_id=meid(16300),
         healthstate=Healthstate(
@@ -13475,6 +14971,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_urolithiasis_episodes': Sequela(
         name='moderate_urolithiasis_episodes',
+        type='sequela',
         gbd_id=sid(4634),
         dismod_id=meid(16301),
         healthstate=Healthstate(
@@ -13484,6 +14981,7 @@ sequelae = Sequelae(**{
     ),
     'severe_urolithiasis_episodes': Sequela(
         name='severe_urolithiasis_episodes',
+        type='sequela',
         gbd_id=sid(4637),
         dismod_id=meid(16302),
         healthstate=Healthstate(
@@ -13493,6 +14991,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_without_intellectual_disability_or_heart_failure_due_to_other_congenital_cardiovascular_anomalies': Sequela(
         name='congenital_heart_disease_without_intellectual_disability_or_heart_failure_due_to_other_congenital_cardiovascular_anomalies',
+        type='sequela',
         gbd_id=sid(4640),
         dismod_id=meid(15820),
         healthstate=Healthstate(
@@ -13502,6 +15001,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies': Sequela(
         name='congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies',
+        type='sequela',
         gbd_id=sid(4643),
         dismod_id=meid(15821),
         healthstate=Healthstate(
@@ -13511,6 +15011,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies': Sequela(
         name='congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies',
+        type='sequela',
         gbd_id=sid(4646),
         dismod_id=meid(15822),
         healthstate=Healthstate(
@@ -13520,6 +15021,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies': Sequela(
         name='congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies',
+        type='sequela',
         gbd_id=sid(4649),
         dismod_id=meid(15823),
         healthstate=Healthstate(
@@ -13529,6 +15031,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies': Sequela(
         name='congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies',
+        type='sequela',
         gbd_id=sid(4652),
         dismod_id=meid(15824),
         healthstate=Healthstate(
@@ -13538,6 +15041,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies': Sequela(
         name='congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies',
+        type='sequela',
         gbd_id=sid(4655),
         dismod_id=meid(15825),
         healthstate=Healthstate(
@@ -13547,6 +15051,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_without_intellectual_disability_or_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
         name='congenital_heart_disease_without_intellectual_disability_or_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+        type='sequela',
         gbd_id=sid(4658),
         dismod_id=meid(15844),
         healthstate=Healthstate(
@@ -13556,6 +15061,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
         name='congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+        type='sequela',
         gbd_id=sid(4661),
         dismod_id=meid(15845),
         healthstate=Healthstate(
@@ -13565,6 +15071,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
         name='congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+        type='sequela',
         gbd_id=sid(4664),
         dismod_id=meid(15846),
         healthstate=Healthstate(
@@ -13574,6 +15081,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
         name='congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+        type='sequela',
         gbd_id=sid(4667),
         dismod_id=meid(15847),
         healthstate=Healthstate(
@@ -13583,6 +15091,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
         name='congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+        type='sequela',
         gbd_id=sid(4670),
         dismod_id=meid(15848),
         healthstate=Healthstate(
@@ -13592,6 +15101,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
         name='congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+        type='sequela',
         gbd_id=sid(4673),
         dismod_id=meid(15849),
         healthstate=Healthstate(
@@ -13601,6 +15111,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_mild_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
         name='congenital_heart_disease_and_mild_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+        type='sequela',
         gbd_id=sid(4676),
         dismod_id=meid(15850),
         healthstate=Healthstate(
@@ -13610,6 +15121,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_boderline_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
         name='congenital_heart_disease_boderline_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+        type='sequela',
         gbd_id=sid(4679),
         dismod_id=meid(15851),
         healthstate=Healthstate(
@@ -13619,6 +15131,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
         name='congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+        type='sequela',
         gbd_id=sid(4682),
         dismod_id=meid(15852),
         healthstate=Healthstate(
@@ -13628,6 +15141,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
         name='congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+        type='sequela',
         gbd_id=sid(4685),
         dismod_id=meid(15853),
         healthstate=Healthstate(
@@ -13637,6 +15151,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
         name='congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+        type='sequela',
         gbd_id=sid(4688),
         dismod_id=meid(15854),
         healthstate=Healthstate(
@@ -13646,6 +15161,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
         name='congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+        type='sequela',
         gbd_id=sid(4691),
         dismod_id=meid(15855),
         healthstate=Healthstate(
@@ -13655,6 +15171,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_moderate_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
         name='congenital_heart_disease_and_moderate_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+        type='sequela',
         gbd_id=sid(4694),
         dismod_id=meid(15856),
         healthstate=Healthstate(
@@ -13664,6 +15181,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_borderline_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
         name='congenital_heart_disease_borderline_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+        type='sequela',
         gbd_id=sid(4697),
         dismod_id=meid(15857),
         healthstate=Healthstate(
@@ -13673,6 +15191,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
         name='congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+        type='sequela',
         gbd_id=sid(4700),
         dismod_id=meid(15858),
         healthstate=Healthstate(
@@ -13682,6 +15201,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
         name='congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+        type='sequela',
         gbd_id=sid(4703),
         dismod_id=meid(15859),
         healthstate=Healthstate(
@@ -13691,6 +15211,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
         name='congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+        type='sequela',
         gbd_id=sid(4706),
         dismod_id=meid(15860),
         healthstate=Healthstate(
@@ -13700,6 +15221,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
         name='congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+        type='sequela',
         gbd_id=sid(4709),
         dismod_id=meid(15861),
         healthstate=Healthstate(
@@ -13709,6 +15231,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_severe_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
         name='congenital_heart_disease_and_severe_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+        type='sequela',
         gbd_id=sid(4712),
         dismod_id=meid(15862),
         healthstate=Healthstate(
@@ -13718,6 +15241,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_borderline_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
         name='congenital_heart_disease_borderline_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+        type='sequela',
         gbd_id=sid(4715),
         dismod_id=meid(15863),
         healthstate=Healthstate(
@@ -13727,6 +15251,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
         name='congenital_heart_disease_mild_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+        type='sequela',
         gbd_id=sid(4718),
         dismod_id=meid(15864),
         healthstate=Healthstate(
@@ -13736,6 +15261,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
         name='congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+        type='sequela',
         gbd_id=sid(4721),
         dismod_id=meid(15865),
         healthstate=Healthstate(
@@ -13745,6 +15271,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
         name='congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+        type='sequela',
         gbd_id=sid(4724),
         dismod_id=meid(15866),
         healthstate=Healthstate(
@@ -13754,6 +15281,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
         name='congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+        type='sequela',
         gbd_id=sid(4727),
         dismod_id=meid(15867),
         healthstate=Healthstate(
@@ -13763,6 +15291,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_without_intellectual_disability_or_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
         name='congenital_heart_disease_without_intellectual_disability_or_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+        type='sequela',
         gbd_id=sid(4730),
         dismod_id=meid(15868),
         healthstate=Healthstate(
@@ -13772,6 +15301,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
         name='congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+        type='sequela',
         gbd_id=sid(4733),
         dismod_id=meid(15869),
         healthstate=Healthstate(
@@ -13781,6 +15311,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
         name='congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+        type='sequela',
         gbd_id=sid(4736),
         dismod_id=meid(15870),
         healthstate=Healthstate(
@@ -13790,6 +15321,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
         name='congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+        type='sequela',
         gbd_id=sid(4739),
         dismod_id=meid(15871),
         healthstate=Healthstate(
@@ -13799,6 +15331,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
         name='congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+        type='sequela',
         gbd_id=sid(4742),
         dismod_id=meid(15872),
         healthstate=Healthstate(
@@ -13808,6 +15341,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
         name='congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+        type='sequela',
         gbd_id=sid(4745),
         dismod_id=meid(15873),
         healthstate=Healthstate(
@@ -13817,6 +15351,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_mild_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
         name='congenital_heart_disease_and_mild_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+        type='sequela',
         gbd_id=sid(4748),
         dismod_id=meid(15874),
         healthstate=Healthstate(
@@ -13826,6 +15361,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_boderline_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
         name='congenital_heart_disease_boderline_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+        type='sequela',
         gbd_id=sid(4751),
         dismod_id=meid(15875),
         healthstate=Healthstate(
@@ -13835,6 +15371,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
         name='congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+        type='sequela',
         gbd_id=sid(4754),
         dismod_id=meid(15876),
         healthstate=Healthstate(
@@ -13844,6 +15381,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
         name='congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+        type='sequela',
         gbd_id=sid(4757),
         dismod_id=meid(15877),
         healthstate=Healthstate(
@@ -13853,6 +15391,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
         name='congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+        type='sequela',
         gbd_id=sid(4760),
         dismod_id=meid(15878),
         healthstate=Healthstate(
@@ -13862,6 +15401,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
         name='congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+        type='sequela',
         gbd_id=sid(4763),
         dismod_id=meid(15879),
         healthstate=Healthstate(
@@ -13871,6 +15411,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_moderate_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
         name='congenital_heart_disease_and_moderate_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+        type='sequela',
         gbd_id=sid(4766),
         dismod_id=meid(15880),
         healthstate=Healthstate(
@@ -13880,6 +15421,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_borderline_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
         name='congenital_heart_disease_borderline_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+        type='sequela',
         gbd_id=sid(4769),
         dismod_id=meid(15881),
         healthstate=Healthstate(
@@ -13889,6 +15431,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
         name='congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+        type='sequela',
         gbd_id=sid(4772),
         dismod_id=meid(15882),
         healthstate=Healthstate(
@@ -13898,6 +15441,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
         name='congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+        type='sequela',
         gbd_id=sid(4775),
         dismod_id=meid(15883),
         healthstate=Healthstate(
@@ -13907,6 +15451,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
         name='congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+        type='sequela',
         gbd_id=sid(4778),
         dismod_id=meid(15884),
         healthstate=Healthstate(
@@ -13916,6 +15461,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
         name='congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+        type='sequela',
         gbd_id=sid(4781),
         dismod_id=meid(15885),
         healthstate=Healthstate(
@@ -13925,6 +15471,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_severe_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
         name='congenital_heart_disease_and_severe_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+        type='sequela',
         gbd_id=sid(4784),
         dismod_id=meid(15886),
         healthstate=Healthstate(
@@ -13934,6 +15481,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_borderline_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
         name='congenital_heart_disease_borderline_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+        type='sequela',
         gbd_id=sid(4787),
         dismod_id=meid(15887),
         healthstate=Healthstate(
@@ -13943,6 +15491,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
         name='congenital_heart_disease_mild_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+        type='sequela',
         gbd_id=sid(4790),
         dismod_id=meid(15888),
         healthstate=Healthstate(
@@ -13952,6 +15501,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
         name='congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+        type='sequela',
         gbd_id=sid(4793),
         dismod_id=meid(15889),
         healthstate=Healthstate(
@@ -13961,6 +15511,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
         name='congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+        type='sequela',
         gbd_id=sid(4796),
         dismod_id=meid(15890),
         healthstate=Healthstate(
@@ -13970,6 +15521,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
         name='congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+        type='sequela',
         gbd_id=sid(4799),
         dismod_id=meid(15891),
         healthstate=Healthstate(
@@ -13979,6 +15531,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_without_heart_failure_or_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
         name='congenital_heart_disease_without_heart_failure_or_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+        type='sequela',
         gbd_id=sid(4802),
         dismod_id=meid(15892),
         healthstate=Healthstate(
@@ -13988,6 +15541,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
         name='congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+        type='sequela',
         gbd_id=sid(4805),
         dismod_id=meid(15893),
         healthstate=Healthstate(
@@ -13997,6 +15551,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
         name='congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+        type='sequela',
         gbd_id=sid(4808),
         dismod_id=meid(15894),
         healthstate=Healthstate(
@@ -14006,6 +15561,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
         name='congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+        type='sequela',
         gbd_id=sid(4811),
         dismod_id=meid(15895),
         healthstate=Healthstate(
@@ -14015,6 +15571,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
         name='congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+        type='sequela',
         gbd_id=sid(4814),
         dismod_id=meid(15896),
         healthstate=Healthstate(
@@ -14024,6 +15581,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
         name='congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+        type='sequela',
         gbd_id=sid(4817),
         dismod_id=meid(15897),
         healthstate=Healthstate(
@@ -14033,6 +15591,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_mild_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
         name='congenital_heart_disease_and_mild_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+        type='sequela',
         gbd_id=sid(4820),
         dismod_id=meid(15898),
         healthstate=Healthstate(
@@ -14042,6 +15601,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_boderline_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
         name='congenital_heart_disease_boderline_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+        type='sequela',
         gbd_id=sid(4823),
         dismod_id=meid(15899),
         healthstate=Healthstate(
@@ -14051,6 +15611,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
         name='congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+        type='sequela',
         gbd_id=sid(4826),
         dismod_id=meid(15900),
         healthstate=Healthstate(
@@ -14060,6 +15621,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
         name='congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+        type='sequela',
         gbd_id=sid(4829),
         dismod_id=meid(15901),
         healthstate=Healthstate(
@@ -14069,6 +15631,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
         name='congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+        type='sequela',
         gbd_id=sid(4832),
         dismod_id=meid(15902),
         healthstate=Healthstate(
@@ -14078,6 +15641,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
         name='congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+        type='sequela',
         gbd_id=sid(4835),
         dismod_id=meid(15903),
         healthstate=Healthstate(
@@ -14087,6 +15651,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_moderate_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
         name='congenital_heart_disease_and_moderate_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+        type='sequela',
         gbd_id=sid(4838),
         dismod_id=meid(15904),
         healthstate=Healthstate(
@@ -14096,6 +15661,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_borderline_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
         name='congenital_heart_disease_borderline_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+        type='sequela',
         gbd_id=sid(4841),
         dismod_id=meid(15905),
         healthstate=Healthstate(
@@ -14105,6 +15671,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
         name='congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+        type='sequela',
         gbd_id=sid(4844),
         dismod_id=meid(15906),
         healthstate=Healthstate(
@@ -14114,6 +15681,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
         name='congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+        type='sequela',
         gbd_id=sid(4847),
         dismod_id=meid(15907),
         healthstate=Healthstate(
@@ -14123,6 +15691,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
         name='congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+        type='sequela',
         gbd_id=sid(4850),
         dismod_id=meid(15908),
         healthstate=Healthstate(
@@ -14132,6 +15701,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
         name='congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+        type='sequela',
         gbd_id=sid(4853),
         dismod_id=meid(15909),
         healthstate=Healthstate(
@@ -14141,6 +15711,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_severe_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
         name='congenital_heart_disease_and_severe_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+        type='sequela',
         gbd_id=sid(4856),
         dismod_id=meid(15910),
         healthstate=Healthstate(
@@ -14150,6 +15721,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_borderline_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
         name='congenital_heart_disease_borderline_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+        type='sequela',
         gbd_id=sid(4859),
         dismod_id=meid(15911),
         healthstate=Healthstate(
@@ -14159,6 +15731,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
         name='congenital_heart_disease_mild_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+        type='sequela',
         gbd_id=sid(4862),
         dismod_id=meid(15912),
         healthstate=Healthstate(
@@ -14168,6 +15741,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
         name='congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+        type='sequela',
         gbd_id=sid(4865),
         dismod_id=meid(15913),
         healthstate=Healthstate(
@@ -14177,6 +15751,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
         name='congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+        type='sequela',
         gbd_id=sid(4868),
         dismod_id=meid(15914),
         healthstate=Healthstate(
@@ -14186,6 +15761,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
         name='congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+        type='sequela',
         gbd_id=sid(4871),
         dismod_id=meid(15915),
         healthstate=Healthstate(
@@ -14195,6 +15771,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_without_heart_failure_or_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='congenital_heart_disease_without_heart_failure_or_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(4874),
         dismod_id=meid(15916),
         healthstate=Healthstate(
@@ -14204,6 +15781,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(4877),
         dismod_id=meid(15917),
         healthstate=Healthstate(
@@ -14213,6 +15791,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(4880),
         dismod_id=meid(15918),
         healthstate=Healthstate(
@@ -14222,6 +15801,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(4883),
         dismod_id=meid(15919),
         healthstate=Healthstate(
@@ -14231,6 +15811,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(4886),
         dismod_id=meid(15920),
         healthstate=Healthstate(
@@ -14240,6 +15821,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(4889),
         dismod_id=meid(15921),
         healthstate=Healthstate(
@@ -14249,6 +15831,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_mild_heart_failure_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='congenital_heart_disease_and_mild_heart_failure_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(4892),
         dismod_id=meid(15922),
         healthstate=Healthstate(
@@ -14258,6 +15841,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_boderline_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='congenital_heart_disease_boderline_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(4895),
         dismod_id=meid(15923),
         healthstate=Healthstate(
@@ -14267,6 +15851,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(4898),
         dismod_id=meid(15924),
         healthstate=Healthstate(
@@ -14276,6 +15861,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(4901),
         dismod_id=meid(15925),
         healthstate=Healthstate(
@@ -14285,6 +15871,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(4904),
         dismod_id=meid(15926),
         healthstate=Healthstate(
@@ -14294,6 +15881,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(4907),
         dismod_id=meid(15927),
         healthstate=Healthstate(
@@ -14303,6 +15891,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_moderate_heart_failure_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='congenital_heart_disease_and_moderate_heart_failure_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(4910),
         dismod_id=meid(15928),
         healthstate=Healthstate(
@@ -14312,6 +15901,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_borderline_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='congenital_heart_disease_borderline_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(4913),
         dismod_id=meid(15929),
         healthstate=Healthstate(
@@ -14321,6 +15911,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(4916),
         dismod_id=meid(15930),
         healthstate=Healthstate(
@@ -14330,6 +15921,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(4919),
         dismod_id=meid(15931),
         healthstate=Healthstate(
@@ -14339,6 +15931,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(4922),
         dismod_id=meid(15932),
         healthstate=Healthstate(
@@ -14348,6 +15941,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(4925),
         dismod_id=meid(15933),
         healthstate=Healthstate(
@@ -14357,6 +15951,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_and_severe_heart_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='congenital_heart_disease_and_severe_heart_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(4928),
         dismod_id=meid(15934),
         healthstate=Healthstate(
@@ -14366,6 +15961,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_borderline_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='congenital_heart_disease_borderline_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(4931),
         dismod_id=meid(15935),
         healthstate=Healthstate(
@@ -14375,6 +15971,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='congenital_heart_disease_mild_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(4934),
         dismod_id=meid(15936),
         healthstate=Healthstate(
@@ -14384,6 +15981,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(4937),
         dismod_id=meid(15937),
         healthstate=Healthstate(
@@ -14393,6 +15991,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(4940),
         dismod_id=meid(15938),
         healthstate=Healthstate(
@@ -14402,6 +16001,7 @@ sequelae = Sequelae(**{
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
         name='congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+        type='sequela',
         gbd_id=sid(4943),
         dismod_id=meid(15939),
         healthstate=Healthstate(
@@ -14411,6 +16011,7 @@ sequelae = Sequelae(**{
     ),
     'acute_adenolymphangitis_due_to_lymphatic_filariasis': Sequela(
         name='acute_adenolymphangitis_due_to_lymphatic_filariasis',
+        type='sequela',
         gbd_id=sid(4946),
         dismod_id=meid(15811),
         healthstate=Healthstate(
@@ -14420,6 +16021,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_multiple_sclerosis': Sequela(
         name='asymptomatic_multiple_sclerosis',
+        type='sequela',
         gbd_id=sid(4949),
         dismod_id=meid(15810),
         healthstate=Healthstate(
@@ -14429,6 +16031,7 @@ sequelae = Sequelae(**{
     ),
     'mild_symptomatic_peptic_ulcer_disease_with_mild_anemia': Sequela(
         name='mild_symptomatic_peptic_ulcer_disease_with_mild_anemia',
+        type='sequela',
         gbd_id=sid(4952),
         dismod_id=meid(16205),
         healthstate=Healthstate(
@@ -14438,6 +16041,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_symptomatic_peptic_ulcer_disease_with_mild_anemia': Sequela(
         name='moderate_symptomatic_peptic_ulcer_disease_with_mild_anemia',
+        type='sequela',
         gbd_id=sid(4955),
         dismod_id=meid(16206),
         healthstate=Healthstate(
@@ -14447,6 +16051,7 @@ sequelae = Sequelae(**{
     ),
     'mild_symptomatic_peptic_ulcer_disease_with_moderate_anemia': Sequela(
         name='mild_symptomatic_peptic_ulcer_disease_with_moderate_anemia',
+        type='sequela',
         gbd_id=sid(4958),
         dismod_id=meid(16208),
         healthstate=Healthstate(
@@ -14456,6 +16061,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_symptomatic_peptic_ulcer_disease_with_moderate_anemia': Sequela(
         name='moderate_symptomatic_peptic_ulcer_disease_with_moderate_anemia',
+        type='sequela',
         gbd_id=sid(4961),
         dismod_id=meid(16209),
         healthstate=Healthstate(
@@ -14465,6 +16071,7 @@ sequelae = Sequelae(**{
     ),
     'mild_symptomatic_peptic_ulcer_disease_with_severe_anemia': Sequela(
         name='mild_symptomatic_peptic_ulcer_disease_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(4964),
         dismod_id=meid(16211),
         healthstate=Healthstate(
@@ -14474,6 +16081,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_symptomatic_peptic_ulcer_disease_with_severe_anemia': Sequela(
         name='moderate_symptomatic_peptic_ulcer_disease_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(4967),
         dismod_id=meid(16212),
         healthstate=Healthstate(
@@ -14483,6 +16091,7 @@ sequelae = Sequelae(**{
     ),
     'mild_symptomatic_peptic_ulcer_disease_without_anemia': Sequela(
         name='mild_symptomatic_peptic_ulcer_disease_without_anemia',
+        type='sequela',
         gbd_id=sid(4970),
         dismod_id=meid(16214),
         healthstate=Healthstate(
@@ -14492,6 +16101,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_symptomatic_peptic_ulcer_disease_without_anemia': Sequela(
         name='moderate_symptomatic_peptic_ulcer_disease_without_anemia',
+        type='sequela',
         gbd_id=sid(4973),
         dismod_id=meid(16215),
         healthstate=Healthstate(
@@ -14501,6 +16111,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_peptic_ulcer_disease_with_mild_anemia': Sequela(
         name='asymptomatic_peptic_ulcer_disease_with_mild_anemia',
+        type='sequela',
         gbd_id=sid(4976),
         dismod_id=meid(16216),
         healthstate=Healthstate(
@@ -14510,6 +16121,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_peptic_ulcer_disease_with_moderate_anemia': Sequela(
         name='asymptomatic_peptic_ulcer_disease_with_moderate_anemia',
+        type='sequela',
         gbd_id=sid(4979),
         dismod_id=meid(16217),
         healthstate=Healthstate(
@@ -14519,6 +16131,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_peptic_ulcer_disease_with_severe_anemia': Sequela(
         name='asymptomatic_peptic_ulcer_disease_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(4982),
         dismod_id=meid(16218),
         healthstate=Healthstate(
@@ -14528,6 +16141,7 @@ sequelae = Sequelae(**{
     ),
     'mild_symptomatic_gastritis_and_duodenitis_with_mild_anemia': Sequela(
         name='mild_symptomatic_gastritis_and_duodenitis_with_mild_anemia',
+        type='sequela',
         gbd_id=sid(4985),
         dismod_id=meid(16221),
         healthstate=Healthstate(
@@ -14537,6 +16151,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_symptomatic_gastritis_and_duodenitis_with_mild_anemia': Sequela(
         name='moderate_symptomatic_gastritis_and_duodenitis_with_mild_anemia',
+        type='sequela',
         gbd_id=sid(4988),
         dismod_id=meid(16222),
         healthstate=Healthstate(
@@ -14546,6 +16161,7 @@ sequelae = Sequelae(**{
     ),
     'mild_symptomatic_gastritis_and_duodenitis_with_moderate_anemia': Sequela(
         name='mild_symptomatic_gastritis_and_duodenitis_with_moderate_anemia',
+        type='sequela',
         gbd_id=sid(4991),
         dismod_id=meid(16224),
         healthstate=Healthstate(
@@ -14555,6 +16171,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_symptomatic_gastritis_and_duodenitis_with_moderate_anemia': Sequela(
         name='moderate_symptomatic_gastritis_and_duodenitis_with_moderate_anemia',
+        type='sequela',
         gbd_id=sid(4994),
         dismod_id=meid(16225),
         healthstate=Healthstate(
@@ -14564,6 +16181,7 @@ sequelae = Sequelae(**{
     ),
     'mild_symptomatic_gastritis_and_duodenitis_with_severe_anemia': Sequela(
         name='mild_symptomatic_gastritis_and_duodenitis_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(4997),
         dismod_id=meid(16227),
         healthstate=Healthstate(
@@ -14573,6 +16191,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_symptomatic_gastritis_and_duodenitis_with_severe_anemia': Sequela(
         name='moderate_symptomatic_gastritis_and_duodenitis_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(5000),
         dismod_id=meid(16228),
         healthstate=Healthstate(
@@ -14582,6 +16201,7 @@ sequelae = Sequelae(**{
     ),
     'mild_symptomatic_gastritis_and_duodenitis_without_anemia': Sequela(
         name='mild_symptomatic_gastritis_and_duodenitis_without_anemia',
+        type='sequela',
         gbd_id=sid(5003),
         dismod_id=meid(16230),
         healthstate=Healthstate(
@@ -14591,6 +16211,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_symptomatic_gastritis_and_duodenitis_without_anemia': Sequela(
         name='moderate_symptomatic_gastritis_and_duodenitis_without_anemia',
+        type='sequela',
         gbd_id=sid(5006),
         dismod_id=meid(16231),
         healthstate=Healthstate(
@@ -14600,6 +16221,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_gastritis_and_duodenitis_with_mild_anemia': Sequela(
         name='asymptomatic_gastritis_and_duodenitis_with_mild_anemia',
+        type='sequela',
         gbd_id=sid(5009),
         dismod_id=meid(16232),
         healthstate=Healthstate(
@@ -14609,6 +16231,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_gastritis_and_duodenitis_with_moderate_anemia': Sequela(
         name='asymptomatic_gastritis_and_duodenitis_with_moderate_anemia',
+        type='sequela',
         gbd_id=sid(5012),
         dismod_id=meid(16233),
         healthstate=Healthstate(
@@ -14618,6 +16241,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_gastritis_and_duodenitis_with_severe_anemia': Sequela(
         name='asymptomatic_gastritis_and_duodenitis_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(5015),
         dismod_id=meid(16234),
         healthstate=Healthstate(
@@ -14627,6 +16251,7 @@ sequelae = Sequelae(**{
     ),
     'severe_malaria_with_mild_anemia': Sequela(
         name='severe_malaria_with_mild_anemia',
+        type='sequela',
         gbd_id=sid(5018),
         dismod_id=meid(16377),
         healthstate=Healthstate(
@@ -14636,6 +16261,7 @@ sequelae = Sequelae(**{
     ),
     'severe_malaria_with_moderate_anemia': Sequela(
         name='severe_malaria_with_moderate_anemia',
+        type='sequela',
         gbd_id=sid(5021),
         dismod_id=meid(16378),
         healthstate=Healthstate(
@@ -14645,6 +16271,7 @@ sequelae = Sequelae(**{
     ),
     'severe_malaria_with_severe_anemia': Sequela(
         name='severe_malaria_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(5024),
         dismod_id=meid(16379),
         healthstate=Healthstate(
@@ -14654,6 +16281,7 @@ sequelae = Sequelae(**{
     ),
     'mild_malaria_with_mild_anemia': Sequela(
         name='mild_malaria_with_mild_anemia',
+        type='sequela',
         gbd_id=sid(5027),
         dismod_id=meid(16384),
         healthstate=Healthstate(
@@ -14663,6 +16291,7 @@ sequelae = Sequelae(**{
     ),
     'mild_malaria_with_moderate_anemia': Sequela(
         name='mild_malaria_with_moderate_anemia',
+        type='sequela',
         gbd_id=sid(5030),
         dismod_id=meid(16385),
         healthstate=Healthstate(
@@ -14672,6 +16301,7 @@ sequelae = Sequelae(**{
     ),
     'mild_malaria_with_severe_anemia': Sequela(
         name='mild_malaria_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(5033),
         dismod_id=meid(16386),
         healthstate=Healthstate(
@@ -14681,6 +16311,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_malaria_with_mild_anemia': Sequela(
         name='moderate_malaria_with_mild_anemia',
+        type='sequela',
         gbd_id=sid(5036),
         dismod_id=meid(16387),
         healthstate=Healthstate(
@@ -14690,6 +16321,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_malaria_with_moderate_anemia': Sequela(
         name='moderate_malaria_with_moderate_anemia',
+        type='sequela',
         gbd_id=sid(5039),
         dismod_id=meid(16388),
         healthstate=Healthstate(
@@ -14699,6 +16331,7 @@ sequelae = Sequelae(**{
     ),
     'moderate_malaria_with_severe_anemia': Sequela(
         name='moderate_malaria_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(5042),
         dismod_id=meid(16389),
         healthstate=Healthstate(
@@ -14708,6 +16341,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_peptic_ulcer_disease_without_anemia': Sequela(
         name='asymptomatic_peptic_ulcer_disease_without_anemia',
+        type='sequela',
         gbd_id=sid(5045),
         dismod_id=meid(16219),
         healthstate=Healthstate(
@@ -14717,6 +16351,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_gastritis_and_duodenitis_without_anemia': Sequela(
         name='asymptomatic_gastritis_and_duodenitis_without_anemia',
+        type='sequela',
         gbd_id=sid(5048),
         dismod_id=meid(16235),
         healthstate=Healthstate(
@@ -14726,6 +16361,7 @@ sequelae = Sequelae(**{
     ),
     'early_hiv_with_mild_anemia': Sequela(
         name='early_hiv_with_mild_anemia',
+        type='sequela',
         gbd_id=sid(5051),
         dismod_id=meid(16321),
         healthstate=Healthstate(
@@ -14735,6 +16371,7 @@ sequelae = Sequelae(**{
     ),
     'early_hiv_with_moderate_anemia': Sequela(
         name='early_hiv_with_moderate_anemia',
+        type='sequela',
         gbd_id=sid(5054),
         dismod_id=meid(16322),
         healthstate=Healthstate(
@@ -14744,6 +16381,7 @@ sequelae = Sequelae(**{
     ),
     'early_hiv_with_severe_anemia': Sequela(
         name='early_hiv_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(5057),
         dismod_id=meid(16323),
         healthstate=Healthstate(
@@ -14753,15 +16391,17 @@ sequelae = Sequelae(**{
     ),
     'early_hiv_without_anemia': Sequela(
         name='early_hiv_without_anemia',
+        type='sequela',
         gbd_id=sid(5060),
         dismod_id=meid(16324),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_anxiety_about_diagnosis',
+            name='generic_uncomplicated_disease_anxiety_about_diagnosis',
             gbd_id=hsid(560),
         ),
     ),
     'symptomatic_hiv_with_mild_anemia': Sequela(
         name='symptomatic_hiv_with_mild_anemia',
+        type='sequela',
         gbd_id=sid(5063),
         dismod_id=meid(16325),
         healthstate=Healthstate(
@@ -14771,6 +16411,7 @@ sequelae = Sequelae(**{
     ),
     'symptomatic_hiv_with_moderate_anemia': Sequela(
         name='symptomatic_hiv_with_moderate_anemia',
+        type='sequela',
         gbd_id=sid(5066),
         dismod_id=meid(16326),
         healthstate=Healthstate(
@@ -14780,6 +16421,7 @@ sequelae = Sequelae(**{
     ),
     'symptomatic_hiv_with_severe_anemia': Sequela(
         name='symptomatic_hiv_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(5069),
         dismod_id=meid(16327),
         healthstate=Healthstate(
@@ -14789,6 +16431,7 @@ sequelae = Sequelae(**{
     ),
     'symptomatic_hiv_without_anemia': Sequela(
         name='symptomatic_hiv_without_anemia',
+        type='sequela',
         gbd_id=sid(5072),
         dismod_id=meid(16328),
         healthstate=Healthstate(
@@ -14798,6 +16441,7 @@ sequelae = Sequelae(**{
     ),
     'aids_with_antiretroviral_treatment_with_mild_anemia': Sequela(
         name='aids_with_antiretroviral_treatment_with_mild_anemia',
+        type='sequela',
         gbd_id=sid(5075),
         dismod_id=meid(16329),
         healthstate=Healthstate(
@@ -14807,6 +16451,7 @@ sequelae = Sequelae(**{
     ),
     'aids_with_antiretroviral_treatment_with_moderate_anemia': Sequela(
         name='aids_with_antiretroviral_treatment_with_moderate_anemia',
+        type='sequela',
         gbd_id=sid(5078),
         dismod_id=meid(16330),
         healthstate=Healthstate(
@@ -14816,6 +16461,7 @@ sequelae = Sequelae(**{
     ),
     'aids_with_antiretroviral_treatment_with_severe_anemia': Sequela(
         name='aids_with_antiretroviral_treatment_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(5081),
         dismod_id=meid(16331),
         healthstate=Healthstate(
@@ -14825,6 +16471,7 @@ sequelae = Sequelae(**{
     ),
     'aids_with_antiretroviral_treatment_without_anemia': Sequela(
         name='aids_with_antiretroviral_treatment_without_anemia',
+        type='sequela',
         gbd_id=sid(5084),
         dismod_id=meid(16332),
         healthstate=Healthstate(
@@ -14834,6 +16481,7 @@ sequelae = Sequelae(**{
     ),
     'aids_without_antiretroviral_treatment_with_mild_anemia': Sequela(
         name='aids_without_antiretroviral_treatment_with_mild_anemia',
+        type='sequela',
         gbd_id=sid(5087),
         dismod_id=meid(16333),
         healthstate=Healthstate(
@@ -14843,6 +16491,7 @@ sequelae = Sequelae(**{
     ),
     'aids_without_antiretroviral_treatment_with_moderate_anemia': Sequela(
         name='aids_without_antiretroviral_treatment_with_moderate_anemia',
+        type='sequela',
         gbd_id=sid(5090),
         dismod_id=meid(16334),
         healthstate=Healthstate(
@@ -14852,6 +16501,7 @@ sequelae = Sequelae(**{
     ),
     'aids_without_antiretroviral_treatment_with_severe_anemia': Sequela(
         name='aids_without_antiretroviral_treatment_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(5093),
         dismod_id=meid(16335),
         healthstate=Healthstate(
@@ -14861,6 +16511,7 @@ sequelae = Sequelae(**{
     ),
     'aids_without_antiretroviral_treatment_without_anemia': Sequela(
         name='aids_without_antiretroviral_treatment_without_anemia',
+        type='sequela',
         gbd_id=sid(5096),
         dismod_id=meid(16336),
         healthstate=Healthstate(
@@ -14870,6 +16521,7 @@ sequelae = Sequelae(**{
     ),
     'drug_susceptible_hiv_aids_tuberculosis_with_mild_anemia': Sequela(
         name='drug_susceptible_hiv_aids_tuberculosis_with_mild_anemia',
+        type='sequela',
         gbd_id=sid(5099),
         dismod_id=meid(16337),
         healthstate=Healthstate(
@@ -14879,6 +16531,7 @@ sequelae = Sequelae(**{
     ),
     'drug_susceptible_hiv_aids_tuberculosis_with_moderate_anemia': Sequela(
         name='drug_susceptible_hiv_aids_tuberculosis_with_moderate_anemia',
+        type='sequela',
         gbd_id=sid(5102),
         dismod_id=meid(16338),
         healthstate=Healthstate(
@@ -14888,6 +16541,7 @@ sequelae = Sequelae(**{
     ),
     'drug_susceptible_hiv_aids_tuberculosis_with_severe_anemia': Sequela(
         name='drug_susceptible_hiv_aids_tuberculosis_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(5105),
         dismod_id=meid(16339),
         healthstate=Healthstate(
@@ -14897,6 +16551,7 @@ sequelae = Sequelae(**{
     ),
     'drug_susceptible_hiv_aids_tuberculosis_without_anemia': Sequela(
         name='drug_susceptible_hiv_aids_tuberculosis_without_anemia',
+        type='sequela',
         gbd_id=sid(5108),
         dismod_id=meid(16340),
         healthstate=Healthstate(
@@ -14906,6 +16561,7 @@ sequelae = Sequelae(**{
     ),
     'multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_mild_anemia': Sequela(
         name='multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_mild_anemia',
+        type='sequela',
         gbd_id=sid(5111),
         dismod_id=meid(16341),
         healthstate=Healthstate(
@@ -14915,6 +16571,7 @@ sequelae = Sequelae(**{
     ),
     'multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_moderate_anemia': Sequela(
         name='multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_moderate_anemia',
+        type='sequela',
         gbd_id=sid(5114),
         dismod_id=meid(16342),
         healthstate=Healthstate(
@@ -14924,6 +16581,7 @@ sequelae = Sequelae(**{
     ),
     'multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_severe_anemia': Sequela(
         name='multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(5117),
         dismod_id=meid(16343),
         healthstate=Healthstate(
@@ -14933,6 +16591,7 @@ sequelae = Sequelae(**{
     ),
     'multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_without_anemia': Sequela(
         name='multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_without_anemia',
+        type='sequela',
         gbd_id=sid(5120),
         dismod_id=meid(16344),
         healthstate=Healthstate(
@@ -14942,6 +16601,7 @@ sequelae = Sequelae(**{
     ),
     'extensively_drug_resistant_hiv_aids_tuberculosis_with_mild_anemia': Sequela(
         name='extensively_drug_resistant_hiv_aids_tuberculosis_with_mild_anemia',
+        type='sequela',
         gbd_id=sid(5123),
         dismod_id=meid(16345),
         healthstate=Healthstate(
@@ -14951,6 +16611,7 @@ sequelae = Sequelae(**{
     ),
     'extensively_drug_resistant_hiv_aids_tuberculosis_with_moderate_anemia': Sequela(
         name='extensively_drug_resistant_hiv_aids_tuberculosis_with_moderate_anemia',
+        type='sequela',
         gbd_id=sid(5126),
         dismod_id=meid(16346),
         healthstate=Healthstate(
@@ -14960,6 +16621,7 @@ sequelae = Sequelae(**{
     ),
     'extensively_drug_resistant_hiv_aids_tuberculosis_with_severe_anemia': Sequela(
         name='extensively_drug_resistant_hiv_aids_tuberculosis_with_severe_anemia',
+        type='sequela',
         gbd_id=sid(5129),
         dismod_id=meid(16347),
         healthstate=Healthstate(
@@ -14969,6 +16631,7 @@ sequelae = Sequelae(**{
     ),
     'extensively_drug_resistant_hiv_aids_tuberculosis_without_anemia': Sequela(
         name='extensively_drug_resistant_hiv_aids_tuberculosis_without_anemia',
+        type='sequela',
         gbd_id=sid(5132),
         dismod_id=meid(16348),
         healthstate=Healthstate(
@@ -14978,6 +16641,7 @@ sequelae = Sequelae(**{
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_compensated': Sequela(
         name='cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_compensated',
+        type='sequela',
         gbd_id=sid(5135),
         dismod_id=meid(11655),
         healthstate=Healthstate(
@@ -14987,6 +16651,7 @@ sequelae = Sequelae(**{
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_compensated': Sequela(
         name='cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_compensated',
+        type='sequela',
         gbd_id=sid(5138),
         dismod_id=meid(11656),
         healthstate=Healthstate(
@@ -14996,6 +16661,7 @@ sequelae = Sequelae(**{
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_compensated': Sequela(
         name='cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_compensated',
+        type='sequela',
         gbd_id=sid(5141),
         dismod_id=meid(11657),
         healthstate=Healthstate(
@@ -15005,6 +16671,7 @@ sequelae = Sequelae(**{
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_compensated': Sequela(
         name='cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_compensated',
+        type='sequela',
         gbd_id=sid(5144),
         dismod_id=meid(11658),
         healthstate=Healthstate(
@@ -15014,6 +16681,7 @@ sequelae = Sequelae(**{
     ),
     'severe_disfigurement_due_to_adult_tertiary_syphilis': Sequela(
         name='severe_disfigurement_due_to_adult_tertiary_syphilis',
+        type='sequela',
         gbd_id=sid(5147),
         dismod_id=meid(16412),
         healthstate=Healthstate(
@@ -15023,6 +16691,7 @@ sequelae = Sequelae(**{
     ),
     'neurological_problems_due_to_adult_tertiary_syphilis': Sequela(
         name='neurological_problems_due_to_adult_tertiary_syphilis',
+        type='sequela',
         gbd_id=sid(5150),
         dismod_id=meid(16414),
         healthstate=Healthstate(
@@ -15032,6 +16701,7 @@ sequelae = Sequelae(**{
     ),
     'cardiovascular_complications_due_to_adult_tertiary_syphilis': Sequela(
         name='cardiovascular_complications_due_to_adult_tertiary_syphilis',
+        type='sequela',
         gbd_id=sid(5153),
         dismod_id=meid(16415),
         healthstate=Healthstate(
@@ -15041,6 +16711,7 @@ sequelae = Sequelae(**{
     ),
     'asymptomatic_adult_tertiary_syphilis': Sequela(
         name='asymptomatic_adult_tertiary_syphilis',
+        type='sequela',
         gbd_id=sid(5156),
         dismod_id=meid(16416),
         healthstate=Healthstate(
@@ -15050,6 +16721,7 @@ sequelae = Sequelae(**{
     ),
     'other_infectious_diseases': Sequela(
         name='other_infectious_diseases',
+        type='sequela',
         gbd_id=sid(5159),
         dismod_id=meid(16430),
         healthstate=Healthstate(
@@ -15059,6 +16731,7 @@ sequelae = Sequelae(**{
     ),
     'other_congenital_birth_defects': Sequela(
         name='other_congenital_birth_defects',
+        type='sequela',
         gbd_id=sid(5162),
         dismod_id=meid(16427),
         healthstate=Healthstate(
@@ -15068,6 +16741,7 @@ sequelae = Sequelae(**{
     ),
     'ectopic_pregnancy': Sequela(
         name='ectopic_pregnancy',
+        type='sequela',
         gbd_id=sid(5165),
         dismod_id=meid(10485),
         healthstate=Healthstate(

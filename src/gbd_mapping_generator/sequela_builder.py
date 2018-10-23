@@ -14,6 +14,7 @@ base_types = {
     },
     'Sequela': {
         'attrs': (('name', 'str'),
+                  ('type', 'str'),
                   ('gbd_id', 'sid'),
                   ('dismod_id', 'meid'),
                   ('healthstate', 'Healthstate'),),
@@ -33,6 +34,7 @@ def make_sequela(name, sid, mei_id, hs_name, hsid):
     out = ""
     out += TAB + f"'{name}': Sequela(\n"
     out += TAB*2 + f"name='{name}',\n"
+    out += TAB * 2 + f"type='sequela',\n"
     out += TAB*2 + f"gbd_id={to_id(sid, 'sid')},\n"
     out += TAB*2 + f"dismod_id={to_id(mei_id, 'meid')},\n"
     out += TAB*2 + f"healthstate=Healthstate(\n"
