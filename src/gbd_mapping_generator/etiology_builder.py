@@ -8,7 +8,7 @@ IMPORTABLES_DEFINED = ('Etiology', 'etiologies')
 base_types = {
     'Etiology': {
         'attrs': (('name', 'str'),
-                  ('type', 'str'),
+                  ('kind', 'str'),
                   ('gbd_id', 'Union[reiid, None]'),),
         'superclass': ('ModelableEntity', modelable_entity_attrs),
         'docstring': 'Container for etiology GBD ids and metadata.'
@@ -25,7 +25,7 @@ def make_etiology(name, reiid):
     out = ""
     out += TAB + f"{name}=Etiology(\n"
     out += TAB*2 + f"name='{name}',\n"
-    out += TAB * 2 + f"type='etiology',\n"
+    out += TAB * 2 + f"kind='etiology',\n"
     out += TAB*2 + f"gbd_id=reiid({reiid}),\n"
     out += TAB + "),\n"
     return out

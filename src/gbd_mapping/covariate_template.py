@@ -12,11 +12,11 @@ from .base_template import ModelableEntity, GbdRecord
 
 class Covariate(ModelableEntity):
     """Container for covariate GBD ids and metadata."""
-    __slots__ = ('name', 'type', 'gbd_id', 'group', 'status', 'by_age', 'by_sex', 'dichotomous', )
+    __slots__ = ('name', 'kind', 'gbd_id', 'group', 'status', 'by_age', 'by_sex', 'dichotomous', )
 
     def __init__(self,
                  name: str,
-                 type: str,
+                 kind: str,
                  gbd_id: Union[covid, None],
                  group: str,
                  status: str,
@@ -24,9 +24,10 @@ class Covariate(ModelableEntity):
                  by_sex: bool,
                  dichotomous: bool, ):
         super().__init__(name=name,
+                         kind=kind,
                          gbd_id=gbd_id)
         self.name = name
-        self.type = type
+        self.kind = kind
         self.gbd_id = gbd_id
         self.group = group
         self.status = status

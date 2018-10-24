@@ -14,20 +14,21 @@ from .etiology_template import Etiology
 
 class Cause(ModelableEntity):
     """Container for cause GBD ids and metadata"""
-    __slots__ = ('name', 'type', 'gbd_id', 'dismod_id', 'restrictions', 'sequelae', 'etiologies', )
+    __slots__ = ('name', 'kind', 'gbd_id', 'dismod_id', 'restrictions', 'sequelae', 'etiologies', )
 
     def __init__(self,
                  name: str,
-                 type: str,
+                 kind: str,
                  gbd_id: cid,
                  dismod_id: Union[meid, _Unknown],
                  restrictions: Restrictions,
                  sequelae: Tuple[Sequela, ...] = None,
                  etiologies: Tuple[Etiology, ...] = None, ):
         super().__init__(name=name,
+                         kind=kind,
                          gbd_id=gbd_id)
         self.name = name
-        self.type = type
+        self.kind = kind
         self.gbd_id = gbd_id
         self.dismod_id = dismod_id
         self.restrictions = restrictions

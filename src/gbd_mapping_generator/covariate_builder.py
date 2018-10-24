@@ -8,7 +8,7 @@ IMPORTABLES_DEFINED = ('Covariate', 'covariates')
 base_types = {
     'Covariate': {
         'attrs': (('name', 'str'),
-                  ('type', 'str'),
+                  ('kind', 'str'),
                   ('gbd_id', 'Union[covid, None]'),
                   ('group', 'str'),
                   ('status', 'str'),

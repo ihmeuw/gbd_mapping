@@ -8,7 +8,7 @@ IMPORTABLES_DEFINED = ('Cause', 'causes')
 base_types = {
     'Cause': {
         'attrs': (('name', 'str'),
-                  ('type', 'str'),
+                  ('kind', 'str'),
                   ('gbd_id', 'cid'),
                   ('dismod_id', 'Union[meid, _Unknown]'),
                   ('restrictions', 'Restrictions'),
@@ -29,7 +29,7 @@ def make_cause(name, cid, dismod_id, restrictions, sequelae=None, etiologies=Non
     out = ""
     out += TAB + f"'{name}': Cause(\n"
     out += TAB*2 + f"name='{name}',\n"
-    out += TAB * 2 + f"type='cause',\n"
+    out += TAB * 2 + f"kind='cause',\n"
     out += TAB*2 + f"gbd_id=cid({cid}),\n"
     out += TAB*2 + f"dismod_id={to_id(dismod_id, 'meid')},\n"
     out += TAB*2 + f"restrictions=Restrictions(\n"

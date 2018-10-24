@@ -54,13 +54,15 @@ class GbdRecord:
 
 class ModelableEntity(GbdRecord):
     """Container for general GBD ids and metadata."""
-    __slots__ = ('name', 'gbd_id', )
+    __slots__ = ('name', 'kind', 'gbd_id', )
 
     def __init__(self,
                  name: str,
+                 kind: str,
                  gbd_id: Union[cid, sid, hsid, meid, covid, reiid, None], ):
         super().__init__()
         self.name = name
+        self.kind = kind
         self.gbd_id = gbd_id
 
 

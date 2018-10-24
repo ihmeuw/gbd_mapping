@@ -11,14 +11,9 @@ IMPORTABLES_DEFINED = ('CoverageGap', 'coverage_gaps')
 
 
 base_types = {
-    'HealthcareTechnology': {
-        'attrs': (('name', 'str'), ('type', 'str'),),
-        'superclass': ('GbdRecord', gbd_record_attrs),
-        'docstring': 'Container for healthcare technology and metadata.'
-    },
     'CoverageGap': {
         'attrs': (('name', 'str'),
-                  ('type', 'str'),
+                  ('kind', 'str'),
                   ('gbd_id', 'Union[reiid, None]'),
                   ('restrictions', 'Restrictions'),
                   ('distribution', 'str'),
@@ -41,7 +36,7 @@ def make_coverage_gap(name, gbd_id, distribution, restrictions, levels=None, aff
     out = ""
     out += TAB + f"{name}=CoverageGap(\n"
     out += 2*TAB + f"name='{name}',\n"
-    out += TAB * 2 + "type='coverage_gap',\n"
+    out += TAB * 2 + "kind='coverage_gap',\n"
     if gbd_id:
         out += 2 * TAB + f"gbd_id=reiid({gbd_id}),\n"
     else:
