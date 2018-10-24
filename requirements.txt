@@ -1,4 +1,0 @@
-click == 6.7
-numpy
-pandas
-pyyaml
