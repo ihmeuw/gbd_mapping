@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import yaml
 
 import vivarium_gbd_access.gbd as gbd
 from .util import clean_entity_list, clean_risk_me

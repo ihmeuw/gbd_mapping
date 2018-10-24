@@ -442,7 +442,8 @@ class Covariates(GbdRecord):
                  'pigs_raised_in_intensive_industrial_agricultural_systems_per_capita',
                  'implicit_versus_explicitly_defined_nash', 'mean_hemoglobin_age_sex_specific',
                  'physicians_per_capita', 'nurses_and_midwives_per_capita', 'pharmacists_per_capita',
-                 'hiv_mortality_rate', 'untreated_hiv', )
+                 'hiv_mortality_rate', 'untreated_hiv', 'medical_schools', 'dentists_per_capita',
+                 'full_vaccine_coverage_indicator_proportion_sage_method_dtp3_pcv3_mcv2', 'net_reproductive_rate', )
 
     def __init__(self, **kwargs):
         super().__init__()
@@ -1104,3 +1105,7 @@ class Covariates(GbdRecord):
         self.pharmacists_per_capita = kwargs.get('pharmacists_per_capita')
         self.hiv_mortality_rate = kwargs.get('hiv_mortality_rate')
         self.untreated_hiv = kwargs.get('untreated_hiv')
+        self.medical_schools = kwargs.get('medical_schools')
+        self.dentists_per_capita = kwargs.get('dentists_per_capita')
+        self.full_vaccine_coverage_indicator_proportion_sage_method_dtp3_pcv3_mcv2 = kwargs.get('full_vaccine_coverage_indicator_proportion_sage_method_dtp3_pcv3_mcv2')
+        self.net_reproductive_rate = kwargs.get('net_reproductive_rate')

@@ -2111,7 +2111,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(245),
         dismod_id=meid(1671),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -2147,7 +2147,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(249),
         dismod_id=meid(1675),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -2183,7 +2183,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(253),
         dismod_id=meid(1683),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -2219,7 +2219,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(257),
         dismod_id=meid(1687),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -2255,7 +2255,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(261),
         dismod_id=meid(1691),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -2291,7 +2291,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(265),
         dismod_id=meid(1695),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -2327,7 +2327,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(269),
         dismod_id=meid(1699),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -2372,7 +2372,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(274),
         dismod_id=meid(1704),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -2408,7 +2408,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(278),
         dismod_id=meid(1708),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -2453,7 +2453,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(283),
         dismod_id=meid(1713),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -2489,7 +2489,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(287),
         dismod_id=meid(1717),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -2525,7 +2525,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(291),
         dismod_id=meid(1721),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -2579,7 +2579,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(297),
         dismod_id=meid(1728),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -2624,7 +2624,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(302),
         dismod_id=meid(1733),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -2660,7 +2660,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(306),
         dismod_id=meid(1737),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -2696,7 +2696,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(310),
         dismod_id=meid(1741),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -2732,7 +2732,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(314),
         dismod_id=meid(1745),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -2768,7 +2768,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(318),
         dismod_id=meid(1749),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -2804,7 +2804,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(322),
         dismod_id=meid(1753),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -2840,7 +2840,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(330),
         dismod_id=meid(1762),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -2876,7 +2876,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(334),
         dismod_id=meid(1766),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -2912,7 +2912,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(338),
         dismod_id=meid(1770),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -2948,7 +2948,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(342),
         dismod_id=meid(1774),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -2993,7 +2993,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(347),
         dismod_id=meid(1779),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -3029,7 +3029,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(351),
         dismod_id=meid(1783),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -3065,7 +3065,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(355),
         dismod_id=meid(1787),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -3101,7 +3101,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(359),
         dismod_id=meid(1791),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -3137,7 +3137,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(363),
         dismod_id=meid(1795),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -3173,7 +3173,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(367),
         dismod_id=meid(1799),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -3209,7 +3209,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(375),
         dismod_id=meid(1807),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -3884,7 +3884,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(458),
         dismod_id=meid(1951),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -3902,7 +3902,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(460),
         dismod_id=meid(1953),
         healthstate=Healthstate(
-            name='epilepsy_seizures_greater_than_=_once_a_month',
+            name='epilepsy_seizures_greater_than___once_a_month',
             gbd_id=hsid(745),
         ),
     ),
@@ -4190,7 +4190,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(493),
         dismod_id=meid(2006),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -5711,7 +5711,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(676),
         dismod_id=meid(2625),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -8942,7 +8942,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(1072),
         dismod_id=meid(3294),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_anxiety_about_diagnosis',
+            name='generic_uncomplicated_disease_anxiety_about_diagnosis',
             gbd_id=hsid(560),
         ),
     ),
@@ -9032,7 +9032,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(1082),
         dismod_id=meid(3304),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_anxiety_about_diagnosis',
+            name='generic_uncomplicated_disease_anxiety_about_diagnosis',
             gbd_id=hsid(560),
         ),
     ),
@@ -9122,7 +9122,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(1092),
         dismod_id=meid(3314),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_anxiety_about_diagnosis',
+            name='generic_uncomplicated_disease_anxiety_about_diagnosis',
             gbd_id=hsid(560),
         ),
     ),
@@ -9293,7 +9293,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(1113),
         dismod_id=meid(3343),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_anxiety_about_diagnosis',
+            name='generic_uncomplicated_disease_anxiety_about_diagnosis',
             gbd_id=hsid(560),
         ),
     ),
@@ -9302,7 +9302,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(1114),
         dismod_id=meid(3344),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_anxiety_about_diagnosis',
+            name='generic_uncomplicated_disease_anxiety_about_diagnosis',
             gbd_id=hsid(560),
         ),
     ),
@@ -9311,7 +9311,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(1115),
         dismod_id=meid(3345),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_anxiety_about_diagnosis',
+            name='generic_uncomplicated_disease_anxiety_about_diagnosis',
             gbd_id=hsid(560),
         ),
     ),
@@ -9320,7 +9320,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(1116),
         dismod_id=meid(3346),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -9797,7 +9797,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(1183),
         dismod_id=meid(9710),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_anxiety_about_diagnosis',
+            name='generic_uncomplicated_disease_anxiety_about_diagnosis',
             gbd_id=hsid(560),
         ),
     ),
@@ -9860,7 +9860,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(1190),
         dismod_id=meid(9477),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -9869,7 +9869,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(1191),
         dismod_id=meid(9487),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -9878,7 +9878,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(1192),
         dismod_id=meid(9482),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -9887,7 +9887,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(1193),
         dismod_id=meid(9492),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -11534,7 +11534,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(1490),
         dismod_id=meid(10738),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_worry_and_daily_medication',
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
             gbd_id=hsid(559),
         ),
     ),
@@ -14756,7 +14756,7 @@ sequelae = Sequelae(**{
         gbd_id=sid(5060),
         dismod_id=meid(16324),
         healthstate=Healthstate(
-            name='generic_uncomplicated_disease:_anxiety_about_diagnosis',
+            name='generic_uncomplicated_disease_anxiety_about_diagnosis',
             gbd_id=hsid(560),
         ),
     ),
