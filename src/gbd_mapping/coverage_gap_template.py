@@ -12,23 +12,14 @@ from .cause_template import Cause
 from .risk_template import Risk
 
 
-class HealthcareTechnology(GbdRecord):
-    """Container for healthcare technology and metadata."""
-    __slots__ = ('name', )
-
-    def __init__(self,
-                 name: str, ):
-        super().__init__()
-        self.name = name
-
-
 class CoverageGap(GbdRecord):
     """Container for coverage gap GBD ids and metadata."""
-    __slots__ = ('name', 'gbd_id', 'restrictions', 'distribution', 'levels', 'affected_causes',
+    __slots__ = ('name', 'kind', 'gbd_id', 'restrictions', 'distribution', 'levels', 'affected_causes',
                  'affected_risk_factors', 'healthcare_technologies', )
 
     def __init__(self,
                  name: str,
+                 kind: str,
                  gbd_id: Union[reiid, None],
                  restrictions: Restrictions,
                  distribution: str,
@@ -38,6 +29,7 @@ class CoverageGap(GbdRecord):
                  healthcare_technologies: Tuple[HealthcareTechnology, ...] = None, ):
         super().__init__()
         self.name = name
+        self.kind = kind
         self.gbd_id = gbd_id
         self.restrictions = restrictions
         self.distribution = distribution
@@ -49,24 +41,24 @@ class CoverageGap(GbdRecord):
 
 class CoverageGaps(GbdRecord):
     """Container for coverage gap data."""
-    __slots__ = ('low_measles_vaccine_coverage_first_dose', 'lack_of_lipid_lowering_therapy',
-                 'low_oral_rehydration_solution_coverage', 'lack_of_maternal_calcium_supplement',
-                 'lack_of_hiv_positive_antiretroviral_treatment', 'lack_of_immediate_assessment_and_stimulation',
-                 'lack_of_breastfeeding_promotion', )
+    __slots__ = ('lack_of_breastfeeding_promotion', 'lack_of_hiv_positive_antiretroviral_treatment',
+                 'lack_of_immediate_assessment_and_stimulation', 'lack_of_lipid_lowering_therapy',
+                 'lack_of_maternal_calcium_supplement', 'low_measles_vaccine_coverage_first_dose',
+                 'low_oral_rehydration_solution_coverage', )
 
     def __init__(self,
-                 low_measles_vaccine_coverage_first_dose: CoverageGap,
-                 lack_of_lipid_lowering_therapy: CoverageGap,
-                 low_oral_rehydration_solution_coverage: CoverageGap,
-                 lack_of_maternal_calcium_supplement: CoverageGap,
+                 lack_of_breastfeeding_promotion: CoverageGap,
                  lack_of_hiv_positive_antiretroviral_treatment: CoverageGap,
                  lack_of_immediate_assessment_and_stimulation: CoverageGap,
-                 lack_of_breastfeeding_promotion: CoverageGap, ):
+                 lack_of_lipid_lowering_therapy: CoverageGap,
+                 lack_of_maternal_calcium_supplement: CoverageGap,
+                 low_measles_vaccine_coverage_first_dose: CoverageGap,
+                 low_oral_rehydration_solution_coverage: CoverageGap, ):
         super().__init__()
-        self.low_measles_vaccine_coverage_first_dose = low_measles_vaccine_coverage_first_dose
-        self.lack_of_lipid_lowering_therapy = lack_of_lipid_lowering_therapy
-        self.low_oral_rehydration_solution_coverage = low_oral_rehydration_solution_coverage
-        self.lack_of_maternal_calcium_supplement = lack_of_maternal_calcium_supplement
+        self.lack_of_breastfeeding_promotion = lack_of_breastfeeding_promotion
         self.lack_of_hiv_positive_antiretroviral_treatment = lack_of_hiv_positive_antiretroviral_treatment
         self.lack_of_immediate_assessment_and_stimulation = lack_of_immediate_assessment_and_stimulation
-        self.lack_of_breastfeeding_promotion = lack_of_breastfeeding_promotion
+        self.lack_of_lipid_lowering_therapy = lack_of_lipid_lowering_therapy
+        self.lack_of_maternal_calcium_supplement = lack_of_maternal_calcium_supplement
+        self.low_measles_vaccine_coverage_first_dose = low_measles_vaccine_coverage_first_dose
+        self.low_oral_rehydration_solution_coverage = low_oral_rehydration_solution_coverage

@@ -13,6 +13,7 @@ IMPORTABLES_DEFINED = ('Risk', 'risk_factors')
 base_types = {
     'Risk': {
         'attrs': (('name', 'str'),
+                  ('kind', 'str'),
                   ('gbd_id', 'reiid'),
                   ('distribution', 'str'),
                   ('affected_causes', 'Tuple[Cause, ...]'),
@@ -36,6 +37,7 @@ def make_risk(name, reiid, distribution, restrictions, cause_list,
     out = ""
     out += TAB + f"{name}=Risk(\n"
     out += 2*TAB + f"name='{name}',\n"
+    out += TAB * 2 + f"kind='risk_factor',\n"
     out += 2*TAB + f"gbd_id=reiid({reiid}),\n"
     distribution = "UNKNOWN" if distribution == 'unknown' else f"'{distribution}'"
     out += 2*TAB + f"distribution={distribution},\n"

@@ -11,70 +11,87 @@ from .etiology_template import Etiology, Etiologies
 etiologies = Etiologies(
     cholera=Etiology(
         name='cholera',
+        kind='etiology',
         gbd_id=reiid(173),
     ),
     other_salmonella_infections=Etiology(
         name='other_salmonella_infections',
+        kind='etiology',
         gbd_id=reiid(174),
     ),
     shigellosis=Etiology(
         name='shigellosis',
+        kind='etiology',
         gbd_id=reiid(175),
     ),
     enteropathogenic_e_coli_infection=Etiology(
         name='enteropathogenic_e_coli_infection',
+        kind='etiology',
         gbd_id=reiid(176),
     ),
     enterotoxigenic_e_coli_infection=Etiology(
         name='enterotoxigenic_e_coli_infection',
+        kind='etiology',
         gbd_id=reiid(177),
     ),
     campylobacter_enteritis=Etiology(
         name='campylobacter_enteritis',
+        kind='etiology',
         gbd_id=reiid(178),
     ),
     amoebiasis=Etiology(
         name='amoebiasis',
+        kind='etiology',
         gbd_id=reiid(179),
     ),
     cryptosporidiosis=Etiology(
         name='cryptosporidiosis',
+        kind='etiology',
         gbd_id=reiid(180),
     ),
     rotaviral_enteritis=Etiology(
         name='rotaviral_enteritis',
+        kind='etiology',
         gbd_id=reiid(181),
     ),
     aeromonas=Etiology(
         name='aeromonas',
+        kind='etiology',
         gbd_id=reiid(182),
     ),
     clostridium_difficile=Etiology(
         name='clostridium_difficile',
+        kind='etiology',
         gbd_id=reiid(183),
     ),
     norovirus=Etiology(
         name='norovirus',
+        kind='etiology',
         gbd_id=reiid(184),
     ),
     adenovirus=Etiology(
         name='adenovirus',
+        kind='etiology',
         gbd_id=reiid(185),
     ),
     influenza=Etiology(
         name='influenza',
+        kind='etiology',
         gbd_id=reiid(187),
     ),
     pneumococcal_pneumonia=Etiology(
         name='pneumococcal_pneumonia',
+        kind='etiology',
         gbd_id=reiid(188),
     ),
     h_influenzae_type_b_pneumonia=Etiology(
         name='h_influenzae_type_b_pneumonia',
+        kind='etiology',
         gbd_id=reiid(189),
     ),
     respiratory_syncytial_virus_pneumonia=Etiology(
         name='respiratory_syncytial_virus_pneumonia',
+        kind='etiology',
         gbd_id=reiid(190),
     ),
 )

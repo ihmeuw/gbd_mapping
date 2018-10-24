@@ -13,11 +13,12 @@ from .cause_template import Cause
 
 class Risk(ModelableEntity):
     """Container for risk GBD ids and metadata."""
-    __slots__ = ('name', 'gbd_id', 'distribution', 'affected_causes', 'restrictions', 'levels', 'tmred',
+    __slots__ = ('name', 'kind', 'gbd_id', 'distribution', 'affected_causes', 'restrictions', 'levels', 'tmred',
                  'exposure_parameters', )
 
     def __init__(self,
                  name: str,
+                 kind: str,
                  gbd_id: reiid,
                  distribution: str,
                  affected_causes: Tuple[Cause, ...],
@@ -26,8 +27,10 @@ class Risk(ModelableEntity):
                  tmred: Tmred = None,
                  exposure_parameters: ExposureParameters = None, ):
         super().__init__(name=name,
+                         kind=kind,
                          gbd_id=gbd_id)
         self.name = name
+        self.kind = kind
         self.gbd_id = gbd_id
         self.distribution = distribution
         self.affected_causes = affected_causes

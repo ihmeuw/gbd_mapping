@@ -5,6 +5,7 @@ IMPORTABLES_DEFINED = ('GbdRecord', 'ModelableEntity', 'Restrictions', 'Tmred', 
 
 gbd_record_attrs = ()
 modelable_entity_attrs = (('name', 'str'),
+                          ('kind', 'str'),
                           ('gbd_id', 'Union[cid, sid, hsid, meid, covid, reiid, None]'),)
 restrictions_attrs = (('male_only', 'bool'),
                       ('female_only', 'bool'),
