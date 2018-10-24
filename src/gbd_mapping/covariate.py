@@ -11,7 +11,7 @@ from .covariate_template import Covariate, Covariates
 covariates = Covariates(**{
     'legality_of_abortion': Covariate(
         name='legality_of_abortion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(2),
         group='Abortion',
         status='Experimental',
@@ -21,7 +21,7 @@ covariates = Covariates(**{
     ),
     'absolute_value_of_average_latitude': Covariate(
         name='absolute_value_of_average_latitude',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(3),
         group='Latitude',
         status='Experimental',
@@ -31,7 +31,7 @@ covariates = Covariates(**{
     ),
     'adult_hiv_death_rate': Covariate(
         name='adult_hiv_death_rate',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(5),
         group='HIV',
         status='Experimental',
@@ -41,7 +41,7 @@ covariates = Covariates(**{
     ),
     'alcohol_liters_per_capita': Covariate(
         name='alcohol_liters_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(6),
         group='Alcohol',
         status='Experimental',
@@ -51,7 +51,7 @@ covariates = Covariates(**{
     ),
     'antenatal_care_1_visit_coverage_proportion': Covariate(
         name='antenatal_care_1_visit_coverage_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(7),
         group='ANC',
         status='Experimental',
@@ -61,7 +61,7 @@ covariates = Covariates(**{
     ),
     'antenatal_care_4_visits_coverage_proportion': Covariate(
         name='antenatal_care_4_visits_coverage_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(8),
         group='ANC',
         status='Experimental',
@@ -71,7 +71,7 @@ covariates = Covariates(**{
     ),
     'asbestos_production_binary': Covariate(
         name='asbestos_production_binary',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(11),
         group='Asbestos',
         status='Experimental',
@@ -81,7 +81,7 @@ covariates = Covariates(**{
     ),
     'asbestos_production_kg_per_capita': Covariate(
         name='asbestos_production_kg_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(12),
         group='Asbestos',
         status='Experimental',
@@ -91,7 +91,7 @@ covariates = Covariates(**{
     ),
     'age_specific_fertility_rate': Covariate(
         name='age_specific_fertility_rate',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(13),
         group='Fertility Rate',
         status='Experimental',
@@ -101,7 +101,7 @@ covariates = Covariates(**{
     ),
     'tobacco_cigarettes_per_capita': Covariate(
         name='tobacco_cigarettes_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(14),
         group='Cigarettes',
         status='Experimental',
@@ -111,7 +111,7 @@ covariates = Covariates(**{
     ),
     'coal_production_per_capita': Covariate(
         name='coal_production_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(15),
         group='Coal',
         status='Experimental',
@@ -121,7 +121,7 @@ covariates = Covariates(**{
     ),
     'coastal_population_within_10km_proportion': Covariate(
         name='coastal_population_within_10km_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(16),
         group='Coastal',
         status='Experimental',
@@ -131,7 +131,7 @@ covariates = Covariates(**{
     ),
     'completeness_of_vital_registration': Covariate(
         name='completeness_of_vital_registration',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(17),
         group='Completeness',
         status='Experimental',
@@ -141,7 +141,7 @@ covariates = Covariates(**{
     ),
     'contraception_modern_prevalence_proportion_by_age': Covariate(
         name='contraception_modern_prevalence_proportion_by_age',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(18),
         group='Contraception',
         status='Experimental',
@@ -151,7 +151,7 @@ covariates = Covariates(**{
     ),
     'contraception_modern_prevalence_proportion': Covariate(
         name='contraception_modern_prevalence_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(19),
         group='Contraception',
         status='Experimental',
@@ -161,7 +161,7 @@ covariates = Covariates(**{
     ),
     'cumulative_cigarettes_10_years': Covariate(
         name='cumulative_cigarettes_10_years',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(24),
         group='Cigarettes',
         status='Experimental',
@@ -171,7 +171,7 @@ covariates = Covariates(**{
     ),
     'cumulative_cigarettes_15_years': Covariate(
         name='cumulative_cigarettes_15_years',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(25),
         group='Cigarettes',
         status='Experimental',
@@ -181,7 +181,7 @@ covariates = Covariates(**{
     ),
     'cumulative_cigarettes_20_years': Covariate(
         name='cumulative_cigarettes_20_years',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(26),
         group='Cigarettes',
         status='Experimental',
@@ -191,7 +191,7 @@ covariates = Covariates(**{
     ),
     'cumulative_cigarettes_5_years': Covariate(
         name='cumulative_cigarettes_5_years',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(27),
         group='Cigarettes',
         status='Experimental',
@@ -201,7 +201,7 @@ covariates = Covariates(**{
     ),
     'diabetes_fasting_plasma_glucose_mmol_l': Covariate(
         name='diabetes_fasting_plasma_glucose_mmol_l',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(28),
         group='Diabetes',
         status='Experimental',
@@ -211,7 +211,7 @@ covariates = Covariates(**{
     ),
     'diabetes_age_standardized_prevalence_proportion': Covariate(
         name='diabetes_age_standardized_prevalence_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(29),
         group='Diabetes',
         status='Experimental',
@@ -221,7 +221,7 @@ covariates = Covariates(**{
     ),
     'diabetes_age_specific_prevalence_proportion': Covariate(
         name='diabetes_age_specific_prevalence_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(30),
         group='Diabetes',
         status='Experimental',
@@ -231,7 +231,7 @@ covariates = Covariates(**{
     ),
     'disaster_deaths_rate_per_1000': Covariate(
         name='disaster_deaths_rate_per_1000',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(31),
         group='Disasters',
         status='Experimental',
@@ -241,7 +241,7 @@ covariates = Covariates(**{
     ),
     'dtp3_coverage_proportion': Covariate(
         name='dtp3_coverage_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(32),
         group='DTP3',
         status='Experimental',
@@ -251,7 +251,7 @@ covariates = Covariates(**{
     ),
     'education_years_per_capita': Covariate(
         name='education_years_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(33),
         group='Education',
         status='Experimental',
@@ -261,7 +261,7 @@ covariates = Covariates(**{
     ),
     'famine_binary': Covariate(
         name='famine_binary',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(34),
         group='Shocks',
         status='Experimental',
@@ -271,7 +271,7 @@ covariates = Covariates(**{
     ),
     'female_hiv_death_rate_per_1_for_ages_15_49': Covariate(
         name='female_hiv_death_rate_per_1_for_ages_15_49',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(39),
         group='HIV',
         status='Experimental',
@@ -281,7 +281,7 @@ covariates = Covariates(**{
     ),
     'fertility_15_19_year_olds': Covariate(
         name='fertility_15_19_year_olds',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(40),
         group='Births',
         status='Experimental',
@@ -291,7 +291,7 @@ covariates = Covariates(**{
     ),
     'gold_production_binary': Covariate(
         name='gold_production_binary',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(42),
         group='Gold',
         status='Experimental',
@@ -301,7 +301,7 @@ covariates = Covariates(**{
     ),
     'gold_production_kg_per_capita': Covariate(
         name='gold_production_kg_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(43),
         group='Gold',
         status='Experimental',
@@ -311,7 +311,7 @@ covariates = Covariates(**{
     ),
     'health_system_access_unitless': Covariate(
         name='health_system_access_unitless',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(44),
         group='Health System',
         status='Experimental',
@@ -321,7 +321,7 @@ covariates = Covariates(**{
     ),
     'health_system_access_2_unitless': Covariate(
         name='health_system_access_2_unitless',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(45),
         group='Health System',
         status='Experimental',
@@ -331,7 +331,7 @@ covariates = Covariates(**{
     ),
     'proportion_of_households_using_iodized_salt_adjusted': Covariate(
         name='proportion_of_households_using_iodized_salt_adjusted',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(46),
         group='Iodized salt',
         status='Experimental',
@@ -341,7 +341,7 @@ covariates = Covariates(**{
     ),
     'hib3_vaccine_coverage_proportion': Covariate(
         name='hib3_vaccine_coverage_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(47),
         group='Hib3',
         status='Experimental',
@@ -351,7 +351,7 @@ covariates = Covariates(**{
     ),
     'hiv_prevalence_unadjusted_proportion': Covariate(
         name='hiv_prevalence_unadjusted_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(49),
         group='HIV',
         status='Experimental',
@@ -361,7 +361,7 @@ covariates = Covariates(**{
     ),
     'hospital_beds_per_1000': Covariate(
         name='hospital_beds_per_1000',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(50),
         group='Hospital beds',
         status='Experimental',
@@ -371,7 +371,7 @@ covariates = Covariates(**{
     ),
     'in_facility_delivery_proportion': Covariate(
         name='in_facility_delivery_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(51),
         group='In Facility Birth',
         status='Experimental',
@@ -381,7 +381,7 @@ covariates = Covariates(**{
     ),
     'landlocked_nation_binary': Covariate(
         name='landlocked_nation_binary',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(55),
         group='Landlocked',
         status='Experimental',
@@ -391,7 +391,7 @@ covariates = Covariates(**{
     ),
     'average_latitude': Covariate(
         name='average_latitude',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(56),
         group='Population Latitude',
         status='Experimental',
@@ -401,7 +401,7 @@ covariates = Covariates(**{
     ),
     'ldi_income_per_capita': Covariate(
         name='ldi_income_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(57),
         group='LDI',
         status='Experimental',
@@ -411,7 +411,7 @@ covariates = Covariates(**{
     ),
     'lead_gas_outphase_binary': Covariate(
         name='lead_gas_outphase_binary',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(58),
         group='Lead Gas',
         status='Experimental',
@@ -421,7 +421,7 @@ covariates = Covariates(**{
     ),
     'live_births_thousands': Covariate(
         name='live_births_thousands',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(60),
         group='Fertility Rate',
         status='Experimental',
@@ -431,7 +431,7 @@ covariates = Covariates(**{
     ),
     'underweight_proportion_less_than_2sd_weight_for_age_less_than_5_years': Covariate(
         name='underweight_proportion_less_than_2sd_weight_for_age_less_than_5_years',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(66),
         group='Malnutrition',
         status='Experimental',
@@ -441,7 +441,7 @@ covariates = Covariates(**{
     ),
     'mean_bmi': Covariate(
         name='mean_bmi',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(68),
         group='BMI',
         status='Experimental',
@@ -451,7 +451,7 @@ covariates = Covariates(**{
     ),
     'cholesterol_total_mean_per_capita': Covariate(
         name='cholesterol_total_mean_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(69),
         group='Cholesterol',
         status='Experimental',
@@ -461,7 +461,7 @@ covariates = Covariates(**{
     ),
     'systolic_blood_pressure_mmhg': Covariate(
         name='systolic_blood_pressure_mmhg',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(70),
         group='SBP',
         status='Experimental',
@@ -471,7 +471,7 @@ covariates = Covariates(**{
     ),
     'population_weighted_mean_temperature': Covariate(
         name='population_weighted_mean_temperature',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(71),
         group='Temperature',
         status='Experimental',
@@ -481,7 +481,7 @@ covariates = Covariates(**{
     ),
     'measles_vaccine_coverage_proportion': Covariate(
         name='measles_vaccine_coverage_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(75),
         group='Measles',
         status='Experimental',
@@ -491,7 +491,7 @@ covariates = Covariates(**{
     ),
     'meningitis_belt_binary': Covariate(
         name='meningitis_belt_binary',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(77),
         group='Meningitis',
         status='Experimental',
@@ -501,7 +501,7 @@ covariates = Covariates(**{
     ),
     'mortality_rate_due_to_death_shocks_in_last_10_years_per_1_person': Covariate(
         name='mortality_rate_due_to_death_shocks_in_last_10_years_per_1_person',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(79),
         group='Shocks',
         status='Experimental',
@@ -511,7 +511,7 @@ covariates = Covariates(**{
     ),
     'opium_cultivation_binary': Covariate(
         name='opium_cultivation_binary',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(82),
         group='Opium',
         status='Experimental',
@@ -521,7 +521,7 @@ covariates = Covariates(**{
     ),
     'live_births_35_and_up_proportion': Covariate(
         name='live_births_35_and_up_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(84),
         group='Births',
         status='Experimental',
@@ -531,7 +531,7 @@ covariates = Covariates(**{
     ),
     'live_births_40_and_up_proportion': Covariate(
         name='live_births_40_and_up_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(85),
         group='Births',
         status='Experimental',
@@ -541,7 +541,7 @@ covariates = Covariates(**{
     ),
     'pig_meat_kg_per_capita': Covariate(
         name='pig_meat_kg_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(99),
         group='Pig Meat',
         status='Experimental',
@@ -551,7 +551,7 @@ covariates = Covariates(**{
     ),
     'pigs_per_capita': Covariate(
         name='pigs_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(100),
         group='Livestock',
         status='Experimental',
@@ -561,7 +561,7 @@ covariates = Covariates(**{
     ),
     'indoor_air_pollution_all_cooking_fuels': Covariate(
         name='indoor_air_pollution_all_cooking_fuels',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(105),
         group='Indoor Air Pollution',
         status='Experimental',
@@ -571,7 +571,7 @@ covariates = Covariates(**{
     ),
     'outdoor_air_pollution_pm_2_5': Covariate(
         name='outdoor_air_pollution_pm_2_5',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(106),
         group='Outdoor Air Pollution',
         status='Experimental',
@@ -581,7 +581,7 @@ covariates = Covariates(**{
     ),
     'latitude_under_15_proportion': Covariate(
         name='latitude_under_15_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(107),
         group='Population Latitude',
         status='Experimental',
@@ -591,7 +591,7 @@ covariates = Covariates(**{
     ),
     'elevation_100_to_500m_proportion': Covariate(
         name='elevation_100_to_500m_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(108),
         group='Elevation',
         status='Experimental',
@@ -601,7 +601,7 @@ covariates = Covariates(**{
     ),
     'elevation_over_1500m_proportion': Covariate(
         name='elevation_over_1500m_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(109),
         group='Population Elevation',
         status='Experimental',
@@ -611,7 +611,7 @@ covariates = Covariates(**{
     ),
     'population_15_to_30_proportion': Covariate(
         name='population_15_to_30_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(110),
         group='Population',
         status='Experimental',
@@ -621,7 +621,7 @@ covariates = Covariates(**{
     ),
     'latitude_15_to_30_proportion': Covariate(
         name='latitude_15_to_30_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(111),
         group='Population Latitude',
         status='Experimental',
@@ -631,7 +631,7 @@ covariates = Covariates(**{
     ),
     'latitude_30_to_45_proportion': Covariate(
         name='latitude_30_to_45_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(112),
         group='Population Latitude',
         status='Experimental',
@@ -641,7 +641,7 @@ covariates = Covariates(**{
     ),
     'latitude_over_45_proportion': Covariate(
         name='latitude_over_45_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(113),
         group='Population Latitude',
         status='Experimental',
@@ -651,7 +651,7 @@ covariates = Covariates(**{
     ),
     'elevation_500_to_1500m_proportion': Covariate(
         name='elevation_500_to_1500m_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(114),
         group='Elevation',
         status='Experimental',
@@ -661,7 +661,7 @@ covariates = Covariates(**{
     ),
     'population_density_150_300_ppl_sqkm_proportion': Covariate(
         name='population_density_150_300_ppl_sqkm_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(115),
         group='Population Density',
         status='Experimental',
@@ -671,7 +671,7 @@ covariates = Covariates(**{
     ),
     'population_density_300_500_ppl_sqkm_proportion': Covariate(
         name='population_density_300_500_ppl_sqkm_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(116),
         group='Population Density',
         status='Experimental',
@@ -681,7 +681,7 @@ covariates = Covariates(**{
     ),
     'population_density_500_1000_ppl_sqkm_proportion': Covariate(
         name='population_density_500_1000_ppl_sqkm_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(117),
         group='Population Density',
         status='Experimental',
@@ -691,7 +691,7 @@ covariates = Covariates(**{
     ),
     'population_density_over_1000_ppl_sqkm_proportion': Covariate(
         name='population_density_over_1000_ppl_sqkm_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(118),
         group='Population Density',
         status='Experimental',
@@ -701,7 +701,7 @@ covariates = Covariates(**{
     ),
     'population_density_under_150_ppl_sqkm_proportion': Covariate(
         name='population_density_under_150_ppl_sqkm_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(119),
         group='Population Density',
         status='Experimental',
@@ -711,7 +711,7 @@ covariates = Covariates(**{
     ),
     'population_over_65_proportion': Covariate(
         name='population_over_65_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(120),
         group='Population',
         status='Experimental',
@@ -721,7 +721,7 @@ covariates = Covariates(**{
     ),
     'elevation_under_100m_proportion': Covariate(
         name='elevation_under_100m_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(121),
         group='Elevation',
         status='Experimental',
@@ -731,7 +731,7 @@ covariates = Covariates(**{
     ),
     'population_under_30_proportion': Covariate(
         name='population_under_30_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(122),
         group='Population',
         status='Experimental',
@@ -741,7 +741,7 @@ covariates = Covariates(**{
     ),
     'rainfall_population_weighted_mm_yr': Covariate(
         name='rainfall_population_weighted_mm_yr',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(127),
         group='Rainfall',
         status='Experimental',
@@ -751,7 +751,7 @@ covariates = Covariates(**{
     ),
     'rainfall_quintiles_2_5': Covariate(
         name='rainfall_quintiles_2_5',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(128),
         group='Rainfall',
         status='Experimental',
@@ -761,7 +761,7 @@ covariates = Covariates(**{
     ),
     'rainfall_quintiles_3_5': Covariate(
         name='rainfall_quintiles_3_5',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(129),
         group='Rainfall',
         status='Experimental',
@@ -771,7 +771,7 @@ covariates = Covariates(**{
     ),
     'rainfall_quintiles_4_5': Covariate(
         name='rainfall_quintiles_4_5',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(130),
         group='Rainfall',
         status='Experimental',
@@ -781,7 +781,7 @@ covariates = Covariates(**{
     ),
     'rainfall_quintile_1_proportion': Covariate(
         name='rainfall_quintile_1_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(131),
         group='Rainfall',
         status='Experimental',
@@ -791,7 +791,7 @@ covariates = Covariates(**{
     ),
     'rainfall_quintile_2_proportion': Covariate(
         name='rainfall_quintile_2_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(132),
         group='Rainfall',
         status='Experimental',
@@ -801,7 +801,7 @@ covariates = Covariates(**{
     ),
     'rainfall_quintile_3_proportion': Covariate(
         name='rainfall_quintile_3_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(133),
         group='Rainfall',
         status='Experimental',
@@ -811,7 +811,7 @@ covariates = Covariates(**{
     ),
     'rainfall_quintile_4_proportion': Covariate(
         name='rainfall_quintile_4_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(134),
         group='Rainfall',
         status='Experimental',
@@ -821,7 +821,7 @@ covariates = Covariates(**{
     ),
     'rainfall_quintile_5_proportion': Covariate(
         name='rainfall_quintile_5_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(135),
         group='Rainfall',
         status='Experimental',
@@ -831,7 +831,7 @@ covariates = Covariates(**{
     ),
     'religion_binary_greater_than_50_percent_muslim': Covariate(
         name='religion_binary_greater_than_50_percent_muslim',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(137),
         group='Religion',
         status='Experimental',
@@ -841,7 +841,7 @@ covariates = Covariates(**{
     ),
     'rotavirus_vaccine_introduced_binary': Covariate(
         name='rotavirus_vaccine_introduced_binary',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(140),
         group='Rotavirus',
         status='Experimental',
@@ -851,7 +851,7 @@ covariates = Covariates(**{
     ),
     'sahel_region_of_africa_binary': Covariate(
         name='sahel_region_of_africa_binary',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(141),
         group='Geography',
         status='Experimental',
@@ -861,7 +861,7 @@ covariates = Covariates(**{
     ),
     'sanitation_proportion_with_access': Covariate(
         name='sanitation_proportion_with_access',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(142),
         group='Sanitation',
         status='Experimental',
@@ -871,7 +871,7 @@ covariates = Covariates(**{
     ),
     'skilled_birth_attendance_proportion': Covariate(
         name='skilled_birth_attendance_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(143),
         group='Skilled Birth Attendance',
         status='Experimental',
@@ -881,7 +881,7 @@ covariates = Covariates(**{
     ),
     'smoking_prevalence': Covariate(
         name='smoking_prevalence',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(145),
         group='Smoking',
         status='Experimental',
@@ -891,7 +891,7 @@ covariates = Covariates(**{
     ),
     'smoking_prevalence_reproductive_age_standardized': Covariate(
         name='smoking_prevalence_reproductive_age_standardized',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(146),
         group='Smoking',
         status='Experimental',
@@ -901,7 +901,7 @@ covariates = Covariates(**{
     ),
     'ninetieth_percentile_climatic_temperature_in_the_given_country_year': Covariate(
         name='ninetieth_percentile_climatic_temperature_in_the_given_country_year',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(147),
         group='Temperature',
         status='Experimental',
@@ -911,7 +911,7 @@ covariates = Covariates(**{
     ),
     'tetanus_toxoid_coverage_smooth_proportion': Covariate(
         name='tetanus_toxoid_coverage_smooth_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(148),
         group='Tetanus',
         status='Experimental',
@@ -921,7 +921,7 @@ covariates = Covariates(**{
     ),
     'total_fertility_rate': Covariate(
         name='total_fertility_rate',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(149),
         group='Fertility Rate',
         status='Experimental',
@@ -931,7 +931,7 @@ covariates = Covariates(**{
     ),
     'vehicles_2_and_up4_wheels_per_capita': Covariate(
         name='vehicles_2_and_up4_wheels_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(154),
         group='Vehicles',
         status='Experimental',
@@ -941,7 +941,7 @@ covariates = Covariates(**{
     ),
     'vehicles_2_wheels_per_capita': Covariate(
         name='vehicles_2_wheels_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(155),
         group='Vehicles',
         status='Experimental',
@@ -951,7 +951,7 @@ covariates = Covariates(**{
     ),
     'vehicles_4_wheels_per_capita': Covariate(
         name='vehicles_4_wheels_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(156),
         group='Vehicles',
         status='Experimental',
@@ -961,7 +961,7 @@ covariates = Covariates(**{
     ),
     'vehicles_2_wheels_fraction_proportion': Covariate(
         name='vehicles_2_wheels_fraction_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(157),
         group='Vehicles',
         status='Experimental',
@@ -971,7 +971,7 @@ covariates = Covariates(**{
     ),
     'mortality_rate_due_to_war_shocks_per_1_person': Covariate(
         name='mortality_rate_due_to_war_shocks_per_1_person',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(159),
         group='War',
         status='Experimental',
@@ -981,7 +981,7 @@ covariates = Covariates(**{
     ),
     'improved_water_source_proportion_with_access': Covariate(
         name='improved_water_source_proportion_with_access',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(160),
         group='Water',
         status='Experimental',
@@ -991,7 +991,7 @@ covariates = Covariates(**{
     ),
     'malaria_lysenko_pfpr_5_epidemic': Covariate(
         name='malaria_lysenko_pfpr_5_epidemic',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(175),
         group='Malaria',
         status='Experimental',
@@ -1001,7 +1001,7 @@ covariates = Covariates(**{
     ),
     'malaria_lysenko_pfpr_1_holoendemic': Covariate(
         name='malaria_lysenko_pfpr_1_holoendemic',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(183),
         group='Malaria',
         status='Experimental',
@@ -1011,7 +1011,7 @@ covariates = Covariates(**{
     ),
     'malaria_lysenko_pfpr_2_highest_endemicity': Covariate(
         name='malaria_lysenko_pfpr_2_highest_endemicity',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(184),
         group='Malaria',
         status='Experimental',
@@ -1021,7 +1021,7 @@ covariates = Covariates(**{
     ),
     'malaria_pfpr_rate': Covariate(
         name='malaria_pfpr_rate',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(188),
         group='Malaria',
         status='Experimental',
@@ -1031,7 +1031,7 @@ covariates = Covariates(**{
     ),
     'significant_leishmaniasis_endemicity_binary': Covariate(
         name='significant_leishmaniasis_endemicity_binary',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(192),
         group='Leishmaniasis',
         status='Experimental',
@@ -1041,7 +1041,7 @@ covariates = Covariates(**{
     ),
     'leprosy_endemic_binary': Covariate(
         name='leprosy_endemic_binary',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(193),
         group='Leprosy',
         status='Experimental',
@@ -1051,7 +1051,7 @@ covariates = Covariates(**{
     ),
     'year': Covariate(
         name='year',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(195),
         group='Year',
         status='Experimental',
@@ -1061,7 +1061,7 @@ covariates = Covariates(**{
     ),
     'chagas_population_at_risk_2_proportion': Covariate(
         name='chagas_population_at_risk_2_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(196),
         group='Chagas',
         status='Experimental',
@@ -1071,7 +1071,7 @@ covariates = Covariates(**{
     ),
     'birth_prevalence_of_chd': Covariate(
         name='birth_prevalence_of_chd',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(197),
         group='Congenital CVD',
         status='Experimental',
@@ -1081,7 +1081,7 @@ covariates = Covariates(**{
     ),
     'birth_prevalence_of_congenital_chromosomal_anomalies': Covariate(
         name='birth_prevalence_of_congenital_chromosomal_anomalies',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(198),
         group='Congenital Chromosomal Abnormalities',
         status='Experimental',
@@ -1091,7 +1091,7 @@ covariates = Covariates(**{
     ),
     'hemoglobinopathies_prevalence_x_excess_mortality': Covariate(
         name='hemoglobinopathies_prevalence_x_excess_mortality',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(200),
         group='Hemoglobinopathies',
         status='Experimental',
@@ -1101,7 +1101,7 @@ covariates = Covariates(**{
     ),
     'age_standardize_prevalence_of_severe_anemia': Covariate(
         name='age_standardize_prevalence_of_severe_anemia',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(205),
         group='',
         status='Experimental',
@@ -1111,7 +1111,7 @@ covariates = Covariates(**{
     ),
     'schistosomiasis_prevalence_proportion': Covariate(
         name='schistosomiasis_prevalence_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(206),
         group='Schistosomiasis',
         status='Experimental',
@@ -1121,7 +1121,7 @@ covariates = Covariates(**{
     ),
     'health_system_access_capped': Covariate(
         name='health_system_access_capped',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(208),
         group='Health System',
         status='Experimental',
@@ -1131,7 +1131,7 @@ covariates = Covariates(**{
     ),
     'neonatal_death_rate_modeled_2_per_1000': Covariate(
         name='neonatal_death_rate_modeled_2_per_1000',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(209),
         group='Neonatal',
         status='Experimental',
@@ -1141,7 +1141,7 @@ covariates = Covariates(**{
     ),
     'pcv3_coverage_proportion': Covariate(
         name='pcv3_coverage_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(210),
         group='PCV3',
         status='Experimental',
@@ -1151,7 +1151,7 @@ covariates = Covariates(**{
     ),
     'presence_of_leishmaniasis_binary': Covariate(
         name='presence_of_leishmaniasis_binary',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(211),
         group='Leishmaniasis',
         status='Experimental',
@@ -1161,7 +1161,7 @@ covariates = Covariates(**{
     ),
     'potential_for_leishmaniasis_transmission_binary': Covariate(
         name='potential_for_leishmaniasis_transmission_binary',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(212),
         group='Leishmaniasis',
         status='Experimental',
@@ -1171,7 +1171,7 @@ covariates = Covariates(**{
     ),
     'high_leishmaniasis_endemicity_binary': Covariate(
         name='high_leishmaniasis_endemicity_binary',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(213),
         group='Leishmaniasis',
         status='Experimental',
@@ -1181,7 +1181,7 @@ covariates = Covariates(**{
     ),
     'under_5_hiv_death_rate': Covariate(
         name='under_5_hiv_death_rate',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(214),
         group='HIV',
         status='Experimental',
@@ -1191,7 +1191,7 @@ covariates = Covariates(**{
     ),
     'interaction_of_malaria_itn_and_pfpr_rate_covariates': Covariate(
         name='interaction_of_malaria_itn_and_pfpr_rate_covariates',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(215),
         group='Malaria',
         status='Experimental',
@@ -1201,7 +1201,7 @@ covariates = Covariates(**{
     ),
     'interaction_of_malaria_itn_and_log_pfpr_covariates': Covariate(
         name='interaction_of_malaria_itn_and_log_pfpr_covariates',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(216),
         group='Malaria',
         status='Experimental',
@@ -1211,7 +1211,7 @@ covariates = Covariates(**{
     ),
     'malaria_pfpr_adjusted_for_itn_and_irs_coverage': Covariate(
         name='malaria_pfpr_adjusted_for_itn_and_irs_coverage',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(217),
         group='Malaria',
         status='Experimental',
@@ -1221,7 +1221,7 @@ covariates = Covariates(**{
     ),
     'syphilis_prevalence_proportion': Covariate(
         name='syphilis_prevalence_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(218),
         group='Prevalence/Incidence/PAR',
         status='Experimental',
@@ -1231,7 +1231,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_region_5': Covariate(
         name='year_x_gbd_analytical_region_5',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(219),
         group='Year',
         status='Experimental',
@@ -1241,7 +1241,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_region_9': Covariate(
         name='year_x_gbd_analytical_region_9',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(220),
         group='Year',
         status='Experimental',
@@ -1251,7 +1251,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_region_21': Covariate(
         name='year_x_gbd_analytical_region_21',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(221),
         group='Year',
         status='Experimental',
@@ -1261,7 +1261,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_region_32': Covariate(
         name='year_x_gbd_analytical_region_32',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(222),
         group='Year',
         status='Experimental',
@@ -1271,7 +1271,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_region_42': Covariate(
         name='year_x_gbd_analytical_region_42',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(223),
         group='Year',
         status='Experimental',
@@ -1281,7 +1281,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_region_56': Covariate(
         name='year_x_gbd_analytical_region_56',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(224),
         group='Year',
         status='Experimental',
@@ -1291,7 +1291,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_region_65': Covariate(
         name='year_x_gbd_analytical_region_65',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(225),
         group='Year',
         status='Experimental',
@@ -1301,7 +1301,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_region_70': Covariate(
         name='year_x_gbd_analytical_region_70',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(226),
         group='Year',
         status='Experimental',
@@ -1311,7 +1311,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_region_73': Covariate(
         name='year_x_gbd_analytical_region_73',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(227),
         group='Year',
         status='Experimental',
@@ -1321,7 +1321,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_region_96': Covariate(
         name='year_x_gbd_analytical_region_96',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(228),
         group='Year',
         status='Experimental',
@@ -1331,7 +1331,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_region_100': Covariate(
         name='year_x_gbd_analytical_region_100',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(229),
         group='Year',
         status='Experimental',
@@ -1341,7 +1341,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_region_104': Covariate(
         name='year_x_gbd_analytical_region_104',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(230),
         group='Year',
         status='Experimental',
@@ -1351,7 +1351,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_region_120': Covariate(
         name='year_x_gbd_analytical_region_120',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(231),
         group='Year',
         status='Experimental',
@@ -1361,7 +1361,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_region_124': Covariate(
         name='year_x_gbd_analytical_region_124',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(232),
         group='Year',
         status='Experimental',
@@ -1371,7 +1371,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_region_134': Covariate(
         name='year_x_gbd_analytical_region_134',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(233),
         group='Year',
         status='Experimental',
@@ -1381,7 +1381,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_region_138': Covariate(
         name='year_x_gbd_analytical_region_138',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(234),
         group='Year',
         status='Experimental',
@@ -1391,7 +1391,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_region_159': Covariate(
         name='year_x_gbd_analytical_region_159',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(235),
         group='Year',
         status='Experimental',
@@ -1401,7 +1401,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_region_167': Covariate(
         name='year_x_gbd_analytical_region_167',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(236),
         group='Year',
         status='Experimental',
@@ -1411,7 +1411,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_region_174': Covariate(
         name='year_x_gbd_analytical_region_174',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(237),
         group='Year',
         status='Experimental',
@@ -1421,7 +1421,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_region_192': Covariate(
         name='year_x_gbd_analytical_region_192',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(238),
         group='Year',
         status='Experimental',
@@ -1431,7 +1431,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_region_199': Covariate(
         name='year_x_gbd_analytical_region_199',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(239),
         group='Year',
         status='Experimental',
@@ -1441,7 +1441,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_superregion_4': Covariate(
         name='year_x_gbd_analytical_superregion_4',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(240),
         group='Year',
         status='Experimental',
@@ -1451,7 +1451,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_superregion_31': Covariate(
         name='year_x_gbd_analytical_superregion_31',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(241),
         group='Year',
         status='Experimental',
@@ -1461,7 +1461,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_superregion_64': Covariate(
         name='year_x_gbd_analytical_superregion_64',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(242),
         group='Year',
         status='Experimental',
@@ -1471,7 +1471,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_superregion_103': Covariate(
         name='year_x_gbd_analytical_superregion_103',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(243),
         group='Year',
         status='Experimental',
@@ -1481,7 +1481,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_superregion_137': Covariate(
         name='year_x_gbd_analytical_superregion_137',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(244),
         group='Year',
         status='Experimental',
@@ -1491,7 +1491,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_superregion_158': Covariate(
         name='year_x_gbd_analytical_superregion_158',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(245),
         group='Year',
         status='Experimental',
@@ -1501,7 +1501,7 @@ covariates = Covariates(**{
     ),
     'year_x_gbd_analytical_superregion_166': Covariate(
         name='year_x_gbd_analytical_superregion_166',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(246),
         group='Year',
         status='Experimental',
@@ -1511,7 +1511,7 @@ covariates = Covariates(**{
     ),
     'population_weighted_probability_of_dengue_transmission': Covariate(
         name='population_weighted_probability_of_dengue_transmission',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(247),
         group='Prevalence/Incidence/PAR',
         status='Experimental',
@@ -1521,7 +1521,7 @@ covariates = Covariates(**{
     ),
     'dengue_outbreaks_binary': Covariate(
         name='dengue_outbreaks_binary',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(248),
         group='Dengue',
         status='Experimental',
@@ -1531,7 +1531,7 @@ covariates = Covariates(**{
     ),
     'exponentiated_version_of_dengue_anomalies': Covariate(
         name='exponentiated_version_of_dengue_anomalies',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(249),
         group='Dengue',
         status='Experimental',
@@ -1541,7 +1541,7 @@ covariates = Covariates(**{
     ),
     'proportion_of_the_population_living_in_the_classic_monsoon_region': Covariate(
         name='proportion_of_the_population_living_in_the_classic_monsoon_region',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(250),
         group='NA',
         status='Experimental',
@@ -1551,7 +1551,7 @@ covariates = Covariates(**{
     ),
     'proportion_of_the_population_living_in_the_classic_monsoon_region_low_income_countries': Covariate(
         name='proportion_of_the_population_living_in_the_classic_monsoon_region_low_income_countries',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(251),
         group='Dengue',
         status='Experimental',
@@ -1561,7 +1561,7 @@ covariates = Covariates(**{
     ),
     'dengue_anomalies_deviation_from_mean_dengue_incidence_rate': Covariate(
         name='dengue_anomalies_deviation_from_mean_dengue_incidence_rate',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(252),
         group='Dengue',
         status='Experimental',
@@ -1571,7 +1571,7 @@ covariates = Covariates(**{
     ),
     'total_pc_treatments_per_person_at_risk_for_lf_infection_1999_2012': Covariate(
         name='total_pc_treatments_per_person_at_risk_for_lf_infection_1999_2012',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(255),
         group='Prevalence/Incidence/PAR',
         status='Experimental',
@@ -1581,7 +1581,7 @@ covariates = Covariates(**{
     ),
     'smoking_prevalence_age_standardized_females': Covariate(
         name='smoking_prevalence_age_standardized_females',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(256),
         group='Smoking',
         status='Experimental',
@@ -1591,7 +1591,7 @@ covariates = Covariates(**{
     ),
     'smoking_prevalence_age_standardized_males': Covariate(
         name='smoking_prevalence_age_standardized_males',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(257),
         group='Smoking',
         status='Experimental',
@@ -1601,7 +1601,7 @@ covariates = Covariates(**{
     ),
     'hiv_prevalence_during_pregnancy_by_age': Covariate(
         name='hiv_prevalence_during_pregnancy_by_age',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(258),
         group='HIV',
         status='Experimental',
@@ -1611,7 +1611,7 @@ covariates = Covariates(**{
     ),
     'indicator_for_high_income_superregion_location_id_64': Covariate(
         name='indicator_for_high_income_superregion_location_id_64',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(260),
         group='Binary',
         status='Experimental',
@@ -1621,7 +1621,7 @@ covariates = Covariates(**{
     ),
     'vitamin_a_supplementation_coverage_rate': Covariate(
         name='vitamin_a_supplementation_coverage_rate',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(261),
         group='Diet',
         status='Experimental',
@@ -1631,7 +1631,7 @@ covariates = Covariates(**{
     ),
     'hemoglobinopathies_prevalence_x_excess_mortality_excluding_g6pd_deficiency': Covariate(
         name='hemoglobinopathies_prevalence_x_excess_mortality_excluding_g6pd_deficiency',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(262),
         group='Hemoglobinopathies',
         status='Experimental',
@@ -1641,7 +1641,7 @@ covariates = Covariates(**{
     ),
     'indicator_for_southeast_asia_east_asia_and_oceania_superregion_location_id_4': Covariate(
         name='indicator_for_southeast_asia_east_asia_and_oceania_superregion_location_id_4',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(266),
         group='Binary',
         status='Experimental',
@@ -1651,7 +1651,7 @@ covariates = Covariates(**{
     ),
     'indicator_for_central_europe_eastern_europe_and_central_asia_superregion_location_id_31': Covariate(
         name='indicator_for_central_europe_eastern_europe_and_central_asia_superregion_location_id_31',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(267),
         group='Binary',
         status='Experimental',
@@ -1661,7 +1661,7 @@ covariates = Covariates(**{
     ),
     'indicator_for_latin_america_and_caribbean_superregion_location_id_103': Covariate(
         name='indicator_for_latin_america_and_caribbean_superregion_location_id_103',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(268),
         group='Binary',
         status='Experimental',
@@ -1671,7 +1671,7 @@ covariates = Covariates(**{
     ),
     'indicator_for_north_africa_and_middle_east_superregion_location_id_137': Covariate(
         name='indicator_for_north_africa_and_middle_east_superregion_location_id_137',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(269),
         group='Binary',
         status='Experimental',
@@ -1681,7 +1681,7 @@ covariates = Covariates(**{
     ),
     'indicator_for_south_asia_superregion_location_id_158': Covariate(
         name='indicator_for_south_asia_superregion_location_id_158',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(270),
         group='Binary',
         status='Experimental',
@@ -1691,7 +1691,7 @@ covariates = Covariates(**{
     ),
     'indicator_for_sub_saharan_africa_superregion_location_id_166': Covariate(
         name='indicator_for_sub_saharan_africa_superregion_location_id_166',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(271),
         group='Binary',
         status='Experimental',
@@ -1701,7 +1701,7 @@ covariates = Covariates(**{
     ),
     'alcohol_binge_drinker_proportion_age_standardized': Covariate(
         name='alcohol_binge_drinker_proportion_age_standardized',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(273),
         group='Alcohol',
         status='Experimental',
@@ -1711,7 +1711,7 @@ covariates = Covariates(**{
     ),
     'smoking_prevalence_age_standardized_both_sexes': Covariate(
         name='smoking_prevalence_age_standardized_both_sexes',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(282),
         group='Smoking',
         status='Experimental',
@@ -1721,7 +1721,7 @@ covariates = Covariates(**{
     ),
     'proportion_of_the_population_living_in_the_indian_ocean_monsoon_belt': Covariate(
         name='proportion_of_the_population_living_in_the_indian_ocean_monsoon_belt',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(441),
         group='Dengue',
         status='Experimental',
@@ -1731,7 +1731,7 @@ covariates = Covariates(**{
     ),
     'vitamin_a_deficiency_prevalence_age_standardized': Covariate(
         name='vitamin_a_deficiency_prevalence_age_standardized',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(442),
         group='Vitamin A',
         status='Experimental',
@@ -1741,7 +1741,7 @@ covariates = Covariates(**{
     ),
     'prevalence_of_obesity': Covariate(
         name='prevalence_of_obesity',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(453),
         group='Metabolics',
         status='Experimental',
@@ -1751,7 +1751,7 @@ covariates = Covariates(**{
     ),
     'prevalence_of_overweight_and_obesity': Covariate(
         name='prevalence_of_overweight_and_obesity',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(454),
         group='Metabolics',
         status='Experimental',
@@ -1761,7 +1761,7 @@ covariates = Covariates(**{
     ),
     'prevalence_of_obesity_age_standardized': Covariate(
         name='prevalence_of_obesity_age_standardized',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(455),
         group='Metabolics',
         status='Experimental',
@@ -1771,7 +1771,7 @@ covariates = Covariates(**{
     ),
     'age_standardized_prevalence_of_ckd_stage_3': Covariate(
         name='age_standardized_prevalence_of_ckd_stage_3',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(456),
         group='Prevalence/Incidence/PAR',
         status='Experimental',
@@ -1781,7 +1781,7 @@ covariates = Covariates(**{
     ),
     'age_standardized_prevalence_of_ckd_stage_4': Covariate(
         name='age_standardized_prevalence_of_ckd_stage_4',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(460),
         group='Prevalence/Incidence/PAR',
         status='Experimental',
@@ -1791,7 +1791,7 @@ covariates = Covariates(**{
     ),
     'maternal_education_years_per_capita': Covariate(
         name='maternal_education_years_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(463),
         group='Experimental',
         status='Experimental',
@@ -1801,7 +1801,7 @@ covariates = Covariates(**{
     ),
     'chagasprevpaho': Covariate(
         name='chagasprevpaho',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(467),
         group='Experimental',
         status='Experimental',
@@ -1811,7 +1811,7 @@ covariates = Covariates(**{
     ),
     'clay_fraction_in_the_soil_mean': Covariate(
         name='clay_fraction_in_the_soil_mean',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(473),
         group='Experimental',
         status='Experimental',
@@ -1821,7 +1821,7 @@ covariates = Covariates(**{
     ),
     'silt_fraction_in_the_soil_mean': Covariate(
         name='silt_fraction_in_the_soil_mean',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(476),
         group='Experimental',
         status='Experimental',
@@ -1831,7 +1831,7 @@ covariates = Covariates(**{
     ),
     'enhanced_vegetation_index_long_term_average_2000_2012_mean': Covariate(
         name='enhanced_vegetation_index_long_term_average_2000_2012_mean',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(479),
         group='Experimental',
         status='Experimental',
@@ -1841,7 +1841,7 @@ covariates = Covariates(**{
     ),
     'slope_of_the_land_in_degrees_terrain_steepness_mean': Covariate(
         name='slope_of_the_land_in_degrees_terrain_steepness_mean',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(482),
         group='Experimental',
         status='Experimental',
@@ -1851,7 +1851,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_tb': Covariate(
         name='log_transformed_sev_scalar_tb',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(483),
         group='SEV',
         status='Experimental',
@@ -1861,7 +1861,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_oth_hiv': Covariate(
         name='log_transformed_sev_scalar_oth_hiv',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(485),
         group='SEV',
         status='Experimental',
@@ -1871,7 +1871,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_diarrhea': Covariate(
         name='log_transformed_sev_scalar_diarrhea',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(486),
         group='SEV',
         status='Experimental',
@@ -1881,7 +1881,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_lri': Covariate(
         name='log_transformed_sev_scalar_lri',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(491),
         group='SEV',
         status='Experimental',
@@ -1891,7 +1891,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_uri': Covariate(
         name='log_transformed_sev_scalar_uri',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(492),
         group='SEV',
         status='Experimental',
@@ -1901,7 +1901,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_otitis': Covariate(
         name='log_transformed_sev_scalar_otitis',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(493),
         group='SEV',
         status='Experimental',
@@ -1911,7 +1911,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_measles': Covariate(
         name='log_transformed_sev_scalar_measles',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(503),
         group='SEV',
         status='Experimental',
@@ -1921,7 +1921,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_mat_hem': Covariate(
         name='log_transformed_sev_scalar_mat_hem',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(526),
         group='SEV',
         status='Experimental',
@@ -1931,7 +1931,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_mat_sepsis': Covariate(
         name='log_transformed_sev_scalar_mat_sepsis',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(527),
         group='SEV',
         status='Experimental',
@@ -1941,7 +1941,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_mat_abort': Covariate(
         name='log_transformed_sev_scalar_mat_abort',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(530),
         group='SEV',
         status='Experimental',
@@ -1951,7 +1951,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_hep': Covariate(
         name='log_transformed_sev_scalar_hep',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(541),
         group='SEV',
         status='Experimental',
@@ -1961,7 +1961,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_hep_b': Covariate(
         name='log_transformed_sev_scalar_hep_b',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(543),
         group='SEV',
         status='Experimental',
@@ -1971,7 +1971,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_hep_c': Covariate(
         name='log_transformed_sev_scalar_hep_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(544),
         group='SEV',
         status='Experimental',
@@ -1981,7 +1981,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_esophag_c': Covariate(
         name='log_transformed_sev_scalar_esophag_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(548),
         group='SEV',
         status='Experimental',
@@ -1991,7 +1991,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_stomach_c': Covariate(
         name='log_transformed_sev_scalar_stomach_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(549),
         group='SEV',
         status='Experimental',
@@ -2001,7 +2001,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_liver_c': Covariate(
         name='log_transformed_sev_scalar_liver_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(550),
         group='SEV',
         status='Experimental',
@@ -2011,7 +2011,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_liver_c_hepb': Covariate(
         name='log_transformed_sev_scalar_liver_c_hepb',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(551),
         group='SEV',
         status='Experimental',
@@ -2021,7 +2021,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_liver_c_hepc': Covariate(
         name='log_transformed_sev_scalar_liver_c_hepc',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(552),
         group='SEV',
         status='Experimental',
@@ -2031,7 +2031,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_oth_liver_c': Covariate(
         name='log_transformed_sev_scalar_oth_liver_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(553),
         group='SEV',
         status='Experimental',
@@ -2041,7 +2041,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_larynx_c': Covariate(
         name='log_transformed_sev_scalar_larynx_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(554),
         group='SEV',
         status='Experimental',
@@ -2051,7 +2051,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_lung_c': Covariate(
         name='log_transformed_sev_scalar_lung_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(555),
         group='SEV',
         status='Experimental',
@@ -2061,7 +2061,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_breast_c': Covariate(
         name='log_transformed_sev_scalar_breast_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(556),
         group='SEV',
         status='Experimental',
@@ -2071,7 +2071,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_uterus_c': Covariate(
         name='log_transformed_sev_scalar_uterus_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(557),
         group='SEV',
         status='Experimental',
@@ -2081,7 +2081,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_prostate_c': Covariate(
         name='log_transformed_sev_scalar_prostate_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(558),
         group='SEV',
         status='Experimental',
@@ -2091,7 +2091,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_colorect_c': Covariate(
         name='log_transformed_sev_scalar_colorect_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(559),
         group='SEV',
         status='Experimental',
@@ -2101,7 +2101,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_mouth_c': Covariate(
         name='log_transformed_sev_scalar_mouth_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(560),
         group='SEV',
         status='Experimental',
@@ -2111,7 +2111,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_nasoph_c': Covariate(
         name='log_transformed_sev_scalar_nasoph_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(561),
         group='SEV',
         status='Experimental',
@@ -2121,7 +2121,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_oth_phar_c': Covariate(
         name='log_transformed_sev_scalar_oth_phar_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(562),
         group='SEV',
         status='Experimental',
@@ -2131,7 +2131,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_gallblad_c': Covariate(
         name='log_transformed_sev_scalar_gallblad_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(563),
         group='SEV',
         status='Experimental',
@@ -2141,7 +2141,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_pancreas_c': Covariate(
         name='log_transformed_sev_scalar_pancreas_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(564),
         group='SEV',
         status='Experimental',
@@ -2151,7 +2151,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_ovary_c': Covariate(
         name='log_transformed_sev_scalar_ovary_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(567),
         group='SEV',
         status='Experimental',
@@ -2161,7 +2161,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_kidney_c': Covariate(
         name='log_transformed_sev_scalar_kidney_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(569),
         group='SEV',
         status='Experimental',
@@ -2171,7 +2171,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_bladder_c': Covariate(
         name='log_transformed_sev_scalar_bladder_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(570),
         group='SEV',
         status='Experimental',
@@ -2181,7 +2181,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_thyroid_c': Covariate(
         name='log_transformed_sev_scalar_thyroid_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(572),
         group='SEV',
         status='Experimental',
@@ -2191,7 +2191,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_mesothel': Covariate(
         name='log_transformed_sev_scalar_mesothel',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(573),
         group='SEV',
         status='Experimental',
@@ -2201,7 +2201,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_leukemia': Covariate(
         name='log_transformed_sev_scalar_leukemia',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(577),
         group='SEV',
         status='Experimental',
@@ -2211,7 +2211,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_rhd': Covariate(
         name='log_transformed_sev_scalar_rhd',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(579),
         group='SEV',
         status='Experimental',
@@ -2221,7 +2221,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_ihd': Covariate(
         name='log_transformed_sev_scalar_ihd',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(580),
         group='SEV',
         status='Experimental',
@@ -2231,7 +2231,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_stroke': Covariate(
         name='log_transformed_sev_scalar_stroke',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(581),
         group='SEV',
         status='Experimental',
@@ -2241,7 +2241,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_isch_stroke': Covariate(
         name='log_transformed_sev_scalar_isch_stroke',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(582),
         group='SEV',
         status='Experimental',
@@ -2251,7 +2251,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_hem_stroke': Covariate(
         name='log_transformed_sev_scalar_hem_stroke',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(583),
         group='SEV',
         status='Experimental',
@@ -2261,7 +2261,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_cmp': Covariate(
         name='log_transformed_sev_scalar_cmp',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(584),
         group='SEV',
         status='Experimental',
@@ -2271,7 +2271,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_a_fib': Covariate(
         name='log_transformed_sev_scalar_a_fib',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(585),
         group='SEV',
         status='Experimental',
@@ -2281,7 +2281,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_aort_an': Covariate(
         name='log_transformed_sev_scalar_aort_an',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(586),
         group='SEV',
         status='Experimental',
@@ -2291,7 +2291,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_pvd': Covariate(
         name='log_transformed_sev_scalar_pvd',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(587),
         group='SEV',
         status='Experimental',
@@ -2301,7 +2301,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_endocar': Covariate(
         name='log_transformed_sev_scalar_endocar',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(588),
         group='SEV',
         status='Experimental',
@@ -2311,7 +2311,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_oth_cardio': Covariate(
         name='log_transformed_sev_scalar_oth_cardio',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(589),
         group='SEV',
         status='Experimental',
@@ -2321,7 +2321,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_copd': Covariate(
         name='log_transformed_sev_scalar_copd',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(590),
         group='SEV',
         status='Experimental',
@@ -2331,7 +2331,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_asthma': Covariate(
         name='log_transformed_sev_scalar_asthma',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(596),
         group='SEV',
         status='Experimental',
@@ -2341,7 +2341,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_oth_resp': Covariate(
         name='log_transformed_sev_scalar_oth_resp',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(598),
         group='SEV',
         status='Experimental',
@@ -2351,7 +2351,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_cirr_hepb': Covariate(
         name='log_transformed_sev_scalar_cirr_hepb',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(599),
         group='SEV',
         status='Experimental',
@@ -2361,7 +2361,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_cirr_hepc': Covariate(
         name='log_transformed_sev_scalar_cirr_hepc',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(600),
         group='SEV',
         status='Experimental',
@@ -2371,7 +2371,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_pancreatit': Covariate(
         name='log_transformed_sev_scalar_pancreatit',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(610),
         group='SEV',
         status='Experimental',
@@ -2381,7 +2381,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_epilepsy': Covariate(
         name='log_transformed_sev_scalar_epilepsy',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(614),
         group='SEV',
         status='Experimental',
@@ -2391,7 +2391,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_depression': Covariate(
         name='log_transformed_sev_scalar_depression',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(621),
         group='SEV',
         status='Experimental',
@@ -2401,7 +2401,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_mdd': Covariate(
         name='log_transformed_sev_scalar_mdd',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(622),
         group='SEV',
         status='Experimental',
@@ -2411,7 +2411,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_id': Covariate(
         name='log_transformed_sev_scalar_id',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(634),
         group='SEV',
         status='Experimental',
@@ -2421,7 +2421,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_osteoarth': Covariate(
         name='log_transformed_sev_scalar_osteoarth',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(658),
         group='SEV',
         status='Experimental',
@@ -2431,7 +2431,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_back_and_upneck': Covariate(
         name='log_transformed_sev_scalar_back_and_upneck',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(659),
         group='SEV',
         status='Experimental',
@@ -2441,7 +2441,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_back_pain': Covariate(
         name='log_transformed_sev_scalar_back_pain',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(660),
         group='SEV',
         status='Experimental',
@@ -2451,7 +2451,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_gout': Covariate(
         name='log_transformed_sev_scalar_gout',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(662),
         group='SEV',
         status='Experimental',
@@ -2461,7 +2461,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_sense': Covariate(
         name='log_transformed_sev_scalar_sense',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(687),
         group='SEV',
         status='Experimental',
@@ -2471,7 +2471,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_cataract': Covariate(
         name='log_transformed_sev_scalar_cataract',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(689),
         group='SEV',
         status='Experimental',
@@ -2481,7 +2481,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_hearing': Covariate(
         name='log_transformed_sev_scalar_hearing',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(692),
         group='SEV',
         status='Experimental',
@@ -2491,7 +2491,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_road_inj': Covariate(
         name='log_transformed_sev_scalar_road_inj',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(702),
         group='SEV',
         status='Experimental',
@@ -2501,7 +2501,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_pedest': Covariate(
         name='log_transformed_sev_scalar_pedest',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(703),
         group='SEV',
         status='Experimental',
@@ -2511,7 +2511,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_cyclist': Covariate(
         name='log_transformed_sev_scalar_cyclist',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(704),
         group='SEV',
         status='Experimental',
@@ -2521,7 +2521,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_mot_cyc': Covariate(
         name='log_transformed_sev_scalar_mot_cyc',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(705),
         group='SEV',
         status='Experimental',
@@ -2531,7 +2531,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_mot_veh': Covariate(
         name='log_transformed_sev_scalar_mot_veh',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(706),
         group='SEV',
         status='Experimental',
@@ -2541,7 +2541,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_oth_road': Covariate(
         name='log_transformed_sev_scalar_oth_road',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(707),
         group='SEV',
         status='Experimental',
@@ -2551,7 +2551,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_oth_trans': Covariate(
         name='log_transformed_sev_scalar_oth_trans',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(708),
         group='SEV',
         status='Experimental',
@@ -2561,7 +2561,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_falls': Covariate(
         name='log_transformed_sev_scalar_falls',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(709),
         group='SEV',
         status='Experimental',
@@ -2571,7 +2571,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_drown': Covariate(
         name='log_transformed_sev_scalar_drown',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(710),
         group='SEV',
         status='Experimental',
@@ -2581,7 +2581,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_fire': Covariate(
         name='log_transformed_sev_scalar_fire',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(711),
         group='SEV',
         status='Experimental',
@@ -2591,7 +2591,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_poison': Covariate(
         name='log_transformed_sev_scalar_poison',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(712),
         group='SEV',
         status='Experimental',
@@ -2601,7 +2601,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_mech': Covariate(
         name='log_transformed_sev_scalar_mech',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(713),
         group='SEV',
         status='Experimental',
@@ -2611,7 +2611,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_mech_gun': Covariate(
         name='log_transformed_sev_scalar_mech_gun',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(714),
         group='SEV',
         status='Experimental',
@@ -2621,7 +2621,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_mech_suff': Covariate(
         name='log_transformed_sev_scalar_mech_suff',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(715),
         group='SEV',
         status='Experimental',
@@ -2631,7 +2631,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_oth_mech': Covariate(
         name='log_transformed_sev_scalar_oth_mech',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(716),
         group='SEV',
         status='Experimental',
@@ -2641,7 +2641,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_animal': Covariate(
         name='log_transformed_sev_scalar_animal',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(718),
         group='SEV',
         status='Experimental',
@@ -2651,7 +2651,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_venom': Covariate(
         name='log_transformed_sev_scalar_venom',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(719),
         group='SEV',
         status='Experimental',
@@ -2661,7 +2661,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_non_ven': Covariate(
         name='log_transformed_sev_scalar_non_ven',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(720),
         group='SEV',
         status='Experimental',
@@ -2671,7 +2671,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_f_body': Covariate(
         name='log_transformed_sev_scalar_f_body',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(721),
         group='SEV',
         status='Experimental',
@@ -2681,7 +2681,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_f_body_asp': Covariate(
         name='log_transformed_sev_scalar_f_body_asp',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(722),
         group='SEV',
         status='Experimental',
@@ -2691,7 +2691,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_oth_f_body': Covariate(
         name='log_transformed_sev_scalar_oth_f_body',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(724),
         group='SEV',
         status='Experimental',
@@ -2701,7 +2701,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_oth_unint': Covariate(
         name='log_transformed_sev_scalar_oth_unint',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(725),
         group='SEV',
         status='Experimental',
@@ -2711,7 +2711,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_self_harm': Covariate(
         name='log_transformed_sev_scalar_self_harm',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(726),
         group='SEV',
         status='Experimental',
@@ -2721,7 +2721,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_violence': Covariate(
         name='log_transformed_sev_scalar_violence',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(727),
         group='SEV',
         status='Experimental',
@@ -2731,7 +2731,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_viol_gun': Covariate(
         name='log_transformed_sev_scalar_viol_gun',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(728),
         group='SEV',
         status='Experimental',
@@ -2741,7 +2741,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_viol_knife': Covariate(
         name='log_transformed_sev_scalar_viol_knife',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(729),
         group='SEV',
         status='Experimental',
@@ -2751,7 +2751,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_oth_viol': Covariate(
         name='log_transformed_sev_scalar_oth_viol',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(730),
         group='SEV',
         status='Experimental',
@@ -2761,7 +2761,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_tb': Covariate(
         name='log_transformed_age_standardized_sev_scalar_tb',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(737),
         group='SEV',
         status='Experimental',
@@ -2771,7 +2771,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_oth_hiv': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_hiv',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(739),
         group='SEV',
         status='Experimental',
@@ -2781,7 +2781,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_diarrhea': Covariate(
         name='log_transformed_age_standardized_sev_scalar_diarrhea',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(740),
         group='SEV',
         status='Experimental',
@@ -2791,7 +2791,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_lri': Covariate(
         name='log_transformed_age_standardized_sev_scalar_lri',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(744),
         group='SEV',
         status='Experimental',
@@ -2801,7 +2801,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_uri': Covariate(
         name='log_transformed_age_standardized_sev_scalar_uri',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(745),
         group='SEV',
         status='Experimental',
@@ -2811,7 +2811,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_otitis': Covariate(
         name='log_transformed_age_standardized_sev_scalar_otitis',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(746),
         group='SEV',
         status='Experimental',
@@ -2821,7 +2821,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_measles': Covariate(
         name='log_transformed_age_standardized_sev_scalar_measles',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(747),
         group='SEV',
         status='Experimental',
@@ -2831,7 +2831,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_mat_hem': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mat_hem',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(748),
         group='SEV',
         status='Experimental',
@@ -2841,7 +2841,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_mat_sepsis': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mat_sepsis',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(749),
         group='SEV',
         status='Experimental',
@@ -2851,7 +2851,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_mat_abort': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mat_abort',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(750),
         group='SEV',
         status='Experimental',
@@ -2861,7 +2861,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_hep': Covariate(
         name='log_transformed_age_standardized_sev_scalar_hep',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(751),
         group='SEV',
         status='Experimental',
@@ -2871,7 +2871,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_hep_b': Covariate(
         name='log_transformed_age_standardized_sev_scalar_hep_b',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(752),
         group='SEV',
         status='Experimental',
@@ -2881,7 +2881,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_hep_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_hep_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(753),
         group='SEV',
         status='Experimental',
@@ -2891,7 +2891,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_esophag_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_esophag_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(754),
         group='SEV',
         status='Experimental',
@@ -2901,7 +2901,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_stomach_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_stomach_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(755),
         group='SEV',
         status='Experimental',
@@ -2911,7 +2911,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_liver_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_liver_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(756),
         group='SEV',
         status='Experimental',
@@ -2921,7 +2921,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_liver_c_hepb': Covariate(
         name='log_transformed_age_standardized_sev_scalar_liver_c_hepb',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(757),
         group='SEV',
         status='Experimental',
@@ -2931,7 +2931,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_liver_c_hepc': Covariate(
         name='log_transformed_age_standardized_sev_scalar_liver_c_hepc',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(758),
         group='SEV',
         status='Experimental',
@@ -2941,7 +2941,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_oth_liver_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_liver_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(759),
         group='SEV',
         status='Experimental',
@@ -2951,7 +2951,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_larynx_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_larynx_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(760),
         group='SEV',
         status='Experimental',
@@ -2961,7 +2961,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_lung_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_lung_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(761),
         group='SEV',
         status='Experimental',
@@ -2971,7 +2971,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_breast_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_breast_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(762),
         group='SEV',
         status='Experimental',
@@ -2981,7 +2981,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_uterus_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_uterus_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(763),
         group='SEV',
         status='Experimental',
@@ -2991,7 +2991,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_prostate_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_prostate_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(764),
         group='SEV',
         status='Experimental',
@@ -3001,7 +3001,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_colorect_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_colorect_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(765),
         group='SEV',
         status='Experimental',
@@ -3011,7 +3011,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_mouth_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mouth_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(766),
         group='SEV',
         status='Experimental',
@@ -3021,7 +3021,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_nasoph_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_nasoph_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(767),
         group='SEV',
         status='Experimental',
@@ -3031,7 +3031,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_oth_phar_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_phar_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(768),
         group='SEV',
         status='Experimental',
@@ -3041,7 +3041,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_gallblad_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_gallblad_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(769),
         group='SEV',
         status='Experimental',
@@ -3051,7 +3051,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_pancreas_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_pancreas_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(770),
         group='SEV',
         status='Experimental',
@@ -3061,7 +3061,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_ovary_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_ovary_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(771),
         group='SEV',
         status='Experimental',
@@ -3071,7 +3071,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_kidney_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_kidney_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(772),
         group='SEV',
         status='Experimental',
@@ -3081,7 +3081,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_bladder_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_bladder_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(773),
         group='SEV',
         status='Experimental',
@@ -3091,7 +3091,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_thyroid_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_thyroid_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(774),
         group='SEV',
         status='Experimental',
@@ -3101,7 +3101,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_mesothel': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mesothel',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(775),
         group='SEV',
         status='Experimental',
@@ -3111,7 +3111,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_leukemia': Covariate(
         name='log_transformed_age_standardized_sev_scalar_leukemia',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(776),
         group='SEV',
         status='Experimental',
@@ -3121,7 +3121,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_rhd': Covariate(
         name='log_transformed_age_standardized_sev_scalar_rhd',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(777),
         group='SEV',
         status='Experimental',
@@ -3131,7 +3131,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_ihd': Covariate(
         name='log_transformed_age_standardized_sev_scalar_ihd',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(778),
         group='SEV',
         status='Experimental',
@@ -3141,7 +3141,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_stroke': Covariate(
         name='log_transformed_age_standardized_sev_scalar_stroke',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(779),
         group='SEV',
         status='Experimental',
@@ -3151,7 +3151,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_isch_stroke': Covariate(
         name='log_transformed_age_standardized_sev_scalar_isch_stroke',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(780),
         group='SEV',
         status='Experimental',
@@ -3161,7 +3161,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_hem_stroke': Covariate(
         name='log_transformed_age_standardized_sev_scalar_hem_stroke',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(781),
         group='SEV',
         status='Experimental',
@@ -3171,7 +3171,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_cmp': Covariate(
         name='log_transformed_age_standardized_sev_scalar_cmp',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(782),
         group='SEV',
         status='Experimental',
@@ -3181,7 +3181,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_a_fib': Covariate(
         name='log_transformed_age_standardized_sev_scalar_a_fib',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(783),
         group='SEV',
         status='Experimental',
@@ -3191,7 +3191,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_aort_an': Covariate(
         name='log_transformed_age_standardized_sev_scalar_aort_an',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(784),
         group='SEV',
         status='Experimental',
@@ -3201,7 +3201,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_pvd': Covariate(
         name='log_transformed_age_standardized_sev_scalar_pvd',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(785),
         group='SEV',
         status='Experimental',
@@ -3211,7 +3211,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_endocar': Covariate(
         name='log_transformed_age_standardized_sev_scalar_endocar',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(786),
         group='SEV',
         status='Experimental',
@@ -3221,7 +3221,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_oth_cardio': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_cardio',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(787),
         group='SEV',
         status='Experimental',
@@ -3231,7 +3231,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_copd': Covariate(
         name='log_transformed_age_standardized_sev_scalar_copd',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(788),
         group='SEV',
         status='Experimental',
@@ -3241,7 +3241,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_asthma': Covariate(
         name='log_transformed_age_standardized_sev_scalar_asthma',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(794),
         group='SEV',
         status='Experimental',
@@ -3251,7 +3251,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_oth_resp': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_resp',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(796),
         group='SEV',
         status='Experimental',
@@ -3261,7 +3261,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_cirr_hepb': Covariate(
         name='log_transformed_age_standardized_sev_scalar_cirr_hepb',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(797),
         group='SEV',
         status='Experimental',
@@ -3271,7 +3271,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_cirr_hepc': Covariate(
         name='log_transformed_age_standardized_sev_scalar_cirr_hepc',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(798),
         group='SEV',
         status='Experimental',
@@ -3281,7 +3281,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_pancreatit': Covariate(
         name='log_transformed_age_standardized_sev_scalar_pancreatit',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(800),
         group='SEV',
         status='Experimental',
@@ -3291,7 +3291,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_epilepsy': Covariate(
         name='log_transformed_age_standardized_sev_scalar_epilepsy',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(801),
         group='SEV',
         status='Experimental',
@@ -3301,7 +3301,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_depression': Covariate(
         name='log_transformed_age_standardized_sev_scalar_depression',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(802),
         group='SEV',
         status='Experimental',
@@ -3311,7 +3311,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_mdd': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mdd',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(803),
         group='SEV',
         status='Experimental',
@@ -3321,7 +3321,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_id': Covariate(
         name='log_transformed_age_standardized_sev_scalar_id',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(805),
         group='SEV',
         status='Experimental',
@@ -3331,7 +3331,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_osteoarth': Covariate(
         name='log_transformed_age_standardized_sev_scalar_osteoarth',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(806),
         group='SEV',
         status='Experimental',
@@ -3341,7 +3341,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_back_and_upneck': Covariate(
         name='log_transformed_age_standardized_sev_scalar_back_and_upneck',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(807),
         group='SEV',
         status='Experimental',
@@ -3351,7 +3351,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_back_pain': Covariate(
         name='log_transformed_age_standardized_sev_scalar_back_pain',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(808),
         group='SEV',
         status='Experimental',
@@ -3361,7 +3361,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_gout': Covariate(
         name='log_transformed_age_standardized_sev_scalar_gout',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(809),
         group='SEV',
         status='Experimental',
@@ -3371,7 +3371,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_sense': Covariate(
         name='log_transformed_age_standardized_sev_scalar_sense',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(810),
         group='SEV',
         status='Experimental',
@@ -3381,7 +3381,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_cataract': Covariate(
         name='log_transformed_age_standardized_sev_scalar_cataract',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(811),
         group='SEV',
         status='Experimental',
@@ -3391,7 +3391,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_hearing': Covariate(
         name='log_transformed_age_standardized_sev_scalar_hearing',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(812),
         group='SEV',
         status='Experimental',
@@ -3401,7 +3401,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_road_inj': Covariate(
         name='log_transformed_age_standardized_sev_scalar_road_inj',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(813),
         group='SEV',
         status='Experimental',
@@ -3411,7 +3411,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_pedest': Covariate(
         name='log_transformed_age_standardized_sev_scalar_pedest',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(814),
         group='SEV',
         status='Experimental',
@@ -3421,7 +3421,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_cyclist': Covariate(
         name='log_transformed_age_standardized_sev_scalar_cyclist',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(815),
         group='SEV',
         status='Experimental',
@@ -3431,7 +3431,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_mot_cyc': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mot_cyc',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(816),
         group='SEV',
         status='Experimental',
@@ -3441,7 +3441,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_mot_veh': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mot_veh',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(817),
         group='SEV',
         status='Experimental',
@@ -3451,7 +3451,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_oth_road': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_road',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(818),
         group='SEV',
         status='Experimental',
@@ -3461,7 +3461,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_oth_trans': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_trans',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(819),
         group='SEV',
         status='Experimental',
@@ -3471,7 +3471,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_falls': Covariate(
         name='log_transformed_age_standardized_sev_scalar_falls',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(820),
         group='SEV',
         status='Experimental',
@@ -3481,7 +3481,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_drown': Covariate(
         name='log_transformed_age_standardized_sev_scalar_drown',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(821),
         group='SEV',
         status='Experimental',
@@ -3491,7 +3491,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_fire': Covariate(
         name='log_transformed_age_standardized_sev_scalar_fire',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(822),
         group='SEV',
         status='Experimental',
@@ -3501,7 +3501,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_poison': Covariate(
         name='log_transformed_age_standardized_sev_scalar_poison',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(823),
         group='SEV',
         status='Experimental',
@@ -3511,7 +3511,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_mech': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mech',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(824),
         group='SEV',
         status='Experimental',
@@ -3521,7 +3521,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_mech_gun': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mech_gun',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(825),
         group='SEV',
         status='Experimental',
@@ -3531,7 +3531,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_mech_suff': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mech_suff',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(826),
         group='SEV',
         status='Experimental',
@@ -3541,7 +3541,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_oth_mech': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_mech',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(827),
         group='SEV',
         status='Experimental',
@@ -3551,7 +3551,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_animal': Covariate(
         name='log_transformed_age_standardized_sev_scalar_animal',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(828),
         group='SEV',
         status='Experimental',
@@ -3561,7 +3561,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_venom': Covariate(
         name='log_transformed_age_standardized_sev_scalar_venom',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(829),
         group='SEV',
         status='Experimental',
@@ -3571,7 +3571,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_non_ven': Covariate(
         name='log_transformed_age_standardized_sev_scalar_non_ven',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(830),
         group='SEV',
         status='Experimental',
@@ -3581,7 +3581,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_f_body': Covariate(
         name='log_transformed_age_standardized_sev_scalar_f_body',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(831),
         group='SEV',
         status='Experimental',
@@ -3591,7 +3591,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_f_body_asp': Covariate(
         name='log_transformed_age_standardized_sev_scalar_f_body_asp',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(832),
         group='SEV',
         status='Experimental',
@@ -3601,7 +3601,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_oth_f_body': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_f_body',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(834),
         group='SEV',
         status='Experimental',
@@ -3611,7 +3611,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_oth_unint': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_unint',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(835),
         group='SEV',
         status='Experimental',
@@ -3621,7 +3621,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_self_harm': Covariate(
         name='log_transformed_age_standardized_sev_scalar_self_harm',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(836),
         group='SEV',
         status='Experimental',
@@ -3631,7 +3631,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_violence': Covariate(
         name='log_transformed_age_standardized_sev_scalar_violence',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(837),
         group='SEV',
         status='Experimental',
@@ -3641,7 +3641,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_viol_gun': Covariate(
         name='log_transformed_age_standardized_sev_scalar_viol_gun',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(838),
         group='SEV',
         status='Experimental',
@@ -3651,7 +3651,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_viol_knife': Covariate(
         name='log_transformed_age_standardized_sev_scalar_viol_knife',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(839),
         group='SEV',
         status='Experimental',
@@ -3661,7 +3661,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_oth_viol': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_viol',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(840),
         group='SEV',
         status='Experimental',
@@ -3671,7 +3671,7 @@ covariates = Covariates(**{
     ),
     'h5n1_epidemic_years_binary': Covariate(
         name='h5n1_epidemic_years_binary',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(842),
         group='Experimental',
         status='Experimental',
@@ -3681,7 +3681,7 @@ covariates = Covariates(**{
     ),
     'education_age_standardized': Covariate(
         name='education_age_standardized',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(845),
         group='Education',
         status='Experimental',
@@ -3691,7 +3691,7 @@ covariates = Covariates(**{
     ),
     'meningitis_belt_proportion': Covariate(
         name='meningitis_belt_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(848),
         group='Experimental',
         status='Experimental',
@@ -3701,7 +3701,7 @@ covariates = Covariates(**{
     ),
     'gdp_per_capita_base_2010': Covariate(
         name='gdp_per_capita_base_2010',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(851),
         group='Experimental',
         status='Experimental',
@@ -3711,7 +3711,7 @@ covariates = Covariates(**{
     ),
     'urbanicity': Covariate(
         name='urbanicity',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(854),
         group='Experimental',
         status='Experimental',
@@ -3721,7 +3721,7 @@ covariates = Covariates(**{
     ),
     'sev_unsafe_water': Covariate(
         name='sev_unsafe_water',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(863),
         group='Experimental',
         status='Experimental',
@@ -3731,7 +3731,7 @@ covariates = Covariates(**{
     ),
     'sev_unsafe_sanitation': Covariate(
         name='sev_unsafe_sanitation',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(866),
         group='Experimental',
         status='Experimental',
@@ -3741,7 +3741,7 @@ covariates = Covariates(**{
     ),
     'malaria_incidence_from_map_estimates_africa': Covariate(
         name='malaria_incidence_from_map_estimates_africa',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(869),
         group='Experimental',
         status='Experimental',
@@ -3751,7 +3751,7 @@ covariates = Covariates(**{
     ),
     'dengue_reporting_trends_transformed_into_relative_risks_relative_to_that_countrys_mean_incidence': Covariate(
         name='dengue_reporting_trends_transformed_into_relative_risks_relative_to_that_countrys_mean_incidence',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(872),
         group='Experimental',
         status='Experimental',
@@ -3761,7 +3761,7 @@ covariates = Covariates(**{
     ),
     'echinococcosis_endemicity': Covariate(
         name='echinococcosis_endemicity',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(875),
         group='Experimental',
         status='Experimental',
@@ -3771,7 +3771,7 @@ covariates = Covariates(**{
     ),
     'socio_demographic_index': Covariate(
         name='socio_demographic_index',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(881),
         group='Experimental',
         status='Experimental',
@@ -3781,7 +3781,7 @@ covariates = Covariates(**{
     ),
     'japanese_encelphalitis_endemic_area_binary': Covariate(
         name='japanese_encelphalitis_endemic_area_binary',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(884),
         group='Experimental',
         status='Experimental',
@@ -3791,7 +3791,7 @@ covariates = Covariates(**{
     ),
     'calcium_adjusted_g': Covariate(
         name='calcium_adjusted_g',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(887),
         group='Experimental',
         status='Experimental',
@@ -3801,7 +3801,7 @@ covariates = Covariates(**{
     ),
     'calcium_unadjusted_g': Covariate(
         name='calcium_unadjusted_g',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(890),
         group='Experimental',
         status='Experimental',
@@ -3811,7 +3811,7 @@ covariates = Covariates(**{
     ),
     'fiber_adjusted_g': Covariate(
         name='fiber_adjusted_g',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(899),
         group='Experimental',
         status='Experimental',
@@ -3821,7 +3821,7 @@ covariates = Covariates(**{
     ),
     'fiber_unadjusted_g': Covariate(
         name='fiber_unadjusted_g',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(902),
         group='Experimental',
         status='Experimental',
@@ -3831,7 +3831,7 @@ covariates = Covariates(**{
     ),
     'omega_3_adjusted_g': Covariate(
         name='omega_3_adjusted_g',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(905),
         group='Experimental',
         status='Experimental',
@@ -3841,7 +3841,7 @@ covariates = Covariates(**{
     ),
     'fruits_adjusted_g': Covariate(
         name='fruits_adjusted_g',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(911),
         group='Experimental',
         status='Experimental',
@@ -3851,7 +3851,7 @@ covariates = Covariates(**{
     ),
     'fruits_unadjusted_g': Covariate(
         name='fruits_unadjusted_g',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(914),
         group='Experimental',
         status='Experimental',
@@ -3861,7 +3861,7 @@ covariates = Covariates(**{
     ),
     'milk_adjusted_g': Covariate(
         name='milk_adjusted_g',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(917),
         group='Experimental',
         status='Experimental',
@@ -3871,7 +3871,7 @@ covariates = Covariates(**{
     ),
     'milk_unadjusted_g': Covariate(
         name='milk_unadjusted_g',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(920),
         group='Experimental',
         status='Experimental',
@@ -3881,7 +3881,7 @@ covariates = Covariates(**{
     ),
     'nuts_seeds_adjusted_g': Covariate(
         name='nuts_seeds_adjusted_g',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(923),
         group='Experimental',
         status='Experimental',
@@ -3891,7 +3891,7 @@ covariates = Covariates(**{
     ),
     'pufa_adjusted_percent': Covariate(
         name='pufa_adjusted_percent',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(929),
         group='Experimental',
         status='Experimental',
@@ -3901,7 +3901,7 @@ covariates = Covariates(**{
     ),
     'pulses_legumes_adjusted_g': Covariate(
         name='pulses_legumes_adjusted_g',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(932),
         group='Experimental',
         status='Experimental',
@@ -3911,7 +3911,7 @@ covariates = Covariates(**{
     ),
     'red_meats_adjusted_g': Covariate(
         name='red_meats_adjusted_g',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(938),
         group='Experimental',
         status='Experimental',
@@ -3921,7 +3921,7 @@ covariates = Covariates(**{
     ),
     'red_meats_unadjusted_g': Covariate(
         name='red_meats_unadjusted_g',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(941),
         group='Experimental',
         status='Experimental',
@@ -3931,7 +3931,7 @@ covariates = Covariates(**{
     ),
     'saturated_fats_adjusted_percent': Covariate(
         name='saturated_fats_adjusted_percent',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(950),
         group='Experimental',
         status='Experimental',
@@ -3941,7 +3941,7 @@ covariates = Covariates(**{
     ),
     'sugar_adjusted_g': Covariate(
         name='sugar_adjusted_g',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(959),
         group='Experimental',
         status='Experimental',
@@ -3951,7 +3951,7 @@ covariates = Covariates(**{
     ),
     'sugar_unadjusted_g': Covariate(
         name='sugar_unadjusted_g',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(962),
         group='Experimental',
         status='Experimental',
@@ -3961,7 +3961,7 @@ covariates = Covariates(**{
     ),
     'vegetables_adjusted_g': Covariate(
         name='vegetables_adjusted_g',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(965),
         group='Experimental',
         status='Experimental',
@@ -3971,7 +3971,7 @@ covariates = Covariates(**{
     ),
     'vegetables_unadjusted_g': Covariate(
         name='vegetables_unadjusted_g',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(968),
         group='Experimental',
         status='Experimental',
@@ -3981,7 +3981,7 @@ covariates = Covariates(**{
     ),
     'energy_unadjusted_kcal': Covariate(
         name='energy_unadjusted_kcal',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(977),
         group='Experimental',
         status='Experimental',
@@ -3991,7 +3991,7 @@ covariates = Covariates(**{
     ),
     'interaction_of_prevalence_weighted_drug_resistance_and_malaria_incidence': Covariate(
         name='interaction_of_prevalence_weighted_drug_resistance_and_malaria_incidence',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(980),
         group='Experimental',
         status='Experimental',
@@ -4001,7 +4001,7 @@ covariates = Covariates(**{
     ),
     'migration_rate_per_1000_population': Covariate(
         name='migration_rate_per_1000_population',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(983),
         group='Experimental',
         status='Experimental',
@@ -4011,7 +4011,7 @@ covariates = Covariates(**{
     ),
     'hiv_mortality_females_10_54': Covariate(
         name='hiv_mortality_females_10_54',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(986),
         group='Experimental',
         status='Experimental',
@@ -4021,7 +4021,7 @@ covariates = Covariates(**{
     ),
     'hiv_age_standardized_prevalence': Covariate(
         name='hiv_age_standardized_prevalence',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1016),
         group='Experimental',
         status='Experimental',
@@ -4031,7 +4031,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_maternal': Covariate(
         name='log_transformed_age_standardized_sev_scalar_maternal',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1019),
         group='SEV',
         status='Experimental',
@@ -4041,7 +4041,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_cvd': Covariate(
         name='log_transformed_age_standardized_sev_scalar_cvd',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1022),
         group='SEV',
         status='Experimental',
@@ -4051,7 +4051,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_chr_resp': Covariate(
         name='log_transformed_age_standardized_sev_scalar_chr_resp',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1025),
         group='SEV',
         status='Experimental',
@@ -4061,7 +4061,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_cirrhosis': Covariate(
         name='log_transformed_age_standardized_sev_scalar_cirrhosis',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1028),
         group='SEV',
         status='Experimental',
@@ -4071,7 +4071,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_digestive': Covariate(
         name='log_transformed_age_standardized_sev_scalar_digestive',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1031),
         group='SEV',
         status='Experimental',
@@ -4081,7 +4081,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_msk': Covariate(
         name='log_transformed_age_standardized_sev_scalar_msk',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1034),
         group='SEV',
         status='Experimental',
@@ -4091,7 +4091,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_trans_inj': Covariate(
         name='log_transformed_age_standardized_sev_scalar_trans_inj',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1037),
         group='SEV',
         status='Experimental',
@@ -4101,7 +4101,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_maternal': Covariate(
         name='log_transformed_sev_scalar_maternal',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1040),
         group='SEV',
         status='Experimental',
@@ -4111,7 +4111,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_cvd': Covariate(
         name='log_transformed_sev_scalar_cvd',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1043),
         group='SEV',
         status='Experimental',
@@ -4121,7 +4121,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_chr_resp': Covariate(
         name='log_transformed_sev_scalar_chr_resp',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1046),
         group='SEV',
         status='Experimental',
@@ -4131,7 +4131,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_cirrhosis': Covariate(
         name='log_transformed_sev_scalar_cirrhosis',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1049),
         group='SEV',
         status='Experimental',
@@ -4141,7 +4141,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_digestive': Covariate(
         name='log_transformed_sev_scalar_digestive',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1052),
         group='SEV',
         status='Experimental',
@@ -4151,7 +4151,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_msk': Covariate(
         name='log_transformed_sev_scalar_msk',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1055),
         group='SEV',
         status='Experimental',
@@ -4161,7 +4161,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_trans_inj': Covariate(
         name='log_transformed_sev_scalar_trans_inj',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1058),
         group='SEV',
         status='Experimental',
@@ -4171,7 +4171,7 @@ covariates = Covariates(**{
     ),
     'proportion_of_total_population_in_japanese_encephalitis_endemic_area_india': Covariate(
         name='proportion_of_total_population_in_japanese_encephalitis_endemic_area_india',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1061),
         group='Experimental',
         status='Experimental',
@@ -4181,7 +4181,7 @@ covariates = Covariates(**{
     ),
     'vitamin_a_unadjusted_iu': Covariate(
         name='vitamin_a_unadjusted_iu',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1062),
         group='Experimental',
         status='Experimental',
@@ -4191,7 +4191,7 @@ covariates = Covariates(**{
     ),
     'vitamin_a_rae_unadjusted_ug': Covariate(
         name='vitamin_a_rae_unadjusted_ug',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1063),
         group='Experimental',
         status='Experimental',
@@ -4201,7 +4201,7 @@ covariates = Covariates(**{
     ),
     'vitamin_a_retinol_unadjusted_ug': Covariate(
         name='vitamin_a_retinol_unadjusted_ug',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1064),
         group='Experimental',
         status='Experimental',
@@ -4211,7 +4211,7 @@ covariates = Covariates(**{
     ),
     'dietary_zinc_unadjusted_mg': Covariate(
         name='dietary_zinc_unadjusted_mg',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1065),
         group='Experimental',
         status='Experimental',
@@ -4221,7 +4221,7 @@ covariates = Covariates(**{
     ),
     'death_and_ncc_prevalence_ratio': Covariate(
         name='death_and_ncc_prevalence_ratio',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1066),
         group='Experimental',
         status='Experimental',
@@ -4231,7 +4231,7 @@ covariates = Covariates(**{
     ),
     'proportion_of_total_population_covered_by_menafrivac_initiative_meningitis_meningococcal_type_a_vaccine': Covariate(
         name='proportion_of_total_population_covered_by_menafrivac_initiative_meningitis_meningococcal_type_a_vaccine',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1068),
         group='Experimental',
         status='Experimental',
@@ -4241,7 +4241,7 @@ covariates = Covariates(**{
     ),
     'stunting_proportion_less_than_2sd_height_for_age_less_than_5_years': Covariate(
         name='stunting_proportion_less_than_2sd_height_for_age_less_than_5_years',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1069),
         group='Malnutrition',
         status='Experimental',
@@ -4251,7 +4251,7 @@ covariates = Covariates(**{
     ),
     'wasting_proportion_less_than_2sd_weight_for_height_less_than_5_years': Covariate(
         name='wasting_proportion_less_than_2sd_weight_for_height_less_than_5_years',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1070),
         group='Malnutrition',
         status='Experimental',
@@ -4261,7 +4261,7 @@ covariates = Covariates(**{
     ),
     'malaria_incidence_adjusted_for_antimalarial_coverage_and_drug_effectiveness': Covariate(
         name='malaria_incidence_adjusted_for_antimalarial_coverage_and_drug_effectiveness',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1072),
         group='Experimental',
         status='Experimental',
@@ -4271,7 +4271,7 @@ covariates = Covariates(**{
     ),
     'hepatitis_b_hbsag_seroprevalence': Covariate(
         name='hepatitis_b_hbsag_seroprevalence',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1073),
         group='Experimental',
         status='Experimental',
@@ -4281,7 +4281,7 @@ covariates = Covariates(**{
     ),
     'hepatitis_c_igg_seroprevalence': Covariate(
         name='hepatitis_c_igg_seroprevalence',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1074),
         group='Experimental',
         status='Experimental',
@@ -4291,7 +4291,7 @@ covariates = Covariates(**{
     ),
     'rotavirus_coverage_proportion': Covariate(
         name='rotavirus_coverage_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1075),
         group='Experimental',
         status='Experimental',
@@ -4301,7 +4301,7 @@ covariates = Covariates(**{
     ),
     'proportion_of_cirrhosis_due_to_alcohol': Covariate(
         name='proportion_of_cirrhosis_due_to_alcohol',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1076),
         group='Experimental',
         status='Experimental',
@@ -4311,7 +4311,7 @@ covariates = Covariates(**{
     ),
     'proportion_of_cirrhosis_due_to_hepatitis_b': Covariate(
         name='proportion_of_cirrhosis_due_to_hepatitis_b',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1077),
         group='Experimental',
         status='Experimental',
@@ -4321,7 +4321,7 @@ covariates = Covariates(**{
     ),
     'proportion_of_cirrhosis_due_to_hepatitis_c': Covariate(
         name='proportion_of_cirrhosis_due_to_hepatitis_c',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1078),
         group='Experimental',
         status='Experimental',
@@ -4331,7 +4331,7 @@ covariates = Covariates(**{
     ),
     'proportion_of_cirrhosis_due_to_other_causes': Covariate(
         name='proportion_of_cirrhosis_due_to_other_causes',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1079),
         group='Experimental',
         status='Experimental',
@@ -4341,7 +4341,7 @@ covariates = Covariates(**{
     ),
     'proportion_of_liver_cancer_due_to_alcohol_age_standardized': Covariate(
         name='proportion_of_liver_cancer_due_to_alcohol_age_standardized',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1080),
         group='Experimental',
         status='Experimental',
@@ -4351,7 +4351,7 @@ covariates = Covariates(**{
     ),
     'proportion_of_liver_cancer_due_to_hepatitis_b_age_standardized': Covariate(
         name='proportion_of_liver_cancer_due_to_hepatitis_b_age_standardized',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1081),
         group='Experimental',
         status='Experimental',
@@ -4361,7 +4361,7 @@ covariates = Covariates(**{
     ),
     'proportion_of_liver_cancer_due_to_hepatitis_c_age_standardized': Covariate(
         name='proportion_of_liver_cancer_due_to_hepatitis_c_age_standardized',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1082),
         group='Experimental',
         status='Experimental',
@@ -4371,7 +4371,7 @@ covariates = Covariates(**{
     ),
     'proportion_of_liver_cancer_due_to_other_causes_age_standardized': Covariate(
         name='proportion_of_liver_cancer_due_to_other_causes_age_standardized',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1083),
         group='Experimental',
         status='Experimental',
@@ -4381,7 +4381,7 @@ covariates = Covariates(**{
     ),
     'seroprevalence_of_anti_hav_igg': Covariate(
         name='seroprevalence_of_anti_hav_igg',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1084),
         group='Experimental',
         status='Experimental',
@@ -4391,7 +4391,7 @@ covariates = Covariates(**{
     ),
     'seroprevalence_of_anti_hev_igg': Covariate(
         name='seroprevalence_of_anti_hev_igg',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1085),
         group='Experimental',
         status='Experimental',
@@ -4401,7 +4401,7 @@ covariates = Covariates(**{
     ),
     'major_depressive_disorder': Covariate(
         name='major_depressive_disorder',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1086),
         group='Experimental',
         status='Experimental',
@@ -4411,7 +4411,7 @@ covariates = Covariates(**{
     ),
     'proportion_of_population_involved_in_agricultural_activities': Covariate(
         name='proportion_of_population_involved_in_agricultural_activities',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1087),
         group='Experimental',
         status='Experimental',
@@ -4421,7 +4421,7 @@ covariates = Covariates(**{
     ),
     'oop_health_expenditure_per_capita': Covariate(
         name='oop_health_expenditure_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1092),
         group='Experimental',
         status='Experimental',
@@ -4431,7 +4431,7 @@ covariates = Covariates(**{
     ),
     'fraction_of_oop_health_expenditure': Covariate(
         name='fraction_of_oop_health_expenditure',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1093),
         group='Experimental',
         status='Experimental',
@@ -4441,7 +4441,7 @@ covariates = Covariates(**{
     ),
     'art_coverage': Covariate(
         name='art_coverage',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1095),
         group='HIV/AIDS',
         status='Experimental',
@@ -4451,7 +4451,7 @@ covariates = Covariates(**{
     ),
     'tuberculosis_case_detection': Covariate(
         name='tuberculosis_case_detection',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1096),
         group='Tuberculosis',
         status='Experimental',
@@ -4461,7 +4461,7 @@ covariates = Covariates(**{
     ),
     'universal_health_coverage': Covariate(
         name='universal_health_coverage',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1097),
         group='SDGs',
         status='Experimental',
@@ -4471,7 +4471,7 @@ covariates = Covariates(**{
     ),
     'maternal_alcohol_consumption_during_pregnancy_proportion': Covariate(
         name='maternal_alcohol_consumption_during_pregnancy_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1098),
         group='Experimental',
         status='Experimental',
@@ -4481,7 +4481,7 @@ covariates = Covariates(**{
     ),
     'healthcare_access_and_quality_index': Covariate(
         name='healthcare_access_and_quality_index',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1099),
         group='Experimental',
         status='Experimental',
@@ -4491,7 +4491,7 @@ covariates = Covariates(**{
     ),
     'age_standardized_proportion_adult_underweight': Covariate(
         name='age_standardized_proportion_adult_underweight',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1100),
         group='BMI',
         status='Experimental',
@@ -4501,7 +4501,7 @@ covariates = Covariates(**{
     ),
     'ors_oral_rehydration': Covariate(
         name='ors_oral_rehydration',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1102),
         group='Treatment',
         status='Experimental',
@@ -4511,7 +4511,7 @@ covariates = Covariates(**{
     ),
     'antibiotics_for_lri': Covariate(
         name='antibiotics_for_lri',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1103),
         group='Treatment',
         status='Experimental',
@@ -4521,7 +4521,7 @@ covariates = Covariates(**{
     ),
     'live_births_by_sex': Covariate(
         name='live_births_by_sex',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1106),
         group='Births',
         status='Experimental',
@@ -4531,7 +4531,7 @@ covariates = Covariates(**{
     ),
     'age_standardized_melanoma': Covariate(
         name='age_standardized_melanoma',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1107),
         group='Cancer',
         status='Experimental',
@@ -4541,7 +4541,7 @@ covariates = Covariates(**{
     ),
     'measles_vaccine_coverage_2_doses_proportion': Covariate(
         name='measles_vaccine_coverage_2_doses_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1108),
         group='Coverage',
         status='Experimental',
@@ -4551,7 +4551,7 @@ covariates = Covariates(**{
     ),
     'schisto_cumulative_treatments': Covariate(
         name='schisto_cumulative_treatments',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1110),
         group='Treatment',
         status='Experimental',
@@ -4561,7 +4561,7 @@ covariates = Covariates(**{
     ),
     'health_worker_density': Covariate(
         name='health_worker_density',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1111),
         group='Health System',
         status='Experimental',
@@ -4571,7 +4571,7 @@ covariates = Covariates(**{
     ),
     'iron_energy_unadjusted_mg': Covariate(
         name='iron_energy_unadjusted_mg',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1113),
         group='Diet',
         status='Experimental',
@@ -4581,7 +4581,7 @@ covariates = Covariates(**{
     ),
     'poultry_energy_adjusted_g': Covariate(
         name='poultry_energy_adjusted_g',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1122),
         group='Diet',
         status='Experimental',
@@ -4591,7 +4591,7 @@ covariates = Covariates(**{
     ),
     'poultry_energy_unadjusted_g': Covariate(
         name='poultry_energy_unadjusted_g',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1123),
         group='Diet',
         status='Experimental',
@@ -4601,7 +4601,7 @@ covariates = Covariates(**{
     ),
     'malaria_pfpr_map': Covariate(
         name='malaria_pfpr_map',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1129),
         group='Malaria',
         status='Experimental',
@@ -4611,7 +4611,7 @@ covariates = Covariates(**{
     ),
     'malaria_incidence_map': Covariate(
         name='malaria_incidence_map',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1130),
         group='Malaria',
         status='Experimental',
@@ -4621,7 +4621,7 @@ covariates = Covariates(**{
     ),
     'antimalarial_effective_treatment_ratio_map': Covariate(
         name='antimalarial_effective_treatment_ratio_map',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1131),
         group='Malaria',
         status='Experimental',
@@ -4631,7 +4631,7 @@ covariates = Covariates(**{
     ),
     'antimalarial_effective_treatment_map': Covariate(
         name='antimalarial_effective_treatment_map',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1132),
         group='Malaria',
         status='Experimental',
@@ -4641,7 +4641,7 @@ covariates = Covariates(**{
     ),
     'mean_birth_weight': Covariate(
         name='mean_birth_weight',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1136),
         group='Experimental',
         status='Experimental',
@@ -4651,7 +4651,7 @@ covariates = Covariates(**{
     ),
     'mean_hemoglobin_concentration_age_standardized': Covariate(
         name='mean_hemoglobin_concentration_age_standardized',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1140),
         group='Experimental',
         status='Experimental',
@@ -4661,7 +4661,7 @@ covariates = Covariates(**{
     ),
     'age_standardized_prevalence_of_cocaine_dependence_in_women_of_reproductive_age': Covariate(
         name='age_standardized_prevalence_of_cocaine_dependence_in_women_of_reproductive_age',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1142),
         group='Experimental',
         status='Experimental',
@@ -4671,7 +4671,7 @@ covariates = Covariates(**{
     ),
     'age_standardized_prevalence_of_amphetamine_dependence_in_women_of_reproductive_age': Covariate(
         name='age_standardized_prevalence_of_amphetamine_dependence_in_women_of_reproductive_age',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1143),
         group='Experimental',
         status='Experimental',
@@ -4681,7 +4681,7 @@ covariates = Covariates(**{
     ),
     'age_standardized_prevalence_of_opioid_dependence_in_women_of_reproductive_age': Covariate(
         name='age_standardized_prevalence_of_opioid_dependence_in_women_of_reproductive_age',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1144),
         group='Experimental',
         status='Experimental',
@@ -4691,7 +4691,7 @@ covariates = Covariates(**{
     ),
     'age_standardized_prevalence_of_cannabis_dependence_in_women_of_reproductive_age': Covariate(
         name='age_standardized_prevalence_of_cannabis_dependence_in_women_of_reproductive_age',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1145),
         group='Experimental',
         status='Experimental',
@@ -4701,7 +4701,7 @@ covariates = Covariates(**{
     ),
     'age_standardized_prevalence_of_total_drug_dependence_in_women_of_reproductive_age': Covariate(
         name='age_standardized_prevalence_of_total_drug_dependence_in_women_of_reproductive_age',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1146),
         group='Experimental',
         status='Experimental',
@@ -4711,7 +4711,7 @@ covariates = Covariates(**{
     ),
     'rubella_vaccine_coverage_proportion': Covariate(
         name='rubella_vaccine_coverage_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1147),
         group='Coverage',
         status='Experimental',
@@ -4721,7 +4721,7 @@ covariates = Covariates(**{
     ),
     'tuberculosis_infection_risk_weighted_prevalence_age_standardized': Covariate(
         name='tuberculosis_infection_risk_weighted_prevalence_age_standardized',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1148),
         group='Tuberculosis',
         status='Experimental',
@@ -4731,7 +4731,7 @@ covariates = Covariates(**{
     ),
     'presenting_vision_impairment': Covariate(
         name='presenting_vision_impairment',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1149),
         group='Vision',
         status='Experimental',
@@ -4741,7 +4741,7 @@ covariates = Covariates(**{
     ),
     'ten_year_lag_distributed_energy_per_capita': Covariate(
         name='ten_year_lag_distributed_energy_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1150),
         group='FAO',
         status='Experimental',
@@ -4751,7 +4751,7 @@ covariates = Covariates(**{
     ),
     'folic_acid_unadjusted_ug': Covariate(
         name='folic_acid_unadjusted_ug',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1153),
         group='Diet',
         status='Experimental',
@@ -4761,7 +4761,7 @@ covariates = Covariates(**{
     ),
     'smooth_outphase_of_leaded_gasoline': Covariate(
         name='smooth_outphase_of_leaded_gasoline',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1154),
         group='Experimental',
         status='Experimental',
@@ -4771,7 +4771,7 @@ covariates = Covariates(**{
     ),
     'no_access_to_handwashing_facility': Covariate(
         name='no_access_to_handwashing_facility',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1155),
         group='Handwashing',
         status='Experimental',
@@ -4781,7 +4781,7 @@ covariates = Covariates(**{
     ),
     'residential_radon': Covariate(
         name='residential_radon',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1156),
         group='Experimental',
         status='Experimental',
@@ -4791,7 +4791,7 @@ covariates = Covariates(**{
     ),
     'lead_exposure': Covariate(
         name='lead_exposure',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1157),
         group='Experimental',
         status='Experimental',
@@ -4801,7 +4801,7 @@ covariates = Covariates(**{
     ),
     'discontinued_breastfeeding_sev': Covariate(
         name='discontinued_breastfeeding_sev',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1158),
         group='Experimental',
         status='Experimental',
@@ -4811,7 +4811,7 @@ covariates = Covariates(**{
     ),
     'zinc_deficiency': Covariate(
         name='zinc_deficiency',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1159),
         group='Experimental',
         status='Experimental',
@@ -4821,7 +4821,7 @@ covariates = Covariates(**{
     ),
     'diet_high_in_trans_fatty_acids': Covariate(
         name='diet_high_in_trans_fatty_acids',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1162),
         group='Experimental',
         status='Experimental',
@@ -4831,7 +4831,7 @@ covariates = Covariates(**{
     ),
     'diet_high_in_sodium': Covariate(
         name='diet_high_in_sodium',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1163),
         group='Experimental',
         status='Experimental',
@@ -4841,7 +4841,7 @@ covariates = Covariates(**{
     ),
     'tuberculosis_prevalence_age_standardized': Covariate(
         name='tuberculosis_prevalence_age_standardized',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1165),
         group='Tuberculosis',
         status='Experimental',
@@ -4851,7 +4851,7 @@ covariates = Covariates(**{
     ),
     'low_bone_mineral_density': Covariate(
         name='low_bone_mineral_density',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1166),
         group='Experimental',
         status='Experimental',
@@ -4861,7 +4861,7 @@ covariates = Covariates(**{
     ),
     'age_standardized_bone_mineral_density_among_population_age_60_and_up_years': Covariate(
         name='age_standardized_bone_mineral_density_among_population_age_60_and_up_years',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1168),
         group='Experimental',
         status='Experimental',
@@ -4871,7 +4871,7 @@ covariates = Covariates(**{
     ),
     'malnutrition_shock_log_transformed_mortality_rate': Covariate(
         name='malnutrition_shock_log_transformed_mortality_rate',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1169),
         group='Malnutrition',
         status='Experimental',
@@ -4881,7 +4881,7 @@ covariates = Covariates(**{
     ),
     'malnutrition_shock_mortality_rate': Covariate(
         name='malnutrition_shock_mortality_rate',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1170),
         group='Malnutrition',
         status='Experimental',
@@ -4891,7 +4891,7 @@ covariates = Covariates(**{
     ),
     'mean_war_mortality_rate_in_the_previous_ten_years': Covariate(
         name='mean_war_mortality_rate_in_the_previous_ten_years',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1171),
         group='War',
         status='Experimental',
@@ -4901,7 +4901,7 @@ covariates = Covariates(**{
     ),
     'shock_log_transformed_mortality_rate': Covariate(
         name='shock_log_transformed_mortality_rate',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1172),
         group='Shocks',
         status='Experimental',
@@ -4911,7 +4911,7 @@ covariates = Covariates(**{
     ),
     'shock_mortality_rate': Covariate(
         name='shock_mortality_rate',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1173),
         group='Shocks',
         status='Experimental',
@@ -4921,7 +4921,7 @@ covariates = Covariates(**{
     ),
     'disaster_log_transformed_mortality_rate': Covariate(
         name='disaster_log_transformed_mortality_rate',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1174),
         group='Disasters',
         status='Experimental',
@@ -4931,7 +4931,7 @@ covariates = Covariates(**{
     ),
     'disaster_mortality_rate': Covariate(
         name='disaster_mortality_rate',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1175),
         group='Disasters',
         status='Experimental',
@@ -4941,7 +4941,7 @@ covariates = Covariates(**{
     ),
     'war_log_transformed_mortality_rate': Covariate(
         name='war_log_transformed_mortality_rate',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1178),
         group='War',
         status='Experimental',
@@ -4951,7 +4951,7 @@ covariates = Covariates(**{
     ),
     'alcohol_abstainer_proportion_age_standardized': Covariate(
         name='alcohol_abstainer_proportion_age_standardized',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1181),
         group='Alcohol',
         status='Experimental',
@@ -4961,7 +4961,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_for_both_sexes_combined_tb': Covariate(
         name='log_transformed_age_standardized_sev_scalar_for_both_sexes_combined_tb',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1182),
         group='SEV',
         status='Experimental',
@@ -4971,7 +4971,7 @@ covariates = Covariates(**{
     ),
     'secondhand_smoke': Covariate(
         name='secondhand_smoke',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1183),
         group='Smoking',
         status='Experimental',
@@ -4981,7 +4981,7 @@ covariates = Covariates(**{
     ),
     'asbestos_consumption_metric_tons_per_year_per_capita': Covariate(
         name='asbestos_consumption_metric_tons_per_year_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1185),
         group='Asbestos',
         status='Experimental',
@@ -4991,7 +4991,7 @@ covariates = Covariates(**{
     ),
     'visceral_leishmaniasis_incidence': Covariate(
         name='visceral_leishmaniasis_incidence',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1186),
         group='Leishmaniasis',
         status='Experimental',
@@ -5001,7 +5001,7 @@ covariates = Covariates(**{
     ),
     'homicide_rate_sex_specific': Covariate(
         name='homicide_rate_sex_specific',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1187),
         group='Experimental',
         status='Experimental',
@@ -5011,7 +5011,7 @@ covariates = Covariates(**{
     ),
     'op_visits_per_cap': Covariate(
         name='op_visits_per_cap',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1188),
         group='Experimental',
         status='Experimental',
@@ -5021,7 +5021,7 @@ covariates = Covariates(**{
     ),
     'ip_admissons_per_cap': Covariate(
         name='ip_admissons_per_cap',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1189),
         group='Experimental',
         status='Experimental',
@@ -5031,7 +5031,7 @@ covariates = Covariates(**{
     ),
     'non_partner_lifetime_prevalence_of_sexual_violence_female_only': Covariate(
         name='non_partner_lifetime_prevalence_of_sexual_violence_female_only',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1190),
         group='Experimental',
         status='Experimental',
@@ -5041,7 +5041,7 @@ covariates = Covariates(**{
     ),
     'all_age_underweight': Covariate(
         name='all_age_underweight',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1191),
         group='BMI',
         status='Experimental',
@@ -5051,7 +5051,7 @@ covariates = Covariates(**{
     ),
     'zinc_treatment_for_diarrhea': Covariate(
         name='zinc_treatment_for_diarrhea',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1193),
         group='Experimental',
         status='Experimental',
@@ -5061,7 +5061,7 @@ covariates = Covariates(**{
     ),
     'fortification_standard': Covariate(
         name='fortification_standard',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1194),
         group='Fortification',
         status='Experimental',
@@ -5071,7 +5071,7 @@ covariates = Covariates(**{
     ),
     'fortification_standard_including_folic_acid': Covariate(
         name='fortification_standard_including_folic_acid',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1195),
         group='Fortification',
         status='Experimental',
@@ -5081,7 +5081,7 @@ covariates = Covariates(**{
     ),
     'adult_hiv_crude_death_rate': Covariate(
         name='adult_hiv_crude_death_rate',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1196),
         group='HIV',
         status='Experimental',
@@ -5091,7 +5091,7 @@ covariates = Covariates(**{
     ),
     'demand_for_contraception_satisfied_with_modern_methods': Covariate(
         name='demand_for_contraception_satisfied_with_modern_methods',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1197),
         group='Experimental',
         status='Experimental',
@@ -5101,7 +5101,7 @@ covariates = Covariates(**{
     ),
     'demand_for_contraception_satisfied_with_modern_methods_by_age': Covariate(
         name='demand_for_contraception_satisfied_with_modern_methods_by_age',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1198),
         group='Experimental',
         status='Experimental',
@@ -5111,7 +5111,7 @@ covariates = Covariates(**{
     ),
     'long_term_population_weighted_mean_temperature': Covariate(
         name='long_term_population_weighted_mean_temperature',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1199),
         group='Experimental',
         status='Experimental',
@@ -5121,7 +5121,7 @@ covariates = Covariates(**{
     ),
     'polio_3_dose_coverage_proportion': Covariate(
         name='polio_3_dose_coverage_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1200),
         group='Experimental',
         status='Experimental',
@@ -5131,7 +5131,7 @@ covariates = Covariates(**{
     ),
     'hepatitis_b_3_dose_coverage_proportion': Covariate(
         name='hepatitis_b_3_dose_coverage_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1201),
         group='Experimental',
         status='Experimental',
@@ -5141,7 +5141,7 @@ covariates = Covariates(**{
     ),
     'proportion_of_the_population_from_east_africa_india_central_asia': Covariate(
         name='proportion_of_the_population_from_east_africa_india_central_asia',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1202),
         group='Experimental',
         status='Experimental',
@@ -5151,7 +5151,7 @@ covariates = Covariates(**{
     ),
     'proportion_of_the_population_from_west_africa': Covariate(
         name='proportion_of_the_population_from_west_africa',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1203),
         group='Experimental',
         status='Experimental',
@@ -5161,7 +5161,7 @@ covariates = Covariates(**{
     ),
     'proportion_of_the_population_from_euro_america': Covariate(
         name='proportion_of_the_population_from_euro_america',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1204),
         group='Experimental',
         status='Experimental',
@@ -5171,7 +5171,7 @@ covariates = Covariates(**{
     ),
     'proportion_of_the_population_from_east_asia': Covariate(
         name='proportion_of_the_population_from_east_asia',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1205),
         group='Experimental',
         status='Experimental',
@@ -5181,7 +5181,7 @@ covariates = Covariates(**{
     ),
     'proportion_of_the_population_from_indo_oceania': Covariate(
         name='proportion_of_the_population_from_indo_oceania',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1206),
         group='Experimental',
         status='Experimental',
@@ -5191,7 +5191,7 @@ covariates = Covariates(**{
     ),
     'composite_fortification_standard_and_folic_acid_inclusion': Covariate(
         name='composite_fortification_standard_and_folic_acid_inclusion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1207),
         group='Fortification',
         status='Experimental',
@@ -5201,7 +5201,7 @@ covariates = Covariates(**{
     ),
     'intravenous_drug_use_proportion_by_age': Covariate(
         name='intravenous_drug_use_proportion_by_age',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1208),
         group='Experimental',
         status='Experimental',
@@ -5211,7 +5211,7 @@ covariates = Covariates(**{
     ),
     'intravenous_drug_use_age_standardized_proportion': Covariate(
         name='intravenous_drug_use_age_standardized_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1209),
         group='Experimental',
         status='Experimental',
@@ -5221,7 +5221,7 @@ covariates = Covariates(**{
     ),
     'hepatitis_a_infection_incidence': Covariate(
         name='hepatitis_a_infection_incidence',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1210),
         group='Experimental',
         status='Experimental',
@@ -5231,7 +5231,7 @@ covariates = Covariates(**{
     ),
     'alcohol_consumption_age_standardized_in_grams_per_day': Covariate(
         name='alcohol_consumption_age_standardized_in_grams_per_day',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1211),
         group='Alcohol',
         status='Experimental',
@@ -5241,7 +5241,7 @@ covariates = Covariates(**{
     ),
     'alcohol_drinker_proportion_age_standardized': Covariate(
         name='alcohol_drinker_proportion_age_standardized',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1212),
         group='Alcohol',
         status='Experimental',
@@ -5251,7 +5251,7 @@ covariates = Covariates(**{
     ),
     'hepatitis_b_infection_incidence': Covariate(
         name='hepatitis_b_infection_incidence',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1213),
         group='Experimental',
         status='Experimental',
@@ -5261,7 +5261,7 @@ covariates = Covariates(**{
     ),
     'hepatitis_c_infection_incidence': Covariate(
         name='hepatitis_c_infection_incidence',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1214),
         group='Experimental',
         status='Experimental',
@@ -5271,7 +5271,7 @@ covariates = Covariates(**{
     ),
     'hepatitis_e_infection_incidence': Covariate(
         name='hepatitis_e_infection_incidence',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1215),
         group='Experimental',
         status='Experimental',
@@ -5281,7 +5281,7 @@ covariates = Covariates(**{
     ),
     'proportion_of_liver_cancer_due_to_nash_age_standardized': Covariate(
         name='proportion_of_liver_cancer_due_to_nash_age_standardized',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1216),
         group='Experimental',
         status='Experimental',
@@ -5291,7 +5291,7 @@ covariates = Covariates(**{
     ),
     'proportion_of_cirrhosis_due_to_nash': Covariate(
         name='proportion_of_cirrhosis_due_to_nash',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1217),
         group='Experimental',
         status='Experimental',
@@ -5301,7 +5301,7 @@ covariates = Covariates(**{
     ),
     'muslim_religion_proportion_of_population': Covariate(
         name='muslim_religion_proportion_of_population',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1218),
         group='Religion',
         status='Experimental',
@@ -5311,7 +5311,7 @@ covariates = Covariates(**{
     ),
     'tb_strain_prevalence_weighted_transmission_rr': Covariate(
         name='tb_strain_prevalence_weighted_transmission_rr',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1222),
         group='Experimental',
         status='Experimental',
@@ -5321,7 +5321,7 @@ covariates = Covariates(**{
     ),
     'tb_strain_prevalence_weighted_treatment_failure_rr': Covariate(
         name='tb_strain_prevalence_weighted_treatment_failure_rr',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1223),
         group='Experimental',
         status='Experimental',
@@ -5331,7 +5331,7 @@ covariates = Covariates(**{
     ),
     'tb_strain_prevalence_weighted_treatment_delay_rr': Covariate(
         name='tb_strain_prevalence_weighted_treatment_delay_rr',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1224),
         group='Experimental',
         status='Experimental',
@@ -5341,7 +5341,7 @@ covariates = Covariates(**{
     ),
     'preterm_birth_prevalence_less_than_37_weeks_of_gestation': Covariate(
         name='preterm_birth_prevalence_less_than_37_weeks_of_gestation',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1225),
         group='Experimental',
         status='Experimental',
@@ -5351,7 +5351,7 @@ covariates = Covariates(**{
     ),
     'extremely_preterm_birth_prevalence_less_than_28_weeks_of_gestation': Covariate(
         name='extremely_preterm_birth_prevalence_less_than_28_weeks_of_gestation',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1226),
         group='Experimental',
         status='Experimental',
@@ -5361,7 +5361,7 @@ covariates = Covariates(**{
     ),
     'short_gestation_sev_all_ages_by_sex': Covariate(
         name='short_gestation_sev_all_ages_by_sex',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1227),
         group='Experimental',
         status='Experimental',
@@ -5371,7 +5371,7 @@ covariates = Covariates(**{
     ),
     'age_and_sex_specific_underweight_weight_for_age_sev': Covariate(
         name='age_and_sex_specific_underweight_weight_for_age_sev',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1229),
         group='Experimental',
         status='Experimental',
@@ -5381,7 +5381,7 @@ covariates = Covariates(**{
     ),
     'age_standardized_underweight_weight_for_age_sev': Covariate(
         name='age_standardized_underweight_weight_for_age_sev',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1230),
         group='Experimental',
         status='Experimental',
@@ -5391,7 +5391,7 @@ covariates = Covariates(**{
     ),
     'age_and_sex_specific_stunting_height_for_age_sev': Covariate(
         name='age_and_sex_specific_stunting_height_for_age_sev',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1231),
         group='Experimental',
         status='Experimental',
@@ -5401,7 +5401,7 @@ covariates = Covariates(**{
     ),
     'age_standardized_stunting_height_for_age_sev': Covariate(
         name='age_standardized_stunting_height_for_age_sev',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1232),
         group='Experimental',
         status='Experimental',
@@ -5411,7 +5411,7 @@ covariates = Covariates(**{
     ),
     'age_and_sex_specific_wasting_weight_for_height_sev': Covariate(
         name='age_and_sex_specific_wasting_weight_for_height_sev',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1233),
         group='Experimental',
         status='Experimental',
@@ -5421,7 +5421,7 @@ covariates = Covariates(**{
     ),
     'age_standardized_wasting_weight_for_height_sev': Covariate(
         name='age_standardized_wasting_weight_for_height_sev',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1234),
         group='Experimental',
         status='Experimental',
@@ -5431,7 +5431,7 @@ covariates = Covariates(**{
     ),
     'low_birth_weight_sev_all_ages_by_sex': Covariate(
         name='low_birth_weight_sev_all_ages_by_sex',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1235),
         group='Experimental',
         status='Experimental',
@@ -5441,7 +5441,7 @@ covariates = Covariates(**{
     ),
     'low_birth_weight_and_short_gestation_sev_all_ages_by_sex': Covariate(
         name='low_birth_weight_and_short_gestation_sev_all_ages_by_sex',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1236),
         group='Experimental',
         status='Experimental',
@@ -5451,7 +5451,7 @@ covariates = Covariates(**{
     ),
     'preeclampsia_incidence_ratio_all_ages': Covariate(
         name='preeclampsia_incidence_ratio_all_ages',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1237),
         group='Experimental',
         status='Experimental',
@@ -5461,7 +5461,7 @@ covariates = Covariates(**{
     ),
     'abo_blood_type_mismatch_at_birth': Covariate(
         name='abo_blood_type_mismatch_at_birth',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1238),
         group='Experimental',
         status='Experimental',
@@ -5471,7 +5471,7 @@ covariates = Covariates(**{
     ),
     'rhesus_blood_type_mismatch_at_birth': Covariate(
         name='rhesus_blood_type_mismatch_at_birth',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1239),
         group='Experimental',
         status='Experimental',
@@ -5481,7 +5481,7 @@ covariates = Covariates(**{
     ),
     'adult_hiv_death_rate_both_sexes': Covariate(
         name='adult_hiv_death_rate_both_sexes',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1240),
         group='Experimental',
         status='Experimental',
@@ -5491,7 +5491,7 @@ covariates = Covariates(**{
     ),
     'fortification_standard_including_iron': Covariate(
         name='fortification_standard_including_iron',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1241),
         group='Fortification',
         status='Experimental',
@@ -5501,7 +5501,7 @@ covariates = Covariates(**{
     ),
     'composite_fortification_standard_and_iron_inclusion': Covariate(
         name='composite_fortification_standard_and_iron_inclusion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1242),
         group='Fortification',
         status='Experimental',
@@ -5511,7 +5511,7 @@ covariates = Covariates(**{
     ),
     'pelvic_inflammatory_disease_age_standardized_prevalence': Covariate(
         name='pelvic_inflammatory_disease_age_standardized_prevalence',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1243),
         group='PID',
         status='Experimental',
@@ -5521,7 +5521,7 @@ covariates = Covariates(**{
     ),
     'pelvic_inflammatory_disease_all_age_prevalence': Covariate(
         name='pelvic_inflammatory_disease_all_age_prevalence',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1244),
         group='PID',
         status='Experimental',
@@ -5531,7 +5531,7 @@ covariates = Covariates(**{
     ),
     'nafld_nash_prevalence': Covariate(
         name='nafld_nash_prevalence',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1245),
         group='Experimental',
         status='Experimental',
@@ -5541,7 +5541,7 @@ covariates = Covariates(**{
     ),
     'hepatitis_b_3_dose_coverage_proportion_lagged_5_years': Covariate(
         name='hepatitis_b_3_dose_coverage_proportion_lagged_5_years',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1246),
         group='Coverage',
         status='Experimental',
@@ -5551,7 +5551,7 @@ covariates = Covariates(**{
     ),
     'hepatitis_b_3_dose_coverage_proportion_lagged_ten_years': Covariate(
         name='hepatitis_b_3_dose_coverage_proportion_lagged_ten_years',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1247),
         group='Coverage',
         status='Experimental',
@@ -5561,7 +5561,7 @@ covariates = Covariates(**{
     ),
     'interaction_between_sdi_and_2_and_up4_wheeled_vehicles_per_capita': Covariate(
         name='interaction_between_sdi_and_2_and_up4_wheeled_vehicles_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1248),
         group='Vehicles',
         status='Experimental',
@@ -5571,7 +5571,7 @@ covariates = Covariates(**{
     ),
     'age_standardized_death_rate_of_diabetes_0_15_years_per_100_000': Covariate(
         name='age_standardized_death_rate_of_diabetes_0_15_years_per_100_000',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1249),
         group='Diabetes',
         status='Experimental',
@@ -5581,7 +5581,7 @@ covariates = Covariates(**{
     ),
     'alcohol_sev_age_and_sex_specific': Covariate(
         name='alcohol_sev_age_and_sex_specific',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1250),
         group='Alcohol',
         status='Experimental',
@@ -5591,7 +5591,7 @@ covariates = Covariates(**{
     ),
     'alcohol_sev_age_standardized': Covariate(
         name='alcohol_sev_age_standardized',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1251),
         group='Alcohol',
         status='Experimental',
@@ -5601,7 +5601,7 @@ covariates = Covariates(**{
     ),
     'underweight_women_of_reproductive_age': Covariate(
         name='underweight_women_of_reproductive_age',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1252),
         group='Experimental',
         status='Experimental',
@@ -5611,7 +5611,7 @@ covariates = Covariates(**{
     ),
     'underweight_women_age_specific': Covariate(
         name='underweight_women_age_specific',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1253),
         group='Experimental',
         status='Experimental',
@@ -5621,7 +5621,7 @@ covariates = Covariates(**{
     ),
     'underweight_men_age_specific': Covariate(
         name='underweight_men_age_specific',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1254),
         group='Experimental',
         status='Experimental',
@@ -5631,7 +5631,7 @@ covariates = Covariates(**{
     ),
     'opioids_per_million_population_per_day': Covariate(
         name='opioids_per_million_population_per_day',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1255),
         group='Experimental',
         status='Experimental',
@@ -5641,7 +5641,7 @@ covariates = Covariates(**{
     ),
     'prevalence_of_mtbc_lineage_1_strains_proportion': Covariate(
         name='prevalence_of_mtbc_lineage_1_strains_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1256),
         group='Experimental',
         status='Experimental',
@@ -5651,7 +5651,7 @@ covariates = Covariates(**{
     ),
     'prevalence_of_mtbc_lineage_2_strains_proportion': Covariate(
         name='prevalence_of_mtbc_lineage_2_strains_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1257),
         group='Experimental',
         status='Experimental',
@@ -5661,7 +5661,7 @@ covariates = Covariates(**{
     ),
     'prevalence_of_mtbc_lineage_3_strains_proportion': Covariate(
         name='prevalence_of_mtbc_lineage_3_strains_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1258),
         group='Experimental',
         status='Experimental',
@@ -5671,7 +5671,7 @@ covariates = Covariates(**{
     ),
     'prevalence_of_mtbc_lineage_4_strains_proportion': Covariate(
         name='prevalence_of_mtbc_lineage_4_strains_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1259),
         group='Experimental',
         status='Experimental',
@@ -5681,7 +5681,7 @@ covariates = Covariates(**{
     ),
     'prevalence_of_maf_lineage_5_and_6_proportion': Covariate(
         name='prevalence_of_maf_lineage_5_and_6_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1260),
         group='Experimental',
         status='Experimental',
@@ -5691,7 +5691,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_tb_other': Covariate(
         name='log_transformed_sev_scalar_tb_other',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1832),
         group='SEV',
         status='Experimental',
@@ -5701,7 +5701,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_tb_mdr': Covariate(
         name='log_transformed_sev_scalar_tb_mdr',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1833),
         group='SEV',
         status='Experimental',
@@ -5711,7 +5711,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_hiv': Covariate(
         name='log_transformed_sev_scalar_hiv',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1835),
         group='SEV',
         status='Experimental',
@@ -5721,7 +5721,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_hiv_tb_other': Covariate(
         name='log_transformed_sev_scalar_hiv_tb_other',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1836),
         group='SEV',
         status='Experimental',
@@ -5731,7 +5731,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_hiv_tb_mdr': Covariate(
         name='log_transformed_sev_scalar_hiv_tb_mdr',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1837),
         group='SEV',
         status='Experimental',
@@ -5741,7 +5741,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_meningitis_pneumo': Covariate(
         name='log_transformed_sev_scalar_meningitis_pneumo',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1839),
         group='SEV',
         status='Experimental',
@@ -5751,7 +5751,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_meningitis_hib': Covariate(
         name='log_transformed_sev_scalar_meningitis_hib',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1840),
         group='SEV',
         status='Experimental',
@@ -5761,7 +5761,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_meningitis_meningo': Covariate(
         name='log_transformed_sev_scalar_meningitis_meningo',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1841),
         group='SEV',
         status='Experimental',
@@ -5771,7 +5771,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_meningitis_other': Covariate(
         name='log_transformed_sev_scalar_meningitis_other',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1842),
         group='SEV',
         status='Experimental',
@@ -5781,7 +5781,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_encephalitis': Covariate(
         name='log_transformed_sev_scalar_encephalitis',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1843),
         group='SEV',
         status='Experimental',
@@ -5791,7 +5791,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_neonatal_enceph': Covariate(
         name='log_transformed_sev_scalar_neonatal_enceph',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1846),
         group='SEV',
         status='Experimental',
@@ -5801,7 +5801,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_neonatal_sepsis': Covariate(
         name='log_transformed_sev_scalar_neonatal_sepsis',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1847),
         group='SEV',
         status='Experimental',
@@ -5811,7 +5811,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_neonatal_hemolytic': Covariate(
         name='log_transformed_sev_scalar_neonatal_hemolytic',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1848),
         group='SEV',
         status='Experimental',
@@ -5821,7 +5821,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_neonatal_other': Covariate(
         name='log_transformed_sev_scalar_neonatal_other',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1849),
         group='SEV',
         status='Experimental',
@@ -5831,7 +5831,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_neo_lymphoma': Covariate(
         name='log_transformed_sev_scalar_neo_lymphoma',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1863),
         group='SEV',
         status='Experimental',
@@ -5841,7 +5841,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_neo_myeloma': Covariate(
         name='log_transformed_sev_scalar_neo_myeloma',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1864),
         group='SEV',
         status='Experimental',
@@ -5851,7 +5851,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_neo_leukemia_ll_acute': Covariate(
         name='log_transformed_sev_scalar_neo_leukemia_ll_acute',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1865),
         group='SEV',
         status='Experimental',
@@ -5861,7 +5861,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_neo_leukemia_ll_chronic': Covariate(
         name='log_transformed_sev_scalar_neo_leukemia_ll_chronic',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1866),
         group='SEV',
         status='Experimental',
@@ -5871,7 +5871,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_neo_leukemia_ml_acute': Covariate(
         name='log_transformed_sev_scalar_neo_leukemia_ml_acute',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1867),
         group='SEV',
         status='Experimental',
@@ -5881,7 +5881,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_neo_leukemia_ml_chronic': Covariate(
         name='log_transformed_sev_scalar_neo_leukemia_ml_chronic',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1868),
         group='SEV',
         status='Experimental',
@@ -5891,7 +5891,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_neo_leukemia_other': Covariate(
         name='log_transformed_sev_scalar_neo_leukemia_other',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1869),
         group='SEV',
         status='Experimental',
@@ -5901,7 +5901,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_cvd_cmp_other': Covariate(
         name='log_transformed_sev_scalar_cvd_cmp_other',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1872),
         group='SEV',
         status='Experimental',
@@ -5911,7 +5911,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_digest_pud': Covariate(
         name='log_transformed_sev_scalar_digest_pud',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1874),
         group='SEV',
         status='Experimental',
@@ -5921,7 +5921,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_digest_bile': Covariate(
         name='log_transformed_sev_scalar_digest_bile',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1875),
         group='SEV',
         status='Experimental',
@@ -5931,7 +5931,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_neuro_dementia': Covariate(
         name='log_transformed_sev_scalar_neuro_dementia',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1876),
         group='SEV',
         status='Experimental',
@@ -5941,7 +5941,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_neuro_ms': Covariate(
         name='log_transformed_sev_scalar_neuro_ms',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1878),
         group='SEV',
         status='Experimental',
@@ -5951,7 +5951,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_msk_rheumarthritis': Covariate(
         name='log_transformed_sev_scalar_msk_rheumarthritis',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1892),
         group='SEV',
         status='Experimental',
@@ -5961,7 +5961,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_sense_glaucoma': Covariate(
         name='log_transformed_sev_scalar_sense_glaucoma',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1893),
         group='SEV',
         status='Experimental',
@@ -5971,7 +5971,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_sense_macular': Covariate(
         name='log_transformed_sev_scalar_sense_macular',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1894),
         group='SEV',
         status='Experimental',
@@ -5981,7 +5981,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_inj_suicide_firearm': Covariate(
         name='log_transformed_sev_scalar_inj_suicide_firearm',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1896),
         group='SEV',
         status='Experimental',
@@ -5991,7 +5991,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_sev_scalar_inj_suicide_other': Covariate(
         name='log_transformed_sev_scalar_inj_suicide_other',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1897),
         group='SEV',
         status='Experimental',
@@ -6001,7 +6001,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_tb_other': Covariate(
         name='log_transformed_age_standardized_sev_scalar_tb_other',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1900),
         group='SEV',
         status='Experimental',
@@ -6011,7 +6011,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_tb_mdr': Covariate(
         name='log_transformed_age_standardized_sev_scalar_tb_mdr',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1901),
         group='SEV',
         status='Experimental',
@@ -6021,7 +6021,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_hiv': Covariate(
         name='log_transformed_age_standardized_sev_scalar_hiv',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1903),
         group='SEV',
         status='Experimental',
@@ -6031,7 +6031,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_hiv_tb_other': Covariate(
         name='log_transformed_age_standardized_sev_scalar_hiv_tb_other',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1904),
         group='SEV',
         status='Experimental',
@@ -6041,7 +6041,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_hiv_tb_mdr': Covariate(
         name='log_transformed_age_standardized_sev_scalar_hiv_tb_mdr',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1905),
         group='SEV',
         status='Experimental',
@@ -6051,7 +6051,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_meningitis': Covariate(
         name='log_transformed_age_standardized_sev_scalar_meningitis',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1907),
         group='SEV',
         status='Experimental',
@@ -6061,7 +6061,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_meningitis_pneumo': Covariate(
         name='log_transformed_age_standardized_sev_scalar_meningitis_pneumo',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1908),
         group='SEV',
         status='Experimental',
@@ -6071,7 +6071,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_meningitis_hib': Covariate(
         name='log_transformed_age_standardized_sev_scalar_meningitis_hib',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1909),
         group='SEV',
         status='Experimental',
@@ -6081,7 +6081,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_meningitis_meningo': Covariate(
         name='log_transformed_age_standardized_sev_scalar_meningitis_meningo',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1910),
         group='SEV',
         status='Experimental',
@@ -6091,7 +6091,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_meningitis_other': Covariate(
         name='log_transformed_age_standardized_sev_scalar_meningitis_other',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1911),
         group='SEV',
         status='Experimental',
@@ -6101,7 +6101,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_encephalitis': Covariate(
         name='log_transformed_age_standardized_sev_scalar_encephalitis',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1912),
         group='SEV',
         status='Experimental',
@@ -6111,7 +6111,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_neonatal_enceph': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neonatal_enceph',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1917),
         group='SEV',
         status='Experimental',
@@ -6121,7 +6121,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_neonatal_sepsis': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neonatal_sepsis',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1918),
         group='SEV',
         status='Experimental',
@@ -6131,7 +6131,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_neonatal_hemolytic': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neonatal_hemolytic',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1919),
         group='SEV',
         status='Experimental',
@@ -6141,7 +6141,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_neonatal_other': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neonatal_other',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1920),
         group='SEV',
         status='Experimental',
@@ -6151,7 +6151,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_neo_lymphoma': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neo_lymphoma',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1934),
         group='SEV',
         status='Experimental',
@@ -6161,7 +6161,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_neo_myeloma': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neo_myeloma',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1935),
         group='SEV',
         status='Experimental',
@@ -6171,7 +6171,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_neo_leukemia_ll_acute': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neo_leukemia_ll_acute',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1936),
         group='SEV',
         status='Experimental',
@@ -6181,7 +6181,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_neo_leukemia_ll_chronic': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neo_leukemia_ll_chronic',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1937),
         group='SEV',
         status='Experimental',
@@ -6191,7 +6191,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_neo_leukemia_ml_acute': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neo_leukemia_ml_acute',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1938),
         group='SEV',
         status='Experimental',
@@ -6201,7 +6201,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_neo_leukemia_ml_chronic': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neo_leukemia_ml_chronic',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1939),
         group='SEV',
         status='Experimental',
@@ -6211,7 +6211,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_neo_leukemia_other': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neo_leukemia_other',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1940),
         group='SEV',
         status='Experimental',
@@ -6221,7 +6221,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_cvd_cmp_other': Covariate(
         name='log_transformed_age_standardized_sev_scalar_cvd_cmp_other',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1943),
         group='SEV',
         status='Experimental',
@@ -6231,7 +6231,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_digest_pud': Covariate(
         name='log_transformed_age_standardized_sev_scalar_digest_pud',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1945),
         group='SEV',
         status='Experimental',
@@ -6241,7 +6241,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_digest_bile': Covariate(
         name='log_transformed_age_standardized_sev_scalar_digest_bile',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1946),
         group='SEV',
         status='Experimental',
@@ -6251,7 +6251,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_neuro_dementia': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neuro_dementia',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1947),
         group='SEV',
         status='Experimental',
@@ -6261,7 +6261,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_neuro_ms': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neuro_ms',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1949),
         group='SEV',
         status='Experimental',
@@ -6271,7 +6271,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_msk_rheumarthritis': Covariate(
         name='log_transformed_age_standardized_sev_scalar_msk_rheumarthritis',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1963),
         group='SEV',
         status='Experimental',
@@ -6281,7 +6281,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_sense_glaucoma': Covariate(
         name='log_transformed_age_standardized_sev_scalar_sense_glaucoma',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1964),
         group='SEV',
         status='Experimental',
@@ -6291,7 +6291,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_sense_macular': Covariate(
         name='log_transformed_age_standardized_sev_scalar_sense_macular',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1965),
         group='SEV',
         status='Experimental',
@@ -6301,7 +6301,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_sids': Covariate(
         name='log_transformed_age_standardized_sev_scalar_sids',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1966),
         group='SEV',
         status='Experimental',
@@ -6311,7 +6311,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_inj_suicide_firearm': Covariate(
         name='log_transformed_age_standardized_sev_scalar_inj_suicide_firearm',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1968),
         group='SEV',
         status='Experimental',
@@ -6321,7 +6321,7 @@ covariates = Covariates(**{
     ),
     'log_transformed_age_standardized_sev_scalar_inj_suicide_other': Covariate(
         name='log_transformed_age_standardized_sev_scalar_inj_suicide_other',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1969),
         group='SEV',
         status='Experimental',
@@ -6331,7 +6331,7 @@ covariates = Covariates(**{
     ),
     'opioids_per_million_population_per_day_5_year_lag': Covariate(
         name='opioids_per_million_population_per_day_5_year_lag',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1971),
         group='Experimental',
         status='Experimental',
@@ -6341,7 +6341,7 @@ covariates = Covariates(**{
     ),
     'opioids_per_million_population_per_day_ten_year_lag': Covariate(
         name='opioids_per_million_population_per_day_ten_year_lag',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1972),
         group='Experimental',
         status='Experimental',
@@ -6351,7 +6351,7 @@ covariates = Covariates(**{
     ),
     'occupation_professionals': Covariate(
         name='occupation_professionals',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1973),
         group='Experimental',
         status='Experimental',
@@ -6361,7 +6361,7 @@ covariates = Covariates(**{
     ),
     'health_industry_workers': Covariate(
         name='health_industry_workers',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1974),
         group='Experimental',
         status='Experimental',
@@ -6371,7 +6371,7 @@ covariates = Covariates(**{
     ),
     'education_years_per_capita_aggregated_by_age_15_and_up_and_sex': Covariate(
         name='education_years_per_capita_aggregated_by_age_15_and_up_and_sex',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1975),
         group='Education',
         status='Experimental',
@@ -6381,7 +6381,7 @@ covariates = Covariates(**{
     ),
     'underweight_age_and_sex_specific': Covariate(
         name='underweight_age_and_sex_specific',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1976),
         group='Experimental',
         status='Experimental',
@@ -6391,7 +6391,7 @@ covariates = Covariates(**{
     ),
     'total_physical_activity_met_min_week_age_specific': Covariate(
         name='total_physical_activity_met_min_week_age_specific',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1977),
         group='Experimental',
         status='Experimental',
@@ -6401,7 +6401,7 @@ covariates = Covariates(**{
     ),
     'total_physical_activity_met_min_week_age_standardized': Covariate(
         name='total_physical_activity_met_min_week_age_standardized',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1978),
         group='Experimental',
         status='Experimental',
@@ -6411,7 +6411,7 @@ covariates = Covariates(**{
     ),
     'full_vaccine_coverage_indicator_proportion': Covariate(
         name='full_vaccine_coverage_indicator_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1979),
         group='Experimental',
         status='Experimental',
@@ -6421,7 +6421,7 @@ covariates = Covariates(**{
     ),
     'bacille_calmette_guerin_bcg_vaccine_coverage_proportion': Covariate(
         name='bacille_calmette_guerin_bcg_vaccine_coverage_proportion',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1980),
         group='Experimental',
         status='Experimental',
@@ -6431,7 +6431,7 @@ covariates = Covariates(**{
     ),
     'hepatitis_b_vaccine_coverage_proportion_aged_through_time': Covariate(
         name='hepatitis_b_vaccine_coverage_proportion_aged_through_time',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1981),
         group='Experimental',
         status='Experimental',
@@ -6441,7 +6441,7 @@ covariates = Covariates(**{
     ),
     'adolescent_birth_rates_10_19_years_of_age': Covariate(
         name='adolescent_birth_rates_10_19_years_of_age',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1982),
         group='Experimental',
         status='Experimental',
@@ -6451,7 +6451,7 @@ covariates = Covariates(**{
     ),
     'percent_well_certified': Covariate(
         name='percent_well_certified',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1983),
         group='Experimental',
         status='Experimental',
@@ -6461,7 +6461,7 @@ covariates = Covariates(**{
     ),
     'log_total_health_expenditure_per_capita': Covariate(
         name='log_total_health_expenditure_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1984),
         group='Experimental',
         status='Experimental',
@@ -6471,7 +6471,7 @@ covariates = Covariates(**{
     ),
     'count_of_population_censuses': Covariate(
         name='count_of_population_censuses',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1985),
         group='Experimental',
         status='Experimental',
@@ -6481,7 +6481,7 @@ covariates = Covariates(**{
     ),
     'birth_registry_completeness': Covariate(
         name='birth_registry_completeness',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1986),
         group='Experimental',
         status='Experimental',
@@ -6491,7 +6491,7 @@ covariates = Covariates(**{
     ),
     'pigs_raised_in_extensive_agricultural_systems_per_capita': Covariate(
         name='pigs_raised_in_extensive_agricultural_systems_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1987),
         group='Pigs',
         status='Experimental',
@@ -6501,7 +6501,7 @@ covariates = Covariates(**{
     ),
     'pigs_raised_in_semi_extensive_agricultural_systems_per_capita': Covariate(
         name='pigs_raised_in_semi_extensive_agricultural_systems_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1988),
         group='Pigs',
         status='Experimental',
@@ -6511,7 +6511,7 @@ covariates = Covariates(**{
     ),
     'pigs_raised_in_intensive_industrial_agricultural_systems_per_capita': Covariate(
         name='pigs_raised_in_intensive_industrial_agricultural_systems_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1989),
         group='Pigs',
         status='Experimental',
@@ -6521,7 +6521,7 @@ covariates = Covariates(**{
     ),
     'implicit_versus_explicitly_defined_nash': Covariate(
         name='implicit_versus_explicitly_defined_nash',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1991),
         group='Experimental',
         status='Experimental',
@@ -6531,7 +6531,7 @@ covariates = Covariates(**{
     ),
     'mean_hemoglobin_age_sex_specific': Covariate(
         name='mean_hemoglobin_age_sex_specific',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1992),
         group='Experimental',
         status='Experimental',
@@ -6541,7 +6541,7 @@ covariates = Covariates(**{
     ),
     'physicians_per_capita': Covariate(
         name='physicians_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1993),
         group='Experimental',
         status='Experimental',
@@ -6551,7 +6551,7 @@ covariates = Covariates(**{
     ),
     'nurses_and_midwives_per_capita': Covariate(
         name='nurses_and_midwives_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1994),
         group='Experimental',
         status='Experimental',
@@ -6561,7 +6561,7 @@ covariates = Covariates(**{
     ),
     'pharmacists_per_capita': Covariate(
         name='pharmacists_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1995),
         group='Experimental',
         status='Experimental',
@@ -6571,7 +6571,7 @@ covariates = Covariates(**{
     ),
     'hiv_mortality_rate': Covariate(
         name='hiv_mortality_rate',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1996),
         group='HIV',
         status='Experimental',
@@ -6581,7 +6581,7 @@ covariates = Covariates(**{
     ),
     'untreated_hiv': Covariate(
         name='untreated_hiv',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1997),
         group='HIV',
         status='Experimental',
@@ -6591,7 +6591,7 @@ covariates = Covariates(**{
     ),
     'medical_schools': Covariate(
         name='medical_schools',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1998),
         group='Experimental',
         status='Experimental',
@@ -6601,7 +6601,7 @@ covariates = Covariates(**{
     ),
     'dentists_per_capita': Covariate(
         name='dentists_per_capita',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(1999),
         group='Experimental',
         status='Experimental',
@@ -6611,7 +6611,7 @@ covariates = Covariates(**{
     ),
     'full_vaccine_coverage_indicator_proportion_sage_method_dtp3_pcv3_mcv2': Covariate(
         name='full_vaccine_coverage_indicator_proportion_sage_method_dtp3_pcv3_mcv2',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(2000),
         group='Experimental',
         status='Experimental',
@@ -6621,7 +6621,7 @@ covariates = Covariates(**{
     ),
     'net_reproductive_rate': Covariate(
         name='net_reproductive_rate',
-        type='covariate',
+        kind='covariate',
         gbd_id=covid(2001),
         group='Experimental',
         status='Experimental',

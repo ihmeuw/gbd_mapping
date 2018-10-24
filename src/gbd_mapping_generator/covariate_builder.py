@@ -30,7 +30,7 @@ def make_covariate(name, covid, group, cov_type, by_age, by_sex, dichotomous):
     out = ""
     out += TAB + f"'{name}': Covariate(\n"
     out += TAB*2 + f"name='{name}',\n"
-    out += TAB * 2 + "type='covariate',\n"
+    out += TAB * 2 + "kind='covariate',\n"
     out += TAB*2 + f"gbd_id=covid({covid}),\n"
     out += TAB*2 + f"group='{group}',\n"
     out += TAB*2 + f"status='{cov_type}',\n"
