@@ -1,3 +1,10 @@
+**1.0.8 - 10/26/18**
+
+ - Add a ``kind`` field to entities.
+ - Update covariates and coverage gaps mappings
+ - Remove HealthcareEntity
+ - Unpin click version
+
 **1.0.7 - 10/12/18**
 
  - Change setup.py
