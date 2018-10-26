@@ -30,24 +30,6 @@ coverage_gaps = CoverageGaps(
         affected_causes=(causes.measles, ),
         affected_risk_factors=(),
     ),
-    lack_of_immediate_assessment_and_stimulation=CoverageGap(
-        name='lack_of_immediate_assessment_and_stimulation',
-        kind='coverage_gap',
-        gbd_id=None,
-        distribution='dichotomous',
-        restrictions=Restrictions(
-            female_only=False,
-            male_only=False,
-            yld_only=False,
-            yll_only=False,
-        ),
-        levels=Levels(
-            cat1='exposed',
-            cat2='unexposed',
-        ),
-        affected_causes=(causes.neonatal_preterm_birth_complications, ),
-        affected_risk_factors=(),
-    ),
     low_oral_rehydration_solution_coverage=CoverageGap(
         name='low_oral_rehydration_solution_coverage',
         kind='coverage_gap',
@@ -66,8 +48,26 @@ coverage_gaps = CoverageGaps(
         affected_causes=(causes.diarrheal_diseases, ),
         affected_risk_factors=(),
     ),
-    lack_of_breastfeeding_promotion=CoverageGap(
-        name='lack_of_breastfeeding_promotion',
+    lack_of_immediate_assessment_and_stimulation=CoverageGap(
+        name='lack_of_immediate_assessment_and_stimulation',
+        kind='coverage_gap',
+        gbd_id=None,
+        distribution='dichotomous',
+        restrictions=Restrictions(
+            female_only=False,
+            male_only=False,
+            yld_only=False,
+            yll_only=False,
+        ),
+        levels=Levels(
+            cat1='exposed',
+            cat2='unexposed',
+        ),
+        affected_causes=(causes.neonatal_preterm_birth_complications, ),
+        affected_risk_factors=(),
+    ),
+    lack_of_maternal_calcium_supplement=CoverageGap(
+        name='lack_of_maternal_calcium_supplement',
         kind='coverage_gap',
         gbd_id=None,
         distribution='dichotomous',
@@ -82,7 +82,25 @@ coverage_gaps = CoverageGaps(
             cat2='unexposed',
         ),
         affected_causes=(),
-        affected_risk_factors=(risk_factors.discontinued_breastfeeding, ),
+        affected_risk_factors=(),
+    ),
+    lack_of_hiv_positive_antiretroviral_treatment=CoverageGap(
+        name='lack_of_hiv_positive_antiretroviral_treatment',
+        kind='coverage_gap',
+        gbd_id=None,
+        distribution='dichotomous',
+        restrictions=Restrictions(
+            male_only=False,
+            female_only=False,
+            yll_only=False,
+            yld_only=False,
+        ),
+        levels=Levels(
+            cat1='exposed',
+            cat2='unexposed',
+        ),
+        affected_causes=(causes.hiv_aids_resulting_in_other_diseases, ),
+        affected_risk_factors=(),
     ),
     lack_of_lipid_lowering_therapy=CoverageGap(
         name='lack_of_lipid_lowering_therapy',
@@ -150,26 +168,8 @@ coverage_gaps = CoverageGaps(
         affected_causes=(),
         affected_risk_factors=(),
     ),
-    lack_of_hiv_positive_antiretroviral_treatment=CoverageGap(
-        name='lack_of_hiv_positive_antiretroviral_treatment',
-        kind='coverage_gap',
-        gbd_id=None,
-        distribution='dichotomous',
-        restrictions=Restrictions(
-            male_only=False,
-            female_only=False,
-            yll_only=False,
-            yld_only=False,
-        ),
-        levels=Levels(
-            cat1='exposed',
-            cat2='unexposed',
-        ),
-        affected_causes=(causes.hiv_aids_resulting_in_other_diseases, ),
-        affected_risk_factors=(),
-    ),
-    lack_of_maternal_calcium_supplement=CoverageGap(
-        name='lack_of_maternal_calcium_supplement',
+    lack_of_breastfeeding_promotion=CoverageGap(
+        name='lack_of_breastfeeding_promotion',
         kind='coverage_gap',
         gbd_id=None,
         distribution='dichotomous',
@@ -184,6 +184,6 @@ coverage_gaps = CoverageGaps(
             cat2='unexposed',
         ),
         affected_causes=(),
-        affected_risk_factors=(),
+        affected_risk_factors=(risk_factors.discontinued_breastfeeding, ),
     ),
 )

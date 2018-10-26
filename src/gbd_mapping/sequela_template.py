@@ -10,15 +10,17 @@ from .base_template import ModelableEntity, GbdRecord
 
 class Healthstate(ModelableEntity):
     """Container for healthstate GBD ids and metadata."""
-    __slots__ = ('name', 'gbd_id', )
+    __slots__ = ('name', 'kind', 'gbd_id', )
 
     def __init__(self,
                  name: str,
+                 kind: str,
                  gbd_id: hsid, ):
         super().__init__(name=name,
                          kind=kind,
                          gbd_id=gbd_id)
         self.name = name
+        self.kind = kind
         self.gbd_id = gbd_id
 
 

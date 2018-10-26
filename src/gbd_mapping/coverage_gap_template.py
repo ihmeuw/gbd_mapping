@@ -15,7 +15,7 @@ from .risk_template import Risk
 class CoverageGap(GbdRecord):
     """Container for coverage gap GBD ids and metadata."""
     __slots__ = ('name', 'kind', 'gbd_id', 'restrictions', 'distribution', 'levels', 'affected_causes',
-                 'affected_risk_factors', 'healthcare_technologies', )
+                 'affected_risk_factors', )
 
     def __init__(self,
                  name: str,
@@ -25,8 +25,7 @@ class CoverageGap(GbdRecord):
                  distribution: str,
                  levels: Levels,
                  affected_causes: Tuple[Cause, ...] = None,
-                 affected_risk_factors: Tuple[Risk, ...] = None,
-                 healthcare_technologies: Tuple[HealthcareTechnology, ...] = None, ):
+                 affected_risk_factors: Tuple[Risk, ...] = None, ):
         super().__init__()
         self.name = name
         self.kind = kind
@@ -36,7 +35,6 @@ class CoverageGap(GbdRecord):
         self.levels = levels
         self.affected_causes = affected_causes
         self.affected_risk_factors = affected_risk_factors
-        self.healthcare_technologies = healthcare_technologies
 
 
 class CoverageGaps(GbdRecord):

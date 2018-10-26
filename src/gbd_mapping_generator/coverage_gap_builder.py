@@ -19,8 +19,7 @@ base_types = {
                   ('distribution', 'str'),
                   ('levels', 'Levels'),
                   ('affected_causes', 'Tuple[Cause, ...] = None'),
-                  ('affected_risk_factors', 'Tuple[Risk, ...] = None'),
-                  ('healthcare_technologies', 'Tuple[HealthcareTechnology, ...] = None')),
+                  ('affected_risk_factors', 'Tuple[Risk, ...] = None'),),
         'superclass': ('GbdRecord', gbd_record_attrs),
         'docstring': 'Container for coverage gap GBD ids and metadata.'
     },

@@ -16,6 +16,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1249),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -26,6 +27,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1250),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -36,6 +38,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1251),
         healthstate=Healthstate(
             name='abdominopelvic_problem_severe',
+            kind='healthstate',
             gbd_id=hsid(546),
         ),
     ),
@@ -46,6 +49,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1253),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_mild',
+            kind='healthstate',
             gbd_id=hsid(351),
         ),
     ),
@@ -56,6 +60,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1254),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -66,6 +71,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1255),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -76,6 +82,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1256),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),
@@ -86,6 +93,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1257),
         healthstate=Healthstate(
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
+            kind='healthstate',
             gbd_id=hsid(639),
         ),
     ),
@@ -96,6 +104,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1277),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_mild',
+            kind='healthstate',
             gbd_id=hsid(351),
         ),
     ),
@@ -106,6 +115,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1278),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -116,6 +126,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1280),
         healthstate=Healthstate(
             name='spinal_cord_lesion_below_neck_level_treated',
+            kind='healthstate',
             gbd_id=hsid(540),
         ),
     ),
@@ -126,6 +137,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1281),
         healthstate=Healthstate(
             name='ear_pain',
+            kind='healthstate',
             gbd_id=hsid(365),
         ),
     ),
@@ -136,6 +148,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1299),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -146,6 +159,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1300),
         healthstate=Healthstate(
             name='attention_deficit_hyperactivity_disorder',
+            kind='healthstate',
             gbd_id=hsid(446),
         ),
     ),
@@ -156,6 +170,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3362),
         healthstate=Healthstate(
             name='motor_impairment_mild',
+            kind='healthstate',
             gbd_id=hsid(565),
         ),
     ),
@@ -166,6 +181,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(7723),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_mild',
+            kind='healthstate',
             gbd_id=hsid(568),
         ),
     ),
@@ -176,6 +192,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3368),
         healthstate=Healthstate(
             name='borderline_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(450),
         ),
     ),
@@ -186,6 +203,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3371),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_mild',
+            kind='healthstate',
             gbd_id=hsid(451),
         ),
     ),
@@ -196,6 +214,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3374),
         healthstate=Healthstate(
             name='motor_impairment_moderate',
+            kind='healthstate',
             gbd_id=hsid(566),
         ),
     ),
@@ -206,6 +225,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3377),
         healthstate=Healthstate(
             name='motor_impairment_severe',
+            kind='healthstate',
             gbd_id=hsid(567),
         ),
     ),
@@ -216,6 +236,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3380),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_moderate',
+            kind='healthstate',
             gbd_id=hsid(569),
         ),
     ),
@@ -226,6 +247,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3383),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_severe',
+            kind='healthstate',
             gbd_id=hsid(570),
         ),
     ),
@@ -236,6 +258,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3386),
         healthstate=Healthstate(
             name='epilepsy',
+            kind='healthstate',
             gbd_id=hsid(772),
         ),
     ),
@@ -246,6 +269,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1316),
         healthstate=Healthstate(
             name='hearing_loss_mild',
+            kind='healthstate',
             gbd_id=hsid(455),
         ),
     ),
@@ -256,6 +280,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1317),
         healthstate=Healthstate(
             name='hearing_loss_mild_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(460),
         ),
     ),
@@ -266,6 +291,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1318),
         healthstate=Healthstate(
             name='hearing_loss_moderate',
+            kind='healthstate',
             gbd_id=hsid(456),
         ),
     ),
@@ -276,6 +302,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1319),
         healthstate=Healthstate(
             name='hearing_loss_moderate_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(461),
         ),
     ),
@@ -286,6 +313,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1320),
         healthstate=Healthstate(
             name='hearing_loss_moderately_severe',
+            kind='healthstate',
             gbd_id=hsid(575),
         ),
     ),
@@ -296,6 +324,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1321),
         healthstate=Healthstate(
             name='hearing_loss_moderately_severe_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(576),
         ),
     ),
@@ -306,6 +335,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1322),
         healthstate=Healthstate(
             name='hearing_loss_severe',
+            kind='healthstate',
             gbd_id=hsid(457),
         ),
     ),
@@ -316,6 +346,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1323),
         healthstate=Healthstate(
             name='hearing_loss_severe_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(462),
         ),
     ),
@@ -326,6 +357,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1324),
         healthstate=Healthstate(
             name='hearing_loss_profound',
+            kind='healthstate',
             gbd_id=hsid(458),
         ),
     ),
@@ -336,6 +368,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1325),
         healthstate=Healthstate(
             name='hearing_loss_profound_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(463),
         ),
     ),
@@ -346,6 +379,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1326),
         healthstate=Healthstate(
             name='hearing_loss_complete',
+            kind='healthstate',
             gbd_id=hsid(459),
         ),
     ),
@@ -356,6 +390,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1327),
         healthstate=Healthstate(
             name='hearing_loss_complete_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(464),
         ),
     ),
@@ -366,6 +401,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1329),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -376,6 +412,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1330),
         healthstate=Healthstate(
             name='attention_deficit_hyperactivity_disorder',
+            kind='healthstate',
             gbd_id=hsid(446),
         ),
     ),
@@ -386,6 +423,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3392),
         healthstate=Healthstate(
             name='motor_impairment_mild',
+            kind='healthstate',
             gbd_id=hsid(565),
         ),
     ),
@@ -396,6 +434,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3395),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_mild',
+            kind='healthstate',
             gbd_id=hsid(568),
         ),
     ),
@@ -406,6 +445,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3398),
         healthstate=Healthstate(
             name='borderline_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(450),
         ),
     ),
@@ -416,6 +456,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3401),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_mild',
+            kind='healthstate',
             gbd_id=hsid(451),
         ),
     ),
@@ -426,6 +467,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3404),
         healthstate=Healthstate(
             name='motor_impairment_moderate',
+            kind='healthstate',
             gbd_id=hsid(566),
         ),
     ),
@@ -436,6 +478,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3407),
         healthstate=Healthstate(
             name='motor_impairment_severe',
+            kind='healthstate',
             gbd_id=hsid(567),
         ),
     ),
@@ -446,6 +489,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3410),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_moderate',
+            kind='healthstate',
             gbd_id=hsid(569),
         ),
     ),
@@ -456,6 +500,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3413),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_severe',
+            kind='healthstate',
             gbd_id=hsid(570),
         ),
     ),
@@ -466,6 +511,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3416),
         healthstate=Healthstate(
             name='epilepsy',
+            kind='healthstate',
             gbd_id=hsid(772),
         ),
     ),
@@ -476,6 +522,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1346),
         healthstate=Healthstate(
             name='hearing_loss_mild',
+            kind='healthstate',
             gbd_id=hsid(455),
         ),
     ),
@@ -486,6 +533,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1347),
         healthstate=Healthstate(
             name='hearing_loss_mild_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(460),
         ),
     ),
@@ -496,6 +544,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1348),
         healthstate=Healthstate(
             name='hearing_loss_moderate',
+            kind='healthstate',
             gbd_id=hsid(456),
         ),
     ),
@@ -506,6 +555,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1349),
         healthstate=Healthstate(
             name='hearing_loss_moderate_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(461),
         ),
     ),
@@ -516,6 +566,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1350),
         healthstate=Healthstate(
             name='hearing_loss_moderately_severe',
+            kind='healthstate',
             gbd_id=hsid(575),
         ),
     ),
@@ -526,6 +577,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1351),
         healthstate=Healthstate(
             name='hearing_loss_moderately_severe_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(576),
         ),
     ),
@@ -536,6 +588,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1352),
         healthstate=Healthstate(
             name='hearing_loss_severe',
+            kind='healthstate',
             gbd_id=hsid(457),
         ),
     ),
@@ -546,6 +599,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1353),
         healthstate=Healthstate(
             name='hearing_loss_severe_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(462),
         ),
     ),
@@ -556,6 +610,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1354),
         healthstate=Healthstate(
             name='hearing_loss_profound',
+            kind='healthstate',
             gbd_id=hsid(458),
         ),
     ),
@@ -566,6 +621,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1355),
         healthstate=Healthstate(
             name='hearing_loss_profound_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(463),
         ),
     ),
@@ -576,6 +632,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1356),
         healthstate=Healthstate(
             name='hearing_loss_complete',
+            kind='healthstate',
             gbd_id=hsid(459),
         ),
     ),
@@ -586,6 +643,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1357),
         healthstate=Healthstate(
             name='hearing_loss_complete_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(464),
         ),
     ),
@@ -596,6 +654,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1359),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -606,6 +665,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1360),
         healthstate=Healthstate(
             name='attention_deficit_hyperactivity_disorder',
+            kind='healthstate',
             gbd_id=hsid(446),
         ),
     ),
@@ -616,6 +676,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3422),
         healthstate=Healthstate(
             name='motor_impairment_mild',
+            kind='healthstate',
             gbd_id=hsid(565),
         ),
     ),
@@ -626,6 +687,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3425),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_mild',
+            kind='healthstate',
             gbd_id=hsid(568),
         ),
     ),
@@ -636,6 +698,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3428),
         healthstate=Healthstate(
             name='borderline_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(450),
         ),
     ),
@@ -646,6 +709,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3431),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_mild',
+            kind='healthstate',
             gbd_id=hsid(451),
         ),
     ),
@@ -656,6 +720,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3434),
         healthstate=Healthstate(
             name='motor_impairment_moderate',
+            kind='healthstate',
             gbd_id=hsid(566),
         ),
     ),
@@ -666,6 +731,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3437),
         healthstate=Healthstate(
             name='motor_impairment_severe',
+            kind='healthstate',
             gbd_id=hsid(567),
         ),
     ),
@@ -676,6 +742,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3440),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_moderate',
+            kind='healthstate',
             gbd_id=hsid(569),
         ),
     ),
@@ -686,6 +753,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3443),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_severe',
+            kind='healthstate',
             gbd_id=hsid(570),
         ),
     ),
@@ -696,6 +764,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3446),
         healthstate=Healthstate(
             name='epilepsy',
+            kind='healthstate',
             gbd_id=hsid(772),
         ),
     ),
@@ -706,6 +775,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1376),
         healthstate=Healthstate(
             name='hearing_loss_mild',
+            kind='healthstate',
             gbd_id=hsid(455),
         ),
     ),
@@ -716,6 +786,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1377),
         healthstate=Healthstate(
             name='hearing_loss_mild_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(460),
         ),
     ),
@@ -726,6 +797,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1378),
         healthstate=Healthstate(
             name='hearing_loss_moderate',
+            kind='healthstate',
             gbd_id=hsid(456),
         ),
     ),
@@ -736,6 +808,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1379),
         healthstate=Healthstate(
             name='hearing_loss_moderate_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(461),
         ),
     ),
@@ -746,6 +819,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1380),
         healthstate=Healthstate(
             name='hearing_loss_moderately_severe',
+            kind='healthstate',
             gbd_id=hsid(575),
         ),
     ),
@@ -756,6 +830,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1381),
         healthstate=Healthstate(
             name='hearing_loss_moderately_severe_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(576),
         ),
     ),
@@ -766,6 +841,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1382),
         healthstate=Healthstate(
             name='hearing_loss_severe',
+            kind='healthstate',
             gbd_id=hsid(457),
         ),
     ),
@@ -776,6 +852,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1383),
         healthstate=Healthstate(
             name='hearing_loss_severe_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(462),
         ),
     ),
@@ -786,6 +863,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1384),
         healthstate=Healthstate(
             name='hearing_loss_profound',
+            kind='healthstate',
             gbd_id=hsid(458),
         ),
     ),
@@ -796,6 +874,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1385),
         healthstate=Healthstate(
             name='hearing_loss_profound_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(463),
         ),
     ),
@@ -806,6 +885,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1386),
         healthstate=Healthstate(
             name='hearing_loss_complete',
+            kind='healthstate',
             gbd_id=hsid(459),
         ),
     ),
@@ -816,6 +896,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1387),
         healthstate=Healthstate(
             name='hearing_loss_complete_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(464),
         ),
     ),
@@ -826,6 +907,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1389),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -836,6 +918,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1390),
         healthstate=Healthstate(
             name='attention_deficit_hyperactivity_disorder',
+            kind='healthstate',
             gbd_id=hsid(446),
         ),
     ),
@@ -846,6 +929,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3452),
         healthstate=Healthstate(
             name='motor_impairment_mild',
+            kind='healthstate',
             gbd_id=hsid(565),
         ),
     ),
@@ -856,6 +940,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3455),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_mild',
+            kind='healthstate',
             gbd_id=hsid(568),
         ),
     ),
@@ -866,6 +951,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3458),
         healthstate=Healthstate(
             name='borderline_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(450),
         ),
     ),
@@ -876,6 +962,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3461),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_mild',
+            kind='healthstate',
             gbd_id=hsid(451),
         ),
     ),
@@ -886,6 +973,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3464),
         healthstate=Healthstate(
             name='motor_impairment_moderate',
+            kind='healthstate',
             gbd_id=hsid(566),
         ),
     ),
@@ -896,6 +984,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3467),
         healthstate=Healthstate(
             name='motor_impairment_severe',
+            kind='healthstate',
             gbd_id=hsid(567),
         ),
     ),
@@ -906,6 +995,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3470),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_moderate',
+            kind='healthstate',
             gbd_id=hsid(569),
         ),
     ),
@@ -916,6 +1006,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3473),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_severe',
+            kind='healthstate',
             gbd_id=hsid(570),
         ),
     ),
@@ -926,6 +1017,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3476),
         healthstate=Healthstate(
             name='epilepsy',
+            kind='healthstate',
             gbd_id=hsid(772),
         ),
     ),
@@ -936,6 +1028,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1406),
         healthstate=Healthstate(
             name='hearing_loss_mild',
+            kind='healthstate',
             gbd_id=hsid(455),
         ),
     ),
@@ -946,6 +1039,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1407),
         healthstate=Healthstate(
             name='hearing_loss_mild_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(460),
         ),
     ),
@@ -956,6 +1050,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1408),
         healthstate=Healthstate(
             name='hearing_loss_moderate',
+            kind='healthstate',
             gbd_id=hsid(456),
         ),
     ),
@@ -966,6 +1061,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1409),
         healthstate=Healthstate(
             name='hearing_loss_moderate_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(461),
         ),
     ),
@@ -976,6 +1072,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1410),
         healthstate=Healthstate(
             name='hearing_loss_moderately_severe',
+            kind='healthstate',
             gbd_id=hsid(575),
         ),
     ),
@@ -986,6 +1083,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1411),
         healthstate=Healthstate(
             name='hearing_loss_moderately_severe_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(576),
         ),
     ),
@@ -996,6 +1094,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1412),
         healthstate=Healthstate(
             name='hearing_loss_severe',
+            kind='healthstate',
             gbd_id=hsid(457),
         ),
     ),
@@ -1006,6 +1105,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1413),
         healthstate=Healthstate(
             name='hearing_loss_severe_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(462),
         ),
     ),
@@ -1016,6 +1116,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1414),
         healthstate=Healthstate(
             name='hearing_loss_profound',
+            kind='healthstate',
             gbd_id=hsid(458),
         ),
     ),
@@ -1026,6 +1127,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1415),
         healthstate=Healthstate(
             name='hearing_loss_profound_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(463),
         ),
     ),
@@ -1036,6 +1138,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1416),
         healthstate=Healthstate(
             name='hearing_loss_complete',
+            kind='healthstate',
             gbd_id=hsid(459),
         ),
     ),
@@ -1046,6 +1149,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1417),
         healthstate=Healthstate(
             name='hearing_loss_complete_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(464),
         ),
     ),
@@ -1056,6 +1160,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1418),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -1066,6 +1171,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1419),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -1076,6 +1182,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1422),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -1086,6 +1193,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1423),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -1096,6 +1204,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1424),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -1106,6 +1215,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1426),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -1116,6 +1226,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1437),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -1126,6 +1237,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1438),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -1136,6 +1248,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1440),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_mild',
+            kind='healthstate',
             gbd_id=hsid(351),
         ),
     ),
@@ -1146,6 +1259,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1441),
         healthstate=Healthstate(
             name='herpes_zoster',
+            kind='healthstate',
             gbd_id=hsid(359),
         ),
     ),
@@ -1156,6 +1270,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9762),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_mild',
+            kind='healthstate',
             gbd_id=hsid(351),
         ),
     ),
@@ -1166,6 +1281,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9763),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -1176,6 +1292,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9764),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -1186,6 +1303,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1451),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -1196,6 +1314,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1452),
         healthstate=Healthstate(
             name='cardiac_conduction_disorders_and_cardiac_dysrhythmias',
+            kind='healthstate',
             gbd_id=hsid(379),
         ),
     ),
@@ -1206,6 +1325,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1453),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -1216,6 +1336,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1454),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),
@@ -1226,6 +1347,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1455),
         healthstate=Healthstate(
             name='heart_failure_mild',
+            kind='healthstate',
             gbd_id=hsid(381),
         ),
     ),
@@ -1236,6 +1358,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1456),
         healthstate=Healthstate(
             name='heart_failure_moderate',
+            kind='healthstate',
             gbd_id=hsid(382),
         ),
     ),
@@ -1246,6 +1369,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1457),
         healthstate=Healthstate(
             name='heart_failure_severe',
+            kind='healthstate',
             gbd_id=hsid(383),
         ),
     ),
@@ -1256,6 +1380,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1459),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -1266,6 +1391,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1460),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -1276,6 +1402,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1461),
         healthstate=Healthstate(
             name='disfigurement_level_2',
+            kind='healthstate',
             gbd_id=hsid(554),
         ),
     ),
@@ -1286,6 +1413,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1468),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_mild',
+            kind='healthstate',
             gbd_id=hsid(351),
         ),
     ),
@@ -1296,6 +1424,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1469),
         healthstate=Healthstate(
             name='diarrhea_mild',
+            kind='healthstate',
             gbd_id=hsid(355),
         ),
     ),
@@ -1306,6 +1435,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1470),
         healthstate=Healthstate(
             name='gastric_bleeding',
+            kind='healthstate',
             gbd_id=hsid(395),
         ),
     ),
@@ -1316,6 +1446,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1471),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -1326,6 +1457,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1472),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),
@@ -1336,6 +1468,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1473),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -1346,6 +1479,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1474),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -1356,6 +1490,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1475),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -1366,6 +1501,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1476),
         healthstate=Healthstate(
             name='anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(547),
         ),
     ),
@@ -1376,6 +1512,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1477),
         healthstate=Healthstate(
             name='anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(548),
         ),
     ),
@@ -1386,6 +1523,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1478),
         healthstate=Healthstate(
             name='anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(549),
         ),
     ),
@@ -1396,6 +1534,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1485),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),
@@ -1406,6 +1545,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1486),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_mild',
+            kind='healthstate',
             gbd_id=hsid(405),
         ),
     ),
@@ -1416,6 +1556,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10519),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -1426,6 +1567,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1492),
         healthstate=Healthstate(
             name='lymphatic_filariasis_symptomatic',
+            kind='healthstate',
             gbd_id=hsid(364),
         ),
     ),
@@ -1436,6 +1578,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1493),
         healthstate=Healthstate(
             name='epididymo_orchitis',
+            kind='healthstate',
             gbd_id=hsid(358),
         ),
     ),
@@ -1446,6 +1589,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1495),
         healthstate=Healthstate(
             name='disfigurement_level_1_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(556),
         ),
     ),
@@ -1456,6 +1600,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1496),
         healthstate=Healthstate(
             name='disfigurement_level_2_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(557),
         ),
     ),
@@ -1466,6 +1611,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1501),
         healthstate=Healthstate(
             name='distance_vision_moderate_impairment',
+            kind='healthstate',
             gbd_id=hsid(466),
         ),
     ),
@@ -1476,6 +1622,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1502),
         healthstate=Healthstate(
             name='distance_vision_severe_impairment',
+            kind='healthstate',
             gbd_id=hsid(467),
         ),
     ),
@@ -1486,6 +1633,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3614),
         healthstate=Healthstate(
             name='distance_vision_blindness',
+            kind='healthstate',
             gbd_id=hsid(468),
         ),
     ),
@@ -1496,6 +1644,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1506),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -1506,6 +1655,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1507),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -1516,6 +1666,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1508),
         healthstate=Healthstate(
             name='infectious_disease_post_acute_consequences_fatigue_emotional_lability_insomnia',
+            kind='healthstate',
             gbd_id=hsid(354),
         ),
     ),
@@ -1526,6 +1677,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1510),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -1536,6 +1688,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1511),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -1546,6 +1699,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1512),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -1556,6 +1710,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1513),
         healthstate=Healthstate(
             name='intestinal_nematode_infections_symptomatic',
+            kind='healthstate',
             gbd_id=hsid(363),
         ),
     ),
@@ -1566,6 +1721,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1514),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -1576,6 +1732,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1515),
         healthstate=Healthstate(
             name='severe_wasting',
+            kind='healthstate',
             gbd_id=hsid(563),
         ),
     ),
@@ -1586,6 +1743,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1516),
         healthstate=Healthstate(
             name='intestinal_nematode_infections_symptomatic',
+            kind='healthstate',
             gbd_id=hsid(363),
         ),
     ),
@@ -1596,6 +1754,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1517),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -1606,6 +1765,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1518),
         healthstate=Healthstate(
             name='severe_wasting',
+            kind='healthstate',
             gbd_id=hsid(563),
         ),
     ),
@@ -1616,6 +1776,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1519),
         healthstate=Healthstate(
             name='intestinal_nematode_infections_symptomatic',
+            kind='healthstate',
             gbd_id=hsid(363),
         ),
     ),
@@ -1626,6 +1787,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1520),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -1636,6 +1798,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1521),
         healthstate=Healthstate(
             name='severe_wasting',
+            kind='healthstate',
             gbd_id=hsid(563),
         ),
     ),
@@ -1646,6 +1809,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1522),
         healthstate=Healthstate(
             name='anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(547),
         ),
     ),
@@ -1656,6 +1820,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1523),
         healthstate=Healthstate(
             name='anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(548),
         ),
     ),
@@ -1666,6 +1831,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1524),
         healthstate=Healthstate(
             name='anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(549),
         ),
     ),
@@ -1676,6 +1842,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3617),
         healthstate=Healthstate(
             name='epilepsy',
+            kind='healthstate',
             gbd_id=hsid(772),
         ),
     ),
@@ -1686,6 +1853,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1531),
         healthstate=Healthstate(
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
+            kind='healthstate',
             gbd_id=hsid(639),
         ),
     ),
@@ -1696,6 +1864,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1532),
         healthstate=Healthstate(
             name='anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(547),
         ),
     ),
@@ -1706,6 +1875,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1533),
         healthstate=Healthstate(
             name='anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(548),
         ),
     ),
@@ -1716,6 +1886,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1534),
         healthstate=Healthstate(
             name='anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(549),
         ),
     ),
@@ -1726,6 +1897,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1536),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),
@@ -1736,6 +1908,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1537),
         healthstate=Healthstate(
             name='abdominopelvic_problem_severe',
+            kind='healthstate',
             gbd_id=hsid(546),
         ),
     ),
@@ -1746,6 +1919,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1538),
         healthstate=Healthstate(
             name='anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(547),
         ),
     ),
@@ -1756,6 +1930,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1539),
         healthstate=Healthstate(
             name='anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(548),
         ),
     ),
@@ -1766,6 +1941,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1540),
         healthstate=Healthstate(
             name='anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(549),
         ),
     ),
@@ -1776,6 +1952,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1542),
         healthstate=Healthstate(
             name='moderate_abdominal_pain_tension_type_headaches_mild_motor_plus_cognitive_impairment',
+            kind='healthstate',
             gbd_id=hsid(824),
         ),
     ),
@@ -1786,6 +1963,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3635),
         healthstate=Healthstate(
             name='moderate_abdominal_pain_and_severe_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(826),
         ),
     ),
@@ -1796,6 +1974,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1546),
         healthstate=Healthstate(
             name='tension_type_headaches_mild_motor_plus_cognitive_impairment',
+            kind='healthstate',
             gbd_id=hsid(825),
         ),
     ),
@@ -1806,6 +1985,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3641),
         healthstate=Healthstate(
             name='abdominopelvic_problem_severe',
+            kind='healthstate',
             gbd_id=hsid(546),
         ),
     ),
@@ -1816,6 +1996,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1553),
         healthstate=Healthstate(
             name='rectovaginal_fistula',
+            kind='healthstate',
             gbd_id=hsid(571),
         ),
     ),
@@ -1826,6 +2007,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1554),
         healthstate=Healthstate(
             name='vesicovaginal_fistula',
+            kind='healthstate',
             gbd_id=hsid(572),
         ),
     ),
@@ -1836,6 +2018,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3644),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),
@@ -1846,6 +2029,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1556),
         healthstate=Healthstate(
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
+            kind='healthstate',
             gbd_id=hsid(639),
         ),
     ),
@@ -1856,6 +2040,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1577),
         healthstate=Healthstate(
             name='distance_vision_mild_impairment',
+            kind='healthstate',
             gbd_id=hsid(465),
         ),
     ),
@@ -1866,6 +2051,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3794),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_mild',
+            kind='healthstate',
             gbd_id=hsid(568),
         ),
     ),
@@ -1876,6 +2062,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3797),
         healthstate=Healthstate(
             name='motor_impairment_mild',
+            kind='healthstate',
             gbd_id=hsid(565),
         ),
     ),
@@ -1886,6 +2073,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1594),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -1896,6 +2084,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1605),
         healthstate=Healthstate(
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
+            kind='healthstate',
             gbd_id=hsid(639),
         ),
     ),
@@ -1906,6 +2095,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1606),
         healthstate=Healthstate(
             name='kwashiorkor',
+            kind='healthstate',
             gbd_id=hsid(562),
         ),
     ),
@@ -1916,6 +2106,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1607),
         healthstate=Healthstate(
             name='severe_wasting',
+            kind='healthstate',
             gbd_id=hsid(563),
         ),
     ),
@@ -1926,6 +2117,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1611),
         healthstate=Healthstate(
             name='disfigurement_level_1',
+            kind='healthstate',
             gbd_id=hsid(553),
         ),
     ),
@@ -1936,6 +2128,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1612),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_severe_and_iodine_deficiency_goiter',
+            kind='healthstate',
             gbd_id=hsid(2582),
         ),
     ),
@@ -1946,6 +2139,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1613),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_profound_and_iodine_deficiency_goiter',
+            kind='healthstate',
             gbd_id=hsid(2579),
         ),
     ),
@@ -1956,6 +2150,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1618),
         healthstate=Healthstate(
             name='distance_vision_moderate_impairment',
+            kind='healthstate',
             gbd_id=hsid(466),
         ),
     ),
@@ -1966,6 +2161,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1619),
         healthstate=Healthstate(
             name='distance_vision_severe_impairment',
+            kind='healthstate',
             gbd_id=hsid(467),
         ),
     ),
@@ -1976,6 +2172,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3887),
         healthstate=Healthstate(
             name='distance_vision_blindness',
+            kind='healthstate',
             gbd_id=hsid(468),
         ),
     ),
@@ -1986,6 +2183,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1621),
         healthstate=Healthstate(
             name='anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(547),
         ),
     ),
@@ -1996,6 +2194,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1622),
         healthstate=Healthstate(
             name='anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(548),
         ),
     ),
@@ -2006,6 +2205,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1623),
         healthstate=Healthstate(
             name='anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(549),
         ),
     ),
@@ -2016,6 +2216,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1624),
         healthstate=Healthstate(
             name='heart_failure_mild',
+            kind='healthstate',
             gbd_id=hsid(381),
         ),
     ),
@@ -2026,6 +2227,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1625),
         healthstate=Healthstate(
             name='heart_failure_moderate',
+            kind='healthstate',
             gbd_id=hsid(382),
         ),
     ),
@@ -2036,6 +2238,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1626),
         healthstate=Healthstate(
             name='heart_failure_severe',
+            kind='healthstate',
             gbd_id=hsid(383),
         ),
     ),
@@ -2046,6 +2249,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1627),
         healthstate=Healthstate(
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
+            kind='healthstate',
             gbd_id=hsid(639),
         ),
     ),
@@ -2056,6 +2260,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1630),
         healthstate=Healthstate(
             name='epididymo_orchitis',
+            kind='healthstate',
             gbd_id=hsid(358),
         ),
     ),
@@ -2066,6 +2271,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1631),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),
@@ -2076,6 +2282,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1632),
         healthstate=Healthstate(
             name='abdominopelvic_problem_severe',
+            kind='healthstate',
             gbd_id=hsid(546),
         ),
     ),
@@ -2086,6 +2293,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1633),
         healthstate=Healthstate(
             name='infertility_primary',
+            kind='healthstate',
             gbd_id=hsid(400),
         ),
     ),
@@ -2096,6 +2304,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1634),
         healthstate=Healthstate(
             name='infertility_secondary',
+            kind='healthstate',
             gbd_id=hsid(401),
         ),
     ),
@@ -2106,6 +2315,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1636),
         healthstate=Healthstate(
             name='epididymo_orchitis',
+            kind='healthstate',
             gbd_id=hsid(358),
         ),
     ),
@@ -2116,6 +2326,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1637),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),
@@ -2126,6 +2337,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1638),
         healthstate=Healthstate(
             name='abdominopelvic_problem_severe',
+            kind='healthstate',
             gbd_id=hsid(546),
         ),
     ),
@@ -2136,6 +2348,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1639),
         healthstate=Healthstate(
             name='infertility_primary',
+            kind='healthstate',
             gbd_id=hsid(400),
         ),
     ),
@@ -2146,6 +2359,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1640),
         healthstate=Healthstate(
             name='infertility_secondary',
+            kind='healthstate',
             gbd_id=hsid(401),
         ),
     ),
@@ -2156,6 +2370,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1643),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),
@@ -2166,6 +2381,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1644),
         healthstate=Healthstate(
             name='abdominopelvic_problem_severe',
+            kind='healthstate',
             gbd_id=hsid(546),
         ),
     ),
@@ -2176,6 +2392,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1645),
         healthstate=Healthstate(
             name='infertility_primary',
+            kind='healthstate',
             gbd_id=hsid(400),
         ),
     ),
@@ -2186,6 +2403,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1646),
         healthstate=Healthstate(
             name='infertility_secondary',
+            kind='healthstate',
             gbd_id=hsid(401),
         ),
     ),
@@ -2196,6 +2414,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1649),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -2206,6 +2425,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1650),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -2216,6 +2436,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1653),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -2226,6 +2447,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1654),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -2236,6 +2458,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1657),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -2246,6 +2469,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1658),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -2256,6 +2480,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1660),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -2266,6 +2491,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1661),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -2276,6 +2502,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1663),
         healthstate=Healthstate(
             name='disfigurement_level_1',
+            kind='healthstate',
             gbd_id=hsid(553),
         ),
     ),
@@ -2286,6 +2513,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1664),
         healthstate=Healthstate(
             name='disfigurement_level_2',
+            kind='healthstate',
             gbd_id=hsid(554),
         ),
     ),
@@ -2296,6 +2524,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1666),
         healthstate=Healthstate(
             name='anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(547),
         ),
     ),
@@ -2306,6 +2535,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1667),
         healthstate=Healthstate(
             name='anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(548),
         ),
     ),
@@ -2316,6 +2546,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1668),
         healthstate=Healthstate(
             name='anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(549),
         ),
     ),
@@ -2326,6 +2557,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1669),
         healthstate=Healthstate(
             name='spinal_cord_lesion_below_neck_level_treated',
+            kind='healthstate',
             gbd_id=hsid(540),
         ),
     ),
@@ -2336,6 +2568,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1670),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -2346,6 +2579,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1671),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -2356,6 +2590,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1672),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -2366,6 +2601,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1673),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -2376,6 +2612,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1674),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -2386,6 +2623,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1675),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -2396,6 +2634,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1676),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -2406,6 +2645,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1677),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -2416,6 +2656,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1682),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -2426,6 +2667,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1683),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -2436,6 +2678,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1684),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -2446,6 +2689,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1685),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -2456,6 +2700,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1686),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -2466,6 +2711,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1687),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -2476,6 +2722,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1688),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -2486,6 +2733,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1689),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -2496,6 +2744,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1690),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -2506,6 +2755,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1691),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -2516,6 +2766,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1692),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -2526,6 +2777,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1693),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -2536,6 +2788,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1694),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -2546,6 +2799,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1695),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -2556,6 +2810,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1696),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -2566,6 +2821,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1697),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -2576,6 +2832,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1698),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -2586,6 +2843,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1699),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -2596,6 +2854,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1700),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -2606,6 +2865,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1701),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -2616,6 +2876,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1702),
         healthstate=Healthstate(
             name='speech_problems_and_generic_medication',
+            kind='healthstate',
             gbd_id=hsid(893),
         ),
     ),
@@ -2626,6 +2887,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1703),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -2636,6 +2898,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1704),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -2646,6 +2909,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1705),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -2656,6 +2920,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1706),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -2666,6 +2931,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1707),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -2676,6 +2942,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1708),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -2686,6 +2953,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1709),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -2696,6 +2964,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1710),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -2706,6 +2975,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1711),
         healthstate=Healthstate(
             name='mastectomy_and_generic_medication',
+            kind='healthstate',
             gbd_id=hsid(894),
         ),
     ),
@@ -2716,6 +2986,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1712),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -2726,6 +2997,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1713),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -2736,6 +3008,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1714),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -2746,6 +3019,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1715),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -2756,6 +3030,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1716),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -2766,6 +3041,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1717),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -2776,6 +3052,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1718),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -2786,6 +3063,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1719),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -2796,6 +3074,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1720),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -2806,6 +3085,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1721),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -2816,6 +3096,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1722),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -2826,6 +3107,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1723),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -2836,6 +3118,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1725),
         healthstate=Healthstate(
             name='impotence_and_generic_medication',
+            kind='healthstate',
             gbd_id=hsid(895),
         ),
     ),
@@ -2846,6 +3129,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1726),
         healthstate=Healthstate(
             name='incontinence_and_generic_medication',
+            kind='healthstate',
             gbd_id=hsid(896),
         ),
     ),
@@ -2856,6 +3140,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1727),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -2866,6 +3151,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1728),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -2876,6 +3162,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1729),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -2886,6 +3173,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1730),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -2896,6 +3184,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1731),
         healthstate=Healthstate(
             name='stoma_and_generic_medication',
+            kind='healthstate',
             gbd_id=hsid(892),
         ),
     ),
@@ -2906,6 +3195,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1732),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -2916,6 +3206,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1733),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -2926,6 +3217,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1734),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -2936,6 +3228,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1735),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -2946,6 +3239,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1736),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -2956,6 +3250,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1737),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -2966,6 +3261,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1738),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -2976,6 +3272,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1739),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -2986,6 +3283,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1740),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -2996,6 +3294,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1741),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -3006,6 +3305,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1742),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -3016,6 +3316,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1743),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -3026,6 +3327,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1744),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -3036,6 +3338,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1745),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -3046,6 +3349,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1746),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -3056,6 +3360,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1747),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -3066,6 +3371,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1748),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -3076,6 +3382,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1749),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -3086,6 +3393,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1750),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -3096,6 +3404,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1751),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -3106,6 +3415,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1752),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -3116,6 +3426,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1753),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -3126,6 +3437,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1754),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -3136,6 +3448,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1755),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -3146,6 +3459,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1761),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -3156,6 +3470,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1762),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -3166,6 +3481,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1763),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -3176,6 +3492,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1764),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -3186,6 +3503,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1765),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -3196,6 +3514,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1766),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -3206,6 +3525,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1767),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -3216,6 +3536,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1768),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -3226,6 +3547,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1769),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -3236,6 +3558,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1770),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -3246,6 +3569,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1771),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -3256,6 +3580,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1772),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -3266,6 +3591,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1773),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -3276,6 +3602,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1774),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -3286,6 +3613,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1775),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -3296,6 +3624,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1776),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -3306,6 +3635,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1777),
         healthstate=Healthstate(
             name='incontinence_and_generic_medication',
+            kind='healthstate',
             gbd_id=hsid(896),
         ),
     ),
@@ -3316,6 +3646,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1778),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -3326,6 +3657,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1779),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -3336,6 +3668,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1780),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -3346,6 +3679,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1781),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -3356,6 +3690,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1782),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -3366,6 +3701,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1783),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -3376,6 +3712,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1784),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -3386,6 +3723,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1785),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -3396,6 +3734,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1786),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -3406,6 +3745,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1787),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -3416,6 +3756,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1788),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -3426,6 +3767,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1789),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -3436,6 +3778,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1790),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -3446,6 +3789,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1791),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -3456,6 +3800,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1792),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -3466,6 +3811,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1793),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -3476,6 +3822,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1794),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -3486,6 +3833,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1795),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -3496,6 +3844,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1796),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -3506,6 +3855,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1797),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -3516,6 +3866,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1798),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -3526,6 +3877,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1799),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -3536,6 +3888,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1800),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -3546,6 +3899,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1801),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -3556,6 +3910,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1806),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -3566,6 +3921,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1807),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -3576,6 +3932,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1808),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -3586,6 +3943,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1809),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -3596,6 +3954,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1815),
         healthstate=Healthstate(
             name='acute_myocardial_infarction_days_1_2',
+            kind='healthstate',
             gbd_id=hsid(374),
         ),
     ),
@@ -3606,6 +3965,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1816),
         healthstate=Healthstate(
             name='acute_myocardial_infarction_days_3_28',
+            kind='healthstate',
             gbd_id=hsid(375),
         ),
     ),
@@ -3616,6 +3976,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1818),
         healthstate=Healthstate(
             name='angina_pectoris_mild',
+            kind='healthstate',
             gbd_id=hsid(376),
         ),
     ),
@@ -3626,6 +3987,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1819),
         healthstate=Healthstate(
             name='angina_pectoris_moderate',
+            kind='healthstate',
             gbd_id=hsid(377),
         ),
     ),
@@ -3636,6 +3998,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1820),
         healthstate=Healthstate(
             name='angina_pectoris_severe',
+            kind='healthstate',
             gbd_id=hsid(378),
         ),
     ),
@@ -3646,6 +4009,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1821),
         healthstate=Healthstate(
             name='heart_failure_mild',
+            kind='healthstate',
             gbd_id=hsid(381),
         ),
     ),
@@ -3656,6 +4020,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1822),
         healthstate=Healthstate(
             name='heart_failure_moderate',
+            kind='healthstate',
             gbd_id=hsid(382),
         ),
     ),
@@ -3666,6 +4031,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1823),
         healthstate=Healthstate(
             name='heart_failure_severe',
+            kind='healthstate',
             gbd_id=hsid(383),
         ),
     ),
@@ -3676,6 +4042,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1827),
         healthstate=Healthstate(
             name='stroke_long_term_consequences_mild',
+            kind='healthstate',
             gbd_id=hsid(384),
         ),
     ),
@@ -3686,6 +4053,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1828),
         healthstate=Healthstate(
             name='stroke_long_term_consequences_moderate',
+            kind='healthstate',
             gbd_id=hsid(385),
         ),
     ),
@@ -3696,6 +4064,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1829),
         healthstate=Healthstate(
             name='stroke_long_term_consequences_severe',
+            kind='healthstate',
             gbd_id=hsid(387),
         ),
     ),
@@ -3706,6 +4075,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1830),
         healthstate=Healthstate(
             name='stroke_long_term_consequences_moderate_plus_cognition_problems',
+            kind='healthstate',
             gbd_id=hsid(386),
         ),
     ),
@@ -3716,6 +4086,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1831),
         healthstate=Healthstate(
             name='stroke_long_term_consequences_severe_plus_cognition_problems',
+            kind='healthstate',
             gbd_id=hsid(388),
         ),
     ),
@@ -3726,6 +4097,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1833),
         healthstate=Healthstate(
             name='stroke_long_term_consequences_mild',
+            kind='healthstate',
             gbd_id=hsid(384),
         ),
     ),
@@ -3736,6 +4108,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1834),
         healthstate=Healthstate(
             name='stroke_long_term_consequences_moderate',
+            kind='healthstate',
             gbd_id=hsid(385),
         ),
     ),
@@ -3746,6 +4119,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1835),
         healthstate=Healthstate(
             name='stroke_long_term_consequences_severe',
+            kind='healthstate',
             gbd_id=hsid(387),
         ),
     ),
@@ -3756,6 +4130,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1836),
         healthstate=Healthstate(
             name='stroke_long_term_consequences_moderate_plus_cognition_problems',
+            kind='healthstate',
             gbd_id=hsid(386),
         ),
     ),
@@ -3766,6 +4141,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1837),
         healthstate=Healthstate(
             name='stroke_long_term_consequences_severe_plus_cognition_problems',
+            kind='healthstate',
             gbd_id=hsid(388),
         ),
     ),
@@ -3776,6 +4152,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1839),
         healthstate=Healthstate(
             name='stroke_long_term_consequences_mild',
+            kind='healthstate',
             gbd_id=hsid(384),
         ),
     ),
@@ -3786,6 +4163,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1840),
         healthstate=Healthstate(
             name='stroke_long_term_consequences_moderate',
+            kind='healthstate',
             gbd_id=hsid(385),
         ),
     ),
@@ -3796,6 +4174,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1841),
         healthstate=Healthstate(
             name='stroke_long_term_consequences_severe',
+            kind='healthstate',
             gbd_id=hsid(387),
         ),
     ),
@@ -3806,6 +4185,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1842),
         healthstate=Healthstate(
             name='stroke_long_term_consequences_moderate_plus_cognition_problems',
+            kind='healthstate',
             gbd_id=hsid(386),
         ),
     ),
@@ -3816,6 +4196,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1843),
         healthstate=Healthstate(
             name='stroke_long_term_consequences_severe_plus_cognition_problems',
+            kind='healthstate',
             gbd_id=hsid(388),
         ),
     ),
@@ -3826,6 +4207,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1845),
         healthstate=Healthstate(
             name='stroke_long_term_consequences_mild',
+            kind='healthstate',
             gbd_id=hsid(384),
         ),
     ),
@@ -3836,6 +4218,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1846),
         healthstate=Healthstate(
             name='stroke_long_term_consequences_moderate',
+            kind='healthstate',
             gbd_id=hsid(385),
         ),
     ),
@@ -3846,6 +4229,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1847),
         healthstate=Healthstate(
             name='stroke_long_term_consequences_severe',
+            kind='healthstate',
             gbd_id=hsid(387),
         ),
     ),
@@ -3856,6 +4240,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1848),
         healthstate=Healthstate(
             name='stroke_long_term_consequences_moderate_plus_cognition_problems',
+            kind='healthstate',
             gbd_id=hsid(386),
         ),
     ),
@@ -3866,6 +4251,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1849),
         healthstate=Healthstate(
             name='stroke_long_term_consequences_severe_plus_cognition_problems',
+            kind='healthstate',
             gbd_id=hsid(388),
         ),
     ),
@@ -3876,6 +4262,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1850),
         healthstate=Healthstate(
             name='heart_failure_mild',
+            kind='healthstate',
             gbd_id=hsid(381),
         ),
     ),
@@ -3886,6 +4273,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1851),
         healthstate=Healthstate(
             name='heart_failure_moderate',
+            kind='healthstate',
             gbd_id=hsid(382),
         ),
     ),
@@ -3896,6 +4284,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1852),
         healthstate=Healthstate(
             name='heart_failure_severe',
+            kind='healthstate',
             gbd_id=hsid(383),
         ),
     ),
@@ -3906,6 +4295,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1855),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -3916,6 +4306,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1863),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -3926,6 +4317,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1864),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -3936,6 +4328,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1865),
         healthstate=Healthstate(
             name='heart_failure_mild',
+            kind='healthstate',
             gbd_id=hsid(381),
         ),
     ),
@@ -3946,6 +4339,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1866),
         healthstate=Healthstate(
             name='heart_failure_moderate',
+            kind='healthstate',
             gbd_id=hsid(382),
         ),
     ),
@@ -3956,6 +4350,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1867),
         healthstate=Healthstate(
             name='heart_failure_severe',
+            kind='healthstate',
             gbd_id=hsid(383),
         ),
     ),
@@ -3966,6 +4361,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1869),
         healthstate=Healthstate(
             name='heart_failure_mild',
+            kind='healthstate',
             gbd_id=hsid(381),
         ),
     ),
@@ -3976,6 +4372,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1870),
         healthstate=Healthstate(
             name='heart_failure_moderate',
+            kind='healthstate',
             gbd_id=hsid(382),
         ),
     ),
@@ -3986,6 +4383,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1871),
         healthstate=Healthstate(
             name='heart_failure_severe',
+            kind='healthstate',
             gbd_id=hsid(383),
         ),
     ),
@@ -3996,6 +4394,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1873),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_mild',
+            kind='healthstate',
             gbd_id=hsid(405),
         ),
     ),
@@ -4006,6 +4405,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1874),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_moderate',
+            kind='healthstate',
             gbd_id=hsid(406),
         ),
     ),
@@ -4016,6 +4416,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1880),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_mild',
+            kind='healthstate',
             gbd_id=hsid(405),
         ),
     ),
@@ -4026,6 +4427,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1881),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_moderate',
+            kind='healthstate',
             gbd_id=hsid(406),
         ),
     ),
@@ -4036,6 +4438,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1887),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_mild',
+            kind='healthstate',
             gbd_id=hsid(405),
         ),
     ),
@@ -4046,6 +4449,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1888),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_moderate',
+            kind='healthstate',
             gbd_id=hsid(406),
         ),
     ),
@@ -4056,6 +4460,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1894),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_mild',
+            kind='healthstate',
             gbd_id=hsid(405),
         ),
     ),
@@ -4066,6 +4471,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1895),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_moderate',
+            kind='healthstate',
             gbd_id=hsid(406),
         ),
     ),
@@ -4076,6 +4482,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1901),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_mild',
+            kind='healthstate',
             gbd_id=hsid(405),
         ),
     ),
@@ -4086,6 +4493,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1902),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_moderate',
+            kind='healthstate',
             gbd_id=hsid(406),
         ),
     ),
@@ -4096,6 +4504,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1908),
         healthstate=Healthstate(
             name='asthma_controlled',
+            kind='healthstate',
             gbd_id=hsid(402),
         ),
     ),
@@ -4106,6 +4515,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1909),
         healthstate=Healthstate(
             name='asthma_partially_controlled',
+            kind='healthstate',
             gbd_id=hsid(403),
         ),
     ),
@@ -4116,6 +4526,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1910),
         healthstate=Healthstate(
             name='asthma_uncontrolled',
+            kind='healthstate',
             gbd_id=hsid(404),
         ),
     ),
@@ -4126,6 +4537,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1912),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_mild',
+            kind='healthstate',
             gbd_id=hsid(405),
         ),
     ),
@@ -4136,6 +4548,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1913),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_moderate',
+            kind='healthstate',
             gbd_id=hsid(406),
         ),
     ),
@@ -4146,6 +4559,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1918),
         healthstate=Healthstate(
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
+            kind='healthstate',
             gbd_id=hsid(639),
         ),
     ),
@@ -4156,6 +4570,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1925),
         healthstate=Healthstate(
             name='anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(547),
         ),
     ),
@@ -4166,6 +4581,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1926),
         healthstate=Healthstate(
             name='anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(548),
         ),
     ),
@@ -4176,6 +4592,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1927),
         healthstate=Healthstate(
             name='anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(549),
         ),
     ),
@@ -4186,6 +4603,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1929),
         healthstate=Healthstate(
             name='anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(547),
         ),
     ),
@@ -4196,6 +4614,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1930),
         healthstate=Healthstate(
             name='anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(548),
         ),
     ),
@@ -4206,6 +4625,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1931),
         healthstate=Healthstate(
             name='anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(549),
         ),
     ),
@@ -4216,6 +4636,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1932),
         healthstate=Healthstate(
             name='abdominopelvic_problem_severe',
+            kind='healthstate',
             gbd_id=hsid(546),
         ),
     ),
@@ -4226,6 +4647,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1933),
         healthstate=Healthstate(
             name='abdominopelvic_problem_severe',
+            kind='healthstate',
             gbd_id=hsid(546),
         ),
     ),
@@ -4236,6 +4658,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1939),
         healthstate=Healthstate(
             name='abdominopelvic_problem_severe',
+            kind='healthstate',
             gbd_id=hsid(546),
         ),
     ),
@@ -4246,6 +4669,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1942),
         healthstate=Healthstate(
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
+            kind='healthstate',
             gbd_id=hsid(639),
         ),
     ),
@@ -4256,6 +4680,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1944),
         healthstate=Healthstate(
             name='dementia_mild',
+            kind='healthstate',
             gbd_id=hsid(408),
         ),
     ),
@@ -4266,6 +4691,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1945),
         healthstate=Healthstate(
             name='dementia_moderate',
+            kind='healthstate',
             gbd_id=hsid(409),
         ),
     ),
@@ -4276,6 +4702,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1946),
         healthstate=Healthstate(
             name='dementia_severe',
+            kind='healthstate',
             gbd_id=hsid(410),
         ),
     ),
@@ -4286,6 +4713,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1948),
         healthstate=Healthstate(
             name='parkinson_disease_mild',
+            kind='healthstate',
             gbd_id=hsid(421),
         ),
     ),
@@ -4296,6 +4724,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1949),
         healthstate=Healthstate(
             name='parkinson_disease_moderate',
+            kind='healthstate',
             gbd_id=hsid(422),
         ),
     ),
@@ -4306,6 +4735,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1950),
         healthstate=Healthstate(
             name='parkinson_disease_severe',
+            kind='healthstate',
             gbd_id=hsid(423),
         ),
     ),
@@ -4316,6 +4746,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1951),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -4326,6 +4757,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1952),
         healthstate=Healthstate(
             name='epilepsy_seizures_1_11_per_year',
+            kind='healthstate',
             gbd_id=hsid(746),
         ),
     ),
@@ -4336,6 +4768,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1953),
         healthstate=Healthstate(
             name='epilepsy_seizures_greater_than___once_a_month',
+            kind='healthstate',
             gbd_id=hsid(745),
         ),
     ),
@@ -4346,6 +4779,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1956),
         healthstate=Healthstate(
             name='multiple_sclerosis_mild',
+            kind='healthstate',
             gbd_id=hsid(414),
         ),
     ),
@@ -4356,6 +4790,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1957),
         healthstate=Healthstate(
             name='multiple_sclerosis_moderate',
+            kind='healthstate',
             gbd_id=hsid(415),
         ),
     ),
@@ -4366,6 +4801,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1958),
         healthstate=Healthstate(
             name='multiple_sclerosis_severe',
+            kind='healthstate',
             gbd_id=hsid(416),
         ),
     ),
@@ -4376,6 +4812,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1962),
         healthstate=Healthstate(
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
+            kind='healthstate',
             gbd_id=hsid(639),
         ),
     ),
@@ -4386,6 +4823,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1963),
         healthstate=Healthstate(
             name='spinal_cord_lesion_below_neck_level_treated',
+            kind='healthstate',
             gbd_id=hsid(540),
         ),
     ),
@@ -4396,6 +4834,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1965),
         healthstate=Healthstate(
             name='schizophrenia_acute_state',
+            kind='healthstate',
             gbd_id=hsid(442),
         ),
     ),
@@ -4406,6 +4845,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1966),
         healthstate=Healthstate(
             name='schizophrenia_residual_state',
+            kind='healthstate',
             gbd_id=hsid(443),
         ),
     ),
@@ -4416,6 +4856,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1968),
         healthstate=Healthstate(
             name='alcohol_use_disorder_mild',
+            kind='healthstate',
             gbd_id=hsid(424),
         ),
     ),
@@ -4426,6 +4867,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1969),
         healthstate=Healthstate(
             name='alcohol_use_disorder_moderate',
+            kind='healthstate',
             gbd_id=hsid(425),
         ),
     ),
@@ -4436,6 +4878,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1970),
         healthstate=Healthstate(
             name='alcohol_use_disorder_severe',
+            kind='healthstate',
             gbd_id=hsid(426),
         ),
     ),
@@ -4446,6 +4889,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9970),
         healthstate=Healthstate(
             name='fetal_alcohol_syndrome_mild',
+            kind='healthstate',
             gbd_id=hsid(427),
         ),
     ),
@@ -4456,6 +4900,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3905),
         healthstate=Healthstate(
             name='fetal_alcohol_syndrome_moderate',
+            kind='healthstate',
             gbd_id=hsid(428),
         ),
     ),
@@ -4466,6 +4911,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3908),
         healthstate=Healthstate(
             name='fetal_alcohol_syndrome_severe',
+            kind='healthstate',
             gbd_id=hsid(429),
         ),
     ),
@@ -4476,6 +4922,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10720),
         healthstate=Healthstate(
             name='cocaine_dependence_mild',
+            kind='healthstate',
             gbd_id=hsid(580),
         ),
     ),
@@ -4486,6 +4933,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1982),
         healthstate=Healthstate(
             name='major_depressive_disorder_mild_episode',
+            kind='healthstate',
             gbd_id=hsid(437),
         ),
     ),
@@ -4496,6 +4944,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1983),
         healthstate=Healthstate(
             name='major_depressive_disorder_moderate_episode',
+            kind='healthstate',
             gbd_id=hsid(438),
         ),
     ),
@@ -4506,6 +4955,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1984),
         healthstate=Healthstate(
             name='major_depressive_disorder_severe_episode',
+            kind='healthstate',
             gbd_id=hsid(439),
         ),
     ),
@@ -4516,6 +4966,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1987),
         healthstate=Healthstate(
             name='bipolar_disorder_manic_episode',
+            kind='healthstate',
             gbd_id=hsid(440),
         ),
     ),
@@ -4526,6 +4977,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1988),
         healthstate=Healthstate(
             name='bipolar_disorder_residual_state',
+            kind='healthstate',
             gbd_id=hsid(441),
         ),
     ),
@@ -4536,6 +4988,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1990),
         healthstate=Healthstate(
             name='anxiety_disorders_mild',
+            kind='healthstate',
             gbd_id=hsid(434),
         ),
     ),
@@ -4546,6 +4999,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1991),
         healthstate=Healthstate(
             name='anxiety_disorders_moderate',
+            kind='healthstate',
             gbd_id=hsid(435),
         ),
     ),
@@ -4556,6 +5010,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1992),
         healthstate=Healthstate(
             name='anxiety_disorders_severe',
+            kind='healthstate',
             gbd_id=hsid(436),
         ),
     ),
@@ -4566,6 +5021,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1993),
         healthstate=Healthstate(
             name='anorexia_nervosa',
+            kind='healthstate',
             gbd_id=hsid(444),
         ),
     ),
@@ -4576,6 +5032,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1994),
         healthstate=Healthstate(
             name='bulimia_nervosa',
+            kind='healthstate',
             gbd_id=hsid(445),
         ),
     ),
@@ -4586,6 +5043,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1996),
         healthstate=Healthstate(
             name='asperger_syndrome',
+            kind='healthstate',
             gbd_id=hsid(448),
         ),
     ),
@@ -4596,6 +5054,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1999),
         healthstate=Healthstate(
             name='borderline_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(450),
         ),
     ),
@@ -4606,6 +5065,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2000),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_mild',
+            kind='healthstate',
             gbd_id=hsid(451),
         ),
     ),
@@ -4616,6 +5076,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2001),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_moderate',
+            kind='healthstate',
             gbd_id=hsid(452),
         ),
     ),
@@ -4626,6 +5087,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2002),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_severe',
+            kind='healthstate',
             gbd_id=hsid(453),
         ),
     ),
@@ -4636,6 +5098,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2003),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_profound',
+            kind='healthstate',
             gbd_id=hsid(454),
         ),
     ),
@@ -4646,6 +5109,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2004),
         healthstate=Healthstate(
             name='anxiety_disorders_mild',
+            kind='healthstate',
             gbd_id=hsid(434),
         ),
     ),
@@ -4656,6 +5120,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2006),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -4666,6 +5131,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2014),
         healthstate=Healthstate(
             name='distance_vision_moderate_impairment',
+            kind='healthstate',
             gbd_id=hsid(466),
         ),
     ),
@@ -4676,6 +5142,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2015),
         healthstate=Healthstate(
             name='distance_vision_severe_impairment',
+            kind='healthstate',
             gbd_id=hsid(467),
         ),
     ),
@@ -4686,6 +5153,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3914),
         healthstate=Healthstate(
             name='distance_vision_blindness',
+            kind='healthstate',
             gbd_id=hsid(468),
         ),
     ),
@@ -4696,6 +5164,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2017),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -4706,6 +5175,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2025),
         healthstate=Healthstate(
             name='end_stage_renal_disease_with_kidney_transplant',
+            kind='healthstate',
             gbd_id=hsid(392),
         ),
     ),
@@ -4716,6 +5186,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2026),
         healthstate=Healthstate(
             name='end_stage_renal_disease_on_dialysis',
+            kind='healthstate',
             gbd_id=hsid(393),
         ),
     ),
@@ -4726,6 +5197,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2033),
         healthstate=Healthstate(
             name='end_stage_renal_disease_with_kidney_transplant',
+            kind='healthstate',
             gbd_id=hsid(392),
         ),
     ),
@@ -4736,6 +5208,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2034),
         healthstate=Healthstate(
             name='end_stage_renal_disease_on_dialysis',
+            kind='healthstate',
             gbd_id=hsid(393),
         ),
     ),
@@ -4746,6 +5219,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2041),
         healthstate=Healthstate(
             name='end_stage_renal_disease_with_kidney_transplant',
+            kind='healthstate',
             gbd_id=hsid(392),
         ),
     ),
@@ -4756,6 +5230,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2042),
         healthstate=Healthstate(
             name='end_stage_renal_disease_on_dialysis',
+            kind='healthstate',
             gbd_id=hsid(393),
         ),
     ),
@@ -4766,6 +5241,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2049),
         healthstate=Healthstate(
             name='end_stage_renal_disease_with_kidney_transplant',
+            kind='healthstate',
             gbd_id=hsid(392),
         ),
     ),
@@ -4776,6 +5252,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2050),
         healthstate=Healthstate(
             name='end_stage_renal_disease_on_dialysis',
+            kind='healthstate',
             gbd_id=hsid(393),
         ),
     ),
@@ -4786,6 +5263,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2056),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_mild',
+            kind='healthstate',
             gbd_id=hsid(351),
         ),
     ),
@@ -4796,6 +5274,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2057),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -4806,6 +5285,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2061),
         healthstate=Healthstate(
             name='infertility_primary',
+            kind='healthstate',
             gbd_id=hsid(400),
         ),
     ),
@@ -4816,6 +5296,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2062),
         healthstate=Healthstate(
             name='infertility_secondary',
+            kind='healthstate',
             gbd_id=hsid(401),
         ),
     ),
@@ -4826,6 +5307,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2063),
         healthstate=Healthstate(
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
+            kind='healthstate',
             gbd_id=hsid(639),
         ),
     ),
@@ -4836,6 +5318,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2069),
         healthstate=Healthstate(
             name='infertility_primary',
+            kind='healthstate',
             gbd_id=hsid(400),
         ),
     ),
@@ -4846,6 +5329,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2071),
         healthstate=Healthstate(
             name='infertility_primary',
+            kind='healthstate',
             gbd_id=hsid(400),
         ),
     ),
@@ -4856,6 +5340,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2072),
         healthstate=Healthstate(
             name='infertility_secondary',
+            kind='healthstate',
             gbd_id=hsid(401),
         ),
     ),
@@ -4866,6 +5351,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9745),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -4876,6 +5362,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9746),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),
@@ -4886,6 +5373,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2076),
         healthstate=Healthstate(
             name='infertility_primary',
+            kind='healthstate',
             gbd_id=hsid(400),
         ),
     ),
@@ -4896,6 +5384,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2077),
         healthstate=Healthstate(
             name='infertility_secondary',
+            kind='healthstate',
             gbd_id=hsid(401),
         ),
     ),
@@ -4906,6 +5395,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2081),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -4916,6 +5406,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2082),
         healthstate=Healthstate(
             name='anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(547),
         ),
     ),
@@ -4926,6 +5417,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2083),
         healthstate=Healthstate(
             name='anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(548),
         ),
     ),
@@ -4936,6 +5428,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2084),
         healthstate=Healthstate(
             name='anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(549),
         ),
     ),
@@ -4946,6 +5439,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2094),
         healthstate=Healthstate(
             name='heart_failure_mild',
+            kind='healthstate',
             gbd_id=hsid(381),
         ),
     ),
@@ -4956,6 +5450,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2095),
         healthstate=Healthstate(
             name='heart_failure_moderate',
+            kind='healthstate',
             gbd_id=hsid(382),
         ),
     ),
@@ -4966,6 +5461,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2096),
         healthstate=Healthstate(
             name='heart_failure_severe',
+            kind='healthstate',
             gbd_id=hsid(383),
         ),
     ),
@@ -4976,6 +5472,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2119),
         healthstate=Healthstate(
             name='anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(547),
         ),
     ),
@@ -4986,6 +5483,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2120),
         healthstate=Healthstate(
             name='anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(548),
         ),
     ),
@@ -4996,6 +5494,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2121),
         healthstate=Healthstate(
             name='anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(549),
         ),
     ),
@@ -5006,6 +5505,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2122),
         healthstate=Healthstate(
             name='heart_failure_mild',
+            kind='healthstate',
             gbd_id=hsid(381),
         ),
     ),
@@ -5016,6 +5516,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2123),
         healthstate=Healthstate(
             name='heart_failure_moderate',
+            kind='healthstate',
             gbd_id=hsid(382),
         ),
     ),
@@ -5026,6 +5527,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2124),
         healthstate=Healthstate(
             name='heart_failure_severe',
+            kind='healthstate',
             gbd_id=hsid(383),
         ),
     ),
@@ -5036,6 +5538,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2131),
         healthstate=Healthstate(
             name='anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(547),
         ),
     ),
@@ -5046,6 +5549,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2132),
         healthstate=Healthstate(
             name='anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(548),
         ),
     ),
@@ -5056,6 +5560,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2133),
         healthstate=Healthstate(
             name='anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(549),
         ),
     ),
@@ -5066,6 +5571,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2134),
         healthstate=Healthstate(
             name='heart_failure_mild',
+            kind='healthstate',
             gbd_id=hsid(381),
         ),
     ),
@@ -5076,6 +5582,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2135),
         healthstate=Healthstate(
             name='heart_failure_moderate',
+            kind='healthstate',
             gbd_id=hsid(382),
         ),
     ),
@@ -5086,6 +5593,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2136),
         healthstate=Healthstate(
             name='heart_failure_severe',
+            kind='healthstate',
             gbd_id=hsid(383),
         ),
     ),
@@ -5096,6 +5604,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2138),
         healthstate=Healthstate(
             name='musculoskeletal_problems_upper_limbs_moderate',
+            kind='healthstate',
             gbd_id=hsid(482),
         ),
     ),
@@ -5106,6 +5615,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2139),
         healthstate=Healthstate(
             name='musculoskeletal_problems_generalized_moderate',
+            kind='healthstate',
             gbd_id=hsid(483),
         ),
     ),
@@ -5116,6 +5626,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2140),
         healthstate=Healthstate(
             name='musculoskeletal_problems_generalized_severe',
+            kind='healthstate',
             gbd_id=hsid(484),
         ),
     ),
@@ -5126,6 +5637,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2142),
         healthstate=Healthstate(
             name='musculoskeletal_problems_lower_limbs_mild',
+            kind='healthstate',
             gbd_id=hsid(478),
         ),
     ),
@@ -5136,6 +5648,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2143),
         healthstate=Healthstate(
             name='musculoskeletal_problems_lower_limbs_moderate',
+            kind='healthstate',
             gbd_id=hsid(479),
         ),
     ),
@@ -5146,6 +5659,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2144),
         healthstate=Healthstate(
             name='musculoskeletal_problems_lower_limbs_severe',
+            kind='healthstate',
             gbd_id=hsid(480),
         ),
     ),
@@ -5156,6 +5670,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2146),
         healthstate=Healthstate(
             name='musculoskeletal_problems_lower_limbs_mild',
+            kind='healthstate',
             gbd_id=hsid(478),
         ),
     ),
@@ -5166,6 +5681,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2147),
         healthstate=Healthstate(
             name='musculoskeletal_problems_lower_limbs_moderate',
+            kind='healthstate',
             gbd_id=hsid(479),
         ),
     ),
@@ -5176,6 +5692,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2148),
         healthstate=Healthstate(
             name='musculoskeletal_problems_lower_limbs_severe',
+            kind='healthstate',
             gbd_id=hsid(480),
         ),
     ),
@@ -5186,6 +5703,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2150),
         healthstate=Healthstate(
             name='back_pain_severe_with_leg_pain',
+            kind='healthstate',
             gbd_id=hsid(471),
         ),
     ),
@@ -5196,6 +5714,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2151),
         healthstate=Healthstate(
             name='back_pain_severe_without_leg_pain',
+            kind='healthstate',
             gbd_id=hsid(470),
         ),
     ),
@@ -5206,6 +5725,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2152),
         healthstate=Healthstate(
             name='back_pain_most_severe_with_leg_pain',
+            kind='healthstate',
             gbd_id=hsid(473),
         ),
     ),
@@ -5216,6 +5736,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2153),
         healthstate=Healthstate(
             name='back_pain_most_severe_without_leg_pain',
+            kind='healthstate',
             gbd_id=hsid(472),
         ),
     ),
@@ -5226,6 +5747,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2155),
         healthstate=Healthstate(
             name='neck_pain_mild',
+            kind='healthstate',
             gbd_id=hsid(474),
         ),
     ),
@@ -5236,6 +5758,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2156),
         healthstate=Healthstate(
             name='neck_pain_severe',
+            kind='healthstate',
             gbd_id=hsid(475),
         ),
     ),
@@ -5246,6 +5769,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2157),
         healthstate=Healthstate(
             name='neck_pain_moderate',
+            kind='healthstate',
             gbd_id=hsid(476),
         ),
     ),
@@ -5256,6 +5780,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2158),
         healthstate=Healthstate(
             name='neck_pain_most_severe',
+            kind='healthstate',
             gbd_id=hsid(477),
         ),
     ),
@@ -5266,6 +5791,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2160),
         healthstate=Healthstate(
             name='musculoskeletal_problems_generalized_severe',
+            kind='healthstate',
             gbd_id=hsid(484),
         ),
     ),
@@ -5276,6 +5802,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2162),
         healthstate=Healthstate(
             name='musculoskeletal_problems_upper_limbs_mild',
+            kind='healthstate',
             gbd_id=hsid(481),
         ),
     ),
@@ -5286,6 +5813,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2163),
         healthstate=Healthstate(
             name='musculoskeletal_problems_upper_limbs_moderate',
+            kind='healthstate',
             gbd_id=hsid(482),
         ),
     ),
@@ -5296,6 +5824,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2164),
         healthstate=Healthstate(
             name='musculoskeletal_problems_generalized_moderate',
+            kind='healthstate',
             gbd_id=hsid(483),
         ),
     ),
@@ -5306,6 +5835,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2165),
         healthstate=Healthstate(
             name='musculoskeletal_problems_generalized_severe',
+            kind='healthstate',
             gbd_id=hsid(484),
         ),
     ),
@@ -5316,6 +5846,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2166),
         healthstate=Healthstate(
             name='musculoskeletal_problems_lower_limbs_mild',
+            kind='healthstate',
             gbd_id=hsid(478),
         ),
     ),
@@ -5326,6 +5857,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2167),
         healthstate=Healthstate(
             name='musculoskeletal_problems_lower_limbs_severe',
+            kind='healthstate',
             gbd_id=hsid(480),
         ),
     ),
@@ -5336,6 +5868,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2207),
         healthstate=Healthstate(
             name='congenital_heart_disease',
+            kind='healthstate',
             gbd_id=hsid(574),
         ),
     ),
@@ -5346,6 +5879,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2208),
         healthstate=Healthstate(
             name='infertility_primary',
+            kind='healthstate',
             gbd_id=hsid(400),
         ),
     ),
@@ -5356,6 +5890,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2213),
         healthstate=Healthstate(
             name='borderline_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(450),
         ),
     ),
@@ -5366,6 +5901,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2214),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_mild',
+            kind='healthstate',
             gbd_id=hsid(451),
         ),
     ),
@@ -5376,6 +5912,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2218),
         healthstate=Healthstate(
             name='mild_intellectual_disability_with_primary_infertility',
+            kind='healthstate',
             gbd_id=hsid(774),
         ),
     ),
@@ -5386,6 +5923,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2235),
         healthstate=Healthstate(
             name='hearing_loss_mild',
+            kind='healthstate',
             gbd_id=hsid(455),
         ),
     ),
@@ -5396,6 +5934,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2236),
         healthstate=Healthstate(
             name='hearing_loss_mild_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(460),
         ),
     ),
@@ -5406,6 +5945,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2237),
         healthstate=Healthstate(
             name='hearing_loss_moderate',
+            kind='healthstate',
             gbd_id=hsid(456),
         ),
     ),
@@ -5416,6 +5956,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2238),
         healthstate=Healthstate(
             name='hearing_loss_moderate_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(461),
         ),
     ),
@@ -5426,6 +5967,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2239),
         healthstate=Healthstate(
             name='hearing_loss_severe_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(462),
         ),
     ),
@@ -5436,6 +5978,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2240),
         healthstate=Healthstate(
             name='hearing_loss_severe',
+            kind='healthstate',
             gbd_id=hsid(457),
         ),
     ),
@@ -5446,6 +5989,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2241),
         healthstate=Healthstate(
             name='hearing_loss_complete',
+            kind='healthstate',
             gbd_id=hsid(459),
         ),
     ),
@@ -5456,6 +6000,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2242),
         healthstate=Healthstate(
             name='hearing_loss_complete_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(464),
         ),
     ),
@@ -5466,6 +6011,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2243),
         healthstate=Healthstate(
             name='hearing_loss_moderately_severe',
+            kind='healthstate',
             gbd_id=hsid(575),
         ),
     ),
@@ -5476,6 +6022,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2244),
         healthstate=Healthstate(
             name='hearing_loss_moderately_severe_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(576),
         ),
     ),
@@ -5486,6 +6033,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2245),
         healthstate=Healthstate(
             name='hearing_loss_profound',
+            kind='healthstate',
             gbd_id=hsid(458),
         ),
     ),
@@ -5496,6 +6044,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2246),
         healthstate=Healthstate(
             name='hearing_loss_profound_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(463),
         ),
     ),
@@ -5506,6 +6055,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2248),
         healthstate=Healthstate(
             name='disfigurement_level_1_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(556),
         ),
     ),
@@ -5516,6 +6066,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2249),
         healthstate=Healthstate(
             name='disfigurement_level_2_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(557),
         ),
     ),
@@ -5526,6 +6077,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2250),
         healthstate=Healthstate(
             name='disfigurement_level_3_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(558),
         ),
     ),
@@ -5536,6 +6088,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2252),
         healthstate=Healthstate(
             name='disfigurement_level_1_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(556),
         ),
     ),
@@ -5546,6 +6099,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2253),
         healthstate=Healthstate(
             name='disfigurement_level_2_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(557),
         ),
     ),
@@ -5556,6 +6110,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2254),
         healthstate=Healthstate(
             name='disfigurement_level_3_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(558),
         ),
     ),
@@ -5566,6 +6121,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2258),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_mild',
+            kind='healthstate',
             gbd_id=hsid(351),
         ),
     ),
@@ -5576,6 +6132,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2261),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_mild',
+            kind='healthstate',
             gbd_id=hsid(351),
         ),
     ),
@@ -5586,6 +6143,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2262),
         healthstate=Healthstate(
             name='disfigurement_level_1_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(556),
         ),
     ),
@@ -5596,6 +6154,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2265),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_mild',
+            kind='healthstate',
             gbd_id=hsid(351),
         ),
     ),
@@ -5606,6 +6165,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2270),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_mild',
+            kind='healthstate',
             gbd_id=hsid(351),
         ),
     ),
@@ -5616,6 +6176,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2272),
         healthstate=Healthstate(
             name='disfigurement_level_2',
+            kind='healthstate',
             gbd_id=hsid(554),
         ),
     ),
@@ -5626,6 +6187,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2277),
         healthstate=Healthstate(
             name='disfigurement_level_1',
+            kind='healthstate',
             gbd_id=hsid(553),
         ),
     ),
@@ -5636,6 +6198,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2278),
         healthstate=Healthstate(
             name='disfigurement_level_2',
+            kind='healthstate',
             gbd_id=hsid(554),
         ),
     ),
@@ -5646,6 +6209,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2280),
         healthstate=Healthstate(
             name='disfigurement_level_1',
+            kind='healthstate',
             gbd_id=hsid(553),
         ),
     ),
@@ -5656,6 +6220,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2284),
         healthstate=Healthstate(
             name='disfigurement_level_1_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(556),
         ),
     ),
@@ -5666,6 +6231,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2285),
         healthstate=Healthstate(
             name='disfigurement_level_2_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(557),
         ),
     ),
@@ -5676,6 +6242,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2287),
         healthstate=Healthstate(
             name='disfigurement_level_1_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(556),
         ),
     ),
@@ -5686,6 +6253,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2288),
         healthstate=Healthstate(
             name='disfigurement_level_2_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(557),
         ),
     ),
@@ -5696,6 +6264,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2289),
         healthstate=Healthstate(
             name='disfigurement_level_3_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(558),
         ),
     ),
@@ -5706,6 +6275,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2292),
         healthstate=Healthstate(
             name='distance_vision_moderate_impairment',
+            kind='healthstate',
             gbd_id=hsid(466),
         ),
     ),
@@ -5716,6 +6286,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2293),
         healthstate=Healthstate(
             name='distance_vision_severe_impairment',
+            kind='healthstate',
             gbd_id=hsid(467),
         ),
     ),
@@ -5726,6 +6297,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3917),
         healthstate=Healthstate(
             name='distance_vision_blindness',
+            kind='healthstate',
             gbd_id=hsid(468),
         ),
     ),
@@ -5736,6 +6308,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2297),
         healthstate=Healthstate(
             name='distance_vision_moderate_impairment',
+            kind='healthstate',
             gbd_id=hsid(466),
         ),
     ),
@@ -5746,6 +6319,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2298),
         healthstate=Healthstate(
             name='distance_vision_severe_impairment',
+            kind='healthstate',
             gbd_id=hsid(467),
         ),
     ),
@@ -5756,6 +6330,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3920),
         healthstate=Healthstate(
             name='distance_vision_blindness',
+            kind='healthstate',
             gbd_id=hsid(468),
         ),
     ),
@@ -5766,6 +6341,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2302),
         healthstate=Healthstate(
             name='distance_vision_moderate_impairment',
+            kind='healthstate',
             gbd_id=hsid(466),
         ),
     ),
@@ -5776,6 +6352,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2303),
         healthstate=Healthstate(
             name='distance_vision_severe_impairment',
+            kind='healthstate',
             gbd_id=hsid(467),
         ),
     ),
@@ -5786,6 +6363,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3923),
         healthstate=Healthstate(
             name='distance_vision_blindness',
+            kind='healthstate',
             gbd_id=hsid(468),
         ),
     ),
@@ -5796,6 +6374,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2307),
         healthstate=Healthstate(
             name='distance_vision_moderate_impairment',
+            kind='healthstate',
             gbd_id=hsid(466),
         ),
     ),
@@ -5806,6 +6385,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2308),
         healthstate=Healthstate(
             name='distance_vision_severe_impairment',
+            kind='healthstate',
             gbd_id=hsid(467),
         ),
     ),
@@ -5816,6 +6396,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2310),
         healthstate=Healthstate(
             name='distance_vision_blindness',
+            kind='healthstate',
             gbd_id=hsid(468),
         ),
     ),
@@ -5826,6 +6407,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2312),
         healthstate=Healthstate(
             name='hearing_loss_mild',
+            kind='healthstate',
             gbd_id=hsid(455),
         ),
     ),
@@ -5836,6 +6418,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2313),
         healthstate=Healthstate(
             name='hearing_loss_mild_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(460),
         ),
     ),
@@ -5846,6 +6429,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2314),
         healthstate=Healthstate(
             name='hearing_loss_moderate',
+            kind='healthstate',
             gbd_id=hsid(456),
         ),
     ),
@@ -5856,6 +6440,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2315),
         healthstate=Healthstate(
             name='hearing_loss_moderate_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(461),
         ),
     ),
@@ -5866,6 +6451,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2316),
         healthstate=Healthstate(
             name='hearing_loss_moderately_severe',
+            kind='healthstate',
             gbd_id=hsid(575),
         ),
     ),
@@ -5876,6 +6462,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2317),
         healthstate=Healthstate(
             name='hearing_loss_moderately_severe_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(576),
         ),
     ),
@@ -5886,6 +6473,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2318),
         healthstate=Healthstate(
             name='hearing_loss_severe_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(462),
         ),
     ),
@@ -5896,6 +6484,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2319),
         healthstate=Healthstate(
             name='hearing_loss_severe',
+            kind='healthstate',
             gbd_id=hsid(457),
         ),
     ),
@@ -5906,6 +6495,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2320),
         healthstate=Healthstate(
             name='hearing_loss_profound',
+            kind='healthstate',
             gbd_id=hsid(458),
         ),
     ),
@@ -5916,6 +6506,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2321),
         healthstate=Healthstate(
             name='hearing_loss_profound_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(463),
         ),
     ),
@@ -5926,6 +6517,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2322),
         healthstate=Healthstate(
             name='hearing_loss_complete',
+            kind='healthstate',
             gbd_id=hsid(459),
         ),
     ),
@@ -5936,6 +6528,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2323),
         healthstate=Healthstate(
             name='hearing_loss_complete_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(464),
         ),
     ),
@@ -5946,6 +6539,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2324),
         healthstate=Healthstate(
             name='presbyopia',
+            kind='healthstate',
             gbd_id=hsid(469),
         ),
     ),
@@ -5956,6 +6550,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2326),
         healthstate=Healthstate(
             name='distance_vision_moderate_impairment',
+            kind='healthstate',
             gbd_id=hsid(466),
         ),
     ),
@@ -5966,6 +6561,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2327),
         healthstate=Healthstate(
             name='distance_vision_severe_impairment',
+            kind='healthstate',
             gbd_id=hsid(467),
         ),
     ),
@@ -5976,6 +6572,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3926),
         healthstate=Healthstate(
             name='distance_vision_blindness',
+            kind='healthstate',
             gbd_id=hsid(468),
         ),
     ),
@@ -5986,6 +6583,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2466),
         healthstate=Healthstate(
             name='distance_vision_monocular',
+            kind='healthstate',
             gbd_id=hsid(704),
         ),
     ),
@@ -5996,6 +6594,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2467),
         healthstate=Healthstate(
             name='distance_vision_monocular',
+            kind='healthstate',
             gbd_id=hsid(704),
         ),
     ),
@@ -6006,6 +6605,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2468),
         healthstate=Healthstate(
             name='distance_vision_monocular',
+            kind='healthstate',
             gbd_id=hsid(704),
         ),
     ),
@@ -6016,6 +6616,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2469),
         healthstate=Healthstate(
             name='distance_vision_monocular',
+            kind='healthstate',
             gbd_id=hsid(704),
         ),
     ),
@@ -6026,6 +6627,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2474),
         healthstate=Healthstate(
             name='major_depressive_disorder_moderate_episode',
+            kind='healthstate',
             gbd_id=hsid(438),
         ),
     ),
@@ -6036,6 +6638,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2485),
         healthstate=Healthstate(
             name='anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(547),
         ),
     ),
@@ -6046,6 +6649,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2486),
         healthstate=Healthstate(
             name='anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(548),
         ),
     ),
@@ -6056,6 +6660,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2487),
         healthstate=Healthstate(
             name='anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(549),
         ),
     ),
@@ -6066,6 +6671,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2489),
         healthstate=Healthstate(
             name='anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(547),
         ),
     ),
@@ -6076,6 +6682,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2490),
         healthstate=Healthstate(
             name='anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(548),
         ),
     ),
@@ -6086,6 +6693,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2491),
         healthstate=Healthstate(
             name='anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(549),
         ),
     ),
@@ -6096,6 +6704,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2502),
         healthstate=Healthstate(
             name='anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(547),
         ),
     ),
@@ -6106,6 +6715,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2503),
         healthstate=Healthstate(
             name='anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(548),
         ),
     ),
@@ -6116,6 +6726,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2504),
         healthstate=Healthstate(
             name='anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(549),
         ),
     ),
@@ -6126,6 +6737,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2506),
         healthstate=Healthstate(
             name='anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(547),
         ),
     ),
@@ -6136,6 +6748,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2507),
         healthstate=Healthstate(
             name='anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(548),
         ),
     ),
@@ -6146,6 +6759,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2508),
         healthstate=Healthstate(
             name='anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(549),
         ),
     ),
@@ -6156,6 +6770,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2514),
         healthstate=Healthstate(
             name='disfigurement_level_1',
+            kind='healthstate',
             gbd_id=hsid(553),
         ),
     ),
@@ -6166,6 +6781,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2515),
         healthstate=Healthstate(
             name='disfigurement_level_2_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(557),
         ),
     ),
@@ -6176,6 +6792,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2575),
         healthstate=Healthstate(
             name='disfigurement_level_1_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(556),
         ),
     ),
@@ -6186,6 +6803,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2576),
         healthstate=Healthstate(
             name='disfigurement_level_2_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(557),
         ),
     ),
@@ -6196,6 +6814,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2579),
         healthstate=Healthstate(
             name='disfigurement_level_1_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(556),
         ),
     ),
@@ -6206,6 +6825,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2582),
         healthstate=Healthstate(
             name='dental_caries_symptomatic',
+            kind='healthstate',
             gbd_id=hsid(551),
         ),
     ),
@@ -6216,6 +6836,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2583),
         healthstate=Healthstate(
             name='dental_caries_symptomatic',
+            kind='healthstate',
             gbd_id=hsid(551),
         ),
     ),
@@ -6226,6 +6847,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2584),
         healthstate=Healthstate(
             name='severe_tooth_loss',
+            kind='healthstate',
             gbd_id=hsid(552),
         ),
     ),
@@ -6236,6 +6858,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2608),
         healthstate=Healthstate(
             name='diarrhea_mild',
+            kind='healthstate',
             gbd_id=hsid(355),
         ),
     ),
@@ -6246,6 +6869,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2609),
         healthstate=Healthstate(
             name='diarrhea_moderate',
+            kind='healthstate',
             gbd_id=hsid(356),
         ),
     ),
@@ -6256,6 +6880,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2610),
         healthstate=Healthstate(
             name='diarrhea_severe',
+            kind='healthstate',
             gbd_id=hsid(357),
         ),
     ),
@@ -6266,6 +6891,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2611),
         healthstate=Healthstate(
             name='spinal_cord_lesion_below_neck_level_treated',
+            kind='healthstate',
             gbd_id=hsid(540),
         ),
     ),
@@ -6276,6 +6902,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2613),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -6286,6 +6913,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2614),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -6296,6 +6924,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2615),
         healthstate=Healthstate(
             name='spinal_cord_lesion_below_neck_level_treated',
+            kind='healthstate',
             gbd_id=hsid(540),
         ),
     ),
@@ -6306,6 +6935,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2616),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_mild',
+            kind='healthstate',
             gbd_id=hsid(351),
         ),
     ),
@@ -6316,6 +6946,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2620),
         healthstate=Healthstate(
             name='disfigurement_level_1',
+            kind='healthstate',
             gbd_id=hsid(553),
         ),
     ),
@@ -6326,6 +6957,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2621),
         healthstate=Healthstate(
             name='disfigurement_level_3',
+            kind='healthstate',
             gbd_id=hsid(555),
         ),
     ),
@@ -6336,6 +6968,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2624),
         healthstate=Healthstate(
             name='infertility_secondary',
+            kind='healthstate',
             gbd_id=hsid(401),
         ),
     ),
@@ -6346,6 +6979,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2625),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -6356,6 +6990,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2627),
         healthstate=Healthstate(
             name='tension_type_headaches_mild_motor_plus_cognitive_impairment',
+            kind='healthstate',
             gbd_id=hsid(825),
         ),
     ),
@@ -6366,6 +7001,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2643),
         healthstate=Healthstate(
             name='alcohol_use_disorder_very_mild',
+            kind='healthstate',
             gbd_id=hsid(747),
         ),
     ),
@@ -6376,6 +7012,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2644),
         healthstate=Healthstate(
             name='amphetamine_dependence_mild',
+            kind='healthstate',
             gbd_id=hsid(583),
         ),
     ),
@@ -6386,6 +7023,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2645),
         healthstate=Healthstate(
             name='anxiety_disorders_moderate',
+            kind='healthstate',
             gbd_id=hsid(435),
         ),
     ),
@@ -6396,6 +7034,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2646),
         healthstate=Healthstate(
             name='anxiety_disorders_severe',
+            kind='healthstate',
             gbd_id=hsid(436),
         ),
     ),
@@ -6406,6 +7045,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2647),
         healthstate=Healthstate(
             name='mild_low_back_pain_with_leg_pain',
+            kind='healthstate',
             gbd_id=hsid(764),
         ),
     ),
@@ -6416,6 +7056,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2648),
         healthstate=Healthstate(
             name='low_back_pain_mild',
+            kind='healthstate',
             gbd_id=hsid(748),
         ),
     ),
@@ -6426,6 +7067,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2649),
         healthstate=Healthstate(
             name='moderate_low_back_pain_with_leg_pain',
+            kind='healthstate',
             gbd_id=hsid(765),
         ),
     ),
@@ -6436,6 +7078,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2650),
         healthstate=Healthstate(
             name='low_back_pain_moderate',
+            kind='healthstate',
             gbd_id=hsid(749),
         ),
     ),
@@ -6446,6 +7089,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2651),
         healthstate=Healthstate(
             name='cannabis_dependence_mild',
+            kind='healthstate',
             gbd_id=hsid(586),
         ),
     ),
@@ -6456,6 +7100,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2652),
         healthstate=Healthstate(
             name='cocaine_dependence_mild',
+            kind='healthstate',
             gbd_id=hsid(580),
         ),
     ),
@@ -6466,6 +7111,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2653),
         healthstate=Healthstate(
             name='congenital_heart_disease_with_primary_infertility',
+            kind='healthstate',
             gbd_id=hsid(787),
         ),
     ),
@@ -6476,6 +7122,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3605),
         healthstate=Healthstate(
             name='epilepsy',
+            kind='healthstate',
             gbd_id=hsid(772),
         ),
     ),
@@ -6486,6 +7133,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2658),
         healthstate=Healthstate(
             name='heroin_and_other_opioid_dependence_mild',
+            kind='healthstate',
             gbd_id=hsid(577),
         ),
     ),
@@ -6496,6 +7144,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2659),
         healthstate=Healthstate(
             name='borderline_intellectual_disability_with_primary_infertility',
+            kind='healthstate',
             gbd_id=hsid(788),
         ),
     ),
@@ -6506,6 +7155,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2676),
         healthstate=Healthstate(
             name='major_depressive_disorder_mild_episode',
+            kind='healthstate',
             gbd_id=hsid(437),
         ),
     ),
@@ -6516,6 +7166,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3854),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(778),
         ),
     ),
@@ -6526,6 +7177,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3722),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(778),
         ),
     ),
@@ -6536,6 +7188,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3680),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(778),
         ),
     ),
@@ -6546,6 +7199,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3764),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(778),
         ),
     ),
@@ -6556,6 +7210,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3812),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(778),
         ),
     ),
@@ -6566,6 +7221,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3530),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(778),
         ),
     ),
@@ -6576,6 +7232,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3770),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(780),
         ),
     ),
@@ -6586,6 +7243,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3686),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(780),
         ),
     ),
@@ -6596,6 +7254,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3728),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(780),
         ),
     ),
@@ -6606,6 +7265,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3536),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(780),
         ),
     ),
@@ -6616,6 +7276,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3860),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(780),
         ),
     ),
@@ -6626,6 +7287,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3818),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(780),
         ),
     ),
@@ -6636,6 +7298,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3767),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(779),
         ),
     ),
@@ -6646,6 +7309,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3533),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(779),
         ),
     ),
@@ -6656,6 +7320,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3857),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(779),
         ),
     ),
@@ -6666,6 +7331,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3815),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(779),
         ),
     ),
@@ -6676,6 +7342,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3683),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(779),
         ),
     ),
@@ -6686,6 +7353,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3725),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(779),
         ),
     ),
@@ -6696,6 +7364,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3551),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(784),
         ),
     ),
@@ -6706,6 +7375,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3743),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(784),
         ),
     ),
@@ -6716,6 +7386,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3785),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(784),
         ),
     ),
@@ -6726,6 +7397,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3875),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(784),
         ),
     ),
@@ -6736,6 +7408,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3833),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(784),
         ),
     ),
@@ -6746,6 +7419,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3701),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(784),
         ),
     ),
@@ -6756,6 +7430,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3749),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(786),
         ),
     ),
@@ -6766,6 +7441,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3707),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(786),
         ),
     ),
@@ -6776,6 +7452,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3881),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(786),
         ),
     ),
@@ -6786,6 +7463,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3839),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(786),
         ),
     ),
@@ -6796,6 +7474,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3791),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(786),
         ),
     ),
@@ -6806,6 +7485,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3557),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(786),
         ),
     ),
@@ -6816,6 +7496,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3704),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(785),
         ),
     ),
@@ -6826,6 +7507,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3836),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(785),
         ),
     ),
@@ -6836,6 +7518,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3878),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(785),
         ),
     ),
@@ -6846,6 +7529,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3788),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(785),
         ),
     ),
@@ -6856,6 +7540,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3746),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(785),
         ),
     ),
@@ -6866,6 +7551,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3554),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(785),
         ),
     ),
@@ -6876,6 +7562,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3518),
         healthstate=Healthstate(
             name='motor_impairment_moderate',
+            kind='healthstate',
             gbd_id=hsid(566),
         ),
     ),
@@ -6886,6 +7573,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3842),
         healthstate=Healthstate(
             name='motor_impairment_moderate',
+            kind='healthstate',
             gbd_id=hsid(566),
         ),
     ),
@@ -6896,6 +7584,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3710),
         healthstate=Healthstate(
             name='motor_impairment_moderate',
+            kind='healthstate',
             gbd_id=hsid(566),
         ),
     ),
@@ -6906,6 +7595,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3800),
         healthstate=Healthstate(
             name='motor_impairment_moderate',
+            kind='healthstate',
             gbd_id=hsid(566),
         ),
     ),
@@ -6916,6 +7606,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3668),
         healthstate=Healthstate(
             name='motor_impairment_moderate',
+            kind='healthstate',
             gbd_id=hsid(566),
         ),
     ),
@@ -6926,6 +7617,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3752),
         healthstate=Healthstate(
             name='motor_impairment_moderate',
+            kind='healthstate',
             gbd_id=hsid(566),
         ),
     ),
@@ -6936,6 +7628,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3671),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(775),
         ),
     ),
@@ -6946,6 +7639,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3713),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(775),
         ),
     ),
@@ -6956,6 +7650,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3755),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(775),
         ),
     ),
@@ -6966,6 +7661,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3521),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(775),
         ),
     ),
@@ -6976,6 +7672,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3803),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(775),
         ),
     ),
@@ -6986,6 +7683,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3845),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(775),
         ),
     ),
@@ -6996,6 +7694,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3851),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(777),
         ),
     ),
@@ -7006,6 +7705,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3809),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(777),
         ),
     ),
@@ -7016,6 +7716,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3761),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(777),
         ),
     ),
@@ -7026,6 +7727,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3719),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(777),
         ),
     ),
@@ -7036,6 +7738,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3677),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(777),
         ),
     ),
@@ -7046,6 +7749,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3527),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(777),
         ),
     ),
@@ -7056,6 +7760,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3758),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(776),
         ),
     ),
@@ -7066,6 +7771,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3524),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(776),
         ),
     ),
@@ -7076,6 +7782,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3716),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(776),
         ),
     ),
@@ -7086,6 +7793,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3806),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(776),
         ),
     ),
@@ -7096,6 +7804,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3674),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(776),
         ),
     ),
@@ -7106,6 +7815,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3848),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(776),
         ),
     ),
@@ -7116,6 +7826,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3821),
         healthstate=Healthstate(
             name='motor_impairment_severe',
+            kind='healthstate',
             gbd_id=hsid(567),
         ),
     ),
@@ -7126,6 +7837,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3863),
         healthstate=Healthstate(
             name='motor_impairment_severe',
+            kind='healthstate',
             gbd_id=hsid(567),
         ),
     ),
@@ -7136,6 +7848,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3689),
         healthstate=Healthstate(
             name='motor_impairment_severe',
+            kind='healthstate',
             gbd_id=hsid(567),
         ),
     ),
@@ -7146,6 +7859,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3773),
         healthstate=Healthstate(
             name='motor_impairment_severe',
+            kind='healthstate',
             gbd_id=hsid(567),
         ),
     ),
@@ -7156,6 +7870,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3731),
         healthstate=Healthstate(
             name='motor_impairment_severe',
+            kind='healthstate',
             gbd_id=hsid(567),
         ),
     ),
@@ -7166,6 +7881,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3539),
         healthstate=Healthstate(
             name='motor_impairment_severe',
+            kind='healthstate',
             gbd_id=hsid(567),
         ),
     ),
@@ -7176,6 +7892,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3734),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(781),
         ),
     ),
@@ -7186,6 +7903,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3542),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(781),
         ),
     ),
@@ -7196,6 +7914,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3866),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(781),
         ),
     ),
@@ -7206,6 +7925,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3692),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(781),
         ),
     ),
@@ -7216,6 +7936,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3776),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(781),
         ),
     ),
@@ -7226,6 +7947,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3824),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(781),
         ),
     ),
@@ -7236,6 +7958,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3548),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(783),
         ),
     ),
@@ -7246,6 +7969,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3698),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(783),
         ),
     ),
@@ -7256,6 +7980,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3740),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(783),
         ),
     ),
@@ -7266,6 +7991,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3872),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(783),
         ),
     ),
@@ -7276,6 +8002,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3782),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(783),
         ),
     ),
@@ -7286,6 +8013,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3830),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(783),
         ),
     ),
@@ -7296,6 +8024,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3827),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(782),
         ),
     ),
@@ -7306,6 +8035,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3779),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(782),
         ),
     ),
@@ -7316,6 +8046,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3545),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(782),
         ),
     ),
@@ -7326,6 +8057,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3695),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(782),
         ),
     ),
@@ -7336,6 +8068,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3737),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(782),
         ),
     ),
@@ -7346,6 +8079,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3869),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(782),
         ),
     ),
@@ -7356,6 +8090,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3512),
         healthstate=Healthstate(
             name='motor_impairment_mild',
+            kind='healthstate',
             gbd_id=hsid(565),
         ),
     ),
@@ -7366,6 +8101,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3515),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_mild',
+            kind='healthstate',
             gbd_id=hsid(568),
         ),
     ),
@@ -7376,6 +8112,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3608),
         healthstate=Healthstate(
             name='epilepsy',
+            kind='healthstate',
             gbd_id=hsid(772),
         ),
     ),
@@ -7386,6 +8123,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2799),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_mild',
+            kind='healthstate',
             gbd_id=hsid(351),
         ),
     ),
@@ -7396,6 +8134,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2800),
         healthstate=Healthstate(
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
+            kind='healthstate',
             gbd_id=hsid(639),
         ),
     ),
@@ -7406,6 +8145,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2810),
         healthstate=Healthstate(
             name='attention_deficit_hyperactivity_disorder',
+            kind='healthstate',
             gbd_id=hsid(446),
         ),
     ),
@@ -7416,6 +8156,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3482),
         healthstate=Healthstate(
             name='motor_impairment_mild',
+            kind='healthstate',
             gbd_id=hsid(565),
         ),
     ),
@@ -7426,6 +8167,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3485),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_mild',
+            kind='healthstate',
             gbd_id=hsid(568),
         ),
     ),
@@ -7436,6 +8178,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3488),
         healthstate=Healthstate(
             name='borderline_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(450),
         ),
     ),
@@ -7446,6 +8189,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2814),
         healthstate=Healthstate(
             name='distance_vision_monocular',
+            kind='healthstate',
             gbd_id=hsid(704),
         ),
     ),
@@ -7456,6 +8200,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3491),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_mild',
+            kind='healthstate',
             gbd_id=hsid(451),
         ),
     ),
@@ -7466,6 +8211,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3494),
         healthstate=Healthstate(
             name='motor_impairment_moderate',
+            kind='healthstate',
             gbd_id=hsid(566),
         ),
     ),
@@ -7476,6 +8222,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3497),
         healthstate=Healthstate(
             name='motor_impairment_severe',
+            kind='healthstate',
             gbd_id=hsid(567),
         ),
     ),
@@ -7486,6 +8233,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3500),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_moderate',
+            kind='healthstate',
             gbd_id=hsid(569),
         ),
     ),
@@ -7496,6 +8244,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3503),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_severe',
+            kind='healthstate',
             gbd_id=hsid(570),
         ),
     ),
@@ -7506,6 +8255,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3506),
         healthstate=Healthstate(
             name='epilepsy',
+            kind='healthstate',
             gbd_id=hsid(772),
         ),
     ),
@@ -7516,6 +8266,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2827),
         healthstate=Healthstate(
             name='heroin_and_other_opioid_dependence',
+            kind='healthstate',
             gbd_id=hsid(433),
         ),
     ),
@@ -7526,6 +8277,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2828),
         healthstate=Healthstate(
             name='cocaine_dependence',
+            kind='healthstate',
             gbd_id=hsid(432),
         ),
     ),
@@ -7536,6 +8288,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2829),
         healthstate=Healthstate(
             name='amphetamine_dependence',
+            kind='healthstate',
             gbd_id=hsid(431),
         ),
     ),
@@ -7546,6 +8299,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2830),
         healthstate=Healthstate(
             name='cannabis_dependence',
+            kind='healthstate',
             gbd_id=hsid(430),
         ),
     ),
@@ -7556,6 +8310,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2831),
         healthstate=Healthstate(
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
+            kind='healthstate',
             gbd_id=hsid(639),
         ),
     ),
@@ -7566,6 +8321,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2837),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -7576,6 +8332,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2852),
         healthstate=Healthstate(
             name='attention_deficit_hyperactivity_disorder',
+            kind='healthstate',
             gbd_id=hsid(446),
         ),
     ),
@@ -7586,6 +8343,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2853),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -7596,6 +8354,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2854),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -7606,6 +8365,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2855),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -7616,6 +8376,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2856),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -7626,6 +8387,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2857),
         healthstate=Healthstate(
             name='conduct_disorder',
+            kind='healthstate',
             gbd_id=hsid(447),
         ),
     ),
@@ -7636,6 +8398,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2858),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -7646,6 +8409,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2859),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -7656,6 +8420,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2860),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -7666,6 +8431,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2861),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -7676,6 +8442,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2862),
         healthstate=Healthstate(
             name='major_depressive_disorder_mild_episode',
+            kind='healthstate',
             gbd_id=hsid(437),
         ),
     ),
@@ -7686,6 +8453,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2863),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -7696,6 +8464,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2864),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -7706,6 +8475,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2865),
         healthstate=Healthstate(
             name='gout_acute',
+            kind='healthstate',
             gbd_id=hsid(485),
         ),
     ),
@@ -7716,6 +8486,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2866),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -7726,6 +8497,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2867),
         healthstate=Healthstate(
             name='headache_migraine',
+            kind='healthstate',
             gbd_id=hsid(411),
         ),
     ),
@@ -7736,6 +8508,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2868),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -7746,6 +8519,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2869),
         healthstate=Healthstate(
             name='headache_tension_type',
+            kind='healthstate',
             gbd_id=hsid(412),
         ),
     ),
@@ -7756,6 +8530,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2870),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -7766,6 +8541,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2871),
         healthstate=Healthstate(
             name='ear_pain',
+            kind='healthstate',
             gbd_id=hsid(365),
         ),
     ),
@@ -7776,6 +8552,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2873),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -7786,6 +8563,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2888),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -7796,6 +8574,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9744),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -7806,6 +8585,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2890),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -7816,6 +8596,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2891),
         healthstate=Healthstate(
             name='decompensated_cirrhosis_of_the_liver',
+            kind='healthstate',
             gbd_id=hsid(394),
         ),
     ),
@@ -7826,6 +8607,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2892),
         healthstate=Healthstate(
             name='decompensated_cirrhosis_of_the_liver',
+            kind='healthstate',
             gbd_id=hsid(394),
         ),
     ),
@@ -7836,6 +8618,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2893),
         healthstate=Healthstate(
             name='decompensated_cirrhosis_of_the_liver',
+            kind='healthstate',
             gbd_id=hsid(394),
         ),
     ),
@@ -7846,6 +8629,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2894),
         healthstate=Healthstate(
             name='decompensated_cirrhosis_of_the_liver',
+            kind='healthstate',
             gbd_id=hsid(394),
         ),
     ),
@@ -7856,6 +8640,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9830),
         healthstate=Healthstate(
             name='congenital_heart_disease',
+            kind='healthstate',
             gbd_id=hsid(574),
         ),
     ),
@@ -7866,6 +8651,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2909),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -7876,6 +8662,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2910),
         healthstate=Healthstate(
             name='heart_failure_mild',
+            kind='healthstate',
             gbd_id=hsid(381),
         ),
     ),
@@ -7886,6 +8673,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2911),
         healthstate=Healthstate(
             name='heart_failure_moderate',
+            kind='healthstate',
             gbd_id=hsid(382),
         ),
     ),
@@ -7896,6 +8684,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2912),
         healthstate=Healthstate(
             name='heart_failure_severe',
+            kind='healthstate',
             gbd_id=hsid(383),
         ),
     ),
@@ -7906,6 +8695,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2914),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -7916,6 +8706,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2915),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -7926,6 +8717,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2916),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),
@@ -7936,6 +8728,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2917),
         healthstate=Healthstate(
             name='abdominopelvic_problem_severe',
+            kind='healthstate',
             gbd_id=hsid(546),
         ),
     ),
@@ -7946,6 +8739,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3419),
         healthstate=Healthstate(
             name='distance_vision_blindness',
+            kind='healthstate',
             gbd_id=hsid(468),
         ),
     ),
@@ -7956,6 +8750,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3449),
         healthstate=Healthstate(
             name='distance_vision_blindness',
+            kind='healthstate',
             gbd_id=hsid(468),
         ),
     ),
@@ -7966,6 +8761,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3479),
         healthstate=Healthstate(
             name='distance_vision_blindness',
+            kind='healthstate',
             gbd_id=hsid(468),
         ),
     ),
@@ -7976,6 +8772,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3389),
         healthstate=Healthstate(
             name='distance_vision_blindness',
+            kind='healthstate',
             gbd_id=hsid(468),
         ),
     ),
@@ -7986,6 +8783,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2927),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -7996,6 +8794,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2934),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8006,6 +8805,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2935),
         healthstate=Healthstate(
             name='mild_abdominal_pain_and_mild_depression',
+            kind='healthstate',
             gbd_id=hsid(808),
         ),
     ),
@@ -8016,6 +8816,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9741),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8026,6 +8827,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9742),
         healthstate=Healthstate(
             name='disfigurement_level_1',
+            kind='healthstate',
             gbd_id=hsid(553),
         ),
     ),
@@ -8036,6 +8838,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2938),
         healthstate=Healthstate(
             name='disfigurement_level_1_and_primary_infertility',
+            kind='healthstate',
             gbd_id=hsid(800),
         ),
     ),
@@ -8046,6 +8849,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2939),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8056,6 +8860,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2940),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -8066,6 +8871,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2941),
         healthstate=Healthstate(
             name='stress_incontinence',
+            kind='healthstate',
             gbd_id=hsid(793),
         ),
     ),
@@ -8076,6 +8882,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2942),
         healthstate=Healthstate(
             name='mild_abdominal_pain_and_stress_incontinence',
+            kind='healthstate',
             gbd_id=hsid(807),
         ),
     ),
@@ -8086,6 +8893,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2943),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8096,6 +8904,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2944),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8106,6 +8915,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2945),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8116,6 +8926,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2946),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8126,6 +8937,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2947),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8136,6 +8948,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3647),
         healthstate=Healthstate(
             name='distance_vision_blindness',
+            kind='healthstate',
             gbd_id=hsid(468),
         ),
     ),
@@ -8146,6 +8959,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3650),
         healthstate=Healthstate(
             name='motor_impairment_mild',
+            kind='healthstate',
             gbd_id=hsid(565),
         ),
     ),
@@ -8156,6 +8970,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3656),
         healthstate=Healthstate(
             name='motor_impairment_mild',
+            kind='healthstate',
             gbd_id=hsid(565),
         ),
     ),
@@ -8166,6 +8981,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3662),
         healthstate=Healthstate(
             name='motor_impairment_mild',
+            kind='healthstate',
             gbd_id=hsid(565),
         ),
     ),
@@ -8176,6 +8992,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3653),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_mild',
+            kind='healthstate',
             gbd_id=hsid(568),
         ),
     ),
@@ -8186,6 +9003,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3659),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_mild',
+            kind='healthstate',
             gbd_id=hsid(568),
         ),
     ),
@@ -8196,6 +9014,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3665),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_mild',
+            kind='healthstate',
             gbd_id=hsid(568),
         ),
     ),
@@ -8206,6 +9025,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3509),
         healthstate=Healthstate(
             name='distance_vision_blindness',
+            kind='healthstate',
             gbd_id=hsid(468),
         ),
     ),
@@ -8216,6 +9036,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3611),
         healthstate=Healthstate(
             name='distance_vision_blindness',
+            kind='healthstate',
             gbd_id=hsid(468),
         ),
     ),
@@ -8226,6 +9047,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2957),
         healthstate=Healthstate(
             name='distance_vision_moderate_impairment',
+            kind='healthstate',
             gbd_id=hsid(466),
         ),
     ),
@@ -8236,6 +9058,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2958),
         healthstate=Healthstate(
             name='distance_vision_severe_impairment',
+            kind='healthstate',
             gbd_id=hsid(467),
         ),
     ),
@@ -8246,6 +9069,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2959),
         healthstate=Healthstate(
             name='mild_abdominal_pain_and_primary_infertility',
+            kind='healthstate',
             gbd_id=hsid(801),
         ),
     ),
@@ -8256,6 +9080,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2960),
         healthstate=Healthstate(
             name='moderate_abdominal_pain_and_primary_infertility',
+            kind='healthstate',
             gbd_id=hsid(802),
         ),
     ),
@@ -8266,6 +9091,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2961),
         healthstate=Healthstate(
             name='severe_abdominal_pain_and_primary_infertility',
+            kind='healthstate',
             gbd_id=hsid(803),
         ),
     ),
@@ -8276,6 +9102,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2962),
         healthstate=Healthstate(
             name='mild_abdominal_pain_and_secondary_infertility',
+            kind='healthstate',
             gbd_id=hsid(804),
         ),
     ),
@@ -8286,6 +9113,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2963),
         healthstate=Healthstate(
             name='moderate_abdominal_pain_and_secondary_infertility',
+            kind='healthstate',
             gbd_id=hsid(805),
         ),
     ),
@@ -8296,6 +9124,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2964),
         healthstate=Healthstate(
             name='severe_abdominal_pain_and_secondary_infertility',
+            kind='healthstate',
             gbd_id=hsid(806),
         ),
     ),
@@ -8306,6 +9135,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3560),
         healthstate=Healthstate(
             name='motor_impairment_moderate',
+            kind='healthstate',
             gbd_id=hsid(566),
         ),
     ),
@@ -8316,6 +9146,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3563),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(775),
         ),
     ),
@@ -8326,6 +9157,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3566),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(776),
         ),
     ),
@@ -8336,6 +9168,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3569),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(777),
         ),
     ),
@@ -8346,6 +9179,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3572),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(778),
         ),
     ),
@@ -8356,6 +9190,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3575),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(779),
         ),
     ),
@@ -8366,6 +9201,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3578),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(780),
         ),
     ),
@@ -8376,6 +9212,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3581),
         healthstate=Healthstate(
             name='motor_impairment_severe',
+            kind='healthstate',
             gbd_id=hsid(567),
         ),
     ),
@@ -8386,6 +9223,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3584),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(781),
         ),
     ),
@@ -8396,6 +9234,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3587),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(782),
         ),
     ),
@@ -8406,6 +9245,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3590),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(783),
         ),
     ),
@@ -8416,6 +9256,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3593),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(784),
         ),
     ),
@@ -8426,6 +9267,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3596),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(785),
         ),
     ),
@@ -8436,6 +9278,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3599),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(786),
         ),
     ),
@@ -8446,6 +9289,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2981),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8456,6 +9300,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2982),
         healthstate=Healthstate(
             name='disfigurement_level_1',
+            kind='healthstate',
             gbd_id=hsid(553),
         ),
     ),
@@ -8466,6 +9311,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2984),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_mild',
+            kind='healthstate',
             gbd_id=hsid(351),
         ),
     ),
@@ -8476,6 +9322,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2985),
         healthstate=Healthstate(
             name='disfigurement_level_2',
+            kind='healthstate',
             gbd_id=hsid(554),
         ),
     ),
@@ -8486,6 +9333,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2993),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8496,6 +9344,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2994),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8506,6 +9355,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2995),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8516,6 +9366,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2996),
         healthstate=Healthstate(
             name='hypothyroidism',
+            kind='healthstate',
             gbd_id=hsid(812),
         ),
     ),
@@ -8526,6 +9377,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2997),
         healthstate=Healthstate(
             name='hyperthyroidism',
+            kind='healthstate',
             gbd_id=hsid(813),
         ),
     ),
@@ -8536,6 +9388,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(2998),
         healthstate=Healthstate(
             name='thrombocytopenic_purpura',
+            kind='healthstate',
             gbd_id=hsid(811),
         ),
     ),
@@ -8546,6 +9399,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3002),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),
@@ -8556,6 +9410,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3003),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),
@@ -8566,6 +9421,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3004),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),
@@ -8576,6 +9432,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3005),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),
@@ -8586,6 +9443,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3007),
         healthstate=Healthstate(
             name='cardiac_conduction_disorders_and_cardiac_dysrhythmias',
+            kind='healthstate',
             gbd_id=hsid(379),
         ),
     ),
@@ -8596,6 +9454,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3021),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8606,6 +9465,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3027),
         healthstate=Healthstate(
             name='distance_vision_moderate_impairment',
+            kind='healthstate',
             gbd_id=hsid(466),
         ),
     ),
@@ -8616,6 +9476,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3028),
         healthstate=Healthstate(
             name='distance_vision_severe_impairment',
+            kind='healthstate',
             gbd_id=hsid(467),
         ),
     ),
@@ -8626,6 +9487,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3042),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_mild',
+            kind='healthstate',
             gbd_id=hsid(351),
         ),
     ),
@@ -8636,6 +9498,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3043),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8646,6 +9509,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3044),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_mild',
+            kind='healthstate',
             gbd_id=hsid(351),
         ),
     ),
@@ -8656,6 +9520,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3045),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8666,6 +9531,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3046),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_mild',
+            kind='healthstate',
             gbd_id=hsid(351),
         ),
     ),
@@ -8676,6 +9542,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3047),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8686,6 +9553,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3056),
         healthstate=Healthstate(
             name='disfigurement_level_1',
+            kind='healthstate',
             gbd_id=hsid(553),
         ),
     ),
@@ -8696,6 +9564,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3057),
         healthstate=Healthstate(
             name='disfigurement_level_2',
+            kind='healthstate',
             gbd_id=hsid(554),
         ),
     ),
@@ -8706,6 +9575,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3058),
         healthstate=Healthstate(
             name='speech_problems_with_disfigurement_level_2',
+            kind='healthstate',
             gbd_id=hsid(773),
         ),
     ),
@@ -8716,6 +9586,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3059),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8726,6 +9597,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3065),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8736,6 +9608,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9829),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8746,6 +9619,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9854),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8756,6 +9630,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3069),
         healthstate=Healthstate(
             name='infertility_primary',
+            kind='healthstate',
             gbd_id=hsid(400),
         ),
     ),
@@ -8766,6 +9641,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3070),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8776,6 +9652,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9855),
         healthstate=Healthstate(
             name='congenital_heart_disease',
+            kind='healthstate',
             gbd_id=hsid(574),
         ),
     ),
@@ -8786,6 +9663,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3077),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8796,6 +9674,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3083),
         healthstate=Healthstate(
             name='periodontitis',
+            kind='healthstate',
             gbd_id=hsid(550),
         ),
     ),
@@ -8806,6 +9685,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3623),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -8816,6 +9696,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3626),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -8826,6 +9707,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3087),
         healthstate=Healthstate(
             name='infertility_secondary',
+            kind='healthstate',
             gbd_id=hsid(401),
         ),
     ),
@@ -8836,6 +9718,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3088),
         healthstate=Healthstate(
             name='disfigurement_level_1_and_secondary_infertility',
+            kind='healthstate',
             gbd_id=hsid(821),
         ),
     ),
@@ -8846,6 +9729,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9747),
         healthstate=Healthstate(
             name='abdominopelvic_problem_severe',
+            kind='healthstate',
             gbd_id=hsid(546),
         ),
     ),
@@ -8856,6 +9740,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3090),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -8866,6 +9751,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3091),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8876,6 +9762,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3092),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8886,6 +9773,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3093),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8896,6 +9784,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3095),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8906,6 +9795,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3096),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8916,6 +9806,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3097),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8926,6 +9817,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3098),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8936,6 +9828,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3099),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8946,6 +9839,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3100),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8956,6 +9850,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3101),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8966,6 +9861,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3102),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -8976,6 +9872,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16290),
         healthstate=Healthstate(
             name='crohn_disease_or_ulcerative_colitis',
+            kind='healthstate',
             gbd_id=hsid(396),
         ),
     ),
@@ -8986,6 +9883,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16292),
         healthstate=Healthstate(
             name='crohn_disease_or_ulcerative_colitis',
+            kind='healthstate',
             gbd_id=hsid(396),
         ),
     ),
@@ -8996,6 +9894,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3107),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9006,6 +9905,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3109),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9016,6 +9916,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3110),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9026,6 +9927,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3112),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9036,6 +9938,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3113),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9046,6 +9949,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3114),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9056,6 +9960,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3115),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9066,6 +9971,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3116),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9076,6 +9982,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3118),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9086,6 +9993,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3119),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9096,6 +10004,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3120),
         healthstate=Healthstate(
             name='benign_prostatic_hypertrophy_symptomatic_cases',
+            kind='healthstate',
             gbd_id=hsid(397),
         ),
     ),
@@ -9106,6 +10015,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3121),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9116,6 +10026,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3123),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9126,6 +10037,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3125),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_mild',
+            kind='healthstate',
             gbd_id=hsid(351),
         ),
     ),
@@ -9136,6 +10048,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3126),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -9146,6 +10059,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3134),
         healthstate=Healthstate(
             name='gastric_bleeding',
+            kind='healthstate',
             gbd_id=hsid(395),
         ),
     ),
@@ -9156,6 +10070,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3137),
         healthstate=Healthstate(
             name='vertigo_with_mild_hearing_loss',
+            kind='healthstate',
             gbd_id=hsid(827),
         ),
     ),
@@ -9166,6 +10081,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3138),
         healthstate=Healthstate(
             name='vertigo_with_mild_hearing_loss_and_ringing',
+            kind='healthstate',
             gbd_id=hsid(828),
         ),
     ),
@@ -9176,6 +10092,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3139),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9186,6 +10103,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15816),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_profound_and_iodine_deficiency_goiter_and_heart_failure_mild',
+            kind='healthstate',
             gbd_id=hsid(2570),
         ),
     ),
@@ -9196,6 +10114,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15817),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_profound_and_iodine_deficiency_goiter_and_heart_failure_moderate',
+            kind='healthstate',
             gbd_id=hsid(2573),
         ),
     ),
@@ -9206,6 +10125,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15818),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_profound_and_iodine_deficiency_goiter_and_heart_failure_severe',
+            kind='healthstate',
             gbd_id=hsid(2576),
         ),
     ),
@@ -9216,6 +10136,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3149),
         healthstate=Healthstate(
             name='severe_copd_and_other_chronic_respiratory_with_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(850),
         ),
     ),
@@ -9226,6 +10147,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3150),
         healthstate=Healthstate(
             name='severe_copd_and_other_chronic_respiratory_with_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(851),
         ),
     ),
@@ -9236,6 +10158,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3151),
         healthstate=Healthstate(
             name='severe_copd_and_other_chronic_respiratory_with_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(852),
         ),
     ),
@@ -9246,6 +10169,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3152),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_severe',
+            kind='healthstate',
             gbd_id=hsid(407),
         ),
     ),
@@ -9256,6 +10180,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3153),
         healthstate=Healthstate(
             name='severe_copd_and_other_chronic_respiratory_with_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(850),
         ),
     ),
@@ -9266,6 +10191,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3154),
         healthstate=Healthstate(
             name='severe_copd_and_other_chronic_respiratory_with_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(851),
         ),
     ),
@@ -9276,6 +10202,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3155),
         healthstate=Healthstate(
             name='severe_copd_and_other_chronic_respiratory_with_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(852),
         ),
     ),
@@ -9286,6 +10213,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3156),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_severe',
+            kind='healthstate',
             gbd_id=hsid(407),
         ),
     ),
@@ -9296,6 +10224,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3157),
         healthstate=Healthstate(
             name='severe_copd_and_other_chronic_respiratory_with_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(850),
         ),
     ),
@@ -9306,6 +10235,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3158),
         healthstate=Healthstate(
             name='severe_copd_and_other_chronic_respiratory_with_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(851),
         ),
     ),
@@ -9316,6 +10246,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3159),
         healthstate=Healthstate(
             name='severe_copd_and_other_chronic_respiratory_with_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(852),
         ),
     ),
@@ -9326,6 +10257,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3160),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_severe',
+            kind='healthstate',
             gbd_id=hsid(407),
         ),
     ),
@@ -9336,6 +10268,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3161),
         healthstate=Healthstate(
             name='severe_copd_and_other_chronic_respiratory_with_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(850),
         ),
     ),
@@ -9346,6 +10279,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3162),
         healthstate=Healthstate(
             name='severe_copd_and_other_chronic_respiratory_with_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(851),
         ),
     ),
@@ -9356,6 +10290,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3163),
         healthstate=Healthstate(
             name='severe_copd_and_other_chronic_respiratory_with_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(852),
         ),
     ),
@@ -9366,6 +10301,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3164),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_severe',
+            kind='healthstate',
             gbd_id=hsid(407),
         ),
     ),
@@ -9376,6 +10312,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3165),
         healthstate=Healthstate(
             name='severe_copd_and_other_chronic_respiratory_with_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(850),
         ),
     ),
@@ -9386,6 +10323,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3166),
         healthstate=Healthstate(
             name='severe_copd_and_other_chronic_respiratory_with_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(851),
         ),
     ),
@@ -9396,6 +10334,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3167),
         healthstate=Healthstate(
             name='severe_copd_and_other_chronic_respiratory_with_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(852),
         ),
     ),
@@ -9406,6 +10345,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3168),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_severe',
+            kind='healthstate',
             gbd_id=hsid(407),
         ),
     ),
@@ -9416,6 +10356,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3169),
         healthstate=Healthstate(
             name='severe_copd_and_other_chronic_respiratory_with_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(850),
         ),
     ),
@@ -9426,6 +10367,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3170),
         healthstate=Healthstate(
             name='severe_copd_and_other_chronic_respiratory_with_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(851),
         ),
     ),
@@ -9436,6 +10378,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3171),
         healthstate=Healthstate(
             name='severe_copd_and_other_chronic_respiratory_with_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(852),
         ),
     ),
@@ -9446,6 +10389,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3172),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_severe',
+            kind='healthstate',
             gbd_id=hsid(407),
         ),
     ),
@@ -9456,6 +10400,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3180),
         healthstate=Healthstate(
             name='anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(547),
         ),
     ),
@@ -9466,6 +10411,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3181),
         healthstate=Healthstate(
             name='anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(548),
         ),
     ),
@@ -9476,6 +10422,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3182),
         healthstate=Healthstate(
             name='anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(549),
         ),
     ),
@@ -9486,6 +10433,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3183),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9496,6 +10444,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3191),
         healthstate=Healthstate(
             name='anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(547),
         ),
     ),
@@ -9506,6 +10455,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3192),
         healthstate=Healthstate(
             name='anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(548),
         ),
     ),
@@ -9516,6 +10466,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3193),
         healthstate=Healthstate(
             name='anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(549),
         ),
     ),
@@ -9526,6 +10477,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3194),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9536,6 +10488,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3202),
         healthstate=Healthstate(
             name='anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(547),
         ),
     ),
@@ -9546,6 +10499,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3203),
         healthstate=Healthstate(
             name='anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(548),
         ),
     ),
@@ -9556,6 +10510,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3204),
         healthstate=Healthstate(
             name='anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(549),
         ),
     ),
@@ -9566,6 +10521,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3205),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9576,6 +10532,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3213),
         healthstate=Healthstate(
             name='anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(547),
         ),
     ),
@@ -9586,6 +10543,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3214),
         healthstate=Healthstate(
             name='anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(548),
         ),
     ),
@@ -9596,6 +10554,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3215),
         healthstate=Healthstate(
             name='anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(549),
         ),
     ),
@@ -9606,6 +10565,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3216),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9616,6 +10576,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3217),
         healthstate=Healthstate(
             name='diabetic_neuropathy_with_diabetic_foot',
+            kind='healthstate',
             gbd_id=hsid(838),
         ),
     ),
@@ -9626,6 +10587,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3218),
         healthstate=Healthstate(
             name='diabetic_neuropathy',
+            kind='healthstate',
             gbd_id=hsid(390),
         ),
     ),
@@ -9636,6 +10598,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3219),
         healthstate=Healthstate(
             name='diabetic_neuropathy_with_treated_amputation',
+            kind='healthstate',
             gbd_id=hsid(839),
         ),
     ),
@@ -9646,6 +10609,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3220),
         healthstate=Healthstate(
             name='diabetic_neuropathy_with_untreated_amputation',
+            kind='healthstate',
             gbd_id=hsid(840),
         ),
     ),
@@ -9656,6 +10620,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3233),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9666,6 +10631,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3234),
         healthstate=Healthstate(
             name='claudication',
+            kind='healthstate',
             gbd_id=hsid(380),
         ),
     ),
@@ -9676,6 +10642,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3250),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9686,6 +10653,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3251),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9696,6 +10664,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3252),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_mild',
+            kind='healthstate',
             gbd_id=hsid(351),
         ),
     ),
@@ -9706,6 +10675,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3253),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -9716,6 +10686,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3255),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9726,6 +10697,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3256),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9736,6 +10708,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3257),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9746,6 +10719,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3258),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9756,6 +10730,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3261),
         healthstate=Healthstate(
             name='hearing_loss_mild',
+            kind='healthstate',
             gbd_id=hsid(455),
         ),
     ),
@@ -9766,6 +10741,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3262),
         healthstate=Healthstate(
             name='hearing_loss_mild_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(460),
         ),
     ),
@@ -9776,6 +10752,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3266),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -9786,6 +10763,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3267),
         healthstate=Healthstate(
             name='anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(547),
         ),
     ),
@@ -9796,6 +10774,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3268),
         healthstate=Healthstate(
             name='anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(548),
         ),
     ),
@@ -9806,6 +10785,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3269),
         healthstate=Healthstate(
             name='anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(549),
         ),
     ),
@@ -9816,6 +10796,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3270),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe;_generic_uncomplicated_disease_anxiety;_anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(856),
         ),
     ),
@@ -9826,6 +10807,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3271),
         healthstate=Healthstate(
             name='anemia_mild;_generic_uncomplicated_disease_anxiety',
+            kind='healthstate',
             gbd_id=hsid(860),
         ),
     ),
@@ -9836,6 +10818,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3272),
         healthstate=Healthstate(
             name='anemia_moderate;_generic_uncomplicated_disease_anxiety',
+            kind='healthstate',
             gbd_id=hsid(861),
         ),
     ),
@@ -9846,6 +10829,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3273),
         healthstate=Healthstate(
             name='anemia_severe;_generic_uncomplicated_disease_anxiety',
+            kind='healthstate',
             gbd_id=hsid(862),
         ),
     ),
@@ -9856,6 +10840,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3277),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe;_generic_uncomplicated_disease_anxiety;_anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(856),
         ),
     ),
@@ -9866,6 +10851,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3278),
         healthstate=Healthstate(
             name='anemia_mild;_generic_uncomplicated_disease_anxiety',
+            kind='healthstate',
             gbd_id=hsid(860),
         ),
     ),
@@ -9876,6 +10862,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3279),
         healthstate=Healthstate(
             name='anemia_moderate;_generic_uncomplicated_disease_anxiety',
+            kind='healthstate',
             gbd_id=hsid(861),
         ),
     ),
@@ -9886,6 +10873,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3280),
         healthstate=Healthstate(
             name='anemia_severe;_generic_uncomplicated_disease_anxiety',
+            kind='healthstate',
             gbd_id=hsid(862),
         ),
     ),
@@ -9896,6 +10884,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3284),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe;_generic_uncomplicated_disease_anxiety;_anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(856),
         ),
     ),
@@ -9906,6 +10895,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3285),
         healthstate=Healthstate(
             name='anemia_mild;_generic_uncomplicated_disease_anxiety',
+            kind='healthstate',
             gbd_id=hsid(860),
         ),
     ),
@@ -9916,6 +10906,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3286),
         healthstate=Healthstate(
             name='anemia_moderate;_generic_uncomplicated_disease_anxiety',
+            kind='healthstate',
             gbd_id=hsid(861),
         ),
     ),
@@ -9926,6 +10917,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3287),
         healthstate=Healthstate(
             name='anemia_severe;_generic_uncomplicated_disease_anxiety',
+            kind='healthstate',
             gbd_id=hsid(862),
         ),
     ),
@@ -9936,6 +10928,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3294),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_anxiety_about_diagnosis',
+            kind='healthstate',
             gbd_id=hsid(560),
         ),
     ),
@@ -9946,6 +10939,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3295),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_anxiety_and_severe_abdominopelvic_problem',
+            kind='healthstate',
             gbd_id=hsid(814),
         ),
     ),
@@ -9956,6 +10950,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3296),
         healthstate=Healthstate(
             name='moderate_abdominal_pain;_anemia_severe;_generic_uncomplicated_disease_anxiety',
+            kind='healthstate',
             gbd_id=hsid(857),
         ),
     ),
@@ -9966,6 +10961,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3297),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_anxiety;_long_term_consequences_due_to_stroke;_anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(858),
         ),
     ),
@@ -9976,6 +10972,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3298),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_anxiety;_long_term_consequences_due_to_stroke',
+            kind='healthstate',
             gbd_id=hsid(815),
         ),
     ),
@@ -9986,6 +10983,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3299),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_anxiety;_long_term_consequences_due_to_stroke;_severe_abdominopelvic_problem;_anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(859),
         ),
     ),
@@ -9996,6 +10994,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3300),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_anxiety;_long_term_consequences_due_to_stroke;_severe_abdominopelvic_problem',
+            kind='healthstate',
             gbd_id=hsid(816),
         ),
     ),
@@ -10006,6 +11005,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3301),
         healthstate=Healthstate(
             name='anemia_mild;_generic_uncomplicated_disease_anxiety',
+            kind='healthstate',
             gbd_id=hsid(860),
         ),
     ),
@@ -10016,6 +11016,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3302),
         healthstate=Healthstate(
             name='anemia_moderate;_generic_uncomplicated_disease_anxiety',
+            kind='healthstate',
             gbd_id=hsid(861),
         ),
     ),
@@ -10026,6 +11027,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3303),
         healthstate=Healthstate(
             name='anemia_severe;_generic_uncomplicated_disease_anxiety',
+            kind='healthstate',
             gbd_id=hsid(862),
         ),
     ),
@@ -10036,6 +11038,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3304),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_anxiety_about_diagnosis',
+            kind='healthstate',
             gbd_id=hsid(560),
         ),
     ),
@@ -10046,6 +11049,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3305),
         healthstate=Healthstate(
             name='moderate_abdominal_pain;_anemia_severe;_generic_uncomplicated_disease_anxiety',
+            kind='healthstate',
             gbd_id=hsid(857),
         ),
     ),
@@ -10056,6 +11060,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3306),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_anxiety_and_severe_abdominopelvic_problem',
+            kind='healthstate',
             gbd_id=hsid(814),
         ),
     ),
@@ -10066,6 +11071,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3307),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_anxiety;_long_term_consequences_due_to_stroke;_anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(858),
         ),
     ),
@@ -10076,6 +11082,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3308),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_anxiety;_long_term_consequences_due_to_stroke',
+            kind='healthstate',
             gbd_id=hsid(815),
         ),
     ),
@@ -10086,6 +11093,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3309),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_anxiety;_long_term_consequences_due_to_stroke;_severe_abdominopelvic_problem;_anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(859),
         ),
     ),
@@ -10096,6 +11104,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3310),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_anxiety;_long_term_consequences_due_to_stroke;_severe_abdominopelvic_problem',
+            kind='healthstate',
             gbd_id=hsid(816),
         ),
     ),
@@ -10106,6 +11115,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3311),
         healthstate=Healthstate(
             name='anemia_mild;_generic_uncomplicated_disease_anxiety',
+            kind='healthstate',
             gbd_id=hsid(860),
         ),
     ),
@@ -10116,6 +11126,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3312),
         healthstate=Healthstate(
             name='anemia_moderate;_generic_uncomplicated_disease_anxiety',
+            kind='healthstate',
             gbd_id=hsid(861),
         ),
     ),
@@ -10126,6 +11137,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3313),
         healthstate=Healthstate(
             name='anemia_severe;_generic_uncomplicated_disease_anxiety',
+            kind='healthstate',
             gbd_id=hsid(862),
         ),
     ),
@@ -10136,6 +11148,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3314),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_anxiety_about_diagnosis',
+            kind='healthstate',
             gbd_id=hsid(560),
         ),
     ),
@@ -10146,6 +11159,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3315),
         healthstate=Healthstate(
             name='moderate_abdominal_pain;_anemia_severe;_generic_uncomplicated_disease_anxiety',
+            kind='healthstate',
             gbd_id=hsid(857),
         ),
     ),
@@ -10156,6 +11170,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3316),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_anxiety_and_severe_abdominopelvic_problem',
+            kind='healthstate',
             gbd_id=hsid(814),
         ),
     ),
@@ -10166,6 +11181,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3317),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_anxiety;_long_term_consequences_due_to_stroke;_anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(858),
         ),
     ),
@@ -10176,6 +11192,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3318),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_anxiety;_long_term_consequences_due_to_stroke',
+            kind='healthstate',
             gbd_id=hsid(815),
         ),
     ),
@@ -10186,6 +11203,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3319),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_anxiety;_long_term_consequences_due_to_stroke;_severe_abdominopelvic_problem;_anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(859),
         ),
     ),
@@ -10196,6 +11214,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3320),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_anxiety;_long_term_consequences_due_to_stroke;_severe_abdominopelvic_problem',
+            kind='healthstate',
             gbd_id=hsid(816),
         ),
     ),
@@ -10206,6 +11225,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3321),
         healthstate=Healthstate(
             name='anemia_mild;_generic_uncomplicated_disease_anxiety',
+            kind='healthstate',
             gbd_id=hsid(860),
         ),
     ),
@@ -10216,6 +11236,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3322),
         healthstate=Healthstate(
             name='anemia_moderate;_generic_uncomplicated_disease_anxiety',
+            kind='healthstate',
             gbd_id=hsid(861),
         ),
     ),
@@ -10226,6 +11247,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3323),
         healthstate=Healthstate(
             name='anemia_severe;_generic_uncomplicated_disease_anxiety',
+            kind='healthstate',
             gbd_id=hsid(862),
         ),
     ),
@@ -10236,6 +11258,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3324),
         healthstate=Healthstate(
             name='vertigo_with_moderate_hearing_loss',
+            kind='healthstate',
             gbd_id=hsid(863),
         ),
     ),
@@ -10246,6 +11269,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3325),
         healthstate=Healthstate(
             name='vertigo_with_moderate_hearing_loss_and_ringing',
+            kind='healthstate',
             gbd_id=hsid(864),
         ),
     ),
@@ -10256,6 +11280,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3326),
         healthstate=Healthstate(
             name='hearing_loss_moderate',
+            kind='healthstate',
             gbd_id=hsid(456),
         ),
     ),
@@ -10266,6 +11291,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3327),
         healthstate=Healthstate(
             name='hearing_loss_moderate_with_ringing',
+            kind='healthstate',
             gbd_id=hsid(461),
         ),
     ),
@@ -10276,6 +11302,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3328),
         healthstate=Healthstate(
             name='mild_abdominal_pain_with_mild_anemia',
+            kind='healthstate',
             gbd_id=hsid(865),
         ),
     ),
@@ -10286,6 +11313,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3329),
         healthstate=Healthstate(
             name='mild_abdominal_pain_with_moderate_anemia',
+            kind='healthstate',
             gbd_id=hsid(866),
         ),
     ),
@@ -10296,6 +11324,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3330),
         healthstate=Healthstate(
             name='mild_abdominal_pain_with_severe_anemia',
+            kind='healthstate',
             gbd_id=hsid(867),
         ),
     ),
@@ -10306,6 +11335,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3331),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -10316,6 +11346,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3338),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -10326,6 +11357,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3343),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_anxiety_about_diagnosis',
+            kind='healthstate',
             gbd_id=hsid(560),
         ),
     ),
@@ -10336,6 +11368,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3344),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_anxiety_about_diagnosis',
+            kind='healthstate',
             gbd_id=hsid(560),
         ),
     ),
@@ -10346,6 +11379,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3345),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_anxiety_about_diagnosis',
+            kind='healthstate',
             gbd_id=hsid(560),
         ),
     ),
@@ -10356,6 +11390,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3346),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -10366,6 +11401,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3347),
         healthstate=Healthstate(
             name='heart_failure_mild',
+            kind='healthstate',
             gbd_id=hsid(381),
         ),
     ),
@@ -10376,6 +11412,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3348),
         healthstate=Healthstate(
             name='heart_failure_moderate',
+            kind='healthstate',
             gbd_id=hsid(382),
         ),
     ),
@@ -10386,6 +11423,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3349),
         healthstate=Healthstate(
             name='heart_failure_severe',
+            kind='healthstate',
             gbd_id=hsid(383),
         ),
     ),
@@ -10396,6 +11434,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3350),
         healthstate=Healthstate(
             name='anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(547),
         ),
     ),
@@ -10406,6 +11445,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3351),
         healthstate=Healthstate(
             name='anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(548),
         ),
     ),
@@ -10416,6 +11456,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3352),
         healthstate=Healthstate(
             name='anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(549),
         ),
     ),
@@ -10426,6 +11467,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3353),
         healthstate=Healthstate(
             name='heart_failure_mild',
+            kind='healthstate',
             gbd_id=hsid(381),
         ),
     ),
@@ -10436,6 +11478,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3354),
         healthstate=Healthstate(
             name='heart_failure_moderate',
+            kind='healthstate',
             gbd_id=hsid(382),
         ),
     ),
@@ -10446,6 +11489,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3355),
         healthstate=Healthstate(
             name='heart_failure_severe',
+            kind='healthstate',
             gbd_id=hsid(383),
         ),
     ),
@@ -10456,6 +11500,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3356),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -10466,6 +11511,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9535),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -10476,6 +11522,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9542),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -10486,6 +11533,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9430),
         healthstate=Healthstate(
             name='distance_vision_moderate_impairment',
+            kind='healthstate',
             gbd_id=hsid(466),
         ),
     ),
@@ -10496,6 +11544,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9431),
         healthstate=Healthstate(
             name='distance_vision_severe_impairment',
+            kind='healthstate',
             gbd_id=hsid(467),
         ),
     ),
@@ -10506,6 +11555,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9433),
         healthstate=Healthstate(
             name='distance_vision_moderate_impairment',
+            kind='healthstate',
             gbd_id=hsid(466),
         ),
     ),
@@ -10516,6 +11566,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9434),
         healthstate=Healthstate(
             name='distance_vision_severe_impairment',
+            kind='healthstate',
             gbd_id=hsid(467),
         ),
     ),
@@ -10526,6 +11577,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9436),
         healthstate=Healthstate(
             name='distance_vision_moderate_impairment',
+            kind='healthstate',
             gbd_id=hsid(466),
         ),
     ),
@@ -10536,6 +11588,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9437),
         healthstate=Healthstate(
             name='distance_vision_severe_impairment',
+            kind='healthstate',
             gbd_id=hsid(467),
         ),
     ),
@@ -10546,6 +11599,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9439),
         healthstate=Healthstate(
             name='distance_vision_moderate_impairment',
+            kind='healthstate',
             gbd_id=hsid(466),
         ),
     ),
@@ -10556,6 +11610,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9440),
         healthstate=Healthstate(
             name='distance_vision_severe_impairment',
+            kind='healthstate',
             gbd_id=hsid(467),
         ),
     ),
@@ -10566,6 +11621,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9462),
         healthstate=Healthstate(
             name='distance_vision_moderate_impairment',
+            kind='healthstate',
             gbd_id=hsid(466),
         ),
     ),
@@ -10576,6 +11632,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9463),
         healthstate=Healthstate(
             name='distance_vision_severe_impairment',
+            kind='healthstate',
             gbd_id=hsid(467),
         ),
     ),
@@ -10586,6 +11643,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9679),
         healthstate=Healthstate(
             name='mild_motor_impairment_with_mild_respiratory_problems_and_speech_problems',
+            kind='healthstate',
             gbd_id=hsid(868),
         ),
     ),
@@ -10596,6 +11654,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9680),
         healthstate=Healthstate(
             name='mild_motor_impairment_with_moderate_respiratory_problems_and_speech_problems',
+            kind='healthstate',
             gbd_id=hsid(869),
         ),
     ),
@@ -10606,6 +11665,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9681),
         healthstate=Healthstate(
             name='mild_motor_impairment_with_severe_respiratory_problems_and_speech_problems',
+            kind='healthstate',
             gbd_id=hsid(870),
         ),
     ),
@@ -10616,6 +11676,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9682),
         healthstate=Healthstate(
             name='mild_motor_impairment_and_speech_problems',
+            kind='healthstate',
             gbd_id=hsid(886),
         ),
     ),
@@ -10626,6 +11687,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9683),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_mild_respiratory_problems_and_speech_problems',
+            kind='healthstate',
             gbd_id=hsid(871),
         ),
     ),
@@ -10636,6 +11698,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9684),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_moderate_respiratory_problems_and_speech_problems',
+            kind='healthstate',
             gbd_id=hsid(872),
         ),
     ),
@@ -10646,6 +11709,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9685),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_severe_respiratory_problems_and_speech_problems',
+            kind='healthstate',
             gbd_id=hsid(873),
         ),
     ),
@@ -10656,6 +11720,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9687),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_mild_respiratory_problems_and_speech_problems',
+            kind='healthstate',
             gbd_id=hsid(874),
         ),
     ),
@@ -10666,6 +11731,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9688),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_moderate_respiratory_problems_and_speech_problems',
+            kind='healthstate',
             gbd_id=hsid(875),
         ),
     ),
@@ -10676,6 +11742,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9689),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_severe_respiratory_problems_and_speech_problems',
+            kind='healthstate',
             gbd_id=hsid(876),
         ),
     ),
@@ -10686,6 +11753,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9695),
         healthstate=Healthstate(
             name='mild_motor_impairment_and_mild_respiratory_problems',
+            kind='healthstate',
             gbd_id=hsid(877),
         ),
     ),
@@ -10696,6 +11764,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9697),
         healthstate=Healthstate(
             name='mild_motor_impairment_and_severe_respiratory_problems',
+            kind='healthstate',
             gbd_id=hsid(879),
         ),
     ),
@@ -10706,6 +11775,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9699),
         healthstate=Healthstate(
             name='moderate_motor_impairment_and_mild_respiratory_problems',
+            kind='healthstate',
             gbd_id=hsid(880),
         ),
     ),
@@ -10716,6 +11786,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9700),
         healthstate=Healthstate(
             name='moderate_motor_impairment_and_moderate_respiratory_problems',
+            kind='healthstate',
             gbd_id=hsid(881),
         ),
     ),
@@ -10726,6 +11797,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9701),
         healthstate=Healthstate(
             name='moderate_motor_impairment_and_severe_respiratory_problems',
+            kind='healthstate',
             gbd_id=hsid(882),
         ),
     ),
@@ -10736,6 +11808,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9703),
         healthstate=Healthstate(
             name='severe_motor_impairment_and_mild_respiratory_problems',
+            kind='healthstate',
             gbd_id=hsid(883),
         ),
     ),
@@ -10746,6 +11819,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9704),
         healthstate=Healthstate(
             name='severe_motor_impairment_and_moderate_respiratory_problems',
+            kind='healthstate',
             gbd_id=hsid(884),
         ),
     ),
@@ -10756,6 +11830,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9705),
         healthstate=Healthstate(
             name='severe_motor_impairment_and_severe_respiratory_problems',
+            kind='healthstate',
             gbd_id=hsid(885),
         ),
     ),
@@ -10766,6 +11841,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9686),
         healthstate=Healthstate(
             name='moderate_motor_impairment_and_speech_problems',
+            kind='healthstate',
             gbd_id=hsid(887),
         ),
     ),
@@ -10776,6 +11852,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9690),
         healthstate=Healthstate(
             name='severe_motor_impairment_and_speech_problems',
+            kind='healthstate',
             gbd_id=hsid(888),
         ),
     ),
@@ -10786,6 +11863,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9698),
         healthstate=Healthstate(
             name='motor_impairment_mild',
+            kind='healthstate',
             gbd_id=hsid(565),
         ),
     ),
@@ -10796,6 +11874,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9702),
         healthstate=Healthstate(
             name='motor_impairment_moderate',
+            kind='healthstate',
             gbd_id=hsid(566),
         ),
     ),
@@ -10806,6 +11885,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9706),
         healthstate=Healthstate(
             name='motor_impairment_severe',
+            kind='healthstate',
             gbd_id=hsid(567),
         ),
     ),
@@ -10816,6 +11896,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9691),
         healthstate=Healthstate(
             name='mild_respiratory_and_speech_problems',
+            kind='healthstate',
             gbd_id=hsid(889),
         ),
     ),
@@ -10826,6 +11907,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9692),
         healthstate=Healthstate(
             name='moderate_respiratory_and_speech_problems',
+            kind='healthstate',
             gbd_id=hsid(890),
         ),
     ),
@@ -10836,6 +11918,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9693),
         healthstate=Healthstate(
             name='severe_respiratory_and_speech_problems',
+            kind='healthstate',
             gbd_id=hsid(891),
         ),
     ),
@@ -10846,6 +11929,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9707),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_mild',
+            kind='healthstate',
             gbd_id=hsid(405),
         ),
     ),
@@ -10856,6 +11940,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9708),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_moderate',
+            kind='healthstate',
             gbd_id=hsid(406),
         ),
     ),
@@ -10866,6 +11951,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9709),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_severe',
+            kind='healthstate',
             gbd_id=hsid(407),
         ),
     ),
@@ -10876,6 +11962,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9694),
         healthstate=Healthstate(
             name='speech_problems',
+            kind='healthstate',
             gbd_id=hsid(564),
         ),
     ),
@@ -10886,6 +11973,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9710),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_anxiety_about_diagnosis',
+            kind='healthstate',
             gbd_id=hsid(560),
         ),
     ),
@@ -10896,6 +11984,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9668),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
+            kind='healthstate',
             gbd_id=hsid(353),
         ),
     ),
@@ -10906,6 +11995,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9669),
         healthstate=Healthstate(
             name='infectious_disease_post_acute_consequences_fatigue_emotional_lability_insomnia',
+            kind='healthstate',
             gbd_id=hsid(354),
         ),
     ),
@@ -10916,6 +12006,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9476),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -10926,6 +12017,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9486),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -10936,6 +12028,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9481),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -10946,6 +12039,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9491),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -10956,6 +12050,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9477),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -10966,6 +12061,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9487),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -10976,6 +12072,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9482),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -10986,6 +12083,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9492),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -10996,6 +12094,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9478),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -11006,6 +12105,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9488),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -11016,6 +12116,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9483),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -11026,6 +12127,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9493),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -11036,6 +12138,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9479),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -11046,6 +12149,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9489),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -11056,6 +12160,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9484),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -11066,6 +12171,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9494),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -11076,6 +12182,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3949),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -11086,6 +12193,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(3950),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_mild',
+            kind='healthstate',
             gbd_id=hsid(351),
         ),
     ),
@@ -11096,6 +12204,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9819),
         healthstate=Healthstate(
             name='borderline_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(450),
         ),
     ),
@@ -11106,6 +12215,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9820),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_mild',
+            kind='healthstate',
             gbd_id=hsid(451),
         ),
     ),
@@ -11116,6 +12226,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9821),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_moderate',
+            kind='healthstate',
             gbd_id=hsid(452),
         ),
     ),
@@ -11126,6 +12237,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9822),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_severe',
+            kind='healthstate',
             gbd_id=hsid(453),
         ),
     ),
@@ -11136,6 +12248,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9823),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_profound',
+            kind='healthstate',
             gbd_id=hsid(454),
         ),
     ),
@@ -11146,6 +12259,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9824),
         healthstate=Healthstate(
             name='borderline_intellectual_disability_with_congenital_heart_disease',
+            kind='healthstate',
             gbd_id=hsid(897),
         ),
     ),
@@ -11156,6 +12270,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9825),
         healthstate=Healthstate(
             name='mild_intellectual_disability_with_congenital_heart_disease',
+            kind='healthstate',
             gbd_id=hsid(898),
         ),
     ),
@@ -11166,6 +12281,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9826),
         healthstate=Healthstate(
             name='moderate_intellectual_disability_with_congenital_heart_disease',
+            kind='healthstate',
             gbd_id=hsid(899),
         ),
     ),
@@ -11176,6 +12292,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9827),
         healthstate=Healthstate(
             name='severe_intellectual_disability_with_congenital_heart_disease',
+            kind='healthstate',
             gbd_id=hsid(900),
         ),
     ),
@@ -11186,6 +12303,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9828),
         healthstate=Healthstate(
             name='profound_intellectual_disability_with_congenital_heart_disease',
+            kind='healthstate',
             gbd_id=hsid(901),
         ),
     ),
@@ -11196,6 +12314,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9843),
         healthstate=Healthstate(
             name='borderline_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(450),
         ),
     ),
@@ -11206,6 +12325,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9844),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_mild',
+            kind='healthstate',
             gbd_id=hsid(451),
         ),
     ),
@@ -11216,6 +12336,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9845),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_moderate',
+            kind='healthstate',
             gbd_id=hsid(452),
         ),
     ),
@@ -11226,6 +12347,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9846),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_severe',
+            kind='healthstate',
             gbd_id=hsid(453),
         ),
     ),
@@ -11236,6 +12358,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9847),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_profound',
+            kind='healthstate',
             gbd_id=hsid(454),
         ),
     ),
@@ -11246,6 +12369,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9848),
         healthstate=Healthstate(
             name='borderline_intellectual_disability_with_congenital_heart_disease',
+            kind='healthstate',
             gbd_id=hsid(897),
         ),
     ),
@@ -11256,6 +12380,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9849),
         healthstate=Healthstate(
             name='mild_intellectual_disability_with_congenital_heart_disease',
+            kind='healthstate',
             gbd_id=hsid(898),
         ),
     ),
@@ -11266,6 +12391,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9850),
         healthstate=Healthstate(
             name='moderate_intellectual_disability_with_congenital_heart_disease',
+            kind='healthstate',
             gbd_id=hsid(899),
         ),
     ),
@@ -11276,6 +12402,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9851),
         healthstate=Healthstate(
             name='severe_intellectual_disability_with_congenital_heart_disease',
+            kind='healthstate',
             gbd_id=hsid(900),
         ),
     ),
@@ -11286,6 +12413,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9852),
         healthstate=Healthstate(
             name='profound_intellectual_disability_with_congenital_heart_disease',
+            kind='healthstate',
             gbd_id=hsid(901),
         ),
     ),
@@ -11296,6 +12424,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9938),
         healthstate=Healthstate(
             name='dementia_mild',
+            kind='healthstate',
             gbd_id=hsid(408),
         ),
     ),
@@ -11306,6 +12435,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9939),
         healthstate=Healthstate(
             name='dementia_moderate',
+            kind='healthstate',
             gbd_id=hsid(409),
         ),
     ),
@@ -11316,6 +12446,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9940),
         healthstate=Healthstate(
             name='dementia_severe',
+            kind='healthstate',
             gbd_id=hsid(410),
         ),
     ),
@@ -11326,6 +12457,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9818),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_mild_dementia',
+            kind='healthstate',
             gbd_id=hsid(911),
         ),
     ),
@@ -11336,6 +12468,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9944),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_moderate_dementia',
+            kind='healthstate',
             gbd_id=hsid(912),
         ),
     ),
@@ -11346,6 +12479,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9945),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_severe_dementia',
+            kind='healthstate',
             gbd_id=hsid(913),
         ),
     ),
@@ -11356,6 +12490,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9948),
         healthstate=Healthstate(
             name='dementia_mild',
+            kind='healthstate',
             gbd_id=hsid(408),
         ),
     ),
@@ -11366,6 +12501,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9949),
         healthstate=Healthstate(
             name='dementia_moderate',
+            kind='healthstate',
             gbd_id=hsid(409),
         ),
     ),
@@ -11376,6 +12512,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9950),
         healthstate=Healthstate(
             name='dementia_severe',
+            kind='healthstate',
             gbd_id=hsid(410),
         ),
     ),
@@ -11386,6 +12523,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9842),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_mild_dementia',
+            kind='healthstate',
             gbd_id=hsid(911),
         ),
     ),
@@ -11396,6 +12534,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9954),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_moderate_dementia',
+            kind='healthstate',
             gbd_id=hsid(912),
         ),
     ),
@@ -11406,6 +12545,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9955),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_severe_dementia',
+            kind='healthstate',
             gbd_id=hsid(913),
         ),
     ),
@@ -11416,6 +12556,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9978),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -11426,6 +12567,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9979),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -11436,6 +12578,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9980),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -11446,6 +12589,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9981),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -11456,6 +12600,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9982),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -11466,6 +12611,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9617),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_mild',
+            kind='healthstate',
             gbd_id=hsid(568),
         ),
     ),
@@ -11476,6 +12622,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9618),
         healthstate=Healthstate(
             name='motor_impairment_mild',
+            kind='healthstate',
             gbd_id=hsid(565),
         ),
     ),
@@ -11486,6 +12633,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9619),
         healthstate=Healthstate(
             name='motor_impairment_moderate',
+            kind='healthstate',
             gbd_id=hsid(566),
         ),
     ),
@@ -11496,6 +12644,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9620),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(775),
         ),
     ),
@@ -11506,6 +12655,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9621),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(776),
         ),
     ),
@@ -11516,6 +12666,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9622),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(777),
         ),
     ),
@@ -11526,6 +12677,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9623),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(778),
         ),
     ),
@@ -11536,6 +12688,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9624),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(779),
         ),
     ),
@@ -11546,6 +12699,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9625),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(780),
         ),
     ),
@@ -11556,6 +12710,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9626),
         healthstate=Healthstate(
             name='motor_impairment_severe',
+            kind='healthstate',
             gbd_id=hsid(567),
         ),
     ),
@@ -11566,6 +12721,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9627),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(781),
         ),
     ),
@@ -11576,6 +12732,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9628),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(782),
         ),
     ),
@@ -11586,6 +12743,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9629),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(783),
         ),
     ),
@@ -11596,6 +12754,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9630),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_blindness',
+            kind='healthstate',
             gbd_id=hsid(784),
         ),
     ),
@@ -11606,6 +12765,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9631),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(785),
         ),
     ),
@@ -11616,6 +12776,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(9632),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(786),
         ),
     ),
@@ -11626,6 +12787,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10157),
         healthstate=Healthstate(
             name='congenital_heart_disease_mild_dementia_borderline_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(914),
         ),
     ),
@@ -11636,6 +12798,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10158),
         healthstate=Healthstate(
             name='congenital_heart_disease_mild_dementia_mild_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(915),
         ),
     ),
@@ -11646,6 +12809,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10159),
         healthstate=Healthstate(
             name='congenital_heart_disease_mild_dementia_moderate_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(916),
         ),
     ),
@@ -11656,6 +12820,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10160),
         healthstate=Healthstate(
             name='congenital_heart_disease_mild_dementia_severe_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(917),
         ),
     ),
@@ -11666,6 +12831,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10161),
         healthstate=Healthstate(
             name='congenital_heart_disease_mild_dementia_profound_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(918),
         ),
     ),
@@ -11676,6 +12842,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10162),
         healthstate=Healthstate(
             name='congenital_heart_disease_moderate_dementia_borderline_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(919),
         ),
     ),
@@ -11686,6 +12853,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10163),
         healthstate=Healthstate(
             name='congenital_heart_disease_moderate_dementia_mild_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(920),
         ),
     ),
@@ -11696,6 +12864,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10164),
         healthstate=Healthstate(
             name='congenital_heart_disease_moderate_dementia_moderate_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(921),
         ),
     ),
@@ -11706,6 +12875,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10165),
         healthstate=Healthstate(
             name='congenital_heart_disease_moderate_dementia_severe_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(922),
         ),
     ),
@@ -11716,6 +12886,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10166),
         healthstate=Healthstate(
             name='congenital_heart_disease_moderate_dementia_profound_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(923),
         ),
     ),
@@ -11726,6 +12897,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10167),
         healthstate=Healthstate(
             name='congenital_heart_disease_severe_dementia_borderline_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(924),
         ),
     ),
@@ -11736,6 +12908,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10168),
         healthstate=Healthstate(
             name='congenital_heart_disease_severe_dementia_mild_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(925),
         ),
     ),
@@ -11746,6 +12919,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10169),
         healthstate=Healthstate(
             name='congenital_heart_disease_severe_dementia_moderate_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(926),
         ),
     ),
@@ -11756,6 +12930,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10170),
         healthstate=Healthstate(
             name='congenital_heart_disease_severe_dementia_severe_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(927),
         ),
     ),
@@ -11766,6 +12941,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10171),
         healthstate=Healthstate(
             name='congenital_heart_disease_severe_dementia_profound_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(928),
         ),
     ),
@@ -11776,6 +12952,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10187),
         healthstate=Healthstate(
             name='congenital_heart_disease_mild_dementia_borderline_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(914),
         ),
     ),
@@ -11786,6 +12963,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10188),
         healthstate=Healthstate(
             name='congenital_heart_disease_mild_dementia_mild_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(915),
         ),
     ),
@@ -11796,6 +12974,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10189),
         healthstate=Healthstate(
             name='congenital_heart_disease_mild_dementia_moderate_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(916),
         ),
     ),
@@ -11806,6 +12985,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10190),
         healthstate=Healthstate(
             name='congenital_heart_disease_mild_dementia_severe_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(917),
         ),
     ),
@@ -11816,6 +12996,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10191),
         healthstate=Healthstate(
             name='congenital_heart_disease_mild_dementia_profound_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(918),
         ),
     ),
@@ -11826,6 +13007,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10192),
         healthstate=Healthstate(
             name='congenital_heart_disease_moderate_dementia_borderline_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(919),
         ),
     ),
@@ -11836,6 +13018,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10193),
         healthstate=Healthstate(
             name='congenital_heart_disease_moderate_dementia_mild_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(920),
         ),
     ),
@@ -11846,6 +13029,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10194),
         healthstate=Healthstate(
             name='congenital_heart_disease_moderate_dementia_moderate_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(921),
         ),
     ),
@@ -11856,6 +13040,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10195),
         healthstate=Healthstate(
             name='congenital_heart_disease_moderate_dementia_severe_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(922),
         ),
     ),
@@ -11866,6 +13051,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10196),
         healthstate=Healthstate(
             name='congenital_heart_disease_moderate_dementia_profound_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(923),
         ),
     ),
@@ -11876,6 +13062,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10197),
         healthstate=Healthstate(
             name='congenital_heart_disease_severe_dementia_borderline_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(924),
         ),
     ),
@@ -11886,6 +13073,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10198),
         healthstate=Healthstate(
             name='congenital_heart_disease_severe_dementia_mild_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(925),
         ),
     ),
@@ -11896,6 +13084,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10199),
         healthstate=Healthstate(
             name='congenital_heart_disease_severe_dementia_moderate_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(926),
         ),
     ),
@@ -11906,6 +13095,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10200),
         healthstate=Healthstate(
             name='congenital_heart_disease_severe_dementia_severe_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(927),
         ),
     ),
@@ -11916,6 +13106,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10201),
         healthstate=Healthstate(
             name='congenital_heart_disease_severe_dementia_profound_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(928),
         ),
     ),
@@ -11926,6 +13117,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10248),
         healthstate=Healthstate(
             name='mild_dementia_profound_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(933),
         ),
     ),
@@ -11936,6 +13128,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10249),
         healthstate=Healthstate(
             name='mild_dementia_severe_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(932),
         ),
     ),
@@ -11946,6 +13139,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10250),
         healthstate=Healthstate(
             name='mild_dementia_moderate_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(931),
         ),
     ),
@@ -11956,6 +13150,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10251),
         healthstate=Healthstate(
             name='mild_dementia_mild_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(930),
         ),
     ),
@@ -11966,6 +13161,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10252),
         healthstate=Healthstate(
             name='mild_dementia_borderline_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(929),
         ),
     ),
@@ -11976,6 +13172,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10253),
         healthstate=Healthstate(
             name='moderate_dementia_profound_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(938),
         ),
     ),
@@ -11986,6 +13183,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10254),
         healthstate=Healthstate(
             name='moderate_dementia_severe_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(937),
         ),
     ),
@@ -11996,6 +13194,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10255),
         healthstate=Healthstate(
             name='moderate_dementia_moderate_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(936),
         ),
     ),
@@ -12006,6 +13205,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10256),
         healthstate=Healthstate(
             name='moderate_dementia_mild_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(935),
         ),
     ),
@@ -12016,6 +13216,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10257),
         healthstate=Healthstate(
             name='moderate_dementia_borderline_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(934),
         ),
     ),
@@ -12026,6 +13227,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10258),
         healthstate=Healthstate(
             name='severe_dementia_profound_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(943),
         ),
     ),
@@ -12036,6 +13238,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10259),
         healthstate=Healthstate(
             name='severe_dementia_severe_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(942),
         ),
     ),
@@ -12046,6 +13249,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10260),
         healthstate=Healthstate(
             name='severe_dementia_moderate_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(941),
         ),
     ),
@@ -12056,6 +13260,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10261),
         healthstate=Healthstate(
             name='severe_dementia_mild_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(940),
         ),
     ),
@@ -12066,6 +13271,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10262),
         healthstate=Healthstate(
             name='severe_dementia_borderline_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(939),
         ),
     ),
@@ -12076,6 +13282,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10278),
         healthstate=Healthstate(
             name='mild_dementia_profound_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(933),
         ),
     ),
@@ -12086,6 +13293,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10279),
         healthstate=Healthstate(
             name='mild_dementia_severe_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(932),
         ),
     ),
@@ -12096,6 +13304,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10280),
         healthstate=Healthstate(
             name='mild_dementia_moderate_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(931),
         ),
     ),
@@ -12106,6 +13315,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10281),
         healthstate=Healthstate(
             name='mild_dementia_mild_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(930),
         ),
     ),
@@ -12116,6 +13326,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10282),
         healthstate=Healthstate(
             name='mild_dementia_borderline_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(929),
         ),
     ),
@@ -12126,6 +13337,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10283),
         healthstate=Healthstate(
             name='moderate_dementia_profound_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(938),
         ),
     ),
@@ -12136,6 +13348,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10284),
         healthstate=Healthstate(
             name='moderate_dementia_severe_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(937),
         ),
     ),
@@ -12146,6 +13359,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10285),
         healthstate=Healthstate(
             name='moderate_dementia_moderate_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(936),
         ),
     ),
@@ -12156,6 +13370,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10286),
         healthstate=Healthstate(
             name='moderate_dementia_mild_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(935),
         ),
     ),
@@ -12166,6 +13381,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10287),
         healthstate=Healthstate(
             name='moderate_dementia_borderline_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(934),
         ),
     ),
@@ -12176,6 +13392,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10288),
         healthstate=Healthstate(
             name='severe_dementia_profound_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(943),
         ),
     ),
@@ -12186,6 +13403,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10289),
         healthstate=Healthstate(
             name='severe_dementia_severe_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(942),
         ),
     ),
@@ -12196,6 +13414,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10290),
         healthstate=Healthstate(
             name='severe_dementia_moderate_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(941),
         ),
     ),
@@ -12206,6 +13425,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10291),
         healthstate=Healthstate(
             name='severe_dementia_mild_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(940),
         ),
     ),
@@ -12216,6 +13436,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10292),
         healthstate=Healthstate(
             name='severe_dementia_borderline_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(939),
         ),
     ),
@@ -12226,6 +13447,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10302),
         healthstate=Healthstate(
             name='autism_without_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(944),
         ),
     ),
@@ -12236,6 +13458,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10303),
         healthstate=Healthstate(
             name='autism_with_borderline_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(945),
         ),
     ),
@@ -12246,6 +13469,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10304),
         healthstate=Healthstate(
             name='autism_with_mild_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(946),
         ),
     ),
@@ -12256,6 +13480,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10305),
         healthstate=Healthstate(
             name='autism_with_moderate_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(947),
         ),
     ),
@@ -12266,6 +13491,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10306),
         healthstate=Healthstate(
             name='autism_with_severe_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(948),
         ),
     ),
@@ -12276,6 +13502,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10307),
         healthstate=Healthstate(
             name='autism_with_profound_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(949),
         ),
     ),
@@ -12286,6 +13513,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10311),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -12296,6 +13524,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10312),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_mild',
+            kind='healthstate',
             gbd_id=hsid(351),
         ),
     ),
@@ -12306,6 +13535,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10313),
         healthstate=Healthstate(
             name='disfigurement_level_1',
+            kind='healthstate',
             gbd_id=hsid(553),
         ),
     ),
@@ -12316,6 +13546,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10315),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -12326,6 +13557,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10317),
         healthstate=Healthstate(
             name='disfigurement_level_1',
+            kind='healthstate',
             gbd_id=hsid(553),
         ),
     ),
@@ -12336,6 +13568,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10318),
         healthstate=Healthstate(
             name='vertigo',
+            kind='healthstate',
             gbd_id=hsid(823),
         ),
     ),
@@ -12346,6 +13579,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10327),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_mild',
+            kind='healthstate',
             gbd_id=hsid(405),
         ),
     ),
@@ -12356,6 +13590,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10328),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_moderate',
+            kind='healthstate',
             gbd_id=hsid(406),
         ),
     ),
@@ -12366,6 +13601,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10329),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_severe',
+            kind='healthstate',
             gbd_id=hsid(407),
         ),
     ),
@@ -12376,6 +13612,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10848),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -12386,6 +13623,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10849),
         healthstate=Healthstate(
             name='headache_medication_overuse',
+            kind='healthstate',
             gbd_id=hsid(413),
         ),
     ),
@@ -12396,6 +13634,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10851),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -12406,6 +13645,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10852),
         healthstate=Healthstate(
             name='headache_medication_overuse',
+            kind='healthstate',
             gbd_id=hsid(413),
         ),
     ),
@@ -12416,6 +13656,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10865),
         healthstate=Healthstate(
             name='terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(373),
         ),
     ),
@@ -12426,6 +13667,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10866),
         healthstate=Healthstate(
             name='mild_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(2456),
         ),
     ),
@@ -12436,6 +13678,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10867),
         healthstate=Healthstate(
             name='moderate_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(2459),
         ),
     ),
@@ -12446,6 +13689,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10868),
         healthstate=Healthstate(
             name='severe_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(2462),
         ),
     ),
@@ -12456,6 +13700,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10869),
         healthstate=Healthstate(
             name='terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(373),
         ),
     ),
@@ -12466,6 +13711,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10870),
         healthstate=Healthstate(
             name='mild_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(2456),
         ),
     ),
@@ -12476,6 +13722,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10871),
         healthstate=Healthstate(
             name='moderate_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(2459),
         ),
     ),
@@ -12486,6 +13733,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10872),
         healthstate=Healthstate(
             name='severe_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(2462),
         ),
     ),
@@ -12496,6 +13744,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10873),
         healthstate=Healthstate(
             name='terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(373),
         ),
     ),
@@ -12506,6 +13755,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10874),
         healthstate=Healthstate(
             name='mild_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(2456),
         ),
     ),
@@ -12516,6 +13766,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10875),
         healthstate=Healthstate(
             name='moderate_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(2459),
         ),
     ),
@@ -12526,6 +13777,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10876),
         healthstate=Healthstate(
             name='severe_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(2462),
         ),
     ),
@@ -12536,6 +13788,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10877),
         healthstate=Healthstate(
             name='terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(373),
         ),
     ),
@@ -12546,6 +13799,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10878),
         healthstate=Healthstate(
             name='mild_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(2456),
         ),
     ),
@@ -12556,6 +13810,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10879),
         healthstate=Healthstate(
             name='moderate_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(2459),
         ),
     ),
@@ -12566,6 +13821,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10880),
         healthstate=Healthstate(
             name='severe_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(2462),
         ),
     ),
@@ -12576,6 +13832,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10893),
         healthstate=Healthstate(
             name='chronic_kidney_disease_stage_iv',
+            kind='healthstate',
             gbd_id=hsid(391),
         ),
     ),
@@ -12586,6 +13843,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10894),
         healthstate=Healthstate(
             name='mild_anemia_with_stage_iv_ckd',
+            kind='healthstate',
             gbd_id=hsid(835),
         ),
     ),
@@ -12596,6 +13854,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10895),
         healthstate=Healthstate(
             name='moderate_anemia_with_stage_iv_ckd',
+            kind='healthstate',
             gbd_id=hsid(836),
         ),
     ),
@@ -12606,6 +13865,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10896),
         healthstate=Healthstate(
             name='severe_anemia_with_stage_iv_ckd',
+            kind='healthstate',
             gbd_id=hsid(837),
         ),
     ),
@@ -12616,6 +13876,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10897),
         healthstate=Healthstate(
             name='chronic_kidney_disease_stage_iv',
+            kind='healthstate',
             gbd_id=hsid(391),
         ),
     ),
@@ -12626,6 +13887,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10898),
         healthstate=Healthstate(
             name='mild_anemia_with_stage_iv_ckd',
+            kind='healthstate',
             gbd_id=hsid(835),
         ),
     ),
@@ -12636,6 +13898,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10899),
         healthstate=Healthstate(
             name='moderate_anemia_with_stage_iv_ckd',
+            kind='healthstate',
             gbd_id=hsid(836),
         ),
     ),
@@ -12646,6 +13909,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10900),
         healthstate=Healthstate(
             name='severe_anemia_with_stage_iv_ckd',
+            kind='healthstate',
             gbd_id=hsid(837),
         ),
     ),
@@ -12656,6 +13920,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10901),
         healthstate=Healthstate(
             name='chronic_kidney_disease_stage_iv',
+            kind='healthstate',
             gbd_id=hsid(391),
         ),
     ),
@@ -12666,6 +13931,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10902),
         healthstate=Healthstate(
             name='mild_anemia_with_stage_iv_ckd',
+            kind='healthstate',
             gbd_id=hsid(835),
         ),
     ),
@@ -12676,6 +13942,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10903),
         healthstate=Healthstate(
             name='moderate_anemia_with_stage_iv_ckd',
+            kind='healthstate',
             gbd_id=hsid(836),
         ),
     ),
@@ -12686,6 +13953,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10904),
         healthstate=Healthstate(
             name='severe_anemia_with_stage_iv_ckd',
+            kind='healthstate',
             gbd_id=hsid(837),
         ),
     ),
@@ -12696,6 +13964,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10905),
         healthstate=Healthstate(
             name='chronic_kidney_disease_stage_iv',
+            kind='healthstate',
             gbd_id=hsid(391),
         ),
     ),
@@ -12706,6 +13975,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10906),
         healthstate=Healthstate(
             name='mild_anemia_with_stage_iv_ckd',
+            kind='healthstate',
             gbd_id=hsid(835),
         ),
     ),
@@ -12716,6 +13986,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10907),
         healthstate=Healthstate(
             name='moderate_anemia_with_stage_iv_ckd',
+            kind='healthstate',
             gbd_id=hsid(836),
         ),
     ),
@@ -12726,6 +13997,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10908),
         healthstate=Healthstate(
             name='severe_anemia_with_stage_iv_ckd',
+            kind='healthstate',
             gbd_id=hsid(837),
         ),
     ),
@@ -12736,6 +14008,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10918),
         healthstate=Healthstate(
             name='disfigurement_level_1_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(556),
         ),
     ),
@@ -12746,6 +14019,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10919),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_severe',
+            kind='healthstate',
             gbd_id=hsid(570),
         ),
     ),
@@ -12756,6 +14030,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10921),
         healthstate=Healthstate(
             name='disfigurement_level_1_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(556),
         ),
     ),
@@ -12766,6 +14041,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10920),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_severe',
+            kind='healthstate',
             gbd_id=hsid(570),
         ),
     ),
@@ -12776,6 +14052,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11646),
         healthstate=Healthstate(
             name='disfigurement_level_2_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(557),
         ),
     ),
@@ -12786,6 +14063,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10739),
         healthstate=Healthstate(
             name='cancer_metastatic',
+            kind='healthstate',
             gbd_id=hsid(369),
         ),
     ),
@@ -12796,6 +14074,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10737),
         healthstate=Healthstate(
             name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
             gbd_id=hsid(368),
         ),
     ),
@@ -12806,6 +14085,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10740),
         healthstate=Healthstate(
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
             gbd_id=hsid(372),
         ),
     ),
@@ -12816,6 +14096,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10738),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
             gbd_id=hsid(559),
         ),
     ),
@@ -12826,6 +14107,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10829),
         healthstate=Healthstate(
             name='tuberculosis_not_hiv_infected',
+            kind='healthstate',
             gbd_id=hsid(366),
         ),
     ),
@@ -12836,6 +14118,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10830),
         healthstate=Healthstate(
             name='tuberculosis_not_hiv_infected',
+            kind='healthstate',
             gbd_id=hsid(366),
         ),
     ),
@@ -12846,6 +14129,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10831),
         healthstate=Healthstate(
             name='tuberculosis_not_hiv_infected',
+            kind='healthstate',
             gbd_id=hsid(366),
         ),
     ),
@@ -12856,6 +14140,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10401),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -12866,6 +14151,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10402),
         healthstate=Healthstate(
             name='spinal_cord_lesion_below_neck_level_treated',
+            kind='healthstate',
             gbd_id=hsid(540),
         ),
     ),
@@ -12876,6 +14162,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10403),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairment_with_epilepsy',
+            kind='healthstate',
             gbd_id=hsid(785),
         ),
     ),
@@ -12886,6 +14173,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11028),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -12896,6 +14184,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11216),
         healthstate=Healthstate(
             name='heart_failure_mild',
+            kind='healthstate',
             gbd_id=hsid(381),
         ),
     ),
@@ -12906,6 +14195,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11217),
         healthstate=Healthstate(
             name='heart_failure_moderate',
+            kind='healthstate',
             gbd_id=hsid(382),
         ),
     ),
@@ -12916,6 +14206,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11218),
         healthstate=Healthstate(
             name='heart_failure_severe',
+            kind='healthstate',
             gbd_id=hsid(383),
         ),
     ),
@@ -12926,6 +14217,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11219),
         healthstate=Healthstate(
             name='heart_failure_mild',
+            kind='healthstate',
             gbd_id=hsid(381),
         ),
     ),
@@ -12936,6 +14228,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11220),
         healthstate=Healthstate(
             name='heart_failure_moderate',
+            kind='healthstate',
             gbd_id=hsid(382),
         ),
     ),
@@ -12946,6 +14239,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11221),
         healthstate=Healthstate(
             name='heart_failure_severe',
+            kind='healthstate',
             gbd_id=hsid(383),
         ),
     ),
@@ -12956,6 +14250,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11222),
         healthstate=Healthstate(
             name='heart_failure_mild',
+            kind='healthstate',
             gbd_id=hsid(381),
         ),
     ),
@@ -12966,6 +14261,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11223),
         healthstate=Healthstate(
             name='heart_failure_moderate',
+            kind='healthstate',
             gbd_id=hsid(382),
         ),
     ),
@@ -12976,6 +14272,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11224),
         healthstate=Healthstate(
             name='heart_failure_severe',
+            kind='healthstate',
             gbd_id=hsid(383),
         ),
     ),
@@ -12986,6 +14283,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11108),
         healthstate=Healthstate(
             name='disfigurement_level_1',
+            kind='healthstate',
             gbd_id=hsid(553),
         ),
     ),
@@ -12996,6 +14294,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11109),
         healthstate=Healthstate(
             name='disfigurement_level_2',
+            kind='healthstate',
             gbd_id=hsid(554),
         ),
     ),
@@ -13006,6 +14305,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11110),
         healthstate=Healthstate(
             name='disfigurement_level_2_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(557),
         ),
     ),
@@ -13016,6 +14316,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11113),
         healthstate=Healthstate(
             name='level_2_disfigurement_with_mild_motor_impairment',
+            kind='healthstate',
             gbd_id=hsid(2216),
         ),
     ),
@@ -13026,6 +14327,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11114),
         healthstate=Healthstate(
             name='level_2_disfigurement_with_moderate_motor_impairment',
+            kind='healthstate',
             gbd_id=hsid(2219),
         ),
     ),
@@ -13036,6 +14338,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11115),
         healthstate=Healthstate(
             name='level_2_disfigurement_with_itch_pain_and_mild_motor_impairment',
+            kind='healthstate',
             gbd_id=hsid(2222),
         ),
     ),
@@ -13046,6 +14349,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11116),
         healthstate=Healthstate(
             name='level_2_disfigurement_with_itch_pain_and_moderate_motor_impairment',
+            kind='healthstate',
             gbd_id=hsid(2225),
         ),
     ),
@@ -13056,6 +14360,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11117),
         healthstate=Healthstate(
             name='disfigurement_level_2',
+            kind='healthstate',
             gbd_id=hsid(554),
         ),
     ),
@@ -13066,6 +14371,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11118),
         healthstate=Healthstate(
             name='disfigurement_level_2_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(557),
         ),
     ),
@@ -13076,6 +14382,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11121),
         healthstate=Healthstate(
             name='level_2_disfigurement_with_mild_motor_impairment',
+            kind='healthstate',
             gbd_id=hsid(2216),
         ),
     ),
@@ -13086,6 +14393,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11122),
         healthstate=Healthstate(
             name='level_2_disfigurement_with_moderate_motor_impairment',
+            kind='healthstate',
             gbd_id=hsid(2219),
         ),
     ),
@@ -13096,6 +14404,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11123),
         healthstate=Healthstate(
             name='level_2_disfigurement_with_itch_pain_and_mild_motor_impairment',
+            kind='healthstate',
             gbd_id=hsid(2222),
         ),
     ),
@@ -13106,6 +14415,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11124),
         healthstate=Healthstate(
             name='level_2_disfigurement_with_itch_pain_and_moderate_motor_impairment',
+            kind='healthstate',
             gbd_id=hsid(2225),
         ),
     ),
@@ -13116,6 +14426,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11077),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -13126,6 +14437,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11078),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -13136,6 +14448,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11079),
         healthstate=Healthstate(
             name='disfigurement_level_1',
+            kind='healthstate',
             gbd_id=hsid(553),
         ),
     ),
@@ -13146,6 +14459,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11080),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_mild',
+            kind='healthstate',
             gbd_id=hsid(405),
         ),
     ),
@@ -13156,6 +14470,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11081),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_mild',
+            kind='healthstate',
             gbd_id=hsid(451),
         ),
     ),
@@ -13166,6 +14481,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11082),
         healthstate=Healthstate(
             name='level_1_disfigurement_with_itch_pain_and_mild_abdominopelvic_problem',
+            kind='healthstate',
             gbd_id=hsid(2228),
         ),
     ),
@@ -13176,6 +14492,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11083),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_and_mild_copd_and_other_chronic_respiratory_problems',
+            kind='healthstate',
             gbd_id=hsid(2231),
         ),
     ),
@@ -13186,6 +14503,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11084),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_and_mild_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(2234),
         ),
     ),
@@ -13196,6 +14514,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11085),
         healthstate=Healthstate(
             name='level_1_disfigurement_with_itch_pain_and_mild_copd_and_other_chronic_respiratory_problems',
+            kind='healthstate',
             gbd_id=hsid(2237),
         ),
     ),
@@ -13206,6 +14525,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11086),
         healthstate=Healthstate(
             name='level_1_disfigurement_with_itch_pain_and_mild_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(2240),
         ),
     ),
@@ -13216,6 +14536,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11087),
         healthstate=Healthstate(
             name='mild_intellectual_disability_and_mild_copd_and_other_chronic_respiratory_problem',
+            kind='healthstate',
             gbd_id=hsid(2243),
         ),
     ),
@@ -13226,6 +14547,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11088),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_mild_copd_and_other_chronic_respiratory_problems_and_level_1_disfigurement_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(2246),
         ),
     ),
@@ -13236,6 +14558,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11089),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_mild_intellectual_disability_and_level_1_disfigurement_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(2249),
         ),
     ),
@@ -13246,6 +14569,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11090),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_mild_copd_and_other_chronic_respiratory_problems_and_level_1_disfigurement_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(2246),
         ),
     ),
@@ -13256,6 +14580,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11091),
         healthstate=Healthstate(
             name='mild_copd_and_other_chronic_respiratory_problems_mild_intellectual_disability_and_level_1_disfigurement_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(2252),
         ),
     ),
@@ -13266,6 +14591,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11092),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_mild_copd_and_other_chronic_respiratory_problems_mild_intellectual_disability_and_level_1_disfigurement_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(2255),
         ),
     ),
@@ -13276,6 +14602,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11154),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -13286,6 +14613,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11155),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -13296,6 +14624,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11156),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),
@@ -13306,6 +14635,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11157),
         healthstate=Healthstate(
             name='copd_and_other_chronic_respiratory_problems_mild',
+            kind='healthstate',
             gbd_id=hsid(405),
         ),
     ),
@@ -13316,6 +14646,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11158),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_and_mild_copd_and_other_chronic_respiratory_problems',
+            kind='healthstate',
             gbd_id=hsid(2231),
         ),
     ),
@@ -13326,6 +14657,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11159),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_and_mild_copd_and_other_chronic_respiratory_problems',
+            kind='healthstate',
             gbd_id=hsid(2231),
         ),
     ),
@@ -13336,6 +14668,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11160),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_and_moderate_abdominopelvic_problem',
+            kind='healthstate',
             gbd_id=hsid(2291),
         ),
     ),
@@ -13346,6 +14679,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11161),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_moderate_abdominopelvic_problem_and_mild_copd_and_other_chronic_respiratory_problems',
+            kind='healthstate',
             gbd_id=hsid(2288),
         ),
     ),
@@ -13356,6 +14690,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11162),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -13366,6 +14701,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11163),
         healthstate=Healthstate(
             name='disfigurement_level_1',
+            kind='healthstate',
             gbd_id=hsid(553),
         ),
     ),
@@ -13376,6 +14712,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11164),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),
@@ -13386,6 +14723,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11165),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -13396,6 +14734,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11166),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_and_level_1_disfigurement',
+            kind='healthstate',
             gbd_id=hsid(2282),
         ),
     ),
@@ -13406,6 +14745,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11167),
         healthstate=Healthstate(
             name='moderate_abdominopelvic_problem_and_level_1_disfigurement',
+            kind='healthstate',
             gbd_id=hsid(2267),
         ),
     ),
@@ -13416,6 +14756,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11168),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_and_moderate_abdominopelvic_problem',
+            kind='healthstate',
             gbd_id=hsid(2291),
         ),
     ),
@@ -13426,6 +14767,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11169),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_moderate_abdominopelvic_problem_and_level_1_disfigurement',
+            kind='healthstate',
             gbd_id=hsid(2285),
         ),
     ),
@@ -13436,6 +14778,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11170),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -13446,6 +14789,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11171),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -13456,6 +14800,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11172),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),
@@ -13466,6 +14811,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11173),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_and_moderate_abdominopelvic_problem',
+            kind='healthstate',
             gbd_id=hsid(2291),
         ),
     ),
@@ -13476,6 +14822,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11031),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -13486,6 +14833,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11032),
         healthstate=Healthstate(
             name='disfigurement_level_1',
+            kind='healthstate',
             gbd_id=hsid(553),
         ),
     ),
@@ -13496,6 +14844,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11033),
         healthstate=Healthstate(
             name='infertility_primary',
+            kind='healthstate',
             gbd_id=hsid(400),
         ),
     ),
@@ -13506,6 +14855,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11034),
         healthstate=Healthstate(
             name='impotence',
+            kind='healthstate',
             gbd_id=hsid(399),
         ),
     ),
@@ -13516,6 +14866,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11035),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -13526,6 +14877,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11036),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_and_level_1_disfigurement',
+            kind='healthstate',
             gbd_id=hsid(2282),
         ),
     ),
@@ -13536,6 +14888,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11037),
         healthstate=Healthstate(
             name='disfigurement_level_1_and_primary_infertility',
+            kind='healthstate',
             gbd_id=hsid(800),
         ),
     ),
@@ -13546,6 +14899,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11038),
         healthstate=Healthstate(
             name='level_1_disfigurement_and_impotence',
+            kind='healthstate',
             gbd_id=hsid(2273),
         ),
     ),
@@ -13556,6 +14910,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11039),
         healthstate=Healthstate(
             name='mild_abdominal_pain_and_primary_infertility',
+            kind='healthstate',
             gbd_id=hsid(801),
         ),
     ),
@@ -13566,6 +14921,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11040),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_and_impotence',
+            kind='healthstate',
             gbd_id=hsid(2264),
         ),
     ),
@@ -13576,6 +14932,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11041),
         healthstate=Healthstate(
             name='primary_infertility_and_impotence',
+            kind='healthstate',
             gbd_id=hsid(2279),
         ),
     ),
@@ -13586,6 +14943,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11042),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_level_1_disfigurement_and_primary_infertility',
+            kind='healthstate',
             gbd_id=hsid(2270),
         ),
     ),
@@ -13596,6 +14954,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11043),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_level_1_disfigurement_and_impotence',
+            kind='healthstate',
             gbd_id=hsid(2276),
         ),
     ),
@@ -13606,6 +14965,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11044),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_level_1_disfigurement_and_primary_infertility',
+            kind='healthstate',
             gbd_id=hsid(2270),
         ),
     ),
@@ -13616,6 +14976,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11045),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_primary_infertility_and_impotence',
+            kind='healthstate',
             gbd_id=hsid(2261),
         ),
     ),
@@ -13626,6 +14987,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11046),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_primary_infertility_impotence_and_level_1_disfigurement',
+            kind='healthstate',
             gbd_id=hsid(2258),
         ),
     ),
@@ -13636,6 +14998,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11392),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -13646,6 +15009,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11361),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -13656,6 +15020,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11362),
         healthstate=Healthstate(
             name='disfigurement_level_1',
+            kind='healthstate',
             gbd_id=hsid(553),
         ),
     ),
@@ -13666,6 +15031,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11363),
         healthstate=Healthstate(
             name='urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(398),
         ),
     ),
@@ -13676,6 +15042,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11364),
         healthstate=Healthstate(
             name='impotence',
+            kind='healthstate',
             gbd_id=hsid(399),
         ),
     ),
@@ -13686,6 +15053,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11365),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -13696,6 +15064,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11366),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_and_level_1_disfigurement',
+            kind='healthstate',
             gbd_id=hsid(2282),
         ),
     ),
@@ -13706,6 +15075,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11367),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_and_level_1_disfigurement',
+            kind='healthstate',
             gbd_id=hsid(2282),
         ),
     ),
@@ -13716,6 +15086,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11368),
         healthstate=Healthstate(
             name='level_1_disfigurement_and_impotence',
+            kind='healthstate',
             gbd_id=hsid(2273),
         ),
     ),
@@ -13726,6 +15097,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11369),
         healthstate=Healthstate(
             name='level_1_disfigurement_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2351),
         ),
     ),
@@ -13736,6 +15108,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11370),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_and_impotence',
+            kind='healthstate',
             gbd_id=hsid(2264),
         ),
     ),
@@ -13746,6 +15119,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11371),
         healthstate=Healthstate(
             name='urinary_incontinence_and_impotence',
+            kind='healthstate',
             gbd_id=hsid(2354),
         ),
     ),
@@ -13756,6 +15130,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11372),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_urinary_incontinence_and_level_1_disfigurement',
+            kind='healthstate',
             gbd_id=hsid(2357),
         ),
     ),
@@ -13766,6 +15141,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11373),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_level_1_disfigurement_and_impotence',
+            kind='healthstate',
             gbd_id=hsid(2276),
         ),
     ),
@@ -13776,6 +15152,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11374),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_urinary_incontinence_and_level_1_disfigurement',
+            kind='healthstate',
             gbd_id=hsid(2357),
         ),
     ),
@@ -13786,6 +15163,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11375),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_urinary_incontinence_and_impotence',
+            kind='healthstate',
             gbd_id=hsid(2360),
         ),
     ),
@@ -13796,6 +15174,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11376),
         healthstate=Healthstate(
             name='mild_abdominopelvic_problem_urinary_incontinence_impotence_and_level_1_disfigurement',
+            kind='healthstate',
             gbd_id=hsid(2363),
         ),
     ),
@@ -13806,6 +15185,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11310),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_severe',
+            kind='healthstate',
             gbd_id=hsid(570),
         ),
     ),
@@ -13816,6 +15196,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11311),
         healthstate=Healthstate(
             name='severe_motor_plus_cognitive_impairments_and_congenital_heart_disease',
+            kind='healthstate',
             gbd_id=hsid(2366),
         ),
     ),
@@ -13826,6 +15207,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10942),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_severe',
+            kind='healthstate',
             gbd_id=hsid(570),
         ),
     ),
@@ -13836,6 +15218,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11268),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -13846,6 +15229,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11269),
         healthstate=Healthstate(
             name='borderline_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(450),
         ),
     ),
@@ -13856,6 +15240,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11270),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_mild',
+            kind='healthstate',
             gbd_id=hsid(451),
         ),
     ),
@@ -13866,6 +15251,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11271),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_moderate',
+            kind='healthstate',
             gbd_id=hsid(452),
         ),
     ),
@@ -13876,6 +15262,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11272),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_severe',
+            kind='healthstate',
             gbd_id=hsid(453),
         ),
     ),
@@ -13886,6 +15273,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11273),
         healthstate=Healthstate(
             name='intellectual_disability_mental_retardation_profound',
+            kind='healthstate',
             gbd_id=hsid(454),
         ),
     ),
@@ -13896,6 +15284,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11274),
         healthstate=Healthstate(
             name='urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(398),
         ),
     ),
@@ -13906,6 +15295,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11275),
         healthstate=Healthstate(
             name='borderline_intellectual_functioning_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2369),
         ),
     ),
@@ -13916,6 +15306,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11276),
         healthstate=Healthstate(
             name='mild_intellectual_disability_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2372),
         ),
     ),
@@ -13926,6 +15317,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11277),
         healthstate=Healthstate(
             name='moderate_intellectual_disability_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2375),
         ),
     ),
@@ -13936,6 +15328,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11278),
         healthstate=Healthstate(
             name='severe_intellectual_disability_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2378),
         ),
     ),
@@ -13946,6 +15339,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11279),
         healthstate=Healthstate(
             name='profound_intellectual_disability_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2381),
         ),
     ),
@@ -13956,6 +15350,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11280),
         healthstate=Healthstate(
             name='motor_impairment_mild',
+            kind='healthstate',
             gbd_id=hsid(565),
         ),
     ),
@@ -13966,6 +15361,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11281),
         healthstate=Healthstate(
             name='motor_impairment_moderate',
+            kind='healthstate',
             gbd_id=hsid(566),
         ),
     ),
@@ -13976,6 +15372,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11282),
         healthstate=Healthstate(
             name='motor_impairment_severe',
+            kind='healthstate',
             gbd_id=hsid(567),
         ),
     ),
@@ -13986,6 +15383,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11283),
         healthstate=Healthstate(
             name='mild_motor_impairment_and_borderline_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(2384),
         ),
     ),
@@ -13996,6 +15394,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11284),
         healthstate=Healthstate(
             name='moderate_motor_impairment_and_borderline_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(2387),
         ),
     ),
@@ -14006,6 +15405,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11285),
         healthstate=Healthstate(
             name='severe_motor_impairment_and_borderline_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(2390),
         ),
     ),
@@ -14016,6 +15416,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11286),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_mild',
+            kind='healthstate',
             gbd_id=hsid(568),
         ),
     ),
@@ -14026,6 +15427,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11287),
         healthstate=Healthstate(
             name='moderate_motor_impairment_and_mild_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(2393),
         ),
     ),
@@ -14036,6 +15438,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11288),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_mild_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(907),
         ),
     ),
@@ -14046,6 +15449,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11289),
         healthstate=Healthstate(
             name='mild_motor_impairment_and_moderate_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(2396),
         ),
     ),
@@ -14056,6 +15460,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11290),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_moderate',
+            kind='healthstate',
             gbd_id=hsid(569),
         ),
     ),
@@ -14066,6 +15471,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11291),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_moderate_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(908),
         ),
     ),
@@ -14076,6 +15482,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11292),
         healthstate=Healthstate(
             name='mild_motor_impairment_and_severe_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(2399),
         ),
     ),
@@ -14086,6 +15493,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11293),
         healthstate=Healthstate(
             name='moderate_motor_impairment_and_severe_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(2402),
         ),
     ),
@@ -14096,6 +15504,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11294),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_severe_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(909),
         ),
     ),
@@ -14106,6 +15515,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11295),
         healthstate=Healthstate(
             name='mild_motor_impairment_borderline_intellectual_functioning_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2405),
         ),
     ),
@@ -14116,6 +15526,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11296),
         healthstate=Healthstate(
             name='moderate_motor_impairment_borderline_intellectual_functioning_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2408),
         ),
     ),
@@ -14126,6 +15537,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11297),
         healthstate=Healthstate(
             name='severe_motor_impairment_borderline_intellectual_functioning_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2411),
         ),
     ),
@@ -14136,6 +15548,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11298),
         healthstate=Healthstate(
             name='mild_motor_impairment_mild_intellectual_functioning_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2414),
         ),
     ),
@@ -14146,6 +15559,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11299),
         healthstate=Healthstate(
             name='moderate_motor_impairment_mild_intellectual_functioning_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2417),
         ),
     ),
@@ -14156,6 +15570,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11300),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_mild_intellectual_disability_and_incontinence',
+            kind='healthstate',
             gbd_id=hsid(903),
         ),
     ),
@@ -14166,6 +15581,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11301),
         healthstate=Healthstate(
             name='mild_motor_impairment_moderate_intellectual_functioning_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2420),
         ),
     ),
@@ -14176,6 +15592,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11302),
         healthstate=Healthstate(
             name='moderate_motor_impairment_moderate_intellectual_functioning_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2423),
         ),
     ),
@@ -14186,6 +15603,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11303),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_moderate_intellectual_disability_and_incontinence',
+            kind='healthstate',
             gbd_id=hsid(904),
         ),
     ),
@@ -14196,6 +15614,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11304),
         healthstate=Healthstate(
             name='mild_motor_impairment_servere_intellectual_functioning_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2426),
         ),
     ),
@@ -14206,6 +15625,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11305),
         healthstate=Healthstate(
             name='moderate_motor_impairment_servere_intellectual_functioning_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2429),
         ),
     ),
@@ -14216,6 +15636,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11306),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_severe_intellectual_disability_and_incontinence',
+            kind='healthstate',
             gbd_id=hsid(905),
         ),
     ),
@@ -14226,6 +15647,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11307),
         healthstate=Healthstate(
             name='mild_motor_impairment_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2432),
         ),
     ),
@@ -14236,6 +15658,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11308),
         healthstate=Healthstate(
             name='moderate_motor_impairment_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2435),
         ),
     ),
@@ -14246,6 +15669,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11309),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_incontinence',
+            kind='healthstate',
             gbd_id=hsid(766),
         ),
     ),
@@ -14256,6 +15680,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10981),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -14266,6 +15691,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(1608),
         healthstate=Healthstate(
             name='kwashiorkor_and_severe_wasting',
+            kind='healthstate',
             gbd_id=hsid(2438),
         ),
     ),
@@ -14276,6 +15702,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11519),
         healthstate=Healthstate(
             name='disfigurement_level_1',
+            kind='healthstate',
             gbd_id=hsid(553),
         ),
     ),
@@ -14286,6 +15713,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11520),
         healthstate=Healthstate(
             name='disfigurement_level_2',
+            kind='healthstate',
             gbd_id=hsid(554),
         ),
     ),
@@ -14296,6 +15724,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11521),
         healthstate=Healthstate(
             name='disfigurement_level_3_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(558),
         ),
     ),
@@ -14306,6 +15735,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16413),
         healthstate=Healthstate(
             name='moderate_motor_plus_cognitive_impairments_and_moderate_infectious_disease_acute_episode',
+            kind='healthstate',
             gbd_id=hsid(2441),
         ),
     ),
@@ -14316,6 +15746,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16411),
         healthstate=Healthstate(
             name='level_3_disfigurement_and_moderate_infectious_disease_acute_episode',
+            kind='healthstate',
             gbd_id=hsid(2444),
         ),
     ),
@@ -14326,6 +15757,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16410),
         healthstate=Healthstate(
             name='level_3_disfigurement_and_moderate_motor_plus_cognitive_impairments',
+            kind='healthstate',
             gbd_id=hsid(2447),
         ),
     ),
@@ -14336,6 +15768,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16409),
         healthstate=Healthstate(
             name='level_3_disfigurement_moderate_motor_plus_cognitive_impairments_and_moderate_infectious_disease_acute_episode',
+            kind='healthstate',
             gbd_id=hsid(2450),
         ),
     ),
@@ -14346,6 +15779,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11523),
         healthstate=Healthstate(
             name='mild_motor_impairment_with_profound_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(2597),
         ),
     ),
@@ -14356,6 +15790,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11524),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_profound_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(2600),
         ),
     ),
@@ -14366,6 +15801,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11525),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_profound_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(910),
         ),
     ),
@@ -14376,6 +15812,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11526),
         healthstate=Healthstate(
             name='mild_motor_impairment_profound_intellectual_functioning_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2453),
         ),
     ),
@@ -14386,6 +15823,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11527),
         healthstate=Healthstate(
             name='moderate_motor_impairment_with_profound_intellectual_disability_and_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2603),
         ),
     ),
@@ -14396,6 +15834,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11528),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_profound_intellectual_disability_and_incontinence',
+            kind='healthstate',
             gbd_id=hsid(906),
         ),
     ),
@@ -14406,6 +15845,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11530),
         healthstate=Healthstate(
             name='motor_impairment_mild',
+            kind='healthstate',
             gbd_id=hsid(565),
         ),
     ),
@@ -14416,6 +15856,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11531),
         healthstate=Healthstate(
             name='motor_impairment_moderate',
+            kind='healthstate',
             gbd_id=hsid(566),
         ),
     ),
@@ -14426,6 +15867,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11532),
         healthstate=Healthstate(
             name='motor_impairment_severe',
+            kind='healthstate',
             gbd_id=hsid(567),
         ),
     ),
@@ -14436,6 +15878,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11533),
         healthstate=Healthstate(
             name='mild_motor_impairment_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2432),
         ),
     ),
@@ -14446,6 +15889,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11534),
         healthstate=Healthstate(
             name='moderate_motor_impairment_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2435),
         ),
     ),
@@ -14456,6 +15900,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11535),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_incontinence',
+            kind='healthstate',
             gbd_id=hsid(766),
         ),
     ),
@@ -14466,6 +15911,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11536),
         healthstate=Healthstate(
             name='mild_motor_impairment_and_borderline_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(2384),
         ),
     ),
@@ -14476,6 +15922,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11537),
         healthstate=Healthstate(
             name='moderate_motor_impairment_and_borderline_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(2387),
         ),
     ),
@@ -14486,6 +15933,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11538),
         healthstate=Healthstate(
             name='severe_motor_impairment_and_borderline_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(2390),
         ),
     ),
@@ -14496,6 +15944,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11539),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_mild',
+            kind='healthstate',
             gbd_id=hsid(568),
         ),
     ),
@@ -14506,6 +15955,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11540),
         healthstate=Healthstate(
             name='moderate_motor_impairment_and_mild_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(2393),
         ),
     ),
@@ -14516,6 +15966,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11541),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_mild_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(907),
         ),
     ),
@@ -14526,6 +15977,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11542),
         healthstate=Healthstate(
             name='mild_motor_impairment_and_moderate_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(2396),
         ),
     ),
@@ -14536,6 +15988,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11543),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_moderate',
+            kind='healthstate',
             gbd_id=hsid(569),
         ),
     ),
@@ -14546,6 +15999,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11544),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_moderate_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(908),
         ),
     ),
@@ -14556,6 +16010,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11545),
         healthstate=Healthstate(
             name='mild_motor_impairment_and_severe_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(2399),
         ),
     ),
@@ -14566,6 +16021,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11546),
         healthstate=Healthstate(
             name='moderate_motor_impairment_and_severe_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(2402),
         ),
     ),
@@ -14576,6 +16032,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11547),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_severe_intellectual_disability',
+            kind='healthstate',
             gbd_id=hsid(909),
         ),
     ),
@@ -14586,6 +16043,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11548),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_incontinence',
+            kind='healthstate',
             gbd_id=hsid(766),
         ),
     ),
@@ -14596,6 +16054,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11549),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_incontinence',
+            kind='healthstate',
             gbd_id=hsid(766),
         ),
     ),
@@ -14606,6 +16065,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11550),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_incontinence',
+            kind='healthstate',
             gbd_id=hsid(766),
         ),
     ),
@@ -14616,6 +16076,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11551),
         healthstate=Healthstate(
             name='mild_motor_impairment_borderline_intellectual_functioning_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2405),
         ),
     ),
@@ -14626,6 +16087,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11552),
         healthstate=Healthstate(
             name='moderate_motor_impairment_borderline_intellectual_functioning_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2408),
         ),
     ),
@@ -14636,6 +16098,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11553),
         healthstate=Healthstate(
             name='severe_motor_impairment_borderline_intellectual_functioning_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2411),
         ),
     ),
@@ -14646,6 +16109,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11554),
         healthstate=Healthstate(
             name='mild_motor_impairment_mild_intellectual_functioning_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2414),
         ),
     ),
@@ -14656,6 +16120,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11555),
         healthstate=Healthstate(
             name='moderate_motor_impairment_mild_intellectual_functioning_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2417),
         ),
     ),
@@ -14666,6 +16131,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11556),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_mild_intellectual_disability_and_incontinence',
+            kind='healthstate',
             gbd_id=hsid(903),
         ),
     ),
@@ -14676,6 +16142,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11557),
         healthstate=Healthstate(
             name='mild_motor_impairment_moderate_intellectual_functioning_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2420),
         ),
     ),
@@ -14686,6 +16153,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11558),
         healthstate=Healthstate(
             name='moderate_motor_impairment_moderate_intellectual_functioning_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2423),
         ),
     ),
@@ -14696,6 +16164,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11559),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_moderate_intellectual_disability_and_incontinence',
+            kind='healthstate',
             gbd_id=hsid(904),
         ),
     ),
@@ -14706,6 +16175,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11560),
         healthstate=Healthstate(
             name='mild_motor_impairment_servere_intellectual_functioning_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2426),
         ),
     ),
@@ -14716,6 +16186,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11561),
         healthstate=Healthstate(
             name='moderate_motor_impairment_servere_intellectual_functioning_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2429),
         ),
     ),
@@ -14726,6 +16197,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11562),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_severe_intellectual_disability_and_incontinence',
+            kind='healthstate',
             gbd_id=hsid(905),
         ),
     ),
@@ -14736,6 +16208,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11563),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_incontinence',
+            kind='healthstate',
             gbd_id=hsid(766),
         ),
     ),
@@ -14746,6 +16219,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11564),
         healthstate=Healthstate(
             name='mild_motor_impairment_profound_intellectual_functioning_and_urinary_incontinence',
+            kind='healthstate',
             gbd_id=hsid(2453),
         ),
     ),
@@ -14756,6 +16230,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11565),
         healthstate=Healthstate(
             name='severe_motor_impairment_with_severe_intellectual_disability_and_incontinence',
+            kind='healthstate',
             gbd_id=hsid(905),
         ),
     ),
@@ -14766,6 +16241,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11610),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -14776,6 +16252,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10352),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -14786,6 +16263,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11647),
         healthstate=Healthstate(
             name='disfigurement_level_1_with_itch_pain',
+            kind='healthstate',
             gbd_id=hsid(556),
         ),
     ),
@@ -14796,6 +16274,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11648),
         healthstate=Healthstate(
             name='musculoskeletal_problems_lower_limbs_moderate',
+            kind='healthstate',
             gbd_id=hsid(479),
         ),
     ),
@@ -14806,6 +16285,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15813),
         healthstate=Healthstate(
             name='iodine_deficiency_goiter',
+            kind='healthstate',
             gbd_id=hsid(561),
         ),
     ),
@@ -14816,6 +16296,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16283),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -14826,6 +16307,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16284),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),
@@ -14836,6 +16318,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16285),
         healthstate=Healthstate(
             name='abdominopelvic_problem_severe',
+            kind='healthstate',
             gbd_id=hsid(546),
         ),
     ),
@@ -14846,6 +16329,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16286),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -14856,6 +16340,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16287),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),
@@ -14866,6 +16351,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16288),
         healthstate=Healthstate(
             name='abdominopelvic_problem_severe',
+            kind='healthstate',
             gbd_id=hsid(546),
         ),
     ),
@@ -14876,6 +16362,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16289),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -14886,6 +16373,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16291),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -14896,6 +16384,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16293),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -14906,6 +16395,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16294),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),
@@ -14916,6 +16406,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16295),
         healthstate=Healthstate(
             name='abdominopelvic_problem_severe',
+            kind='healthstate',
             gbd_id=hsid(546),
         ),
     ),
@@ -14926,6 +16417,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16296),
         healthstate=Healthstate(
             name='disfigurement_level_1',
+            kind='healthstate',
             gbd_id=hsid(553),
         ),
     ),
@@ -14936,6 +16428,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16297),
         healthstate=Healthstate(
             name='disfigurement_level_2',
+            kind='healthstate',
             gbd_id=hsid(554),
         ),
     ),
@@ -14946,6 +16439,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16298),
         healthstate=Healthstate(
             name='disfigurement_level_3',
+            kind='healthstate',
             gbd_id=hsid(555),
         ),
     ),
@@ -14956,6 +16450,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16299),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -14966,6 +16461,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16300),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -14976,6 +16472,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16301),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),
@@ -14986,6 +16483,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16302),
         healthstate=Healthstate(
             name='abdominopelvic_problem_severe',
+            kind='healthstate',
             gbd_id=hsid(546),
         ),
     ),
@@ -14996,6 +16494,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15820),
         healthstate=Healthstate(
             name='congenital_heart_disease',
+            kind='healthstate',
             gbd_id=hsid(574),
         ),
     ),
@@ -15006,6 +16505,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15821),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_borderline_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(2519),
         ),
     ),
@@ -15016,6 +16516,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15822),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_mild',
+            kind='healthstate',
             gbd_id=hsid(2522),
         ),
     ),
@@ -15026,6 +16527,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15823),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_moderate',
+            kind='healthstate',
             gbd_id=hsid(2525),
         ),
     ),
@@ -15036,6 +16538,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15824),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_severe',
+            kind='healthstate',
             gbd_id=hsid(2528),
         ),
     ),
@@ -15046,6 +16549,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15825),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_profound',
+            kind='healthstate',
             gbd_id=hsid(2531),
         ),
     ),
@@ -15056,6 +16560,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15844),
         healthstate=Healthstate(
             name='congenital_heart_disease',
+            kind='healthstate',
             gbd_id=hsid(574),
         ),
     ),
@@ -15066,6 +16571,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15845),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_borderline_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(2519),
         ),
     ),
@@ -15076,6 +16582,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15846),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_mild',
+            kind='healthstate',
             gbd_id=hsid(2522),
         ),
     ),
@@ -15086,6 +16593,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15847),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_moderate',
+            kind='healthstate',
             gbd_id=hsid(2525),
         ),
     ),
@@ -15096,6 +16604,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15848),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_severe',
+            kind='healthstate',
             gbd_id=hsid(2528),
         ),
     ),
@@ -15106,6 +16615,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15849),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_profound',
+            kind='healthstate',
             gbd_id=hsid(2531),
         ),
     ),
@@ -15116,6 +16626,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15850),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2294),
         ),
     ),
@@ -15126,6 +16637,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15851),
         healthstate=Healthstate(
             name='congenital_heart_disease_borderline_intellectual_functioning_and_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2303),
         ),
     ),
@@ -15136,6 +16648,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15852),
         healthstate=Healthstate(
             name='congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2312),
         ),
     ),
@@ -15146,6 +16659,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15853),
         healthstate=Healthstate(
             name='congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2321),
         ),
     ),
@@ -15156,6 +16670,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15854),
         healthstate=Healthstate(
             name='congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2330),
         ),
     ),
@@ -15166,6 +16681,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15855),
         healthstate=Healthstate(
             name='congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2339),
         ),
     ),
@@ -15176,6 +16692,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15856),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2297),
         ),
     ),
@@ -15186,6 +16703,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15857),
         healthstate=Healthstate(
             name='congenital_heart_disease_borderline_intellectual_functioning_and_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2306),
         ),
     ),
@@ -15196,6 +16714,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15858),
         healthstate=Healthstate(
             name='congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2315),
         ),
     ),
@@ -15206,6 +16725,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15859),
         healthstate=Healthstate(
             name='congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2324),
         ),
     ),
@@ -15216,6 +16736,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15860),
         healthstate=Healthstate(
             name='congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2333),
         ),
     ),
@@ -15226,6 +16747,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15861),
         healthstate=Healthstate(
             name='congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2342),
         ),
     ),
@@ -15236,6 +16758,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15862),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2300),
         ),
     ),
@@ -15246,6 +16769,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15863),
         healthstate=Healthstate(
             name='congenital_heart_disease_borderline_intellectual_functioning_and_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2309),
         ),
     ),
@@ -15256,6 +16780,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15864),
         healthstate=Healthstate(
             name='congenital_heart_disease_mild_intellectual_disability_and_servere_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2318),
         ),
     ),
@@ -15266,6 +16791,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15865),
         healthstate=Healthstate(
             name='congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2327),
         ),
     ),
@@ -15276,6 +16802,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15866),
         healthstate=Healthstate(
             name='congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2336),
         ),
     ),
@@ -15286,6 +16813,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15867),
         healthstate=Healthstate(
             name='congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2345),
         ),
     ),
@@ -15296,6 +16824,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15868),
         healthstate=Healthstate(
             name='congenital_heart_disease',
+            kind='healthstate',
             gbd_id=hsid(574),
         ),
     ),
@@ -15306,6 +16835,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15869),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_borderline_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(2519),
         ),
     ),
@@ -15316,6 +16846,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15870),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_mild',
+            kind='healthstate',
             gbd_id=hsid(2522),
         ),
     ),
@@ -15326,6 +16857,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15871),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_moderate',
+            kind='healthstate',
             gbd_id=hsid(2525),
         ),
     ),
@@ -15336,6 +16868,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15872),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_severe',
+            kind='healthstate',
             gbd_id=hsid(2528),
         ),
     ),
@@ -15346,6 +16879,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15873),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_profound',
+            kind='healthstate',
             gbd_id=hsid(2531),
         ),
     ),
@@ -15356,6 +16890,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15874),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2294),
         ),
     ),
@@ -15366,6 +16901,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15875),
         healthstate=Healthstate(
             name='congenital_heart_disease_borderline_intellectual_functioning_and_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2303),
         ),
     ),
@@ -15376,6 +16912,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15876),
         healthstate=Healthstate(
             name='congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2312),
         ),
     ),
@@ -15386,6 +16923,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15877),
         healthstate=Healthstate(
             name='congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2321),
         ),
     ),
@@ -15396,6 +16934,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15878),
         healthstate=Healthstate(
             name='congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2330),
         ),
     ),
@@ -15406,6 +16945,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15879),
         healthstate=Healthstate(
             name='congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2339),
         ),
     ),
@@ -15416,6 +16956,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15880),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2297),
         ),
     ),
@@ -15426,6 +16967,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15881),
         healthstate=Healthstate(
             name='congenital_heart_disease_borderline_intellectual_functioning_and_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2306),
         ),
     ),
@@ -15436,6 +16978,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15882),
         healthstate=Healthstate(
             name='congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2315),
         ),
     ),
@@ -15446,6 +16989,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15883),
         healthstate=Healthstate(
             name='congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2324),
         ),
     ),
@@ -15456,6 +17000,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15884),
         healthstate=Healthstate(
             name='congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2333),
         ),
     ),
@@ -15466,6 +17011,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15885),
         healthstate=Healthstate(
             name='congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2342),
         ),
     ),
@@ -15476,6 +17022,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15886),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2300),
         ),
     ),
@@ -15486,6 +17033,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15887),
         healthstate=Healthstate(
             name='congenital_heart_disease_borderline_intellectual_functioning_and_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2309),
         ),
     ),
@@ -15496,6 +17044,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15888),
         healthstate=Healthstate(
             name='congenital_heart_disease_mild_intellectual_disability_and_servere_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2318),
         ),
     ),
@@ -15506,6 +17055,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15889),
         healthstate=Healthstate(
             name='congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2327),
         ),
     ),
@@ -15516,6 +17066,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15890),
         healthstate=Healthstate(
             name='congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2336),
         ),
     ),
@@ -15526,6 +17077,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15891),
         healthstate=Healthstate(
             name='congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2345),
         ),
     ),
@@ -15536,6 +17088,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15892),
         healthstate=Healthstate(
             name='congenital_heart_disease',
+            kind='healthstate',
             gbd_id=hsid(574),
         ),
     ),
@@ -15546,6 +17099,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15893),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_borderline_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(2519),
         ),
     ),
@@ -15556,6 +17110,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15894),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_mild',
+            kind='healthstate',
             gbd_id=hsid(2522),
         ),
     ),
@@ -15566,6 +17121,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15895),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_moderate',
+            kind='healthstate',
             gbd_id=hsid(2525),
         ),
     ),
@@ -15576,6 +17132,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15896),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_severe',
+            kind='healthstate',
             gbd_id=hsid(2528),
         ),
     ),
@@ -15586,6 +17143,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15897),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_profound',
+            kind='healthstate',
             gbd_id=hsid(2531),
         ),
     ),
@@ -15596,6 +17154,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15898),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2294),
         ),
     ),
@@ -15606,6 +17165,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15899),
         healthstate=Healthstate(
             name='congenital_heart_disease_borderline_intellectual_functioning_and_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2303),
         ),
     ),
@@ -15616,6 +17176,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15900),
         healthstate=Healthstate(
             name='congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2312),
         ),
     ),
@@ -15626,6 +17187,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15901),
         healthstate=Healthstate(
             name='congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2321),
         ),
     ),
@@ -15636,6 +17198,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15902),
         healthstate=Healthstate(
             name='congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2330),
         ),
     ),
@@ -15646,6 +17209,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15903),
         healthstate=Healthstate(
             name='congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2339),
         ),
     ),
@@ -15656,6 +17220,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15904),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2297),
         ),
     ),
@@ -15666,6 +17231,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15905),
         healthstate=Healthstate(
             name='congenital_heart_disease_borderline_intellectual_functioning_and_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2306),
         ),
     ),
@@ -15676,6 +17242,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15906),
         healthstate=Healthstate(
             name='congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2315),
         ),
     ),
@@ -15686,6 +17253,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15907),
         healthstate=Healthstate(
             name='congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2324),
         ),
     ),
@@ -15696,6 +17264,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15908),
         healthstate=Healthstate(
             name='congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2333),
         ),
     ),
@@ -15706,6 +17275,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15909),
         healthstate=Healthstate(
             name='congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2342),
         ),
     ),
@@ -15716,6 +17286,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15910),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2300),
         ),
     ),
@@ -15726,6 +17297,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15911),
         healthstate=Healthstate(
             name='congenital_heart_disease_borderline_intellectual_functioning_and_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2309),
         ),
     ),
@@ -15736,6 +17308,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15912),
         healthstate=Healthstate(
             name='congenital_heart_disease_mild_intellectual_disability_and_servere_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2318),
         ),
     ),
@@ -15746,6 +17319,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15913),
         healthstate=Healthstate(
             name='congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2327),
         ),
     ),
@@ -15756,6 +17330,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15914),
         healthstate=Healthstate(
             name='congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2336),
         ),
     ),
@@ -15766,6 +17341,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15915),
         healthstate=Healthstate(
             name='congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2345),
         ),
     ),
@@ -15776,6 +17352,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15916),
         healthstate=Healthstate(
             name='congenital_heart_disease',
+            kind='healthstate',
             gbd_id=hsid(574),
         ),
     ),
@@ -15786,6 +17363,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15917),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_borderline_intellectual_functioning',
+            kind='healthstate',
             gbd_id=hsid(2519),
         ),
     ),
@@ -15796,6 +17374,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15918),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_mild',
+            kind='healthstate',
             gbd_id=hsid(2522),
         ),
     ),
@@ -15806,6 +17385,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15919),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_moderate',
+            kind='healthstate',
             gbd_id=hsid(2525),
         ),
     ),
@@ -15816,6 +17396,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15920),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_severe',
+            kind='healthstate',
             gbd_id=hsid(2528),
         ),
     ),
@@ -15826,6 +17407,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15921),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_profound',
+            kind='healthstate',
             gbd_id=hsid(2531),
         ),
     ),
@@ -15836,6 +17418,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15922),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2294),
         ),
     ),
@@ -15846,6 +17429,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15923),
         healthstate=Healthstate(
             name='congenital_heart_disease_borderline_intellectual_functioning_and_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2303),
         ),
     ),
@@ -15856,6 +17440,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15924),
         healthstate=Healthstate(
             name='congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2312),
         ),
     ),
@@ -15866,6 +17451,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15925),
         healthstate=Healthstate(
             name='congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2321),
         ),
     ),
@@ -15876,6 +17462,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15926),
         healthstate=Healthstate(
             name='congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2330),
         ),
     ),
@@ -15886,6 +17473,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15927),
         healthstate=Healthstate(
             name='congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2339),
         ),
     ),
@@ -15896,6 +17484,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15928),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2297),
         ),
     ),
@@ -15906,6 +17495,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15929),
         healthstate=Healthstate(
             name='congenital_heart_disease_borderline_intellectual_functioning_and_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2306),
         ),
     ),
@@ -15916,6 +17506,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15930),
         healthstate=Healthstate(
             name='congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2315),
         ),
     ),
@@ -15926,6 +17517,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15931),
         healthstate=Healthstate(
             name='congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2324),
         ),
     ),
@@ -15936,6 +17528,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15932),
         healthstate=Healthstate(
             name='congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2333),
         ),
     ),
@@ -15946,6 +17539,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15933),
         healthstate=Healthstate(
             name='congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2342),
         ),
     ),
@@ -15956,6 +17550,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15934),
         healthstate=Healthstate(
             name='congenital_heart_disease_and_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2300),
         ),
     ),
@@ -15966,6 +17561,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15935),
         healthstate=Healthstate(
             name='congenital_heart_disease_borderline_intellectual_functioning_and_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2309),
         ),
     ),
@@ -15976,6 +17572,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15936),
         healthstate=Healthstate(
             name='congenital_heart_disease_mild_intellectual_disability_and_servere_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2318),
         ),
     ),
@@ -15986,6 +17583,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15937),
         healthstate=Healthstate(
             name='congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2327),
         ),
     ),
@@ -15996,6 +17594,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15938),
         healthstate=Healthstate(
             name='congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2336),
         ),
     ),
@@ -16006,6 +17605,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15939),
         healthstate=Healthstate(
             name='congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure',
+            kind='healthstate',
             gbd_id=hsid(2345),
         ),
     ),
@@ -16016,6 +17616,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15811),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -16026,6 +17627,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(15810),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -16036,6 +17638,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16205),
         healthstate=Healthstate(
             name='mild_abdominal_pain_with_mild_anemia',
+            kind='healthstate',
             gbd_id=hsid(865),
         ),
     ),
@@ -16046,6 +17649,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16206),
         healthstate=Healthstate(
             name='moderate_abdominal_pain_with_mild_anemia',
+            kind='healthstate',
             gbd_id=hsid(2465),
         ),
     ),
@@ -16056,6 +17660,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16208),
         healthstate=Healthstate(
             name='mild_abdominal_pain_with_moderate_anemia',
+            kind='healthstate',
             gbd_id=hsid(866),
         ),
     ),
@@ -16066,6 +17671,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16209),
         healthstate=Healthstate(
             name='moderate_abdominal_pain_with_moderate_anemia',
+            kind='healthstate',
             gbd_id=hsid(2468),
         ),
     ),
@@ -16076,6 +17682,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16211),
         healthstate=Healthstate(
             name='mild_abdominal_pain_with_severe_anemia',
+            kind='healthstate',
             gbd_id=hsid(867),
         ),
     ),
@@ -16086,6 +17693,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16212),
         healthstate=Healthstate(
             name='mild_abdominal_pain_with_severe_anemia',
+            kind='healthstate',
             gbd_id=hsid(867),
         ),
     ),
@@ -16096,6 +17704,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16214),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -16106,6 +17715,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16215),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),
@@ -16116,6 +17726,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16216),
         healthstate=Healthstate(
             name='anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(547),
         ),
     ),
@@ -16126,6 +17737,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16217),
         healthstate=Healthstate(
             name='anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(548),
         ),
     ),
@@ -16136,6 +17748,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16218),
         healthstate=Healthstate(
             name='anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(549),
         ),
     ),
@@ -16146,6 +17759,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16221),
         healthstate=Healthstate(
             name='mild_abdominal_pain_with_mild_anemia',
+            kind='healthstate',
             gbd_id=hsid(865),
         ),
     ),
@@ -16156,6 +17770,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16222),
         healthstate=Healthstate(
             name='moderate_abdominal_pain_with_mild_anemia',
+            kind='healthstate',
             gbd_id=hsid(2465),
         ),
     ),
@@ -16166,6 +17781,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16224),
         healthstate=Healthstate(
             name='mild_abdominal_pain_with_moderate_anemia',
+            kind='healthstate',
             gbd_id=hsid(866),
         ),
     ),
@@ -16176,6 +17792,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16225),
         healthstate=Healthstate(
             name='moderate_abdominal_pain_with_moderate_anemia',
+            kind='healthstate',
             gbd_id=hsid(2468),
         ),
     ),
@@ -16186,6 +17803,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16227),
         healthstate=Healthstate(
             name='mild_abdominal_pain_with_severe_anemia',
+            kind='healthstate',
             gbd_id=hsid(867),
         ),
     ),
@@ -16196,6 +17814,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16228),
         healthstate=Healthstate(
             name='moderate_abdominal_pain_with_severe_anemia',
+            kind='healthstate',
             gbd_id=hsid(2471),
         ),
     ),
@@ -16206,6 +17825,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16230),
         healthstate=Healthstate(
             name='abdominopelvic_problem_mild',
+            kind='healthstate',
             gbd_id=hsid(544),
         ),
     ),
@@ -16216,6 +17836,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16231),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),
@@ -16226,6 +17847,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16232),
         healthstate=Healthstate(
             name='anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(547),
         ),
     ),
@@ -16236,6 +17858,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16233),
         healthstate=Healthstate(
             name='anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(548),
         ),
     ),
@@ -16246,6 +17869,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16234),
         healthstate=Healthstate(
             name='anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(549),
         ),
     ),
@@ -16256,6 +17880,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16377),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe_with_mild_anemia',
+            kind='healthstate',
             gbd_id=hsid(2474),
         ),
     ),
@@ -16266,6 +17891,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16378),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe_with_moderate_anemia',
+            kind='healthstate',
             gbd_id=hsid(2477),
         ),
     ),
@@ -16276,6 +17902,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16379),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe_with_severe_anemia',
+            kind='healthstate',
             gbd_id=hsid(2480),
         ),
     ),
@@ -16286,6 +17913,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16384),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_mild_with_mild_anemia',
+            kind='healthstate',
             gbd_id=hsid(2483),
         ),
     ),
@@ -16296,6 +17924,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16385),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_mild_with_moderate_anemia',
+            kind='healthstate',
             gbd_id=hsid(2486),
         ),
     ),
@@ -16306,6 +17935,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16386),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_mild_with_severe_anemia',
+            kind='healthstate',
             gbd_id=hsid(2489),
         ),
     ),
@@ -16316,6 +17946,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16387),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate_with_mild_anemia',
+            kind='healthstate',
             gbd_id=hsid(2492),
         ),
     ),
@@ -16326,6 +17957,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16388),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate_with_moderate_anemia',
+            kind='healthstate',
             gbd_id=hsid(2495),
         ),
     ),
@@ -16336,6 +17968,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16389),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate_with_severe_anemia',
+            kind='healthstate',
             gbd_id=hsid(2498),
         ),
     ),
@@ -16346,6 +17979,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16219),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -16356,6 +17990,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16235),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -16366,6 +18001,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16321),
         healthstate=Healthstate(
             name='anemia_mild;_generic_uncomplicated_disease_anxiety',
+            kind='healthstate',
             gbd_id=hsid(860),
         ),
     ),
@@ -16376,6 +18012,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16322),
         healthstate=Healthstate(
             name='anemia_moderate;_generic_uncomplicated_disease_anxiety',
+            kind='healthstate',
             gbd_id=hsid(861),
         ),
     ),
@@ -16386,6 +18023,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16323),
         healthstate=Healthstate(
             name='anemia_severe;_generic_uncomplicated_disease_anxiety',
+            kind='healthstate',
             gbd_id=hsid(862),
         ),
     ),
@@ -16396,6 +18034,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16324),
         healthstate=Healthstate(
             name='generic_uncomplicated_disease_anxiety_about_diagnosis',
+            kind='healthstate',
             gbd_id=hsid(560),
         ),
     ),
@@ -16406,6 +18045,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16325),
         healthstate=Healthstate(
             name='hiv_cases_symptomatic_pre_aids_and_anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(2534),
         ),
     ),
@@ -16416,6 +18056,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16326),
         healthstate=Healthstate(
             name='hiv_cases_symptomatic_pre_aids_and_anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(2537),
         ),
     ),
@@ -16426,6 +18067,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16327),
         healthstate=Healthstate(
             name='hiv_cases_symptomatic_pre_aids_and_anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(2540),
         ),
     ),
@@ -16436,6 +18078,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16328),
         healthstate=Healthstate(
             name='hiv_cases_symptomatic_pre_aids',
+            kind='healthstate',
             gbd_id=hsid(360),
         ),
     ),
@@ -16446,6 +18089,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16329),
         healthstate=Healthstate(
             name='hiv_aids_cases_receiving_arv_treatment_and_anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(2543),
         ),
     ),
@@ -16456,6 +18100,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16330),
         healthstate=Healthstate(
             name='hiv_aids_cases_receiving_arv_treatment_and_anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(2546),
         ),
     ),
@@ -16466,6 +18111,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16331),
         healthstate=Healthstate(
             name='hiv_aids_cases_receiving_arv_treatment_and_anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(2549),
         ),
     ),
@@ -16476,6 +18122,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16332),
         healthstate=Healthstate(
             name='hiv_aids_cases_receiving_arv_treatment',
+            kind='healthstate',
             gbd_id=hsid(361),
         ),
     ),
@@ -16486,6 +18133,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16333),
         healthstate=Healthstate(
             name='aids_cases_not_receiving_arv_treatment_and_anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(2552),
         ),
     ),
@@ -16496,6 +18144,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16334),
         healthstate=Healthstate(
             name='aids_cases_not_receiving_arv_treatment_and_anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(2555),
         ),
     ),
@@ -16506,6 +18155,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16335),
         healthstate=Healthstate(
             name='aids_cases_not_receiving_arv_treatment_and_anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(2558),
         ),
     ),
@@ -16516,6 +18166,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16336),
         healthstate=Healthstate(
             name='aids_cases_not_receiving_arv_treatment',
+            kind='healthstate',
             gbd_id=hsid(362),
         ),
     ),
@@ -16526,6 +18177,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16337),
         healthstate=Healthstate(
             name='tuberculosis_hiv_infected_and_anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(2561),
         ),
     ),
@@ -16536,6 +18188,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16338),
         healthstate=Healthstate(
             name='tuberculosis_hiv_infected_and_anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(2564),
         ),
     ),
@@ -16546,6 +18199,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16339),
         healthstate=Healthstate(
             name='tuberculosis_hiv_infected_and_anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(2567),
         ),
     ),
@@ -16556,6 +18210,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16340),
         healthstate=Healthstate(
             name='tuberculosis_hiv_infected',
+            kind='healthstate',
             gbd_id=hsid(367),
         ),
     ),
@@ -16566,6 +18221,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16341),
         healthstate=Healthstate(
             name='tuberculosis_hiv_infected_and_anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(2561),
         ),
     ),
@@ -16576,6 +18232,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16342),
         healthstate=Healthstate(
             name='tuberculosis_hiv_infected_and_anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(2564),
         ),
     ),
@@ -16586,6 +18243,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16343),
         healthstate=Healthstate(
             name='tuberculosis_hiv_infected_and_anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(2567),
         ),
     ),
@@ -16596,6 +18254,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16344),
         healthstate=Healthstate(
             name='tuberculosis_hiv_infected',
+            kind='healthstate',
             gbd_id=hsid(367),
         ),
     ),
@@ -16606,6 +18265,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16345),
         healthstate=Healthstate(
             name='tuberculosis_hiv_infected_and_anemia_mild',
+            kind='healthstate',
             gbd_id=hsid(2561),
         ),
     ),
@@ -16616,6 +18276,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16346),
         healthstate=Healthstate(
             name='tuberculosis_hiv_infected_and_anemia_moderate',
+            kind='healthstate',
             gbd_id=hsid(2564),
         ),
     ),
@@ -16626,6 +18287,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16347),
         healthstate=Healthstate(
             name='tuberculosis_hiv_infected_and_anemia_severe',
+            kind='healthstate',
             gbd_id=hsid(2567),
         ),
     ),
@@ -16636,6 +18298,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16348),
         healthstate=Healthstate(
             name='tuberculosis_hiv_infected',
+            kind='healthstate',
             gbd_id=hsid(367),
         ),
     ),
@@ -16646,6 +18309,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11655),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -16656,6 +18320,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11656),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -16666,6 +18331,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11657),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -16676,6 +18342,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(11658),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -16686,6 +18353,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16412),
         healthstate=Healthstate(
             name='disfigurement_level_3',
+            kind='healthstate',
             gbd_id=hsid(555),
         ),
     ),
@@ -16696,6 +18364,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16414),
         healthstate=Healthstate(
             name='motor_plus_cognitive_impairments_moderate',
+            kind='healthstate',
             gbd_id=hsid(569),
         ),
     ),
@@ -16706,6 +18375,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16415),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
+            kind='healthstate',
             gbd_id=hsid(352),
         ),
     ),
@@ -16716,6 +18386,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16416),
         healthstate=Healthstate(
             name='asymptomatic',
+            kind='healthstate',
             gbd_id=hsid(799),
         ),
     ),
@@ -16726,6 +18397,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16430),
         healthstate=Healthstate(
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
+            kind='healthstate',
             gbd_id=hsid(639),
         ),
     ),
@@ -16736,6 +18408,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(16427),
         healthstate=Healthstate(
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
+            kind='healthstate',
             gbd_id=hsid(639),
         ),
     ),
@@ -16746,6 +18419,7 @@ sequelae = Sequelae(**{
         dismod_id=meid(10485),
         healthstate=Healthstate(
             name='abdominopelvic_problem_moderate',
+            kind='healthstate',
             gbd_id=hsid(545),
         ),
     ),

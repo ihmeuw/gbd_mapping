@@ -8,6 +8,7 @@ IMPORTABLES_DEFINED = ('Sequela', 'Healthstate', 'sequelae')
 base_types = {
     'Healthstate': {
         'attrs': (('name', 'str'),
+                  ('kind', 'str'),
                   ('gbd_id', 'hsid'),),
         'superclass': ('ModelableEntity', modelable_entity_attrs),
         'docstring': 'Container for healthstate GBD ids and metadata.',
@@ -40,6 +41,7 @@ def make_sequela(name, sid, mei_id, hs_name, hsid):
     out += TAB*2 + f"healthstate=Healthstate(\n"
 
     out += TAB*3 + f"name={hs_name},\n"
+    out += TAB*3 + f"kind='healthstate',\n"
     out += TAB*3 + f"gbd_id={to_id(hsid, 'hsid')},\n"
     out += TAB*2 + f"),\n"
     out += TAB + f"),\n"
