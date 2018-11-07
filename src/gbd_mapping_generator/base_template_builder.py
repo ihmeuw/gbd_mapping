@@ -94,6 +94,8 @@ def make_gbd_record():
         out = f'{self.__class__.__name__}('
         for i, slot in enumerate(self.__slots__):
             attr = self[slot]
+            if attr is None:
+                continue
             if i != 0:
                 out += ','
             out += f'\\n{slot}='
