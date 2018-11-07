@@ -24,38 +24,39 @@ exposure_parameters_attrs = (('scale', 'scalar = None'),
                              ('max_rr', 'scalar = None'),)
 
 
-base_types = {
-    'GbdRecord': {
-        'attrs': gbd_record_attrs,
-        'superclass': (None, ()),
-        'docstring': 'Base class for entities modeled in the GBD.',
-    },
-    'ModelableEntity': {
-        'attrs': modelable_entity_attrs,
-        'superclass': ('GbdRecord', gbd_record_attrs),
-        'docstring': 'Container for general GBD ids and metadata.',
-    },
-    'Restrictions': {
-        'attrs': restrictions_attrs,
-        'superclass': ('GbdRecord', gbd_record_attrs),
-        'docstring': 'Container for information about sub-populations the entity describes.',
-    },
-    'Tmred': {
-        'attrs': tmred_attrs,
-        'superclass': ('GbdRecord', gbd_record_attrs),
-        'docstring': 'Container for theoretical minimum risk exposure distribution data.'
-    },
-    'Levels': {
-        'attrs': levels_attrs,
-        'superclass': ('GbdRecord', gbd_record_attrs),
-        'docstring': 'Container for categorical risk exposure levels.'
-    },
-    'ExposureParameters': {
-        'attrs': exposure_parameters_attrs,
-        'superclass': ('GbdRecord', gbd_record_attrs),
-        'docstring': 'Container for continuous risk exposure distribution parameters'
-    },
-}
+def get_base_types():
+    return {
+        'GbdRecord': {
+            'attrs': gbd_record_attrs,
+            'superclass': (None, ()),
+            'docstring': 'Base class for entities modeled in the GBD.',
+        },
+        'ModelableEntity': {
+            'attrs': modelable_entity_attrs,
+            'superclass': ('GbdRecord', gbd_record_attrs),
+            'docstring': 'Container for general GBD ids and metadata.',
+        },
+        'Restrictions': {
+            'attrs': restrictions_attrs,
+            'superclass': ('GbdRecord', gbd_record_attrs),
+            'docstring': 'Container for information about sub-populations the entity describes.',
+        },
+        'Tmred': {
+            'attrs': tmred_attrs,
+            'superclass': ('GbdRecord', gbd_record_attrs),
+            'docstring': 'Container for theoretical minimum risk exposure distribution data.'
+        },
+        'Levels': {
+            'attrs': levels_attrs,
+            'superclass': ('GbdRecord', gbd_record_attrs),
+            'docstring': 'Container for categorical risk exposure levels.'
+        },
+        'ExposureParameters': {
+            'attrs': exposure_parameters_attrs,
+            'superclass': ('GbdRecord', gbd_record_attrs),
+            'docstring': 'Container for continuous risk exposure distribution parameters'
+        },
+    }
 
 
 def make_gbd_record():
@@ -111,7 +112,7 @@ def build_mapping():
     templates += make_import('.id', ['cid', 'sid', 'hsid', 'meid', 'covid', 'reiid', 'scalar', ]) + SPACING
     templates += make_gbd_record()
 
-    for entity, info in base_types.items():
+    for entity, info in get_base_types().items():
         if entity == 'GbdRecord':
             continue
         templates += SPACING

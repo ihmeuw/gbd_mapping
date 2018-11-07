@@ -5,24 +5,26 @@ from .base_template_builder import gbd_record_attrs, modelable_entity_attrs
 
 IMPORTABLES_DEFINED = ('Cause', 'causes')
 
-base_types = {
-    'Cause': {
-        'attrs': (('name', 'str'),
-                  ('kind', 'str'),
-                  ('gbd_id', 'cid'),
-                  ('dismod_id', 'Union[meid, _Unknown]'),
-                  ('restrictions', 'Restrictions'),
-                  ('sequelae', 'Tuple[Sequela, ...] = None'),
-                  ('etiologies', 'Tuple[Etiology, ...] = None'),),
-        'superclass': ('ModelableEntity', modelable_entity_attrs),
-        'docstring': 'Container for cause GBD ids and metadata',
-    },
-    'Causes': {
-        'attrs': tuple([(name, 'Cause') for name in get_cause_list() if name is not 'none']),
-        'superclass': ('GbdRecord', gbd_record_attrs),
-        'docstring': 'Container for GBD causes.',
-    },
-}
+
+def get_base_types():
+    return {
+        'Cause': {
+            'attrs': (('name', 'str'),
+                      ('kind', 'str'),
+                      ('gbd_id', 'cid'),
+                      ('dismod_id', 'Union[meid, _Unknown]'),
+                      ('restrictions', 'Restrictions'),
+                      ('sequelae', 'Tuple[Sequela, ...] = None'),
+                      ('etiologies', 'Tuple[Etiology, ...] = None'),),
+            'superclass': ('ModelableEntity', modelable_entity_attrs),
+            'docstring': 'Container for cause GBD ids and metadata',
+        },
+        'Causes': {
+            'attrs': tuple([(name, 'Cause') for name in get_cause_list() if name is not 'none']),
+            'superclass': ('GbdRecord', gbd_record_attrs),
+            'docstring': 'Container for GBD causes.',
+        },
+    }
 
 
 def make_cause(name, cid, dismod_id, restrictions, sequelae=None, etiologies=None):
@@ -81,7 +83,7 @@ def build_mapping_template():
     out += make_import('.sequela_template', ['Sequela'])
     out += make_import('.etiology_template', ['Etiology'])
 
-    for entity, info in base_types.items():
+    for entity, info in get_base_types().items():
         out += SPACING
         out += make_record(entity, **info)
     return out

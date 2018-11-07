@@ -10,26 +10,27 @@ from .util import make_import, make_module_docstring, make_record, SPACING, TAB,
 IMPORTABLES_DEFINED = ('Risk', 'risk_factors')
 
 
-base_types = {
-    'Risk': {
-        'attrs': (('name', 'str'),
-                  ('kind', 'str'),
-                  ('gbd_id', 'reiid'),
-                  ('distribution', 'str'),
-                  ('affected_causes', 'Tuple[Cause, ...]'),
-                  ('restrictions', 'Restrictions'),
-                  ('levels', 'Levels = None'),
-                  ('tmred', 'Tmred = None'),
-                  ('exposure_parameters', 'ExposureParameters = None'),),
-        'superclass': ('ModelableEntity', modelable_entity_attrs),
-        'docstring': 'Container for risk GBD ids and metadata.'
-    },
-    'Risks': {
-        'attrs': tuple([(name, 'Risk') for name in get_risk_list()]),
-        'superclass': ('GbdRecord', gbd_record_attrs),
-        'docstring': 'Container for GBD risks.',
-    },
-}
+def get_base_types():
+    return {
+        'Risk': {
+            'attrs': (('name', 'str'),
+                      ('kind', 'str'),
+                      ('gbd_id', 'reiid'),
+                      ('distribution', 'str'),
+                      ('affected_causes', 'Tuple[Cause, ...]'),
+                      ('restrictions', 'Restrictions'),
+                      ('levels', 'Levels = None'),
+                      ('tmred', 'Tmred = None'),
+                      ('exposure_parameters', 'ExposureParameters = None'),),
+            'superclass': ('ModelableEntity', modelable_entity_attrs),
+            'docstring': 'Container for risk GBD ids and metadata.'
+        },
+        'Risks': {
+            'attrs': tuple([(name, 'Risk') for name in get_risk_list()]),
+            'superclass': ('GbdRecord', gbd_record_attrs),
+            'docstring': 'Container for GBD risks.',
+        },
+    }
 
 
 def make_risk(name, reiid, distribution, restrictions, cause_list,
@@ -103,7 +104,7 @@ def build_mapping_template():
                                           'Tmred', 'ExposureParameters', 'Restrictions'])
     out += make_import('.cause_template', ['Cause'])
 
-    for entity, info in base_types.items():
+    for entity, info in get_base_types().items():
         out += SPACING
         out += make_record(entity, **info)
     return out

@@ -5,25 +5,26 @@ from .util import make_import, make_module_docstring, make_record, SPACING, TAB
 IMPORTABLES_DEFINED = ('Covariate', 'covariates')
 
 
-base_types = {
-    'Covariate': {
-        'attrs': (('name', 'str'),
-                  ('kind', 'str'),
-                  ('gbd_id', 'Union[covid, None]'),
-                  ('group', 'str'),
-                  ('status', 'str'),
-                  ('by_age', 'bool'),
-                  ('by_sex', 'bool'),
-                  ('dichotomous', 'bool')),
-        'superclass': ('ModelableEntity', modelable_entity_attrs),
-        'docstring': 'Container for covariate GBD ids and metadata.'
-    },
-    'Covariates': {
-        'attrs': tuple([(name, 'Covariate') for name in get_covariate_list()]),
-        'superclass': ('GbdRecord', gbd_record_attrs),
-        'docstring': 'Container for GBD covariates.',
-    },
-}
+def get_base_types():
+    return {
+        'Covariate': {
+            'attrs': (('name', 'str'),
+                      ('kind', 'str'),
+                      ('gbd_id', 'Union[covid, None]'),
+                      ('group', 'str'),
+                      ('status', 'str'),
+                      ('by_age', 'bool'),
+                      ('by_sex', 'bool'),
+                      ('dichotomous', 'bool')),
+            'superclass': ('ModelableEntity', modelable_entity_attrs),
+            'docstring': 'Container for covariate GBD ids and metadata.'
+        },
+        'Covariates': {
+            'attrs': tuple([(name, 'Covariate') for name in get_covariate_list()]),
+            'superclass': ('GbdRecord', gbd_record_attrs),
+            'docstring': 'Container for GBD covariates.',
+        },
+    }
 
 
 def make_covariate(name, covid, group, cov_type, by_age, by_sex, dichotomous):
@@ -55,7 +56,7 @@ def build_mapping_template():
     out += make_import('.id', ['covid'])
     out += make_import('.base_template', ['ModelableEntity', 'GbdRecord'])
 
-    for entity, info in base_types.items():
+    for entity, info in get_base_types().items():
         out += SPACING
         out += make_record(entity, **info)
     return out

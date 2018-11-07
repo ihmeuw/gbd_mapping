@@ -5,20 +5,21 @@ from .util import make_import, make_module_docstring, make_record, SPACING, TAB
 IMPORTABLES_DEFINED = ('Etiology', 'etiologies')
 
 
-base_types = {
-    'Etiology': {
-        'attrs': (('name', 'str'),
-                  ('kind', 'str'),
-                  ('gbd_id', 'Union[reiid, None]'),),
-        'superclass': ('ModelableEntity', modelable_entity_attrs),
-        'docstring': 'Container for etiology GBD ids and metadata.'
-    },
-    'Etiologies': {
-        'attrs': tuple([(name, 'Etiology') for name in get_etiology_list()]),
-        'superclass': ('GbdRecord', gbd_record_attrs),
-        'docstring': 'Container for GBD etiologies.',
-    },
-}
+def get_base_types():
+    return {
+        'Etiology': {
+            'attrs': (('name', 'str'),
+                      ('kind', 'str'),
+                      ('gbd_id', 'Union[reiid, None]'),),
+            'superclass': ('ModelableEntity', modelable_entity_attrs),
+            'docstring': 'Container for etiology GBD ids and metadata.'
+        },
+        'Etiologies': {
+            'attrs': tuple([(name, 'Etiology') for name in get_etiology_list()]),
+            'superclass': ('GbdRecord', gbd_record_attrs),
+            'docstring': 'Container for GBD etiologies.',
+        },
+    }
 
 
 def make_etiology(name, reiid):
@@ -45,7 +46,7 @@ def build_mapping_template():
     out += make_import('.id', ['reiid'])
     out += make_import('.base_template', ['ModelableEntity', 'GbdRecord'])
 
-    for entity, info in base_types.items():
+    for entity, info in get_base_types().items():
         out += SPACING
         out += make_record(entity, **info)
     return out

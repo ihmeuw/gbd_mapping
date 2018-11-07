@@ -16,8 +16,7 @@ ETIOLOGY_SET_ID = 3
 
 
 def get_sequelae():
-    version_id = gbd.get_sequela_set_version_id(GBD_ROUND_ID)
-    sequelae = gbd.get_sequela_id_mapping(version_id)
+    sequelae = gbd.get_sequela_id_mapping()
     sequelae = pd.DataFrame({'sequela_name': clean_entity_list(sequelae.sequela_name),
                              'sequela_id': sequelae.sequela_id})
     return sequelae.sort_values('sequela_id')
@@ -86,11 +85,7 @@ def get_covariate_list():
 #####################################################
 
 def get_sequela_data():
-    version_id = gbd.get_sequela_set_version_id(GBD_ROUND_ID)
-    sequelae = gbd.get_sequela_id_mapping(version_id)
-    healthstate_data = gbd.get_healthstate_mapping()
-    sequelae = sequelae.join(healthstate_data.set_index('healthstate_id'), on='healthstate_id')
-
+    sequelae = gbd.get_sequela_id_mapping()
     return list(zip(clean_entity_list(sequelae.sequela_name),
                     sequelae.sequela_id,
                     sequelae.modelable_entity_id,
@@ -105,8 +100,7 @@ def get_etiology_data():
 
 
 def get_cause_data():
-    version_id = gbd.get_sequela_set_version_id(GBD_ROUND_ID)
-    sequelae = gbd.get_sequela_id_mapping(version_id).sort_values('sequela_id')
+    sequelae = gbd.get_sequela_id_mapping().sort_values('sequela_id')
 
     etiologies = gbd.get_rei_metadata(rei_set_id=ETIOLOGY_SET_ID)
     etiologies = etiologies[etiologies['most_detailed'] == 1].sort_values('rei_id')
@@ -182,7 +176,7 @@ def load_risk_params():
 
 
 def get_cause_risk_mapping():
-    cause_risk_mapping = gbd.get_cause_risk_mapping(gbd.get_cause_risk_set_version_id(GBD_ROUND_ID))
+    cause_risk_mapping = gbd.get_cause_risk_mapping()
     causes = get_causes()
     risks = get_risks()
 

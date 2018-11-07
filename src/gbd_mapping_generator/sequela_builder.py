@@ -5,29 +5,30 @@ from .util import make_import, make_module_docstring, make_record, to_id, SPACIN
 IMPORTABLES_DEFINED = ('Sequela', 'Healthstate', 'sequelae')
 
 
-base_types = {
-    'Healthstate': {
-        'attrs': (('name', 'str'),
-                  ('kind', 'str'),
-                  ('gbd_id', 'hsid'),),
-        'superclass': ('ModelableEntity', modelable_entity_attrs),
-        'docstring': 'Container for healthstate GBD ids and metadata.',
-    },
-    'Sequela': {
-        'attrs': (('name', 'str'),
-                  ('kind', 'str'),
-                  ('gbd_id', 'sid'),
-                  ('dismod_id', 'meid'),
-                  ('healthstate', 'Healthstate'),),
-        'superclass': ('ModelableEntity', modelable_entity_attrs),
-        'docstring': 'Container for sequela GBD ids and metadata.'
-    },
-    'Sequelae': {
-        'attrs': tuple([(name, 'Sequela') for name in get_sequela_list()]),
-        'superclass': ('GbdRecord', gbd_record_attrs),
-        'docstring': 'Container for GBD sequelae.',
-    },
-}
+def get_base_types():
+    return {
+        'Healthstate': {
+            'attrs': (('name', 'str'),
+                      ('kind', 'str'),
+                      ('gbd_id', 'hsid'),),
+            'superclass': ('ModelableEntity', modelable_entity_attrs),
+            'docstring': 'Container for healthstate GBD ids and metadata.',
+        },
+        'Sequela': {
+            'attrs': (('name', 'str'),
+                      ('kind', 'str'),
+                      ('gbd_id', 'sid'),
+                      ('dismod_id', 'meid'),
+                      ('healthstate', 'Healthstate'),),
+            'superclass': ('ModelableEntity', modelable_entity_attrs),
+            'docstring': 'Container for sequela GBD ids and metadata.'
+        },
+        'Sequelae': {
+            'attrs': tuple([(name, 'Sequela') for name in get_sequela_list()]),
+            'superclass': ('GbdRecord', gbd_record_attrs),
+            'docstring': 'Container for GBD sequelae.',
+        },
+    }
 
 
 def make_sequela(name, sid, mei_id, hs_name, hsid):
@@ -61,7 +62,7 @@ def build_mapping_template():
     out += make_import('.id', ['sid', 'meid', 'hsid'])
     out += make_import('.base_template', ['ModelableEntity', 'GbdRecord'])
 
-    for entity, info in base_types.items():
+    for entity, info in get_base_types().items():
         out += SPACING
         out += make_record(entity, **info)
     return out
