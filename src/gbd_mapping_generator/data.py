@@ -5,7 +5,6 @@ import vivarium_gbd_access.gbd as gbd
 from .util import clean_entity_list, clean_risk_me
 
 
-GBD_ROUND_ID = gbd.GBD_ROUND_ID
 CAUSE_SET_ID = 3
 REI_SET_ID = 2
 ETIOLOGY_SET_ID = 3
@@ -30,13 +29,12 @@ def get_etiologies():
     return etiologies.sort_values('rei_id')
 
 
-def get_causes():
+def get_causes(level=None):
     causes = gbd.get_cause_metadata(cause_set_id=CAUSE_SET_ID)
-    causes = causes[causes.most_detailed == 1]
-    causes = causes.append(pd.DataFrame({'cause_name': ['all_causes'], 'cause_id': [294]}), ignore_index=True)
+    if level is not None:
+        causes = causes[causes.level == level]
     causes = pd.DataFrame({'cause_name': clean_entity_list(causes.cause_name),
                            'cause_id': causes.cause_id})
-    causes = causes[causes['cause_name'] != 'none']
     return causes.sort_values('cause_id')
 
 
@@ -105,15 +103,16 @@ def get_cause_data():
     etiologies = gbd.get_rei_metadata(rei_set_id=ETIOLOGY_SET_ID)
     etiologies = etiologies[etiologies['most_detailed'] == 1].sort_values('rei_id')
 
-    cause_etiology_map = gbd.get_cause_etiology_mapping(GBD_ROUND_ID)
+    cause_etiology_map = gbd.get_cause_etiology_mapping()
     cause_me_map = gbd.get_cause_me_id_mapping()
     cause_me_map['cause_name'] = clean_entity_list(cause_me_map['modelable_entity_name'])
     cause_me_map = cause_me_map[['modelable_entity_id', 'cause_name']].set_index('cause_name')
 
     causes = gbd.get_cause_metadata(cause_set_id=CAUSE_SET_ID)
-    causes = causes[((causes.most_detailed == 1) | (causes.cause_id == 294)) & ~(causes.cause_id == 740)]
     causes = pd.DataFrame({'cause_name': clean_entity_list(causes.cause_name),
                            'cause_id': causes.cause_id,
+                           'parent_id': causes.parent_id,
+                           'most_detailed': causes.most_detailed,
                            'male': causes.male.replace({np.NaN: False, 1: True}),
                            'female': causes.female.replace({np.NaN: False, 1: True}),
                            'yll_only': causes.yll_only.replace({np.NaN: False, 1: True}),
@@ -127,21 +126,9 @@ def get_cause_data():
     cause_data = []
     for _, cause in causes.iterrows():
         name = cause['cause_name']
-        if name == 'none':
-            continue
         cid = cause['cause_id']
         dismod_id = cause['modelable_entity_id']
-
-        restrictions = [('male_only', not cause['female']), ('female_only', not cause['male'])]
-        restrictions.extend([('yll_only', cause['yll_only']), ('yld_only', cause['yld_only'])])
-        if cause['yll_only']:
-            restrictions.extend([('yll_age_start', cause['yll_age_start']), ('yll_age_end', cause['yll_age_end'])])
-        elif cause['yld_only']:
-            restrictions.extend([('yld_age_start', cause['yld_age_start']), ('yld_age_end', cause['yld_age_end'])])
-        else:
-            restrictions.extend([('yll_age_start', cause['yll_age_start']), ('yll_age_end', cause['yll_age_end'])])
-            restrictions.extend([('yld_age_start', cause['yld_age_start']), ('yld_age_end', cause['yld_age_end'])])
-        restrictions = tuple(restrictions)
+        restrictions = make_restrictions(cause)
 
         eti_ids = cause_etiology_map[cause_etiology_map.cause_id == cid].rei_id.tolist()
         associated_etiologies = clean_entity_list(etiologies[etiologies.rei_id.isin(eti_ids)].rei_name)
@@ -149,6 +136,19 @@ def get_cause_data():
         cause_data.append((name, cid, dismod_id, restrictions, associated_sequelae, associated_etiologies))
 
     return cause_data
+
+
+def make_restrictions(cause):
+    restrictions = [('male_only', not cause['female']), ('female_only', not cause['male'])]
+    restrictions.extend([('yll_only', cause['yll_only']), ('yld_only', cause['yld_only'])])
+    if cause['yll_only']:
+        restrictions.extend([('yll_age_start', cause['yll_age_start']), ('yll_age_end', cause['yll_age_end'])])
+    elif cause['yld_only']:
+        restrictions.extend([('yld_age_start', cause['yld_age_start']), ('yld_age_end', cause['yld_age_end'])])
+    else:
+        restrictions.extend([('yll_age_start', cause['yll_age_start']), ('yll_age_end', cause['yll_age_end'])])
+        restrictions.extend([('yld_age_start', cause['yld_age_start']), ('yld_age_end', cause['yld_age_end'])])
+    return tuple(restrictions)
 
 
 def load_risk_params():

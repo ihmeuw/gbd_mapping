@@ -13,27 +13,32 @@ def get_base_types():
                       ('kind', 'str'),
                       ('gbd_id', 'cid'),
                       ('dismod_id', 'Union[meid, _Unknown]'),
+                      ('most_detailed', 'bool'),
+                      ('parent_cause', 'Cause = None'),
                       ('restrictions', 'Restrictions'),
+                      ('subcauses', 'Tuple[Cause, ...] = None'),
                       ('sequelae', 'Tuple[Sequela, ...] = None'),
                       ('etiologies', 'Tuple[Etiology, ...] = None'),),
             'superclass': ('ModelableEntity', modelable_entity_attrs),
             'docstring': 'Container for cause GBD ids and metadata',
         },
         'Causes': {
-            'attrs': tuple([(name, 'Cause') for name in get_cause_list() if name is not 'none']),
+            'attrs': tuple([(name, 'Cause') for name in get_cause_list()]),
             'superclass': ('GbdRecord', gbd_record_attrs),
             'docstring': 'Container for GBD causes.',
         },
     }
 
 
-def make_cause(name, cid, dismod_id, restrictions, sequelae=None, etiologies=None):
+def make_cause(name, cid, dismod_id, restrictions, most_detailed, sequelae=None, etiologies=None):
     out = ""
     out += TAB + f"'{name}': Cause(\n"
     out += TAB*2 + f"name='{name}',\n"
     out += TAB * 2 + f"kind='cause',\n"
     out += TAB*2 + f"gbd_id=cid({cid}),\n"
     out += TAB*2 + f"dismod_id={to_id(dismod_id, 'meid')},\n"
+    out += TAB*2 + f"most_detailed={most_detailed},\n"
+    out += TAB*2 + f"parent_cause=None"
     out += TAB*2 + f"restrictions=Restrictions(\n"
     for restriction, value in restrictions:
         if isinstance(value, bool):
@@ -93,8 +98,8 @@ def build_mapping():
     out = make_module_docstring('Mapping of GBD causes.', __file__)
     out += make_import('.id', ['cid', 'meid', 'UNKNOWN', 'scalar'])
     out += make_import('.base_template', ['Restrictions'])
-    out += make_import('.cause_template', ['Cause', 'Causes']) + SPACING
+    out += make_import('.cause_template', ['Cause', 'Causes'])
     out += make_import('.sequela', ['sequelae'])
-    out += make_import('.etiology', ['etiologies'])
+    out += make_import('.etiology', ['etiologies']) + SPACING
     out += make_causes(get_cause_data())
     return out
