@@ -38,7 +38,7 @@ def make_cause(name, cid, dismod_id, restrictions, most_detailed, sequelae=None,
     out += TAB*2 + f"gbd_id=cid({cid}),\n"
     out += TAB*2 + f"dismod_id={to_id(dismod_id, 'meid')},\n"
     out += TAB*2 + f"most_detailed={most_detailed},\n"
-    out += TAB*2 + f"parent_cause=None"
+    out += TAB*2 + f"parent_cause=None,\n"
     out += TAB*2 + f"restrictions=Restrictions(\n"
     for restriction, value in restrictions:
         if isinstance(value, bool):
@@ -74,8 +74,8 @@ def make_cause(name, cid, dismod_id, restrictions, most_detailed, sequelae=None,
 
 def make_causes(causes_list):
     out = "causes = Causes(**{\n"
-    for name, cid, dismod_id, restrictions, seq_id, etiol_id in causes_list:
-        out += make_cause(name, cid, dismod_id, restrictions, seq_id, etiol_id)
+    for name, cid, dismod_id, restrictions, most_detailed, seq_id, etiol_id in causes_list:
+        out += make_cause(name, cid, dismod_id, restrictions, most_detailed, seq_id, etiol_id)
     out += "})\n"
     return out
 

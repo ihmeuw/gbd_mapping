@@ -128,12 +128,13 @@ def get_cause_data():
         name = cause['cause_name']
         cid = cause['cause_id']
         dismod_id = cause['modelable_entity_id']
+        most_detailed = cause['most_detailed']
         restrictions = make_restrictions(cause)
 
         eti_ids = cause_etiology_map[cause_etiology_map.cause_id == cid].rei_id.tolist()
         associated_etiologies = clean_entity_list(etiologies[etiologies.rei_id.isin(eti_ids)].rei_name)
         associated_sequelae = clean_entity_list(sequelae[sequelae.cause_id == cid].sequela_name)
-        cause_data.append((name, cid, dismod_id, restrictions, associated_sequelae, associated_etiologies))
+        cause_data.append((name, cid, dismod_id, restrictions, most_detailed, associated_sequelae, associated_etiologies))
 
     return cause_data
 
