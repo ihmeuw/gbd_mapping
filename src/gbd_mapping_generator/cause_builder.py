@@ -14,10 +14,10 @@ def get_base_types():
                       ('gbd_id', 'cid'),
                       ('dismod_id', 'Union[meid, _Unknown]'),
                       ('most_detailed', 'bool'),
-                      ('parent_cause', 'Cause = None'),
                       ('level', 'int'),
                       ('restrictions', 'Restrictions'),
-                      ('sub_causes', 'Tuple[Cause, ...] = None'),
+                      ('parent', '"Cause" = None'),
+                      ('sub_causes', 'Tuple["Cause", ...] = None'),
                       ('sequelae', 'Tuple[Sequela, ...] = None'),
                       ('etiologies', 'Tuple[Etiology, ...] = None'),),
             'superclass': ('ModelableEntity', modelable_entity_attrs),
@@ -40,7 +40,7 @@ def make_cause(name, cid, dismod_id, most_detailed, level, restrictions, sequela
     out += TAB*2 + f"dismod_id={to_id(dismod_id, 'meid')},\n"
     out += TAB*2 + f"level={level},\n"
     out += TAB*2 + f"most_detailed={bool(most_detailed)},\n"
-    out += TAB*2 + f"parent_cause=None,\n"
+    out += TAB*2 + f"parent=None,\n"
     out += TAB*2 + f"restrictions=Restrictions(\n"
     for restriction, value in restrictions:
         if isinstance(value, bool):
@@ -88,9 +88,11 @@ def make_causes(causes_list):
     for (name, cid, dismod_id, most_detailed, cause_level,
          parent, restrictions, sequelae, etiologies, sub_causes) in causes_list:
 
-        if cause_level != 0:
+        if name != parent:
             out += f"causes.{name}.parent = causes.{parent}\n"
         if sub_causes:
+            if name in sub_causes:
+                sub_causes.remove(name)
             out += text_wrap(f'causes.{name}.sub_causes = ', [f'causes.{s}' for s in sub_causes], implicit=True)
         out += '\n'
 

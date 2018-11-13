@@ -14,7 +14,7 @@ from .etiology_template import Etiology
 
 class Cause(ModelableEntity):
     """Container for cause GBD ids and metadata"""
-    __slots__ = ('name', 'kind', 'gbd_id', 'dismod_id', 'most_detailed', 'parent_cause', 'level', 'restrictions',
+    __slots__ = ('name', 'kind', 'gbd_id', 'dismod_id', 'most_detailed', 'level', 'restrictions', 'parent',
                  'sub_causes', 'sequelae', 'etiologies', )
 
     def __init__(self,
@@ -23,10 +23,10 @@ class Cause(ModelableEntity):
                  gbd_id: cid,
                  dismod_id: Union[meid, _Unknown],
                  most_detailed: bool,
-                 parent_cause: Cause = None,
                  level: int,
                  restrictions: Restrictions,
-                 sub_causes: Tuple[Cause, ...] = None,
+                 parent: "Cause" = None,
+                 sub_causes: Tuple["Cause", ...] = None,
                  sequelae: Tuple[Sequela, ...] = None,
                  etiologies: Tuple[Etiology, ...] = None, ):
         super().__init__(name=name,
@@ -37,9 +37,9 @@ class Cause(ModelableEntity):
         self.gbd_id = gbd_id
         self.dismod_id = dismod_id
         self.most_detailed = most_detailed
-        self.parent_cause = parent_cause
         self.level = level
         self.restrictions = restrictions
+        self.parent = parent
         self.sub_causes = sub_causes
         self.sequelae = sequelae
         self.etiologies = etiologies
