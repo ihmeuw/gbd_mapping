@@ -41,8 +41,8 @@ class CoverageGaps(GbdRecord):
     """Container for coverage gap data."""
     __slots__ = ('lack_of_breastfeeding_promotion', 'lack_of_hiv_positive_antiretroviral_treatment',
                  'lack_of_immediate_assessment_and_stimulation', 'lack_of_lipid_lowering_therapy',
-                 'lack_of_maternal_calcium_supplement', 'low_measles_vaccine_coverage_first_dose',
-                 'low_oral_rehydration_solution_coverage', )
+                 'lack_of_maternal_calcium_supplement', 'lack_of_vitamin_a_fortification',
+                 'low_measles_vaccine_coverage_first_dose', 'low_oral_rehydration_solution_coverage', )
 
     def __init__(self,
                  lack_of_breastfeeding_promotion: CoverageGap,
@@ -50,6 +50,7 @@ class CoverageGaps(GbdRecord):
                  lack_of_immediate_assessment_and_stimulation: CoverageGap,
                  lack_of_lipid_lowering_therapy: CoverageGap,
                  lack_of_maternal_calcium_supplement: CoverageGap,
+                 lack_of_vitamin_a_fortification: CoverageGap,
                  low_measles_vaccine_coverage_first_dose: CoverageGap,
                  low_oral_rehydration_solution_coverage: CoverageGap, ):
         super().__init__()
@@ -58,5 +59,6 @@ class CoverageGaps(GbdRecord):
         self.lack_of_immediate_assessment_and_stimulation = lack_of_immediate_assessment_and_stimulation
         self.lack_of_lipid_lowering_therapy = lack_of_lipid_lowering_therapy
         self.lack_of_maternal_calcium_supplement = lack_of_maternal_calcium_supplement
+        self.lack_of_vitamin_a_fortification = lack_of_vitamin_a_fortification
         self.low_measles_vaccine_coverage_first_dose = low_measles_vaccine_coverage_first_dose
         self.low_oral_rehydration_solution_coverage = low_oral_rehydration_solution_coverage
