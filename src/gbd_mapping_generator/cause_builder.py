@@ -1,6 +1,6 @@
 """Tools for automatically generating the GBD cause mapping."""
 from .data import get_cause_list, get_cause_data
-from .util import make_import, make_module_docstring, make_record, to_id, SPACING, TAB, TEXTWIDTH
+from .util import make_import, make_module_docstring, make_record, to_id, SPACING, TAB, TEXTWIDTH, text_wrap
 from .base_template_builder import gbd_record_attrs, modelable_entity_attrs
 
 IMPORTABLES_DEFINED = ('Cause', 'causes')
@@ -15,8 +15,9 @@ def get_base_types():
                       ('dismod_id', 'Union[meid, _Unknown]'),
                       ('most_detailed', 'bool'),
                       ('parent_cause', 'Cause = None'),
+                      ('level', 'int'),
                       ('restrictions', 'Restrictions'),
-                      ('subcauses', 'Tuple[Cause, ...] = None'),
+                      ('sub_causes', 'Tuple[Cause, ...] = None'),
                       ('sequelae', 'Tuple[Sequela, ...] = None'),
                       ('etiologies', 'Tuple[Etiology, ...] = None'),),
             'superclass': ('ModelableEntity', modelable_entity_attrs),
@@ -30,14 +31,15 @@ def get_base_types():
     }
 
 
-def make_cause(name, cid, dismod_id, restrictions, most_detailed, sequelae=None, etiologies=None):
+def make_cause(name, cid, dismod_id, most_detailed, level, restrictions, sequelae=None, etiologies=None):
     out = ""
     out += TAB + f"'{name}': Cause(\n"
     out += TAB*2 + f"name='{name}',\n"
     out += TAB * 2 + f"kind='cause',\n"
     out += TAB*2 + f"gbd_id=cid({cid}),\n"
     out += TAB*2 + f"dismod_id={to_id(dismod_id, 'meid')},\n"
-    out += TAB*2 + f"most_detailed={most_detailed},\n"
+    out += TAB*2 + f"level={level},\n"
+    out += TAB*2 + f"most_detailed={bool(most_detailed)},\n"
     out += TAB*2 + f"parent_cause=None,\n"
     out += TAB*2 + f"restrictions=Restrictions(\n"
     for restriction, value in restrictions:
@@ -55,7 +57,10 @@ def make_cause(name, cid, dismod_id, restrictions, most_detailed, sequelae=None,
             out += field
             char_count = offset
             for item in entity:
-                item_name = f"{entity_name}.{item}, "
+                if entity_name == 'sub_causes':
+                    item_name = f"causes.{item}, "
+                else:
+                    item_name = f"{entity_name}.{item}, "
 
                 if char_count == offset:
                     out += item_name
@@ -73,10 +78,22 @@ def make_cause(name, cid, dismod_id, restrictions, most_detailed, sequelae=None,
 
 
 def make_causes(causes_list):
-    out = "causes = Causes(**{\n"
-    for name, cid, dismod_id, restrictions, most_detailed, seq_id, etiol_id in causes_list:
-        out += make_cause(name, cid, dismod_id, restrictions, most_detailed, seq_id, etiol_id)
-    out += "})\n"
+    out = f'causes = Causes(**{{\n'
+    for (name, cid, dismod_id, most_detailed, cause_level,
+         parent, restrictions, sequelae, etiologies, sub_causes) in causes_list:
+        out += make_cause(name, cid, dismod_id, most_detailed, cause_level,
+                          restrictions, sequelae, etiologies)
+    out += "})\n\n"
+
+    for (name, cid, dismod_id, most_detailed, cause_level,
+         parent, restrictions, sequelae, etiologies, sub_causes) in causes_list:
+
+        if cause_level != 0:
+            out += f"causes.{name}.parent = causes.{parent}\n"
+        if sub_causes:
+            out += text_wrap(f'causes.{name}.sub_causes = ', [f'causes.{s}' for s in sub_causes], implicit=True)
+        out += '\n'
+
     return out
 
 

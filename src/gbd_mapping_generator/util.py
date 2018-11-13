@@ -42,7 +42,7 @@ def text_wrap(start_string, items, sep=', ', implicit=False):
 
         for i in items[1:]:
             if char_count + len(i) > TEXTWIDTH:  # wrap
-                out[-1] = '\n'
+                out = out[:-1] + '\n'
                 out += padding + i + ', '
                 char_count = len(padding + i + ', ')
             else:

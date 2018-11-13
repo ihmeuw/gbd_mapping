@@ -17,7 +17,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(294),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=0,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -35,7 +36,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(295),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=1,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -53,7 +55,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(297),
         dismod_id=meid(1175),
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -71,7 +74,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(298),
         dismod_id=meid(9368),
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -89,7 +93,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(300),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -101,14 +106,14 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.early_hiv_with_mild_anemia, sequelae.early_hiv_with_moderate_anemia, 
-                  sequelae.early_hiv_with_severe_anemia, sequelae.early_hiv_without_anemia, 
-                  sequelae.symptomatic_hiv_with_mild_anemia, sequelae.symptomatic_hiv_with_moderate_anemia, 
-                  sequelae.symptomatic_hiv_with_severe_anemia, sequelae.symptomatic_hiv_without_anemia, 
-                  sequelae.hiv_aids_with_antiretroviral_treatment_with_mild_anemia, 
-                  sequelae.hiv_aids_with_antiretroviral_treatment_with_moderate_anemia, 
-                  sequelae.hiv_aids_with_antiretroviral_treatment_with_severe_anemia, 
-                  sequelae.hiv_aids_with_antiretroviral_treatment_without_anemia, sequelae.aids_with_mild_anemia, 
+        sequelae=(sequelae.early_hiv_with_mild_anemia, sequelae.early_hiv_with_moderate_anemia,
+                  sequelae.early_hiv_with_severe_anemia, sequelae.early_hiv_without_anemia,
+                  sequelae.symptomatic_hiv_with_mild_anemia, sequelae.symptomatic_hiv_with_moderate_anemia,
+                  sequelae.symptomatic_hiv_with_severe_anemia, sequelae.symptomatic_hiv_without_anemia,
+                  sequelae.hiv_aids_with_antiretroviral_treatment_with_mild_anemia,
+                  sequelae.hiv_aids_with_antiretroviral_treatment_with_moderate_anemia,
+                  sequelae.hiv_aids_with_antiretroviral_treatment_with_severe_anemia,
+                  sequelae.hiv_aids_with_antiretroviral_treatment_without_anemia, sequelae.aids_with_mild_anemia,
                   sequelae.aids_with_moderate_anemia, sequelae.aids_with_severe_anemia, sequelae.aids_without_anemia, ),
     ),
     'diarrheal_diseases': Cause(
@@ -116,7 +121,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(302),
         dismod_id=meid(1181),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -128,11 +134,11 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_diarrheal_diseases, sequelae.moderate_diarrheal_diseases, 
+        sequelae=(sequelae.mild_diarrheal_diseases, sequelae.moderate_diarrheal_diseases,
                   sequelae.severe_diarrheal_diseases, sequelae.guillain_barre_syndrome_due_to_diarrheal_diseases, ),
-        etiologies=(etiologies.cholera, etiologies.non_typhoidal_salmonella, etiologies.shigella, 
-                    etiologies.enteropathogenic_e_coli, etiologies.enterotoxigenic_e_coli, etiologies.campylobacter, 
-                    etiologies.entamoeba, etiologies.cryptosporidium, etiologies.rotavirus, etiologies.aeromonas, 
+        etiologies=(etiologies.cholera, etiologies.non_typhoidal_salmonella, etiologies.shigella,
+                    etiologies.enteropathogenic_e_coli, etiologies.enterotoxigenic_e_coli, etiologies.campylobacter,
+                    etiologies.entamoeba, etiologies.cryptosporidium, etiologies.rotavirus, etiologies.aeromonas,
                     etiologies.clostridium_difficile, etiologies.norovirus, etiologies.adenovirus, ),
     ),
     'typhoid_fever': Cause(
@@ -140,7 +146,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(319),
         dismod_id=meid(1247),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -152,7 +159,7 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.acute_typhoid_infection, sequelae.severe_typhoid_fever, 
+        sequelae=(sequelae.acute_typhoid_infection, sequelae.severe_typhoid_fever,
                   sequelae.intestinal_perforation_due_to_typhoid, sequelae.gastrointestinal_bleeding_due_to_typhoid, ),
     ),
     'paratyphoid_fever': Cause(
@@ -160,7 +167,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(320),
         dismod_id=meid(1252),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -172,7 +180,7 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.acute_paratyphoid_infection, sequelae.moderate_paratyphoid_fever, 
+        sequelae=(sequelae.acute_paratyphoid_infection, sequelae.moderate_paratyphoid_fever,
                   sequelae.severe_paratyphoid_fever, sequelae.intestinal_perforation_due_to_paratyphoid, ),
     ),
     'other_intestinal_infectious_diseases': Cause(
@@ -180,7 +188,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(321),
         dismod_id=meid(1257),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -199,7 +208,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(322),
         dismod_id=meid(1258),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -211,9 +221,9 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.moderate_lower_respiratory_infections, sequelae.severe_lower_respiratory_infections, 
+        sequelae=(sequelae.moderate_lower_respiratory_infections, sequelae.severe_lower_respiratory_infections,
                   sequelae.guillain_barre_syndrome_due_to_lower_respiratory_infections, ),
-        etiologies=(etiologies.influenza, etiologies.pneumococcal_pneumonia, etiologies.h_influenzae_type_b, 
+        etiologies=(etiologies.influenza, etiologies.pneumococcal_pneumonia, etiologies.h_influenzae_type_b,
                     etiologies.respiratory_syncytial_virus, ),
     ),
     'upper_respiratory_infections': Cause(
@@ -221,7 +231,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(328),
         dismod_id=meid(1276),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -233,7 +244,7 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_upper_respiratory_infections, sequelae.moderate_upper_respiratory_infections, 
+        sequelae=(sequelae.mild_upper_respiratory_infections, sequelae.moderate_upper_respiratory_infections,
                   sequelae.guillain_barre_syndrome_due_to_upper_respiratory_infections, ),
     ),
     'otitis_media': Cause(
@@ -241,7 +252,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(329),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -253,14 +265,14 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.acute_otitis_media, sequelae.severe_infectious_complications_due_to_chronic_otitis_media, 
-                  sequelae.vertigo_with_mild_hearing_loss_due_to_chronic_otitis_media, 
-                  sequelae.vertigo_with_mild_hearing_loss_and_ringing_due_to_chronic_otitis_media, 
-                  sequelae.mild_hearing_loss_due_to_chronic_otitis_media, 
-                  sequelae.mild_hearing_loss_with_ringing_due_to_chronic_otitis_media, 
-                  sequelae.vertigo_with_moderate_hearing_loss_due_to_chronic_otitis_media, 
-                  sequelae.vertigo_with_moderate_hearing_loss_and_ringing_due_to_chronic_otitis_media, 
-                  sequelae.moderate_hearing_loss_due_to_chronic_otitis_media, 
+        sequelae=(sequelae.acute_otitis_media, sequelae.severe_infectious_complications_due_to_chronic_otitis_media,
+                  sequelae.vertigo_with_mild_hearing_loss_due_to_chronic_otitis_media,
+                  sequelae.vertigo_with_mild_hearing_loss_and_ringing_due_to_chronic_otitis_media,
+                  sequelae.mild_hearing_loss_due_to_chronic_otitis_media,
+                  sequelae.mild_hearing_loss_with_ringing_due_to_chronic_otitis_media,
+                  sequelae.vertigo_with_moderate_hearing_loss_due_to_chronic_otitis_media,
+                  sequelae.vertigo_with_moderate_hearing_loss_and_ringing_due_to_chronic_otitis_media,
+                  sequelae.moderate_hearing_loss_due_to_chronic_otitis_media,
                   sequelae.moderate_hearing_loss_with_ringing_due_to_chronic_otitis_media, ),
     ),
     'meningitis': Cause(
@@ -268,7 +280,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(332),
         dismod_id=meid(1296),
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -286,7 +299,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(333),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -298,32 +312,32 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.acute_pneumococcal_meningitis, 
-                  sequelae.mild_behavioral_problems_due_to_pneumococcal_meningitis, 
-                  sequelae.mild_motor_impairment_due_to_long_term_due_to_pneumococcal_meningitis, 
-                  sequelae.mild_motor_plus_cognitive_impairments_due_to_pneumococcal_meningitis, 
-                  sequelae.borderline_intellectual_disability_due_to_pneumococcal_meningitis, 
-                  sequelae.mild_intellectual_disability_due_to_pneumococcal_meningitis, 
-                  sequelae.moderate_motor_impairment_due_to_pneumococcal_meningitis, 
-                  sequelae.severe_motor_impairment_due_to_pneumococcal_meningitis, 
-                  sequelae.moderate_motor_plus_cognitive_impairments_due_to_pneumococcal_meningitis, 
-                  sequelae.severe_motor_plus_cognitive_impairments_due_to_pneumococcal_meningitis, 
-                  sequelae.epilepsy_due_to_pneumococcal_meningitis, 
-                  sequelae.mild_hearing_loss_due_to_pneumococcal_meningitis, 
-                  sequelae.mild_hearing_loss_with_ringing_due_to_pneumococcal_meningitis, 
-                  sequelae.moderate_hearing_loss_due_to_pneumococcal_meningitis, 
-                  sequelae.moderate_hearing_loss_with_ringing_due_to_pneumococcal_meningitis, 
-                  sequelae.moderately_severe_hearing_loss_due_to_pneumococcal_meningitis, 
-                  sequelae.moderately_severe_hearing_loss_with_ringing_due_to_pneumococcal_meningitis, 
-                  sequelae.severe_hearing_loss_due_to_pneumococcal_meningitis, 
-                  sequelae.severe_hearing_loss_with_ringing_due_to_pneumococcal_meningitis, 
-                  sequelae.profound_hearing_loss_due_to_pneumococcal_meningitis, 
-                  sequelae.profound_hearing_loss_with_ringing_due_to_pneumococcal_meningitis, 
-                  sequelae.complete_hearing_loss_due_to_pneumococcal_meningitis, 
-                  sequelae.complete_hearing_loss_with_ringing_due_to_pneumococcal_meningitis, 
-                  sequelae.monocular_distance_vision_loss_due_to_pneumococcal_meningitis, 
-                  sequelae.blindness_due_to_pneumococcal_meningitis, 
-                  sequelae.moderate_vision_impairment_due_to_pneumococcol_meningitis, 
+        sequelae=(sequelae.acute_pneumococcal_meningitis,
+                  sequelae.mild_behavioral_problems_due_to_pneumococcal_meningitis,
+                  sequelae.mild_motor_impairment_due_to_long_term_due_to_pneumococcal_meningitis,
+                  sequelae.mild_motor_plus_cognitive_impairments_due_to_pneumococcal_meningitis,
+                  sequelae.borderline_intellectual_disability_due_to_pneumococcal_meningitis,
+                  sequelae.mild_intellectual_disability_due_to_pneumococcal_meningitis,
+                  sequelae.moderate_motor_impairment_due_to_pneumococcal_meningitis,
+                  sequelae.severe_motor_impairment_due_to_pneumococcal_meningitis,
+                  sequelae.moderate_motor_plus_cognitive_impairments_due_to_pneumococcal_meningitis,
+                  sequelae.severe_motor_plus_cognitive_impairments_due_to_pneumococcal_meningitis,
+                  sequelae.epilepsy_due_to_pneumococcal_meningitis,
+                  sequelae.mild_hearing_loss_due_to_pneumococcal_meningitis,
+                  sequelae.mild_hearing_loss_with_ringing_due_to_pneumococcal_meningitis,
+                  sequelae.moderate_hearing_loss_due_to_pneumococcal_meningitis,
+                  sequelae.moderate_hearing_loss_with_ringing_due_to_pneumococcal_meningitis,
+                  sequelae.moderately_severe_hearing_loss_due_to_pneumococcal_meningitis,
+                  sequelae.moderately_severe_hearing_loss_with_ringing_due_to_pneumococcal_meningitis,
+                  sequelae.severe_hearing_loss_due_to_pneumococcal_meningitis,
+                  sequelae.severe_hearing_loss_with_ringing_due_to_pneumococcal_meningitis,
+                  sequelae.profound_hearing_loss_due_to_pneumococcal_meningitis,
+                  sequelae.profound_hearing_loss_with_ringing_due_to_pneumococcal_meningitis,
+                  sequelae.complete_hearing_loss_due_to_pneumococcal_meningitis,
+                  sequelae.complete_hearing_loss_with_ringing_due_to_pneumococcal_meningitis,
+                  sequelae.monocular_distance_vision_loss_due_to_pneumococcal_meningitis,
+                  sequelae.blindness_due_to_pneumococcal_meningitis,
+                  sequelae.moderate_vision_impairment_due_to_pneumococcol_meningitis,
                   sequelae.severe_vision_impairment_due_to_pneumococcol_meningitis, ),
     ),
     'h_influenzae_type_b_meningitis': Cause(
@@ -331,7 +345,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(334),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -343,32 +358,32 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.acute_h_influenzae_type_b_meningitis, 
-                  sequelae.mild_behavioral_problems_due_to_h_influenzae_type_b_meningitis, 
-                  sequelae.mild_motor_impairment_due_to_long_term_due_to_h_influenzae_type_b_meningitis, 
-                  sequelae.mild_motor_plus_cognitive_impairments_due_to_h_influenzae_type_b_meningitis, 
-                  sequelae.borderline_intellectual_disability_due_to_h_influenzae_type_b_meningitis, 
-                  sequelae.mild_intellectual_disability_due_to_h_influenzae_type_b_meningitis, 
-                  sequelae.moderate_motor_impairment_due_to_h_influenzae_type_b_meningitis, 
-                  sequelae.severe_motor_impairment_due_to_h_influenzae_type_b_meningitis, 
-                  sequelae.moderate_motor_plus_cognitive_impairments_due_to_h_influenzae_type_b_meningitis, 
-                  sequelae.severe_motor_plus_cognitive_impairments_due_to_h_influenzae_type_b_meningitis, 
-                  sequelae.epilepsy_due_to_h_influenzae_type_b_meningitis, 
-                  sequelae.mild_hearing_loss_due_to_h_influenzae_type_b_meningitis, 
-                  sequelae.mild_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis, 
-                  sequelae.moderate_hearing_loss_due_to_h_influenzae_type_b_meningitis, 
-                  sequelae.moderate_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis, 
-                  sequelae.moderately_severe_hearing_loss_due_to_h_influenzae_type_b_meningitis, 
-                  sequelae.moderately_severe_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis, 
-                  sequelae.severe_hearing_loss_due_to_h_influenzae_type_b_meningitis, 
-                  sequelae.severe_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis, 
-                  sequelae.profound_hearing_loss_due_to_h_influenzae_type_b_meningitis, 
-                  sequelae.profound_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis, 
-                  sequelae.complete_hearing_loss_due_to_h_influenzae_type_b_meningitis, 
-                  sequelae.complete_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis, 
-                  sequelae.monocular_distance_vision_loss_due_to_h_influenzae_type_b_meningitis, 
-                  sequelae.blindness_due_to_h_influenzae_type_b_meningitis, 
-                  sequelae.moderate_vision_impairment_due_to_h_influenza_type_b_meningitis, 
+        sequelae=(sequelae.acute_h_influenzae_type_b_meningitis,
+                  sequelae.mild_behavioral_problems_due_to_h_influenzae_type_b_meningitis,
+                  sequelae.mild_motor_impairment_due_to_long_term_due_to_h_influenzae_type_b_meningitis,
+                  sequelae.mild_motor_plus_cognitive_impairments_due_to_h_influenzae_type_b_meningitis,
+                  sequelae.borderline_intellectual_disability_due_to_h_influenzae_type_b_meningitis,
+                  sequelae.mild_intellectual_disability_due_to_h_influenzae_type_b_meningitis,
+                  sequelae.moderate_motor_impairment_due_to_h_influenzae_type_b_meningitis,
+                  sequelae.severe_motor_impairment_due_to_h_influenzae_type_b_meningitis,
+                  sequelae.moderate_motor_plus_cognitive_impairments_due_to_h_influenzae_type_b_meningitis,
+                  sequelae.severe_motor_plus_cognitive_impairments_due_to_h_influenzae_type_b_meningitis,
+                  sequelae.epilepsy_due_to_h_influenzae_type_b_meningitis,
+                  sequelae.mild_hearing_loss_due_to_h_influenzae_type_b_meningitis,
+                  sequelae.mild_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis,
+                  sequelae.moderate_hearing_loss_due_to_h_influenzae_type_b_meningitis,
+                  sequelae.moderate_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis,
+                  sequelae.moderately_severe_hearing_loss_due_to_h_influenzae_type_b_meningitis,
+                  sequelae.moderately_severe_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis,
+                  sequelae.severe_hearing_loss_due_to_h_influenzae_type_b_meningitis,
+                  sequelae.severe_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis,
+                  sequelae.profound_hearing_loss_due_to_h_influenzae_type_b_meningitis,
+                  sequelae.profound_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis,
+                  sequelae.complete_hearing_loss_due_to_h_influenzae_type_b_meningitis,
+                  sequelae.complete_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis,
+                  sequelae.monocular_distance_vision_loss_due_to_h_influenzae_type_b_meningitis,
+                  sequelae.blindness_due_to_h_influenzae_type_b_meningitis,
+                  sequelae.moderate_vision_impairment_due_to_h_influenza_type_b_meningitis,
                   sequelae.severe_vision_impairment_due_to_h_influenza_type_b_meningitis, ),
     ),
     'meningococcal_meningitis': Cause(
@@ -376,7 +391,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(335),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -388,32 +404,32 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.acute_meningococcal_meningitis, 
-                  sequelae.mild_behavioral_problems_due_to_meningococcal_meningitis, 
-                  sequelae.mild_motor_impairment_due_to_long_term_due_to_meningococcal_meningitis, 
-                  sequelae.mild_motor_plus_cognitive_impairments_due_to_meningococcal_meningitis, 
-                  sequelae.borderline_intellectual_disability_due_to_meningococcal_meningitis, 
-                  sequelae.mild_intellectual_disability_due_to_meningococcal_meningitis, 
-                  sequelae.moderate_motor_impairment_due_to_meningococcal_meningitis, 
-                  sequelae.severe_motor_impairment_due_to_meningococcal_meningitis, 
-                  sequelae.moderate_motor_plus_cognitive_impairments_due_to_meningococcal_meningitis, 
-                  sequelae.severe_motor_plus_cognitive_impairments_due_to_meningococcal_meningitis, 
-                  sequelae.epilepsy_due_to_meningococcal_meningitis, 
-                  sequelae.mild_hearing_loss_due_to_meningococcal_meningitis, 
-                  sequelae.mild_hearing_loss_with_ringing_due_to_meningococcal_meningitis, 
-                  sequelae.moderate_hearing_loss_due_to_meningococcal_meningitis, 
-                  sequelae.moderate_hearing_loss_with_ringing_due_to_meningococcal_meningitis, 
-                  sequelae.moderately_severe_hearing_loss_due_to_meningococcal_meningitis, 
-                  sequelae.moderately_severe_hearing_loss_with_ringing_due_to_meningococcal_meningitis, 
-                  sequelae.severe_hearing_loss_due_to_meningococcal_meningitis, 
-                  sequelae.severe_hearing_loss_with_ringing_due_to_meningococcal_meningitis, 
-                  sequelae.profound_hearing_loss_due_to_meningococcal_meningitis, 
-                  sequelae.profound_hearing_loss_with_ringing_due_to_meningococcal_meningitis, 
-                  sequelae.complete_hearing_loss_due_to_meningococcal_meningitis, 
-                  sequelae.complete_hearing_loss_with_ringing_due_to_meningococcal_meningitis, 
-                  sequelae.monocular_distance_vision_loss_due_to_meningococcal_meningitis, 
-                  sequelae.blindness_due_to_meningococcal_meningitis, 
-                  sequelae.moderate_vision_impairment_due_to_meningococcal_meningitis, 
+        sequelae=(sequelae.acute_meningococcal_meningitis,
+                  sequelae.mild_behavioral_problems_due_to_meningococcal_meningitis,
+                  sequelae.mild_motor_impairment_due_to_long_term_due_to_meningococcal_meningitis,
+                  sequelae.mild_motor_plus_cognitive_impairments_due_to_meningococcal_meningitis,
+                  sequelae.borderline_intellectual_disability_due_to_meningococcal_meningitis,
+                  sequelae.mild_intellectual_disability_due_to_meningococcal_meningitis,
+                  sequelae.moderate_motor_impairment_due_to_meningococcal_meningitis,
+                  sequelae.severe_motor_impairment_due_to_meningococcal_meningitis,
+                  sequelae.moderate_motor_plus_cognitive_impairments_due_to_meningococcal_meningitis,
+                  sequelae.severe_motor_plus_cognitive_impairments_due_to_meningococcal_meningitis,
+                  sequelae.epilepsy_due_to_meningococcal_meningitis,
+                  sequelae.mild_hearing_loss_due_to_meningococcal_meningitis,
+                  sequelae.mild_hearing_loss_with_ringing_due_to_meningococcal_meningitis,
+                  sequelae.moderate_hearing_loss_due_to_meningococcal_meningitis,
+                  sequelae.moderate_hearing_loss_with_ringing_due_to_meningococcal_meningitis,
+                  sequelae.moderately_severe_hearing_loss_due_to_meningococcal_meningitis,
+                  sequelae.moderately_severe_hearing_loss_with_ringing_due_to_meningococcal_meningitis,
+                  sequelae.severe_hearing_loss_due_to_meningococcal_meningitis,
+                  sequelae.severe_hearing_loss_with_ringing_due_to_meningococcal_meningitis,
+                  sequelae.profound_hearing_loss_due_to_meningococcal_meningitis,
+                  sequelae.profound_hearing_loss_with_ringing_due_to_meningococcal_meningitis,
+                  sequelae.complete_hearing_loss_due_to_meningococcal_meningitis,
+                  sequelae.complete_hearing_loss_with_ringing_due_to_meningococcal_meningitis,
+                  sequelae.monocular_distance_vision_loss_due_to_meningococcal_meningitis,
+                  sequelae.blindness_due_to_meningococcal_meningitis,
+                  sequelae.moderate_vision_impairment_due_to_meningococcal_meningitis,
                   sequelae.severe_vision_impairment_due_to_meningococcal_meningitis, ),
     ),
     'other_meningitis': Cause(
@@ -421,7 +437,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(336),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -433,33 +450,33 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.other_acute_bacterial_meningitis, 
-                  sequelae.mild_behavioral_problems_due_to_other_bacterial_meningitis, 
-                  sequelae.mild_motor_impairment_due_to_long_term_due_to_other_bacterial_meningitis, 
-                  sequelae.mild_motor_plus_cognitive_impairments_due_to_other_bacterial_meningitis, 
-                  sequelae.borderline_intellectual_disability_due_to_other_bacterial_meningitis, 
-                  sequelae.mild_intellectual_disability_due_to_other_bacterial_meningitis, 
-                  sequelae.moderate_motor_impairment_due_to_other_bacterial_meningitis, 
-                  sequelae.severe_motor_impairment_due_to_other_bacterial_meningitis, 
-                  sequelae.moderate_motor_plus_cognitive_impairments_due_to_other_bacterial_meningitis, 
-                  sequelae.severe_motor_plus_cognitive_impairments_due_to_other_bacterial_meningitis, 
-                  sequelae.epilepsy_due_to_other_meningitis, 
-                  sequelae.mild_hearing_loss_due_to_other_bacterial_meningitis, 
-                  sequelae.mild_hearing_loss_due_with_ringing_to_other_bacterial_meningitis, 
-                  sequelae.moderate_hearing_loss_due_to_other_bacterial_meningitis, 
-                  sequelae.moderate_hearing_loss_with_ringing_due_to_other_bacterial_meningitis, 
-                  sequelae.moderately_severe_hearing_loss_due_to_other_bacterial_meningitis, 
-                  sequelae.moderately_severe_hearing_loss_with_ringing_due_to_other_bacterial_meningitis, 
-                  sequelae.severe_hearing_loss_due_to_other_bacterial_meningitis, 
-                  sequelae.severe_hearing_loss_with_ringing_due_to_other_bacterial_meningitis, 
-                  sequelae.profound_hearing_loss_due_to_other_bacterial_meningitis, 
-                  sequelae.profound_hearing_loss_with_ringing_due_to_other_bacterial_meningitis, 
-                  sequelae.complete_hearing_loss_due_to_other_bacterial_meningitis, 
-                  sequelae.complete_hearing_loss_with_ringing_due_to_other_bacterial_meningitis, 
-                  sequelae.acute_viral_meningitis, 
-                  sequelae.monocular_distance_vision_loss_due_to_other_bacterial_meningitis, 
-                  sequelae.blindness_due_to_other_bacterial_meningitis, 
-                  sequelae.moderate_vision_impairment_due_to_other_bacterial_meningitis, 
+        sequelae=(sequelae.other_acute_bacterial_meningitis,
+                  sequelae.mild_behavioral_problems_due_to_other_bacterial_meningitis,
+                  sequelae.mild_motor_impairment_due_to_long_term_due_to_other_bacterial_meningitis,
+                  sequelae.mild_motor_plus_cognitive_impairments_due_to_other_bacterial_meningitis,
+                  sequelae.borderline_intellectual_disability_due_to_other_bacterial_meningitis,
+                  sequelae.mild_intellectual_disability_due_to_other_bacterial_meningitis,
+                  sequelae.moderate_motor_impairment_due_to_other_bacterial_meningitis,
+                  sequelae.severe_motor_impairment_due_to_other_bacterial_meningitis,
+                  sequelae.moderate_motor_plus_cognitive_impairments_due_to_other_bacterial_meningitis,
+                  sequelae.severe_motor_plus_cognitive_impairments_due_to_other_bacterial_meningitis,
+                  sequelae.epilepsy_due_to_other_meningitis,
+                  sequelae.mild_hearing_loss_due_to_other_bacterial_meningitis,
+                  sequelae.mild_hearing_loss_due_with_ringing_to_other_bacterial_meningitis,
+                  sequelae.moderate_hearing_loss_due_to_other_bacterial_meningitis,
+                  sequelae.moderate_hearing_loss_with_ringing_due_to_other_bacterial_meningitis,
+                  sequelae.moderately_severe_hearing_loss_due_to_other_bacterial_meningitis,
+                  sequelae.moderately_severe_hearing_loss_with_ringing_due_to_other_bacterial_meningitis,
+                  sequelae.severe_hearing_loss_due_to_other_bacterial_meningitis,
+                  sequelae.severe_hearing_loss_with_ringing_due_to_other_bacterial_meningitis,
+                  sequelae.profound_hearing_loss_due_to_other_bacterial_meningitis,
+                  sequelae.profound_hearing_loss_with_ringing_due_to_other_bacterial_meningitis,
+                  sequelae.complete_hearing_loss_due_to_other_bacterial_meningitis,
+                  sequelae.complete_hearing_loss_with_ringing_due_to_other_bacterial_meningitis,
+                  sequelae.acute_viral_meningitis,
+                  sequelae.monocular_distance_vision_loss_due_to_other_bacterial_meningitis,
+                  sequelae.blindness_due_to_other_bacterial_meningitis,
+                  sequelae.moderate_vision_impairment_due_to_other_bacterial_meningitis,
                   sequelae.severe_vision_impairment_due_to_other_bacterial_meningitis, ),
     ),
     'encephalitis': Cause(
@@ -467,7 +484,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(337),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -479,18 +497,18 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.acute_encephalitis, sequelae.mild_behavioral_problems_due_to_encephalitis, 
-                  sequelae.mild_motor_impairment_due_to_long_term_due_to_encephalitis, 
-                  sequelae.mild_motor_plus_cognitive_impairments_due_to_encephalitis, 
-                  sequelae.borderline_intellectual_disability_due_to_encephalitis, 
-                  sequelae.monocular_distance_vision_loss_due_to_encephalitis, 
-                  sequelae.mild_intellectual_disability_due_to_encephalitis, 
-                  sequelae.moderate_motor_impairment_due_to_encephalitis, 
-                  sequelae.severe_motor_impairment_due_to_encephalitis, 
-                  sequelae.moderate_motor_plus_cognitive_impairments_due_to_encephalitis, 
-                  sequelae.severe_motor_plus_cognitive_impairments_due_to_encephalitis, 
-                  sequelae.epilepsy_due_to_encephalitis, sequelae.blindness_due_to_encephalitis, 
-                  sequelae.moderate_vision_impairment_due_to_encephalitis, 
+        sequelae=(sequelae.acute_encephalitis, sequelae.mild_behavioral_problems_due_to_encephalitis,
+                  sequelae.mild_motor_impairment_due_to_long_term_due_to_encephalitis,
+                  sequelae.mild_motor_plus_cognitive_impairments_due_to_encephalitis,
+                  sequelae.borderline_intellectual_disability_due_to_encephalitis,
+                  sequelae.monocular_distance_vision_loss_due_to_encephalitis,
+                  sequelae.mild_intellectual_disability_due_to_encephalitis,
+                  sequelae.moderate_motor_impairment_due_to_encephalitis,
+                  sequelae.severe_motor_impairment_due_to_encephalitis,
+                  sequelae.moderate_motor_plus_cognitive_impairments_due_to_encephalitis,
+                  sequelae.severe_motor_plus_cognitive_impairments_due_to_encephalitis,
+                  sequelae.epilepsy_due_to_encephalitis, sequelae.blindness_due_to_encephalitis,
+                  sequelae.moderate_vision_impairment_due_to_encephalitis,
                   sequelae.severe_vision_impairment_due_to_encephalitis, ),
     ),
     'diphtheria': Cause(
@@ -498,7 +516,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(338),
         dismod_id=meid(1421),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -517,7 +536,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(339),
         dismod_id=meid(1424),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -536,7 +556,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(340),
         dismod_id=meid(1425),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -548,22 +569,22 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.severe_tetanus, 
-                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_tetanus, 
-                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_tetanus, 
-                  sequelae.moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_tetanus, 
-                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_tetanus, 
-                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_tetanus, 
-                  sequelae.severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_tetanus, 
-                  sequelae.moderate_motor_impairment_due_to_neonatal_tetanus, 
-                  sequelae.moderate_motor_impairment_with_blindness_due_to_neonatal_tetanus, 
-                  sequelae.moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_tetanus, 
-                  sequelae.moderate_motor_impairment_with_epilepsy_due_to_neonatal_tetanus, 
-                  sequelae.severe_motor_impairment_due_to_neonatal_tetanus, 
-                  sequelae.severe_motor_impairment_with_blindness_due_to_neonatal_tetanus, 
-                  sequelae.severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_tetanus, 
-                  sequelae.severe_motor_impairment_with_epilepsy_due_to_neonatal_tetanus, 
-                  sequelae.mild_motor_impairment_due_to_neonatal_tetanus, 
+        sequelae=(sequelae.severe_tetanus,
+                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_tetanus,
+                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_tetanus,
+                  sequelae.moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_tetanus,
+                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_tetanus,
+                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_tetanus,
+                  sequelae.severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_tetanus,
+                  sequelae.moderate_motor_impairment_due_to_neonatal_tetanus,
+                  sequelae.moderate_motor_impairment_with_blindness_due_to_neonatal_tetanus,
+                  sequelae.moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_tetanus,
+                  sequelae.moderate_motor_impairment_with_epilepsy_due_to_neonatal_tetanus,
+                  sequelae.severe_motor_impairment_due_to_neonatal_tetanus,
+                  sequelae.severe_motor_impairment_with_blindness_due_to_neonatal_tetanus,
+                  sequelae.severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_tetanus,
+                  sequelae.severe_motor_impairment_with_epilepsy_due_to_neonatal_tetanus,
+                  sequelae.mild_motor_impairment_due_to_neonatal_tetanus,
                   sequelae.mild_motor_plus_cognitive_impairments_due_to_neonatal_tetanus, ),
     ),
     'measles': Cause(
@@ -571,7 +592,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(341),
         dismod_id=meid(1436),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -590,7 +612,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(342),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -609,7 +632,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(344),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=2,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -627,7 +651,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(345),
         dismod_id=meid(3055),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -639,30 +664,30 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_malaria, sequelae.moderate_malaria, sequelae.severe_malaria, 
-                  sequelae.moderate_motor_impairment_due_to_malaria, 
-                  sequelae.moderate_motor_impairment_with_blindness_due_to_malaria, 
-                  sequelae.moderate_motor_impairment_with_epilepsy_due_to_malaria, 
-                  sequelae.moderate_motor_impairment_with_blindness_and_epilepsy_due_to_malaria, 
-                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_due_to_malaria, 
-                  sequelae.moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_malaria, 
-                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_malaria, 
-                  sequelae.severe_motor_impairment_due_to_malaria, 
-                  sequelae.severe_motor_impairment_with_blindness_due_to_malaria, 
-                  sequelae.severe_motor_impairment_with_epilepsy_due_to_malaria, 
-                  sequelae.severe_motor_impairment_with_blindness_and_epilepsy_due_to_malaria, 
-                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_due_to_malaria, 
-                  sequelae.severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_malaria, 
-                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_malaria, 
-                  sequelae.asymptomatic_malaria_parasitemia_pfpr, 
-                  sequelae.mild_anemia_due_to_malaria_parasitemia_pfpr, 
-                  sequelae.moderate_anemia_due_to_malaria_parasitemia_pfpr, 
-                  sequelae.severe_anemia_due_to_malaria_parasitemia_pfpr, sequelae.severe_malaria_with_mild_anemia, 
-                  sequelae.severe_malaria_with_moderate_anemia, sequelae.severe_malaria_with_severe_anemia, 
-                  sequelae.mild_malaria_with_mild_anemia, sequelae.mild_malaria_with_moderate_anemia, 
-                  sequelae.mild_malaria_with_severe_anemia, sequelae.moderate_malaria_with_mild_anemia, 
-                  sequelae.moderate_malaria_with_moderate_anemia, sequelae.moderate_malaria_with_severe_anemia, 
-                  sequelae.mild_anemia_due_to_malaria_vivax_pvpr, sequelae.moderate_anemia_due_to_malaria_vivax_pvpr, 
+        sequelae=(sequelae.mild_malaria, sequelae.moderate_malaria, sequelae.severe_malaria,
+                  sequelae.moderate_motor_impairment_due_to_malaria,
+                  sequelae.moderate_motor_impairment_with_blindness_due_to_malaria,
+                  sequelae.moderate_motor_impairment_with_epilepsy_due_to_malaria,
+                  sequelae.moderate_motor_impairment_with_blindness_and_epilepsy_due_to_malaria,
+                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_due_to_malaria,
+                  sequelae.moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_malaria,
+                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_malaria,
+                  sequelae.severe_motor_impairment_due_to_malaria,
+                  sequelae.severe_motor_impairment_with_blindness_due_to_malaria,
+                  sequelae.severe_motor_impairment_with_epilepsy_due_to_malaria,
+                  sequelae.severe_motor_impairment_with_blindness_and_epilepsy_due_to_malaria,
+                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_due_to_malaria,
+                  sequelae.severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_malaria,
+                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_malaria,
+                  sequelae.asymptomatic_malaria_parasitemia_pfpr,
+                  sequelae.mild_anemia_due_to_malaria_parasitemia_pfpr,
+                  sequelae.moderate_anemia_due_to_malaria_parasitemia_pfpr,
+                  sequelae.severe_anemia_due_to_malaria_parasitemia_pfpr, sequelae.severe_malaria_with_mild_anemia,
+                  sequelae.severe_malaria_with_moderate_anemia, sequelae.severe_malaria_with_severe_anemia,
+                  sequelae.mild_malaria_with_mild_anemia, sequelae.mild_malaria_with_moderate_anemia,
+                  sequelae.mild_malaria_with_severe_anemia, sequelae.moderate_malaria_with_mild_anemia,
+                  sequelae.moderate_malaria_with_moderate_anemia, sequelae.moderate_malaria_with_severe_anemia,
+                  sequelae.mild_anemia_due_to_malaria_vivax_pvpr, sequelae.moderate_anemia_due_to_malaria_vivax_pvpr,
                   sequelae.severe_anemia_due_to_malaria_vivax_pvpr, sequelae.asymptomatic_malaria_vivax_pvpr, ),
     ),
     'chagas_disease': Cause(
@@ -670,7 +695,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(346),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -682,12 +708,12 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.acute_chagas_disease, sequelae.atrial_fibrillation_and_flutter_due_to_chagas_disease, 
-                  sequelae.mild_chronic_digestive_disease_due_to_chagas_disease, 
-                  sequelae.moderate_chronic_digestive_disease_due_to_chagas_disease, 
-                  sequelae.mild_heart_failure_due_to_chagas_disease, 
-                  sequelae.moderate_heart_failure_due_to_chagas_disease, 
-                  sequelae.severe_heart_failure_due_to_chagas_disease, sequelae.asymptomatic_chagas_disease, 
+        sequelae=(sequelae.acute_chagas_disease, sequelae.atrial_fibrillation_and_flutter_due_to_chagas_disease,
+                  sequelae.mild_chronic_digestive_disease_due_to_chagas_disease,
+                  sequelae.moderate_chronic_digestive_disease_due_to_chagas_disease,
+                  sequelae.mild_heart_failure_due_to_chagas_disease,
+                  sequelae.moderate_heart_failure_due_to_chagas_disease,
+                  sequelae.severe_heart_failure_due_to_chagas_disease, sequelae.asymptomatic_chagas_disease,
                   sequelae.treated_heart_failure_due_to_chagas_disease, ),
     ),
     'leishmaniasis': Cause(
@@ -695,7 +721,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(347),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -713,7 +740,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(348),
         dismod_id=meid(1458),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -732,7 +760,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(349),
         dismod_id=meid(1461),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -749,7 +778,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(350),
         dismod_id=meid(1462),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -761,9 +791,9 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.skin_disfigurement_due_to_trypanosoma_brucei_gambiense, 
-                  sequelae.sleeping_sickness_due_to_trypanosoma_brucei_gambiense, 
-                  sequelae.sleeping_sickness_due_to_trypanosoma_brucei_rhodesiense, 
+        sequelae=(sequelae.skin_disfigurement_due_to_trypanosoma_brucei_gambiense,
+                  sequelae.sleeping_sickness_due_to_trypanosoma_brucei_gambiense,
+                  sequelae.sleeping_sickness_due_to_trypanosoma_brucei_rhodesiense,
                   sequelae.skin_disfigurement_due_to_trypanosoma_brucei_rhodesiense, ),
     ),
     'schistosomiasis': Cause(
@@ -771,7 +801,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(351),
         dismod_id=meid(2797),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -783,11 +814,11 @@ causes = Causes(**{
             yld_age_start=scalar(0.1),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_schistosomiasis, sequelae.mild_diarrhea_due_to_schistosomiasis, 
-                  sequelae.hematemesis_due_to_schistosomiasis, sequelae.hepatomegaly_due_to_schistosomiasis, 
-                  sequelae.ascites_due_to_schistosomiasis, sequelae.dysuria_due_to_schistosomiasis, 
-                  sequelae.bladder_pathology_due_to_schistosomiasis, sequelae.hydronephrosis_due_to_schistosomiasis, 
-                  sequelae.mild_anemia_due_to_schistosomiasis, sequelae.moderate_anemia_due_to_schistosomiasis, 
+        sequelae=(sequelae.mild_schistosomiasis, sequelae.mild_diarrhea_due_to_schistosomiasis,
+                  sequelae.hematemesis_due_to_schistosomiasis, sequelae.hepatomegaly_due_to_schistosomiasis,
+                  sequelae.ascites_due_to_schistosomiasis, sequelae.dysuria_due_to_schistosomiasis,
+                  sequelae.bladder_pathology_due_to_schistosomiasis, sequelae.hydronephrosis_due_to_schistosomiasis,
+                  sequelae.mild_anemia_due_to_schistosomiasis, sequelae.moderate_anemia_due_to_schistosomiasis,
                   sequelae.severe_anemia_due_to_schistosomiasis, ),
     ),
     'cysticercosis': Cause(
@@ -795,7 +826,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(352),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -814,7 +846,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(353),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -826,8 +859,8 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.abdominal_problems_due_to_cystic_echinococcosis, 
-                  sequelae.chronic_respiratory_disease_due_to_cystic_echinococcosis, 
+        sequelae=(sequelae.abdominal_problems_due_to_cystic_echinococcosis,
+                  sequelae.chronic_respiratory_disease_due_to_cystic_echinococcosis,
                   sequelae.epilepsy_due_to_echinococcosis, ),
     ),
     'lymphatic_filariasis': Cause(
@@ -835,7 +868,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(354),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -845,8 +879,8 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.prevalence_of_detectable_microfiliaria_due_to_lymphatic_filariasis, 
-                  sequelae.lymphedema_due_to_lymphatic_filariasis, sequelae.hydrocele_due_to_lymphatic_filariasis, 
+        sequelae=(sequelae.prevalence_of_detectable_microfiliaria_due_to_lymphatic_filariasis,
+                  sequelae.lymphedema_due_to_lymphatic_filariasis, sequelae.hydrocele_due_to_lymphatic_filariasis,
                   sequelae.acute_adenolymphangitis_due_to_lymphatic_filariasis, ),
     ),
     'onchocerciasis': Cause(
@@ -854,7 +888,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(355),
         dismod_id=meid(1494),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -864,13 +899,13 @@ causes = Causes(**{
             yld_age_start=scalar(5.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_skin_disease_due_to_onchocerciasis, 
-                  sequelae.moderate_skin_disease_due_to_onchocerciasis, 
-                  sequelae.severe_skin_disease_due_to_onchocerciasis, 
-                  sequelae.mild_skin_disease_without_itch_due_to_onchocerciasis, 
-                  sequelae.severe_skin_disease_without_itch_due_to_onchocerciasis, 
-                  sequelae.blindness_due_to_onchocerciasis, 
-                  sequelae.moderate_vision_impairment_due_to_onchocerciasis, 
+        sequelae=(sequelae.mild_skin_disease_due_to_onchocerciasis,
+                  sequelae.moderate_skin_disease_due_to_onchocerciasis,
+                  sequelae.severe_skin_disease_due_to_onchocerciasis,
+                  sequelae.mild_skin_disease_without_itch_due_to_onchocerciasis,
+                  sequelae.severe_skin_disease_without_itch_due_to_onchocerciasis,
+                  sequelae.blindness_due_to_onchocerciasis,
+                  sequelae.moderate_vision_impairment_due_to_onchocerciasis,
                   sequelae.severe_vision_impairment_due_to_onchocerciasis, sequelae.asymptomatic_onchocerciasis, ),
     ),
     'trachoma': Cause(
@@ -878,7 +913,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(356),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -888,7 +924,7 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.moderate_vision_impairment_due_to_trachoma, 
+        sequelae=(sequelae.moderate_vision_impairment_due_to_trachoma,
                   sequelae.severe_vision_impairment_due_to_trachoma, sequelae.blindness_due_to_trachoma, ),
     ),
     'dengue': Cause(
@@ -896,7 +932,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(357),
         dismod_id=meid(1505),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -915,7 +952,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(358),
         dismod_id=meid(1509),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -934,7 +972,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(359),
         dismod_id=meid(1512),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -953,7 +992,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(360),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -971,7 +1011,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(361),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -983,7 +1024,7 @@ causes = Causes(**{
             yld_age_start=scalar(0.1),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.heavy_infestation_of_ascariasis, sequelae.mild_abdominopelvic_problems_due_to_ascariasis, 
+        sequelae=(sequelae.heavy_infestation_of_ascariasis, sequelae.mild_abdominopelvic_problems_due_to_ascariasis,
                   sequelae.severe_wasting_due_to_ascariasis, sequelae.asymptomatic_ascariasis, ),
     ),
     'trichuriasis': Cause(
@@ -991,7 +1032,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(362),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1001,8 +1043,8 @@ causes = Causes(**{
             yld_age_start=scalar(0.1),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.heavy_infestation_of_trichuriasis, 
-                  sequelae.mild_abdominopelvic_problems_due_to_trichuriasis, 
+        sequelae=(sequelae.heavy_infestation_of_trichuriasis,
+                  sequelae.mild_abdominopelvic_problems_due_to_trichuriasis,
                   sequelae.severe_wasting_due_to_trichuriasis, sequelae.asymptomatic_trichuriasis, ),
     ),
     'hookworm_disease': Cause(
@@ -1010,7 +1052,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(363),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1020,10 +1063,10 @@ causes = Causes(**{
             yld_age_start=scalar(0.1),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.heavy_infestation_of_hookworm, 
-                  sequelae.mild_abdominopelvic_problems_due_to_hookworm_disease, 
-                  sequelae.severe_wasting_due_to_hookworm_disease, sequelae.mild_anemia_due_to_hookworm_disease, 
-                  sequelae.moderate_anemia_due_to_hookworm_disease, sequelae.severe_anemia_due_to_hookworm_disease, 
+        sequelae=(sequelae.heavy_infestation_of_hookworm,
+                  sequelae.mild_abdominopelvic_problems_due_to_hookworm_disease,
+                  sequelae.severe_wasting_due_to_hookworm_disease, sequelae.mild_anemia_due_to_hookworm_disease,
+                  sequelae.moderate_anemia_due_to_hookworm_disease, sequelae.severe_anemia_due_to_hookworm_disease,
                   sequelae.asymptomatic_hookworm_disease, ),
     ),
     'food_borne_trematodiases': Cause(
@@ -1031,7 +1074,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(364),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1041,14 +1085,14 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.cerebral_paragonimiasis, sequelae.heavy_clonorchiasis_due_to_food_borne_trematodiases, 
-                  sequelae.heavy_fascioliasis_due_to_food_borne_trematodiases, 
-                  sequelae.heavy_intestinal_fluke_infection_due_to_food_borne_trematodiases, 
-                  sequelae.heavy_opisthorchiasis_due_to_food_borne_trematodiases, 
-                  sequelae.asymptomatic_clonorchiasis, sequelae.asymptomatic_fascioliasis, 
-                  sequelae.asymptomatic_intestinal_fluke_infection, sequelae.asymptomatic_opisthorchiasis, 
-                  sequelae.asymptomatic_paragonimiasis, sequelae.mild_paragonimiasis_due_to_food_borne_trematodiases, 
-                  sequelae.moderate_paragonimiasis_due_to_food_borne_trematodiases, 
+        sequelae=(sequelae.cerebral_paragonimiasis, sequelae.heavy_clonorchiasis_due_to_food_borne_trematodiases,
+                  sequelae.heavy_fascioliasis_due_to_food_borne_trematodiases,
+                  sequelae.heavy_intestinal_fluke_infection_due_to_food_borne_trematodiases,
+                  sequelae.heavy_opisthorchiasis_due_to_food_borne_trematodiases,
+                  sequelae.asymptomatic_clonorchiasis, sequelae.asymptomatic_fascioliasis,
+                  sequelae.asymptomatic_intestinal_fluke_infection, sequelae.asymptomatic_opisthorchiasis,
+                  sequelae.asymptomatic_paragonimiasis, sequelae.mild_paragonimiasis_due_to_food_borne_trematodiases,
+                  sequelae.moderate_paragonimiasis_due_to_food_borne_trematodiases,
                   sequelae.severe_paragonimiasis_due_to_food_borne_trematodiases, ),
     ),
     'other_neglected_tropical_diseases': Cause(
@@ -1056,7 +1100,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(365),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1068,9 +1113,9 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.acute_infection_due_to_other_neglected_tropical_diseases, 
-                  sequelae.mild_anemia_due_to_other_neglected_tropical_diseases, 
-                  sequelae.moderate_anemia_due_to_other_neglected_tropical_diseases, 
+        sequelae=(sequelae.acute_infection_due_to_other_neglected_tropical_diseases,
+                  sequelae.mild_anemia_due_to_other_neglected_tropical_diseases,
+                  sequelae.moderate_anemia_due_to_other_neglected_tropical_diseases,
                   sequelae.severe_anemia_due_to_other_neglected_tropical_diseases, ),
     ),
     'maternal_disorders': Cause(
@@ -1078,7 +1123,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(366),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1096,7 +1142,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(367),
         dismod_id=meid(1535),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1108,10 +1155,10 @@ causes = Causes(**{
             yld_age_start=scalar(10.0),
             yld_age_end=scalar(50.0),
         ),
-        sequelae=(sequelae.maternal_hemorrhage_less_than__1l_blood_lost, 
-                  sequelae.maternal_hemorrhage_greater_than__1l_blood_lost, 
-                  sequelae.mild_anemia_due_to_maternal_hemorrhage, 
-                  sequelae.moderate_anemia_due_to_maternal_hemorrhage, 
+        sequelae=(sequelae.maternal_hemorrhage_less_than__1l_blood_lost,
+                  sequelae.maternal_hemorrhage_greater_than__1l_blood_lost,
+                  sequelae.mild_anemia_due_to_maternal_hemorrhage,
+                  sequelae.moderate_anemia_due_to_maternal_hemorrhage,
                   sequelae.severe_anemia_due_to_maternal_hemorrhage, ),
     ),
     'maternal_sepsis_and_other_maternal_infections': Cause(
@@ -1119,7 +1166,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(368),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1131,7 +1179,7 @@ causes = Causes(**{
             yld_age_start=scalar(10.0),
             yld_age_end=scalar(50.0),
         ),
-        sequelae=(sequelae.infertility_due_to_puerperal_sepsis, sequelae.puerperal_sepsis, 
+        sequelae=(sequelae.infertility_due_to_puerperal_sepsis, sequelae.puerperal_sepsis,
                   sequelae.other_maternal_infections, ),
     ),
     'maternal_hypertensive_disorders': Cause(
@@ -1139,7 +1187,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(369),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1151,8 +1200,8 @@ causes = Causes(**{
             yld_age_start=scalar(10.0),
             yld_age_end=scalar(50.0),
         ),
-        sequelae=(sequelae.severe_pre_eclampsia, sequelae.eclampsia, 
-                  sequelae.long_term_sequelae_of_severe_pre_eclampsia, 
+        sequelae=(sequelae.severe_pre_eclampsia, sequelae.eclampsia,
+                  sequelae.long_term_sequelae_of_severe_pre_eclampsia,
                   sequelae.other_hypertensive_disorders_of_pregnancy, sequelae.long_term_sequelae_of_eclampsia, ),
     ),
     'maternal_obstructed_labor_and_uterine_rupture': Cause(
@@ -1160,7 +1209,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(370),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1172,7 +1222,7 @@ causes = Causes(**{
             yld_age_start=scalar(10.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.obstructed_labor_acute_event, sequelae.rectovaginal_fistula, 
+        sequelae=(sequelae.obstructed_labor_acute_event, sequelae.rectovaginal_fistula,
                   sequelae.vesicovaginal_fistula, ),
     ),
     'ectopic_pregnancy': Cause(
@@ -1180,7 +1230,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(374),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1199,7 +1250,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(375),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1215,7 +1267,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(376),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1231,7 +1284,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(379),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1250,7 +1304,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(380),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1268,7 +1323,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(381),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1280,61 +1336,61 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_vision_impairment_due_to_retinopathy_of_prematurity, 
-                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_28_32wks, 
-                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_less_than_28wks, 
-                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_32_36wks, 
-                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks, 
-                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks, 
-                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks, 
-                  sequelae.moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks, 
-                  sequelae.moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks, 
-                  sequelae.moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks, 
-                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_28_32wks, 
-                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_32_36wks, 
-                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_less_than_28wks, 
-                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks, 
-                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks, 
-                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks, 
-                  sequelae.severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks, 
-                  sequelae.severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks, 
-                  sequelae.severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks, 
-                  sequelae.moderate_motor_impairment_due_to_neonatal_preterm_birth_complications_28_32wks, 
-                  sequelae.moderate_motor_impairment_due_to_neonatal_preterm_birth_complications_less_than_28wks, 
-                  sequelae.moderate_motor_impairment_due_to_neonatal_preterm_birth_complications_32_36wks, 
-                  sequelae.moderate_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_less_than_28wks, 
-                  sequelae.moderate_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_28_32wks, 
-                  sequelae.moderate_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_32_36wks, 
-                  sequelae.moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks, 
-                  sequelae.moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks, 
-                  sequelae.moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks, 
-                  sequelae.moderate_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks, 
-                  sequelae.moderate_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks, 
-                  sequelae.moderate_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks, 
-                  sequelae.severe_motor_impairment_due_to_neonatal_preterm_birth_complications_less_than_28wks, 
-                  sequelae.severe_motor_impairment_due_to_neonatal_preterm_birth_complications_32_36wks, 
-                  sequelae.severe_motor_impairment_due_to_neonatal_preterm_birth_complications_28_32wks, 
-                  sequelae.severe_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_28_32wks, 
-                  sequelae.severe_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_less_than_28wks, 
-                  sequelae.severe_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_32_36wks, 
-                  sequelae.severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks, 
-                  sequelae.severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks, 
-                  sequelae.severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks, 
-                  sequelae.severe_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks, 
-                  sequelae.severe_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks, 
-                  sequelae.severe_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks, 
-                  sequelae.asymptomatic_retinopathy_of_prematurity, 
-                  sequelae.blindness_due_to_retinopathy_of_prematurity, 
-                  sequelae.mild_motor_impairment_due_to_neonatal_preterm_birth_complications_less_than_28wks, 
-                  sequelae.mild_motor_impairment_due_to_neonatal_preterm_birth_complications_28_32wks, 
-                  sequelae.mild_motor_impairment_due_to_neonatal_preterm_birth_complications_32_36wks, 
-                  sequelae.mild_motor_plus_cognitive_impairments_due_to_neonatal_preterm_birth_complications_less_than_28wks, 
-                  sequelae.mild_motor_plus_cognitive_impairments_due_to_neonatal_preterm_birth_complications_28_32wks, 
-                  sequelae.mild_motor_plus_cognitive_impairments_due_to_neonatal_preterm_birth_complications_32_36wks, 
-                  sequelae.moderate_vision_impairment_due_to_retinopathy_of_prematurity, 
-                  sequelae.severe_vision_impairment_due_to_retinopathy_of_prematurity, 
-                  sequelae.asymptomatic_neonatal_preterm_birth_less_than_28_weeks, 
-                  sequelae.asymptomatic_neonatal_preterm_birth_28_less_than_32_wks, 
+        sequelae=(sequelae.mild_vision_impairment_due_to_retinopathy_of_prematurity,
+                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_28_32wks,
+                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_less_than_28wks,
+                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_32_36wks,
+                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks,
+                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks,
+                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks,
+                  sequelae.moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks,
+                  sequelae.moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks,
+                  sequelae.moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks,
+                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_28_32wks,
+                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_32_36wks,
+                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_less_than_28wks,
+                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks,
+                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks,
+                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks,
+                  sequelae.severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks,
+                  sequelae.severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks,
+                  sequelae.severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks,
+                  sequelae.moderate_motor_impairment_due_to_neonatal_preterm_birth_complications_28_32wks,
+                  sequelae.moderate_motor_impairment_due_to_neonatal_preterm_birth_complications_less_than_28wks,
+                  sequelae.moderate_motor_impairment_due_to_neonatal_preterm_birth_complications_32_36wks,
+                  sequelae.moderate_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_less_than_28wks,
+                  sequelae.moderate_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_28_32wks,
+                  sequelae.moderate_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_32_36wks,
+                  sequelae.moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks,
+                  sequelae.moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks,
+                  sequelae.moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks,
+                  sequelae.moderate_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks,
+                  sequelae.moderate_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks,
+                  sequelae.moderate_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks,
+                  sequelae.severe_motor_impairment_due_to_neonatal_preterm_birth_complications_less_than_28wks,
+                  sequelae.severe_motor_impairment_due_to_neonatal_preterm_birth_complications_32_36wks,
+                  sequelae.severe_motor_impairment_due_to_neonatal_preterm_birth_complications_28_32wks,
+                  sequelae.severe_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_28_32wks,
+                  sequelae.severe_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_less_than_28wks,
+                  sequelae.severe_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_32_36wks,
+                  sequelae.severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks,
+                  sequelae.severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks,
+                  sequelae.severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks,
+                  sequelae.severe_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks,
+                  sequelae.severe_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks,
+                  sequelae.severe_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks,
+                  sequelae.asymptomatic_retinopathy_of_prematurity,
+                  sequelae.blindness_due_to_retinopathy_of_prematurity,
+                  sequelae.mild_motor_impairment_due_to_neonatal_preterm_birth_complications_less_than_28wks,
+                  sequelae.mild_motor_impairment_due_to_neonatal_preterm_birth_complications_28_32wks,
+                  sequelae.mild_motor_impairment_due_to_neonatal_preterm_birth_complications_32_36wks,
+                  sequelae.mild_motor_plus_cognitive_impairments_due_to_neonatal_preterm_birth_complications_less_than_28wks,
+                  sequelae.mild_motor_plus_cognitive_impairments_due_to_neonatal_preterm_birth_complications_28_32wks,
+                  sequelae.mild_motor_plus_cognitive_impairments_due_to_neonatal_preterm_birth_complications_32_36wks,
+                  sequelae.moderate_vision_impairment_due_to_retinopathy_of_prematurity,
+                  sequelae.severe_vision_impairment_due_to_retinopathy_of_prematurity,
+                  sequelae.asymptomatic_neonatal_preterm_birth_less_than_28_weeks,
+                  sequelae.asymptomatic_neonatal_preterm_birth_28_less_than_32_wks,
                   sequelae.asymptomatic_neonatal_preterm_birth_32_less_than_37wks, ),
     ),
     'neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Cause(
@@ -1342,7 +1398,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(382),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1354,22 +1411,22 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_motor_plus_cognitive_impairments_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma, 
-                  sequelae.mild_motor_impairment_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma, 
-                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma, 
-                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma, 
-                  sequelae.moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma, 
-                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma, 
-                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma, 
-                  sequelae.severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma, 
-                  sequelae.moderate_motor_impairment_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma, 
-                  sequelae.moderate_motor_impairment_with_blindness_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma, 
-                  sequelae.moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma, 
-                  sequelae.moderate_motor_impairment_with_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma, 
-                  sequelae.severe_motor_impairment_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma, 
-                  sequelae.severe_motor_impairment_with_blindness_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma, 
-                  sequelae.severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma, 
-                  sequelae.severe_motor_impairment_with_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma, 
+        sequelae=(sequelae.mild_motor_plus_cognitive_impairments_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma,
+                  sequelae.mild_motor_impairment_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma,
+                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma,
+                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma,
+                  sequelae.moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma,
+                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma,
+                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma,
+                  sequelae.severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma,
+                  sequelae.moderate_motor_impairment_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma,
+                  sequelae.moderate_motor_impairment_with_blindness_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma,
+                  sequelae.moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma,
+                  sequelae.moderate_motor_impairment_with_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma,
+                  sequelae.severe_motor_impairment_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma,
+                  sequelae.severe_motor_impairment_with_blindness_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma,
+                  sequelae.severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma,
+                  sequelae.severe_motor_impairment_with_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma,
                   sequelae.asymptomatic_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma, ),
     ),
     'neonatal_sepsis_and_other_neonatal_infections': Cause(
@@ -1377,7 +1434,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(383),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1389,23 +1447,23 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.severe_infection_due_to_neonatal_sepsis_and_other_neonatal_infections, 
-                  sequelae.asymptomatic_neonatal_sepsis_and_other_neonatal_infections, 
-                  sequelae.mild_motor_plus_cognitive_impairments_due_to_neonatal_sepsis_and_other_neonatal_infections, 
-                  sequelae.mild_motor_impairment_due_to_neonatal_sepsis_and_other_neonatal_infections, 
-                  sequelae.moderate_motor_impairment_due_to_neonatal_sepsis_and_other_neonatal_infections, 
-                  sequelae.moderate_motor_impairment_with_blindness_due_to_neonatal_sepsis_and_other_neonatal_infections, 
-                  sequelae.moderate_motor_impairment_with_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections, 
-                  sequelae.moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections, 
-                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_sepsis_and_other_neonatal_infections, 
-                  sequelae.moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections, 
-                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections, 
-                  sequelae.severe_motor_impairment_due_to_neonatal_sepsis_and_other_neonatal_infections, 
-                  sequelae.severe_motor_impairment_with_blindness_due_to_neonatal_sepsis_and_other_neonatal_infections, 
-                  sequelae.severe_motor_impairment_with_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections, 
-                  sequelae.severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections, 
-                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_sepsis_and_other_neonatal_infections, 
-                  sequelae.severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections, 
+        sequelae=(sequelae.severe_infection_due_to_neonatal_sepsis_and_other_neonatal_infections,
+                  sequelae.asymptomatic_neonatal_sepsis_and_other_neonatal_infections,
+                  sequelae.mild_motor_plus_cognitive_impairments_due_to_neonatal_sepsis_and_other_neonatal_infections,
+                  sequelae.mild_motor_impairment_due_to_neonatal_sepsis_and_other_neonatal_infections,
+                  sequelae.moderate_motor_impairment_due_to_neonatal_sepsis_and_other_neonatal_infections,
+                  sequelae.moderate_motor_impairment_with_blindness_due_to_neonatal_sepsis_and_other_neonatal_infections,
+                  sequelae.moderate_motor_impairment_with_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections,
+                  sequelae.moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections,
+                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_sepsis_and_other_neonatal_infections,
+                  sequelae.moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections,
+                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections,
+                  sequelae.severe_motor_impairment_due_to_neonatal_sepsis_and_other_neonatal_infections,
+                  sequelae.severe_motor_impairment_with_blindness_due_to_neonatal_sepsis_and_other_neonatal_infections,
+                  sequelae.severe_motor_impairment_with_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections,
+                  sequelae.severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections,
+                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_sepsis_and_other_neonatal_infections,
+                  sequelae.severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections,
                   sequelae.severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections, ),
     ),
     'hemolytic_disease_and_other_neonatal_jaundice': Cause(
@@ -1413,7 +1471,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(384),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1425,19 +1484,19 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_due_to_hemolytic_disease_and_other_neonatal_jaundice, 
-                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice, 
-                  sequelae.moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice, 
-                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_due_to_hemolytic_disease_and_other_neonatal_jaundice, 
-                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice, 
-                  sequelae.severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice, 
-                  sequelae.moderate_motor_impairment_due_to_hemolytic_disease_and_other_neonatal_jaundice, 
-                  sequelae.moderate_motor_impairment_with_blindness_due_to_hemolytic_disease_and_other_neonatal_jaundice, 
-                  sequelae.moderate_motor_impairment_with_blindness_and_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice, 
-                  sequelae.moderate_motor_impairment_with_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice, 
-                  sequelae.severe_motor_impairment_severe_due_to_hemolytic_disease_and_other_neonatal_jaundice, 
-                  sequelae.severe_motor_impairment_with_blindness_due_to_hemolytic_disease_and_other_neonatal_jaundice, 
-                  sequelae.severe_motor_impairment_with_blindness_and_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice, 
+        sequelae=(sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_due_to_hemolytic_disease_and_other_neonatal_jaundice,
+                  sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice,
+                  sequelae.moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice,
+                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_due_to_hemolytic_disease_and_other_neonatal_jaundice,
+                  sequelae.severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice,
+                  sequelae.severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice,
+                  sequelae.moderate_motor_impairment_due_to_hemolytic_disease_and_other_neonatal_jaundice,
+                  sequelae.moderate_motor_impairment_with_blindness_due_to_hemolytic_disease_and_other_neonatal_jaundice,
+                  sequelae.moderate_motor_impairment_with_blindness_and_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice,
+                  sequelae.moderate_motor_impairment_with_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice,
+                  sequelae.severe_motor_impairment_severe_due_to_hemolytic_disease_and_other_neonatal_jaundice,
+                  sequelae.severe_motor_impairment_with_blindness_due_to_hemolytic_disease_and_other_neonatal_jaundice,
+                  sequelae.severe_motor_impairment_with_blindness_and_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice,
                   sequelae.severe_motor_impairment_with_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice, ),
     ),
     'other_neonatal_disorders': Cause(
@@ -1445,7 +1504,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(385),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1464,7 +1524,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(386),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=2,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1482,7 +1543,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(387),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1494,7 +1556,7 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.moderate_wasting_with_edema, sequelae.severe_wasting_without_edema, 
+        sequelae=(sequelae.moderate_wasting_with_edema, sequelae.severe_wasting_without_edema,
                   sequelae.moderate_wasting_without_edema, sequelae.severe_wasting_with_edema, ),
     ),
     'iodine_deficiency': Cause(
@@ -1502,7 +1564,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(388),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1512,8 +1575,8 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.visible_goiter_without_symptoms, 
-                  sequelae.visible_goiter_with_severe_intellectual_disability_due_to_iodine_deficiency, 
+        sequelae=(sequelae.visible_goiter_without_symptoms,
+                  sequelae.visible_goiter_with_severe_intellectual_disability_due_to_iodine_deficiency,
                   sequelae.visible_goiter_with_profound_intellectual_disability_due_to_iodine_deficiency, ),
     ),
     'vitamin_a_deficiency': Cause(
@@ -1521,7 +1584,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(389),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1531,10 +1595,10 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.moderate_vision_impairment_loss_due_to_vitamin_a_deficiency, 
-                  sequelae.severe_vision_impairment_loss_due_to_vitamin_a_deficiency, 
-                  sequelae.blindness_due_to_vitamin_a_deficiency, sequelae.asymptomatic_vitamin_a_deficiency, 
-                  sequelae.vitamin_a_deficiency_with_mild_anemia, sequelae.vitamin_a_deficiency_with_moderate_anemia, 
+        sequelae=(sequelae.moderate_vision_impairment_loss_due_to_vitamin_a_deficiency,
+                  sequelae.severe_vision_impairment_loss_due_to_vitamin_a_deficiency,
+                  sequelae.blindness_due_to_vitamin_a_deficiency, sequelae.asymptomatic_vitamin_a_deficiency,
+                  sequelae.vitamin_a_deficiency_with_mild_anemia, sequelae.vitamin_a_deficiency_with_moderate_anemia,
                   sequelae.vitamin_a_deficiency_with_severe_anemia, ),
     ),
     'dietary_iron_deficiency': Cause(
@@ -1542,7 +1606,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(390),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1552,7 +1617,7 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_iron_deficiency_anemia, sequelae.moderate_iron_deficiency_anemia, 
+        sequelae=(sequelae.mild_iron_deficiency_anemia, sequelae.moderate_iron_deficiency_anemia,
                   sequelae.severe_iron_deficiency_anemia, ),
     ),
     'other_nutritional_deficiencies': Cause(
@@ -1560,7 +1625,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(391),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1579,7 +1645,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(393),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1597,7 +1664,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(394),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1609,14 +1677,14 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.asymptomatic_early_syphilis_infection, sequelae.mild_early_syphilis_infection, 
-                  sequelae.neurological_problems_and_cardiovascular_complications_due_to_adult_tertiary_syphilis, 
-                  sequelae.severe_disfigurement_and_cardiovascular_complications_due_to_adult_tertiary_syphilis, 
-                  sequelae.severe_disfigurement_and_neurological_problems_due_to_adult_tertiary_syphilis, 
-                  sequelae.severe_disfigurement_neurological_problems_and_cardiovascular_complications_due_to_adult_tertiary_syphilis, 
-                  sequelae.severe_disfigurement_due_to_adult_tertiary_syphilis, 
-                  sequelae.neurological_problems_due_to_adult_tertiary_syphilis, 
-                  sequelae.cardiovascular_complications_due_to_adult_tertiary_syphilis, 
+        sequelae=(sequelae.asymptomatic_early_syphilis_infection, sequelae.mild_early_syphilis_infection,
+                  sequelae.neurological_problems_and_cardiovascular_complications_due_to_adult_tertiary_syphilis,
+                  sequelae.severe_disfigurement_and_cardiovascular_complications_due_to_adult_tertiary_syphilis,
+                  sequelae.severe_disfigurement_and_neurological_problems_due_to_adult_tertiary_syphilis,
+                  sequelae.severe_disfigurement_neurological_problems_and_cardiovascular_complications_due_to_adult_tertiary_syphilis,
+                  sequelae.severe_disfigurement_due_to_adult_tertiary_syphilis,
+                  sequelae.neurological_problems_due_to_adult_tertiary_syphilis,
+                  sequelae.cardiovascular_complications_due_to_adult_tertiary_syphilis,
                   sequelae.asymptomatic_adult_tertiary_syphilis, ),
     ),
     'chlamydial_infection': Cause(
@@ -1624,7 +1692,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(395),
         dismod_id=meid(1629),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1636,11 +1705,11 @@ causes = Causes(**{
             yld_age_start=scalar(10.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.epididymo_orchitis_due_to_chlamydial_infection, 
-                  sequelae.moderate_pelvic_inflammatory_diseases_due_to_chlamydial_infection, 
-                  sequelae.severe_pelvic_inflammatory_diseases_due_to_chlamydial_infection, 
-                  sequelae.primary_infertility_due_to_chlamydial_infection, 
-                  sequelae.secondary_infertility_due_to_chlamydial_infection, sequelae.mild_chlamydial_infection, 
+        sequelae=(sequelae.epididymo_orchitis_due_to_chlamydial_infection,
+                  sequelae.moderate_pelvic_inflammatory_diseases_due_to_chlamydial_infection,
+                  sequelae.severe_pelvic_inflammatory_diseases_due_to_chlamydial_infection,
+                  sequelae.primary_infertility_due_to_chlamydial_infection,
+                  sequelae.secondary_infertility_due_to_chlamydial_infection, sequelae.mild_chlamydial_infection,
                   sequelae.asymptomatic_chlamydial_infection, ),
     ),
     'gonococcal_infection': Cause(
@@ -1648,7 +1717,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(396),
         dismod_id=meid(1635),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1660,11 +1730,11 @@ causes = Causes(**{
             yld_age_start=scalar(10.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.epididymo_orchitis_due_to_gonococcal_infection, 
-                  sequelae.moderate_pelvic_inflammatory_diseases_due_to_gonococcal_infection, 
-                  sequelae.severe_pelvic_inflammatory_diseases_due_to_gonococcal_infection, 
-                  sequelae.primary_infertility_due_to_gonococcal_infection, 
-                  sequelae.secondary_infertility_due_to_gonococcal_infection, sequelae.mild_gonococcal_infection, 
+        sequelae=(sequelae.epididymo_orchitis_due_to_gonococcal_infection,
+                  sequelae.moderate_pelvic_inflammatory_diseases_due_to_gonococcal_infection,
+                  sequelae.severe_pelvic_inflammatory_diseases_due_to_gonococcal_infection,
+                  sequelae.primary_infertility_due_to_gonococcal_infection,
+                  sequelae.secondary_infertility_due_to_gonococcal_infection, sequelae.mild_gonococcal_infection,
                   sequelae.asymptomatic_gonococcal_infection, ),
     ),
     'trichomoniasis': Cause(
@@ -1672,7 +1742,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(397),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1689,7 +1760,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(398),
         dismod_id=meid(1642),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1699,7 +1771,7 @@ causes = Causes(**{
             yld_age_start=scalar(10.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.symptomatic_genital_herpes, sequelae.asymptomatic_genital_herpes, 
+        sequelae=(sequelae.symptomatic_genital_herpes, sequelae.asymptomatic_genital_herpes,
                   sequelae.moderate_infection_due_to_initial_genital_herpes_episode, ),
     ),
     'other_sexually_transmitted_infections': Cause(
@@ -1707,7 +1779,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(399),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1719,10 +1792,10 @@ causes = Causes(**{
             yld_age_start=scalar(10.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.moderate_pelvic_inflammatory_diseases_due_to_other_sexually_transmitted_diseases, 
-                  sequelae.severe_pelvic_inflammatory_diseases_due_to_other_sexually_transmitted_diseases, 
-                  sequelae.primary_infertility_due_to_other_sexually_transmitted_diseases, 
-                  sequelae.secondary_infertility_due_to_other_sexually_transmitted_diseases, 
+        sequelae=(sequelae.moderate_pelvic_inflammatory_diseases_due_to_other_sexually_transmitted_diseases,
+                  sequelae.severe_pelvic_inflammatory_diseases_due_to_other_sexually_transmitted_diseases,
+                  sequelae.primary_infertility_due_to_other_sexually_transmitted_diseases,
+                  sequelae.secondary_infertility_due_to_other_sexually_transmitted_diseases,
                   sequelae.other_sexually_transmitted_diseases, ),
     ),
     'acute_hepatitis': Cause(
@@ -1730,7 +1803,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(400),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1748,7 +1822,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(401),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1760,7 +1835,7 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.moderate_acute_hepatitis_a, sequelae.severe_acute_hepatitis_a, 
+        sequelae=(sequelae.moderate_acute_hepatitis_a, sequelae.severe_acute_hepatitis_a,
                   sequelae.asymptomatic_acute_hepatitis_a, ),
     ),
     'acute_hepatitis_b': Cause(
@@ -1768,7 +1843,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(402),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1780,7 +1856,7 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.moderate_acute_hepatitis_b, sequelae.severe_acute_hepatitis_b, 
+        sequelae=(sequelae.moderate_acute_hepatitis_b, sequelae.severe_acute_hepatitis_b,
                   sequelae.asymptomatic_acute_hepatitis_b, sequelae.chronic_hepatitis_b_without_cirrhosis, ),
     ),
     'acute_hepatitis_c': Cause(
@@ -1788,7 +1864,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(403),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1800,7 +1877,7 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.moderate_acute_hepatitis_c, sequelae.severe_acute_hepatitis_c, 
+        sequelae=(sequelae.moderate_acute_hepatitis_c, sequelae.severe_acute_hepatitis_c,
                   sequelae.asymptomatic_acute_hepatitis_c, sequelae.chronic_hepatitis_c_without_cirrhosis, ),
     ),
     'acute_hepatitis_e': Cause(
@@ -1808,7 +1885,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(404),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1820,7 +1898,7 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.moderate_acute_hepatitis_e, sequelae.severe_acute_hepatitis_e, 
+        sequelae=(sequelae.moderate_acute_hepatitis_e, sequelae.severe_acute_hepatitis_e,
                   sequelae.asymptomatic_acute_hepatitis_e, ),
     ),
     'leprosy': Cause(
@@ -1828,7 +1906,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(405),
         dismod_id=meid(1662),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1845,7 +1924,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(408),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1857,10 +1937,10 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_anemia_due_to_other_infectious_diseases, 
-                  sequelae.moderate_anemia_due_to_other_infectious_diseases, 
-                  sequelae.severe_anemia_due_to_other_infectious_diseases, 
-                  sequelae.guillain_barre_syndrome_due_to_other_infectious_diseases, 
+        sequelae=(sequelae.mild_anemia_due_to_other_infectious_diseases,
+                  sequelae.moderate_anemia_due_to_other_infectious_diseases,
+                  sequelae.severe_anemia_due_to_other_infectious_diseases,
+                  sequelae.guillain_barre_syndrome_due_to_other_infectious_diseases,
                   sequelae.other_infectious_diseases, ),
     ),
     'non_communicable_diseases': Cause(
@@ -1868,7 +1948,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(409),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=1,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1886,7 +1967,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(410),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=2,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1904,7 +1986,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(411),
         dismod_id=meid(9469),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1916,8 +1999,8 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_esophageal_cancer, 
-                  sequelae.controlled_phase_of_esophageal_cancer, sequelae.metastatic_phase_of_esophageal_cancer, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_esophageal_cancer,
+                  sequelae.controlled_phase_of_esophageal_cancer, sequelae.metastatic_phase_of_esophageal_cancer,
                   sequelae.terminal_phase_of_esophageal_cancer, ),
     ),
     'stomach_cancer': Cause(
@@ -1925,7 +2008,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(414),
         dismod_id=meid(9509),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1937,8 +2021,8 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_stomach_cancer, 
-                  sequelae.controlled_phase_of_stomach_cancer, sequelae.metastatic_phase_of_stomach_cancer, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_stomach_cancer,
+                  sequelae.controlled_phase_of_stomach_cancer, sequelae.metastatic_phase_of_stomach_cancer,
                   sequelae.terminal_phase_of_stomach_cancer, ),
     ),
     'liver_cancer': Cause(
@@ -1946,7 +2030,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(417),
         dismod_id=meid(9495),
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1964,7 +2049,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(418),
         dismod_id=meid(9665),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1976,9 +2062,9 @@ causes = Causes(**{
             yld_age_start=scalar(5.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_hepatitis_b, 
-                  sequelae.controlled_phase_of_liver_cancer_due_to_hepatitis_b, 
-                  sequelae.metastatic_phase_of_liver_cancer_due_to_hepatitis_b, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_hepatitis_b,
+                  sequelae.controlled_phase_of_liver_cancer_due_to_hepatitis_b,
+                  sequelae.metastatic_phase_of_liver_cancer_due_to_hepatitis_b,
                   sequelae.terminal_phase_of_liver_cancer_due_to_hepatitis_b, ),
     ),
     'liver_cancer_due_to_hepatitis_c': Cause(
@@ -1986,7 +2072,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(419),
         dismod_id=meid(9666),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -1998,9 +2085,9 @@ causes = Causes(**{
             yld_age_start=scalar(5.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_hepatitis_c, 
-                  sequelae.controlled_phase_of_liver_cancer_due_to_hepatitis_c, 
-                  sequelae.metastatic_phase_of_liver_cancer_due_to_hepatitis_c, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_hepatitis_c,
+                  sequelae.controlled_phase_of_liver_cancer_due_to_hepatitis_c,
+                  sequelae.metastatic_phase_of_liver_cancer_due_to_hepatitis_c,
                   sequelae.terminal_phase_of_liver_cancer_due_to_hepatitis_c, ),
     ),
     'liver_cancer_due_to_alcohol_use': Cause(
@@ -2008,7 +2095,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(420),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2020,9 +2108,9 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_alcohol_use, 
-                  sequelae.controlled_phase_of_liver_cancer_due_to_alcohol_use, 
-                  sequelae.metastatic_phase_of_liver_cancer_due_to_alcohol_use, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_alcohol_use,
+                  sequelae.controlled_phase_of_liver_cancer_due_to_alcohol_use,
+                  sequelae.metastatic_phase_of_liver_cancer_due_to_alcohol_use,
                   sequelae.terminal_phase_of_liver_cancer_due_to_alcohol_use, ),
     ),
     'liver_cancer_due_to_other_causes': Cause(
@@ -2030,7 +2118,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(421),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2042,9 +2131,9 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_other_causes, 
-                  sequelae.controlled_phase_of_liver_cancer_due_to_other_causes, 
-                  sequelae.metastatic_phase_of_liver_cancer_due_to_other_causes, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_other_causes,
+                  sequelae.controlled_phase_of_liver_cancer_due_to_other_causes,
+                  sequelae.metastatic_phase_of_liver_cancer_due_to_other_causes,
                   sequelae.terminal_phase_of_liver_cancer_due_to_other_causes, ),
     ),
     'larynx_cancer': Cause(
@@ -2052,7 +2141,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(423),
         dismod_id=meid(9473),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2064,11 +2154,11 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_larynx_cancer, 
-                  sequelae.controlled_phase_of_larynx_cancer, sequelae.metastatic_phase_of_larynx_cancer, 
-                  sequelae.terminal_phase_of_larynx_cancer, sequelae.laryngectomy_due_to_larynx_cancer, 
-                  sequelae.controlled_phase_of_larynx_cancer_with_laryngectomy, 
-                  sequelae.controlled_phase_of_larynx_cancer_without_laryngectomy, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_larynx_cancer,
+                  sequelae.controlled_phase_of_larynx_cancer, sequelae.metastatic_phase_of_larynx_cancer,
+                  sequelae.terminal_phase_of_larynx_cancer, sequelae.laryngectomy_due_to_larynx_cancer,
+                  sequelae.controlled_phase_of_larynx_cancer_with_laryngectomy,
+                  sequelae.controlled_phase_of_larynx_cancer_without_laryngectomy,
                   sequelae.laryngectomy_from_larynx_cancer_beyond_ten_years, ),
     ),
     'tracheal_bronchus_and_lung_cancer': Cause(
@@ -2076,7 +2166,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(426),
         dismod_id=meid(9496),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2088,9 +2179,9 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_lung_bronchus_and_trachea_cancer, 
-                  sequelae.controlled_phase_of_lung_bronchus_and_trachea_cancer, 
-                  sequelae.metastatic_phase_of_lung_bronchus_and_trachea_cancer, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_lung_bronchus_and_trachea_cancer,
+                  sequelae.controlled_phase_of_lung_bronchus_and_trachea_cancer,
+                  sequelae.metastatic_phase_of_lung_bronchus_and_trachea_cancer,
                   sequelae.terminal_phase_of_lung_bronchus_and_trachea_cancer, ),
     ),
     'breast_cancer': Cause(
@@ -2098,7 +2189,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(429),
         dismod_id=meid(9466),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2110,11 +2202,11 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_breast_cancer, 
-                  sequelae.controlled_phase_of_breast_cancer, sequelae.metastatic_phase_of_breast_cancer, 
-                  sequelae.terminal_phase_of_breast_cancer, sequelae.mastectomy_due_to_breast_cancer, 
-                  sequelae.controlled_phase_of_breast_cancer_with_mastectomy, 
-                  sequelae.controlled_phase_of_breast_cancer_without_mastectomy, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_breast_cancer,
+                  sequelae.controlled_phase_of_breast_cancer, sequelae.metastatic_phase_of_breast_cancer,
+                  sequelae.terminal_phase_of_breast_cancer, sequelae.mastectomy_due_to_breast_cancer,
+                  sequelae.controlled_phase_of_breast_cancer_with_mastectomy,
+                  sequelae.controlled_phase_of_breast_cancer_without_mastectomy,
                   sequelae.mastectomy_from_breast_cancer_beyond_ten_years, ),
     ),
     'cervical_cancer': Cause(
@@ -2122,7 +2214,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(432),
         dismod_id=meid(9467),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2134,8 +2227,8 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_cervical_cancer, 
-                  sequelae.controlled_phase_of_cervical_cancer, sequelae.metastatic_phase_of_cervical_cancer, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_cervical_cancer,
+                  sequelae.controlled_phase_of_cervical_cancer, sequelae.metastatic_phase_of_cervical_cancer,
                   sequelae.terminal_phase_of_cervical_cancer, ),
     ),
     'uterine_cancer': Cause(
@@ -2143,7 +2236,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(435),
         dismod_id=meid(9512),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2155,8 +2249,8 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_uterine_cancer, 
-                  sequelae.controlled_phase_of_uterine_cancer, sequelae.metastatic_phase_of_uterine_cancer, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_uterine_cancer,
+                  sequelae.controlled_phase_of_uterine_cancer, sequelae.metastatic_phase_of_uterine_cancer,
                   sequelae.terminal_phase_of_uterine_cancer, ),
     ),
     'prostate_cancer': Cause(
@@ -2164,7 +2258,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(438),
         dismod_id=meid(9508),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=True,
@@ -2176,14 +2271,14 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_prostate_cancer, 
-                  sequelae.controlled_phase_of_prostate_cancer, sequelae.metastatic_phase_of_prostate_cancer, 
-                  sequelae.terminal_phase_of_prostate_cancer, sequelae.impotence_due_to_prostate_cancer, 
-                  sequelae.incontinence_due_to_prostate_cancer, 
-                  sequelae.controlled_phase_of_prostate_cancer_with_impotence, 
-                  sequelae.controlled_phase_of_prostate_cancer_with_incontinence, 
-                  sequelae.controlled_phase_of_prostate_cancer_without_impotence_or_incontinence, 
-                  sequelae.impotence_from_prostate_cancer_beyond_ten_years, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_prostate_cancer,
+                  sequelae.controlled_phase_of_prostate_cancer, sequelae.metastatic_phase_of_prostate_cancer,
+                  sequelae.terminal_phase_of_prostate_cancer, sequelae.impotence_due_to_prostate_cancer,
+                  sequelae.incontinence_due_to_prostate_cancer,
+                  sequelae.controlled_phase_of_prostate_cancer_with_impotence,
+                  sequelae.controlled_phase_of_prostate_cancer_with_incontinence,
+                  sequelae.controlled_phase_of_prostate_cancer_without_impotence_or_incontinence,
+                  sequelae.impotence_from_prostate_cancer_beyond_ten_years,
                   sequelae.incontinence_from_prostate_cancer_beyond_ten_years, ),
     ),
     'colon_and_rectum_cancer': Cause(
@@ -2191,7 +2286,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(441),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2203,12 +2299,12 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_colon_and_rectum_cancers, 
-                  sequelae.controlled_phase_of_colon_and_rectum_cancers, 
-                  sequelae.metastatic_phase_of_colon_and_rectum_cancers, 
-                  sequelae.terminal_phase_of_colon_and_rectum_cancers, sequelae.stoma_due_to_colon_and_rectum_cancer, 
-                  sequelae.controlled_phase_of_colon_and_rectum_cancers_with_stoma, 
-                  sequelae.controlled_phase_of_colon_and_rectum_cancers_without_stoma, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_colon_and_rectum_cancers,
+                  sequelae.controlled_phase_of_colon_and_rectum_cancers,
+                  sequelae.metastatic_phase_of_colon_and_rectum_cancers,
+                  sequelae.terminal_phase_of_colon_and_rectum_cancers, sequelae.stoma_due_to_colon_and_rectum_cancer,
+                  sequelae.controlled_phase_of_colon_and_rectum_cancers_with_stoma,
+                  sequelae.controlled_phase_of_colon_and_rectum_cancers_without_stoma,
                   sequelae.stoma_from_colon_and_rectum_cancers_beyond_ten_years, ),
     ),
     'lip_and_oral_cavity_cancer': Cause(
@@ -2216,7 +2312,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(444),
         dismod_id=meid(9500),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2228,8 +2325,8 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_mouth_cancer, 
-                  sequelae.controlled_phase_of_mouth_cancer, sequelae.metastatic_phase_of_mouth_cancer, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_mouth_cancer,
+                  sequelae.controlled_phase_of_mouth_cancer, sequelae.metastatic_phase_of_mouth_cancer,
                   sequelae.terminal_phase_of_mouth_cancer, ),
     ),
     'nasopharynx_cancer': Cause(
@@ -2237,7 +2334,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(447),
         dismod_id=meid(9502),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2249,8 +2347,8 @@ causes = Causes(**{
             yld_age_start=scalar(5.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_nasopharynx_cancer, 
-                  sequelae.controlled_phase_of_nasopharynx_cancer, sequelae.metastatic_phase_of_nasopharynx_cancer, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_nasopharynx_cancer,
+                  sequelae.controlled_phase_of_nasopharynx_cancer, sequelae.metastatic_phase_of_nasopharynx_cancer,
                   sequelae.terminal_phase_of_nasopharynx_cancer, ),
     ),
     'other_pharynx_cancer': Cause(
@@ -2258,7 +2356,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(450),
         dismod_id=meid(9505),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2270,8 +2369,8 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_other_pharynx_cancer, 
-                  sequelae.controlled_phase_of_other_pharynx_cancer, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_other_pharynx_cancer,
+                  sequelae.controlled_phase_of_other_pharynx_cancer,
                   sequelae.metastatic_phase_of_other_pharynx_cancer, sequelae.terminal_phase_of_other_pharynx_cancer, ),
     ),
     'gallbladder_and_biliary_tract_cancer': Cause(
@@ -2279,7 +2378,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(453),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2291,9 +2391,9 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_gallbladder_and_biliary_tract_cancer, 
-                  sequelae.controlled_phase_of_gallbladder_and_biliary_tract_cancer, 
-                  sequelae.metastatic_phase_of_gallbladder_and_biliary_tract_cancer, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_gallbladder_and_biliary_tract_cancer,
+                  sequelae.controlled_phase_of_gallbladder_and_biliary_tract_cancer,
+                  sequelae.metastatic_phase_of_gallbladder_and_biliary_tract_cancer,
                   sequelae.terminal_phase_of_gallbladder_and_biliary_tract_cancer, ),
     ),
     'pancreatic_cancer': Cause(
@@ -2301,7 +2401,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(456),
         dismod_id=meid(9507),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2313,8 +2414,8 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_pancreatic_cancer, 
-                  sequelae.controlled_phase_of_pancreatic_cancer, sequelae.metastatic_phase_of_pancreatic_cancer, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_pancreatic_cancer,
+                  sequelae.controlled_phase_of_pancreatic_cancer, sequelae.metastatic_phase_of_pancreatic_cancer,
                   sequelae.terminal_phase_of_pancreatic_cancer, ),
     ),
     'malignant_skin_melanoma': Cause(
@@ -2322,7 +2423,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(459),
         dismod_id=meid(9498),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2334,9 +2436,9 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_malignant_skin_melanoma, 
-                  sequelae.controlled_phase_of_malignant_skin_melanoma, 
-                  sequelae.metastatic_phase_of_malignant_skin_melanoma, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_malignant_skin_melanoma,
+                  sequelae.controlled_phase_of_malignant_skin_melanoma,
+                  sequelae.metastatic_phase_of_malignant_skin_melanoma,
                   sequelae.terminal_phase_of_malignant_skin_melanoma, ),
     ),
     'non_melanoma_skin_cancer': Cause(
@@ -2344,7 +2446,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(462),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2362,7 +2465,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(465),
         dismod_id=meid(9506),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2374,8 +2478,8 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_ovarian_cancer, 
-                  sequelae.controlled_phase_of_ovarian_cancer, sequelae.metastatic_phase_of_ovarian_cancer, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_ovarian_cancer,
+                  sequelae.controlled_phase_of_ovarian_cancer, sequelae.metastatic_phase_of_ovarian_cancer,
                   sequelae.terminal_phase_of_ovarian_cancer, ),
     ),
     'testicular_cancer': Cause(
@@ -2383,7 +2487,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(468),
         dismod_id=meid(9510),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=True,
@@ -2395,8 +2500,8 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_testicular_cancer, 
-                  sequelae.controlled_phase_of_testicular_cancer, sequelae.metastatic_phase_of_testicular_cancer, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_testicular_cancer,
+                  sequelae.controlled_phase_of_testicular_cancer, sequelae.metastatic_phase_of_testicular_cancer,
                   sequelae.terminal_phase_of_testicular_cancer, ),
     ),
     'kidney_cancer': Cause(
@@ -2404,7 +2509,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(471),
         dismod_id=meid(9472),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2416,8 +2522,8 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_kidney_cancer, 
-                  sequelae.controlled_phase_of_kidney_cancer, sequelae.metastatic_phase_of_kidney_cancer, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_kidney_cancer,
+                  sequelae.controlled_phase_of_kidney_cancer, sequelae.metastatic_phase_of_kidney_cancer,
                   sequelae.terminal_phase_of_kidney_cancer, ),
     ),
     'bladder_cancer': Cause(
@@ -2425,7 +2531,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(474),
         dismod_id=meid(9464),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2437,11 +2544,11 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_bladder_cancer, 
-                  sequelae.controlled_phase_of_bladder_cancer, sequelae.metastatic_phase_of_bladder_cancer, 
-                  sequelae.terminal_phase_of_bladder_cancer, sequelae.urinary_incontinence_due_to_bladder_cancer, 
-                  sequelae.controlled_phase_of_bladder_cancer_with_incontinence, 
-                  sequelae.controlled_phase_of_bladder_cancer_without_incontinence, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_bladder_cancer,
+                  sequelae.controlled_phase_of_bladder_cancer, sequelae.metastatic_phase_of_bladder_cancer,
+                  sequelae.terminal_phase_of_bladder_cancer, sequelae.urinary_incontinence_due_to_bladder_cancer,
+                  sequelae.controlled_phase_of_bladder_cancer_with_incontinence,
+                  sequelae.controlled_phase_of_bladder_cancer_without_incontinence,
                   sequelae.incontinence_from_bladder_cancer_beyond_ten_years, ),
     ),
     'brain_and_nervous_system_cancer': Cause(
@@ -2449,7 +2556,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(477),
         dismod_id=meid(9465),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2461,9 +2569,9 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_brain_and_nervous_system_cancers, 
-                  sequelae.controlled_phase_of_brain_and_nervous_system_cancers, 
-                  sequelae.metastatic_phase_of_brain_and_nervous_system_cancers, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_brain_and_nervous_system_cancers,
+                  sequelae.controlled_phase_of_brain_and_nervous_system_cancers,
+                  sequelae.metastatic_phase_of_brain_and_nervous_system_cancers,
                   sequelae.terminal_phase_of_brain_and_nervous_system_cancers, ),
     ),
     'thyroid_cancer': Cause(
@@ -2471,7 +2579,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(480),
         dismod_id=meid(9511),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2483,8 +2592,8 @@ causes = Causes(**{
             yld_age_start=scalar(10.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_thyroid_cancer, 
-                  sequelae.controlled_phase_of_thyroid_cancer, sequelae.metastatic_phase_of_thyroid_cancer, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_thyroid_cancer,
+                  sequelae.controlled_phase_of_thyroid_cancer, sequelae.metastatic_phase_of_thyroid_cancer,
                   sequelae.terminal_phase_of_thyroid_cancer, ),
     ),
     'mesothelioma': Cause(
@@ -2492,7 +2601,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(483),
         dismod_id=meid(9499),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2504,8 +2614,8 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_mesothelioma, 
-                  sequelae.controlled_phase_of_mesothelioma, sequelae.metastatic_phase_of_mesothelioma, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_mesothelioma,
+                  sequelae.controlled_phase_of_mesothelioma, sequelae.metastatic_phase_of_mesothelioma,
                   sequelae.terminal_phase_of_mesothelioma, ),
     ),
     'hodgkin_lymphoma': Cause(
@@ -2513,7 +2623,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(484),
         dismod_id=meid(9471),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2525,8 +2636,8 @@ causes = Causes(**{
             yld_age_start=scalar(0.1),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_hodgkin_disease, 
-                  sequelae.controlled_phase_of_hodgkin_disease, sequelae.metastatic_phase_of_hodgkin_disease, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_hodgkin_disease,
+                  sequelae.controlled_phase_of_hodgkin_disease, sequelae.metastatic_phase_of_hodgkin_disease,
                   sequelae.terminal_phase_of_hodgkin_disease, ),
     ),
     'non_hodgkin_lymphoma': Cause(
@@ -2534,7 +2645,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(485),
         dismod_id=meid(9497),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2546,8 +2658,8 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_non_hodgkin_lymphoma, 
-                  sequelae.controlled_phase_of_non_hodgkin_lymphoma, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_non_hodgkin_lymphoma,
+                  sequelae.controlled_phase_of_non_hodgkin_lymphoma,
                   sequelae.metastatic_phase_of_non_hodgkin_lymphoma, sequelae.terminal_phase_of_non_hodgkin_lymphoma, ),
     ),
     'multiple_myeloma': Cause(
@@ -2555,7 +2667,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(486),
         dismod_id=meid(9501),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2567,8 +2680,8 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_multiple_myeloma, 
-                  sequelae.controlled_phase_of_multiple_myeloma, sequelae.metastatic_phase_of_multiple_myeloma, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_multiple_myeloma,
+                  sequelae.controlled_phase_of_multiple_myeloma, sequelae.metastatic_phase_of_multiple_myeloma,
                   sequelae.terminal_phase_of_multiple_myeloma, ),
     ),
     'leukemia': Cause(
@@ -2576,7 +2689,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(487),
         dismod_id=meid(9474),
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2594,7 +2708,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(489),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2612,7 +2727,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(490),
         dismod_id=meid(9504),
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2624,8 +2740,8 @@ causes = Causes(**{
             yld_age_start=scalar(0.01),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_other_neoplasms, 
-                  sequelae.controlled_phase_of_other_neoplasms, sequelae.metastatic_phase_of_other_neoplasms, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_other_neoplasms,
+                  sequelae.controlled_phase_of_other_neoplasms, sequelae.metastatic_phase_of_other_neoplasms,
                   sequelae.terminal_phase_of_other_neoplasms, ),
     ),
     'cardiovascular_diseases': Cause(
@@ -2633,7 +2749,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(491),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=2,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2651,7 +2768,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(492),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2663,10 +2781,10 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.rheumatic_heart_disease_without_heart_failure, 
-                  sequelae.mild_heart_failure_due_to_rheumatic_heart_disease, 
-                  sequelae.moderate_heart_failure_due_to_rheumatic_heart_disease, 
-                  sequelae.severe_heart_failure_due_to_rheumatic_heart_disease, 
+        sequelae=(sequelae.rheumatic_heart_disease_without_heart_failure,
+                  sequelae.mild_heart_failure_due_to_rheumatic_heart_disease,
+                  sequelae.moderate_heart_failure_due_to_rheumatic_heart_disease,
+                  sequelae.severe_heart_failure_due_to_rheumatic_heart_disease,
                   sequelae.treated_heart_failure_due_to_rheumatic_heart_disease, ),
     ),
     'ischemic_heart_disease': Cause(
@@ -2674,7 +2792,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(493),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2686,16 +2805,16 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.acute_myocardial_infarction_first_2_days, 
-                  sequelae.acute_myocardial_infarction_3_to_28_days, 
-                  sequelae.mild_angina_due_to_ischemic_heart_disease, 
-                  sequelae.moderate_angina_due_to_ischemic_heart_disease, 
-                  sequelae.severe_angina_due_to_ischemic_heart_disease, 
-                  sequelae.mild_heart_failure_due_to_ischemic_heart_disease, 
-                  sequelae.moderate_heart_failure_due_to_ischemic_heart_disease, 
-                  sequelae.severe_heart_failure_due_to_ischemic_heart_disease, 
-                  sequelae.asymptomatic_angina_due_to_ischemic_heart_disease, 
-                  sequelae.asymptomatic_ischemic_heart_disease_following_myocardial_infarction, 
+        sequelae=(sequelae.acute_myocardial_infarction_first_2_days,
+                  sequelae.acute_myocardial_infarction_3_to_28_days,
+                  sequelae.mild_angina_due_to_ischemic_heart_disease,
+                  sequelae.moderate_angina_due_to_ischemic_heart_disease,
+                  sequelae.severe_angina_due_to_ischemic_heart_disease,
+                  sequelae.mild_heart_failure_due_to_ischemic_heart_disease,
+                  sequelae.moderate_heart_failure_due_to_ischemic_heart_disease,
+                  sequelae.severe_heart_failure_due_to_ischemic_heart_disease,
+                  sequelae.asymptomatic_angina_due_to_ischemic_heart_disease,
+                  sequelae.asymptomatic_ischemic_heart_disease_following_myocardial_infarction,
                   sequelae.treated_heart_failure_due_ischemic_heart_disease, ),
     ),
     'stroke': Cause(
@@ -2703,7 +2822,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(494),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2721,7 +2841,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(495),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2733,12 +2854,12 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.acute_ischemic_stroke_severity_level_1, sequelae.acute_ischemic_stroke_severity_level_2, 
-                  sequelae.acute_ischemic_stroke_severity_level_4, sequelae.acute_ischemic_stroke_severity_level_3, 
-                  sequelae.acute_ischemic_stroke_severity_level_5, sequelae.chronic_ischemic_stroke_severity_level_1, 
-                  sequelae.chronic_ischemic_stroke_severity_level_2, 
-                  sequelae.chronic_ischemic_stroke_severity_level_4, 
-                  sequelae.chronic_ischemic_stroke_severity_level_3, 
+        sequelae=(sequelae.acute_ischemic_stroke_severity_level_1, sequelae.acute_ischemic_stroke_severity_level_2,
+                  sequelae.acute_ischemic_stroke_severity_level_4, sequelae.acute_ischemic_stroke_severity_level_3,
+                  sequelae.acute_ischemic_stroke_severity_level_5, sequelae.chronic_ischemic_stroke_severity_level_1,
+                  sequelae.chronic_ischemic_stroke_severity_level_2,
+                  sequelae.chronic_ischemic_stroke_severity_level_4,
+                  sequelae.chronic_ischemic_stroke_severity_level_3,
                   sequelae.chronic_ischemic_stroke_severity_level_5, sequelae.asymptomatic_chronic_ischemic_stroke, ),
     ),
     'intracerebral_hemorrhage': Cause(
@@ -2746,7 +2867,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(496),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2758,16 +2880,16 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.acute_intracerebral_hemorrhage_severity_level_1, 
-                  sequelae.acute_intracerebral_hemorrhage_severity_level_2, 
-                  sequelae.acute_intracerebral_hemorrhage_severity_level_4, 
-                  sequelae.acute_intracerebral_hemorrhage_severity_level_3, 
-                  sequelae.acute_intracerebral_hemorrhage_severity_level_5, 
-                  sequelae.chronic_intracerebral_hemorrhage_severity_level_1, 
-                  sequelae.chronic_intracerebral_hemorrhage_severity_level_2, 
-                  sequelae.chronic_intracerebral_hemorrhage_severity_level_4, 
-                  sequelae.chronic_intracerebral_hemorrhage_severity_level_3, 
-                  sequelae.chronic_intracerebral_hemorrhage_severity_level_5, 
+        sequelae=(sequelae.acute_intracerebral_hemorrhage_severity_level_1,
+                  sequelae.acute_intracerebral_hemorrhage_severity_level_2,
+                  sequelae.acute_intracerebral_hemorrhage_severity_level_4,
+                  sequelae.acute_intracerebral_hemorrhage_severity_level_3,
+                  sequelae.acute_intracerebral_hemorrhage_severity_level_5,
+                  sequelae.chronic_intracerebral_hemorrhage_severity_level_1,
+                  sequelae.chronic_intracerebral_hemorrhage_severity_level_2,
+                  sequelae.chronic_intracerebral_hemorrhage_severity_level_4,
+                  sequelae.chronic_intracerebral_hemorrhage_severity_level_3,
+                  sequelae.chronic_intracerebral_hemorrhage_severity_level_5,
                   sequelae.asymptomatic_chronic_intracerebral_hemorrhage, ),
     ),
     'subarachnoid_hemorrhage': Cause(
@@ -2775,7 +2897,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(497),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2787,16 +2910,16 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.acute_subarachnoid_hemorrhage_severity_level_1, 
-                  sequelae.acute_subarachnoid_hemorrhage_severity_level_2, 
-                  sequelae.acute_subarachnoid_hemorrhage_severity_level_3, 
-                  sequelae.acute_subarachnoid_hemorrhage_severity_level_4, 
-                  sequelae.acute_subarachnoid_hemorrhage_severity_level_5, 
-                  sequelae.asymptomatic_chronic_subarachnoid_hemorrhage, 
-                  sequelae.chronic_subarachnoid_hemorrhage_severity_level_1, 
-                  sequelae.chronic_subarachnoid_hemorrhage_severity_level_2, 
-                  sequelae.chronic_subarachnoid_hemorrhage_severity_level_3, 
-                  sequelae.chronic_subarachnoid_hemorrhage_severity_level_4, 
+        sequelae=(sequelae.acute_subarachnoid_hemorrhage_severity_level_1,
+                  sequelae.acute_subarachnoid_hemorrhage_severity_level_2,
+                  sequelae.acute_subarachnoid_hemorrhage_severity_level_3,
+                  sequelae.acute_subarachnoid_hemorrhage_severity_level_4,
+                  sequelae.acute_subarachnoid_hemorrhage_severity_level_5,
+                  sequelae.asymptomatic_chronic_subarachnoid_hemorrhage,
+                  sequelae.chronic_subarachnoid_hemorrhage_severity_level_1,
+                  sequelae.chronic_subarachnoid_hemorrhage_severity_level_2,
+                  sequelae.chronic_subarachnoid_hemorrhage_severity_level_3,
+                  sequelae.chronic_subarachnoid_hemorrhage_severity_level_4,
                   sequelae.chronic_subarachnoid_hemorrhage_severity_level_5, ),
     ),
     'hypertensive_heart_disease': Cause(
@@ -2804,7 +2927,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(498),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2816,9 +2940,9 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_heart_failure_due_to_hypertensive_heart_disease, 
-                  sequelae.moderate_heart_failure_due_to_hypertensive_heart_disease, 
-                  sequelae.severe_heart_failure_due_to_hypertensive_heart_disease, 
+        sequelae=(sequelae.mild_heart_failure_due_to_hypertensive_heart_disease,
+                  sequelae.moderate_heart_failure_due_to_hypertensive_heart_disease,
+                  sequelae.severe_heart_failure_due_to_hypertensive_heart_disease,
                   sequelae.treated_heart_failure_due_to_hypertensive_heart_disease, ),
     ),
     'cardiomyopathy_and_myocarditis': Cause(
@@ -2826,7 +2950,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(499),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2844,7 +2969,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(500),
         dismod_id=meid(1859),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2856,7 +2982,7 @@ causes = Causes(**{
             yld_age_start=scalar(30.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.asymptomatic_atrial_fibrillation_and_flutter, 
+        sequelae=(sequelae.asymptomatic_atrial_fibrillation_and_flutter,
                   sequelae.symptomatic_atrial_fibrillation_and_flutter, ),
     ),
     'aortic_aneurysm': Cause(
@@ -2864,7 +2990,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(501),
         dismod_id=meid(1860),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2880,7 +3007,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(502),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2892,7 +3020,7 @@ causes = Causes(**{
             yld_age_start=scalar(40.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.asymptomatic_peripheral_vascular_disease, 
+        sequelae=(sequelae.asymptomatic_peripheral_vascular_disease,
                   sequelae.symptomatic_claudication_due_to_peripheral_vascular_disease, ),
     ),
     'endocarditis': Cause(
@@ -2900,7 +3028,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(503),
         dismod_id=meid(1862),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2912,10 +3041,10 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.moderate_endocarditis, sequelae.severe_endocarditis, 
-                  sequelae.mild_heart_failure_due_to_endocarditis, 
-                  sequelae.moderate_heart_failure_due_to_endocarditis, 
-                  sequelae.severe_heart_failure_due_to_endocarditis, 
+        sequelae=(sequelae.moderate_endocarditis, sequelae.severe_endocarditis,
+                  sequelae.mild_heart_failure_due_to_endocarditis,
+                  sequelae.moderate_heart_failure_due_to_endocarditis,
+                  sequelae.severe_heart_failure_due_to_endocarditis,
                   sequelae.treated_heart_failure_due_to_endocarditis, ),
     ),
     'non_rheumatic_valvular_heart_disease': Cause(
@@ -2923,7 +3052,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(504),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2941,7 +3071,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(507),
         dismod_id=meid(1868),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2953,11 +3084,11 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_heart_failure_due_to_other_cardiovascular_diseases, 
-                  sequelae.moderate_heart_failure_due_to_other_cardiovascular_diseases, 
-                  sequelae.severe_heart_failure_due_to_other_cardiovascular_diseases, 
-                  sequelae.asymptomatic_other_cardiovascular_diseases, sequelae.mild_other_cardiovascular_diseases, 
-                  sequelae.moderate_other_cardiovascular_diseases, sequelae.severe_other_cardiovascular_diseases, 
+        sequelae=(sequelae.mild_heart_failure_due_to_other_cardiovascular_diseases,
+                  sequelae.moderate_heart_failure_due_to_other_cardiovascular_diseases,
+                  sequelae.severe_heart_failure_due_to_other_cardiovascular_diseases,
+                  sequelae.asymptomatic_other_cardiovascular_diseases, sequelae.mild_other_cardiovascular_diseases,
+                  sequelae.moderate_other_cardiovascular_diseases, sequelae.severe_other_cardiovascular_diseases,
                   sequelae.treated_heart_failure_due_to_other_cardiovascular_disease, ),
     ),
     'chronic_respiratory_diseases': Cause(
@@ -2965,7 +3096,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(508),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=2,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2983,7 +3115,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(509),
         dismod_id=meid(1872),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2995,13 +3128,13 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_chronic_obstructive_pulmonary_disease, 
-                  sequelae.moderate_chronic_obstructive_pulmonary_disease, 
-                  sequelae.asymptomatic_chronic_obstructive_pulmonary_disease, 
-                  sequelae.mild_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease, 
-                  sequelae.moderate_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease, 
-                  sequelae.severe_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease, 
-                  sequelae.severe_chronic_obstructive_pulmonary_disease_without_heart_failure, 
+        sequelae=(sequelae.mild_chronic_obstructive_pulmonary_disease,
+                  sequelae.moderate_chronic_obstructive_pulmonary_disease,
+                  sequelae.asymptomatic_chronic_obstructive_pulmonary_disease,
+                  sequelae.mild_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease,
+                  sequelae.moderate_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease,
+                  sequelae.severe_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease,
+                  sequelae.severe_chronic_obstructive_pulmonary_disease_without_heart_failure,
                   sequelae.treated_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease, ),
     ),
     'pneumoconiosis': Cause(
@@ -3009,7 +3142,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(510),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3027,7 +3161,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(511),
         dismod_id=meid(1879),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3039,11 +3174,11 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_silicosis, sequelae.moderate_silicosis, sequelae.asymptomatic_silicosis, 
-                  sequelae.mild_heart_failure_due_to_severe_silicosis, 
-                  sequelae.moderate_heart_failure_due_to_severe_silicosis, 
-                  sequelae.severe_heart_failure_due_to_severe_silicosis, 
-                  sequelae.severe_silicosis_without_heart_failure, 
+        sequelae=(sequelae.mild_silicosis, sequelae.moderate_silicosis, sequelae.asymptomatic_silicosis,
+                  sequelae.mild_heart_failure_due_to_severe_silicosis,
+                  sequelae.moderate_heart_failure_due_to_severe_silicosis,
+                  sequelae.severe_heart_failure_due_to_severe_silicosis,
+                  sequelae.severe_silicosis_without_heart_failure,
                   sequelae.treated_heart_failure_due_to_severe_silicosis, ),
     ),
     'asbestosis': Cause(
@@ -3051,7 +3186,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(512),
         dismod_id=meid(1886),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3063,11 +3199,11 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_asbestosis, sequelae.moderate_asbestosis, sequelae.asymptomatic_asbestosis, 
-                  sequelae.mild_heart_failure_due_to_severe_asbestosis, 
-                  sequelae.moderate_heart_failure_due_to_severe_asbestosis, 
-                  sequelae.severe_heart_failure_due_to_severe_asbestosis, 
-                  sequelae.severe_asbestosis_without_heart_failure, 
+        sequelae=(sequelae.mild_asbestosis, sequelae.moderate_asbestosis, sequelae.asymptomatic_asbestosis,
+                  sequelae.mild_heart_failure_due_to_severe_asbestosis,
+                  sequelae.moderate_heart_failure_due_to_severe_asbestosis,
+                  sequelae.severe_heart_failure_due_to_severe_asbestosis,
+                  sequelae.severe_asbestosis_without_heart_failure,
                   sequelae.treated_heart_failure_due_to_severe_asbestosis, ),
     ),
     'coal_workers_pneumoconiosis': Cause(
@@ -3075,7 +3211,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(513),
         dismod_id=meid(3052),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3087,12 +3224,12 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_coal_workers_pneumoconiosis, sequelae.moderate_coal_workers_pneumoconiosis, 
-                  sequelae.asymptomatic_coal_workers_pneumoconiosis, 
-                  sequelae.mild_heart_failure_due_to_severe_coal_workers_pneumoconiosis, 
-                  sequelae.moderate_heart_failure_due_to_severe_coal_workers_pneumoconiosis, 
-                  sequelae.severe_heart_failure_due_to_severe_coal_workers_pneumoconiosis, 
-                  sequelae.severe_coal_workers_pneumoconiosis_without_heart_failure, 
+        sequelae=(sequelae.mild_coal_workers_pneumoconiosis, sequelae.moderate_coal_workers_pneumoconiosis,
+                  sequelae.asymptomatic_coal_workers_pneumoconiosis,
+                  sequelae.mild_heart_failure_due_to_severe_coal_workers_pneumoconiosis,
+                  sequelae.moderate_heart_failure_due_to_severe_coal_workers_pneumoconiosis,
+                  sequelae.severe_heart_failure_due_to_severe_coal_workers_pneumoconiosis,
+                  sequelae.severe_coal_workers_pneumoconiosis_without_heart_failure,
                   sequelae.treated_heart_failure_due_to_severe_coal_workers_pneumoconiosis, ),
     ),
     'other_pneumoconiosis': Cause(
@@ -3100,7 +3237,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(514),
         dismod_id=meid(1900),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3112,12 +3250,12 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_other_pneumoconiosis, sequelae.moderate_other_pneumoconiosis, 
-                  sequelae.asymptomatic_other_pneumoconiosis, 
-                  sequelae.mild_heart_failure_due_to_severe_other_pneumoconiosis, 
-                  sequelae.moderate_heart_failure_due_to_severe_other_pneumoconiosis, 
-                  sequelae.severe_heart_failure_due_to_severe_other_pneumoconiosis, 
-                  sequelae.severe_other_pneumoconiosis_without_heart_failure, 
+        sequelae=(sequelae.mild_other_pneumoconiosis, sequelae.moderate_other_pneumoconiosis,
+                  sequelae.asymptomatic_other_pneumoconiosis,
+                  sequelae.mild_heart_failure_due_to_severe_other_pneumoconiosis,
+                  sequelae.moderate_heart_failure_due_to_severe_other_pneumoconiosis,
+                  sequelae.severe_heart_failure_due_to_severe_other_pneumoconiosis,
+                  sequelae.severe_other_pneumoconiosis_without_heart_failure,
                   sequelae.treated_heart_failure_due_to_severe_other_pneumoconiosis, ),
     ),
     'asthma': Cause(
@@ -3125,7 +3263,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(515),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3137,7 +3276,7 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.controlled_asthma, sequelae.partially_controlled_asthma, sequelae.uncontrolled_asthma, 
+        sequelae=(sequelae.controlled_asthma, sequelae.partially_controlled_asthma, sequelae.uncontrolled_asthma,
                   sequelae.asymptomatic_asthma, ),
     ),
     'interstitial_lung_disease_and_pulmonary_sarcoidosis': Cause(
@@ -3145,7 +3284,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(516),
         dismod_id=meid(1911),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3157,13 +3297,13 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_interstitial_lung_disease_and_pulmonary_sarcoidosis, 
-                  sequelae.moderate_interstitial_lung_disease_and_pulmonary_sarcoidosis, 
-                  sequelae.asymptomatic_interstitial_lung_disease_and_pulmonary_sarcoidosis, 
-                  sequelae.mild_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis, 
-                  sequelae.moderate_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis, 
-                  sequelae.severe_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis, 
-                  sequelae.severe_interstitial_lung_disease_and_pulmonary_sarcoidosis_without_heart_failure, 
+        sequelae=(sequelae.mild_interstitial_lung_disease_and_pulmonary_sarcoidosis,
+                  sequelae.moderate_interstitial_lung_disease_and_pulmonary_sarcoidosis,
+                  sequelae.asymptomatic_interstitial_lung_disease_and_pulmonary_sarcoidosis,
+                  sequelae.mild_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis,
+                  sequelae.moderate_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis,
+                  sequelae.severe_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis,
+                  sequelae.severe_interstitial_lung_disease_and_pulmonary_sarcoidosis_without_heart_failure,
                   sequelae.treated_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis, ),
     ),
     'other_chronic_respiratory_diseases': Cause(
@@ -3171,7 +3311,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(520),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3190,7 +3331,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(521),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3208,7 +3350,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(522),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3220,7 +3363,7 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated, 
+        sequelae=(sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated,
                   sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_compensated, ),
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c': Cause(
@@ -3228,7 +3371,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(523),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3240,7 +3384,7 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated, 
+        sequelae=(sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated,
                   sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_compensated, ),
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_use': Cause(
@@ -3248,7 +3392,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(524),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3260,7 +3405,7 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated, 
+        sequelae=(sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated,
                   sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_compensated, ),
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_other_causes': Cause(
@@ -3268,7 +3413,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(525),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3280,7 +3426,7 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated, 
+        sequelae=(sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated,
                   sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_compensated, ),
     ),
     'digestive_diseases': Cause(
@@ -3288,7 +3434,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(526),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=2,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3306,7 +3453,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(527),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3318,22 +3466,22 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.complicated_peptic_ulcer_disease_with_no_anemia, 
-                  sequelae.complicated_peptic_ulcer_disease_with_mild_anemia, 
-                  sequelae.complicated_peptic_ulcer_disease_with_moderate_anemia, 
-                  sequelae.complicated_peptic_ulcer_disease_with_severe_anemia, 
-                  sequelae.acute_uncomplicated_peptic_ulcer_disease, 
-                  sequelae.chronic_peptic_ulcer_disease_asymptomatic_with_no_anemia, 
-                  sequelae.chronic_peptic_ulcer_disease_mild_with_no_anemia, 
-                  sequelae.chronic_peptic_ulcer_disease_moderate_with_no_anemia, 
-                  sequelae.chronic_peptic_ulcer_disease_asymptomatic_with_mild_anemia, 
-                  sequelae.chronic_peptic_ulcer_disease_mild_with_mild_anemia, 
-                  sequelae.chronic_peptic_ulcer_disease_moderate_with_mild_anemia, 
-                  sequelae.chronic_peptic_ulcer_disease_asymptomatic_with_moderate_anemia, 
-                  sequelae.chronic_peptic_ulcer_disease_mild_with_moderate_anemia, 
-                  sequelae.chronic_peptic_ulcer_disease_moderate_with_moderate_anemia, 
-                  sequelae.chronic_peptic_ulcer_disease_asymptomatic_with_severe_anemia, 
-                  sequelae.chronic_peptic_ulcer_disease_mild_with_severe_anemia, 
+        sequelae=(sequelae.complicated_peptic_ulcer_disease_with_no_anemia,
+                  sequelae.complicated_peptic_ulcer_disease_with_mild_anemia,
+                  sequelae.complicated_peptic_ulcer_disease_with_moderate_anemia,
+                  sequelae.complicated_peptic_ulcer_disease_with_severe_anemia,
+                  sequelae.acute_uncomplicated_peptic_ulcer_disease,
+                  sequelae.chronic_peptic_ulcer_disease_asymptomatic_with_no_anemia,
+                  sequelae.chronic_peptic_ulcer_disease_mild_with_no_anemia,
+                  sequelae.chronic_peptic_ulcer_disease_moderate_with_no_anemia,
+                  sequelae.chronic_peptic_ulcer_disease_asymptomatic_with_mild_anemia,
+                  sequelae.chronic_peptic_ulcer_disease_mild_with_mild_anemia,
+                  sequelae.chronic_peptic_ulcer_disease_moderate_with_mild_anemia,
+                  sequelae.chronic_peptic_ulcer_disease_asymptomatic_with_moderate_anemia,
+                  sequelae.chronic_peptic_ulcer_disease_mild_with_moderate_anemia,
+                  sequelae.chronic_peptic_ulcer_disease_moderate_with_moderate_anemia,
+                  sequelae.chronic_peptic_ulcer_disease_asymptomatic_with_severe_anemia,
+                  sequelae.chronic_peptic_ulcer_disease_mild_with_severe_anemia,
                   sequelae.chronic_peptic_ulcer_disease_moderate_with_severe_anemia, ),
     ),
     'gastritis_and_duodenitis': Cause(
@@ -3341,7 +3489,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(528),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3353,22 +3502,22 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.complicated_gastritis_and_duodenitis_with_no_anemia, 
-                  sequelae.complicated_gastritis_and_duodenitis_with_mild_anemia, 
-                  sequelae.complicated_gastritis_and_duodenitis_with_moderate_anemia, 
-                  sequelae.complicated_gastritis_and_duodenitis_with_severe_anemia, 
-                  sequelae.gastritis_and_duodenitis_uncomplicated_acute, 
-                  sequelae.chronic_asymptomatic_gastritis_and_duodenitis_with_no_anemia, 
-                  sequelae.chronic_mild_gastritis_and_duodenitis_with_no_anemia, 
-                  sequelae.chronic_moderate_gastritis_and_duodenitis_with_no_anemia, 
-                  sequelae.chronic_asymptomatic_gastritis_and_duodenitis_with_mild_anemia, 
-                  sequelae.chronic_mild_gastritis_and_duodenitis_with_mild_anemia, 
-                  sequelae.chronic_moderate_gastritis_and_duodenitis_with_mild_anemia, 
-                  sequelae.chronic_asymptomatic_gastritis_and_duodenitis_with_moderate_anemia, 
-                  sequelae.chronic_mild_gastritis_and_duodenitis_with_moderate_anemia, 
-                  sequelae.chronic_moderate_gastritis_and_duodenitis_with_moderate_anemia, 
-                  sequelae.chronic_asymptomatic_gastritis_and_duodenitis_with_severe_anemia, 
-                  sequelae.chronic_mild_gastritis_and_duodenitis_with_severe_anemia, 
+        sequelae=(sequelae.complicated_gastritis_and_duodenitis_with_no_anemia,
+                  sequelae.complicated_gastritis_and_duodenitis_with_mild_anemia,
+                  sequelae.complicated_gastritis_and_duodenitis_with_moderate_anemia,
+                  sequelae.complicated_gastritis_and_duodenitis_with_severe_anemia,
+                  sequelae.gastritis_and_duodenitis_uncomplicated_acute,
+                  sequelae.chronic_asymptomatic_gastritis_and_duodenitis_with_no_anemia,
+                  sequelae.chronic_mild_gastritis_and_duodenitis_with_no_anemia,
+                  sequelae.chronic_moderate_gastritis_and_duodenitis_with_no_anemia,
+                  sequelae.chronic_asymptomatic_gastritis_and_duodenitis_with_mild_anemia,
+                  sequelae.chronic_mild_gastritis_and_duodenitis_with_mild_anemia,
+                  sequelae.chronic_moderate_gastritis_and_duodenitis_with_mild_anemia,
+                  sequelae.chronic_asymptomatic_gastritis_and_duodenitis_with_moderate_anemia,
+                  sequelae.chronic_mild_gastritis_and_duodenitis_with_moderate_anemia,
+                  sequelae.chronic_moderate_gastritis_and_duodenitis_with_moderate_anemia,
+                  sequelae.chronic_asymptomatic_gastritis_and_duodenitis_with_severe_anemia,
+                  sequelae.chronic_mild_gastritis_and_duodenitis_with_severe_anemia,
                   sequelae.chronic_moderate_gastritis_and_duodenitis_with_severe_anemia, ),
     ),
     'appendicitis': Cause(
@@ -3376,7 +3525,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(529),
         dismod_id=meid(1932),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3395,7 +3545,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(530),
         dismod_id=meid(1933),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3414,7 +3565,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(531),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3426,9 +3578,9 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.asymptomatic_inguinal_femoral_and_abdominal_hernia, 
-                  sequelae.mild_symptomatic_inguinal_femoral_and_abdominal_hernia, 
-                  sequelae.moderate_symptomatic_inguinal_femoral_and_abdominal_hernia, 
+        sequelae=(sequelae.asymptomatic_inguinal_femoral_and_abdominal_hernia,
+                  sequelae.mild_symptomatic_inguinal_femoral_and_abdominal_hernia,
+                  sequelae.moderate_symptomatic_inguinal_femoral_and_abdominal_hernia,
                   sequelae.severe_symptomatic_inguinal_femoral_and_abdominal_hernia, ),
     ),
     'inflammatory_bowel_disease': Cause(
@@ -3436,7 +3588,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(532),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3448,10 +3601,10 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.asymptomatic_ulcerative_colitis, sequelae.asymptomatic_crohns_disease, 
-                  sequelae.ulcerative_colitis_with_mild_anemia, sequelae.ulcerative_colitis_with_moderate_anemia, 
-                  sequelae.ulcerative_colitis_with_severe_anemia, sequelae.ulcerative_colitis_without_anemia, 
-                  sequelae.crohns_disease_with_mild_anemia, sequelae.crohns_disease_with_moderate_anemia, 
+        sequelae=(sequelae.asymptomatic_ulcerative_colitis, sequelae.asymptomatic_crohns_disease,
+                  sequelae.ulcerative_colitis_with_mild_anemia, sequelae.ulcerative_colitis_with_moderate_anemia,
+                  sequelae.ulcerative_colitis_with_severe_anemia, sequelae.ulcerative_colitis_without_anemia,
+                  sequelae.crohns_disease_with_mild_anemia, sequelae.crohns_disease_with_moderate_anemia,
                   sequelae.crohns_disease_with_severe_anemia, sequelae.crohns_disease_without_anemia, ),
     ),
     'vascular_intestinal_disorders': Cause(
@@ -3459,7 +3612,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(533),
         dismod_id=meid(1939),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3478,7 +3632,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(534),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3490,9 +3645,9 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.asymptomatic_gallbladder_and_biliary_diseases, 
-                  sequelae.mild_symptomatic_episodes_gallbladder_and_biliary_diseases, 
-                  sequelae.moderate_symptomatic_episodes_gallbladder_and_biliary_diseases, 
+        sequelae=(sequelae.asymptomatic_gallbladder_and_biliary_diseases,
+                  sequelae.mild_symptomatic_episodes_gallbladder_and_biliary_diseases,
+                  sequelae.moderate_symptomatic_episodes_gallbladder_and_biliary_diseases,
                   sequelae.severe_symptomatic_episodes_gallbladder_and_biliary_diseases, ),
     ),
     'pancreatitis': Cause(
@@ -3500,7 +3655,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(535),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3512,7 +3668,7 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_chronic_pancreatitis, sequelae.moderate_chronic_pancreatitis, 
+        sequelae=(sequelae.mild_chronic_pancreatitis, sequelae.moderate_chronic_pancreatitis,
                   sequelae.severe_chronic_pancreatitis, sequelae.acute_pancreatitis, ),
     ),
     'gastroesophageal_reflux_disease': Cause(
@@ -3520,7 +3676,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(536),
         dismod_id=meid(18664),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3530,8 +3687,8 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.symptomatic_gastroesophageal_reflux_disease, 
-                  sequelae.mild_to_moderate_gastroesophageal_reflux_disease_symptoms_typical, 
+        sequelae=(sequelae.symptomatic_gastroesophageal_reflux_disease,
+                  sequelae.mild_to_moderate_gastroesophageal_reflux_disease_symptoms_typical,
                   sequelae.severe_or_very_severe_gastroesophageal_reflux_disease_symptoms_typical, ),
     ),
     'other_digestive_diseases': Cause(
@@ -3539,7 +3696,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(541),
         dismod_id=meid(1942),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3558,7 +3716,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(542),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=2,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3576,7 +3735,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(543),
         dismod_id=meid(1943),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3588,8 +3748,8 @@ causes = Causes(**{
             yld_age_start=scalar(40.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_alzheimer_disease_and_other_dementias, 
-                  sequelae.moderate_alzheimer_disease_and_other_dementias, 
+        sequelae=(sequelae.mild_alzheimer_disease_and_other_dementias,
+                  sequelae.moderate_alzheimer_disease_and_other_dementias,
                   sequelae.severe_alzheimer_disease_and_other_dementias, ),
     ),
     'parkinsons_disease': Cause(
@@ -3597,7 +3757,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(544),
         dismod_id=meid(1947),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3609,7 +3770,7 @@ causes = Causes(**{
             yld_age_start=scalar(20.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_parkinson_disease, sequelae.moderate_parkinson_disease, 
+        sequelae=(sequelae.mild_parkinson_disease, sequelae.moderate_parkinson_disease,
                   sequelae.severe_parkinson_disease, ),
     ),
     'epilepsy': Cause(
@@ -3617,7 +3778,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(545),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3629,7 +3791,7 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.idiopathic_seizure_free_treated_epilepsy, sequelae.idiopathic_less_severe_epilepsy, 
+        sequelae=(sequelae.idiopathic_seizure_free_treated_epilepsy, sequelae.idiopathic_less_severe_epilepsy,
                   sequelae.idiopathic_severe_epilepsy, ),
     ),
     'multiple_sclerosis': Cause(
@@ -3637,7 +3799,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(546),
         dismod_id=meid(1955),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3649,7 +3812,7 @@ causes = Causes(**{
             yld_age_start=scalar(5.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_multiple_sclerosis, sequelae.moderate_multiple_sclerosis, 
+        sequelae=(sequelae.mild_multiple_sclerosis, sequelae.moderate_multiple_sclerosis,
                   sequelae.severe_multiple_sclerosis, sequelae.asymptomatic_multiple_sclerosis, ),
     ),
     'migraine': Cause(
@@ -3657,7 +3820,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(547),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3667,8 +3831,8 @@ causes = Causes(**{
             yld_age_start=scalar(5.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.symptomatic_migraine, sequelae.asymptomatic_migraine, 
-                  sequelae.asymptomatic_medication_overuse_headache_due_to_migraine, 
+        sequelae=(sequelae.symptomatic_migraine, sequelae.asymptomatic_migraine,
+                  sequelae.asymptomatic_medication_overuse_headache_due_to_migraine,
                   sequelae.symptomatic_medication_overuse_headache_due_to_migraine, ),
     ),
     'tension_type_headache': Cause(
@@ -3676,7 +3840,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(548),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3686,8 +3851,8 @@ causes = Causes(**{
             yld_age_start=scalar(5.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.symptomatic_tension_type_headache, sequelae.asymptomatic_tension_type_headache, 
-                  sequelae.asymptomatic_medication_overuse_headache_due_to_tension_type_headache, 
+        sequelae=(sequelae.symptomatic_tension_type_headache, sequelae.asymptomatic_tension_type_headache,
+                  sequelae.asymptomatic_medication_overuse_headache_due_to_tension_type_headache,
                   sequelae.symptomatic_medication_overuse_headache_due_to_tension_type_headache, ),
     ),
     'motor_neuron_disease': Cause(
@@ -3695,7 +3860,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(554),
         dismod_id=meid(3940),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3707,35 +3873,35 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_motor_impairment_mild_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease, 
-                  sequelae.mild_motor_impairment_moderate_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease, 
-                  sequelae.mild_motor_impairment_severe_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease, 
-                  sequelae.mild_motor_impairment_and_speech_problems_due_to_motor_neuron_disease, 
-                  sequelae.moderate_motor_impairment_mild_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease, 
-                  sequelae.moderate_motor_impairment_moderate_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease, 
-                  sequelae.moderate_motor_impairment_severe_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease, 
-                  sequelae.severe_motor_impairment_mild_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease, 
-                  sequelae.severe_motor_impairment_moderate_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease, 
-                  sequelae.severe_motor_impairment_severe_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease, 
-                  sequelae.mild_motor_impairment_and_mild_respiratory_problems_due_to_motor_neuron_disease, 
-                  sequelae.mild_motor_impairment_and_severe_respiratory_problems_due_to_motor_neuron_disease, 
-                  sequelae.moderate_motor_impairment_and_mild_respiratory_problems_due_to_motor_neuron_disease, 
-                  sequelae.moderate_motor_impairment_and_moderate_respiratory_problems_due_to_motor_neuron_disease, 
-                  sequelae.moderate_motor_impairment_and_severe_respiratory_problems_due_to_motor_neuron_disease, 
-                  sequelae.severe_motor_impairment_and_mild_respiratory_problems_due_to_motor_neuron_disease, 
-                  sequelae.severe_motor_impairment_and_moderate_respiratory_problems_due_to_motor_neuron_disease, 
-                  sequelae.severe_motor_impairment_and_severe_respiratory_problems_due_to_motor_neuron_disease, 
-                  sequelae.moderate_motor_impairment_and_speech_problems_due_to_motor_neuron_disease, 
-                  sequelae.severe_motor_impairment_and_speech_problems_due_to_motor_neuron_disease, 
-                  sequelae.mild_motor_impairment_due_to_motor_neuron_disease, 
-                  sequelae.moderate_motor_impairment_due_to_motor_neuron_disease, 
-                  sequelae.severe_motor_impairment_due_to_motor_neuron_disease, 
-                  sequelae.mild_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease, 
-                  sequelae.moderate_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease, 
-                  sequelae.severe_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease, 
-                  sequelae.mild_respiratory_problems_due_to_motor_neuron_disease, 
-                  sequelae.moderate_respiratory_problems_due_to_motor_neuron_disease, 
-                  sequelae.severe_respiratory_problems_due_to_motor_neuron_disease, 
+        sequelae=(sequelae.mild_motor_impairment_mild_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease,
+                  sequelae.mild_motor_impairment_moderate_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease,
+                  sequelae.mild_motor_impairment_severe_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease,
+                  sequelae.mild_motor_impairment_and_speech_problems_due_to_motor_neuron_disease,
+                  sequelae.moderate_motor_impairment_mild_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease,
+                  sequelae.moderate_motor_impairment_moderate_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease,
+                  sequelae.moderate_motor_impairment_severe_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease,
+                  sequelae.severe_motor_impairment_mild_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease,
+                  sequelae.severe_motor_impairment_moderate_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease,
+                  sequelae.severe_motor_impairment_severe_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease,
+                  sequelae.mild_motor_impairment_and_mild_respiratory_problems_due_to_motor_neuron_disease,
+                  sequelae.mild_motor_impairment_and_severe_respiratory_problems_due_to_motor_neuron_disease,
+                  sequelae.moderate_motor_impairment_and_mild_respiratory_problems_due_to_motor_neuron_disease,
+                  sequelae.moderate_motor_impairment_and_moderate_respiratory_problems_due_to_motor_neuron_disease,
+                  sequelae.moderate_motor_impairment_and_severe_respiratory_problems_due_to_motor_neuron_disease,
+                  sequelae.severe_motor_impairment_and_mild_respiratory_problems_due_to_motor_neuron_disease,
+                  sequelae.severe_motor_impairment_and_moderate_respiratory_problems_due_to_motor_neuron_disease,
+                  sequelae.severe_motor_impairment_and_severe_respiratory_problems_due_to_motor_neuron_disease,
+                  sequelae.moderate_motor_impairment_and_speech_problems_due_to_motor_neuron_disease,
+                  sequelae.severe_motor_impairment_and_speech_problems_due_to_motor_neuron_disease,
+                  sequelae.mild_motor_impairment_due_to_motor_neuron_disease,
+                  sequelae.moderate_motor_impairment_due_to_motor_neuron_disease,
+                  sequelae.severe_motor_impairment_due_to_motor_neuron_disease,
+                  sequelae.mild_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease,
+                  sequelae.moderate_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease,
+                  sequelae.severe_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease,
+                  sequelae.mild_respiratory_problems_due_to_motor_neuron_disease,
+                  sequelae.moderate_respiratory_problems_due_to_motor_neuron_disease,
+                  sequelae.severe_respiratory_problems_due_to_motor_neuron_disease,
                   sequelae.speech_problems_due_to_motor_neuron_disease, sequelae.diagnosis_of_motor_neuron_disease, ),
     ),
     'other_neurological_disorders': Cause(
@@ -3743,7 +3909,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(557),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3755,7 +3922,7 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.other_neurological_disorders, 
+        sequelae=(sequelae.other_neurological_disorders,
                   sequelae.guillain_barre_syndrome_due_to_other_neurological_disorders, ),
     ),
     'mental_disorders': Cause(
@@ -3763,7 +3930,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(558),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=2,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3781,7 +3949,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(559),
         dismod_id=meid(1964),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3798,7 +3967,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(560),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3810,10 +3980,10 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_alcohol_dependence, sequelae.moderate_alcohol_dependence, 
-                  sequelae.severe_alcohol_dependence, sequelae.mild_fetal_alcohol_syndrome, 
-                  sequelae.moderate_fetal_alcohol_syndrome, sequelae.severe_fetal_alcohol_syndrome, 
-                  sequelae.very_mild_alcohol_dependence, sequelae.asymptomatic_alcohol_dependence, 
+        sequelae=(sequelae.mild_alcohol_dependence, sequelae.moderate_alcohol_dependence,
+                  sequelae.severe_alcohol_dependence, sequelae.mild_fetal_alcohol_syndrome,
+                  sequelae.moderate_fetal_alcohol_syndrome, sequelae.severe_fetal_alcohol_syndrome,
+                  sequelae.very_mild_alcohol_dependence, sequelae.asymptomatic_alcohol_dependence,
                   sequelae.asymptomatic_fetal_alcohol_syndrome, ),
     ),
     'drug_use_disorders': Cause(
@@ -3821,7 +3991,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(561),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3839,7 +4010,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(562),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3851,7 +4023,7 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_opioid_dependence, sequelae.severe_opioid_dependence, 
+        sequelae=(sequelae.mild_opioid_dependence, sequelae.severe_opioid_dependence,
                   sequelae.asymptomatic_opioid_dependence, ),
     ),
     'cocaine_use_disorders': Cause(
@@ -3859,7 +4031,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(563),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3871,7 +4044,7 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_cocaine_dependence, sequelae.severe_cocaine_dependence, 
+        sequelae=(sequelae.mild_cocaine_dependence, sequelae.severe_cocaine_dependence,
                   sequelae.asymptomatic_cocaine_dependence, ),
     ),
     'amphetamine_use_disorders': Cause(
@@ -3879,7 +4052,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(564),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3891,7 +4065,7 @@ causes = Causes(**{
             yld_age_start=scalar(10.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_amphetamine_dependence, sequelae.severe_amphetamine_dependence, 
+        sequelae=(sequelae.mild_amphetamine_dependence, sequelae.severe_amphetamine_dependence,
                   sequelae.asymptomatic_amphetamine_dependence, ),
     ),
     'cannabis_use_disorders': Cause(
@@ -3899,7 +4073,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(565),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3909,7 +4084,7 @@ causes = Causes(**{
             yld_age_start=scalar(10.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_cannabis_dependence, sequelae.severe_cannabis_dependence, 
+        sequelae=(sequelae.mild_cannabis_dependence, sequelae.severe_cannabis_dependence,
                   sequelae.asymptomatic_cannabis_dependence, ),
     ),
     'other_drug_use_disorders': Cause(
@@ -3917,7 +4092,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(566),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3936,7 +4112,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(567),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3952,7 +4129,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(568),
         dismod_id=meid(1981),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3962,8 +4140,8 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_major_depressive_disorder, sequelae.moderate_major_depressive_disorder, 
-                  sequelae.severe_major_depressive_disorder, 
+        sequelae=(sequelae.mild_major_depressive_disorder, sequelae.moderate_major_depressive_disorder,
+                  sequelae.severe_major_depressive_disorder,
                   sequelae.major_depressive_disorder_currently_without_symptoms, ),
     ),
     'dysthymia': Cause(
@@ -3971,7 +4149,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(569),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3988,7 +4167,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(570),
         dismod_id=meid(1986),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -3998,7 +4178,7 @@ causes = Causes(**{
             yld_age_start=scalar(10.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.bipolar_disorder_manic_state, sequelae.bipolar_disorder_residual_state, 
+        sequelae=(sequelae.bipolar_disorder_manic_state, sequelae.bipolar_disorder_residual_state,
                   sequelae.bipolar_disorder_depressive_state, ),
     ),
     'anxiety_disorders': Cause(
@@ -4006,7 +4186,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(571),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4016,7 +4197,7 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_anxiety_disorders, sequelae.moderate_anxiety_disorders, 
+        sequelae=(sequelae.mild_anxiety_disorders, sequelae.moderate_anxiety_disorders,
                   sequelae.severe_anxiety_disorders, sequelae.anxiety_disorders_currently_without_symptoms, ),
     ),
     'eating_disorders': Cause(
@@ -4024,7 +4205,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(572),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4042,7 +4224,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(573),
         dismod_id=meid(1993),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4061,7 +4244,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(574),
         dismod_id=meid(1994),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4080,7 +4264,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(575),
         dismod_id=meid(18668),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4090,11 +4275,11 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.autism_spectrum_disorders_without_intellectual_disability, 
-                  sequelae.autism_spectrum_disorders_with_borderline_intellectual_disability, 
-                  sequelae.autism_spectrum_disorders_with_mild_intellectual_disability, 
-                  sequelae.autism_spectrum_disorders_with_moderate_intellectual_disability, 
-                  sequelae.autism_spectrum_disorders_with_severe_intellectual_disability, 
+        sequelae=(sequelae.autism_spectrum_disorders_without_intellectual_disability,
+                  sequelae.autism_spectrum_disorders_with_borderline_intellectual_disability,
+                  sequelae.autism_spectrum_disorders_with_mild_intellectual_disability,
+                  sequelae.autism_spectrum_disorders_with_moderate_intellectual_disability,
+                  sequelae.autism_spectrum_disorders_with_severe_intellectual_disability,
                   sequelae.autism_spectrum_disorders_with_profound_intellectual_disability, ),
     ),
     'attention_deficit_hyperactivity_disorder': Cause(
@@ -4102,7 +4287,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(578),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4112,7 +4298,7 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.symptomatic_attention_deficit_hyperactivity_disorder, 
+        sequelae=(sequelae.symptomatic_attention_deficit_hyperactivity_disorder,
                   sequelae.attention_deficit_hyperactivity_disorder_currently_without_symptoms, ),
     ),
     'conduct_disorder': Cause(
@@ -4120,7 +4306,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(579),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4137,7 +4324,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(582),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4147,10 +4335,10 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.borderline_idiopathic_developmental_intellectual_disability, 
-                  sequelae.mild_idiopathic_developmental_intellectual_disability, 
-                  sequelae.moderate_idiopathic_developmental_intellectual_disability, 
-                  sequelae.severe_idiopathic_developmental_intellectual_disability, 
+        sequelae=(sequelae.borderline_idiopathic_developmental_intellectual_disability,
+                  sequelae.mild_idiopathic_developmental_intellectual_disability,
+                  sequelae.moderate_idiopathic_developmental_intellectual_disability,
+                  sequelae.severe_idiopathic_developmental_intellectual_disability,
                   sequelae.profound_idiopathic_developmental_intellectual_disability, ),
     ),
     'other_mental_disorders': Cause(
@@ -4158,7 +4346,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(585),
         dismod_id=meid(2926),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4168,7 +4357,7 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_other_mental_disorders, sequelae.moderate_other_mental_disorders, 
+        sequelae=(sequelae.mild_other_mental_disorders, sequelae.moderate_other_mental_disorders,
                   sequelae.severe_other_mental_disorders, sequelae.other_mental_disorders_currently_without_symptoms, ),
     ),
     'diabetes_mellitus': Cause(
@@ -4176,7 +4365,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(587),
         dismod_id=meid(2005),
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4194,7 +4384,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(588),
         dismod_id=meid(2017),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4213,7 +4404,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(589),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4231,7 +4423,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(591),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4243,20 +4436,20 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.end_stage_renal_disease_after_transplant_due_to_hypertension, 
-                  sequelae.end_stage_renal_disease_on_dialysis_due_to_hypertension, 
-                  sequelae.stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_hypertension, 
-                  sequelae.stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_hypertension, 
-                  sequelae.stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_hypertension, 
-                  sequelae.stage_iii_chronic_kidney_disease_without_anemia_due_to_hypertension, 
-                  sequelae.stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_hypertension, 
-                  sequelae.stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_hypertension, 
-                  sequelae.stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_hypertension, 
-                  sequelae.stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_hypertension, 
-                  sequelae.stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_hypertension, 
-                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_hypertension, 
-                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_hypertension, 
-                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_hypertension, 
+        sequelae=(sequelae.end_stage_renal_disease_after_transplant_due_to_hypertension,
+                  sequelae.end_stage_renal_disease_on_dialysis_due_to_hypertension,
+                  sequelae.stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_hypertension,
+                  sequelae.stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_hypertension,
+                  sequelae.stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_hypertension,
+                  sequelae.stage_iii_chronic_kidney_disease_without_anemia_due_to_hypertension,
+                  sequelae.stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_hypertension,
+                  sequelae.stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_hypertension,
+                  sequelae.stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_hypertension,
+                  sequelae.stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_hypertension,
+                  sequelae.stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_hypertension,
+                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_hypertension,
+                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_hypertension,
+                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_hypertension,
                   sequelae.albuminuria_with_preserved_gfr_due_to_hypertension, ),
     ),
     'chronic_kidney_disease_due_to_glomerulonephritis': Cause(
@@ -4264,7 +4457,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(592),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4276,20 +4470,20 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.end_stage_renal_disease_after_transplant_due_to_glomerulonephritis, 
-                  sequelae.end_stage_renal_disease_on_dialysis_due_to_glomerulonephritis, 
-                  sequelae.stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_glomerulonephritis, 
-                  sequelae.stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_glomerulonephritis, 
-                  sequelae.stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_glomerulonephritis, 
-                  sequelae.stage_iii_chronic_kidney_disease_without_anemia_due_to_glomerulonephritis, 
-                  sequelae.stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_glomerulonephritis, 
-                  sequelae.stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_glomerulonephritis, 
-                  sequelae.stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_glomerulonephritis, 
-                  sequelae.stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_glomerulonephritis, 
-                  sequelae.stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_glomerulonephritis, 
-                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_glomerulonephritis, 
-                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_glomerulonephritis, 
-                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_glomerulonephritis, 
+        sequelae=(sequelae.end_stage_renal_disease_after_transplant_due_to_glomerulonephritis,
+                  sequelae.end_stage_renal_disease_on_dialysis_due_to_glomerulonephritis,
+                  sequelae.stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_glomerulonephritis,
+                  sequelae.stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_glomerulonephritis,
+                  sequelae.stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_glomerulonephritis,
+                  sequelae.stage_iii_chronic_kidney_disease_without_anemia_due_to_glomerulonephritis,
+                  sequelae.stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_glomerulonephritis,
+                  sequelae.stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_glomerulonephritis,
+                  sequelae.stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_glomerulonephritis,
+                  sequelae.stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_glomerulonephritis,
+                  sequelae.stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_glomerulonephritis,
+                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_glomerulonephritis,
+                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_glomerulonephritis,
+                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_glomerulonephritis,
                   sequelae.albuminuria_with_preserved_gfr_due_to_glomerulonephritis, ),
     ),
     'chronic_kidney_disease_due_to_other_and_unspecified_causes': Cause(
@@ -4297,7 +4491,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(593),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4309,20 +4504,20 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.end_stage_renal_disease_after_transplant_due_to_other_causes, 
-                  sequelae.end_stage_renal_disease_on_dialysis_due_to_other_causes, 
-                  sequelae.stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_other_causes, 
-                  sequelae.stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_other_causes, 
-                  sequelae.stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_other_causes, 
-                  sequelae.stage_iii_chronic_kidney_disease_without_anemia_due_to_other_causes, 
-                  sequelae.stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_other_causes, 
-                  sequelae.stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_causes, 
-                  sequelae.stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_causes, 
-                  sequelae.stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_causes, 
-                  sequelae.stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_other_causes, 
-                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_causes, 
-                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_causes, 
-                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_causes, 
+        sequelae=(sequelae.end_stage_renal_disease_after_transplant_due_to_other_causes,
+                  sequelae.end_stage_renal_disease_on_dialysis_due_to_other_causes,
+                  sequelae.stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_other_causes,
+                  sequelae.stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_other_causes,
+                  sequelae.stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_other_causes,
+                  sequelae.stage_iii_chronic_kidney_disease_without_anemia_due_to_other_causes,
+                  sequelae.stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_other_causes,
+                  sequelae.stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_causes,
+                  sequelae.stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_causes,
+                  sequelae.stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_causes,
+                  sequelae.stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_other_causes,
+                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_causes,
+                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_causes,
+                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_causes,
                   sequelae.albuminuria_with_preserved_gfr_due_to_other_causes, ),
     ),
     'urinary_diseases_and_male_infertility': Cause(
@@ -4330,7 +4525,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(594),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4348,7 +4544,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(595),
         dismod_id=meid(2055),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4367,7 +4564,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(596),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4379,7 +4577,7 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_urolithiasis_episodes, sequelae.moderate_urolithiasis_episodes, 
+        sequelae=(sequelae.mild_urolithiasis_episodes, sequelae.moderate_urolithiasis_episodes,
                   sequelae.severe_urolithiasis_episodes, ),
     ),
     'benign_prostatic_hyperplasia': Cause(
@@ -4387,7 +4585,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(597),
         dismod_id=meid(2060),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=True,
@@ -4397,7 +4596,7 @@ causes = Causes(**{
             yld_age_start=scalar(40.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.asymptomatic_benign_prostatic_hyperplasia, 
+        sequelae=(sequelae.asymptomatic_benign_prostatic_hyperplasia,
                   sequelae.symptomatic_benign_prostatic_hyperplasia, ),
     ),
     'male_infertility': Cause(
@@ -4405,7 +4604,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(598),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=True,
@@ -4421,7 +4621,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(602),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4440,7 +4641,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(603),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4458,7 +4660,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(604),
         dismod_id=meid(2064),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4470,10 +4673,10 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.asymptomatic_uterine_fibroids, 
-                  sequelae.mild_abdominal_pain_due_to_uterine_fibroids_with_mild_anemia, 
-                  sequelae.mild_abdominal_pain_due_to_uterine_fibroids_with_moderate_anemia, 
-                  sequelae.mild_abdominal_pain_due_to_uterine_fibroids_with_severe_anemia, 
+        sequelae=(sequelae.asymptomatic_uterine_fibroids,
+                  sequelae.mild_abdominal_pain_due_to_uterine_fibroids_with_mild_anemia,
+                  sequelae.mild_abdominal_pain_due_to_uterine_fibroids_with_moderate_anemia,
+                  sequelae.mild_abdominal_pain_due_to_uterine_fibroids_with_severe_anemia,
                   sequelae.mild_abdominal_pain_due_to_uterine_fibroids_without_anemia, ),
     ),
     'polycystic_ovarian_syndrome': Cause(
@@ -4481,7 +4684,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(605),
         dismod_id=meid(2068),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4493,11 +4697,11 @@ causes = Causes(**{
             yld_age_start=scalar(10.0),
             yld_age_end=scalar(50.0),
         ),
-        sequelae=(sequelae.primary_infertility_due_to_polycystic_ovarian_syndrome, 
-                  sequelae.asymptomatic_polycystic_ovarian_syndrome, 
-                  sequelae.hirsutism_due_to_polycystic_ovarian_syndrome, 
-                  sequelae.hirsutism_and_primary_infertility_due_to_polycystic_ovarian_syndrome, 
-                  sequelae.hirsutism_and_secondary_infertility_due_to_polycystic_ovarian_syndrome, 
+        sequelae=(sequelae.primary_infertility_due_to_polycystic_ovarian_syndrome,
+                  sequelae.asymptomatic_polycystic_ovarian_syndrome,
+                  sequelae.hirsutism_due_to_polycystic_ovarian_syndrome,
+                  sequelae.hirsutism_and_primary_infertility_due_to_polycystic_ovarian_syndrome,
+                  sequelae.hirsutism_and_secondary_infertility_due_to_polycystic_ovarian_syndrome,
                   sequelae.secondary_infertility_due_to_polycystic_ovarian_syndrome, ),
     ),
     'female_infertility': Cause(
@@ -4505,7 +4709,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(606),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4521,7 +4726,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(607),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4533,16 +4739,16 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(50.0),
         ),
-        sequelae=(sequelae.mild_abdominal_pain_due_to_endometriosis, 
-                  sequelae.moderate_abdominal_pain_due_to_endometriosis, 
-                  sequelae.primary_infertility_due_to_endometriosis, 
-                  sequelae.secondary_infertility_due_to_endometriosis, sequelae.asymptomatic_endometriosis, 
-                  sequelae.mild_abdominal_pain_and_primary_infertility_due_to_endometriosis, 
-                  sequelae.moderate_abdominal_pain_and_primary_infertility_due_to_endometriosis, 
-                  sequelae.severe_abdominal_pain_and_primary_infertility_due_to_endometriosis, 
-                  sequelae.mild_abdominal_pain_and_secondary_infertility_due_to_endometriosis, 
-                  sequelae.moderate_abdominal_pain_and_secondary_infertility_due_to_endometriosis, 
-                  sequelae.severe_abdominal_pain_and_secondary_infertility_due_to_endometriosis, 
+        sequelae=(sequelae.mild_abdominal_pain_due_to_endometriosis,
+                  sequelae.moderate_abdominal_pain_due_to_endometriosis,
+                  sequelae.primary_infertility_due_to_endometriosis,
+                  sequelae.secondary_infertility_due_to_endometriosis, sequelae.asymptomatic_endometriosis,
+                  sequelae.mild_abdominal_pain_and_primary_infertility_due_to_endometriosis,
+                  sequelae.moderate_abdominal_pain_and_primary_infertility_due_to_endometriosis,
+                  sequelae.severe_abdominal_pain_and_primary_infertility_due_to_endometriosis,
+                  sequelae.mild_abdominal_pain_and_secondary_infertility_due_to_endometriosis,
+                  sequelae.moderate_abdominal_pain_and_secondary_infertility_due_to_endometriosis,
+                  sequelae.severe_abdominal_pain_and_secondary_infertility_due_to_endometriosis,
                   sequelae.severe_endometriosis, ),
     ),
     'genital_prolapse': Cause(
@@ -4550,7 +4756,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(608),
         dismod_id=meid(2078),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4562,8 +4769,8 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.asymptomatic_genital_prolapse, sequelae.abdominal_pain_due_to_genital_prolapse, 
-                  sequelae.stress_incontinence_due_to_genital_prolapse, 
+        sequelae=(sequelae.asymptomatic_genital_prolapse, sequelae.abdominal_pain_due_to_genital_prolapse,
+                  sequelae.stress_incontinence_due_to_genital_prolapse,
                   sequelae.abdominal_pain_and_stress_incontinence_due_to_genital_prolapse, ),
     ),
     'premenstrual_syndrome': Cause(
@@ -4571,7 +4778,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(609),
         dismod_id=meid(2079),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4581,8 +4789,8 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(50.0),
         ),
-        sequelae=(sequelae.abdominal_pain_due_to_premenstrual_syndrome, 
-                  sequelae.depression_due_to_premenstrual_syndrome, sequelae.asymptomatic_premenstrual_syndrome, 
+        sequelae=(sequelae.abdominal_pain_due_to_premenstrual_syndrome,
+                  sequelae.depression_due_to_premenstrual_syndrome, sequelae.asymptomatic_premenstrual_syndrome,
                   sequelae.abdominal_pain_and_depression_due_to_premenstrual_syndrome, ),
     ),
     'other_gynecological_diseases': Cause(
@@ -4590,7 +4798,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(612),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4602,11 +4811,11 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(50.0),
         ),
-        sequelae=(sequelae.mild_anemia_due_to_menstrual_disorders, 
-                  sequelae.moderate_anemia_due_to_menstrual_disorders, 
-                  sequelae.severe_anemia_due_to_menstrual_disorders, 
-                  sequelae.asymptomatic_other_gynecological_disorders, sequelae.mild_other_gynecological_disorders, 
-                  sequelae.moderate_other_gynecological_disorders, sequelae.severe_other_gynecological_disorders, 
+        sequelae=(sequelae.mild_anemia_due_to_menstrual_disorders,
+                  sequelae.moderate_anemia_due_to_menstrual_disorders,
+                  sequelae.severe_anemia_due_to_menstrual_disorders,
+                  sequelae.asymptomatic_other_gynecological_disorders, sequelae.mild_other_gynecological_disorders,
+                  sequelae.moderate_other_gynecological_disorders, sequelae.severe_other_gynecological_disorders,
                   sequelae.menstrual_disorders_without_anemia, ),
     ),
     'hemoglobinopathies_and_hemolytic_anemias': Cause(
@@ -4614,7 +4823,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(613),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4632,7 +4842,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(614),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4644,22 +4855,22 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_heart_failure_due_to_thalassemias, 
-                  sequelae.moderate_heart_failure_due_to_thalassemias, 
-                  sequelae.severe_heart_failure_due_to_thalassemias, 
-                  sequelae.beta_thalassemia_major_severe_infection_with_severe_anemia, 
-                  sequelae.beta_thalassemia_major_with_mild_anemia, 
-                  sequelae.beta_thalassemia_major_with_moderate_anemia, 
-                  sequelae.beta_thalassemia_major_with_severe_anemia, 
-                  sequelae.hemoglobin_e_beta_thalassemia_severe_infection_with_severe_anemia, 
-                  sequelae.hemoglobin_e_beta_thalassemia_with_mild_anemia, 
-                  sequelae.hemoglobin_e_beta_thalassemia_with_moderate_anemia, 
-                  sequelae.hemoglobin_e_beta_thalassemia_with_severe_anemia, 
-                  sequelae.hemoglobin_h_disease_severe_infection_with_severe_anemia, 
-                  sequelae.hemoglobin_h_disease_with_mild_anemia, sequelae.hemoglobin_h_disease_with_moderate_anemia, 
-                  sequelae.hemoglobin_h_disease_with_severe_anemia, sequelae.hemoglobin_h_disease_without_anemia, 
-                  sequelae.beta_thalassemia_major_without_anemia, 
-                  sequelae.hemoglobin_e_beta_thalassemia_without_anemia, 
+        sequelae=(sequelae.mild_heart_failure_due_to_thalassemias,
+                  sequelae.moderate_heart_failure_due_to_thalassemias,
+                  sequelae.severe_heart_failure_due_to_thalassemias,
+                  sequelae.beta_thalassemia_major_severe_infection_with_severe_anemia,
+                  sequelae.beta_thalassemia_major_with_mild_anemia,
+                  sequelae.beta_thalassemia_major_with_moderate_anemia,
+                  sequelae.beta_thalassemia_major_with_severe_anemia,
+                  sequelae.hemoglobin_e_beta_thalassemia_severe_infection_with_severe_anemia,
+                  sequelae.hemoglobin_e_beta_thalassemia_with_mild_anemia,
+                  sequelae.hemoglobin_e_beta_thalassemia_with_moderate_anemia,
+                  sequelae.hemoglobin_e_beta_thalassemia_with_severe_anemia,
+                  sequelae.hemoglobin_h_disease_severe_infection_with_severe_anemia,
+                  sequelae.hemoglobin_h_disease_with_mild_anemia, sequelae.hemoglobin_h_disease_with_moderate_anemia,
+                  sequelae.hemoglobin_h_disease_with_severe_anemia, sequelae.hemoglobin_h_disease_without_anemia,
+                  sequelae.beta_thalassemia_major_without_anemia,
+                  sequelae.hemoglobin_e_beta_thalassemia_without_anemia,
                   sequelae.treated_heart_failure_due_to_thalassemias, ),
     ),
     'sickle_cell_disorders': Cause(
@@ -4667,7 +4878,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(615),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4679,35 +4891,35 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_without_anemia, 
-                  sequelae.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_without_anemia, 
-                  sequelae.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_severe_anemia, 
-                  sequelae.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_stroke_and_severe_anemia, 
-                  sequelae.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_stroke_without_anemia, 
-                  sequelae.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_stroke_and_severe_anemia, 
-                  sequelae.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_stroke_without_anemia, 
-                  sequelae.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_mild_anemia, 
-                  sequelae.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_moderate_anemia, 
-                  sequelae.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_severe_anemia, 
-                  sequelae.hemoglobin_sc_disease_without_anemia, 
-                  sequelae.hemoglobin_sc_disease_with_vaso_occlusive_crisis_and_severe_anemia, 
-                  sequelae.hemoglobin_sc_disease_with_vaso_occlusive_crisis_without_anemia, 
-                  sequelae.hemoglobin_sc_disease_with_stroke_and_severe_anemia, 
-                  sequelae.hemoglobin_sc_disease_with_stroke_without_anemia, 
-                  sequelae.hemoglobin_sc_disease_with_vaso_occlusive_crisis_stroke_and_severe_anemia, 
-                  sequelae.hemoglobin_sc_disease_with_vaso_occlusive_crisis_and_stroke_without_anemia, 
-                  sequelae.hemoglobin_sc_disease_with_mild_anemia, 
-                  sequelae.hemoglobin_sc_disease_with_moderate_anemia, 
-                  sequelae.hemoglobin_sc_disease_with_severe_anemia, 
-                  sequelae.mild_sickle_cell_beta_thalassemia_without_anemia, 
-                  sequelae.mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_severe_anemia, 
-                  sequelae.mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_without_anemia, 
-                  sequelae.mild_sickle_cell_beta_thalassemia_with_stroke_and_severe_anemia, 
-                  sequelae.mild_sickle_cell_beta_thalassemia_with_stroke_without_anemia, 
-                  sequelae.mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_stroke_and_severe_anemia, 
-                  sequelae.mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_stroke_without_anemia, 
-                  sequelae.mild_sickle_cell_beta_thalassemia_with_mild_anemia, 
-                  sequelae.mild_sickle_cell_beta_thalassemia_with_moderate_anemia, 
+        sequelae=(sequelae.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_without_anemia,
+                  sequelae.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_without_anemia,
+                  sequelae.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_severe_anemia,
+                  sequelae.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_stroke_and_severe_anemia,
+                  sequelae.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_stroke_without_anemia,
+                  sequelae.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_stroke_and_severe_anemia,
+                  sequelae.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_stroke_without_anemia,
+                  sequelae.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_mild_anemia,
+                  sequelae.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_moderate_anemia,
+                  sequelae.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_severe_anemia,
+                  sequelae.hemoglobin_sc_disease_without_anemia,
+                  sequelae.hemoglobin_sc_disease_with_vaso_occlusive_crisis_and_severe_anemia,
+                  sequelae.hemoglobin_sc_disease_with_vaso_occlusive_crisis_without_anemia,
+                  sequelae.hemoglobin_sc_disease_with_stroke_and_severe_anemia,
+                  sequelae.hemoglobin_sc_disease_with_stroke_without_anemia,
+                  sequelae.hemoglobin_sc_disease_with_vaso_occlusive_crisis_stroke_and_severe_anemia,
+                  sequelae.hemoglobin_sc_disease_with_vaso_occlusive_crisis_and_stroke_without_anemia,
+                  sequelae.hemoglobin_sc_disease_with_mild_anemia,
+                  sequelae.hemoglobin_sc_disease_with_moderate_anemia,
+                  sequelae.hemoglobin_sc_disease_with_severe_anemia,
+                  sequelae.mild_sickle_cell_beta_thalassemia_without_anemia,
+                  sequelae.mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_severe_anemia,
+                  sequelae.mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_without_anemia,
+                  sequelae.mild_sickle_cell_beta_thalassemia_with_stroke_and_severe_anemia,
+                  sequelae.mild_sickle_cell_beta_thalassemia_with_stroke_without_anemia,
+                  sequelae.mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_stroke_and_severe_anemia,
+                  sequelae.mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_stroke_without_anemia,
+                  sequelae.mild_sickle_cell_beta_thalassemia_with_mild_anemia,
+                  sequelae.mild_sickle_cell_beta_thalassemia_with_moderate_anemia,
                   sequelae.mild_sickle_cell_beta_thalassemia_with_severe_anemia, ),
     ),
     'g6pd_deficiency': Cause(
@@ -4715,7 +4927,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(616),
         dismod_id=meid(2112),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4727,10 +4940,10 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_anemia_due_to_g6pd_deficiency, sequelae.moderate_anemia_due_to_g6pd_deficiency, 
-                  sequelae.severe_anemia_due_to_g6pd_deficiency, sequelae.mild_heart_failure_due_to_g6pd_deficiency, 
-                  sequelae.moderate_heart_failure_due_to_g6pd_deficiency, 
-                  sequelae.severe_heart_failure_due_to_g6pd_deficiency, sequelae.asymptomatic_g6pd_deficiency, 
+        sequelae=(sequelae.mild_anemia_due_to_g6pd_deficiency, sequelae.moderate_anemia_due_to_g6pd_deficiency,
+                  sequelae.severe_anemia_due_to_g6pd_deficiency, sequelae.mild_heart_failure_due_to_g6pd_deficiency,
+                  sequelae.moderate_heart_failure_due_to_g6pd_deficiency,
+                  sequelae.severe_heart_failure_due_to_g6pd_deficiency, sequelae.asymptomatic_g6pd_deficiency,
                   sequelae.treated_heart_failure_due_to_g6pd_deficiency, ),
     ),
     'other_hemoglobinopathies_and_hemolytic_anemias': Cause(
@@ -4738,7 +4951,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(618),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4750,13 +4964,13 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_anemia_due_to_other_hemoglobinopathies_and_hemolytic_anemias, 
-                  sequelae.moderate_anemia_due_to_other_hemoglobinopathies_and_hemolytic_anemias, 
-                  sequelae.severe_anemia_due_to_other_hemoglobinopathies_and_hemolytic_anemias, 
-                  sequelae.mild_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias, 
-                  sequelae.moderate_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias, 
-                  sequelae.severe_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias, 
-                  sequelae.other_hemoglobinopathies_and_hemolytic_anemias, 
+        sequelae=(sequelae.mild_anemia_due_to_other_hemoglobinopathies_and_hemolytic_anemias,
+                  sequelae.moderate_anemia_due_to_other_hemoglobinopathies_and_hemolytic_anemias,
+                  sequelae.severe_anemia_due_to_other_hemoglobinopathies_and_hemolytic_anemias,
+                  sequelae.mild_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias,
+                  sequelae.moderate_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias,
+                  sequelae.severe_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias,
+                  sequelae.other_hemoglobinopathies_and_hemolytic_anemias,
                   sequelae.treated_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias, ),
     ),
     'endocrine_metabolic_blood_and_immune_disorders': Cause(
@@ -4764,7 +4978,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(619),
         dismod_id=meid(2125),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4776,16 +4991,16 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders, 
-                  sequelae.moderate_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders, 
-                  sequelae.severe_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders, 
-                  sequelae.mild_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders, 
-                  sequelae.moderate_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders, 
-                  sequelae.severe_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders, 
-                  sequelae.asymptomatic_endocrine_metabolic_blood_and_immune_disorders, 
-                  sequelae.mild_endocrine_metabolic_blood_and_immune_disorders, 
-                  sequelae.moderate_endocrine_metabolic_blood_and_immune_disorders, 
-                  sequelae.severe_endocrine_metabolic_blood_and_immune_disorders, 
+        sequelae=(sequelae.mild_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders,
+                  sequelae.moderate_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders,
+                  sequelae.severe_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders,
+                  sequelae.mild_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders,
+                  sequelae.moderate_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders,
+                  sequelae.severe_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders,
+                  sequelae.asymptomatic_endocrine_metabolic_blood_and_immune_disorders,
+                  sequelae.mild_endocrine_metabolic_blood_and_immune_disorders,
+                  sequelae.moderate_endocrine_metabolic_blood_and_immune_disorders,
+                  sequelae.severe_endocrine_metabolic_blood_and_immune_disorders,
                   sequelae.treated_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders, ),
     ),
     'musculoskeletal_disorders': Cause(
@@ -4793,7 +5008,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(626),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=2,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4811,7 +5027,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(627),
         dismod_id=meid(2137),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4823,7 +5040,7 @@ causes = Causes(**{
             yld_age_start=scalar(5.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_rheumatoid_arthritis, sequelae.moderate_rheumatoid_arthritis, 
+        sequelae=(sequelae.mild_rheumatoid_arthritis, sequelae.moderate_rheumatoid_arthritis,
                   sequelae.severe_rheumatoid_arthritis, ),
     ),
     'osteoarthritis': Cause(
@@ -4831,7 +5048,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(628),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4841,8 +5059,8 @@ causes = Causes(**{
             yld_age_start=scalar(30.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_osteoarthritis_of_the_hip, sequelae.moderate_osteoarthritis_of_the_hip, 
-                  sequelae.severe_osteoarthritis_of_the_hip, sequelae.mild_osteoarthritis_of_the_knee, 
+        sequelae=(sequelae.mild_osteoarthritis_of_the_hip, sequelae.moderate_osteoarthritis_of_the_hip,
+                  sequelae.severe_osteoarthritis_of_the_hip, sequelae.mild_osteoarthritis_of_the_knee,
                   sequelae.moderate_osteoarthritis_of_the_knee, sequelae.severe_osteoarthritis_of_the_knee, ),
     ),
     'low_back_pain': Cause(
@@ -4850,7 +5068,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(630),
         dismod_id=meid(2149),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4860,10 +5079,10 @@ causes = Causes(**{
             yld_age_start=scalar(5.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.severe_low_back_pain_with_leg_pain, sequelae.severe_low_back_pain_without_leg_pain, 
-                  sequelae.most_severe_low_back_pain_with_leg_pain, 
-                  sequelae.most_severe_low_back_pain_without_leg_pain, sequelae.mild_low_back_pain_with_leg_pain, 
-                  sequelae.mild_low_back_pain_without_leg_pain, sequelae.moderate_low_back_pain_with_leg_pain, 
+        sequelae=(sequelae.severe_low_back_pain_with_leg_pain, sequelae.severe_low_back_pain_without_leg_pain,
+                  sequelae.most_severe_low_back_pain_with_leg_pain,
+                  sequelae.most_severe_low_back_pain_without_leg_pain, sequelae.mild_low_back_pain_with_leg_pain,
+                  sequelae.mild_low_back_pain_without_leg_pain, sequelae.moderate_low_back_pain_with_leg_pain,
                   sequelae.moderate_low_back_pain_without_leg_pain, ),
     ),
     'neck_pain': Cause(
@@ -4871,7 +5090,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(631),
         dismod_id=meid(2154),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4881,7 +5101,7 @@ causes = Causes(**{
             yld_age_start=scalar(5.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_neck_pain, sequelae.severe_neck_pain, sequelae.moderate_neck_pain, 
+        sequelae=(sequelae.mild_neck_pain, sequelae.severe_neck_pain, sequelae.moderate_neck_pain,
                   sequelae.most_severe_neck_pain, ),
     ),
     'gout': Cause(
@@ -4889,7 +5109,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(632),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4906,7 +5127,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(639),
         dismod_id=meid(3136),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4918,12 +5140,12 @@ causes = Causes(**{
             yld_age_start=scalar(10.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.other_musculoskeletal_disorders_severity_level_2, 
-                  sequelae.other_musculoskeletal_disorders_severity_level_3, 
-                  sequelae.other_musculoskeletal_disorders_severity_level_5, 
-                  sequelae.other_musculoskeletal_disorders_severity_level_6, 
-                  sequelae.other_musculoskeletal_disorders_severity_level_1, 
-                  sequelae.other_musculoskeletal_disorders_severity_level_4, 
+        sequelae=(sequelae.other_musculoskeletal_disorders_severity_level_2,
+                  sequelae.other_musculoskeletal_disorders_severity_level_3,
+                  sequelae.other_musculoskeletal_disorders_severity_level_5,
+                  sequelae.other_musculoskeletal_disorders_severity_level_6,
+                  sequelae.other_musculoskeletal_disorders_severity_level_1,
+                  sequelae.other_musculoskeletal_disorders_severity_level_4,
                   sequelae.asymptomatic_other_musculoskeletal_disorders, ),
     ),
     'other_non_communicable_diseases': Cause(
@@ -4931,7 +5153,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(640),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=2,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4949,7 +5172,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(641),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4967,7 +5191,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(642),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -4979,90 +5204,90 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.severe_motor_and_cognitive_impairment_due_to_anencephaly, 
-                  sequelae.asymptomatic_encephalocele_following_treatment, 
-                  sequelae.borderline_intellectual_disability_due_to_encephalocele, 
-                  sequelae.mild_intellectual_disability_due_to_encephalocele, 
-                  sequelae.moderate_intellectual_disability_due_to_encephalocele, 
-                  sequelae.severe_intellectual_disability_due_to_encephalocele, 
-                  sequelae.profound_intellectual_disability_due_to_encephalocele, 
-                  sequelae.incontinence_due_to_encephalocele, 
-                  sequelae.borderline_intellectual_disability_and_incontinence_due_to_encephalocele, 
-                  sequelae.mild_intellectual_disability_and_incontinence_due_to_encephalocele, 
-                  sequelae.moderate_intellectual_disability_and_incontinence_due_to_encephalocele, 
-                  sequelae.severe_intellectual_disability_and_incontinence_due_to_encephalocele, 
-                  sequelae.profound_intellectual_disability_and_incontinence_due_to_encephalocele, 
-                  sequelae.mild_motor_impairment_due_to_spina_bifida, 
-                  sequelae.moderate_motor_impairment_due_to_spina_bifida, 
-                  sequelae.severe_motor_impairment_due_to_spina_bifida, 
-                  sequelae.mild_motor_impairment_and_borderline_intellectual_disability_due_to_spina_bifida, 
-                  sequelae.moderate_motor_impairment_and_borderline_intellectual_disability_due_to_spina_bifida, 
-                  sequelae.severe_motor_impairment_and_borderline_intellectual_disability_due_to_spina_bifida, 
-                  sequelae.mild_motor_impairment_and_mild_intellectual_disability_due_to_spina_bifida, 
-                  sequelae.moderate_motor_impairment_and_mild_intellectual_disability_due_to_spina_bifida, 
-                  sequelae.severe_motor_impairment_and_mild_intellectual_disability_due_to_spina_bifida, 
-                  sequelae.mild_motor_impairment_and_moderate_intellectual_disability_due_to_spina_bifida, 
-                  sequelae.moderate_motor_impairment_and_moderate_intellectual_disability_due_to_spina_bifida, 
-                  sequelae.severe_motor_impairment_and_moderate_intellectual_disability_due_to_spina_bifida, 
-                  sequelae.mild_motor_impairment_and_severe_intellectual_disability_due_to_spina_bifida, 
-                  sequelae.moderate_motor_impairment_and_severe_intellectual_disability_due_to_spina_bifida, 
-                  sequelae.severe_motor_impairment_and_severe_intellectual_disability_due_to_spina_bifida, 
-                  sequelae.mild_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_spina_bifida, 
-                  sequelae.moderate_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_spina_bifida, 
-                  sequelae.severe_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_spina_bifida, 
-                  sequelae.mild_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_spina_bifida, 
-                  sequelae.moderate_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_spina_bifida, 
-                  sequelae.severe_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_spina_bifida, 
-                  sequelae.mild_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_spina_bifida, 
-                  sequelae.moderate_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_spina_bifida, 
-                  sequelae.severe_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_spina_bifida, 
-                  sequelae.mild_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_spina_bifida, 
-                  sequelae.moderate_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_spina_bifida, 
-                  sequelae.severe_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_spina_bifida, 
-                  sequelae.mild_motor_impairment_and_incontinence_due_to_spina_bifida, 
-                  sequelae.moderate_motor_impairment_and_incontinence_due_to_spina_bifida, 
-                  sequelae.severe_motor_impairment_and_incontinence_due_to_spina_bifida, 
-                  sequelae.mild_motor_impairment_and_profound_intellectual_disability_due_to_spina_bifida, 
-                  sequelae.moderate_motor_impairment_and_profound_intellectual_disability_due_to_spina_bifida, 
-                  sequelae.severe_motor_impairment_and_profound_intellectual_disability_due_to_spina_bifida, 
-                  sequelae.mild_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida, 
-                  sequelae.moderate_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida, 
-                  sequelae.profound_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida, 
-                  sequelae.mild_motor_impairment_due_to_encephalocele, 
-                  sequelae.moderate_motor_impairment_due_to_encephalocele, 
-                  sequelae.severe_motor_impairment_due_to_encephalocele, 
-                  sequelae.mild_motor_impairment_and_incontinence_due_to_encephalocele, 
-                  sequelae.moderate_motor_impairment_and_incontinence_due_to_encephalocele, 
-                  sequelae.severe_motor_impairment_and_incontinence_due_to_encephalocele, 
-                  sequelae.mild_motor_impairment_and_borderline_intellectual_disability_due_to_encephalocele, 
-                  sequelae.moderate_motor_impairment_and_borderline_intellectual_disability_due_to_encephalocele, 
-                  sequelae.severe_motor_impairment_and_borderline_intellectual_disability_due_to_encephalocele, 
-                  sequelae.mild_motor_impairment_and_mild_intellectual_disability_due_to_encephalocele, 
-                  sequelae.moderate_motor_impairment_and_mild_intellectual_disability_due_to_encephalocele, 
-                  sequelae.severe_motor_impairment_and_mild_intellectual_disability_due_to_encephalocele, 
-                  sequelae.mild_motor_impairment_and_moderate_intellectual_disability_due_to_encephalocele, 
-                  sequelae.moderate_motor_impairment_and_moderate_intellectual_disability_due_to_encephalocele, 
-                  sequelae.severe_motor_impairment_and_moderate_intellectual_disability_due_to_encephalocele, 
-                  sequelae.mild_motor_impairment_and_severe_intellectual_disability_due_to_encephalocele, 
-                  sequelae.moderate_motor_impairment_and_severe_intellectual_disability_due_to_encephalocele, 
-                  sequelae.severe_motor_impairment_and_severe_intellectual_disability_due_to_encephalocele, 
-                  sequelae.mild_motor_impairment_and_profound_intellectual_disability_due_to_encephalocele, 
-                  sequelae.moderate_motor_impairment_and_profound_intellectual_disability_due_to_encephalocele, 
-                  sequelae.severe_motor_impairment_and_profound_intellectual_disability_due_to_encephalocele, 
-                  sequelae.mild_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_encephalocele, 
-                  sequelae.moderate_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_encephalocele, 
-                  sequelae.severe_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_encephalocele, 
-                  sequelae.mild_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_encephalocele, 
-                  sequelae.moderate_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_encephalocele, 
-                  sequelae.severe_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_encephalocele, 
-                  sequelae.mild_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_encephalocele, 
-                  sequelae.moderate_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_encephalocele, 
-                  sequelae.severe_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_encephalocele, 
-                  sequelae.mild_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_encephalocele, 
-                  sequelae.moderate_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_encephalocele, 
-                  sequelae.severe_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_encephalocele, 
-                  sequelae.mild_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele, 
-                  sequelae.moderate_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele, 
+        sequelae=(sequelae.severe_motor_and_cognitive_impairment_due_to_anencephaly,
+                  sequelae.asymptomatic_encephalocele_following_treatment,
+                  sequelae.borderline_intellectual_disability_due_to_encephalocele,
+                  sequelae.mild_intellectual_disability_due_to_encephalocele,
+                  sequelae.moderate_intellectual_disability_due_to_encephalocele,
+                  sequelae.severe_intellectual_disability_due_to_encephalocele,
+                  sequelae.profound_intellectual_disability_due_to_encephalocele,
+                  sequelae.incontinence_due_to_encephalocele,
+                  sequelae.borderline_intellectual_disability_and_incontinence_due_to_encephalocele,
+                  sequelae.mild_intellectual_disability_and_incontinence_due_to_encephalocele,
+                  sequelae.moderate_intellectual_disability_and_incontinence_due_to_encephalocele,
+                  sequelae.severe_intellectual_disability_and_incontinence_due_to_encephalocele,
+                  sequelae.profound_intellectual_disability_and_incontinence_due_to_encephalocele,
+                  sequelae.mild_motor_impairment_due_to_spina_bifida,
+                  sequelae.moderate_motor_impairment_due_to_spina_bifida,
+                  sequelae.severe_motor_impairment_due_to_spina_bifida,
+                  sequelae.mild_motor_impairment_and_borderline_intellectual_disability_due_to_spina_bifida,
+                  sequelae.moderate_motor_impairment_and_borderline_intellectual_disability_due_to_spina_bifida,
+                  sequelae.severe_motor_impairment_and_borderline_intellectual_disability_due_to_spina_bifida,
+                  sequelae.mild_motor_impairment_and_mild_intellectual_disability_due_to_spina_bifida,
+                  sequelae.moderate_motor_impairment_and_mild_intellectual_disability_due_to_spina_bifida,
+                  sequelae.severe_motor_impairment_and_mild_intellectual_disability_due_to_spina_bifida,
+                  sequelae.mild_motor_impairment_and_moderate_intellectual_disability_due_to_spina_bifida,
+                  sequelae.moderate_motor_impairment_and_moderate_intellectual_disability_due_to_spina_bifida,
+                  sequelae.severe_motor_impairment_and_moderate_intellectual_disability_due_to_spina_bifida,
+                  sequelae.mild_motor_impairment_and_severe_intellectual_disability_due_to_spina_bifida,
+                  sequelae.moderate_motor_impairment_and_severe_intellectual_disability_due_to_spina_bifida,
+                  sequelae.severe_motor_impairment_and_severe_intellectual_disability_due_to_spina_bifida,
+                  sequelae.mild_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_spina_bifida,
+                  sequelae.moderate_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_spina_bifida,
+                  sequelae.severe_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_spina_bifida,
+                  sequelae.mild_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_spina_bifida,
+                  sequelae.moderate_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_spina_bifida,
+                  sequelae.severe_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_spina_bifida,
+                  sequelae.mild_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_spina_bifida,
+                  sequelae.moderate_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_spina_bifida,
+                  sequelae.severe_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_spina_bifida,
+                  sequelae.mild_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_spina_bifida,
+                  sequelae.moderate_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_spina_bifida,
+                  sequelae.severe_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_spina_bifida,
+                  sequelae.mild_motor_impairment_and_incontinence_due_to_spina_bifida,
+                  sequelae.moderate_motor_impairment_and_incontinence_due_to_spina_bifida,
+                  sequelae.severe_motor_impairment_and_incontinence_due_to_spina_bifida,
+                  sequelae.mild_motor_impairment_and_profound_intellectual_disability_due_to_spina_bifida,
+                  sequelae.moderate_motor_impairment_and_profound_intellectual_disability_due_to_spina_bifida,
+                  sequelae.severe_motor_impairment_and_profound_intellectual_disability_due_to_spina_bifida,
+                  sequelae.mild_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida,
+                  sequelae.moderate_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida,
+                  sequelae.profound_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida,
+                  sequelae.mild_motor_impairment_due_to_encephalocele,
+                  sequelae.moderate_motor_impairment_due_to_encephalocele,
+                  sequelae.severe_motor_impairment_due_to_encephalocele,
+                  sequelae.mild_motor_impairment_and_incontinence_due_to_encephalocele,
+                  sequelae.moderate_motor_impairment_and_incontinence_due_to_encephalocele,
+                  sequelae.severe_motor_impairment_and_incontinence_due_to_encephalocele,
+                  sequelae.mild_motor_impairment_and_borderline_intellectual_disability_due_to_encephalocele,
+                  sequelae.moderate_motor_impairment_and_borderline_intellectual_disability_due_to_encephalocele,
+                  sequelae.severe_motor_impairment_and_borderline_intellectual_disability_due_to_encephalocele,
+                  sequelae.mild_motor_impairment_and_mild_intellectual_disability_due_to_encephalocele,
+                  sequelae.moderate_motor_impairment_and_mild_intellectual_disability_due_to_encephalocele,
+                  sequelae.severe_motor_impairment_and_mild_intellectual_disability_due_to_encephalocele,
+                  sequelae.mild_motor_impairment_and_moderate_intellectual_disability_due_to_encephalocele,
+                  sequelae.moderate_motor_impairment_and_moderate_intellectual_disability_due_to_encephalocele,
+                  sequelae.severe_motor_impairment_and_moderate_intellectual_disability_due_to_encephalocele,
+                  sequelae.mild_motor_impairment_and_severe_intellectual_disability_due_to_encephalocele,
+                  sequelae.moderate_motor_impairment_and_severe_intellectual_disability_due_to_encephalocele,
+                  sequelae.severe_motor_impairment_and_severe_intellectual_disability_due_to_encephalocele,
+                  sequelae.mild_motor_impairment_and_profound_intellectual_disability_due_to_encephalocele,
+                  sequelae.moderate_motor_impairment_and_profound_intellectual_disability_due_to_encephalocele,
+                  sequelae.severe_motor_impairment_and_profound_intellectual_disability_due_to_encephalocele,
+                  sequelae.mild_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_encephalocele,
+                  sequelae.moderate_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_encephalocele,
+                  sequelae.severe_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_encephalocele,
+                  sequelae.mild_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_encephalocele,
+                  sequelae.moderate_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_encephalocele,
+                  sequelae.severe_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_encephalocele,
+                  sequelae.mild_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_encephalocele,
+                  sequelae.moderate_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_encephalocele,
+                  sequelae.severe_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_encephalocele,
+                  sequelae.mild_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_encephalocele,
+                  sequelae.moderate_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_encephalocele,
+                  sequelae.severe_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_encephalocele,
+                  sequelae.mild_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele,
+                  sequelae.moderate_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele,
                   sequelae.severe_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele, ),
     ),
     'congenital_heart_anomalies': Cause(
@@ -5070,7 +5295,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(643),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5082,132 +5308,132 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.asymptomatic_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_without_intellectual_disability_or_heart_failure_due_to_other_congenital_cardiovascular_anomalies, 
-                  sequelae.congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies, 
-                  sequelae.congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies, 
-                  sequelae.congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies, 
-                  sequelae.congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies, 
-                  sequelae.congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies, 
-                  sequelae.congenital_heart_disease_without_intellectual_disability_or_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_and_mild_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_boderline_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_and_moderate_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_borderline_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_and_severe_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_borderline_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_without_intellectual_disability_or_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_and_mild_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_boderline_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_and_moderate_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_borderline_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_and_severe_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_borderline_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_without_heart_failure_or_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_and_mild_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_boderline_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_and_moderate_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_borderline_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_and_severe_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_borderline_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_without_heart_failure_or_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_and_mild_heart_failure_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_boderline_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_and_moderate_heart_failure_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_borderline_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_and_severe_heart_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_borderline_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
+        sequelae=(sequelae.asymptomatic_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_without_intellectual_disability_or_heart_failure_due_to_other_congenital_cardiovascular_anomalies,
+                  sequelae.congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies,
+                  sequelae.congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies,
+                  sequelae.congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies,
+                  sequelae.congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies,
+                  sequelae.congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies,
+                  sequelae.congenital_heart_disease_without_intellectual_disability_or_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_and_mild_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_boderline_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_and_moderate_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_borderline_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_and_severe_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_borderline_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_without_intellectual_disability_or_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_and_mild_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_boderline_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_and_moderate_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_borderline_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_and_severe_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_borderline_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_without_heart_failure_or_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_and_mild_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_boderline_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_and_moderate_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_borderline_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_and_severe_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_borderline_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_without_heart_failure_or_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_and_mild_heart_failure_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_boderline_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_and_moderate_heart_failure_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_borderline_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_and_severe_heart_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_borderline_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
+                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect,
+                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus,
+                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects,
+                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects,
                   sequelae.congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, ),
     ),
     'orofacial_clefts': Cause(
@@ -5215,7 +5441,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(644),
         dismod_id=meid(3245),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5227,9 +5454,9 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.disfigurement_level_1_due_to_orofacial_clefts, 
-                  sequelae.disfigurement_level_2_due_to_orofacial_clefts, 
-                  sequelae.disfigurement_level_2_and_speech_problems_due_to_orofacial_clefts, 
+        sequelae=(sequelae.disfigurement_level_1_due_to_orofacial_clefts,
+                  sequelae.disfigurement_level_2_due_to_orofacial_clefts,
+                  sequelae.disfigurement_level_2_and_speech_problems_due_to_orofacial_clefts,
                   sequelae.asymptomatic_orofacial_clefts, ),
     ),
     'down_syndrome': Cause(
@@ -5237,7 +5464,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(645),
         dismod_id=meid(3246),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5249,52 +5477,52 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(65.0),
         ),
-        sequelae=(sequelae.isolated_congenital_heart_disease_due_to_down_syndrome, 
-                  sequelae.asymptomatic_down_syndrome, 
-                  sequelae.borderline_intellectual_disability_due_to_down_syndrome, 
-                  sequelae.mild_intellectual_disability_due_to_down_syndrome, 
-                  sequelae.moderate_intellectual_disability_due_to_down_syndrome, 
-                  sequelae.severe_intellectual_disability_due_to_down_syndrome, 
-                  sequelae.profound_intellectual_disability_due_to_down_syndrome, 
-                  sequelae.borderline_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome, 
-                  sequelae.mild_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome, 
-                  sequelae.moderate_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome, 
-                  sequelae.severe_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome, 
-                  sequelae.profound_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome, 
-                  sequelae.mild_dementia_due_to_down_syndrome, sequelae.moderate_dementia_due_to_down_syndrome, 
-                  sequelae.severe_dementia_due_to_down_syndrome, 
-                  sequelae.congenital_heart_disease_and_mild_dementia_due_to_down_syndrome, 
-                  sequelae.congenital_heart_disease_and_moderate_dementia_due_to_down_syndrome, 
-                  sequelae.congenital_heart_disease_and_severe_dementia_due_to_down_syndrome, 
-                  sequelae.borderline_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome, 
-                  sequelae.mild_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome, 
-                  sequelae.moderate_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome, 
-                  sequelae.severe_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome, 
-                  sequelae.profound_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome, 
-                  sequelae.borderline_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome, 
-                  sequelae.mild_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome, 
-                  sequelae.moderate_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome, 
-                  sequelae.severe_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome, 
-                  sequelae.profound_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome, 
-                  sequelae.borderline_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome, 
-                  sequelae.mild_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome, 
-                  sequelae.moderate_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome, 
-                  sequelae.severe_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome, 
-                  sequelae.profound_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome, 
-                  sequelae.profound_intellectual_disability_and_mild_dementia_due_to_down_syndrome, 
-                  sequelae.severe_intellectual_disability_and_mild_dementia_due_to_down_syndrome, 
-                  sequelae.moderate_intellectual_disability_and_mild_dementia_due_to_down_syndrome, 
-                  sequelae.mild_intellectual_disability_and_mild_dementia_due_to_down_syndrome, 
-                  sequelae.borderline_intellectual_disability_and_mild_dementia_due_to_down_syndrome, 
-                  sequelae.profound_intellectual_disability_and_moderate_dementia_due_to_down_syndrome, 
-                  sequelae.severe_intellectual_disability_and_moderate_dementia_due_to_down_syndrome, 
-                  sequelae.moderate_intellectual_disability_and_moderate_dementia_due_to_down_syndrome, 
-                  sequelae.mild_intellectual_disability_and_moderate_dementia_due_to_down_syndrome, 
-                  sequelae.borderline_intellectual_disability_and_moderate_dementia_due_to_down_syndrome, 
-                  sequelae.profound_intellectual_disability_and_severe_dementia_due_to_down_syndrome, 
-                  sequelae.severe_intellectual_disability_and_severe_dementia_due_to_down_syndrome, 
-                  sequelae.moderate_intellectual_disability_and_severe_dementia_due_to_down_syndrome, 
-                  sequelae.mild_intellectual_disability_and_severe_dementia_due_to_down_syndrome, 
+        sequelae=(sequelae.isolated_congenital_heart_disease_due_to_down_syndrome,
+                  sequelae.asymptomatic_down_syndrome,
+                  sequelae.borderline_intellectual_disability_due_to_down_syndrome,
+                  sequelae.mild_intellectual_disability_due_to_down_syndrome,
+                  sequelae.moderate_intellectual_disability_due_to_down_syndrome,
+                  sequelae.severe_intellectual_disability_due_to_down_syndrome,
+                  sequelae.profound_intellectual_disability_due_to_down_syndrome,
+                  sequelae.borderline_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome,
+                  sequelae.mild_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome,
+                  sequelae.moderate_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome,
+                  sequelae.severe_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome,
+                  sequelae.profound_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome,
+                  sequelae.mild_dementia_due_to_down_syndrome, sequelae.moderate_dementia_due_to_down_syndrome,
+                  sequelae.severe_dementia_due_to_down_syndrome,
+                  sequelae.congenital_heart_disease_and_mild_dementia_due_to_down_syndrome,
+                  sequelae.congenital_heart_disease_and_moderate_dementia_due_to_down_syndrome,
+                  sequelae.congenital_heart_disease_and_severe_dementia_due_to_down_syndrome,
+                  sequelae.borderline_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome,
+                  sequelae.mild_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome,
+                  sequelae.moderate_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome,
+                  sequelae.severe_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome,
+                  sequelae.profound_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome,
+                  sequelae.borderline_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome,
+                  sequelae.mild_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome,
+                  sequelae.moderate_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome,
+                  sequelae.severe_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome,
+                  sequelae.profound_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome,
+                  sequelae.borderline_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome,
+                  sequelae.mild_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome,
+                  sequelae.moderate_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome,
+                  sequelae.severe_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome,
+                  sequelae.profound_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome,
+                  sequelae.profound_intellectual_disability_and_mild_dementia_due_to_down_syndrome,
+                  sequelae.severe_intellectual_disability_and_mild_dementia_due_to_down_syndrome,
+                  sequelae.moderate_intellectual_disability_and_mild_dementia_due_to_down_syndrome,
+                  sequelae.mild_intellectual_disability_and_mild_dementia_due_to_down_syndrome,
+                  sequelae.borderline_intellectual_disability_and_mild_dementia_due_to_down_syndrome,
+                  sequelae.profound_intellectual_disability_and_moderate_dementia_due_to_down_syndrome,
+                  sequelae.severe_intellectual_disability_and_moderate_dementia_due_to_down_syndrome,
+                  sequelae.moderate_intellectual_disability_and_moderate_dementia_due_to_down_syndrome,
+                  sequelae.mild_intellectual_disability_and_moderate_dementia_due_to_down_syndrome,
+                  sequelae.borderline_intellectual_disability_and_moderate_dementia_due_to_down_syndrome,
+                  sequelae.profound_intellectual_disability_and_severe_dementia_due_to_down_syndrome,
+                  sequelae.severe_intellectual_disability_and_severe_dementia_due_to_down_syndrome,
+                  sequelae.moderate_intellectual_disability_and_severe_dementia_due_to_down_syndrome,
+                  sequelae.mild_intellectual_disability_and_severe_dementia_due_to_down_syndrome,
                   sequelae.borderline_intellectual_disability_and_severe_dementia_due_to_down_syndrome, ),
     ),
     'turner_syndrome': Cause(
@@ -5302,7 +5530,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(646),
         dismod_id=meid(3247),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5312,9 +5541,9 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.congenital_heart_disease_due_to_turner_syndrome, 
-                  sequelae.primary_infertility_due_to_turner_syndrome, 
-                  sequelae.congenital_heart_disease_with_infertility_due_to_turner_syndrome, 
+        sequelae=(sequelae.congenital_heart_disease_due_to_turner_syndrome,
+                  sequelae.primary_infertility_due_to_turner_syndrome,
+                  sequelae.congenital_heart_disease_with_infertility_due_to_turner_syndrome,
                   sequelae.asymptomatic_turner_syndrome, ),
     ),
     'klinefelter_syndrome': Cause(
@@ -5322,7 +5551,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(647),
         dismod_id=meid(3248),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=True,
@@ -5332,11 +5562,11 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.borderline_intellectual_disability_due_to_klinefelter_syndrome, 
-                  sequelae.mild_intellectual_disability_due_to_klinefelter_syndrome, 
-                  sequelae.mild_intellectual_disability_with_infertility_due_to_klinefelter_syndrome, 
-                  sequelae.borderline_intellectual_disability_with_infertility_due_to_klinefelter_syndrome, 
-                  sequelae.primary_infertility_due_to_klinefelter_syndrome, 
+        sequelae=(sequelae.borderline_intellectual_disability_due_to_klinefelter_syndrome,
+                  sequelae.mild_intellectual_disability_due_to_klinefelter_syndrome,
+                  sequelae.mild_intellectual_disability_with_infertility_due_to_klinefelter_syndrome,
+                  sequelae.borderline_intellectual_disability_with_infertility_due_to_klinefelter_syndrome,
+                  sequelae.primary_infertility_due_to_klinefelter_syndrome,
                   sequelae.asymptomatic_klinefelter_syndrome, ),
     ),
     'other_chromosomal_abnormalities': Cause(
@@ -5344,7 +5574,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(648),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5356,55 +5587,55 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(65.0),
         ),
-        sequelae=(sequelae.asymptomatic_other_chromosomal_abnormalities, 
-                  sequelae.isolated_congenital_heart_disease_due_to_other_chromosomal_abnormalities, 
-                  sequelae.borderline_intellectual_disability_due_to_other_chromosomal_abnormalities, 
-                  sequelae.mild_intellectual_disability_due_to_other_chromosomal_abnormalities, 
-                  sequelae.moderate_intellectual_disability_due_to_other_chromosomal_abnormalities, 
-                  sequelae.severe_intellectual_disability_due_to_other_chromosomal_abnormalities, 
-                  sequelae.profound_intellectual_disability_due_to_other_chromosomal_abnormalities, 
-                  sequelae.borderline_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities, 
-                  sequelae.mild_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities, 
-                  sequelae.moderate_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities, 
-                  sequelae.severe_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities, 
-                  sequelae.profound_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities, 
-                  sequelae.mild_dementia_due_to_other_chromosomal_abnormalities, 
-                  sequelae.moderate_dementia_due_to_other_chromosomal_abnormalities, 
-                  sequelae.severe_dementia_due_to_other_chromosomal_abnormalities, 
-                  sequelae.congenital_heart_disease_and_mild_dementia_due_to_other_chromosomal_abnormalities, 
-                  sequelae.congenital_heart_disease_and_moderate_dementia_due_to_other_chromosomal_abnormalities, 
-                  sequelae.congenital_heart_disease_and_severe_dementia_due_to_other_chromosomal_abnormalities, 
-                  sequelae.borderline_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities, 
-                  sequelae.mild_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities, 
-                  sequelae.moderate_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities, 
-                  sequelae.severe_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities, 
-                  sequelae.profound_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities, 
-                  sequelae.borderline_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities, 
-                  sequelae.mild_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities, 
-                  sequelae.moderate_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities, 
-                  sequelae.severe_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities, 
-                  sequelae.profound_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities, 
-                  sequelae.borderline_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities, 
-                  sequelae.mild_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities, 
-                  sequelae.moderate_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities, 
-                  sequelae.severe_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities, 
-                  sequelae.profound_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities, 
-                  sequelae.profound_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities, 
-                  sequelae.severe_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities, 
-                  sequelae.moderate_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities, 
-                  sequelae.mild_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities, 
-                  sequelae.borderline_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities, 
-                  sequelae.profound_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities, 
-                  sequelae.severe_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities, 
-                  sequelae.moderate_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities, 
-                  sequelae.mild_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities, 
-                  sequelae.borderline_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities, 
-                  sequelae.profound_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities, 
-                  sequelae.severe_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities, 
-                  sequelae.moderate_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities, 
-                  sequelae.mild_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities, 
-                  sequelae.borderline_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities, 
-                  sequelae.severe_motor_and_cognitive_impairment_due_to_edward_syndrome_or_patau_syndrome, 
+        sequelae=(sequelae.asymptomatic_other_chromosomal_abnormalities,
+                  sequelae.isolated_congenital_heart_disease_due_to_other_chromosomal_abnormalities,
+                  sequelae.borderline_intellectual_disability_due_to_other_chromosomal_abnormalities,
+                  sequelae.mild_intellectual_disability_due_to_other_chromosomal_abnormalities,
+                  sequelae.moderate_intellectual_disability_due_to_other_chromosomal_abnormalities,
+                  sequelae.severe_intellectual_disability_due_to_other_chromosomal_abnormalities,
+                  sequelae.profound_intellectual_disability_due_to_other_chromosomal_abnormalities,
+                  sequelae.borderline_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities,
+                  sequelae.mild_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities,
+                  sequelae.moderate_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities,
+                  sequelae.severe_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities,
+                  sequelae.profound_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities,
+                  sequelae.mild_dementia_due_to_other_chromosomal_abnormalities,
+                  sequelae.moderate_dementia_due_to_other_chromosomal_abnormalities,
+                  sequelae.severe_dementia_due_to_other_chromosomal_abnormalities,
+                  sequelae.congenital_heart_disease_and_mild_dementia_due_to_other_chromosomal_abnormalities,
+                  sequelae.congenital_heart_disease_and_moderate_dementia_due_to_other_chromosomal_abnormalities,
+                  sequelae.congenital_heart_disease_and_severe_dementia_due_to_other_chromosomal_abnormalities,
+                  sequelae.borderline_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities,
+                  sequelae.mild_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities,
+                  sequelae.moderate_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities,
+                  sequelae.severe_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities,
+                  sequelae.profound_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities,
+                  sequelae.borderline_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities,
+                  sequelae.mild_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities,
+                  sequelae.moderate_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities,
+                  sequelae.severe_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities,
+                  sequelae.profound_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities,
+                  sequelae.borderline_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities,
+                  sequelae.mild_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities,
+                  sequelae.moderate_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities,
+                  sequelae.severe_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities,
+                  sequelae.profound_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities,
+                  sequelae.profound_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities,
+                  sequelae.severe_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities,
+                  sequelae.moderate_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities,
+                  sequelae.mild_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities,
+                  sequelae.borderline_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities,
+                  sequelae.profound_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities,
+                  sequelae.severe_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities,
+                  sequelae.moderate_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities,
+                  sequelae.mild_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities,
+                  sequelae.borderline_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities,
+                  sequelae.profound_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities,
+                  sequelae.severe_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities,
+                  sequelae.moderate_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities,
+                  sequelae.mild_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities,
+                  sequelae.borderline_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities,
+                  sequelae.severe_motor_and_cognitive_impairment_due_to_edward_syndrome_or_patau_syndrome,
                   sequelae.severe_motor_and_cognitive_impairment_with_congenital_heart_disease_due_to_edward_syndrome_or_patau_syndrome, ),
     ),
     'congenital_musculoskeletal_and_limb_anomalies': Cause(
@@ -5412,7 +5643,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(649),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5424,18 +5656,18 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.disfigurement_level_1_due_to_polydactyly_and_syndactyly, 
-                  sequelae.disfigurement_level_2_due_to_congenital_limb_deficiency, 
-                  sequelae.disfigurement_level_2_with_pain_due_to_congenital_limb_deficiency, 
-                  sequelae.disfigurement_level_2_and_mild_motor_impairment_due_to_congenital_limb_deficiency, 
-                  sequelae.disfigurement_level_2_and_moderate_motor_impairment_due_to_congenital_limb_deficiency, 
-                  sequelae.disfigurement_level_2_with_pain_and_mild_motor_impairment_due_to_congenital_limb_deficiency, 
-                  sequelae.disfigurement_level_2_with_pain_and_moderate_motor_impairment_due_to_congenital_limb_deficiency, 
-                  sequelae.disfigurement_level_2_due_to_other_congenital_musculoskeletal_anomalies, 
-                  sequelae.disfigurement_level_2_with_pain_due_to_other_congenital_musculoskeletal_anomalies, 
-                  sequelae.disfigurement_level_2_and_mild_motor_impairment_due_to_other_congenital_musculoskeletal_anomalies, 
-                  sequelae.disfigurement_level_2_and_moderate_motor_impairment_due_to_other_congenital_musculoskeletal_anomalies, 
-                  sequelae.disfigurement_level_2_with_pain_and_mild_motor_impairment_due_to_other_congenital_musculoskeletal_anomalies, 
+        sequelae=(sequelae.disfigurement_level_1_due_to_polydactyly_and_syndactyly,
+                  sequelae.disfigurement_level_2_due_to_congenital_limb_deficiency,
+                  sequelae.disfigurement_level_2_with_pain_due_to_congenital_limb_deficiency,
+                  sequelae.disfigurement_level_2_and_mild_motor_impairment_due_to_congenital_limb_deficiency,
+                  sequelae.disfigurement_level_2_and_moderate_motor_impairment_due_to_congenital_limb_deficiency,
+                  sequelae.disfigurement_level_2_with_pain_and_mild_motor_impairment_due_to_congenital_limb_deficiency,
+                  sequelae.disfigurement_level_2_with_pain_and_moderate_motor_impairment_due_to_congenital_limb_deficiency,
+                  sequelae.disfigurement_level_2_due_to_other_congenital_musculoskeletal_anomalies,
+                  sequelae.disfigurement_level_2_with_pain_due_to_other_congenital_musculoskeletal_anomalies,
+                  sequelae.disfigurement_level_2_and_mild_motor_impairment_due_to_other_congenital_musculoskeletal_anomalies,
+                  sequelae.disfigurement_level_2_and_moderate_motor_impairment_due_to_other_congenital_musculoskeletal_anomalies,
+                  sequelae.disfigurement_level_2_with_pain_and_mild_motor_impairment_due_to_other_congenital_musculoskeletal_anomalies,
                   sequelae.disfigurement_level_2_with_pain_and_moderate_motor_impairment_due_to_other_congenital_musculoskeletal_anomalies, ),
     ),
     'urogenital_congenital_anomalies': Cause(
@@ -5443,7 +5675,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(650),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5455,37 +5688,37 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.asymptomatic_congenital_genital_anomalies, 
-                  sequelae.atypical_genitalia_due_to_congenital_genital_anomalies, 
-                  sequelae.primary_infertility_due_to_congenital_genital_anomalies, 
-                  sequelae.impotence_due_to_congenital_genital_anomalies, 
-                  sequelae.recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_genital_anomalies, 
-                  sequelae.atypical_genital_and_recurrent_urinary_tract_infections_and_other_abdominal_issues_due_to_congenital_genital_anomalies, 
-                  sequelae.atypical_genitalia_and_primary_infertility_due_to_congenital_genital_anomalies, 
-                  sequelae.atypical_genitalia_and_impotence_due_to_congenital_genital_anomalies, 
-                  sequelae.primary_infertility_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_genital_anomalies, 
-                  sequelae.impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_genital_anomalies, 
-                  sequelae.infertility_and_impotence_due_to_congenital_genital_anomalies, 
-                  sequelae.atypical_genitalia_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_infertility_due_to_congenital_genital_anomalies, 
-                  sequelae.atypical_genitalia_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_genital_anomalies, 
-                  sequelae.atypical_genitalia_infertility_and_impotence_due_to_congenital_genital_anomalies, 
-                  sequelae.infertility_impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_genital_anomalies, 
-                  sequelae.atypical_genitalia_infertility_impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_genital_anomalies, 
-                  sequelae.asymptomatic_congenital_anomalies_of_the_urinary_tract, 
-                  sequelae.atypical_genitalia_due_to_congenital_anomalies_of_the_urinary_tract, 
-                  sequelae.incontinence_due_to_congenital_anomalies_of_the_urinary_tract, 
-                  sequelae.impotence_due_to_congenital_anomalies_of_the_urinary_tract, 
-                  sequelae.recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_anomalies_of_the_urinary_tract, 
-                  sequelae.atypical_genital_and_recurrent_urinary_tract_infections_and_other_abdominal_issues_due_to_congenital_anomalies_of_the_urinary_tract, 
-                  sequelae.atypical_genitalia_and_incontinence_due_to_congenital_anomalies_of_the_urinary_tract, 
-                  sequelae.atypical_genitalia_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract, 
-                  sequelae.incontinence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_anomalies_of_the_urinary_tract, 
-                  sequelae.impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_anomalies_of_the_urinary_tract, 
-                  sequelae.incontinence_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract, 
-                  sequelae.atypical_genitalia_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_incontinence_due_to_congenital_anomalies_of_the_urinary_tract, 
-                  sequelae.atypical_genitalia_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract, 
-                  sequelae.atypical_genitalia_incontinence_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract, 
-                  sequelae.incontinence_impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract, 
+        sequelae=(sequelae.asymptomatic_congenital_genital_anomalies,
+                  sequelae.atypical_genitalia_due_to_congenital_genital_anomalies,
+                  sequelae.primary_infertility_due_to_congenital_genital_anomalies,
+                  sequelae.impotence_due_to_congenital_genital_anomalies,
+                  sequelae.recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_genital_anomalies,
+                  sequelae.atypical_genital_and_recurrent_urinary_tract_infections_and_other_abdominal_issues_due_to_congenital_genital_anomalies,
+                  sequelae.atypical_genitalia_and_primary_infertility_due_to_congenital_genital_anomalies,
+                  sequelae.atypical_genitalia_and_impotence_due_to_congenital_genital_anomalies,
+                  sequelae.primary_infertility_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_genital_anomalies,
+                  sequelae.impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_genital_anomalies,
+                  sequelae.infertility_and_impotence_due_to_congenital_genital_anomalies,
+                  sequelae.atypical_genitalia_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_infertility_due_to_congenital_genital_anomalies,
+                  sequelae.atypical_genitalia_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_genital_anomalies,
+                  sequelae.atypical_genitalia_infertility_and_impotence_due_to_congenital_genital_anomalies,
+                  sequelae.infertility_impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_genital_anomalies,
+                  sequelae.atypical_genitalia_infertility_impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_genital_anomalies,
+                  sequelae.asymptomatic_congenital_anomalies_of_the_urinary_tract,
+                  sequelae.atypical_genitalia_due_to_congenital_anomalies_of_the_urinary_tract,
+                  sequelae.incontinence_due_to_congenital_anomalies_of_the_urinary_tract,
+                  sequelae.impotence_due_to_congenital_anomalies_of_the_urinary_tract,
+                  sequelae.recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_anomalies_of_the_urinary_tract,
+                  sequelae.atypical_genital_and_recurrent_urinary_tract_infections_and_other_abdominal_issues_due_to_congenital_anomalies_of_the_urinary_tract,
+                  sequelae.atypical_genitalia_and_incontinence_due_to_congenital_anomalies_of_the_urinary_tract,
+                  sequelae.atypical_genitalia_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract,
+                  sequelae.incontinence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_anomalies_of_the_urinary_tract,
+                  sequelae.impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_anomalies_of_the_urinary_tract,
+                  sequelae.incontinence_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract,
+                  sequelae.atypical_genitalia_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_incontinence_due_to_congenital_anomalies_of_the_urinary_tract,
+                  sequelae.atypical_genitalia_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract,
+                  sequelae.atypical_genitalia_incontinence_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract,
+                  sequelae.incontinence_impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract,
                   sequelae.atypical_genitalia_incontinence_impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract, ),
     ),
     'digestive_congenital_anomalies': Cause(
@@ -5493,7 +5726,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(651),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5505,41 +5739,41 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.asymptomatic_congenital_diaphragmatic_hernia, 
-                  sequelae.chronic_abdominal_pain_due_to_congenital_diaphragmatic_hernia, 
-                  sequelae.disfigurement_due_to_congenital_diaphragmatic_hernia, 
-                  sequelae.mild_chronic_respiratory_problems_and_breathlessness_due_to_congenital_diaphragmatic_hernia, 
-                  sequelae.developmental_delay_or_mild_intellectual_disability_due_to_congenital_diaphragmatic_hernia, 
-                  sequelae.chronic_abdominal_pain_and_disfigurement_due_to_congenital_diaphragmatic_hernia, 
-                  sequelae.chronic_abdominal_pain_and_mild_chronic_respiratory_problems_due_to_congenital_diaphragmatic_hernia, 
-                  sequelae.chronic_abdominal_pain_and_developmental_delay_due_to_congenital_diaphragmatic_hernia, 
-                  sequelae.disfigurement_and_mild_chronic_respiratory_problems_due_to_congenital_diaphragmatic_hernia, 
-                  sequelae.disfigurement_and_developmental_delay_due_to_congenital_diaphragmatic_hernia, 
-                  sequelae._mild_chronic_respiratory_problems_and_developmental_delay_due_to_congenital_diaphragmatic_hernia, 
-                  sequelae.chronic_abdominal_pain_disfigurement_and_chronic_respiratory_problems_due_to_congenital_diaphragmatic_hernia, 
-                  sequelae.chronic_abdominal_pain_disfigurement_and_developmental_delay_due_to_congenital_diaphragmatic_hernia, 
-                  sequelae.chronic_abdominal_pain_chronic_respiratory_problems_and_developmental_delay_due_to_congenital_diaphragmatic_hernia, 
-                  sequelae.disfigurement_chronic_respiratory_problems_and_developmental_delay_due_to_congenital_diaphragmatic_hernia, 
-                  sequelae.chronic_abdominal_pain_disfigurement_developmental_delay_and_chronic_respiratory_problems_due_to_congenital_diaphragmatic_hernia, 
-                  sequelae.asymptomatic_congenital_atresia_and_or_stenosis_of_the_digestive_tract, 
-                  sequelae.dysphagia_or_acid_reflux_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract, 
-                  sequelae.chronic_abdominal_pain_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract, 
-                  sequelae.chronic_respiratory_problems_including_difficulty_breaking_and_recurrent_upper_respiratory_infections_due_to_atresia_and_or_stenosis_of_the_digestive_tract, 
-                  sequelae.chronic_respiratory_problems_and_dysphagia_or_acid_reflux_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract, 
-                  sequelae.chronic_respiratory_problems_and_abdominal_pain_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract, 
-                  sequelae.dysphagia_or_acid_reflux_and_chronic_abdominal_pain_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract, 
-                  sequelae.dysphagia_or_acid_reflux_chronic_abdominal_pain_and_chronic_respiratory_problems_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract, 
-                  sequelae.asymptomatic_congenital_malformations_of_the_abdominal_wall_after_treatment, 
-                  sequelae.disfigurement_from_scars_following_treatment_for_congenital_malformations_of_the_abdominal_wall, 
-                  sequelae.constipation_due_to_congenital_malformations_of_the_abdominal_wall, 
-                  sequelae.chronic_abdominal_pain_due_to_congenital_malformations_of_the_abdominal_wall, 
-                  sequelae.constipation_and_concern_about_scars_due_to_congenital_malformations_of_the_abdominal_wall, 
-                  sequelae.chronic_abdominal_pain_and_concern_about_scars_due_to_congenital_malformations_of_the_abdominal_wall, 
-                  sequelae.constipation_and_chronic_abdominal_pain_due_to_congenital_malformations_of_the_abdominal_wall, 
-                  sequelae.constipation_chronic_abdominal_pain_and_concern_about_scars_due_to_congenital_malformations_of_the_abdominal_wall, 
-                  sequelae.asymptomatic_other_congenital_malformations_of_the_digestive_tract, 
-                  sequelae.acid_reflux_dyspahgia_and_or_constipation_due_to_other_congenital_malformations_of_the_digestive_tract, 
-                  sequelae.chronic_abdominal_pain_and_or_nausea_due_to_other_congenital_malformations_of_the_digestive_tract, 
+        sequelae=(sequelae.asymptomatic_congenital_diaphragmatic_hernia,
+                  sequelae.chronic_abdominal_pain_due_to_congenital_diaphragmatic_hernia,
+                  sequelae.disfigurement_due_to_congenital_diaphragmatic_hernia,
+                  sequelae.mild_chronic_respiratory_problems_and_breathlessness_due_to_congenital_diaphragmatic_hernia,
+                  sequelae.developmental_delay_or_mild_intellectual_disability_due_to_congenital_diaphragmatic_hernia,
+                  sequelae.chronic_abdominal_pain_and_disfigurement_due_to_congenital_diaphragmatic_hernia,
+                  sequelae.chronic_abdominal_pain_and_mild_chronic_respiratory_problems_due_to_congenital_diaphragmatic_hernia,
+                  sequelae.chronic_abdominal_pain_and_developmental_delay_due_to_congenital_diaphragmatic_hernia,
+                  sequelae.disfigurement_and_mild_chronic_respiratory_problems_due_to_congenital_diaphragmatic_hernia,
+                  sequelae.disfigurement_and_developmental_delay_due_to_congenital_diaphragmatic_hernia,
+                  sequelae._mild_chronic_respiratory_problems_and_developmental_delay_due_to_congenital_diaphragmatic_hernia,
+                  sequelae.chronic_abdominal_pain_disfigurement_and_chronic_respiratory_problems_due_to_congenital_diaphragmatic_hernia,
+                  sequelae.chronic_abdominal_pain_disfigurement_and_developmental_delay_due_to_congenital_diaphragmatic_hernia,
+                  sequelae.chronic_abdominal_pain_chronic_respiratory_problems_and_developmental_delay_due_to_congenital_diaphragmatic_hernia,
+                  sequelae.disfigurement_chronic_respiratory_problems_and_developmental_delay_due_to_congenital_diaphragmatic_hernia,
+                  sequelae.chronic_abdominal_pain_disfigurement_developmental_delay_and_chronic_respiratory_problems_due_to_congenital_diaphragmatic_hernia,
+                  sequelae.asymptomatic_congenital_atresia_and_or_stenosis_of_the_digestive_tract,
+                  sequelae.dysphagia_or_acid_reflux_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract,
+                  sequelae.chronic_abdominal_pain_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract,
+                  sequelae.chronic_respiratory_problems_including_difficulty_breaking_and_recurrent_upper_respiratory_infections_due_to_atresia_and_or_stenosis_of_the_digestive_tract,
+                  sequelae.chronic_respiratory_problems_and_dysphagia_or_acid_reflux_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract,
+                  sequelae.chronic_respiratory_problems_and_abdominal_pain_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract,
+                  sequelae.dysphagia_or_acid_reflux_and_chronic_abdominal_pain_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract,
+                  sequelae.dysphagia_or_acid_reflux_chronic_abdominal_pain_and_chronic_respiratory_problems_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract,
+                  sequelae.asymptomatic_congenital_malformations_of_the_abdominal_wall_after_treatment,
+                  sequelae.disfigurement_from_scars_following_treatment_for_congenital_malformations_of_the_abdominal_wall,
+                  sequelae.constipation_due_to_congenital_malformations_of_the_abdominal_wall,
+                  sequelae.chronic_abdominal_pain_due_to_congenital_malformations_of_the_abdominal_wall,
+                  sequelae.constipation_and_concern_about_scars_due_to_congenital_malformations_of_the_abdominal_wall,
+                  sequelae.chronic_abdominal_pain_and_concern_about_scars_due_to_congenital_malformations_of_the_abdominal_wall,
+                  sequelae.constipation_and_chronic_abdominal_pain_due_to_congenital_malformations_of_the_abdominal_wall,
+                  sequelae.constipation_chronic_abdominal_pain_and_concern_about_scars_due_to_congenital_malformations_of_the_abdominal_wall,
+                  sequelae.asymptomatic_other_congenital_malformations_of_the_digestive_tract,
+                  sequelae.acid_reflux_dyspahgia_and_or_constipation_due_to_other_congenital_malformations_of_the_digestive_tract,
+                  sequelae.chronic_abdominal_pain_and_or_nausea_due_to_other_congenital_malformations_of_the_digestive_tract,
                   sequelae.chronic_abdominal_pain_and_or_nausea_with_acid_reflux_dyspahgia_and_or_constipation_due_to_other_congenital_malformations_of_the_digestive_tract, ),
     ),
     'other_congenital_birth_defects': Cause(
@@ -5547,7 +5781,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(652),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5559,18 +5794,18 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_hearing_loss_due_to_other_congenital_anomalies, 
-                  sequelae.mild_hearing_loss_with_ringing_due_to_other_congenital_anomalies, 
-                  sequelae.moderate_hearing_loss_due_to_other_congenital_anomalies, 
-                  sequelae.moderate_hearing_loss_with_ringing_due_to_other_congenital_anomalies, 
-                  sequelae.severe_hearing_loss_with_ringing_due_to_other_congenital_anomalies, 
-                  sequelae.severe_hearing_loss_due_to_other_congenital_anomalies, 
-                  sequelae.complete_hearing_loss_due_to_other_congenital_anomalies, 
-                  sequelae.complete_hearing_loss_with_ringing_due_to_other_congenital_anomalies, 
-                  sequelae.moderately_severe_hearing_loss_due_to_other_congenital_anomalies, 
-                  sequelae.moderately_severe_hearing_loss_with_ringing_due_to_other_congenital_anomalies, 
-                  sequelae.profound_hearing_loss_due_to_other_congenital_anomalies, 
-                  sequelae.profound_hearing_loss_with_ringing_due_to_other_congenital_anomalies, 
+        sequelae=(sequelae.mild_hearing_loss_due_to_other_congenital_anomalies,
+                  sequelae.mild_hearing_loss_with_ringing_due_to_other_congenital_anomalies,
+                  sequelae.moderate_hearing_loss_due_to_other_congenital_anomalies,
+                  sequelae.moderate_hearing_loss_with_ringing_due_to_other_congenital_anomalies,
+                  sequelae.severe_hearing_loss_with_ringing_due_to_other_congenital_anomalies,
+                  sequelae.severe_hearing_loss_due_to_other_congenital_anomalies,
+                  sequelae.complete_hearing_loss_due_to_other_congenital_anomalies,
+                  sequelae.complete_hearing_loss_with_ringing_due_to_other_congenital_anomalies,
+                  sequelae.moderately_severe_hearing_loss_due_to_other_congenital_anomalies,
+                  sequelae.moderately_severe_hearing_loss_with_ringing_due_to_other_congenital_anomalies,
+                  sequelae.profound_hearing_loss_due_to_other_congenital_anomalies,
+                  sequelae.profound_hearing_loss_with_ringing_due_to_other_congenital_anomalies,
                   sequelae.other_congenital_birth_defects, ),
     ),
     'skin_and_subcutaneous_diseases': Cause(
@@ -5578,7 +5813,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(653),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=2,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5596,7 +5832,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(654),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5612,7 +5849,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(655),
         dismod_id=meid(2251),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5629,7 +5867,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(656),
         dismod_id=meid(2255),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5648,7 +5887,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(657),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5667,7 +5907,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(658),
         dismod_id=meid(2262),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5684,7 +5925,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(659),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5701,7 +5943,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(660),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5711,7 +5954,7 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_viral_warts, sequelae.severe_viral_warts, sequelae.mild_molluscum_contagiosum, 
+        sequelae=(sequelae.mild_viral_warts, sequelae.severe_viral_warts, sequelae.mild_molluscum_contagiosum,
                   sequelae.severe_molluscum_contagiosum, ),
     ),
     'acne_vulgaris': Cause(
@@ -5719,7 +5962,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(661),
         dismod_id=meid(2275),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5729,7 +5973,7 @@ causes = Causes(**{
             yld_age_start=scalar(5.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_acne_vulgaris, sequelae.moderate_acne_vulgaris, sequelae.severe_acne_vulgaris, 
+        sequelae=(sequelae.mild_acne_vulgaris, sequelae.moderate_acne_vulgaris, sequelae.severe_acne_vulgaris,
                   sequelae.non_disabling_symptomatic_acne, ),
     ),
     'alopecia_areata': Cause(
@@ -5737,7 +5981,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(662),
         dismod_id=meid(2276),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5754,7 +5999,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(663),
         dismod_id=meid(2280),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5771,7 +6017,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(664),
         dismod_id=meid(2283),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5788,7 +6035,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(665),
         dismod_id=meid(2286),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5807,7 +6055,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(668),
         dismod_id=meid(2290),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5819,7 +6068,7 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.asymptomatic_other_skin_and_subcutaneous_diseases, 
+        sequelae=(sequelae.asymptomatic_other_skin_and_subcutaneous_diseases,
                   sequelae.symptomatic_other_skin_and_subcutaneous_diseases, ),
     ),
     'sense_organ_diseases': Cause(
@@ -5827,7 +6076,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(669),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=2,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5843,7 +6093,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(670),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5853,7 +6104,7 @@ causes = Causes(**{
             yld_age_start=scalar(20.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.moderate_vision_impairment_due_to_glaucoma, 
+        sequelae=(sequelae.moderate_vision_impairment_due_to_glaucoma,
                   sequelae.severe_vision_impairment_due_to_glaucoma, sequelae.blindness_due_to_glaucoma, ),
     ),
     'cataract': Cause(
@@ -5861,7 +6112,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(671),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5871,7 +6123,7 @@ causes = Causes(**{
             yld_age_start=scalar(20.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.moderate_vision_impairment_due_to_cataract, 
+        sequelae=(sequelae.moderate_vision_impairment_due_to_cataract,
                   sequelae.severe_vision_impairment_due_to_cataract, sequelae.blindness_due_to_cataract, ),
     ),
     'age_related_macular_degeneration': Cause(
@@ -5879,7 +6131,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(672),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5889,8 +6142,8 @@ causes = Causes(**{
             yld_age_start=scalar(45.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.moderate_vision_impairment_due_to_macular_degeneration, 
-                  sequelae.severe_vision_impairment_due_to_macular_degeneration, 
+        sequelae=(sequelae.moderate_vision_impairment_due_to_macular_degeneration,
+                  sequelae.severe_vision_impairment_due_to_macular_degeneration,
                   sequelae.blindness_due_to_macular_degeneration, ),
     ),
     'age_related_and_other_hearing_loss': Cause(
@@ -5898,7 +6151,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(674),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5908,17 +6162,17 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_hearing_loss_due_to_age_related_and_other_hearing_loss, 
-                  sequelae.mild_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss, 
-                  sequelae.moderate_hearing_loss_due_to_age_related_and_other_hearing_loss, 
-                  sequelae.moderate_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss, 
-                  sequelae.moderately_severe_hearing_loss_due_to_age_related_and_other_hearing_loss, 
-                  sequelae.moderately_severe_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss, 
-                  sequelae.severe_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss, 
-                  sequelae.severe_hearing_loss_due_to_age_related_and_other_hearing_loss, 
-                  sequelae.profound_hearing_loss_due_to_age_related_and_other_hearing_loss, 
-                  sequelae.profound_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss, 
-                  sequelae.complete_hearing_loss_due_to_age_related_and_other_hearing_loss, 
+        sequelae=(sequelae.mild_hearing_loss_due_to_age_related_and_other_hearing_loss,
+                  sequelae.mild_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss,
+                  sequelae.moderate_hearing_loss_due_to_age_related_and_other_hearing_loss,
+                  sequelae.moderate_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss,
+                  sequelae.moderately_severe_hearing_loss_due_to_age_related_and_other_hearing_loss,
+                  sequelae.moderately_severe_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss,
+                  sequelae.severe_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss,
+                  sequelae.severe_hearing_loss_due_to_age_related_and_other_hearing_loss,
+                  sequelae.profound_hearing_loss_due_to_age_related_and_other_hearing_loss,
+                  sequelae.profound_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss,
+                  sequelae.complete_hearing_loss_due_to_age_related_and_other_hearing_loss,
                   sequelae.complete_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss, ),
     ),
     'other_vision_loss': Cause(
@@ -5926,7 +6180,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(675),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5936,8 +6191,8 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.moderate_vision_impairment_due_to_other_vision_loss, 
-                  sequelae.severe_vision_impairment_due_to_other_vision_loss, 
+        sequelae=(sequelae.moderate_vision_impairment_due_to_other_vision_loss,
+                  sequelae.severe_vision_impairment_due_to_other_vision_loss,
                   sequelae.blindness_due_to_other_vision_loss, ),
     ),
     'other_sense_organ_diseases': Cause(
@@ -5945,7 +6200,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(679),
         dismod_id=meid(2330),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5955,10 +6211,10 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.asymptomatic_acute_sense_organ_diseases, sequelae.mild_acute_sense_organ_diseases, 
-                  sequelae.moderate_acute_sense_organ_diseases, 
-                  sequelae.asymptomatic_chronic_other_sense_organ_diseases, 
-                  sequelae.mild_chronic_other_sense_organ_diseases, 
+        sequelae=(sequelae.asymptomatic_acute_sense_organ_diseases, sequelae.mild_acute_sense_organ_diseases,
+                  sequelae.moderate_acute_sense_organ_diseases,
+                  sequelae.asymptomatic_chronic_other_sense_organ_diseases,
+                  sequelae.mild_chronic_other_sense_organ_diseases,
                   sequelae.moderate_chronic_other_sense_organ_diseases, ),
     ),
     'oral_disorders': Cause(
@@ -5966,7 +6222,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(680),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5982,7 +6239,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(681),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -5999,7 +6257,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(682),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6016,7 +6275,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(683),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6033,7 +6293,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(684),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6043,7 +6304,7 @@ causes = Causes(**{
             yld_age_start=scalar(20.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.difficulty_eating_due_to_edentulism_and_severe_tooth_loss, 
+        sequelae=(sequelae.difficulty_eating_due_to_edentulism_and_severe_tooth_loss,
                   sequelae.asymptomatic_edentulism_and_severe_tooth_loss, ),
     ),
     'other_oral_disorders': Cause(
@@ -6051,7 +6312,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(685),
         dismod_id=meid(3254),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6068,7 +6330,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(686),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6084,7 +6347,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(687),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=1,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6102,7 +6366,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(688),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=2,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6120,7 +6385,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(689),
         dismod_id=meid(2339),
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6138,7 +6404,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(690),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6156,7 +6423,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(691),
         dismod_id=meid(2586),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6174,7 +6442,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(692),
         dismod_id=meid(2587),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6192,7 +6461,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(693),
         dismod_id=meid(2588),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6210,7 +6480,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(694),
         dismod_id=meid(2589),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6228,7 +6499,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(695),
         dismod_id=meid(2340),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6246,7 +6518,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(696),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=2,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6264,7 +6537,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(697),
         dismod_id=meid(2341),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6282,7 +6556,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(698),
         dismod_id=meid(2342),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6300,7 +6575,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(699),
         dismod_id=meid(2343),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6318,7 +6594,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(700),
         dismod_id=meid(2344),
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6336,7 +6613,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(701),
         dismod_id=meid(18658),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6354,7 +6632,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(703),
         dismod_id=meid(18659),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6372,7 +6651,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(704),
         dismod_id=meid(2345),
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6390,7 +6670,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(705),
         dismod_id=meid(2590),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6408,7 +6689,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(707),
         dismod_id=meid(2592),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6426,7 +6708,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(708),
         dismod_id=meid(2346),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6444,7 +6727,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(709),
         dismod_id=meid(2347),
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6462,7 +6746,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(710),
         dismod_id=meid(2593),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6480,7 +6765,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(711),
         dismod_id=meid(2594),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6498,7 +6784,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(712),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6516,7 +6803,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(713),
         dismod_id=meid(2348),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6534,7 +6822,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(714),
         dismod_id=meid(2595),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6550,7 +6839,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(715),
         dismod_id=meid(2596),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6568,7 +6858,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(716),
         dismod_id=meid(2349),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6586,7 +6877,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(717),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=2,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6604,7 +6896,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(718),
         dismod_id=meid(2350),
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6622,7 +6915,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(721),
         dismod_id=meid(10726),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6640,7 +6934,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(723),
         dismod_id=meid(10727),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6658,7 +6953,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(724),
         dismod_id=meid(2351),
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6676,7 +6972,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(725),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6694,7 +6991,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(726),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6712,7 +7010,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(727),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6730,7 +7029,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(729),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6748,7 +7048,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(741),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6764,7 +7065,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(837),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6774,11 +7076,11 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_anemia_due_to_b_thalassemia_trait, 
-                  sequelae.moderate_anemia_due_to_b_thalassemia_trait, 
-                  sequelae.severe_anemia_due_to_b_thalassemia_trait, sequelae.mild_anemia_due_to_hemoglobin_e_trait, 
-                  sequelae.moderate_anemia_due_to_hemoglobin_e_trait, 
-                  sequelae.severe_anemia_due_to_hemoglobin_e_trait, sequelae.asymptomatic_b_thalassemia_trait, 
+        sequelae=(sequelae.mild_anemia_due_to_b_thalassemia_trait,
+                  sequelae.moderate_anemia_due_to_b_thalassemia_trait,
+                  sequelae.severe_anemia_due_to_b_thalassemia_trait, sequelae.mild_anemia_due_to_hemoglobin_e_trait,
+                  sequelae.moderate_anemia_due_to_hemoglobin_e_trait,
+                  sequelae.severe_anemia_due_to_hemoglobin_e_trait, sequelae.asymptomatic_b_thalassemia_trait,
                   sequelae.asymptomatic_hemoglobin_e_trait, ),
     ),
     'sickle_cell_trait': Cause(
@@ -6786,7 +7088,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(838),
         dismod_id=meid(2501),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6796,7 +7099,7 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_anemia_due_to_sickle_cell_trait, sequelae.moderate_anemia_due_to_sickle_cell_trait, 
+        sequelae=(sequelae.mild_anemia_due_to_sickle_cell_trait, sequelae.moderate_anemia_due_to_sickle_cell_trait,
                   sequelae.severe_anemia_due_to_sickle_cell_trait, sequelae.asymptomatic_sickle_cell_trait, ),
     ),
     'g6pd_trait': Cause(
@@ -6804,7 +7107,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(839),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6814,9 +7118,9 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_anemia_due_to_hemizygous_g6pd_deficiency, 
-                  sequelae.moderate_anemia_due_to_hemizygous_g6pd_deficiency, 
-                  sequelae.severe_anemia_due_to_hemizygous_g6pd_deficiency, 
+        sequelae=(sequelae.mild_anemia_due_to_hemizygous_g6pd_deficiency,
+                  sequelae.moderate_anemia_due_to_hemizygous_g6pd_deficiency,
+                  sequelae.severe_anemia_due_to_hemizygous_g6pd_deficiency,
                   sequelae.asymptomatic_hemizygous_g6pd_deficiency, ),
     ),
     'environmental_heat_and_cold_exposure': Cause(
@@ -6824,7 +7128,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(842),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6842,7 +7147,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(843),
         dismod_id=meid(9668),
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6861,7 +7167,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(845),
         dismod_id=meid(9475),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6873,9 +7180,9 @@ causes = Causes(**{
             yld_age_start=scalar(0.1),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_acute_lymphoid_leukemia, 
-                  sequelae.controlled_phase_of_acute_lymphoid_leukemia, 
-                  sequelae.metastatic_phase_of_acute_lymphoid_leukemia, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_acute_lymphoid_leukemia,
+                  sequelae.controlled_phase_of_acute_lymphoid_leukemia,
+                  sequelae.metastatic_phase_of_acute_lymphoid_leukemia,
                   sequelae.terminal_phase_of_acute_lymphoid_leukemia, ),
     ),
     'chronic_lymphoid_leukemia': Cause(
@@ -6883,7 +7190,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(846),
         dismod_id=meid(9480),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6895,9 +7203,9 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_chronic_lymphoid_leukemia, 
-                  sequelae.controlled_phase_of_chronic_lymphoid_leukemia, 
-                  sequelae.metastatic_phase_of_chronic_lymphoid_leukemia, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_chronic_lymphoid_leukemia,
+                  sequelae.controlled_phase_of_chronic_lymphoid_leukemia,
+                  sequelae.metastatic_phase_of_chronic_lymphoid_leukemia,
                   sequelae.terminal_phase_of_chronic_lymphoid_leukemia, ),
     ),
     'acute_myeloid_leukemia': Cause(
@@ -6905,7 +7213,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(847),
         dismod_id=meid(9485),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6917,9 +7226,9 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_acute_myeloid_leukemia, 
-                  sequelae.controlled_phase_of_acute_myeloid_leukemia, 
-                  sequelae.metastatic_phase_of_acute_myeloid_leukemia, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_acute_myeloid_leukemia,
+                  sequelae.controlled_phase_of_acute_myeloid_leukemia,
+                  sequelae.metastatic_phase_of_acute_myeloid_leukemia,
                   sequelae.terminal_phase_of_acute_myeloid_leukemia, ),
     ),
     'chronic_myeloid_leukemia': Cause(
@@ -6927,7 +7236,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(848),
         dismod_id=meid(9490),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6939,9 +7249,9 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_chronic_myeloid_leukemia, 
-                  sequelae.controlled_phase_of_chronic_myeloid_leukemia, 
-                  sequelae.metastatic_phase_of_chronic_myeloid_leukemia, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_chronic_myeloid_leukemia,
+                  sequelae.controlled_phase_of_chronic_myeloid_leukemia,
+                  sequelae.metastatic_phase_of_chronic_myeloid_leukemia,
                   sequelae.terminal_phase_of_chronic_myeloid_leukemia, ),
     ),
     'non_melanoma_skin_cancer_squamous_cell_carcinoma': Cause(
@@ -6949,7 +7259,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(849),
         dismod_id=meid(9503),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6961,8 +7272,8 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_disfigurement_due_to_squamous_cell_carcinoma, 
-                  sequelae.moderate_disfigurement_due_to_squamous_cell_carcinoma, 
+        sequelae=(sequelae.mild_disfigurement_due_to_squamous_cell_carcinoma,
+                  sequelae.moderate_disfigurement_due_to_squamous_cell_carcinoma,
                   sequelae.severe_disfigurement_due_to_squamous_cell_carcinoma, ),
     ),
     'non_melanoma_skin_cancer_basal_cell_carcinoma': Cause(
@@ -6970,7 +7281,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(850),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -6987,7 +7299,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(854),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7005,7 +7318,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(934),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7024,7 +7338,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(935),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7036,7 +7351,7 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.acute_zika_infection, sequelae.guillain_barre_syndrome_due_to_zika_infection, 
+        sequelae=(sequelae.acute_zika_infection, sequelae.guillain_barre_syndrome_due_to_zika_infection,
                   sequelae.congenital_zika_syndrome, sequelae.asymptomatic_zika_infection, ),
     ),
     'guinea_worm_disease': Cause(
@@ -7044,7 +7359,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(936),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7054,9 +7370,9 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.moderate_pain_due_to_guinea_worm_emergence, 
-                  sequelae.mild_pain_due_to_guinea_worm_emergence, 
-                  sequelae.moderate_reduced_mobility_due_to_guinea_worm_emergence, 
+        sequelae=(sequelae.moderate_pain_due_to_guinea_worm_emergence,
+                  sequelae.mild_pain_due_to_guinea_worm_emergence,
+                  sequelae.moderate_reduced_mobility_due_to_guinea_worm_emergence,
                   sequelae.moderate_pain_and_limited_mobility_due_to_guinea_worm, ),
     ),
     'alcoholic_cardiomyopathy': Cause(
@@ -7064,7 +7380,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(938),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7076,9 +7393,9 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_heart_failure_due_to_alcoholic_cardiomyopathy, 
-                  sequelae.moderate_heart_failure_due_to_alcoholic_cardiomyopathy, 
-                  sequelae.severe_heart_failure_due_to_alcoholic_cardiomyopathy, 
+        sequelae=(sequelae.mild_heart_failure_due_to_alcoholic_cardiomyopathy,
+                  sequelae.moderate_heart_failure_due_to_alcoholic_cardiomyopathy,
+                  sequelae.severe_heart_failure_due_to_alcoholic_cardiomyopathy,
                   sequelae.treated_heart_failure_due_to_alcoholic_cardiomyopathy, ),
     ),
     'sexual_violence': Cause(
@@ -7086,7 +7403,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(941),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7102,7 +7420,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(942),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7114,10 +7433,10 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.acute_myocarditis, sequelae.mild_heart_failure_due_to_myocarditis, 
-                  sequelae.moderate_heart_failure_due_to_myocarditis, 
-                  sequelae.severe_heart_failure_due_to_myocarditis, 
-                  sequelae.treated_heart_failure_due_to_myocarditis, 
+        sequelae=(sequelae.acute_myocarditis, sequelae.mild_heart_failure_due_to_myocarditis,
+                  sequelae.moderate_heart_failure_due_to_myocarditis,
+                  sequelae.severe_heart_failure_due_to_myocarditis,
+                  sequelae.treated_heart_failure_due_to_myocarditis,
                   sequelae.treated_heart_failure_due_to_other_cardiomyopathy, ),
     ),
     'other_leukemia': Cause(
@@ -7125,7 +7444,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(943),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7137,8 +7457,8 @@ causes = Causes(**{
             yld_age_start=scalar(0.1),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.metastatic_phase_of_other_leukemia, 
-                  sequelae.diagnosis_and_primary_therapy_phase_of_other_leukemia, 
+        sequelae=(sequelae.metastatic_phase_of_other_leukemia,
+                  sequelae.diagnosis_and_primary_therapy_phase_of_other_leukemia,
                   sequelae.terminal_phase_of_other_leukemia, sequelae.controlled_phase_of_other_leukemia, ),
     ),
     'other_cardiomyopathy': Cause(
@@ -7146,7 +7466,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(944),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7158,8 +7479,8 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_heart_failure_due_to_other_cardiomyopathy, 
-                  sequelae.moderate_heart_failure_due_to_other_cardiomyopathy, 
+        sequelae=(sequelae.mild_heart_failure_due_to_other_cardiomyopathy,
+                  sequelae.moderate_heart_failure_due_to_other_cardiomyopathy,
                   sequelae.severe_heart_failure_due_to_other_cardiomyopathy, ),
     ),
     'conflict_and_terrorism': Cause(
@@ -7167,7 +7488,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(945),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7185,7 +7507,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(946),
         dismod_id=meid(10830),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7204,7 +7527,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(947),
         dismod_id=meid(10831),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7223,7 +7547,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(948),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7235,9 +7560,9 @@ causes = Causes(**{
             yld_age_start=scalar(0.1),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.drug_susceptible_hiv_aids_tuberculosis_with_mild_anemia, 
-                  sequelae.drug_susceptible_hiv_aids_tuberculosis_with_moderate_anemia, 
-                  sequelae.drug_susceptible_hiv_aids_tuberculosis_with_severe_anemia, 
+        sequelae=(sequelae.drug_susceptible_hiv_aids_tuberculosis_with_mild_anemia,
+                  sequelae.drug_susceptible_hiv_aids_tuberculosis_with_moderate_anemia,
+                  sequelae.drug_susceptible_hiv_aids_tuberculosis_with_severe_anemia,
                   sequelae.drug_susceptible_hiv_aids_tuberculosis_without_anemia, ),
     ),
     'hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance': Cause(
@@ -7245,7 +7570,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(949),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7257,9 +7583,9 @@ causes = Causes(**{
             yld_age_start=scalar(0.1),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_mild_anemia, 
-                  sequelae.multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_moderate_anemia, 
-                  sequelae.multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_severe_anemia, 
+        sequelae=(sequelae.multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_mild_anemia,
+                  sequelae.multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_moderate_anemia,
+                  sequelae.multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_severe_anemia,
                   sequelae.multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_without_anemia, ),
     ),
     'hiv_aids_extensively_drug_resistant_tuberculosis': Cause(
@@ -7267,7 +7593,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(950),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7279,9 +7606,9 @@ causes = Causes(**{
             yld_age_start=scalar(0.1),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.extensively_drug_resistant_hiv_aids_tuberculosis_with_mild_anemia, 
-                  sequelae.extensively_drug_resistant_hiv_aids_tuberculosis_with_moderate_anemia, 
-                  sequelae.extensively_drug_resistant_hiv_aids_tuberculosis_with_severe_anemia, 
+        sequelae=(sequelae.extensively_drug_resistant_hiv_aids_tuberculosis_with_mild_anemia,
+                  sequelae.extensively_drug_resistant_hiv_aids_tuberculosis_with_moderate_anemia,
+                  sequelae.extensively_drug_resistant_hiv_aids_tuberculosis_with_severe_anemia,
                   sequelae.extensively_drug_resistant_hiv_aids_tuberculosis_without_anemia, ),
     ),
     'latent_tuberculosis_infection': Cause(
@@ -7289,7 +7616,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(954),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7306,7 +7634,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(955),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=2,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7324,7 +7653,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(956),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=2,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7342,7 +7672,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(957),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=2,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7360,7 +7691,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(958),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7378,7 +7710,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(959),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=3,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7397,7 +7730,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(961),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=2,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7415,7 +7749,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(962),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=2,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7433,7 +7768,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(964),
         dismod_id=meid(18759),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7452,7 +7788,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(965),
         dismod_id=meid(18760),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7469,7 +7806,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(966),
         dismod_id=meid(18761),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7486,7 +7824,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(967),
         dismod_id=meid(18762),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7505,7 +7844,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(968),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7517,11 +7857,11 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.calcific_aortic_valve_disease_after_treatment, 
-                  sequelae.asymptomatic_calcific_aortic_valve_disease, 
-                  sequelae.mild_heart_failure_due_to_calcific_aortic_valve_disease, 
-                  sequelae.moderate_heart_failure_due_to_calcific_aortic_valve_disease, 
-                  sequelae.severe_heart_failure_due_to_calcific_aortic_valve_disease, 
+        sequelae=(sequelae.calcific_aortic_valve_disease_after_treatment,
+                  sequelae.asymptomatic_calcific_aortic_valve_disease,
+                  sequelae.mild_heart_failure_due_to_calcific_aortic_valve_disease,
+                  sequelae.moderate_heart_failure_due_to_calcific_aortic_valve_disease,
+                  sequelae.severe_heart_failure_due_to_calcific_aortic_valve_disease,
                   sequelae.treated_heart_failure_due_to_calcific_aortic_valve_disease, ),
     ),
     'non_rheumatic_degenerative_mitral_valve_disease': Cause(
@@ -7529,7 +7869,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(969),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7541,11 +7882,11 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.degenerative_mitral_valve_disease_after_treatment, 
-                  sequelae.asymptomatic_degenerative_mitral_valve_disease, 
-                  sequelae.mild_heart_failure_due_to_degenerative_mitral_valve_disease, 
-                  sequelae.moderate_heart_failure_due_to_degenerative_mitral_valve_disease, 
-                  sequelae.severe_heart_failure_due_to_degenerative_mitral_valve_disease, 
+        sequelae=(sequelae.degenerative_mitral_valve_disease_after_treatment,
+                  sequelae.asymptomatic_degenerative_mitral_valve_disease,
+                  sequelae.mild_heart_failure_due_to_degenerative_mitral_valve_disease,
+                  sequelae.moderate_heart_failure_due_to_degenerative_mitral_valve_disease,
+                  sequelae.severe_heart_failure_due_to_degenerative_mitral_valve_disease,
                   sequelae.treated_heart_failure_due_to_degenerative_mitral_valve_disease, ),
     ),
     'other_non_rheumatic_valve_diseases': Cause(
@@ -7553,7 +7894,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(970),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7565,9 +7907,9 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_heart_failure_due_to_other_non_rheumatic_valve_disease, 
-                  sequelae.moderate_heart_failure_due_to_other_non_rheumatic_valve_disease, 
-                  sequelae.severe_heart_failure_due_to_other_non_rheumatic_valve_disease, 
+        sequelae=(sequelae.mild_heart_failure_due_to_other_non_rheumatic_valve_disease,
+                  sequelae.moderate_heart_failure_due_to_other_non_rheumatic_valve_disease,
+                  sequelae.severe_heart_failure_due_to_other_non_rheumatic_valve_disease,
                   sequelae.treated_heart_failure_due_to_other_non_rheumatic_valve_disease, ),
     ),
     'cirrhosis_due_to_nash': Cause(
@@ -7575,7 +7917,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(971),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7587,8 +7930,8 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_nash_compensated, 
-                  sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated, 
+        sequelae=(sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_nash_compensated,
+                  sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated,
                   sequelae.non_alcoholic_fatty_liver_disease_nafld_non_alcoholic_steatohepatitis_nash, ),
     ),
     'headache_disorders': Cause(
@@ -7596,7 +7939,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(972),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7612,7 +7956,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(973),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=2,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7630,7 +7975,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(974),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=2,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7648,7 +7994,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(975),
         dismod_id=meid(18655),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7660,13 +8007,13 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diabetic_foot_due_to_neuropathy_due_to_diabetes_mellitus_type_1, 
-                  sequelae.diabetic_neuropathy_due_to_diabetes_mellitus_type_1, 
-                  sequelae.diabetic_neuropathy_and_amputation_with_treatment_due_to_diabetes_mellitus_type_1, 
-                  sequelae.diabetic_neuropathy_and_amputation_without_treatment_due_to_diabetes_mellitus_type_1, 
-                  sequelae.uncomplicated_diabetes_mellitus_type_1, 
-                  sequelae.moderate_vision_impairment_due_to_diabetes_mellitus_type_1, 
-                  sequelae.severe_vision_impairment_due_to_diabetes_mellitus_type_1, 
+        sequelae=(sequelae.diabetic_foot_due_to_neuropathy_due_to_diabetes_mellitus_type_1,
+                  sequelae.diabetic_neuropathy_due_to_diabetes_mellitus_type_1,
+                  sequelae.diabetic_neuropathy_and_amputation_with_treatment_due_to_diabetes_mellitus_type_1,
+                  sequelae.diabetic_neuropathy_and_amputation_without_treatment_due_to_diabetes_mellitus_type_1,
+                  sequelae.uncomplicated_diabetes_mellitus_type_1,
+                  sequelae.moderate_vision_impairment_due_to_diabetes_mellitus_type_1,
+                  sequelae.severe_vision_impairment_due_to_diabetes_mellitus_type_1,
                   sequelae.blindness_due_to_diabetes_mellitus_type_1, ),
     ),
     'diabetes_mellitus_type_2': Cause(
@@ -7674,7 +8021,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(976),
         dismod_id=meid(18656),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7683,16 +8031,16 @@ causes = Causes(**{
             yld_only=False,
             yll_age_start=scalar(15.0),
             yll_age_end=scalar(95.0),
-            yld_age_start=scalar(nan),
+            yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diabetic_foot_due_to_neuropathy_due_to_diabetes_mellitus_type_2, 
-                  sequelae.diabetic_neuropathy_due_to_diabetes_mellitus_type_2, 
-                  sequelae.diabetic_neuropathy_and_amputation_with_treatment_due_to_diabetes_mellitus_type_2, 
-                  sequelae.diabetic_neuropathy_and_amputation_without_treatment_due_to_diabetes_mellitus_type_2, 
-                  sequelae.uncomplicated_diabetes_mellitus_type_2, 
-                  sequelae.moderate_vision_impairment_due_to_diabetes_mellitus_type_2, 
-                  sequelae.severe_vision_impairment_due_to_diabetes_mellitus_type_2, 
+        sequelae=(sequelae.diabetic_foot_due_to_neuropathy_due_to_diabetes_mellitus_type_2,
+                  sequelae.diabetic_neuropathy_due_to_diabetes_mellitus_type_2,
+                  sequelae.diabetic_neuropathy_and_amputation_with_treatment_due_to_diabetes_mellitus_type_2,
+                  sequelae.diabetic_neuropathy_and_amputation_without_treatment_due_to_diabetes_mellitus_type_2,
+                  sequelae.uncomplicated_diabetes_mellitus_type_2,
+                  sequelae.moderate_vision_impairment_due_to_diabetes_mellitus_type_2,
+                  sequelae.severe_vision_impairment_due_to_diabetes_mellitus_type_2,
                   sequelae.blindness_due_to_diabetes_mellitus_type_2, ),
     ),
     'atopic_dermatitis': Cause(
@@ -7700,7 +8048,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(977),
         dismod_id=meid(2247),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7710,7 +8059,7 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_atopic_dermatitis, sequelae.moderate_atopic_dermatitis, 
+        sequelae=(sequelae.mild_atopic_dermatitis, sequelae.moderate_atopic_dermatitis,
                   sequelae.severe_atopic_dermatitis, ),
     ),
     'contact_dermatitis': Cause(
@@ -7718,7 +8067,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(978),
         dismod_id=meid(2574),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7728,7 +8078,7 @@ causes = Causes(**{
             yld_age_start=scalar(1.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.mild_contact_dermatitis, sequelae.moderate_contact_dermatitis, 
+        sequelae=(sequelae.mild_contact_dermatitis, sequelae.moderate_contact_dermatitis,
                   sequelae.asymptomatic_contact_dermatitis, ),
     ),
     'seborrhoeic_dermatitis': Cause(
@@ -7736,7 +8086,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(979),
         dismod_id=meid(2578),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7753,7 +8104,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(980),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7771,7 +8123,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(981),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7787,7 +8140,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(992),
         dismod_id=UNKNOWN,
-        most_detailed=0,
+        level=3,
+        most_detailed=False,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7805,7 +8159,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(995),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7824,7 +8179,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(996),
         dismod_id=meid(19776),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7836,9 +8192,9 @@ causes = Causes(**{
             yld_age_start=scalar(15.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_nash, 
-                  sequelae.controlled_phase_of_liver_cancer_due_to_nash, 
-                  sequelae.metastatic_phase_of_liver_cancer_due_to_nash, 
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_nash,
+                  sequelae.controlled_phase_of_liver_cancer_due_to_nash,
+                  sequelae.metastatic_phase_of_liver_cancer_due_to_nash,
                   sequelae.terminal_phase_of_liver_cancer_due_to_nash, ),
     ),
     'chronic_kidney_disease_due_to_diabetes_mellitus_type_1': Cause(
@@ -7846,7 +8202,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(997),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7858,20 +8215,20 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.end_stage_renal_disease_after_transplant_due_to_type_1_diabetes_mellitus, 
-                  sequelae.end_stage_renal_disease_on_dialysis_due_to_type_1_diabetes_mellitus, 
-                  sequelae.stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_type_1_diabetes_mellitus, 
-                  sequelae.stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_type_1_diabetes_mellitus, 
-                  sequelae.stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_type_1_diabetes_mellitus, 
-                  sequelae.stage_iii_chronic_kidney_disease_without_anemia_due_to_type_1_diabetes_mellitus, 
-                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_type_1_diabetes_mellitus, 
-                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_type_1_diabetes_mellitus, 
-                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_1_diabetes_mellitus, 
-                  sequelae.stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_type_1_diabetes_mellitus, 
-                  sequelae.stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_type_1_diabetes_mellitus, 
-                  sequelae.stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_type_1_diabetes_mellitus, 
-                  sequelae.stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_1_diabetes_mellitus, 
-                  sequelae.stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_type_1_diabetes_mellitus, 
+        sequelae=(sequelae.end_stage_renal_disease_after_transplant_due_to_type_1_diabetes_mellitus,
+                  sequelae.end_stage_renal_disease_on_dialysis_due_to_type_1_diabetes_mellitus,
+                  sequelae.stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_type_1_diabetes_mellitus,
+                  sequelae.stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_type_1_diabetes_mellitus,
+                  sequelae.stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_type_1_diabetes_mellitus,
+                  sequelae.stage_iii_chronic_kidney_disease_without_anemia_due_to_type_1_diabetes_mellitus,
+                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_type_1_diabetes_mellitus,
+                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_type_1_diabetes_mellitus,
+                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_1_diabetes_mellitus,
+                  sequelae.stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_type_1_diabetes_mellitus,
+                  sequelae.stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_type_1_diabetes_mellitus,
+                  sequelae.stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_type_1_diabetes_mellitus,
+                  sequelae.stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_1_diabetes_mellitus,
+                  sequelae.stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_type_1_diabetes_mellitus,
                   sequelae.albuminuria_with_preserved_gfr_due_to_type_1_diabetes_mellitus, ),
     ),
     'chronic_kidney_disease_due_to_diabetes_mellitus_type_2': Cause(
@@ -7879,7 +8236,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(998),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7891,20 +8249,20 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.end_stage_renal_disease_after_transplant_due_to_type_2_diabetes_mellitus, 
-                  sequelae.end_stage_renal_disease_on_dialysis_due_to_type_2_diabetes_mellitus, 
-                  sequelae.stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_type_2_diabetes_mellitus, 
-                  sequelae.stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_type_2_diabetes_mellitus, 
-                  sequelae.stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_type_2_diabetes_mellitus, 
-                  sequelae.stage_iii_chronic_kidney_disease_without_anemia_due_to_type_2_diabetes_mellitus, 
-                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_type_2_diabetes_mellitus, 
-                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_type_2_diabetes_mellitus, 
-                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_2_diabetes_mellitus, 
-                  sequelae.stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_type_2_diabetes_mellitus, 
-                  sequelae.stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_type_2_diabetes_mellitus, 
-                  sequelae.stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_type_2_diabetes_mellitus, 
-                  sequelae.stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_2_diabetes_mellitus, 
-                  sequelae.stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_type_2_diabetes_mellitus, 
+        sequelae=(sequelae.end_stage_renal_disease_after_transplant_due_to_type_2_diabetes_mellitus,
+                  sequelae.end_stage_renal_disease_on_dialysis_due_to_type_2_diabetes_mellitus,
+                  sequelae.stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_type_2_diabetes_mellitus,
+                  sequelae.stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_type_2_diabetes_mellitus,
+                  sequelae.stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_type_2_diabetes_mellitus,
+                  sequelae.stage_iii_chronic_kidney_disease_without_anemia_due_to_type_2_diabetes_mellitus,
+                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_type_2_diabetes_mellitus,
+                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_type_2_diabetes_mellitus,
+                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_2_diabetes_mellitus,
+                  sequelae.stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_type_2_diabetes_mellitus,
+                  sequelae.stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_type_2_diabetes_mellitus,
+                  sequelae.stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_type_2_diabetes_mellitus,
+                  sequelae.stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_2_diabetes_mellitus,
+                  sequelae.stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_type_2_diabetes_mellitus,
                   sequelae.albuminuria_with_preserved_gfr_due_to_type_2_diabetes_mellitus, ),
     ),
     'refraction_disorders': Cause(
@@ -7912,7 +8270,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(999),
         dismod_id=UNKNOWN,
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7922,8 +8281,8 @@ causes = Causes(**{
             yld_age_start=scalar(0.0),
             yld_age_end=scalar(95.0),
         ),
-        sequelae=(sequelae.moderate_vision_impairment_due_to_uncorrected_refractive_error, 
-                  sequelae.severe_vision_impairment_due_to_uncorrected_refractive_error, 
+        sequelae=(sequelae.moderate_vision_impairment_due_to_uncorrected_refractive_error,
+                  sequelae.severe_vision_impairment_due_to_uncorrected_refractive_error,
                   sequelae.blindness_due_to_uncorrected_refractive_error, ),
     ),
     'near_vision_loss': Cause(
@@ -7931,7 +8290,8 @@ causes = Causes(**{
         kind='cause',
         gbd_id=cid(1000),
         dismod_id=meid(2424),
-        most_detailed=1,
+        level=4,
+        most_detailed=True,
         parent_cause=None,
         restrictions=Restrictions(
             male_only=False,
@@ -7944,3 +8304,940 @@ causes = Causes(**{
         sequelae=(sequelae.presbyopia, ),
     ),
 })
+
+causes.all_causes.sub_causes = (causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases,
+                                causes.non_communicable_diseases, causes.injuries)
+
+causes.communicable_maternal_neonatal_and_nutritional_diseases.parent = causes.all_causes
+causes.communicable_maternal_neonatal_and_nutritional_diseases.sub_causes = (causes.neglected_tropical_diseases_and_malaria,
+                                                                             causes.nutritional_deficiencies,
+                                                                             causes.hiv_aids_and_sexually_transmitted_infections,
+                                                                             causes.respiratory_infections_and_tuberculosis,
+                                                                             causes.enteric_infections,
+                                                                             causes.other_infectious_diseases,
+                                                                             causes.maternal_and_neonatal_disorders)
+
+causes.tuberculosis.parent = causes.respiratory_infections_and_tuberculosis
+causes.tuberculosis.sub_causes = (causes.drug_susceptible_tuberculosis,
+                                  causes.multidrug_resistant_tuberculosis_without_extensive_drug_resistance,
+                                  causes.extensively_drug_resistant_tuberculosis, causes.latent_tuberculosis_infection)
+
+causes.hiv_aids.parent = causes.hiv_aids_and_sexually_transmitted_infections
+causes.hiv_aids.sub_causes = (causes.hiv_aids_resulting_in_other_diseases,
+                              causes.hiv_aids_drug_susceptible_tuberculosis,
+                              causes.hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance,
+                              causes.hiv_aids_extensively_drug_resistant_tuberculosis)
+
+causes.hiv_aids_resulting_in_other_diseases.parent = causes.hiv_aids
+
+causes.diarrheal_diseases.parent = causes.enteric_infections
+
+causes.typhoid_fever.parent = causes.typhoid_and_paratyphoid
+
+causes.paratyphoid_fever.parent = causes.typhoid_and_paratyphoid
+
+causes.other_intestinal_infectious_diseases.parent = causes.enteric_infections
+
+causes.lower_respiratory_infections.parent = causes.respiratory_infections_and_tuberculosis
+
+causes.upper_respiratory_infections.parent = causes.respiratory_infections_and_tuberculosis
+
+causes.otitis_media.parent = causes.respiratory_infections_and_tuberculosis
+
+causes.meningitis.parent = causes.other_infectious_diseases
+causes.meningitis.sub_causes = (causes.pneumococcal_meningitis, causes.h_influenzae_type_b_meningitis,
+                                causes.meningococcal_meningitis, causes.other_meningitis)
+
+causes.pneumococcal_meningitis.parent = causes.meningitis
+
+causes.h_influenzae_type_b_meningitis.parent = causes.meningitis
+
+causes.meningococcal_meningitis.parent = causes.meningitis
+
+causes.other_meningitis.parent = causes.meningitis
+
+causes.encephalitis.parent = causes.other_infectious_diseases
+
+causes.diphtheria.parent = causes.other_infectious_diseases
+
+causes.whooping_cough.parent = causes.other_infectious_diseases
+
+causes.tetanus.parent = causes.other_infectious_diseases
+
+causes.measles.parent = causes.other_infectious_diseases
+
+causes.varicella_and_herpes_zoster.parent = causes.other_infectious_diseases
+
+causes.neglected_tropical_diseases_and_malaria.parent = causes.communicable_maternal_neonatal_and_nutritional_diseases
+causes.neglected_tropical_diseases_and_malaria.sub_causes = (causes.malaria, causes.chagas_disease,
+                                                             causes.leishmaniasis, causes.african_trypanosomiasis,
+                                                             causes.schistosomiasis, causes.cysticercosis,
+                                                             causes.cystic_echinococcosis, causes.lymphatic_filariasis,
+                                                             causes.onchocerciasis, causes.trachoma, causes.dengue,
+                                                             causes.yellow_fever, causes.rabies,
+                                                             causes.intestinal_nematode_infections,
+                                                             causes.food_borne_trematodiases,
+                                                             causes.other_neglected_tropical_diseases, causes.leprosy,
+                                                             causes.ebola, causes.zika_virus,
+                                                             causes.guinea_worm_disease)
+
+causes.malaria.parent = causes.neglected_tropical_diseases_and_malaria
+
+causes.chagas_disease.parent = causes.neglected_tropical_diseases_and_malaria
+
+causes.leishmaniasis.parent = causes.neglected_tropical_diseases_and_malaria
+causes.leishmaniasis.sub_causes = causes.visceral_leishmaniasis, causes.cutaneous_and_mucocutaneous_leishmaniasis
+
+causes.visceral_leishmaniasis.parent = causes.leishmaniasis
+
+causes.cutaneous_and_mucocutaneous_leishmaniasis.parent = causes.leishmaniasis
+
+causes.african_trypanosomiasis.parent = causes.neglected_tropical_diseases_and_malaria
+
+causes.schistosomiasis.parent = causes.neglected_tropical_diseases_and_malaria
+
+causes.cysticercosis.parent = causes.neglected_tropical_diseases_and_malaria
+
+causes.cystic_echinococcosis.parent = causes.neglected_tropical_diseases_and_malaria
+
+causes.lymphatic_filariasis.parent = causes.neglected_tropical_diseases_and_malaria
+
+causes.onchocerciasis.parent = causes.neglected_tropical_diseases_and_malaria
+
+causes.trachoma.parent = causes.neglected_tropical_diseases_and_malaria
+
+causes.dengue.parent = causes.neglected_tropical_diseases_and_malaria
+
+causes.yellow_fever.parent = causes.neglected_tropical_diseases_and_malaria
+
+causes.rabies.parent = causes.neglected_tropical_diseases_and_malaria
+
+causes.intestinal_nematode_infections.parent = causes.neglected_tropical_diseases_and_malaria
+causes.intestinal_nematode_infections.sub_causes = causes.ascariasis, causes.trichuriasis, causes.hookworm_disease
+
+causes.ascariasis.parent = causes.intestinal_nematode_infections
+
+causes.trichuriasis.parent = causes.intestinal_nematode_infections
+
+causes.hookworm_disease.parent = causes.intestinal_nematode_infections
+
+causes.food_borne_trematodiases.parent = causes.neglected_tropical_diseases_and_malaria
+
+causes.other_neglected_tropical_diseases.parent = causes.neglected_tropical_diseases_and_malaria
+
+causes.maternal_disorders.parent = causes.maternal_and_neonatal_disorders
+causes.maternal_disorders.sub_causes = (causes.maternal_hemorrhage,
+                                        causes.maternal_sepsis_and_other_maternal_infections,
+                                        causes.maternal_hypertensive_disorders,
+                                        causes.maternal_obstructed_labor_and_uterine_rupture, causes.ectopic_pregnancy,
+                                        causes.indirect_maternal_deaths, causes.late_maternal_deaths,
+                                        causes.other_maternal_disorders, causes.maternal_deaths_aggravated_by_hiv_aids,
+                                        causes.maternal_abortion_and_miscarriage)
+
+causes.maternal_hemorrhage.parent = causes.maternal_disorders
+
+causes.maternal_sepsis_and_other_maternal_infections.parent = causes.maternal_disorders
+
+causes.maternal_hypertensive_disorders.parent = causes.maternal_disorders
+
+causes.maternal_obstructed_labor_and_uterine_rupture.parent = causes.maternal_disorders
+
+causes.ectopic_pregnancy.parent = causes.maternal_disorders
+
+causes.indirect_maternal_deaths.parent = causes.maternal_disorders
+
+causes.late_maternal_deaths.parent = causes.maternal_disorders
+
+causes.other_maternal_disorders.parent = causes.maternal_disorders
+
+causes.neonatal_disorders.parent = causes.maternal_and_neonatal_disorders
+causes.neonatal_disorders.sub_causes = (causes.neonatal_preterm_birth,
+                                        causes.neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma,
+                                        causes.neonatal_sepsis_and_other_neonatal_infections,
+                                        causes.hemolytic_disease_and_other_neonatal_jaundice,
+                                        causes.other_neonatal_disorders)
+
+causes.neonatal_preterm_birth.parent = causes.neonatal_disorders
+
+causes.neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma.parent = causes.neonatal_disorders
+
+causes.neonatal_sepsis_and_other_neonatal_infections.parent = causes.neonatal_disorders
+
+causes.hemolytic_disease_and_other_neonatal_jaundice.parent = causes.neonatal_disorders
+
+causes.other_neonatal_disorders.parent = causes.neonatal_disorders
+
+causes.nutritional_deficiencies.parent = causes.communicable_maternal_neonatal_and_nutritional_diseases
+causes.nutritional_deficiencies.sub_causes = (causes.protein_energy_malnutrition, causes.iodine_deficiency,
+                                              causes.vitamin_a_deficiency, causes.dietary_iron_deficiency,
+                                              causes.other_nutritional_deficiencies)
+
+causes.protein_energy_malnutrition.parent = causes.nutritional_deficiencies
+
+causes.iodine_deficiency.parent = causes.nutritional_deficiencies
+
+causes.vitamin_a_deficiency.parent = causes.nutritional_deficiencies
+
+causes.dietary_iron_deficiency.parent = causes.nutritional_deficiencies
+
+causes.other_nutritional_deficiencies.parent = causes.nutritional_deficiencies
+
+causes.sexually_transmitted_infections_excluding_hiv.parent = causes.hiv_aids_and_sexually_transmitted_infections
+causes.sexually_transmitted_infections_excluding_hiv.sub_causes = (causes.syphilis, causes.chlamydial_infection,
+                                                                   causes.gonococcal_infection, causes.trichomoniasis,
+                                                                   causes.genital_herpes,
+                                                                   causes.other_sexually_transmitted_infections)
+
+causes.syphilis.parent = causes.sexually_transmitted_infections_excluding_hiv
+
+causes.chlamydial_infection.parent = causes.sexually_transmitted_infections_excluding_hiv
+
+causes.gonococcal_infection.parent = causes.sexually_transmitted_infections_excluding_hiv
+
+causes.trichomoniasis.parent = causes.sexually_transmitted_infections_excluding_hiv
+
+causes.genital_herpes.parent = causes.sexually_transmitted_infections_excluding_hiv
+
+causes.other_sexually_transmitted_infections.parent = causes.sexually_transmitted_infections_excluding_hiv
+
+causes.acute_hepatitis.parent = causes.other_infectious_diseases
+causes.acute_hepatitis.sub_causes = (causes.acute_hepatitis_a, causes.acute_hepatitis_b, causes.acute_hepatitis_c,
+                                     causes.acute_hepatitis_e)
+
+causes.acute_hepatitis_a.parent = causes.acute_hepatitis
+
+causes.acute_hepatitis_b.parent = causes.acute_hepatitis
+
+causes.acute_hepatitis_c.parent = causes.acute_hepatitis
+
+causes.acute_hepatitis_e.parent = causes.acute_hepatitis
+
+causes.leprosy.parent = causes.neglected_tropical_diseases_and_malaria
+
+causes.other_unspecified_infectious_diseases.parent = causes.other_infectious_diseases
+
+causes.non_communicable_diseases.parent = causes.all_causes
+causes.non_communicable_diseases.sub_causes = (causes.neoplasms, causes.cardiovascular_diseases,
+                                               causes.chronic_respiratory_diseases, causes.digestive_diseases,
+                                               causes.neurological_disorders, causes.mental_disorders,
+                                               causes.musculoskeletal_disorders,
+                                               causes.other_non_communicable_diseases,
+                                               causes.skin_and_subcutaneous_diseases, causes.sense_organ_diseases,
+                                               causes.substance_use_disorders, causes.diabetes_and_kidney_diseases)
+
+causes.neoplasms.parent = causes.non_communicable_diseases
+causes.neoplasms.sub_causes = (causes.esophageal_cancer, causes.stomach_cancer, causes.liver_cancer,
+                               causes.larynx_cancer, causes.tracheal_bronchus_and_lung_cancer, causes.breast_cancer,
+                               causes.cervical_cancer, causes.uterine_cancer, causes.prostate_cancer,
+                               causes.colon_and_rectum_cancer, causes.lip_and_oral_cavity_cancer,
+                               causes.nasopharynx_cancer, causes.other_pharynx_cancer,
+                               causes.gallbladder_and_biliary_tract_cancer, causes.pancreatic_cancer,
+                               causes.malignant_skin_melanoma, causes.non_melanoma_skin_cancer, causes.ovarian_cancer,
+                               causes.testicular_cancer, causes.kidney_cancer, causes.bladder_cancer,
+                               causes.brain_and_nervous_system_cancer, causes.thyroid_cancer, causes.mesothelioma,
+                               causes.hodgkin_lymphoma, causes.non_hodgkin_lymphoma, causes.multiple_myeloma,
+                               causes.leukemia, causes.other_malignant_neoplasms, causes.other_neoplasms)
+
+causes.esophageal_cancer.parent = causes.neoplasms
+
+causes.stomach_cancer.parent = causes.neoplasms
+
+causes.liver_cancer.parent = causes.neoplasms
+causes.liver_cancer.sub_causes = (causes.liver_cancer_due_to_hepatitis_b, causes.liver_cancer_due_to_hepatitis_c,
+                                  causes.liver_cancer_due_to_alcohol_use, causes.liver_cancer_due_to_other_causes,
+                                  causes.liver_cancer_due_to_nash)
+
+causes.liver_cancer_due_to_hepatitis_b.parent = causes.liver_cancer
+
+causes.liver_cancer_due_to_hepatitis_c.parent = causes.liver_cancer
+
+causes.liver_cancer_due_to_alcohol_use.parent = causes.liver_cancer
+
+causes.liver_cancer_due_to_other_causes.parent = causes.liver_cancer
+
+causes.larynx_cancer.parent = causes.neoplasms
+
+causes.tracheal_bronchus_and_lung_cancer.parent = causes.neoplasms
+
+causes.breast_cancer.parent = causes.neoplasms
+
+causes.cervical_cancer.parent = causes.neoplasms
+
+causes.uterine_cancer.parent = causes.neoplasms
+
+causes.prostate_cancer.parent = causes.neoplasms
+
+causes.colon_and_rectum_cancer.parent = causes.neoplasms
+
+causes.lip_and_oral_cavity_cancer.parent = causes.neoplasms
+
+causes.nasopharynx_cancer.parent = causes.neoplasms
+
+causes.other_pharynx_cancer.parent = causes.neoplasms
+
+causes.gallbladder_and_biliary_tract_cancer.parent = causes.neoplasms
+
+causes.pancreatic_cancer.parent = causes.neoplasms
+
+causes.malignant_skin_melanoma.parent = causes.neoplasms
+
+causes.non_melanoma_skin_cancer.parent = causes.neoplasms
+causes.non_melanoma_skin_cancer.sub_causes = (causes.non_melanoma_skin_cancer_squamous_cell_carcinoma,
+                                              causes.non_melanoma_skin_cancer_basal_cell_carcinoma)
+
+causes.ovarian_cancer.parent = causes.neoplasms
+
+causes.testicular_cancer.parent = causes.neoplasms
+
+causes.kidney_cancer.parent = causes.neoplasms
+
+causes.bladder_cancer.parent = causes.neoplasms
+
+causes.brain_and_nervous_system_cancer.parent = causes.neoplasms
+
+causes.thyroid_cancer.parent = causes.neoplasms
+
+causes.mesothelioma.parent = causes.neoplasms
+
+causes.hodgkin_lymphoma.parent = causes.neoplasms
+
+causes.non_hodgkin_lymphoma.parent = causes.neoplasms
+
+causes.multiple_myeloma.parent = causes.neoplasms
+
+causes.leukemia.parent = causes.neoplasms
+causes.leukemia.sub_causes = (causes.acute_lymphoid_leukemia, causes.chronic_lymphoid_leukemia,
+                              causes.acute_myeloid_leukemia, causes.chronic_myeloid_leukemia, causes.other_leukemia)
+
+causes.other_malignant_neoplasms.parent = causes.neoplasms
+
+causes.other_neoplasms.parent = causes.neoplasms
+causes.other_neoplasms.sub_causes = (causes.myelodysplastic_myeloproliferative_and_other_hematopoietic_neoplasms,
+                                     causes.benign_and_in_situ_intestinal_neoplasms,
+                                     causes.benign_and_in_situ_cervical_and_uterine_neoplasms,
+                                     causes.other_benign_and_in_situ_neoplasms)
+
+causes.cardiovascular_diseases.parent = causes.non_communicable_diseases
+causes.cardiovascular_diseases.sub_causes = (causes.rheumatic_heart_disease, causes.ischemic_heart_disease,
+                                             causes.stroke, causes.hypertensive_heart_disease,
+                                             causes.cardiomyopathy_and_myocarditis,
+                                             causes.atrial_fibrillation_and_flutter, causes.aortic_aneurysm,
+                                             causes.peripheral_artery_disease, causes.endocarditis,
+                                             causes.non_rheumatic_valvular_heart_disease,
+                                             causes.other_cardiovascular_and_circulatory_diseases)
+
+causes.rheumatic_heart_disease.parent = causes.cardiovascular_diseases
+
+causes.ischemic_heart_disease.parent = causes.cardiovascular_diseases
+
+causes.stroke.parent = causes.cardiovascular_diseases
+causes.stroke.sub_causes = causes.ischemic_stroke, causes.intracerebral_hemorrhage, causes.subarachnoid_hemorrhage
+
+causes.ischemic_stroke.parent = causes.stroke
+
+causes.intracerebral_hemorrhage.parent = causes.stroke
+
+causes.subarachnoid_hemorrhage.parent = causes.stroke
+
+causes.hypertensive_heart_disease.parent = causes.cardiovascular_diseases
+
+causes.cardiomyopathy_and_myocarditis.parent = causes.cardiovascular_diseases
+causes.cardiomyopathy_and_myocarditis.sub_causes = (causes.alcoholic_cardiomyopathy, causes.myocarditis,
+                                                    causes.other_cardiomyopathy)
+
+causes.atrial_fibrillation_and_flutter.parent = causes.cardiovascular_diseases
+
+causes.aortic_aneurysm.parent = causes.cardiovascular_diseases
+
+causes.peripheral_artery_disease.parent = causes.cardiovascular_diseases
+
+causes.endocarditis.parent = causes.cardiovascular_diseases
+
+causes.non_rheumatic_valvular_heart_disease.parent = causes.cardiovascular_diseases
+causes.non_rheumatic_valvular_heart_disease.sub_causes = (causes.non_rheumatic_calcific_aortic_valve_disease,
+                                                          causes.non_rheumatic_degenerative_mitral_valve_disease,
+                                                          causes.other_non_rheumatic_valve_diseases)
+
+causes.other_cardiovascular_and_circulatory_diseases.parent = causes.cardiovascular_diseases
+
+causes.chronic_respiratory_diseases.parent = causes.non_communicable_diseases
+causes.chronic_respiratory_diseases.sub_causes = (causes.chronic_obstructive_pulmonary_disease, causes.pneumoconiosis,
+                                                  causes.asthma,
+                                                  causes.interstitial_lung_disease_and_pulmonary_sarcoidosis,
+                                                  causes.other_chronic_respiratory_diseases)
+
+causes.chronic_obstructive_pulmonary_disease.parent = causes.chronic_respiratory_diseases
+
+causes.pneumoconiosis.parent = causes.chronic_respiratory_diseases
+causes.pneumoconiosis.sub_causes = (causes.silicosis, causes.asbestosis, causes.coal_workers_pneumoconiosis,
+                                    causes.other_pneumoconiosis)
+
+causes.silicosis.parent = causes.pneumoconiosis
+
+causes.asbestosis.parent = causes.pneumoconiosis
+
+causes.coal_workers_pneumoconiosis.parent = causes.pneumoconiosis
+
+causes.other_pneumoconiosis.parent = causes.pneumoconiosis
+
+causes.asthma.parent = causes.chronic_respiratory_diseases
+
+causes.interstitial_lung_disease_and_pulmonary_sarcoidosis.parent = causes.chronic_respiratory_diseases
+
+causes.other_chronic_respiratory_diseases.parent = causes.chronic_respiratory_diseases
+
+causes.cirrhosis_and_other_chronic_liver_diseases.parent = causes.digestive_diseases
+causes.cirrhosis_and_other_chronic_liver_diseases.sub_causes = (causes.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b,
+                                                                causes.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c,
+                                                                causes.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_use,
+                                                                causes.cirrhosis_and_other_chronic_liver_diseases_due_to_other_causes,
+                                                                causes.cirrhosis_due_to_nash)
+
+causes.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b.parent = causes.cirrhosis_and_other_chronic_liver_diseases
+
+causes.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c.parent = causes.cirrhosis_and_other_chronic_liver_diseases
+
+causes.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_use.parent = causes.cirrhosis_and_other_chronic_liver_diseases
+
+causes.cirrhosis_and_other_chronic_liver_diseases_due_to_other_causes.parent = causes.cirrhosis_and_other_chronic_liver_diseases
+
+causes.digestive_diseases.parent = causes.non_communicable_diseases
+causes.digestive_diseases.sub_causes = (causes.cirrhosis_and_other_chronic_liver_diseases, causes.appendicitis,
+                                        causes.paralytic_ileus_and_intestinal_obstruction,
+                                        causes.inguinal_femoral_and_abdominal_hernia,
+                                        causes.inflammatory_bowel_disease, causes.vascular_intestinal_disorders,
+                                        causes.gallbladder_and_biliary_diseases, causes.pancreatitis,
+                                        causes.other_digestive_diseases, causes.upper_digestive_system_diseases)
+
+causes.peptic_ulcer_disease.parent = causes.upper_digestive_system_diseases
+
+causes.gastritis_and_duodenitis.parent = causes.upper_digestive_system_diseases
+
+causes.appendicitis.parent = causes.digestive_diseases
+
+causes.paralytic_ileus_and_intestinal_obstruction.parent = causes.digestive_diseases
+
+causes.inguinal_femoral_and_abdominal_hernia.parent = causes.digestive_diseases
+
+causes.inflammatory_bowel_disease.parent = causes.digestive_diseases
+
+causes.vascular_intestinal_disorders.parent = causes.digestive_diseases
+
+causes.gallbladder_and_biliary_diseases.parent = causes.digestive_diseases
+
+causes.pancreatitis.parent = causes.digestive_diseases
+
+causes.gastroesophageal_reflux_disease.parent = causes.upper_digestive_system_diseases
+
+causes.other_digestive_diseases.parent = causes.digestive_diseases
+
+causes.neurological_disorders.parent = causes.non_communicable_diseases
+causes.neurological_disorders.sub_causes = (causes.alzheimers_disease_and_other_dementias, causes.parkinsons_disease,
+                                            causes.epilepsy, causes.multiple_sclerosis, causes.motor_neuron_disease,
+                                            causes.other_neurological_disorders, causes.headache_disorders)
+
+causes.alzheimers_disease_and_other_dementias.parent = causes.neurological_disorders
+
+causes.parkinsons_disease.parent = causes.neurological_disorders
+
+causes.epilepsy.parent = causes.neurological_disorders
+
+causes.multiple_sclerosis.parent = causes.neurological_disorders
+
+causes.migraine.parent = causes.headache_disorders
+
+causes.tension_type_headache.parent = causes.headache_disorders
+
+causes.motor_neuron_disease.parent = causes.neurological_disorders
+
+causes.other_neurological_disorders.parent = causes.neurological_disorders
+
+causes.mental_disorders.parent = causes.non_communicable_diseases
+causes.mental_disorders.sub_causes = (causes.schizophrenia, causes.depressive_disorders, causes.bipolar_disorder,
+                                      causes.anxiety_disorders, causes.eating_disorders,
+                                      causes.autism_spectrum_disorders,
+                                      causes.attention_deficit_hyperactivity_disorder, causes.conduct_disorder,
+                                      causes.idiopathic_developmental_intellectual_disability,
+                                      causes.other_mental_disorders)
+
+causes.schizophrenia.parent = causes.mental_disorders
+
+causes.alcohol_use_disorders.parent = causes.substance_use_disorders
+
+causes.drug_use_disorders.parent = causes.substance_use_disorders
+causes.drug_use_disorders.sub_causes = (causes.opioid_use_disorders, causes.cocaine_use_disorders,
+                                        causes.amphetamine_use_disorders, causes.cannabis_use_disorders,
+                                        causes.other_drug_use_disorders)
+
+causes.opioid_use_disorders.parent = causes.drug_use_disorders
+
+causes.cocaine_use_disorders.parent = causes.drug_use_disorders
+
+causes.amphetamine_use_disorders.parent = causes.drug_use_disorders
+
+causes.cannabis_use_disorders.parent = causes.drug_use_disorders
+
+causes.other_drug_use_disorders.parent = causes.drug_use_disorders
+
+causes.depressive_disorders.parent = causes.mental_disorders
+causes.depressive_disorders.sub_causes = causes.major_depressive_disorder, causes.dysthymia
+
+causes.major_depressive_disorder.parent = causes.depressive_disorders
+
+causes.dysthymia.parent = causes.depressive_disorders
+
+causes.bipolar_disorder.parent = causes.mental_disorders
+
+causes.anxiety_disorders.parent = causes.mental_disorders
+
+causes.eating_disorders.parent = causes.mental_disorders
+causes.eating_disorders.sub_causes = causes.anorexia_nervosa, causes.bulimia_nervosa
+
+causes.anorexia_nervosa.parent = causes.eating_disorders
+
+causes.bulimia_nervosa.parent = causes.eating_disorders
+
+causes.autism_spectrum_disorders.parent = causes.mental_disorders
+
+causes.attention_deficit_hyperactivity_disorder.parent = causes.mental_disorders
+
+causes.conduct_disorder.parent = causes.mental_disorders
+
+causes.idiopathic_developmental_intellectual_disability.parent = causes.mental_disorders
+
+causes.other_mental_disorders.parent = causes.mental_disorders
+
+causes.diabetes_mellitus.parent = causes.diabetes_and_kidney_diseases
+causes.diabetes_mellitus.sub_causes = causes.diabetes_mellitus_type_1, causes.diabetes_mellitus_type_2
+
+causes.acute_glomerulonephritis.parent = causes.diabetes_and_kidney_diseases
+
+causes.chronic_kidney_disease.parent = causes.diabetes_and_kidney_diseases
+causes.chronic_kidney_disease.sub_causes = (causes.chronic_kidney_disease_due_to_hypertension,
+                                            causes.chronic_kidney_disease_due_to_glomerulonephritis,
+                                            causes.chronic_kidney_disease_due_to_other_and_unspecified_causes,
+                                            causes.chronic_kidney_disease_due_to_diabetes_mellitus_type_1,
+                                            causes.chronic_kidney_disease_due_to_diabetes_mellitus_type_2)
+
+causes.chronic_kidney_disease_due_to_hypertension.parent = causes.chronic_kidney_disease
+
+causes.chronic_kidney_disease_due_to_glomerulonephritis.parent = causes.chronic_kidney_disease
+
+causes.chronic_kidney_disease_due_to_other_and_unspecified_causes.parent = causes.chronic_kidney_disease
+
+causes.urinary_diseases_and_male_infertility.parent = causes.other_non_communicable_diseases
+causes.urinary_diseases_and_male_infertility.sub_causes = (causes.urinary_tract_infections, causes.urolithiasis,
+                                                           causes.benign_prostatic_hyperplasia,
+                                                           causes.male_infertility, causes.other_urinary_diseases)
+
+causes.urinary_tract_infections.parent = causes.urinary_diseases_and_male_infertility
+
+causes.urolithiasis.parent = causes.urinary_diseases_and_male_infertility
+
+causes.benign_prostatic_hyperplasia.parent = causes.urinary_diseases_and_male_infertility
+
+causes.male_infertility.parent = causes.urinary_diseases_and_male_infertility
+
+causes.other_urinary_diseases.parent = causes.urinary_diseases_and_male_infertility
+
+causes.gynecological_diseases.parent = causes.other_non_communicable_diseases
+causes.gynecological_diseases.sub_causes = (causes.uterine_fibroids, causes.polycystic_ovarian_syndrome,
+                                            causes.female_infertility, causes.endometriosis, causes.genital_prolapse,
+                                            causes.premenstrual_syndrome, causes.other_gynecological_diseases)
+
+causes.uterine_fibroids.parent = causes.gynecological_diseases
+
+causes.polycystic_ovarian_syndrome.parent = causes.gynecological_diseases
+
+causes.female_infertility.parent = causes.gynecological_diseases
+
+causes.endometriosis.parent = causes.gynecological_diseases
+
+causes.genital_prolapse.parent = causes.gynecological_diseases
+
+causes.premenstrual_syndrome.parent = causes.gynecological_diseases
+
+causes.other_gynecological_diseases.parent = causes.gynecological_diseases
+
+causes.hemoglobinopathies_and_hemolytic_anemias.parent = causes.other_non_communicable_diseases
+causes.hemoglobinopathies_and_hemolytic_anemias.sub_causes = (causes.thalassemias, causes.sickle_cell_disorders,
+                                                              causes.g6pd_deficiency,
+                                                              causes.other_hemoglobinopathies_and_hemolytic_anemias,
+                                                              causes.thalassemias_trait, causes.sickle_cell_trait,
+                                                              causes.g6pd_trait)
+
+causes.thalassemias.parent = causes.hemoglobinopathies_and_hemolytic_anemias
+
+causes.sickle_cell_disorders.parent = causes.hemoglobinopathies_and_hemolytic_anemias
+
+causes.g6pd_deficiency.parent = causes.hemoglobinopathies_and_hemolytic_anemias
+
+causes.other_hemoglobinopathies_and_hemolytic_anemias.parent = causes.hemoglobinopathies_and_hemolytic_anemias
+
+causes.endocrine_metabolic_blood_and_immune_disorders.parent = causes.other_non_communicable_diseases
+
+causes.musculoskeletal_disorders.parent = causes.non_communicable_diseases
+causes.musculoskeletal_disorders.sub_causes = (causes.rheumatoid_arthritis, causes.osteoarthritis,
+                                               causes.low_back_pain, causes.neck_pain, causes.gout,
+                                               causes.other_musculoskeletal_disorders)
+
+causes.rheumatoid_arthritis.parent = causes.musculoskeletal_disorders
+
+causes.osteoarthritis.parent = causes.musculoskeletal_disorders
+
+causes.low_back_pain.parent = causes.musculoskeletal_disorders
+
+causes.neck_pain.parent = causes.musculoskeletal_disorders
+
+causes.gout.parent = causes.musculoskeletal_disorders
+
+causes.other_musculoskeletal_disorders.parent = causes.musculoskeletal_disorders
+
+causes.other_non_communicable_diseases.parent = causes.non_communicable_diseases
+causes.other_non_communicable_diseases.sub_causes = (causes.urinary_diseases_and_male_infertility,
+                                                     causes.gynecological_diseases,
+                                                     causes.hemoglobinopathies_and_hemolytic_anemias,
+                                                     causes.endocrine_metabolic_blood_and_immune_disorders,
+                                                     causes.congenital_birth_defects, causes.oral_disorders,
+                                                     causes.sudden_infant_death_syndrome)
+
+causes.congenital_birth_defects.parent = causes.other_non_communicable_diseases
+causes.congenital_birth_defects.sub_causes = (causes.neural_tube_defects, causes.congenital_heart_anomalies,
+                                              causes.orofacial_clefts, causes.down_syndrome, causes.turner_syndrome,
+                                              causes.klinefelter_syndrome, causes.other_chromosomal_abnormalities,
+                                              causes.congenital_musculoskeletal_and_limb_anomalies,
+                                              causes.urogenital_congenital_anomalies,
+                                              causes.digestive_congenital_anomalies,
+                                              causes.other_congenital_birth_defects)
+
+causes.neural_tube_defects.parent = causes.congenital_birth_defects
+
+causes.congenital_heart_anomalies.parent = causes.congenital_birth_defects
+
+causes.orofacial_clefts.parent = causes.congenital_birth_defects
+
+causes.down_syndrome.parent = causes.congenital_birth_defects
+
+causes.turner_syndrome.parent = causes.congenital_birth_defects
+
+causes.klinefelter_syndrome.parent = causes.congenital_birth_defects
+
+causes.other_chromosomal_abnormalities.parent = causes.congenital_birth_defects
+
+causes.congenital_musculoskeletal_and_limb_anomalies.parent = causes.congenital_birth_defects
+
+causes.urogenital_congenital_anomalies.parent = causes.congenital_birth_defects
+
+causes.digestive_congenital_anomalies.parent = causes.congenital_birth_defects
+
+causes.other_congenital_birth_defects.parent = causes.congenital_birth_defects
+
+causes.skin_and_subcutaneous_diseases.parent = causes.non_communicable_diseases
+causes.skin_and_subcutaneous_diseases.sub_causes = (causes.dermatitis, causes.psoriasis, causes.scabies,
+                                                    causes.fungal_skin_diseases, causes.viral_skin_diseases,
+                                                    causes.acne_vulgaris, causes.alopecia_areata, causes.pruritus,
+                                                    causes.urticaria, causes.decubitus_ulcer,
+                                                    causes.other_skin_and_subcutaneous_diseases,
+                                                    causes.bacterial_skin_diseases)
+
+causes.dermatitis.parent = causes.skin_and_subcutaneous_diseases
+causes.dermatitis.sub_causes = causes.atopic_dermatitis, causes.contact_dermatitis, causes.seborrhoeic_dermatitis
+
+causes.psoriasis.parent = causes.skin_and_subcutaneous_diseases
+
+causes.cellulitis.parent = causes.bacterial_skin_diseases
+
+causes.pyoderma.parent = causes.bacterial_skin_diseases
+
+causes.scabies.parent = causes.skin_and_subcutaneous_diseases
+
+causes.fungal_skin_diseases.parent = causes.skin_and_subcutaneous_diseases
+
+causes.viral_skin_diseases.parent = causes.skin_and_subcutaneous_diseases
+
+causes.acne_vulgaris.parent = causes.skin_and_subcutaneous_diseases
+
+causes.alopecia_areata.parent = causes.skin_and_subcutaneous_diseases
+
+causes.pruritus.parent = causes.skin_and_subcutaneous_diseases
+
+causes.urticaria.parent = causes.skin_and_subcutaneous_diseases
+
+causes.decubitus_ulcer.parent = causes.skin_and_subcutaneous_diseases
+
+causes.other_skin_and_subcutaneous_diseases.parent = causes.skin_and_subcutaneous_diseases
+
+causes.sense_organ_diseases.parent = causes.non_communicable_diseases
+causes.sense_organ_diseases.sub_causes = (causes.age_related_and_other_hearing_loss, causes.other_sense_organ_diseases,
+                                          causes.blindness_and_vision_impairment)
+
+causes.glaucoma.parent = causes.blindness_and_vision_impairment
+
+causes.cataract.parent = causes.blindness_and_vision_impairment
+
+causes.age_related_macular_degeneration.parent = causes.blindness_and_vision_impairment
+
+causes.age_related_and_other_hearing_loss.parent = causes.sense_organ_diseases
+
+causes.other_vision_loss.parent = causes.blindness_and_vision_impairment
+
+causes.other_sense_organ_diseases.parent = causes.sense_organ_diseases
+
+causes.oral_disorders.parent = causes.other_non_communicable_diseases
+causes.oral_disorders.sub_causes = (causes.caries_of_deciduous_teeth, causes.caries_of_permanent_teeth,
+                                    causes.periodontal_diseases, causes.edentulism_and_severe_tooth_loss,
+                                    causes.other_oral_disorders)
+
+causes.caries_of_deciduous_teeth.parent = causes.oral_disorders
+
+causes.caries_of_permanent_teeth.parent = causes.oral_disorders
+
+causes.periodontal_diseases.parent = causes.oral_disorders
+
+causes.edentulism_and_severe_tooth_loss.parent = causes.oral_disorders
+
+causes.other_oral_disorders.parent = causes.oral_disorders
+
+causes.sudden_infant_death_syndrome.parent = causes.other_non_communicable_diseases
+
+causes.injuries.parent = causes.all_causes
+causes.injuries.sub_causes = (causes.transport_injuries, causes.unintentional_injuries,
+                              causes.self_harm_and_interpersonal_violence)
+
+causes.transport_injuries.parent = causes.injuries
+causes.transport_injuries.sub_causes = causes.road_injuries, causes.other_transport_injuries
+
+causes.road_injuries.parent = causes.transport_injuries
+causes.road_injuries.sub_causes = (causes.pedestrian_road_injuries, causes.cyclist_road_injuries,
+                                   causes.motorcyclist_road_injuries, causes.motor_vehicle_road_injuries,
+                                   causes.other_road_injuries)
+
+causes.pedestrian_road_injuries.parent = causes.road_injuries
+
+causes.cyclist_road_injuries.parent = causes.road_injuries
+
+causes.motorcyclist_road_injuries.parent = causes.road_injuries
+
+causes.motor_vehicle_road_injuries.parent = causes.road_injuries
+
+causes.other_road_injuries.parent = causes.road_injuries
+
+causes.other_transport_injuries.parent = causes.transport_injuries
+
+causes.unintentional_injuries.parent = causes.injuries
+causes.unintentional_injuries.sub_causes = (causes.falls, causes.drowning, causes.fire_heat_and_hot_substances,
+                                            causes.poisonings, causes.exposure_to_mechanical_forces,
+                                            causes.adverse_effects_of_medical_treatment, causes.animal_contact,
+                                            causes.foreign_body, causes.other_unintentional_injuries,
+                                            causes.exposure_to_forces_of_nature,
+                                            causes.environmental_heat_and_cold_exposure)
+
+causes.falls.parent = causes.unintentional_injuries
+
+causes.drowning.parent = causes.unintentional_injuries
+
+causes.fire_heat_and_hot_substances.parent = causes.unintentional_injuries
+
+causes.poisonings.parent = causes.unintentional_injuries
+causes.poisonings.sub_causes = causes.poisoning_by_carbon_monoxide, causes.poisoning_by_other_means
+
+causes.poisoning_by_carbon_monoxide.parent = causes.poisonings
+
+causes.poisoning_by_other_means.parent = causes.poisonings
+
+causes.exposure_to_mechanical_forces.parent = causes.unintentional_injuries
+causes.exposure_to_mechanical_forces.sub_causes = (causes.unintentional_firearm_injuries,
+                                                   causes.other_exposure_to_mechanical_forces)
+
+causes.unintentional_firearm_injuries.parent = causes.exposure_to_mechanical_forces
+
+causes.other_exposure_to_mechanical_forces.parent = causes.exposure_to_mechanical_forces
+
+causes.adverse_effects_of_medical_treatment.parent = causes.unintentional_injuries
+
+causes.animal_contact.parent = causes.unintentional_injuries
+causes.animal_contact.sub_causes = causes.venomous_animal_contact, causes.non_venomous_animal_contact
+
+causes.venomous_animal_contact.parent = causes.animal_contact
+
+causes.non_venomous_animal_contact.parent = causes.animal_contact
+
+causes.foreign_body.parent = causes.unintentional_injuries
+causes.foreign_body.sub_causes = (causes.pulmonary_aspiration_and_foreign_body_in_airway, causes.foreign_body_in_eyes,
+                                  causes.foreign_body_in_other_body_part)
+
+causes.pulmonary_aspiration_and_foreign_body_in_airway.parent = causes.foreign_body
+
+causes.foreign_body_in_eyes.parent = causes.foreign_body
+
+causes.foreign_body_in_other_body_part.parent = causes.foreign_body
+
+causes.other_unintentional_injuries.parent = causes.unintentional_injuries
+
+causes.self_harm_and_interpersonal_violence.parent = causes.injuries
+causes.self_harm_and_interpersonal_violence.sub_causes = (causes.self_harm, causes.interpersonal_violence,
+                                                          causes.executions_and_police_conflict,
+                                                          causes.conflict_and_terrorism)
+
+causes.self_harm.parent = causes.self_harm_and_interpersonal_violence
+causes.self_harm.sub_causes = causes.self_harm_by_firearm, causes.self_harm_by_other_specified_means
+
+causes.self_harm_by_firearm.parent = causes.self_harm
+
+causes.self_harm_by_other_specified_means.parent = causes.self_harm
+
+causes.interpersonal_violence.parent = causes.self_harm_and_interpersonal_violence
+causes.interpersonal_violence.sub_causes = (causes.physical_violence_by_firearm,
+                                            causes.physical_violence_by_sharp_object,
+                                            causes.physical_violence_by_other_means, causes.sexual_violence)
+
+causes.physical_violence_by_firearm.parent = causes.interpersonal_violence
+
+causes.physical_violence_by_sharp_object.parent = causes.interpersonal_violence
+
+causes.physical_violence_by_other_means.parent = causes.interpersonal_violence
+
+causes.exposure_to_forces_of_nature.parent = causes.unintentional_injuries
+
+causes.maternal_deaths_aggravated_by_hiv_aids.parent = causes.maternal_disorders
+
+causes.thalassemias_trait.parent = causes.hemoglobinopathies_and_hemolytic_anemias
+
+causes.sickle_cell_trait.parent = causes.hemoglobinopathies_and_hemolytic_anemias
+
+causes.g6pd_trait.parent = causes.hemoglobinopathies_and_hemolytic_anemias
+
+causes.environmental_heat_and_cold_exposure.parent = causes.unintentional_injuries
+
+causes.ebola.parent = causes.neglected_tropical_diseases_and_malaria
+
+causes.acute_lymphoid_leukemia.parent = causes.leukemia
+
+causes.chronic_lymphoid_leukemia.parent = causes.leukemia
+
+causes.acute_myeloid_leukemia.parent = causes.leukemia
+
+causes.chronic_myeloid_leukemia.parent = causes.leukemia
+
+causes.non_melanoma_skin_cancer_squamous_cell_carcinoma.parent = causes.non_melanoma_skin_cancer
+
+causes.non_melanoma_skin_cancer_basal_cell_carcinoma.parent = causes.non_melanoma_skin_cancer
+
+causes.executions_and_police_conflict.parent = causes.self_harm_and_interpersonal_violence
+
+causes.drug_susceptible_tuberculosis.parent = causes.tuberculosis
+
+causes.zika_virus.parent = causes.neglected_tropical_diseases_and_malaria
+
+causes.guinea_worm_disease.parent = causes.neglected_tropical_diseases_and_malaria
+
+causes.alcoholic_cardiomyopathy.parent = causes.cardiomyopathy_and_myocarditis
+
+causes.sexual_violence.parent = causes.interpersonal_violence
+
+causes.myocarditis.parent = causes.cardiomyopathy_and_myocarditis
+
+causes.other_leukemia.parent = causes.leukemia
+
+causes.other_cardiomyopathy.parent = causes.cardiomyopathy_and_myocarditis
+
+causes.conflict_and_terrorism.parent = causes.self_harm_and_interpersonal_violence
+
+causes.multidrug_resistant_tuberculosis_without_extensive_drug_resistance.parent = causes.tuberculosis
+
+causes.extensively_drug_resistant_tuberculosis.parent = causes.tuberculosis
+
+causes.hiv_aids_drug_susceptible_tuberculosis.parent = causes.hiv_aids
+
+causes.hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance.parent = causes.hiv_aids
+
+causes.hiv_aids_extensively_drug_resistant_tuberculosis.parent = causes.hiv_aids
+
+causes.latent_tuberculosis_infection.parent = causes.tuberculosis
+
+causes.hiv_aids_and_sexually_transmitted_infections.parent = causes.communicable_maternal_neonatal_and_nutritional_diseases
+causes.hiv_aids_and_sexually_transmitted_infections.sub_causes = (causes.hiv_aids,
+                                                                  causes.sexually_transmitted_infections_excluding_hiv)
+
+causes.respiratory_infections_and_tuberculosis.parent = causes.communicable_maternal_neonatal_and_nutritional_diseases
+causes.respiratory_infections_and_tuberculosis.sub_causes = (causes.tuberculosis, causes.lower_respiratory_infections,
+                                                             causes.upper_respiratory_infections, causes.otitis_media)
+
+causes.enteric_infections.parent = causes.communicable_maternal_neonatal_and_nutritional_diseases
+causes.enteric_infections.sub_causes = (causes.diarrheal_diseases, causes.other_intestinal_infectious_diseases,
+                                        causes.typhoid_and_paratyphoid, causes.invasive_non_typhoidal_salmonella_ints)
+
+causes.typhoid_and_paratyphoid.parent = causes.enteric_infections
+causes.typhoid_and_paratyphoid.sub_causes = causes.typhoid_fever, causes.paratyphoid_fever
+
+causes.invasive_non_typhoidal_salmonella_ints.parent = causes.enteric_infections
+
+causes.other_infectious_diseases.parent = causes.communicable_maternal_neonatal_and_nutritional_diseases
+causes.other_infectious_diseases.sub_causes = (causes.meningitis, causes.encephalitis, causes.diphtheria,
+                                               causes.whooping_cough, causes.tetanus, causes.measles,
+                                               causes.varicella_and_herpes_zoster, causes.acute_hepatitis,
+                                               causes.other_unspecified_infectious_diseases)
+
+causes.maternal_and_neonatal_disorders.parent = causes.communicable_maternal_neonatal_and_nutritional_diseases
+causes.maternal_and_neonatal_disorders.sub_causes = causes.maternal_disorders, causes.neonatal_disorders
+
+causes.myelodysplastic_myeloproliferative_and_other_hematopoietic_neoplasms.parent = causes.other_neoplasms
+
+causes.benign_and_in_situ_intestinal_neoplasms.parent = causes.other_neoplasms
+
+causes.benign_and_in_situ_cervical_and_uterine_neoplasms.parent = causes.other_neoplasms
+
+causes.other_benign_and_in_situ_neoplasms.parent = causes.other_neoplasms
+
+causes.non_rheumatic_calcific_aortic_valve_disease.parent = causes.non_rheumatic_valvular_heart_disease
+
+causes.non_rheumatic_degenerative_mitral_valve_disease.parent = causes.non_rheumatic_valvular_heart_disease
+
+causes.other_non_rheumatic_valve_diseases.parent = causes.non_rheumatic_valvular_heart_disease
+
+causes.cirrhosis_due_to_nash.parent = causes.cirrhosis_and_other_chronic_liver_diseases
+
+causes.headache_disorders.parent = causes.neurological_disorders
+causes.headache_disorders.sub_causes = causes.migraine, causes.tension_type_headache
+
+causes.substance_use_disorders.parent = causes.non_communicable_diseases
+causes.substance_use_disorders.sub_causes = causes.alcohol_use_disorders, causes.drug_use_disorders
+
+causes.diabetes_and_kidney_diseases.parent = causes.non_communicable_diseases
+causes.diabetes_and_kidney_diseases.sub_causes = (causes.diabetes_mellitus, causes.acute_glomerulonephritis,
+                                                  causes.chronic_kidney_disease)
+
+causes.diabetes_mellitus_type_1.parent = causes.diabetes_mellitus
+
+causes.diabetes_mellitus_type_2.parent = causes.diabetes_mellitus
+
+causes.atopic_dermatitis.parent = causes.dermatitis
+
+causes.contact_dermatitis.parent = causes.dermatitis
+
+causes.seborrhoeic_dermatitis.parent = causes.dermatitis
+
+causes.bacterial_skin_diseases.parent = causes.skin_and_subcutaneous_diseases
+causes.bacterial_skin_diseases.sub_causes = causes.cellulitis, causes.pyoderma
+
+causes.blindness_and_vision_impairment.parent = causes.sense_organ_diseases
+causes.blindness_and_vision_impairment.sub_causes = (causes.glaucoma, causes.cataract,
+                                                     causes.age_related_macular_degeneration, causes.other_vision_loss,
+                                                     causes.refraction_disorders, causes.near_vision_loss)
+
+causes.upper_digestive_system_diseases.parent = causes.digestive_diseases
+causes.upper_digestive_system_diseases.sub_causes = (causes.peptic_ulcer_disease, causes.gastritis_and_duodenitis,
+                                                     causes.gastroesophageal_reflux_disease)
+
+causes.maternal_abortion_and_miscarriage.parent = causes.maternal_disorders
+
+causes.liver_cancer_due_to_nash.parent = causes.liver_cancer
+
+causes.chronic_kidney_disease_due_to_diabetes_mellitus_type_1.parent = causes.chronic_kidney_disease
+
+causes.chronic_kidney_disease_due_to_diabetes_mellitus_type_2.parent = causes.chronic_kidney_disease
+
+causes.refraction_disorders.parent = causes.blindness_and_vision_impairment
+
+causes.near_vision_loss.parent = causes.blindness_and_vision_impairment
+

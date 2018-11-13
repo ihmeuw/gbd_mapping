@@ -113,13 +113,14 @@ def get_cause_data():
                            'cause_id': causes.cause_id,
                            'parent_id': causes.parent_id,
                            'most_detailed': causes.most_detailed,
+                           'level': causes.level,
                            'male': causes.male.replace({np.NaN: False, 1: True}),
                            'female': causes.female.replace({np.NaN: False, 1: True}),
                            'yll_only': causes.yll_only.replace({np.NaN: False, 1: True}),
                            'yld_only': causes.yld_only.replace({np.NaN: False, 1: True}),
                            'yll_age_start': causes.yll_age_start.replace({np.NaN: 0}),
                            'yll_age_end': causes.yll_age_end,
-                           'yld_age_start': causes.yld_age_start,
+                           'yld_age_start': causes.yld_age_start.replace({np.NaN: 0}),
                            'yld_age_end': causes.yld_age_end})
     causes = causes.set_index('cause_name').join(cause_me_map).sort_values('cause_id').reset_index()
 
@@ -127,14 +128,19 @@ def get_cause_data():
     for _, cause in causes.iterrows():
         name = cause['cause_name']
         cid = cause['cause_id']
+        parent = causes.set_index('cause_id').at[cause['parent_id'], 'cause_name']
         dismod_id = cause['modelable_entity_id']
         most_detailed = cause['most_detailed']
+        level = cause['level']
         restrictions = make_restrictions(cause)
 
         eti_ids = cause_etiology_map[cause_etiology_map.cause_id == cid].rei_id.tolist()
         associated_etiologies = clean_entity_list(etiologies[etiologies.rei_id.isin(eti_ids)].rei_name)
         associated_sequelae = clean_entity_list(sequelae[sequelae.cause_id == cid].sequela_name)
-        cause_data.append((name, cid, dismod_id, restrictions, most_detailed, associated_sequelae, associated_etiologies))
+        sub_causes = causes[causes.parent_id == cid].cause_name.tolist()
+
+        cause_data.append((name, cid, dismod_id, most_detailed, level, parent, restrictions,
+                           associated_sequelae, associated_etiologies, sub_causes))
 
     return cause_data
 
