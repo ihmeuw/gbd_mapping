@@ -1,3 +1,7 @@
+**1.0.9 - 11/13/18**
+
+ - Add coverage_gap of lack_of_vitamin_a_fortification
+
 **1.0.8 - 10/26/18**
 
  - Add a ``kind`` field to entities.
