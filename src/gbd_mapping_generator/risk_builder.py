@@ -19,6 +19,7 @@ def get_base_types():
                       ('distribution', 'str'),
                       ('affected_causes', 'Tuple[Cause, ...]'),
                       ('restrictions', 'Restrictions'),
+                      ('paf_of_one', 'Tuple[Cause, ...] = None'),
                       ('levels', 'Levels = None'),
                       ('tmred', 'Tmred = None'),
                       ('exposure_parameters', 'ExposureParameters = None'),),
