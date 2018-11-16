@@ -1,3 +1,7 @@
+**1.0.10 - 11/15/18**
+
+ - Documentation dependency update.
+
 **1.0.9 - 11/13/18**
 
  - Add coverage_gap of lack_of_vitamin_a_fortification
