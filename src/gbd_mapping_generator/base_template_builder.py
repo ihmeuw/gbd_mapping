@@ -19,7 +19,7 @@ tmred_attrs = (('distribution', 'str'),
                ('min', 'scalar'),
                ('max', 'scalar'),
                ('inverted', 'bool'),)
-levels_attrs = tuple([('cat1', 'str'), ('cat2', 'str')] + [(f'cat{i}', 'str = None') for i in range(3, 60)])
+categories_attrs = tuple([('cat1', 'str'), ('cat2', 'str')] + [(f'cat{i}', 'str = None') for i in range(3, 123)])
 exposure_parameters_attrs = (('scale', 'scalar = None'),
                              ('max_rr', 'scalar = None'),)
 
@@ -46,8 +46,8 @@ def get_base_types():
             'superclass': ('GbdRecord', gbd_record_attrs),
             'docstring': 'Container for theoretical minimum risk exposure distribution data.'
         },
-        'Levels': {
-            'attrs': levels_attrs,
+        'Categories': {
+            'attrs': categories_attrs,
             'superclass': ('GbdRecord', gbd_record_attrs),
             'docstring': 'Container for categorical risk exposure levels.'
         },

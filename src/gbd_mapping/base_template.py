@@ -109,14 +109,20 @@ class Tmred(GbdRecord):
         self.inverted = inverted
 
 
-class Levels(GbdRecord):
+class Categories(GbdRecord):
     """Container for categorical risk exposure levels."""
     __slots__ = ('cat1', 'cat2', 'cat3', 'cat4', 'cat5', 'cat6', 'cat7', 'cat8', 'cat9', 'cat10', 'cat11', 'cat12',
                  'cat13', 'cat14', 'cat15', 'cat16', 'cat17', 'cat18', 'cat19', 'cat20', 'cat21', 'cat22', 'cat23',
                  'cat24', 'cat25', 'cat26', 'cat27', 'cat28', 'cat29', 'cat30', 'cat31', 'cat32', 'cat33', 'cat34',
                  'cat35', 'cat36', 'cat37', 'cat38', 'cat39', 'cat40', 'cat41', 'cat42', 'cat43', 'cat44', 'cat45',
                  'cat46', 'cat47', 'cat48', 'cat49', 'cat50', 'cat51', 'cat52', 'cat53', 'cat54', 'cat55', 'cat56',
-                 'cat57', 'cat58', 'cat59', )
+                 'cat57', 'cat58', 'cat59', 'cat60', 'cat61', 'cat62', 'cat63', 'cat64', 'cat65', 'cat66', 'cat67',
+                 'cat68', 'cat69', 'cat70', 'cat71', 'cat72', 'cat73', 'cat74', 'cat75', 'cat76', 'cat77', 'cat78',
+                 'cat79', 'cat80', 'cat81', 'cat82', 'cat83', 'cat84', 'cat85', 'cat86', 'cat87', 'cat88', 'cat89',
+                 'cat90', 'cat91', 'cat92', 'cat93', 'cat94', 'cat95', 'cat96', 'cat97', 'cat98', 'cat99', 'cat100',
+                 'cat101', 'cat102', 'cat103', 'cat104', 'cat105', 'cat106', 'cat107', 'cat108', 'cat109', 'cat110',
+                 'cat111', 'cat112', 'cat113', 'cat114', 'cat115', 'cat116', 'cat117', 'cat118', 'cat119', 'cat120',
+                 'cat121', 'cat122', )
 
     def __init__(self,
                  cat1: str,
@@ -177,7 +183,70 @@ class Levels(GbdRecord):
                  cat56: str = None,
                  cat57: str = None,
                  cat58: str = None,
-                 cat59: str = None, ):
+                 cat59: str = None,
+                 cat60: str = None,
+                 cat61: str = None,
+                 cat62: str = None,
+                 cat63: str = None,
+                 cat64: str = None,
+                 cat65: str = None,
+                 cat66: str = None,
+                 cat67: str = None,
+                 cat68: str = None,
+                 cat69: str = None,
+                 cat70: str = None,
+                 cat71: str = None,
+                 cat72: str = None,
+                 cat73: str = None,
+                 cat74: str = None,
+                 cat75: str = None,
+                 cat76: str = None,
+                 cat77: str = None,
+                 cat78: str = None,
+                 cat79: str = None,
+                 cat80: str = None,
+                 cat81: str = None,
+                 cat82: str = None,
+                 cat83: str = None,
+                 cat84: str = None,
+                 cat85: str = None,
+                 cat86: str = None,
+                 cat87: str = None,
+                 cat88: str = None,
+                 cat89: str = None,
+                 cat90: str = None,
+                 cat91: str = None,
+                 cat92: str = None,
+                 cat93: str = None,
+                 cat94: str = None,
+                 cat95: str = None,
+                 cat96: str = None,
+                 cat97: str = None,
+                 cat98: str = None,
+                 cat99: str = None,
+                 cat100: str = None,
+                 cat101: str = None,
+                 cat102: str = None,
+                 cat103: str = None,
+                 cat104: str = None,
+                 cat105: str = None,
+                 cat106: str = None,
+                 cat107: str = None,
+                 cat108: str = None,
+                 cat109: str = None,
+                 cat110: str = None,
+                 cat111: str = None,
+                 cat112: str = None,
+                 cat113: str = None,
+                 cat114: str = None,
+                 cat115: str = None,
+                 cat116: str = None,
+                 cat117: str = None,
+                 cat118: str = None,
+                 cat119: str = None,
+                 cat120: str = None,
+                 cat121: str = None,
+                 cat122: str = None, ):
         super().__init__()
         self.cat1 = cat1
         self.cat2 = cat2
@@ -238,6 +307,69 @@ class Levels(GbdRecord):
         self.cat57 = cat57
         self.cat58 = cat58
         self.cat59 = cat59
+        self.cat60 = cat60
+        self.cat61 = cat61
+        self.cat62 = cat62
+        self.cat63 = cat63
+        self.cat64 = cat64
+        self.cat65 = cat65
+        self.cat66 = cat66
+        self.cat67 = cat67
+        self.cat68 = cat68
+        self.cat69 = cat69
+        self.cat70 = cat70
+        self.cat71 = cat71
+        self.cat72 = cat72
+        self.cat73 = cat73
+        self.cat74 = cat74
+        self.cat75 = cat75
+        self.cat76 = cat76
+        self.cat77 = cat77
+        self.cat78 = cat78
+        self.cat79 = cat79
+        self.cat80 = cat80
+        self.cat81 = cat81
+        self.cat82 = cat82
+        self.cat83 = cat83
+        self.cat84 = cat84
+        self.cat85 = cat85
+        self.cat86 = cat86
+        self.cat87 = cat87
+        self.cat88 = cat88
+        self.cat89 = cat89
+        self.cat90 = cat90
+        self.cat91 = cat91
+        self.cat92 = cat92
+        self.cat93 = cat93
+        self.cat94 = cat94
+        self.cat95 = cat95
+        self.cat96 = cat96
+        self.cat97 = cat97
+        self.cat98 = cat98
+        self.cat99 = cat99
+        self.cat100 = cat100
+        self.cat101 = cat101
+        self.cat102 = cat102
+        self.cat103 = cat103
+        self.cat104 = cat104
+        self.cat105 = cat105
+        self.cat106 = cat106
+        self.cat107 = cat107
+        self.cat108 = cat108
+        self.cat109 = cat109
+        self.cat110 = cat110
+        self.cat111 = cat111
+        self.cat112 = cat112
+        self.cat113 = cat113
+        self.cat114 = cat114
+        self.cat115 = cat115
+        self.cat116 = cat116
+        self.cat117 = cat117
+        self.cat118 = cat118
+        self.cat119 = cat119
+        self.cat120 = cat120
+        self.cat121 = cat121
+        self.cat122 = cat122
 
 
 class ExposureParameters(GbdRecord):
