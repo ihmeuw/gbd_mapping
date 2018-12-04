@@ -12,18 +12,26 @@ from .base_template import ModelableEntity, GbdRecord
 
 class Etiology(ModelableEntity):
     """Container for etiology GBD ids and metadata."""
-    __slots__ = ('name', 'kind', 'gbd_id', )
+    __slots__ = ('name', 'kind', 'gbd_id', 'paf_yll_exist', 'paf_yld_exist', 'paf_yll_in_range', 'paf_yld_in_range', )
 
     def __init__(self,
                  name: str,
                  kind: str,
-                 gbd_id: Union[reiid, None], ):
+                 gbd_id: Union[reiid, None],
+                 paf_yll_exist: bool,
+                 paf_yld_exist: bool,
+                 paf_yll_in_range: bool,
+                 paf_yld_in_range: bool, ):
         super().__init__(name=name,
                          kind=kind,
                          gbd_id=gbd_id)
         self.name = name
         self.kind = kind
         self.gbd_id = gbd_id
+        self.paf_yll_exist = paf_yll_exist
+        self.paf_yld_exist = paf_yld_exist
+        self.paf_yll_in_range = paf_yll_in_range
+        self.paf_yld_in_range = paf_yld_in_range
 
 
 class Etiologies(GbdRecord):
