@@ -105,7 +105,18 @@ def get_sequela_data():
 def get_etiology_data():
     etiologies = gbd.get_rei_metadata(rei_set_id=ETIOLOGY_SET_ID)
     etiologies = etiologies[etiologies['most_detailed'] == 1]
-    return list(zip(clean_entity_list(etiologies.rei_name), etiologies.rei_id))
+    data_survey = get_survey_summary('etiology')
+    assert len(etiologies) == len(data_survey)
+
+    etiologies = etiologies.merge(data_survey, on='rei_id')
+    return list(zip(clean_entity_list(etiologies.rei_name),
+                    etiologies.rei_id,
+                    etiologies.paf_yll_exist,
+                    etiologies.paf_yll_min,
+                    etiologies.paf_yll_max,
+                    etiologies.paf_yld_exist,
+                    etiologies.paf_yld_min,
+                    etiologies.paf_yld_max))
 
 
 def get_cause_data():
