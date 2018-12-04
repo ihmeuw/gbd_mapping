@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 
+
 import vivarium_gbd_access.gbd as gbd
 from .util import clean_entity_list, clean_risk_me
 
@@ -8,6 +9,16 @@ from .util import clean_entity_list, clean_risk_me
 CAUSE_SET_ID = 3
 REI_SET_ID = 2
 ETIOLOGY_SET_ID = 3
+
+
+def get_survey_summary(entity: str):
+    """
+    get the summary result of gbd-data-survey
+    :param entity: one of ['cause', 'risk_factor', 'sequela', 'etiology', 'covariate']
+    :return: any additional information to notice, e.g., data existence, data range, any violated restriction
+    """
+    filepath = f'/share/costeffectiveness/gbd_data_survey/GBD_2017/{entity}.hdf'
+    return pd.read_hdf(filepath, key='summary')
 
 ###############################################
 # Canonical mappings between entities and ids #
@@ -292,13 +303,23 @@ def get_risk_data():
 
 def get_covariate_data():
     covariates = gbd.get_covariate_metadata()
+    data_survey = get_survey_summary('covariate')
+
+    assert set(covariates.covariate_id) == set(data_survey.covariate_id)
+    covariates = covariates.merge(data_survey, on='covariate_id')
     return list(zip(clean_entity_list(covariates.covariate_name),
                     covariates.covariate_id,
                     covariates.group_display,
                     covariates.covariate_type,
                     covariates.by_age,
                     covariates.by_sex,
-                    covariates.dichotomous,))
+                    covariates.dichotomous,
+                    covariates.data_exist,
+                    covariates.lower_value_exist,
+                    covariates.upper_value_exist,
+                    covariates.mean_value_exist,
+                    covariates.sex_restriction_violated,
+                    covariates.age_restriction_violated,))
 
 
 def get_coverage_gap_metadata(coverage_gap):

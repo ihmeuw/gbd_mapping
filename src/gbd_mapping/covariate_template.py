@@ -12,7 +12,9 @@ from .base_template import ModelableEntity, GbdRecord
 
 class Covariate(ModelableEntity):
     """Container for covariate GBD ids and metadata."""
-    __slots__ = ('name', 'kind', 'gbd_id', 'group', 'status', 'by_age', 'by_sex', 'dichotomous', )
+    __slots__ = ('name', 'kind', 'gbd_id', 'group', 'status', 'by_age', 'by_sex', 'dichotomous', 'data_exist',
+                 'low_value_exist', 'upper_value_exist', 'mean_value_exist', 'sex_restriction_violated',
+                 'age_restriction_violated', )
 
     def __init__(self,
                  name: str,
@@ -22,7 +24,13 @@ class Covariate(ModelableEntity):
                  status: str,
                  by_age: bool,
                  by_sex: bool,
-                 dichotomous: bool, ):
+                 dichotomous: bool,
+                 data_exist: bool,
+                 low_value_exist: bool,
+                 upper_value_exist: bool,
+                 mean_value_exist: bool,
+                 sex_restriction_violated: bool,
+                 age_restriction_violated: bool, ):
         super().__init__(name=name,
                          kind=kind,
                          gbd_id=gbd_id)
@@ -34,6 +42,12 @@ class Covariate(ModelableEntity):
         self.by_age = by_age
         self.by_sex = by_sex
         self.dichotomous = dichotomous
+        self.data_exist = data_exist
+        self.low_value_exist = low_value_exist
+        self.upper_value_exist = upper_value_exist
+        self.mean_value_exist = mean_value_exist
+        self.sex_restriction_violated = sex_restriction_violated
+        self.age_restriction_violated = age_restriction_violated
 
 
 class Covariates(GbdRecord):
@@ -86,7 +100,7 @@ class Covariates(GbdRecord):
                  'chagas_population_at_risk_2_proportion', 'birth_prevalence_of_chd',
                  'birth_prevalence_of_congenital_chromosomal_anomalies',
                  'hemoglobinopathies_prevalence_x_excess_mortality', 'age_standardize_prevalence_of_severe_anemia',
-                 'schistosomiasis_prevalence_proportion', 'health_system_access_capped',
+                 'schistosomiasis_prevalence_proportion', 'maternal_care_and_immunization',
                  'neonatal_death_rate_modeled_2_per_1000', 'pcv3_coverage_proportion',
                  'presence_of_leishmaniasis_binary', 'potential_for_leishmaniasis_transmission_binary',
                  'high_leishmaniasis_endemicity_binary', 'under_5_hiv_death_rate',
@@ -292,7 +306,7 @@ class Covariates(GbdRecord):
                  'log_transformed_sev_scalar_msk', 'log_transformed_sev_scalar_trans_inj',
                  'proportion_of_total_population_in_japanese_encephalitis_endemic_area_india',
                  'vitamin_a_unadjusted_iu', 'vitamin_a_rae_unadjusted_ug', 'vitamin_a_retinol_unadjusted_ug',
-                 'dietary_zinc_unadjusted_mg', 'death_and_ncc_prevalence_ratio',
+                 'dietary_zinc_unadjusted_mg',
                  'proportion_of_total_population_covered_by_menafrivac_initiative_meningitis_meningococcal_type_a_vaccine',
                  'stunting_proportion_less_than_2sd_height_for_age_less_than_5_years',
                  'wasting_proportion_less_than_2sd_weight_for_height_less_than_5_years',
@@ -307,20 +321,17 @@ class Covariates(GbdRecord):
                  'proportion_of_liver_cancer_due_to_other_causes_age_standardized', 'seroprevalence_of_anti_hav_igg',
                  'seroprevalence_of_anti_hev_igg', 'major_depressive_disorder',
                  'proportion_of_population_involved_in_agricultural_activities', 'oop_health_expenditure_per_capita',
-                 'fraction_of_oop_health_expenditure', 'art_coverage', 'tuberculosis_case_detection',
-                 'universal_health_coverage', 'maternal_alcohol_consumption_during_pregnancy_proportion',
-                 'healthcare_access_and_quality_index', 'age_standardized_proportion_adult_underweight',
-                 'ors_oral_rehydration', 'antibiotics_for_lri', 'live_births_by_sex', 'age_standardized_melanoma',
-                 'measles_vaccine_coverage_2_doses_proportion', 'schisto_cumulative_treatments',
-                 'health_worker_density', 'iron_energy_unadjusted_mg', 'poultry_energy_adjusted_g',
+                 'fraction_of_oop_health_expenditure', 'universal_health_coverage',
+                 'maternal_alcohol_consumption_during_pregnancy_proportion', 'healthcare_access_and_quality_index',
+                 'age_standardized_proportion_adult_underweight', 'ors_oral_rehydration', 'antibiotics_for_lri',
+                 'live_births_by_sex', 'age_standardized_melanoma', 'measles_vaccine_coverage_2_doses_proportion',
+                 'schisto_cumulative_treatments', 'iron_energy_unadjusted_mg', 'poultry_energy_adjusted_g',
                  'poultry_energy_unadjusted_g', 'malaria_pfpr_map', 'malaria_incidence_map',
                  'antimalarial_effective_treatment_ratio_map', 'antimalarial_effective_treatment_map',
                  'mean_birth_weight', 'mean_hemoglobin_concentration_age_standardized',
                  'age_standardized_prevalence_of_cocaine_dependence_in_women_of_reproductive_age',
-                 'age_standardized_prevalence_of_amphetamine_dependence_in_women_of_reproductive_age',
                  'age_standardized_prevalence_of_opioid_dependence_in_women_of_reproductive_age',
                  'age_standardized_prevalence_of_cannabis_dependence_in_women_of_reproductive_age',
-                 'age_standardized_prevalence_of_total_drug_dependence_in_women_of_reproductive_age',
                  'rubella_vaccine_coverage_proportion',
                  'tuberculosis_infection_risk_weighted_prevalence_age_standardized', 'presenting_vision_impairment',
                  'ten_year_lag_distributed_energy_per_capita', 'folic_acid_unadjusted_ug',
@@ -348,22 +359,17 @@ class Covariates(GbdRecord):
                  'proportion_of_the_population_from_east_asia', 'proportion_of_the_population_from_indo_oceania',
                  'composite_fortification_standard_and_folic_acid_inclusion',
                  'intravenous_drug_use_proportion_by_age', 'intravenous_drug_use_age_standardized_proportion',
-                 'hepatitis_a_infection_incidence', 'alcohol_consumption_age_standardized_in_grams_per_day',
-                 'alcohol_drinker_proportion_age_standardized', 'hepatitis_b_infection_incidence',
-                 'hepatitis_c_infection_incidence', 'hepatitis_e_infection_incidence',
+                 'alcohol_consumption_age_standardized_in_grams_per_day',
+                 'alcohol_drinker_proportion_age_standardized',
                  'proportion_of_liver_cancer_due_to_nash_age_standardized', 'proportion_of_cirrhosis_due_to_nash',
                  'muslim_religion_proportion_of_population', 'tb_strain_prevalence_weighted_transmission_rr',
                  'tb_strain_prevalence_weighted_treatment_failure_rr',
-                 'tb_strain_prevalence_weighted_treatment_delay_rr',
-                 'preterm_birth_prevalence_less_than_37_weeks_of_gestation',
-                 'extremely_preterm_birth_prevalence_less_than_28_weeks_of_gestation',
-                 'short_gestation_sev_all_ages_by_sex', 'age_and_sex_specific_underweight_weight_for_age_sev',
+                 'tb_strain_prevalence_weighted_treatment_delay_rr', 'short_gestation_sev_all_ages_by_sex',
+                 'age_and_sex_specific_underweight_weight_for_age_sev',
                  'age_standardized_underweight_weight_for_age_sev',
                  'age_and_sex_specific_stunting_height_for_age_sev', 'age_standardized_stunting_height_for_age_sev',
                  'age_and_sex_specific_wasting_weight_for_height_sev',
                  'age_standardized_wasting_weight_for_height_sev', 'low_birth_weight_sev_all_ages_by_sex',
-                 'low_birth_weight_and_short_gestation_sev_all_ages_by_sex', 'preeclampsia_incidence_ratio_all_ages',
-                 'abo_blood_type_mismatch_at_birth', 'rhesus_blood_type_mismatch_at_birth',
                  'adult_hiv_death_rate_both_sexes', 'fortification_standard_including_iron',
                  'composite_fortification_standard_and_iron_inclusion',
                  'pelvic_inflammatory_disease_age_standardized_prevalence',
@@ -374,8 +380,7 @@ class Covariates(GbdRecord):
                  'age_standardized_death_rate_of_diabetes_0_15_years_per_100_000',
                  'alcohol_sev_age_and_sex_specific', 'alcohol_sev_age_standardized',
                  'underweight_women_of_reproductive_age', 'underweight_women_age_specific',
-                 'underweight_men_age_specific', 'opioids_per_million_population_per_day',
-                 'prevalence_of_mtbc_lineage_1_strains_proportion',
+                 'opioids_per_million_population_per_day', 'prevalence_of_mtbc_lineage_1_strains_proportion',
                  'prevalence_of_mtbc_lineage_2_strains_proportion',
                  'prevalence_of_mtbc_lineage_3_strains_proportion',
                  'prevalence_of_mtbc_lineage_4_strains_proportion', 'prevalence_of_maf_lineage_5_and_6_proportion',
@@ -435,18 +440,13 @@ class Covariates(GbdRecord):
                  'health_industry_workers', 'education_years_per_capita_aggregated_by_age_15_and_up_and_sex',
                  'underweight_age_and_sex_specific', 'total_physical_activity_met_min_week_age_specific',
                  'total_physical_activity_met_min_week_age_standardized',
-                 'full_vaccine_coverage_indicator_proportion',
                  'bacille_calmette_guerin_bcg_vaccine_coverage_proportion',
                  'hepatitis_b_vaccine_coverage_proportion_aged_through_time',
-                 'adolescent_birth_rates_10_19_years_of_age', 'percent_well_certified',
-                 'log_total_health_expenditure_per_capita', 'count_of_population_censuses',
-                 'birth_registry_completeness', 'pigs_raised_in_extensive_agricultural_systems_per_capita',
+                 'log_total_health_expenditure_per_capita',
+                 'pigs_raised_in_extensive_agricultural_systems_per_capita',
                  'pigs_raised_in_semi_extensive_agricultural_systems_per_capita',
                  'pigs_raised_in_intensive_industrial_agricultural_systems_per_capita',
-                 'mean_hemoglobin_age_sex_specific', 'physicians_per_capita', 'nurses_and_midwives_per_capita',
-                 'pharmacists_per_capita', 'hiv_mortality_rate', 'untreated_hiv', 'medical_schools',
-                 'dentists_per_capita', 'full_vaccine_coverage_indicator_proportion_sage_method_dtp3_pcv3_mcv2',
-                 'net_reproductive_rate', )
+                 'mean_hemoglobin_age_sex_specific', 'hiv_mortality_rate', 'untreated_hiv', 'medical_schools', )
 
     def __init__(self, **kwargs):
         super().__init__()
@@ -561,7 +561,7 @@ class Covariates(GbdRecord):
         self.hemoglobinopathies_prevalence_x_excess_mortality = kwargs.get('hemoglobinopathies_prevalence_x_excess_mortality')
         self.age_standardize_prevalence_of_severe_anemia = kwargs.get('age_standardize_prevalence_of_severe_anemia')
         self.schistosomiasis_prevalence_proportion = kwargs.get('schistosomiasis_prevalence_proportion')
-        self.health_system_access_capped = kwargs.get('health_system_access_capped')
+        self.maternal_care_and_immunization = kwargs.get('maternal_care_and_immunization')
         self.neonatal_death_rate_modeled_2_per_1000 = kwargs.get('neonatal_death_rate_modeled_2_per_1000')
         self.pcv3_coverage_proportion = kwargs.get('pcv3_coverage_proportion')
         self.presence_of_leishmaniasis_binary = kwargs.get('presence_of_leishmaniasis_binary')
@@ -871,7 +871,6 @@ class Covariates(GbdRecord):
         self.vitamin_a_rae_unadjusted_ug = kwargs.get('vitamin_a_rae_unadjusted_ug')
         self.vitamin_a_retinol_unadjusted_ug = kwargs.get('vitamin_a_retinol_unadjusted_ug')
         self.dietary_zinc_unadjusted_mg = kwargs.get('dietary_zinc_unadjusted_mg')
-        self.death_and_ncc_prevalence_ratio = kwargs.get('death_and_ncc_prevalence_ratio')
         self.proportion_of_total_population_covered_by_menafrivac_initiative_meningitis_meningococcal_type_a_vaccine = kwargs.get('proportion_of_total_population_covered_by_menafrivac_initiative_meningitis_meningococcal_type_a_vaccine')
         self.stunting_proportion_less_than_2sd_height_for_age_less_than_5_years = kwargs.get('stunting_proportion_less_than_2sd_height_for_age_less_than_5_years')
         self.wasting_proportion_less_than_2sd_weight_for_height_less_than_5_years = kwargs.get('wasting_proportion_less_than_2sd_weight_for_height_less_than_5_years')
@@ -893,8 +892,6 @@ class Covariates(GbdRecord):
         self.proportion_of_population_involved_in_agricultural_activities = kwargs.get('proportion_of_population_involved_in_agricultural_activities')
         self.oop_health_expenditure_per_capita = kwargs.get('oop_health_expenditure_per_capita')
         self.fraction_of_oop_health_expenditure = kwargs.get('fraction_of_oop_health_expenditure')
-        self.art_coverage = kwargs.get('art_coverage')
-        self.tuberculosis_case_detection = kwargs.get('tuberculosis_case_detection')
         self.universal_health_coverage = kwargs.get('universal_health_coverage')
         self.maternal_alcohol_consumption_during_pregnancy_proportion = kwargs.get('maternal_alcohol_consumption_during_pregnancy_proportion')
         self.healthcare_access_and_quality_index = kwargs.get('healthcare_access_and_quality_index')
@@ -905,7 +902,6 @@ class Covariates(GbdRecord):
         self.age_standardized_melanoma = kwargs.get('age_standardized_melanoma')
         self.measles_vaccine_coverage_2_doses_proportion = kwargs.get('measles_vaccine_coverage_2_doses_proportion')
         self.schisto_cumulative_treatments = kwargs.get('schisto_cumulative_treatments')
-        self.health_worker_density = kwargs.get('health_worker_density')
         self.iron_energy_unadjusted_mg = kwargs.get('iron_energy_unadjusted_mg')
         self.poultry_energy_adjusted_g = kwargs.get('poultry_energy_adjusted_g')
         self.poultry_energy_unadjusted_g = kwargs.get('poultry_energy_unadjusted_g')
@@ -916,10 +912,8 @@ class Covariates(GbdRecord):
         self.mean_birth_weight = kwargs.get('mean_birth_weight')
         self.mean_hemoglobin_concentration_age_standardized = kwargs.get('mean_hemoglobin_concentration_age_standardized')
         self.age_standardized_prevalence_of_cocaine_dependence_in_women_of_reproductive_age = kwargs.get('age_standardized_prevalence_of_cocaine_dependence_in_women_of_reproductive_age')
-        self.age_standardized_prevalence_of_amphetamine_dependence_in_women_of_reproductive_age = kwargs.get('age_standardized_prevalence_of_amphetamine_dependence_in_women_of_reproductive_age')
         self.age_standardized_prevalence_of_opioid_dependence_in_women_of_reproductive_age = kwargs.get('age_standardized_prevalence_of_opioid_dependence_in_women_of_reproductive_age')
         self.age_standardized_prevalence_of_cannabis_dependence_in_women_of_reproductive_age = kwargs.get('age_standardized_prevalence_of_cannabis_dependence_in_women_of_reproductive_age')
-        self.age_standardized_prevalence_of_total_drug_dependence_in_women_of_reproductive_age = kwargs.get('age_standardized_prevalence_of_total_drug_dependence_in_women_of_reproductive_age')
         self.rubella_vaccine_coverage_proportion = kwargs.get('rubella_vaccine_coverage_proportion')
         self.tuberculosis_infection_risk_weighted_prevalence_age_standardized = kwargs.get('tuberculosis_infection_risk_weighted_prevalence_age_standardized')
         self.presenting_vision_impairment = kwargs.get('presenting_vision_impairment')
@@ -971,20 +965,14 @@ class Covariates(GbdRecord):
         self.composite_fortification_standard_and_folic_acid_inclusion = kwargs.get('composite_fortification_standard_and_folic_acid_inclusion')
         self.intravenous_drug_use_proportion_by_age = kwargs.get('intravenous_drug_use_proportion_by_age')
         self.intravenous_drug_use_age_standardized_proportion = kwargs.get('intravenous_drug_use_age_standardized_proportion')
-        self.hepatitis_a_infection_incidence = kwargs.get('hepatitis_a_infection_incidence')
         self.alcohol_consumption_age_standardized_in_grams_per_day = kwargs.get('alcohol_consumption_age_standardized_in_grams_per_day')
         self.alcohol_drinker_proportion_age_standardized = kwargs.get('alcohol_drinker_proportion_age_standardized')
-        self.hepatitis_b_infection_incidence = kwargs.get('hepatitis_b_infection_incidence')
-        self.hepatitis_c_infection_incidence = kwargs.get('hepatitis_c_infection_incidence')
-        self.hepatitis_e_infection_incidence = kwargs.get('hepatitis_e_infection_incidence')
         self.proportion_of_liver_cancer_due_to_nash_age_standardized = kwargs.get('proportion_of_liver_cancer_due_to_nash_age_standardized')
         self.proportion_of_cirrhosis_due_to_nash = kwargs.get('proportion_of_cirrhosis_due_to_nash')
         self.muslim_religion_proportion_of_population = kwargs.get('muslim_religion_proportion_of_population')
         self.tb_strain_prevalence_weighted_transmission_rr = kwargs.get('tb_strain_prevalence_weighted_transmission_rr')
         self.tb_strain_prevalence_weighted_treatment_failure_rr = kwargs.get('tb_strain_prevalence_weighted_treatment_failure_rr')
         self.tb_strain_prevalence_weighted_treatment_delay_rr = kwargs.get('tb_strain_prevalence_weighted_treatment_delay_rr')
-        self.preterm_birth_prevalence_less_than_37_weeks_of_gestation = kwargs.get('preterm_birth_prevalence_less_than_37_weeks_of_gestation')
-        self.extremely_preterm_birth_prevalence_less_than_28_weeks_of_gestation = kwargs.get('extremely_preterm_birth_prevalence_less_than_28_weeks_of_gestation')
         self.short_gestation_sev_all_ages_by_sex = kwargs.get('short_gestation_sev_all_ages_by_sex')
         self.age_and_sex_specific_underweight_weight_for_age_sev = kwargs.get('age_and_sex_specific_underweight_weight_for_age_sev')
         self.age_standardized_underweight_weight_for_age_sev = kwargs.get('age_standardized_underweight_weight_for_age_sev')
@@ -993,10 +981,6 @@ class Covariates(GbdRecord):
         self.age_and_sex_specific_wasting_weight_for_height_sev = kwargs.get('age_and_sex_specific_wasting_weight_for_height_sev')
         self.age_standardized_wasting_weight_for_height_sev = kwargs.get('age_standardized_wasting_weight_for_height_sev')
         self.low_birth_weight_sev_all_ages_by_sex = kwargs.get('low_birth_weight_sev_all_ages_by_sex')
-        self.low_birth_weight_and_short_gestation_sev_all_ages_by_sex = kwargs.get('low_birth_weight_and_short_gestation_sev_all_ages_by_sex')
-        self.preeclampsia_incidence_ratio_all_ages = kwargs.get('preeclampsia_incidence_ratio_all_ages')
-        self.abo_blood_type_mismatch_at_birth = kwargs.get('abo_blood_type_mismatch_at_birth')
-        self.rhesus_blood_type_mismatch_at_birth = kwargs.get('rhesus_blood_type_mismatch_at_birth')
         self.adult_hiv_death_rate_both_sexes = kwargs.get('adult_hiv_death_rate_both_sexes')
         self.fortification_standard_including_iron = kwargs.get('fortification_standard_including_iron')
         self.composite_fortification_standard_and_iron_inclusion = kwargs.get('composite_fortification_standard_and_iron_inclusion')
@@ -1011,7 +995,6 @@ class Covariates(GbdRecord):
         self.alcohol_sev_age_standardized = kwargs.get('alcohol_sev_age_standardized')
         self.underweight_women_of_reproductive_age = kwargs.get('underweight_women_of_reproductive_age')
         self.underweight_women_age_specific = kwargs.get('underweight_women_age_specific')
-        self.underweight_men_age_specific = kwargs.get('underweight_men_age_specific')
         self.opioids_per_million_population_per_day = kwargs.get('opioids_per_million_population_per_day')
         self.prevalence_of_mtbc_lineage_1_strains_proportion = kwargs.get('prevalence_of_mtbc_lineage_1_strains_proportion')
         self.prevalence_of_mtbc_lineage_2_strains_proportion = kwargs.get('prevalence_of_mtbc_lineage_2_strains_proportion')
@@ -1090,24 +1073,13 @@ class Covariates(GbdRecord):
         self.underweight_age_and_sex_specific = kwargs.get('underweight_age_and_sex_specific')
         self.total_physical_activity_met_min_week_age_specific = kwargs.get('total_physical_activity_met_min_week_age_specific')
         self.total_physical_activity_met_min_week_age_standardized = kwargs.get('total_physical_activity_met_min_week_age_standardized')
-        self.full_vaccine_coverage_indicator_proportion = kwargs.get('full_vaccine_coverage_indicator_proportion')
         self.bacille_calmette_guerin_bcg_vaccine_coverage_proportion = kwargs.get('bacille_calmette_guerin_bcg_vaccine_coverage_proportion')
         self.hepatitis_b_vaccine_coverage_proportion_aged_through_time = kwargs.get('hepatitis_b_vaccine_coverage_proportion_aged_through_time')
-        self.adolescent_birth_rates_10_19_years_of_age = kwargs.get('adolescent_birth_rates_10_19_years_of_age')
-        self.percent_well_certified = kwargs.get('percent_well_certified')
         self.log_total_health_expenditure_per_capita = kwargs.get('log_total_health_expenditure_per_capita')
-        self.count_of_population_censuses = kwargs.get('count_of_population_censuses')
-        self.birth_registry_completeness = kwargs.get('birth_registry_completeness')
         self.pigs_raised_in_extensive_agricultural_systems_per_capita = kwargs.get('pigs_raised_in_extensive_agricultural_systems_per_capita')
         self.pigs_raised_in_semi_extensive_agricultural_systems_per_capita = kwargs.get('pigs_raised_in_semi_extensive_agricultural_systems_per_capita')
         self.pigs_raised_in_intensive_industrial_agricultural_systems_per_capita = kwargs.get('pigs_raised_in_intensive_industrial_agricultural_systems_per_capita')
         self.mean_hemoglobin_age_sex_specific = kwargs.get('mean_hemoglobin_age_sex_specific')
-        self.physicians_per_capita = kwargs.get('physicians_per_capita')
-        self.nurses_and_midwives_per_capita = kwargs.get('nurses_and_midwives_per_capita')
-        self.pharmacists_per_capita = kwargs.get('pharmacists_per_capita')
         self.hiv_mortality_rate = kwargs.get('hiv_mortality_rate')
         self.untreated_hiv = kwargs.get('untreated_hiv')
         self.medical_schools = kwargs.get('medical_schools')
-        self.dentists_per_capita = kwargs.get('dentists_per_capita')
-        self.full_vaccine_coverage_indicator_proportion_sage_method_dtp3_pcv3_mcv2 = kwargs.get('full_vaccine_coverage_indicator_proportion_sage_method_dtp3_pcv3_mcv2')
-        self.net_reproductive_rate = kwargs.get('net_reproductive_rate')
