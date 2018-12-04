@@ -112,11 +112,9 @@ def get_etiology_data():
     return list(zip(clean_entity_list(etiologies.rei_name),
                     etiologies.rei_id,
                     etiologies.paf_yll_exist,
-                    etiologies.paf_yll_min,
-                    etiologies.paf_yll_max,
                     etiologies.paf_yld_exist,
-                    etiologies.paf_yld_min,
-                    etiologies.paf_yld_max))
+                    etiologies.paf_yll_in_range,
+                    etiologies.paf_yld_in_range))
 
 
 def get_cause_data():
