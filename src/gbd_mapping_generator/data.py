@@ -2,11 +2,11 @@ import pandas as pd
 import numpy as np
 
 import vivarium_gbd_access.gbd as gbd
-from .util import clean_entity_list, clean_risk_me
+from .util import clean_entity_list
 
 
 CAUSE_SET_ID = 3
-REI_SET_ID = 2
+RISK_SET_ID = 2
 ETIOLOGY_SET_ID = 3
 
 ###############################################
@@ -39,8 +39,7 @@ def get_causes(level=None):
 
 
 def get_risks():
-    risks = gbd.get_rei_metadata(rei_set_id=REI_SET_ID)
-    risks = risks[((risks['most_detailed'] == 1) | (risks['rei_id'] == 339)) & ~(risks['rei_id'].isin([334, 335]))]
+    risks = gbd.get_rei_metadata(rei_set_id=RISK_SET_ID)
     risks = pd.DataFrame({'rei_name':  clean_entity_list(risks.rei_name),
                           'rei_id': risks.rei_id})
     return risks.sort_values('rei_id')
@@ -132,7 +131,7 @@ def get_cause_data():
         dismod_id = cause['modelable_entity_id']
         most_detailed = cause['most_detailed']
         level = cause['level']
-        restrictions = make_restrictions(cause)
+        restrictions = make_cause_restrictions(cause)
 
         eti_ids = cause_etiology_map[cause_etiology_map.cause_id == cid].rei_id.tolist()
         associated_etiologies = clean_entity_list(etiologies[etiologies.rei_id.isin(eti_ids)].rei_name)
@@ -145,149 +144,134 @@ def get_cause_data():
     return cause_data
 
 
-def make_restrictions(cause):
-    restrictions = [('male_only', not cause['female']), ('female_only', not cause['male'])]
-    restrictions.extend([('yll_only', cause['yll_only']), ('yld_only', cause['yld_only'])])
-    if cause['yll_only']:
-        restrictions.extend([('yll_age_start', cause['yll_age_start']), ('yll_age_end', cause['yll_age_end'])])
-    elif cause['yld_only']:
-        restrictions.extend([('yld_age_start', cause['yld_age_start']), ('yld_age_end', cause['yld_age_end'])])
-    else:
-        restrictions.extend([('yll_age_start', cause['yll_age_start']), ('yll_age_end', cause['yll_age_end'])])
-        restrictions.extend([('yld_age_start', cause['yld_age_start']), ('yld_age_end', cause['yld_age_end'])])
+def make_cause_restrictions(cause):
+    id_map = {0.0: [2, None],
+              0.01: [3, 2],
+              0.10: [4, 3],
+              1.0: [5, 4],
+              5.0: [6, 5],
+              10.0: [7, 6],
+              15.0: [8, 7],
+              20.0: [9, 8],
+              30.0: [11, 10],
+              40.0: [13, 12],
+              45.0: [14, 13],
+              50.0: [15, 14],
+              55.0: [16, 15],
+              65.0: [18, 17],
+              95.0: [235, 32]}
+
+    restrictions = (
+        ('male_only', not cause['female']),
+        ('female_only', not cause['male']),
+        ('yll_only', cause['yll_only']),
+        ('yld_only', cause['yld_only']),
+        ('yll_age_group_id_start', id_map[cause['yll_age_start']][0] if not cause['yld_only'] else None),
+        ('yll_age_group_id_end', id_map[cause['yll_age_end']][1] if not cause['yld_only'] else None),
+        ('yld_age_group_id_start', id_map[cause['yld_age_start']][0] if not cause['yll_only'] else None),
+        ('yld_age_group_id_end', id_map[cause['yld_age_end']][1] if not cause['yll_only'] else None)
+    )
     return tuple(restrictions)
 
 
-def load_risk_params():
-    # Read in our parameter data sheet and filter out etiologies/aggregate risks/impairments
-    risk_params = gbd.get_auxiliary_data(measure='metadata', entity_type='risk_factor', entity_name='risk_variables')
-    risk_params = risk_params[~np.isnan(risk_params.rei_id)]
+def get_risk_data():
+    risks = gbd.get_rei_metadata(RISK_SET_ID).sort_values('rei_id')
+    risks = risks[['rei_id', 'level', 'rei_name', 'parent_id', 'most_detailed']].set_index('rei_id')
+    risks['rei_name'] = clean_entity_list(risks['rei_name'])
+    risks = risks.join(gbd.get_paf_of_one().set_index('rei_id'))
+    risks = risks.join(gbd.get_cause_risk_mapping().set_index('rei_id'))
+    risks = risks.join(gbd.get_category_mapping().set_index('rei_id'))
+    risks = risks.join(gbd.get_mediation_mapping().set_index('rei_id'))
+    risks = risks.join(gbd.get_risk_metadata().set_index('rei_id'))
 
-    risk_params.loc[risk_params.risk_type == 0, 'calc_type'] = 'unknown'
-    risk_params.loc[risk_params.risk_type == 1, 'calc_type'] = 'categorical'
-    risk_params.loc[(risk_params.risk_type == 2) & pd.isnull(risk_params.calc_type) , 'calc_type'] = 'unknown'
-    risk_params.loc[risk_params.risk_type == 3, 'calc_type'] = 'unknown'  # FIXME : Only air_pm
-    risk_params.loc[:, 'rei_id'] = risk_params.rei_id.astype(int)
+    causes = get_causes().set_index('cause_id')
 
-    base = ['rei_id', 'calc_type']
-    tmred = ['inv_exp', 'tmred_dist', 'tmred_para1', 'tmred_para2']
-    param = ['rr_scalar', 'minval', 'maxval', 'maxrr',]
-    restrictions = ['yll_only', 'yld_only', 'female_only', 'male_only']
-    columns_of_interest = base + tmred + param + restrictions
+    out = []
 
-    risk_params = risk_params[columns_of_interest]
-    # Get the canonical mapping between rei_ids and risk names and add the names to our data
-    risks = get_risks()
-    risks = risks.set_index('rei_id').join(risk_params.set_index('rei_id')).reset_index()
+    for rei_id, risk in risks.iterrows():
+        name = risk['rei_name']
+
+        most_detailed = risk['most_detailed']
+        level = risk['level']
+        parent = risks.at[risk['parent_id'], 'rei_name'] if level > 0 else None
+
+        distribution = risk['exposure_type'] if not risk['exposure_type'] is np.nan else 'none'
+
+        if distribution in ['normal', 'lognormal', 'ensemble']:
+            levels = None
+            scalar = risk['rr_scalar']
+            if risk['tmred_dist'] is np.nan:
+                tmred = (('distribution', 'draws'),
+                         ('min', None),
+                         ('max', None),
+                         ('inverted', bool(risk['inv_exp'])))
+            else:
+                tmred = (('distribution', risk['tmred_dist']),
+                         ('min', risk['tmrel_lower']),
+                         ('max', risk['tmrel_upper']),
+                         ('inverted', bool(risk['inv_exp'])))
+        elif distribution == 'dichotomous':
+            levels = (('cat1', 'exposed'),
+                      ('cat2', 'unexposed'))
+            scalar = None
+            tmred = None
+        elif 'polytomous' in distribution:
+            levels = sorted([(cat, name) for cat, name in risk['category_map'].items()],
+                            key=lambda x: int(x[0][3:]))
+            max_cat = int(levels[-1][0][3:]) + 1
+            levels.append((f'cat{max_cat}', 'unexposed'))
+            levels = tuple(levels)
+            scalar = None
+            tmred = None
+        else:  # It's either a custom risk or an aggregate, so we have to do a bunch of checking.
+            if risk['category_map'] is not np.nan:  # It's some strange categorical risk.
+                levels = sorted([(cat, name) for cat, name in risk['category_map'].items()],
+                                key=lambda x: int(x[0][3:]))
+                max_cat = int(levels[-1][0][3:]) + 1
+                levels.append((f'cat{max_cat}', 'unexposed'))
+                levels = tuple(levels)
+            else:
+                levels = None
+
+            scalar = risk['rr_scalar'] if risk['rr_scalar'] is not np.nan else None
+            if risk['tmred_dist'] is np.nan:
+                tmred = None
+            else:
+                tmred = (('distribution', risk['tmred_dist']),
+                         ('min', risk['tmrel_lower']),
+                         ('max', risk['tmrel_upper']),
+                         ('inverted', bool(risk['inv_exp'])))
+
+        if risk['affected_cause_ids'] is not np.nan:
+            affected_causes = (causes.at[cid, 'cause_name'] for cid in risk['affected_cause_ids'])
+        else:
+            affected_causes = []
+        if risk['affected_rei_ids'] is not np.nan:
+            affected_risks = [risks.at[rei_id, 'rei_name'] for rei_id in risk['affected_rei_ids']]
+        else:
+            affected_risks = []
+        if risk['paf_of_one_cause_ids'] is not np.nan:
+            paf_of_one_causes = [causes.at[cid, 'cause_name'] for cid in risk['paf_of_one_cause_ids']]
+        else:
+            paf_of_one_causes = []
+
+        restrictions = (('male_only', risk['female'] is np.nan),
+                        ('female_only', risk['male'] is np.nan),
+                        ('yll_only', risk['yld'] is np.nan),
+                        ('yld_only', risk['yll'] is np.nan),
+                        ('yll_age_group_id_start', risk['yll_age_group_id_start'] if risk['yll'] else None),
+                        ('yll_age_group_id_end', risk['yll_age_group_id_end'] if risk['yll'] else None),
+                        ('yld_age_group_id_start', risk['yld_age_group_id_start'] if risk['yld'] else None),
+                        ('yld_age_group_id_end', risk['yld_age_group_id_end'] if risk['yld'] else None))
+
+        out.append((name, rei_id, most_detailed, level, parent,
+                    affected_causes, paf_of_one_causes, affected_risks,
+                    distribution, levels, tmred, scalar,
+                    restrictions))
     return risks
 
 
-def get_cause_risk_mapping():
-    cause_risk_mapping = gbd.get_cause_risk_mapping()
-    causes = get_causes()
-    risks = get_risks()
 
-    mapping = cause_risk_mapping.set_index('cause_id').join(causes.set_index('cause_id')).reset_index()
-    mapping = mapping[mapping.cause_name.notnull() & (mapping.cause_name != 'all_causes')]
-    mapping = risks.set_index('rei_id').join(mapping.set_index('rei_id'), how='left').reset_index()
-
-    return mapping
-
-
-def get_risk_data():
-    risks = load_risk_params()
-    cause_risk_mapping = get_cause_risk_mapping()
-
-    out = []
-    for _, risk in risks.iterrows():
-        risk = risk
-        name = risk['rei_name']
-        rid = risk['rei_id']
-
-        r = gbd.get_risk(risk_id=rid)
-        # No more than one of these can be true.
-        assert sum([int(r.dichotomous), int(r.polytomous), int(r.continuous)]) <= 1
-
-        distribution_type = risk['calc_type']
-
-        distribution = 'unknown'
-        levels = None
-        tmred = None
-        exp_params = None
-
-        # FIXME: The data disagree about how risk 125 (physical activity) is modeled.  It is actually a continuous
-        # risk for the 2016 round despite the fact that the risk utils library thinks it's a polytomous risk.
-        if r.continuous or rid == 125:
-            # Make sure our risk types agree
-            assert distribution_type != 'categorical', f"{r.risk} {distribution_type}"
-            distribution = distribution_type if distribution_type != 'unknown' else 'unknown_continuous'
-            inv_exp = True if risk['inv_exp'] else False
-            tmred = (('distribution', risk['tmred_dist']),
-                     ('min', risk['tmred_para1']),
-                     ('max', risk['tmred_para2']),
-                     ('inverted', inv_exp))
-            exp_params = (('scale', risk['rr_scalar']),
-                          ('max_rr', risk['maxrr']),)
-
-        elif r.dichotomous:
-            assert distribution_type in ['categorical', 'unknown'], f"{r.risk} {distribution_type}"
-            distribution = 'dichotomous'
-            levels = (('cat1', 'exposed'), ('cat2', 'unexposed'))
-
-        elif r.polytomous:
-            is_categorical = distribution_type in ['categorical', 'unknown'] or np.isnan(distribution_type)
-            assert is_categorical, f"{r.risk} {distribution_type}"
-
-            params = r.me_df
-            # FIXME: Working around some missing information in risk_utils. Already talked to Kelly Cercy about this
-            # -J.C. 10/28/17
-            if rid == 341:
-                params = params.set_index('me_id')
-                for cat, (me_id, me_name) in enumerate(zip([16442, 16443, 16444, 16445],
-                                                           ['albuminuria', 'stage_iii_chronic_kidney_disease',
-                                                            'stage_iv_chronic_kidney_disease',
-                                                            'stage_v_chronic_kidney_disease'])):
-                    params.at[me_id, 'draw_type'] = 'exposure'
-                    params.at[me_id, 'me_name'] = me_name
-                    params.at[me_id, 'parameter'] = 'cat' + str(cat + 1)
-                params = params.loc[[16442, 16443, 16444, 16445], :]
-            elif rid == 339:  # Some categories were combined near the end of the 2016 round.  Clean these up.
-                params = params[params.parameter.notnull()]
-                params.loc[:, 'cat'] = params.parameter.apply(lambda s: int(s.split('cat')[-1]))
-                params = params.sort_values('cat')
-                for i in range(1, len(params)+1):
-                    params.parameter.iat[i-1] = 'cat' + str(i)
-                    me_name = params.me_name.iat[i-1]
-                    cleaned_me_name = me_name[19:].split('interpolated')[0][:-2]
-                    params.me_name.iat[i-1] = cleaned_me_name
-                params = params.reset_index()[['draw_type', 'me_name', 'parameter']]
-
-            else:
-                params.loc[:, 'me_name'] = clean_risk_me(params.me_name)
-
-            params = params.loc[params.draw_type == 'exposure', ['me_name', 'parameter']]
-
-            distribution = 'polytomous'
-
-            levels = [("", "") for i in range(len(params))]
-            for __, (me_name, param) in params.iterrows():
-                idx = int(param.split('cat')[-1])
-                levels[idx-1] = (param, me_name)
-            levels.append(('cat' + str(len(params) + 1), 'unexposed'))
-            levels = tuple(levels)
-
-        restrictions = []
-        for restriction in ['male_only', 'female_only', 'yll_only', 'yld_only']:
-            if np.isnan(risk[restriction]):
-                restrictions.append((restriction, False))
-            else:
-                restrictions.append((restriction, True))
-        restrictions = tuple(restrictions)
-
-        cause_list = cause_risk_mapping.loc[cause_risk_mapping.rei_id == rid, 'cause_name'].tolist()
-
-        out.append((name, rid, distribution, restrictions, cause_list, levels, tmred, exp_params))
-    return out
 
 
 def get_covariate_data():
@@ -305,25 +289,12 @@ def get_coverage_gap_metadata(coverage_gap):
     return gbd.get_coverage_gap_metadata(coverage_gap)
 
 
-_SPECIAL_COVERAGE_GAPS = [
-    # HACK: This is in the rei hierarchy but doesn't actually get used and breaks all our patterns
-    ('low_measles_vaccine_coverage_first_dose',
-     318,
-     'dichotomous',
-     (('male_only', False), ('female_only', False), ('yll_only', False), ('yld_only', False)),
-     (('cat1', 'exposed'), ('cat2', 'unexposed')),
-     ['measles', ],
-     []),
-]
-
-
 def get_coverage_gap_list():
-    return sorted([c[0] for c in _SPECIAL_COVERAGE_GAPS] + gbd.get_coverage_gap_list())
+    return sorted(gbd.get_coverage_gap_list())
 
 
 def get_coverage_gap_data():
-    out = _SPECIAL_COVERAGE_GAPS
-
+    out = []
     for c in gbd.get_coverage_gap_list():
         metadata = get_coverage_gap_metadata(c)
 
