@@ -194,7 +194,7 @@ def make_cause_restrictions(cause):
     return tuple(restrictions)
 
 
-def get_risk_data():
+def get_all_risk_metadata():
     risks = gbd.get_rei_metadata(RISK_SET_ID).sort_values('rei_id')
     risks = risks[['rei_id', 'level', 'rei_name', 'parent_id', 'most_detailed']].set_index('rei_id')
     risks['rei_name'] = clean_entity_list(risks['rei_name'])
@@ -203,7 +203,16 @@ def get_risk_data():
     risks = risks.join(gbd.get_category_mapping().set_index('rei_id'))
     risks = risks.join(gbd.get_mediation_mapping().set_index('rei_id'))
     risks = risks.join(gbd.get_risk_metadata().set_index('rei_id'))
+    risks.rei_calculation_type = risks.rei_calculation_type.map({'0': 'aggregation',
+                                                                 '1': 'categorical',
+                                                                 '2': 'continuous',
+                                                                 '3': 'custom',
+                                                                 '4': 'direct'})
+    return risks
 
+
+def get_risk_data():
+    risks = get_all_risk_metadata()
     causes = get_causes().set_index('cause_id')
 
     out = []
@@ -213,8 +222,9 @@ def get_risk_data():
 
         most_detailed = risk['most_detailed']
         level = risk['level']
-        parent = risks.at[risk['parent_id'], 'rei_name'] if level > 0 else None
+        parent = risks.at[risk['parent_id'], 'rei_name']
 
+        paf_calculation_type = risk['rei_calculation_type']
         distribution = risk['exposure_type'] if not risk['exposure_type'] is np.nan else 'none'
 
         if distribution in ['normal', 'lognormal', 'ensemble']:
@@ -263,32 +273,35 @@ def get_risk_data():
                          ('inverted', bool(risk['inv_exp'])))
 
         if risk['affected_cause_ids'] is not np.nan:
-            affected_causes = (causes.at[cid, 'cause_name'] for cid in risk['affected_cause_ids'])
+            affected_causes = tuple(causes.at[cid, 'cause_name'] for cid in risk['affected_cause_ids'])
         else:
             affected_causes = []
         if risk['affected_rei_ids'] is not np.nan:
-            affected_risks = [risks.at[rei_id, 'rei_name'] for rei_id in risk['affected_rei_ids']]
+            affected_risks = tuple(risks.at[rei_id, 'rei_name'] for rei_id in risk['affected_rei_ids'])
         else:
             affected_risks = []
         if risk['paf_of_one_cause_ids'] is not np.nan:
-            paf_of_one_causes = [causes.at[cid, 'cause_name'] for cid in risk['paf_of_one_cause_ids']]
+            paf_of_one_causes = tuple(causes.at[cid, 'cause_name'] for cid in risk['paf_of_one_cause_ids'])
         else:
             paf_of_one_causes = []
+
+        sub_risks = risks[risks.parent_id == rei_id].rei_name.tolist()
 
         restrictions = (('male_only', risk['female'] is np.nan),
                         ('female_only', risk['male'] is np.nan),
                         ('yll_only', risk['yld'] is np.nan),
                         ('yld_only', risk['yll'] is np.nan),
-                        ('yll_age_group_id_start', risk['yll_age_group_id_start'] if risk['yll'] else None),
-                        ('yll_age_group_id_end', risk['yll_age_group_id_end'] if risk['yll'] else None),
-                        ('yld_age_group_id_start', risk['yld_age_group_id_start'] if risk['yld'] else None),
-                        ('yld_age_group_id_end', risk['yld_age_group_id_end'] if risk['yld'] else None))
+                        ('yll_age_group_id_start', risk['yll_age_group_id_start'] if risk['yll'] is not np.nan else None),
+                        ('yll_age_group_id_end', risk['yll_age_group_id_end'] if risk['yll'] is not np.nan else None),
+                        ('yld_age_group_id_start', risk['yld_age_group_id_start'] if risk['yld'] is not np.nan else None),
+                        ('yld_age_group_id_end', risk['yld_age_group_id_end'] if risk['yld'] is not np.nan else None))
 
-        out.append((name, rei_id, most_detailed, level, parent,
-                    affected_causes, paf_of_one_causes, affected_risks,
+        out.append((name, rei_id, most_detailed, level, paf_calculation_type,
+                    affected_causes, paf_of_one_causes,
                     distribution, levels, tmred, scalar,
-                    restrictions))
-    return risks
+                    restrictions,
+                    parent, sub_risks, affected_risks))
+    return out
 
 
 

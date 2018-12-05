@@ -15,7 +15,7 @@ AUTO_MAPPINGS = {
     'cause': cause_builder,
     'sequela': sequela_builder,
     'etiology': etiology_builder,
-    'risk': risk_builder,
+    'risk_factor': risk_builder,
     'covariate': covariate_builder,
     'coverage_gap': coverage_gap_builder,
 }
