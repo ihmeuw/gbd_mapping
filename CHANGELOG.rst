@@ -1,3 +1,15 @@
+**1.0.11 - 11/28/18**
+
+ - Add non_exclusive_breastfeeding relative risk to lack_of_breastfeeding_promotion
+
+**1.0.10 - 11/15/18**
+
+ - Documentation dependency update.
+
+**1.0.9 - 11/13/18**
+
+ - Add coverage_gap of lack_of_vitamin_a_fortification
+
 **1.0.8 - 10/26/18**
 
  - Add a ``kind`` field to entities.
