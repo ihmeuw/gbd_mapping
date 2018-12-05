@@ -15,7 +15,13 @@ def get_base_types():
                       ('status', 'str'),
                       ('by_age', 'bool'),
                       ('by_sex', 'bool'),
-                      ('dichotomous', 'bool')),
+                      ('dichotomous', 'bool'),
+                      ('data_exist', 'bool'),
+                      ('low_value_exist', 'bool'),
+                      ('upper_value_exist', 'bool'),
+                      ('mean_value_exist', 'bool'),
+                      ('sex_restriction_violated', 'bool'),
+                      ('age_restriction_violated', 'bool')),
             'superclass': ('ModelableEntity', modelable_entity_attrs),
             'docstring': 'Container for covariate GBD ids and metadata.'
         },
@@ -27,7 +33,8 @@ def get_base_types():
     }
 
 
-def make_covariate(name, covid, group, cov_type, by_age, by_sex, dichotomous):
+def make_covariate(name, covid, group, cov_type, by_age, by_sex, dichotomous, data_exist, low_val_exist,
+                   upper_val_exist, mean_exist, sex_restriction, age_restriction):
     out = ""
     out += TAB + f"'{name}': Covariate(\n"
     out += TAB*2 + f"name='{name}',\n"
@@ -38,14 +45,22 @@ def make_covariate(name, covid, group, cov_type, by_age, by_sex, dichotomous):
     out += TAB*2 + f"by_age={bool(by_age)},\n"
     out += TAB*2 + f"by_sex={bool(by_sex)},\n"
     out += TAB*2 + f"dichotomous={bool(dichotomous)},\n"
+    out += TAB * 2 + f"data_exist={data_exist},\n"
+    out += TAB * 2 + f"low_value_exist={low_val_exist},\n"
+    out += TAB * 2 + f"upper_value_exist={upper_val_exist},\n"
+    out += TAB * 2 + f"mean_value_exist={mean_exist},\n"
+    out += TAB * 2 + f"sex_restriction_violated={sex_restriction},\n"
+    out += TAB * 2 + f"age_restriction_violated={age_restriction},\n"
     out += TAB + "),\n"
     return out
 
 
 def make_covariates(covariate_list):
     out = "covariates = Covariates(**{\n"
-    for name, covid, group, cov_type, by_age, by_sex, dichotomous in covariate_list:
-        out += make_covariate(name, covid, group, cov_type, by_age, by_sex, dichotomous)
+    for name, covid, group, cov_type, by_age, by_sex, dichotomous, data_exist, low_val_exist, upper_val_exist, \
+        mean_exist, sex_restriction, age_restriction in covariate_list:
+        out += make_covariate(name, covid, group, cov_type, by_age, by_sex, dichotomous, data_exist, low_val_exist,
+                              upper_val_exist, mean_exist, sex_restriction, age_restriction)
     out += "})\n"
     return out
 
