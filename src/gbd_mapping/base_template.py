@@ -21,8 +21,10 @@ class GbdRecord:
             elif isinstance(attr, Tuple):
                 if isinstance(attr[0], GbdRecord):
                     out[item] = tuple(r.to_dict() for r in attr)
-            else:
+            elif attr:
                 out[item] = attr
+            else:
+                continue
         return out        
 
     def __contains__(self, item):
@@ -70,27 +72,27 @@ class ModelableEntity(GbdRecord):
 
 class Restrictions(GbdRecord):
     """Container for information about sub-populations the entity describes."""
-    __slots__ = ('male_only', 'female_only', 'yll_only', 'yld_only', 'yll_age_start', 'yll_age_end', 'yld_age_start',
-                 'yld_age_end', )
+    __slots__ = ('male_only', 'female_only', 'yll_only', 'yld_only', 'yll_age_group_id_start',
+                 'yll_age_group_id_end', 'yld_age_group_id_start', 'yld_age_group_id_end', )
 
     def __init__(self,
                  male_only: bool,
                  female_only: bool,
                  yll_only: bool,
                  yld_only: bool,
-                 yll_age_start: scalar = None,
-                 yll_age_end: scalar = None,
-                 yld_age_start: scalar = None,
-                 yld_age_end: scalar = None, ):
+                 yll_age_group_id_start: int = None,
+                 yll_age_group_id_end: int = None,
+                 yld_age_group_id_start: int = None,
+                 yld_age_group_id_end: int = None, ):
         super().__init__()
         self.male_only = male_only
         self.female_only = female_only
         self.yll_only = yll_only
         self.yld_only = yld_only
-        self.yll_age_start = yll_age_start
-        self.yll_age_end = yll_age_end
-        self.yld_age_start = yld_age_start
-        self.yld_age_end = yld_age_end
+        self.yll_age_group_id_start = yll_age_group_id_start
+        self.yll_age_group_id_end = yll_age_group_id_end
+        self.yld_age_group_id_start = yld_age_group_id_start
+        self.yld_age_group_id_end = yld_age_group_id_end
 
 
 class Tmred(GbdRecord):
@@ -122,7 +124,9 @@ class Categories(GbdRecord):
                  'cat90', 'cat91', 'cat92', 'cat93', 'cat94', 'cat95', 'cat96', 'cat97', 'cat98', 'cat99', 'cat100',
                  'cat101', 'cat102', 'cat103', 'cat104', 'cat105', 'cat106', 'cat107', 'cat108', 'cat109', 'cat110',
                  'cat111', 'cat112', 'cat113', 'cat114', 'cat115', 'cat116', 'cat117', 'cat118', 'cat119', 'cat120',
-                 'cat121', 'cat122', )
+                 'cat121', 'cat122', 'cat123', 'cat124', 'cat125', 'cat126', 'cat127', 'cat128', 'cat129', 'cat130',
+                 'cat131', 'cat132', 'cat133', 'cat134', 'cat135', 'cat136', 'cat137', 'cat138', 'cat139', 'cat140',
+                 'cat141', 'cat142', 'cat143', 'cat144', 'cat145', 'cat146', 'cat147', 'cat148', 'cat149', )
 
     def __init__(self,
                  cat1: str,
@@ -246,7 +250,34 @@ class Categories(GbdRecord):
                  cat119: str = None,
                  cat120: str = None,
                  cat121: str = None,
-                 cat122: str = None, ):
+                 cat122: str = None,
+                 cat123: str = None,
+                 cat124: str = None,
+                 cat125: str = None,
+                 cat126: str = None,
+                 cat127: str = None,
+                 cat128: str = None,
+                 cat129: str = None,
+                 cat130: str = None,
+                 cat131: str = None,
+                 cat132: str = None,
+                 cat133: str = None,
+                 cat134: str = None,
+                 cat135: str = None,
+                 cat136: str = None,
+                 cat137: str = None,
+                 cat138: str = None,
+                 cat139: str = None,
+                 cat140: str = None,
+                 cat141: str = None,
+                 cat142: str = None,
+                 cat143: str = None,
+                 cat144: str = None,
+                 cat145: str = None,
+                 cat146: str = None,
+                 cat147: str = None,
+                 cat148: str = None,
+                 cat149: str = None, ):
         super().__init__()
         self.cat1 = cat1
         self.cat2 = cat2
@@ -370,15 +401,30 @@ class Categories(GbdRecord):
         self.cat120 = cat120
         self.cat121 = cat121
         self.cat122 = cat122
-
-
-class ExposureParameters(GbdRecord):
-    """Container for continuous risk exposure distribution parameters"""
-    __slots__ = ('scale', 'max_rr', )
-
-    def __init__(self,
-                 scale: scalar = None,
-                 max_rr: scalar = None, ):
-        super().__init__()
-        self.scale = scale
-        self.max_rr = max_rr
+        self.cat123 = cat123
+        self.cat124 = cat124
+        self.cat125 = cat125
+        self.cat126 = cat126
+        self.cat127 = cat127
+        self.cat128 = cat128
+        self.cat129 = cat129
+        self.cat130 = cat130
+        self.cat131 = cat131
+        self.cat132 = cat132
+        self.cat133 = cat133
+        self.cat134 = cat134
+        self.cat135 = cat135
+        self.cat136 = cat136
+        self.cat137 = cat137
+        self.cat138 = cat138
+        self.cat139 = cat139
+        self.cat140 = cat140
+        self.cat141 = cat141
+        self.cat142 = cat142
+        self.cat143 = cat143
+        self.cat144 = cat144
+        self.cat145 = cat145
+        self.cat146 = cat146
+        self.cat147 = cat147
+        self.cat148 = cat148
+        self.cat149 = cat149
