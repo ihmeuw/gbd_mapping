@@ -19,6 +19,10 @@ def get_base_types():
                       ('kind', 'str'),
                       ('gbd_id', 'sid'),
                       ('dismod_id', 'meid'),
+                      ('incidence_exist', 'bool'),
+                      ('prevalence_exist', 'bool'),
+                      ('incidence_in_range', 'Union["bool", None]'),
+                      ('prevalence_in_range', 'Union["bool", None]'),
                       ('healthstate', 'Healthstate'),),
             'superclass': ('ModelableEntity', modelable_entity_attrs),
             'docstring': 'Container for sequela GBD ids and metadata.'
@@ -31,7 +35,7 @@ def get_base_types():
     }
 
 
-def make_sequela(name, sid, mei_id, hs_name, hsid):
+def make_sequela(name, sid, mei_id, hs_name, hsid, inc_exist, prev_exist, inc_in_range, prev_in_range):
     hs_name = 'UNKNOWN' if hs_name == 'nan' else f"'{hs_name}'"
     out = ""
     out += TAB + f"'{name}': Sequela(\n"
@@ -39,6 +43,10 @@ def make_sequela(name, sid, mei_id, hs_name, hsid):
     out += TAB * 2 + f"kind='sequela',\n"
     out += TAB*2 + f"gbd_id={to_id(sid, 'sid')},\n"
     out += TAB*2 + f"dismod_id={to_id(mei_id, 'meid')},\n"
+    out += TAB * 2 + f"incidence_exist={inc_exist},\n"
+    out += TAB * 2 + f"prevalence_exist={prev_exist},\n"
+    out += TAB * 2 + f"incidence_in_range={inc_in_range},\n"
+    out += TAB * 2 + f"prevalence_in_range={prev_in_range},\n"
     out += TAB*2 + f"healthstate=Healthstate(\n"
 
     out += TAB*3 + f"name={hs_name},\n"
@@ -51,14 +59,15 @@ def make_sequela(name, sid, mei_id, hs_name, hsid):
 
 def make_sequelae(sequela_list):
     out = "sequelae = Sequelae(**{\n"
-    for name, sid, mei_id, hs_name, hsid in sequela_list:
-        out += make_sequela(name, sid, mei_id, hs_name, hsid)
+    for name, sid, mei_id, hs_name, hsid, inc_exist, prev_exist, inc_in_range, prev_in_range in sequela_list:
+        out += make_sequela(name, sid, mei_id, hs_name, hsid, inc_exist, prev_exist, inc_in_range, prev_in_range)
     out += "})\n"
     return out
 
 
 def build_mapping_template():
     out = make_module_docstring('Mapping templates for GBD sequelae.', __file__)
+    out += make_import('typing', ['Union']) + '\n'
     out += make_import('.id', ['sid', 'meid', 'hsid'])
     out += make_import('.base_template', ['ModelableEntity', 'GbdRecord'])
 

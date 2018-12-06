@@ -1,3 +1,7 @@
+**1.0.11 - 11/28/18**
+
+ - Add non_exclusive_breastfeeding relative risk to lack_of_breastfeeding_promotion
+
 **1.0.10 - 11/15/18**
 
  - Documentation dependency update.

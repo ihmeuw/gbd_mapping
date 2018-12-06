@@ -11,15 +11,6 @@ RISK_SET_ID = 2
 ETIOLOGY_SET_ID = 3
 
 
-def get_survey_summary(entity: str):
-    """
-    get the summary result of gbd-data-survey
-    :param entity: one of ['cause', 'risk_factor', 'sequela', 'etiology', 'covariate']
-    :return: any additional information to notice, e.g., data existence, data range, any violated restriction
-    """
-    filepath = f'/share/costeffectiveness/gbd_data_survey/GBD_2017/{entity}.hdf'
-    return pd.read_hdf(filepath, key='summary')
-
 ###############################################
 # Canonical mappings between entities and ids #
 ###############################################
@@ -94,17 +85,24 @@ def get_covariate_list():
 
 def get_sequela_data():
     sequelae = gbd.get_sequela_id_mapping()
+    data_survey = gbd.get_survey_summary('sequela')
+    assert len(sequelae) == len(data_survey)
+    sequelae = sequelae.merge(data_survey, on='sequela_id')
     return list(zip(clean_entity_list(sequelae.sequela_name),
                     sequelae.sequela_id,
                     sequelae.modelable_entity_id,
                     clean_entity_list(sequelae.healthstate_name),
-                    sequelae.healthstate_id))
+                    sequelae.healthstate_id,
+                    sequelae.incidence_exist,
+                    sequelae.prevalence_exist,
+                    sequelae.incidence_in_range,
+                    sequelae.prevalence_in_range))
 
 
 def get_etiology_data():
     etiologies = gbd.get_rei_metadata(rei_set_id=ETIOLOGY_SET_ID)
     etiologies = etiologies[etiologies['most_detailed'] == 1]
-    data_survey = get_survey_summary('etiology')
+    data_survey = gbd.get_survey_summary('etiology')
     assert len(etiologies) == len(data_survey)
 
     etiologies = etiologies.merge(data_survey, on='rei_id')
@@ -309,7 +307,7 @@ def get_risk_data():
 
 def get_covariate_data():
     covariates = gbd.get_covariate_metadata()
-    data_survey = get_survey_summary('covariate')
+    data_survey = gbd.get_survey_summary('covariate')
 
     assert set(covariates.covariate_id) == set(data_survey.covariate_id)
     covariates = covariates.merge(data_survey, on='covariate_id')
