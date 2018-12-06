@@ -46,7 +46,7 @@ def make_cause(name, cid, dismod_id, most_detailed, level, restrictions, sequela
         if isinstance(value, bool):
             out += TAB*3 + f"{restriction}={value},\n"
         else:
-            out += TAB * 3 + f"{restriction}=scalar({value}),\n"
+            out += TAB * 3 + f"{restriction}={value},\n"
     out += TAB*2 + "),\n"
 
     for entity_name, entity in zip(['sequelae', 'etiologies'], [sequelae, etiologies]):

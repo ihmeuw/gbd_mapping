@@ -86,17 +86,6 @@ def clean_entity_list(raw_entity_series):
     return cleaned_up_entities
 
 
-def clean_risk_me(me_names):
-    replace = {' ': '_', '&': 'and', '_interpolated_annual_results': ''}
-    out = []
-    for me_name in me_names:
-        me_name = ''.join(me_name.split(',')[1:]).lower().lstrip()
-        for k, v in replace.items():
-            me_name = me_name.replace(k, v)
-        out.append(me_name)
-    return out
-
-
 def to_id(number, id_type):
     if np.isnan(number):
         return 'UNKNOWN'

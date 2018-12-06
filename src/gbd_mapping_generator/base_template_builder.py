@@ -1,6 +1,6 @@
 from .util import make_module_docstring, make_import, make_record, SPACING
 
-IMPORTABLES_DEFINED = ('GbdRecord', 'ModelableEntity', 'Restrictions', 'Tmred', 'Levels', 'ExposureParameters')
+IMPORTABLES_DEFINED = ('GbdRecord', 'ModelableEntity', 'Restrictions', 'Tmred', 'Categories')
 
 
 gbd_record_attrs = ()
@@ -11,17 +11,15 @@ restrictions_attrs = (('male_only', 'bool'),
                       ('female_only', 'bool'),
                       ('yll_only', 'bool'),
                       ('yld_only', 'bool'),
-                      ('yll_age_start', 'scalar = None'),
-                      ('yll_age_end', 'scalar = None'),
-                      ('yld_age_start', 'scalar = None'),
-                      ('yld_age_end', 'scalar = None'),)
+                      ('yll_age_group_id_start', 'int = None'),
+                      ('yll_age_group_id_end', 'int = None'),
+                      ('yld_age_group_id_start', 'int = None'),
+                      ('yld_age_group_id_end', 'int = None'),)
 tmred_attrs = (('distribution', 'str'),
                ('min', 'scalar'),
                ('max', 'scalar'),
                ('inverted', 'bool'),)
-levels_attrs = tuple([('cat1', 'str'), ('cat2', 'str')] + [(f'cat{i}', 'str = None') for i in range(3, 60)])
-exposure_parameters_attrs = (('scale', 'scalar = None'),
-                             ('max_rr', 'scalar = None'),)
+categories_attrs = tuple([('cat1', 'str'), ('cat2', 'str')] + [(f'cat{i}', 'str = None') for i in range(3, 150)])
 
 
 def get_base_types():
@@ -46,15 +44,10 @@ def get_base_types():
             'superclass': ('GbdRecord', gbd_record_attrs),
             'docstring': 'Container for theoretical minimum risk exposure distribution data.'
         },
-        'Levels': {
-            'attrs': levels_attrs,
+        'Categories': {
+            'attrs': categories_attrs,
             'superclass': ('GbdRecord', gbd_record_attrs),
             'docstring': 'Container for categorical risk exposure levels.'
-        },
-        'ExposureParameters': {
-            'attrs': exposure_parameters_attrs,
-            'superclass': ('GbdRecord', gbd_record_attrs),
-            'docstring': 'Container for continuous risk exposure distribution parameters'
         },
     }
 
@@ -73,8 +66,10 @@ def make_gbd_record():
             elif isinstance(attr, Tuple):
                 if isinstance(attr[0], GbdRecord):
                     out[item] = tuple(r.to_dict() for r in attr)
-            else:
+            elif attr:
                 out[item] = attr
+            else:
+                continue
         return out        
 
     def __contains__(self, item):
@@ -110,7 +105,7 @@ def make_gbd_record():
 
 def build_mapping():
     templates = make_module_docstring('Template classes for GBD entities', __file__)
-    templates += make_import('typing', ['Union', 'Tuple',])
+    templates += make_import('typing', ['Union', 'Tuple', ])
     templates += make_import('.id', ['cid', 'sid', 'hsid', 'meid', 'covid', 'reiid', 'scalar', ]) + SPACING
     templates += make_gbd_record()
 
