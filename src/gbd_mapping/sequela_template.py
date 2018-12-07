@@ -12,18 +12,20 @@ from .base_template import ModelableEntity, GbdRecord
 
 class Healthstate(ModelableEntity):
     """Container for healthstate GBD ids and metadata."""
-    __slots__ = ('name', 'kind', 'gbd_id', )
+    __slots__ = ('name', 'kind', 'gbd_id', 'disability_weight_exist', )
 
     def __init__(self,
                  name: str,
                  kind: str,
-                 gbd_id: hsid, ):
+                 gbd_id: hsid,
+                 disability_weight_exist: bool, ):
         super().__init__(name=name,
                          kind=kind,
                          gbd_id=gbd_id)
         self.name = name
         self.kind = kind
         self.gbd_id = gbd_id
+        self.disability_weight_exist = disability_weight_exist
 
 
 class Sequela(ModelableEntity):
