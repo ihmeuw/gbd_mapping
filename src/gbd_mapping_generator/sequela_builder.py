@@ -10,7 +10,8 @@ def get_base_types():
         'Healthstate': {
             'attrs': (('name', 'str'),
                       ('kind', 'str'),
-                      ('gbd_id', 'hsid'),),
+                      ('gbd_id', 'hsid'),
+                      ('disability_weight_exist', 'bool'),),
             'superclass': ('ModelableEntity', modelable_entity_attrs),
             'docstring': 'Container for healthstate GBD ids and metadata.',
         },
@@ -35,7 +36,7 @@ def get_base_types():
     }
 
 
-def make_sequela(name, sid, mei_id, hs_name, hsid, inc_exist, prev_exist, inc_in_range, prev_in_range):
+def make_sequela(name, sid, mei_id, hs_name, hsid, dw_exist, inc_exist, prev_exist, inc_in_range, prev_in_range):
     hs_name = 'UNKNOWN' if hs_name == 'nan' else f"'{hs_name}'"
     out = ""
     out += TAB + f"'{name}': Sequela(\n"
@@ -52,6 +53,7 @@ def make_sequela(name, sid, mei_id, hs_name, hsid, inc_exist, prev_exist, inc_in
     out += TAB*3 + f"name={hs_name},\n"
     out += TAB*3 + f"kind='healthstate',\n"
     out += TAB*3 + f"gbd_id={to_id(hsid, 'hsid')},\n"
+    out += TAB * 3 + f"disability_weight_exist={dw_exist},\n"
     out += TAB*2 + f"),\n"
     out += TAB + f"),\n"
     return out
@@ -59,8 +61,8 @@ def make_sequela(name, sid, mei_id, hs_name, hsid, inc_exist, prev_exist, inc_in
 
 def make_sequelae(sequela_list):
     out = "sequelae = Sequelae(**{\n"
-    for name, sid, mei_id, hs_name, hsid, inc_exist, prev_exist, inc_in_range, prev_in_range in sequela_list:
-        out += make_sequela(name, sid, mei_id, hs_name, hsid, inc_exist, prev_exist, inc_in_range, prev_in_range)
+    for name, sid, mei_id, hs_name, hsid, dw_exist, inc_exist, prev_exist, inc_in_range, prev_in_range in sequela_list:
+        out += make_sequela(name, sid, mei_id, hs_name, hsid, dw_exist,inc_exist, prev_exist, inc_in_range, prev_in_range)
     out += "})\n"
     return out
 

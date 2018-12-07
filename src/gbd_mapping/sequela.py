@@ -22,6 +22,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'hepatomegaly_due_to_schistosomiasis': Sequela(
@@ -37,6 +38,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'dysuria_due_to_schistosomiasis': Sequela(
@@ -52,6 +54,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'bladder_pathology_due_to_schistosomiasis': Sequela(
@@ -67,6 +70,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'hydronephrosis_due_to_schistosomiasis': Sequela(
@@ -82,6 +86,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'mild_abdominopelvic_problems_due_to_ascariasis': Sequela(
@@ -97,6 +102,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'mild_abdominopelvic_problems_due_to_trichuriasis': Sequela(
@@ -112,6 +118,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'mild_abdominopelvic_problems_due_to_hookworm_disease': Sequela(
@@ -127,6 +134,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'mild_abdominal_pain_due_to_endometriosis': Sequela(
@@ -142,6 +150,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'abdominal_pain_due_to_premenstrual_syndrome': Sequela(
@@ -157,6 +166,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'mild_other_gynecological_disorders': Sequela(
@@ -172,6 +182,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'abdominal_pain_due_to_genital_prolapse': Sequela(
@@ -187,6 +198,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'mild_abdominal_pain_due_to_uterine_fibroids_without_anemia': Sequela(
@@ -202,6 +214,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_abdominal_pain_due_to_congenital_diaphragmatic_hernia': Sequela(
@@ -217,6 +230,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'dysphagia_or_acid_reflux_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract': Sequela(
@@ -232,6 +246,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_abdominal_pain_due_to_congenital_malformations_of_the_abdominal_wall': Sequela(
@@ -247,6 +262,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'acid_reflux_dyspahgia_and_or_constipation_due_to_other_congenital_malformations_of_the_digestive_tract': Sequela(
@@ -262,6 +278,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_genital_anomalies': Sequela(
@@ -277,6 +294,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
@@ -292,6 +310,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'mild_symptomatic_episodes_gallbladder_and_biliary_diseases': Sequela(
@@ -307,6 +326,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'mild_symptomatic_inguinal_femoral_and_abdominal_hernia': Sequela(
@@ -322,6 +342,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'mild_chronic_pancreatitis': Sequela(
@@ -337,6 +358,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'mild_urolithiasis_episodes': Sequela(
@@ -352,6 +374,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'menstrual_disorders_without_anemia': Sequela(
@@ -367,6 +390,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_peptic_ulcer_disease_mild_with_no_anemia': Sequela(
@@ -382,6 +406,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'gastritis_and_duodenitis_uncomplicated_acute': Sequela(
@@ -397,6 +422,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_mild_gastritis_and_duodenitis_with_no_anemia': Sequela(
@@ -412,6 +438,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_mild',
             kind='healthstate',
             gbd_id=hsid(544),
+            disability_weight_exist=True,
         ),
     ),
     'intestinal_perforation_due_to_paratyphoid': Sequela(
@@ -427,6 +454,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_chronic_digestive_disease_due_to_chagas_disease': Sequela(
@@ -442,6 +470,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'ascites_due_to_schistosomiasis': Sequela(
@@ -457,6 +486,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'abdominal_problems_due_to_cystic_echinococcosis': Sequela(
@@ -472,6 +502,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'maternal_hemorrhage_less_than__1l_blood_lost': Sequela(
@@ -487,6 +518,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'maternal_abortive_outcome': Sequela(
@@ -502,6 +534,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_pelvic_inflammatory_diseases_due_to_chlamydial_infection': Sequela(
@@ -517,6 +550,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_pelvic_inflammatory_diseases_due_to_gonococcal_infection': Sequela(
@@ -532,6 +566,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_pelvic_inflammatory_diseases_due_to_other_sexually_transmitted_diseases': Sequela(
@@ -547,6 +582,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_abdominal_pain_due_to_endometriosis': Sequela(
@@ -562,6 +598,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_other_gynecological_disorders': Sequela(
@@ -577,6 +614,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'heavy_clonorchiasis_due_to_food_borne_trematodiases': Sequela(
@@ -592,6 +630,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'heavy_fascioliasis_due_to_food_borne_trematodiases': Sequela(
@@ -607,6 +646,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'heavy_intestinal_fluke_infection_due_to_food_borne_trematodiases': Sequela(
@@ -622,6 +662,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'heavy_opisthorchiasis_due_to_food_borne_trematodiases': Sequela(
@@ -637,6 +678,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_abdominal_pain_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract': Sequela(
@@ -652,6 +694,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'constipation_due_to_congenital_malformations_of_the_abdominal_wall': Sequela(
@@ -667,6 +710,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_abdominal_pain_and_or_nausea_due_to_other_congenital_malformations_of_the_digestive_tract': Sequela(
@@ -682,6 +726,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_symptomatic_episodes_gallbladder_and_biliary_diseases': Sequela(
@@ -697,6 +742,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_symptomatic_inguinal_femoral_and_abdominal_hernia': Sequela(
@@ -712,6 +758,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_chronic_pancreatitis': Sequela(
@@ -727,6 +774,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_urolithiasis_episodes': Sequela(
@@ -742,6 +790,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'ectopic_pregnancy': Sequela(
@@ -757,6 +806,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'symptomatic_gastroesophageal_reflux_disease': Sequela(
@@ -772,6 +822,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'severe_or_very_severe_gastroesophageal_reflux_disease_symptoms_typical': Sequela(
@@ -787,6 +838,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_peptic_ulcer_disease_moderate_with_no_anemia': Sequela(
@@ -802,6 +854,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_moderate_gastritis_and_duodenitis_with_no_anemia': Sequela(
@@ -817,6 +870,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_moderate',
             kind='healthstate',
             gbd_id=hsid(545),
+            disability_weight_exist=True,
         ),
     ),
     'intestinal_perforation_due_to_typhoid': Sequela(
@@ -832,6 +886,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_severe',
             kind='healthstate',
             gbd_id=hsid(546),
+            disability_weight_exist=True,
         ),
     ),
     'maternal_hemorrhage_greater_than__1l_blood_lost': Sequela(
@@ -847,6 +902,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_severe',
             kind='healthstate',
             gbd_id=hsid(546),
+            disability_weight_exist=True,
         ),
     ),
     'obstructed_labor_acute_event': Sequela(
@@ -862,6 +918,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_severe',
             kind='healthstate',
             gbd_id=hsid(546),
+            disability_weight_exist=True,
         ),
     ),
     'severe_pelvic_inflammatory_diseases_due_to_chlamydial_infection': Sequela(
@@ -877,6 +934,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_severe',
             kind='healthstate',
             gbd_id=hsid(546),
+            disability_weight_exist=True,
         ),
     ),
     'severe_pelvic_inflammatory_diseases_due_to_gonococcal_infection': Sequela(
@@ -892,6 +950,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_severe',
             kind='healthstate',
             gbd_id=hsid(546),
+            disability_weight_exist=True,
         ),
     ),
     'severe_pelvic_inflammatory_diseases_due_to_other_sexually_transmitted_diseases': Sequela(
@@ -907,6 +966,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_severe',
             kind='healthstate',
             gbd_id=hsid(546),
+            disability_weight_exist=True,
         ),
     ),
     'appendicitis': Sequela(
@@ -922,6 +982,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_severe',
             kind='healthstate',
             gbd_id=hsid(546),
+            disability_weight_exist=True,
         ),
     ),
     'paralytic_ileus_and_intestinal_obstruction': Sequela(
@@ -937,6 +998,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_severe',
             kind='healthstate',
             gbd_id=hsid(546),
+            disability_weight_exist=True,
         ),
     ),
     'vascular_intestinal_disorders': Sequela(
@@ -952,6 +1014,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_severe',
             kind='healthstate',
             gbd_id=hsid(546),
+            disability_weight_exist=True,
         ),
     ),
     'severe_other_gynecological_disorders': Sequela(
@@ -967,6 +1030,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_severe',
             kind='healthstate',
             gbd_id=hsid(546),
+            disability_weight_exist=True,
         ),
     ),
     'severe_endometriosis': Sequela(
@@ -982,6 +1046,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_severe',
             kind='healthstate',
             gbd_id=hsid(546),
+            disability_weight_exist=True,
         ),
     ),
     'severe_symptomatic_episodes_gallbladder_and_biliary_diseases': Sequela(
@@ -997,6 +1062,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_severe',
             kind='healthstate',
             gbd_id=hsid(546),
+            disability_weight_exist=True,
         ),
     ),
     'severe_symptomatic_inguinal_femoral_and_abdominal_hernia': Sequela(
@@ -1012,6 +1078,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_severe',
             kind='healthstate',
             gbd_id=hsid(546),
+            disability_weight_exist=True,
         ),
     ),
     'severe_chronic_pancreatitis': Sequela(
@@ -1027,6 +1094,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_severe',
             kind='healthstate',
             gbd_id=hsid(546),
+            disability_weight_exist=True,
         ),
     ),
     'severe_urolithiasis_episodes': Sequela(
@@ -1042,6 +1110,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_severe',
             kind='healthstate',
             gbd_id=hsid(546),
+            disability_weight_exist=True,
         ),
     ),
     'acute_uncomplicated_peptic_ulcer_disease': Sequela(
@@ -1057,6 +1126,7 @@ sequelae = Sequelae(**{
             name='abdominopelvic_problem_severe',
             kind='healthstate',
             gbd_id=hsid(546),
+            disability_weight_exist=True,
         ),
     ),
     'acute_myocardial_infarction_first_2_days': Sequela(
@@ -1072,6 +1142,7 @@ sequelae = Sequelae(**{
             name='acute_myocardial_infarction_days_1_2',
             kind='healthstate',
             gbd_id=hsid(374),
+            disability_weight_exist=True,
         ),
     ),
     'acute_myocardial_infarction_3_to_28_days': Sequela(
@@ -1087,6 +1158,7 @@ sequelae = Sequelae(**{
             name='acute_myocardial_infarction_days_3_28',
             kind='healthstate',
             gbd_id=hsid(375),
+            disability_weight_exist=True,
         ),
     ),
     'aids_without_anemia': Sequela(
@@ -1102,6 +1174,7 @@ sequelae = Sequelae(**{
             name='aids_cases_not_receiving_arv_treatment',
             kind='healthstate',
             gbd_id=hsid(362),
+            disability_weight_exist=True,
         ),
     ),
     'aids_with_mild_anemia': Sequela(
@@ -1117,6 +1190,7 @@ sequelae = Sequelae(**{
             name='aids_cases_not_receiving_arv_treatment_and_anemia_mild',
             kind='healthstate',
             gbd_id=hsid(2552),
+            disability_weight_exist=False,
         ),
     ),
     'aids_with_moderate_anemia': Sequela(
@@ -1132,6 +1206,7 @@ sequelae = Sequelae(**{
             name='aids_cases_not_receiving_arv_treatment_and_anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(2555),
+            disability_weight_exist=False,
         ),
     ),
     'aids_with_severe_anemia': Sequela(
@@ -1147,6 +1222,7 @@ sequelae = Sequelae(**{
             name='aids_cases_not_receiving_arv_treatment_and_anemia_severe',
             kind='healthstate',
             gbd_id=hsid(2558),
+            disability_weight_exist=False,
         ),
     ),
     'mild_alcohol_dependence': Sequela(
@@ -1162,6 +1238,7 @@ sequelae = Sequelae(**{
             name='alcohol_use_disorder_mild',
             kind='healthstate',
             gbd_id=hsid(424),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_alcohol_dependence': Sequela(
@@ -1177,6 +1254,7 @@ sequelae = Sequelae(**{
             name='alcohol_use_disorder_moderate',
             kind='healthstate',
             gbd_id=hsid(425),
+            disability_weight_exist=True,
         ),
     ),
     'severe_alcohol_dependence': Sequela(
@@ -1192,6 +1270,7 @@ sequelae = Sequelae(**{
             name='alcohol_use_disorder_severe',
             kind='healthstate',
             gbd_id=hsid(426),
+            disability_weight_exist=True,
         ),
     ),
     'very_mild_alcohol_dependence': Sequela(
@@ -1207,6 +1286,7 @@ sequelae = Sequelae(**{
             name='alcohol_use_disorder_very_mild',
             kind='healthstate',
             gbd_id=hsid(747),
+            disability_weight_exist=True,
         ),
     ),
     'severe_amphetamine_dependence': Sequela(
@@ -1222,6 +1302,7 @@ sequelae = Sequelae(**{
             name='amphetamine_dependence',
             kind='healthstate',
             gbd_id=hsid(431),
+            disability_weight_exist=True,
         ),
     ),
     'mild_amphetamine_dependence': Sequela(
@@ -1237,6 +1318,7 @@ sequelae = Sequelae(**{
             name='amphetamine_dependence_mild',
             kind='healthstate',
             gbd_id=hsid(583),
+            disability_weight_exist=True,
         ),
     ),
     'mild_anemia_due_to_schistosomiasis': Sequela(
@@ -1252,6 +1334,7 @@ sequelae = Sequelae(**{
             name='anemia_mild',
             kind='healthstate',
             gbd_id=hsid(547),
+            disability_weight_exist=True,
         ),
     ),
     'mild_anemia_due_to_hookworm_disease': Sequela(
@@ -1267,6 +1350,7 @@ sequelae = Sequelae(**{
             name='anemia_mild',
             kind='healthstate',
             gbd_id=hsid(547),
+            disability_weight_exist=True,
         ),
     ),
     'mild_anemia_due_to_other_neglected_tropical_diseases': Sequela(
@@ -1282,6 +1366,7 @@ sequelae = Sequelae(**{
             name='anemia_mild',
             kind='healthstate',
             gbd_id=hsid(547),
+            disability_weight_exist=True,
         ),
     ),
     'mild_anemia_due_to_maternal_hemorrhage': Sequela(
@@ -1297,6 +1382,7 @@ sequelae = Sequelae(**{
             name='anemia_mild',
             kind='healthstate',
             gbd_id=hsid(547),
+            disability_weight_exist=True,
         ),
     ),
     'mild_iron_deficiency_anemia': Sequela(
@@ -1312,6 +1398,7 @@ sequelae = Sequelae(**{
             name='anemia_mild',
             kind='healthstate',
             gbd_id=hsid(547),
+            disability_weight_exist=True,
         ),
     ),
     'mild_anemia_due_to_other_infectious_diseases': Sequela(
@@ -1327,6 +1414,7 @@ sequelae = Sequelae(**{
             name='anemia_mild',
             kind='healthstate',
             gbd_id=hsid(547),
+            disability_weight_exist=True,
         ),
     ),
     'mild_anemia_due_to_menstrual_disorders': Sequela(
@@ -1342,6 +1430,7 @@ sequelae = Sequelae(**{
             name='anemia_mild',
             kind='healthstate',
             gbd_id=hsid(547),
+            disability_weight_exist=True,
         ),
     ),
     'mild_anemia_due_to_other_hemoglobinopathies_and_hemolytic_anemias': Sequela(
@@ -1357,6 +1446,7 @@ sequelae = Sequelae(**{
             name='anemia_mild',
             kind='healthstate',
             gbd_id=hsid(547),
+            disability_weight_exist=True,
         ),
     ),
     'mild_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders': Sequela(
@@ -1372,6 +1462,7 @@ sequelae = Sequelae(**{
             name='anemia_mild',
             kind='healthstate',
             gbd_id=hsid(547),
+            disability_weight_exist=True,
         ),
     ),
     'mild_anemia_due_to_b_thalassemia_trait': Sequela(
@@ -1387,6 +1478,7 @@ sequelae = Sequelae(**{
             name='anemia_mild',
             kind='healthstate',
             gbd_id=hsid(547),
+            disability_weight_exist=True,
         ),
     ),
     'mild_anemia_due_to_hemoglobin_e_trait': Sequela(
@@ -1402,6 +1494,7 @@ sequelae = Sequelae(**{
             name='anemia_mild',
             kind='healthstate',
             gbd_id=hsid(547),
+            disability_weight_exist=True,
         ),
     ),
     'mild_anemia_due_to_sickle_cell_trait': Sequela(
@@ -1417,6 +1510,7 @@ sequelae = Sequelae(**{
             name='anemia_mild',
             kind='healthstate',
             gbd_id=hsid(547),
+            disability_weight_exist=True,
         ),
     ),
     'mild_anemia_due_to_hemizygous_g6pd_deficiency': Sequela(
@@ -1432,6 +1526,7 @@ sequelae = Sequelae(**{
             name='anemia_mild',
             kind='healthstate',
             gbd_id=hsid(547),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_hypertension': Sequela(
@@ -1447,6 +1542,7 @@ sequelae = Sequelae(**{
             name='anemia_mild',
             kind='healthstate',
             gbd_id=hsid(547),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_glomerulonephritis': Sequela(
@@ -1462,6 +1558,7 @@ sequelae = Sequelae(**{
             name='anemia_mild',
             kind='healthstate',
             gbd_id=hsid(547),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_other_causes': Sequela(
@@ -1477,6 +1574,7 @@ sequelae = Sequelae(**{
             name='anemia_mild',
             kind='healthstate',
             gbd_id=hsid(547),
+            disability_weight_exist=True,
         ),
     ),
     'mild_anemia_due_to_malaria_parasitemia_pfpr': Sequela(
@@ -1492,6 +1590,7 @@ sequelae = Sequelae(**{
             name='anemia_mild',
             kind='healthstate',
             gbd_id=hsid(547),
+            disability_weight_exist=True,
         ),
     ),
     'mild_anemia_due_to_g6pd_deficiency': Sequela(
@@ -1507,6 +1606,7 @@ sequelae = Sequelae(**{
             name='anemia_mild',
             kind='healthstate',
             gbd_id=hsid(547),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_type_1_diabetes_mellitus': Sequela(
@@ -1522,6 +1622,7 @@ sequelae = Sequelae(**{
             name='anemia_mild',
             kind='healthstate',
             gbd_id=hsid(547),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_type_2_diabetes_mellitus': Sequela(
@@ -1537,6 +1638,7 @@ sequelae = Sequelae(**{
             name='anemia_mild',
             kind='healthstate',
             gbd_id=hsid(547),
+            disability_weight_exist=True,
         ),
     ),
     'vitamin_a_deficiency_with_mild_anemia': Sequela(
@@ -1552,6 +1654,7 @@ sequelae = Sequelae(**{
             name='anemia_mild',
             kind='healthstate',
             gbd_id=hsid(547),
+            disability_weight_exist=True,
         ),
     ),
     'mild_anemia_due_to_malaria_vivax_pvpr': Sequela(
@@ -1567,6 +1670,7 @@ sequelae = Sequelae(**{
             name='anemia_mild',
             kind='healthstate',
             gbd_id=hsid(547),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_peptic_ulcer_disease_asymptomatic_with_mild_anemia': Sequela(
@@ -1582,6 +1686,7 @@ sequelae = Sequelae(**{
             name='anemia_mild',
             kind='healthstate',
             gbd_id=hsid(547),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_asymptomatic_gastritis_and_duodenitis_with_mild_anemia': Sequela(
@@ -1597,6 +1702,7 @@ sequelae = Sequelae(**{
             name='anemia_mild',
             kind='healthstate',
             gbd_id=hsid(547),
+            disability_weight_exist=True,
         ),
     ),
     'beta_thalassemia_major_with_mild_anemia': Sequela(
@@ -1612,6 +1718,7 @@ sequelae = Sequelae(**{
             name='anemia_mild;_generic_uncomplicated_disease_anxiety',
             kind='healthstate',
             gbd_id=hsid(860),
+            disability_weight_exist=True,
         ),
     ),
     'hemoglobin_e_beta_thalassemia_with_mild_anemia': Sequela(
@@ -1627,6 +1734,7 @@ sequelae = Sequelae(**{
             name='anemia_mild;_generic_uncomplicated_disease_anxiety',
             kind='healthstate',
             gbd_id=hsid(860),
+            disability_weight_exist=True,
         ),
     ),
     'hemoglobin_h_disease_with_mild_anemia': Sequela(
@@ -1642,6 +1750,7 @@ sequelae = Sequelae(**{
             name='anemia_mild;_generic_uncomplicated_disease_anxiety',
             kind='healthstate',
             gbd_id=hsid(860),
+            disability_weight_exist=True,
         ),
     ),
     'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_mild_anemia': Sequela(
@@ -1657,6 +1766,7 @@ sequelae = Sequelae(**{
             name='anemia_mild;_generic_uncomplicated_disease_anxiety',
             kind='healthstate',
             gbd_id=hsid(860),
+            disability_weight_exist=True,
         ),
     ),
     'hemoglobin_sc_disease_with_mild_anemia': Sequela(
@@ -1672,6 +1782,7 @@ sequelae = Sequelae(**{
             name='anemia_mild;_generic_uncomplicated_disease_anxiety',
             kind='healthstate',
             gbd_id=hsid(860),
+            disability_weight_exist=True,
         ),
     ),
     'mild_sickle_cell_beta_thalassemia_with_mild_anemia': Sequela(
@@ -1687,6 +1798,7 @@ sequelae = Sequelae(**{
             name='anemia_mild;_generic_uncomplicated_disease_anxiety',
             kind='healthstate',
             gbd_id=hsid(860),
+            disability_weight_exist=True,
         ),
     ),
     'early_hiv_with_mild_anemia': Sequela(
@@ -1702,6 +1814,7 @@ sequelae = Sequelae(**{
             name='anemia_mild;_generic_uncomplicated_disease_anxiety',
             kind='healthstate',
             gbd_id=hsid(860),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_anemia_due_to_schistosomiasis': Sequela(
@@ -1717,6 +1830,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(548),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_anemia_due_to_hookworm_disease': Sequela(
@@ -1732,6 +1846,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(548),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_anemia_due_to_other_neglected_tropical_diseases': Sequela(
@@ -1747,6 +1862,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(548),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_anemia_due_to_maternal_hemorrhage': Sequela(
@@ -1762,6 +1878,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(548),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_iron_deficiency_anemia': Sequela(
@@ -1777,6 +1894,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(548),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_anemia_due_to_other_infectious_diseases': Sequela(
@@ -1792,6 +1910,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(548),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_anemia_due_to_menstrual_disorders': Sequela(
@@ -1807,6 +1926,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(548),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_anemia_due_to_other_hemoglobinopathies_and_hemolytic_anemias': Sequela(
@@ -1822,6 +1942,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(548),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders': Sequela(
@@ -1837,6 +1958,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(548),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_anemia_due_to_b_thalassemia_trait': Sequela(
@@ -1852,6 +1974,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(548),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_anemia_due_to_hemoglobin_e_trait': Sequela(
@@ -1867,6 +1990,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(548),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_anemia_due_to_sickle_cell_trait': Sequela(
@@ -1882,6 +2006,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(548),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_anemia_due_to_hemizygous_g6pd_deficiency': Sequela(
@@ -1897,6 +2022,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(548),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_hypertension': Sequela(
@@ -1912,6 +2038,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(548),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_glomerulonephritis': Sequela(
@@ -1927,6 +2054,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(548),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_other_causes': Sequela(
@@ -1942,6 +2070,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(548),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_anemia_due_to_malaria_parasitemia_pfpr': Sequela(
@@ -1957,6 +2086,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(548),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_anemia_due_to_g6pd_deficiency': Sequela(
@@ -1972,6 +2102,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(548),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_type_1_diabetes_mellitus': Sequela(
@@ -1987,6 +2118,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(548),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_type_2_diabetes_mellitus': Sequela(
@@ -2002,6 +2134,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(548),
+            disability_weight_exist=True,
         ),
     ),
     'vitamin_a_deficiency_with_moderate_anemia': Sequela(
@@ -2017,6 +2150,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(548),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_anemia_due_to_malaria_vivax_pvpr': Sequela(
@@ -2032,6 +2166,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(548),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_peptic_ulcer_disease_asymptomatic_with_moderate_anemia': Sequela(
@@ -2047,6 +2182,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(548),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_asymptomatic_gastritis_and_duodenitis_with_moderate_anemia': Sequela(
@@ -2062,6 +2198,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(548),
+            disability_weight_exist=True,
         ),
     ),
     'beta_thalassemia_major_with_moderate_anemia': Sequela(
@@ -2077,6 +2214,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate;_generic_uncomplicated_disease_anxiety',
             kind='healthstate',
             gbd_id=hsid(861),
+            disability_weight_exist=True,
         ),
     ),
     'hemoglobin_e_beta_thalassemia_with_moderate_anemia': Sequela(
@@ -2092,6 +2230,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate;_generic_uncomplicated_disease_anxiety',
             kind='healthstate',
             gbd_id=hsid(861),
+            disability_weight_exist=True,
         ),
     ),
     'hemoglobin_h_disease_with_moderate_anemia': Sequela(
@@ -2107,6 +2246,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate;_generic_uncomplicated_disease_anxiety',
             kind='healthstate',
             gbd_id=hsid(861),
+            disability_weight_exist=True,
         ),
     ),
     'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_moderate_anemia': Sequela(
@@ -2122,6 +2262,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate;_generic_uncomplicated_disease_anxiety',
             kind='healthstate',
             gbd_id=hsid(861),
+            disability_weight_exist=True,
         ),
     ),
     'hemoglobin_sc_disease_with_moderate_anemia': Sequela(
@@ -2137,6 +2278,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate;_generic_uncomplicated_disease_anxiety',
             kind='healthstate',
             gbd_id=hsid(861),
+            disability_weight_exist=True,
         ),
     ),
     'mild_sickle_cell_beta_thalassemia_with_moderate_anemia': Sequela(
@@ -2152,6 +2294,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate;_generic_uncomplicated_disease_anxiety',
             kind='healthstate',
             gbd_id=hsid(861),
+            disability_weight_exist=True,
         ),
     ),
     'early_hiv_with_moderate_anemia': Sequela(
@@ -2167,6 +2310,7 @@ sequelae = Sequelae(**{
             name='anemia_moderate;_generic_uncomplicated_disease_anxiety',
             kind='healthstate',
             gbd_id=hsid(861),
+            disability_weight_exist=True,
         ),
     ),
     'severe_anemia_due_to_schistosomiasis': Sequela(
@@ -2182,6 +2326,7 @@ sequelae = Sequelae(**{
             name='anemia_severe',
             kind='healthstate',
             gbd_id=hsid(549),
+            disability_weight_exist=True,
         ),
     ),
     'severe_anemia_due_to_hookworm_disease': Sequela(
@@ -2197,6 +2342,7 @@ sequelae = Sequelae(**{
             name='anemia_severe',
             kind='healthstate',
             gbd_id=hsid(549),
+            disability_weight_exist=True,
         ),
     ),
     'severe_anemia_due_to_other_neglected_tropical_diseases': Sequela(
@@ -2212,6 +2358,7 @@ sequelae = Sequelae(**{
             name='anemia_severe',
             kind='healthstate',
             gbd_id=hsid(549),
+            disability_weight_exist=True,
         ),
     ),
     'severe_anemia_due_to_maternal_hemorrhage': Sequela(
@@ -2227,6 +2374,7 @@ sequelae = Sequelae(**{
             name='anemia_severe',
             kind='healthstate',
             gbd_id=hsid(549),
+            disability_weight_exist=True,
         ),
     ),
     'severe_iron_deficiency_anemia': Sequela(
@@ -2242,6 +2390,7 @@ sequelae = Sequelae(**{
             name='anemia_severe',
             kind='healthstate',
             gbd_id=hsid(549),
+            disability_weight_exist=True,
         ),
     ),
     'severe_anemia_due_to_other_infectious_diseases': Sequela(
@@ -2257,6 +2406,7 @@ sequelae = Sequelae(**{
             name='anemia_severe',
             kind='healthstate',
             gbd_id=hsid(549),
+            disability_weight_exist=True,
         ),
     ),
     'severe_anemia_due_to_menstrual_disorders': Sequela(
@@ -2272,6 +2422,7 @@ sequelae = Sequelae(**{
             name='anemia_severe',
             kind='healthstate',
             gbd_id=hsid(549),
+            disability_weight_exist=True,
         ),
     ),
     'severe_anemia_due_to_other_hemoglobinopathies_and_hemolytic_anemias': Sequela(
@@ -2287,6 +2438,7 @@ sequelae = Sequelae(**{
             name='anemia_severe',
             kind='healthstate',
             gbd_id=hsid(549),
+            disability_weight_exist=True,
         ),
     ),
     'severe_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders': Sequela(
@@ -2302,6 +2454,7 @@ sequelae = Sequelae(**{
             name='anemia_severe',
             kind='healthstate',
             gbd_id=hsid(549),
+            disability_weight_exist=True,
         ),
     ),
     'severe_anemia_due_to_b_thalassemia_trait': Sequela(
@@ -2317,6 +2470,7 @@ sequelae = Sequelae(**{
             name='anemia_severe',
             kind='healthstate',
             gbd_id=hsid(549),
+            disability_weight_exist=True,
         ),
     ),
     'severe_anemia_due_to_hemoglobin_e_trait': Sequela(
@@ -2332,6 +2486,7 @@ sequelae = Sequelae(**{
             name='anemia_severe',
             kind='healthstate',
             gbd_id=hsid(549),
+            disability_weight_exist=True,
         ),
     ),
     'severe_anemia_due_to_sickle_cell_trait': Sequela(
@@ -2347,6 +2502,7 @@ sequelae = Sequelae(**{
             name='anemia_severe',
             kind='healthstate',
             gbd_id=hsid(549),
+            disability_weight_exist=True,
         ),
     ),
     'severe_anemia_due_to_hemizygous_g6pd_deficiency': Sequela(
@@ -2362,6 +2518,7 @@ sequelae = Sequelae(**{
             name='anemia_severe',
             kind='healthstate',
             gbd_id=hsid(549),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_hypertension': Sequela(
@@ -2377,6 +2534,7 @@ sequelae = Sequelae(**{
             name='anemia_severe',
             kind='healthstate',
             gbd_id=hsid(549),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_glomerulonephritis': Sequela(
@@ -2392,6 +2550,7 @@ sequelae = Sequelae(**{
             name='anemia_severe',
             kind='healthstate',
             gbd_id=hsid(549),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_other_causes': Sequela(
@@ -2407,6 +2566,7 @@ sequelae = Sequelae(**{
             name='anemia_severe',
             kind='healthstate',
             gbd_id=hsid(549),
+            disability_weight_exist=True,
         ),
     ),
     'severe_anemia_due_to_malaria_parasitemia_pfpr': Sequela(
@@ -2422,6 +2582,7 @@ sequelae = Sequelae(**{
             name='anemia_severe',
             kind='healthstate',
             gbd_id=hsid(549),
+            disability_weight_exist=True,
         ),
     ),
     'severe_anemia_due_to_g6pd_deficiency': Sequela(
@@ -2437,6 +2598,7 @@ sequelae = Sequelae(**{
             name='anemia_severe',
             kind='healthstate',
             gbd_id=hsid(549),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_type_1_diabetes_mellitus': Sequela(
@@ -2452,6 +2614,7 @@ sequelae = Sequelae(**{
             name='anemia_severe',
             kind='healthstate',
             gbd_id=hsid(549),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_type_2_diabetes_mellitus': Sequela(
@@ -2467,6 +2630,7 @@ sequelae = Sequelae(**{
             name='anemia_severe',
             kind='healthstate',
             gbd_id=hsid(549),
+            disability_weight_exist=True,
         ),
     ),
     'vitamin_a_deficiency_with_severe_anemia': Sequela(
@@ -2482,6 +2646,7 @@ sequelae = Sequelae(**{
             name='anemia_severe',
             kind='healthstate',
             gbd_id=hsid(549),
+            disability_weight_exist=True,
         ),
     ),
     'severe_anemia_due_to_malaria_vivax_pvpr': Sequela(
@@ -2497,6 +2662,7 @@ sequelae = Sequelae(**{
             name='anemia_severe',
             kind='healthstate',
             gbd_id=hsid(549),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_peptic_ulcer_disease_asymptomatic_with_severe_anemia': Sequela(
@@ -2512,6 +2678,7 @@ sequelae = Sequelae(**{
             name='anemia_severe',
             kind='healthstate',
             gbd_id=hsid(549),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_asymptomatic_gastritis_and_duodenitis_with_severe_anemia': Sequela(
@@ -2527,6 +2694,7 @@ sequelae = Sequelae(**{
             name='anemia_severe',
             kind='healthstate',
             gbd_id=hsid(549),
+            disability_weight_exist=True,
         ),
     ),
     'beta_thalassemia_major_with_severe_anemia': Sequela(
@@ -2542,6 +2710,7 @@ sequelae = Sequelae(**{
             name='anemia_severe;_generic_uncomplicated_disease_anxiety',
             kind='healthstate',
             gbd_id=hsid(862),
+            disability_weight_exist=True,
         ),
     ),
     'hemoglobin_e_beta_thalassemia_with_severe_anemia': Sequela(
@@ -2557,6 +2726,7 @@ sequelae = Sequelae(**{
             name='anemia_severe;_generic_uncomplicated_disease_anxiety',
             kind='healthstate',
             gbd_id=hsid(862),
+            disability_weight_exist=True,
         ),
     ),
     'hemoglobin_h_disease_with_severe_anemia': Sequela(
@@ -2572,6 +2742,7 @@ sequelae = Sequelae(**{
             name='anemia_severe;_generic_uncomplicated_disease_anxiety',
             kind='healthstate',
             gbd_id=hsid(862),
+            disability_weight_exist=True,
         ),
     ),
     'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_severe_anemia': Sequela(
@@ -2587,6 +2758,7 @@ sequelae = Sequelae(**{
             name='anemia_severe;_generic_uncomplicated_disease_anxiety',
             kind='healthstate',
             gbd_id=hsid(862),
+            disability_weight_exist=True,
         ),
     ),
     'hemoglobin_sc_disease_with_severe_anemia': Sequela(
@@ -2602,6 +2774,7 @@ sequelae = Sequelae(**{
             name='anemia_severe;_generic_uncomplicated_disease_anxiety',
             kind='healthstate',
             gbd_id=hsid(862),
+            disability_weight_exist=True,
         ),
     ),
     'mild_sickle_cell_beta_thalassemia_with_severe_anemia': Sequela(
@@ -2617,6 +2790,7 @@ sequelae = Sequelae(**{
             name='anemia_severe;_generic_uncomplicated_disease_anxiety',
             kind='healthstate',
             gbd_id=hsid(862),
+            disability_weight_exist=True,
         ),
     ),
     'early_hiv_with_severe_anemia': Sequela(
@@ -2632,6 +2806,7 @@ sequelae = Sequelae(**{
             name='anemia_severe;_generic_uncomplicated_disease_anxiety',
             kind='healthstate',
             gbd_id=hsid(862),
+            disability_weight_exist=True,
         ),
     ),
     'mild_angina_due_to_ischemic_heart_disease': Sequela(
@@ -2647,6 +2822,7 @@ sequelae = Sequelae(**{
             name='angina_pectoris_mild',
             kind='healthstate',
             gbd_id=hsid(376),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_angina_due_to_ischemic_heart_disease': Sequela(
@@ -2662,6 +2838,7 @@ sequelae = Sequelae(**{
             name='angina_pectoris_moderate',
             kind='healthstate',
             gbd_id=hsid(377),
+            disability_weight_exist=True,
         ),
     ),
     'severe_angina_due_to_ischemic_heart_disease': Sequela(
@@ -2677,6 +2854,7 @@ sequelae = Sequelae(**{
             name='angina_pectoris_severe',
             kind='healthstate',
             gbd_id=hsid(378),
+            disability_weight_exist=True,
         ),
     ),
     'anorexia_nervosa': Sequela(
@@ -2692,6 +2870,7 @@ sequelae = Sequelae(**{
             name='anorexia_nervosa',
             kind='healthstate',
             gbd_id=hsid(444),
+            disability_weight_exist=True,
         ),
     ),
     'mild_anxiety_disorders': Sequela(
@@ -2707,6 +2886,7 @@ sequelae = Sequelae(**{
             name='anxiety_disorders_mild',
             kind='healthstate',
             gbd_id=hsid(434),
+            disability_weight_exist=True,
         ),
     ),
     'mild_other_mental_disorders': Sequela(
@@ -2722,6 +2902,7 @@ sequelae = Sequelae(**{
             name='anxiety_disorders_mild',
             kind='healthstate',
             gbd_id=hsid(434),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_anxiety_disorders': Sequela(
@@ -2737,6 +2918,7 @@ sequelae = Sequelae(**{
             name='anxiety_disorders_moderate',
             kind='healthstate',
             gbd_id=hsid(435),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_other_mental_disorders': Sequela(
@@ -2752,6 +2934,7 @@ sequelae = Sequelae(**{
             name='anxiety_disorders_moderate',
             kind='healthstate',
             gbd_id=hsid(435),
+            disability_weight_exist=True,
         ),
     ),
     'severe_anxiety_disorders': Sequela(
@@ -2767,6 +2950,7 @@ sequelae = Sequelae(**{
             name='anxiety_disorders_severe',
             kind='healthstate',
             gbd_id=hsid(436),
+            disability_weight_exist=True,
         ),
     ),
     'severe_other_mental_disorders': Sequela(
@@ -2782,6 +2966,7 @@ sequelae = Sequelae(**{
             name='anxiety_disorders_severe',
             kind='healthstate',
             gbd_id=hsid(436),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_asthma': Sequela(
@@ -2797,6 +2982,7 @@ sequelae = Sequelae(**{
             name='asthma_controlled',
             kind='healthstate',
             gbd_id=hsid(402),
+            disability_weight_exist=True,
         ),
     ),
     'partially_controlled_asthma': Sequela(
@@ -2812,6 +2998,7 @@ sequelae = Sequelae(**{
             name='asthma_partially_controlled',
             kind='healthstate',
             gbd_id=hsid(403),
+            disability_weight_exist=True,
         ),
     ),
     'uncontrolled_asthma': Sequela(
@@ -2827,6 +3014,7 @@ sequelae = Sequelae(**{
             name='asthma_uncontrolled',
             kind='healthstate',
             gbd_id=hsid(404),
+            disability_weight_exist=True,
         ),
     ),
     'prevalence_of_detectable_microfiliaria_due_to_lymphatic_filariasis': Sequela(
@@ -2842,6 +3030,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_atrial_fibrillation_and_flutter': Sequela(
@@ -2857,6 +3046,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'attention_deficit_hyperactivity_disorder_currently_without_symptoms': Sequela(
@@ -2872,6 +3062,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_alcohol_dependence': Sequela(
@@ -2887,6 +3078,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_fetal_alcohol_syndrome': Sequela(
@@ -2902,6 +3094,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'anxiety_disorders_currently_without_symptoms': Sequela(
@@ -2917,6 +3110,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'conduct_disorder_currently_without_symptoms': Sequela(
@@ -2932,6 +3126,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_cannabis_dependence': Sequela(
@@ -2947,6 +3142,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_opioid_dependence': Sequela(
@@ -2962,6 +3158,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_cocaine_dependence': Sequela(
@@ -2977,6 +3174,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'dysthymia_currently_without_symptoms': Sequela(
@@ -2992,6 +3190,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'major_depressive_disorder_currently_without_symptoms': Sequela(
@@ -3007,6 +3206,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_gout': Sequela(
@@ -3022,6 +3222,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_migraine': Sequela(
@@ -3037,6 +3238,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_tension_type_headache': Sequela(
@@ -3052,6 +3254,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_asthma': Sequela(
@@ -3067,6 +3270,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_genital_herpes': Sequela(
@@ -3082,6 +3286,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_endometriosis': Sequela(
@@ -3097,6 +3302,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_amphetamine_dependence': Sequela(
@@ -3112,6 +3318,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_other_cardiovascular_diseases': Sequela(
@@ -3127,6 +3334,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_other_gynecological_disorders': Sequela(
@@ -3142,6 +3350,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'other_mental_disorders_currently_without_symptoms': Sequela(
@@ -3157,6 +3366,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_premenstrual_syndrome': Sequela(
@@ -3172,6 +3382,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_polycystic_ovarian_syndrome': Sequela(
@@ -3187,6 +3398,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_genital_prolapse': Sequela(
@@ -3202,6 +3414,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_acute_hepatitis_a': Sequela(
@@ -3217,6 +3430,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_acute_hepatitis_b': Sequela(
@@ -3232,6 +3446,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_acute_hepatitis_c': Sequela(
@@ -3247,6 +3462,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_acute_hepatitis_e': Sequela(
@@ -3262,6 +3478,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_retinopathy_of_prematurity': Sequela(
@@ -3277,6 +3494,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_other_skin_and_subcutaneous_diseases': Sequela(
@@ -3292,6 +3510,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'chronic_hepatitis_b_without_cirrhosis': Sequela(
@@ -3307,6 +3526,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'chronic_hepatitis_c_without_cirrhosis': Sequela(
@@ -3322,6 +3542,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_endocrine_metabolic_blood_and_immune_disorders': Sequela(
@@ -3337,6 +3558,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_turner_syndrome': Sequela(
@@ -3352,6 +3574,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_chlamydial_infection': Sequela(
@@ -3367,6 +3590,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_gonococcal_infection': Sequela(
@@ -3382,6 +3606,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_trichomoniasis_infection': Sequela(
@@ -3397,6 +3622,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_orofacial_clefts': Sequela(
@@ -3412,6 +3638,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_chronic_obstructive_pulmonary_disease': Sequela(
@@ -3427,6 +3654,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_down_syndrome': Sequela(
@@ -3442,6 +3670,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_other_chromosomal_abnormalities': Sequela(
@@ -3457,6 +3686,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_klinefelter_syndrome': Sequela(
@@ -3472,6 +3702,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_chagas_disease': Sequela(
@@ -3487,6 +3718,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_caries_of_deciduous_teeth': Sequela(
@@ -3502,6 +3734,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_caries_of_permanent_teeth': Sequela(
@@ -3517,6 +3750,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_edentulism_and_severe_tooth_loss': Sequela(
@@ -3532,6 +3766,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_chronic_ischemic_stroke': Sequela(
@@ -3547,6 +3782,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_chronic_intracerebral_hemorrhage': Sequela(
@@ -3562,6 +3798,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_silicosis': Sequela(
@@ -3577,6 +3814,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_asbestosis': Sequela(
@@ -3592,6 +3830,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_coal_workers_pneumoconiosis': Sequela(
@@ -3607,6 +3846,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_other_pneumoconiosis': Sequela(
@@ -3622,6 +3862,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_interstitial_lung_disease_and_pulmonary_sarcoidosis': Sequela(
@@ -3637,6 +3878,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_angina_due_to_ischemic_heart_disease': Sequela(
@@ -3652,6 +3894,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_onchocerciasis': Sequela(
@@ -3667,6 +3910,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_ascariasis': Sequela(
@@ -3682,6 +3926,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_trichuriasis': Sequela(
@@ -3697,6 +3942,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_clonorchiasis': Sequela(
@@ -3712,6 +3958,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_fascioliasis': Sequela(
@@ -3727,6 +3974,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_intestinal_fluke_infection': Sequela(
@@ -3742,6 +3990,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_opisthorchiasis': Sequela(
@@ -3757,6 +4006,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_paragonimiasis': Sequela(
@@ -3772,6 +4022,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_peripheral_vascular_disease': Sequela(
@@ -3787,6 +4038,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_benign_prostatic_hyperplasia': Sequela(
@@ -3802,6 +4054,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_uterine_fibroids': Sequela(
@@ -3817,6 +4070,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_other_musculoskeletal_disorders': Sequela(
@@ -3832,6 +4086,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_hookworm_disease': Sequela(
@@ -3847,6 +4102,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'stage_iii_chronic_kidney_disease_without_anemia_due_to_hypertension': Sequela(
@@ -3862,6 +4118,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'stage_iii_chronic_kidney_disease_without_anemia_due_to_glomerulonephritis': Sequela(
@@ -3877,6 +4134,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'stage_iii_chronic_kidney_disease_without_anemia_due_to_other_causes': Sequela(
@@ -3892,6 +4150,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_ischemic_heart_disease_following_myocardial_infarction': Sequela(
@@ -3907,6 +4166,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_seborrhoeic_dermatitis': Sequela(
@@ -3922,6 +4182,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_contact_dermatitis': Sequela(
@@ -3937,6 +4198,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_b_thalassemia_trait': Sequela(
@@ -3952,6 +4214,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_hemoglobin_e_trait': Sequela(
@@ -3967,6 +4230,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_sickle_cell_trait': Sequela(
@@ -3982,6 +4246,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_hemizygous_g6pd_deficiency': Sequela(
@@ -3997,6 +4262,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_malaria_parasitemia_pfpr': Sequela(
@@ -4012,6 +4278,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_yellow_fever': Sequela(
@@ -4027,6 +4294,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_g6pd_deficiency': Sequela(
@@ -4042,6 +4310,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_gallbladder_and_biliary_diseases': Sequela(
@@ -4057,6 +4326,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_inguinal_femoral_and_abdominal_hernia': Sequela(
@@ -4072,6 +4342,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_early_syphilis_infection': Sequela(
@@ -4087,6 +4358,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_neonatal_preterm_birth_less_than_28_weeks': Sequela(
@@ -4102,6 +4374,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_neonatal_preterm_birth_28_less_than_32_wks': Sequela(
@@ -4117,6 +4390,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_neonatal_preterm_birth_32_less_than_37wks': Sequela(
@@ -4132,6 +4406,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
@@ -4147,6 +4422,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_neonatal_sepsis_and_other_neonatal_infections': Sequela(
@@ -4162,6 +4438,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_acute_sense_organ_diseases': Sequela(
@@ -4177,6 +4454,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_chronic_other_sense_organ_diseases': Sequela(
@@ -4192,6 +4470,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_medication_overuse_headache_due_to_migraine': Sequela(
@@ -4207,6 +4486,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_medication_overuse_headache_due_to_tension_type_headache': Sequela(
@@ -4222,6 +4502,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_zika_infection': Sequela(
@@ -4237,6 +4518,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_congenital_diaphragmatic_hernia': Sequela(
@@ -4252,6 +4534,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_congenital_atresia_and_or_stenosis_of_the_digestive_tract': Sequela(
@@ -4267,6 +4550,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_congenital_malformations_of_the_abdominal_wall_after_treatment': Sequela(
@@ -4282,6 +4566,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_other_congenital_malformations_of_the_digestive_tract': Sequela(
@@ -4297,6 +4582,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_congenital_genital_anomalies': Sequela(
@@ -4312,6 +4598,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -4327,6 +4614,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_congenital_anomalies_of_the_urinary_tract': Sequela(
@@ -4342,6 +4630,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_encephalocele_following_treatment': Sequela(
@@ -4357,6 +4646,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_wasting_without_edema': Sequela(
@@ -4372,6 +4662,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_vitamin_a_deficiency': Sequela(
@@ -4387,6 +4678,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'latent_tuberculosis_infection': Sequela(
@@ -4402,6 +4694,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_ulcerative_colitis': Sequela(
@@ -4417,6 +4710,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_crohns_disease': Sequela(
@@ -4432,6 +4726,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_multiple_sclerosis': Sequela(
@@ -4447,6 +4742,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_compensated': Sequela(
@@ -4462,6 +4758,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_compensated': Sequela(
@@ -4477,6 +4774,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_compensated': Sequela(
@@ -4492,6 +4790,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_compensated': Sequela(
@@ -4507,6 +4806,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_adult_tertiary_syphilis': Sequela(
@@ -4522,6 +4822,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_chronic_subarachnoid_hemorrhage': Sequela(
@@ -4537,6 +4838,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'stage_iii_chronic_kidney_disease_without_anemia_due_to_type_1_diabetes_mellitus': Sequela(
@@ -4552,6 +4854,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'stage_iii_chronic_kidney_disease_without_anemia_due_to_type_2_diabetes_mellitus': Sequela(
@@ -4567,6 +4870,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_calcific_aortic_valve_disease': Sequela(
@@ -4582,6 +4886,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_degenerative_mitral_valve_disease': Sequela(
@@ -4597,6 +4902,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_nash_compensated': Sequela(
@@ -4612,6 +4918,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'benign_and_in_situ_intestinal_neoplasms': Sequela(
@@ -4627,6 +4934,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'benign_and_in_situ_cervical_and_uterine_neoplasms': Sequela(
@@ -4642,6 +4950,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'other_benign_and_in_situ_neoplasms': Sequela(
@@ -4657,6 +4966,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'non_alcoholic_fatty_liver_disease_nafld_non_alcoholic_steatohepatitis_nash': Sequela(
@@ -4672,6 +4982,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'albuminuria_with_preserved_gfr_due_to_type_1_diabetes_mellitus': Sequela(
@@ -4687,6 +4998,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'albuminuria_with_preserved_gfr_due_to_type_2_diabetes_mellitus': Sequela(
@@ -4702,6 +5014,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'albuminuria_with_preserved_gfr_due_to_hypertension': Sequela(
@@ -4717,6 +5030,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'albuminuria_with_preserved_gfr_due_to_glomerulonephritis': Sequela(
@@ -4732,6 +5046,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'albuminuria_with_preserved_gfr_due_to_other_causes': Sequela(
@@ -4747,6 +5062,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'asymptomatic_malaria_vivax_pvpr': Sequela(
@@ -4762,6 +5078,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'non_disabling_symptomatic_acne': Sequela(
@@ -4777,6 +5094,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'chronic_peptic_ulcer_disease_asymptomatic_with_no_anemia': Sequela(
@@ -4792,6 +5110,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'chronic_asymptomatic_gastritis_and_duodenitis_with_no_anemia': Sequela(
@@ -4807,6 +5126,7 @@ sequelae = Sequelae(**{
             name='asymptomatic',
             kind='healthstate',
             gbd_id=hsid(799),
+            disability_weight_exist=False,
         ),
     ),
     'mild_behavioral_problems_due_to_pneumococcal_meningitis': Sequela(
@@ -4822,6 +5142,7 @@ sequelae = Sequelae(**{
             name='attention_deficit_hyperactivity_disorder',
             kind='healthstate',
             gbd_id=hsid(446),
+            disability_weight_exist=True,
         ),
     ),
     'mild_behavioral_problems_due_to_h_influenzae_type_b_meningitis': Sequela(
@@ -4837,6 +5158,7 @@ sequelae = Sequelae(**{
             name='attention_deficit_hyperactivity_disorder',
             kind='healthstate',
             gbd_id=hsid(446),
+            disability_weight_exist=True,
         ),
     ),
     'mild_behavioral_problems_due_to_meningococcal_meningitis': Sequela(
@@ -4852,6 +5174,7 @@ sequelae = Sequelae(**{
             name='attention_deficit_hyperactivity_disorder',
             kind='healthstate',
             gbd_id=hsid(446),
+            disability_weight_exist=True,
         ),
     ),
     'mild_behavioral_problems_due_to_other_bacterial_meningitis': Sequela(
@@ -4867,6 +5190,7 @@ sequelae = Sequelae(**{
             name='attention_deficit_hyperactivity_disorder',
             kind='healthstate',
             gbd_id=hsid(446),
+            disability_weight_exist=True,
         ),
     ),
     'mild_behavioral_problems_due_to_encephalitis': Sequela(
@@ -4882,6 +5206,7 @@ sequelae = Sequelae(**{
             name='attention_deficit_hyperactivity_disorder',
             kind='healthstate',
             gbd_id=hsid(446),
+            disability_weight_exist=True,
         ),
     ),
     'symptomatic_attention_deficit_hyperactivity_disorder': Sequela(
@@ -4897,6 +5222,7 @@ sequelae = Sequelae(**{
             name='attention_deficit_hyperactivity_disorder',
             kind='healthstate',
             gbd_id=hsid(446),
+            disability_weight_exist=True,
         ),
     ),
     'autism_spectrum_disorders_with_borderline_intellectual_disability': Sequela(
@@ -4912,6 +5238,7 @@ sequelae = Sequelae(**{
             name='autism_spectrum_disorder_with_borderline_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(2618),
+            disability_weight_exist=False,
         ),
     ),
     'autism_spectrum_disorders_with_mild_intellectual_disability': Sequela(
@@ -4927,6 +5254,7 @@ sequelae = Sequelae(**{
             name='autism_spectrum_disorder_with_mild_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(2621),
+            disability_weight_exist=False,
         ),
     ),
     'autism_spectrum_disorders_with_moderate_intellectual_disability': Sequela(
@@ -4942,6 +5270,7 @@ sequelae = Sequelae(**{
             name='autism_spectrum_disorder_with_moderate_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(2624),
+            disability_weight_exist=False,
         ),
     ),
     'autism_spectrum_disorders_with_profound_intellectual_disability': Sequela(
@@ -4957,6 +5286,7 @@ sequelae = Sequelae(**{
             name='autism_spectrum_disorder_with_profound_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(2630),
+            disability_weight_exist=False,
         ),
     ),
     'autism_spectrum_disorders_with_severe_intellectual_disability': Sequela(
@@ -4972,6 +5302,7 @@ sequelae = Sequelae(**{
             name='autism_spectrum_disorder_with_severe_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(2627),
+            disability_weight_exist=False,
         ),
     ),
     'autism_spectrum_disorders_without_intellectual_disability': Sequela(
@@ -4987,6 +5318,7 @@ sequelae = Sequelae(**{
             name='autism_spectrum_disorder_without_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(2612),
+            disability_weight_exist=False,
         ),
     ),
     'most_severe_low_back_pain_with_leg_pain': Sequela(
@@ -5002,6 +5334,7 @@ sequelae = Sequelae(**{
             name='back_pain_most_severe_with_leg_pain',
             kind='healthstate',
             gbd_id=hsid(473),
+            disability_weight_exist=True,
         ),
     ),
     'most_severe_low_back_pain_without_leg_pain': Sequela(
@@ -5017,6 +5350,7 @@ sequelae = Sequelae(**{
             name='back_pain_most_severe_without_leg_pain',
             kind='healthstate',
             gbd_id=hsid(472),
+            disability_weight_exist=True,
         ),
     ),
     'severe_low_back_pain_with_leg_pain': Sequela(
@@ -5032,6 +5366,7 @@ sequelae = Sequelae(**{
             name='back_pain_severe_with_leg_pain',
             kind='healthstate',
             gbd_id=hsid(471),
+            disability_weight_exist=True,
         ),
     ),
     'severe_low_back_pain_without_leg_pain': Sequela(
@@ -5047,6 +5382,7 @@ sequelae = Sequelae(**{
             name='back_pain_severe_without_leg_pain',
             kind='healthstate',
             gbd_id=hsid(470),
+            disability_weight_exist=True,
         ),
     ),
     'symptomatic_benign_prostatic_hyperplasia': Sequela(
@@ -5062,6 +5398,7 @@ sequelae = Sequelae(**{
             name='benign_prostatic_hypertrophy_symptomatic_cases',
             kind='healthstate',
             gbd_id=hsid(397),
+            disability_weight_exist=True,
         ),
     ),
     'bipolar_disorder_manic_state': Sequela(
@@ -5077,6 +5414,7 @@ sequelae = Sequelae(**{
             name='bipolar_disorder_manic_episode',
             kind='healthstate',
             gbd_id=hsid(440),
+            disability_weight_exist=True,
         ),
     ),
     'bipolar_disorder_residual_state': Sequela(
@@ -5092,6 +5430,7 @@ sequelae = Sequelae(**{
             name='bipolar_disorder_residual_state',
             kind='healthstate',
             gbd_id=hsid(441),
+            disability_weight_exist=True,
         ),
     ),
     'borderline_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome': Sequela(
@@ -5107,6 +5446,7 @@ sequelae = Sequelae(**{
             name='borderline_intellectual_disability_with_congenital_heart_disease',
             kind='healthstate',
             gbd_id=hsid(897),
+            disability_weight_exist=False,
         ),
     ),
     'borderline_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
@@ -5122,6 +5462,7 @@ sequelae = Sequelae(**{
             name='borderline_intellectual_disability_with_congenital_heart_disease',
             kind='healthstate',
             gbd_id=hsid(897),
+            disability_weight_exist=False,
         ),
     ),
     'borderline_intellectual_disability_with_infertility_due_to_klinefelter_syndrome': Sequela(
@@ -5137,6 +5478,7 @@ sequelae = Sequelae(**{
             name='borderline_intellectual_disability_with_primary_infertility',
             kind='healthstate',
             gbd_id=hsid(788),
+            disability_weight_exist=True,
         ),
     ),
     'borderline_intellectual_disability_due_to_pneumococcal_meningitis': Sequela(
@@ -5152,6 +5494,7 @@ sequelae = Sequelae(**{
             name='borderline_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(450),
+            disability_weight_exist=True,
         ),
     ),
     'borderline_intellectual_disability_due_to_h_influenzae_type_b_meningitis': Sequela(
@@ -5167,6 +5510,7 @@ sequelae = Sequelae(**{
             name='borderline_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(450),
+            disability_weight_exist=True,
         ),
     ),
     'borderline_intellectual_disability_due_to_meningococcal_meningitis': Sequela(
@@ -5182,6 +5526,7 @@ sequelae = Sequelae(**{
             name='borderline_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(450),
+            disability_weight_exist=True,
         ),
     ),
     'borderline_intellectual_disability_due_to_other_bacterial_meningitis': Sequela(
@@ -5197,6 +5542,7 @@ sequelae = Sequelae(**{
             name='borderline_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(450),
+            disability_weight_exist=True,
         ),
     ),
     'borderline_idiopathic_developmental_intellectual_disability': Sequela(
@@ -5212,6 +5558,7 @@ sequelae = Sequelae(**{
             name='borderline_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(450),
+            disability_weight_exist=True,
         ),
     ),
     'borderline_intellectual_disability_due_to_klinefelter_syndrome': Sequela(
@@ -5227,6 +5574,7 @@ sequelae = Sequelae(**{
             name='borderline_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(450),
+            disability_weight_exist=True,
         ),
     ),
     'borderline_intellectual_disability_due_to_encephalitis': Sequela(
@@ -5242,6 +5590,7 @@ sequelae = Sequelae(**{
             name='borderline_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(450),
+            disability_weight_exist=True,
         ),
     ),
     'borderline_intellectual_disability_due_to_down_syndrome': Sequela(
@@ -5257,6 +5606,7 @@ sequelae = Sequelae(**{
             name='borderline_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(450),
+            disability_weight_exist=True,
         ),
     ),
     'borderline_intellectual_disability_due_to_other_chromosomal_abnormalities': Sequela(
@@ -5272,6 +5622,7 @@ sequelae = Sequelae(**{
             name='borderline_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(450),
+            disability_weight_exist=True,
         ),
     ),
     'borderline_intellectual_disability_due_to_encephalocele': Sequela(
@@ -5287,6 +5638,7 @@ sequelae = Sequelae(**{
             name='borderline_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(450),
+            disability_weight_exist=True,
         ),
     ),
     'borderline_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
@@ -5302,6 +5654,7 @@ sequelae = Sequelae(**{
             name='borderline_intellectual_functioning_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2369),
+            disability_weight_exist=False,
         ),
     ),
     'bulimia_nervosa': Sequela(
@@ -5317,6 +5670,7 @@ sequelae = Sequelae(**{
             name='bulimia_nervosa',
             kind='healthstate',
             gbd_id=hsid(445),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_esophageal_cancer': Sequela(
@@ -5332,6 +5686,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_stomach_cancer': Sequela(
@@ -5347,6 +5702,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_hepatitis_b': Sequela(
@@ -5362,6 +5718,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_hepatitis_c': Sequela(
@@ -5377,6 +5734,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_alcohol_use': Sequela(
@@ -5392,6 +5750,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_other_causes': Sequela(
@@ -5407,6 +5766,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_larynx_cancer': Sequela(
@@ -5422,6 +5782,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_lung_bronchus_and_trachea_cancer': Sequela(
@@ -5437,6 +5798,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_breast_cancer': Sequela(
@@ -5452,6 +5814,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_cervical_cancer': Sequela(
@@ -5467,6 +5830,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_uterine_cancer': Sequela(
@@ -5482,6 +5846,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_prostate_cancer': Sequela(
@@ -5497,6 +5862,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_colon_and_rectum_cancers': Sequela(
@@ -5512,6 +5878,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_mouth_cancer': Sequela(
@@ -5527,6 +5894,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_nasopharynx_cancer': Sequela(
@@ -5542,6 +5910,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_other_pharynx_cancer': Sequela(
@@ -5557,6 +5926,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_gallbladder_and_biliary_tract_cancer': Sequela(
@@ -5572,6 +5942,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_pancreatic_cancer': Sequela(
@@ -5587,6 +5958,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_malignant_skin_melanoma': Sequela(
@@ -5602,6 +5974,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_ovarian_cancer': Sequela(
@@ -5617,6 +5990,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_testicular_cancer': Sequela(
@@ -5632,6 +6006,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_kidney_cancer': Sequela(
@@ -5647,6 +6022,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_bladder_cancer': Sequela(
@@ -5662,6 +6038,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_brain_and_nervous_system_cancers': Sequela(
@@ -5677,6 +6054,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_thyroid_cancer': Sequela(
@@ -5692,6 +6070,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_mesothelioma': Sequela(
@@ -5707,6 +6086,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_hodgkin_disease': Sequela(
@@ -5722,6 +6102,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_non_hodgkin_lymphoma': Sequela(
@@ -5737,6 +6118,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_multiple_myeloma': Sequela(
@@ -5752,6 +6134,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_other_neoplasms': Sequela(
@@ -5767,6 +6150,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_acute_lymphoid_leukemia': Sequela(
@@ -5782,6 +6166,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_acute_myeloid_leukemia': Sequela(
@@ -5797,6 +6182,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_chronic_lymphoid_leukemia': Sequela(
@@ -5812,6 +6198,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_chronic_myeloid_leukemia': Sequela(
@@ -5827,6 +6214,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_other_leukemia': Sequela(
@@ -5842,6 +6230,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_nash': Sequela(
@@ -5857,6 +6246,7 @@ sequelae = Sequelae(**{
             name='cancer_diagnosis_and_primary_therapy',
             kind='healthstate',
             gbd_id=hsid(368),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_esophageal_cancer': Sequela(
@@ -5872,6 +6262,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_stomach_cancer': Sequela(
@@ -5887,6 +6278,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_liver_cancer_due_to_hepatitis_b': Sequela(
@@ -5902,6 +6294,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_liver_cancer_due_to_hepatitis_c': Sequela(
@@ -5917,6 +6310,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_liver_cancer_due_to_alcohol_use': Sequela(
@@ -5932,6 +6326,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_liver_cancer_due_to_other_causes': Sequela(
@@ -5947,6 +6342,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_larynx_cancer': Sequela(
@@ -5962,6 +6358,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_lung_bronchus_and_trachea_cancer': Sequela(
@@ -5977,6 +6374,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_breast_cancer': Sequela(
@@ -5992,6 +6390,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_cervical_cancer': Sequela(
@@ -6007,6 +6406,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_uterine_cancer': Sequela(
@@ -6022,6 +6422,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_prostate_cancer': Sequela(
@@ -6037,6 +6438,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_colon_and_rectum_cancers': Sequela(
@@ -6052,6 +6454,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_mouth_cancer': Sequela(
@@ -6067,6 +6470,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_nasopharynx_cancer': Sequela(
@@ -6082,6 +6486,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_other_pharynx_cancer': Sequela(
@@ -6097,6 +6502,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_gallbladder_and_biliary_tract_cancer': Sequela(
@@ -6112,6 +6518,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_pancreatic_cancer': Sequela(
@@ -6127,6 +6534,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_malignant_skin_melanoma': Sequela(
@@ -6142,6 +6550,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_ovarian_cancer': Sequela(
@@ -6157,6 +6566,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_testicular_cancer': Sequela(
@@ -6172,6 +6582,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_kidney_cancer': Sequela(
@@ -6187,6 +6598,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_bladder_cancer': Sequela(
@@ -6202,6 +6614,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_brain_and_nervous_system_cancers': Sequela(
@@ -6217,6 +6630,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_thyroid_cancer': Sequela(
@@ -6232,6 +6646,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_mesothelioma': Sequela(
@@ -6247,6 +6662,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_hodgkin_disease': Sequela(
@@ -6262,6 +6678,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_non_hodgkin_lymphoma': Sequela(
@@ -6277,6 +6694,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_multiple_myeloma': Sequela(
@@ -6292,6 +6710,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_other_neoplasms': Sequela(
@@ -6307,6 +6726,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_acute_lymphoid_leukemia': Sequela(
@@ -6322,6 +6742,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_acute_myeloid_leukemia': Sequela(
@@ -6337,6 +6758,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_chronic_lymphoid_leukemia': Sequela(
@@ -6352,6 +6774,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_chronic_myeloid_leukemia': Sequela(
@@ -6367,6 +6790,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_other_leukemia': Sequela(
@@ -6382,6 +6806,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'metastatic_phase_of_liver_cancer_due_to_nash': Sequela(
@@ -6397,6 +6822,7 @@ sequelae = Sequelae(**{
             name='cancer_metastatic',
             kind='healthstate',
             gbd_id=hsid(369),
+            disability_weight_exist=True,
         ),
     ),
     'severe_cannabis_dependence': Sequela(
@@ -6412,6 +6838,7 @@ sequelae = Sequelae(**{
             name='cannabis_dependence',
             kind='healthstate',
             gbd_id=hsid(430),
+            disability_weight_exist=True,
         ),
     ),
     'mild_cannabis_dependence': Sequela(
@@ -6427,6 +6854,7 @@ sequelae = Sequelae(**{
             name='cannabis_dependence_mild',
             kind='healthstate',
             gbd_id=hsid(586),
+            disability_weight_exist=True,
         ),
     ),
     'atrial_fibrillation_and_flutter_due_to_chagas_disease': Sequela(
@@ -6442,6 +6870,7 @@ sequelae = Sequelae(**{
             name='cardiac_conduction_disorders_and_cardiac_dysrhythmias',
             kind='healthstate',
             gbd_id=hsid(379),
+            disability_weight_exist=True,
         ),
     ),
     'symptomatic_atrial_fibrillation_and_flutter': Sequela(
@@ -6457,6 +6886,7 @@ sequelae = Sequelae(**{
             name='cardiac_conduction_disorders_and_cardiac_dysrhythmias',
             kind='healthstate',
             gbd_id=hsid(379),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_hypertension': Sequela(
@@ -6472,6 +6902,7 @@ sequelae = Sequelae(**{
             name='chronic_kidney_disease_stage_iv',
             kind='healthstate',
             gbd_id=hsid(391),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_glomerulonephritis': Sequela(
@@ -6487,6 +6918,7 @@ sequelae = Sequelae(**{
             name='chronic_kidney_disease_stage_iv',
             kind='healthstate',
             gbd_id=hsid(391),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_other_causes': Sequela(
@@ -6502,6 +6934,7 @@ sequelae = Sequelae(**{
             name='chronic_kidney_disease_stage_iv',
             kind='healthstate',
             gbd_id=hsid(391),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_type_1_diabetes_mellitus': Sequela(
@@ -6517,6 +6950,7 @@ sequelae = Sequelae(**{
             name='chronic_kidney_disease_stage_iv',
             kind='healthstate',
             gbd_id=hsid(391),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_type_2_diabetes_mellitus': Sequela(
@@ -6532,6 +6966,7 @@ sequelae = Sequelae(**{
             name='chronic_kidney_disease_stage_iv',
             kind='healthstate',
             gbd_id=hsid(391),
+            disability_weight_exist=True,
         ),
     ),
     'symptomatic_claudication_due_to_peripheral_vascular_disease': Sequela(
@@ -6547,6 +6982,7 @@ sequelae = Sequelae(**{
             name='claudication',
             kind='healthstate',
             gbd_id=hsid(380),
+            disability_weight_exist=True,
         ),
     ),
     'severe_cocaine_dependence': Sequela(
@@ -6562,6 +6998,7 @@ sequelae = Sequelae(**{
             name='cocaine_dependence',
             kind='healthstate',
             gbd_id=hsid(432),
+            disability_weight_exist=True,
         ),
     ),
     'other_drug_use_disorders': Sequela(
@@ -6577,6 +7014,7 @@ sequelae = Sequelae(**{
             name='cocaine_dependence_mild',
             kind='healthstate',
             gbd_id=hsid(580),
+            disability_weight_exist=True,
         ),
     ),
     'mild_cocaine_dependence': Sequela(
@@ -6592,6 +7030,7 @@ sequelae = Sequelae(**{
             name='cocaine_dependence_mild',
             kind='healthstate',
             gbd_id=hsid(580),
+            disability_weight_exist=True,
         ),
     ),
     'symptomatic_conduct_disorder': Sequela(
@@ -6607,6 +7046,7 @@ sequelae = Sequelae(**{
             name='conduct_disorder',
             kind='healthstate',
             gbd_id=hsid(447),
+            disability_weight_exist=True,
         ),
     ),
     'congenital_heart_disease_due_to_turner_syndrome': Sequela(
@@ -6622,6 +7062,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease',
             kind='healthstate',
             gbd_id=hsid(574),
+            disability_weight_exist=True,
         ),
     ),
     'isolated_congenital_heart_disease_due_to_down_syndrome': Sequela(
@@ -6637,6 +7078,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease',
             kind='healthstate',
             gbd_id=hsid(574),
+            disability_weight_exist=True,
         ),
     ),
     'isolated_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
@@ -6652,6 +7094,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease',
             kind='healthstate',
             gbd_id=hsid(574),
+            disability_weight_exist=True,
         ),
     ),
     'congenital_heart_disease_without_intellectual_disability_or_heart_failure_due_to_other_congenital_cardiovascular_anomalies': Sequela(
@@ -6667,6 +7110,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease',
             kind='healthstate',
             gbd_id=hsid(574),
+            disability_weight_exist=True,
         ),
     ),
     'congenital_heart_disease_without_intellectual_disability_or_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -6682,6 +7126,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease',
             kind='healthstate',
             gbd_id=hsid(574),
+            disability_weight_exist=True,
         ),
     ),
     'congenital_heart_disease_without_intellectual_disability_or_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -6697,6 +7142,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease',
             kind='healthstate',
             gbd_id=hsid(574),
+            disability_weight_exist=True,
         ),
     ),
     'congenital_heart_disease_without_heart_failure_or_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -6712,6 +7158,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease',
             kind='healthstate',
             gbd_id=hsid(574),
+            disability_weight_exist=True,
         ),
     ),
     'congenital_heart_disease_without_heart_failure_or_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -6727,6 +7174,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease',
             kind='healthstate',
             gbd_id=hsid(574),
+            disability_weight_exist=True,
         ),
     ),
     'congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies': Sequela(
@@ -6742,6 +7190,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_borderline_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(2519),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -6757,6 +7206,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_borderline_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(2519),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -6772,6 +7222,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_borderline_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(2519),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -6787,6 +7238,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_borderline_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(2519),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_borderline_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -6802,6 +7254,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_borderline_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(2519),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -6817,6 +7270,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_borderline_intellectual_functioning_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2669),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -6832,6 +7286,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_borderline_intellectual_functioning_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2669),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -6847,6 +7302,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_borderline_intellectual_functioning_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2669),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -6862,6 +7318,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_borderline_intellectual_functioning_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2669),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -6877,6 +7334,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2666),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -6892,6 +7350,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2666),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -6907,6 +7366,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2666),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -6922,6 +7382,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2666),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies': Sequela(
@@ -6937,6 +7398,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_mild',
             kind='healthstate',
             gbd_id=hsid(2522),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -6952,6 +7414,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_mild',
             kind='healthstate',
             gbd_id=hsid(2522),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -6967,6 +7430,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_mild',
             kind='healthstate',
             gbd_id=hsid(2522),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -6982,6 +7446,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_mild',
             kind='healthstate',
             gbd_id=hsid(2522),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_mild_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -6997,6 +7462,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_mild',
             kind='healthstate',
             gbd_id=hsid(2522),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -7012,6 +7478,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_mild_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2672),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -7027,6 +7494,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_mild_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2672),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -7042,6 +7510,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_mild_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2672),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -7057,6 +7526,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_mild_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2672),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies': Sequela(
@@ -7072,6 +7542,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_moderate',
             kind='healthstate',
             gbd_id=hsid(2525),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -7087,6 +7558,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_moderate',
             kind='healthstate',
             gbd_id=hsid(2525),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -7102,6 +7574,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_moderate',
             kind='healthstate',
             gbd_id=hsid(2525),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -7117,6 +7590,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_moderate',
             kind='healthstate',
             gbd_id=hsid(2525),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_moderate_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -7132,6 +7606,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_moderate',
             kind='healthstate',
             gbd_id=hsid(2525),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -7147,6 +7622,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_moderate_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2675),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -7162,6 +7638,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_moderate_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2675),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -7177,6 +7654,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_moderate_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2675),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -7192,6 +7670,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_moderate_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2675),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies': Sequela(
@@ -7207,6 +7686,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_profound',
             kind='healthstate',
             gbd_id=hsid(2531),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -7222,6 +7702,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_profound',
             kind='healthstate',
             gbd_id=hsid(2531),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -7237,6 +7718,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_profound',
             kind='healthstate',
             gbd_id=hsid(2531),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -7252,6 +7734,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_profound',
             kind='healthstate',
             gbd_id=hsid(2531),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_profound_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -7267,6 +7750,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_profound',
             kind='healthstate',
             gbd_id=hsid(2531),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -7282,6 +7766,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_profound_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2681),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -7297,6 +7782,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_profound_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2681),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -7312,6 +7798,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_profound_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2681),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -7327,6 +7814,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_profound_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2681),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_other_congenital_cardiovascular_anomalies': Sequela(
@@ -7342,6 +7830,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_severe',
             kind='healthstate',
             gbd_id=hsid(2528),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -7357,6 +7846,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_severe',
             kind='healthstate',
             gbd_id=hsid(2528),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -7372,6 +7862,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_severe',
             kind='healthstate',
             gbd_id=hsid(2528),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -7387,6 +7878,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_severe',
             kind='healthstate',
             gbd_id=hsid(2528),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_severe_intellectual_disability_without_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -7402,6 +7894,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_severe',
             kind='healthstate',
             gbd_id=hsid(2528),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -7417,6 +7910,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_severe_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2678),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -7432,6 +7926,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_severe_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2678),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -7447,6 +7942,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_severe_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2678),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -7462,6 +7958,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_intellectual_disability_mental_retardation_severe_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2678),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_mild_dementia_due_to_down_syndrome': Sequela(
@@ -7477,6 +7974,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_mild_dementia',
             kind='healthstate',
             gbd_id=hsid(911),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_mild_dementia_due_to_other_chromosomal_abnormalities': Sequela(
@@ -7492,6 +7990,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_mild_dementia',
             kind='healthstate',
             gbd_id=hsid(911),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_mild_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -7507,6 +8006,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2294),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_mild_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -7522,6 +8022,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2294),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_mild_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -7537,6 +8038,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2294),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_mild_heart_failure_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -7552,6 +8054,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2294),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_moderate_dementia_due_to_down_syndrome': Sequela(
@@ -7567,6 +8070,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_moderate_dementia',
             kind='healthstate',
             gbd_id=hsid(912),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_moderate_dementia_due_to_other_chromosomal_abnormalities': Sequela(
@@ -7582,6 +8086,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_moderate_dementia',
             kind='healthstate',
             gbd_id=hsid(912),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_moderate_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -7597,6 +8102,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2297),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_moderate_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -7612,6 +8118,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2297),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_moderate_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -7627,6 +8134,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2297),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_moderate_heart_failure_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -7642,6 +8150,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2297),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_severe_dementia_due_to_down_syndrome': Sequela(
@@ -7657,6 +8166,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_severe_dementia',
             kind='healthstate',
             gbd_id=hsid(913),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_severe_dementia_due_to_other_chromosomal_abnormalities': Sequela(
@@ -7672,6 +8182,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_severe_dementia',
             kind='healthstate',
             gbd_id=hsid(913),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_severe_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -7687,6 +8198,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2300),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_severe_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -7702,6 +8214,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2300),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_severe_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -7717,6 +8230,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2300),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_and_severe_heart_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -7732,6 +8246,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_and_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2300),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_with_infertility_due_to_turner_syndrome': Sequela(
@@ -7747,6 +8262,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_with_primary_infertility',
             kind='healthstate',
             gbd_id=hsid(787),
+            disability_weight_exist=True,
         ),
     ),
     'congenital_heart_disease_boderline_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -7762,6 +8278,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_borderline_intellectual_functioning_and_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2303),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_boderline_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -7777,6 +8294,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_borderline_intellectual_functioning_and_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2303),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_boderline_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -7792,6 +8310,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_borderline_intellectual_functioning_and_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2303),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_boderline_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -7807,6 +8326,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_borderline_intellectual_functioning_and_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2303),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_borderline_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -7822,6 +8342,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_borderline_intellectual_functioning_and_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2306),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_borderline_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -7837,6 +8358,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_borderline_intellectual_functioning_and_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2306),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_borderline_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -7852,6 +8374,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_borderline_intellectual_functioning_and_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2306),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_borderline_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -7867,6 +8390,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_borderline_intellectual_functioning_and_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2306),
+            disability_weight_exist=False,
         ),
     ),
     'borderline_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
@@ -7882,6 +8406,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_mild_dementia_borderline_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(914),
+            disability_weight_exist=False,
         ),
     ),
     'borderline_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
@@ -7897,6 +8422,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_mild_dementia_borderline_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(914),
+            disability_weight_exist=False,
         ),
     ),
     'mild_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
@@ -7912,6 +8438,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_mild_dementia_mild_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(915),
+            disability_weight_exist=False,
         ),
     ),
     'mild_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
@@ -7927,6 +8454,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_mild_dementia_mild_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(915),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
@@ -7942,6 +8470,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_mild_dementia_moderate_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(916),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
@@ -7957,6 +8486,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_mild_dementia_moderate_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(916),
+            disability_weight_exist=False,
         ),
     ),
     'profound_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
@@ -7972,6 +8502,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_mild_dementia_profound_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(918),
+            disability_weight_exist=False,
         ),
     ),
     'profound_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
@@ -7987,6 +8518,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_mild_dementia_profound_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(918),
+            disability_weight_exist=False,
         ),
     ),
     'severe_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
@@ -8002,6 +8534,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_mild_dementia_severe_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(917),
+            disability_weight_exist=False,
         ),
     ),
     'severe_intellectual_disability_mild_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
@@ -8017,6 +8550,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_mild_dementia_severe_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(917),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -8032,6 +8566,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2312),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -8047,6 +8582,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2312),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -8062,6 +8598,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2312),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -8077,6 +8614,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_mild_intellectual_disability_and_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2312),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -8092,6 +8630,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2315),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -8107,6 +8646,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2315),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -8122,6 +8662,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2315),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -8137,6 +8678,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_mild_intellectual_disability_and_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2315),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -8152,6 +8694,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_mild_intellectual_disability_and_servere_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2318),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -8167,6 +8710,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_mild_intellectual_disability_and_servere_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2318),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -8182,6 +8726,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_mild_intellectual_disability_and_servere_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2318),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_mild_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -8197,6 +8742,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_mild_intellectual_disability_and_servere_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2318),
+            disability_weight_exist=False,
         ),
     ),
     'borderline_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
@@ -8212,6 +8758,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_moderate_dementia_borderline_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(919),
+            disability_weight_exist=False,
         ),
     ),
     'borderline_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
@@ -8227,6 +8774,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_moderate_dementia_borderline_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(919),
+            disability_weight_exist=False,
         ),
     ),
     'mild_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
@@ -8242,6 +8790,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_moderate_dementia_mild_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(920),
+            disability_weight_exist=False,
         ),
     ),
     'mild_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
@@ -8257,6 +8806,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_moderate_dementia_mild_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(920),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
@@ -8272,6 +8822,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_moderate_dementia_moderate_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(921),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
@@ -8287,6 +8838,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_moderate_dementia_moderate_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(921),
+            disability_weight_exist=False,
         ),
     ),
     'profound_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
@@ -8302,6 +8854,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_moderate_dementia_profound_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(923),
+            disability_weight_exist=False,
         ),
     ),
     'profound_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
@@ -8317,6 +8870,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_moderate_dementia_profound_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(923),
+            disability_weight_exist=False,
         ),
     ),
     'severe_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
@@ -8332,6 +8886,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_moderate_dementia_severe_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(922),
+            disability_weight_exist=False,
         ),
     ),
     'severe_intellectual_disability_moderate_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
@@ -8347,6 +8902,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_moderate_dementia_severe_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(922),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -8362,6 +8918,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2321),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -8377,6 +8934,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2321),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -8392,6 +8950,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2321),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -8407,6 +8966,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_moderate_intellectual_disability_and_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2321),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -8422,6 +8982,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2324),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -8437,6 +8998,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2324),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -8452,6 +9014,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2324),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -8467,6 +9030,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_moderate_intellectual_disability_and_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2324),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -8482,6 +9046,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2327),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -8497,6 +9062,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2327),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -8512,6 +9078,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2327),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -8527,6 +9094,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2327),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -8542,6 +9110,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2339),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -8557,6 +9126,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2339),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -8572,6 +9142,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2339),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -8587,6 +9158,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_profound_intellectual_disability_and_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2339),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -8602,6 +9174,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2342),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -8617,6 +9190,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2342),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -8632,6 +9206,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2342),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -8647,6 +9222,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_profound_intellectual_disability_and_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2342),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -8662,6 +9238,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2345),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -8677,6 +9254,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2345),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -8692,6 +9270,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2345),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -8707,6 +9286,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2345),
+            disability_weight_exist=False,
         ),
     ),
     'borderline_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
@@ -8722,6 +9302,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_severe_dementia_borderline_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(924),
+            disability_weight_exist=False,
         ),
     ),
     'borderline_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
@@ -8737,6 +9318,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_severe_dementia_borderline_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(924),
+            disability_weight_exist=False,
         ),
     ),
     'mild_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
@@ -8752,6 +9334,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_severe_dementia_mild_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(925),
+            disability_weight_exist=False,
         ),
     ),
     'mild_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
@@ -8767,6 +9350,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_severe_dementia_mild_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(925),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
@@ -8782,6 +9366,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_severe_dementia_moderate_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(926),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
@@ -8797,6 +9382,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_severe_dementia_moderate_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(926),
+            disability_weight_exist=False,
         ),
     ),
     'profound_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
@@ -8812,6 +9398,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_severe_dementia_profound_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(928),
+            disability_weight_exist=False,
         ),
     ),
     'profound_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
@@ -8827,6 +9414,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_severe_dementia_profound_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(928),
+            disability_weight_exist=False,
         ),
     ),
     'severe_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_down_syndrome': Sequela(
@@ -8842,6 +9430,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_severe_dementia_severe_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(927),
+            disability_weight_exist=False,
         ),
     ),
     'severe_intellectual_disability_severe_dementia_and_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
@@ -8857,6 +9446,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_severe_dementia_severe_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(927),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -8872,6 +9462,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2330),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -8887,6 +9478,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2330),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -8902,6 +9494,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2330),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -8917,6 +9510,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_severe_intellectual_disability_and_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2330),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -8932,6 +9526,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2333),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -8947,6 +9542,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2333),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -8962,6 +9558,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2333),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -8977,6 +9574,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_severe_intellectual_disability_and_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2333),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -8992,6 +9590,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2336),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -9007,6 +9606,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2336),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -9022,6 +9622,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2336),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -9037,6 +9638,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2336),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_borderline_intellectual_disability_and_severe_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects': Sequela(
@@ -9052,6 +9654,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_borderline_intellectual_functioning_and_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2309),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_borderline_intellectual_disability_and_severe_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects': Sequela(
@@ -9067,6 +9670,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_borderline_intellectual_functioning_and_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2309),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_borderline_intellectual_disability_and_severe_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus': Sequela(
@@ -9082,6 +9686,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_borderline_intellectual_functioning_and_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2309),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_heart_disease_borderline_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect': Sequela(
@@ -9097,6 +9702,7 @@ sequelae = Sequelae(**{
             name='congenital_heart_disease_borderline_intellectual_functioning_and_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(2309),
+            disability_weight_exist=False,
         ),
     ),
     'chronic_respiratory_disease_due_to_cystic_echinococcosis': Sequela(
@@ -9112,6 +9718,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_mild',
             kind='healthstate',
             gbd_id=hsid(405),
+            disability_weight_exist=True,
         ),
     ),
     'mild_chronic_obstructive_pulmonary_disease': Sequela(
@@ -9127,6 +9734,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_mild',
             kind='healthstate',
             gbd_id=hsid(405),
+            disability_weight_exist=True,
         ),
     ),
     'mild_silicosis': Sequela(
@@ -9142,6 +9750,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_mild',
             kind='healthstate',
             gbd_id=hsid(405),
+            disability_weight_exist=True,
         ),
     ),
     'mild_asbestosis': Sequela(
@@ -9157,6 +9766,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_mild',
             kind='healthstate',
             gbd_id=hsid(405),
+            disability_weight_exist=True,
         ),
     ),
     'mild_coal_workers_pneumoconiosis': Sequela(
@@ -9172,6 +9782,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_mild',
             kind='healthstate',
             gbd_id=hsid(405),
+            disability_weight_exist=True,
         ),
     ),
     'mild_other_pneumoconiosis': Sequela(
@@ -9187,6 +9798,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_mild',
             kind='healthstate',
             gbd_id=hsid(405),
+            disability_weight_exist=True,
         ),
     ),
     'mild_interstitial_lung_disease_and_pulmonary_sarcoidosis': Sequela(
@@ -9202,6 +9814,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_mild',
             kind='healthstate',
             gbd_id=hsid(405),
+            disability_weight_exist=True,
         ),
     ),
     'mild_respiratory_problems_due_to_motor_neuron_disease': Sequela(
@@ -9217,6 +9830,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_mild',
             kind='healthstate',
             gbd_id=hsid(405),
+            disability_weight_exist=True,
         ),
     ),
     'mild_paragonimiasis_due_to_food_borne_trematodiases': Sequela(
@@ -9232,6 +9846,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_mild',
             kind='healthstate',
             gbd_id=hsid(405),
+            disability_weight_exist=True,
         ),
     ),
     'mild_chronic_respiratory_problems_and_breathlessness_due_to_congenital_diaphragmatic_hernia': Sequela(
@@ -9247,6 +9862,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_mild',
             kind='healthstate',
             gbd_id=hsid(405),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_respiratory_problems_including_difficulty_breaking_and_recurrent_upper_respiratory_infections_due_to_atresia_and_or_stenosis_of_the_digestive_tract': Sequela(
@@ -9262,6 +9878,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_mild',
             kind='healthstate',
             gbd_id=hsid(405),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_chronic_obstructive_pulmonary_disease': Sequela(
@@ -9277,6 +9894,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_moderate',
             kind='healthstate',
             gbd_id=hsid(406),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_silicosis': Sequela(
@@ -9292,6 +9910,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_moderate',
             kind='healthstate',
             gbd_id=hsid(406),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_asbestosis': Sequela(
@@ -9307,6 +9926,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_moderate',
             kind='healthstate',
             gbd_id=hsid(406),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_coal_workers_pneumoconiosis': Sequela(
@@ -9322,6 +9942,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_moderate',
             kind='healthstate',
             gbd_id=hsid(406),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_other_pneumoconiosis': Sequela(
@@ -9337,6 +9958,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_moderate',
             kind='healthstate',
             gbd_id=hsid(406),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_interstitial_lung_disease_and_pulmonary_sarcoidosis': Sequela(
@@ -9352,6 +9974,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_moderate',
             kind='healthstate',
             gbd_id=hsid(406),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_respiratory_problems_due_to_motor_neuron_disease': Sequela(
@@ -9367,6 +9990,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_moderate',
             kind='healthstate',
             gbd_id=hsid(406),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_paragonimiasis_due_to_food_borne_trematodiases': Sequela(
@@ -9382,6 +10006,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_moderate',
             kind='healthstate',
             gbd_id=hsid(406),
+            disability_weight_exist=True,
         ),
     ),
     'severe_chronic_obstructive_pulmonary_disease_without_heart_failure': Sequela(
@@ -9397,6 +10022,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_severe',
             kind='healthstate',
             gbd_id=hsid(407),
+            disability_weight_exist=True,
         ),
     ),
     'severe_silicosis_without_heart_failure': Sequela(
@@ -9412,6 +10038,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_severe',
             kind='healthstate',
             gbd_id=hsid(407),
+            disability_weight_exist=True,
         ),
     ),
     'severe_asbestosis_without_heart_failure': Sequela(
@@ -9427,6 +10054,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_severe',
             kind='healthstate',
             gbd_id=hsid(407),
+            disability_weight_exist=True,
         ),
     ),
     'severe_coal_workers_pneumoconiosis_without_heart_failure': Sequela(
@@ -9442,6 +10070,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_severe',
             kind='healthstate',
             gbd_id=hsid(407),
+            disability_weight_exist=True,
         ),
     ),
     'severe_other_pneumoconiosis_without_heart_failure': Sequela(
@@ -9457,6 +10086,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_severe',
             kind='healthstate',
             gbd_id=hsid(407),
+            disability_weight_exist=True,
         ),
     ),
     'severe_interstitial_lung_disease_and_pulmonary_sarcoidosis_without_heart_failure': Sequela(
@@ -9472,6 +10102,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_severe',
             kind='healthstate',
             gbd_id=hsid(407),
+            disability_weight_exist=True,
         ),
     ),
     'severe_respiratory_problems_due_to_motor_neuron_disease': Sequela(
@@ -9487,6 +10118,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_severe',
             kind='healthstate',
             gbd_id=hsid(407),
+            disability_weight_exist=True,
         ),
     ),
     'severe_paragonimiasis_due_to_food_borne_trematodiases': Sequela(
@@ -9502,6 +10134,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_severe',
             kind='healthstate',
             gbd_id=hsid(407),
+            disability_weight_exist=True,
         ),
     ),
     'treated_heart_failure_due_to_severe_asbestosis': Sequela(
@@ -9517,6 +10150,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_severe_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2663),
+            disability_weight_exist=False,
         ),
     ),
     'treated_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease': Sequela(
@@ -9532,6 +10166,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_severe_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2663),
+            disability_weight_exist=False,
         ),
     ),
     'treated_heart_failure_due_to_severe_coal_workers_pneumoconiosis': Sequela(
@@ -9547,6 +10182,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_severe_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2663),
+            disability_weight_exist=False,
         ),
     ),
     'treated_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis': Sequela(
@@ -9562,6 +10198,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_severe_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2663),
+            disability_weight_exist=False,
         ),
     ),
     'treated_heart_failure_due_to_severe_other_pneumoconiosis': Sequela(
@@ -9577,6 +10214,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_severe_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2663),
+            disability_weight_exist=False,
         ),
     ),
     'treated_heart_failure_due_to_severe_silicosis': Sequela(
@@ -9592,6 +10230,7 @@ sequelae = Sequelae(**{
             name='copd_and_other_chronic_respiratory_problems_severe_and_generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(2663),
+            disability_weight_exist=False,
         ),
     ),
     'ulcerative_colitis_with_mild_anemia': Sequela(
@@ -9607,6 +10246,7 @@ sequelae = Sequelae(**{
             name='crohn_disease_or_ulcerative_colitis',
             kind='healthstate',
             gbd_id=hsid(396),
+            disability_weight_exist=True,
         ),
     ),
     'ulcerative_colitis_with_moderate_anemia': Sequela(
@@ -9622,6 +10262,7 @@ sequelae = Sequelae(**{
             name='crohn_disease_or_ulcerative_colitis',
             kind='healthstate',
             gbd_id=hsid(396),
+            disability_weight_exist=True,
         ),
     ),
     'ulcerative_colitis_with_severe_anemia': Sequela(
@@ -9637,6 +10278,7 @@ sequelae = Sequelae(**{
             name='crohn_disease_or_ulcerative_colitis',
             kind='healthstate',
             gbd_id=hsid(396),
+            disability_weight_exist=True,
         ),
     ),
     'ulcerative_colitis_without_anemia': Sequela(
@@ -9652,6 +10294,7 @@ sequelae = Sequelae(**{
             name='crohn_disease_or_ulcerative_colitis',
             kind='healthstate',
             gbd_id=hsid(396),
+            disability_weight_exist=True,
         ),
     ),
     'crohns_disease_with_mild_anemia': Sequela(
@@ -9667,6 +10310,7 @@ sequelae = Sequelae(**{
             name='crohn_disease_or_ulcerative_colitis',
             kind='healthstate',
             gbd_id=hsid(396),
+            disability_weight_exist=True,
         ),
     ),
     'crohns_disease_with_moderate_anemia': Sequela(
@@ -9682,6 +10326,7 @@ sequelae = Sequelae(**{
             name='crohn_disease_or_ulcerative_colitis',
             kind='healthstate',
             gbd_id=hsid(396),
+            disability_weight_exist=True,
         ),
     ),
     'crohns_disease_with_severe_anemia': Sequela(
@@ -9697,6 +10342,7 @@ sequelae = Sequelae(**{
             name='crohn_disease_or_ulcerative_colitis',
             kind='healthstate',
             gbd_id=hsid(396),
+            disability_weight_exist=True,
         ),
     ),
     'crohns_disease_without_anemia': Sequela(
@@ -9712,6 +10358,7 @@ sequelae = Sequelae(**{
             name='crohn_disease_or_ulcerative_colitis',
             kind='healthstate',
             gbd_id=hsid(396),
+            disability_weight_exist=True,
         ),
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated': Sequela(
@@ -9727,6 +10374,7 @@ sequelae = Sequelae(**{
             name='decompensated_cirrhosis_of_the_liver',
             kind='healthstate',
             gbd_id=hsid(394),
+            disability_weight_exist=True,
         ),
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated': Sequela(
@@ -9742,6 +10390,7 @@ sequelae = Sequelae(**{
             name='decompensated_cirrhosis_of_the_liver',
             kind='healthstate',
             gbd_id=hsid(394),
+            disability_weight_exist=True,
         ),
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated': Sequela(
@@ -9757,6 +10406,7 @@ sequelae = Sequelae(**{
             name='decompensated_cirrhosis_of_the_liver',
             kind='healthstate',
             gbd_id=hsid(394),
+            disability_weight_exist=True,
         ),
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated': Sequela(
@@ -9772,6 +10422,7 @@ sequelae = Sequelae(**{
             name='decompensated_cirrhosis_of_the_liver',
             kind='healthstate',
             gbd_id=hsid(394),
+            disability_weight_exist=True,
         ),
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated': Sequela(
@@ -9787,6 +10438,7 @@ sequelae = Sequelae(**{
             name='decompensated_cirrhosis_of_the_liver',
             kind='healthstate',
             gbd_id=hsid(394),
+            disability_weight_exist=True,
         ),
     ),
     'mild_alzheimer_disease_and_other_dementias': Sequela(
@@ -9802,6 +10454,7 @@ sequelae = Sequelae(**{
             name='dementia_mild',
             kind='healthstate',
             gbd_id=hsid(408),
+            disability_weight_exist=True,
         ),
     ),
     'mild_dementia_due_to_down_syndrome': Sequela(
@@ -9817,6 +10470,7 @@ sequelae = Sequelae(**{
             name='dementia_mild',
             kind='healthstate',
             gbd_id=hsid(408),
+            disability_weight_exist=True,
         ),
     ),
     'mild_dementia_due_to_other_chromosomal_abnormalities': Sequela(
@@ -9832,6 +10486,7 @@ sequelae = Sequelae(**{
             name='dementia_mild',
             kind='healthstate',
             gbd_id=hsid(408),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_alzheimer_disease_and_other_dementias': Sequela(
@@ -9847,6 +10502,7 @@ sequelae = Sequelae(**{
             name='dementia_moderate',
             kind='healthstate',
             gbd_id=hsid(409),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_dementia_due_to_down_syndrome': Sequela(
@@ -9862,6 +10518,7 @@ sequelae = Sequelae(**{
             name='dementia_moderate',
             kind='healthstate',
             gbd_id=hsid(409),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_dementia_due_to_other_chromosomal_abnormalities': Sequela(
@@ -9877,6 +10534,7 @@ sequelae = Sequelae(**{
             name='dementia_moderate',
             kind='healthstate',
             gbd_id=hsid(409),
+            disability_weight_exist=True,
         ),
     ),
     'severe_alzheimer_disease_and_other_dementias': Sequela(
@@ -9892,6 +10550,7 @@ sequelae = Sequelae(**{
             name='dementia_severe',
             kind='healthstate',
             gbd_id=hsid(410),
+            disability_weight_exist=True,
         ),
     ),
     'severe_dementia_due_to_down_syndrome': Sequela(
@@ -9907,6 +10566,7 @@ sequelae = Sequelae(**{
             name='dementia_severe',
             kind='healthstate',
             gbd_id=hsid(410),
+            disability_weight_exist=True,
         ),
     ),
     'severe_dementia_due_to_other_chromosomal_abnormalities': Sequela(
@@ -9922,6 +10582,7 @@ sequelae = Sequelae(**{
             name='dementia_severe',
             kind='healthstate',
             gbd_id=hsid(410),
+            disability_weight_exist=True,
         ),
     ),
     'pain_due_to_caries_of_deciduous_teeth': Sequela(
@@ -9937,6 +10598,7 @@ sequelae = Sequelae(**{
             name='dental_caries_symptomatic',
             kind='healthstate',
             gbd_id=hsid(551),
+            disability_weight_exist=True,
         ),
     ),
     'pain_due_to_caries_of_permanent_teeth': Sequela(
@@ -9952,6 +10614,7 @@ sequelae = Sequelae(**{
             name='dental_caries_symptomatic',
             kind='healthstate',
             gbd_id=hsid(551),
+            disability_weight_exist=True,
         ),
     ),
     'diabetic_neuropathy_due_to_diabetes_mellitus_type_1': Sequela(
@@ -9967,6 +10630,7 @@ sequelae = Sequelae(**{
             name='diabetic_neuropathy',
             kind='healthstate',
             gbd_id=hsid(390),
+            disability_weight_exist=True,
         ),
     ),
     'diabetic_neuropathy_due_to_diabetes_mellitus_type_2': Sequela(
@@ -9982,6 +10646,7 @@ sequelae = Sequelae(**{
             name='diabetic_neuropathy',
             kind='healthstate',
             gbd_id=hsid(390),
+            disability_weight_exist=True,
         ),
     ),
     'diabetic_foot_due_to_neuropathy_due_to_diabetes_mellitus_type_1': Sequela(
@@ -9997,6 +10662,7 @@ sequelae = Sequelae(**{
             name='diabetic_neuropathy_with_diabetic_foot',
             kind='healthstate',
             gbd_id=hsid(838),
+            disability_weight_exist=True,
         ),
     ),
     'diabetic_foot_due_to_neuropathy_due_to_diabetes_mellitus_type_2': Sequela(
@@ -10012,6 +10678,7 @@ sequelae = Sequelae(**{
             name='diabetic_neuropathy_with_diabetic_foot',
             kind='healthstate',
             gbd_id=hsid(838),
+            disability_weight_exist=True,
         ),
     ),
     'diabetic_neuropathy_and_amputation_with_treatment_due_to_diabetes_mellitus_type_1': Sequela(
@@ -10027,6 +10694,7 @@ sequelae = Sequelae(**{
             name='diabetic_neuropathy_with_treated_amputation',
             kind='healthstate',
             gbd_id=hsid(839),
+            disability_weight_exist=True,
         ),
     ),
     'diabetic_neuropathy_and_amputation_with_treatment_due_to_diabetes_mellitus_type_2': Sequela(
@@ -10042,6 +10710,7 @@ sequelae = Sequelae(**{
             name='diabetic_neuropathy_with_treated_amputation',
             kind='healthstate',
             gbd_id=hsid(839),
+            disability_weight_exist=True,
         ),
     ),
     'diabetic_neuropathy_and_amputation_without_treatment_due_to_diabetes_mellitus_type_1': Sequela(
@@ -10057,6 +10726,7 @@ sequelae = Sequelae(**{
             name='diabetic_neuropathy_with_untreated_amputation',
             kind='healthstate',
             gbd_id=hsid(840),
+            disability_weight_exist=True,
         ),
     ),
     'diabetic_neuropathy_and_amputation_without_treatment_due_to_diabetes_mellitus_type_2': Sequela(
@@ -10072,6 +10742,7 @@ sequelae = Sequelae(**{
             name='diabetic_neuropathy_with_untreated_amputation',
             kind='healthstate',
             gbd_id=hsid(840),
+            disability_weight_exist=True,
         ),
     ),
     'mild_diarrhea_due_to_schistosomiasis': Sequela(
@@ -10087,6 +10758,7 @@ sequelae = Sequelae(**{
             name='diarrhea_mild',
             kind='healthstate',
             gbd_id=hsid(355),
+            disability_weight_exist=True,
         ),
     ),
     'mild_diarrheal_diseases': Sequela(
@@ -10102,6 +10774,7 @@ sequelae = Sequelae(**{
             name='diarrhea_mild',
             kind='healthstate',
             gbd_id=hsid(355),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_diarrheal_diseases': Sequela(
@@ -10117,6 +10790,7 @@ sequelae = Sequelae(**{
             name='diarrhea_moderate',
             kind='healthstate',
             gbd_id=hsid(356),
+            disability_weight_exist=True,
         ),
     ),
     'severe_diarrheal_diseases': Sequela(
@@ -10132,6 +10806,7 @@ sequelae = Sequelae(**{
             name='diarrhea_severe',
             kind='healthstate',
             gbd_id=hsid(357),
+            disability_weight_exist=True,
         ),
     ),
     'hirsutism_and_primary_infertility_due_to_polycystic_ovarian_syndrome': Sequela(
@@ -10147,6 +10822,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1_and_primary_infertility',
             kind='healthstate',
             gbd_id=hsid(800),
+            disability_weight_exist=True,
         ),
     ),
     'atypical_genitalia_and_primary_infertility_due_to_congenital_genital_anomalies': Sequela(
@@ -10162,6 +10838,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1_and_primary_infertility',
             kind='healthstate',
             gbd_id=hsid(800),
+            disability_weight_exist=True,
         ),
     ),
     'secondary_infertility_due_to_polycystic_ovarian_syndrome': Sequela(
@@ -10177,6 +10854,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1_and_secondary_infertility',
             kind='healthstate',
             gbd_id=hsid(821),
+            disability_weight_exist=True,
         ),
     ),
     'visible_goiter_without_symptoms': Sequela(
@@ -10192,6 +10870,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1',
             kind='healthstate',
             gbd_id=hsid(553),
+            disability_weight_exist=True,
         ),
     ),
     'disfigurement_level_1_due_to_leprosy': Sequela(
@@ -10207,6 +10886,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1',
             kind='healthstate',
             gbd_id=hsid(553),
+            disability_weight_exist=True,
         ),
     ),
     'mild_alopecia_areata': Sequela(
@@ -10222,6 +10902,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1',
             kind='healthstate',
             gbd_id=hsid(553),
+            disability_weight_exist=True,
         ),
     ),
     'pruritus': Sequela(
@@ -10237,6 +10918,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1',
             kind='healthstate',
             gbd_id=hsid(553),
+            disability_weight_exist=True,
         ),
     ),
     'disfigurement_due_to_basal_cell_carcinoma': Sequela(
@@ -10252,6 +10934,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1',
             kind='healthstate',
             gbd_id=hsid(553),
+            disability_weight_exist=True,
         ),
     ),
     'mild_skin_disease_without_itch_due_to_onchocerciasis': Sequela(
@@ -10267,6 +10950,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1',
             kind='healthstate',
             gbd_id=hsid(553),
+            disability_weight_exist=True,
         ),
     ),
     'hirsutism_due_to_polycystic_ovarian_syndrome': Sequela(
@@ -10282,6 +10966,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1',
             kind='healthstate',
             gbd_id=hsid(553),
+            disability_weight_exist=True,
         ),
     ),
     'symptomatic_other_skin_and_subcutaneous_diseases': Sequela(
@@ -10297,6 +10982,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1',
             kind='healthstate',
             gbd_id=hsid(553),
+            disability_weight_exist=True,
         ),
     ),
     'disfigurement_level_1_due_to_orofacial_clefts': Sequela(
@@ -10312,6 +10998,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1',
             kind='healthstate',
             gbd_id=hsid(553),
+            disability_weight_exist=True,
         ),
     ),
     'mild_chronic_other_sense_organ_diseases': Sequela(
@@ -10327,6 +11014,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1',
             kind='healthstate',
             gbd_id=hsid(553),
+            disability_weight_exist=True,
         ),
     ),
     'disfigurement_level_1_due_to_polydactyly_and_syndactyly': Sequela(
@@ -10342,6 +11030,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1',
             kind='healthstate',
             gbd_id=hsid(553),
+            disability_weight_exist=True,
         ),
     ),
     'disfigurement_due_to_congenital_diaphragmatic_hernia': Sequela(
@@ -10357,6 +11046,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1',
             kind='healthstate',
             gbd_id=hsid(553),
+            disability_weight_exist=True,
         ),
     ),
     'disfigurement_from_scars_following_treatment_for_congenital_malformations_of_the_abdominal_wall': Sequela(
@@ -10372,6 +11062,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1',
             kind='healthstate',
             gbd_id=hsid(553),
+            disability_weight_exist=True,
         ),
     ),
     'atypical_genitalia_due_to_congenital_genital_anomalies': Sequela(
@@ -10387,6 +11078,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1',
             kind='healthstate',
             gbd_id=hsid(553),
+            disability_weight_exist=True,
         ),
     ),
     'atypical_genitalia_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
@@ -10402,6 +11094,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1',
             kind='healthstate',
             gbd_id=hsid(553),
+            disability_weight_exist=True,
         ),
     ),
     'mild_disfigurement_due_to_squamous_cell_carcinoma': Sequela(
@@ -10417,6 +11110,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1',
             kind='healthstate',
             gbd_id=hsid(553),
+            disability_weight_exist=True,
         ),
     ),
     'mild_acne_vulgaris': Sequela(
@@ -10432,6 +11126,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1',
             kind='healthstate',
             gbd_id=hsid(553),
+            disability_weight_exist=True,
         ),
     ),
     'mild_skin_disease_due_to_onchocerciasis': Sequela(
@@ -10447,6 +11142,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(556),
+            disability_weight_exist=True,
         ),
     ),
     'mild_atopic_dermatitis': Sequela(
@@ -10462,6 +11158,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(556),
+            disability_weight_exist=True,
         ),
     ),
     'mild_psoriasis': Sequela(
@@ -10477,6 +11174,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(556),
+            disability_weight_exist=True,
         ),
     ),
     'scabies': Sequela(
@@ -10492,6 +11190,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(556),
+            disability_weight_exist=True,
         ),
     ),
     'mild_urticaria': Sequela(
@@ -10507,6 +11206,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(556),
+            disability_weight_exist=True,
         ),
     ),
     'mild_decubitus_ulcer': Sequela(
@@ -10522,6 +11222,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(556),
+            disability_weight_exist=True,
         ),
     ),
     'mild_contact_dermatitis': Sequela(
@@ -10537,6 +11238,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(556),
+            disability_weight_exist=True,
         ),
     ),
     'symptomatic_seborrhoeic_dermatitis': Sequela(
@@ -10552,6 +11254,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(556),
+            disability_weight_exist=True,
         ),
     ),
     'skin_disfigurement_due_to_trypanosoma_brucei_gambiense': Sequela(
@@ -10567,6 +11270,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(556),
+            disability_weight_exist=True,
         ),
     ),
     'sleeping_sickness_due_to_trypanosoma_brucei_rhodesiense': Sequela(
@@ -10582,6 +11286,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(556),
+            disability_weight_exist=True,
         ),
     ),
     'mild_pain_due_to_guinea_worm_emergence': Sequela(
@@ -10597,6 +11302,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_1_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(556),
+            disability_weight_exist=True,
         ),
     ),
     'cutaneous_and_mucocutaneous_leishmaniasis': Sequela(
@@ -10612,6 +11318,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_2',
             kind='healthstate',
             gbd_id=hsid(554),
+            disability_weight_exist=True,
         ),
     ),
     'disfigurement_level_2_due_to_leprosy': Sequela(
@@ -10627,6 +11334,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_2',
             kind='healthstate',
             gbd_id=hsid(554),
+            disability_weight_exist=True,
         ),
     ),
     'severe_viral_warts': Sequela(
@@ -10642,6 +11350,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_2',
             kind='healthstate',
             gbd_id=hsid(554),
+            disability_weight_exist=True,
         ),
     ),
     'severe_alopecia_areata': Sequela(
@@ -10657,6 +11366,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_2',
             kind='healthstate',
             gbd_id=hsid(554),
+            disability_weight_exist=True,
         ),
     ),
     'severe_molluscum_contagiosum': Sequela(
@@ -10672,6 +11382,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_2',
             kind='healthstate',
             gbd_id=hsid(554),
+            disability_weight_exist=True,
         ),
     ),
     'disfigurement_level_2_due_to_orofacial_clefts': Sequela(
@@ -10687,6 +11398,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_2',
             kind='healthstate',
             gbd_id=hsid(554),
+            disability_weight_exist=True,
         ),
     ),
     'disfigurement_level_2_due_to_congenital_limb_deficiency': Sequela(
@@ -10702,6 +11414,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_2',
             kind='healthstate',
             gbd_id=hsid(554),
+            disability_weight_exist=True,
         ),
     ),
     'disfigurement_level_2_due_to_other_congenital_musculoskeletal_anomalies': Sequela(
@@ -10717,6 +11430,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_2',
             kind='healthstate',
             gbd_id=hsid(554),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_disfigurement_due_to_squamous_cell_carcinoma': Sequela(
@@ -10732,6 +11446,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_2',
             kind='healthstate',
             gbd_id=hsid(554),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_acne_vulgaris': Sequela(
@@ -10747,6 +11462,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_2',
             kind='healthstate',
             gbd_id=hsid(554),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_skin_disease_due_to_onchocerciasis': Sequela(
@@ -10762,6 +11478,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_2_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(557),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_atopic_dermatitis': Sequela(
@@ -10777,6 +11494,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_2_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(557),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_psoriasis': Sequela(
@@ -10792,6 +11510,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_2_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(557),
+            disability_weight_exist=True,
         ),
     ),
     'severe_urticaria': Sequela(
@@ -10807,6 +11526,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_2_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(557),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_decubitus_ulcer': Sequela(
@@ -10822,6 +11542,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_2_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(557),
+            disability_weight_exist=True,
         ),
     ),
     'severe_skin_disease_due_to_onchocerciasis': Sequela(
@@ -10837,6 +11558,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_2_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(557),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_contact_dermatitis': Sequela(
@@ -10852,6 +11574,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_2_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(557),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_pain_due_to_guinea_worm_emergence': Sequela(
@@ -10867,6 +11590,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_2_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(557),
+            disability_weight_exist=True,
         ),
     ),
     'disfigurement_level_2_with_pain_due_to_congenital_limb_deficiency': Sequela(
@@ -10882,6 +11606,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_2_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(557),
+            disability_weight_exist=True,
         ),
     ),
     'disfigurement_level_2_with_pain_due_to_other_congenital_musculoskeletal_anomalies': Sequela(
@@ -10897,6 +11622,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_2_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(557),
+            disability_weight_exist=True,
         ),
     ),
     'severe_skin_disease_without_itch_due_to_onchocerciasis': Sequela(
@@ -10912,6 +11638,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_3',
             kind='healthstate',
             gbd_id=hsid(555),
+            disability_weight_exist=True,
         ),
     ),
     'severe_acne_vulgaris': Sequela(
@@ -10927,6 +11654,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_3',
             kind='healthstate',
             gbd_id=hsid(555),
+            disability_weight_exist=True,
         ),
     ),
     'severe_disfigurement_due_to_adult_tertiary_syphilis': Sequela(
@@ -10942,6 +11670,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_3',
             kind='healthstate',
             gbd_id=hsid(555),
+            disability_weight_exist=True,
         ),
     ),
     'severe_atopic_dermatitis': Sequela(
@@ -10957,6 +11686,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_3_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(558),
+            disability_weight_exist=True,
         ),
     ),
     'severe_psoriasis': Sequela(
@@ -10972,6 +11702,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_3_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(558),
+            disability_weight_exist=True,
         ),
     ),
     'severe_decubitus_ulcer': Sequela(
@@ -10987,6 +11718,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_3_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(558),
+            disability_weight_exist=True,
         ),
     ),
     'severe_disfigurement_due_to_squamous_cell_carcinoma': Sequela(
@@ -11002,6 +11734,7 @@ sequelae = Sequelae(**{
             name='disfigurement_level_3_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(558),
+            disability_weight_exist=True,
         ),
     ),
     'blindness_due_to_trachoma': Sequela(
@@ -11017,6 +11750,7 @@ sequelae = Sequelae(**{
             name='distance_vision_blindness',
             kind='healthstate',
             gbd_id=hsid(468),
+            disability_weight_exist=True,
         ),
     ),
     'blindness_due_to_vitamin_a_deficiency': Sequela(
@@ -11032,6 +11766,7 @@ sequelae = Sequelae(**{
             name='distance_vision_blindness',
             kind='healthstate',
             gbd_id=hsid(468),
+            disability_weight_exist=True,
         ),
     ),
     'blindness_due_to_glaucoma': Sequela(
@@ -11047,6 +11782,7 @@ sequelae = Sequelae(**{
             name='distance_vision_blindness',
             kind='healthstate',
             gbd_id=hsid(468),
+            disability_weight_exist=True,
         ),
     ),
     'blindness_due_to_cataract': Sequela(
@@ -11062,6 +11798,7 @@ sequelae = Sequelae(**{
             name='distance_vision_blindness',
             kind='healthstate',
             gbd_id=hsid(468),
+            disability_weight_exist=True,
         ),
     ),
     'blindness_due_to_macular_degeneration': Sequela(
@@ -11077,6 +11814,7 @@ sequelae = Sequelae(**{
             name='distance_vision_blindness',
             kind='healthstate',
             gbd_id=hsid(468),
+            disability_weight_exist=True,
         ),
     ),
     'blindness_due_to_uncorrected_refractive_error': Sequela(
@@ -11092,6 +11830,7 @@ sequelae = Sequelae(**{
             name='distance_vision_blindness',
             kind='healthstate',
             gbd_id=hsid(468),
+            disability_weight_exist=True,
         ),
     ),
     'blindness_due_to_other_vision_loss': Sequela(
@@ -11107,6 +11846,7 @@ sequelae = Sequelae(**{
             name='distance_vision_blindness',
             kind='healthstate',
             gbd_id=hsid(468),
+            disability_weight_exist=True,
         ),
     ),
     'blindness_due_to_h_influenzae_type_b_meningitis': Sequela(
@@ -11122,6 +11862,7 @@ sequelae = Sequelae(**{
             name='distance_vision_blindness',
             kind='healthstate',
             gbd_id=hsid(468),
+            disability_weight_exist=True,
         ),
     ),
     'blindness_due_to_meningococcal_meningitis': Sequela(
@@ -11137,6 +11878,7 @@ sequelae = Sequelae(**{
             name='distance_vision_blindness',
             kind='healthstate',
             gbd_id=hsid(468),
+            disability_weight_exist=True,
         ),
     ),
     'blindness_due_to_other_bacterial_meningitis': Sequela(
@@ -11152,6 +11894,7 @@ sequelae = Sequelae(**{
             name='distance_vision_blindness',
             kind='healthstate',
             gbd_id=hsid(468),
+            disability_weight_exist=True,
         ),
     ),
     'blindness_due_to_pneumococcal_meningitis': Sequela(
@@ -11167,6 +11910,7 @@ sequelae = Sequelae(**{
             name='distance_vision_blindness',
             kind='healthstate',
             gbd_id=hsid(468),
+            disability_weight_exist=True,
         ),
     ),
     'blindness_due_to_retinopathy_of_prematurity': Sequela(
@@ -11182,6 +11926,7 @@ sequelae = Sequelae(**{
             name='distance_vision_blindness',
             kind='healthstate',
             gbd_id=hsid(468),
+            disability_weight_exist=True,
         ),
     ),
     'blindness_due_to_encephalitis': Sequela(
@@ -11197,6 +11942,7 @@ sequelae = Sequelae(**{
             name='distance_vision_blindness',
             kind='healthstate',
             gbd_id=hsid(468),
+            disability_weight_exist=True,
         ),
     ),
     'blindness_due_to_onchocerciasis': Sequela(
@@ -11212,6 +11958,7 @@ sequelae = Sequelae(**{
             name='distance_vision_blindness',
             kind='healthstate',
             gbd_id=hsid(468),
+            disability_weight_exist=True,
         ),
     ),
     'blindness_due_to_diabetes_mellitus_type_1': Sequela(
@@ -11227,6 +11974,7 @@ sequelae = Sequelae(**{
             name='distance_vision_blindness',
             kind='healthstate',
             gbd_id=hsid(468),
+            disability_weight_exist=True,
         ),
     ),
     'blindness_due_to_diabetes_mellitus_type_2': Sequela(
@@ -11242,6 +11990,7 @@ sequelae = Sequelae(**{
             name='distance_vision_blindness',
             kind='healthstate',
             gbd_id=hsid(468),
+            disability_weight_exist=True,
         ),
     ),
     'mild_vision_impairment_due_to_retinopathy_of_prematurity': Sequela(
@@ -11257,6 +12006,7 @@ sequelae = Sequelae(**{
             name='distance_vision_mild_impairment',
             kind='healthstate',
             gbd_id=hsid(465),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_vision_impairment_due_to_trachoma': Sequela(
@@ -11272,6 +12022,7 @@ sequelae = Sequelae(**{
             name='distance_vision_moderate_impairment',
             kind='healthstate',
             gbd_id=hsid(466),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_vision_impairment_loss_due_to_vitamin_a_deficiency': Sequela(
@@ -11287,6 +12038,7 @@ sequelae = Sequelae(**{
             name='distance_vision_moderate_impairment',
             kind='healthstate',
             gbd_id=hsid(466),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_vision_impairment_due_to_glaucoma': Sequela(
@@ -11302,6 +12054,7 @@ sequelae = Sequelae(**{
             name='distance_vision_moderate_impairment',
             kind='healthstate',
             gbd_id=hsid(466),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_vision_impairment_due_to_cataract': Sequela(
@@ -11317,6 +12070,7 @@ sequelae = Sequelae(**{
             name='distance_vision_moderate_impairment',
             kind='healthstate',
             gbd_id=hsid(466),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_vision_impairment_due_to_macular_degeneration': Sequela(
@@ -11332,6 +12086,7 @@ sequelae = Sequelae(**{
             name='distance_vision_moderate_impairment',
             kind='healthstate',
             gbd_id=hsid(466),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_vision_impairment_due_to_uncorrected_refractive_error': Sequela(
@@ -11347,6 +12102,7 @@ sequelae = Sequelae(**{
             name='distance_vision_moderate_impairment',
             kind='healthstate',
             gbd_id=hsid(466),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_vision_impairment_due_to_other_vision_loss': Sequela(
@@ -11362,6 +12118,7 @@ sequelae = Sequelae(**{
             name='distance_vision_moderate_impairment',
             kind='healthstate',
             gbd_id=hsid(466),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_vision_impairment_due_to_onchocerciasis': Sequela(
@@ -11377,6 +12134,7 @@ sequelae = Sequelae(**{
             name='distance_vision_moderate_impairment',
             kind='healthstate',
             gbd_id=hsid(466),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_vision_impairment_due_to_retinopathy_of_prematurity': Sequela(
@@ -11392,6 +12150,7 @@ sequelae = Sequelae(**{
             name='distance_vision_moderate_impairment',
             kind='healthstate',
             gbd_id=hsid(466),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_vision_impairment_due_to_pneumococcol_meningitis': Sequela(
@@ -11407,6 +12166,7 @@ sequelae = Sequelae(**{
             name='distance_vision_moderate_impairment',
             kind='healthstate',
             gbd_id=hsid(466),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_vision_impairment_due_to_h_influenza_type_b_meningitis': Sequela(
@@ -11422,6 +12182,7 @@ sequelae = Sequelae(**{
             name='distance_vision_moderate_impairment',
             kind='healthstate',
             gbd_id=hsid(466),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_vision_impairment_due_to_meningococcal_meningitis': Sequela(
@@ -11437,6 +12198,7 @@ sequelae = Sequelae(**{
             name='distance_vision_moderate_impairment',
             kind='healthstate',
             gbd_id=hsid(466),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_vision_impairment_due_to_other_bacterial_meningitis': Sequela(
@@ -11452,6 +12214,7 @@ sequelae = Sequelae(**{
             name='distance_vision_moderate_impairment',
             kind='healthstate',
             gbd_id=hsid(466),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_vision_impairment_due_to_encephalitis': Sequela(
@@ -11467,6 +12230,7 @@ sequelae = Sequelae(**{
             name='distance_vision_moderate_impairment',
             kind='healthstate',
             gbd_id=hsid(466),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_vision_impairment_due_to_diabetes_mellitus_type_1': Sequela(
@@ -11482,6 +12246,7 @@ sequelae = Sequelae(**{
             name='distance_vision_moderate_impairment',
             kind='healthstate',
             gbd_id=hsid(466),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_vision_impairment_due_to_diabetes_mellitus_type_2': Sequela(
@@ -11497,6 +12262,7 @@ sequelae = Sequelae(**{
             name='distance_vision_moderate_impairment',
             kind='healthstate',
             gbd_id=hsid(466),
+            disability_weight_exist=True,
         ),
     ),
     'monocular_distance_vision_loss_due_to_pneumococcal_meningitis': Sequela(
@@ -11512,6 +12278,7 @@ sequelae = Sequelae(**{
             name='distance_vision_monocular',
             kind='healthstate',
             gbd_id=hsid(704),
+            disability_weight_exist=True,
         ),
     ),
     'monocular_distance_vision_loss_due_to_h_influenzae_type_b_meningitis': Sequela(
@@ -11527,6 +12294,7 @@ sequelae = Sequelae(**{
             name='distance_vision_monocular',
             kind='healthstate',
             gbd_id=hsid(704),
+            disability_weight_exist=True,
         ),
     ),
     'monocular_distance_vision_loss_due_to_meningococcal_meningitis': Sequela(
@@ -11542,6 +12310,7 @@ sequelae = Sequelae(**{
             name='distance_vision_monocular',
             kind='healthstate',
             gbd_id=hsid(704),
+            disability_weight_exist=True,
         ),
     ),
     'monocular_distance_vision_loss_due_to_other_bacterial_meningitis': Sequela(
@@ -11557,6 +12326,7 @@ sequelae = Sequelae(**{
             name='distance_vision_monocular',
             kind='healthstate',
             gbd_id=hsid(704),
+            disability_weight_exist=True,
         ),
     ),
     'monocular_distance_vision_loss_due_to_encephalitis': Sequela(
@@ -11572,6 +12342,7 @@ sequelae = Sequelae(**{
             name='distance_vision_monocular',
             kind='healthstate',
             gbd_id=hsid(704),
+            disability_weight_exist=True,
         ),
     ),
     'severe_vision_impairment_due_to_trachoma': Sequela(
@@ -11587,6 +12358,7 @@ sequelae = Sequelae(**{
             name='distance_vision_severe_impairment',
             kind='healthstate',
             gbd_id=hsid(467),
+            disability_weight_exist=True,
         ),
     ),
     'severe_vision_impairment_loss_due_to_vitamin_a_deficiency': Sequela(
@@ -11602,6 +12374,7 @@ sequelae = Sequelae(**{
             name='distance_vision_severe_impairment',
             kind='healthstate',
             gbd_id=hsid(467),
+            disability_weight_exist=True,
         ),
     ),
     'severe_vision_impairment_due_to_glaucoma': Sequela(
@@ -11617,6 +12390,7 @@ sequelae = Sequelae(**{
             name='distance_vision_severe_impairment',
             kind='healthstate',
             gbd_id=hsid(467),
+            disability_weight_exist=True,
         ),
     ),
     'severe_vision_impairment_due_to_cataract': Sequela(
@@ -11632,6 +12406,7 @@ sequelae = Sequelae(**{
             name='distance_vision_severe_impairment',
             kind='healthstate',
             gbd_id=hsid(467),
+            disability_weight_exist=True,
         ),
     ),
     'severe_vision_impairment_due_to_macular_degeneration': Sequela(
@@ -11647,6 +12422,7 @@ sequelae = Sequelae(**{
             name='distance_vision_severe_impairment',
             kind='healthstate',
             gbd_id=hsid(467),
+            disability_weight_exist=True,
         ),
     ),
     'severe_vision_impairment_due_to_uncorrected_refractive_error': Sequela(
@@ -11662,6 +12438,7 @@ sequelae = Sequelae(**{
             name='distance_vision_severe_impairment',
             kind='healthstate',
             gbd_id=hsid(467),
+            disability_weight_exist=True,
         ),
     ),
     'severe_vision_impairment_due_to_other_vision_loss': Sequela(
@@ -11677,6 +12454,7 @@ sequelae = Sequelae(**{
             name='distance_vision_severe_impairment',
             kind='healthstate',
             gbd_id=hsid(467),
+            disability_weight_exist=True,
         ),
     ),
     'severe_vision_impairment_due_to_onchocerciasis': Sequela(
@@ -11692,6 +12470,7 @@ sequelae = Sequelae(**{
             name='distance_vision_severe_impairment',
             kind='healthstate',
             gbd_id=hsid(467),
+            disability_weight_exist=True,
         ),
     ),
     'severe_vision_impairment_due_to_retinopathy_of_prematurity': Sequela(
@@ -11707,6 +12486,7 @@ sequelae = Sequelae(**{
             name='distance_vision_severe_impairment',
             kind='healthstate',
             gbd_id=hsid(467),
+            disability_weight_exist=True,
         ),
     ),
     'severe_vision_impairment_due_to_pneumococcol_meningitis': Sequela(
@@ -11722,6 +12502,7 @@ sequelae = Sequelae(**{
             name='distance_vision_severe_impairment',
             kind='healthstate',
             gbd_id=hsid(467),
+            disability_weight_exist=True,
         ),
     ),
     'severe_vision_impairment_due_to_h_influenza_type_b_meningitis': Sequela(
@@ -11737,6 +12518,7 @@ sequelae = Sequelae(**{
             name='distance_vision_severe_impairment',
             kind='healthstate',
             gbd_id=hsid(467),
+            disability_weight_exist=True,
         ),
     ),
     'severe_vision_impairment_due_to_meningococcal_meningitis': Sequela(
@@ -11752,6 +12534,7 @@ sequelae = Sequelae(**{
             name='distance_vision_severe_impairment',
             kind='healthstate',
             gbd_id=hsid(467),
+            disability_weight_exist=True,
         ),
     ),
     'severe_vision_impairment_due_to_other_bacterial_meningitis': Sequela(
@@ -11767,6 +12550,7 @@ sequelae = Sequelae(**{
             name='distance_vision_severe_impairment',
             kind='healthstate',
             gbd_id=hsid(467),
+            disability_weight_exist=True,
         ),
     ),
     'severe_vision_impairment_due_to_encephalitis': Sequela(
@@ -11782,6 +12566,7 @@ sequelae = Sequelae(**{
             name='distance_vision_severe_impairment',
             kind='healthstate',
             gbd_id=hsid(467),
+            disability_weight_exist=True,
         ),
     ),
     'severe_vision_impairment_due_to_diabetes_mellitus_type_1': Sequela(
@@ -11797,6 +12582,7 @@ sequelae = Sequelae(**{
             name='distance_vision_severe_impairment',
             kind='healthstate',
             gbd_id=hsid(467),
+            disability_weight_exist=True,
         ),
     ),
     'severe_vision_impairment_due_to_diabetes_mellitus_type_2': Sequela(
@@ -11812,6 +12598,7 @@ sequelae = Sequelae(**{
             name='distance_vision_severe_impairment',
             kind='healthstate',
             gbd_id=hsid(467),
+            disability_weight_exist=True,
         ),
     ),
     'acute_otitis_media': Sequela(
@@ -11827,6 +12614,7 @@ sequelae = Sequelae(**{
             name='ear_pain',
             kind='healthstate',
             gbd_id=hsid(365),
+            disability_weight_exist=True,
         ),
     ),
     'severe_infectious_complications_due_to_chronic_otitis_media': Sequela(
@@ -11842,6 +12630,7 @@ sequelae = Sequelae(**{
             name='ear_pain',
             kind='healthstate',
             gbd_id=hsid(365),
+            disability_weight_exist=True,
         ),
     ),
     'end_stage_renal_disease_on_dialysis_due_to_hypertension': Sequela(
@@ -11857,6 +12646,7 @@ sequelae = Sequelae(**{
             name='end_stage_renal_disease_on_dialysis',
             kind='healthstate',
             gbd_id=hsid(393),
+            disability_weight_exist=True,
         ),
     ),
     'end_stage_renal_disease_on_dialysis_due_to_glomerulonephritis': Sequela(
@@ -11872,6 +12662,7 @@ sequelae = Sequelae(**{
             name='end_stage_renal_disease_on_dialysis',
             kind='healthstate',
             gbd_id=hsid(393),
+            disability_weight_exist=True,
         ),
     ),
     'end_stage_renal_disease_on_dialysis_due_to_other_causes': Sequela(
@@ -11887,6 +12678,7 @@ sequelae = Sequelae(**{
             name='end_stage_renal_disease_on_dialysis',
             kind='healthstate',
             gbd_id=hsid(393),
+            disability_weight_exist=True,
         ),
     ),
     'end_stage_renal_disease_on_dialysis_due_to_type_1_diabetes_mellitus': Sequela(
@@ -11902,6 +12694,7 @@ sequelae = Sequelae(**{
             name='end_stage_renal_disease_on_dialysis',
             kind='healthstate',
             gbd_id=hsid(393),
+            disability_weight_exist=True,
         ),
     ),
     'end_stage_renal_disease_on_dialysis_due_to_type_2_diabetes_mellitus': Sequela(
@@ -11917,6 +12710,7 @@ sequelae = Sequelae(**{
             name='end_stage_renal_disease_on_dialysis',
             kind='healthstate',
             gbd_id=hsid(393),
+            disability_weight_exist=True,
         ),
     ),
     'end_stage_renal_disease_after_transplant_due_to_hypertension': Sequela(
@@ -11932,6 +12726,7 @@ sequelae = Sequelae(**{
             name='end_stage_renal_disease_with_kidney_transplant',
             kind='healthstate',
             gbd_id=hsid(392),
+            disability_weight_exist=True,
         ),
     ),
     'end_stage_renal_disease_after_transplant_due_to_glomerulonephritis': Sequela(
@@ -11947,6 +12742,7 @@ sequelae = Sequelae(**{
             name='end_stage_renal_disease_with_kidney_transplant',
             kind='healthstate',
             gbd_id=hsid(392),
+            disability_weight_exist=True,
         ),
     ),
     'end_stage_renal_disease_after_transplant_due_to_other_causes': Sequela(
@@ -11962,6 +12758,7 @@ sequelae = Sequelae(**{
             name='end_stage_renal_disease_with_kidney_transplant',
             kind='healthstate',
             gbd_id=hsid(392),
+            disability_weight_exist=True,
         ),
     ),
     'end_stage_renal_disease_after_transplant_due_to_type_1_diabetes_mellitus': Sequela(
@@ -11977,6 +12774,7 @@ sequelae = Sequelae(**{
             name='end_stage_renal_disease_with_kidney_transplant',
             kind='healthstate',
             gbd_id=hsid(392),
+            disability_weight_exist=True,
         ),
     ),
     'end_stage_renal_disease_after_transplant_due_to_type_2_diabetes_mellitus': Sequela(
@@ -11992,6 +12790,7 @@ sequelae = Sequelae(**{
             name='end_stage_renal_disease_with_kidney_transplant',
             kind='healthstate',
             gbd_id=hsid(392),
+            disability_weight_exist=True,
         ),
     ),
     'hydrocele_due_to_lymphatic_filariasis': Sequela(
@@ -12007,6 +12806,7 @@ sequelae = Sequelae(**{
             name='epididymo_orchitis',
             kind='healthstate',
             gbd_id=hsid(358),
+            disability_weight_exist=True,
         ),
     ),
     'epididymo_orchitis_due_to_chlamydial_infection': Sequela(
@@ -12022,6 +12822,7 @@ sequelae = Sequelae(**{
             name='epididymo_orchitis',
             kind='healthstate',
             gbd_id=hsid(358),
+            disability_weight_exist=True,
         ),
     ),
     'epididymo_orchitis_due_to_gonococcal_infection': Sequela(
@@ -12037,6 +12838,7 @@ sequelae = Sequelae(**{
             name='epididymo_orchitis',
             kind='healthstate',
             gbd_id=hsid(358),
+            disability_weight_exist=True,
         ),
     ),
     'epilepsy_due_to_pneumococcal_meningitis': Sequela(
@@ -12052,6 +12854,7 @@ sequelae = Sequelae(**{
             name='epilepsy',
             kind='healthstate',
             gbd_id=hsid(772),
+            disability_weight_exist=False,
         ),
     ),
     'epilepsy_due_to_h_influenzae_type_b_meningitis': Sequela(
@@ -12067,6 +12870,7 @@ sequelae = Sequelae(**{
             name='epilepsy',
             kind='healthstate',
             gbd_id=hsid(772),
+            disability_weight_exist=False,
         ),
     ),
     'epilepsy_due_to_meningococcal_meningitis': Sequela(
@@ -12082,6 +12886,7 @@ sequelae = Sequelae(**{
             name='epilepsy',
             kind='healthstate',
             gbd_id=hsid(772),
+            disability_weight_exist=False,
         ),
     ),
     'epilepsy_due_to_other_meningitis': Sequela(
@@ -12097,6 +12902,7 @@ sequelae = Sequelae(**{
             name='epilepsy',
             kind='healthstate',
             gbd_id=hsid(772),
+            disability_weight_exist=False,
         ),
     ),
     'cerebral_paragonimiasis': Sequela(
@@ -12112,6 +12918,7 @@ sequelae = Sequelae(**{
             name='epilepsy',
             kind='healthstate',
             gbd_id=hsid(772),
+            disability_weight_exist=False,
         ),
     ),
     'neurocysticercosis_with_epilepsy': Sequela(
@@ -12127,6 +12934,7 @@ sequelae = Sequelae(**{
             name='epilepsy',
             kind='healthstate',
             gbd_id=hsid(772),
+            disability_weight_exist=False,
         ),
     ),
     'epilepsy_due_to_echinococcosis': Sequela(
@@ -12142,6 +12950,7 @@ sequelae = Sequelae(**{
             name='epilepsy',
             kind='healthstate',
             gbd_id=hsid(772),
+            disability_weight_exist=False,
         ),
     ),
     'epilepsy_due_to_encephalitis': Sequela(
@@ -12157,6 +12966,7 @@ sequelae = Sequelae(**{
             name='epilepsy',
             kind='healthstate',
             gbd_id=hsid(772),
+            disability_weight_exist=False,
         ),
     ),
     'idiopathic_severe_epilepsy': Sequela(
@@ -12172,6 +12982,7 @@ sequelae = Sequelae(**{
             name='epilepsy_seizures_greater_than___once_a_month',
             kind='healthstate',
             gbd_id=hsid(745),
+            disability_weight_exist=True,
         ),
     ),
     'idiopathic_less_severe_epilepsy': Sequela(
@@ -12187,6 +12998,7 @@ sequelae = Sequelae(**{
             name='epilepsy_seizures_1_11_per_year',
             kind='healthstate',
             gbd_id=hsid(746),
+            disability_weight_exist=True,
         ),
     ),
     'mild_fetal_alcohol_syndrome': Sequela(
@@ -12202,6 +13014,7 @@ sequelae = Sequelae(**{
             name='fetal_alcohol_syndrome_mild',
             kind='healthstate',
             gbd_id=hsid(427),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_fetal_alcohol_syndrome': Sequela(
@@ -12217,6 +13030,7 @@ sequelae = Sequelae(**{
             name='fetal_alcohol_syndrome_moderate',
             kind='healthstate',
             gbd_id=hsid(428),
+            disability_weight_exist=True,
         ),
     ),
     'severe_fetal_alcohol_syndrome': Sequela(
@@ -12232,6 +13046,7 @@ sequelae = Sequelae(**{
             name='fetal_alcohol_syndrome_severe',
             kind='healthstate',
             gbd_id=hsid(429),
+            disability_weight_exist=True,
         ),
     ),
     'hematemesis_due_to_schistosomiasis': Sequela(
@@ -12247,6 +13062,7 @@ sequelae = Sequelae(**{
             name='gastric_bleeding',
             kind='healthstate',
             gbd_id=hsid(395),
+            disability_weight_exist=True,
         ),
     ),
     'gastrointestinal_bleeding_due_to_typhoid': Sequela(
@@ -12262,6 +13078,7 @@ sequelae = Sequelae(**{
             name='gastric_bleeding',
             kind='healthstate',
             gbd_id=hsid(395),
+            disability_weight_exist=True,
         ),
     ),
     'complicated_peptic_ulcer_disease_with_no_anemia': Sequela(
@@ -12277,6 +13094,7 @@ sequelae = Sequelae(**{
             name='gastric_bleeding',
             kind='healthstate',
             gbd_id=hsid(395),
+            disability_weight_exist=True,
         ),
     ),
     'complicated_gastritis_and_duodenitis_with_no_anemia': Sequela(
@@ -12292,6 +13110,7 @@ sequelae = Sequelae(**{
             name='gastric_bleeding',
             kind='healthstate',
             gbd_id=hsid(395),
+            disability_weight_exist=True,
         ),
     ),
     'complicated_peptic_ulcer_disease_with_mild_anemia': Sequela(
@@ -12307,6 +13126,7 @@ sequelae = Sequelae(**{
             name='gastric_bleeding_and_anemia_mild',
             kind='healthstate',
             gbd_id=hsid(2648),
+            disability_weight_exist=False,
         ),
     ),
     'complicated_gastritis_and_duodenitis_with_mild_anemia': Sequela(
@@ -12322,6 +13142,7 @@ sequelae = Sequelae(**{
             name='gastric_bleeding_and_anemia_mild',
             kind='healthstate',
             gbd_id=hsid(2648),
+            disability_weight_exist=False,
         ),
     ),
     'complicated_peptic_ulcer_disease_with_moderate_anemia': Sequela(
@@ -12337,6 +13158,7 @@ sequelae = Sequelae(**{
             name='gastric_bleeding_and_anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(2651),
+            disability_weight_exist=False,
         ),
     ),
     'complicated_gastritis_and_duodenitis_with_moderate_anemia': Sequela(
@@ -12352,6 +13174,7 @@ sequelae = Sequelae(**{
             name='gastric_bleeding_and_anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(2651),
+            disability_weight_exist=False,
         ),
     ),
     'complicated_peptic_ulcer_disease_with_severe_anemia': Sequela(
@@ -12367,6 +13190,7 @@ sequelae = Sequelae(**{
             name='gastric_bleeding_and_anemia_severe',
             kind='healthstate',
             gbd_id=hsid(2654),
+            disability_weight_exist=False,
         ),
     ),
     'complicated_gastritis_and_duodenitis_with_severe_anemia': Sequela(
@@ -12382,6 +13206,7 @@ sequelae = Sequelae(**{
             name='gastric_bleeding_and_anemia_severe',
             kind='healthstate',
             gbd_id=hsid(2654),
+            disability_weight_exist=False,
         ),
     ),
     'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_without_anemia': Sequela(
@@ -12397,6 +13222,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_anxiety_and_severe_abdominopelvic_problem',
             kind='healthstate',
             gbd_id=hsid(814),
+            disability_weight_exist=True,
         ),
     ),
     'hemoglobin_sc_disease_with_vaso_occlusive_crisis_without_anemia': Sequela(
@@ -12412,6 +13238,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_anxiety_and_severe_abdominopelvic_problem',
             kind='healthstate',
             gbd_id=hsid(814),
+            disability_weight_exist=True,
         ),
     ),
     'mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_without_anemia': Sequela(
@@ -12427,6 +13254,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_anxiety_and_severe_abdominopelvic_problem',
             kind='healthstate',
             gbd_id=hsid(814),
+            disability_weight_exist=True,
         ),
     ),
     'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_stroke_without_anemia': Sequela(
@@ -12442,6 +13270,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_anxiety;_long_term_consequences_due_to_stroke',
             kind='healthstate',
             gbd_id=hsid(815),
+            disability_weight_exist=True,
         ),
     ),
     'hemoglobin_sc_disease_with_stroke_without_anemia': Sequela(
@@ -12457,6 +13286,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_anxiety;_long_term_consequences_due_to_stroke',
             kind='healthstate',
             gbd_id=hsid(815),
+            disability_weight_exist=True,
         ),
     ),
     'mild_sickle_cell_beta_thalassemia_with_stroke_without_anemia': Sequela(
@@ -12472,6 +13302,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_anxiety;_long_term_consequences_due_to_stroke',
             kind='healthstate',
             gbd_id=hsid(815),
+            disability_weight_exist=True,
         ),
     ),
     'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_stroke_and_severe_anemia': Sequela(
@@ -12487,6 +13318,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_anxiety;_long_term_consequences_due_to_stroke;_anemia_severe',
             kind='healthstate',
             gbd_id=hsid(858),
+            disability_weight_exist=True,
         ),
     ),
     'hemoglobin_sc_disease_with_stroke_and_severe_anemia': Sequela(
@@ -12502,6 +13334,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_anxiety;_long_term_consequences_due_to_stroke;_anemia_severe',
             kind='healthstate',
             gbd_id=hsid(858),
+            disability_weight_exist=True,
         ),
     ),
     'mild_sickle_cell_beta_thalassemia_with_stroke_and_severe_anemia': Sequela(
@@ -12517,6 +13350,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_anxiety;_long_term_consequences_due_to_stroke;_anemia_severe',
             kind='healthstate',
             gbd_id=hsid(858),
+            disability_weight_exist=True,
         ),
     ),
     'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_stroke_without_anemia': Sequela(
@@ -12532,6 +13366,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_anxiety;_long_term_consequences_due_to_stroke;_severe_abdominopelvic_problem',
             kind='healthstate',
             gbd_id=hsid(816),
+            disability_weight_exist=True,
         ),
     ),
     'hemoglobin_sc_disease_with_vaso_occlusive_crisis_and_stroke_without_anemia': Sequela(
@@ -12547,6 +13382,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_anxiety;_long_term_consequences_due_to_stroke;_severe_abdominopelvic_problem',
             kind='healthstate',
             gbd_id=hsid(816),
+            disability_weight_exist=True,
         ),
     ),
     'mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_stroke_without_anemia': Sequela(
@@ -12562,6 +13398,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_anxiety;_long_term_consequences_due_to_stroke;_severe_abdominopelvic_problem',
             kind='healthstate',
             gbd_id=hsid(816),
+            disability_weight_exist=True,
         ),
     ),
     'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_stroke_and_severe_anemia': Sequela(
@@ -12577,6 +13414,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_anxiety;_long_term_consequences_due_to_stroke;_severe_abdominopelvic_problem;_anemia_severe',
             kind='healthstate',
             gbd_id=hsid(859),
+            disability_weight_exist=True,
         ),
     ),
     'hemoglobin_sc_disease_with_vaso_occlusive_crisis_stroke_and_severe_anemia': Sequela(
@@ -12592,6 +13430,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_anxiety;_long_term_consequences_due_to_stroke;_severe_abdominopelvic_problem;_anemia_severe',
             kind='healthstate',
             gbd_id=hsid(859),
+            disability_weight_exist=True,
         ),
     ),
     'mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_stroke_and_severe_anemia': Sequela(
@@ -12607,6 +13446,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_anxiety;_long_term_consequences_due_to_stroke;_severe_abdominopelvic_problem;_anemia_severe',
             kind='healthstate',
             gbd_id=hsid(859),
+            disability_weight_exist=True,
         ),
     ),
     'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_without_anemia': Sequela(
@@ -12622,6 +13462,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_anxiety_about_diagnosis',
             kind='healthstate',
             gbd_id=hsid(560),
+            disability_weight_exist=True,
         ),
     ),
     'hemoglobin_sc_disease_without_anemia': Sequela(
@@ -12637,6 +13478,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_anxiety_about_diagnosis',
             kind='healthstate',
             gbd_id=hsid(560),
+            disability_weight_exist=True,
         ),
     ),
     'mild_sickle_cell_beta_thalassemia_without_anemia': Sequela(
@@ -12652,6 +13494,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_anxiety_about_diagnosis',
             kind='healthstate',
             gbd_id=hsid(560),
+            disability_weight_exist=True,
         ),
     ),
     'hemoglobin_h_disease_without_anemia': Sequela(
@@ -12667,6 +13510,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_anxiety_about_diagnosis',
             kind='healthstate',
             gbd_id=hsid(560),
+            disability_weight_exist=True,
         ),
     ),
     'beta_thalassemia_major_without_anemia': Sequela(
@@ -12682,6 +13526,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_anxiety_about_diagnosis',
             kind='healthstate',
             gbd_id=hsid(560),
+            disability_weight_exist=True,
         ),
     ),
     'hemoglobin_e_beta_thalassemia_without_anemia': Sequela(
@@ -12697,6 +13542,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_anxiety_about_diagnosis',
             kind='healthstate',
             gbd_id=hsid(560),
+            disability_weight_exist=True,
         ),
     ),
     'diagnosis_of_motor_neuron_disease': Sequela(
@@ -12712,6 +13558,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_anxiety_about_diagnosis',
             kind='healthstate',
             gbd_id=hsid(560),
+            disability_weight_exist=True,
         ),
     ),
     'early_hiv_without_anemia': Sequela(
@@ -12727,6 +13574,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_anxiety_about_diagnosis',
             kind='healthstate',
             gbd_id=hsid(560),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_esophageal_cancer': Sequela(
@@ -12742,6 +13590,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_stomach_cancer': Sequela(
@@ -12757,6 +13606,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_liver_cancer_due_to_hepatitis_b': Sequela(
@@ -12772,6 +13622,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_liver_cancer_due_to_hepatitis_c': Sequela(
@@ -12787,6 +13638,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_liver_cancer_due_to_alcohol_use': Sequela(
@@ -12802,6 +13654,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_liver_cancer_due_to_other_causes': Sequela(
@@ -12817,6 +13670,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_larynx_cancer': Sequela(
@@ -12832,6 +13686,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_lung_bronchus_and_trachea_cancer': Sequela(
@@ -12847,6 +13702,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_breast_cancer': Sequela(
@@ -12862,6 +13718,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_cervical_cancer': Sequela(
@@ -12877,6 +13734,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_uterine_cancer': Sequela(
@@ -12892,6 +13750,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_prostate_cancer': Sequela(
@@ -12907,6 +13766,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_colon_and_rectum_cancers': Sequela(
@@ -12922,6 +13782,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_mouth_cancer': Sequela(
@@ -12937,6 +13798,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_nasopharynx_cancer': Sequela(
@@ -12952,6 +13814,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_other_pharynx_cancer': Sequela(
@@ -12967,6 +13830,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_gallbladder_and_biliary_tract_cancer': Sequela(
@@ -12982,6 +13846,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_pancreatic_cancer': Sequela(
@@ -12997,6 +13862,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_malignant_skin_melanoma': Sequela(
@@ -13012,6 +13878,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_ovarian_cancer': Sequela(
@@ -13027,6 +13894,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_testicular_cancer': Sequela(
@@ -13042,6 +13910,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_kidney_cancer': Sequela(
@@ -13057,6 +13926,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_bladder_cancer': Sequela(
@@ -13072,6 +13942,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_brain_and_nervous_system_cancers': Sequela(
@@ -13087,6 +13958,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_thyroid_cancer': Sequela(
@@ -13102,6 +13974,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_mesothelioma': Sequela(
@@ -13117,6 +13990,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_hodgkin_disease': Sequela(
@@ -13132,6 +14006,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_non_hodgkin_lymphoma': Sequela(
@@ -13147,6 +14022,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_multiple_myeloma': Sequela(
@@ -13162,6 +14038,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_other_neoplasms': Sequela(
@@ -13177,6 +14054,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'idiopathic_seizure_free_treated_epilepsy': Sequela(
@@ -13192,6 +14070,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'other_hypertensive_disorders_of_pregnancy': Sequela(
@@ -13207,6 +14086,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'rheumatic_heart_disease_without_heart_failure': Sequela(
@@ -13222,6 +14102,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_acute_lymphoid_leukemia': Sequela(
@@ -13237,6 +14118,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_acute_myeloid_leukemia': Sequela(
@@ -13252,6 +14134,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_chronic_lymphoid_leukemia': Sequela(
@@ -13267,6 +14150,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_chronic_myeloid_leukemia': Sequela(
@@ -13282,6 +14166,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_other_leukemia': Sequela(
@@ -13297,6 +14182,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'calcific_aortic_valve_disease_after_treatment': Sequela(
@@ -13312,6 +14198,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'degenerative_mitral_valve_disease_after_treatment': Sequela(
@@ -13327,6 +14214,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'myelodysplastic_myeloproliferative_and_other_hematopoietic_neoplasms': Sequela(
@@ -13342,6 +14230,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_liver_cancer_due_to_nash': Sequela(
@@ -13357,6 +14246,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'uncomplicated_diabetes_mellitus_type_1': Sequela(
@@ -13372,6 +14262,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'uncomplicated_diabetes_mellitus_type_2': Sequela(
@@ -13387,6 +14278,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_breast_cancer_without_mastectomy': Sequela(
@@ -13402,6 +14294,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_prostate_cancer_without_impotence_or_incontinence': Sequela(
@@ -13417,6 +14310,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_larynx_cancer_without_laryngectomy': Sequela(
@@ -13432,6 +14326,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_colon_and_rectum_cancers_without_stoma': Sequela(
@@ -13447,6 +14342,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'controlled_phase_of_bladder_cancer_without_incontinence': Sequela(
@@ -13462,6 +14358,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'treated_heart_failure_due_ischemic_heart_disease': Sequela(
@@ -13477,6 +14374,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'treated_heart_failure_due_to_alcoholic_cardiomyopathy': Sequela(
@@ -13492,6 +14390,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'treated_heart_failure_due_to_calcific_aortic_valve_disease': Sequela(
@@ -13507,6 +14406,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'treated_heart_failure_due_to_chagas_disease': Sequela(
@@ -13522,6 +14422,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'treated_heart_failure_due_to_degenerative_mitral_valve_disease': Sequela(
@@ -13537,6 +14438,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'treated_heart_failure_due_to_endocarditis': Sequela(
@@ -13552,6 +14454,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'treated_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders': Sequela(
@@ -13567,6 +14470,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'treated_heart_failure_due_to_g6pd_deficiency': Sequela(
@@ -13582,6 +14486,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'treated_heart_failure_due_to_hypertensive_heart_disease': Sequela(
@@ -13597,6 +14502,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'treated_heart_failure_due_to_myocarditis': Sequela(
@@ -13612,6 +14518,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'treated_heart_failure_due_to_other_cardiomyopathy': Sequela(
@@ -13627,6 +14534,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'treated_heart_failure_due_to_other_cardiovascular_disease': Sequela(
@@ -13642,6 +14550,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'treated_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias': Sequela(
@@ -13657,6 +14566,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'treated_heart_failure_due_to_other_non_rheumatic_valve_disease': Sequela(
@@ -13672,6 +14582,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'treated_heart_failure_due_to_rheumatic_heart_disease': Sequela(
@@ -13687,6 +14598,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'treated_heart_failure_due_to_thalassemias': Sequela(
@@ -13702,6 +14614,7 @@ sequelae = Sequelae(**{
             name='generic_uncomplicated_disease_worry_and_daily_medication',
             kind='healthstate',
             gbd_id=hsid(559),
+            disability_weight_exist=True,
         ),
     ),
     'symptomatic_episodes_of_gout': Sequela(
@@ -13717,6 +14630,7 @@ sequelae = Sequelae(**{
             name='gout_acute',
             kind='healthstate',
             gbd_id=hsid(485),
+            disability_weight_exist=True,
         ),
     ),
     'symptomatic_medication_overuse_headache_due_to_migraine': Sequela(
@@ -13732,6 +14646,7 @@ sequelae = Sequelae(**{
             name='headache_medication_overuse',
             kind='healthstate',
             gbd_id=hsid(413),
+            disability_weight_exist=True,
         ),
     ),
     'symptomatic_medication_overuse_headache_due_to_tension_type_headache': Sequela(
@@ -13747,6 +14662,7 @@ sequelae = Sequelae(**{
             name='headache_medication_overuse',
             kind='healthstate',
             gbd_id=hsid(413),
+            disability_weight_exist=True,
         ),
     ),
     'symptomatic_migraine': Sequela(
@@ -13762,6 +14678,7 @@ sequelae = Sequelae(**{
             name='headache_migraine',
             kind='healthstate',
             gbd_id=hsid(411),
+            disability_weight_exist=True,
         ),
     ),
     'symptomatic_tension_type_headache': Sequela(
@@ -13777,6 +14694,7 @@ sequelae = Sequelae(**{
             name='headache_tension_type',
             kind='healthstate',
             gbd_id=hsid(412),
+            disability_weight_exist=True,
         ),
     ),
     'complete_hearing_loss_due_to_pneumococcal_meningitis': Sequela(
@@ -13792,6 +14710,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_complete',
             kind='healthstate',
             gbd_id=hsid(459),
+            disability_weight_exist=True,
         ),
     ),
     'complete_hearing_loss_due_to_h_influenzae_type_b_meningitis': Sequela(
@@ -13807,6 +14726,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_complete',
             kind='healthstate',
             gbd_id=hsid(459),
+            disability_weight_exist=True,
         ),
     ),
     'complete_hearing_loss_due_to_meningococcal_meningitis': Sequela(
@@ -13822,6 +14742,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_complete',
             kind='healthstate',
             gbd_id=hsid(459),
+            disability_weight_exist=True,
         ),
     ),
     'complete_hearing_loss_due_to_other_bacterial_meningitis': Sequela(
@@ -13837,6 +14758,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_complete',
             kind='healthstate',
             gbd_id=hsid(459),
+            disability_weight_exist=True,
         ),
     ),
     'complete_hearing_loss_due_to_other_congenital_anomalies': Sequela(
@@ -13852,6 +14774,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_complete',
             kind='healthstate',
             gbd_id=hsid(459),
+            disability_weight_exist=True,
         ),
     ),
     'complete_hearing_loss_due_to_age_related_and_other_hearing_loss': Sequela(
@@ -13867,6 +14790,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_complete',
             kind='healthstate',
             gbd_id=hsid(459),
+            disability_weight_exist=True,
         ),
     ),
     'complete_hearing_loss_with_ringing_due_to_pneumococcal_meningitis': Sequela(
@@ -13882,6 +14806,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_complete_with_ringing',
             kind='healthstate',
             gbd_id=hsid(464),
+            disability_weight_exist=True,
         ),
     ),
     'complete_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis': Sequela(
@@ -13897,6 +14822,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_complete_with_ringing',
             kind='healthstate',
             gbd_id=hsid(464),
+            disability_weight_exist=True,
         ),
     ),
     'complete_hearing_loss_with_ringing_due_to_meningococcal_meningitis': Sequela(
@@ -13912,6 +14838,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_complete_with_ringing',
             kind='healthstate',
             gbd_id=hsid(464),
+            disability_weight_exist=True,
         ),
     ),
     'complete_hearing_loss_with_ringing_due_to_other_bacterial_meningitis': Sequela(
@@ -13927,6 +14854,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_complete_with_ringing',
             kind='healthstate',
             gbd_id=hsid(464),
+            disability_weight_exist=True,
         ),
     ),
     'complete_hearing_loss_with_ringing_due_to_other_congenital_anomalies': Sequela(
@@ -13942,6 +14870,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_complete_with_ringing',
             kind='healthstate',
             gbd_id=hsid(464),
+            disability_weight_exist=True,
         ),
     ),
     'complete_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss': Sequela(
@@ -13957,6 +14886,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_complete_with_ringing',
             kind='healthstate',
             gbd_id=hsid(464),
+            disability_weight_exist=True,
         ),
     ),
     'mild_hearing_loss_due_to_pneumococcal_meningitis': Sequela(
@@ -13972,6 +14902,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_mild',
             kind='healthstate',
             gbd_id=hsid(455),
+            disability_weight_exist=True,
         ),
     ),
     'mild_hearing_loss_due_to_h_influenzae_type_b_meningitis': Sequela(
@@ -13987,6 +14918,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_mild',
             kind='healthstate',
             gbd_id=hsid(455),
+            disability_weight_exist=True,
         ),
     ),
     'mild_hearing_loss_due_to_meningococcal_meningitis': Sequela(
@@ -14002,6 +14934,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_mild',
             kind='healthstate',
             gbd_id=hsid(455),
+            disability_weight_exist=True,
         ),
     ),
     'mild_hearing_loss_due_to_other_bacterial_meningitis': Sequela(
@@ -14017,6 +14950,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_mild',
             kind='healthstate',
             gbd_id=hsid(455),
+            disability_weight_exist=True,
         ),
     ),
     'mild_hearing_loss_due_to_other_congenital_anomalies': Sequela(
@@ -14032,6 +14966,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_mild',
             kind='healthstate',
             gbd_id=hsid(455),
+            disability_weight_exist=True,
         ),
     ),
     'mild_hearing_loss_due_to_age_related_and_other_hearing_loss': Sequela(
@@ -14047,6 +14982,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_mild',
             kind='healthstate',
             gbd_id=hsid(455),
+            disability_weight_exist=True,
         ),
     ),
     'mild_hearing_loss_due_to_chronic_otitis_media': Sequela(
@@ -14062,6 +14998,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_mild',
             kind='healthstate',
             gbd_id=hsid(455),
+            disability_weight_exist=True,
         ),
     ),
     'mild_hearing_loss_with_ringing_due_to_pneumococcal_meningitis': Sequela(
@@ -14077,6 +15014,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_mild_with_ringing',
             kind='healthstate',
             gbd_id=hsid(460),
+            disability_weight_exist=True,
         ),
     ),
     'mild_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis': Sequela(
@@ -14092,6 +15030,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_mild_with_ringing',
             kind='healthstate',
             gbd_id=hsid(460),
+            disability_weight_exist=True,
         ),
     ),
     'mild_hearing_loss_with_ringing_due_to_meningococcal_meningitis': Sequela(
@@ -14107,6 +15046,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_mild_with_ringing',
             kind='healthstate',
             gbd_id=hsid(460),
+            disability_weight_exist=True,
         ),
     ),
     'mild_hearing_loss_due_with_ringing_to_other_bacterial_meningitis': Sequela(
@@ -14122,6 +15062,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_mild_with_ringing',
             kind='healthstate',
             gbd_id=hsid(460),
+            disability_weight_exist=True,
         ),
     ),
     'mild_hearing_loss_with_ringing_due_to_other_congenital_anomalies': Sequela(
@@ -14137,6 +15078,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_mild_with_ringing',
             kind='healthstate',
             gbd_id=hsid(460),
+            disability_weight_exist=True,
         ),
     ),
     'mild_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss': Sequela(
@@ -14152,6 +15094,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_mild_with_ringing',
             kind='healthstate',
             gbd_id=hsid(460),
+            disability_weight_exist=True,
         ),
     ),
     'mild_hearing_loss_with_ringing_due_to_chronic_otitis_media': Sequela(
@@ -14167,6 +15110,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_mild_with_ringing',
             kind='healthstate',
             gbd_id=hsid(460),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_hearing_loss_due_to_pneumococcal_meningitis': Sequela(
@@ -14182,6 +15126,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderate',
             kind='healthstate',
             gbd_id=hsid(456),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_hearing_loss_due_to_h_influenzae_type_b_meningitis': Sequela(
@@ -14197,6 +15142,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderate',
             kind='healthstate',
             gbd_id=hsid(456),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_hearing_loss_due_to_meningococcal_meningitis': Sequela(
@@ -14212,6 +15158,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderate',
             kind='healthstate',
             gbd_id=hsid(456),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_hearing_loss_due_to_other_bacterial_meningitis': Sequela(
@@ -14227,6 +15174,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderate',
             kind='healthstate',
             gbd_id=hsid(456),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_hearing_loss_due_to_other_congenital_anomalies': Sequela(
@@ -14242,6 +15190,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderate',
             kind='healthstate',
             gbd_id=hsid(456),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_hearing_loss_due_to_age_related_and_other_hearing_loss': Sequela(
@@ -14257,6 +15206,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderate',
             kind='healthstate',
             gbd_id=hsid(456),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_hearing_loss_due_to_chronic_otitis_media': Sequela(
@@ -14272,6 +15222,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderate',
             kind='healthstate',
             gbd_id=hsid(456),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_hearing_loss_with_ringing_due_to_pneumococcal_meningitis': Sequela(
@@ -14287,6 +15238,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderate_with_ringing',
             kind='healthstate',
             gbd_id=hsid(461),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis': Sequela(
@@ -14302,6 +15254,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderate_with_ringing',
             kind='healthstate',
             gbd_id=hsid(461),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_hearing_loss_with_ringing_due_to_meningococcal_meningitis': Sequela(
@@ -14317,6 +15270,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderate_with_ringing',
             kind='healthstate',
             gbd_id=hsid(461),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_hearing_loss_with_ringing_due_to_other_bacterial_meningitis': Sequela(
@@ -14332,6 +15286,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderate_with_ringing',
             kind='healthstate',
             gbd_id=hsid(461),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_hearing_loss_with_ringing_due_to_other_congenital_anomalies': Sequela(
@@ -14347,6 +15302,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderate_with_ringing',
             kind='healthstate',
             gbd_id=hsid(461),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss': Sequela(
@@ -14362,6 +15318,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderate_with_ringing',
             kind='healthstate',
             gbd_id=hsid(461),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_hearing_loss_with_ringing_due_to_chronic_otitis_media': Sequela(
@@ -14377,6 +15334,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderate_with_ringing',
             kind='healthstate',
             gbd_id=hsid(461),
+            disability_weight_exist=True,
         ),
     ),
     'moderately_severe_hearing_loss_due_to_pneumococcal_meningitis': Sequela(
@@ -14392,6 +15350,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderately_severe',
             kind='healthstate',
             gbd_id=hsid(575),
+            disability_weight_exist=True,
         ),
     ),
     'moderately_severe_hearing_loss_due_to_h_influenzae_type_b_meningitis': Sequela(
@@ -14407,6 +15366,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderately_severe',
             kind='healthstate',
             gbd_id=hsid(575),
+            disability_weight_exist=True,
         ),
     ),
     'moderately_severe_hearing_loss_due_to_meningococcal_meningitis': Sequela(
@@ -14422,6 +15382,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderately_severe',
             kind='healthstate',
             gbd_id=hsid(575),
+            disability_weight_exist=True,
         ),
     ),
     'moderately_severe_hearing_loss_due_to_other_bacterial_meningitis': Sequela(
@@ -14437,6 +15398,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderately_severe',
             kind='healthstate',
             gbd_id=hsid(575),
+            disability_weight_exist=True,
         ),
     ),
     'moderately_severe_hearing_loss_due_to_other_congenital_anomalies': Sequela(
@@ -14452,6 +15414,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderately_severe',
             kind='healthstate',
             gbd_id=hsid(575),
+            disability_weight_exist=True,
         ),
     ),
     'moderately_severe_hearing_loss_due_to_age_related_and_other_hearing_loss': Sequela(
@@ -14467,6 +15430,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderately_severe',
             kind='healthstate',
             gbd_id=hsid(575),
+            disability_weight_exist=True,
         ),
     ),
     'moderately_severe_hearing_loss_with_ringing_due_to_pneumococcal_meningitis': Sequela(
@@ -14482,6 +15446,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderately_severe_with_ringing',
             kind='healthstate',
             gbd_id=hsid(576),
+            disability_weight_exist=True,
         ),
     ),
     'moderately_severe_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis': Sequela(
@@ -14497,6 +15462,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderately_severe_with_ringing',
             kind='healthstate',
             gbd_id=hsid(576),
+            disability_weight_exist=True,
         ),
     ),
     'moderately_severe_hearing_loss_with_ringing_due_to_meningococcal_meningitis': Sequela(
@@ -14512,6 +15478,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderately_severe_with_ringing',
             kind='healthstate',
             gbd_id=hsid(576),
+            disability_weight_exist=True,
         ),
     ),
     'moderately_severe_hearing_loss_with_ringing_due_to_other_bacterial_meningitis': Sequela(
@@ -14527,6 +15494,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderately_severe_with_ringing',
             kind='healthstate',
             gbd_id=hsid(576),
+            disability_weight_exist=True,
         ),
     ),
     'moderately_severe_hearing_loss_with_ringing_due_to_other_congenital_anomalies': Sequela(
@@ -14542,6 +15510,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderately_severe_with_ringing',
             kind='healthstate',
             gbd_id=hsid(576),
+            disability_weight_exist=True,
         ),
     ),
     'moderately_severe_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss': Sequela(
@@ -14557,6 +15526,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_moderately_severe_with_ringing',
             kind='healthstate',
             gbd_id=hsid(576),
+            disability_weight_exist=True,
         ),
     ),
     'profound_hearing_loss_due_to_pneumococcal_meningitis': Sequela(
@@ -14572,6 +15542,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_profound',
             kind='healthstate',
             gbd_id=hsid(458),
+            disability_weight_exist=True,
         ),
     ),
     'profound_hearing_loss_due_to_h_influenzae_type_b_meningitis': Sequela(
@@ -14587,6 +15558,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_profound',
             kind='healthstate',
             gbd_id=hsid(458),
+            disability_weight_exist=True,
         ),
     ),
     'profound_hearing_loss_due_to_meningococcal_meningitis': Sequela(
@@ -14602,6 +15574,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_profound',
             kind='healthstate',
             gbd_id=hsid(458),
+            disability_weight_exist=True,
         ),
     ),
     'profound_hearing_loss_due_to_other_bacterial_meningitis': Sequela(
@@ -14617,6 +15590,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_profound',
             kind='healthstate',
             gbd_id=hsid(458),
+            disability_weight_exist=True,
         ),
     ),
     'profound_hearing_loss_due_to_other_congenital_anomalies': Sequela(
@@ -14632,6 +15606,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_profound',
             kind='healthstate',
             gbd_id=hsid(458),
+            disability_weight_exist=True,
         ),
     ),
     'profound_hearing_loss_due_to_age_related_and_other_hearing_loss': Sequela(
@@ -14647,6 +15622,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_profound',
             kind='healthstate',
             gbd_id=hsid(458),
+            disability_weight_exist=True,
         ),
     ),
     'profound_hearing_loss_with_ringing_due_to_pneumococcal_meningitis': Sequela(
@@ -14662,6 +15638,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_profound_with_ringing',
             kind='healthstate',
             gbd_id=hsid(463),
+            disability_weight_exist=True,
         ),
     ),
     'profound_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis': Sequela(
@@ -14677,6 +15654,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_profound_with_ringing',
             kind='healthstate',
             gbd_id=hsid(463),
+            disability_weight_exist=True,
         ),
     ),
     'profound_hearing_loss_with_ringing_due_to_meningococcal_meningitis': Sequela(
@@ -14692,6 +15670,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_profound_with_ringing',
             kind='healthstate',
             gbd_id=hsid(463),
+            disability_weight_exist=True,
         ),
     ),
     'profound_hearing_loss_with_ringing_due_to_other_bacterial_meningitis': Sequela(
@@ -14707,6 +15686,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_profound_with_ringing',
             kind='healthstate',
             gbd_id=hsid(463),
+            disability_weight_exist=True,
         ),
     ),
     'profound_hearing_loss_with_ringing_due_to_other_congenital_anomalies': Sequela(
@@ -14722,6 +15702,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_profound_with_ringing',
             kind='healthstate',
             gbd_id=hsid(463),
+            disability_weight_exist=True,
         ),
     ),
     'profound_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss': Sequela(
@@ -14737,6 +15718,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_profound_with_ringing',
             kind='healthstate',
             gbd_id=hsid(463),
+            disability_weight_exist=True,
         ),
     ),
     'severe_hearing_loss_due_to_pneumococcal_meningitis': Sequela(
@@ -14752,6 +15734,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_severe',
             kind='healthstate',
             gbd_id=hsid(457),
+            disability_weight_exist=True,
         ),
     ),
     'severe_hearing_loss_due_to_h_influenzae_type_b_meningitis': Sequela(
@@ -14767,6 +15750,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_severe',
             kind='healthstate',
             gbd_id=hsid(457),
+            disability_weight_exist=True,
         ),
     ),
     'severe_hearing_loss_due_to_meningococcal_meningitis': Sequela(
@@ -14782,6 +15766,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_severe',
             kind='healthstate',
             gbd_id=hsid(457),
+            disability_weight_exist=True,
         ),
     ),
     'severe_hearing_loss_due_to_other_bacterial_meningitis': Sequela(
@@ -14797,6 +15782,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_severe',
             kind='healthstate',
             gbd_id=hsid(457),
+            disability_weight_exist=True,
         ),
     ),
     'severe_hearing_loss_due_to_other_congenital_anomalies': Sequela(
@@ -14812,6 +15798,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_severe',
             kind='healthstate',
             gbd_id=hsid(457),
+            disability_weight_exist=True,
         ),
     ),
     'severe_hearing_loss_due_to_age_related_and_other_hearing_loss': Sequela(
@@ -14827,6 +15814,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_severe',
             kind='healthstate',
             gbd_id=hsid(457),
+            disability_weight_exist=True,
         ),
     ),
     'severe_hearing_loss_with_ringing_due_to_pneumococcal_meningitis': Sequela(
@@ -14842,6 +15830,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_severe_with_ringing',
             kind='healthstate',
             gbd_id=hsid(462),
+            disability_weight_exist=True,
         ),
     ),
     'severe_hearing_loss_with_ringing_due_to_h_influenzae_type_b_meningitis': Sequela(
@@ -14857,6 +15846,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_severe_with_ringing',
             kind='healthstate',
             gbd_id=hsid(462),
+            disability_weight_exist=True,
         ),
     ),
     'severe_hearing_loss_with_ringing_due_to_meningococcal_meningitis': Sequela(
@@ -14872,6 +15862,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_severe_with_ringing',
             kind='healthstate',
             gbd_id=hsid(462),
+            disability_weight_exist=True,
         ),
     ),
     'severe_hearing_loss_with_ringing_due_to_other_bacterial_meningitis': Sequela(
@@ -14887,6 +15878,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_severe_with_ringing',
             kind='healthstate',
             gbd_id=hsid(462),
+            disability_weight_exist=True,
         ),
     ),
     'severe_hearing_loss_with_ringing_due_to_other_congenital_anomalies': Sequela(
@@ -14902,6 +15894,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_severe_with_ringing',
             kind='healthstate',
             gbd_id=hsid(462),
+            disability_weight_exist=True,
         ),
     ),
     'severe_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss': Sequela(
@@ -14917,6 +15910,7 @@ sequelae = Sequelae(**{
             name='hearing_loss_severe_with_ringing',
             kind='healthstate',
             gbd_id=hsid(462),
+            disability_weight_exist=True,
         ),
     ),
     'mild_heart_failure_due_to_chagas_disease': Sequela(
@@ -14932,6 +15926,7 @@ sequelae = Sequelae(**{
             name='heart_failure_mild',
             kind='healthstate',
             gbd_id=hsid(381),
+            disability_weight_exist=True,
         ),
     ),
     'mild_heart_failure_due_to_ischemic_heart_disease': Sequela(
@@ -14947,6 +15942,7 @@ sequelae = Sequelae(**{
             name='heart_failure_mild',
             kind='healthstate',
             gbd_id=hsid(381),
+            disability_weight_exist=True,
         ),
     ),
     'mild_heart_failure_due_to_hypertensive_heart_disease': Sequela(
@@ -14962,6 +15958,7 @@ sequelae = Sequelae(**{
             name='heart_failure_mild',
             kind='healthstate',
             gbd_id=hsid(381),
+            disability_weight_exist=True,
         ),
     ),
     'mild_heart_failure_due_to_endocarditis': Sequela(
@@ -14977,6 +15974,7 @@ sequelae = Sequelae(**{
             name='heart_failure_mild',
             kind='healthstate',
             gbd_id=hsid(381),
+            disability_weight_exist=True,
         ),
     ),
     'mild_heart_failure_due_to_other_cardiovascular_diseases': Sequela(
@@ -14992,6 +15990,7 @@ sequelae = Sequelae(**{
             name='heart_failure_mild',
             kind='healthstate',
             gbd_id=hsid(381),
+            disability_weight_exist=True,
         ),
     ),
     'mild_heart_failure_due_to_thalassemias': Sequela(
@@ -15007,6 +16006,7 @@ sequelae = Sequelae(**{
             name='heart_failure_mild',
             kind='healthstate',
             gbd_id=hsid(381),
+            disability_weight_exist=True,
         ),
     ),
     'mild_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias': Sequela(
@@ -15022,6 +16022,7 @@ sequelae = Sequelae(**{
             name='heart_failure_mild',
             kind='healthstate',
             gbd_id=hsid(381),
+            disability_weight_exist=True,
         ),
     ),
     'mild_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders': Sequela(
@@ -15037,6 +16038,7 @@ sequelae = Sequelae(**{
             name='heart_failure_mild',
             kind='healthstate',
             gbd_id=hsid(381),
+            disability_weight_exist=True,
         ),
     ),
     'mild_other_cardiovascular_diseases': Sequela(
@@ -15052,6 +16054,7 @@ sequelae = Sequelae(**{
             name='heart_failure_mild',
             kind='healthstate',
             gbd_id=hsid(381),
+            disability_weight_exist=True,
         ),
     ),
     'mild_heart_failure_due_to_rheumatic_heart_disease': Sequela(
@@ -15067,6 +16070,7 @@ sequelae = Sequelae(**{
             name='heart_failure_mild',
             kind='healthstate',
             gbd_id=hsid(381),
+            disability_weight_exist=True,
         ),
     ),
     'mild_heart_failure_due_to_g6pd_deficiency': Sequela(
@@ -15082,6 +16086,7 @@ sequelae = Sequelae(**{
             name='heart_failure_mild',
             kind='healthstate',
             gbd_id=hsid(381),
+            disability_weight_exist=True,
         ),
     ),
     'mild_heart_failure_due_to_myocarditis': Sequela(
@@ -15097,6 +16102,7 @@ sequelae = Sequelae(**{
             name='heart_failure_mild',
             kind='healthstate',
             gbd_id=hsid(381),
+            disability_weight_exist=True,
         ),
     ),
     'mild_heart_failure_due_to_alcoholic_cardiomyopathy': Sequela(
@@ -15112,6 +16118,7 @@ sequelae = Sequelae(**{
             name='heart_failure_mild',
             kind='healthstate',
             gbd_id=hsid(381),
+            disability_weight_exist=True,
         ),
     ),
     'mild_heart_failure_due_to_other_cardiomyopathy': Sequela(
@@ -15127,6 +16134,7 @@ sequelae = Sequelae(**{
             name='heart_failure_mild',
             kind='healthstate',
             gbd_id=hsid(381),
+            disability_weight_exist=True,
         ),
     ),
     'mild_heart_failure_due_to_calcific_aortic_valve_disease': Sequela(
@@ -15142,6 +16150,7 @@ sequelae = Sequelae(**{
             name='heart_failure_mild',
             kind='healthstate',
             gbd_id=hsid(381),
+            disability_weight_exist=True,
         ),
     ),
     'mild_heart_failure_due_to_degenerative_mitral_valve_disease': Sequela(
@@ -15157,6 +16166,7 @@ sequelae = Sequelae(**{
             name='heart_failure_mild',
             kind='healthstate',
             gbd_id=hsid(381),
+            disability_weight_exist=True,
         ),
     ),
     'mild_heart_failure_due_to_other_non_rheumatic_valve_disease': Sequela(
@@ -15172,6 +16182,7 @@ sequelae = Sequelae(**{
             name='heart_failure_mild',
             kind='healthstate',
             gbd_id=hsid(381),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_heart_failure_due_to_chagas_disease': Sequela(
@@ -15187,6 +16198,7 @@ sequelae = Sequelae(**{
             name='heart_failure_moderate',
             kind='healthstate',
             gbd_id=hsid(382),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_heart_failure_due_to_ischemic_heart_disease': Sequela(
@@ -15202,6 +16214,7 @@ sequelae = Sequelae(**{
             name='heart_failure_moderate',
             kind='healthstate',
             gbd_id=hsid(382),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_heart_failure_due_to_hypertensive_heart_disease': Sequela(
@@ -15217,6 +16230,7 @@ sequelae = Sequelae(**{
             name='heart_failure_moderate',
             kind='healthstate',
             gbd_id=hsid(382),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_heart_failure_due_to_endocarditis': Sequela(
@@ -15232,6 +16246,7 @@ sequelae = Sequelae(**{
             name='heart_failure_moderate',
             kind='healthstate',
             gbd_id=hsid(382),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_heart_failure_due_to_other_cardiovascular_diseases': Sequela(
@@ -15247,6 +16262,7 @@ sequelae = Sequelae(**{
             name='heart_failure_moderate',
             kind='healthstate',
             gbd_id=hsid(382),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_heart_failure_due_to_thalassemias': Sequela(
@@ -15262,6 +16278,7 @@ sequelae = Sequelae(**{
             name='heart_failure_moderate',
             kind='healthstate',
             gbd_id=hsid(382),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias': Sequela(
@@ -15277,6 +16294,7 @@ sequelae = Sequelae(**{
             name='heart_failure_moderate',
             kind='healthstate',
             gbd_id=hsid(382),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders': Sequela(
@@ -15292,6 +16310,7 @@ sequelae = Sequelae(**{
             name='heart_failure_moderate',
             kind='healthstate',
             gbd_id=hsid(382),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_other_cardiovascular_diseases': Sequela(
@@ -15307,6 +16326,7 @@ sequelae = Sequelae(**{
             name='heart_failure_moderate',
             kind='healthstate',
             gbd_id=hsid(382),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_heart_failure_due_to_rheumatic_heart_disease': Sequela(
@@ -15322,6 +16342,7 @@ sequelae = Sequelae(**{
             name='heart_failure_moderate',
             kind='healthstate',
             gbd_id=hsid(382),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_heart_failure_due_to_g6pd_deficiency': Sequela(
@@ -15337,6 +16358,7 @@ sequelae = Sequelae(**{
             name='heart_failure_moderate',
             kind='healthstate',
             gbd_id=hsid(382),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_heart_failure_due_to_myocarditis': Sequela(
@@ -15352,6 +16374,7 @@ sequelae = Sequelae(**{
             name='heart_failure_moderate',
             kind='healthstate',
             gbd_id=hsid(382),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_heart_failure_due_to_alcoholic_cardiomyopathy': Sequela(
@@ -15367,6 +16390,7 @@ sequelae = Sequelae(**{
             name='heart_failure_moderate',
             kind='healthstate',
             gbd_id=hsid(382),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_heart_failure_due_to_other_cardiomyopathy': Sequela(
@@ -15382,6 +16406,7 @@ sequelae = Sequelae(**{
             name='heart_failure_moderate',
             kind='healthstate',
             gbd_id=hsid(382),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_heart_failure_due_to_calcific_aortic_valve_disease': Sequela(
@@ -15397,6 +16422,7 @@ sequelae = Sequelae(**{
             name='heart_failure_moderate',
             kind='healthstate',
             gbd_id=hsid(382),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_heart_failure_due_to_degenerative_mitral_valve_disease': Sequela(
@@ -15412,6 +16438,7 @@ sequelae = Sequelae(**{
             name='heart_failure_moderate',
             kind='healthstate',
             gbd_id=hsid(382),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_heart_failure_due_to_other_non_rheumatic_valve_disease': Sequela(
@@ -15427,6 +16454,7 @@ sequelae = Sequelae(**{
             name='heart_failure_moderate',
             kind='healthstate',
             gbd_id=hsid(382),
+            disability_weight_exist=True,
         ),
     ),
     'severe_heart_failure_due_to_chagas_disease': Sequela(
@@ -15442,6 +16470,7 @@ sequelae = Sequelae(**{
             name='heart_failure_severe',
             kind='healthstate',
             gbd_id=hsid(383),
+            disability_weight_exist=True,
         ),
     ),
     'severe_heart_failure_due_to_ischemic_heart_disease': Sequela(
@@ -15457,6 +16486,7 @@ sequelae = Sequelae(**{
             name='heart_failure_severe',
             kind='healthstate',
             gbd_id=hsid(383),
+            disability_weight_exist=True,
         ),
     ),
     'severe_heart_failure_due_to_hypertensive_heart_disease': Sequela(
@@ -15472,6 +16502,7 @@ sequelae = Sequelae(**{
             name='heart_failure_severe',
             kind='healthstate',
             gbd_id=hsid(383),
+            disability_weight_exist=True,
         ),
     ),
     'severe_heart_failure_due_to_endocarditis': Sequela(
@@ -15487,6 +16518,7 @@ sequelae = Sequelae(**{
             name='heart_failure_severe',
             kind='healthstate',
             gbd_id=hsid(383),
+            disability_weight_exist=True,
         ),
     ),
     'severe_heart_failure_due_to_other_cardiovascular_diseases': Sequela(
@@ -15502,6 +16534,7 @@ sequelae = Sequelae(**{
             name='heart_failure_severe',
             kind='healthstate',
             gbd_id=hsid(383),
+            disability_weight_exist=True,
         ),
     ),
     'severe_heart_failure_due_to_thalassemias': Sequela(
@@ -15517,6 +16550,7 @@ sequelae = Sequelae(**{
             name='heart_failure_severe',
             kind='healthstate',
             gbd_id=hsid(383),
+            disability_weight_exist=True,
         ),
     ),
     'severe_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias': Sequela(
@@ -15532,6 +16566,7 @@ sequelae = Sequelae(**{
             name='heart_failure_severe',
             kind='healthstate',
             gbd_id=hsid(383),
+            disability_weight_exist=True,
         ),
     ),
     'severe_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders': Sequela(
@@ -15547,6 +16582,7 @@ sequelae = Sequelae(**{
             name='heart_failure_severe',
             kind='healthstate',
             gbd_id=hsid(383),
+            disability_weight_exist=True,
         ),
     ),
     'severe_other_cardiovascular_diseases': Sequela(
@@ -15562,6 +16598,7 @@ sequelae = Sequelae(**{
             name='heart_failure_severe',
             kind='healthstate',
             gbd_id=hsid(383),
+            disability_weight_exist=True,
         ),
     ),
     'severe_heart_failure_due_to_rheumatic_heart_disease': Sequela(
@@ -15577,6 +16614,7 @@ sequelae = Sequelae(**{
             name='heart_failure_severe',
             kind='healthstate',
             gbd_id=hsid(383),
+            disability_weight_exist=True,
         ),
     ),
     'severe_heart_failure_due_to_g6pd_deficiency': Sequela(
@@ -15592,6 +16630,7 @@ sequelae = Sequelae(**{
             name='heart_failure_severe',
             kind='healthstate',
             gbd_id=hsid(383),
+            disability_weight_exist=True,
         ),
     ),
     'severe_heart_failure_due_to_myocarditis': Sequela(
@@ -15607,6 +16646,7 @@ sequelae = Sequelae(**{
             name='heart_failure_severe',
             kind='healthstate',
             gbd_id=hsid(383),
+            disability_weight_exist=True,
         ),
     ),
     'severe_heart_failure_due_to_alcoholic_cardiomyopathy': Sequela(
@@ -15622,6 +16662,7 @@ sequelae = Sequelae(**{
             name='heart_failure_severe',
             kind='healthstate',
             gbd_id=hsid(383),
+            disability_weight_exist=True,
         ),
     ),
     'severe_heart_failure_due_to_other_cardiomyopathy': Sequela(
@@ -15637,6 +16678,7 @@ sequelae = Sequelae(**{
             name='heart_failure_severe',
             kind='healthstate',
             gbd_id=hsid(383),
+            disability_weight_exist=True,
         ),
     ),
     'severe_heart_failure_due_to_calcific_aortic_valve_disease': Sequela(
@@ -15652,6 +16694,7 @@ sequelae = Sequelae(**{
             name='heart_failure_severe',
             kind='healthstate',
             gbd_id=hsid(383),
+            disability_weight_exist=True,
         ),
     ),
     'severe_heart_failure_due_to_degenerative_mitral_valve_disease': Sequela(
@@ -15667,6 +16710,7 @@ sequelae = Sequelae(**{
             name='heart_failure_severe',
             kind='healthstate',
             gbd_id=hsid(383),
+            disability_weight_exist=True,
         ),
     ),
     'severe_heart_failure_due_to_other_non_rheumatic_valve_disease': Sequela(
@@ -15682,6 +16726,7 @@ sequelae = Sequelae(**{
             name='heart_failure_severe',
             kind='healthstate',
             gbd_id=hsid(383),
+            disability_weight_exist=True,
         ),
     ),
     'severe_opioid_dependence': Sequela(
@@ -15697,6 +16742,7 @@ sequelae = Sequelae(**{
             name='heroin_and_other_opioid_dependence',
             kind='healthstate',
             gbd_id=hsid(433),
+            disability_weight_exist=True,
         ),
     ),
     'mild_opioid_dependence': Sequela(
@@ -15712,6 +16758,7 @@ sequelae = Sequelae(**{
             name='heroin_and_other_opioid_dependence_mild',
             kind='healthstate',
             gbd_id=hsid(577),
+            disability_weight_exist=True,
         ),
     ),
     'herpes_zoster': Sequela(
@@ -15727,6 +16774,7 @@ sequelae = Sequelae(**{
             name='herpes_zoster',
             kind='healthstate',
             gbd_id=hsid(359),
+            disability_weight_exist=True,
         ),
     ),
     'symptomatic_hiv_without_anemia': Sequela(
@@ -15742,6 +16790,7 @@ sequelae = Sequelae(**{
             name='hiv_cases_symptomatic_pre_aids',
             kind='healthstate',
             gbd_id=hsid(360),
+            disability_weight_exist=True,
         ),
     ),
     'symptomatic_hiv_with_mild_anemia': Sequela(
@@ -15757,6 +16806,7 @@ sequelae = Sequelae(**{
             name='hiv_cases_symptomatic_pre_aids_and_anemia_mild',
             kind='healthstate',
             gbd_id=hsid(2534),
+            disability_weight_exist=False,
         ),
     ),
     'symptomatic_hiv_with_moderate_anemia': Sequela(
@@ -15772,6 +16822,7 @@ sequelae = Sequelae(**{
             name='hiv_cases_symptomatic_pre_aids_and_anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(2537),
+            disability_weight_exist=False,
         ),
     ),
     'symptomatic_hiv_with_severe_anemia': Sequela(
@@ -15787,6 +16838,7 @@ sequelae = Sequelae(**{
             name='hiv_cases_symptomatic_pre_aids_and_anemia_severe',
             kind='healthstate',
             gbd_id=hsid(2540),
+            disability_weight_exist=False,
         ),
     ),
     'hiv_aids_with_antiretroviral_treatment_without_anemia': Sequela(
@@ -15802,6 +16854,7 @@ sequelae = Sequelae(**{
             name='hiv_aids_cases_receiving_arv_treatment',
             kind='healthstate',
             gbd_id=hsid(361),
+            disability_weight_exist=True,
         ),
     ),
     'hiv_aids_with_antiretroviral_treatment_with_mild_anemia': Sequela(
@@ -15817,6 +16870,7 @@ sequelae = Sequelae(**{
             name='hiv_aids_cases_receiving_arv_treatment_and_anemia_mild',
             kind='healthstate',
             gbd_id=hsid(2543),
+            disability_weight_exist=False,
         ),
     ),
     'hiv_aids_with_antiretroviral_treatment_with_moderate_anemia': Sequela(
@@ -15832,6 +16886,7 @@ sequelae = Sequelae(**{
             name='hiv_aids_cases_receiving_arv_treatment_and_anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(2546),
+            disability_weight_exist=False,
         ),
     ),
     'hiv_aids_with_antiretroviral_treatment_with_severe_anemia': Sequela(
@@ -15847,6 +16902,7 @@ sequelae = Sequelae(**{
             name='hiv_aids_cases_receiving_arv_treatment_and_anemia_severe',
             kind='healthstate',
             gbd_id=hsid(2549),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_endocrine_metabolic_blood_and_immune_disorders': Sequela(
@@ -15862,6 +16918,7 @@ sequelae = Sequelae(**{
             name='hyperthyroidism',
             kind='healthstate',
             gbd_id=hsid(813),
+            disability_weight_exist=True,
         ),
     ),
     'mild_endocrine_metabolic_blood_and_immune_disorders': Sequela(
@@ -15877,6 +16934,7 @@ sequelae = Sequelae(**{
             name='hypothyroidism',
             kind='healthstate',
             gbd_id=hsid(812),
+            disability_weight_exist=True,
         ),
     ),
     'impotence_due_to_congenital_genital_anomalies': Sequela(
@@ -15892,6 +16950,7 @@ sequelae = Sequelae(**{
             name='impotence',
             kind='healthstate',
             gbd_id=hsid(399),
+            disability_weight_exist=True,
         ),
     ),
     'impotence_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
@@ -15907,6 +16966,7 @@ sequelae = Sequelae(**{
             name='impotence',
             kind='healthstate',
             gbd_id=hsid(399),
+            disability_weight_exist=True,
         ),
     ),
     'impotence_from_prostate_cancer_beyond_ten_years': Sequela(
@@ -15922,6 +16982,7 @@ sequelae = Sequelae(**{
             name='impotence',
             kind='healthstate',
             gbd_id=hsid(399),
+            disability_weight_exist=True,
         ),
     ),
     'impotence_due_to_prostate_cancer': Sequela(
@@ -15937,6 +16998,7 @@ sequelae = Sequelae(**{
             name='impotence_and_generic_medication',
             kind='healthstate',
             gbd_id=hsid(895),
+            disability_weight_exist=False,
         ),
     ),
     'controlled_phase_of_prostate_cancer_with_impotence': Sequela(
@@ -15952,6 +17014,7 @@ sequelae = Sequelae(**{
             name='impotence_and_generic_medication',
             kind='healthstate',
             gbd_id=hsid(895),
+            disability_weight_exist=False,
         ),
     ),
     'incontinence_due_to_prostate_cancer': Sequela(
@@ -15967,6 +17030,7 @@ sequelae = Sequelae(**{
             name='incontinence_and_generic_medication',
             kind='healthstate',
             gbd_id=hsid(896),
+            disability_weight_exist=False,
         ),
     ),
     'urinary_incontinence_due_to_bladder_cancer': Sequela(
@@ -15982,6 +17046,7 @@ sequelae = Sequelae(**{
             name='incontinence_and_generic_medication',
             kind='healthstate',
             gbd_id=hsid(896),
+            disability_weight_exist=False,
         ),
     ),
     'controlled_phase_of_prostate_cancer_with_incontinence': Sequela(
@@ -15997,6 +17062,7 @@ sequelae = Sequelae(**{
             name='incontinence_and_generic_medication',
             kind='healthstate',
             gbd_id=hsid(896),
+            disability_weight_exist=False,
         ),
     ),
     'controlled_phase_of_bladder_cancer_with_incontinence': Sequela(
@@ -16012,6 +17078,7 @@ sequelae = Sequelae(**{
             name='incontinence_and_generic_medication',
             kind='healthstate',
             gbd_id=hsid(896),
+            disability_weight_exist=False,
         ),
     ),
     'acute_paratyphoid_infection': Sequela(
@@ -16027,6 +17094,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_mild',
             kind='healthstate',
             gbd_id=hsid(351),
+            disability_weight_exist=True,
         ),
     ),
     'mild_upper_respiratory_infections': Sequela(
@@ -16042,6 +17110,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_mild',
             kind='healthstate',
             gbd_id=hsid(351),
+            disability_weight_exist=True,
         ),
     ),
     'chickenpox': Sequela(
@@ -16057,6 +17126,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_mild',
             kind='healthstate',
             gbd_id=hsid(351),
+            disability_weight_exist=True,
         ),
     ),
     'mild_malaria': Sequela(
@@ -16072,6 +17142,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_mild',
             kind='healthstate',
             gbd_id=hsid(351),
+            disability_weight_exist=True,
         ),
     ),
     'mild_schistosomiasis': Sequela(
@@ -16087,6 +17158,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_mild',
             kind='healthstate',
             gbd_id=hsid(351),
+            disability_weight_exist=True,
         ),
     ),
     'mild_urinary_tract_infections': Sequela(
@@ -16102,6 +17174,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_mild',
             kind='healthstate',
             gbd_id=hsid(351),
+            disability_weight_exist=True,
         ),
     ),
     'impetigo': Sequela(
@@ -16117,6 +17190,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_mild',
             kind='healthstate',
             gbd_id=hsid(351),
+            disability_weight_exist=True,
         ),
     ),
     'abscess_and_other_bacterial_skin_diseases': Sequela(
@@ -16132,6 +17206,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_mild',
             kind='healthstate',
             gbd_id=hsid(351),
+            disability_weight_exist=True,
         ),
     ),
     'tinea_capitis': Sequela(
@@ -16147,6 +17222,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_mild',
             kind='healthstate',
             gbd_id=hsid(351),
+            disability_weight_exist=True,
         ),
     ),
     'mild_viral_warts': Sequela(
@@ -16162,6 +17238,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_mild',
             kind='healthstate',
             gbd_id=hsid(351),
+            disability_weight_exist=True,
         ),
     ),
     'other_fungal_skin_diseases': Sequela(
@@ -16177,6 +17254,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_mild',
             kind='healthstate',
             gbd_id=hsid(351),
+            disability_weight_exist=True,
         ),
     ),
     'symptomatic_genital_herpes': Sequela(
@@ -16192,6 +17270,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_mild',
             kind='healthstate',
             gbd_id=hsid(351),
+            disability_weight_exist=True,
         ),
     ),
     'mild_molluscum_contagiosum': Sequela(
@@ -16207,6 +17286,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_mild',
             kind='healthstate',
             gbd_id=hsid(351),
+            disability_weight_exist=True,
         ),
     ),
     'mild_chlamydial_infection': Sequela(
@@ -16222,6 +17302,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_mild',
             kind='healthstate',
             gbd_id=hsid(351),
+            disability_weight_exist=True,
         ),
     ),
     'mild_gonococcal_infection': Sequela(
@@ -16237,6 +17318,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_mild',
             kind='healthstate',
             gbd_id=hsid(351),
+            disability_weight_exist=True,
         ),
     ),
     'acute_trichomoniasis_infection': Sequela(
@@ -16252,6 +17334,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_mild',
             kind='healthstate',
             gbd_id=hsid(351),
+            disability_weight_exist=True,
         ),
     ),
     'mild_cellulitis': Sequela(
@@ -16267,6 +17350,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_mild',
             kind='healthstate',
             gbd_id=hsid(351),
+            disability_weight_exist=True,
         ),
     ),
     'mild_other_oral_disorders': Sequela(
@@ -16282,6 +17366,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_mild',
             kind='healthstate',
             gbd_id=hsid(351),
+            disability_weight_exist=True,
         ),
     ),
     'mild_early_syphilis_infection': Sequela(
@@ -16297,6 +17382,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_mild',
             kind='healthstate',
             gbd_id=hsid(351),
+            disability_weight_exist=True,
         ),
     ),
     'mild_acute_sense_organ_diseases': Sequela(
@@ -16312,6 +17398,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_mild',
             kind='healthstate',
             gbd_id=hsid(351),
+            disability_weight_exist=True,
         ),
     ),
     'mild_malaria_with_mild_anemia': Sequela(
@@ -16327,6 +17414,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_mild_with_mild_anemia',
             kind='healthstate',
             gbd_id=hsid(2483),
+            disability_weight_exist=False,
         ),
     ),
     'mild_malaria_with_moderate_anemia': Sequela(
@@ -16342,6 +17430,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_mild_with_moderate_anemia',
             kind='healthstate',
             gbd_id=hsid(2486),
+            disability_weight_exist=False,
         ),
     ),
     'mild_malaria_with_severe_anemia': Sequela(
@@ -16357,6 +17446,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_mild_with_severe_anemia',
             kind='healthstate',
             gbd_id=hsid(2489),
+            disability_weight_exist=False,
         ),
     ),
     'acute_typhoid_infection': Sequela(
@@ -16372,6 +17462,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_paratyphoid_fever': Sequela(
@@ -16387,6 +17478,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_upper_respiratory_infections': Sequela(
@@ -16402,6 +17494,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_diphtheria': Sequela(
@@ -16417,6 +17510,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'whooping_cough': Sequela(
@@ -16432,6 +17526,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_measles': Sequela(
@@ -16447,6 +17542,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_malaria': Sequela(
@@ -16462,6 +17558,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'acute_chagas_disease': Sequela(
@@ -16477,6 +17574,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_visceral_leishmaniasis': Sequela(
@@ -16492,6 +17590,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_dengue': Sequela(
@@ -16507,6 +17606,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_yellow_fever': Sequela(
@@ -16522,6 +17622,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_acute_hepatitis_a': Sequela(
@@ -16537,6 +17638,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_acute_hepatitis_b': Sequela(
@@ -16552,6 +17654,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_acute_hepatitis_c': Sequela(
@@ -16567,6 +17670,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_acute_hepatitis_e': Sequela(
@@ -16582,6 +17686,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'acute_myocarditis': Sequela(
@@ -16597,6 +17702,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_endocarditis': Sequela(
@@ -16612,6 +17718,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'acute_glomerulonephritis': Sequela(
@@ -16627,6 +17734,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_urinary_tract_infections': Sequela(
@@ -16642,6 +17750,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_lower_respiratory_infections': Sequela(
@@ -16657,6 +17766,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'other_maternal_infections': Sequela(
@@ -16672,6 +17782,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_infection_due_to_initial_genital_herpes_episode': Sequela(
@@ -16687,6 +17798,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'severe_other_oral_disorders': Sequela(
@@ -16702,6 +17814,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_acute_sense_organ_diseases': Sequela(
@@ -16717,6 +17830,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'acute_zika_infection': Sequela(
@@ -16732,6 +17846,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_cellulitis': Sequela(
@@ -16747,6 +17862,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'acute_adenolymphangitis_due_to_lymphatic_filariasis': Sequela(
@@ -16762,6 +17878,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'cardiovascular_complications_due_to_adult_tertiary_syphilis': Sequela(
@@ -16777,6 +17894,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
             gbd_id=hsid(352),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_malaria_with_mild_anemia': Sequela(
@@ -16792,6 +17910,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate_with_mild_anemia',
             kind='healthstate',
             gbd_id=hsid(2492),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_malaria_with_moderate_anemia': Sequela(
@@ -16807,6 +17926,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate_with_moderate_anemia',
             kind='healthstate',
             gbd_id=hsid(2495),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_malaria_with_severe_anemia': Sequela(
@@ -16822,6 +17942,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_moderate_with_severe_anemia',
             kind='healthstate',
             gbd_id=hsid(2498),
+            disability_weight_exist=False,
         ),
     ),
     'severe_typhoid_fever': Sequela(
@@ -16837,6 +17958,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'severe_paratyphoid_fever': Sequela(
@@ -16852,6 +17974,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'acute_pneumococcal_meningitis': Sequela(
@@ -16867,6 +17990,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'acute_h_influenzae_type_b_meningitis': Sequela(
@@ -16882,6 +18006,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'acute_meningococcal_meningitis': Sequela(
@@ -16897,6 +18022,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'other_acute_bacterial_meningitis': Sequela(
@@ -16912,6 +18038,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'acute_viral_meningitis': Sequela(
@@ -16927,6 +18054,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'acute_encephalitis': Sequela(
@@ -16942,6 +18070,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'severe_diphtheria': Sequela(
@@ -16957,6 +18086,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'severe_tetanus': Sequela(
@@ -16972,6 +18102,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'severe_measles': Sequela(
@@ -16987,6 +18118,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'severe_malaria': Sequela(
@@ -17002,6 +18134,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'severe_visceral_leishmaniasis': Sequela(
@@ -17017,6 +18150,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'severe_dengue': Sequela(
@@ -17032,6 +18166,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'severe_yellow_fever': Sequela(
@@ -17047,6 +18182,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'rabies': Sequela(
@@ -17062,6 +18198,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'severe_infection_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
@@ -17077,6 +18214,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'severe_acute_hepatitis_a': Sequela(
@@ -17092,6 +18230,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'severe_acute_hepatitis_b': Sequela(
@@ -17107,6 +18246,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'severe_acute_hepatitis_c': Sequela(
@@ -17122,6 +18262,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'severe_acute_hepatitis_e': Sequela(
@@ -17137,6 +18278,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'severe_endocarditis': Sequela(
@@ -17152,6 +18294,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'severe_lower_respiratory_infections': Sequela(
@@ -17167,6 +18310,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'puerperal_sepsis': Sequela(
@@ -17182,6 +18326,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'severe_cellulitis': Sequela(
@@ -17197,6 +18342,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'ebola_cases': Sequela(
@@ -17212,6 +18358,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'severe_acute_ints': Sequela(
@@ -17227,6 +18374,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
             gbd_id=hsid(353),
+            disability_weight_exist=True,
         ),
     ),
     'acute_pancreatitis': Sequela(
@@ -17242,6 +18390,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe_and_abdominopelvic_problem_severe',
             kind='healthstate',
             gbd_id=hsid(2657),
+            disability_weight_exist=False,
         ),
     ),
     'severe_malaria_with_mild_anemia': Sequela(
@@ -17257,6 +18406,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe_with_mild_anemia',
             kind='healthstate',
             gbd_id=hsid(2474),
+            disability_weight_exist=False,
         ),
     ),
     'severe_malaria_with_moderate_anemia': Sequela(
@@ -17272,6 +18422,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe_with_moderate_anemia',
             kind='healthstate',
             gbd_id=hsid(2477),
+            disability_weight_exist=False,
         ),
     ),
     'severe_malaria_with_severe_anemia': Sequela(
@@ -17287,6 +18438,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe_with_severe_anemia',
             kind='healthstate',
             gbd_id=hsid(2480),
+            disability_weight_exist=False,
         ),
     ),
     'beta_thalassemia_major_severe_infection_with_severe_anemia': Sequela(
@@ -17302,6 +18454,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe;_generic_uncomplicated_disease_anxiety;_anemia_severe',
             kind='healthstate',
             gbd_id=hsid(856),
+            disability_weight_exist=True,
         ),
     ),
     'hemoglobin_e_beta_thalassemia_severe_infection_with_severe_anemia': Sequela(
@@ -17317,6 +18470,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe;_generic_uncomplicated_disease_anxiety;_anemia_severe',
             kind='healthstate',
             gbd_id=hsid(856),
+            disability_weight_exist=True,
         ),
     ),
     'hemoglobin_h_disease_severe_infection_with_severe_anemia': Sequela(
@@ -17332,6 +18486,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_acute_episode_severe;_generic_uncomplicated_disease_anxiety;_anemia_severe',
             kind='healthstate',
             gbd_id=hsid(856),
+            disability_weight_exist=True,
         ),
     ),
     'post_dengue_chronic_fatigue_syndrome': Sequela(
@@ -17347,6 +18502,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_post_acute_consequences_fatigue_emotional_lability_insomnia',
             kind='healthstate',
             gbd_id=hsid(354),
+            disability_weight_exist=True,
         ),
     ),
     'post_ebola_chronic_fatigue_syndrome': Sequela(
@@ -17362,6 +18518,7 @@ sequelae = Sequelae(**{
             name='infectious_disease_post_acute_consequences_fatigue_emotional_lability_insomnia',
             kind='healthstate',
             gbd_id=hsid(354),
+            disability_weight_exist=True,
         ),
     ),
     'primary_infertility_due_to_chlamydial_infection': Sequela(
@@ -17377,6 +18534,7 @@ sequelae = Sequelae(**{
             name='infertility_primary',
             kind='healthstate',
             gbd_id=hsid(400),
+            disability_weight_exist=True,
         ),
     ),
     'primary_infertility_due_to_gonococcal_infection': Sequela(
@@ -17392,6 +18550,7 @@ sequelae = Sequelae(**{
             name='infertility_primary',
             kind='healthstate',
             gbd_id=hsid(400),
+            disability_weight_exist=True,
         ),
     ),
     'primary_infertility_due_to_other_sexually_transmitted_diseases': Sequela(
@@ -17407,6 +18566,7 @@ sequelae = Sequelae(**{
             name='infertility_primary',
             kind='healthstate',
             gbd_id=hsid(400),
+            disability_weight_exist=True,
         ),
     ),
     'primary_infertility_due_to_polycystic_ovarian_syndrome': Sequela(
@@ -17422,6 +18582,7 @@ sequelae = Sequelae(**{
             name='infertility_primary',
             kind='healthstate',
             gbd_id=hsid(400),
+            disability_weight_exist=True,
         ),
     ),
     'primary_infertility_due_to_endometriosis': Sequela(
@@ -17437,6 +18598,7 @@ sequelae = Sequelae(**{
             name='infertility_primary',
             kind='healthstate',
             gbd_id=hsid(400),
+            disability_weight_exist=True,
         ),
     ),
     'primary_infertility_due_to_turner_syndrome': Sequela(
@@ -17452,6 +18614,7 @@ sequelae = Sequelae(**{
             name='infertility_primary',
             kind='healthstate',
             gbd_id=hsid(400),
+            disability_weight_exist=True,
         ),
     ),
     'primary_infertility_due_to_klinefelter_syndrome': Sequela(
@@ -17467,6 +18630,7 @@ sequelae = Sequelae(**{
             name='infertility_primary',
             kind='healthstate',
             gbd_id=hsid(400),
+            disability_weight_exist=True,
         ),
     ),
     'primary_infertility_due_to_congenital_genital_anomalies': Sequela(
@@ -17482,6 +18646,7 @@ sequelae = Sequelae(**{
             name='infertility_primary',
             kind='healthstate',
             gbd_id=hsid(400),
+            disability_weight_exist=True,
         ),
     ),
     'secondary_infertility_due_to_chlamydial_infection': Sequela(
@@ -17497,6 +18662,7 @@ sequelae = Sequelae(**{
             name='infertility_secondary',
             kind='healthstate',
             gbd_id=hsid(401),
+            disability_weight_exist=True,
         ),
     ),
     'secondary_infertility_due_to_gonococcal_infection': Sequela(
@@ -17512,6 +18678,7 @@ sequelae = Sequelae(**{
             name='infertility_secondary',
             kind='healthstate',
             gbd_id=hsid(401),
+            disability_weight_exist=True,
         ),
     ),
     'secondary_infertility_due_to_other_sexually_transmitted_diseases': Sequela(
@@ -17527,6 +18694,7 @@ sequelae = Sequelae(**{
             name='infertility_secondary',
             kind='healthstate',
             gbd_id=hsid(401),
+            disability_weight_exist=True,
         ),
     ),
     'secondary_infertility_due_to_endometriosis': Sequela(
@@ -17542,6 +18710,7 @@ sequelae = Sequelae(**{
             name='infertility_secondary',
             kind='healthstate',
             gbd_id=hsid(401),
+            disability_weight_exist=True,
         ),
     ),
     'infertility_due_to_puerperal_sepsis': Sequela(
@@ -17557,6 +18726,7 @@ sequelae = Sequelae(**{
             name='infertility_secondary',
             kind='healthstate',
             gbd_id=hsid(401),
+            disability_weight_exist=True,
         ),
     ),
     'hirsutism_and_secondary_infertility_due_to_polycystic_ovarian_syndrome': Sequela(
@@ -17572,6 +18742,7 @@ sequelae = Sequelae(**{
             name='infertility_secondary',
             kind='healthstate',
             gbd_id=hsid(401),
+            disability_weight_exist=True,
         ),
     ),
     'mild_intellectual_disability_due_to_pneumococcal_meningitis': Sequela(
@@ -17587,6 +18758,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_mild',
             kind='healthstate',
             gbd_id=hsid(451),
+            disability_weight_exist=True,
         ),
     ),
     'mild_intellectual_disability_due_to_h_influenzae_type_b_meningitis': Sequela(
@@ -17602,6 +18774,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_mild',
             kind='healthstate',
             gbd_id=hsid(451),
+            disability_weight_exist=True,
         ),
     ),
     'mild_intellectual_disability_due_to_meningococcal_meningitis': Sequela(
@@ -17617,6 +18790,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_mild',
             kind='healthstate',
             gbd_id=hsid(451),
+            disability_weight_exist=True,
         ),
     ),
     'mild_intellectual_disability_due_to_other_bacterial_meningitis': Sequela(
@@ -17632,6 +18806,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_mild',
             kind='healthstate',
             gbd_id=hsid(451),
+            disability_weight_exist=True,
         ),
     ),
     'mild_idiopathic_developmental_intellectual_disability': Sequela(
@@ -17647,6 +18822,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_mild',
             kind='healthstate',
             gbd_id=hsid(451),
+            disability_weight_exist=True,
         ),
     ),
     'mild_intellectual_disability_due_to_klinefelter_syndrome': Sequela(
@@ -17662,6 +18838,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_mild',
             kind='healthstate',
             gbd_id=hsid(451),
+            disability_weight_exist=True,
         ),
     ),
     'mild_intellectual_disability_due_to_encephalitis': Sequela(
@@ -17677,6 +18854,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_mild',
             kind='healthstate',
             gbd_id=hsid(451),
+            disability_weight_exist=True,
         ),
     ),
     'mild_intellectual_disability_due_to_down_syndrome': Sequela(
@@ -17692,6 +18870,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_mild',
             kind='healthstate',
             gbd_id=hsid(451),
+            disability_weight_exist=True,
         ),
     ),
     'mild_intellectual_disability_due_to_other_chromosomal_abnormalities': Sequela(
@@ -17707,6 +18886,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_mild',
             kind='healthstate',
             gbd_id=hsid(451),
+            disability_weight_exist=True,
         ),
     ),
     'developmental_delay_or_mild_intellectual_disability_due_to_congenital_diaphragmatic_hernia': Sequela(
@@ -17722,6 +18902,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_mild',
             kind='healthstate',
             gbd_id=hsid(451),
+            disability_weight_exist=True,
         ),
     ),
     'mild_intellectual_disability_due_to_encephalocele': Sequela(
@@ -17737,6 +18918,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_mild',
             kind='healthstate',
             gbd_id=hsid(451),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_idiopathic_developmental_intellectual_disability': Sequela(
@@ -17752,6 +18934,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_moderate',
             kind='healthstate',
             gbd_id=hsid(452),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_intellectual_disability_due_to_down_syndrome': Sequela(
@@ -17767,6 +18950,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_moderate',
             kind='healthstate',
             gbd_id=hsid(452),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_intellectual_disability_due_to_other_chromosomal_abnormalities': Sequela(
@@ -17782,6 +18966,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_moderate',
             kind='healthstate',
             gbd_id=hsid(452),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_intellectual_disability_due_to_encephalocele': Sequela(
@@ -17797,6 +18982,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_moderate',
             kind='healthstate',
             gbd_id=hsid(452),
+            disability_weight_exist=True,
         ),
     ),
     'profound_idiopathic_developmental_intellectual_disability': Sequela(
@@ -17812,6 +18998,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_profound',
             kind='healthstate',
             gbd_id=hsid(454),
+            disability_weight_exist=True,
         ),
     ),
     'profound_intellectual_disability_due_to_down_syndrome': Sequela(
@@ -17827,6 +19014,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_profound',
             kind='healthstate',
             gbd_id=hsid(454),
+            disability_weight_exist=True,
         ),
     ),
     'profound_intellectual_disability_due_to_other_chromosomal_abnormalities': Sequela(
@@ -17842,6 +19030,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_profound',
             kind='healthstate',
             gbd_id=hsid(454),
+            disability_weight_exist=True,
         ),
     ),
     'profound_intellectual_disability_due_to_encephalocele': Sequela(
@@ -17857,6 +19046,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_profound',
             kind='healthstate',
             gbd_id=hsid(454),
+            disability_weight_exist=True,
         ),
     ),
     'visible_goiter_with_profound_intellectual_disability_due_to_iodine_deficiency': Sequela(
@@ -17872,6 +19062,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_profound_and_iodine_deficiency_goiter',
             kind='healthstate',
             gbd_id=hsid(2579),
+            disability_weight_exist=False,
         ),
     ),
     'severe_idiopathic_developmental_intellectual_disability': Sequela(
@@ -17887,6 +19078,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_severe',
             kind='healthstate',
             gbd_id=hsid(453),
+            disability_weight_exist=True,
         ),
     ),
     'severe_intellectual_disability_due_to_down_syndrome': Sequela(
@@ -17902,6 +19094,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_severe',
             kind='healthstate',
             gbd_id=hsid(453),
+            disability_weight_exist=True,
         ),
     ),
     'severe_intellectual_disability_due_to_other_chromosomal_abnormalities': Sequela(
@@ -17917,6 +19110,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_severe',
             kind='healthstate',
             gbd_id=hsid(453),
+            disability_weight_exist=True,
         ),
     ),
     'severe_intellectual_disability_due_to_encephalocele': Sequela(
@@ -17932,6 +19126,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_severe',
             kind='healthstate',
             gbd_id=hsid(453),
+            disability_weight_exist=True,
         ),
     ),
     'visible_goiter_with_severe_intellectual_disability_due_to_iodine_deficiency': Sequela(
@@ -17947,6 +19142,7 @@ sequelae = Sequelae(**{
             name='intellectual_disability_mental_retardation_severe_and_iodine_deficiency_goiter',
             kind='healthstate',
             gbd_id=hsid(2582),
+            disability_weight_exist=False,
         ),
     ),
     'heavy_infestation_of_ascariasis': Sequela(
@@ -17962,6 +19158,7 @@ sequelae = Sequelae(**{
             name='intestinal_nematode_infections_symptomatic',
             kind='healthstate',
             gbd_id=hsid(363),
+            disability_weight_exist=True,
         ),
     ),
     'heavy_infestation_of_trichuriasis': Sequela(
@@ -17977,6 +19174,7 @@ sequelae = Sequelae(**{
             name='intestinal_nematode_infections_symptomatic',
             kind='healthstate',
             gbd_id=hsid(363),
+            disability_weight_exist=True,
         ),
     ),
     'heavy_infestation_of_hookworm': Sequela(
@@ -17992,6 +19190,7 @@ sequelae = Sequelae(**{
             name='intestinal_nematode_infections_symptomatic',
             kind='healthstate',
             gbd_id=hsid(363),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_wasting_with_edema': Sequela(
@@ -18007,6 +19206,7 @@ sequelae = Sequelae(**{
             name='kwashiorkor',
             kind='healthstate',
             gbd_id=hsid(562),
+            disability_weight_exist=True,
         ),
     ),
     'severe_wasting_with_edema': Sequela(
@@ -18022,6 +19222,7 @@ sequelae = Sequelae(**{
             name='kwashiorkor_and_severe_wasting',
             kind='healthstate',
             gbd_id=hsid(2438),
+            disability_weight_exist=False,
         ),
     ),
     'atypical_genitalia_and_impotence_due_to_congenital_genital_anomalies': Sequela(
@@ -18037,6 +19238,7 @@ sequelae = Sequelae(**{
             name='level_1_disfigurement_and_impotence',
             kind='healthstate',
             gbd_id=hsid(2273),
+            disability_weight_exist=False,
         ),
     ),
     'atypical_genitalia_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
@@ -18052,6 +19254,7 @@ sequelae = Sequelae(**{
             name='level_1_disfigurement_and_impotence',
             kind='healthstate',
             gbd_id=hsid(2273),
+            disability_weight_exist=False,
         ),
     ),
     'incontinence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
@@ -18067,6 +19270,7 @@ sequelae = Sequelae(**{
             name='level_1_disfigurement_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2351),
+            disability_weight_exist=False,
         ),
     ),
     'chronic_abdominal_pain_and_disfigurement_due_to_congenital_diaphragmatic_hernia': Sequela(
@@ -18082,6 +19286,7 @@ sequelae = Sequelae(**{
             name='level_1_disfigurement_with_itch_pain_and_mild_abdominopelvic_problem',
             kind='healthstate',
             gbd_id=hsid(2228),
+            disability_weight_exist=False,
         ),
     ),
     'disfigurement_and_mild_chronic_respiratory_problems_due_to_congenital_diaphragmatic_hernia': Sequela(
@@ -18097,6 +19302,7 @@ sequelae = Sequelae(**{
             name='level_1_disfigurement_with_itch_pain_and_mild_copd_and_other_chronic_respiratory_problems',
             kind='healthstate',
             gbd_id=hsid(2237),
+            disability_weight_exist=False,
         ),
     ),
     'disfigurement_and_developmental_delay_due_to_congenital_diaphragmatic_hernia': Sequela(
@@ -18112,6 +19318,7 @@ sequelae = Sequelae(**{
             name='level_1_disfigurement_with_itch_pain_and_mild_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(2240),
+            disability_weight_exist=False,
         ),
     ),
     'disfigurement_level_2_with_pain_and_mild_motor_impairment_due_to_congenital_limb_deficiency': Sequela(
@@ -18127,6 +19334,7 @@ sequelae = Sequelae(**{
             name='level_2_disfigurement_with_itch_pain_and_mild_motor_impairment',
             kind='healthstate',
             gbd_id=hsid(2222),
+            disability_weight_exist=False,
         ),
     ),
     'disfigurement_level_2_with_pain_and_mild_motor_impairment_due_to_other_congenital_musculoskeletal_anomalies': Sequela(
@@ -18142,6 +19350,7 @@ sequelae = Sequelae(**{
             name='level_2_disfigurement_with_itch_pain_and_mild_motor_impairment',
             kind='healthstate',
             gbd_id=hsid(2222),
+            disability_weight_exist=False,
         ),
     ),
     'disfigurement_level_2_with_pain_and_moderate_motor_impairment_due_to_congenital_limb_deficiency': Sequela(
@@ -18157,6 +19366,7 @@ sequelae = Sequelae(**{
             name='level_2_disfigurement_with_itch_pain_and_moderate_motor_impairment',
             kind='healthstate',
             gbd_id=hsid(2225),
+            disability_weight_exist=False,
         ),
     ),
     'disfigurement_level_2_with_pain_and_moderate_motor_impairment_due_to_other_congenital_musculoskeletal_anomalies': Sequela(
@@ -18172,6 +19382,7 @@ sequelae = Sequelae(**{
             name='level_2_disfigurement_with_itch_pain_and_moderate_motor_impairment',
             kind='healthstate',
             gbd_id=hsid(2225),
+            disability_weight_exist=False,
         ),
     ),
     'disfigurement_level_2_and_mild_motor_impairment_due_to_congenital_limb_deficiency': Sequela(
@@ -18187,6 +19398,7 @@ sequelae = Sequelae(**{
             name='level_2_disfigurement_with_mild_motor_impairment',
             kind='healthstate',
             gbd_id=hsid(2216),
+            disability_weight_exist=False,
         ),
     ),
     'disfigurement_level_2_and_mild_motor_impairment_due_to_other_congenital_musculoskeletal_anomalies': Sequela(
@@ -18202,6 +19414,7 @@ sequelae = Sequelae(**{
             name='level_2_disfigurement_with_mild_motor_impairment',
             kind='healthstate',
             gbd_id=hsid(2216),
+            disability_weight_exist=False,
         ),
     ),
     'disfigurement_level_2_and_moderate_motor_impairment_due_to_congenital_limb_deficiency': Sequela(
@@ -18217,6 +19430,7 @@ sequelae = Sequelae(**{
             name='level_2_disfigurement_with_moderate_motor_impairment',
             kind='healthstate',
             gbd_id=hsid(2219),
+            disability_weight_exist=False,
         ),
     ),
     'disfigurement_level_2_and_moderate_motor_impairment_due_to_other_congenital_musculoskeletal_anomalies': Sequela(
@@ -18232,6 +19446,7 @@ sequelae = Sequelae(**{
             name='level_2_disfigurement_with_moderate_motor_impairment',
             kind='healthstate',
             gbd_id=hsid(2219),
+            disability_weight_exist=False,
         ),
     ),
     'severe_disfigurement_and_cardiovascular_complications_due_to_adult_tertiary_syphilis': Sequela(
@@ -18247,6 +19462,7 @@ sequelae = Sequelae(**{
             name='level_3_disfigurement_and_moderate_infectious_disease_acute_episode',
             kind='healthstate',
             gbd_id=hsid(2444),
+            disability_weight_exist=False,
         ),
     ),
     'severe_disfigurement_and_neurological_problems_due_to_adult_tertiary_syphilis': Sequela(
@@ -18262,6 +19478,7 @@ sequelae = Sequelae(**{
             name='level_3_disfigurement_and_moderate_motor_plus_cognitive_impairments',
             kind='healthstate',
             gbd_id=hsid(2447),
+            disability_weight_exist=False,
         ),
     ),
     'severe_disfigurement_neurological_problems_and_cardiovascular_complications_due_to_adult_tertiary_syphilis': Sequela(
@@ -18277,6 +19494,7 @@ sequelae = Sequelae(**{
             name='level_3_disfigurement_moderate_motor_plus_cognitive_impairments_and_moderate_infectious_disease_acute_episode',
             kind='healthstate',
             gbd_id=hsid(2450),
+            disability_weight_exist=False,
         ),
     ),
     'mild_low_back_pain_without_leg_pain': Sequela(
@@ -18292,6 +19510,7 @@ sequelae = Sequelae(**{
             name='low_back_pain_mild',
             kind='healthstate',
             gbd_id=hsid(748),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_low_back_pain_without_leg_pain': Sequela(
@@ -18307,6 +19526,7 @@ sequelae = Sequelae(**{
             name='low_back_pain_moderate',
             kind='healthstate',
             gbd_id=hsid(749),
+            disability_weight_exist=True,
         ),
     ),
     'lymphedema_due_to_lymphatic_filariasis': Sequela(
@@ -18322,6 +19542,7 @@ sequelae = Sequelae(**{
             name='lymphatic_filariasis_symptomatic',
             kind='healthstate',
             gbd_id=hsid(364),
+            disability_weight_exist=True,
         ),
     ),
     'mild_major_depressive_disorder': Sequela(
@@ -18337,6 +19558,7 @@ sequelae = Sequelae(**{
             name='major_depressive_disorder_mild_episode',
             kind='healthstate',
             gbd_id=hsid(437),
+            disability_weight_exist=True,
         ),
     ),
     'depression_due_to_premenstrual_syndrome': Sequela(
@@ -18352,6 +19574,7 @@ sequelae = Sequelae(**{
             name='major_depressive_disorder_mild_episode',
             kind='healthstate',
             gbd_id=hsid(437),
+            disability_weight_exist=True,
         ),
     ),
     'symptomatic_dysthymia': Sequela(
@@ -18367,6 +19590,7 @@ sequelae = Sequelae(**{
             name='major_depressive_disorder_mild_episode',
             kind='healthstate',
             gbd_id=hsid(437),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_major_depressive_disorder': Sequela(
@@ -18382,6 +19606,7 @@ sequelae = Sequelae(**{
             name='major_depressive_disorder_moderate_episode',
             kind='healthstate',
             gbd_id=hsid(438),
+            disability_weight_exist=True,
         ),
     ),
     'bipolar_disorder_depressive_state': Sequela(
@@ -18397,6 +19622,7 @@ sequelae = Sequelae(**{
             name='major_depressive_disorder_moderate_episode',
             kind='healthstate',
             gbd_id=hsid(438),
+            disability_weight_exist=True,
         ),
     ),
     'severe_major_depressive_disorder': Sequela(
@@ -18412,6 +19638,7 @@ sequelae = Sequelae(**{
             name='major_depressive_disorder_severe_episode',
             kind='healthstate',
             gbd_id=hsid(439),
+            disability_weight_exist=True,
         ),
     ),
     'mastectomy_from_breast_cancer_beyond_ten_years': Sequela(
@@ -18427,6 +19654,7 @@ sequelae = Sequelae(**{
             name='mastectomy',
             kind='healthstate',
             gbd_id=hsid(370),
+            disability_weight_exist=True,
         ),
     ),
     'mastectomy_due_to_breast_cancer': Sequela(
@@ -18442,6 +19670,7 @@ sequelae = Sequelae(**{
             name='mastectomy_and_generic_medication',
             kind='healthstate',
             gbd_id=hsid(894),
+            disability_weight_exist=False,
         ),
     ),
     'controlled_phase_of_breast_cancer_with_mastectomy': Sequela(
@@ -18457,6 +19686,7 @@ sequelae = Sequelae(**{
             name='mastectomy_and_generic_medication',
             kind='healthstate',
             gbd_id=hsid(894),
+            disability_weight_exist=False,
         ),
     ),
     'abdominal_pain_and_depression_due_to_premenstrual_syndrome': Sequela(
@@ -18472,6 +19702,7 @@ sequelae = Sequelae(**{
             name='mild_abdominal_pain_and_mild_depression',
             kind='healthstate',
             gbd_id=hsid(808),
+            disability_weight_exist=True,
         ),
     ),
     'mild_abdominal_pain_and_primary_infertility_due_to_endometriosis': Sequela(
@@ -18487,6 +19718,7 @@ sequelae = Sequelae(**{
             name='mild_abdominal_pain_and_primary_infertility',
             kind='healthstate',
             gbd_id=hsid(801),
+            disability_weight_exist=True,
         ),
     ),
     'primary_infertility_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_genital_anomalies': Sequela(
@@ -18502,6 +19734,7 @@ sequelae = Sequelae(**{
             name='mild_abdominal_pain_and_primary_infertility',
             kind='healthstate',
             gbd_id=hsid(801),
+            disability_weight_exist=True,
         ),
     ),
     'mild_abdominal_pain_and_secondary_infertility_due_to_endometriosis': Sequela(
@@ -18517,6 +19750,7 @@ sequelae = Sequelae(**{
             name='mild_abdominal_pain_and_secondary_infertility',
             kind='healthstate',
             gbd_id=hsid(804),
+            disability_weight_exist=True,
         ),
     ),
     'abdominal_pain_and_stress_incontinence_due_to_genital_prolapse': Sequela(
@@ -18532,6 +19766,7 @@ sequelae = Sequelae(**{
             name='mild_abdominal_pain_and_stress_incontinence',
             kind='healthstate',
             gbd_id=hsid(807),
+            disability_weight_exist=True,
         ),
     ),
     'mild_abdominal_pain_due_to_uterine_fibroids_with_mild_anemia': Sequela(
@@ -18547,6 +19782,7 @@ sequelae = Sequelae(**{
             name='mild_abdominal_pain_with_mild_anemia',
             kind='healthstate',
             gbd_id=hsid(865),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_peptic_ulcer_disease_mild_with_mild_anemia': Sequela(
@@ -18562,6 +19798,7 @@ sequelae = Sequelae(**{
             name='mild_abdominal_pain_with_mild_anemia',
             kind='healthstate',
             gbd_id=hsid(865),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_mild_gastritis_and_duodenitis_with_mild_anemia': Sequela(
@@ -18577,6 +19814,7 @@ sequelae = Sequelae(**{
             name='mild_abdominal_pain_with_mild_anemia',
             kind='healthstate',
             gbd_id=hsid(865),
+            disability_weight_exist=True,
         ),
     ),
     'mild_abdominal_pain_due_to_uterine_fibroids_with_moderate_anemia': Sequela(
@@ -18592,6 +19830,7 @@ sequelae = Sequelae(**{
             name='mild_abdominal_pain_with_moderate_anemia',
             kind='healthstate',
             gbd_id=hsid(866),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_peptic_ulcer_disease_mild_with_moderate_anemia': Sequela(
@@ -18607,6 +19846,7 @@ sequelae = Sequelae(**{
             name='mild_abdominal_pain_with_moderate_anemia',
             kind='healthstate',
             gbd_id=hsid(866),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_mild_gastritis_and_duodenitis_with_moderate_anemia': Sequela(
@@ -18622,6 +19862,7 @@ sequelae = Sequelae(**{
             name='mild_abdominal_pain_with_moderate_anemia',
             kind='healthstate',
             gbd_id=hsid(866),
+            disability_weight_exist=True,
         ),
     ),
     'mild_abdominal_pain_due_to_uterine_fibroids_with_severe_anemia': Sequela(
@@ -18637,6 +19878,7 @@ sequelae = Sequelae(**{
             name='mild_abdominal_pain_with_severe_anemia',
             kind='healthstate',
             gbd_id=hsid(867),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_peptic_ulcer_disease_mild_with_severe_anemia': Sequela(
@@ -18652,6 +19894,7 @@ sequelae = Sequelae(**{
             name='mild_abdominal_pain_with_severe_anemia',
             kind='healthstate',
             gbd_id=hsid(867),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_mild_gastritis_and_duodenitis_with_severe_anemia': Sequela(
@@ -18667,6 +19910,7 @@ sequelae = Sequelae(**{
             name='mild_abdominal_pain_with_severe_anemia',
             kind='healthstate',
             gbd_id=hsid(867),
+            disability_weight_exist=True,
         ),
     ),
     'impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_genital_anomalies': Sequela(
@@ -18682,6 +19926,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_and_impotence',
             kind='healthstate',
             gbd_id=hsid(2264),
+            disability_weight_exist=False,
         ),
     ),
     'impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
@@ -18697,6 +19942,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_and_impotence',
             kind='healthstate',
             gbd_id=hsid(2264),
+            disability_weight_exist=False,
         ),
     ),
     'constipation_and_concern_about_scars_due_to_congenital_malformations_of_the_abdominal_wall': Sequela(
@@ -18712,6 +19958,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_and_level_1_disfigurement',
             kind='healthstate',
             gbd_id=hsid(2282),
+            disability_weight_exist=False,
         ),
     ),
     'atypical_genital_and_recurrent_urinary_tract_infections_and_other_abdominal_issues_due_to_congenital_genital_anomalies': Sequela(
@@ -18727,6 +19974,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_and_level_1_disfigurement',
             kind='healthstate',
             gbd_id=hsid(2282),
+            disability_weight_exist=False,
         ),
     ),
     'atypical_genital_and_recurrent_urinary_tract_infections_and_other_abdominal_issues_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
@@ -18742,6 +19990,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_and_level_1_disfigurement',
             kind='healthstate',
             gbd_id=hsid(2282),
+            disability_weight_exist=False,
         ),
     ),
     'atypical_genitalia_and_incontinence_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
@@ -18757,6 +20006,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_and_level_1_disfigurement',
             kind='healthstate',
             gbd_id=hsid(2282),
+            disability_weight_exist=False,
         ),
     ),
     'chronic_abdominal_pain_and_mild_chronic_respiratory_problems_due_to_congenital_diaphragmatic_hernia': Sequela(
@@ -18772,6 +20022,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_and_mild_copd_and_other_chronic_respiratory_problems',
             kind='healthstate',
             gbd_id=hsid(2231),
+            disability_weight_exist=False,
         ),
     ),
     'chronic_respiratory_problems_and_dysphagia_or_acid_reflux_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract': Sequela(
@@ -18787,6 +20038,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_and_mild_copd_and_other_chronic_respiratory_problems',
             kind='healthstate',
             gbd_id=hsid(2231),
+            disability_weight_exist=False,
         ),
     ),
     'chronic_respiratory_problems_and_abdominal_pain_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract': Sequela(
@@ -18802,6 +20054,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_and_mild_copd_and_other_chronic_respiratory_problems',
             kind='healthstate',
             gbd_id=hsid(2231),
+            disability_weight_exist=False,
         ),
     ),
     'chronic_abdominal_pain_and_developmental_delay_due_to_congenital_diaphragmatic_hernia': Sequela(
@@ -18817,6 +20070,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_and_mild_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(2234),
+            disability_weight_exist=False,
         ),
     ),
     'dysphagia_or_acid_reflux_and_chronic_abdominal_pain_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract': Sequela(
@@ -18832,6 +20086,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_and_moderate_abdominopelvic_problem',
             kind='healthstate',
             gbd_id=hsid(2291),
+            disability_weight_exist=False,
         ),
     ),
     'constipation_and_chronic_abdominal_pain_due_to_congenital_malformations_of_the_abdominal_wall': Sequela(
@@ -18847,6 +20102,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_and_moderate_abdominopelvic_problem',
             kind='healthstate',
             gbd_id=hsid(2291),
+            disability_weight_exist=False,
         ),
     ),
     'chronic_abdominal_pain_and_or_nausea_with_acid_reflux_dyspahgia_and_or_constipation_due_to_other_congenital_malformations_of_the_digestive_tract': Sequela(
@@ -18862,6 +20118,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_and_moderate_abdominopelvic_problem',
             kind='healthstate',
             gbd_id=hsid(2291),
+            disability_weight_exist=False,
         ),
     ),
     'chronic_abdominal_pain_disfigurement_and_chronic_respiratory_problems_due_to_congenital_diaphragmatic_hernia': Sequela(
@@ -18877,6 +20134,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_mild_copd_and_other_chronic_respiratory_problems_and_level_1_disfigurement_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(2246),
+            disability_weight_exist=False,
         ),
     ),
     'chronic_abdominal_pain_chronic_respiratory_problems_and_developmental_delay_due_to_congenital_diaphragmatic_hernia': Sequela(
@@ -18892,6 +20150,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_mild_copd_and_other_chronic_respiratory_problems_and_level_1_disfigurement_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(2246),
+            disability_weight_exist=False,
         ),
     ),
     'infertility_impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_genital_anomalies': Sequela(
@@ -18907,6 +20166,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_primary_infertility_and_impotence',
             kind='healthstate',
             gbd_id=hsid(2261),
+            disability_weight_exist=False,
         ),
     ),
     'atypical_genitalia_infertility_impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_genital_anomalies': Sequela(
@@ -18922,6 +20182,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_primary_infertility_impotence_and_level_1_disfigurement',
             kind='healthstate',
             gbd_id=hsid(2258),
+            disability_weight_exist=False,
         ),
     ),
     'atypical_genitalia_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_genital_anomalies': Sequela(
@@ -18937,6 +20198,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_level_1_disfigurement_and_impotence',
             kind='healthstate',
             gbd_id=hsid(2276),
+            disability_weight_exist=False,
         ),
     ),
     'atypical_genitalia_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
@@ -18952,6 +20214,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_level_1_disfigurement_and_impotence',
             kind='healthstate',
             gbd_id=hsid(2276),
+            disability_weight_exist=False,
         ),
     ),
     'atypical_genitalia_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_infertility_due_to_congenital_genital_anomalies': Sequela(
@@ -18967,6 +20230,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_level_1_disfigurement_and_primary_infertility',
             kind='healthstate',
             gbd_id=hsid(2270),
+            disability_weight_exist=False,
         ),
     ),
     'atypical_genitalia_infertility_and_impotence_due_to_congenital_genital_anomalies': Sequela(
@@ -18982,6 +20246,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_level_1_disfigurement_and_primary_infertility',
             kind='healthstate',
             gbd_id=hsid(2270),
+            disability_weight_exist=False,
         ),
     ),
     'chronic_abdominal_pain_disfigurement_developmental_delay_and_chronic_respiratory_problems_due_to_congenital_diaphragmatic_hernia': Sequela(
@@ -18997,6 +20262,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_mild_copd_and_other_chronic_respiratory_problems_mild_intellectual_disability_and_level_1_disfigurement_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(2255),
+            disability_weight_exist=False,
         ),
     ),
     'chronic_abdominal_pain_disfigurement_and_developmental_delay_due_to_congenital_diaphragmatic_hernia': Sequela(
@@ -19012,6 +20278,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_mild_intellectual_disability_and_level_1_disfigurement_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(2249),
+            disability_weight_exist=False,
         ),
     ),
     'constipation_chronic_abdominal_pain_and_concern_about_scars_due_to_congenital_malformations_of_the_abdominal_wall': Sequela(
@@ -19027,6 +20294,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_moderate_abdominopelvic_problem_and_level_1_disfigurement',
             kind='healthstate',
             gbd_id=hsid(2285),
+            disability_weight_exist=False,
         ),
     ),
     'dysphagia_or_acid_reflux_chronic_abdominal_pain_and_chronic_respiratory_problems_due_to_congenital_atresia_and_or_stenosis_of_the_digestive_tract': Sequela(
@@ -19042,6 +20310,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_moderate_abdominopelvic_problem_and_mild_copd_and_other_chronic_respiratory_problems',
             kind='healthstate',
             gbd_id=hsid(2288),
+            disability_weight_exist=False,
         ),
     ),
     'incontinence_impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
@@ -19057,6 +20326,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_urinary_incontinence_and_impotence',
             kind='healthstate',
             gbd_id=hsid(2360),
+            disability_weight_exist=False,
         ),
     ),
     'atypical_genitalia_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_incontinence_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
@@ -19072,6 +20342,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_urinary_incontinence_and_level_1_disfigurement',
             kind='healthstate',
             gbd_id=hsid(2357),
+            disability_weight_exist=False,
         ),
     ),
     'atypical_genitalia_incontinence_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
@@ -19087,6 +20358,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_urinary_incontinence_and_level_1_disfigurement',
             kind='healthstate',
             gbd_id=hsid(2357),
+            disability_weight_exist=False,
         ),
     ),
     'atypical_genitalia_incontinence_impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
@@ -19102,6 +20374,7 @@ sequelae = Sequelae(**{
             name='mild_abdominopelvic_problem_urinary_incontinence_impotence_and_level_1_disfigurement',
             kind='healthstate',
             gbd_id=hsid(2363),
+            disability_weight_exist=False,
         ),
     ),
     'stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_hypertension': Sequela(
@@ -19117,6 +20390,7 @@ sequelae = Sequelae(**{
             name='mild_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(2456),
+            disability_weight_exist=False,
         ),
     ),
     'stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_glomerulonephritis': Sequela(
@@ -19132,6 +20406,7 @@ sequelae = Sequelae(**{
             name='mild_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(2456),
+            disability_weight_exist=False,
         ),
     ),
     'stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_causes': Sequela(
@@ -19147,6 +20422,7 @@ sequelae = Sequelae(**{
             name='mild_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(2456),
+            disability_weight_exist=False,
         ),
     ),
     'stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_1_diabetes_mellitus': Sequela(
@@ -19162,6 +20438,7 @@ sequelae = Sequelae(**{
             name='mild_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(2456),
+            disability_weight_exist=False,
         ),
     ),
     'stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_2_diabetes_mellitus': Sequela(
@@ -19177,6 +20454,7 @@ sequelae = Sequelae(**{
             name='mild_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(2456),
+            disability_weight_exist=False,
         ),
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_hypertension': Sequela(
@@ -19192,6 +20470,7 @@ sequelae = Sequelae(**{
             name='mild_anemia_with_stage_iv_ckd',
             kind='healthstate',
             gbd_id=hsid(835),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_glomerulonephritis': Sequela(
@@ -19207,6 +20486,7 @@ sequelae = Sequelae(**{
             name='mild_anemia_with_stage_iv_ckd',
             kind='healthstate',
             gbd_id=hsid(835),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_causes': Sequela(
@@ -19222,6 +20502,7 @@ sequelae = Sequelae(**{
             name='mild_anemia_with_stage_iv_ckd',
             kind='healthstate',
             gbd_id=hsid(835),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_1_diabetes_mellitus': Sequela(
@@ -19237,6 +20518,7 @@ sequelae = Sequelae(**{
             name='mild_anemia_with_stage_iv_ckd',
             kind='healthstate',
             gbd_id=hsid(835),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_2_diabetes_mellitus': Sequela(
@@ -19252,6 +20534,7 @@ sequelae = Sequelae(**{
             name='mild_anemia_with_stage_iv_ckd',
             kind='healthstate',
             gbd_id=hsid(835),
+            disability_weight_exist=True,
         ),
     ),
     'disfigurement_chronic_respiratory_problems_and_developmental_delay_due_to_congenital_diaphragmatic_hernia': Sequela(
@@ -19267,6 +20550,7 @@ sequelae = Sequelae(**{
             name='mild_copd_and_other_chronic_respiratory_problems_mild_intellectual_disability_and_level_1_disfigurement_with_itch_pain',
             kind='healthstate',
             gbd_id=hsid(2252),
+            disability_weight_exist=False,
         ),
     ),
     'borderline_intellectual_disability_and_mild_dementia_due_to_down_syndrome': Sequela(
@@ -19282,6 +20566,7 @@ sequelae = Sequelae(**{
             name='mild_dementia_borderline_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(929),
+            disability_weight_exist=False,
         ),
     ),
     'borderline_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities': Sequela(
@@ -19297,6 +20582,7 @@ sequelae = Sequelae(**{
             name='mild_dementia_borderline_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(929),
+            disability_weight_exist=False,
         ),
     ),
     'mild_intellectual_disability_and_mild_dementia_due_to_down_syndrome': Sequela(
@@ -19312,6 +20598,7 @@ sequelae = Sequelae(**{
             name='mild_dementia_mild_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(930),
+            disability_weight_exist=False,
         ),
     ),
     'mild_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities': Sequela(
@@ -19327,6 +20614,7 @@ sequelae = Sequelae(**{
             name='mild_dementia_mild_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(930),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_intellectual_disability_and_mild_dementia_due_to_down_syndrome': Sequela(
@@ -19342,6 +20630,7 @@ sequelae = Sequelae(**{
             name='mild_dementia_moderate_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(931),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities': Sequela(
@@ -19357,6 +20646,7 @@ sequelae = Sequelae(**{
             name='mild_dementia_moderate_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(931),
+            disability_weight_exist=False,
         ),
     ),
     'profound_intellectual_disability_and_mild_dementia_due_to_down_syndrome': Sequela(
@@ -19372,6 +20662,7 @@ sequelae = Sequelae(**{
             name='mild_dementia_profound_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(933),
+            disability_weight_exist=False,
         ),
     ),
     'profound_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities': Sequela(
@@ -19387,6 +20678,7 @@ sequelae = Sequelae(**{
             name='mild_dementia_profound_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(933),
+            disability_weight_exist=False,
         ),
     ),
     'severe_intellectual_disability_and_mild_dementia_due_to_down_syndrome': Sequela(
@@ -19402,6 +20694,7 @@ sequelae = Sequelae(**{
             name='mild_dementia_severe_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(932),
+            disability_weight_exist=False,
         ),
     ),
     'severe_intellectual_disability_and_mild_dementia_due_to_other_chromosomal_abnormalities': Sequela(
@@ -19417,6 +20710,7 @@ sequelae = Sequelae(**{
             name='mild_dementia_severe_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(932),
+            disability_weight_exist=False,
         ),
     ),
     '_mild_chronic_respiratory_problems_and_developmental_delay_due_to_congenital_diaphragmatic_hernia': Sequela(
@@ -19432,6 +20726,7 @@ sequelae = Sequelae(**{
             name='mild_intellectual_disability_and_mild_copd_and_other_chronic_respiratory_problem',
             kind='healthstate',
             gbd_id=hsid(2243),
+            disability_weight_exist=False,
         ),
     ),
     'mild_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
@@ -19447,6 +20742,7 @@ sequelae = Sequelae(**{
             name='mild_intellectual_disability_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2372),
+            disability_weight_exist=False,
         ),
     ),
     'mild_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome': Sequela(
@@ -19462,6 +20758,7 @@ sequelae = Sequelae(**{
             name='mild_intellectual_disability_with_congenital_heart_disease',
             kind='healthstate',
             gbd_id=hsid(898),
+            disability_weight_exist=False,
         ),
     ),
     'mild_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
@@ -19477,6 +20774,7 @@ sequelae = Sequelae(**{
             name='mild_intellectual_disability_with_congenital_heart_disease',
             kind='healthstate',
             gbd_id=hsid(898),
+            disability_weight_exist=False,
         ),
     ),
     'mild_intellectual_disability_with_infertility_due_to_klinefelter_syndrome': Sequela(
@@ -19492,6 +20790,7 @@ sequelae = Sequelae(**{
             name='mild_intellectual_disability_with_primary_infertility',
             kind='healthstate',
             gbd_id=hsid(774),
+            disability_weight_exist=True,
         ),
     ),
     'mild_low_back_pain_with_leg_pain': Sequela(
@@ -19507,6 +20806,7 @@ sequelae = Sequelae(**{
             name='mild_low_back_pain_with_leg_pain',
             kind='healthstate',
             gbd_id=hsid(764),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_impairment_and_borderline_intellectual_disability_due_to_spina_bifida': Sequela(
@@ -19522,6 +20822,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_and_borderline_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(2384),
+            disability_weight_exist=False,
         ),
     ),
     'mild_motor_impairment_and_borderline_intellectual_disability_due_to_encephalocele': Sequela(
@@ -19537,6 +20838,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_and_borderline_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(2384),
+            disability_weight_exist=False,
         ),
     ),
     'mild_motor_impairment_and_mild_respiratory_problems_due_to_motor_neuron_disease': Sequela(
@@ -19552,6 +20854,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_and_mild_respiratory_problems',
             kind='healthstate',
             gbd_id=hsid(877),
+            disability_weight_exist=False,
         ),
     ),
     'mild_motor_impairment_and_moderate_intellectual_disability_due_to_spina_bifida': Sequela(
@@ -19567,6 +20870,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_and_moderate_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(2396),
+            disability_weight_exist=False,
         ),
     ),
     'mild_motor_impairment_and_moderate_intellectual_disability_due_to_encephalocele': Sequela(
@@ -19582,6 +20886,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_and_moderate_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(2396),
+            disability_weight_exist=False,
         ),
     ),
     'mild_motor_impairment_and_severe_intellectual_disability_due_to_spina_bifida': Sequela(
@@ -19597,6 +20902,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_and_severe_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(2399),
+            disability_weight_exist=False,
         ),
     ),
     'mild_motor_impairment_and_severe_intellectual_disability_due_to_encephalocele': Sequela(
@@ -19612,6 +20918,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_and_severe_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(2399),
+            disability_weight_exist=False,
         ),
     ),
     'mild_motor_impairment_and_severe_respiratory_problems_due_to_motor_neuron_disease': Sequela(
@@ -19627,6 +20934,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_and_severe_respiratory_problems',
             kind='healthstate',
             gbd_id=hsid(879),
+            disability_weight_exist=False,
         ),
     ),
     'mild_motor_impairment_and_speech_problems_due_to_motor_neuron_disease': Sequela(
@@ -19642,6 +20950,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_and_speech_problems',
             kind='healthstate',
             gbd_id=hsid(886),
+            disability_weight_exist=False,
         ),
     ),
     'mild_motor_impairment_and_incontinence_due_to_spina_bifida': Sequela(
@@ -19657,6 +20966,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2432),
+            disability_weight_exist=False,
         ),
     ),
     'mild_motor_impairment_and_incontinence_due_to_encephalocele': Sequela(
@@ -19672,6 +20982,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2432),
+            disability_weight_exist=False,
         ),
     ),
     'mild_motor_impairment_mild_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease': Sequela(
@@ -19687,6 +20998,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_with_mild_respiratory_problems_and_speech_problems',
             kind='healthstate',
             gbd_id=hsid(868),
+            disability_weight_exist=False,
         ),
     ),
     'mild_motor_impairment_moderate_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease': Sequela(
@@ -19702,6 +21014,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_with_moderate_respiratory_problems_and_speech_problems',
             kind='healthstate',
             gbd_id=hsid(869),
+            disability_weight_exist=False,
         ),
     ),
     'mild_motor_impairment_and_profound_intellectual_disability_due_to_spina_bifida': Sequela(
@@ -19717,6 +21030,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_with_profound_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(2597),
+            disability_weight_exist=False,
         ),
     ),
     'mild_motor_impairment_severe_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease': Sequela(
@@ -19732,6 +21046,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_with_severe_respiratory_problems_and_speech_problems',
             kind='healthstate',
             gbd_id=hsid(870),
+            disability_weight_exist=False,
         ),
     ),
     'mild_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
@@ -19747,6 +21062,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_borderline_intellectual_functioning_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2405),
+            disability_weight_exist=False,
         ),
     ),
     'mild_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
@@ -19762,6 +21078,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_borderline_intellectual_functioning_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2405),
+            disability_weight_exist=False,
         ),
     ),
     'mild_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
@@ -19777,6 +21094,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_mild_intellectual_functioning_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2414),
+            disability_weight_exist=False,
         ),
     ),
     'mild_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
@@ -19792,6 +21110,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_mild_intellectual_functioning_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2414),
+            disability_weight_exist=False,
         ),
     ),
     'mild_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
@@ -19807,6 +21126,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_moderate_intellectual_functioning_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2420),
+            disability_weight_exist=False,
         ),
     ),
     'mild_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
@@ -19822,6 +21142,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_moderate_intellectual_functioning_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2420),
+            disability_weight_exist=False,
         ),
     ),
     'mild_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
@@ -19837,6 +21158,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_profound_intellectual_functioning_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2453),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
@@ -19852,6 +21174,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_profound_intellectual_functioning_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2453),
+            disability_weight_exist=False,
         ),
     ),
     'mild_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
@@ -19867,6 +21190,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_servere_intellectual_functioning_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2426),
+            disability_weight_exist=False,
         ),
     ),
     'mild_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
@@ -19882,6 +21206,7 @@ sequelae = Sequelae(**{
             name='mild_motor_impairment_servere_intellectual_functioning_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2426),
+            disability_weight_exist=False,
         ),
     ),
     'mild_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease': Sequela(
@@ -19897,6 +21222,7 @@ sequelae = Sequelae(**{
             name='mild_respiratory_and_speech_problems',
             kind='healthstate',
             gbd_id=hsid(889),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_abdominal_pain_and_primary_infertility_due_to_endometriosis': Sequela(
@@ -19912,6 +21238,7 @@ sequelae = Sequelae(**{
             name='moderate_abdominal_pain_and_primary_infertility',
             kind='healthstate',
             gbd_id=hsid(802),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_abdominal_pain_and_secondary_infertility_due_to_endometriosis': Sequela(
@@ -19927,6 +21254,7 @@ sequelae = Sequelae(**{
             name='moderate_abdominal_pain_and_secondary_infertility',
             kind='healthstate',
             gbd_id=hsid(805),
+            disability_weight_exist=True,
         ),
     ),
     'eclampsia': Sequela(
@@ -19942,6 +21270,7 @@ sequelae = Sequelae(**{
             name='moderate_abdominal_pain_and_severe_epilepsy',
             kind='healthstate',
             gbd_id=hsid(826),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_peptic_ulcer_disease_moderate_with_mild_anemia': Sequela(
@@ -19957,6 +21286,7 @@ sequelae = Sequelae(**{
             name='moderate_abdominal_pain_with_mild_anemia',
             kind='healthstate',
             gbd_id=hsid(2465),
+            disability_weight_exist=False,
         ),
     ),
     'chronic_moderate_gastritis_and_duodenitis_with_mild_anemia': Sequela(
@@ -19972,6 +21302,7 @@ sequelae = Sequelae(**{
             name='moderate_abdominal_pain_with_mild_anemia',
             kind='healthstate',
             gbd_id=hsid(2465),
+            disability_weight_exist=False,
         ),
     ),
     'chronic_peptic_ulcer_disease_moderate_with_moderate_anemia': Sequela(
@@ -19987,6 +21318,7 @@ sequelae = Sequelae(**{
             name='moderate_abdominal_pain_with_moderate_anemia',
             kind='healthstate',
             gbd_id=hsid(2468),
+            disability_weight_exist=False,
         ),
     ),
     'chronic_moderate_gastritis_and_duodenitis_with_moderate_anemia': Sequela(
@@ -20002,6 +21334,7 @@ sequelae = Sequelae(**{
             name='moderate_abdominal_pain_with_moderate_anemia',
             kind='healthstate',
             gbd_id=hsid(2468),
+            disability_weight_exist=False,
         ),
     ),
     'chronic_peptic_ulcer_disease_moderate_with_severe_anemia': Sequela(
@@ -20017,6 +21350,7 @@ sequelae = Sequelae(**{
             name='moderate_abdominal_pain_with_severe_anemia',
             kind='healthstate',
             gbd_id=hsid(2471),
+            disability_weight_exist=False,
         ),
     ),
     'chronic_moderate_gastritis_and_duodenitis_with_severe_anemia': Sequela(
@@ -20032,6 +21366,7 @@ sequelae = Sequelae(**{
             name='moderate_abdominal_pain_with_severe_anemia',
             kind='healthstate',
             gbd_id=hsid(2471),
+            disability_weight_exist=False,
         ),
     ),
     'severe_pre_eclampsia': Sequela(
@@ -20047,6 +21382,7 @@ sequelae = Sequelae(**{
             name='moderate_abdominal_pain_tension_type_headaches_mild_motor_plus_cognitive_impairment',
             kind='healthstate',
             gbd_id=hsid(824),
+            disability_weight_exist=True,
         ),
     ),
     'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_severe_anemia': Sequela(
@@ -20062,6 +21398,7 @@ sequelae = Sequelae(**{
             name='moderate_abdominal_pain;_anemia_severe;_generic_uncomplicated_disease_anxiety',
             kind='healthstate',
             gbd_id=hsid(857),
+            disability_weight_exist=True,
         ),
     ),
     'hemoglobin_sc_disease_with_vaso_occlusive_crisis_and_severe_anemia': Sequela(
@@ -20077,6 +21414,7 @@ sequelae = Sequelae(**{
             name='moderate_abdominal_pain;_anemia_severe;_generic_uncomplicated_disease_anxiety',
             kind='healthstate',
             gbd_id=hsid(857),
+            disability_weight_exist=True,
         ),
     ),
     'mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_severe_anemia': Sequela(
@@ -20092,6 +21430,7 @@ sequelae = Sequelae(**{
             name='moderate_abdominal_pain;_anemia_severe;_generic_uncomplicated_disease_anxiety',
             kind='healthstate',
             gbd_id=hsid(857),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_abdominal_pain_and_concern_about_scars_due_to_congenital_malformations_of_the_abdominal_wall': Sequela(
@@ -20107,6 +21446,7 @@ sequelae = Sequelae(**{
             name='moderate_abdominopelvic_problem_and_level_1_disfigurement',
             kind='healthstate',
             gbd_id=hsid(2267),
+            disability_weight_exist=False,
         ),
     ),
     'stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_hypertension': Sequela(
@@ -20122,6 +21462,7 @@ sequelae = Sequelae(**{
             name='moderate_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(2459),
+            disability_weight_exist=False,
         ),
     ),
     'stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_glomerulonephritis': Sequela(
@@ -20137,6 +21478,7 @@ sequelae = Sequelae(**{
             name='moderate_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(2459),
+            disability_weight_exist=False,
         ),
     ),
     'stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_causes': Sequela(
@@ -20152,6 +21494,7 @@ sequelae = Sequelae(**{
             name='moderate_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(2459),
+            disability_weight_exist=False,
         ),
     ),
     'stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_type_1_diabetes_mellitus': Sequela(
@@ -20167,6 +21510,7 @@ sequelae = Sequelae(**{
             name='moderate_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(2459),
+            disability_weight_exist=False,
         ),
     ),
     'stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_type_2_diabetes_mellitus': Sequela(
@@ -20182,6 +21526,7 @@ sequelae = Sequelae(**{
             name='moderate_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(2459),
+            disability_weight_exist=False,
         ),
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_hypertension': Sequela(
@@ -20197,6 +21542,7 @@ sequelae = Sequelae(**{
             name='moderate_anemia_with_stage_iv_ckd',
             kind='healthstate',
             gbd_id=hsid(836),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_glomerulonephritis': Sequela(
@@ -20212,6 +21558,7 @@ sequelae = Sequelae(**{
             name='moderate_anemia_with_stage_iv_ckd',
             kind='healthstate',
             gbd_id=hsid(836),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_causes': Sequela(
@@ -20227,6 +21574,7 @@ sequelae = Sequelae(**{
             name='moderate_anemia_with_stage_iv_ckd',
             kind='healthstate',
             gbd_id=hsid(836),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_type_1_diabetes_mellitus': Sequela(
@@ -20242,6 +21590,7 @@ sequelae = Sequelae(**{
             name='moderate_anemia_with_stage_iv_ckd',
             kind='healthstate',
             gbd_id=hsid(836),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_type_2_diabetes_mellitus': Sequela(
@@ -20257,6 +21606,7 @@ sequelae = Sequelae(**{
             name='moderate_anemia_with_stage_iv_ckd',
             kind='healthstate',
             gbd_id=hsid(836),
+            disability_weight_exist=True,
         ),
     ),
     'borderline_intellectual_disability_and_moderate_dementia_due_to_down_syndrome': Sequela(
@@ -20272,6 +21622,7 @@ sequelae = Sequelae(**{
             name='moderate_dementia_borderline_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(934),
+            disability_weight_exist=False,
         ),
     ),
     'borderline_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities': Sequela(
@@ -20287,6 +21638,7 @@ sequelae = Sequelae(**{
             name='moderate_dementia_borderline_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(934),
+            disability_weight_exist=False,
         ),
     ),
     'mild_intellectual_disability_and_moderate_dementia_due_to_down_syndrome': Sequela(
@@ -20302,6 +21654,7 @@ sequelae = Sequelae(**{
             name='moderate_dementia_mild_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(935),
+            disability_weight_exist=False,
         ),
     ),
     'mild_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities': Sequela(
@@ -20317,6 +21670,7 @@ sequelae = Sequelae(**{
             name='moderate_dementia_mild_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(935),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_intellectual_disability_and_moderate_dementia_due_to_down_syndrome': Sequela(
@@ -20332,6 +21686,7 @@ sequelae = Sequelae(**{
             name='moderate_dementia_moderate_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(936),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities': Sequela(
@@ -20347,6 +21702,7 @@ sequelae = Sequelae(**{
             name='moderate_dementia_moderate_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(936),
+            disability_weight_exist=False,
         ),
     ),
     'profound_intellectual_disability_and_moderate_dementia_due_to_down_syndrome': Sequela(
@@ -20362,6 +21718,7 @@ sequelae = Sequelae(**{
             name='moderate_dementia_profound_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(938),
+            disability_weight_exist=False,
         ),
     ),
     'profound_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities': Sequela(
@@ -20377,6 +21734,7 @@ sequelae = Sequelae(**{
             name='moderate_dementia_profound_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(938),
+            disability_weight_exist=False,
         ),
     ),
     'severe_intellectual_disability_and_moderate_dementia_due_to_down_syndrome': Sequela(
@@ -20392,6 +21750,7 @@ sequelae = Sequelae(**{
             name='moderate_dementia_severe_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(937),
+            disability_weight_exist=False,
         ),
     ),
     'severe_intellectual_disability_and_moderate_dementia_due_to_other_chromosomal_abnormalities': Sequela(
@@ -20407,6 +21766,7 @@ sequelae = Sequelae(**{
             name='moderate_dementia_severe_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(937),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
@@ -20422,6 +21782,7 @@ sequelae = Sequelae(**{
             name='moderate_intellectual_disability_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2375),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome': Sequela(
@@ -20437,6 +21798,7 @@ sequelae = Sequelae(**{
             name='moderate_intellectual_disability_with_congenital_heart_disease',
             kind='healthstate',
             gbd_id=hsid(899),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
@@ -20452,6 +21814,7 @@ sequelae = Sequelae(**{
             name='moderate_intellectual_disability_with_congenital_heart_disease',
             kind='healthstate',
             gbd_id=hsid(899),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_low_back_pain_with_leg_pain': Sequela(
@@ -20467,6 +21830,7 @@ sequelae = Sequelae(**{
             name='moderate_low_back_pain_with_leg_pain',
             kind='healthstate',
             gbd_id=hsid(765),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_and_borderline_intellectual_disability_due_to_spina_bifida': Sequela(
@@ -20482,6 +21846,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_and_borderline_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(2387),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_and_borderline_intellectual_disability_due_to_encephalocele': Sequela(
@@ -20497,6 +21862,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_and_borderline_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(2387),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_and_mild_intellectual_disability_due_to_spina_bifida': Sequela(
@@ -20512,6 +21878,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_and_mild_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(2393),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_and_mild_intellectual_disability_due_to_encephalocele': Sequela(
@@ -20527,6 +21894,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_and_mild_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(2393),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_and_mild_respiratory_problems_due_to_motor_neuron_disease': Sequela(
@@ -20542,6 +21910,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_and_mild_respiratory_problems',
             kind='healthstate',
             gbd_id=hsid(880),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_and_moderate_respiratory_problems_due_to_motor_neuron_disease': Sequela(
@@ -20557,6 +21926,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_and_moderate_respiratory_problems',
             kind='healthstate',
             gbd_id=hsid(881),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_and_severe_intellectual_disability_due_to_spina_bifida': Sequela(
@@ -20572,6 +21942,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_and_severe_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(2402),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_and_severe_intellectual_disability_due_to_encephalocele': Sequela(
@@ -20587,6 +21958,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_and_severe_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(2402),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_and_severe_respiratory_problems_due_to_motor_neuron_disease': Sequela(
@@ -20602,6 +21974,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_and_severe_respiratory_problems',
             kind='healthstate',
             gbd_id=hsid(882),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_and_speech_problems_due_to_motor_neuron_disease': Sequela(
@@ -20617,6 +21990,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_and_speech_problems',
             kind='healthstate',
             gbd_id=hsid(887),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_and_incontinence_due_to_spina_bifida': Sequela(
@@ -20632,6 +22006,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2435),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_and_incontinence_due_to_encephalocele': Sequela(
@@ -20647,6 +22022,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2435),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
@@ -20662,6 +22038,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(775),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
@@ -20677,6 +22054,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(775),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
@@ -20692,6 +22070,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(775),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_with_blindness_due_to_neonatal_tetanus': Sequela(
@@ -20707,6 +22086,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(775),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_with_blindness_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
@@ -20722,6 +22102,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(775),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_with_blindness_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
@@ -20737,6 +22118,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(775),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_with_blindness_due_to_malaria': Sequela(
@@ -20752,6 +22134,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(775),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_with_blindness_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
@@ -20767,6 +22150,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(775),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_with_blindness_and_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
@@ -20782,6 +22166,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(777),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
@@ -20797,6 +22182,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(777),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
@@ -20812,6 +22198,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(777),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
@@ -20827,6 +22214,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(777),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
@@ -20842,6 +22230,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(777),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_tetanus': Sequela(
@@ -20857,6 +22246,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(777),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_with_blindness_and_epilepsy_due_to_malaria': Sequela(
@@ -20872,6 +22262,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(777),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
@@ -20887,6 +22278,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(777),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
@@ -20902,6 +22294,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(776),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_with_epilepsy_due_to_neonatal_tetanus': Sequela(
@@ -20917,6 +22310,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(776),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
@@ -20932,6 +22326,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(776),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_with_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
@@ -20947,6 +22342,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(776),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
@@ -20962,6 +22358,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(776),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_with_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
@@ -20977,6 +22374,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(776),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_with_epilepsy_due_to_malaria': Sequela(
@@ -20992,6 +22390,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(776),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_with_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
@@ -21007,6 +22406,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(776),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_mild_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease': Sequela(
@@ -21022,6 +22422,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_mild_respiratory_problems_and_speech_problems',
             kind='healthstate',
             gbd_id=hsid(871),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_moderate_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease': Sequela(
@@ -21037,6 +22438,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_moderate_respiratory_problems_and_speech_problems',
             kind='healthstate',
             gbd_id=hsid(872),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_and_profound_intellectual_disability_due_to_spina_bifida': Sequela(
@@ -21052,6 +22454,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_profound_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(2600),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
@@ -21067,6 +22470,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_profound_intellectual_disability_and_incontinence',
             kind='healthstate',
             gbd_id=hsid(2603),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_severe_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease': Sequela(
@@ -21082,6 +22486,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_with_severe_respiratory_problems_and_speech_problems',
             kind='healthstate',
             gbd_id=hsid(873),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
@@ -21097,6 +22502,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_borderline_intellectual_functioning_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2408),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
@@ -21112,6 +22518,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_borderline_intellectual_functioning_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2408),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
@@ -21127,6 +22534,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_mild_intellectual_functioning_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2417),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
@@ -21142,6 +22550,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_mild_intellectual_functioning_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2417),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
@@ -21157,6 +22566,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_moderate_intellectual_functioning_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2423),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
@@ -21172,6 +22582,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_moderate_intellectual_functioning_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2423),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
@@ -21187,6 +22598,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_servere_intellectual_functioning_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2429),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
@@ -21202,6 +22614,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_impairment_servere_intellectual_functioning_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2429),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
@@ -21217,6 +22630,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(778),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
@@ -21232,6 +22646,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(778),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
@@ -21247,6 +22662,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(778),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
@@ -21262,6 +22678,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(778),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
@@ -21277,6 +22694,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(778),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_tetanus': Sequela(
@@ -21292,6 +22710,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(778),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_due_to_malaria': Sequela(
@@ -21307,6 +22726,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(778),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
@@ -21322,6 +22742,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(778),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
@@ -21337,6 +22758,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(780),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
@@ -21352,6 +22774,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(780),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
@@ -21367,6 +22790,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(780),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_tetanus': Sequela(
@@ -21382,6 +22806,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(780),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
@@ -21397,6 +22822,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(780),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
@@ -21412,6 +22838,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(780),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_malaria': Sequela(
@@ -21427,6 +22854,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(780),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
@@ -21442,6 +22870,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(780),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
@@ -21457,6 +22886,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(779),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_tetanus': Sequela(
@@ -21472,6 +22902,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(779),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
@@ -21487,6 +22918,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(779),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
@@ -21502,6 +22934,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(779),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
@@ -21517,6 +22950,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(779),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
@@ -21532,6 +22966,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(779),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_malaria': Sequela(
@@ -21547,6 +22982,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(779),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
@@ -21562,6 +22998,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(779),
+            disability_weight_exist=False,
         ),
     ),
     'neurological_problems_and_cardiovascular_complications_due_to_adult_tertiary_syphilis': Sequela(
@@ -21577,6 +23014,7 @@ sequelae = Sequelae(**{
             name='moderate_motor_plus_cognitive_impairments_and_moderate_infectious_disease_acute_episode',
             kind='healthstate',
             gbd_id=hsid(2441),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease': Sequela(
@@ -21592,6 +23030,7 @@ sequelae = Sequelae(**{
             name='moderate_respiratory_and_speech_problems',
             kind='healthstate',
             gbd_id=hsid(890),
+            disability_weight_exist=False,
         ),
     ),
     'mild_motor_impairment_due_to_long_term_due_to_pneumococcal_meningitis': Sequela(
@@ -21607,6 +23046,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_mild',
             kind='healthstate',
             gbd_id=hsid(565),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_impairment_due_to_long_term_due_to_h_influenzae_type_b_meningitis': Sequela(
@@ -21622,6 +23062,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_mild',
             kind='healthstate',
             gbd_id=hsid(565),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_impairment_due_to_long_term_due_to_meningococcal_meningitis': Sequela(
@@ -21637,6 +23078,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_mild',
             kind='healthstate',
             gbd_id=hsid(565),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_impairment_due_to_long_term_due_to_other_bacterial_meningitis': Sequela(
@@ -21652,6 +23094,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_mild',
             kind='healthstate',
             gbd_id=hsid(565),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_impairment_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
@@ -21667,6 +23110,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_mild',
             kind='healthstate',
             gbd_id=hsid(565),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_impairment_due_to_neonatal_tetanus': Sequela(
@@ -21682,6 +23126,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_mild',
             kind='healthstate',
             gbd_id=hsid(565),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_impairment_due_to_long_term_due_to_encephalitis': Sequela(
@@ -21697,6 +23142,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_mild',
             kind='healthstate',
             gbd_id=hsid(565),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_impairment_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
@@ -21712,6 +23158,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_mild',
             kind='healthstate',
             gbd_id=hsid(565),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_impairment_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
@@ -21727,6 +23174,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_mild',
             kind='healthstate',
             gbd_id=hsid(565),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_impairment_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
@@ -21742,6 +23190,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_mild',
             kind='healthstate',
             gbd_id=hsid(565),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_impairment_due_to_motor_neuron_disease': Sequela(
@@ -21757,6 +23206,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_mild',
             kind='healthstate',
             gbd_id=hsid(565),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_impairment_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
@@ -21772,6 +23222,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_mild',
             kind='healthstate',
             gbd_id=hsid(565),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_impairment_due_to_spina_bifida': Sequela(
@@ -21787,6 +23238,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_mild',
             kind='healthstate',
             gbd_id=hsid(565),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_impairment_due_to_encephalocele': Sequela(
@@ -21802,6 +23254,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_mild',
             kind='healthstate',
             gbd_id=hsid(565),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_due_to_pneumococcal_meningitis': Sequela(
@@ -21817,6 +23270,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_moderate',
             kind='healthstate',
             gbd_id=hsid(566),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_due_to_h_influenzae_type_b_meningitis': Sequela(
@@ -21832,6 +23286,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_moderate',
             kind='healthstate',
             gbd_id=hsid(566),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_due_to_meningococcal_meningitis': Sequela(
@@ -21847,6 +23302,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_moderate',
             kind='healthstate',
             gbd_id=hsid(566),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_due_to_other_bacterial_meningitis': Sequela(
@@ -21862,6 +23318,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_moderate',
             kind='healthstate',
             gbd_id=hsid(566),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_due_to_neonatal_tetanus': Sequela(
@@ -21877,6 +23334,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_moderate',
             kind='healthstate',
             gbd_id=hsid(566),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
@@ -21892,6 +23350,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_moderate',
             kind='healthstate',
             gbd_id=hsid(566),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
@@ -21907,6 +23366,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_moderate',
             kind='healthstate',
             gbd_id=hsid(566),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
@@ -21922,6 +23382,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_moderate',
             kind='healthstate',
             gbd_id=hsid(566),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
@@ -21937,6 +23398,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_moderate',
             kind='healthstate',
             gbd_id=hsid(566),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
@@ -21952,6 +23414,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_moderate',
             kind='healthstate',
             gbd_id=hsid(566),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_due_to_encephalitis': Sequela(
@@ -21967,6 +23430,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_moderate',
             kind='healthstate',
             gbd_id=hsid(566),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_due_to_malaria': Sequela(
@@ -21982,6 +23446,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_moderate',
             kind='healthstate',
             gbd_id=hsid(566),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_due_to_motor_neuron_disease': Sequela(
@@ -21997,6 +23462,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_moderate',
             kind='healthstate',
             gbd_id=hsid(566),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
@@ -22012,6 +23478,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_moderate',
             kind='healthstate',
             gbd_id=hsid(566),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_due_to_spina_bifida': Sequela(
@@ -22027,6 +23494,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_moderate',
             kind='healthstate',
             gbd_id=hsid(566),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_due_to_encephalocele': Sequela(
@@ -22042,6 +23510,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_moderate',
             kind='healthstate',
             gbd_id=hsid(566),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_permanent_paralytic_poliomyelitis': Sequela(
@@ -22057,6 +23526,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_moderate',
             kind='healthstate',
             gbd_id=hsid(566),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_acute_poliomyelitis': Sequela(
@@ -22072,6 +23542,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_moderate',
             kind='healthstate',
             gbd_id=hsid(566),
+            disability_weight_exist=True,
         ),
     ),
     'post_polio_syndrome': Sequela(
@@ -22087,6 +23558,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_moderate',
             kind='healthstate',
             gbd_id=hsid(566),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_due_to_pneumococcal_meningitis': Sequela(
@@ -22102,6 +23574,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_severe',
             kind='healthstate',
             gbd_id=hsid(567),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_due_to_h_influenzae_type_b_meningitis': Sequela(
@@ -22117,6 +23590,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_severe',
             kind='healthstate',
             gbd_id=hsid(567),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_due_to_meningococcal_meningitis': Sequela(
@@ -22132,6 +23606,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_severe',
             kind='healthstate',
             gbd_id=hsid(567),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_due_to_other_bacterial_meningitis': Sequela(
@@ -22147,6 +23622,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_severe',
             kind='healthstate',
             gbd_id=hsid(567),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
@@ -22162,6 +23638,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_severe',
             kind='healthstate',
             gbd_id=hsid(567),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_severe_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
@@ -22177,6 +23654,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_severe',
             kind='healthstate',
             gbd_id=hsid(567),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
@@ -22192,6 +23670,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_severe',
             kind='healthstate',
             gbd_id=hsid(567),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
@@ -22207,6 +23686,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_severe',
             kind='healthstate',
             gbd_id=hsid(567),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
@@ -22222,6 +23702,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_severe',
             kind='healthstate',
             gbd_id=hsid(567),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_due_to_neonatal_tetanus': Sequela(
@@ -22237,6 +23718,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_severe',
             kind='healthstate',
             gbd_id=hsid(567),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_due_to_encephalitis': Sequela(
@@ -22252,6 +23734,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_severe',
             kind='healthstate',
             gbd_id=hsid(567),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_due_to_malaria': Sequela(
@@ -22267,6 +23750,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_severe',
             kind='healthstate',
             gbd_id=hsid(567),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_due_to_motor_neuron_disease': Sequela(
@@ -22282,6 +23766,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_severe',
             kind='healthstate',
             gbd_id=hsid(567),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
@@ -22297,6 +23782,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_severe',
             kind='healthstate',
             gbd_id=hsid(567),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_due_to_spina_bifida': Sequela(
@@ -22312,6 +23798,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_severe',
             kind='healthstate',
             gbd_id=hsid(567),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_due_to_encephalocele': Sequela(
@@ -22327,6 +23814,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_severe',
             kind='healthstate',
             gbd_id=hsid(567),
+            disability_weight_exist=True,
         ),
     ),
     'paralytic_polio': Sequela(
@@ -22342,6 +23830,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_severe',
             kind='healthstate',
             gbd_id=hsid(567),
+            disability_weight_exist=True,
         ),
     ),
     'severe_permanent_paralytic_poliomyelitis': Sequela(
@@ -22357,6 +23846,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_severe',
             kind='healthstate',
             gbd_id=hsid(567),
+            disability_weight_exist=True,
         ),
     ),
     'severe_acute_poliomyelitis': Sequela(
@@ -22372,6 +23862,7 @@ sequelae = Sequelae(**{
             name='motor_impairment_severe',
             kind='healthstate',
             gbd_id=hsid(567),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_plus_cognitive_impairments_due_to_pneumococcal_meningitis': Sequela(
@@ -22387,6 +23878,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_mild',
             kind='healthstate',
             gbd_id=hsid(568),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_plus_cognitive_impairments_due_to_h_influenzae_type_b_meningitis': Sequela(
@@ -22402,6 +23894,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_mild',
             kind='healthstate',
             gbd_id=hsid(568),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_plus_cognitive_impairments_due_to_meningococcal_meningitis': Sequela(
@@ -22417,6 +23910,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_mild',
             kind='healthstate',
             gbd_id=hsid(568),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_plus_cognitive_impairments_due_to_other_bacterial_meningitis': Sequela(
@@ -22432,6 +23926,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_mild',
             kind='healthstate',
             gbd_id=hsid(568),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_plus_cognitive_impairments_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
@@ -22447,6 +23942,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_mild',
             kind='healthstate',
             gbd_id=hsid(568),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_plus_cognitive_impairments_due_to_neonatal_tetanus': Sequela(
@@ -22462,6 +23958,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_mild',
             kind='healthstate',
             gbd_id=hsid(568),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_plus_cognitive_impairments_due_to_encephalitis': Sequela(
@@ -22477,6 +23974,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_mild',
             kind='healthstate',
             gbd_id=hsid(568),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_plus_cognitive_impairments_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
@@ -22492,6 +23990,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_mild',
             kind='healthstate',
             gbd_id=hsid(568),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_plus_cognitive_impairments_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
@@ -22507,6 +24006,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_mild',
             kind='healthstate',
             gbd_id=hsid(568),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_plus_cognitive_impairments_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
@@ -22522,6 +24022,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_mild',
             kind='healthstate',
             gbd_id=hsid(568),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_plus_cognitive_impairments_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
@@ -22537,6 +24038,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_mild',
             kind='healthstate',
             gbd_id=hsid(568),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_impairment_and_mild_intellectual_disability_due_to_spina_bifida': Sequela(
@@ -22552,6 +24054,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_mild',
             kind='healthstate',
             gbd_id=hsid(568),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_impairment_and_mild_intellectual_disability_due_to_encephalocele': Sequela(
@@ -22567,6 +24070,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_mild',
             kind='healthstate',
             gbd_id=hsid(568),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_plus_cognitive_impairments_due_to_pneumococcal_meningitis': Sequela(
@@ -22582,6 +24086,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_moderate',
             kind='healthstate',
             gbd_id=hsid(569),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_plus_cognitive_impairments_due_to_h_influenzae_type_b_meningitis': Sequela(
@@ -22597,6 +24102,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_moderate',
             kind='healthstate',
             gbd_id=hsid(569),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_plus_cognitive_impairments_due_to_meningococcal_meningitis': Sequela(
@@ -22612,6 +24118,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_moderate',
             kind='healthstate',
             gbd_id=hsid(569),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_plus_cognitive_impairments_due_to_other_bacterial_meningitis': Sequela(
@@ -22627,6 +24134,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_moderate',
             kind='healthstate',
             gbd_id=hsid(569),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_plus_cognitive_impairments_due_to_encephalitis': Sequela(
@@ -22642,6 +24150,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_moderate',
             kind='healthstate',
             gbd_id=hsid(569),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_and_moderate_intellectual_disability_due_to_spina_bifida': Sequela(
@@ -22657,6 +24166,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_moderate',
             kind='healthstate',
             gbd_id=hsid(569),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_and_moderate_intellectual_disability_due_to_encephalocele': Sequela(
@@ -22672,6 +24182,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_moderate',
             kind='healthstate',
             gbd_id=hsid(569),
+            disability_weight_exist=True,
         ),
     ),
     'neurological_problems_due_to_adult_tertiary_syphilis': Sequela(
@@ -22687,6 +24198,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_moderate',
             kind='healthstate',
             gbd_id=hsid(569),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_plus_cognitive_impairments_due_to_pneumococcal_meningitis': Sequela(
@@ -22702,6 +24214,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_severe',
             kind='healthstate',
             gbd_id=hsid(570),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_plus_cognitive_impairments_due_to_h_influenzae_type_b_meningitis': Sequela(
@@ -22717,6 +24230,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_severe',
             kind='healthstate',
             gbd_id=hsid(570),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_plus_cognitive_impairments_due_to_meningococcal_meningitis': Sequela(
@@ -22732,6 +24246,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_severe',
             kind='healthstate',
             gbd_id=hsid(570),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_plus_cognitive_impairments_due_to_other_bacterial_meningitis': Sequela(
@@ -22747,6 +24262,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_severe',
             kind='healthstate',
             gbd_id=hsid(570),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_plus_cognitive_impairments_due_to_encephalitis': Sequela(
@@ -22762,6 +24278,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_severe',
             kind='healthstate',
             gbd_id=hsid(570),
+            disability_weight_exist=True,
         ),
     ),
     'sleeping_sickness_due_to_trypanosoma_brucei_gambiense': Sequela(
@@ -22777,6 +24294,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_severe',
             kind='healthstate',
             gbd_id=hsid(570),
+            disability_weight_exist=True,
         ),
     ),
     'skin_disfigurement_due_to_trypanosoma_brucei_rhodesiense': Sequela(
@@ -22792,6 +24310,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_severe',
             kind='healthstate',
             gbd_id=hsid(570),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_and_cognitive_impairment_due_to_edward_syndrome_or_patau_syndrome': Sequela(
@@ -22807,6 +24326,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_severe',
             kind='healthstate',
             gbd_id=hsid(570),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_and_cognitive_impairment_due_to_anencephaly': Sequela(
@@ -22822,6 +24342,7 @@ sequelae = Sequelae(**{
             name='motor_plus_cognitive_impairments_severe',
             kind='healthstate',
             gbd_id=hsid(570),
+            disability_weight_exist=True,
         ),
     ),
     'mild_multiple_sclerosis': Sequela(
@@ -22837,6 +24358,7 @@ sequelae = Sequelae(**{
             name='multiple_sclerosis_mild',
             kind='healthstate',
             gbd_id=hsid(414),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_multiple_sclerosis': Sequela(
@@ -22852,6 +24374,7 @@ sequelae = Sequelae(**{
             name='multiple_sclerosis_moderate',
             kind='healthstate',
             gbd_id=hsid(415),
+            disability_weight_exist=True,
         ),
     ),
     'severe_multiple_sclerosis': Sequela(
@@ -22867,6 +24390,7 @@ sequelae = Sequelae(**{
             name='multiple_sclerosis_severe',
             kind='healthstate',
             gbd_id=hsid(416),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_rheumatoid_arthritis': Sequela(
@@ -22882,6 +24406,7 @@ sequelae = Sequelae(**{
             name='musculoskeletal_problems_generalized_moderate',
             kind='healthstate',
             gbd_id=hsid(483),
+            disability_weight_exist=True,
         ),
     ),
     'other_musculoskeletal_disorders_severity_level_5': Sequela(
@@ -22897,6 +24422,7 @@ sequelae = Sequelae(**{
             name='musculoskeletal_problems_generalized_moderate',
             kind='healthstate',
             gbd_id=hsid(483),
+            disability_weight_exist=True,
         ),
     ),
     'severe_rheumatoid_arthritis': Sequela(
@@ -22912,6 +24438,7 @@ sequelae = Sequelae(**{
             name='musculoskeletal_problems_generalized_severe',
             kind='healthstate',
             gbd_id=hsid(484),
+            disability_weight_exist=True,
         ),
     ),
     'polyarticular_gout': Sequela(
@@ -22927,6 +24454,7 @@ sequelae = Sequelae(**{
             name='musculoskeletal_problems_generalized_severe',
             kind='healthstate',
             gbd_id=hsid(484),
+            disability_weight_exist=True,
         ),
     ),
     'other_musculoskeletal_disorders_severity_level_6': Sequela(
@@ -22942,6 +24470,7 @@ sequelae = Sequelae(**{
             name='musculoskeletal_problems_generalized_severe',
             kind='healthstate',
             gbd_id=hsid(484),
+            disability_weight_exist=True,
         ),
     ),
     'mild_osteoarthritis_of_the_hip': Sequela(
@@ -22957,6 +24486,7 @@ sequelae = Sequelae(**{
             name='musculoskeletal_problems_lower_limbs_mild',
             kind='healthstate',
             gbd_id=hsid(478),
+            disability_weight_exist=True,
         ),
     ),
     'mild_osteoarthritis_of_the_knee': Sequela(
@@ -22972,6 +24502,7 @@ sequelae = Sequelae(**{
             name='musculoskeletal_problems_lower_limbs_mild',
             kind='healthstate',
             gbd_id=hsid(478),
+            disability_weight_exist=True,
         ),
     ),
     'other_musculoskeletal_disorders_severity_level_1': Sequela(
@@ -22987,6 +24518,7 @@ sequelae = Sequelae(**{
             name='musculoskeletal_problems_lower_limbs_mild',
             kind='healthstate',
             gbd_id=hsid(478),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_osteoarthritis_of_the_hip': Sequela(
@@ -23002,6 +24534,7 @@ sequelae = Sequelae(**{
             name='musculoskeletal_problems_lower_limbs_moderate',
             kind='healthstate',
             gbd_id=hsid(479),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_osteoarthritis_of_the_knee': Sequela(
@@ -23017,6 +24550,7 @@ sequelae = Sequelae(**{
             name='musculoskeletal_problems_lower_limbs_moderate',
             kind='healthstate',
             gbd_id=hsid(479),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_reduced_mobility_due_to_guinea_worm_emergence': Sequela(
@@ -23032,6 +24566,7 @@ sequelae = Sequelae(**{
             name='musculoskeletal_problems_lower_limbs_moderate',
             kind='healthstate',
             gbd_id=hsid(479),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_pain_and_limited_mobility_due_to_guinea_worm': Sequela(
@@ -23047,6 +24582,7 @@ sequelae = Sequelae(**{
             name='musculoskeletal_problems_lower_limbs_moderate',
             kind='healthstate',
             gbd_id=hsid(479),
+            disability_weight_exist=True,
         ),
     ),
     'severe_osteoarthritis_of_the_hip': Sequela(
@@ -23062,6 +24598,7 @@ sequelae = Sequelae(**{
             name='musculoskeletal_problems_lower_limbs_severe',
             kind='healthstate',
             gbd_id=hsid(480),
+            disability_weight_exist=True,
         ),
     ),
     'severe_osteoarthritis_of_the_knee': Sequela(
@@ -23077,6 +24614,7 @@ sequelae = Sequelae(**{
             name='musculoskeletal_problems_lower_limbs_severe',
             kind='healthstate',
             gbd_id=hsid(480),
+            disability_weight_exist=True,
         ),
     ),
     'other_musculoskeletal_disorders_severity_level_4': Sequela(
@@ -23092,6 +24630,7 @@ sequelae = Sequelae(**{
             name='musculoskeletal_problems_lower_limbs_severe',
             kind='healthstate',
             gbd_id=hsid(480),
+            disability_weight_exist=True,
         ),
     ),
     'other_musculoskeletal_disorders_severity_level_2': Sequela(
@@ -23107,6 +24646,7 @@ sequelae = Sequelae(**{
             name='musculoskeletal_problems_upper_limbs_mild',
             kind='healthstate',
             gbd_id=hsid(481),
+            disability_weight_exist=True,
         ),
     ),
     'mild_rheumatoid_arthritis': Sequela(
@@ -23122,6 +24662,7 @@ sequelae = Sequelae(**{
             name='musculoskeletal_problems_upper_limbs_moderate',
             kind='healthstate',
             gbd_id=hsid(482),
+            disability_weight_exist=True,
         ),
     ),
     'other_musculoskeletal_disorders_severity_level_3': Sequela(
@@ -23137,6 +24678,7 @@ sequelae = Sequelae(**{
             name='musculoskeletal_problems_upper_limbs_moderate',
             kind='healthstate',
             gbd_id=hsid(482),
+            disability_weight_exist=True,
         ),
     ),
     'mild_neck_pain': Sequela(
@@ -23152,6 +24694,7 @@ sequelae = Sequelae(**{
             name='neck_pain_mild',
             kind='healthstate',
             gbd_id=hsid(474),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_neck_pain': Sequela(
@@ -23167,6 +24710,7 @@ sequelae = Sequelae(**{
             name='neck_pain_moderate',
             kind='healthstate',
             gbd_id=hsid(476),
+            disability_weight_exist=True,
         ),
     ),
     'most_severe_neck_pain': Sequela(
@@ -23182,6 +24726,7 @@ sequelae = Sequelae(**{
             name='neck_pain_most_severe',
             kind='healthstate',
             gbd_id=hsid(477),
+            disability_weight_exist=True,
         ),
     ),
     'severe_neck_pain': Sequela(
@@ -23197,6 +24742,7 @@ sequelae = Sequelae(**{
             name='neck_pain_severe',
             kind='healthstate',
             gbd_id=hsid(475),
+            disability_weight_exist=True,
         ),
     ),
     'mild_to_moderate_gastroesophageal_reflux_disease_symptoms_typical': Sequela(
@@ -23212,6 +24758,7 @@ sequelae = Sequelae(**{
             name='often_has_a_burning_sensation_in_the_back_of_the_chest_after_eating',
             kind='healthstate',
             gbd_id=hsid(2633),
+            disability_weight_exist=False,
         ),
     ),
     'mild_parkinson_disease': Sequela(
@@ -23227,6 +24774,7 @@ sequelae = Sequelae(**{
             name='parkinson_disease_mild',
             kind='healthstate',
             gbd_id=hsid(421),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_parkinson_disease': Sequela(
@@ -23242,6 +24790,7 @@ sequelae = Sequelae(**{
             name='parkinson_disease_moderate',
             kind='healthstate',
             gbd_id=hsid(422),
+            disability_weight_exist=True,
         ),
     ),
     'severe_parkinson_disease': Sequela(
@@ -23257,6 +24806,7 @@ sequelae = Sequelae(**{
             name='parkinson_disease_severe',
             kind='healthstate',
             gbd_id=hsid(423),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_periodontal_diseases': Sequela(
@@ -23272,6 +24822,7 @@ sequelae = Sequelae(**{
             name='periodontitis',
             kind='healthstate',
             gbd_id=hsid(550),
+            disability_weight_exist=True,
         ),
     ),
     'other_intestinal_infectious_diseases': Sequela(
@@ -23287,6 +24838,7 @@ sequelae = Sequelae(**{
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
             kind='healthstate',
             gbd_id=hsid(639),
+            disability_weight_exist=False,
         ),
     ),
     'acute_infection_due_to_other_neglected_tropical_diseases': Sequela(
@@ -23302,6 +24854,7 @@ sequelae = Sequelae(**{
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
             kind='healthstate',
             gbd_id=hsid(639),
+            disability_weight_exist=False,
         ),
     ),
     'other_maternal_disorders': Sequela(
@@ -23317,6 +24870,7 @@ sequelae = Sequelae(**{
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
             kind='healthstate',
             gbd_id=hsid(639),
+            disability_weight_exist=False,
         ),
     ),
     'other_neonatal_disorders': Sequela(
@@ -23332,6 +24886,7 @@ sequelae = Sequelae(**{
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
             kind='healthstate',
             gbd_id=hsid(639),
+            disability_weight_exist=False,
         ),
     ),
     'other_nutritional_deficiencies': Sequela(
@@ -23347,6 +24902,7 @@ sequelae = Sequelae(**{
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
             kind='healthstate',
             gbd_id=hsid(639),
+            disability_weight_exist=False,
         ),
     ),
     'other_chronic_respiratory_diseases': Sequela(
@@ -23362,6 +24918,7 @@ sequelae = Sequelae(**{
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
             kind='healthstate',
             gbd_id=hsid(639),
+            disability_weight_exist=False,
         ),
     ),
     'other_digestive_diseases': Sequela(
@@ -23377,6 +24934,7 @@ sequelae = Sequelae(**{
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
             kind='healthstate',
             gbd_id=hsid(639),
+            disability_weight_exist=False,
         ),
     ),
     'other_neurological_disorders': Sequela(
@@ -23392,6 +24950,7 @@ sequelae = Sequelae(**{
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
             kind='healthstate',
             gbd_id=hsid(639),
+            disability_weight_exist=False,
         ),
     ),
     'other_urinary_diseases': Sequela(
@@ -23407,6 +24966,7 @@ sequelae = Sequelae(**{
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
             kind='healthstate',
             gbd_id=hsid(639),
+            disability_weight_exist=False,
         ),
     ),
     'other_hemoglobinopathies_and_hemolytic_anemias': Sequela(
@@ -23422,6 +24982,7 @@ sequelae = Sequelae(**{
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
             kind='healthstate',
             gbd_id=hsid(639),
+            disability_weight_exist=False,
         ),
     ),
     'other_sexually_transmitted_diseases': Sequela(
@@ -23437,6 +24998,7 @@ sequelae = Sequelae(**{
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
             kind='healthstate',
             gbd_id=hsid(639),
+            disability_weight_exist=False,
         ),
     ),
     'other_infectious_diseases': Sequela(
@@ -23452,6 +25014,7 @@ sequelae = Sequelae(**{
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
             kind='healthstate',
             gbd_id=hsid(639),
+            disability_weight_exist=False,
         ),
     ),
     'other_congenital_birth_defects': Sequela(
@@ -23467,6 +25030,7 @@ sequelae = Sequelae(**{
             name='post_como_calculation_for_residuals_yll_yld_ratio_other_methods',
             kind='healthstate',
             gbd_id=hsid(639),
+            disability_weight_exist=False,
         ),
     ),
     'presbyopia': Sequela(
@@ -23482,6 +25046,7 @@ sequelae = Sequelae(**{
             name='presbyopia',
             kind='healthstate',
             gbd_id=hsid(469),
+            disability_weight_exist=True,
         ),
     ),
     'infertility_and_impotence_due_to_congenital_genital_anomalies': Sequela(
@@ -23497,6 +25062,7 @@ sequelae = Sequelae(**{
             name='primary_infertility_and_impotence',
             kind='healthstate',
             gbd_id=hsid(2279),
+            disability_weight_exist=False,
         ),
     ),
     'profound_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
@@ -23512,6 +25078,7 @@ sequelae = Sequelae(**{
             name='profound_intellectual_disability_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2381),
+            disability_weight_exist=False,
         ),
     ),
     'profound_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome': Sequela(
@@ -23527,6 +25094,7 @@ sequelae = Sequelae(**{
             name='profound_intellectual_disability_with_congenital_heart_disease',
             kind='healthstate',
             gbd_id=hsid(901),
+            disability_weight_exist=False,
         ),
     ),
     'profound_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
@@ -23542,6 +25110,7 @@ sequelae = Sequelae(**{
             name='profound_intellectual_disability_with_congenital_heart_disease',
             kind='healthstate',
             gbd_id=hsid(901),
+            disability_weight_exist=False,
         ),
     ),
     'rectovaginal_fistula': Sequela(
@@ -23557,6 +25126,7 @@ sequelae = Sequelae(**{
             name='rectovaginal_fistula',
             kind='healthstate',
             gbd_id=hsid(571),
+            disability_weight_exist=True,
         ),
     ),
     'schizophrenia_acute_state': Sequela(
@@ -23572,6 +25142,7 @@ sequelae = Sequelae(**{
             name='schizophrenia_acute_state',
             kind='healthstate',
             gbd_id=hsid(442),
+            disability_weight_exist=True,
         ),
     ),
     'schizophrenia_residual_state': Sequela(
@@ -23587,6 +25158,7 @@ sequelae = Sequelae(**{
             name='schizophrenia_residual_state',
             kind='healthstate',
             gbd_id=hsid(443),
+            disability_weight_exist=True,
         ),
     ),
     'severe_abdominal_pain_and_primary_infertility_due_to_endometriosis': Sequela(
@@ -23602,6 +25174,7 @@ sequelae = Sequelae(**{
             name='severe_abdominal_pain_and_primary_infertility',
             kind='healthstate',
             gbd_id=hsid(803),
+            disability_weight_exist=True,
         ),
     ),
     'severe_abdominal_pain_and_secondary_infertility_due_to_endometriosis': Sequela(
@@ -23617,6 +25190,7 @@ sequelae = Sequelae(**{
             name='severe_abdominal_pain_and_secondary_infertility',
             kind='healthstate',
             gbd_id=hsid(806),
+            disability_weight_exist=True,
         ),
     ),
     'stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_hypertension': Sequela(
@@ -23632,6 +25206,7 @@ sequelae = Sequelae(**{
             name='severe_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(2462),
+            disability_weight_exist=False,
         ),
     ),
     'stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_glomerulonephritis': Sequela(
@@ -23647,6 +25222,7 @@ sequelae = Sequelae(**{
             name='severe_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(2462),
+            disability_weight_exist=False,
         ),
     ),
     'stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_causes': Sequela(
@@ -23662,6 +25238,7 @@ sequelae = Sequelae(**{
             name='severe_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(2462),
+            disability_weight_exist=False,
         ),
     ),
     'stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_type_1_diabetes_mellitus': Sequela(
@@ -23677,6 +25254,7 @@ sequelae = Sequelae(**{
             name='severe_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(2462),
+            disability_weight_exist=False,
         ),
     ),
     'stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_type_2_diabetes_mellitus': Sequela(
@@ -23692,6 +25270,7 @@ sequelae = Sequelae(**{
             name='severe_anemia_and_terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(2462),
+            disability_weight_exist=False,
         ),
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_hypertension': Sequela(
@@ -23707,6 +25286,7 @@ sequelae = Sequelae(**{
             name='severe_anemia_with_stage_iv_ckd',
             kind='healthstate',
             gbd_id=hsid(837),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_glomerulonephritis': Sequela(
@@ -23722,6 +25302,7 @@ sequelae = Sequelae(**{
             name='severe_anemia_with_stage_iv_ckd',
             kind='healthstate',
             gbd_id=hsid(837),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_causes': Sequela(
@@ -23737,6 +25318,7 @@ sequelae = Sequelae(**{
             name='severe_anemia_with_stage_iv_ckd',
             kind='healthstate',
             gbd_id=hsid(837),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_type_1_diabetes_mellitus': Sequela(
@@ -23752,6 +25334,7 @@ sequelae = Sequelae(**{
             name='severe_anemia_with_stage_iv_ckd',
             kind='healthstate',
             gbd_id=hsid(837),
+            disability_weight_exist=True,
         ),
     ),
     'stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_type_2_diabetes_mellitus': Sequela(
@@ -23767,6 +25350,7 @@ sequelae = Sequelae(**{
             name='severe_anemia_with_stage_iv_ckd',
             kind='healthstate',
             gbd_id=hsid(837),
+            disability_weight_exist=True,
         ),
     ),
     'mild_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease': Sequela(
@@ -23782,6 +25366,7 @@ sequelae = Sequelae(**{
             name='severe_copd_and_other_chronic_respiratory_with_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(850),
+            disability_weight_exist=True,
         ),
     ),
     'mild_heart_failure_due_to_severe_silicosis': Sequela(
@@ -23797,6 +25382,7 @@ sequelae = Sequelae(**{
             name='severe_copd_and_other_chronic_respiratory_with_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(850),
+            disability_weight_exist=True,
         ),
     ),
     'mild_heart_failure_due_to_severe_asbestosis': Sequela(
@@ -23812,6 +25398,7 @@ sequelae = Sequelae(**{
             name='severe_copd_and_other_chronic_respiratory_with_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(850),
+            disability_weight_exist=True,
         ),
     ),
     'mild_heart_failure_due_to_severe_coal_workers_pneumoconiosis': Sequela(
@@ -23827,6 +25414,7 @@ sequelae = Sequelae(**{
             name='severe_copd_and_other_chronic_respiratory_with_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(850),
+            disability_weight_exist=True,
         ),
     ),
     'mild_heart_failure_due_to_severe_other_pneumoconiosis': Sequela(
@@ -23842,6 +25430,7 @@ sequelae = Sequelae(**{
             name='severe_copd_and_other_chronic_respiratory_with_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(850),
+            disability_weight_exist=True,
         ),
     ),
     'mild_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis': Sequela(
@@ -23857,6 +25446,7 @@ sequelae = Sequelae(**{
             name='severe_copd_and_other_chronic_respiratory_with_mild_heart_failure',
             kind='healthstate',
             gbd_id=hsid(850),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease': Sequela(
@@ -23872,6 +25462,7 @@ sequelae = Sequelae(**{
             name='severe_copd_and_other_chronic_respiratory_with_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(851),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_heart_failure_due_to_severe_silicosis': Sequela(
@@ -23887,6 +25478,7 @@ sequelae = Sequelae(**{
             name='severe_copd_and_other_chronic_respiratory_with_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(851),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_heart_failure_due_to_severe_asbestosis': Sequela(
@@ -23902,6 +25494,7 @@ sequelae = Sequelae(**{
             name='severe_copd_and_other_chronic_respiratory_with_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(851),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_heart_failure_due_to_severe_coal_workers_pneumoconiosis': Sequela(
@@ -23917,6 +25510,7 @@ sequelae = Sequelae(**{
             name='severe_copd_and_other_chronic_respiratory_with_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(851),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_heart_failure_due_to_severe_other_pneumoconiosis': Sequela(
@@ -23932,6 +25526,7 @@ sequelae = Sequelae(**{
             name='severe_copd_and_other_chronic_respiratory_with_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(851),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis': Sequela(
@@ -23947,6 +25542,7 @@ sequelae = Sequelae(**{
             name='severe_copd_and_other_chronic_respiratory_with_moderate_heart_failure',
             kind='healthstate',
             gbd_id=hsid(851),
+            disability_weight_exist=True,
         ),
     ),
     'severe_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease': Sequela(
@@ -23962,6 +25558,7 @@ sequelae = Sequelae(**{
             name='severe_copd_and_other_chronic_respiratory_with_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(852),
+            disability_weight_exist=True,
         ),
     ),
     'severe_heart_failure_due_to_severe_silicosis': Sequela(
@@ -23977,6 +25574,7 @@ sequelae = Sequelae(**{
             name='severe_copd_and_other_chronic_respiratory_with_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(852),
+            disability_weight_exist=True,
         ),
     ),
     'severe_heart_failure_due_to_severe_asbestosis': Sequela(
@@ -23992,6 +25590,7 @@ sequelae = Sequelae(**{
             name='severe_copd_and_other_chronic_respiratory_with_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(852),
+            disability_weight_exist=True,
         ),
     ),
     'severe_heart_failure_due_to_severe_coal_workers_pneumoconiosis': Sequela(
@@ -24007,6 +25606,7 @@ sequelae = Sequelae(**{
             name='severe_copd_and_other_chronic_respiratory_with_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(852),
+            disability_weight_exist=True,
         ),
     ),
     'severe_heart_failure_due_to_severe_other_pneumoconiosis': Sequela(
@@ -24022,6 +25622,7 @@ sequelae = Sequelae(**{
             name='severe_copd_and_other_chronic_respiratory_with_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(852),
+            disability_weight_exist=True,
         ),
     ),
     'severe_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis': Sequela(
@@ -24037,6 +25638,7 @@ sequelae = Sequelae(**{
             name='severe_copd_and_other_chronic_respiratory_with_severe_heart_failure',
             kind='healthstate',
             gbd_id=hsid(852),
+            disability_weight_exist=True,
         ),
     ),
     'borderline_intellectual_disability_and_severe_dementia_due_to_down_syndrome': Sequela(
@@ -24052,6 +25654,7 @@ sequelae = Sequelae(**{
             name='severe_dementia_borderline_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(939),
+            disability_weight_exist=False,
         ),
     ),
     'borderline_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities': Sequela(
@@ -24067,6 +25670,7 @@ sequelae = Sequelae(**{
             name='severe_dementia_borderline_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(939),
+            disability_weight_exist=False,
         ),
     ),
     'mild_intellectual_disability_and_severe_dementia_due_to_down_syndrome': Sequela(
@@ -24082,6 +25686,7 @@ sequelae = Sequelae(**{
             name='severe_dementia_mild_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(940),
+            disability_weight_exist=False,
         ),
     ),
     'mild_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities': Sequela(
@@ -24097,6 +25702,7 @@ sequelae = Sequelae(**{
             name='severe_dementia_mild_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(940),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_intellectual_disability_and_severe_dementia_due_to_down_syndrome': Sequela(
@@ -24112,6 +25718,7 @@ sequelae = Sequelae(**{
             name='severe_dementia_moderate_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(941),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities': Sequela(
@@ -24127,6 +25734,7 @@ sequelae = Sequelae(**{
             name='severe_dementia_moderate_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(941),
+            disability_weight_exist=False,
         ),
     ),
     'profound_intellectual_disability_and_severe_dementia_due_to_down_syndrome': Sequela(
@@ -24142,6 +25750,7 @@ sequelae = Sequelae(**{
             name='severe_dementia_profound_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(943),
+            disability_weight_exist=False,
         ),
     ),
     'profound_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities': Sequela(
@@ -24157,6 +25766,7 @@ sequelae = Sequelae(**{
             name='severe_dementia_profound_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(943),
+            disability_weight_exist=False,
         ),
     ),
     'severe_intellectual_disability_and_severe_dementia_due_to_down_syndrome': Sequela(
@@ -24172,6 +25782,7 @@ sequelae = Sequelae(**{
             name='severe_dementia_severe_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(942),
+            disability_weight_exist=False,
         ),
     ),
     'severe_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities': Sequela(
@@ -24187,6 +25798,7 @@ sequelae = Sequelae(**{
             name='severe_dementia_severe_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(942),
+            disability_weight_exist=False,
         ),
     ),
     'severe_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
@@ -24202,6 +25814,7 @@ sequelae = Sequelae(**{
             name='severe_intellectual_disability_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2378),
+            disability_weight_exist=False,
         ),
     ),
     'severe_intellectual_disability_with_congenital_heart_disease_due_to_down_syndrome': Sequela(
@@ -24217,6 +25830,7 @@ sequelae = Sequelae(**{
             name='severe_intellectual_disability_with_congenital_heart_disease',
             kind='healthstate',
             gbd_id=hsid(900),
+            disability_weight_exist=False,
         ),
     ),
     'severe_intellectual_disability_with_congenital_heart_disease_due_to_other_chromosomal_abnormalities': Sequela(
@@ -24232,6 +25846,7 @@ sequelae = Sequelae(**{
             name='severe_intellectual_disability_with_congenital_heart_disease',
             kind='healthstate',
             gbd_id=hsid(900),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_and_borderline_intellectual_disability_due_to_spina_bifida': Sequela(
@@ -24247,6 +25862,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_and_borderline_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(2390),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_and_borderline_intellectual_disability_due_to_encephalocele': Sequela(
@@ -24262,6 +25878,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_and_borderline_intellectual_functioning',
             kind='healthstate',
             gbd_id=hsid(2390),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_and_mild_respiratory_problems_due_to_motor_neuron_disease': Sequela(
@@ -24277,6 +25894,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_and_mild_respiratory_problems',
             kind='healthstate',
             gbd_id=hsid(883),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_and_moderate_respiratory_problems_due_to_motor_neuron_disease': Sequela(
@@ -24292,6 +25910,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_and_moderate_respiratory_problems',
             kind='healthstate',
             gbd_id=hsid(884),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_and_severe_respiratory_problems_due_to_motor_neuron_disease': Sequela(
@@ -24307,6 +25926,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_and_severe_respiratory_problems',
             kind='healthstate',
             gbd_id=hsid(885),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_and_speech_problems_due_to_motor_neuron_disease': Sequela(
@@ -24322,6 +25942,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_and_speech_problems',
             kind='healthstate',
             gbd_id=hsid(888),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
@@ -24337,6 +25958,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(781),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_with_blindness_due_to_neonatal_tetanus': Sequela(
@@ -24352,6 +25974,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(781),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_with_blindness_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
@@ -24367,6 +25990,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(781),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
@@ -24382,6 +26006,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(781),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
@@ -24397,6 +26022,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(781),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_with_blindness_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
@@ -24412,6 +26038,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(781),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_with_blindness_due_to_malaria': Sequela(
@@ -24427,6 +26054,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(781),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_with_blindness_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
@@ -24442,6 +26070,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(781),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_tetanus': Sequela(
@@ -24457,6 +26086,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(783),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
@@ -24472,6 +26102,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(783),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
@@ -24487,6 +26118,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(783),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_with_blindness_and_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
@@ -24502,6 +26134,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(783),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
@@ -24517,6 +26150,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(783),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
@@ -24532,6 +26166,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(783),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_with_blindness_and_epilepsy_due_to_malaria': Sequela(
@@ -24547,6 +26182,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(783),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
@@ -24562,6 +26198,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(783),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_with_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
@@ -24577,6 +26214,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(782),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
@@ -24592,6 +26230,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(782),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_with_epilepsy_due_to_neonatal_tetanus': Sequela(
@@ -24607,6 +26246,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(782),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
@@ -24622,6 +26262,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(782),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
@@ -24637,6 +26278,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(782),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_with_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
@@ -24652,6 +26294,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(782),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_with_epilepsy_due_to_malaria': Sequela(
@@ -24667,6 +26310,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(782),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_with_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
@@ -24682,6 +26326,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(782),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_and_incontinence_due_to_spina_bifida': Sequela(
@@ -24697,6 +26342,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_incontinence',
             kind='healthstate',
             gbd_id=hsid(766),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_and_incontinence_due_to_encephalocele': Sequela(
@@ -24712,6 +26358,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_incontinence',
             kind='healthstate',
             gbd_id=hsid(766),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_impairment_and_profound_intellectual_disability_due_to_encephalocele': Sequela(
@@ -24727,6 +26374,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_incontinence',
             kind='healthstate',
             gbd_id=hsid(766),
+            disability_weight_exist=True,
         ),
     ),
     'moderate_motor_impairment_and_profound_intellectual_disability_due_to_encephalocele': Sequela(
@@ -24742,6 +26390,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_incontinence',
             kind='healthstate',
             gbd_id=hsid(766),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_and_profound_intellectual_disability_due_to_encephalocele': Sequela(
@@ -24757,6 +26406,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_incontinence',
             kind='healthstate',
             gbd_id=hsid(766),
+            disability_weight_exist=True,
         ),
     ),
     'mild_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
@@ -24772,6 +26422,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_incontinence',
             kind='healthstate',
             gbd_id=hsid(766),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_impairment_and_mild_intellectual_disability_due_to_spina_bifida': Sequela(
@@ -24787,6 +26438,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_mild_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(907),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_and_mild_intellectual_disability_due_to_encephalocele': Sequela(
@@ -24802,6 +26454,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_mild_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(907),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
@@ -24817,6 +26470,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_mild_intellectual_disability_and_incontinence',
             kind='healthstate',
             gbd_id=hsid(903),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_mild_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
@@ -24832,6 +26486,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_mild_intellectual_disability_and_incontinence',
             kind='healthstate',
             gbd_id=hsid(903),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_mild_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease': Sequela(
@@ -24847,6 +26502,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_mild_respiratory_problems_and_speech_problems',
             kind='healthstate',
             gbd_id=hsid(874),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_and_moderate_intellectual_disability_due_to_spina_bifida': Sequela(
@@ -24862,6 +26518,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_moderate_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(908),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_and_moderate_intellectual_disability_due_to_encephalocele': Sequela(
@@ -24877,6 +26534,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_moderate_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(908),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
@@ -24892,6 +26550,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_moderate_intellectual_disability_and_incontinence',
             kind='healthstate',
             gbd_id=hsid(904),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_moderate_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
@@ -24907,6 +26566,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_moderate_intellectual_disability_and_incontinence',
             kind='healthstate',
             gbd_id=hsid(904),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_moderate_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease': Sequela(
@@ -24922,6 +26582,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_moderate_respiratory_problems_and_speech_problems',
             kind='healthstate',
             gbd_id=hsid(875),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_and_profound_intellectual_disability_due_to_spina_bifida': Sequela(
@@ -24937,6 +26598,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_profound_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(910),
+            disability_weight_exist=False,
         ),
     ),
     'profound_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
@@ -24952,6 +26614,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_profound_intellectual_disability_and_incontinence',
             kind='healthstate',
             gbd_id=hsid(906),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_and_severe_intellectual_disability_due_to_spina_bifida': Sequela(
@@ -24967,6 +26630,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_severe_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(909),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_and_severe_intellectual_disability_due_to_encephalocele': Sequela(
@@ -24982,6 +26646,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_severe_intellectual_disability',
             kind='healthstate',
             gbd_id=hsid(909),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
@@ -24997,6 +26662,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_severe_intellectual_disability_and_incontinence',
             kind='healthstate',
             gbd_id=hsid(905),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_severe_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
@@ -25012,6 +26678,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_severe_intellectual_disability_and_incontinence',
             kind='healthstate',
             gbd_id=hsid(905),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
@@ -25027,6 +26694,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_severe_intellectual_disability_and_incontinence',
             kind='healthstate',
             gbd_id=hsid(905),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_severe_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease': Sequela(
@@ -25042,6 +26710,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_with_severe_respiratory_problems_and_speech_problems',
             kind='healthstate',
             gbd_id=hsid(876),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_spina_bifida': Sequela(
@@ -25057,6 +26726,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_borderline_intellectual_functioning_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2411),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_impairment_borderline_intellectual_disability_and_incontinence_due_to_encephalocele': Sequela(
@@ -25072,6 +26742,7 @@ sequelae = Sequelae(**{
             name='severe_motor_impairment_borderline_intellectual_functioning_and_urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(2411),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_tetanus': Sequela(
@@ -25087,6 +26758,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(784),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
@@ -25102,6 +26774,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(784),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
@@ -25117,6 +26790,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(784),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
@@ -25132,6 +26806,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(784),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
@@ -25147,6 +26822,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(784),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
@@ -25162,6 +26838,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(784),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_due_to_malaria': Sequela(
@@ -25177,6 +26854,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(784),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
@@ -25192,6 +26870,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_blindness',
             kind='healthstate',
             gbd_id=hsid(784),
+            disability_weight_exist=True,
         ),
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
@@ -25207,6 +26886,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(786),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
@@ -25222,6 +26902,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(786),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
@@ -25237,6 +26918,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(786),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
@@ -25252,6 +26934,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(786),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
@@ -25267,6 +26950,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(786),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_tetanus': Sequela(
@@ -25282,6 +26966,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(786),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_malaria': Sequela(
@@ -25297,6 +26982,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(786),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
@@ -25312,6 +26998,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy',
             kind='healthstate',
             gbd_id=hsid(786),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_less_than_28wks': Sequela(
@@ -25327,6 +27014,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(785),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Sequela(
@@ -25342,6 +27030,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(785),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice': Sequela(
@@ -25357,6 +27046,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(785),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_32_36wks': Sequela(
@@ -25372,6 +27062,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(785),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_preterm_birth_complications_28_32wks': Sequela(
@@ -25387,6 +27078,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(785),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_tetanus': Sequela(
@@ -25402,6 +27094,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(785),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_malaria': Sequela(
@@ -25417,6 +27110,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(785),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections': Sequela(
@@ -25432,6 +27126,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(785),
+            disability_weight_exist=False,
         ),
     ),
     'congenital_zika_syndrome': Sequela(
@@ -25447,6 +27142,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairment_with_epilepsy',
             kind='healthstate',
             gbd_id=hsid(785),
+            disability_weight_exist=False,
         ),
     ),
     'severe_motor_and_cognitive_impairment_with_congenital_heart_disease_due_to_edward_syndrome_or_patau_syndrome': Sequela(
@@ -25462,6 +27158,7 @@ sequelae = Sequelae(**{
             name='severe_motor_plus_cognitive_impairments_and_congenital_heart_disease',
             kind='healthstate',
             gbd_id=hsid(2366),
+            disability_weight_exist=False,
         ),
     ),
     'severe_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease': Sequela(
@@ -25477,6 +27174,7 @@ sequelae = Sequelae(**{
             name='severe_respiratory_and_speech_problems',
             kind='healthstate',
             gbd_id=hsid(891),
+            disability_weight_exist=False,
         ),
     ),
     'difficulty_eating_due_to_edentulism_and_severe_tooth_loss': Sequela(
@@ -25492,6 +27190,7 @@ sequelae = Sequelae(**{
             name='severe_tooth_loss',
             kind='healthstate',
             gbd_id=hsid(552),
+            disability_weight_exist=True,
         ),
     ),
     'severe_wasting_due_to_ascariasis': Sequela(
@@ -25507,6 +27206,7 @@ sequelae = Sequelae(**{
             name='severe_wasting',
             kind='healthstate',
             gbd_id=hsid(563),
+            disability_weight_exist=True,
         ),
     ),
     'severe_wasting_due_to_trichuriasis': Sequela(
@@ -25522,6 +27222,7 @@ sequelae = Sequelae(**{
             name='severe_wasting',
             kind='healthstate',
             gbd_id=hsid(563),
+            disability_weight_exist=True,
         ),
     ),
     'severe_wasting_due_to_hookworm_disease': Sequela(
@@ -25537,6 +27238,7 @@ sequelae = Sequelae(**{
             name='severe_wasting',
             kind='healthstate',
             gbd_id=hsid(563),
+            disability_weight_exist=True,
         ),
     ),
     'severe_wasting_without_edema': Sequela(
@@ -25552,6 +27254,7 @@ sequelae = Sequelae(**{
             name='severe_wasting',
             kind='healthstate',
             gbd_id=hsid(563),
+            disability_weight_exist=True,
         ),
     ),
     'speech_problems_due_to_motor_neuron_disease': Sequela(
@@ -25567,6 +27270,7 @@ sequelae = Sequelae(**{
             name='speech_problems',
             kind='healthstate',
             gbd_id=hsid(564),
+            disability_weight_exist=True,
         ),
     ),
     'laryngectomy_from_larynx_cancer_beyond_ten_years': Sequela(
@@ -25582,6 +27286,7 @@ sequelae = Sequelae(**{
             name='speech_problems',
             kind='healthstate',
             gbd_id=hsid(564),
+            disability_weight_exist=True,
         ),
     ),
     'laryngectomy_due_to_larynx_cancer': Sequela(
@@ -25597,6 +27302,7 @@ sequelae = Sequelae(**{
             name='speech_problems_and_generic_medication',
             kind='healthstate',
             gbd_id=hsid(893),
+            disability_weight_exist=False,
         ),
     ),
     'controlled_phase_of_larynx_cancer_with_laryngectomy': Sequela(
@@ -25612,6 +27318,7 @@ sequelae = Sequelae(**{
             name='speech_problems_and_generic_medication',
             kind='healthstate',
             gbd_id=hsid(893),
+            disability_weight_exist=False,
         ),
     ),
     'disfigurement_level_2_and_speech_problems_due_to_orofacial_clefts': Sequela(
@@ -25627,6 +27334,7 @@ sequelae = Sequelae(**{
             name='speech_problems_with_disfigurement_level_2',
             kind='healthstate',
             gbd_id=hsid(773),
+            disability_weight_exist=True,
         ),
     ),
     'guillain_barre_syndrome_due_to_upper_respiratory_infections': Sequela(
@@ -25642,6 +27350,7 @@ sequelae = Sequelae(**{
             name='spinal_cord_lesion_below_neck_level_treated',
             kind='healthstate',
             gbd_id=hsid(540),
+            disability_weight_exist=True,
         ),
     ),
     'guillain_barre_syndrome_due_to_other_infectious_diseases': Sequela(
@@ -25657,6 +27366,7 @@ sequelae = Sequelae(**{
             name='spinal_cord_lesion_below_neck_level_treated',
             kind='healthstate',
             gbd_id=hsid(540),
+            disability_weight_exist=True,
         ),
     ),
     'guillain_barre_syndrome_due_to_other_neurological_disorders': Sequela(
@@ -25672,6 +27382,7 @@ sequelae = Sequelae(**{
             name='spinal_cord_lesion_below_neck_level_treated',
             kind='healthstate',
             gbd_id=hsid(540),
+            disability_weight_exist=True,
         ),
     ),
     'guillain_barre_syndrome_due_to_diarrheal_diseases': Sequela(
@@ -25687,6 +27398,7 @@ sequelae = Sequelae(**{
             name='spinal_cord_lesion_below_neck_level_treated',
             kind='healthstate',
             gbd_id=hsid(540),
+            disability_weight_exist=True,
         ),
     ),
     'guillain_barre_syndrome_due_to_lower_respiratory_infections': Sequela(
@@ -25702,6 +27414,7 @@ sequelae = Sequelae(**{
             name='spinal_cord_lesion_below_neck_level_treated',
             kind='healthstate',
             gbd_id=hsid(540),
+            disability_weight_exist=True,
         ),
     ),
     'guillain_barre_syndrome_due_to_zika_infection': Sequela(
@@ -25717,6 +27430,7 @@ sequelae = Sequelae(**{
             name='spinal_cord_lesion_below_neck_level_treated',
             kind='healthstate',
             gbd_id=hsid(540),
+            disability_weight_exist=True,
         ),
     ),
     'stoma_from_colon_and_rectum_cancers_beyond_ten_years': Sequela(
@@ -25732,6 +27446,7 @@ sequelae = Sequelae(**{
             name='stoma',
             kind='healthstate',
             gbd_id=hsid(371),
+            disability_weight_exist=True,
         ),
     ),
     'stoma_due_to_colon_and_rectum_cancer': Sequela(
@@ -25747,6 +27462,7 @@ sequelae = Sequelae(**{
             name='stoma_and_generic_medication',
             kind='healthstate',
             gbd_id=hsid(892),
+            disability_weight_exist=False,
         ),
     ),
     'controlled_phase_of_colon_and_rectum_cancers_with_stoma': Sequela(
@@ -25762,6 +27478,7 @@ sequelae = Sequelae(**{
             name='stoma_and_generic_medication',
             kind='healthstate',
             gbd_id=hsid(892),
+            disability_weight_exist=False,
         ),
     ),
     'stress_incontinence_due_to_genital_prolapse': Sequela(
@@ -25777,6 +27494,7 @@ sequelae = Sequelae(**{
             name='stress_incontinence',
             kind='healthstate',
             gbd_id=hsid(793),
+            disability_weight_exist=True,
         ),
     ),
     'acute_ischemic_stroke_severity_level_1': Sequela(
@@ -25792,6 +27510,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_mild',
             kind='healthstate',
             gbd_id=hsid(384),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_ischemic_stroke_severity_level_1': Sequela(
@@ -25807,6 +27526,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_mild',
             kind='healthstate',
             gbd_id=hsid(384),
+            disability_weight_exist=True,
         ),
     ),
     'acute_intracerebral_hemorrhage_severity_level_1': Sequela(
@@ -25822,6 +27542,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_mild',
             kind='healthstate',
             gbd_id=hsid(384),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_intracerebral_hemorrhage_severity_level_1': Sequela(
@@ -25837,6 +27558,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_mild',
             kind='healthstate',
             gbd_id=hsid(384),
+            disability_weight_exist=True,
         ),
     ),
     'acute_subarachnoid_hemorrhage_severity_level_1': Sequela(
@@ -25852,6 +27574,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_mild',
             kind='healthstate',
             gbd_id=hsid(384),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_subarachnoid_hemorrhage_severity_level_1': Sequela(
@@ -25867,6 +27590,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_mild',
             kind='healthstate',
             gbd_id=hsid(384),
+            disability_weight_exist=True,
         ),
     ),
     'acute_ischemic_stroke_severity_level_2': Sequela(
@@ -25882,6 +27606,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_moderate',
             kind='healthstate',
             gbd_id=hsid(385),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_ischemic_stroke_severity_level_2': Sequela(
@@ -25897,6 +27622,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_moderate',
             kind='healthstate',
             gbd_id=hsid(385),
+            disability_weight_exist=True,
         ),
     ),
     'acute_intracerebral_hemorrhage_severity_level_2': Sequela(
@@ -25912,6 +27638,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_moderate',
             kind='healthstate',
             gbd_id=hsid(385),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_intracerebral_hemorrhage_severity_level_2': Sequela(
@@ -25927,6 +27654,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_moderate',
             kind='healthstate',
             gbd_id=hsid(385),
+            disability_weight_exist=True,
         ),
     ),
     'acute_subarachnoid_hemorrhage_severity_level_2': Sequela(
@@ -25942,6 +27670,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_moderate',
             kind='healthstate',
             gbd_id=hsid(385),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_subarachnoid_hemorrhage_severity_level_2': Sequela(
@@ -25957,6 +27686,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_moderate',
             kind='healthstate',
             gbd_id=hsid(385),
+            disability_weight_exist=True,
         ),
     ),
     'acute_ischemic_stroke_severity_level_3': Sequela(
@@ -25972,6 +27702,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_moderate_plus_cognition_problems',
             kind='healthstate',
             gbd_id=hsid(386),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_ischemic_stroke_severity_level_3': Sequela(
@@ -25987,6 +27718,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_moderate_plus_cognition_problems',
             kind='healthstate',
             gbd_id=hsid(386),
+            disability_weight_exist=True,
         ),
     ),
     'acute_intracerebral_hemorrhage_severity_level_3': Sequela(
@@ -26002,6 +27734,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_moderate_plus_cognition_problems',
             kind='healthstate',
             gbd_id=hsid(386),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_intracerebral_hemorrhage_severity_level_3': Sequela(
@@ -26017,6 +27750,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_moderate_plus_cognition_problems',
             kind='healthstate',
             gbd_id=hsid(386),
+            disability_weight_exist=True,
         ),
     ),
     'acute_subarachnoid_hemorrhage_severity_level_3': Sequela(
@@ -26032,6 +27766,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_moderate_plus_cognition_problems',
             kind='healthstate',
             gbd_id=hsid(386),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_subarachnoid_hemorrhage_severity_level_3': Sequela(
@@ -26047,6 +27782,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_moderate_plus_cognition_problems',
             kind='healthstate',
             gbd_id=hsid(386),
+            disability_weight_exist=True,
         ),
     ),
     'acute_ischemic_stroke_severity_level_4': Sequela(
@@ -26062,6 +27798,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_severe',
             kind='healthstate',
             gbd_id=hsid(387),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_ischemic_stroke_severity_level_4': Sequela(
@@ -26077,6 +27814,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_severe',
             kind='healthstate',
             gbd_id=hsid(387),
+            disability_weight_exist=True,
         ),
     ),
     'acute_intracerebral_hemorrhage_severity_level_4': Sequela(
@@ -26092,6 +27830,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_severe',
             kind='healthstate',
             gbd_id=hsid(387),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_intracerebral_hemorrhage_severity_level_4': Sequela(
@@ -26107,6 +27846,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_severe',
             kind='healthstate',
             gbd_id=hsid(387),
+            disability_weight_exist=True,
         ),
     ),
     'acute_subarachnoid_hemorrhage_severity_level_4': Sequela(
@@ -26122,6 +27862,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_severe',
             kind='healthstate',
             gbd_id=hsid(387),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_subarachnoid_hemorrhage_severity_level_4': Sequela(
@@ -26137,6 +27878,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_severe',
             kind='healthstate',
             gbd_id=hsid(387),
+            disability_weight_exist=True,
         ),
     ),
     'acute_ischemic_stroke_severity_level_5': Sequela(
@@ -26152,6 +27894,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_severe_plus_cognition_problems',
             kind='healthstate',
             gbd_id=hsid(388),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_ischemic_stroke_severity_level_5': Sequela(
@@ -26167,6 +27910,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_severe_plus_cognition_problems',
             kind='healthstate',
             gbd_id=hsid(388),
+            disability_weight_exist=True,
         ),
     ),
     'acute_intracerebral_hemorrhage_severity_level_5': Sequela(
@@ -26182,6 +27926,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_severe_plus_cognition_problems',
             kind='healthstate',
             gbd_id=hsid(388),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_intracerebral_hemorrhage_severity_level_5': Sequela(
@@ -26197,6 +27942,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_severe_plus_cognition_problems',
             kind='healthstate',
             gbd_id=hsid(388),
+            disability_weight_exist=True,
         ),
     ),
     'acute_subarachnoid_hemorrhage_severity_level_5': Sequela(
@@ -26212,6 +27958,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_severe_plus_cognition_problems',
             kind='healthstate',
             gbd_id=hsid(388),
+            disability_weight_exist=True,
         ),
     ),
     'chronic_subarachnoid_hemorrhage_severity_level_5': Sequela(
@@ -26227,6 +27974,7 @@ sequelae = Sequelae(**{
             name='stroke_long_term_consequences_severe_plus_cognition_problems',
             kind='healthstate',
             gbd_id=hsid(388),
+            disability_weight_exist=True,
         ),
     ),
     'long_term_sequelae_of_severe_pre_eclampsia': Sequela(
@@ -26242,6 +27990,7 @@ sequelae = Sequelae(**{
             name='tension_type_headaches_mild_motor_plus_cognitive_impairment',
             kind='healthstate',
             gbd_id=hsid(825),
+            disability_weight_exist=True,
         ),
     ),
     'long_term_sequelae_of_eclampsia': Sequela(
@@ -26257,6 +28006,7 @@ sequelae = Sequelae(**{
             name='tension_type_headaches_mild_motor_plus_cognitive_impairment',
             kind='healthstate',
             gbd_id=hsid(825),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_esophageal_cancer': Sequela(
@@ -26272,6 +28022,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_stomach_cancer': Sequela(
@@ -26287,6 +28038,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_liver_cancer_due_to_hepatitis_b': Sequela(
@@ -26302,6 +28054,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_liver_cancer_due_to_hepatitis_c': Sequela(
@@ -26317,6 +28070,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_liver_cancer_due_to_alcohol_use': Sequela(
@@ -26332,6 +28086,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_liver_cancer_due_to_other_causes': Sequela(
@@ -26347,6 +28102,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_larynx_cancer': Sequela(
@@ -26362,6 +28118,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_lung_bronchus_and_trachea_cancer': Sequela(
@@ -26377,6 +28134,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_breast_cancer': Sequela(
@@ -26392,6 +28150,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_cervical_cancer': Sequela(
@@ -26407,6 +28166,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_uterine_cancer': Sequela(
@@ -26422,6 +28182,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_prostate_cancer': Sequela(
@@ -26437,6 +28198,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_colon_and_rectum_cancers': Sequela(
@@ -26452,6 +28214,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_mouth_cancer': Sequela(
@@ -26467,6 +28230,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_nasopharynx_cancer': Sequela(
@@ -26482,6 +28246,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_other_pharynx_cancer': Sequela(
@@ -26497,6 +28262,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_gallbladder_and_biliary_tract_cancer': Sequela(
@@ -26512,6 +28278,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_pancreatic_cancer': Sequela(
@@ -26527,6 +28294,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_malignant_skin_melanoma': Sequela(
@@ -26542,6 +28310,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_ovarian_cancer': Sequela(
@@ -26557,6 +28326,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_testicular_cancer': Sequela(
@@ -26572,6 +28342,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_kidney_cancer': Sequela(
@@ -26587,6 +28358,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_bladder_cancer': Sequela(
@@ -26602,6 +28374,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_brain_and_nervous_system_cancers': Sequela(
@@ -26617,6 +28390,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_thyroid_cancer': Sequela(
@@ -26632,6 +28406,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_mesothelioma': Sequela(
@@ -26647,6 +28422,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_hodgkin_disease': Sequela(
@@ -26662,6 +28438,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_non_hodgkin_lymphoma': Sequela(
@@ -26677,6 +28454,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_multiple_myeloma': Sequela(
@@ -26692,6 +28470,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_other_neoplasms': Sequela(
@@ -26707,6 +28486,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_acute_lymphoid_leukemia': Sequela(
@@ -26722,6 +28502,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_acute_myeloid_leukemia': Sequela(
@@ -26737,6 +28518,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_chronic_lymphoid_leukemia': Sequela(
@@ -26752,6 +28534,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_chronic_myeloid_leukemia': Sequela(
@@ -26767,6 +28550,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_other_leukemia': Sequela(
@@ -26782,6 +28566,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(372),
+            disability_weight_exist=True,
         ),
     ),
     'stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_hypertension': Sequela(
@@ -26797,6 +28582,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(373),
+            disability_weight_exist=True,
         ),
     ),
     'stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_glomerulonephritis': Sequela(
@@ -26812,6 +28598,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(373),
+            disability_weight_exist=True,
         ),
     ),
     'stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_other_causes': Sequela(
@@ -26827,6 +28614,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(373),
+            disability_weight_exist=True,
         ),
     ),
     'stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_type_1_diabetes_mellitus': Sequela(
@@ -26842,6 +28630,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(373),
+            disability_weight_exist=True,
         ),
     ),
     'stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_type_2_diabetes_mellitus': Sequela(
@@ -26857,6 +28646,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(373),
+            disability_weight_exist=True,
         ),
     ),
     'terminal_phase_of_liver_cancer_due_to_nash': Sequela(
@@ -26872,6 +28662,7 @@ sequelae = Sequelae(**{
             name='terminal_phase_without_medication_for_cancers_end_stage_kidney_liver_disease',
             kind='healthstate',
             gbd_id=hsid(373),
+            disability_weight_exist=True,
         ),
     ),
     'severe_endocrine_metabolic_blood_and_immune_disorders': Sequela(
@@ -26887,6 +28678,7 @@ sequelae = Sequelae(**{
             name='thrombocytopenic_purpura',
             kind='healthstate',
             gbd_id=hsid(811),
+            disability_weight_exist=True,
         ),
     ),
     'drug_susceptible_hiv_aids_tuberculosis_without_anemia': Sequela(
@@ -26902,6 +28694,7 @@ sequelae = Sequelae(**{
             name='tuberculosis_hiv_infected',
             kind='healthstate',
             gbd_id=hsid(367),
+            disability_weight_exist=True,
         ),
     ),
     'multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_without_anemia': Sequela(
@@ -26917,6 +28710,7 @@ sequelae = Sequelae(**{
             name='tuberculosis_hiv_infected',
             kind='healthstate',
             gbd_id=hsid(367),
+            disability_weight_exist=True,
         ),
     ),
     'extensively_drug_resistant_hiv_aids_tuberculosis_without_anemia': Sequela(
@@ -26932,6 +28726,7 @@ sequelae = Sequelae(**{
             name='tuberculosis_hiv_infected',
             kind='healthstate',
             gbd_id=hsid(367),
+            disability_weight_exist=True,
         ),
     ),
     'drug_susceptible_hiv_aids_tuberculosis_with_mild_anemia': Sequela(
@@ -26947,6 +28742,7 @@ sequelae = Sequelae(**{
             name='tuberculosis_hiv_infected_and_anemia_mild',
             kind='healthstate',
             gbd_id=hsid(2561),
+            disability_weight_exist=False,
         ),
     ),
     'multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_mild_anemia': Sequela(
@@ -26962,6 +28758,7 @@ sequelae = Sequelae(**{
             name='tuberculosis_hiv_infected_and_anemia_mild',
             kind='healthstate',
             gbd_id=hsid(2561),
+            disability_weight_exist=False,
         ),
     ),
     'extensively_drug_resistant_hiv_aids_tuberculosis_with_mild_anemia': Sequela(
@@ -26977,6 +28774,7 @@ sequelae = Sequelae(**{
             name='tuberculosis_hiv_infected_and_anemia_mild',
             kind='healthstate',
             gbd_id=hsid(2561),
+            disability_weight_exist=False,
         ),
     ),
     'drug_susceptible_hiv_aids_tuberculosis_with_moderate_anemia': Sequela(
@@ -26992,6 +28790,7 @@ sequelae = Sequelae(**{
             name='tuberculosis_hiv_infected_and_anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(2564),
+            disability_weight_exist=False,
         ),
     ),
     'multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_moderate_anemia': Sequela(
@@ -27007,6 +28806,7 @@ sequelae = Sequelae(**{
             name='tuberculosis_hiv_infected_and_anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(2564),
+            disability_weight_exist=False,
         ),
     ),
     'extensively_drug_resistant_hiv_aids_tuberculosis_with_moderate_anemia': Sequela(
@@ -27022,6 +28822,7 @@ sequelae = Sequelae(**{
             name='tuberculosis_hiv_infected_and_anemia_moderate',
             kind='healthstate',
             gbd_id=hsid(2564),
+            disability_weight_exist=False,
         ),
     ),
     'drug_susceptible_hiv_aids_tuberculosis_with_severe_anemia': Sequela(
@@ -27037,6 +28838,7 @@ sequelae = Sequelae(**{
             name='tuberculosis_hiv_infected_and_anemia_severe',
             kind='healthstate',
             gbd_id=hsid(2567),
+            disability_weight_exist=False,
         ),
     ),
     'multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_severe_anemia': Sequela(
@@ -27052,6 +28854,7 @@ sequelae = Sequelae(**{
             name='tuberculosis_hiv_infected_and_anemia_severe',
             kind='healthstate',
             gbd_id=hsid(2567),
+            disability_weight_exist=False,
         ),
     ),
     'extensively_drug_resistant_hiv_aids_tuberculosis_with_severe_anemia': Sequela(
@@ -27067,6 +28870,7 @@ sequelae = Sequelae(**{
             name='tuberculosis_hiv_infected_and_anemia_severe',
             kind='healthstate',
             gbd_id=hsid(2567),
+            disability_weight_exist=False,
         ),
     ),
     'drug_susceptible_tuberculosis': Sequela(
@@ -27082,6 +28886,7 @@ sequelae = Sequelae(**{
             name='tuberculosis_not_hiv_infected',
             kind='healthstate',
             gbd_id=hsid(366),
+            disability_weight_exist=True,
         ),
     ),
     'multidrug_resistant_tuberculosis_without_extensive_drug_resistance': Sequela(
@@ -27097,6 +28902,7 @@ sequelae = Sequelae(**{
             name='tuberculosis_not_hiv_infected',
             kind='healthstate',
             gbd_id=hsid(366),
+            disability_weight_exist=True,
         ),
     ),
     'extensively_drug_resistant_tuberculosis': Sequela(
@@ -27112,6 +28918,7 @@ sequelae = Sequelae(**{
             name='tuberculosis_not_hiv_infected',
             kind='healthstate',
             gbd_id=hsid(366),
+            disability_weight_exist=True,
         ),
     ),
     'incontinence_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
@@ -27127,6 +28934,7 @@ sequelae = Sequelae(**{
             name='urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(398),
+            disability_weight_exist=True,
         ),
     ),
     'incontinence_due_to_encephalocele': Sequela(
@@ -27142,6 +28950,7 @@ sequelae = Sequelae(**{
             name='urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(398),
+            disability_weight_exist=True,
         ),
     ),
     'incontinence_from_prostate_cancer_beyond_ten_years': Sequela(
@@ -27157,6 +28966,7 @@ sequelae = Sequelae(**{
             name='urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(398),
+            disability_weight_exist=True,
         ),
     ),
     'incontinence_from_bladder_cancer_beyond_ten_years': Sequela(
@@ -27172,6 +28982,7 @@ sequelae = Sequelae(**{
             name='urinary_incontinence',
             kind='healthstate',
             gbd_id=hsid(398),
+            disability_weight_exist=True,
         ),
     ),
     'incontinence_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract': Sequela(
@@ -27187,6 +28998,7 @@ sequelae = Sequelae(**{
             name='urinary_incontinence_and_impotence',
             kind='healthstate',
             gbd_id=hsid(2354),
+            disability_weight_exist=False,
         ),
     ),
     'moderate_chronic_other_sense_organ_diseases': Sequela(
@@ -27202,6 +29014,7 @@ sequelae = Sequelae(**{
             name='vertigo',
             kind='healthstate',
             gbd_id=hsid(823),
+            disability_weight_exist=True,
         ),
     ),
     'vertigo_with_mild_hearing_loss_due_to_chronic_otitis_media': Sequela(
@@ -27217,6 +29030,7 @@ sequelae = Sequelae(**{
             name='vertigo_with_mild_hearing_loss',
             kind='healthstate',
             gbd_id=hsid(827),
+            disability_weight_exist=True,
         ),
     ),
     'vertigo_with_mild_hearing_loss_and_ringing_due_to_chronic_otitis_media': Sequela(
@@ -27232,6 +29046,7 @@ sequelae = Sequelae(**{
             name='vertigo_with_mild_hearing_loss_and_ringing',
             kind='healthstate',
             gbd_id=hsid(828),
+            disability_weight_exist=True,
         ),
     ),
     'vertigo_with_moderate_hearing_loss_due_to_chronic_otitis_media': Sequela(
@@ -27247,6 +29062,7 @@ sequelae = Sequelae(**{
             name='vertigo_with_moderate_hearing_loss',
             kind='healthstate',
             gbd_id=hsid(863),
+            disability_weight_exist=True,
         ),
     ),
     'vertigo_with_moderate_hearing_loss_and_ringing_due_to_chronic_otitis_media': Sequela(
@@ -27262,6 +29078,7 @@ sequelae = Sequelae(**{
             name='vertigo_with_moderate_hearing_loss_and_ringing',
             kind='healthstate',
             gbd_id=hsid(864),
+            disability_weight_exist=True,
         ),
     ),
     'vesicovaginal_fistula': Sequela(
@@ -27277,6 +29094,7 @@ sequelae = Sequelae(**{
             name='vesicovaginal_fistula',
             kind='healthstate',
             gbd_id=hsid(572),
+            disability_weight_exist=True,
         ),
     ),
 })
