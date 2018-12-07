@@ -39,13 +39,14 @@ class CoverageGap(GbdRecord):
 
 class CoverageGaps(GbdRecord):
     """Container for coverage gap data."""
-    __slots__ = ('lack_of_breastfeeding_promotion', 'lack_of_hiv_positive_antiretroviral_treatment',
+    __slots__ = ('lack_of_breastfeeding_promotion', 'lack_of_eggs', 'lack_of_hiv_positive_antiretroviral_treatment',
                  'lack_of_immediate_assessment_and_stimulation', 'lack_of_lipid_lowering_therapy',
                  'lack_of_maternal_calcium_supplement', 'lack_of_vitamin_a_fortification',
                  'low_measles_vaccine_coverage_first_dose', 'low_oral_rehydration_solution_coverage', )
 
     def __init__(self,
                  lack_of_breastfeeding_promotion: CoverageGap,
+                 lack_of_eggs: CoverageGap,
                  lack_of_hiv_positive_antiretroviral_treatment: CoverageGap,
                  lack_of_immediate_assessment_and_stimulation: CoverageGap,
                  lack_of_lipid_lowering_therapy: CoverageGap,
@@ -55,6 +56,7 @@ class CoverageGaps(GbdRecord):
                  low_oral_rehydration_solution_coverage: CoverageGap, ):
         super().__init__()
         self.lack_of_breastfeeding_promotion = lack_of_breastfeeding_promotion
+        self.lack_of_eggs = lack_of_eggs
         self.lack_of_hiv_positive_antiretroviral_treatment = lack_of_hiv_positive_antiretroviral_treatment
         self.lack_of_immediate_assessment_and_stimulation = lack_of_immediate_assessment_and_stimulation
         self.lack_of_lipid_lowering_therapy = lack_of_lipid_lowering_therapy
