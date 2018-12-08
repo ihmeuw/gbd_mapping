@@ -1,3 +1,7 @@
+**1.0.12 - 12/7/18**
+
+ - Add coverage_gap of lack_of_eggs
+
 **1.0.11 - 11/28/18**
 
  - Add non_exclusive_breastfeeding relative risk to lack_of_breastfeeding_promotion
