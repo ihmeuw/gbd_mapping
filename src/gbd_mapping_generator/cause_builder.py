@@ -16,6 +16,17 @@ def get_base_types():
                       ('most_detailed', 'bool'),
                       ('level', 'int'),
                       ('restrictions', 'Restrictions'),
+                      ('prevalence_exist', 'bool'),
+                      ('incidence_exist', 'bool'),
+                      ('remission_exist', 'bool'),
+                      ('death_exist', 'bool'),
+                      ('prevalence_in_range', 'bool'),
+                      ('incidence_in_range', 'bool'),
+                      ('remission_in_range', 'bool'),
+                      ('death_more_than_population', 'bool'),
+                      ('prevalence_aggregated', 'bool'),
+                      ('incidence_aggregated', 'bool'),
+                      ('death_aggregated', 'bool'),
                       ('parent', '"Cause" = None'),
                       ('sub_causes', 'Tuple["Cause", ...] = None'),
                       ('sequelae', 'Tuple[Sequela, ...] = None'),
@@ -31,7 +42,9 @@ def get_base_types():
     }
 
 
-def make_cause(name, cid, dismod_id, most_detailed, level, restrictions, sequelae=None, etiologies=None):
+def make_cause(name, cid, dismod_id, most_detailed, level, restrictions, prev_exist, inc_exist, remission_exist,
+               death_exist, prev_in_range, inc_in_range, remission_in_range,
+                           death_more_than_pop, prev_aggregated, inc_aggregated, death_aggregated, sequelae=None, etiologies=None):
     out = ""
     out += TAB + f"'{name}': Cause(\n"
     out += TAB*2 + f"name='{name}',\n"
@@ -40,6 +53,17 @@ def make_cause(name, cid, dismod_id, most_detailed, level, restrictions, sequela
     out += TAB*2 + f"dismod_id={to_id(dismod_id, 'meid')},\n"
     out += TAB*2 + f"level={level},\n"
     out += TAB*2 + f"most_detailed={bool(most_detailed)},\n"
+    out += TAB * 2 + f"prevalence_exist={prev_exist},\n"
+    out += TAB * 2 + f"incidence_exist={inc_exist},\n"
+    out += TAB * 2 + f"remission_exist={remission_exist},\n"
+    out += TAB * 2 + f"death_exist={death_exist},\n"
+    out += TAB * 2 + f"prevalence_in_range={prev_in_range},\n"
+    out += TAB * 2 + f"incidence_in_range={inc_in_range},\n"
+    out += TAB * 2 + f"remission_in_range={remission_in_range},\n"
+    out += TAB * 2 + f"death_more_than_population={death_more_than_pop},\n"
+    out += TAB * 2 + f"prevalence_aggregated={prev_aggregated},\n"
+    out += TAB * 2 + f"incidence_aggregated={inc_aggregated},\n"
+    out += TAB * 2 + f"death_aggregated={death_aggregated},\n"
     out += TAB*2 + f"parent=None,\n"
     out += TAB*2 + f"restrictions=Restrictions(\n"
     for restriction, value in restrictions:
@@ -79,14 +103,17 @@ def make_cause(name, cid, dismod_id, most_detailed, level, restrictions, sequela
 
 def make_causes(causes_list):
     out = f'causes = Causes(**{{\n'
-    for (name, cid, dismod_id, most_detailed, cause_level,
-         parent, restrictions, sequelae, etiologies, sub_causes) in causes_list:
-        out += make_cause(name, cid, dismod_id, most_detailed, cause_level,
-                          restrictions, sequelae, etiologies)
+    for (name, cid, dismod_id, most_detailed, cause_level, parent, restrictions, prev_exist, inc_exist, remission_exist,
+         death_exist, prev_in_range, inc_in_range, remission_in_range, death_more_than_pop, prev_aggregated,
+         inc_aggregated, death_aggregated, sequelae, etiologies, sub_causes) in causes_list:
+        out += make_cause(name, cid, dismod_id, most_detailed, cause_level, restrictions, prev_exist, inc_exist,
+                          remission_exist, death_exist, prev_in_range, inc_in_range, remission_in_range,
+                          death_more_than_pop, prev_aggregated, inc_aggregated, death_aggregated, sequelae, etiologies)
     out += "})\n\n"
 
-    for (name, cid, dismod_id, most_detailed, cause_level,
-         parent, restrictions, sequelae, etiologies, sub_causes) in causes_list:
+    for (name, cid, dismod_id, most_detailed, cause_level, parent, restrictions,  prev_exist, inc_exist, remission_exist,
+         death_exist, prev_in_range, inc_in_range, remission_in_range, death_more_than_pop, prev_aggregated,
+         inc_aggregated, death_aggregated, sequelae, etiologies, sub_causes) in causes_list:
 
         if name != parent:
             out += f"causes.{name}.parent = causes.{parent}\n"
@@ -101,7 +128,7 @@ def make_causes(causes_list):
 
 def build_mapping_template():
     out = make_module_docstring('Mapping templates for GBD causes.', __file__)
-    out += make_import('typing', ['Union', 'Tuple']) + '\n'
+    out += make_import('typing', ['Union', 'Tuple', 'List']) + '\n'
     out += make_import('.id', ['cid', 'meid', '_Unknown'])
     out += make_import('.base_template', ['Restrictions', 'ModelableEntity', 'GbdRecord'])
     out += make_import('.sequela_template', ['Sequela'])

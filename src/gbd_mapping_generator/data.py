@@ -129,6 +129,9 @@ def get_cause_data():
     cause_me_map = cause_me_map[['modelable_entity_id', 'cause_name']].set_index('cause_name')
 
     causes = gbd.get_cause_metadata(cause_set_id=CAUSE_SET_ID)
+    data_survey = gbd.get_survey_summary('cause')
+    assert len(causes) == len(data_survey)
+
     causes = pd.DataFrame({'cause_name': clean_entity_list(causes.cause_name),
                            'cause_id': causes.cause_id,
                            'parent_id': causes.parent_id,
@@ -142,6 +145,8 @@ def get_cause_data():
                            'yll_age_end': causes.yll_age_end,
                            'yld_age_start': causes.yld_age_start.replace({np.NaN: 0}),
                            'yld_age_end': causes.yld_age_end})
+
+    causes = causes.merge(data_survey, on='cause_id')
     causes = causes.set_index('cause_name').join(cause_me_map).sort_values('cause_id').reset_index()
 
     cause_data = []
@@ -153,13 +158,26 @@ def get_cause_data():
         most_detailed = cause['most_detailed']
         level = cause['level']
         restrictions = make_cause_restrictions(cause)
+        prev_exist = cause['prevalence_exist']
+        inc_exist = cause['incidence_exist']
+        remission_exist = cause['remission_exist']
+        death_exist = cause['death_exist']
+        prev_in_range = cause['prevalence_in_range']
+        inc_in_range = cause['incidence_in_range']
+        remission_in_range = cause['remission_in_range']
+        death_more_than_pop = cause['death_more_than_population']
+        prev_aggregated = cause['prevalence_aggregated']
+        inc_aggregated = cause['incidence_aggregated']
+        death_aggregated = cause['death_aggregated']
 
         eti_ids = cause_etiology_map[cause_etiology_map.cause_id == cid].rei_id.tolist()
         associated_etiologies = clean_entity_list(etiologies[etiologies.rei_id.isin(eti_ids)].rei_name)
         associated_sequelae = clean_entity_list(sequelae[sequelae.cause_id == cid].sequela_name)
         sub_causes = causes[causes.parent_id == cid].cause_name.tolist()
 
-        cause_data.append((name, cid, dismod_id, most_detailed, level, parent, restrictions,
+        cause_data.append((name, cid, dismod_id, most_detailed, level, parent, restrictions, prev_exist, inc_exist,
+                           remission_exist, death_exist, prev_in_range, inc_in_range, remission_in_range,
+                           death_more_than_pop, prev_aggregated, inc_aggregated, death_aggregated,
                            associated_sequelae, associated_etiologies, sub_causes))
 
     return cause_data
@@ -190,7 +208,8 @@ def make_cause_restrictions(cause):
         ('yll_age_group_id_start', id_map[cause['yll_age_start']][0] if not cause['yld_only'] else None),
         ('yll_age_group_id_end', id_map[cause['yll_age_end']][1] if not cause['yld_only'] else None),
         ('yld_age_group_id_start', id_map[cause['yld_age_start']][0] if not cause['yll_only'] else None),
-        ('yld_age_group_id_end', id_map[cause['yld_age_end']][1] if not cause['yll_only'] else None)
+        ('yld_age_group_id_end', id_map[cause['yld_age_end']][1] if not cause['yll_only'] else None),
+        ('violated_restrictions', cause['violated_restrictions'])
     )
     return tuple(restrictions)
 
@@ -303,9 +322,6 @@ def get_risk_data():
                     restrictions,
                     parent, sub_risks, affected_risks))
     return out
-
-
-
 
 
 def get_covariate_data():
