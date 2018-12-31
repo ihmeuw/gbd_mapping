@@ -10,8 +10,6 @@ base_types = {
         'attrs': (('name', 'str'),
                   ('kind', 'str'),
                   ('gbd_id', 'Union[covid, None]'),
-                  ('group', 'str'),
-                  ('status', 'str'),
                   ('by_age', 'bool'),
                   ('by_sex', 'bool'),
                   ('dichotomous', 'bool')),
@@ -26,14 +24,12 @@ base_types = {
 }
 
 
-def make_covariate(name, covid, group, cov_type, by_age, by_sex, dichotomous):
+def make_covariate(name, covid, by_age, by_sex, dichotomous):
     out = ""
     out += TAB + f"'{name}': Covariate(\n"
     out += TAB*2 + f"name='{name}',\n"
     out += TAB * 2 + "kind='covariate',\n"
     out += TAB*2 + f"gbd_id=covid({covid}),\n"
-    out += TAB*2 + f"group='{group}',\n"
-    out += TAB*2 + f"status='{cov_type}',\n"
     out += TAB*2 + f"by_age={bool(by_age)},\n"
     out += TAB*2 + f"by_sex={bool(by_sex)},\n"
     out += TAB*2 + f"dichotomous={bool(dichotomous)},\n"
@@ -43,8 +39,8 @@ def make_covariate(name, covid, group, cov_type, by_age, by_sex, dichotomous):
 
 def make_covariates(covariate_list):
     out = "covariates = Covariates(**{\n"
-    for name, covid, group, cov_type, by_age, by_sex, dichotomous in covariate_list:
-        out += make_covariate(name, covid, group, cov_type, by_age, by_sex, dichotomous)
+    for name, covid, by_age, by_sex, dichotomous in covariate_list:
+        out += make_covariate(name, covid, by_age, by_sex, dichotomous)
     out += "})\n"
     return out
 
