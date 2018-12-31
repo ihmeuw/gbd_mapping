@@ -6,7 +6,3 @@ from .etiology import Etiology, etiologies
 from .risk import Risk, risk_factors
 from .covariate import Covariate, covariates
 from .coverage_gap import CoverageGap, coverage_gaps
-
-from gbd_mapping.__about__ import (__author__, __email__, __summary__, __title__,
-                                       __uri__, __version__, )
-__all__ = [__author__,__email__, __summary__, __title__, __uri__, __version__, ]
