@@ -70,7 +70,7 @@ class Covariates(GbdRecord):
                  'measles_vaccine_coverage_proportion', 'measles_vaccine_supp_coverage_binary',
                  'meningitis_belt_binary', 'ln_milk_kcal_per_capita',
                  'mortality_rate_due_to_death_shocks_in_last_10_years_per_1_person',
-                 'mortality_rate_due_to_conflict_in_last_10_years_per_1_person', 'nuts_&_seeds_kcal_per_capita',
+                 'mortality_rate_due_to_conflict_in_last_10_years_per_1_person', 'nuts_and_seeds_kcal_per_capita',
                  'opium_cultivation_binary', 'percent_of_total_calories_consumed_as_animal_fat',
                  'live_births_35_and_up_proportion', 'live_births_40_and_up_proportion',
                  'percent_of_total_calories_consumed_as_fruits', 'percent_of_total_calories_consumed_as_legumes',
@@ -94,10 +94,11 @@ class Covariates(GbdRecord):
                  'population_density_under_150_ppl_sqkm_proportion', 'population_over_65_proportion',
                  'elevation_under_100m_proportion', 'population_under_30_proportion', 'pufa_kcal_per_capita',
                  'pufa_omega_3_seafood_kcal_per_capita', 'pufa_omega_6_vegetable_oils_kcal_per_capita',
-                 'pulses_&_legumes_kcal_per_capita', 'rainfall_population_weighted_mm_yr', 'rainfall_quintiles_2_5',
-                 'rainfall_quintiles_3_5', 'rainfall_quintiles_4_5', 'rainfall_quintile_1_proportion',
-                 'rainfall_quintile_2_proportion', 'rainfall_quintile_3_proportion',
-                 'rainfall_quintile_4_proportion', 'rainfall_quintile_5_proportion', 'red_meat_kcal_per_capita',
+                 'pulses_and_legumes_kcal_per_capita', 'rainfall_population_weighted_mm_yr',
+                 'rainfall_quintiles_2_5', 'rainfall_quintiles_3_5', 'rainfall_quintiles_4_5',
+                 'rainfall_quintile_1_proportion', 'rainfall_quintile_2_proportion',
+                 'rainfall_quintile_3_proportion', 'rainfall_quintile_4_proportion',
+                 'rainfall_quintile_5_proportion', 'red_meat_kcal_per_capita',
                  'religion_binary_greater_than_50_percent_muslim', '_percent_packaged_foods_sold_via_retail',
                  '_percent_fats_oils_sold_via_retail', 'rotavirus_vaccine_introduced_binary',
                  'sahel_region_of_africa_binary', 'sanitation_proportion_with_access',
@@ -874,7 +875,7 @@ class Covariates(GbdRecord):
         self.ln_milk_kcal_per_capita = kwargs.get('ln_milk_kcal_per_capita')
         self.mortality_rate_due_to_death_shocks_in_last_10_years_per_1_person = kwargs.get('mortality_rate_due_to_death_shocks_in_last_10_years_per_1_person')
         self.mortality_rate_due_to_conflict_in_last_10_years_per_1_person = kwargs.get('mortality_rate_due_to_conflict_in_last_10_years_per_1_person')
-        self.nuts_&_seeds_kcal_per_capita = kwargs.get('nuts_&_seeds_kcal_per_capita')
+        self.nuts_and_seeds_kcal_per_capita = kwargs.get('nuts_and_seeds_kcal_per_capita')
         self.opium_cultivation_binary = kwargs.get('opium_cultivation_binary')
         self.percent_of_total_calories_consumed_as_animal_fat = kwargs.get('percent_of_total_calories_consumed_as_animal_fat')
         self.live_births_35_and_up_proportion = kwargs.get('live_births_35_and_up_proportion')
@@ -919,7 +920,7 @@ class Covariates(GbdRecord):
         self.pufa_kcal_per_capita = kwargs.get('pufa_kcal_per_capita')
         self.pufa_omega_3_seafood_kcal_per_capita = kwargs.get('pufa_omega_3_seafood_kcal_per_capita')
         self.pufa_omega_6_vegetable_oils_kcal_per_capita = kwargs.get('pufa_omega_6_vegetable_oils_kcal_per_capita')
-        self.pulses_&_legumes_kcal_per_capita = kwargs.get('pulses_&_legumes_kcal_per_capita')
+        self.pulses_and_legumes_kcal_per_capita = kwargs.get('pulses_and_legumes_kcal_per_capita')
         self.rainfall_population_weighted_mm_yr = kwargs.get('rainfall_population_weighted_mm_yr')
         self.rainfall_quintiles_2_5 = kwargs.get('rainfall_quintiles_2_5')
         self.rainfall_quintiles_3_5 = kwargs.get('rainfall_quintiles_3_5')

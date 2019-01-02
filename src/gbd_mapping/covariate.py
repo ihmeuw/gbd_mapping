@@ -649,8 +649,8 @@ covariates = Covariates(**{
         by_sex=False,
         dichotomous=False,
     ),
-    'nuts_&_seeds_kcal_per_capita': Covariate(
-        name='nuts_&_seeds_kcal_per_capita',
+    'nuts_and_seeds_kcal_per_capita': Covariate(
+        name='nuts_and_seeds_kcal_per_capita',
         kind='covariate',
         gbd_id=covid(81),
         by_age=False,
@@ -1009,8 +1009,8 @@ covariates = Covariates(**{
         by_sex=False,
         dichotomous=False,
     ),
-    'pulses_&_legumes_kcal_per_capita': Covariate(
-        name='pulses_&_legumes_kcal_per_capita',
+    'pulses_and_legumes_kcal_per_capita': Covariate(
+        name='pulses_and_legumes_kcal_per_capita',
         kind='covariate',
         gbd_id=covid(126),
         by_age=False,
