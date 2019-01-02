@@ -311,13 +311,11 @@ def get_risk_data():
 def get_covariate_data():
     covariates = gbd.get_covariate_metadata()
     data_survey = gbd.get_survey_summary('covariate')
+    data_survey = data_survey[data_survey.covariate_id.isin(covariates.covariate_id)]
 
-    assert set(covariates.covariate_id) == set(data_survey.covariate_id)
     covariates = covariates.merge(data_survey, on='covariate_id')
     return list(zip(clean_entity_list(covariates.covariate_name),
                     covariates.covariate_id,
-                    covariates.group_display,
-                    covariates.covariate_type,
                     covariates.by_age,
                     covariates.by_sex,
                     covariates.dichotomous,
