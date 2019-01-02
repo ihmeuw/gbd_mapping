@@ -293,8 +293,6 @@ def get_covariate_data():
     covariates = gbd.get_covariate_metadata()
     return list(zip(clean_entity_list(covariates.covariate_name),
                     covariates.covariate_id,
-                    covariates.group_display,
-                    covariates.covariate_type,
                     covariates.by_age,
                     covariates.by_sex,
                     covariates.dichotomous,))
