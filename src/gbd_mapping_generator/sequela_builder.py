@@ -20,8 +20,8 @@ def get_base_types():
                       ('kind', 'str'),
                       ('gbd_id', 'sid'),
                       ('dismod_id', 'meid'),
-                      ('incidence_exist', 'bool'),
-                      ('prevalence_exist', 'bool'),
+                      ('incidence_exists', 'bool'),
+                      ('prevalence_exists', 'bool'),
                       ('incidence_in_range', 'Union["bool", None]'),
                       ('prevalence_in_range', 'Union["bool", None]'),
                       ('healthstate', 'Healthstate'),),
@@ -44,8 +44,8 @@ def make_sequela(name, sid, mei_id, hs_name, hsid, dw_exist, inc_exist, prev_exi
     out += TAB * 2 + f"kind='sequela',\n"
     out += TAB*2 + f"gbd_id={to_id(sid, 'sid')},\n"
     out += TAB*2 + f"dismod_id={to_id(mei_id, 'meid')},\n"
-    out += TAB * 2 + f"incidence_exist={inc_exist},\n"
-    out += TAB * 2 + f"prevalence_exist={prev_exist},\n"
+    out += TAB * 2 + f"incidence_exists={inc_exist},\n"
+    out += TAB * 2 + f"prevalence_exists={prev_exist},\n"
     out += TAB * 2 + f"incidence_in_range={inc_in_range},\n"
     out += TAB * 2 + f"prevalence_in_range={prev_in_range},\n"
     out += TAB*2 + f"healthstate=Healthstate(\n"
