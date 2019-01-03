@@ -19,7 +19,7 @@ def get_base_types():
                       ('prevalence_exists', "Union['bool', 'None']"),
                       ('incidence_exists', "Union['bool', 'None']"),
                       ('remission_exists', "Union['bool', 'None']"),
-                      ('death_exist', "Union['bool', 'None']"),
+                      ('death_exists', "Union['bool', 'None']"),
                       ('prevalence_in_range', "Union['bool', 'None']"),
                       ('incidence_in_range', "Union['bool', 'None']"),
                       ('remission_in_range', "Union['bool', 'None']"),
@@ -57,10 +57,10 @@ def make_cause(name, cid, dismod_id, most_detailed, level, restrictions, prev_ex
     out += TAB * 2 + f"dismod_id={to_id(dismod_id, 'meid')},\n"
     out += TAB * 2 + f"level={level},\n"
     out += TAB * 2 + f"most_detailed={bool(most_detailed)},\n"
-    out += TAB * 2 + f"prevalence_exist={prev_exist},\n"
-    out += TAB * 2 + f"incidence_exist={inc_exist},\n"
-    out += TAB * 2 + f"remission_exist={remission_exist},\n"
-    out += TAB * 2 + f"death_exist={death_exist},\n"
+    out += TAB * 2 + f"prevalence_exists={prev_exist},\n"
+    out += TAB * 2 + f"incidence_exists={inc_exist},\n"
+    out += TAB * 2 + f"remission_exists={remission_exist},\n"
+    out += TAB * 2 + f"death_exists={death_exist},\n"
     out += TAB * 2 + f"prevalence_in_range={prev_in_range},\n"
     out += TAB * 2 + f"incidence_in_range={inc_in_range},\n"
     out += TAB * 2 + f"remission_in_range={remission_in_range},\n"
@@ -73,9 +73,10 @@ def make_cause(name, cid, dismod_id, most_detailed, level, restrictions, prev_ex
     out += TAB * 2 + f"death_aggregated={death_aggregated},\n"
     out += TAB * 2 + f"parent=None,\n"
     out += TAB * 2 + f"restrictions=Restrictions(\n"
+
     for restriction, value in restrictions:
-        if isinstance(value, bool):
-            out += TAB*3 + f"{restriction}={value},\n"
+        if restriction == 'violated_restrictions':
+            out += text_wrap(f"{TAB * 3 + restriction}=(", [f'"{v}"' for v in value] + [")"])
         else:
             out += TAB * 3 + f"{restriction}={value},\n"
     out += TAB*2 + "),\n"

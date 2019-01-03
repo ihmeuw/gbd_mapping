@@ -15,7 +15,7 @@ from .etiology_template import Etiology
 class Cause(ModelableEntity):
     """Container for cause GBD ids and metadata"""
     __slots__ = ('name', 'kind', 'gbd_id', 'dismod_id', 'most_detailed', 'level', 'restrictions',
-                 'prevalence_exists', 'incidence_exists', 'remission_exists', 'death_exist', 'prevalence_in_range',
+                 'prevalence_exists', 'incidence_exists', 'remission_exists', 'death_exists', 'prevalence_in_range',
                  'incidence_in_range', 'remission_in_range', 'death_more_than_population', 'prevalence_consistent',
                  'incidence_consistent', 'death_consistent', 'prevalence_aggregated', 'incidence_aggregated',
                  'death_aggregated', 'parent', 'sub_causes', 'sequelae', 'etiologies', )
@@ -31,7 +31,7 @@ class Cause(ModelableEntity):
                  prevalence_exists: Union['bool', 'None'],
                  incidence_exists: Union['bool', 'None'],
                  remission_exists: Union['bool', 'None'],
-                 death_exist: Union['bool', 'None'],
+                 death_exists: Union['bool', 'None'],
                  prevalence_in_range: Union['bool', 'None'],
                  incidence_in_range: Union['bool', 'None'],
                  remission_in_range: Union['bool', 'None'],
@@ -59,7 +59,7 @@ class Cause(ModelableEntity):
         self.prevalence_exists = prevalence_exists
         self.incidence_exists = incidence_exists
         self.remission_exists = remission_exists
-        self.death_exist = death_exist
+        self.death_exists = death_exists
         self.prevalence_in_range = prevalence_in_range
         self.incidence_in_range = incidence_in_range
         self.remission_in_range = remission_in_range
