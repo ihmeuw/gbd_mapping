@@ -101,9 +101,9 @@ class Tmred(GbdRecord):
 
     def __init__(self,
                  distribution: str,
-                 inverted: bool, 
-                 min: scalar = None,
-                 max: scalar = None,):
+                 min: scalar,
+                 max: scalar,
+                 inverted: bool, ):
         super().__init__()
         self.distribution = distribution
         self.min = min
