@@ -166,10 +166,10 @@ def get_cause_data():
         prev_in_range = cause['prevalence_in_range']
         inc_in_range = cause['incidence_in_range']
         remission_in_range = cause['remission_in_range']
-        death_more_than_pop = cause['death_more_than_population'],
-        prev_consistent = cause['prevalence_consistent'],
-        inc_consistent = cause['incidence_consistent'],
-        death_consistent = cause['death_consistent'],
+        death_more_than_pop = cause['death_more_than_population']
+        prev_consistent = cause['prevalence_consistent']
+        inc_consistent = cause['incidence_consistent']
+        death_consistent = cause['death_consistent']
         prev_aggregated = cause['prevalence_aggregated']
         inc_aggregated = cause['incidence_aggregated']
         death_aggregated = cause['death_aggregated']
