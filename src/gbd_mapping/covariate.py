@@ -281,32 +281,32 @@ covariates = Covariates(**{
         by_sex=False,
         dichotomous=True,
     ),
-    'fao_composite_factor_#1': Covariate(
-        name='fao_composite_factor_#1',
+    'fao_composite_factor_1': Covariate(
+        name='fao_composite_factor_1',
         kind='covariate',
         gbd_id=covid(35),
         by_age=False,
         by_sex=False,
         dichotomous=False,
     ),
-    'fao_composite_factor_#2': Covariate(
-        name='fao_composite_factor_#2',
+    'fao_composite_factor_2': Covariate(
+        name='fao_composite_factor_2',
         kind='covariate',
         gbd_id=covid(36),
         by_age=False,
         by_sex=False,
         dichotomous=False,
     ),
-    'fao_composite_factor_#3': Covariate(
-        name='fao_composite_factor_#3',
+    'fao_composite_factor_3': Covariate(
+        name='fao_composite_factor_3',
         kind='covariate',
         gbd_id=covid(37),
         by_age=False,
         by_sex=False,
         dichotomous=False,
     ),
-    'fao_composite_factor_#4': Covariate(
-        name='fao_composite_factor_#4',
+    'fao_composite_factor_4': Covariate(
+        name='fao_composite_factor_4',
         kind='covariate',
         gbd_id=covid(38),
         by_age=False,
@@ -649,8 +649,8 @@ covariates = Covariates(**{
         by_sex=False,
         dichotomous=False,
     ),
-    'nuts_&_seeds_kcal_per_capita': Covariate(
-        name='nuts_&_seeds_kcal_per_capita',
+    'nuts_and_seeds_kcal_per_capita': Covariate(
+        name='nuts_and_seeds_kcal_per_capita',
         kind='covariate',
         gbd_id=covid(81),
         by_age=False,
@@ -1009,8 +1009,8 @@ covariates = Covariates(**{
         by_sex=False,
         dichotomous=False,
     ),
-    'pulses_&_legumes_kcal_per_capita': Covariate(
-        name='pulses_&_legumes_kcal_per_capita',
+    'pulses_and_legumes_kcal_per_capita': Covariate(
+        name='pulses_and_legumes_kcal_per_capita',
         kind='covariate',
         gbd_id=covid(126),
         by_age=False,
@@ -2193,40 +2193,40 @@ covariates = Covariates(**{
         by_sex=True,
         dichotomous=False,
     ),
-    'patterns_of_drinking_score_who_;_indicator_for_score_1': Covariate(
-        name='patterns_of_drinking_score_who_;_indicator_for_score_1',
+    'patterns_of_drinking_score_who__indicator_for_score_1': Covariate(
+        name='patterns_of_drinking_score_who__indicator_for_score_1',
         kind='covariate',
         gbd_id=covid(274),
         by_age=False,
         by_sex=False,
         dichotomous=False,
     ),
-    'patterns_of_drinking_score_who_;_indicator_for_score_2': Covariate(
-        name='patterns_of_drinking_score_who_;_indicator_for_score_2',
+    'patterns_of_drinking_score_who__indicator_for_score_2': Covariate(
+        name='patterns_of_drinking_score_who__indicator_for_score_2',
         kind='covariate',
         gbd_id=covid(275),
         by_age=False,
         by_sex=False,
         dichotomous=False,
     ),
-    'patterns_of_drinking_score_who_;_indicator_for_score_3': Covariate(
-        name='patterns_of_drinking_score_who_;_indicator_for_score_3',
+    'patterns_of_drinking_score_who__indicator_for_score_3': Covariate(
+        name='patterns_of_drinking_score_who__indicator_for_score_3',
         kind='covariate',
         gbd_id=covid(276),
         by_age=False,
         by_sex=False,
         dichotomous=False,
     ),
-    'patterns_of_drinking_score_who_;_indicator_for_score_4': Covariate(
-        name='patterns_of_drinking_score_who_;_indicator_for_score_4',
+    'patterns_of_drinking_score_who__indicator_for_score_4': Covariate(
+        name='patterns_of_drinking_score_who__indicator_for_score_4',
         kind='covariate',
         gbd_id=covid(277),
         by_age=False,
         by_sex=False,
         dichotomous=False,
     ),
-    'patterns_of_drinking_score_who_;_indicator_for_score_5': Covariate(
-        name='patterns_of_drinking_score_who_;_indicator_for_score_5',
+    'patterns_of_drinking_score_who__indicator_for_score_5': Covariate(
+        name='patterns_of_drinking_score_who__indicator_for_score_5',
         kind='covariate',
         gbd_id=covid(278),
         by_age=False,
@@ -6929,8 +6929,8 @@ covariates = Covariates(**{
         by_sex=True,
         dichotomous=False,
     ),
-    'reproductive_age_standardized_diabetes_prevalence_10_54_yrs;_females': Covariate(
-        name='reproductive_age_standardized_diabetes_prevalence_10_54_yrs;_females',
+    'reproductive_age_standardized_diabetes_prevalence_10_54_yrs_females': Covariate(
+        name='reproductive_age_standardized_diabetes_prevalence_10_54_yrs_females',
         kind='covariate',
         gbd_id=covid(1101),
         by_age=True,
@@ -7209,24 +7209,24 @@ covariates = Covariates(**{
         by_sex=True,
         dichotomous=False,
     ),
-    'mean_weight_for_height_z_score_whz;_0_5_years': Covariate(
-        name='mean_weight_for_height_z_score_whz;_0_5_years',
+    'mean_weight_for_height_z_score_whz_0_5_years': Covariate(
+        name='mean_weight_for_height_z_score_whz_0_5_years',
         kind='covariate',
         gbd_id=covid(1137),
         by_age=True,
         by_sex=True,
         dichotomous=False,
     ),
-    'mean_weight_for_age_z_score_waz;_0_5_years': Covariate(
-        name='mean_weight_for_age_z_score_waz;_0_5_years',
+    'mean_weight_for_age_z_score_waz_0_5_years': Covariate(
+        name='mean_weight_for_age_z_score_waz_0_5_years',
         kind='covariate',
         gbd_id=covid(1138),
         by_age=True,
         by_sex=True,
         dichotomous=False,
     ),
-    'mean_height_for_age_z_score_haz;_0_5_years': Covariate(
-        name='mean_height_for_age_z_score_haz;_0_5_years',
+    'mean_height_for_age_z_score_haz_0_5_years': Covariate(
+        name='mean_height_for_age_z_score_haz_0_5_years',
         kind='covariate',
         gbd_id=covid(1139),
         by_age=True,
