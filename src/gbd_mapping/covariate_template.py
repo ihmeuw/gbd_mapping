@@ -12,23 +12,20 @@ from .base_template import ModelableEntity, GbdRecord
 
 class Covariate(ModelableEntity):
     """Container for covariate GBD ids and metadata."""
-    __slots__ = ('name', 'kind', 'gbd_id', 'group', 'status', 'by_age', 'by_sex', 'dichotomous', 'data_exist',
-                 'low_value_exist', 'upper_value_exist', 'mean_value_exist', 'sex_restriction_violated',
-                 'age_restriction_violated', )
+    __slots__ = ('name', 'kind', 'gbd_id', 'by_age', 'by_sex', 'dichotomous', 'data_exist', 'low_value_exists',
+                 'upper_value_exists', 'mean_value_exists', 'sex_restriction_violated', 'age_restriction_violated', )
 
     def __init__(self,
                  name: str,
                  kind: str,
                  gbd_id: Union[covid, None],
-                 group: str,
-                 status: str,
                  by_age: bool,
                  by_sex: bool,
                  dichotomous: bool,
                  data_exist: bool,
-                 low_value_exist: bool,
-                 upper_value_exist: bool,
-                 mean_value_exist: bool,
+                 low_value_exists: bool,
+                 upper_value_exists: bool,
+                 mean_value_exists: bool,
                  sex_restriction_violated: bool,
                  age_restriction_violated: bool, ):
         super().__init__(name=name,
@@ -37,15 +34,13 @@ class Covariate(ModelableEntity):
         self.name = name
         self.kind = kind
         self.gbd_id = gbd_id
-        self.group = group
-        self.status = status
         self.by_age = by_age
         self.by_sex = by_sex
         self.dichotomous = dichotomous
         self.data_exist = data_exist
-        self.low_value_exist = low_value_exist
-        self.upper_value_exist = upper_value_exist
-        self.mean_value_exist = mean_value_exist
+        self.low_value_exists = low_value_exists
+        self.upper_value_exists = upper_value_exists
+        self.mean_value_exists = mean_value_exists
         self.sex_restriction_violated = sex_restriction_violated
         self.age_restriction_violated = age_restriction_violated
 

@@ -48,11 +48,12 @@ def get_risks():
 
 
 def get_covariates():
-    covariates = gbd.get_covariate_metadata().reset_index(drop=True)
-    covariates = pd.DataFrame({'covariate_name': clean_entity_list(covariates.covariate_name),
-                               'covariate_id': covariates.covariate_id})
-    return covariates.sort_values('covariate_id')
+    data = get_covariate_data()
+    data = {c[0]: c[1] for c in data}
 
+    covariates = pd.DataFrame.from_dict(data, orient='index').reset_index()
+    covariates = covariates.rename(columns={'index':'covariate_name', 0:'covariate_id'})
+    return covariates.sort_values('covariate_id')       
 
 #####################################
 # Lists of entity names in id order #
@@ -331,13 +332,11 @@ def get_risk_data():
 def get_covariate_data():
     covariates = gbd.get_covariate_metadata()
     data_survey = gbd.get_survey_summary('covariate')
+    data_survey = data_survey[data_survey.covariate_id.isin(covariates.covariate_id)]
 
-    assert set(covariates.covariate_id) == set(data_survey.covariate_id)
     covariates = covariates.merge(data_survey, on='covariate_id')
     return list(zip(clean_entity_list(covariates.covariate_name),
                     covariates.covariate_id,
-                    covariates.group_display,
-                    covariates.covariate_type,
                     covariates.by_age,
                     covariates.by_sex,
                     covariates.dichotomous,

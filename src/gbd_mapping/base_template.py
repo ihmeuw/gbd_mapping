@@ -99,18 +99,18 @@ class Restrictions(GbdRecord):
 
 class Tmred(GbdRecord):
     """Container for theoretical minimum risk exposure distribution data."""
-    __slots__ = ('distribution', 'min', 'max', 'inverted', )
+    __slots__ = ('distribution', 'inverted', 'min', 'max', )
 
     def __init__(self,
                  distribution: str,
-                 min: scalar,
-                 max: scalar,
-                 inverted: bool, ):
+                 inverted: bool,
+                 min: scalar = None,
+                 max: scalar = None, ):
         super().__init__()
         self.distribution = distribution
+        self.inverted = inverted
         self.min = min
         self.max = max
-        self.inverted = inverted
 
 
 class Categories(GbdRecord):

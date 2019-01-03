@@ -17,9 +17,9 @@ restrictions_attrs = (('male_only', 'bool'),
                       ('yld_age_group_id_end', 'int = None'),
                       ('violated_restrictions', 'List=[]'),)
 tmred_attrs = (('distribution', 'str'),
-               ('min', 'scalar'),
-               ('max', 'scalar'),
-               ('inverted', 'bool'),)
+               ('inverted', 'bool'), 
+               ('min', 'scalar = None'),
+               ('max', 'scalar = None'),)
 categories_attrs = tuple([('cat1', 'str'), ('cat2', 'str')] + [(f'cat{i}', 'str = None') for i in range(3, 150)])
 
 
