@@ -15,7 +15,7 @@ restrictions_attrs = (('male_only', 'bool'),
                       ('yll_age_group_id_end', 'int = None'),
                       ('yld_age_group_id_start', 'int = None'),
                       ('yld_age_group_id_end', 'int = None'),
-                      ('violated_restrictions', 'List=[]'),)
+                      ('violated_restrictions', 'Tuple = ()'),)
 tmred_attrs = (('distribution', 'str'),
                ('inverted', 'bool'), 
                ('min', 'scalar = None'),
