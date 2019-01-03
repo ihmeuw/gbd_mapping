@@ -76,7 +76,7 @@ def make_cause(name, cid, dismod_id, most_detailed, level, restrictions, prev_ex
 
     for restriction, value in restrictions:
         if restriction == 'violated_restrictions':
-            out += text_wrap(f"{TAB * 3 + restriction}=(", [f'"{v}"' for v in value] + [")"])
+            out += text_wrap(f"{TAB * 3 + restriction}=(", [f"'{v}'" for v in value] + [")"])
         else:
             out += TAB * 3 + f"{restriction}={value},\n"
     out += TAB*2 + "),\n"

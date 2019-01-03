@@ -43,8 +43,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'communicable_maternal_neonatal_and_nutritional_diseases': Cause(
@@ -78,8 +78,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'tuberculosis': Cause(
@@ -113,8 +113,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'hiv_aids': Cause(
@@ -148,8 +148,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=4,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'hiv_aids_resulting_in_other_diseases': Cause(
@@ -183,8 +183,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.early_hiv_with_mild_anemia, sequelae.early_hiv_with_moderate_anemia, 
                   sequelae.early_hiv_with_severe_anemia, sequelae.early_hiv_without_anemia, 
@@ -227,8 +227,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_diarrheal_diseases, sequelae.moderate_diarrheal_diseases, 
                   sequelae.severe_diarrheal_diseases, sequelae.guillain_barre_syndrome_due_to_diarrheal_diseases, ),
@@ -268,8 +268,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.acute_typhoid_infection, sequelae.severe_typhoid_fever, 
                   sequelae.intestinal_perforation_due_to_typhoid, sequelae.gastrointestinal_bleeding_due_to_typhoid, ),
@@ -305,8 +305,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.acute_paratyphoid_infection, sequelae.moderate_paratyphoid_fever, 
                   sequelae.severe_paratyphoid_fever, sequelae.intestinal_perforation_due_to_paratyphoid, ),
@@ -342,7 +342,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=4,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.other_intestinal_infectious_diseases, ),
     ),
@@ -377,8 +377,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.moderate_lower_respiratory_infections, sequelae.severe_lower_respiratory_infections, 
                   sequelae.guillain_barre_syndrome_due_to_lower_respiratory_infections, ),
@@ -416,8 +416,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_upper_respiratory_infections, sequelae.moderate_upper_respiratory_infections, 
                   sequelae.guillain_barre_syndrome_due_to_upper_respiratory_infections, ),
@@ -453,8 +453,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.acute_otitis_media, sequelae.severe_infectious_complications_due_to_chronic_otitis_media, 
                   sequelae.vertigo_with_mild_hearing_loss_due_to_chronic_otitis_media, 
@@ -497,8 +497,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'pneumococcal_meningitis': Cause(
@@ -532,8 +532,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.acute_pneumococcal_meningitis, 
                   sequelae.mild_behavioral_problems_due_to_pneumococcal_meningitis, 
@@ -594,8 +594,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.acute_h_influenzae_type_b_meningitis, 
                   sequelae.mild_behavioral_problems_due_to_h_influenzae_type_b_meningitis, 
@@ -656,8 +656,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.acute_meningococcal_meningitis, 
                   sequelae.mild_behavioral_problems_due_to_meningococcal_meningitis, 
@@ -718,8 +718,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.other_acute_bacterial_meningitis, 
                   sequelae.mild_behavioral_problems_due_to_other_bacterial_meningitis, 
@@ -781,8 +781,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.acute_encephalitis, sequelae.mild_behavioral_problems_due_to_encephalitis, 
                   sequelae.mild_motor_impairment_due_to_long_term_due_to_encephalitis, 
@@ -829,8 +829,8 @@ causes = Causes(**{
             yll_age_group_id_end=15,
             yld_age_group_id_start=4,
             yld_age_group_id_end=15,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.moderate_diphtheria, sequelae.severe_diphtheria, ),
     ),
@@ -865,8 +865,8 @@ causes = Causes(**{
             yll_age_group_id_end=15,
             yld_age_group_id_start=4,
             yld_age_group_id_end=15,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.whooping_cough, ),
     ),
@@ -901,8 +901,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.severe_tetanus, 
                   sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_tetanus, 
@@ -953,8 +953,8 @@ causes = Causes(**{
             yll_age_group_id_end=15,
             yld_age_group_id_start=4,
             yld_age_group_id_end=15,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.moderate_measles, sequelae.severe_measles, ),
     ),
@@ -989,8 +989,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.chickenpox, sequelae.herpes_zoster, ),
     ),
@@ -1025,8 +1025,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'malaria': Cause(
@@ -1060,8 +1060,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_malaria, sequelae.moderate_malaria, sequelae.severe_malaria, 
                   sequelae.moderate_motor_impairment_due_to_malaria, 
@@ -1161,8 +1161,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=4,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'visceral_leishmaniasis': Cause(
@@ -1196,8 +1196,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=4,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.moderate_visceral_leishmaniasis, sequelae.severe_visceral_leishmaniasis, ),
     ),
@@ -1232,7 +1232,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=4,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.cutaneous_and_mucocutaneous_leishmaniasis, ),
     ),
@@ -1267,8 +1267,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.skin_disfigurement_due_to_trypanosoma_brucei_gambiense, 
                   sequelae.sleeping_sickness_due_to_trypanosoma_brucei_gambiense, 
@@ -1306,7 +1306,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=4,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_schistosomiasis, sequelae.mild_diarrhea_due_to_schistosomiasis, 
                   sequelae.hematemesis_due_to_schistosomiasis, sequelae.hepatomegaly_due_to_schistosomiasis, 
@@ -1346,7 +1346,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=6,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.neurocysticercosis_with_epilepsy, ),
     ),
@@ -1381,8 +1381,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.abdominal_problems_due_to_cystic_echinococcosis, 
                   sequelae.chronic_respiratory_disease_due_to_cystic_echinococcosis, 
@@ -1498,7 +1498,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.moderate_vision_impairment_due_to_trachoma, 
                   sequelae.severe_vision_impairment_due_to_trachoma, sequelae.blindness_due_to_trachoma, ),
@@ -1534,8 +1534,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=4,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.moderate_dengue, sequelae.severe_dengue, sequelae.post_dengue_chronic_fatigue_syndrome, ),
     ),
@@ -1570,8 +1570,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.moderate_yellow_fever, sequelae.severe_yellow_fever, sequelae.asymptomatic_yellow_fever, ),
     ),
@@ -1606,8 +1606,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=4,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.rabies, ),
     ),
@@ -1642,7 +1642,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=4,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
     ),
     'ascariasis': Cause(
@@ -1676,7 +1676,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=4,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.heavy_infestation_of_ascariasis, sequelae.mild_abdominopelvic_problems_due_to_ascariasis, 
                   sequelae.severe_wasting_due_to_ascariasis, sequelae.asymptomatic_ascariasis, ),
@@ -1712,7 +1712,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=4,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.heavy_infestation_of_trichuriasis, 
                   sequelae.mild_abdominopelvic_problems_due_to_trichuriasis, 
@@ -1749,7 +1749,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=4,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.heavy_infestation_of_hookworm, 
                   sequelae.mild_abdominopelvic_problems_due_to_hookworm_disease, 
@@ -1831,7 +1831,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.acute_infection_due_to_other_neglected_tropical_diseases, 
                   sequelae.mild_anemia_due_to_other_neglected_tropical_diseases, 
@@ -1869,8 +1869,8 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=7,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'maternal_hemorrhage': Cause(
@@ -1904,8 +1904,8 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=7,
             yld_age_group_id_end=14,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.maternal_hemorrhage_less_than__1l_blood_lost, 
                   sequelae.maternal_hemorrhage_greater_than__1l_blood_lost, 
@@ -1944,8 +1944,8 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=7,
             yld_age_group_id_end=14,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.infertility_due_to_puerperal_sepsis, sequelae.puerperal_sepsis, 
                   sequelae.other_maternal_infections, ),
@@ -1981,8 +1981,8 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=7,
             yld_age_group_id_end=14,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.severe_pre_eclampsia, sequelae.eclampsia, 
                   sequelae.long_term_sequelae_of_severe_pre_eclampsia, 
@@ -2019,8 +2019,8 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=7,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.obstructed_labor_acute_event, sequelae.rectovaginal_fistula, 
                   sequelae.vesicovaginal_fistula, ),
@@ -2056,8 +2056,8 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=7,
             yld_age_group_id_end=14,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.ectopic_pregnancy, ),
     ),
@@ -2092,7 +2092,7 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=None,
             yld_age_group_id_end=None,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
     ),
     'late_maternal_deaths': Cause(
@@ -2126,7 +2126,7 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=None,
             yld_age_group_id_end=None,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
     ),
     'other_maternal_disorders': Cause(
@@ -2160,7 +2160,7 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=7,
             yld_age_group_id_end=14,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.other_maternal_disorders, ),
     ),
@@ -2195,7 +2195,7 @@ causes = Causes(**{
             yll_age_group_id_end=4,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
     ),
     'neonatal_preterm_birth': Cause(
@@ -2229,7 +2229,7 @@ causes = Causes(**{
             yll_age_group_id_end=4,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_vision_impairment_due_to_retinopathy_of_prematurity, 
                   sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_28_32wks, 
@@ -2319,7 +2319,7 @@ causes = Causes(**{
             yll_age_group_id_end=4,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_motor_plus_cognitive_impairments_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma, 
                   sequelae.mild_motor_impairment_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma, 
@@ -2370,7 +2370,7 @@ causes = Causes(**{
             yll_age_group_id_end=4,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.severe_infection_due_to_neonatal_sepsis_and_other_neonatal_infections, 
                   sequelae.asymptomatic_neonatal_sepsis_and_other_neonatal_infections, 
@@ -2422,7 +2422,7 @@ causes = Causes(**{
             yll_age_group_id_end=4,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_due_to_hemolytic_disease_and_other_neonatal_jaundice, 
                   sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice, 
@@ -2470,7 +2470,7 @@ causes = Causes(**{
             yll_age_group_id_end=4,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.other_neonatal_disorders, ),
     ),
@@ -2505,8 +2505,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'protein_energy_malnutrition': Cause(
@@ -2540,8 +2540,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.moderate_wasting_with_edema, sequelae.severe_wasting_without_edema, 
                   sequelae.moderate_wasting_without_edema, sequelae.severe_wasting_with_edema, ),
@@ -2577,7 +2577,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.visible_goiter_without_symptoms, 
                   sequelae.visible_goiter_with_severe_intellectual_disability_due_to_iodine_deficiency, 
@@ -2614,7 +2614,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.moderate_vision_impairment_loss_due_to_vitamin_a_deficiency, 
                   sequelae.severe_vision_impairment_loss_due_to_vitamin_a_deficiency, 
@@ -2653,7 +2653,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.mild_iron_deficiency_anemia, sequelae.moderate_iron_deficiency_anemia, 
                   sequelae.severe_iron_deficiency_anemia, ),
@@ -2689,7 +2689,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=4,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.other_nutritional_deficiencies, ),
     ),
@@ -2724,7 +2724,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
     ),
     'syphilis': Cause(
@@ -2758,7 +2758,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.asymptomatic_early_syphilis_infection, sequelae.mild_early_syphilis_infection, 
                   sequelae.neurological_problems_and_cardiovascular_complications_due_to_adult_tertiary_syphilis, 
@@ -2801,8 +2801,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=7,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.epididymo_orchitis_due_to_chlamydial_infection, 
                   sequelae.moderate_pelvic_inflammatory_diseases_due_to_chlamydial_infection, 
@@ -2842,8 +2842,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=7,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.epididymo_orchitis_due_to_gonococcal_infection, 
                   sequelae.moderate_pelvic_inflammatory_diseases_due_to_gonococcal_infection, 
@@ -2883,7 +2883,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=7,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.acute_trichomoniasis_infection, sequelae.asymptomatic_trichomoniasis_infection, ),
     ),
@@ -2918,7 +2918,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=7,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.symptomatic_genital_herpes, sequelae.asymptomatic_genital_herpes, 
                   sequelae.moderate_infection_due_to_initial_genital_herpes_episode, ),
@@ -2954,7 +2954,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=7,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.moderate_pelvic_inflammatory_diseases_due_to_other_sexually_transmitted_diseases, 
                   sequelae.severe_pelvic_inflammatory_diseases_due_to_other_sexually_transmitted_diseases, 
@@ -2993,8 +2993,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'acute_hepatitis_a': Cause(
@@ -3028,8 +3028,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.moderate_acute_hepatitis_a, sequelae.severe_acute_hepatitis_a, 
                   sequelae.asymptomatic_acute_hepatitis_a, ),
@@ -3065,8 +3065,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.moderate_acute_hepatitis_b, sequelae.severe_acute_hepatitis_b, 
                   sequelae.asymptomatic_acute_hepatitis_b, sequelae.chronic_hepatitis_b_without_cirrhosis, ),
@@ -3102,8 +3102,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.moderate_acute_hepatitis_c, sequelae.severe_acute_hepatitis_c, 
                   sequelae.asymptomatic_acute_hepatitis_c, sequelae.chronic_hepatitis_c_without_cirrhosis, ),
@@ -3139,8 +3139,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.moderate_acute_hepatitis_e, sequelae.severe_acute_hepatitis_e, 
                   sequelae.asymptomatic_acute_hepatitis_e, ),
@@ -3176,7 +3176,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.disfigurement_level_1_due_to_leprosy, sequelae.disfigurement_level_2_due_to_leprosy, ),
     ),
@@ -3211,7 +3211,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_anemia_due_to_other_infectious_diseases, 
                   sequelae.moderate_anemia_due_to_other_infectious_diseases, 
@@ -3250,8 +3250,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'neoplasms': Cause(
@@ -3285,8 +3285,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'esophageal_cancer': Cause(
@@ -3320,8 +3320,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_esophageal_cancer, 
                   sequelae.controlled_phase_of_esophageal_cancer, sequelae.metastatic_phase_of_esophageal_cancer, 
@@ -3358,8 +3358,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_stomach_cancer, 
                   sequelae.controlled_phase_of_stomach_cancer, sequelae.metastatic_phase_of_stomach_cancer, 
@@ -3396,7 +3396,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=6,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
     ),
     'liver_cancer_due_to_hepatitis_b': Cause(
@@ -3430,8 +3430,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=6,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_hepatitis_b, 
                   sequelae.controlled_phase_of_liver_cancer_due_to_hepatitis_b, 
@@ -3469,8 +3469,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=6,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_hepatitis_c, 
                   sequelae.controlled_phase_of_liver_cancer_due_to_hepatitis_c, 
@@ -3508,8 +3508,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_alcohol_use, 
                   sequelae.controlled_phase_of_liver_cancer_due_to_alcohol_use, 
@@ -3547,7 +3547,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_other_causes, 
                   sequelae.controlled_phase_of_liver_cancer_due_to_other_causes, 
@@ -3585,8 +3585,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_larynx_cancer, 
                   sequelae.controlled_phase_of_larynx_cancer, sequelae.metastatic_phase_of_larynx_cancer, 
@@ -3626,8 +3626,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_lung_bronchus_and_trachea_cancer, 
                   sequelae.controlled_phase_of_lung_bronchus_and_trachea_cancer, 
@@ -3665,8 +3665,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_breast_cancer, 
                   sequelae.controlled_phase_of_breast_cancer, sequelae.metastatic_phase_of_breast_cancer, 
@@ -3706,8 +3706,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_cervical_cancer, 
                   sequelae.controlled_phase_of_cervical_cancer, sequelae.metastatic_phase_of_cervical_cancer, 
@@ -3744,8 +3744,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_uterine_cancer, 
                   sequelae.controlled_phase_of_uterine_cancer, sequelae.metastatic_phase_of_uterine_cancer, 
@@ -3782,8 +3782,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_prostate_cancer, 
                   sequelae.controlled_phase_of_prostate_cancer, sequelae.metastatic_phase_of_prostate_cancer, 
@@ -3826,8 +3826,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_colon_and_rectum_cancers, 
                   sequelae.controlled_phase_of_colon_and_rectum_cancers, 
@@ -3868,8 +3868,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_mouth_cancer, 
                   sequelae.controlled_phase_of_mouth_cancer, sequelae.metastatic_phase_of_mouth_cancer, 
@@ -3906,8 +3906,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=6,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_nasopharynx_cancer, 
                   sequelae.controlled_phase_of_nasopharynx_cancer, sequelae.metastatic_phase_of_nasopharynx_cancer, 
@@ -3944,8 +3944,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_other_pharynx_cancer, 
                   sequelae.controlled_phase_of_other_pharynx_cancer, 
@@ -3982,8 +3982,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_gallbladder_and_biliary_tract_cancer, 
                   sequelae.controlled_phase_of_gallbladder_and_biliary_tract_cancer, 
@@ -4021,8 +4021,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_pancreatic_cancer, 
                   sequelae.controlled_phase_of_pancreatic_cancer, sequelae.metastatic_phase_of_pancreatic_cancer, 
@@ -4059,8 +4059,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_malignant_skin_melanoma, 
                   sequelae.controlled_phase_of_malignant_skin_melanoma, 
@@ -4098,7 +4098,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
     ),
     'ovarian_cancer': Cause(
@@ -4132,8 +4132,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_ovarian_cancer, 
                   sequelae.controlled_phase_of_ovarian_cancer, sequelae.metastatic_phase_of_ovarian_cancer, 
@@ -4170,8 +4170,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_testicular_cancer, 
                   sequelae.controlled_phase_of_testicular_cancer, sequelae.metastatic_phase_of_testicular_cancer, 
@@ -4208,8 +4208,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_kidney_cancer, 
                   sequelae.controlled_phase_of_kidney_cancer, sequelae.metastatic_phase_of_kidney_cancer, 
@@ -4246,8 +4246,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_bladder_cancer, 
                   sequelae.controlled_phase_of_bladder_cancer, sequelae.metastatic_phase_of_bladder_cancer, 
@@ -4287,8 +4287,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_brain_and_nervous_system_cancers, 
                   sequelae.controlled_phase_of_brain_and_nervous_system_cancers, 
@@ -4326,8 +4326,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=7,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_thyroid_cancer, 
                   sequelae.controlled_phase_of_thyroid_cancer, sequelae.metastatic_phase_of_thyroid_cancer, 
@@ -4364,8 +4364,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_mesothelioma, 
                   sequelae.controlled_phase_of_mesothelioma, sequelae.metastatic_phase_of_mesothelioma, 
@@ -4402,8 +4402,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=4,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_hodgkin_disease, 
                   sequelae.controlled_phase_of_hodgkin_disease, sequelae.metastatic_phase_of_hodgkin_disease, 
@@ -4440,8 +4440,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_non_hodgkin_lymphoma, 
                   sequelae.controlled_phase_of_non_hodgkin_lymphoma, 
@@ -4478,8 +4478,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_multiple_myeloma, 
                   sequelae.controlled_phase_of_multiple_myeloma, sequelae.metastatic_phase_of_multiple_myeloma, 
@@ -4516,8 +4516,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=4,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'other_malignant_neoplasms': Cause(
@@ -4551,8 +4551,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'other_neoplasms': Cause(
@@ -4586,7 +4586,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=3,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_other_neoplasms, 
                   sequelae.controlled_phase_of_other_neoplasms, sequelae.metastatic_phase_of_other_neoplasms, 
@@ -4623,7 +4623,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
     ),
     'rheumatic_heart_disease': Cause(
@@ -4657,8 +4657,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.rheumatic_heart_disease_without_heart_failure, 
                   sequelae.mild_heart_failure_due_to_rheumatic_heart_disease, 
@@ -4697,8 +4697,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.acute_myocardial_infarction_first_2_days, 
                   sequelae.acute_myocardial_infarction_3_to_28_days, 
@@ -4743,8 +4743,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'ischemic_stroke': Cause(
@@ -4778,8 +4778,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.acute_ischemic_stroke_severity_level_1, sequelae.acute_ischemic_stroke_severity_level_2, 
                   sequelae.acute_ischemic_stroke_severity_level_4, sequelae.acute_ischemic_stroke_severity_level_3, 
@@ -4820,8 +4820,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.acute_intracerebral_hemorrhage_severity_level_1, 
                   sequelae.acute_intracerebral_hemorrhage_severity_level_2, 
@@ -4866,8 +4866,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.acute_subarachnoid_hemorrhage_severity_level_1, 
                   sequelae.acute_subarachnoid_hemorrhage_severity_level_2, 
@@ -4912,7 +4912,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_heart_failure_due_to_hypertensive_heart_disease, 
                   sequelae.moderate_heart_failure_due_to_hypertensive_heart_disease, 
@@ -4950,7 +4950,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
     ),
     'atrial_fibrillation_and_flutter': Cause(
@@ -4984,8 +4984,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=11,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.asymptomatic_atrial_fibrillation_and_flutter, 
                   sequelae.symptomatic_atrial_fibrillation_and_flutter, ),
@@ -5021,7 +5021,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=None,
             yld_age_group_id_end=None,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
     ),
     'peripheral_artery_disease': Cause(
@@ -5055,8 +5055,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=13,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.asymptomatic_peripheral_vascular_disease, 
                   sequelae.symptomatic_claudication_due_to_peripheral_vascular_disease, ),
@@ -5092,8 +5092,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.moderate_endocarditis, sequelae.severe_endocarditis, 
                   sequelae.mild_heart_failure_due_to_endocarditis, 
@@ -5132,8 +5132,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'other_cardiovascular_and_circulatory_diseases': Cause(
@@ -5167,7 +5167,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_heart_failure_due_to_other_cardiovascular_diseases, 
                   sequelae.moderate_heart_failure_due_to_other_cardiovascular_diseases, 
@@ -5207,7 +5207,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
     ),
     'chronic_obstructive_pulmonary_disease': Cause(
@@ -5241,8 +5241,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_chronic_obstructive_pulmonary_disease, 
                   sequelae.moderate_chronic_obstructive_pulmonary_disease, 
@@ -5284,7 +5284,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
     ),
     'silicosis': Cause(
@@ -5318,7 +5318,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_silicosis, sequelae.moderate_silicosis, sequelae.asymptomatic_silicosis, 
                   sequelae.mild_heart_failure_due_to_severe_silicosis, 
@@ -5358,7 +5358,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_asbestosis, sequelae.moderate_asbestosis, sequelae.asymptomatic_asbestosis, 
                   sequelae.mild_heart_failure_due_to_severe_asbestosis, 
@@ -5398,7 +5398,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_coal_workers_pneumoconiosis, sequelae.moderate_coal_workers_pneumoconiosis, 
                   sequelae.asymptomatic_coal_workers_pneumoconiosis, 
@@ -5439,7 +5439,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_other_pneumoconiosis, sequelae.moderate_other_pneumoconiosis, 
                   sequelae.asymptomatic_other_pneumoconiosis, 
@@ -5480,8 +5480,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.controlled_asthma, sequelae.partially_controlled_asthma, sequelae.uncontrolled_asthma, 
                   sequelae.asymptomatic_asthma, ),
@@ -5517,8 +5517,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_interstitial_lung_disease_and_pulmonary_sarcoidosis, 
                   sequelae.moderate_interstitial_lung_disease_and_pulmonary_sarcoidosis, 
@@ -5595,8 +5595,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b': Cause(
@@ -5630,8 +5630,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated, 
                   sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_compensated, ),
@@ -5667,8 +5667,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated, 
                   sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_compensated, ),
@@ -5704,8 +5704,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated, 
                   sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_compensated, ),
@@ -5741,8 +5741,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated, 
                   sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_compensated, ),
@@ -5778,8 +5778,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'peptic_ulcer_disease': Cause(
@@ -5813,8 +5813,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.complicated_peptic_ulcer_disease_with_no_anemia, 
                   sequelae.complicated_peptic_ulcer_disease_with_mild_anemia, 
@@ -5865,8 +5865,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.complicated_gastritis_and_duodenitis_with_no_anemia, 
                   sequelae.complicated_gastritis_and_duodenitis_with_mild_anemia, 
@@ -5917,8 +5917,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.appendicitis, ),
     ),
@@ -5953,8 +5953,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.paralytic_ileus_and_intestinal_obstruction, ),
     ),
@@ -5989,8 +5989,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.asymptomatic_inguinal_femoral_and_abdominal_hernia, 
                   sequelae.mild_symptomatic_inguinal_femoral_and_abdominal_hernia, 
@@ -6028,8 +6028,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.asymptomatic_ulcerative_colitis, sequelae.asymptomatic_crohns_disease, 
                   sequelae.ulcerative_colitis_with_mild_anemia, sequelae.ulcerative_colitis_with_moderate_anemia, 
@@ -6068,8 +6068,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.vascular_intestinal_disorders, ),
     ),
@@ -6104,8 +6104,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.asymptomatic_gallbladder_and_biliary_diseases, 
                   sequelae.mild_symptomatic_episodes_gallbladder_and_biliary_diseases, 
@@ -6143,8 +6143,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_chronic_pancreatitis, sequelae.moderate_chronic_pancreatitis, 
                   sequelae.severe_chronic_pancreatitis, sequelae.acute_pancreatitis, ),
@@ -6180,7 +6180,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.symptomatic_gastroesophageal_reflux_disease, 
                   sequelae.mild_to_moderate_gastroesophageal_reflux_disease_symptoms_typical, 
@@ -6217,7 +6217,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.other_digestive_diseases, ),
     ),
@@ -6252,8 +6252,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'alzheimers_disease_and_other_dementias': Cause(
@@ -6287,8 +6287,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=13,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_alzheimer_disease_and_other_dementias, 
                   sequelae.moderate_alzheimer_disease_and_other_dementias, 
@@ -6325,8 +6325,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=9,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_parkinson_disease, sequelae.moderate_parkinson_disease, 
                   sequelae.severe_parkinson_disease, ),
@@ -6362,8 +6362,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.idiopathic_seizure_free_treated_epilepsy, sequelae.idiopathic_less_severe_epilepsy, 
                   sequelae.idiopathic_severe_epilepsy, ),
@@ -6399,8 +6399,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=6,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_multiple_sclerosis, sequelae.moderate_multiple_sclerosis, 
                   sequelae.severe_multiple_sclerosis, sequelae.asymptomatic_multiple_sclerosis, ),
@@ -6436,7 +6436,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=6,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.symptomatic_migraine, sequelae.asymptomatic_migraine, 
                   sequelae.asymptomatic_medication_overuse_headache_due_to_migraine, 
@@ -6473,7 +6473,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=6,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.symptomatic_tension_type_headache, sequelae.asymptomatic_tension_type_headache, 
                   sequelae.asymptomatic_medication_overuse_headache_due_to_tension_type_headache, 
@@ -6510,8 +6510,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_motor_impairment_mild_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease, 
                   sequelae.mild_motor_impairment_moderate_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease, 
@@ -6575,7 +6575,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.other_neurological_disorders, 
                   sequelae.guillain_barre_syndrome_due_to_other_neurological_disorders, ),
@@ -6611,8 +6611,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'schizophrenia': Cause(
@@ -6646,7 +6646,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=7,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.schizophrenia_acute_state, sequelae.schizophrenia_residual_state, ),
     ),
@@ -6681,8 +6681,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_alcohol_dependence, sequelae.moderate_alcohol_dependence, 
                   sequelae.severe_alcohol_dependence, sequelae.mild_fetal_alcohol_syndrome, 
@@ -6721,7 +6721,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=7,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
     ),
     'opioid_use_disorders': Cause(
@@ -6755,7 +6755,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.mild_opioid_dependence, sequelae.severe_opioid_dependence, 
                   sequelae.asymptomatic_opioid_dependence, ),
@@ -6791,8 +6791,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_cocaine_dependence, sequelae.severe_cocaine_dependence, 
                   sequelae.asymptomatic_cocaine_dependence, ),
@@ -6828,8 +6828,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=7,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_amphetamine_dependence, sequelae.severe_amphetamine_dependence, 
                   sequelae.asymptomatic_amphetamine_dependence, ),
@@ -6865,7 +6865,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=7,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.mild_cannabis_dependence, sequelae.severe_cannabis_dependence, 
                   sequelae.asymptomatic_cannabis_dependence, ),
@@ -6901,7 +6901,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=7,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.other_drug_use_disorders, ),
     ),
@@ -6936,7 +6936,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
     ),
     'major_depressive_disorder': Cause(
@@ -6970,7 +6970,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.mild_major_depressive_disorder, sequelae.moderate_major_depressive_disorder, 
                   sequelae.severe_major_depressive_disorder, 
@@ -7007,7 +7007,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.symptomatic_dysthymia, sequelae.dysthymia_currently_without_symptoms, ),
     ),
@@ -7042,7 +7042,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=7,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.bipolar_disorder_manic_state, sequelae.bipolar_disorder_residual_state, 
                   sequelae.bipolar_disorder_depressive_state, ),
@@ -7078,7 +7078,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.mild_anxiety_disorders, sequelae.moderate_anxiety_disorders, 
                   sequelae.severe_anxiety_disorders, sequelae.anxiety_disorders_currently_without_symptoms, ),
@@ -7114,8 +7114,8 @@ causes = Causes(**{
             yll_age_group_id_end=13,
             yld_age_group_id_start=6,
             yld_age_group_id_end=13,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'anorexia_nervosa': Cause(
@@ -7149,8 +7149,8 @@ causes = Causes(**{
             yll_age_group_id_end=13,
             yld_age_group_id_start=6,
             yld_age_group_id_end=13,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.anorexia_nervosa, ),
     ),
@@ -7185,8 +7185,8 @@ causes = Causes(**{
             yll_age_group_id_end=13,
             yld_age_group_id_start=6,
             yld_age_group_id_end=13,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.bulimia_nervosa, ),
     ),
@@ -7221,7 +7221,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.autism_spectrum_disorders_without_intellectual_disability, 
                   sequelae.autism_spectrum_disorders_with_borderline_intellectual_disability, 
@@ -7261,7 +7261,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.symptomatic_attention_deficit_hyperactivity_disorder, 
                   sequelae.attention_deficit_hyperactivity_disorder_currently_without_symptoms, ),
@@ -7297,7 +7297,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=6,
             yld_age_group_id_end=8,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.symptomatic_conduct_disorder, sequelae.conduct_disorder_currently_without_symptoms, ),
     ),
@@ -7332,7 +7332,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.borderline_idiopathic_developmental_intellectual_disability, 
                   sequelae.mild_idiopathic_developmental_intellectual_disability, 
@@ -7407,7 +7407,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
     ),
     'acute_glomerulonephritis': Cause(
@@ -7441,8 +7441,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.acute_glomerulonephritis, ),
     ),
@@ -7477,8 +7477,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'chronic_kidney_disease_due_to_hypertension': Cause(
@@ -7512,8 +7512,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.end_stage_renal_disease_after_transplant_due_to_hypertension, 
                   sequelae.end_stage_renal_disease_on_dialysis_due_to_hypertension, 
@@ -7562,8 +7562,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.end_stage_renal_disease_after_transplant_due_to_glomerulonephritis, 
                   sequelae.end_stage_renal_disease_on_dialysis_due_to_glomerulonephritis, 
@@ -7612,8 +7612,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.end_stage_renal_disease_after_transplant_due_to_other_causes, 
                   sequelae.end_stage_renal_disease_on_dialysis_due_to_other_causes, 
@@ -7662,8 +7662,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'urinary_tract_infections': Cause(
@@ -7697,8 +7697,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_urinary_tract_infections, sequelae.moderate_urinary_tract_infections, ),
     ),
@@ -7733,8 +7733,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_urolithiasis_episodes, sequelae.moderate_urolithiasis_episodes, 
                   sequelae.severe_urolithiasis_episodes, ),
@@ -7770,8 +7770,8 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=13,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "sex_restriction_by_remission", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'sex_restriction_by_remission', )
         ),
         sequelae=(sequelae.asymptomatic_benign_prostatic_hyperplasia, 
                   sequelae.symptomatic_benign_prostatic_hyperplasia, ),
@@ -7807,7 +7807,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', )
         ),
     ),
     'other_urinary_diseases': Cause(
@@ -7841,7 +7841,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.other_urinary_diseases, ),
     ),
@@ -7876,8 +7876,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=7,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'uterine_fibroids': Cause(
@@ -7911,8 +7911,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", "sex_restriction_by_remission", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', 'sex_restriction_by_remission', )
         ),
         sequelae=(sequelae.asymptomatic_uterine_fibroids, 
                   sequelae.mild_abdominal_pain_due_to_uterine_fibroids_with_mild_anemia, 
@@ -7951,8 +7951,8 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=7,
             yld_age_group_id_end=14,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", "sex_restriction_by_remission", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', 'sex_restriction_by_remission', )
         ),
         sequelae=(sequelae.primary_infertility_due_to_polycystic_ovarian_syndrome, 
                   sequelae.asymptomatic_polycystic_ovarian_syndrome, 
@@ -7992,7 +7992,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=8,
             yld_age_group_id_end=14,
-            violated_restrictions=("yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', )
         ),
     ),
     'endometriosis': Cause(
@@ -8026,8 +8026,8 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=8,
             yld_age_group_id_end=14,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_abdominal_pain_due_to_endometriosis, 
                   sequelae.moderate_abdominal_pain_due_to_endometriosis, 
@@ -8072,8 +8072,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", "sex_restriction_by_remission", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', 'sex_restriction_by_remission', )
         ),
         sequelae=(sequelae.asymptomatic_genital_prolapse, sequelae.abdominal_pain_due_to_genital_prolapse, 
                   sequelae.stress_incontinence_due_to_genital_prolapse, 
@@ -8110,8 +8110,8 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=8,
             yld_age_group_id_end=14,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "sex_restriction_by_remission", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'sex_restriction_by_remission', )
         ),
         sequelae=(sequelae.abdominal_pain_due_to_premenstrual_syndrome, 
                   sequelae.depression_due_to_premenstrual_syndrome, sequelae.asymptomatic_premenstrual_syndrome, 
@@ -8148,8 +8148,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=14,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_anemia_due_to_menstrual_disorders, 
                   sequelae.moderate_anemia_due_to_menstrual_disorders, 
@@ -8189,7 +8189,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
     ),
     'thalassemias': Cause(
@@ -8223,7 +8223,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_heart_failure_due_to_thalassemias, 
                   sequelae.moderate_heart_failure_due_to_thalassemias, 
@@ -8274,7 +8274,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_without_anemia, 
                   sequelae.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_without_anemia, 
@@ -8338,7 +8338,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_anemia_due_to_g6pd_deficiency, sequelae.moderate_anemia_due_to_g6pd_deficiency, 
                   sequelae.severe_anemia_due_to_g6pd_deficiency, sequelae.mild_heart_failure_due_to_g6pd_deficiency, 
@@ -8377,7 +8377,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_anemia_due_to_other_hemoglobinopathies_and_hemolytic_anemias, 
                   sequelae.moderate_anemia_due_to_other_hemoglobinopathies_and_hemolytic_anemias, 
@@ -8419,7 +8419,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders, 
                   sequelae.moderate_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders, 
@@ -8464,8 +8464,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=6,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'rheumatoid_arthritis': Cause(
@@ -8499,8 +8499,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=6,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_rheumatoid_arthritis, sequelae.moderate_rheumatoid_arthritis, 
                   sequelae.severe_rheumatoid_arthritis, ),
@@ -8536,7 +8536,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=11,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.mild_osteoarthritis_of_the_hip, sequelae.moderate_osteoarthritis_of_the_hip, 
                   sequelae.severe_osteoarthritis_of_the_hip, sequelae.mild_osteoarthritis_of_the_knee, 
@@ -8573,7 +8573,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=6,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.severe_low_back_pain_with_leg_pain, sequelae.severe_low_back_pain_without_leg_pain, 
                   sequelae.most_severe_low_back_pain_with_leg_pain, 
@@ -8612,7 +8612,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=6,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.mild_neck_pain, sequelae.severe_neck_pain, sequelae.moderate_neck_pain, 
                   sequelae.most_severe_neck_pain, ),
@@ -8648,7 +8648,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.polyarticular_gout, sequelae.symptomatic_episodes_of_gout, sequelae.asymptomatic_gout, ),
     ),
@@ -8683,7 +8683,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=7,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.other_musculoskeletal_disorders_severity_level_2, 
                   sequelae.other_musculoskeletal_disorders_severity_level_3, 
@@ -8724,8 +8724,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'congenital_birth_defects': Cause(
@@ -8759,7 +8759,7 @@ causes = Causes(**{
             yll_age_group_id_end=17,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
     ),
     'neural_tube_defects': Cause(
@@ -8793,7 +8793,7 @@ causes = Causes(**{
             yll_age_group_id_end=17,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.severe_motor_and_cognitive_impairment_due_to_anencephaly, 
                   sequelae.asymptomatic_encephalocele_following_treatment, 
@@ -8912,7 +8912,7 @@ causes = Causes(**{
             yll_age_group_id_end=17,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.asymptomatic_ventricular_septal_defect_and_atrial_septal_defect, 
                   sequelae.congenital_heart_disease_without_intellectual_disability_or_heart_failure_due_to_other_congenital_cardiovascular_anomalies, 
@@ -9073,7 +9073,7 @@ causes = Causes(**{
             yll_age_group_id_end=4,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.disfigurement_level_1_due_to_orofacial_clefts, 
                   sequelae.disfigurement_level_2_due_to_orofacial_clefts, 
@@ -9111,7 +9111,7 @@ causes = Causes(**{
             yll_age_group_id_end=17,
             yld_age_group_id_start=2,
             yld_age_group_id_end=17,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.isolated_congenital_heart_disease_due_to_down_syndrome, 
                   sequelae.asymptomatic_down_syndrome, 
@@ -9192,7 +9192,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.congenital_heart_disease_due_to_turner_syndrome, 
                   sequelae.primary_infertility_due_to_turner_syndrome, 
@@ -9230,7 +9230,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.borderline_intellectual_disability_due_to_klinefelter_syndrome, 
                   sequelae.mild_intellectual_disability_due_to_klinefelter_syndrome, 
@@ -9270,7 +9270,7 @@ causes = Causes(**{
             yll_age_group_id_end=17,
             yld_age_group_id_start=2,
             yld_age_group_id_end=17,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.asymptomatic_other_chromosomal_abnormalities, 
                   sequelae.isolated_congenital_heart_disease_due_to_other_chromosomal_abnormalities, 
@@ -9354,7 +9354,7 @@ causes = Causes(**{
             yll_age_group_id_end=17,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.disfigurement_level_1_due_to_polydactyly_and_syndactyly, 
                   sequelae.disfigurement_level_2_due_to_congenital_limb_deficiency, 
@@ -9401,7 +9401,7 @@ causes = Causes(**{
             yll_age_group_id_end=17,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.asymptomatic_congenital_genital_anomalies, 
                   sequelae.atypical_genitalia_due_to_congenital_genital_anomalies, 
@@ -9467,7 +9467,7 @@ causes = Causes(**{
             yll_age_group_id_end=17,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.asymptomatic_congenital_diaphragmatic_hernia, 
                   sequelae.chronic_abdominal_pain_due_to_congenital_diaphragmatic_hernia, 
@@ -9537,7 +9537,7 @@ causes = Causes(**{
             yll_age_group_id_end=17,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_hearing_loss_due_to_other_congenital_anomalies, 
                   sequelae.mild_hearing_loss_with_ringing_due_to_other_congenital_anomalies, 
@@ -9584,8 +9584,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'dermatitis': Cause(
@@ -9619,7 +9619,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
     ),
     'psoriasis': Cause(
@@ -9653,7 +9653,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.mild_psoriasis, sequelae.moderate_psoriasis, sequelae.severe_psoriasis, ),
     ),
@@ -9688,8 +9688,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_cellulitis, sequelae.severe_cellulitis, sequelae.moderate_cellulitis, ),
     ),
@@ -9724,8 +9724,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.impetigo, sequelae.abscess_and_other_bacterial_skin_diseases, ),
     ),
@@ -9760,7 +9760,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.scabies, ),
     ),
@@ -9795,7 +9795,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.tinea_capitis, sequelae.other_fungal_skin_diseases, ),
     ),
@@ -9830,7 +9830,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.mild_viral_warts, sequelae.severe_viral_warts, sequelae.mild_molluscum_contagiosum, 
                   sequelae.severe_molluscum_contagiosum, ),
@@ -9866,7 +9866,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=6,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.mild_acne_vulgaris, sequelae.moderate_acne_vulgaris, sequelae.severe_acne_vulgaris, 
                   sequelae.non_disabling_symptomatic_acne, ),
@@ -9902,7 +9902,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.mild_alopecia_areata, sequelae.severe_alopecia_areata, ),
     ),
@@ -9937,7 +9937,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.pruritus, ),
     ),
@@ -9972,7 +9972,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.mild_urticaria, sequelae.severe_urticaria, ),
     ),
@@ -10007,8 +10007,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_decubitus_ulcer, sequelae.moderate_decubitus_ulcer, sequelae.severe_decubitus_ulcer, ),
     ),
@@ -10043,8 +10043,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.asymptomatic_other_skin_and_subcutaneous_diseases, 
                   sequelae.symptomatic_other_skin_and_subcutaneous_diseases, ),
@@ -10080,7 +10080,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', )
         ),
     ),
     'glaucoma': Cause(
@@ -10150,7 +10150,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=9,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.moderate_vision_impairment_due_to_cataract, 
                   sequelae.severe_vision_impairment_due_to_cataract, sequelae.blindness_due_to_cataract, ),
@@ -10186,7 +10186,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=14,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.moderate_vision_impairment_due_to_macular_degeneration, 
                   sequelae.severe_vision_impairment_due_to_macular_degeneration, 
@@ -10223,7 +10223,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.mild_hearing_loss_due_to_age_related_and_other_hearing_loss, 
                   sequelae.mild_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss, 
@@ -10269,7 +10269,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.moderate_vision_impairment_due_to_other_vision_loss, 
                   sequelae.severe_vision_impairment_due_to_other_vision_loss, 
@@ -10306,7 +10306,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.asymptomatic_acute_sense_organ_diseases, sequelae.mild_acute_sense_organ_diseases, 
                   sequelae.moderate_acute_sense_organ_diseases, 
@@ -10345,7 +10345,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
     ),
     'caries_of_deciduous_teeth': Cause(
@@ -10379,7 +10379,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=6,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.pain_due_to_caries_of_deciduous_teeth, sequelae.asymptomatic_caries_of_deciduous_teeth, ),
     ),
@@ -10414,7 +10414,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=6,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.pain_due_to_caries_of_permanent_teeth, sequelae.asymptomatic_caries_of_permanent_teeth, ),
     ),
@@ -10449,7 +10449,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.chronic_periodontal_diseases, ),
     ),
@@ -10484,7 +10484,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=9,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.difficulty_eating_due_to_edentulism_and_severe_tooth_loss, 
                   sequelae.asymptomatic_edentulism_and_severe_tooth_loss, ),
@@ -10520,7 +10520,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=6,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.mild_other_oral_disorders, sequelae.severe_other_oral_disorders, ),
     ),
@@ -10555,7 +10555,7 @@ causes = Causes(**{
             yll_age_group_id_end=3,
             yld_age_group_id_start=None,
             yld_age_group_id_end=None,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
     ),
     'injuries': Cause(
@@ -10589,8 +10589,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'transport_injuries': Cause(
@@ -10624,8 +10624,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'road_injuries': Cause(
@@ -10659,8 +10659,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'pedestrian_road_injuries': Cause(
@@ -10694,8 +10694,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'cyclist_road_injuries': Cause(
@@ -10729,8 +10729,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'motorcyclist_road_injuries': Cause(
@@ -10764,8 +10764,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'motor_vehicle_road_injuries': Cause(
@@ -10799,8 +10799,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'other_road_injuries': Cause(
@@ -10834,8 +10834,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'other_transport_injuries': Cause(
@@ -10869,8 +10869,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'unintentional_injuries': Cause(
@@ -10904,8 +10904,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'falls': Cause(
@@ -10939,8 +10939,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'drowning': Cause(
@@ -10974,8 +10974,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'fire_heat_and_hot_substances': Cause(
@@ -11009,8 +11009,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'poisonings': Cause(
@@ -11044,8 +11044,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'poisoning_by_carbon_monoxide': Cause(
@@ -11079,8 +11079,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'poisoning_by_other_means': Cause(
@@ -11114,8 +11114,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'exposure_to_mechanical_forces': Cause(
@@ -11149,8 +11149,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'unintentional_firearm_injuries': Cause(
@@ -11184,8 +11184,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'other_exposure_to_mechanical_forces': Cause(
@@ -11219,8 +11219,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'adverse_effects_of_medical_treatment': Cause(
@@ -11254,8 +11254,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'animal_contact': Cause(
@@ -11289,8 +11289,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'venomous_animal_contact': Cause(
@@ -11324,8 +11324,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'non_venomous_animal_contact': Cause(
@@ -11359,8 +11359,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'foreign_body': Cause(
@@ -11394,8 +11394,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'pulmonary_aspiration_and_foreign_body_in_airway': Cause(
@@ -11429,8 +11429,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'foreign_body_in_eyes': Cause(
@@ -11464,7 +11464,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
     ),
     'foreign_body_in_other_body_part': Cause(
@@ -11498,8 +11498,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'other_unintentional_injuries': Cause(
@@ -11533,8 +11533,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'self_harm_and_interpersonal_violence': Cause(
@@ -11568,8 +11568,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'self_harm': Cause(
@@ -11603,8 +11603,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=7,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'self_harm_by_firearm': Cause(
@@ -11638,8 +11638,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=7,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'self_harm_by_other_specified_means': Cause(
@@ -11673,8 +11673,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=7,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'interpersonal_violence': Cause(
@@ -11708,8 +11708,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'physical_violence_by_firearm': Cause(
@@ -11743,8 +11743,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'physical_violence_by_sharp_object': Cause(
@@ -11778,8 +11778,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'physical_violence_by_other_means': Cause(
@@ -11813,8 +11813,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'exposure_to_forces_of_nature': Cause(
@@ -11848,8 +11848,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'maternal_deaths_aggravated_by_hiv_aids': Cause(
@@ -11883,7 +11883,7 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=None,
             yld_age_group_id_end=None,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
     ),
     'thalassemias_trait': Cause(
@@ -11917,7 +11917,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.mild_anemia_due_to_b_thalassemia_trait, 
                   sequelae.moderate_anemia_due_to_b_thalassemia_trait, 
@@ -11957,7 +11957,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.mild_anemia_due_to_sickle_cell_trait, sequelae.moderate_anemia_due_to_sickle_cell_trait, 
                   sequelae.severe_anemia_due_to_sickle_cell_trait, sequelae.asymptomatic_sickle_cell_trait, ),
@@ -11993,7 +11993,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.mild_anemia_due_to_hemizygous_g6pd_deficiency, 
                   sequelae.moderate_anemia_due_to_hemizygous_g6pd_deficiency, 
@@ -12031,8 +12031,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'ebola': Cause(
@@ -12101,8 +12101,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=4,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_acute_lymphoid_leukemia, 
                   sequelae.controlled_phase_of_acute_lymphoid_leukemia, 
@@ -12140,8 +12140,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_chronic_lymphoid_leukemia, 
                   sequelae.controlled_phase_of_chronic_lymphoid_leukemia, 
@@ -12179,8 +12179,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_acute_myeloid_leukemia, 
                   sequelae.controlled_phase_of_acute_myeloid_leukemia, 
@@ -12218,8 +12218,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_chronic_myeloid_leukemia, 
                   sequelae.controlled_phase_of_chronic_myeloid_leukemia, 
@@ -12257,8 +12257,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_disfigurement_due_to_squamous_cell_carcinoma, 
                   sequelae.moderate_disfigurement_due_to_squamous_cell_carcinoma, 
@@ -12295,7 +12295,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.disfigurement_due_to_basal_cell_carcinoma, ),
     ),
@@ -12330,8 +12330,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=4,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'drug_susceptible_tuberculosis': Cause(
@@ -12365,8 +12365,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.drug_susceptible_tuberculosis, ),
     ),
@@ -12437,7 +12437,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.moderate_pain_due_to_guinea_worm_emergence, 
                   sequelae.mild_pain_due_to_guinea_worm_emergence, 
@@ -12475,7 +12475,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_heart_failure_due_to_alcoholic_cardiomyopathy, 
                   sequelae.moderate_heart_failure_due_to_alcoholic_cardiomyopathy, 
@@ -12547,8 +12547,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.acute_myocarditis, sequelae.mild_heart_failure_due_to_myocarditis, 
                   sequelae.moderate_heart_failure_due_to_myocarditis, 
@@ -12587,8 +12587,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=4,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.metastatic_phase_of_other_leukemia, 
                   sequelae.diagnosis_and_primary_therapy_phase_of_other_leukemia, 
@@ -12625,7 +12625,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_heart_failure_due_to_other_cardiomyopathy, 
                   sequelae.moderate_heart_failure_due_to_other_cardiomyopathy, 
@@ -12662,8 +12662,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'multidrug_resistant_tuberculosis_without_extensive_drug_resistance': Cause(
@@ -12697,8 +12697,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.multidrug_resistant_tuberculosis_without_extensive_drug_resistance, ),
     ),
@@ -12733,8 +12733,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.extensively_drug_resistant_tuberculosis, ),
     ),
@@ -12769,8 +12769,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=4,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.drug_susceptible_hiv_aids_tuberculosis_with_mild_anemia, 
                   sequelae.drug_susceptible_hiv_aids_tuberculosis_with_moderate_anemia, 
@@ -12808,8 +12808,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=4,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_mild_anemia, 
                   sequelae.multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_moderate_anemia, 
@@ -12847,8 +12847,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=4,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.extensively_drug_resistant_hiv_aids_tuberculosis_with_mild_anemia, 
                   sequelae.extensively_drug_resistant_hiv_aids_tuberculosis_with_moderate_anemia, 
@@ -12886,7 +12886,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.latent_tuberculosis_infection, ),
     ),
@@ -12921,8 +12921,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=3,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'respiratory_infections_and_tuberculosis': Cause(
@@ -12956,8 +12956,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'enteric_infections': Cause(
@@ -12991,8 +12991,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'typhoid_and_paratyphoid': Cause(
@@ -13026,7 +13026,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=3,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
     ),
     'invasive_non_typhoidal_salmonella_ints': Cause(
@@ -13060,8 +13060,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=3,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.severe_acute_ints, ),
     ),
@@ -13096,8 +13096,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'maternal_and_neonatal_disorders': Cause(
@@ -13131,8 +13131,8 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'myelodysplastic_myeloproliferative_and_other_hematopoietic_neoplasms': Cause(
@@ -13166,8 +13166,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=3,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.myelodysplastic_myeloproliferative_and_other_hematopoietic_neoplasms, ),
     ),
@@ -13202,7 +13202,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=3,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.benign_and_in_situ_intestinal_neoplasms, ),
     ),
@@ -13237,8 +13237,8 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=3,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "sex_restriction_by_remission", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'sex_restriction_by_remission', )
         ),
         sequelae=(sequelae.benign_and_in_situ_cervical_and_uterine_neoplasms, ),
     ),
@@ -13273,8 +13273,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=3,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.other_benign_and_in_situ_neoplasms, ),
     ),
@@ -13309,8 +13309,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.calcific_aortic_valve_disease_after_treatment, 
                   sequelae.asymptomatic_calcific_aortic_valve_disease, 
@@ -13350,8 +13350,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.degenerative_mitral_valve_disease_after_treatment, 
                   sequelae.asymptomatic_degenerative_mitral_valve_disease, 
@@ -13391,7 +13391,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', 'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.mild_heart_failure_due_to_other_non_rheumatic_valve_disease, 
                   sequelae.moderate_heart_failure_due_to_other_non_rheumatic_valve_disease, 
@@ -13429,8 +13429,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_nash_compensated, 
                   sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated, 
@@ -13467,7 +13467,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=6,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
     ),
     'substance_use_disorders': Cause(
@@ -13535,7 +13535,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
     ),
     'diabetes_mellitus_type_1': Cause(
@@ -13569,7 +13569,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diabetic_foot_due_to_neuropathy_due_to_diabetes_mellitus_type_1, 
                   sequelae.diabetic_neuropathy_due_to_diabetes_mellitus_type_1, 
@@ -13611,7 +13611,7 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yll_age_restriction_by_death", )
+            violated_restrictions=('yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diabetic_foot_due_to_neuropathy_due_to_diabetes_mellitus_type_2, 
                   sequelae.diabetic_neuropathy_due_to_diabetes_mellitus_type_2, 
@@ -13653,7 +13653,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.mild_atopic_dermatitis, sequelae.moderate_atopic_dermatitis, 
                   sequelae.severe_atopic_dermatitis, ),
@@ -13689,7 +13689,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.mild_contact_dermatitis, sequelae.moderate_contact_dermatitis, 
                   sequelae.asymptomatic_contact_dermatitis, ),
@@ -13725,7 +13725,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.symptomatic_seborrhoeic_dermatitis, sequelae.asymptomatic_seborrhoeic_dermatitis, ),
     ),
@@ -13760,8 +13760,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'blindness_and_vision_impairment': Cause(
@@ -13795,7 +13795,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', )
         ),
     ),
     'upper_digestive_system_diseases': Cause(
@@ -13829,8 +13829,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=5,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
     ),
     'maternal_abortion_and_miscarriage': Cause(
@@ -13864,8 +13864,8 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=7,
             yld_age_group_id_end=14,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.maternal_abortive_outcome, ),
     ),
@@ -13900,8 +13900,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=8,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_nash, 
                   sequelae.controlled_phase_of_liver_cancer_due_to_nash, 
@@ -13939,8 +13939,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.end_stage_renal_disease_after_transplant_due_to_type_1_diabetes_mellitus, 
                   sequelae.end_stage_renal_disease_on_dialysis_due_to_type_1_diabetes_mellitus, 
@@ -13989,8 +13989,8 @@ causes = Causes(**{
             yll_age_group_id_end=32,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_incidence", "yld_age_restriction_by_prevalence",
-                                   "yll_age_restriction_by_death", )
+            violated_restrictions=('yld_age_restriction_by_incidence', 'yld_age_restriction_by_prevalence',
+                                   'yll_age_restriction_by_death', )
         ),
         sequelae=(sequelae.end_stage_renal_disease_after_transplant_due_to_type_2_diabetes_mellitus, 
                   sequelae.end_stage_renal_disease_on_dialysis_due_to_type_2_diabetes_mellitus, 
@@ -14039,7 +14039,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=32,
-            violated_restrictions=("yld_age_restriction_by_prevalence", )
+            violated_restrictions=('yld_age_restriction_by_prevalence', )
         ),
         sequelae=(sequelae.moderate_vision_impairment_due_to_uncorrected_refractive_error, 
                   sequelae.severe_vision_impairment_due_to_uncorrected_refractive_error, 
