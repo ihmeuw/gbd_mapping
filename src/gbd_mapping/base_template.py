@@ -84,7 +84,7 @@ class Restrictions(GbdRecord):
                  yll_age_group_id_end: int = None,
                  yld_age_group_id_start: int = None,
                  yld_age_group_id_end: int = None,
-                 violated_restrictions: List=[], ):
+                 violated_restrictions: Tuple = (), ):
         super().__init__()
         self.male_only = male_only
         self.female_only = female_only
