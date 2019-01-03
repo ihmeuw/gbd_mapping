@@ -50,10 +50,12 @@ def get_risks():
 
 
 def get_covariates():
-    covariates = gbd.get_covariate_metadata().reset_index(drop=True)
-    covariates = pd.DataFrame({'covariate_name': clean_entity_list(covariates.covariate_name),
-                               'covariate_id': covariates.covariate_id})
-    return covariates.sort_values('covariate_id')
+    data = get_covariate_data()
+    data = {c[0]: c[1] for c in data}
+    covariates = pd.DataFrame.from_dict(data, orient='index').reset_index()
+    covariates = covariates.rename(columns={'index':'covariate_name', 0:'covariate_id'})
+    
+    return covariates.sort_values('covariate_id')  
 
 
 #####################################

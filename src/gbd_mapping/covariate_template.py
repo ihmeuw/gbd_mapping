@@ -48,16 +48,15 @@ class Covariates(GbdRecord):
                  'cumulative_cigarettes_15_years', 'cumulative_cigarettes_20_years', 'cumulative_cigarettes_5_years',
                  'diabetes_fasting_plasma_glucose_mmol_l', 'diabetes_age_standardized_prevalence_proportion',
                  'diabetes_age_specific_prevalence_proportion', 'disaster_deaths_rate_per_1000',
-                 'dtp3_coverage_proportion', 'education_years_per_capita', 'famine_binary',
-                 'fao_composite_factor_#1', 'fao_composite_factor_#2', 'fao_composite_factor_#3',
-                 'fao_composite_factor_#4', 'female_hiv_death_rate_per_1_for_ages_15_49',
-                 'fertility_15_19_year_olds', 'fruits_kcal_per_capita', 'gold_production_binary',
-                 'gold_production_kg_per_capita', 'health_system_access_unitless', 'health_system_access_2_unitless',
-                 'proportion_of_households_using_iodized_salt_adjusted', 'hib3_vaccine_coverage_proportion',
-                 'hiv_prevalence_arv_adjusted_custom_lag__percent', 'hiv_prevalence_unadjusted_proportion',
-                 'hospital_beds_per_1000', 'in_facility_delivery_proportion', 'saturated_fats_kcal_per_capita',
-                 'kcal_of_stimulants_per_capita_per_day', 'sugar_kcal_per_capita', 'landlocked_nation_binary',
-                 'average_latitude', 'ldi_income_per_capita', 'lead_gas_outphase_binary',
+                 'dtp3_coverage_proportion', 'education_years_per_capita', 'famine_binary', 'fao_composite_factor_1',
+                 'fao_composite_factor_2', 'fao_composite_factor_3', 'fao_composite_factor_4',
+                 'female_hiv_death_rate_per_1_for_ages_15_49', 'fertility_15_19_year_olds', 'fruits_kcal_per_capita',
+                 'gold_production_binary', 'gold_production_kg_per_capita', 'health_system_access_unitless',
+                 'health_system_access_2_unitless', 'proportion_of_households_using_iodized_salt_adjusted',
+                 'hib3_vaccine_coverage_proportion', 'hiv_prevalence_arv_adjusted_custom_lag__percent',
+                 'hiv_prevalence_unadjusted_proportion', 'hospital_beds_per_1000', 'in_facility_delivery_proportion',
+                 'saturated_fats_kcal_per_capita', 'kcal_of_stimulants_per_capita_per_day', 'sugar_kcal_per_capita',
+                 'landlocked_nation_binary', 'average_latitude', 'ldi_income_per_capita', 'lead_gas_outphase_binary',
                  'low_elevation_coastal_zone_under_10m_proportion', 'live_births_thousands',
                  'ln_kcals_of_fiber_consumed_per_capita_per_day', 'ln_total_calories_consumed_as_hydrogenated_oil',
                  'ln_percent_of_total_calories_consumed_as_eggs',
@@ -174,11 +173,11 @@ class Covariates(GbdRecord):
                  'indicator_for_south_asia_superregion_location_id_158',
                  'indicator_for_sub_saharan_africa_superregion_location_id_166', 'patterns_of_drinking_score_who',
                  'alcohol_binge_drinker_proportion_age_standardized',
-                 'patterns_of_drinking_score_who_;_indicator_for_score_1',
-                 'patterns_of_drinking_score_who_;_indicator_for_score_2',
-                 'patterns_of_drinking_score_who_;_indicator_for_score_3',
-                 'patterns_of_drinking_score_who_;_indicator_for_score_4',
-                 'patterns_of_drinking_score_who_;_indicator_for_score_5',
+                 'patterns_of_drinking_score_who__indicator_for_score_1',
+                 'patterns_of_drinking_score_who__indicator_for_score_2',
+                 'patterns_of_drinking_score_who__indicator_for_score_3',
+                 'patterns_of_drinking_score_who__indicator_for_score_4',
+                 'patterns_of_drinking_score_who__indicator_for_score_5',
                  '_improved_water_source_proportion_with_access_based_on_gbd_2010_definition',
                  'pre_control_prevalence_of_infection_with_lymphatic_filariasis_within_endemic_areas',
                  'seroprevalence_of_varicella', 'smoking_prevalence_age_standardized_both_sexes',
@@ -580,7 +579,7 @@ class Covariates(GbdRecord):
                  'lag_distributed_energy', 'art_coverage', 'tuberculosis_case_detection',
                  'universal_health_coverage', 'maternal_alcohol_consumption_during_pregnancy_proportion',
                  'healthcare_access_and_quality_index', 'age_standardized_proportion_adult_underweight',
-                 'reproductive_age_standardized_diabetes_prevalence_10_54_yrs;_females', 'ors_oral_rehydration',
+                 'reproductive_age_standardized_diabetes_prevalence_10_54_yrs_females', 'ors_oral_rehydration',
                  'antibiotics_for_lri', 'zinc_treatment', 'antibiotics_for_diarrhea', 'live_births_by_sex',
                  'age_standardized_melanoma', 'measles_vaccine_coverage_2_doses_proportion', 'sth_school_based_mda',
                  'schisto_cumulative_treatments', 'health_worker_density',
@@ -593,8 +592,8 @@ class Covariates(GbdRecord):
                  'malaria_incidence_map', 'antimalarial_effective_treatment_ratio_map',
                  'antimalarial_effective_treatment_map', 'risk_of_selfharm_due_to_schizophrenia',
                  'risk_of_selfharm_due_to_anxiety_disorders', 'risk_of_selfharm_due_to_bipolar_disorder',
-                 'mean_birth_weight', 'mean_weight_for_height_z_score_whz;_0_5_years',
-                 'mean_weight_for_age_z_score_waz;_0_5_years', 'mean_height_for_age_z_score_haz;_0_5_years',
+                 'mean_birth_weight', 'mean_weight_for_height_z_score_whz_0_5_years',
+                 'mean_weight_for_age_z_score_waz_0_5_years', 'mean_height_for_age_z_score_haz_0_5_years',
                  'mean_hemoglobin_concentration_age_standardized',
                  'birth_prevalence_of_fetal_alcohol_syndrome_per_1000',
                  'age_standardized_prevalence_of_cocaine_dependence_in_women_of_reproductive_age',
@@ -829,10 +828,10 @@ class Covariates(GbdRecord):
         self.dtp3_coverage_proportion = kwargs.get('dtp3_coverage_proportion')
         self.education_years_per_capita = kwargs.get('education_years_per_capita')
         self.famine_binary = kwargs.get('famine_binary')
-        self.fao_composite_factor_#1 = kwargs.get('fao_composite_factor_#1')
-        self.fao_composite_factor_#2 = kwargs.get('fao_composite_factor_#2')
-        self.fao_composite_factor_#3 = kwargs.get('fao_composite_factor_#3')
-        self.fao_composite_factor_#4 = kwargs.get('fao_composite_factor_#4')
+        self.fao_composite_factor_1 = kwargs.get('fao_composite_factor_1')
+        self.fao_composite_factor_2 = kwargs.get('fao_composite_factor_2')
+        self.fao_composite_factor_3 = kwargs.get('fao_composite_factor_3')
+        self.fao_composite_factor_4 = kwargs.get('fao_composite_factor_4')
         self.female_hiv_death_rate_per_1_for_ages_15_49 = kwargs.get('female_hiv_death_rate_per_1_for_ages_15_49')
         self.fertility_15_19_year_olds = kwargs.get('fertility_15_19_year_olds')
         self.fruits_kcal_per_capita = kwargs.get('fruits_kcal_per_capita')
@@ -1068,11 +1067,11 @@ class Covariates(GbdRecord):
         self.indicator_for_sub_saharan_africa_superregion_location_id_166 = kwargs.get('indicator_for_sub_saharan_africa_superregion_location_id_166')
         self.patterns_of_drinking_score_who = kwargs.get('patterns_of_drinking_score_who')
         self.alcohol_binge_drinker_proportion_age_standardized = kwargs.get('alcohol_binge_drinker_proportion_age_standardized')
-        self.patterns_of_drinking_score_who_;_indicator_for_score_1 = kwargs.get('patterns_of_drinking_score_who_;_indicator_for_score_1')
-        self.patterns_of_drinking_score_who_;_indicator_for_score_2 = kwargs.get('patterns_of_drinking_score_who_;_indicator_for_score_2')
-        self.patterns_of_drinking_score_who_;_indicator_for_score_3 = kwargs.get('patterns_of_drinking_score_who_;_indicator_for_score_3')
-        self.patterns_of_drinking_score_who_;_indicator_for_score_4 = kwargs.get('patterns_of_drinking_score_who_;_indicator_for_score_4')
-        self.patterns_of_drinking_score_who_;_indicator_for_score_5 = kwargs.get('patterns_of_drinking_score_who_;_indicator_for_score_5')
+        self.patterns_of_drinking_score_who__indicator_for_score_1 = kwargs.get('patterns_of_drinking_score_who__indicator_for_score_1')
+        self.patterns_of_drinking_score_who__indicator_for_score_2 = kwargs.get('patterns_of_drinking_score_who__indicator_for_score_2')
+        self.patterns_of_drinking_score_who__indicator_for_score_3 = kwargs.get('patterns_of_drinking_score_who__indicator_for_score_3')
+        self.patterns_of_drinking_score_who__indicator_for_score_4 = kwargs.get('patterns_of_drinking_score_who__indicator_for_score_4')
+        self.patterns_of_drinking_score_who__indicator_for_score_5 = kwargs.get('patterns_of_drinking_score_who__indicator_for_score_5')
         self._improved_water_source_proportion_with_access_based_on_gbd_2010_definition = kwargs.get('_improved_water_source_proportion_with_access_based_on_gbd_2010_definition')
         self.pre_control_prevalence_of_infection_with_lymphatic_filariasis_within_endemic_areas = kwargs.get('pre_control_prevalence_of_infection_with_lymphatic_filariasis_within_endemic_areas')
         self.seroprevalence_of_varicella = kwargs.get('seroprevalence_of_varicella')
@@ -1660,7 +1659,7 @@ class Covariates(GbdRecord):
         self.maternal_alcohol_consumption_during_pregnancy_proportion = kwargs.get('maternal_alcohol_consumption_during_pregnancy_proportion')
         self.healthcare_access_and_quality_index = kwargs.get('healthcare_access_and_quality_index')
         self.age_standardized_proportion_adult_underweight = kwargs.get('age_standardized_proportion_adult_underweight')
-        self.reproductive_age_standardized_diabetes_prevalence_10_54_yrs;_females = kwargs.get('reproductive_age_standardized_diabetes_prevalence_10_54_yrs;_females')
+        self.reproductive_age_standardized_diabetes_prevalence_10_54_yrs_females = kwargs.get('reproductive_age_standardized_diabetes_prevalence_10_54_yrs_females')
         self.ors_oral_rehydration = kwargs.get('ors_oral_rehydration')
         self.antibiotics_for_lri = kwargs.get('antibiotics_for_lri')
         self.zinc_treatment = kwargs.get('zinc_treatment')
@@ -1695,9 +1694,9 @@ class Covariates(GbdRecord):
         self.risk_of_selfharm_due_to_anxiety_disorders = kwargs.get('risk_of_selfharm_due_to_anxiety_disorders')
         self.risk_of_selfharm_due_to_bipolar_disorder = kwargs.get('risk_of_selfharm_due_to_bipolar_disorder')
         self.mean_birth_weight = kwargs.get('mean_birth_weight')
-        self.mean_weight_for_height_z_score_whz;_0_5_years = kwargs.get('mean_weight_for_height_z_score_whz;_0_5_years')
-        self.mean_weight_for_age_z_score_waz;_0_5_years = kwargs.get('mean_weight_for_age_z_score_waz;_0_5_years')
-        self.mean_height_for_age_z_score_haz;_0_5_years = kwargs.get('mean_height_for_age_z_score_haz;_0_5_years')
+        self.mean_weight_for_height_z_score_whz_0_5_years = kwargs.get('mean_weight_for_height_z_score_whz_0_5_years')
+        self.mean_weight_for_age_z_score_waz_0_5_years = kwargs.get('mean_weight_for_age_z_score_waz_0_5_years')
+        self.mean_height_for_age_z_score_haz_0_5_years = kwargs.get('mean_height_for_age_z_score_haz_0_5_years')
         self.mean_hemoglobin_concentration_age_standardized = kwargs.get('mean_hemoglobin_concentration_age_standardized')
         self.birth_prevalence_of_fetal_alcohol_syndrome_per_1000 = kwargs.get('birth_prevalence_of_fetal_alcohol_syndrome_per_1000')
         self.age_standardized_prevalence_of_cocaine_dependence_in_women_of_reproductive_age = kwargs.get('age_standardized_prevalence_of_cocaine_dependence_in_women_of_reproductive_age')

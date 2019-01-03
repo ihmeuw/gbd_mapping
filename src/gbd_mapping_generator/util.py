@@ -72,6 +72,8 @@ def clean_entity_list(raw_entity_series):
                           '90th': 'ninetieth',
                           '*': 'x',
                           ':': '',
+                          ';': '',                          
+                          '#': '',
                           '&': 'and',
                           '10_year': 'ten_year',
                           'year.': 'year',
