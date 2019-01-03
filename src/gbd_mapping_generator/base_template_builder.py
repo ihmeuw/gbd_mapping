@@ -14,7 +14,8 @@ restrictions_attrs = (('male_only', 'bool'),
                       ('yll_age_group_id_start', 'int = None'),
                       ('yll_age_group_id_end', 'int = None'),
                       ('yld_age_group_id_start', 'int = None'),
-                      ('yld_age_group_id_end', 'int = None'),)
+                      ('yld_age_group_id_end', 'int = None'),
+                      ('violated_restrictions', 'Tuple = ()'),)
 tmred_attrs = (('distribution', 'str'),
                ('inverted', 'bool'), 
                ('min', 'scalar = None'),
@@ -105,7 +106,7 @@ def make_gbd_record():
 
 def build_mapping():
     templates = make_module_docstring('Template classes for GBD entities', __file__)
-    templates += make_import('typing', ['Union', 'Tuple', ])
+    templates += make_import('typing', ['Union', 'Tuple'])
     templates += make_import('.id', ['cid', 'sid', 'hsid', 'meid', 'covid', 'reiid', 'scalar', ]) + SPACING
     templates += make_gbd_record()
 
