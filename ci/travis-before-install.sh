@@ -46,4 +46,4 @@ done
 
 popd
 
-
+pip install .[test,docs]
