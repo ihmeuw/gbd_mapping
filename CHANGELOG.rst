@@ -1,3 +1,8 @@
+**1.0.13 - 01/04/18**
+
+ - Remove covariate flag.
+ - Add CI branch synchronization
+
 **1.0.12 - 12/7/18**
 
  - Add coverage_gap of lack_of_eggs
