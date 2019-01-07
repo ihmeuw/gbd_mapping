@@ -159,11 +159,11 @@ def get_cause_data():
         most_detailed = cause['most_detailed']
         level = cause['level']
         restrictions = make_cause_restrictions(cause)
-        prev_exist = cause['prevalence_exist']
-        inc_exist = cause['incidence_exist']
-        remission_exist = cause['remission_exist']
-        death_exist = cause['death_exist']
-        birth_prevalence_exist = cause['birth_prevalence_exist']
+        prev_exists = cause['prevalence_exists']
+        inc_exists = cause['incidence_exists']
+        remission_exists = cause['remission_exists']
+        deaths_exists = cause['deaths_exists']
+        birth_prevalence_exists = cause['birth_prevalence_exists']
         prev_in_range = cause['prevalence_in_range']
         inc_in_range = cause['incidence_in_range']
         remission_in_range = cause['remission_in_range']
@@ -180,8 +180,8 @@ def get_cause_data():
         associated_sequelae = clean_entity_list(sequelae[sequelae.cause_id == cid].sequela_name)
         sub_causes = causes[causes.parent_id == cid].cause_name.tolist()
 
-        cause_data.append((name, cid, dismod_id, most_detailed, level, parent, restrictions, prev_exist, inc_exist,
-                           remission_exist, death_exist, birth_prevalence_exist, prev_in_range, inc_in_range,
+        cause_data.append((name, cid, dismod_id, most_detailed, level, parent, restrictions, prev_exists, inc_exists,
+                           remission_exists, deaths_exists, birth_prevalence_exists, prev_in_range, inc_in_range,
                            remission_in_range, death_more_than_pop, prev_consistent, inc_consistent, death_consistent,
                            prev_aggregated, inc_aggregated, death_aggregated,
                            associated_sequelae, associated_etiologies, sub_causes))
