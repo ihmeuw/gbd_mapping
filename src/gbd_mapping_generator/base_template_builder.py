@@ -16,7 +16,7 @@ restrictions_attrs = (('male_only', 'bool'),
                       ('yld_age_group_id_start', 'int = None'),
                       ('yld_age_group_id_end', 'int = None'),)
 tmred_attrs = (('distribution', 'str'),
-               ('inverted', 'bool'), 
+               ('inverted', 'bool'),
                ('min', 'scalar = None'),
                ('max', 'scalar = None'),)
 categories_attrs = tuple([('cat1', 'str'), ('cat2', 'str')] + [(f'cat{i}', 'str = None') for i in range(3, 150)])
@@ -84,6 +84,10 @@ def make_gbd_record():
     def __iter__(self):
         for item in self.__slots__:
             yield getattr(self, item)
+            
+    def __eq__(self, other):
+        return all([getattr(self, item) == getattr(other, item) for item in self.__slots__
+                    if not isinstance(getattr(self, item), GbdRecord)])
 
     def __repr__(self):
         out = f'{self.__class__.__name__}('
