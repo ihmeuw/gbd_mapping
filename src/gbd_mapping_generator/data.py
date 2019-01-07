@@ -86,7 +86,7 @@ def get_covariate_list():
 
 def get_sequela_data():
     sequelae = gbd.get_sequela_id_mapping()
-    data_survey = gbd.get_survey_summary('sequela')
+    data_survey = gbd.get_survey_summary('sequela', 180)
     assert len(sequelae) == len(data_survey)
     sequelae = sequelae.merge(data_survey, on='sequela_id')
     dw = gbd.get_auxiliary_data('disability_weight', 'sequela', 'all')
