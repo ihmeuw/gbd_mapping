@@ -163,6 +163,7 @@ def get_cause_data():
         inc_exist = cause['incidence_exist']
         remission_exist = cause['remission_exist']
         death_exist = cause['death_exist']
+        birth_prevalence_exist = cause['birth_prevalence_exist']
         prev_in_range = cause['prevalence_in_range']
         inc_in_range = cause['incidence_in_range']
         remission_in_range = cause['remission_in_range']
@@ -180,8 +181,8 @@ def get_cause_data():
         sub_causes = causes[causes.parent_id == cid].cause_name.tolist()
 
         cause_data.append((name, cid, dismod_id, most_detailed, level, parent, restrictions, prev_exist, inc_exist,
-                           remission_exist, death_exist, prev_in_range, inc_in_range, remission_in_range,
-                           death_more_than_pop, prev_consistent, inc_consistent, death_consistent,
+                           remission_exist, death_exist, birth_prevalence_exist, prev_in_range, inc_in_range,
+                           remission_in_range, death_more_than_pop, prev_consistent, inc_consistent, death_consistent,
                            prev_aggregated, inc_aggregated, death_aggregated,
                            associated_sequelae, associated_etiologies, sub_causes))
 

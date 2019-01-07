@@ -20,6 +20,7 @@ def get_base_types():
                       ('incidence_exists', "Union['bool', 'None']"),
                       ('remission_exists', "Union['bool', 'None']"),
                       ('death_exists', "Union['bool', 'None']"),
+                      ('birth_prevalence_exists', 'bool'),
                       ('prevalence_in_range', "Union['bool', 'None']"),
                       ('incidence_in_range', "Union['bool', 'None']"),
                       ('remission_in_range', "Union['bool', 'None']"),
@@ -46,9 +47,9 @@ def get_base_types():
 
 
 def make_cause(name, cid, dismod_id, most_detailed, level, restrictions, prev_exist, inc_exist, remission_exist,
-               death_exist, prev_in_range, inc_in_range, remission_in_range, death_more_than_pop,
-               prev_consistent, inc_consistent, death_consistent, prev_aggregated, inc_aggregated, death_aggregated,
-               sequelae=None, etiologies=None):
+               death_exist, birth_prevalence_exist, prev_in_range, inc_in_range, remission_in_range,
+               death_more_than_pop, prev_consistent, inc_consistent, death_consistent, prev_aggregated, inc_aggregated,
+               death_aggregated, sequelae=None, etiologies=None):
     out = ""
     out += TAB + f"'{name}': Cause(\n"
     out += TAB * 2 + f"name='{name}',\n"
@@ -61,6 +62,7 @@ def make_cause(name, cid, dismod_id, most_detailed, level, restrictions, prev_ex
     out += TAB * 2 + f"incidence_exists={inc_exist},\n"
     out += TAB * 2 + f"remission_exists={remission_exist},\n"
     out += TAB * 2 + f"death_exists={death_exist},\n"
+    out += TAB * 2 + f"birth_prevalence_exists={birth_prevalence_exist},\n"
     out += TAB * 2 + f"prevalence_in_range={prev_in_range},\n"
     out += TAB * 2 + f"incidence_in_range={inc_in_range},\n"
     out += TAB * 2 + f"remission_in_range={remission_in_range},\n"
@@ -112,18 +114,18 @@ def make_cause(name, cid, dismod_id, most_detailed, level, restrictions, prev_ex
 def make_causes(causes_list):
     out = f'causes = Causes(**{{\n'
     for (name, cid, dismod_id, most_detailed, cause_level, parent, restrictions, prev_exist, inc_exist, remission_exist,
-         death_exist, prev_in_range, inc_in_range, remission_in_range, death_more_than_pop,
+         death_exist, birth_prevalence_exist, prev_in_range, inc_in_range, remission_in_range, death_more_than_pop,
          prev_consistent, inc_consistent, death_consistent, prev_aggregated,
          inc_aggregated, death_aggregated, sequelae, etiologies, sub_causes) in causes_list:
         out += make_cause(name, cid, dismod_id, most_detailed, cause_level, restrictions, prev_exist, inc_exist,
-                          remission_exist, death_exist, prev_in_range, inc_in_range, remission_in_range,
-                          death_more_than_pop, prev_consistent, inc_consistent, death_consistent,
+                          remission_exist, death_exist, birth_prevalence_exist, prev_in_range, inc_in_range,
+                          remission_in_range, death_more_than_pop, prev_consistent, inc_consistent, death_consistent,
                           prev_aggregated, inc_aggregated, death_aggregated, sequelae, etiologies)
     out += "})\n\n"
 
     for (name, cid, dismod_id, most_detailed, cause_level, parent, restrictions,  prev_exist, inc_exist, remission_exist,
-         death_exist, prev_in_range, inc_in_range, remission_in_range, death_more_than_pop, prev_consistent,
-         inc_consistent, death_consistent, prev_aggregated, inc_aggregated, death_aggregated, sequelae,
+         death_exist, birth_prevalence_exist, prev_in_range, inc_in_range, remission_in_range, death_more_than_pop,
+         prev_consistent, inc_consistent, death_consistent, prev_aggregated, inc_aggregated, death_aggregated, sequelae,
          etiologies, sub_causes) in causes_list:
 
         if name != parent:
