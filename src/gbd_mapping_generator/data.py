@@ -90,16 +90,16 @@ def get_sequela_data():
     assert len(sequelae) == len(data_survey)
     sequelae = sequelae.merge(data_survey, on='sequela_id')
     dw = gbd.get_auxiliary_data('disability_weight', 'sequela', 'all')
-    sequelae['disability_weight_exist'] = sequelae['healthstate_id'].apply(lambda h: bool(h in set(dw.healthstate_id)))
+    sequelae['disability_weight_exists'] = sequelae['healthstate_id'].apply(lambda h: bool(h in set(dw.healthstate_id)))
     return list(zip(clean_entity_list(sequelae.sequela_name),
                     sequelae.sequela_id,
                     sequelae.modelable_entity_id,
                     clean_entity_list(sequelae.healthstate_name),
                     sequelae.healthstate_id,
-                    sequelae.disability_weight_exist,
-                    sequelae.incidence_exist,
-                    sequelae.prevalence_exist,
-                    sequelae.birth_prevalence_exist,
+                    sequelae.disability_weight_exists,
+                    sequelae.incidence_exists,
+                    sequelae.prevalence_exists,
+                    sequelae.birth_prevalence_exists,
                     sequelae.incidence_in_range,
                     sequelae.prevalence_in_range,
                     sequelae.birth_prevalence_in_range))
