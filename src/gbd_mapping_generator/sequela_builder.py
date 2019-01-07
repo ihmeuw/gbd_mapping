@@ -11,7 +11,7 @@ def get_base_types():
             'attrs': (('name', 'str'),
                       ('kind', 'str'),
                       ('gbd_id', 'hsid'),
-                      ('disability_weight_exist', 'bool'),),
+                      ('disability_weight_exists', 'bool'),),
             'superclass': ('ModelableEntity', modelable_entity_attrs),
             'docstring': 'Container for healthstate GBD ids and metadata.',
         },
@@ -58,7 +58,7 @@ def make_sequela(name, sid, mei_id, hs_name, hsid, dw_exist, inc_exist, prev_exi
     out += TAB*3 + f"name={hs_name},\n"
     out += TAB*3 + f"kind='healthstate',\n"
     out += TAB*3 + f"gbd_id={to_id(hsid, 'hsid')},\n"
-    out += TAB * 3 + f"disability_weight_exist={dw_exist},\n"
+    out += TAB * 3 + f"disability_weight_exists={dw_exist},\n"
     out += TAB*2 + f"),\n"
     out += TAB + f"),\n"
     return out
