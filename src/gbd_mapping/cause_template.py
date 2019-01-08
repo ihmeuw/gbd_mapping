@@ -15,10 +15,11 @@ from .etiology_template import Etiology
 class Cause(ModelableEntity):
     """Container for cause GBD ids and metadata"""
     __slots__ = ('name', 'kind', 'gbd_id', 'dismod_id', 'most_detailed', 'level', 'restrictions',
-                 'prevalence_exists', 'incidence_exists', 'remission_exists', 'death_exists', 'prevalence_in_range',
-                 'incidence_in_range', 'remission_in_range', 'death_more_than_population', 'prevalence_consistent',
-                 'incidence_consistent', 'death_consistent', 'prevalence_aggregated', 'incidence_aggregated',
-                 'death_aggregated', 'parent', 'sub_causes', 'sequelae', 'etiologies', )
+                 'prevalence_exists', 'incidence_exists', 'remission_exists', 'deaths_exists',
+                 'birth_prevalence_exists', 'prevalence_in_range', 'incidence_in_range', 'remission_in_range',
+                 'deaths_in_range', 'prevalence_consistent', 'incidence_consistent', 'deaths_consistent',
+                 'prevalence_aggregated', 'incidence_aggregated', 'deaths_aggregated', 'parent', 'sub_causes',
+                 'sequelae', 'etiologies', )
 
     def __init__(self,
                  name: str,
@@ -31,17 +32,18 @@ class Cause(ModelableEntity):
                  prevalence_exists: Union['bool', 'None'],
                  incidence_exists: Union['bool', 'None'],
                  remission_exists: Union['bool', 'None'],
-                 death_exists: Union['bool', 'None'],
+                 deaths_exists: Union['bool', 'None'],
+                 birth_prevalence_exists: bool,
                  prevalence_in_range: Union['bool', 'None'],
                  incidence_in_range: Union['bool', 'None'],
                  remission_in_range: Union['bool', 'None'],
-                 death_more_than_population: Union['bool', 'None'],
+                 deaths_in_range: Union['bool', 'None'],
                  prevalence_consistent: Union['bool', 'None'],
                  incidence_consistent: Union['bool', 'None'],
-                 death_consistent: Union['bool', 'None'],
+                 deaths_consistent: Union['bool', 'None'],
                  prevalence_aggregated: Union['bool', 'None'],
                  incidence_aggregated: Union['bool', 'None'],
-                 death_aggregated: Union['bool', 'None'],
+                 deaths_aggregated: Union['bool', 'None'],
                  parent: "Cause" = None,
                  sub_causes: Tuple["Cause", ...] = None,
                  sequelae: Tuple[Sequela, ...] = None,
@@ -59,17 +61,18 @@ class Cause(ModelableEntity):
         self.prevalence_exists = prevalence_exists
         self.incidence_exists = incidence_exists
         self.remission_exists = remission_exists
-        self.death_exists = death_exists
+        self.deaths_exists = deaths_exists
+        self.birth_prevalence_exists = birth_prevalence_exists
         self.prevalence_in_range = prevalence_in_range
         self.incidence_in_range = incidence_in_range
         self.remission_in_range = remission_in_range
-        self.death_more_than_population = death_more_than_population
+        self.deaths_in_range = deaths_in_range
         self.prevalence_consistent = prevalence_consistent
         self.incidence_consistent = incidence_consistent
-        self.death_consistent = death_consistent
+        self.deaths_consistent = deaths_consistent
         self.prevalence_aggregated = prevalence_aggregated
         self.incidence_aggregated = incidence_aggregated
-        self.death_aggregated = death_aggregated
+        self.deaths_aggregated = deaths_aggregated
         self.parent = parent
         self.sub_causes = sub_causes
         self.sequelae = sequelae

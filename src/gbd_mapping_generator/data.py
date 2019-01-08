@@ -130,7 +130,7 @@ def get_cause_data():
     cause_me_map = cause_me_map[['modelable_entity_id', 'cause_name']].set_index('cause_name')
 
     causes = gbd.get_cause_metadata(cause_set_id=CAUSE_SET_ID)
-    data_survey = gbd.get_survey_summary('cause')
+    data_survey = gbd.get_survey_summary('cause', 180)
     assert len(causes) == len(data_survey)
 
     causes = pd.DataFrame({'cause_name': clean_entity_list(causes.cause_name),
