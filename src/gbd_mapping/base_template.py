@@ -50,7 +50,7 @@ class GbdRecord:
                 out += ','
             out += f'\n{slot}='
             if isinstance(attr, tuple):
-                out += '['+','.join([entity.name for entity in attr]) + ']'
+                out += '['+', '.join([entity.name if isinstance(entity, GbdRecord) else entity for entity in attr]) + ']'
             else:
                 out += repr(attr)
         return out + ')'
