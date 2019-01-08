@@ -331,7 +331,7 @@ def get_risk_data():
 
 def get_covariate_data():
     covariates = gbd.get_covariate_metadata()
-    data_survey = gbd.get_survey_summary('covariate')
+    data_survey = gbd.get_survey_summary('covariate', 180)
     data_survey = data_survey[data_survey.covariate_id.isin(covariates.covariate_id)]
 
     covariates = covariates.merge(data_survey, on='covariate_id')
@@ -341,9 +341,9 @@ def get_covariate_data():
                     covariates.by_sex,
                     covariates.dichotomous,
                     covariates.data_exist,
-                    covariates.lower_value_exist,
-                    covariates.upper_value_exist,
-                    covariates.mean_value_exist,
+                    covariates.lower_value_exists,
+                    covariates.upper_value_exists,
+                    covariates.mean_value_exists,
                     covariates.sex_restriction_violated,
                     covariates.age_restriction_violated,))
 

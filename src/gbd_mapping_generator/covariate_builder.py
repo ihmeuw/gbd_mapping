@@ -18,8 +18,8 @@ def get_base_types():
                       ('low_value_exists', 'bool'),
                       ('upper_value_exists', 'bool'),
                       ('mean_value_exists', 'bool'),
-                      ('sex_restriction_violated', 'bool'),
-                      ('age_restriction_violated', 'bool')),
+                      ('sex_restriction_violated', 'Union[bool, None]'),
+                      ('age_restriction_violated', 'Union[bool, None]')),
             'superclass': ('ModelableEntity', modelable_entity_attrs),
             'docstring': 'Container for covariate GBD ids and metadata.'
         },

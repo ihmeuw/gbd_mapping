@@ -26,8 +26,8 @@ class Covariate(ModelableEntity):
                  low_value_exists: bool,
                  upper_value_exists: bool,
                  mean_value_exists: bool,
-                 sex_restriction_violated: bool,
-                 age_restriction_violated: bool, ):
+                 sex_restriction_violated: Union[bool, None],
+                 age_restriction_violated: Union[bool, None], ):
         super().__init__(name=name,
                          kind=kind,
                          gbd_id=gbd_id)
