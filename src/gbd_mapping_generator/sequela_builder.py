@@ -22,10 +22,8 @@ def get_base_types():
                       ('dismod_id', 'meid'),
                       ('incidence_exists', 'bool'),
                       ('prevalence_exists', 'bool'),
-                      ('birth_prevalence_exists', 'bool'),
                       ('incidence_in_range', 'Union["bool", None]'),
                       ('prevalence_in_range', 'Union["bool", None]'),
-                      ('birth_prevalence_in_range', 'Union["bool", None]'),
                       ('healthstate', 'Healthstate'),),
             'superclass': ('ModelableEntity', modelable_entity_attrs),
             'docstring': 'Container for sequela GBD ids and metadata.'
@@ -38,8 +36,8 @@ def get_base_types():
     }
 
 
-def make_sequela(name, sid, mei_id, hs_name, hsid, dw_exists, inc_exists, prev_exists, birth_prev_exists,
-                 inc_in_range, prev_in_range, birth_prev_in_range):
+def make_sequela(name, sid, mei_id, hs_name, hsid, dw_exists, inc_exists, prev_exists,
+                 inc_in_range, prev_in_range):
     hs_name = 'UNKNOWN' if hs_name == 'nan' else f"'{hs_name}'"
     out = ""
     out += TAB + f"'{name}': Sequela(\n"
@@ -49,10 +47,8 @@ def make_sequela(name, sid, mei_id, hs_name, hsid, dw_exists, inc_exists, prev_e
     out += TAB*2 + f"dismod_id={to_id(mei_id, 'meid')},\n"
     out += TAB * 2 + f"incidence_exists={inc_exists},\n"
     out += TAB * 2 + f"prevalence_exists={prev_exists},\n"
-    out += TAB * 2 + f"birth_prevalence_exists={birth_prev_exists},\n"
     out += TAB * 2 + f"incidence_in_range={inc_in_range},\n"
     out += TAB * 2 + f"prevalence_in_range={prev_in_range},\n"
-    out += TAB * 2 + f"birth_prevalence_in_range={birth_prev_in_range},\n"
     out += TAB*2 + f"healthstate=Healthstate(\n"
 
     out += TAB*3 + f"name={hs_name},\n"
@@ -66,10 +62,10 @@ def make_sequela(name, sid, mei_id, hs_name, hsid, dw_exists, inc_exists, prev_e
 
 def make_sequelae(sequela_list):
     out = "sequelae = Sequelae(**{\n"
-    for (name, sid, mei_id, hs_name, hsid, dw_exists, inc_exists, prev_exists, birth_prev_exists,
-        inc_in_range, prev_in_range, birth_prev_in_range) in sequela_list:
-        out += make_sequela(name, sid, mei_id, hs_name, hsid, dw_exists, inc_exists, prev_exists, birth_prev_exists,
-                            inc_in_range, prev_in_range, birth_prev_in_range)
+    for (name, sid, mei_id, hs_name, hsid, dw_exists, inc_exists,
+         prev_exists, inc_in_range, prev_in_range) in sequela_list:
+        out += make_sequela(name, sid, mei_id, hs_name, hsid, dw_exists, inc_exists, prev_exists,
+                            inc_in_range, prev_in_range)
     out += "})\n"
     return out
 

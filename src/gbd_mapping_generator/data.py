@@ -99,10 +99,8 @@ def get_sequela_data():
                     sequelae.disability_weight_exists,
                     sequelae.incidence_exists,
                     sequelae.prevalence_exists,
-                    sequelae.birth_prevalence_exists,
                     sequelae.incidence_in_range,
-                    sequelae.prevalence_in_range,
-                    sequelae.birth_prevalence_in_range))
+                    sequelae.prevalence_in_range))
 
 
 def get_etiology_data():
