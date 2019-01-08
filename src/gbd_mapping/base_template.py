@@ -39,6 +39,10 @@ class GbdRecord:
     def __iter__(self):
         for item in self.__slots__:
             yield getattr(self, item)
+            
+    def __eq__(self, other):
+        return all([getattr(self, item) == getattr(other, item) for item in self.__slots__
+                    if not isinstance(getattr(self, item), GbdRecord)])
 
     def __repr__(self):
         out = f'{self.__class__.__name__}('
