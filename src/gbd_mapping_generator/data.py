@@ -364,8 +364,8 @@ def get_risk_data():
         out.append((name, rei_id, most_detailed, level, paf_calculation_type,
                     affected_causes, paf_of_one_causes,
                     distribution, levels, tmred, scalar,
-                    missing_exposure, missing_rr, missing_paf,
-                    rr_less_than_1, paf_outside_0_1,
+                    missing_exposure, missing_rr, rr_less_than_1,
+                    missing_paf, paf_outside_0_1,
                     restrictions,
                     parent, sub_risks, affected_risks))
     return out
