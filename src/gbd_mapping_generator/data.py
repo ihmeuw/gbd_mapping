@@ -215,7 +215,7 @@ def make_cause_restrictions(cause):
         ('yll_age_group_id_end', id_map[cause['yll_age_end']][1] if not cause['yld_only'] else None),
         ('yld_age_group_id_start', id_map[cause['yld_age_start']][0] if not cause['yll_only'] else None),
         ('yld_age_group_id_end', id_map[cause['yld_age_end']][1] if not cause['yll_only'] else None),
-        ('violated_restrictions', cause['violated_restrictions'])
+        ('violated_restrictions', cause['violated_restrictions'] if cause['violated_restrictions'] else [])
     )
     return tuple(restrictions)
 
