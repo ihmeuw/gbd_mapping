@@ -23,9 +23,9 @@ class Covariate(ModelableEntity):
                  by_sex: bool,
                  dichotomous: bool,
                  data_exist: bool,
-                 lower_value_exists: bool,
-                 upper_value_exists: bool,
-                 mean_value_exists: bool,
+                 lower_value_exists: Union[bool, None],
+                 upper_value_exists: Union[bool, None],
+                 mean_value_exists: Union[bool, None],
                  sex_restriction_violated: Union[bool, None],
                  age_restriction_violated: Union[bool, None], ):
         super().__init__(name=name,
