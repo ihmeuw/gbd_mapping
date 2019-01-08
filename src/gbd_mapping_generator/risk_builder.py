@@ -56,11 +56,11 @@ def make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
     out += TAB * 2 + f"most_detailed={bool(most_detailed)},\n"
     out += TAB * 2 + f"distribution='{distribution}',\n"
     out += TAB * 2 + f"paf_calculation_type='{paf_calculation_type}',\n"
-    out += TAB * 2 + f"missing_exposure='{missing_exposure}',\n"
-    out += TAB * 2 + f"missing_rr='{missing_rr}',\n"
-    out += TAB * 2 + f"rr_less_than_1='{rr_less_than_1}',\n"
-    out += TAB * 2 + f"missing_paf='{missing_paf}',\n"
-    out += TAB * 2 + f"paf_outside_0_1='{paf_outside_0_1}',\n"
+    out += TAB * 2 + f"missing_exposure={missing_exposure},\n"
+    out += TAB * 2 + f"missing_rr={missing_rr},\n"
+    out += TAB * 2 + f"rr_less_than_1={rr_less_than_1},\n"
+    out += TAB * 2 + f"missing_paf={missing_paf},\n"
+    out += TAB * 2 + f"paf_outside_0_1={paf_outside_0_1},\n"
 
 
     out += 2*TAB + "restrictions=Restrictions(\n"
