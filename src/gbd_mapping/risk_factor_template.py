@@ -14,9 +14,9 @@ from .cause_template import Cause
 class RiskFactor(ModelableEntity):
     """Container for risk GBD ids and metadata."""
     __slots__ = ('name', 'kind', 'gbd_id', 'level', 'most_detailed', 'distribution', 'paf_calculation_type',
-                 'restrictions', 'missing_exposure', 'missing_rr', 'rr_less_than_1', 'missing_paf',
-                 'paf_outside_0_1', 'affected_causes', 'paf_of_one_causes', 'parent', 'sub_risk_factors',
-                 'affected_risk_factors', 'categories', 'tmred', 'rr_scalar', )
+                 'restrictions', 'missing_exposure', 'missing_exposure_sd', 'missing_rr', 'rr_less_than_1',
+                 'missing_paf', 'paf_outside_0_1', 'affected_causes', 'paf_of_one_causes', 'parent',
+                 'sub_risk_factors', 'affected_risk_factors', 'categories', 'tmred', 'rr_scalar', )
 
     def __init__(self,
                  name: str,
@@ -28,6 +28,7 @@ class RiskFactor(ModelableEntity):
                  paf_calculation_type: str,
                  restrictions: Restrictions,
                  missing_exposure: Union['bool', 'None'],
+                 missing_exposure_sd: Union['bool, 'None'],
                  missing_rr: Union['bool', 'None'],
                  rr_less_than_1: Union['bool', 'None'],
                  missing_paf: Union['bool', 'None'],
@@ -52,6 +53,7 @@ class RiskFactor(ModelableEntity):
         self.paf_calculation_type = paf_calculation_type
         self.restrictions = restrictions
         self.missing_exposure = missing_exposure
+        self.missing_exposure_sd = missing_exposure_sd
         self.missing_rr = missing_rr
         self.rr_less_than_1 = rr_less_than_1
         self.missing_paf = missing_paf
