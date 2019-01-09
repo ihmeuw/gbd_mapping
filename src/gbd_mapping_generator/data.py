@@ -240,8 +240,7 @@ def get_risk_data():
     risks = get_all_risk_metadata()
     causes = get_causes().set_index('cause_id')
 
-    data_survey = gbd.get_survey_summary("risk_factor")
-    assert len(data_survey) == len(risks)
+    data_survey = gbd.get_survey_summary("risk_factor", 180)
     risks = risks.join(data_survey, how='left') 
 
     risks["exposure_type"] = risks.exposure_type.fillna("")
