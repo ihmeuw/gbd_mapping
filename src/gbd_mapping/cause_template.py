@@ -17,9 +17,10 @@ class Cause(ModelableEntity):
     __slots__ = ('name', 'kind', 'gbd_id', 'dismod_id', 'most_detailed', 'level', 'restrictions',
                  'prevalence_exists', 'incidence_exists', 'remission_exists', 'deaths_exists',
                  'birth_prevalence_exists', 'prevalence_in_range', 'incidence_in_range', 'remission_in_range',
-                 'deaths_in_range', 'prevalence_consistent', 'incidence_consistent', 'deaths_consistent',
-                 'prevalence_aggregated', 'incidence_aggregated', 'deaths_aggregated', 'parent', 'sub_causes',
-                 'sequelae', 'etiologies', )
+                 'deaths_in_range', 'birth_prevalence_in_range', 'prevalence_consistent', 'incidence_consistent',
+                 'deaths_consistent', 'birth_prevalence_consistent', 'prevalence_aggregated', 'incidence_aggregated',
+                 'deaths_aggregated', 'birth_prevalence_aggregated', 'parent', 'sub_causes', 'sequelae',
+                 'etiologies', )
 
     def __init__(self,
                  name: str,
@@ -38,12 +39,15 @@ class Cause(ModelableEntity):
                  incidence_in_range: Union['bool', 'None'],
                  remission_in_range: Union['bool', 'None'],
                  deaths_in_range: Union['bool', 'None'],
+                 birth_prevalence_in_range: Union['bool', 'None'],
                  prevalence_consistent: Union['bool', 'None'],
                  incidence_consistent: Union['bool', 'None'],
                  deaths_consistent: Union['bool', 'None'],
+                 birth_prevalence_consistent: Union['bool', 'None'],
                  prevalence_aggregated: Union['bool', 'None'],
                  incidence_aggregated: Union['bool', 'None'],
                  deaths_aggregated: Union['bool', 'None'],
+                 birth_prevalence_aggregated: Union['bool', 'None'],
                  parent: "Cause" = None,
                  sub_causes: Tuple["Cause", ...] = None,
                  sequelae: Tuple[Sequela, ...] = None,
@@ -67,12 +71,15 @@ class Cause(ModelableEntity):
         self.incidence_in_range = incidence_in_range
         self.remission_in_range = remission_in_range
         self.deaths_in_range = deaths_in_range
+        self.birth_prevalence_in_range = birth_prevalence_in_range
         self.prevalence_consistent = prevalence_consistent
         self.incidence_consistent = incidence_consistent
         self.deaths_consistent = deaths_consistent
+        self.birth_prevalence_consistent = birth_prevalence_consistent
         self.prevalence_aggregated = prevalence_aggregated
         self.incidence_aggregated = incidence_aggregated
         self.deaths_aggregated = deaths_aggregated
+        self.birth_prevalence_aggregated = birth_prevalence_aggregated
         self.parent = parent
         self.sub_causes = sub_causes
         self.sequelae = sequelae
