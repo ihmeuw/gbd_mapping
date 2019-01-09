@@ -130,7 +130,7 @@ def get_cause_data():
     cause_me_map = cause_me_map[['modelable_entity_id', 'cause_name']].set_index('cause_name')
 
     causes = gbd.get_cause_metadata(cause_set_id=CAUSE_SET_ID)
-    data_survey = gbd.get_survey_summary('cause')
+    data_survey = gbd.get_survey_summary('cause', 180)
     assert len(causes) == len(data_survey)
 
     causes = pd.DataFrame({'cause_name': clean_entity_list(causes.cause_name),
@@ -159,31 +159,35 @@ def get_cause_data():
         most_detailed = cause['most_detailed']
         level = cause['level']
         restrictions = make_cause_restrictions(cause)
-        prev_exist = cause['prevalence_exist']
-        inc_exist = cause['incidence_exist']
-        remission_exist = cause['remission_exist']
-        death_exist = cause['death_exist']
+        prev_exists = cause['prevalence_exists']
+        inc_exists = cause['incidence_exists']
+        remission_exists = cause['remission_exists']
+        deaths_exists = cause['deaths_exists']
+        birth_prevalence_exists = cause['birth_prevalence_exists']
         prev_in_range = cause['prevalence_in_range']
         inc_in_range = cause['incidence_in_range']
         remission_in_range = cause['remission_in_range']
-        death_more_than_pop = cause['death_more_than_population']
+        deaths_in_range = cause['deaths_in_range']
+        birth_prev_in_range = cause['birth_prevalence_in_range']
         prev_consistent = cause['prevalence_consistent']
         inc_consistent = cause['incidence_consistent']
-        death_consistent = cause['death_consistent']
+        deaths_consistent = cause['deaths_consistent']
+        birth_prev_consistent = cause['birth_prevalence_consistent']
         prev_aggregated = cause['prevalence_aggregated']
         inc_aggregated = cause['incidence_aggregated']
-        death_aggregated = cause['death_aggregated']
+        deaths_aggregated = cause['deaths_aggregated']
+        birth_prev_aggregated = cause['birth_prevalence_aggregated']
 
         eti_ids = cause_etiology_map[cause_etiology_map.cause_id == cid].rei_id.tolist()
         associated_etiologies = clean_entity_list(etiologies[etiologies.rei_id.isin(eti_ids)].rei_name)
         associated_sequelae = clean_entity_list(sequelae[sequelae.cause_id == cid].sequela_name)
         sub_causes = causes[causes.parent_id == cid].cause_name.tolist()
 
-        cause_data.append((name, cid, dismod_id, most_detailed, level, parent, restrictions, prev_exist, inc_exist,
-                           remission_exist, death_exist, prev_in_range, inc_in_range, remission_in_range,
-                           death_more_than_pop, prev_consistent, inc_consistent, death_consistent,
-                           prev_aggregated, inc_aggregated, death_aggregated,
-                           associated_sequelae, associated_etiologies, sub_causes))
+        cause_data.append((name, cid, dismod_id, most_detailed, level, parent, restrictions, prev_exists, inc_exists,
+                           remission_exists, deaths_exists, birth_prevalence_exists, prev_in_range, inc_in_range,
+                           remission_in_range, deaths_in_range, birth_prev_in_range, prev_consistent, inc_consistent,
+                           deaths_consistent, birth_prev_consistent, prev_aggregated, inc_aggregated, deaths_aggregated,
+                           birth_prev_aggregated, associated_sequelae, associated_etiologies, sub_causes))
 
     return cause_data
 
