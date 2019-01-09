@@ -294,8 +294,7 @@ def get_risk_data():
             scalar = None
             tmred = None
         else:  # It's either a custom risk or an aggregate, so we have to do a bunch of checking.
-            missing_exposure_sd = None
-
+            missing_exposure_sd = None 
             if risk['category_map'] is not np.nan:  # It's some strange categorical risk.
                 levels = sorted([(cat, name) for cat, name in risk['category_map'].items()],
                                 key=lambda x: int(x[0][3:]))
@@ -313,9 +312,10 @@ def get_risk_data():
                          ('min', risk['tmrel_lower']),
                          ('max', risk['tmrel_upper']),
                          ('inverted', bool(risk['inv_exp'])))
-
+        
         if risk['affected_cause_ids'] is not np.nan:
-            affected_causes = tuple(causes.at[cid, 'cause_name'] for cid in risk['affected_cause_ids'])
+            # TODO: WHAT IS CID 311 ??
+            affected_causes = tuple(causes.at[cid, 'cause_name'] for cid in risk['affected_cause_ids'] if cid in causes.index)
         else:
             affected_causes = []
         if risk['affected_rei_ids'] is not np.nan:
