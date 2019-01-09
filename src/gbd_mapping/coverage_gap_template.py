@@ -7,14 +7,14 @@ Any manual changes will be lost.
 from typing import Tuple, Union
 
 from .id import reiid
-from .base_template import GbdRecord, Levels, Restrictions
+from .base_template import GbdRecord, Categories, Restrictions
 from .cause_template import Cause
-from .risk_template import Risk
+from .risk_factor_template import RiskFactor
 
 
 class CoverageGap(GbdRecord):
     """Container for coverage gap GBD ids and metadata."""
-    __slots__ = ('name', 'kind', 'gbd_id', 'restrictions', 'distribution', 'levels', 'affected_causes',
+    __slots__ = ('name', 'kind', 'gbd_id', 'restrictions', 'distribution', 'categories', 'affected_causes',
                  'affected_risk_factors', )
 
     def __init__(self,
@@ -23,16 +23,16 @@ class CoverageGap(GbdRecord):
                  gbd_id: Union[reiid, None],
                  restrictions: Restrictions,
                  distribution: str,
-                 levels: Levels,
+                 categories: Categories,
                  affected_causes: Tuple[Cause, ...] = None,
-                 affected_risk_factors: Tuple[Risk, ...] = None, ):
+                 affected_risk_factors: Tuple[RiskFactor, ...] = None, ):
         super().__init__()
         self.name = name
         self.kind = kind
         self.gbd_id = gbd_id
         self.restrictions = restrictions
         self.distribution = distribution
-        self.levels = levels
+        self.categories = categories
         self.affected_causes = affected_causes
         self.affected_risk_factors = affected_risk_factors
 
