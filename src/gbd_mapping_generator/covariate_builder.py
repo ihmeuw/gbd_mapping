@@ -15,11 +15,11 @@ def get_base_types():
                       ('by_sex', 'bool'),
                       ('dichotomous', 'bool'),
                       ('data_exist', 'bool'),
-                      ('low_value_exists', 'bool'),
-                      ('upper_value_exists', 'bool'),
-                      ('mean_value_exists', 'bool'),
-                      ('sex_restriction_violated', 'bool'),
-                      ('age_restriction_violated', 'bool')),
+                      ('lower_value_exists', 'Union[bool, None]'),
+                      ('upper_value_exists', 'Union[bool, None]'),
+                      ('mean_value_exists', 'Union[bool, None]'),
+                      ('sex_restriction_violated', 'Union[bool, None]'),
+                      ('age_restriction_violated', 'Union[bool, None]')),
             'superclass': ('ModelableEntity', modelable_entity_attrs),
             'docstring': 'Container for covariate GBD ids and metadata.'
         },
@@ -42,7 +42,7 @@ def make_covariate(name, covid, by_age, by_sex, dichotomous, data_exist, low_val
     out += TAB*2 + f"by_sex={bool(by_sex)},\n"
     out += TAB*2 + f"dichotomous={bool(dichotomous)},\n"
     out += TAB * 2 + f"data_exist={data_exist},\n"
-    out += TAB * 2 + f"low_value_exists={low_val_exist},\n"
+    out += TAB * 2 + f"lower_value_exists={low_val_exist},\n"
     out += TAB * 2 + f"upper_value_exists={upper_val_exist},\n"
     out += TAB * 2 + f"mean_value_exists={mean_exist},\n"
     out += TAB * 2 + f"sex_restriction_violated={sex_restriction},\n"
