@@ -12,26 +12,27 @@ from .base_template import ModelableEntity, GbdRecord
 
 class Healthstate(ModelableEntity):
     """Container for healthstate GBD ids and metadata."""
-    __slots__ = ('name', 'kind', 'gbd_id', 'disability_weight_exist', )
+    __slots__ = ('name', 'kind', 'gbd_id', 'disability_weight_exists', )
 
     def __init__(self,
                  name: str,
                  kind: str,
                  gbd_id: hsid,
-                 disability_weight_exist: bool, ):
+                 disability_weight_exists: bool, ):
         super().__init__(name=name,
                          kind=kind,
                          gbd_id=gbd_id)
         self.name = name
         self.kind = kind
         self.gbd_id = gbd_id
-        self.disability_weight_exist = disability_weight_exist
+        self.disability_weight_exists = disability_weight_exists
 
 
 class Sequela(ModelableEntity):
     """Container for sequela GBD ids and metadata."""
     __slots__ = ('name', 'kind', 'gbd_id', 'dismod_id', 'incidence_exists', 'prevalence_exists',
-                 'incidence_in_range', 'prevalence_in_range', 'healthstate', )
+                 'birth_prevalence_exists', 'incidence_in_range', 'prevalence_in_range', 'birth_prevalence_in_range',
+                 'healthstate', )
 
     def __init__(self,
                  name: str,
@@ -40,8 +41,10 @@ class Sequela(ModelableEntity):
                  dismod_id: meid,
                  incidence_exists: bool,
                  prevalence_exists: bool,
+                 birth_prevalence_exists: bool,
                  incidence_in_range: Union["bool", None],
                  prevalence_in_range: Union["bool", None],
+                 birth_prevalence_in_range: Union["bool", None],
                  healthstate: Healthstate, ):
         super().__init__(name=name,
                          kind=kind,
@@ -52,8 +55,10 @@ class Sequela(ModelableEntity):
         self.dismod_id = dismod_id
         self.incidence_exists = incidence_exists
         self.prevalence_exists = prevalence_exists
+        self.birth_prevalence_exists = birth_prevalence_exists
         self.incidence_in_range = incidence_in_range
         self.prevalence_in_range = prevalence_in_range
+        self.birth_prevalence_in_range = birth_prevalence_in_range
         self.healthstate = healthstate
 
 
