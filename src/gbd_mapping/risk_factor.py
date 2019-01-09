@@ -40,6 +40,13 @@ risk_factors = RiskFactors(
                          causes.diarrheal_diseases, causes.lower_respiratory_infections, 
                          causes.respiratory_infections_and_tuberculosis, causes.enteric_infections, ),
         paf_of_one_causes=(),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     unsafe_water_source=RiskFactor(
         name='unsafe_water_source',
@@ -152,6 +159,13 @@ risk_factors = RiskFactors(
                          causes.respiratory_infections_and_tuberculosis, causes.diabetes_and_kidney_diseases, 
                          causes.diabetes_mellitus_type_2, causes.blindness_and_vision_impairment, ),
         paf_of_one_causes=(),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     ambient_particulate_matter_pollution=RiskFactor(
         name='ambient_particulate_matter_pollution',
@@ -186,6 +200,13 @@ risk_factors = RiskFactors(
                          causes.diabetes_mellitus, causes.respiratory_infections_and_tuberculosis, 
                          causes.diabetes_and_kidney_diseases, causes.diabetes_mellitus_type_2, ),
         paf_of_one_causes=(),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     household_air_pollution_from_solid_fuels=RiskFactor(
         name='household_air_pollution_from_solid_fuels',
@@ -242,10 +263,12 @@ risk_factors = RiskFactors(
         restrictions=Restrictions(
             male_only=False,
             female_only=False,
-            yll_only=True,
+            yll_only=False,
             yld_only=False,
             yll_age_group_id_start=10,
             yll_age_group_id_end=235,
+            yld_age_group_id_start=nan,
+            yld_age_group_id_end=nan,
             violated_restrictions=('age_restriction_violated_by_exposure', 'sex_restriction_violated_by_exposure', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.chronic_respiratory_diseases, 
@@ -302,6 +325,13 @@ risk_factors = RiskFactors(
                          causes.chronic_kidney_disease_due_to_diabetes_mellitus_type_1, 
                          causes.chronic_kidney_disease_due_to_diabetes_mellitus_type_2, ),
         paf_of_one_causes=(),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     residential_radon=RiskFactor(
         name='residential_radon',
@@ -380,6 +410,13 @@ risk_factors = RiskFactors(
                          causes.chronic_kidney_disease_due_to_diabetes_mellitus_type_1, 
                          causes.chronic_kidney_disease_due_to_diabetes_mellitus_type_2, ),
         paf_of_one_causes=(),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     child_and_maternal_malnutrition=RiskFactor(
         name='child_and_maternal_malnutrition',
@@ -429,6 +466,13 @@ risk_factors = RiskFactors(
                          causes.maternal_abortion_and_miscarriage, ),
         paf_of_one_causes=(causes.neonatal_preterm_birth, causes.protein_energy_malnutrition, 
                            causes.vitamin_a_deficiency, causes.dietary_iron_deficiency, ),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     suboptimal_breastfeeding=RiskFactor(
         name='suboptimal_breastfeeding',
@@ -459,6 +503,13 @@ risk_factors = RiskFactors(
                          causes.diarrheal_diseases, causes.lower_respiratory_infections, 
                          causes.respiratory_infections_and_tuberculosis, causes.enteric_infections, ),
         paf_of_one_causes=(),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     child_underweight=RiskFactor(
         name='child_underweight',
@@ -533,7 +584,9 @@ risk_factors = RiskFactors(
                          causes.maternal_and_neonatal_disorders, causes.maternal_abortion_and_miscarriage, ),
         paf_of_one_causes=(causes.dietary_iron_deficiency, ),
         tmred=Tmred(
-            distribution='draws',
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
             inverted=True,
         ),
         rr_scalar=scalar(10),
@@ -669,6 +722,13 @@ risk_factors = RiskFactors(
                          causes.diabetes_mellitus_type_2, causes.blindness_and_vision_impairment, 
                          causes.upper_digestive_system_diseases, causes.liver_cancer_due_to_nash, ),
         paf_of_one_causes=(),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     smoking=RiskFactor(
         name='smoking',
@@ -735,6 +795,12 @@ risk_factors = RiskFactors(
             cat1='Prevalence of Current Any Smokers',
             cat2='Prevalence of Former Any Smokers',
             cat3='unexposed',
+        ),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
         ),
         rr_scalar=scalar(1),
     ),
@@ -836,6 +902,13 @@ risk_factors = RiskFactors(
         paf_of_one_causes=(causes.liver_cancer_due_to_alcohol_use, 
                            causes.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_use, 
                            causes.alcohol_use_disorders, causes.alcoholic_cardiomyopathy, ),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     drug_use=RiskFactor(
         name='drug_use',
@@ -882,6 +955,13 @@ risk_factors = RiskFactors(
         paf_of_one_causes=(causes.opioid_use_disorders, causes.cocaine_use_disorders, 
                            causes.amphetamine_use_disorders, causes.cannabis_use_disorders, 
                            causes.other_drug_use_disorders, ),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     metabolic_risks=RiskFactor(
         name='metabolic_risks',
@@ -958,6 +1038,13 @@ risk_factors = RiskFactors(
                            causes.diabetes_mellitus_type_1, causes.diabetes_mellitus_type_2, 
                            causes.chronic_kidney_disease_due_to_diabetes_mellitus_type_1, 
                            causes.chronic_kidney_disease_due_to_diabetes_mellitus_type_2, ),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     high_fasting_plasma_glucose=RiskFactor(
         name='high_fasting_plasma_glucose',
@@ -1009,6 +1096,13 @@ risk_factors = RiskFactors(
         paf_of_one_causes=(causes.diabetes_mellitus_type_1, causes.diabetes_mellitus_type_2, 
                            causes.chronic_kidney_disease_due_to_diabetes_mellitus_type_1, 
                            causes.chronic_kidney_disease_due_to_diabetes_mellitus_type_2, ),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     high_systolic_blood_pressure=RiskFactor(
         name='high_systolic_blood_pressure',
@@ -1201,6 +1295,13 @@ risk_factors = RiskFactors(
                          causes.chronic_kidney_disease_due_to_diabetes_mellitus_type_1, 
                          causes.chronic_kidney_disease_due_to_diabetes_mellitus_type_2, ),
         paf_of_one_causes=(),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     diet_low_in_fruits=RiskFactor(
         name='diet_low_in_fruits',
@@ -1771,6 +1872,13 @@ risk_factors = RiskFactors(
                          causes.acute_myeloid_leukemia, causes.chronic_myeloid_leukemia, causes.other_leukemia, ),
         paf_of_one_causes=(causes.silicosis, causes.asbestosis, causes.coal_workers_pneumoconiosis, 
                            causes.other_pneumoconiosis, ),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     occupational_carcinogens=RiskFactor(
         name='occupational_carcinogens',
@@ -1805,6 +1913,13 @@ risk_factors = RiskFactors(
                          causes.asbestosis, causes.acute_lymphoid_leukemia, causes.chronic_lymphoid_leukemia, 
                          causes.acute_myeloid_leukemia, causes.chronic_myeloid_leukemia, causes.other_leukemia, ),
         paf_of_one_causes=(causes.silicosis, causes.asbestosis, ),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     occupational_asthmagens=RiskFactor(
         name='occupational_asthmagens',
@@ -1898,7 +2013,9 @@ risk_factors = RiskFactors(
             male_only=False,
             female_only=False,
             yll_only=False,
-            yld_only=True,
+            yld_only=False,
+            yll_age_group_id_start=nan,
+            yll_age_group_id_end=nan,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
             violated_restrictions=()
@@ -1949,6 +2066,13 @@ risk_factors = RiskFactors(
                          causes.pulmonary_aspiration_and_foreign_body_in_airway, 
                          causes.foreign_body_in_other_body_part, causes.other_unintentional_injuries, ),
         paf_of_one_causes=(),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     occupational_ergonomic_factors=RiskFactor(
         name='occupational_ergonomic_factors',
@@ -1967,7 +2091,9 @@ risk_factors = RiskFactors(
             male_only=False,
             female_only=False,
             yll_only=False,
-            yld_only=True,
+            yld_only=False,
+            yll_age_group_id_start=nan,
+            yll_age_group_id_end=nan,
             yld_age_group_id_start=8,
             yld_age_group_id_end=30,
             violated_restrictions=('age_restriction_violated_by_exposure', )
@@ -2015,6 +2141,13 @@ risk_factors = RiskFactors(
                          causes.alcohol_use_disorders, causes.depressive_disorders, causes.major_depressive_disorder, 
                          causes.substance_use_disorders, ),
         paf_of_one_causes=(),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     intimate_partner_violence=RiskFactor(
         name='intimate_partner_violence',
@@ -2031,7 +2164,7 @@ risk_factors = RiskFactors(
         paf_outside_0_1=False,
         restrictions=Restrictions(
             male_only=False,
-            female_only=True,
+            female_only=False,
             yll_only=False,
             yld_only=False,
             yll_age_group_id_start=8,
@@ -2054,6 +2187,13 @@ risk_factors = RiskFactors(
                          causes.hiv_aids_and_sexually_transmitted_infections, causes.maternal_and_neonatal_disorders, 
                          causes.maternal_abortion_and_miscarriage, ),
         paf_of_one_causes=(),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     non_exclusive_breastfeeding=RiskFactor(
         name='non_exclusive_breastfeeding',
@@ -2166,6 +2306,13 @@ risk_factors = RiskFactors(
         paf_of_one_causes=(causes.opioid_use_disorders, causes.cocaine_use_disorders, 
                            causes.amphetamine_use_disorders, causes.cannabis_use_disorders, 
                            causes.other_drug_use_disorders, ),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     suicide_due_to_drug_use_disorders=RiskFactor(
         name='suicide_due_to_drug_use_disorders',
@@ -2195,6 +2342,13 @@ risk_factors = RiskFactors(
         affected_causes=(causes.all_causes, causes.injuries, causes.self_harm_and_interpersonal_violence, 
                          causes.self_harm, causes.self_harm_by_firearm, causes.self_harm_by_other_specified_means, ),
         paf_of_one_causes=(),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     high_fasting_plasma_glucose_continuous=RiskFactor(
         name='high_fasting_plasma_glucose_continuous',
@@ -2735,7 +2889,7 @@ risk_factors = RiskFactors(
         paf_outside_0_1=False,
         restrictions=Restrictions(
             male_only=False,
-            female_only=True,
+            female_only=False,
             yll_only=False,
             yld_only=False,
             yll_age_group_id_start=8,
@@ -2770,7 +2924,7 @@ risk_factors = RiskFactors(
         paf_outside_0_1=False,
         restrictions=Restrictions(
             male_only=False,
-            female_only=True,
+            female_only=False,
             yll_only=False,
             yld_only=False,
             yll_age_group_id_start=8,
@@ -2785,6 +2939,13 @@ risk_factors = RiskFactors(
                          causes.physical_violence_by_sharp_object, causes.physical_violence_by_other_means, 
                          causes.sexual_violence, ),
         paf_of_one_causes=(),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     all_risk_factors=RiskFactor(
         name='all_risk_factors',
@@ -2924,6 +3085,13 @@ risk_factors = RiskFactors(
                            causes.diabetes_mellitus_type_2, 
                            causes.chronic_kidney_disease_due_to_diabetes_mellitus_type_1, 
                            causes.chronic_kidney_disease_due_to_diabetes_mellitus_type_2, ),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     unsafe_sex=RiskFactor(
         name='unsafe_sex',
@@ -2963,6 +3131,13 @@ risk_factors = RiskFactors(
         paf_of_one_causes=(causes.syphilis, causes.chlamydial_infection, causes.gonococcal_infection, 
                            causes.trichomoniasis, causes.genital_herpes, 
                            causes.other_sexually_transmitted_infections, causes.cervical_cancer, ),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     intimate_partner_violence_hiv_paf_approach=RiskFactor(
         name='intimate_partner_violence_hiv_paf_approach',
@@ -2979,7 +3154,7 @@ risk_factors = RiskFactors(
         paf_outside_0_1=False,
         restrictions=Restrictions(
             male_only=False,
-            female_only=True,
+            female_only=False,
             yll_only=False,
             yld_only=False,
             yll_age_group_id_start=8,
@@ -2996,6 +3171,13 @@ risk_factors = RiskFactors(
                          causes.hiv_aids_extensively_drug_resistant_tuberculosis, 
                          causes.hiv_aids_and_sexually_transmitted_infections, ),
         paf_of_one_causes=(),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     environmental_occupational_risks=RiskFactor(
         name='environmental_occupational_risks',
@@ -3064,6 +3246,13 @@ risk_factors = RiskFactors(
                          causes.chronic_kidney_disease_due_to_diabetes_mellitus_type_2, ),
         paf_of_one_causes=(causes.silicosis, causes.asbestosis, causes.coal_workers_pneumoconiosis, 
                            causes.other_pneumoconiosis, ),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     behavioral_risks=RiskFactor(
         name='behavioral_risks',
@@ -3187,6 +3376,13 @@ risk_factors = RiskFactors(
                            causes.alcohol_use_disorders, causes.opioid_use_disorders, causes.cocaine_use_disorders, 
                            causes.amphetamine_use_disorders, causes.cannabis_use_disorders, 
                            causes.other_drug_use_disorders, causes.alcoholic_cardiomyopathy, ),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     occupational_exposure_to_trichloroethylene=RiskFactor(
         name='occupational_exposure_to_trichloroethylene',
@@ -3284,6 +3480,13 @@ risk_factors = RiskFactors(
                          causes.respiratory_infections_and_tuberculosis, causes.enteric_infections, 
                          causes.other_infectious_diseases, ),
         paf_of_one_causes=(causes.protein_energy_malnutrition, ),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     child_wasting=RiskFactor(
         name='child_wasting',
@@ -3377,7 +3580,9 @@ risk_factors = RiskFactors(
             male_only=False,
             female_only=False,
             yll_only=False,
-            yld_only=True,
+            yld_only=False,
+            yll_age_group_id_start=nan,
+            yll_age_group_id_end=nan,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
             violated_restrictions=('age_restriction_violated_by_rr', 'sex_restriction_violated_by_rr', )
@@ -3385,6 +3590,13 @@ risk_factors = RiskFactors(
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.mental_disorders, 
                          causes.idiopathic_developmental_intellectual_disability, ),
         paf_of_one_causes=(),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     lead_exposure_in_bone=RiskFactor(
         name='lead_exposure_in_bone',
@@ -3449,7 +3661,7 @@ risk_factors = RiskFactors(
         paf_outside_0_1=False,
         restrictions=Restrictions(
             male_only=False,
-            female_only=True,
+            female_only=False,
             yll_only=False,
             yld_only=False,
             yll_age_group_id_start=8,
@@ -3481,7 +3693,7 @@ risk_factors = RiskFactors(
         missing_paf=False,
         paf_outside_0_1=False,
         restrictions=Restrictions(
-            male_only=True,
+            male_only=False,
             female_only=False,
             yll_only=False,
             yld_only=False,
@@ -3607,6 +3819,13 @@ risk_factors = RiskFactors(
                          causes.enteric_infections, causes.other_infectious_diseases, 
                          causes.maternal_and_neonatal_disorders, ),
         paf_of_one_causes=(causes.neonatal_preterm_birth, ),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     low_birth_weight_for_gestation=RiskFactor(
         name='low_birth_weight_for_gestation',
@@ -3648,6 +3867,13 @@ risk_factors = RiskFactors(
                          causes.enteric_infections, causes.other_infectious_diseases, 
                          causes.maternal_and_neonatal_disorders, ),
         paf_of_one_causes=(causes.neonatal_preterm_birth, ),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     low_birth_weight_and_short_gestation=RiskFactor(
         name='low_birth_weight_and_short_gestation',
@@ -3823,7 +4049,9 @@ risk_factors = RiskFactors(
             male_only=False,
             female_only=False,
             yll_only=False,
-            yld_only=True,
+            yld_only=False,
+            yll_age_group_id_start=nan,
+            yll_age_group_id_end=nan,
             yld_age_group_id_start=6,
             yld_age_group_id_end=12,
             violated_restrictions=('age_restriction_violated_by_rr', 'sex_restriction_violated_by_rr', )
@@ -3831,6 +4059,13 @@ risk_factors = RiskFactors(
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.mental_disorders, 
                          causes.depressive_disorders, causes.major_depressive_disorder, causes.anxiety_disorders, ),
         paf_of_one_causes=(),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     high_ldl_cholesterol=RiskFactor(
         name='high_ldl_cholesterol',
@@ -3991,6 +4226,13 @@ risk_factors = RiskFactors(
                          causes.respiratory_infections_and_tuberculosis, causes.diabetes_and_kidney_diseases, 
                          causes.diabetes_mellitus_type_2, causes.blindness_and_vision_impairment, ),
         paf_of_one_causes=(),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
     childhood_maltreatment=RiskFactor(
         name='childhood_maltreatment',
@@ -4021,6 +4263,13 @@ risk_factors = RiskFactors(
                          causes.alcohol_use_disorders, causes.depressive_disorders, causes.major_depressive_disorder, 
                          causes.anxiety_disorders, causes.substance_use_disorders, ),
         paf_of_one_causes=(),
+        tmred=Tmred(
+            distribution='nan',
+            min=scalar(nan),
+            max=scalar(nan),
+            inverted=True,
+        ),
+        rr_scalar=scalar(nan),
     ),
 )
 risk_factors.unsafe_water_sanitation_and_handwashing.parent = risk_factors.environmental_occupational_risks
