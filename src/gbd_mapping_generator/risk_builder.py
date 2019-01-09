@@ -18,6 +18,7 @@ def get_base_types():
                       ('paf_calculation_type', 'str'),
                       ('restrictions', 'Restrictions'),
                       ("missing_exposure", "Union['bool', 'None']"),
+                      ("missing_exposure_sd", "Union['bool, 'None']"),
                       ("missing_rr", "Union['bool', 'None']"),
                       ("rr_less_than_1", "Union['bool', 'None']"),
                       ("missing_paf", "Union['bool', 'None']"),
@@ -44,7 +45,7 @@ def get_base_types():
 def make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
               affected_causes, paf_of_one_causes,
               distribution, levels, tmred, scalar,
-              missing_exposure, missing_rr, rr_less_than_1,
+              missing_exposure, missing_exposure_sd, missing_rr, rr_less_than_1,
               missing_paf, paf_outside_0_1,
               restrictions):
     out = ""
@@ -57,11 +58,11 @@ def make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
     out += TAB * 2 + f"distribution='{distribution}',\n"
     out += TAB * 2 + f"paf_calculation_type='{paf_calculation_type}',\n"
     out += TAB * 2 + f"missing_exposure={missing_exposure},\n"
+    out += TAB * 2 + f"missing_exposure_sd={missing_exposure_sd},\n"
     out += TAB * 2 + f"missing_rr={missing_rr},\n"
     out += TAB * 2 + f"rr_less_than_1={rr_less_than_1},\n"
     out += TAB * 2 + f"missing_paf={missing_paf},\n"
     out += TAB * 2 + f"paf_outside_0_1={paf_outside_0_1},\n"
-
 
     out += 2*TAB + "restrictions=Restrictions(\n"
     for name, r in restrictions:
@@ -127,13 +128,13 @@ def make_risks(risk_list):
     for (name, rei_id, most_detailed, level, paf_calculation_type,
          affected_causes, paf_of_one_causes,
          distribution, levels, tmred, scalar,
-         missing_exposure, missing_rr, rr_less_than_1,
+         missing_exposure, missing_exposure_sd, missing_rr, rr_less_than_1,
          missing_paf, paf_outside_0_1,
          restrictions, *_) in risk_list:
         out += make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
                          affected_causes, paf_of_one_causes,
                          distribution, levels, tmred, scalar,
-                         missing_exposure, missing_rr, rr_less_than_1,
+                         missing_exposure, missing_exposure_sd, missing_rr, rr_less_than_1,
                          missing_paf, paf_outside_0_1,
                          restrictions)
 
