@@ -86,21 +86,23 @@ def get_covariate_list():
 
 def get_sequela_data():
     sequelae = gbd.get_sequela_id_mapping()
-    data_survey = gbd.get_survey_summary('sequela')
+    data_survey = gbd.get_survey_summary('sequela', 180)
     assert len(sequelae) == len(data_survey)
     sequelae = sequelae.merge(data_survey, on='sequela_id')
     dw = gbd.get_auxiliary_data('disability_weight', 'sequela', 'all')
-    sequelae['disability_weight_exist'] = sequelae['healthstate_id'].apply(lambda h: bool(h in set(dw.healthstate_id)))
+    sequelae['disability_weight_exists'] = sequelae['healthstate_id'].apply(lambda h: bool(h in set(dw.healthstate_id)))
     return list(zip(clean_entity_list(sequelae.sequela_name),
                     sequelae.sequela_id,
                     sequelae.modelable_entity_id,
                     clean_entity_list(sequelae.healthstate_name),
                     sequelae.healthstate_id,
-                    sequelae.disability_weight_exist,
-                    sequelae.incidence_exist,
-                    sequelae.prevalence_exist,
+                    sequelae.disability_weight_exists,
+                    sequelae.incidence_exists,
+                    sequelae.prevalence_exists,
+                    sequelae.birth_prevalence_exists,
                     sequelae.incidence_in_range,
-                    sequelae.prevalence_in_range))
+                    sequelae.prevalence_in_range,
+                    sequelae.birth_prevalence_in_range))
 
 
 def get_etiology_data():
@@ -130,7 +132,7 @@ def get_cause_data():
     cause_me_map = cause_me_map[['modelable_entity_id', 'cause_name']].set_index('cause_name')
 
     causes = gbd.get_cause_metadata(cause_set_id=CAUSE_SET_ID)
-    data_survey = gbd.get_survey_summary('cause')
+    data_survey = gbd.get_survey_summary('cause', 180)
     assert len(causes) == len(data_survey)
 
     causes = pd.DataFrame({'cause_name': clean_entity_list(causes.cause_name),
@@ -159,31 +161,35 @@ def get_cause_data():
         most_detailed = cause['most_detailed']
         level = cause['level']
         restrictions = make_cause_restrictions(cause)
-        prev_exist = cause['prevalence_exist']
-        inc_exist = cause['incidence_exist']
-        remission_exist = cause['remission_exist']
-        death_exist = cause['death_exist']
+        prev_exists = cause['prevalence_exists']
+        inc_exists = cause['incidence_exists']
+        remission_exists = cause['remission_exists']
+        deaths_exists = cause['deaths_exists']
+        birth_prevalence_exists = cause['birth_prevalence_exists']
         prev_in_range = cause['prevalence_in_range']
         inc_in_range = cause['incidence_in_range']
         remission_in_range = cause['remission_in_range']
-        death_more_than_pop = cause['death_more_than_population']
+        deaths_in_range = cause['deaths_in_range']
+        birth_prev_in_range = cause['birth_prevalence_in_range']
         prev_consistent = cause['prevalence_consistent']
         inc_consistent = cause['incidence_consistent']
-        death_consistent = cause['death_consistent']
+        deaths_consistent = cause['deaths_consistent']
+        birth_prev_consistent = cause['birth_prevalence_consistent']
         prev_aggregated = cause['prevalence_aggregated']
         inc_aggregated = cause['incidence_aggregated']
-        death_aggregated = cause['death_aggregated']
+        deaths_aggregated = cause['deaths_aggregated']
+        birth_prev_aggregated = cause['birth_prevalence_aggregated']
 
         eti_ids = cause_etiology_map[cause_etiology_map.cause_id == cid].rei_id.tolist()
         associated_etiologies = clean_entity_list(etiologies[etiologies.rei_id.isin(eti_ids)].rei_name)
         associated_sequelae = clean_entity_list(sequelae[sequelae.cause_id == cid].sequela_name)
         sub_causes = causes[causes.parent_id == cid].cause_name.tolist()
 
-        cause_data.append((name, cid, dismod_id, most_detailed, level, parent, restrictions, prev_exist, inc_exist,
-                           remission_exist, death_exist, prev_in_range, inc_in_range, remission_in_range,
-                           death_more_than_pop, prev_consistent, inc_consistent, death_consistent,
-                           prev_aggregated, inc_aggregated, death_aggregated,
-                           associated_sequelae, associated_etiologies, sub_causes))
+        cause_data.append((name, cid, dismod_id, most_detailed, level, parent, restrictions, prev_exists, inc_exists,
+                           remission_exists, deaths_exists, birth_prevalence_exists, prev_in_range, inc_in_range,
+                           remission_in_range, deaths_in_range, birth_prev_in_range, prev_consistent, inc_consistent,
+                           deaths_consistent, birth_prev_consistent, prev_aggregated, inc_aggregated, deaths_aggregated,
+                           birth_prev_aggregated, associated_sequelae, associated_etiologies, sub_causes))
 
     return cause_data
 
@@ -240,6 +246,11 @@ def get_risk_data():
     risks = get_all_risk_metadata()
     causes = get_causes().set_index('cause_id')
 
+    data_survey = gbd.get_survey_summary("risk_factor", 180)
+    risks = risks.join(data_survey, how='left') 
+
+    risks["exposure_type"] = risks.exposure_type.fillna("")
+
     out = []
 
     for rei_id, risk in risks.iterrows():
@@ -250,9 +261,15 @@ def get_risk_data():
         parent = risks.at[risk['parent_id'], 'rei_name']
 
         paf_calculation_type = risk['rei_calculation_type']
-        distribution = risk['exposure_type'] if not risk['exposure_type'] is np.nan else 'none'
+        distribution = risk['exposure_type'] if not (risk['exposure_type'] == "") else 'none'
+
+        missing_exposure = risk['missing_exposure']
+        missing_paf = risk['missing_paf']
+        paf_outside_0_1 = risk['paf_outside_0_1'] 
 
         if distribution in ['normal', 'lognormal', 'ensemble']:
+            missing_exposure_sd = risk['missing_exposure_sd'] 
+
             levels = None
             scalar = risk['rr_scalar']
             if risk['tmred_dist'] is np.nan:
@@ -266,11 +283,15 @@ def get_risk_data():
                          ('max', risk['tmrel_upper']),
                          ('inverted', bool(risk['inv_exp'])))
         elif distribution == 'dichotomous':
+            missing_exposure_sd = None
+
             levels = (('cat1', 'exposed'),
                       ('cat2', 'unexposed'))
             scalar = None
             tmred = None
         elif 'polytomous' in distribution:
+            missing_exposure_sd = None
+
             levels = sorted([(cat, name) for cat, name in risk['category_map'].items()],
                             key=lambda x: int(x[0][3:]))
             max_cat = int(levels[-1][0][3:]) + 1
@@ -279,6 +300,7 @@ def get_risk_data():
             scalar = None
             tmred = None
         else:  # It's either a custom risk or an aggregate, so we have to do a bunch of checking.
+            missing_exposure_sd = None 
             if risk['category_map'] is not np.nan:  # It's some strange categorical risk.
                 levels = sorted([(cat, name) for cat, name in risk['category_map'].items()],
                                 key=lambda x: int(x[0][3:]))
@@ -296,9 +318,10 @@ def get_risk_data():
                          ('min', risk['tmrel_lower']),
                          ('max', risk['tmrel_upper']),
                          ('inverted', bool(risk['inv_exp'])))
-
+        
         if risk['affected_cause_ids'] is not np.nan:
-            affected_causes = tuple(causes.at[cid, 'cause_name'] for cid in risk['affected_cause_ids'])
+            # TODO: WHAT IS CID 311 ??
+            affected_causes = tuple(causes.at[cid, 'cause_name'] for cid in risk['affected_cause_ids'] if cid in causes.index)
         else:
             affected_causes = []
         if risk['affected_rei_ids'] is not np.nan:
@@ -310,6 +333,27 @@ def get_risk_data():
         else:
             paf_of_one_causes = []
 
+        if paf_calculation_type in ['continuous', 'categorical', 'custom']:
+            missing_rr = risk['missing_rr']
+            rr_less_than_1 = not risk['rr_less_than_1']
+        else:
+            missing_rr = None
+            rr_less_than_1 = None
+
+        violated_restrictions = []
+        if risk['exposure_age_restriction_violated']:
+            violated_restrictions.append("age_restriction_violated_by_exposure")
+        if risk['exposure_sex_restriction_violated']:
+            violated_restrictions.append("sex_restriction_violated_by_exposure")
+        if risk['rr_age_restriction_violated']:
+            violated_restrictions.append("age_restriction_violated_by_rr")
+        if risk['rr_sex_restriction_violated']:
+            violated_restrictions.append("sex_restriction_violated_by_rr")
+        if risk['paf_age_restriction_violated']:
+            violated_restrictions.append("age_restriction_violated_by_paf")
+        if risk['paf_sex_restriction_violated']:
+            violated_restrictions.append("sex_restriction_violated_by_paf")
+
         sub_risks = risks[risks.parent_id == rei_id].rei_name.tolist()
 
         restrictions = (('male_only', risk['female'] is np.nan),
@@ -319,11 +363,14 @@ def get_risk_data():
                         ('yll_age_group_id_start', risk['yll_age_group_id_start'] if risk['yll'] is not np.nan else None),
                         ('yll_age_group_id_end', risk['yll_age_group_id_end'] if risk['yll'] is not np.nan else None),
                         ('yld_age_group_id_start', risk['yld_age_group_id_start'] if risk['yld'] is not np.nan else None),
-                        ('yld_age_group_id_end', risk['yld_age_group_id_end'] if risk['yld'] is not np.nan else None))
+                        ('yld_age_group_id_end', risk['yld_age_group_id_end'] if risk['yld'] is not np.nan else None),
+                        ('violated_restrictions', violated_restrictions))
 
         out.append((name, rei_id, most_detailed, level, paf_calculation_type,
                     affected_causes, paf_of_one_causes,
                     distribution, levels, tmred, scalar,
+                    missing_exposure, missing_rr, rr_less_than_1,
+                    missing_paf, paf_outside_0_1,
                     restrictions,
                     parent, sub_risks, affected_risks))
     return out

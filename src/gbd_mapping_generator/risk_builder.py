@@ -17,6 +17,11 @@ def get_base_types():
                       ('distribution', 'str'),
                       ('paf_calculation_type', 'str'),
                       ('restrictions', 'Restrictions'),
+                      ("missing_exposure", "Union['bool', 'None']"),
+                      ("missing_rr", "Union['bool', 'None']"),
+                      ("rr_less_than_1", "Union['bool', 'None']"),
+                      ("missing_paf", "Union['bool', 'None']"),
+                      ("paf_outside_0_1", "Union['bool', 'None']"),
                       ('affected_causes', 'Tuple[Cause, ...]'),
                       ('paf_of_one_causes', 'Tuple[Cause, ...]'),
                       ('parent', 'Union["RiskFactor", None] = None'),
@@ -39,20 +44,30 @@ def get_base_types():
 def make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
               affected_causes, paf_of_one_causes,
               distribution, levels, tmred, scalar,
+              missing_exposure, missing_rr, rr_less_than_1,
+              missing_paf, paf_outside_0_1,
               restrictions):
     out = ""
     out += TAB + f"{name}=RiskFactor(\n"
-    out += 2*TAB + f"name='{name}',\n"
+    out += TAB * 2 + f"name='{name}',\n"
     out += TAB * 2 + f"kind='risk_factor',\n"
-    out += 2*TAB + f"gbd_id=reiid({rei_id}),\n"
-    out += 2*TAB + f"level={level},\n"
-    out += 2*TAB + f"most_detailed={bool(most_detailed)},\n"
-    out += 2*TAB + f"distribution='{distribution}',\n"
-    out += 2*TAB + f"paf_calculation_type='{paf_calculation_type}',\n"
+    out += TAB * 2 + f"gbd_id=reiid({rei_id}),\n"
+    out += TAB * 2 + f"level={level},\n"
+    out += TAB * 2 + f"most_detailed={bool(most_detailed)},\n"
+    out += TAB * 2 + f"distribution='{distribution}',\n"
+    out += TAB * 2 + f"paf_calculation_type='{paf_calculation_type}',\n"
+    out += TAB * 2 + f"missing_exposure={missing_exposure},\n"
+    out += TAB * 2 + f"missing_rr={missing_rr},\n"
+    out += TAB * 2 + f"rr_less_than_1={rr_less_than_1},\n"
+    out += TAB * 2 + f"missing_paf={missing_paf},\n"
+    out += TAB * 2 + f"paf_outside_0_1={paf_outside_0_1},\n"
+
 
     out += 2*TAB + "restrictions=Restrictions(\n"
     for name, r in restrictions:
-        if r is not None:
+        if name == "violated_restrictions":
+            out += text_wrap(f"{TAB * 3 + name}=(", [f"'{v}'" for v in r] + [")"])
+        elif r is not None:
             out += 3*TAB + f"{name}={r},\n"
     out += 2 * TAB + '),\n'
 
@@ -112,10 +127,14 @@ def make_risks(risk_list):
     for (name, rei_id, most_detailed, level, paf_calculation_type,
          affected_causes, paf_of_one_causes,
          distribution, levels, tmred, scalar,
+         missing_exposure, missing_rr, rr_less_than_1,
+         missing_paf, paf_outside_0_1,
          restrictions, *_) in risk_list:
         out += make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
                          affected_causes, paf_of_one_causes,
                          distribution, levels, tmred, scalar,
+                         missing_exposure, missing_rr, rr_less_than_1,
+                         missing_paf, paf_outside_0_1,
                          restrictions)
 
     out += ")\n"
