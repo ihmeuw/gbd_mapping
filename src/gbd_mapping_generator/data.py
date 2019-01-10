@@ -10,7 +10,7 @@ CAUSE_SET_ID = 3
 RISK_SET_ID = 2
 ETIOLOGY_SET_ID = 3
 
-
+SURVEY_LOCATION_ID = 180
 ###############################################
 # Canonical mappings between entities and ids #
 ###############################################
@@ -86,7 +86,7 @@ def get_covariate_list():
 
 def get_sequela_data():
     sequelae = gbd.get_sequela_id_mapping()
-    data_survey = gbd.get_survey_summary('sequela', 180)
+    data_survey = gbd.get_survey_summary('sequela', SURVEY_LOCATION_ID)
     assert len(sequelae) == len(data_survey)
     sequelae = sequelae.merge(data_survey, on='sequela_id')
     dw = gbd.get_auxiliary_data('disability_weight', 'sequela', 'all')
@@ -108,7 +108,8 @@ def get_sequela_data():
 def get_etiology_data():
     etiologies = gbd.get_rei_metadata(rei_set_id=ETIOLOGY_SET_ID)
     etiologies = etiologies[etiologies['most_detailed'] == 1]
-    data_survey = gbd.get_survey_summary('etiology', 180)
+    data_survey = gbd.get_survey_summary('etiology', SURVEY_LOCATION_ID)
+
     assert len(etiologies) == len(data_survey)
 
     etiologies = pd.merge(data_survey, etiologies, left_on=['etiology_id'], right_on=['rei_id']).sort_values(['rei_id'])
@@ -132,7 +133,7 @@ def get_cause_data():
     cause_me_map = cause_me_map[['modelable_entity_id', 'cause_name']].set_index('cause_name')
 
     causes = gbd.get_cause_metadata(cause_set_id=CAUSE_SET_ID)
-    data_survey = gbd.get_survey_summary('cause', 180)
+    data_survey = gbd.get_survey_summary('cause', SURVEY_LOCATION_ID)
     assert len(causes) == len(data_survey)
 
     causes = pd.DataFrame({'cause_name': clean_entity_list(causes.cause_name),
@@ -246,7 +247,7 @@ def get_risk_data():
     risks = get_all_risk_metadata()
     causes = get_causes().set_index('cause_id')
 
-    data_survey = gbd.get_survey_summary("risk_factor", 180)
+    data_survey = gbd.get_survey_summary("risk_factor", SURVEY_LOCATION_ID)
     risks = risks.join(data_survey, how='left') 
 
     risks["exposure_type"] = risks.exposure_type.fillna("")
@@ -378,7 +379,7 @@ def get_risk_data():
 
 def get_covariate_data():
     covariates = gbd.get_covariate_metadata()
-    data_survey = gbd.get_survey_summary('covariate', 180)
+    data_survey = gbd.get_survey_summary('covariate', SURVEY_LOCATION_ID)
     data_survey = data_survey[data_survey.covariate_id.isin(covariates.covariate_id)]
 
     covariates = covariates.merge(data_survey, on='covariate_id')
