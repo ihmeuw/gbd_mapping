@@ -108,14 +108,14 @@ def get_sequela_data():
 def get_etiology_data():
     etiologies = gbd.get_rei_metadata(rei_set_id=ETIOLOGY_SET_ID)
     etiologies = etiologies[etiologies['most_detailed'] == 1]
-    data_survey = gbd.get_survey_summary('etiology')
+    data_survey = gbd.get_survey_summary('etiology', 180)
     assert len(etiologies) == len(data_survey)
 
-    etiologies = etiologies.merge(data_survey, on='rei_id')
+    etiologies =  pd.merge(data_survey, etiologies, left_on=['etiology_id'], right_on=['rei_id'])
     return list(zip(clean_entity_list(etiologies.rei_name),
                     etiologies.rei_id,
-                    etiologies.paf_yll_exist,
-                    etiologies.paf_yld_exist,
+                    etiologies.paf_yll_exists,
+                    etiologies.paf_yld_exists,
                     etiologies.paf_yll_in_range,
                     etiologies.paf_yld_in_range))
 
