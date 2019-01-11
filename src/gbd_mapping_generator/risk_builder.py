@@ -1,6 +1,6 @@
 from .data import get_risk_data, get_risk_list
 from .base_template_builder import modelable_entity_attrs, gbd_record_attrs
-from .util import make_import, make_module_docstring, make_record, SPACING, TAB, TEXTWIDTH, text_wrap
+from .util import make_import, make_module_docstring, make_record, SPACING, TAB, TEXTWIDTH, text_wrap, format_string_none
 
 
 IMPORTABLES_DEFINED = ('RiskFactor', 'risk_factors')
@@ -14,7 +14,7 @@ def get_base_types():
                       ('gbd_id', 'reiid'),
                       ('level', 'int'),
                       ('most_detailed', 'bool'),
-                      ('distribution', 'str'),
+                      ('distribution', 'Union[str, None]'),
                       ('paf_calculation_type', 'str'),
                       ('restrictions', 'Restrictions'),
                       ('exposure_exists', 'Union[bool, None]'),
@@ -58,11 +58,11 @@ def make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
     out += TAB * 2 + f"gbd_id=reiid({rei_id}),\n"
     out += TAB * 2 + f"level={level},\n"
     out += TAB * 2 + f"most_detailed={bool(most_detailed)},\n"
-    out += TAB * 2 + f"distribution='{distribution}',\n"
+    out += TAB * 2 + f"distribution='{format_string_none(distribution)}',\n"
     out += TAB * 2 + f"paf_calculation_type='{paf_calculation_type}',\n"
     out += TAB * 2 + f"exposure_exists={exposure_exists},\n"
     out += TAB * 2 + f"exposure_sd_exists={exposure_sd_exists},\n"
-    out += TAB * 2 + f"exposure_year_type='{exposure_year_type}',\n"
+    out += TAB * 2 + f"exposure_year_type='{format_string_none(exposure_year_type)}',\n"
     out += TAB * 2 + f"rr_exists={rr_exists},\n"
     out += TAB * 2 + f"rr_in_range={rr_in_range},\n"
     out += TAB * 2 + f"paf_yll_exists={paf_yll_exists},\n"
