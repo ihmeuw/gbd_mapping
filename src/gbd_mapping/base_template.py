@@ -73,7 +73,7 @@ class ModelableEntity(GbdRecord):
 class Restrictions(GbdRecord):
     """Container for information about sub-populations the entity describes."""
     __slots__ = ('male_only', 'female_only', 'yll_only', 'yld_only', 'yll_age_group_id_start',
-                 'yll_age_group_id_end', 'yld_age_group_id_start', 'yld_age_group_id_end', 'violated_restrictions', )
+                 'yll_age_group_id_end', 'yld_age_group_id_start', 'yld_age_group_id_end', 'violated', )
 
     def __init__(self,
                  male_only: bool,
@@ -84,7 +84,7 @@ class Restrictions(GbdRecord):
                  yll_age_group_id_end: int = None,
                  yld_age_group_id_start: int = None,
                  yld_age_group_id_end: int = None,
-                 violated_restrictions: Tuple = (), ):
+                 violated: Tuple = (), ):
         super().__init__()
         self.male_only = male_only
         self.female_only = female_only
@@ -94,7 +94,7 @@ class Restrictions(GbdRecord):
         self.yll_age_group_id_end = yll_age_group_id_end
         self.yld_age_group_id_start = yld_age_group_id_start
         self.yld_age_group_id_end = yld_age_group_id_end
-        self.violated_restrictions = violated_restrictions
+        self.violated = violated
 
 
 class Tmred(GbdRecord):

@@ -30,10 +30,10 @@ def get_base_types():
                       ('incidence_consistent', "Union['bool', 'None']"),
                       ('deaths_consistent', "Union['bool', 'None']"),
                       ('birth_prevalence_consistent', "Union['bool', 'None']"),
-                      ('prevalence_aggregated', "Union['bool', 'None']"),
-                      ('incidence_aggregated', "Union['bool', 'None']"),
-                      ('deaths_aggregated', "Union['bool', 'None']"),
-                      ('birth_prevalence_aggregated', "Union['bool', 'None']"),
+                      ('prevalence_aggregates', "Union['bool', 'None']"),
+                      ('incidence_aggregates', "Union['bool', 'None']"),
+                      ('deaths_aggregates', "Union['bool', 'None']"),
+                      ('birth_prevalence_aggregates', "Union['bool', 'None']"),
                       ('parent', '"Cause" = None'),
                       ('sub_causes', 'Tuple["Cause", ...] = None'),
                       ('sequelae', 'Tuple[Sequela, ...] = None'),
@@ -52,8 +52,8 @@ def get_base_types():
 def make_cause(name, cid, dismod_id, most_detailed, level, restrictions, prev_exists, inc_exists, remission_exists,
                deaths_exists, birth_prevalence_exists, prev_in_range, inc_in_range, remission_in_range,
                deaths_in_range, birth_prev_in_range, prev_consistent, inc_consistent, deaths_consistent,
-               birth_prev_consistent, prev_aggregated, inc_aggregated,
-               deaths_aggregated, birth_prev_aggregated, sequelae=None, etiologies=None):
+               birth_prev_consistent, prev_aggregates, inc_aggregates,
+               deaths_aggregates, birth_prev_aggregates, sequelae=None, etiologies=None):
     out = ""
     out += TAB + f"'{name}': Cause(\n"
     out += TAB * 2 + f"name='{name}',\n"
@@ -76,10 +76,10 @@ def make_cause(name, cid, dismod_id, most_detailed, level, restrictions, prev_ex
     out += TAB * 2 + f"incidence_consistent={inc_consistent},\n"
     out += TAB * 2 + f"deaths_consistent={deaths_consistent},\n"
     out += TAB * 2 + f"birth_prevalence_consistent={birth_prev_consistent},\n"
-    out += TAB * 2 + f"prevalence_aggregated={prev_aggregated},\n"
-    out += TAB * 2 + f"incidence_aggregated={inc_aggregated},\n"
-    out += TAB * 2 + f"deaths_aggregated={deaths_aggregated},\n"
-    out += TAB * 2 + f"birth_prevalence_aggregated={birth_prev_aggregated},\n"
+    out += TAB * 2 + f"prevalence_aggregates={prev_aggregates},\n"
+    out += TAB * 2 + f"incidence_aggregates={inc_aggregates},\n"
+    out += TAB * 2 + f"deaths_aggregates={deaths_aggregates},\n"
+    out += TAB * 2 + f"birth_prevalence_aggregates={birth_prev_aggregates},\n"
     out += TAB * 2 + f"parent=None,\n"
     out += TAB * 2 + f"restrictions=Restrictions(\n"
 
@@ -123,19 +123,19 @@ def make_causes(causes_list):
     for (name, cid, dismod_id, most_detailed, cause_level, parent, restrictions, prev_exists, inc_exists,
          remission_exists, deaths_exists, birth_prevalence_exists, prev_in_range, inc_in_range, remission_in_range,
          deaths_in_range, birth_prev_in_range, prev_consistent, inc_consistent, deaths_consistent,
-         birth_prev_consistent, prev_aggregated, inc_aggregated, deaths_aggregated, birth_prev_aggregated,
+         birth_prev_consistent, prev_aggregates, inc_aggregates, deaths_aggregates, birth_prev_aggregates,
          sequelae, etiologies, sub_causes) in causes_list:
         out += make_cause(name, cid, dismod_id, most_detailed, cause_level, restrictions, prev_exists, inc_exists,
                           remission_exists, deaths_exists, birth_prevalence_exists, prev_in_range, inc_in_range,
                           remission_in_range, deaths_in_range, birth_prev_in_range, prev_consistent, inc_consistent,
-                          deaths_consistent, birth_prev_consistent, prev_aggregated, inc_aggregated, deaths_aggregated, \
-                          birth_prev_aggregated, sequelae, etiologies)
+                          deaths_consistent, birth_prev_consistent, prev_aggregates, inc_aggregates, deaths_aggregates, \
+                          birth_prev_aggregates, sequelae, etiologies)
     out += "})\n\n"
 
     for (name, cid, dismod_id, most_detailed, cause_level, parent, restrictions,  prev_exists, inc_exists,
          remission_exists, death_exist, birth_prevalence_exists, prev_in_range, inc_in_range, remission_in_range,
          deaths_in_range, birth_prev_in_range, prev_consistent, inc_consistent, deaths_consistent,
-         birth_prev_consistent, prev_aggregated, inc_aggregated, deaths_aggregated, birth_prev_aggregated,
+         birth_prev_consistent, prev_aggregates, inc_aggregates, deaths_aggregates, birth_prev_aggregates,
          sequelae, etiologies, sub_causes) in causes_list:
 
         if name != parent:
