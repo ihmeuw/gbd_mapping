@@ -19,6 +19,7 @@ def get_base_types():
                       ('restrictions', 'Restrictions'),
                       ('exposure_exists', 'Union["bool", None]'),
                       ('exposure_sd_exists', 'Union["bool", None]'),
+                      ('exposure_year_type', 'Union["bool", None]'),
                       ('rr_exists', 'Union["book", None]'),
                       ('rr_in_range', 'Union["bool", None]'),
                       ('paf_yll_exists', 'Union["bool", None]'),
