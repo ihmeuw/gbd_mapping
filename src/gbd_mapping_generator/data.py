@@ -292,7 +292,7 @@ def get_risk_data():
                       ('cat2', 'unexposed'))
             scalar = None
             tmred = None
-        elif 'polytomous' in distribution:
+        elif distribution in ['ordered_polytomous', 'unordered_polytomous']:
             exposure_sd_exists = None
 
             levels = sorted([(cat, name) for cat, name in risk['category_map'].items()],
