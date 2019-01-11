@@ -14,10 +14,10 @@ from .cause_template import Cause
 class RiskFactor(ModelableEntity):
     """Container for risk GBD ids and metadata."""
     __slots__ = ('name', 'kind', 'gbd_id', 'level', 'most_detailed', 'distribution', 'paf_calculation_type',
-                 'restrictions', 'exposure_exists', 'exposure_sd_exists', 'rr_exists', 'rr_in_range',
-                 'paf_yll_exists', 'paf_yll_in_range', 'paf_yld_exists', 'paf_yld_in_range', 'affected_causes',
-                 'paf_of_one_causes', 'parent', 'sub_risk_factors', 'affected_risk_factors', 'categories', 'tmred',
-                 'rr_scalar', )
+                 'restrictions', 'exposure_exists', 'exposure_sd_exists', 'exposure_year_type', 'rr_exists',
+                 'rr_in_range', 'paf_yll_exists', 'paf_yll_in_range', 'paf_yld_exists', 'paf_yld_in_range',
+                 'affected_causes', 'paf_of_one_causes', 'parent', 'sub_risk_factors', 'affected_risk_factors',
+                 'categories', 'tmred', 'rr_scalar', )
 
     def __init__(self,
                  name: str,
@@ -30,6 +30,7 @@ class RiskFactor(ModelableEntity):
                  restrictions: Restrictions,
                  exposure_exists: Union["bool", None],
                  exposure_sd_exists: Union["bool", None],
+                 exposure_year_type: Union["bool", None],
                  rr_exists: Union["book", None],
                  rr_in_range: Union["bool", None],
                  paf_yll_exists: Union["bool", None],
@@ -57,6 +58,7 @@ class RiskFactor(ModelableEntity):
         self.restrictions = restrictions
         self.exposure_exists = exposure_exists
         self.exposure_sd_exists = exposure_sd_exists
+        self.exposure_year_type = exposure_year_type
         self.rr_exists = rr_exists
         self.rr_in_range = rr_in_range
         self.paf_yll_exists = paf_yll_exists
