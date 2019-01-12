@@ -37,7 +37,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.diarrheal_diseases, causes.lower_respiratory_infections, 
@@ -73,7 +73,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.diarrheal_diseases, causes.enteric_infections, causes.all_causes, 
@@ -122,7 +122,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.diarrheal_diseases, causes.enteric_infections, causes.all_causes, 
@@ -163,7 +163,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.lower_respiratory_infections, causes.non_communicable_diseases, causes.neoplasms, 
@@ -211,7 +211,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.lower_respiratory_infections, causes.non_communicable_diseases, causes.neoplasms, 
@@ -257,7 +257,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.lower_respiratory_infections, causes.non_communicable_diseases, causes.neoplasms, 
@@ -307,7 +307,7 @@ risk_factors = RiskFactors(
             yld_only=False,
             yll_age_group_id_start=10,
             yll_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.chronic_respiratory_diseases, 
                          causes.chronic_obstructive_pulmonary_disease, causes.all_causes, 
@@ -348,7 +348,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=('paf_yll_age_restriction_violated', )
+            violated=('paf_yll_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, 
                          causes.tracheal_bronchus_and_lung_cancer, causes.cardiovascular_diseases, 
@@ -412,7 +412,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, 
                          causes.tracheal_bronchus_and_lung_cancer, causes.all_causes, 
@@ -453,7 +453,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=('paf_yll_age_restriction_violated', )
+            violated=('paf_yll_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.cardiovascular_diseases, 
                          causes.rheumatic_heart_disease, causes.ischemic_heart_disease, causes.stroke, 
@@ -515,7 +515,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.diarrheal_diseases, causes.lower_respiratory_infections, 
@@ -587,7 +587,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=5,
             yld_age_group_id_start=3,
             yld_age_group_id_end=5,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.diarrheal_diseases, causes.lower_respiratory_infections, 
@@ -623,8 +623,8 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', 'rr_age_restriction_violated',
-                                   'paf_yll_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', 'rr_age_restriction_violated',
+                      'paf_yll_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.diarrheal_diseases, causes.lower_respiratory_infections, causes.measles, 
@@ -670,8 +670,8 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=15,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=('rr_age_restriction_violated', 'rr_sex_restriction_violated',
-                                   'paf_yll_age_restriction_violated', 'paf_yll_sex_restriction_violated', )
+            violated=('rr_age_restriction_violated', 'rr_sex_restriction_violated', 'paf_yll_age_restriction_violated',
+                      'paf_yll_sex_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.maternal_disorders, causes.maternal_hemorrhage, 
@@ -724,7 +724,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=5,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=('rr_age_restriction_violated', 'paf_yll_age_restriction_violated', )
+            violated=('rr_age_restriction_violated', 'paf_yll_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.diarrheal_diseases, causes.lower_respiratory_infections, causes.measles, 
@@ -767,7 +767,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=5,
             yld_age_group_id_start=5,
             yld_age_group_id_end=5,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.diarrheal_diseases, causes.lower_respiratory_infections, 
@@ -807,7 +807,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.tuberculosis, causes.lower_respiratory_infections, causes.otitis_media, 
@@ -908,7 +908,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=11,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.tuberculosis, causes.lower_respiratory_infections, causes.non_communicable_diseases, 
@@ -1011,7 +1011,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.lower_respiratory_infections, causes.otitis_media, causes.non_communicable_diseases, 
@@ -1061,7 +1061,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=('paf_yll_age_restriction_violated', )
+            violated=('paf_yll_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.tuberculosis, causes.lower_respiratory_infections, causes.non_communicable_diseases, 
@@ -1153,7 +1153,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated_restrictions=('paf_yll_age_restriction_violated', )
+            violated=('paf_yll_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.hiv_aids, causes.hiv_aids_resulting_in_other_diseases, causes.acute_hepatitis, 
@@ -1217,7 +1217,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.tuberculosis, causes.non_communicable_diseases, causes.neoplasms, 
@@ -1340,7 +1340,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.tuberculosis, causes.non_communicable_diseases, causes.neoplasms, 
@@ -1415,8 +1415,8 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', 'rr_age_restriction_violated',
-                                   'paf_yll_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', 'rr_age_restriction_violated',
+                      'paf_yll_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.cardiovascular_diseases, 
                          causes.rheumatic_heart_disease, causes.ischemic_heart_disease, causes.stroke, 
@@ -1483,7 +1483,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, 
                          causes.esophageal_cancer, causes.liver_cancer, causes.liver_cancer_due_to_hepatitis_b, 
@@ -1566,7 +1566,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=13,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.injuries, causes.transport_injuries, causes.road_injuries, 
                          causes.pedestrian_road_injuries, causes.cyclist_road_injuries, 
@@ -1619,7 +1619,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, 
                          causes.esophageal_cancer, causes.stomach_cancer, causes.larynx_cancer, 
@@ -1686,7 +1686,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, 
                          causes.esophageal_cancer, causes.larynx_cancer, causes.tracheal_bronchus_and_lung_cancer, 
@@ -1736,7 +1736,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.cardiovascular_diseases, 
                          causes.ischemic_heart_disease, causes.stroke, causes.ischemic_stroke, 
@@ -1779,7 +1779,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.cardiovascular_diseases, 
                          causes.ischemic_heart_disease, causes.stroke, causes.ischemic_stroke, 
@@ -1824,7 +1824,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.cardiovascular_diseases, 
                          causes.ischemic_heart_disease, causes.diabetes_mellitus, 
@@ -1867,7 +1867,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, 
                          causes.colon_and_rectum_cancer, causes.all_causes, causes.non_communicable_diseases, 
@@ -1907,7 +1907,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, 
                          causes.colon_and_rectum_cancer, causes.diabetes_mellitus, 
@@ -1950,7 +1950,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, 
                          causes.colon_and_rectum_cancer, causes.cardiovascular_diseases, 
@@ -1994,7 +1994,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.cardiovascular_diseases, 
                          causes.ischemic_heart_disease, causes.diabetes_mellitus, 
@@ -2037,7 +2037,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, 
                          causes.colon_and_rectum_cancer, causes.cardiovascular_diseases, 
@@ -2079,7 +2079,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.cardiovascular_diseases, 
                          causes.ischemic_heart_disease, causes.all_causes, causes.non_communicable_diseases, 
@@ -2119,7 +2119,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.cardiovascular_diseases, 
                          causes.ischemic_heart_disease, causes.all_causes, causes.non_communicable_diseases, 
@@ -2159,7 +2159,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.cardiovascular_diseases, 
                          causes.ischemic_heart_disease, causes.all_causes, causes.non_communicable_diseases, 
@@ -2199,7 +2199,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, 
                          causes.stomach_cancer, causes.cardiovascular_diseases, causes.rheumatic_heart_disease, 
@@ -2268,7 +2268,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, causes.breast_cancer, 
                          causes.colon_and_rectum_cancer, causes.cardiovascular_diseases, 
@@ -2314,7 +2314,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated_restrictions=('paf_yll_age_restriction_violated', 'paf_yld_age_restriction_violated', )
+            violated=('paf_yll_age_restriction_violated', 'paf_yld_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, causes.larynx_cancer, 
                          causes.tracheal_bronchus_and_lung_cancer, causes.nasopharynx_cancer, causes.ovarian_cancer, 
@@ -2385,7 +2385,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated_restrictions=('paf_yll_age_restriction_violated', 'paf_yld_age_restriction_violated', )
+            violated=('paf_yll_age_restriction_violated', 'paf_yld_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, causes.larynx_cancer, 
                          causes.tracheal_bronchus_and_lung_cancer, causes.nasopharynx_cancer, causes.ovarian_cancer, 
@@ -2427,7 +2427,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=30,
             yld_age_group_id_start=8,
             yld_age_group_id_end=30,
-            violated_restrictions=('exposure_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.chronic_respiratory_diseases, 
                          causes.asthma, causes.all_causes, causes.non_communicable_diseases, 
@@ -2473,8 +2473,8 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', 'rr_age_restriction_violated',
-                                   'paf_yll_age_restriction_violated', 'paf_yld_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', 'rr_age_restriction_violated',
+                      'paf_yll_age_restriction_violated', 'paf_yld_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.chronic_respiratory_diseases, 
                          causes.chronic_obstructive_pulmonary_disease, causes.pneumoconiosis, 
@@ -2514,7 +2514,7 @@ risk_factors = RiskFactors(
             yld_only=True,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.sense_organ_diseases, 
                          causes.age_related_and_other_hearing_loss, causes.all_causes, 
@@ -2554,7 +2554,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=30,
             yld_age_group_id_start=8,
             yld_age_group_id_end=30,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.injuries, causes.transport_injuries, causes.road_injuries, 
                          causes.pedestrian_road_injuries, causes.cyclist_road_injuries, 
@@ -2604,7 +2604,7 @@ risk_factors = RiskFactors(
             yld_only=True,
             yld_age_group_id_start=8,
             yld_age_group_id_end=30,
-            violated_restrictions=('exposure_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.musculoskeletal_disorders, 
                          causes.low_back_pain, causes.all_causes, causes.non_communicable_diseases, 
@@ -2648,7 +2648,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=('paf_yll_age_restriction_violated', )
+            violated=('paf_yll_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.mental_disorders, 
                          causes.alcohol_use_disorders, causes.depressive_disorders, causes.major_depressive_disorder, 
@@ -2683,7 +2683,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.hiv_aids, causes.hiv_aids_resulting_in_other_diseases, causes.maternal_disorders, 
@@ -2737,7 +2737,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=4,
             yld_age_group_id_start=3,
             yld_age_group_id_end=4,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.diarrheal_diseases, causes.lower_respiratory_infections, 
@@ -2781,7 +2781,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=5,
             yld_age_group_id_start=4,
             yld_age_group_id_end=5,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.diarrheal_diseases, causes.enteric_infections, causes.all_causes, 
@@ -2819,7 +2819,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.hiv_aids, causes.hiv_aids_resulting_in_other_diseases, causes.acute_hepatitis, 
@@ -2878,7 +2878,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.injuries, causes.self_harm_and_interpersonal_violence, 
                          causes.self_harm, causes.self_harm_by_firearm, causes.self_harm_by_other_specified_means, 
@@ -2912,7 +2912,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.cardiovascular_diseases, 
                          causes.ischemic_heart_disease, causes.stroke, causes.ischemic_stroke, 
@@ -2971,7 +2971,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.tuberculosis, causes.non_communicable_diseases, causes.neoplasms, 
@@ -3027,7 +3027,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, 
                          causes.colon_and_rectum_cancer, causes.all_causes, causes.non_communicable_diseases, 
@@ -3067,8 +3067,8 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', 'rr_age_restriction_violated',
-                                   'paf_yll_age_restriction_violated', 'paf_yld_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', 'rr_age_restriction_violated',
+                      'paf_yll_age_restriction_violated', 'paf_yld_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, causes.larynx_cancer, 
                          causes.tracheal_bronchus_and_lung_cancer, causes.ovarian_cancer, causes.mesothelioma, 
@@ -3108,7 +3108,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, 
                          causes.tracheal_bronchus_and_lung_cancer, causes.all_causes, 
@@ -3148,7 +3148,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=20,
             yld_age_group_id_start=8,
             yld_age_group_id_end=20,
-            violated_restrictions=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, causes.leukemia, 
                          causes.acute_lymphoid_leukemia, causes.chronic_lymphoid_leukemia, 
@@ -3190,7 +3190,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, 
                          causes.tracheal_bronchus_and_lung_cancer, causes.all_causes, 
@@ -3230,7 +3230,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, 
                          causes.tracheal_bronchus_and_lung_cancer, causes.all_causes, 
@@ -3270,7 +3270,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, 
                          causes.tracheal_bronchus_and_lung_cancer, causes.all_causes, 
@@ -3310,7 +3310,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, 
                          causes.tracheal_bronchus_and_lung_cancer, causes.all_causes, 
@@ -3350,7 +3350,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=20,
             yld_age_group_id_start=8,
             yld_age_group_id_end=20,
-            violated_restrictions=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, 
                          causes.nasopharynx_cancer, causes.leukemia, causes.acute_lymphoid_leukemia, 
@@ -3393,7 +3393,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, 
                          causes.tracheal_bronchus_and_lung_cancer, causes.all_causes, 
@@ -3433,7 +3433,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, 
                          causes.tracheal_bronchus_and_lung_cancer, causes.all_causes, 
@@ -3473,8 +3473,8 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', 'rr_age_restriction_violated',
-                                   'paf_yll_age_restriction_violated', 'paf_yld_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', 'rr_age_restriction_violated',
+                      'paf_yll_age_restriction_violated', 'paf_yld_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, 
                          causes.tracheal_bronchus_and_lung_cancer, causes.chronic_respiratory_diseases, 
@@ -3516,7 +3516,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, causes.larynx_cancer, 
                          causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, causes.larynx_cancer, ),
@@ -3554,8 +3554,8 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=15,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', 'exposure_sex_restriction_violated',
-                                   'rr_age_restriction_violated', 'paf_yll_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', 'exposure_sex_restriction_violated',
+                      'rr_age_restriction_violated', 'paf_yll_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.maternal_disorders, causes.non_communicable_diseases, causes.mental_disorders, 
@@ -3597,7 +3597,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.injuries, causes.self_harm_and_interpersonal_violence, 
                          causes.interpersonal_violence, causes.physical_violence_by_firearm, 
@@ -3634,7 +3634,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.tuberculosis, causes.hiv_aids, causes.hiv_aids_resulting_in_other_diseases, 
@@ -3872,7 +3872,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.hiv_aids, causes.hiv_aids_resulting_in_other_diseases, 
@@ -3921,7 +3921,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', 'exposure_sex_restriction_violated', )
+            violated=('exposure_age_restriction_violated', 'exposure_sex_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.hiv_aids, causes.hiv_aids_resulting_in_other_diseases, 
@@ -3960,7 +3960,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.diarrheal_diseases, causes.lower_respiratory_infections, 
@@ -4071,7 +4071,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.tuberculosis, causes.hiv_aids, causes.hiv_aids_resulting_in_other_diseases, 
@@ -4284,7 +4284,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', 'rr_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, causes.kidney_cancer, 
                          causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, causes.kidney_cancer, ),
@@ -4322,7 +4322,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.diarrheal_diseases, causes.lower_respiratory_infections, 
@@ -4362,7 +4362,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=('paf_yll_age_restriction_violated', )
+            violated=('paf_yll_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.diarrheal_diseases, causes.lower_respiratory_infections, causes.measles, 
@@ -4401,8 +4401,8 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', 'rr_age_restriction_violated',
-                                   'paf_yll_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', 'rr_age_restriction_violated',
+                      'paf_yll_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.diarrheal_diseases, causes.lower_respiratory_infections, causes.measles, 
@@ -4449,7 +4449,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=5,
             yld_age_group_id_start=4,
             yld_age_group_id_end=5,
-            violated_restrictions=('exposure_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.diarrheal_diseases, causes.lower_respiratory_infections, causes.measles, 
@@ -4493,7 +4493,7 @@ risk_factors = RiskFactors(
             yld_only=True,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.mental_disorders, 
                          causes.idiopathic_developmental_intellectual_disability, causes.all_causes, 
@@ -4527,7 +4527,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.cardiovascular_diseases, 
                          causes.rheumatic_heart_disease, causes.ischemic_heart_disease, causes.stroke, 
@@ -4594,7 +4594,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=('paf_yll_age_restriction_violated', )
+            violated=('paf_yll_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.mental_disorders, 
                          causes.alcohol_use_disorders, causes.depressive_disorders, causes.major_depressive_disorder, 
@@ -4633,7 +4633,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=('paf_yll_age_restriction_violated', )
+            violated=('paf_yll_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.mental_disorders, 
                          causes.alcohol_use_disorders, causes.depressive_disorders, causes.major_depressive_disorder, 
@@ -4672,7 +4672,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=11,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, 
                          causes.esophageal_cancer, causes.lip_and_oral_cavity_cancer, causes.all_causes, 
@@ -4710,7 +4710,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.cardiovascular_diseases, 
                          causes.ischemic_heart_disease, causes.all_causes, causes.non_communicable_diseases, 
@@ -4750,7 +4750,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=5,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=('paf_yll_age_restriction_violated', )
+            violated=('paf_yll_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.diarrheal_diseases, causes.lower_respiratory_infections, 
@@ -4806,7 +4806,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=5,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=('paf_yll_age_restriction_violated', )
+            violated=('paf_yll_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.diarrheal_diseases, causes.lower_respiratory_infections, 
@@ -4862,8 +4862,8 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=5,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=('exposure_age_restriction_violated', 'rr_age_restriction_violated',
-                                   'paf_yll_age_restriction_violated', )
+            violated=('exposure_age_restriction_violated', 'rr_age_restriction_violated',
+                      'paf_yll_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.diarrheal_diseases, causes.lower_respiratory_infections, 
@@ -4991,7 +4991,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=('rr_age_restriction_violated', 'paf_yll_age_restriction_violated', )
+            violated=('rr_age_restriction_violated', 'paf_yll_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.cardiovascular_diseases, 
                          causes.ischemic_heart_disease, causes.stroke, causes.ischemic_stroke, 
@@ -5049,7 +5049,7 @@ risk_factors = RiskFactors(
             yld_only=True,
             yld_age_group_id_start=6,
             yld_age_group_id_end=12,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.mental_disorders, 
                          causes.depressive_disorders, causes.major_depressive_disorder, causes.anxiety_disorders, 
@@ -5083,7 +5083,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=10,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.cardiovascular_diseases, 
                          causes.ischemic_heart_disease, causes.stroke, causes.ischemic_stroke, causes.all_causes, 
@@ -5124,7 +5124,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=9,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.neoplasms, 
                          causes.esophageal_cancer, causes.liver_cancer, causes.liver_cancer_due_to_hepatitis_b, 
@@ -5207,7 +5207,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=8,
             yld_age_group_id_start=5,
             yld_age_group_id_end=8,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.chronic_respiratory_diseases, 
                          causes.asthma, causes.all_causes, causes.non_communicable_diseases, 
@@ -5246,7 +5246,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=()
+            violated=()
         ),
         affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
                          causes.lower_respiratory_infections, causes.non_communicable_diseases, causes.neoplasms, 
@@ -5294,7 +5294,7 @@ risk_factors = RiskFactors(
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated_restrictions=('paf_yll_age_restriction_violated', )
+            violated=('paf_yll_age_restriction_violated', )
         ),
         affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.mental_disorders, 
                          causes.alcohol_use_disorders, causes.depressive_disorders, causes.major_depressive_disorder, 
