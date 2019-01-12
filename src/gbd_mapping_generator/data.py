@@ -361,7 +361,7 @@ def get_risk_data():
                         ('yll_age_group_id_end', risk['yll_age_group_id_end'] if risk['yll'] is not np.nan else None),
                         ('yld_age_group_id_start', risk['yld_age_group_id_start'] if risk['yld'] is not np.nan else None),
                         ('yld_age_group_id_end', risk['yld_age_group_id_end'] if risk['yld'] is not np.nan else None),
-                        ('violated_restrictions', violated_restrictions))
+                        ('violated', violated_restrictions))
 
         out.append((name, rei_id, most_detailed, level, paf_calculation_type, affected_causes, paf_of_one_causes,
                     distribution, levels, tmred, scalar,

@@ -71,7 +71,7 @@ def make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
     out += TAB * 2 + f"paf_yld_in_range={paf_yld_in_range},\n"
     out += 2*TAB + "restrictions=Restrictions(\n"
     for name, r in restrictions:
-        if name == "violated_restrictions":
+        if name == "violated":
             out += text_wrap(f"{TAB * 3 + name}=(", [f"'{v}'" for v in r] + [")"])
         elif r is not None:
             out += 3*TAB + f"{name}={r},\n"
