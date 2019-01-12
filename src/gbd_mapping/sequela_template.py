@@ -42,9 +42,9 @@ class Sequela(ModelableEntity):
                  incidence_exists: bool,
                  prevalence_exists: bool,
                  birth_prevalence_exists: bool,
-                 incidence_in_range: Union["bool", None],
-                 prevalence_in_range: Union["bool", None],
-                 birth_prevalence_in_range: Union["bool", None],
+                 incidence_in_range: Union[bool, None],
+                 prevalence_in_range: Union[bool, None],
+                 birth_prevalence_in_range: Union[bool, None],
                  healthstate: Healthstate, ):
         super().__init__(name=name,
                          kind=kind,

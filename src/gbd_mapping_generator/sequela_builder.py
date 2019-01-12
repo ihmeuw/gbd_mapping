@@ -23,9 +23,9 @@ def get_base_types():
                       ('incidence_exists', 'bool'),
                       ('prevalence_exists', 'bool'),
                       ('birth_prevalence_exists', 'bool'),
-                      ('incidence_in_range', 'Union["bool", None]'),
-                      ('prevalence_in_range', 'Union["bool", None]'),
-                      ('birth_prevalence_in_range', 'Union["bool", None]'),
+                      ('incidence_in_range', 'Union[bool, None]'),
+                      ('prevalence_in_range', 'Union[bool, None]'),
+                      ('birth_prevalence_in_range', 'Union[bool, None]'),
                       ('healthstate', 'Healthstate'),),
             'superclass': ('ModelableEntity', modelable_entity_attrs),
             'docstring': 'Container for sequela GBD ids and metadata.'
