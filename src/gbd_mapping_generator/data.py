@@ -249,8 +249,6 @@ def get_risk_data():
     data_survey = gbd.get_survey_summary("risk_factor", SURVEY_LOCATION_ID)
     risks = risks.join(data_survey, how='left') 
 
-    risks["exposure_type"] = risks.exposure_type.fillna("")
-
     out = []
 
     for rei_id, risk in risks.iterrows():
@@ -261,14 +259,19 @@ def get_risk_data():
         parent = risks.at[risk['parent_id'], 'rei_name']
 
         paf_calculation_type = risk['rei_calculation_type']
-        distribution = risk['exposure_type'] if not (risk['exposure_type'] == "") else 'none'
+        distribution = risk['exposure_type'] if not risk['exposure_type'] is np.nan else None
 
-        missing_exposure = risk['missing_exposure']
-        missing_paf = risk['missing_paf']
-        paf_outside_0_1 = risk['paf_outside_0_1'] 
+        exposure_exists = risk['exposure_exists']
+        exposure_year_type = risk['exposure_year_type']
+
+        paf_yll_exists = risk['paf_yll_exists']
+        paf_yll_in_range = risk['paf_yll_in_range']
+
+        paf_yld_exists = risk['paf_yld_exists']
+        paf_yld_in_range = risk['paf_yld_in_range']
 
         if distribution in ['normal', 'lognormal', 'ensemble']:
-            missing_exposure_sd = risk['missing_exposure_sd'] 
+            exposure_sd_exists = risk['exposure_sd_exists']
 
             levels = None
             scalar = risk['rr_scalar']
@@ -283,14 +286,14 @@ def get_risk_data():
                          ('max', risk['tmrel_upper']),
                          ('inverted', bool(risk['inv_exp'])))
         elif distribution == 'dichotomous':
-            missing_exposure_sd = None
+            exposure_sd_exists = None
 
             levels = (('cat1', 'exposed'),
                       ('cat2', 'unexposed'))
             scalar = None
             tmred = None
-        elif 'polytomous' in distribution:
-            missing_exposure_sd = None
+        elif distribution in ['ordered_polytomous', 'unordered_polytomous']:
+            exposure_sd_exists = None
 
             levels = sorted([(cat, name) for cat, name in risk['category_map'].items()],
                             key=lambda x: int(x[0][3:]))
@@ -300,7 +303,7 @@ def get_risk_data():
             scalar = None
             tmred = None
         else:  # It's either a custom risk or an aggregate, so we have to do a bunch of checking.
-            missing_exposure_sd = None 
+            exposure_sd_exists = None
             if risk['category_map'] is not np.nan:  # It's some strange categorical risk.
                 levels = sorted([(cat, name) for cat, name in risk['category_map'].items()],
                                 key=lambda x: int(x[0][3:]))
@@ -334,25 +337,19 @@ def get_risk_data():
             paf_of_one_causes = []
 
         if paf_calculation_type in ['continuous', 'categorical', 'custom']:
-            missing_rr = risk['missing_rr']
-            rr_less_than_1 = not risk['rr_less_than_1']
+            rr_exists = risk['rr_exists']
+            rr_in_range = risk['rr_in_range']
         else:
-            missing_rr = None
-            rr_less_than_1 = None
+            rr_exists = None
+            rr_in_range = None
 
         violated_restrictions = []
-        if risk['exposure_age_restriction_violated']:
-            violated_restrictions.append("age_restriction_violated_by_exposure")
-        if risk['exposure_sex_restriction_violated']:
-            violated_restrictions.append("sex_restriction_violated_by_exposure")
-        if risk['rr_age_restriction_violated']:
-            violated_restrictions.append("age_restriction_violated_by_rr")
-        if risk['rr_sex_restriction_violated']:
-            violated_restrictions.append("sex_restriction_violated_by_rr")
-        if risk['paf_age_restriction_violated']:
-            violated_restrictions.append("age_restriction_violated_by_paf")
-        if risk['paf_sex_restriction_violated']:
-            violated_restrictions.append("sex_restriction_violated_by_paf")
+        for restr_type in ["exposure_age_restriction_violated", "exposure_sex_restriction_violated",
+                           "rr_age_restriction_violated", "rr_sex_restriction_violated",
+                           "paf_yll_age_restriction_violated", "paf_yll_sex_restriction_violated",
+                           "paf_yld_age_restriction_violated", "paf_yld_sex_restriction_violated"]:
+            if risk[restr_type] is not np.nan and risk[restr_type]:
+                violated_restrictions.append(restr_type)
 
         sub_risks = risks[risks.parent_id == rei_id].rei_name.tolist()
 
@@ -364,15 +361,13 @@ def get_risk_data():
                         ('yll_age_group_id_end', risk['yll_age_group_id_end'] if risk['yll'] is not np.nan else None),
                         ('yld_age_group_id_start', risk['yld_age_group_id_start'] if risk['yld'] is not np.nan else None),
                         ('yld_age_group_id_end', risk['yld_age_group_id_end'] if risk['yld'] is not np.nan else None),
-                        ('violated_restrictions', violated_restrictions))
+                        ('violated', violated_restrictions))
 
-        out.append((name, rei_id, most_detailed, level, paf_calculation_type,
-                    affected_causes, paf_of_one_causes,
+        out.append((name, rei_id, most_detailed, level, paf_calculation_type, affected_causes, paf_of_one_causes,
                     distribution, levels, tmred, scalar,
-                    missing_exposure, missing_rr, rr_less_than_1,
-                    missing_paf, paf_outside_0_1,
-                    restrictions,
-                    parent, sub_risks, affected_risks))
+                    exposure_exists, exposure_sd_exists, exposure_year_type, rr_exists, rr_in_range,
+                    paf_yll_exists, paf_yll_in_range, paf_yld_exists, paf_yld_in_range,
+                    restrictions, parent, sub_risks, affected_risks))
     return out
 
 

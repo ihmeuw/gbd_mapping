@@ -14,9 +14,10 @@ from .cause_template import Cause
 class RiskFactor(ModelableEntity):
     """Container for risk GBD ids and metadata."""
     __slots__ = ('name', 'kind', 'gbd_id', 'level', 'most_detailed', 'distribution', 'paf_calculation_type',
-                 'restrictions', 'missing_exposure', 'missing_rr', 'rr_less_than_1', 'missing_paf',
-                 'paf_outside_0_1', 'affected_causes', 'paf_of_one_causes', 'parent', 'sub_risk_factors',
-                 'affected_risk_factors', 'categories', 'tmred', 'rr_scalar', )
+                 'restrictions', 'exposure_exists', 'exposure_sd_exists', 'exposure_year_type', 'rr_exists',
+                 'rr_in_range', 'paf_yll_exists', 'paf_yll_in_range', 'paf_yld_exists', 'paf_yld_in_range',
+                 'affected_causes', 'paf_of_one_causes', 'parent', 'sub_risk_factors', 'affected_risk_factors',
+                 'categories', 'tmred', 'rr_scalar', )
 
     def __init__(self,
                  name: str,
@@ -24,14 +25,18 @@ class RiskFactor(ModelableEntity):
                  gbd_id: reiid,
                  level: int,
                  most_detailed: bool,
-                 distribution: str,
+                 distribution: Union[str, None],
                  paf_calculation_type: str,
                  restrictions: Restrictions,
-                 missing_exposure: Union['bool', 'None'],
-                 missing_rr: Union['bool', 'None'],
-                 rr_less_than_1: Union['bool', 'None'],
-                 missing_paf: Union['bool', 'None'],
-                 paf_outside_0_1: Union['bool', 'None'],
+                 exposure_exists: Union[bool, None],
+                 exposure_sd_exists: Union[bool, None],
+                 exposure_year_type: Union[str, None],
+                 rr_exists: Union[bool, None],
+                 rr_in_range: Union[bool, None],
+                 paf_yll_exists: Union[bool, None],
+                 paf_yll_in_range: Union[bool, None],
+                 paf_yld_exists: Union[bool, None],
+                 paf_yld_in_range: Union[bool, None],
                  affected_causes: Tuple[Cause, ...],
                  paf_of_one_causes: Tuple[Cause, ...],
                  parent: Union["RiskFactor", None] = None,
@@ -51,11 +56,15 @@ class RiskFactor(ModelableEntity):
         self.distribution = distribution
         self.paf_calculation_type = paf_calculation_type
         self.restrictions = restrictions
-        self.missing_exposure = missing_exposure
-        self.missing_rr = missing_rr
-        self.rr_less_than_1 = rr_less_than_1
-        self.missing_paf = missing_paf
-        self.paf_outside_0_1 = paf_outside_0_1
+        self.exposure_exists = exposure_exists
+        self.exposure_sd_exists = exposure_sd_exists
+        self.exposure_year_type = exposure_year_type
+        self.rr_exists = rr_exists
+        self.rr_in_range = rr_in_range
+        self.paf_yll_exists = paf_yll_exists
+        self.paf_yll_in_range = paf_yll_in_range
+        self.paf_yld_exists = paf_yld_exists
+        self.paf_yld_in_range = paf_yld_in_range
         self.affected_causes = affected_causes
         self.paf_of_one_causes = paf_of_one_causes
         self.parent = parent

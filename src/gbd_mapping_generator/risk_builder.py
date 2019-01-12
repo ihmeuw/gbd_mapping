@@ -1,6 +1,6 @@
 from .data import get_risk_data, get_risk_list
 from .base_template_builder import modelable_entity_attrs, gbd_record_attrs
-from .util import make_import, make_module_docstring, make_record, SPACING, TAB, TEXTWIDTH, text_wrap
+from .util import make_import, make_module_docstring, make_record, SPACING, TAB, TEXTWIDTH, text_wrap, format_string_none
 
 
 IMPORTABLES_DEFINED = ('RiskFactor', 'risk_factors')
@@ -14,14 +14,18 @@ def get_base_types():
                       ('gbd_id', 'reiid'),
                       ('level', 'int'),
                       ('most_detailed', 'bool'),
-                      ('distribution', 'str'),
+                      ('distribution', 'Union[str, None]'),
                       ('paf_calculation_type', 'str'),
                       ('restrictions', 'Restrictions'),
-                      ("missing_exposure", "Union['bool', 'None']"),
-                      ("missing_rr", "Union['bool', 'None']"),
-                      ("rr_less_than_1", "Union['bool', 'None']"),
-                      ("missing_paf", "Union['bool', 'None']"),
-                      ("paf_outside_0_1", "Union['bool', 'None']"),
+                      ('exposure_exists', 'Union[bool, None]'),
+                      ('exposure_sd_exists', 'Union[bool, None]'),
+                      ('exposure_year_type', 'Union[str, None]'),
+                      ('rr_exists', 'Union[bool, None]'),
+                      ('rr_in_range', 'Union[bool, None]'),
+                      ('paf_yll_exists', 'Union[bool, None]'),
+                      ('paf_yll_in_range', 'Union[bool, None]'),
+                      ('paf_yld_exists', 'Union[bool, None]'),
+                      ('paf_yld_in_range', 'Union[bool, None]'),
                       ('affected_causes', 'Tuple[Cause, ...]'),
                       ('paf_of_one_causes', 'Tuple[Cause, ...]'),
                       ('parent', 'Union["RiskFactor", None] = None'),
@@ -44,8 +48,8 @@ def get_base_types():
 def make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
               affected_causes, paf_of_one_causes,
               distribution, levels, tmred, scalar,
-              missing_exposure, missing_rr, rr_less_than_1,
-              missing_paf, paf_outside_0_1,
+              exposure_exists, exposure_sd_exists, exposure_year_type, rr_exists, rr_in_range,
+              paf_yll_exists, paf_yll_in_range, paf_yld_exists, paf_yld_in_range,
               restrictions):
     out = ""
     out += TAB + f"{name}=RiskFactor(\n"
@@ -54,18 +58,20 @@ def make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
     out += TAB * 2 + f"gbd_id=reiid({rei_id}),\n"
     out += TAB * 2 + f"level={level},\n"
     out += TAB * 2 + f"most_detailed={bool(most_detailed)},\n"
-    out += TAB * 2 + f"distribution='{distribution}',\n"
+    out += TAB * 2 + f"distribution={format_string_none(distribution)},\n"
     out += TAB * 2 + f"paf_calculation_type='{paf_calculation_type}',\n"
-    out += TAB * 2 + f"missing_exposure={missing_exposure},\n"
-    out += TAB * 2 + f"missing_rr={missing_rr},\n"
-    out += TAB * 2 + f"rr_less_than_1={rr_less_than_1},\n"
-    out += TAB * 2 + f"missing_paf={missing_paf},\n"
-    out += TAB * 2 + f"paf_outside_0_1={paf_outside_0_1},\n"
-
-
+    out += TAB * 2 + f"exposure_exists={exposure_exists},\n"
+    out += TAB * 2 + f"exposure_sd_exists={exposure_sd_exists},\n"
+    out += TAB * 2 + f"exposure_year_type={format_string_none(exposure_year_type)},\n"
+    out += TAB * 2 + f"rr_exists={rr_exists},\n"
+    out += TAB * 2 + f"rr_in_range={rr_in_range},\n"
+    out += TAB * 2 + f"paf_yll_exists={paf_yll_exists},\n"
+    out += TAB * 2 + f"paf_yll_in_range={paf_yll_in_range},\n"
+    out += TAB * 2 + f"paf_yld_exists={paf_yld_exists},\n"
+    out += TAB * 2 + f"paf_yld_in_range={paf_yld_in_range},\n"
     out += 2*TAB + "restrictions=Restrictions(\n"
     for name, r in restrictions:
-        if name == "violated_restrictions":
+        if name == "violated":
             out += text_wrap(f"{TAB * 3 + name}=(", [f"'{v}'" for v in r] + [")"])
         elif r is not None:
             out += 3*TAB + f"{name}={r},\n"
@@ -127,14 +133,14 @@ def make_risks(risk_list):
     for (name, rei_id, most_detailed, level, paf_calculation_type,
          affected_causes, paf_of_one_causes,
          distribution, levels, tmred, scalar,
-         missing_exposure, missing_rr, rr_less_than_1,
-         missing_paf, paf_outside_0_1,
+         exposure_exists, exposure_sd_exists, exposure_year_type, rr_exists, rr_in_range,
+         paf_yll_exists, paf_yll_in_range, paf_yld_exists, paf_yld_in_range,
          restrictions, *_) in risk_list:
         out += make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
                          affected_causes, paf_of_one_causes,
                          distribution, levels, tmred, scalar,
-                         missing_exposure, missing_rr, rr_less_than_1,
-                         missing_paf, paf_outside_0_1,
+                         exposure_exists, exposure_sd_exists, exposure_year_type, rr_exists, rr_in_range,
+                         paf_yll_exists, paf_yll_in_range, paf_yld_exists, paf_yld_in_range,
                          restrictions)
 
     out += ")\n"
