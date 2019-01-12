@@ -28,9 +28,9 @@ def get_base_types():
                       ('paf_yld_in_range', 'Union[bool, None]'),
                       ('affected_causes', 'Tuple[Cause, ...]'),
                       ('paf_of_one_causes', 'Tuple[Cause, ...]'),
-                      ('parent', 'Union[RiskFactor, None] = None'),
-                      ('sub_risk_factors', 'Tuple[RiskFactor, ...] = None'),
-                      ('affected_risk_factors', 'Tuple[RiskFactor, ...] = None'),
+                      ('parent', 'Union["RiskFactor", None] = None'),
+                      ('sub_risk_factors', 'Tuple["RiskFactor", ...] = None'),
+                      ('affected_risk_factors', 'Tuple["RiskFactor", ...] = None'),
                       ('categories', 'Categories = None'),
                       ('tmred', 'Tmred = None'),
                       ('rr_scalar', 'scalar = None')),
@@ -58,11 +58,11 @@ def make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
     out += TAB * 2 + f"gbd_id=reiid({rei_id}),\n"
     out += TAB * 2 + f"level={level},\n"
     out += TAB * 2 + f"most_detailed={bool(most_detailed)},\n"
-    out += TAB * 2 + f"distribution='{format_string_none(distribution)}',\n"
+    out += TAB * 2 + f"distribution={format_string_none(distribution)},\n"
     out += TAB * 2 + f"paf_calculation_type='{paf_calculation_type}',\n"
     out += TAB * 2 + f"exposure_exists={exposure_exists},\n"
     out += TAB * 2 + f"exposure_sd_exists={exposure_sd_exists},\n"
-    out += TAB * 2 + f"exposure_year_type='{format_string_none(exposure_year_type)}',\n"
+    out += TAB * 2 + f"exposure_year_type={format_string_none(exposure_year_type)},\n"
     out += TAB * 2 + f"rr_exists={rr_exists},\n"
     out += TAB * 2 + f"rr_in_range={rr_in_range},\n"
     out += TAB * 2 + f"paf_yll_exists={paf_yll_exists},\n"
