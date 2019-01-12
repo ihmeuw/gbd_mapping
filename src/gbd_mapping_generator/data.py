@@ -175,10 +175,10 @@ def get_cause_data():
         inc_consistent = cause['incidence_consistent']
         deaths_consistent = cause['deaths_consistent']
         birth_prev_consistent = cause['birth_prevalence_consistent']
-        prev_aggregated = cause['prevalence_aggregated']
-        inc_aggregated = cause['incidence_aggregated']
-        deaths_aggregated = cause['deaths_aggregated']
-        birth_prev_aggregated = cause['birth_prevalence_aggregated']
+        prev_aggregates = cause['prevalence_aggregates']
+        inc_aggregates = cause['incidence_aggregates']
+        deaths_aggregates = cause['deaths_aggregates']
+        birth_prev_aggregates = cause['birth_prevalence_aggregates']
 
         eti_ids = cause_etiology_map[cause_etiology_map.cause_id == cid].rei_id.tolist()
         associated_etiologies = clean_entity_list(etiologies[etiologies.rei_id.isin(eti_ids)].rei_name)
@@ -188,8 +188,8 @@ def get_cause_data():
         cause_data.append((name, cid, dismod_id, most_detailed, level, parent, restrictions, prev_exists, inc_exists,
                            remission_exists, deaths_exists, birth_prevalence_exists, prev_in_range, inc_in_range,
                            remission_in_range, deaths_in_range, birth_prev_in_range, prev_consistent, inc_consistent,
-                           deaths_consistent, birth_prev_consistent, prev_aggregated, inc_aggregated, deaths_aggregated,
-                           birth_prev_aggregated, associated_sequelae, associated_etiologies, sub_causes))
+                           deaths_consistent, birth_prev_consistent, prev_aggregates, inc_aggregates, deaths_aggregates,
+                           birth_prev_aggregates, associated_sequelae, associated_etiologies, sub_causes))
 
     return cause_data
 
@@ -220,7 +220,7 @@ def make_cause_restrictions(cause):
         ('yll_age_group_id_end', id_map[cause['yll_age_end']][1] if not cause['yld_only'] else None),
         ('yld_age_group_id_start', id_map[cause['yld_age_start']][0] if not cause['yll_only'] else None),
         ('yld_age_group_id_end', id_map[cause['yld_age_end']][1] if not cause['yll_only'] else None),
-        ('violated_restrictions', cause['violated_restrictions'])
+        ('violated', tuple(cause['violated_restrictions']))
     )
     return tuple(restrictions)
 
