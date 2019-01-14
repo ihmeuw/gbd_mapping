@@ -12,8 +12,8 @@ from .base_template import ModelableEntity, GbdRecord
 
 class Covariate(ModelableEntity):
     """Container for covariate GBD ids and metadata."""
-    __slots__ = ('name', 'kind', 'gbd_id', 'by_age', 'by_sex', 'dichotomous', 'data_exist', 'lower_value_exists',
-                 'upper_value_exists', 'mean_value_exists', 'sex_restriction_violated', 'age_restriction_violated', )
+    __slots__ = ('name', 'kind', 'gbd_id', 'by_age', 'by_sex', 'dichotomous', 'mean_value_exists',
+                 'uncertainty_exists', )
 
     def __init__(self,
                  name: str,
@@ -22,12 +22,8 @@ class Covariate(ModelableEntity):
                  by_age: bool,
                  by_sex: bool,
                  dichotomous: bool,
-                 data_exist: bool,
-                 lower_value_exists: Union[bool, None],
-                 upper_value_exists: Union[bool, None],
                  mean_value_exists: Union[bool, None],
-                 sex_restriction_violated: Union[bool, None],
-                 age_restriction_violated: Union[bool, None], ):
+                 uncertainty_exists: Union[bool, None], ):
         super().__init__(name=name,
                          kind=kind,
                          gbd_id=gbd_id)
@@ -37,12 +33,8 @@ class Covariate(ModelableEntity):
         self.by_age = by_age
         self.by_sex = by_sex
         self.dichotomous = dichotomous
-        self.data_exist = data_exist
-        self.lower_value_exists = lower_value_exists
-        self.upper_value_exists = upper_value_exists
         self.mean_value_exists = mean_value_exists
-        self.sex_restriction_violated = sex_restriction_violated
-        self.age_restriction_violated = age_restriction_violated
+        self.uncertainty_exists = uncertainty_exists
 
 
 class Covariates(GbdRecord):

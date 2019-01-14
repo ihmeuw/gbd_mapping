@@ -16,13 +16,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'absolute_value_of_average_latitude': Covariate(
         name='absolute_value_of_average_latitude',
         kind='covariate',
@@ -30,13 +28,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'adult_hiv_death_rate': Covariate(
         name='adult_hiv_death_rate',
         kind='covariate',
@@ -44,13 +40,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'alcohol_liters_per_capita': Covariate(
         name='alcohol_liters_per_capita',
         kind='covariate',
@@ -58,13 +52,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'antenatal_care_1_visit_coverage_proportion': Covariate(
         name='antenatal_care_1_visit_coverage_proportion',
         kind='covariate',
@@ -72,13 +64,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'antenatal_care_4_visits_coverage_proportion': Covariate(
         name='antenatal_care_4_visits_coverage_proportion',
         kind='covariate',
@@ -86,13 +76,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'asbestos_production_binary': Covariate(
         name='asbestos_production_binary',
         kind='covariate',
@@ -100,13 +88,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'asbestos_production_kg_per_capita': Covariate(
         name='asbestos_production_kg_per_capita',
         kind='covariate',
@@ -114,13 +100,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'age_specific_fertility_rate': Covariate(
         name='age_specific_fertility_rate',
         kind='covariate',
@@ -128,13 +112,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'tobacco_cigarettes_per_capita': Covariate(
         name='tobacco_cigarettes_per_capita',
         kind='covariate',
@@ -142,13 +124,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'coal_production_per_capita': Covariate(
         name='coal_production_per_capita',
         kind='covariate',
@@ -156,13 +136,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'coastal_population_within_10km_proportion': Covariate(
         name='coastal_population_within_10km_proportion',
         kind='covariate',
@@ -170,13 +148,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'completeness_of_vital_registration': Covariate(
         name='completeness_of_vital_registration',
         kind='covariate',
@@ -184,13 +160,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'contraception_modern_prevalence_proportion_by_age': Covariate(
         name='contraception_modern_prevalence_proportion_by_age',
         kind='covariate',
@@ -198,13 +172,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'contraception_modern_prevalence_proportion': Covariate(
         name='contraception_modern_prevalence_proportion',
         kind='covariate',
@@ -212,13 +184,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'cumulative_cigarettes_10_years': Covariate(
         name='cumulative_cigarettes_10_years',
         kind='covariate',
@@ -226,13 +196,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'cumulative_cigarettes_15_years': Covariate(
         name='cumulative_cigarettes_15_years',
         kind='covariate',
@@ -240,13 +208,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'cumulative_cigarettes_20_years': Covariate(
         name='cumulative_cigarettes_20_years',
         kind='covariate',
@@ -254,13 +220,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'cumulative_cigarettes_5_years': Covariate(
         name='cumulative_cigarettes_5_years',
         kind='covariate',
@@ -268,13 +232,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'diabetes_fasting_plasma_glucose_mmol_l': Covariate(
         name='diabetes_fasting_plasma_glucose_mmol_l',
         kind='covariate',
@@ -282,13 +244,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'diabetes_age_standardized_prevalence_proportion': Covariate(
         name='diabetes_age_standardized_prevalence_proportion',
         kind='covariate',
@@ -296,13 +256,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'diabetes_age_specific_prevalence_proportion': Covariate(
         name='diabetes_age_specific_prevalence_proportion',
         kind='covariate',
@@ -310,13 +268,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'disaster_deaths_rate_per_1000': Covariate(
         name='disaster_deaths_rate_per_1000',
         kind='covariate',
@@ -324,13 +280,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'dtp3_coverage_proportion': Covariate(
         name='dtp3_coverage_proportion',
         kind='covariate',
@@ -338,13 +292,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'education_years_per_capita': Covariate(
         name='education_years_per_capita',
         kind='covariate',
@@ -352,13 +304,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'famine_binary': Covariate(
         name='famine_binary',
         kind='covariate',
@@ -366,13 +316,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'female_hiv_death_rate_per_1_for_ages_15_49': Covariate(
         name='female_hiv_death_rate_per_1_for_ages_15_49',
         kind='covariate',
@@ -380,13 +328,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'fertility_15_19_year_olds': Covariate(
         name='fertility_15_19_year_olds',
         kind='covariate',
@@ -394,13 +340,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'gold_production_binary': Covariate(
         name='gold_production_binary',
         kind='covariate',
@@ -408,13 +352,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'gold_production_kg_per_capita': Covariate(
         name='gold_production_kg_per_capita',
         kind='covariate',
@@ -422,13 +364,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'health_system_access_unitless': Covariate(
         name='health_system_access_unitless',
         kind='covariate',
@@ -436,13 +376,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'health_system_access_2_unitless': Covariate(
         name='health_system_access_2_unitless',
         kind='covariate',
@@ -450,13 +388,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'proportion_of_households_using_iodized_salt_adjusted': Covariate(
         name='proportion_of_households_using_iodized_salt_adjusted',
         kind='covariate',
@@ -464,13 +400,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'hib3_vaccine_coverage_proportion': Covariate(
         name='hib3_vaccine_coverage_proportion',
         kind='covariate',
@@ -478,13 +412,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'hiv_prevalence_unadjusted_proportion': Covariate(
         name='hiv_prevalence_unadjusted_proportion',
         kind='covariate',
@@ -492,13 +424,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'hospital_beds_per_1000': Covariate(
         name='hospital_beds_per_1000',
         kind='covariate',
@@ -506,13 +436,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'in_facility_delivery_proportion': Covariate(
         name='in_facility_delivery_proportion',
         kind='covariate',
@@ -520,13 +448,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'landlocked_nation_binary': Covariate(
         name='landlocked_nation_binary',
         kind='covariate',
@@ -534,13 +460,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'average_latitude': Covariate(
         name='average_latitude',
         kind='covariate',
@@ -548,13 +472,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'ldi_income_per_capita': Covariate(
         name='ldi_income_per_capita',
         kind='covariate',
@@ -562,13 +484,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'lead_gas_outphase_binary': Covariate(
         name='lead_gas_outphase_binary',
         kind='covariate',
@@ -576,13 +496,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'live_births_thousands': Covariate(
         name='live_births_thousands',
         kind='covariate',
@@ -590,13 +508,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'underweight_proportion_less_than_2sd_weight_for_age_less_than_5_years': Covariate(
         name='underweight_proportion_less_than_2sd_weight_for_age_less_than_5_years',
         kind='covariate',
@@ -604,13 +520,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'mean_bmi': Covariate(
         name='mean_bmi',
         kind='covariate',
@@ -618,13 +532,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'cholesterol_total_mean_per_capita': Covariate(
         name='cholesterol_total_mean_per_capita',
         kind='covariate',
@@ -632,13 +544,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'systolic_blood_pressure_mmhg': Covariate(
         name='systolic_blood_pressure_mmhg',
         kind='covariate',
@@ -646,13 +556,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'population_weighted_mean_temperature': Covariate(
         name='population_weighted_mean_temperature',
         kind='covariate',
@@ -660,13 +568,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'measles_vaccine_coverage_proportion': Covariate(
         name='measles_vaccine_coverage_proportion',
         kind='covariate',
@@ -674,13 +580,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'meningitis_belt_binary': Covariate(
         name='meningitis_belt_binary',
         kind='covariate',
@@ -688,13 +592,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'mortality_rate_due_to_death_shocks_in_last_10_years_per_1_person': Covariate(
         name='mortality_rate_due_to_death_shocks_in_last_10_years_per_1_person',
         kind='covariate',
@@ -702,13 +604,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
-        mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        mean_value_exists=True,
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'opium_cultivation_binary': Covariate(
         name='opium_cultivation_binary',
         kind='covariate',
@@ -716,13 +616,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'live_births_35_and_up_proportion': Covariate(
         name='live_births_35_and_up_proportion',
         kind='covariate',
@@ -730,13 +628,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'live_births_40_and_up_proportion': Covariate(
         name='live_births_40_and_up_proportion',
         kind='covariate',
@@ -744,13 +640,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'pig_meat_kg_per_capita': Covariate(
         name='pig_meat_kg_per_capita',
         kind='covariate',
@@ -758,13 +652,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'pigs_per_capita': Covariate(
         name='pigs_per_capita',
         kind='covariate',
@@ -772,13 +664,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'indoor_air_pollution_all_cooking_fuels': Covariate(
         name='indoor_air_pollution_all_cooking_fuels',
         kind='covariate',
@@ -786,13 +676,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'outdoor_air_pollution_pm_2_5': Covariate(
         name='outdoor_air_pollution_pm_2_5',
         kind='covariate',
@@ -800,13 +688,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'latitude_under_15_proportion': Covariate(
         name='latitude_under_15_proportion',
         kind='covariate',
@@ -814,13 +700,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'elevation_100_to_500m_proportion': Covariate(
         name='elevation_100_to_500m_proportion',
         kind='covariate',
@@ -828,13 +712,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'elevation_over_1500m_proportion': Covariate(
         name='elevation_over_1500m_proportion',
         kind='covariate',
@@ -842,13 +724,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'population_15_to_30_proportion': Covariate(
         name='population_15_to_30_proportion',
         kind='covariate',
@@ -856,13 +736,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'latitude_15_to_30_proportion': Covariate(
         name='latitude_15_to_30_proportion',
         kind='covariate',
@@ -870,13 +748,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'latitude_30_to_45_proportion': Covariate(
         name='latitude_30_to_45_proportion',
         kind='covariate',
@@ -884,13 +760,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'latitude_over_45_proportion': Covariate(
         name='latitude_over_45_proportion',
         kind='covariate',
@@ -898,13 +772,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'elevation_500_to_1500m_proportion': Covariate(
         name='elevation_500_to_1500m_proportion',
         kind='covariate',
@@ -912,13 +784,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'population_density_150_300_ppl_sqkm_proportion': Covariate(
         name='population_density_150_300_ppl_sqkm_proportion',
         kind='covariate',
@@ -926,13 +796,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'population_density_300_500_ppl_sqkm_proportion': Covariate(
         name='population_density_300_500_ppl_sqkm_proportion',
         kind='covariate',
@@ -940,13 +808,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'population_density_500_1000_ppl_sqkm_proportion': Covariate(
         name='population_density_500_1000_ppl_sqkm_proportion',
         kind='covariate',
@@ -954,13 +820,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'population_density_over_1000_ppl_sqkm_proportion': Covariate(
         name='population_density_over_1000_ppl_sqkm_proportion',
         kind='covariate',
@@ -968,13 +832,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'population_density_under_150_ppl_sqkm_proportion': Covariate(
         name='population_density_under_150_ppl_sqkm_proportion',
         kind='covariate',
@@ -982,13 +844,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'population_over_65_proportion': Covariate(
         name='population_over_65_proportion',
         kind='covariate',
@@ -996,13 +856,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'elevation_under_100m_proportion': Covariate(
         name='elevation_under_100m_proportion',
         kind='covariate',
@@ -1010,13 +868,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'population_under_30_proportion': Covariate(
         name='population_under_30_proportion',
         kind='covariate',
@@ -1024,13 +880,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'rainfall_population_weighted_mm_yr': Covariate(
         name='rainfall_population_weighted_mm_yr',
         kind='covariate',
@@ -1038,13 +892,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'rainfall_quintiles_2_5': Covariate(
         name='rainfall_quintiles_2_5',
         kind='covariate',
@@ -1052,13 +904,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'rainfall_quintiles_3_5': Covariate(
         name='rainfall_quintiles_3_5',
         kind='covariate',
@@ -1066,13 +916,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'rainfall_quintiles_4_5': Covariate(
         name='rainfall_quintiles_4_5',
         kind='covariate',
@@ -1080,13 +928,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'rainfall_quintile_1_proportion': Covariate(
         name='rainfall_quintile_1_proportion',
         kind='covariate',
@@ -1094,13 +940,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'rainfall_quintile_2_proportion': Covariate(
         name='rainfall_quintile_2_proportion',
         kind='covariate',
@@ -1108,13 +952,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'rainfall_quintile_3_proportion': Covariate(
         name='rainfall_quintile_3_proportion',
         kind='covariate',
@@ -1122,13 +964,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'rainfall_quintile_4_proportion': Covariate(
         name='rainfall_quintile_4_proportion',
         kind='covariate',
@@ -1136,13 +976,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'rainfall_quintile_5_proportion': Covariate(
         name='rainfall_quintile_5_proportion',
         kind='covariate',
@@ -1150,13 +988,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'religion_binary_greater_than_50_percent_muslim': Covariate(
         name='religion_binary_greater_than_50_percent_muslim',
         kind='covariate',
@@ -1164,13 +1000,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'rotavirus_vaccine_introduced_binary': Covariate(
         name='rotavirus_vaccine_introduced_binary',
         kind='covariate',
@@ -1178,13 +1012,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'sahel_region_of_africa_binary': Covariate(
         name='sahel_region_of_africa_binary',
         kind='covariate',
@@ -1192,13 +1024,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'sanitation_proportion_with_access': Covariate(
         name='sanitation_proportion_with_access',
         kind='covariate',
@@ -1206,13 +1036,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'skilled_birth_attendance_proportion': Covariate(
         name='skilled_birth_attendance_proportion',
         kind='covariate',
@@ -1220,13 +1048,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'smoking_prevalence': Covariate(
         name='smoking_prevalence',
         kind='covariate',
@@ -1234,13 +1060,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'smoking_prevalence_reproductive_age_standardized': Covariate(
         name='smoking_prevalence_reproductive_age_standardized',
         kind='covariate',
@@ -1248,13 +1072,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'ninetieth_percentile_climatic_temperature_in_the_given_country_year': Covariate(
         name='ninetieth_percentile_climatic_temperature_in_the_given_country_year',
         kind='covariate',
@@ -1262,13 +1084,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'tetanus_toxoid_coverage_smooth_proportion': Covariate(
         name='tetanus_toxoid_coverage_smooth_proportion',
         kind='covariate',
@@ -1276,13 +1096,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'total_fertility_rate': Covariate(
         name='total_fertility_rate',
         kind='covariate',
@@ -1290,13 +1108,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'vehicles_2_and_up4_wheels_per_capita': Covariate(
         name='vehicles_2_and_up4_wheels_per_capita',
         kind='covariate',
@@ -1304,13 +1120,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'vehicles_2_wheels_per_capita': Covariate(
         name='vehicles_2_wheels_per_capita',
         kind='covariate',
@@ -1318,13 +1132,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'vehicles_4_wheels_per_capita': Covariate(
         name='vehicles_4_wheels_per_capita',
         kind='covariate',
@@ -1332,13 +1144,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'vehicles_2_wheels_fraction_proportion': Covariate(
         name='vehicles_2_wheels_fraction_proportion',
         kind='covariate',
@@ -1346,13 +1156,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'mortality_rate_due_to_war_shocks_per_1_person': Covariate(
         name='mortality_rate_due_to_war_shocks_per_1_person',
         kind='covariate',
@@ -1360,13 +1168,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'improved_water_source_proportion_with_access': Covariate(
         name='improved_water_source_proportion_with_access',
         kind='covariate',
@@ -1374,13 +1180,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'malaria_lysenko_pfpr_5_epidemic': Covariate(
         name='malaria_lysenko_pfpr_5_epidemic',
         kind='covariate',
@@ -1388,13 +1192,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'malaria_lysenko_pfpr_1_holoendemic': Covariate(
         name='malaria_lysenko_pfpr_1_holoendemic',
         kind='covariate',
@@ -1402,13 +1204,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'malaria_lysenko_pfpr_2_highest_endemicity': Covariate(
         name='malaria_lysenko_pfpr_2_highest_endemicity',
         kind='covariate',
@@ -1416,13 +1216,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'malaria_pfpr_rate': Covariate(
         name='malaria_pfpr_rate',
         kind='covariate',
@@ -1430,13 +1228,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'significant_leishmaniasis_endemicity_binary': Covariate(
         name='significant_leishmaniasis_endemicity_binary',
         kind='covariate',
@@ -1444,13 +1240,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'leprosy_endemic_binary': Covariate(
         name='leprosy_endemic_binary',
         kind='covariate',
@@ -1458,13 +1252,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year': Covariate(
         name='year',
         kind='covariate',
@@ -1472,13 +1264,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'chagas_population_at_risk_2_proportion': Covariate(
         name='chagas_population_at_risk_2_proportion',
         kind='covariate',
@@ -1486,13 +1276,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'birth_prevalence_of_chd': Covariate(
         name='birth_prevalence_of_chd',
         kind='covariate',
@@ -1500,13 +1288,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'birth_prevalence_of_congenital_chromosomal_anomalies': Covariate(
         name='birth_prevalence_of_congenital_chromosomal_anomalies',
         kind='covariate',
@@ -1514,13 +1300,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'hemoglobinopathies_prevalence_x_excess_mortality': Covariate(
         name='hemoglobinopathies_prevalence_x_excess_mortality',
         kind='covariate',
@@ -1528,13 +1312,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'age_standardize_prevalence_of_severe_anemia': Covariate(
         name='age_standardize_prevalence_of_severe_anemia',
         kind='covariate',
@@ -1542,13 +1324,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'schistosomiasis_prevalence_proportion': Covariate(
         name='schistosomiasis_prevalence_proportion',
         kind='covariate',
@@ -1556,13 +1336,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'maternal_care_and_immunization': Covariate(
         name='maternal_care_and_immunization',
         kind='covariate',
@@ -1570,13 +1348,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'neonatal_death_rate_modeled_2_per_1000': Covariate(
         name='neonatal_death_rate_modeled_2_per_1000',
         kind='covariate',
@@ -1584,13 +1360,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'pcv3_coverage_proportion': Covariate(
         name='pcv3_coverage_proportion',
         kind='covariate',
@@ -1598,13 +1372,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'presence_of_leishmaniasis_binary': Covariate(
         name='presence_of_leishmaniasis_binary',
         kind='covariate',
@@ -1612,13 +1384,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'potential_for_leishmaniasis_transmission_binary': Covariate(
         name='potential_for_leishmaniasis_transmission_binary',
         kind='covariate',
@@ -1626,13 +1396,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'high_leishmaniasis_endemicity_binary': Covariate(
         name='high_leishmaniasis_endemicity_binary',
         kind='covariate',
@@ -1640,13 +1408,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'under_5_hiv_death_rate': Covariate(
         name='under_5_hiv_death_rate',
         kind='covariate',
@@ -1654,13 +1420,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'interaction_of_malaria_itn_and_pfpr_rate_covariates': Covariate(
         name='interaction_of_malaria_itn_and_pfpr_rate_covariates',
         kind='covariate',
@@ -1668,13 +1432,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'interaction_of_malaria_itn_and_log_pfpr_covariates': Covariate(
         name='interaction_of_malaria_itn_and_log_pfpr_covariates',
         kind='covariate',
@@ -1682,13 +1444,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'malaria_pfpr_adjusted_for_itn_and_irs_coverage': Covariate(
         name='malaria_pfpr_adjusted_for_itn_and_irs_coverage',
         kind='covariate',
@@ -1696,13 +1456,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'syphilis_prevalence_proportion': Covariate(
         name='syphilis_prevalence_proportion',
         kind='covariate',
@@ -1710,13 +1468,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_region_5': Covariate(
         name='year_x_gbd_analytical_region_5',
         kind='covariate',
@@ -1724,13 +1480,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_region_9': Covariate(
         name='year_x_gbd_analytical_region_9',
         kind='covariate',
@@ -1738,13 +1492,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_region_21': Covariate(
         name='year_x_gbd_analytical_region_21',
         kind='covariate',
@@ -1752,13 +1504,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_region_32': Covariate(
         name='year_x_gbd_analytical_region_32',
         kind='covariate',
@@ -1766,13 +1516,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_region_42': Covariate(
         name='year_x_gbd_analytical_region_42',
         kind='covariate',
@@ -1780,13 +1528,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_region_56': Covariate(
         name='year_x_gbd_analytical_region_56',
         kind='covariate',
@@ -1794,13 +1540,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_region_65': Covariate(
         name='year_x_gbd_analytical_region_65',
         kind='covariate',
@@ -1808,13 +1552,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_region_70': Covariate(
         name='year_x_gbd_analytical_region_70',
         kind='covariate',
@@ -1822,13 +1564,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_region_73': Covariate(
         name='year_x_gbd_analytical_region_73',
         kind='covariate',
@@ -1836,13 +1576,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_region_96': Covariate(
         name='year_x_gbd_analytical_region_96',
         kind='covariate',
@@ -1850,13 +1588,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_region_100': Covariate(
         name='year_x_gbd_analytical_region_100',
         kind='covariate',
@@ -1864,13 +1600,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_region_104': Covariate(
         name='year_x_gbd_analytical_region_104',
         kind='covariate',
@@ -1878,13 +1612,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_region_120': Covariate(
         name='year_x_gbd_analytical_region_120',
         kind='covariate',
@@ -1892,13 +1624,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_region_124': Covariate(
         name='year_x_gbd_analytical_region_124',
         kind='covariate',
@@ -1906,13 +1636,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_region_134': Covariate(
         name='year_x_gbd_analytical_region_134',
         kind='covariate',
@@ -1920,13 +1648,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_region_138': Covariate(
         name='year_x_gbd_analytical_region_138',
         kind='covariate',
@@ -1934,13 +1660,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_region_159': Covariate(
         name='year_x_gbd_analytical_region_159',
         kind='covariate',
@@ -1948,13 +1672,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_region_167': Covariate(
         name='year_x_gbd_analytical_region_167',
         kind='covariate',
@@ -1962,13 +1684,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_region_174': Covariate(
         name='year_x_gbd_analytical_region_174',
         kind='covariate',
@@ -1976,13 +1696,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_region_192': Covariate(
         name='year_x_gbd_analytical_region_192',
         kind='covariate',
@@ -1990,13 +1708,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_region_199': Covariate(
         name='year_x_gbd_analytical_region_199',
         kind='covariate',
@@ -2004,13 +1720,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_superregion_4': Covariate(
         name='year_x_gbd_analytical_superregion_4',
         kind='covariate',
@@ -2018,13 +1732,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_superregion_31': Covariate(
         name='year_x_gbd_analytical_superregion_31',
         kind='covariate',
@@ -2032,13 +1744,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_superregion_64': Covariate(
         name='year_x_gbd_analytical_superregion_64',
         kind='covariate',
@@ -2046,13 +1756,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_superregion_103': Covariate(
         name='year_x_gbd_analytical_superregion_103',
         kind='covariate',
@@ -2060,13 +1768,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_superregion_137': Covariate(
         name='year_x_gbd_analytical_superregion_137',
         kind='covariate',
@@ -2074,13 +1780,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_superregion_158': Covariate(
         name='year_x_gbd_analytical_superregion_158',
         kind='covariate',
@@ -2088,13 +1792,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'year_x_gbd_analytical_superregion_166': Covariate(
         name='year_x_gbd_analytical_superregion_166',
         kind='covariate',
@@ -2102,13 +1804,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'population_weighted_probability_of_dengue_transmission': Covariate(
         name='population_weighted_probability_of_dengue_transmission',
         kind='covariate',
@@ -2116,13 +1816,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'dengue_outbreaks_binary': Covariate(
         name='dengue_outbreaks_binary',
         kind='covariate',
@@ -2130,13 +1828,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'exponentiated_version_of_dengue_anomalies': Covariate(
         name='exponentiated_version_of_dengue_anomalies',
         kind='covariate',
@@ -2144,13 +1840,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'proportion_of_the_population_living_in_the_classic_monsoon_region': Covariate(
         name='proportion_of_the_population_living_in_the_classic_monsoon_region',
         kind='covariate',
@@ -2158,13 +1852,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'proportion_of_the_population_living_in_the_classic_monsoon_region_low_income_countries': Covariate(
         name='proportion_of_the_population_living_in_the_classic_monsoon_region_low_income_countries',
         kind='covariate',
@@ -2172,13 +1864,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'dengue_anomalies_deviation_from_mean_dengue_incidence_rate': Covariate(
         name='dengue_anomalies_deviation_from_mean_dengue_incidence_rate',
         kind='covariate',
@@ -2186,13 +1876,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'total_pc_treatments_per_person_at_risk_for_lf_infection_1999_2012': Covariate(
         name='total_pc_treatments_per_person_at_risk_for_lf_infection_1999_2012',
         kind='covariate',
@@ -2200,13 +1888,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'smoking_prevalence_age_standardized_females': Covariate(
         name='smoking_prevalence_age_standardized_females',
         kind='covariate',
@@ -2214,13 +1900,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'smoking_prevalence_age_standardized_males': Covariate(
         name='smoking_prevalence_age_standardized_males',
         kind='covariate',
@@ -2228,13 +1912,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'hiv_prevalence_during_pregnancy_by_age': Covariate(
         name='hiv_prevalence_during_pregnancy_by_age',
         kind='covariate',
@@ -2242,13 +1924,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'indicator_for_high_income_superregion_location_id_64': Covariate(
         name='indicator_for_high_income_superregion_location_id_64',
         kind='covariate',
@@ -2256,13 +1936,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'vitamin_a_supplementation_coverage_rate': Covariate(
         name='vitamin_a_supplementation_coverage_rate',
         kind='covariate',
@@ -2270,13 +1948,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'hemoglobinopathies_prevalence_x_excess_mortality_excluding_g6pd_deficiency': Covariate(
         name='hemoglobinopathies_prevalence_x_excess_mortality_excluding_g6pd_deficiency',
         kind='covariate',
@@ -2284,13 +1960,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'indicator_for_southeast_asia_east_asia_and_oceania_superregion_location_id_4': Covariate(
         name='indicator_for_southeast_asia_east_asia_and_oceania_superregion_location_id_4',
         kind='covariate',
@@ -2298,13 +1972,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'indicator_for_central_europe_eastern_europe_and_central_asia_superregion_location_id_31': Covariate(
         name='indicator_for_central_europe_eastern_europe_and_central_asia_superregion_location_id_31',
         kind='covariate',
@@ -2312,13 +1984,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'indicator_for_latin_america_and_caribbean_superregion_location_id_103': Covariate(
         name='indicator_for_latin_america_and_caribbean_superregion_location_id_103',
         kind='covariate',
@@ -2326,13 +1996,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'indicator_for_north_africa_and_middle_east_superregion_location_id_137': Covariate(
         name='indicator_for_north_africa_and_middle_east_superregion_location_id_137',
         kind='covariate',
@@ -2340,13 +2008,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'indicator_for_south_asia_superregion_location_id_158': Covariate(
         name='indicator_for_south_asia_superregion_location_id_158',
         kind='covariate',
@@ -2354,13 +2020,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'indicator_for_sub_saharan_africa_superregion_location_id_166': Covariate(
         name='indicator_for_sub_saharan_africa_superregion_location_id_166',
         kind='covariate',
@@ -2368,13 +2032,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'alcohol_binge_drinker_proportion_age_standardized': Covariate(
         name='alcohol_binge_drinker_proportion_age_standardized',
         kind='covariate',
@@ -2382,13 +2044,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'smoking_prevalence_age_standardized_both_sexes': Covariate(
         name='smoking_prevalence_age_standardized_both_sexes',
         kind='covariate',
@@ -2396,13 +2056,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'proportion_of_the_population_living_in_the_indian_ocean_monsoon_belt': Covariate(
         name='proportion_of_the_population_living_in_the_indian_ocean_monsoon_belt',
         kind='covariate',
@@ -2410,13 +2068,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'vitamin_a_deficiency_prevalence_age_standardized': Covariate(
         name='vitamin_a_deficiency_prevalence_age_standardized',
         kind='covariate',
@@ -2424,13 +2080,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'prevalence_of_obesity': Covariate(
         name='prevalence_of_obesity',
         kind='covariate',
@@ -2438,13 +2092,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'prevalence_of_overweight_and_obesity': Covariate(
         name='prevalence_of_overweight_and_obesity',
         kind='covariate',
@@ -2452,13 +2104,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'prevalence_of_obesity_age_standardized': Covariate(
         name='prevalence_of_obesity_age_standardized',
         kind='covariate',
@@ -2466,13 +2116,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'age_standardized_prevalence_of_ckd_stage_3': Covariate(
         name='age_standardized_prevalence_of_ckd_stage_3',
         kind='covariate',
@@ -2480,13 +2128,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'age_standardized_prevalence_of_ckd_stage_4': Covariate(
         name='age_standardized_prevalence_of_ckd_stage_4',
         kind='covariate',
@@ -2494,13 +2140,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'maternal_education_years_per_capita': Covariate(
         name='maternal_education_years_per_capita',
         kind='covariate',
@@ -2508,13 +2152,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'chagasprevpaho': Covariate(
         name='chagasprevpaho',
         kind='covariate',
@@ -2522,13 +2164,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'clay_fraction_in_the_soil_mean': Covariate(
         name='clay_fraction_in_the_soil_mean',
         kind='covariate',
@@ -2536,13 +2176,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'silt_fraction_in_the_soil_mean': Covariate(
         name='silt_fraction_in_the_soil_mean',
         kind='covariate',
@@ -2550,13 +2188,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'enhanced_vegetation_index_long_term_average_2000_2012_mean': Covariate(
         name='enhanced_vegetation_index_long_term_average_2000_2012_mean',
         kind='covariate',
@@ -2564,13 +2200,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'slope_of_the_land_in_degrees_terrain_steepness_mean': Covariate(
         name='slope_of_the_land_in_degrees_terrain_steepness_mean',
         kind='covariate',
@@ -2578,13 +2212,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_sev_scalar_tb': Covariate(
         name='log_transformed_sev_scalar_tb',
         kind='covariate',
@@ -2592,13 +2224,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_oth_hiv': Covariate(
         name='log_transformed_sev_scalar_oth_hiv',
         kind='covariate',
@@ -2606,13 +2236,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_diarrhea': Covariate(
         name='log_transformed_sev_scalar_diarrhea',
         kind='covariate',
@@ -2620,13 +2248,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_lri': Covariate(
         name='log_transformed_sev_scalar_lri',
         kind='covariate',
@@ -2634,13 +2260,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_uri': Covariate(
         name='log_transformed_sev_scalar_uri',
         kind='covariate',
@@ -2648,13 +2272,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_otitis': Covariate(
         name='log_transformed_sev_scalar_otitis',
         kind='covariate',
@@ -2662,13 +2284,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_measles': Covariate(
         name='log_transformed_sev_scalar_measles',
         kind='covariate',
@@ -2676,13 +2296,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_mat_hem': Covariate(
         name='log_transformed_sev_scalar_mat_hem',
         kind='covariate',
@@ -2690,13 +2308,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_mat_sepsis': Covariate(
         name='log_transformed_sev_scalar_mat_sepsis',
         kind='covariate',
@@ -2704,13 +2320,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_mat_abort': Covariate(
         name='log_transformed_sev_scalar_mat_abort',
         kind='covariate',
@@ -2718,13 +2332,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_hep': Covariate(
         name='log_transformed_sev_scalar_hep',
         kind='covariate',
@@ -2732,13 +2344,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_hep_b': Covariate(
         name='log_transformed_sev_scalar_hep_b',
         kind='covariate',
@@ -2746,13 +2356,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_hep_c': Covariate(
         name='log_transformed_sev_scalar_hep_c',
         kind='covariate',
@@ -2760,13 +2368,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_esophag_c': Covariate(
         name='log_transformed_sev_scalar_esophag_c',
         kind='covariate',
@@ -2774,13 +2380,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_stomach_c': Covariate(
         name='log_transformed_sev_scalar_stomach_c',
         kind='covariate',
@@ -2788,13 +2392,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_liver_c': Covariate(
         name='log_transformed_sev_scalar_liver_c',
         kind='covariate',
@@ -2802,13 +2404,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_liver_c_hepb': Covariate(
         name='log_transformed_sev_scalar_liver_c_hepb',
         kind='covariate',
@@ -2816,13 +2416,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_liver_c_hepc': Covariate(
         name='log_transformed_sev_scalar_liver_c_hepc',
         kind='covariate',
@@ -2830,13 +2428,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_oth_liver_c': Covariate(
         name='log_transformed_sev_scalar_oth_liver_c',
         kind='covariate',
@@ -2844,13 +2440,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_larynx_c': Covariate(
         name='log_transformed_sev_scalar_larynx_c',
         kind='covariate',
@@ -2858,13 +2452,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_lung_c': Covariate(
         name='log_transformed_sev_scalar_lung_c',
         kind='covariate',
@@ -2872,13 +2464,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_breast_c': Covariate(
         name='log_transformed_sev_scalar_breast_c',
         kind='covariate',
@@ -2886,13 +2476,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_uterus_c': Covariate(
         name='log_transformed_sev_scalar_uterus_c',
         kind='covariate',
@@ -2900,13 +2488,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_prostate_c': Covariate(
         name='log_transformed_sev_scalar_prostate_c',
         kind='covariate',
@@ -2914,13 +2500,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_colorect_c': Covariate(
         name='log_transformed_sev_scalar_colorect_c',
         kind='covariate',
@@ -2928,13 +2512,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_mouth_c': Covariate(
         name='log_transformed_sev_scalar_mouth_c',
         kind='covariate',
@@ -2942,13 +2524,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_nasoph_c': Covariate(
         name='log_transformed_sev_scalar_nasoph_c',
         kind='covariate',
@@ -2956,13 +2536,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_oth_phar_c': Covariate(
         name='log_transformed_sev_scalar_oth_phar_c',
         kind='covariate',
@@ -2970,13 +2548,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_gallblad_c': Covariate(
         name='log_transformed_sev_scalar_gallblad_c',
         kind='covariate',
@@ -2984,13 +2560,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_pancreas_c': Covariate(
         name='log_transformed_sev_scalar_pancreas_c',
         kind='covariate',
@@ -2998,13 +2572,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_ovary_c': Covariate(
         name='log_transformed_sev_scalar_ovary_c',
         kind='covariate',
@@ -3012,13 +2584,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_kidney_c': Covariate(
         name='log_transformed_sev_scalar_kidney_c',
         kind='covariate',
@@ -3026,13 +2596,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_bladder_c': Covariate(
         name='log_transformed_sev_scalar_bladder_c',
         kind='covariate',
@@ -3040,13 +2608,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_thyroid_c': Covariate(
         name='log_transformed_sev_scalar_thyroid_c',
         kind='covariate',
@@ -3054,13 +2620,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_mesothel': Covariate(
         name='log_transformed_sev_scalar_mesothel',
         kind='covariate',
@@ -3068,13 +2632,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_leukemia': Covariate(
         name='log_transformed_sev_scalar_leukemia',
         kind='covariate',
@@ -3082,13 +2644,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_rhd': Covariate(
         name='log_transformed_sev_scalar_rhd',
         kind='covariate',
@@ -3096,13 +2656,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_ihd': Covariate(
         name='log_transformed_sev_scalar_ihd',
         kind='covariate',
@@ -3110,13 +2668,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_stroke': Covariate(
         name='log_transformed_sev_scalar_stroke',
         kind='covariate',
@@ -3124,13 +2680,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_isch_stroke': Covariate(
         name='log_transformed_sev_scalar_isch_stroke',
         kind='covariate',
@@ -3138,13 +2692,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_hem_stroke': Covariate(
         name='log_transformed_sev_scalar_hem_stroke',
         kind='covariate',
@@ -3152,13 +2704,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_cmp': Covariate(
         name='log_transformed_sev_scalar_cmp',
         kind='covariate',
@@ -3166,13 +2716,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_a_fib': Covariate(
         name='log_transformed_sev_scalar_a_fib',
         kind='covariate',
@@ -3180,13 +2728,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_aort_an': Covariate(
         name='log_transformed_sev_scalar_aort_an',
         kind='covariate',
@@ -3194,13 +2740,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_pvd': Covariate(
         name='log_transformed_sev_scalar_pvd',
         kind='covariate',
@@ -3208,13 +2752,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_endocar': Covariate(
         name='log_transformed_sev_scalar_endocar',
         kind='covariate',
@@ -3222,13 +2764,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_oth_cardio': Covariate(
         name='log_transformed_sev_scalar_oth_cardio',
         kind='covariate',
@@ -3236,13 +2776,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_copd': Covariate(
         name='log_transformed_sev_scalar_copd',
         kind='covariate',
@@ -3250,13 +2788,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_asthma': Covariate(
         name='log_transformed_sev_scalar_asthma',
         kind='covariate',
@@ -3264,13 +2800,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_oth_resp': Covariate(
         name='log_transformed_sev_scalar_oth_resp',
         kind='covariate',
@@ -3278,13 +2812,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_cirr_hepb': Covariate(
         name='log_transformed_sev_scalar_cirr_hepb',
         kind='covariate',
@@ -3292,13 +2824,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_cirr_hepc': Covariate(
         name='log_transformed_sev_scalar_cirr_hepc',
         kind='covariate',
@@ -3306,13 +2836,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_pancreatit': Covariate(
         name='log_transformed_sev_scalar_pancreatit',
         kind='covariate',
@@ -3320,13 +2848,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_epilepsy': Covariate(
         name='log_transformed_sev_scalar_epilepsy',
         kind='covariate',
@@ -3334,13 +2860,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_depression': Covariate(
         name='log_transformed_sev_scalar_depression',
         kind='covariate',
@@ -3348,13 +2872,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_mdd': Covariate(
         name='log_transformed_sev_scalar_mdd',
         kind='covariate',
@@ -3362,13 +2884,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_id': Covariate(
         name='log_transformed_sev_scalar_id',
         kind='covariate',
@@ -3376,13 +2896,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_osteoarth': Covariate(
         name='log_transformed_sev_scalar_osteoarth',
         kind='covariate',
@@ -3390,13 +2908,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_back_and_upneck': Covariate(
         name='log_transformed_sev_scalar_back_and_upneck',
         kind='covariate',
@@ -3404,13 +2920,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_back_pain': Covariate(
         name='log_transformed_sev_scalar_back_pain',
         kind='covariate',
@@ -3418,13 +2932,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_gout': Covariate(
         name='log_transformed_sev_scalar_gout',
         kind='covariate',
@@ -3432,13 +2944,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_sense': Covariate(
         name='log_transformed_sev_scalar_sense',
         kind='covariate',
@@ -3446,13 +2956,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_cataract': Covariate(
         name='log_transformed_sev_scalar_cataract',
         kind='covariate',
@@ -3460,13 +2968,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_hearing': Covariate(
         name='log_transformed_sev_scalar_hearing',
         kind='covariate',
@@ -3474,13 +2980,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_road_inj': Covariate(
         name='log_transformed_sev_scalar_road_inj',
         kind='covariate',
@@ -3488,13 +2992,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_pedest': Covariate(
         name='log_transformed_sev_scalar_pedest',
         kind='covariate',
@@ -3502,13 +3004,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_cyclist': Covariate(
         name='log_transformed_sev_scalar_cyclist',
         kind='covariate',
@@ -3516,13 +3016,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_mot_cyc': Covariate(
         name='log_transformed_sev_scalar_mot_cyc',
         kind='covariate',
@@ -3530,13 +3028,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_mot_veh': Covariate(
         name='log_transformed_sev_scalar_mot_veh',
         kind='covariate',
@@ -3544,13 +3040,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_oth_road': Covariate(
         name='log_transformed_sev_scalar_oth_road',
         kind='covariate',
@@ -3558,13 +3052,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_oth_trans': Covariate(
         name='log_transformed_sev_scalar_oth_trans',
         kind='covariate',
@@ -3572,13 +3064,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_falls': Covariate(
         name='log_transformed_sev_scalar_falls',
         kind='covariate',
@@ -3586,13 +3076,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_drown': Covariate(
         name='log_transformed_sev_scalar_drown',
         kind='covariate',
@@ -3600,13 +3088,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_fire': Covariate(
         name='log_transformed_sev_scalar_fire',
         kind='covariate',
@@ -3614,13 +3100,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_poison': Covariate(
         name='log_transformed_sev_scalar_poison',
         kind='covariate',
@@ -3628,13 +3112,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_mech': Covariate(
         name='log_transformed_sev_scalar_mech',
         kind='covariate',
@@ -3642,13 +3124,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_mech_gun': Covariate(
         name='log_transformed_sev_scalar_mech_gun',
         kind='covariate',
@@ -3656,13 +3136,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_mech_suff': Covariate(
         name='log_transformed_sev_scalar_mech_suff',
         kind='covariate',
@@ -3670,13 +3148,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_oth_mech': Covariate(
         name='log_transformed_sev_scalar_oth_mech',
         kind='covariate',
@@ -3684,13 +3160,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_animal': Covariate(
         name='log_transformed_sev_scalar_animal',
         kind='covariate',
@@ -3698,13 +3172,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_venom': Covariate(
         name='log_transformed_sev_scalar_venom',
         kind='covariate',
@@ -3712,13 +3184,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_non_ven': Covariate(
         name='log_transformed_sev_scalar_non_ven',
         kind='covariate',
@@ -3726,13 +3196,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_f_body': Covariate(
         name='log_transformed_sev_scalar_f_body',
         kind='covariate',
@@ -3740,13 +3208,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_f_body_asp': Covariate(
         name='log_transformed_sev_scalar_f_body_asp',
         kind='covariate',
@@ -3754,13 +3220,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_oth_f_body': Covariate(
         name='log_transformed_sev_scalar_oth_f_body',
         kind='covariate',
@@ -3768,13 +3232,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_oth_unint': Covariate(
         name='log_transformed_sev_scalar_oth_unint',
         kind='covariate',
@@ -3782,13 +3244,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_self_harm': Covariate(
         name='log_transformed_sev_scalar_self_harm',
         kind='covariate',
@@ -3796,13 +3256,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_violence': Covariate(
         name='log_transformed_sev_scalar_violence',
         kind='covariate',
@@ -3810,13 +3268,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_viol_gun': Covariate(
         name='log_transformed_sev_scalar_viol_gun',
         kind='covariate',
@@ -3824,13 +3280,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_viol_knife': Covariate(
         name='log_transformed_sev_scalar_viol_knife',
         kind='covariate',
@@ -3838,13 +3292,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_oth_viol': Covariate(
         name='log_transformed_sev_scalar_oth_viol',
         kind='covariate',
@@ -3852,13 +3304,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_age_standardized_sev_scalar_tb': Covariate(
         name='log_transformed_age_standardized_sev_scalar_tb',
         kind='covariate',
@@ -3866,13 +3316,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_oth_hiv': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_hiv',
         kind='covariate',
@@ -3880,13 +3328,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_diarrhea': Covariate(
         name='log_transformed_age_standardized_sev_scalar_diarrhea',
         kind='covariate',
@@ -3894,13 +3340,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_lri': Covariate(
         name='log_transformed_age_standardized_sev_scalar_lri',
         kind='covariate',
@@ -3908,13 +3352,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_uri': Covariate(
         name='log_transformed_age_standardized_sev_scalar_uri',
         kind='covariate',
@@ -3922,13 +3364,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_otitis': Covariate(
         name='log_transformed_age_standardized_sev_scalar_otitis',
         kind='covariate',
@@ -3936,13 +3376,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_measles': Covariate(
         name='log_transformed_age_standardized_sev_scalar_measles',
         kind='covariate',
@@ -3950,13 +3388,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_mat_hem': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mat_hem',
         kind='covariate',
@@ -3964,13 +3400,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_mat_sepsis': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mat_sepsis',
         kind='covariate',
@@ -3978,13 +3412,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_mat_abort': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mat_abort',
         kind='covariate',
@@ -3992,13 +3424,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_hep': Covariate(
         name='log_transformed_age_standardized_sev_scalar_hep',
         kind='covariate',
@@ -4006,13 +3436,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_hep_b': Covariate(
         name='log_transformed_age_standardized_sev_scalar_hep_b',
         kind='covariate',
@@ -4020,13 +3448,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_hep_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_hep_c',
         kind='covariate',
@@ -4034,13 +3460,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_esophag_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_esophag_c',
         kind='covariate',
@@ -4048,13 +3472,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_stomach_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_stomach_c',
         kind='covariate',
@@ -4062,13 +3484,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_liver_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_liver_c',
         kind='covariate',
@@ -4076,13 +3496,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_liver_c_hepb': Covariate(
         name='log_transformed_age_standardized_sev_scalar_liver_c_hepb',
         kind='covariate',
@@ -4090,13 +3508,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_liver_c_hepc': Covariate(
         name='log_transformed_age_standardized_sev_scalar_liver_c_hepc',
         kind='covariate',
@@ -4104,13 +3520,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_oth_liver_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_liver_c',
         kind='covariate',
@@ -4118,13 +3532,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_larynx_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_larynx_c',
         kind='covariate',
@@ -4132,13 +3544,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_lung_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_lung_c',
         kind='covariate',
@@ -4146,13 +3556,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_breast_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_breast_c',
         kind='covariate',
@@ -4160,13 +3568,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_uterus_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_uterus_c',
         kind='covariate',
@@ -4174,13 +3580,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_prostate_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_prostate_c',
         kind='covariate',
@@ -4188,13 +3592,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_colorect_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_colorect_c',
         kind='covariate',
@@ -4202,13 +3604,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_mouth_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mouth_c',
         kind='covariate',
@@ -4216,13 +3616,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_nasoph_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_nasoph_c',
         kind='covariate',
@@ -4230,13 +3628,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_oth_phar_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_phar_c',
         kind='covariate',
@@ -4244,13 +3640,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_gallblad_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_gallblad_c',
         kind='covariate',
@@ -4258,13 +3652,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_pancreas_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_pancreas_c',
         kind='covariate',
@@ -4272,13 +3664,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_ovary_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_ovary_c',
         kind='covariate',
@@ -4286,13 +3676,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_kidney_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_kidney_c',
         kind='covariate',
@@ -4300,13 +3688,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_bladder_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_bladder_c',
         kind='covariate',
@@ -4314,13 +3700,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_thyroid_c': Covariate(
         name='log_transformed_age_standardized_sev_scalar_thyroid_c',
         kind='covariate',
@@ -4328,13 +3712,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_mesothel': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mesothel',
         kind='covariate',
@@ -4342,13 +3724,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_leukemia': Covariate(
         name='log_transformed_age_standardized_sev_scalar_leukemia',
         kind='covariate',
@@ -4356,13 +3736,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_rhd': Covariate(
         name='log_transformed_age_standardized_sev_scalar_rhd',
         kind='covariate',
@@ -4370,13 +3748,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_ihd': Covariate(
         name='log_transformed_age_standardized_sev_scalar_ihd',
         kind='covariate',
@@ -4384,13 +3760,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_stroke': Covariate(
         name='log_transformed_age_standardized_sev_scalar_stroke',
         kind='covariate',
@@ -4398,13 +3772,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_isch_stroke': Covariate(
         name='log_transformed_age_standardized_sev_scalar_isch_stroke',
         kind='covariate',
@@ -4412,13 +3784,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_hem_stroke': Covariate(
         name='log_transformed_age_standardized_sev_scalar_hem_stroke',
         kind='covariate',
@@ -4426,13 +3796,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_cmp': Covariate(
         name='log_transformed_age_standardized_sev_scalar_cmp',
         kind='covariate',
@@ -4440,13 +3808,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_a_fib': Covariate(
         name='log_transformed_age_standardized_sev_scalar_a_fib',
         kind='covariate',
@@ -4454,13 +3820,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_aort_an': Covariate(
         name='log_transformed_age_standardized_sev_scalar_aort_an',
         kind='covariate',
@@ -4468,13 +3832,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_pvd': Covariate(
         name='log_transformed_age_standardized_sev_scalar_pvd',
         kind='covariate',
@@ -4482,13 +3844,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_endocar': Covariate(
         name='log_transformed_age_standardized_sev_scalar_endocar',
         kind='covariate',
@@ -4496,13 +3856,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_oth_cardio': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_cardio',
         kind='covariate',
@@ -4510,13 +3868,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_copd': Covariate(
         name='log_transformed_age_standardized_sev_scalar_copd',
         kind='covariate',
@@ -4524,13 +3880,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_asthma': Covariate(
         name='log_transformed_age_standardized_sev_scalar_asthma',
         kind='covariate',
@@ -4538,13 +3892,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_oth_resp': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_resp',
         kind='covariate',
@@ -4552,13 +3904,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_cirr_hepb': Covariate(
         name='log_transformed_age_standardized_sev_scalar_cirr_hepb',
         kind='covariate',
@@ -4566,13 +3916,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_cirr_hepc': Covariate(
         name='log_transformed_age_standardized_sev_scalar_cirr_hepc',
         kind='covariate',
@@ -4580,13 +3928,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_pancreatit': Covariate(
         name='log_transformed_age_standardized_sev_scalar_pancreatit',
         kind='covariate',
@@ -4594,13 +3940,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_epilepsy': Covariate(
         name='log_transformed_age_standardized_sev_scalar_epilepsy',
         kind='covariate',
@@ -4608,13 +3952,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_depression': Covariate(
         name='log_transformed_age_standardized_sev_scalar_depression',
         kind='covariate',
@@ -4622,13 +3964,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_mdd': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mdd',
         kind='covariate',
@@ -4636,13 +3976,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_id': Covariate(
         name='log_transformed_age_standardized_sev_scalar_id',
         kind='covariate',
@@ -4650,13 +3988,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_osteoarth': Covariate(
         name='log_transformed_age_standardized_sev_scalar_osteoarth',
         kind='covariate',
@@ -4664,13 +4000,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_back_and_upneck': Covariate(
         name='log_transformed_age_standardized_sev_scalar_back_and_upneck',
         kind='covariate',
@@ -4678,13 +4012,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_back_pain': Covariate(
         name='log_transformed_age_standardized_sev_scalar_back_pain',
         kind='covariate',
@@ -4692,13 +4024,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_gout': Covariate(
         name='log_transformed_age_standardized_sev_scalar_gout',
         kind='covariate',
@@ -4706,13 +4036,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_sense': Covariate(
         name='log_transformed_age_standardized_sev_scalar_sense',
         kind='covariate',
@@ -4720,13 +4048,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_cataract': Covariate(
         name='log_transformed_age_standardized_sev_scalar_cataract',
         kind='covariate',
@@ -4734,13 +4060,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_hearing': Covariate(
         name='log_transformed_age_standardized_sev_scalar_hearing',
         kind='covariate',
@@ -4748,13 +4072,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_road_inj': Covariate(
         name='log_transformed_age_standardized_sev_scalar_road_inj',
         kind='covariate',
@@ -4762,13 +4084,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_pedest': Covariate(
         name='log_transformed_age_standardized_sev_scalar_pedest',
         kind='covariate',
@@ -4776,13 +4096,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_cyclist': Covariate(
         name='log_transformed_age_standardized_sev_scalar_cyclist',
         kind='covariate',
@@ -4790,13 +4108,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_mot_cyc': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mot_cyc',
         kind='covariate',
@@ -4804,13 +4120,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_mot_veh': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mot_veh',
         kind='covariate',
@@ -4818,13 +4132,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_oth_road': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_road',
         kind='covariate',
@@ -4832,13 +4144,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_oth_trans': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_trans',
         kind='covariate',
@@ -4846,13 +4156,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_falls': Covariate(
         name='log_transformed_age_standardized_sev_scalar_falls',
         kind='covariate',
@@ -4860,13 +4168,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_drown': Covariate(
         name='log_transformed_age_standardized_sev_scalar_drown',
         kind='covariate',
@@ -4874,13 +4180,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_fire': Covariate(
         name='log_transformed_age_standardized_sev_scalar_fire',
         kind='covariate',
@@ -4888,13 +4192,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_poison': Covariate(
         name='log_transformed_age_standardized_sev_scalar_poison',
         kind='covariate',
@@ -4902,13 +4204,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_mech': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mech',
         kind='covariate',
@@ -4916,13 +4216,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_mech_gun': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mech_gun',
         kind='covariate',
@@ -4930,13 +4228,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_mech_suff': Covariate(
         name='log_transformed_age_standardized_sev_scalar_mech_suff',
         kind='covariate',
@@ -4944,13 +4240,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_oth_mech': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_mech',
         kind='covariate',
@@ -4958,13 +4252,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_animal': Covariate(
         name='log_transformed_age_standardized_sev_scalar_animal',
         kind='covariate',
@@ -4972,13 +4264,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_venom': Covariate(
         name='log_transformed_age_standardized_sev_scalar_venom',
         kind='covariate',
@@ -4986,13 +4276,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_non_ven': Covariate(
         name='log_transformed_age_standardized_sev_scalar_non_ven',
         kind='covariate',
@@ -5000,13 +4288,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_f_body': Covariate(
         name='log_transformed_age_standardized_sev_scalar_f_body',
         kind='covariate',
@@ -5014,13 +4300,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_f_body_asp': Covariate(
         name='log_transformed_age_standardized_sev_scalar_f_body_asp',
         kind='covariate',
@@ -5028,13 +4312,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_oth_f_body': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_f_body',
         kind='covariate',
@@ -5042,13 +4324,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_oth_unint': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_unint',
         kind='covariate',
@@ -5056,13 +4336,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_self_harm': Covariate(
         name='log_transformed_age_standardized_sev_scalar_self_harm',
         kind='covariate',
@@ -5070,13 +4348,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_violence': Covariate(
         name='log_transformed_age_standardized_sev_scalar_violence',
         kind='covariate',
@@ -5084,13 +4360,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_viol_gun': Covariate(
         name='log_transformed_age_standardized_sev_scalar_viol_gun',
         kind='covariate',
@@ -5098,13 +4372,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_viol_knife': Covariate(
         name='log_transformed_age_standardized_sev_scalar_viol_knife',
         kind='covariate',
@@ -5112,13 +4384,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_oth_viol': Covariate(
         name='log_transformed_age_standardized_sev_scalar_oth_viol',
         kind='covariate',
@@ -5126,13 +4396,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'h5n1_epidemic_years_binary': Covariate(
         name='h5n1_epidemic_years_binary',
         kind='covariate',
@@ -5140,13 +4408,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'education_age_standardized': Covariate(
         name='education_age_standardized',
         kind='covariate',
@@ -5154,13 +4420,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'meningitis_belt_proportion': Covariate(
         name='meningitis_belt_proportion',
         kind='covariate',
@@ -5168,13 +4432,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'gdp_per_capita_base_2010': Covariate(
         name='gdp_per_capita_base_2010',
         kind='covariate',
@@ -5182,13 +4444,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'urbanicity': Covariate(
         name='urbanicity',
         kind='covariate',
@@ -5196,13 +4456,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'sev_unsafe_water': Covariate(
         name='sev_unsafe_water',
         kind='covariate',
@@ -5210,13 +4468,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'sev_unsafe_sanitation': Covariate(
         name='sev_unsafe_sanitation',
         kind='covariate',
@@ -5224,13 +4480,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'malaria_incidence_from_map_estimates_africa': Covariate(
         name='malaria_incidence_from_map_estimates_africa',
         kind='covariate',
@@ -5238,13 +4492,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'dengue_reporting_trends_transformed_into_relative_risks_relative_to_that_countrys_mean_incidence': Covariate(
         name='dengue_reporting_trends_transformed_into_relative_risks_relative_to_that_countrys_mean_incidence',
         kind='covariate',
@@ -5252,13 +4504,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'echinococcosis_endemicity': Covariate(
         name='echinococcosis_endemicity',
         kind='covariate',
@@ -5266,13 +4516,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'socio_demographic_index': Covariate(
         name='socio_demographic_index',
         kind='covariate',
@@ -5280,13 +4528,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'japanese_encelphalitis_endemic_area_binary': Covariate(
         name='japanese_encelphalitis_endemic_area_binary',
         kind='covariate',
@@ -5294,13 +4540,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'calcium_adjusted_g': Covariate(
         name='calcium_adjusted_g',
         kind='covariate',
@@ -5308,13 +4552,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
-        mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        mean_value_exists=True,
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'calcium_unadjusted_g': Covariate(
         name='calcium_unadjusted_g',
         kind='covariate',
@@ -5322,13 +4564,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'fiber_adjusted_g': Covariate(
         name='fiber_adjusted_g',
         kind='covariate',
@@ -5336,13 +4576,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'fiber_unadjusted_g': Covariate(
         name='fiber_unadjusted_g',
         kind='covariate',
@@ -5350,13 +4588,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'omega_3_adjusted_g': Covariate(
         name='omega_3_adjusted_g',
         kind='covariate',
@@ -5364,13 +4600,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'fruits_adjusted_g': Covariate(
         name='fruits_adjusted_g',
         kind='covariate',
@@ -5378,13 +4612,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'fruits_unadjusted_g': Covariate(
         name='fruits_unadjusted_g',
         kind='covariate',
@@ -5392,13 +4624,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'milk_adjusted_g': Covariate(
         name='milk_adjusted_g',
         kind='covariate',
@@ -5406,13 +4636,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'milk_unadjusted_g': Covariate(
         name='milk_unadjusted_g',
         kind='covariate',
@@ -5420,13 +4648,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'nuts_seeds_adjusted_g': Covariate(
         name='nuts_seeds_adjusted_g',
         kind='covariate',
@@ -5434,13 +4660,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'pufa_adjusted_percent': Covariate(
         name='pufa_adjusted_percent',
         kind='covariate',
@@ -5448,13 +4672,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'pulses_legumes_adjusted_g': Covariate(
         name='pulses_legumes_adjusted_g',
         kind='covariate',
@@ -5462,13 +4684,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'red_meats_adjusted_g': Covariate(
         name='red_meats_adjusted_g',
         kind='covariate',
@@ -5476,13 +4696,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'red_meats_unadjusted_g': Covariate(
         name='red_meats_unadjusted_g',
         kind='covariate',
@@ -5490,13 +4708,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'saturated_fats_adjusted_percent': Covariate(
         name='saturated_fats_adjusted_percent',
         kind='covariate',
@@ -5504,13 +4720,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'sugar_adjusted_g': Covariate(
         name='sugar_adjusted_g',
         kind='covariate',
@@ -5518,13 +4732,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'sugar_unadjusted_g': Covariate(
         name='sugar_unadjusted_g',
         kind='covariate',
@@ -5532,13 +4744,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'vegetables_adjusted_g': Covariate(
         name='vegetables_adjusted_g',
         kind='covariate',
@@ -5546,13 +4756,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'vegetables_unadjusted_g': Covariate(
         name='vegetables_unadjusted_g',
         kind='covariate',
@@ -5560,13 +4768,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'energy_unadjusted_kcal': Covariate(
         name='energy_unadjusted_kcal',
         kind='covariate',
@@ -5574,13 +4780,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'interaction_of_prevalence_weighted_drug_resistance_and_malaria_incidence': Covariate(
         name='interaction_of_prevalence_weighted_drug_resistance_and_malaria_incidence',
         kind='covariate',
@@ -5588,13 +4792,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'migration_rate_per_1000_population': Covariate(
         name='migration_rate_per_1000_population',
         kind='covariate',
@@ -5602,13 +4804,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'hiv_mortality_females_10_54': Covariate(
         name='hiv_mortality_females_10_54',
         kind='covariate',
@@ -5616,13 +4816,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'hiv_age_standardized_prevalence': Covariate(
         name='hiv_age_standardized_prevalence',
         kind='covariate',
@@ -5630,13 +4828,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_maternal': Covariate(
         name='log_transformed_age_standardized_sev_scalar_maternal',
         kind='covariate',
@@ -5644,13 +4840,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_cvd': Covariate(
         name='log_transformed_age_standardized_sev_scalar_cvd',
         kind='covariate',
@@ -5658,13 +4852,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_chr_resp': Covariate(
         name='log_transformed_age_standardized_sev_scalar_chr_resp',
         kind='covariate',
@@ -5672,13 +4864,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_cirrhosis': Covariate(
         name='log_transformed_age_standardized_sev_scalar_cirrhosis',
         kind='covariate',
@@ -5686,13 +4876,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_digestive': Covariate(
         name='log_transformed_age_standardized_sev_scalar_digestive',
         kind='covariate',
@@ -5700,13 +4888,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_msk': Covariate(
         name='log_transformed_age_standardized_sev_scalar_msk',
         kind='covariate',
@@ -5714,13 +4900,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_trans_inj': Covariate(
         name='log_transformed_age_standardized_sev_scalar_trans_inj',
         kind='covariate',
@@ -5728,13 +4912,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_sev_scalar_maternal': Covariate(
         name='log_transformed_sev_scalar_maternal',
         kind='covariate',
@@ -5742,13 +4924,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_cvd': Covariate(
         name='log_transformed_sev_scalar_cvd',
         kind='covariate',
@@ -5756,13 +4936,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_chr_resp': Covariate(
         name='log_transformed_sev_scalar_chr_resp',
         kind='covariate',
@@ -5770,13 +4948,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_cirrhosis': Covariate(
         name='log_transformed_sev_scalar_cirrhosis',
         kind='covariate',
@@ -5784,13 +4960,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_digestive': Covariate(
         name='log_transformed_sev_scalar_digestive',
         kind='covariate',
@@ -5798,13 +4972,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_msk': Covariate(
         name='log_transformed_sev_scalar_msk',
         kind='covariate',
@@ -5812,13 +4984,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_trans_inj': Covariate(
         name='log_transformed_sev_scalar_trans_inj',
         kind='covariate',
@@ -5826,13 +4996,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'proportion_of_total_population_in_japanese_encephalitis_endemic_area_india': Covariate(
         name='proportion_of_total_population_in_japanese_encephalitis_endemic_area_india',
         kind='covariate',
@@ -5840,13 +5008,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'vitamin_a_unadjusted_iu': Covariate(
         name='vitamin_a_unadjusted_iu',
         kind='covariate',
@@ -5854,13 +5020,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'vitamin_a_rae_unadjusted_ug': Covariate(
         name='vitamin_a_rae_unadjusted_ug',
         kind='covariate',
@@ -5868,13 +5032,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'vitamin_a_retinol_unadjusted_ug': Covariate(
         name='vitamin_a_retinol_unadjusted_ug',
         kind='covariate',
@@ -5882,13 +5044,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'dietary_zinc_unadjusted_mg': Covariate(
         name='dietary_zinc_unadjusted_mg',
         kind='covariate',
@@ -5896,13 +5056,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'proportion_of_total_population_covered_by_menafrivac_initiative_meningitis_meningococcal_type_a_vaccine': Covariate(
         name='proportion_of_total_population_covered_by_menafrivac_initiative_meningitis_meningococcal_type_a_vaccine',
         kind='covariate',
@@ -5910,13 +5068,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'stunting_proportion_less_than_2sd_height_for_age_less_than_5_years': Covariate(
         name='stunting_proportion_less_than_2sd_height_for_age_less_than_5_years',
         kind='covariate',
@@ -5924,13 +5080,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'wasting_proportion_less_than_2sd_weight_for_height_less_than_5_years': Covariate(
         name='wasting_proportion_less_than_2sd_weight_for_height_less_than_5_years',
         kind='covariate',
@@ -5938,13 +5092,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'malaria_incidence_adjusted_for_antimalarial_coverage_and_drug_effectiveness': Covariate(
         name='malaria_incidence_adjusted_for_antimalarial_coverage_and_drug_effectiveness',
         kind='covariate',
@@ -5952,13 +5104,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'hepatitis_b_hbsag_seroprevalence': Covariate(
         name='hepatitis_b_hbsag_seroprevalence',
         kind='covariate',
@@ -5966,13 +5116,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'hepatitis_c_igg_seroprevalence': Covariate(
         name='hepatitis_c_igg_seroprevalence',
         kind='covariate',
@@ -5980,13 +5128,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'rotavirus_coverage_proportion': Covariate(
         name='rotavirus_coverage_proportion',
         kind='covariate',
@@ -5994,13 +5140,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'proportion_of_cirrhosis_due_to_alcohol': Covariate(
         name='proportion_of_cirrhosis_due_to_alcohol',
         kind='covariate',
@@ -6008,13 +5152,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'proportion_of_cirrhosis_due_to_hepatitis_b': Covariate(
         name='proportion_of_cirrhosis_due_to_hepatitis_b',
         kind='covariate',
@@ -6022,13 +5164,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'proportion_of_cirrhosis_due_to_hepatitis_c': Covariate(
         name='proportion_of_cirrhosis_due_to_hepatitis_c',
         kind='covariate',
@@ -6036,13 +5176,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'proportion_of_cirrhosis_due_to_other_causes': Covariate(
         name='proportion_of_cirrhosis_due_to_other_causes',
         kind='covariate',
@@ -6050,13 +5188,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'proportion_of_liver_cancer_due_to_alcohol_age_standardized': Covariate(
         name='proportion_of_liver_cancer_due_to_alcohol_age_standardized',
         kind='covariate',
@@ -6064,13 +5200,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'proportion_of_liver_cancer_due_to_hepatitis_b_age_standardized': Covariate(
         name='proportion_of_liver_cancer_due_to_hepatitis_b_age_standardized',
         kind='covariate',
@@ -6078,13 +5212,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'proportion_of_liver_cancer_due_to_hepatitis_c_age_standardized': Covariate(
         name='proportion_of_liver_cancer_due_to_hepatitis_c_age_standardized',
         kind='covariate',
@@ -6092,13 +5224,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'proportion_of_liver_cancer_due_to_other_causes_age_standardized': Covariate(
         name='proportion_of_liver_cancer_due_to_other_causes_age_standardized',
         kind='covariate',
@@ -6106,13 +5236,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'seroprevalence_of_anti_hav_igg': Covariate(
         name='seroprevalence_of_anti_hav_igg',
         kind='covariate',
@@ -6120,13 +5248,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'seroprevalence_of_anti_hev_igg': Covariate(
         name='seroprevalence_of_anti_hev_igg',
         kind='covariate',
@@ -6134,13 +5260,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'major_depressive_disorder': Covariate(
         name='major_depressive_disorder',
         kind='covariate',
@@ -6148,13 +5272,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'proportion_of_population_involved_in_agricultural_activities': Covariate(
         name='proportion_of_population_involved_in_agricultural_activities',
         kind='covariate',
@@ -6162,13 +5284,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'oop_health_expenditure_per_capita': Covariate(
         name='oop_health_expenditure_per_capita',
         kind='covariate',
@@ -6176,13 +5296,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'fraction_of_oop_health_expenditure': Covariate(
         name='fraction_of_oop_health_expenditure',
         kind='covariate',
@@ -6190,13 +5308,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'universal_health_coverage': Covariate(
         name='universal_health_coverage',
         kind='covariate',
@@ -6204,13 +5320,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'maternal_alcohol_consumption_during_pregnancy_proportion': Covariate(
         name='maternal_alcohol_consumption_during_pregnancy_proportion',
         kind='covariate',
@@ -6218,13 +5332,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'healthcare_access_and_quality_index': Covariate(
         name='healthcare_access_and_quality_index',
         kind='covariate',
@@ -6232,13 +5344,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'age_standardized_proportion_adult_underweight': Covariate(
         name='age_standardized_proportion_adult_underweight',
         kind='covariate',
@@ -6246,13 +5356,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'ors_oral_rehydration': Covariate(
         name='ors_oral_rehydration',
         kind='covariate',
@@ -6260,13 +5368,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'antibiotics_for_lri': Covariate(
         name='antibiotics_for_lri',
         kind='covariate',
@@ -6274,13 +5380,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'live_births_by_sex': Covariate(
         name='live_births_by_sex',
         kind='covariate',
@@ -6288,13 +5392,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'age_standardized_melanoma': Covariate(
         name='age_standardized_melanoma',
         kind='covariate',
@@ -6302,13 +5404,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'measles_vaccine_coverage_2_doses_proportion': Covariate(
         name='measles_vaccine_coverage_2_doses_proportion',
         kind='covariate',
@@ -6316,13 +5416,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'schisto_cumulative_treatments': Covariate(
         name='schisto_cumulative_treatments',
         kind='covariate',
@@ -6330,13 +5428,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'iron_energy_unadjusted_mg': Covariate(
         name='iron_energy_unadjusted_mg',
         kind='covariate',
@@ -6344,13 +5440,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'poultry_energy_adjusted_g': Covariate(
         name='poultry_energy_adjusted_g',
         kind='covariate',
@@ -6358,13 +5452,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'poultry_energy_unadjusted_g': Covariate(
         name='poultry_energy_unadjusted_g',
         kind='covariate',
@@ -6372,13 +5464,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'malaria_pfpr_map': Covariate(
         name='malaria_pfpr_map',
         kind='covariate',
@@ -6386,13 +5476,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'malaria_incidence_map': Covariate(
         name='malaria_incidence_map',
         kind='covariate',
@@ -6400,13 +5488,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'antimalarial_effective_treatment_ratio_map': Covariate(
         name='antimalarial_effective_treatment_ratio_map',
         kind='covariate',
@@ -6414,13 +5500,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'antimalarial_effective_treatment_map': Covariate(
         name='antimalarial_effective_treatment_map',
         kind='covariate',
@@ -6428,13 +5512,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'mean_birth_weight': Covariate(
         name='mean_birth_weight',
         kind='covariate',
@@ -6442,13 +5524,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'mean_hemoglobin_concentration_age_standardized': Covariate(
         name='mean_hemoglobin_concentration_age_standardized',
         kind='covariate',
@@ -6456,13 +5536,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'age_standardized_prevalence_of_cocaine_dependence_in_women_of_reproductive_age': Covariate(
         name='age_standardized_prevalence_of_cocaine_dependence_in_women_of_reproductive_age',
         kind='covariate',
@@ -6470,13 +5548,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'age_standardized_prevalence_of_opioid_dependence_in_women_of_reproductive_age': Covariate(
         name='age_standardized_prevalence_of_opioid_dependence_in_women_of_reproductive_age',
         kind='covariate',
@@ -6484,13 +5560,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'age_standardized_prevalence_of_cannabis_dependence_in_women_of_reproductive_age': Covariate(
         name='age_standardized_prevalence_of_cannabis_dependence_in_women_of_reproductive_age',
         kind='covariate',
@@ -6498,13 +5572,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'rubella_vaccine_coverage_proportion': Covariate(
         name='rubella_vaccine_coverage_proportion',
         kind='covariate',
@@ -6512,13 +5584,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'tuberculosis_infection_risk_weighted_prevalence_age_standardized': Covariate(
         name='tuberculosis_infection_risk_weighted_prevalence_age_standardized',
         kind='covariate',
@@ -6526,13 +5596,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'presenting_vision_impairment': Covariate(
         name='presenting_vision_impairment',
         kind='covariate',
@@ -6540,13 +5608,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'ten_year_lag_distributed_energy_per_capita': Covariate(
         name='ten_year_lag_distributed_energy_per_capita',
         kind='covariate',
@@ -6554,13 +5620,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'folic_acid_unadjusted_ug': Covariate(
         name='folic_acid_unadjusted_ug',
         kind='covariate',
@@ -6568,13 +5632,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'smooth_outphase_of_leaded_gasoline': Covariate(
         name='smooth_outphase_of_leaded_gasoline',
         kind='covariate',
@@ -6582,13 +5644,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'no_access_to_handwashing_facility': Covariate(
         name='no_access_to_handwashing_facility',
         kind='covariate',
@@ -6596,13 +5656,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'residential_radon': Covariate(
         name='residential_radon',
         kind='covariate',
@@ -6610,13 +5668,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'lead_exposure': Covariate(
         name='lead_exposure',
         kind='covariate',
@@ -6624,13 +5680,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'discontinued_breastfeeding_sev': Covariate(
         name='discontinued_breastfeeding_sev',
         kind='covariate',
@@ -6638,13 +5692,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'zinc_deficiency': Covariate(
         name='zinc_deficiency',
         kind='covariate',
@@ -6652,13 +5704,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'diet_high_in_trans_fatty_acids': Covariate(
         name='diet_high_in_trans_fatty_acids',
         kind='covariate',
@@ -6666,13 +5716,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'diet_high_in_sodium': Covariate(
         name='diet_high_in_sodium',
         kind='covariate',
@@ -6680,13 +5728,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'tuberculosis_prevalence_age_standardized': Covariate(
         name='tuberculosis_prevalence_age_standardized',
         kind='covariate',
@@ -6694,13 +5740,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'low_bone_mineral_density': Covariate(
         name='low_bone_mineral_density',
         kind='covariate',
@@ -6708,13 +5752,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'age_standardized_bone_mineral_density_among_population_age_60_and_up_years': Covariate(
         name='age_standardized_bone_mineral_density_among_population_age_60_and_up_years',
         kind='covariate',
@@ -6722,13 +5764,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'malnutrition_shock_log_transformed_mortality_rate': Covariate(
         name='malnutrition_shock_log_transformed_mortality_rate',
         kind='covariate',
@@ -6736,13 +5776,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'malnutrition_shock_mortality_rate': Covariate(
         name='malnutrition_shock_mortality_rate',
         kind='covariate',
@@ -6750,13 +5788,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'mean_war_mortality_rate_in_the_previous_ten_years': Covariate(
         name='mean_war_mortality_rate_in_the_previous_ten_years',
         kind='covariate',
@@ -6764,13 +5800,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'shock_log_transformed_mortality_rate': Covariate(
         name='shock_log_transformed_mortality_rate',
         kind='covariate',
@@ -6778,13 +5812,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'shock_mortality_rate': Covariate(
         name='shock_mortality_rate',
         kind='covariate',
@@ -6792,13 +5824,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'disaster_log_transformed_mortality_rate': Covariate(
         name='disaster_log_transformed_mortality_rate',
         kind='covariate',
@@ -6806,13 +5836,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'disaster_mortality_rate': Covariate(
         name='disaster_mortality_rate',
         kind='covariate',
@@ -6820,13 +5848,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'war_log_transformed_mortality_rate': Covariate(
         name='war_log_transformed_mortality_rate',
         kind='covariate',
@@ -6834,13 +5860,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'alcohol_abstainer_proportion_age_standardized': Covariate(
         name='alcohol_abstainer_proportion_age_standardized',
         kind='covariate',
@@ -6848,13 +5872,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_for_both_sexes_combined_tb': Covariate(
         name='log_transformed_age_standardized_sev_scalar_for_both_sexes_combined_tb',
         kind='covariate',
@@ -6862,13 +5884,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'secondhand_smoke': Covariate(
         name='secondhand_smoke',
         kind='covariate',
@@ -6876,13 +5896,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'asbestos_consumption_metric_tons_per_year_per_capita': Covariate(
         name='asbestos_consumption_metric_tons_per_year_per_capita',
         kind='covariate',
@@ -6890,13 +5908,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'visceral_leishmaniasis_incidence': Covariate(
         name='visceral_leishmaniasis_incidence',
         kind='covariate',
@@ -6904,13 +5920,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'homicide_rate_sex_specific': Covariate(
         name='homicide_rate_sex_specific',
         kind='covariate',
@@ -6918,13 +5932,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'op_visits_per_cap': Covariate(
         name='op_visits_per_cap',
         kind='covariate',
@@ -6932,13 +5944,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'ip_admissons_per_cap': Covariate(
         name='ip_admissons_per_cap',
         kind='covariate',
@@ -6946,13 +5956,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'non_partner_lifetime_prevalence_of_sexual_violence_female_only': Covariate(
         name='non_partner_lifetime_prevalence_of_sexual_violence_female_only',
         kind='covariate',
@@ -6960,13 +5968,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'all_age_underweight': Covariate(
         name='all_age_underweight',
         kind='covariate',
@@ -6974,13 +5980,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'zinc_treatment_for_diarrhea': Covariate(
         name='zinc_treatment_for_diarrhea',
         kind='covariate',
@@ -6988,13 +5992,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'fortification_standard': Covariate(
         name='fortification_standard',
         kind='covariate',
@@ -7002,13 +6004,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'fortification_standard_including_folic_acid': Covariate(
         name='fortification_standard_including_folic_acid',
         kind='covariate',
@@ -7016,13 +6016,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'adult_hiv_crude_death_rate': Covariate(
         name='adult_hiv_crude_death_rate',
         kind='covariate',
@@ -7030,13 +6028,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'demand_for_contraception_satisfied_with_modern_methods': Covariate(
         name='demand_for_contraception_satisfied_with_modern_methods',
         kind='covariate',
@@ -7044,13 +6040,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'demand_for_contraception_satisfied_with_modern_methods_by_age': Covariate(
         name='demand_for_contraception_satisfied_with_modern_methods_by_age',
         kind='covariate',
@@ -7058,13 +6052,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'long_term_population_weighted_mean_temperature': Covariate(
         name='long_term_population_weighted_mean_temperature',
         kind='covariate',
@@ -7072,13 +6064,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'polio_3_dose_coverage_proportion': Covariate(
         name='polio_3_dose_coverage_proportion',
         kind='covariate',
@@ -7086,13 +6076,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'hepatitis_b_3_dose_coverage_proportion': Covariate(
         name='hepatitis_b_3_dose_coverage_proportion',
         kind='covariate',
@@ -7100,13 +6088,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'proportion_of_the_population_from_east_africa_india_central_asia': Covariate(
         name='proportion_of_the_population_from_east_africa_india_central_asia',
         kind='covariate',
@@ -7114,13 +6100,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'proportion_of_the_population_from_west_africa': Covariate(
         name='proportion_of_the_population_from_west_africa',
         kind='covariate',
@@ -7128,13 +6112,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'proportion_of_the_population_from_euro_america': Covariate(
         name='proportion_of_the_population_from_euro_america',
         kind='covariate',
@@ -7142,13 +6124,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'proportion_of_the_population_from_east_asia': Covariate(
         name='proportion_of_the_population_from_east_asia',
         kind='covariate',
@@ -7156,13 +6136,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'proportion_of_the_population_from_indo_oceania': Covariate(
         name='proportion_of_the_population_from_indo_oceania',
         kind='covariate',
@@ -7170,13 +6148,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'composite_fortification_standard_and_folic_acid_inclusion': Covariate(
         name='composite_fortification_standard_and_folic_acid_inclusion',
         kind='covariate',
@@ -7184,13 +6160,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'intravenous_drug_use_proportion_by_age': Covariate(
         name='intravenous_drug_use_proportion_by_age',
         kind='covariate',
@@ -7198,13 +6172,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=False,
-        upper_value_exists=False,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'intravenous_drug_use_age_standardized_proportion': Covariate(
         name='intravenous_drug_use_age_standardized_proportion',
         kind='covariate',
@@ -7212,13 +6184,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'alcohol_consumption_age_standardized_in_grams_per_day': Covariate(
         name='alcohol_consumption_age_standardized_in_grams_per_day',
         kind='covariate',
@@ -7226,13 +6196,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'alcohol_drinker_proportion_age_standardized': Covariate(
         name='alcohol_drinker_proportion_age_standardized',
         kind='covariate',
@@ -7240,13 +6208,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'proportion_of_liver_cancer_due_to_nash_age_standardized': Covariate(
         name='proportion_of_liver_cancer_due_to_nash_age_standardized',
         kind='covariate',
@@ -7254,13 +6220,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'proportion_of_cirrhosis_due_to_nash': Covariate(
         name='proportion_of_cirrhosis_due_to_nash',
         kind='covariate',
@@ -7268,13 +6232,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'muslim_religion_proportion_of_population': Covariate(
         name='muslim_religion_proportion_of_population',
         kind='covariate',
@@ -7282,13 +6244,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'tb_strain_prevalence_weighted_transmission_rr': Covariate(
         name='tb_strain_prevalence_weighted_transmission_rr',
         kind='covariate',
@@ -7296,13 +6256,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'tb_strain_prevalence_weighted_treatment_failure_rr': Covariate(
         name='tb_strain_prevalence_weighted_treatment_failure_rr',
         kind='covariate',
@@ -7310,13 +6268,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'tb_strain_prevalence_weighted_treatment_delay_rr': Covariate(
         name='tb_strain_prevalence_weighted_treatment_delay_rr',
         kind='covariate',
@@ -7324,13 +6280,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'short_gestation_sev_all_ages_by_sex': Covariate(
         name='short_gestation_sev_all_ages_by_sex',
         kind='covariate',
@@ -7338,13 +6292,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'age_and_sex_specific_underweight_weight_for_age_sev': Covariate(
         name='age_and_sex_specific_underweight_weight_for_age_sev',
         kind='covariate',
@@ -7352,13 +6304,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'age_standardized_underweight_weight_for_age_sev': Covariate(
         name='age_standardized_underweight_weight_for_age_sev',
         kind='covariate',
@@ -7366,13 +6316,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'age_and_sex_specific_stunting_height_for_age_sev': Covariate(
         name='age_and_sex_specific_stunting_height_for_age_sev',
         kind='covariate',
@@ -7380,13 +6328,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'age_standardized_stunting_height_for_age_sev': Covariate(
         name='age_standardized_stunting_height_for_age_sev',
         kind='covariate',
@@ -7394,13 +6340,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'age_and_sex_specific_wasting_weight_for_height_sev': Covariate(
         name='age_and_sex_specific_wasting_weight_for_height_sev',
         kind='covariate',
@@ -7408,13 +6352,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'age_standardized_wasting_weight_for_height_sev': Covariate(
         name='age_standardized_wasting_weight_for_height_sev',
         kind='covariate',
@@ -7422,13 +6364,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'low_birth_weight_sev_all_ages_by_sex': Covariate(
         name='low_birth_weight_sev_all_ages_by_sex',
         kind='covariate',
@@ -7436,13 +6376,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'adult_hiv_death_rate_both_sexes': Covariate(
         name='adult_hiv_death_rate_both_sexes',
         kind='covariate',
@@ -7450,13 +6388,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'fortification_standard_including_iron': Covariate(
         name='fortification_standard_including_iron',
         kind='covariate',
@@ -7464,13 +6400,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=True,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'composite_fortification_standard_and_iron_inclusion': Covariate(
         name='composite_fortification_standard_and_iron_inclusion',
         kind='covariate',
@@ -7478,13 +6412,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'pelvic_inflammatory_disease_age_standardized_prevalence': Covariate(
         name='pelvic_inflammatory_disease_age_standardized_prevalence',
         kind='covariate',
@@ -7492,13 +6424,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'pelvic_inflammatory_disease_all_age_prevalence': Covariate(
         name='pelvic_inflammatory_disease_all_age_prevalence',
         kind='covariate',
@@ -7506,13 +6436,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'nafld_nash_prevalence': Covariate(
         name='nafld_nash_prevalence',
         kind='covariate',
@@ -7520,13 +6448,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'hepatitis_b_3_dose_coverage_proportion_lagged_5_years': Covariate(
         name='hepatitis_b_3_dose_coverage_proportion_lagged_5_years',
         kind='covariate',
@@ -7534,13 +6460,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'hepatitis_b_3_dose_coverage_proportion_lagged_ten_years': Covariate(
         name='hepatitis_b_3_dose_coverage_proportion_lagged_ten_years',
         kind='covariate',
@@ -7548,13 +6472,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'interaction_between_sdi_and_2_and_up4_wheeled_vehicles_per_capita': Covariate(
         name='interaction_between_sdi_and_2_and_up4_wheeled_vehicles_per_capita',
         kind='covariate',
@@ -7562,13 +6484,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'age_standardized_death_rate_of_diabetes_0_15_years_per_100_000': Covariate(
         name='age_standardized_death_rate_of_diabetes_0_15_years_per_100_000',
         kind='covariate',
@@ -7576,13 +6496,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'alcohol_sev_age_and_sex_specific': Covariate(
         name='alcohol_sev_age_and_sex_specific',
         kind='covariate',
@@ -7590,13 +6508,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'alcohol_sev_age_standardized': Covariate(
         name='alcohol_sev_age_standardized',
         kind='covariate',
@@ -7604,13 +6520,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'underweight_women_of_reproductive_age': Covariate(
         name='underweight_women_of_reproductive_age',
         kind='covariate',
@@ -7618,13 +6532,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'underweight_women_age_specific': Covariate(
         name='underweight_women_age_specific',
         kind='covariate',
@@ -7632,13 +6544,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'opioids_per_million_population_per_day': Covariate(
         name='opioids_per_million_population_per_day',
         kind='covariate',
@@ -7646,13 +6556,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'prevalence_of_mtbc_lineage_1_strains_proportion': Covariate(
         name='prevalence_of_mtbc_lineage_1_strains_proportion',
         kind='covariate',
@@ -7660,13 +6568,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'prevalence_of_mtbc_lineage_2_strains_proportion': Covariate(
         name='prevalence_of_mtbc_lineage_2_strains_proportion',
         kind='covariate',
@@ -7674,13 +6580,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'prevalence_of_mtbc_lineage_3_strains_proportion': Covariate(
         name='prevalence_of_mtbc_lineage_3_strains_proportion',
         kind='covariate',
@@ -7688,13 +6592,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'prevalence_of_mtbc_lineage_4_strains_proportion': Covariate(
         name='prevalence_of_mtbc_lineage_4_strains_proportion',
         kind='covariate',
@@ -7702,13 +6604,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'prevalence_of_maf_lineage_5_and_6_proportion': Covariate(
         name='prevalence_of_maf_lineage_5_and_6_proportion',
         kind='covariate',
@@ -7716,13 +6616,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_sev_scalar_tb_other': Covariate(
         name='log_transformed_sev_scalar_tb_other',
         kind='covariate',
@@ -7730,13 +6628,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_tb_mdr': Covariate(
         name='log_transformed_sev_scalar_tb_mdr',
         kind='covariate',
@@ -7744,13 +6640,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_hiv': Covariate(
         name='log_transformed_sev_scalar_hiv',
         kind='covariate',
@@ -7758,13 +6652,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_hiv_tb_other': Covariate(
         name='log_transformed_sev_scalar_hiv_tb_other',
         kind='covariate',
@@ -7772,13 +6664,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_hiv_tb_mdr': Covariate(
         name='log_transformed_sev_scalar_hiv_tb_mdr',
         kind='covariate',
@@ -7786,13 +6676,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_meningitis_pneumo': Covariate(
         name='log_transformed_sev_scalar_meningitis_pneumo',
         kind='covariate',
@@ -7800,13 +6688,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_meningitis_hib': Covariate(
         name='log_transformed_sev_scalar_meningitis_hib',
         kind='covariate',
@@ -7814,13 +6700,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_meningitis_meningo': Covariate(
         name='log_transformed_sev_scalar_meningitis_meningo',
         kind='covariate',
@@ -7828,13 +6712,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_meningitis_other': Covariate(
         name='log_transformed_sev_scalar_meningitis_other',
         kind='covariate',
@@ -7842,13 +6724,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_encephalitis': Covariate(
         name='log_transformed_sev_scalar_encephalitis',
         kind='covariate',
@@ -7856,13 +6736,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_neonatal_enceph': Covariate(
         name='log_transformed_sev_scalar_neonatal_enceph',
         kind='covariate',
@@ -7870,13 +6748,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_neonatal_sepsis': Covariate(
         name='log_transformed_sev_scalar_neonatal_sepsis',
         kind='covariate',
@@ -7884,13 +6760,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_neonatal_hemolytic': Covariate(
         name='log_transformed_sev_scalar_neonatal_hemolytic',
         kind='covariate',
@@ -7898,13 +6772,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_neonatal_other': Covariate(
         name='log_transformed_sev_scalar_neonatal_other',
         kind='covariate',
@@ -7912,13 +6784,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_neo_lymphoma': Covariate(
         name='log_transformed_sev_scalar_neo_lymphoma',
         kind='covariate',
@@ -7926,13 +6796,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_neo_myeloma': Covariate(
         name='log_transformed_sev_scalar_neo_myeloma',
         kind='covariate',
@@ -7940,13 +6808,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_neo_leukemia_ll_acute': Covariate(
         name='log_transformed_sev_scalar_neo_leukemia_ll_acute',
         kind='covariate',
@@ -7954,13 +6820,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_neo_leukemia_ll_chronic': Covariate(
         name='log_transformed_sev_scalar_neo_leukemia_ll_chronic',
         kind='covariate',
@@ -7968,13 +6832,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_neo_leukemia_ml_acute': Covariate(
         name='log_transformed_sev_scalar_neo_leukemia_ml_acute',
         kind='covariate',
@@ -7982,13 +6844,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_neo_leukemia_ml_chronic': Covariate(
         name='log_transformed_sev_scalar_neo_leukemia_ml_chronic',
         kind='covariate',
@@ -7996,13 +6856,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_neo_leukemia_other': Covariate(
         name='log_transformed_sev_scalar_neo_leukemia_other',
         kind='covariate',
@@ -8010,13 +6868,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_cvd_cmp_other': Covariate(
         name='log_transformed_sev_scalar_cvd_cmp_other',
         kind='covariate',
@@ -8024,13 +6880,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_digest_pud': Covariate(
         name='log_transformed_sev_scalar_digest_pud',
         kind='covariate',
@@ -8038,13 +6892,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_digest_bile': Covariate(
         name='log_transformed_sev_scalar_digest_bile',
         kind='covariate',
@@ -8052,13 +6904,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_neuro_dementia': Covariate(
         name='log_transformed_sev_scalar_neuro_dementia',
         kind='covariate',
@@ -8066,13 +6916,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_neuro_ms': Covariate(
         name='log_transformed_sev_scalar_neuro_ms',
         kind='covariate',
@@ -8080,13 +6928,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_msk_rheumarthritis': Covariate(
         name='log_transformed_sev_scalar_msk_rheumarthritis',
         kind='covariate',
@@ -8094,13 +6940,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_sense_glaucoma': Covariate(
         name='log_transformed_sev_scalar_sense_glaucoma',
         kind='covariate',
@@ -8108,13 +6952,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_sense_macular': Covariate(
         name='log_transformed_sev_scalar_sense_macular',
         kind='covariate',
@@ -8122,13 +6964,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_inj_suicide_firearm': Covariate(
         name='log_transformed_sev_scalar_inj_suicide_firearm',
         kind='covariate',
@@ -8136,13 +6976,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_sev_scalar_inj_suicide_other': Covariate(
         name='log_transformed_sev_scalar_inj_suicide_other',
         kind='covariate',
@@ -8150,13 +6988,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_transformed_age_standardized_sev_scalar_tb_other': Covariate(
         name='log_transformed_age_standardized_sev_scalar_tb_other',
         kind='covariate',
@@ -8164,13 +7000,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_tb_mdr': Covariate(
         name='log_transformed_age_standardized_sev_scalar_tb_mdr',
         kind='covariate',
@@ -8178,13 +7012,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_hiv': Covariate(
         name='log_transformed_age_standardized_sev_scalar_hiv',
         kind='covariate',
@@ -8192,13 +7024,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_hiv_tb_other': Covariate(
         name='log_transformed_age_standardized_sev_scalar_hiv_tb_other',
         kind='covariate',
@@ -8206,13 +7036,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_hiv_tb_mdr': Covariate(
         name='log_transformed_age_standardized_sev_scalar_hiv_tb_mdr',
         kind='covariate',
@@ -8220,13 +7048,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_meningitis': Covariate(
         name='log_transformed_age_standardized_sev_scalar_meningitis',
         kind='covariate',
@@ -8234,13 +7060,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_meningitis_pneumo': Covariate(
         name='log_transformed_age_standardized_sev_scalar_meningitis_pneumo',
         kind='covariate',
@@ -8248,13 +7072,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_meningitis_hib': Covariate(
         name='log_transformed_age_standardized_sev_scalar_meningitis_hib',
         kind='covariate',
@@ -8262,13 +7084,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_meningitis_meningo': Covariate(
         name='log_transformed_age_standardized_sev_scalar_meningitis_meningo',
         kind='covariate',
@@ -8276,13 +7096,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_meningitis_other': Covariate(
         name='log_transformed_age_standardized_sev_scalar_meningitis_other',
         kind='covariate',
@@ -8290,13 +7108,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_encephalitis': Covariate(
         name='log_transformed_age_standardized_sev_scalar_encephalitis',
         kind='covariate',
@@ -8304,13 +7120,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_neonatal_enceph': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neonatal_enceph',
         kind='covariate',
@@ -8318,13 +7132,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_neonatal_sepsis': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neonatal_sepsis',
         kind='covariate',
@@ -8332,13 +7144,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_neonatal_hemolytic': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neonatal_hemolytic',
         kind='covariate',
@@ -8346,13 +7156,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_neonatal_other': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neonatal_other',
         kind='covariate',
@@ -8360,13 +7168,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_neo_lymphoma': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neo_lymphoma',
         kind='covariate',
@@ -8374,13 +7180,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_neo_myeloma': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neo_myeloma',
         kind='covariate',
@@ -8388,13 +7192,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_neo_leukemia_ll_acute': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neo_leukemia_ll_acute',
         kind='covariate',
@@ -8402,13 +7204,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_neo_leukemia_ll_chronic': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neo_leukemia_ll_chronic',
         kind='covariate',
@@ -8416,13 +7216,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_neo_leukemia_ml_acute': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neo_leukemia_ml_acute',
         kind='covariate',
@@ -8430,13 +7228,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_neo_leukemia_ml_chronic': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neo_leukemia_ml_chronic',
         kind='covariate',
@@ -8444,13 +7240,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_neo_leukemia_other': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neo_leukemia_other',
         kind='covariate',
@@ -8458,13 +7252,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_cvd_cmp_other': Covariate(
         name='log_transformed_age_standardized_sev_scalar_cvd_cmp_other',
         kind='covariate',
@@ -8472,13 +7264,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_digest_pud': Covariate(
         name='log_transformed_age_standardized_sev_scalar_digest_pud',
         kind='covariate',
@@ -8486,13 +7276,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_digest_bile': Covariate(
         name='log_transformed_age_standardized_sev_scalar_digest_bile',
         kind='covariate',
@@ -8500,13 +7288,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_neuro_dementia': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neuro_dementia',
         kind='covariate',
@@ -8514,13 +7300,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_neuro_ms': Covariate(
         name='log_transformed_age_standardized_sev_scalar_neuro_ms',
         kind='covariate',
@@ -8528,13 +7312,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_msk_rheumarthritis': Covariate(
         name='log_transformed_age_standardized_sev_scalar_msk_rheumarthritis',
         kind='covariate',
@@ -8542,13 +7324,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_sense_glaucoma': Covariate(
         name='log_transformed_age_standardized_sev_scalar_sense_glaucoma',
         kind='covariate',
@@ -8556,13 +7336,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_sense_macular': Covariate(
         name='log_transformed_age_standardized_sev_scalar_sense_macular',
         kind='covariate',
@@ -8570,13 +7348,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_sids': Covariate(
         name='log_transformed_age_standardized_sev_scalar_sids',
         kind='covariate',
@@ -8584,13 +7360,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_inj_suicide_firearm': Covariate(
         name='log_transformed_age_standardized_sev_scalar_inj_suicide_firearm',
         kind='covariate',
@@ -8598,13 +7372,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'log_transformed_age_standardized_sev_scalar_inj_suicide_other': Covariate(
         name='log_transformed_age_standardized_sev_scalar_inj_suicide_other',
         kind='covariate',
@@ -8612,13 +7384,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'opioids_per_million_population_per_day_5_year_lag': Covariate(
         name='opioids_per_million_population_per_day_5_year_lag',
         kind='covariate',
@@ -8626,13 +7396,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'opioids_per_million_population_per_day_ten_year_lag': Covariate(
         name='opioids_per_million_population_per_day_ten_year_lag',
         kind='covariate',
@@ -8640,13 +7408,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'occupation_professionals': Covariate(
         name='occupation_professionals',
         kind='covariate',
@@ -8654,13 +7420,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'health_industry_workers': Covariate(
         name='health_industry_workers',
         kind='covariate',
@@ -8668,13 +7432,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'education_years_per_capita_aggregated_by_age_15_and_up_and_sex': Covariate(
         name='education_years_per_capita_aggregated_by_age_15_and_up_and_sex',
         kind='covariate',
@@ -8682,13 +7444,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'underweight_age_and_sex_specific': Covariate(
         name='underweight_age_and_sex_specific',
         kind='covariate',
@@ -8696,13 +7456,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'total_physical_activity_met_min_week_age_specific': Covariate(
         name='total_physical_activity_met_min_week_age_specific',
         kind='covariate',
@@ -8710,13 +7468,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'total_physical_activity_met_min_week_age_standardized': Covariate(
         name='total_physical_activity_met_min_week_age_standardized',
         kind='covariate',
@@ -8724,13 +7480,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'bacille_calmette_guerin_bcg_vaccine_coverage_proportion': Covariate(
         name='bacille_calmette_guerin_bcg_vaccine_coverage_proportion',
         kind='covariate',
@@ -8738,13 +7492,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'hepatitis_b_vaccine_coverage_proportion_aged_through_time': Covariate(
         name='hepatitis_b_vaccine_coverage_proportion_aged_through_time',
         kind='covariate',
@@ -8752,13 +7504,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'log_total_health_expenditure_per_capita': Covariate(
         name='log_total_health_expenditure_per_capita',
         kind='covariate',
@@ -8766,13 +7516,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=False,
-        lower_value_exists=None,
-        upper_value_exists=None,
         mean_value_exists=None,
-        sex_restriction_violated=None,
-        age_restriction_violated=None,
-    ),
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'pigs_raised_in_extensive_agricultural_systems_per_capita': Covariate(
         name='pigs_raised_in_extensive_agricultural_systems_per_capita',
         kind='covariate',
@@ -8780,13 +7528,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'pigs_raised_in_semi_extensive_agricultural_systems_per_capita': Covariate(
         name='pigs_raised_in_semi_extensive_agricultural_systems_per_capita',
         kind='covariate',
@@ -8794,13 +7540,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'pigs_raised_in_intensive_industrial_agricultural_systems_per_capita': Covariate(
         name='pigs_raised_in_intensive_industrial_agricultural_systems_per_capita',
         kind='covariate',
@@ -8808,13 +7552,11 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'mean_hemoglobin_age_sex_specific': Covariate(
         name='mean_hemoglobin_age_sex_specific',
         kind='covariate',
@@ -8822,13 +7564,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'hiv_mortality_rate': Covariate(
         name='hiv_mortality_rate',
         kind='covariate',
@@ -8836,13 +7576,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=('age_restriction_violated', )
+        ),
     'untreated_hiv': Covariate(
         name='untreated_hiv',
         kind='covariate',
@@ -8850,13 +7588,11 @@ covariates = Covariates(**{
         by_age=True,
         by_sex=True,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
-        mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        mean_value_exists=None,
+        uncertainty_exists=None,
+        restrictions=Restrictions(
+            violated=()
+        ),
     'medical_schools': Covariate(
         name='medical_schools',
         kind='covariate',
@@ -8864,11 +7600,9 @@ covariates = Covariates(**{
         by_age=False,
         by_sex=False,
         dichotomous=False,
-        data_exist=True,
-        lower_value_exists=True,
-        upper_value_exists=True,
         mean_value_exists=True,
-        sex_restriction_violated=False,
-        age_restriction_violated=False,
-    ),
+        uncertainty_exists=True,
+        restrictions=Restrictions(
+            violated=()
+        ),
 })
