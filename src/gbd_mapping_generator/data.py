@@ -383,12 +383,9 @@ def get_covariate_data():
                     covariates.by_age,
                     covariates.by_sex,
                     covariates.dichotomous,
-                    covariates.data_exist,
-                    covariates.lower_value_exists,
-                    covariates.upper_value_exists,
                     covariates.mean_value_exists,
-                    covariates.sex_restriction_violated,
-                    covariates.age_restriction_violated,))
+                    covariates.uncertainty_exists,
+                    covariates.violated_restrictions))
 
 
 def get_coverage_gap_metadata(coverage_gap):

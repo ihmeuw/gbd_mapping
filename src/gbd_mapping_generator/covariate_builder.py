@@ -1,6 +1,6 @@
 from .data import get_covariate_data, get_covariate_list
 from .base_template_builder import modelable_entity_attrs, gbd_record_attrs
-from .util import make_import, make_module_docstring, make_record, SPACING, TAB
+from .util import make_import, make_module_docstring, make_record, text_wrap, SPACING, TAB
 
 IMPORTABLES_DEFINED = ('Covariate', 'covariates')
 
@@ -14,12 +14,8 @@ def get_base_types():
                       ('by_age', 'bool'),
                       ('by_sex', 'bool'),
                       ('dichotomous', 'bool'),
-                      ('data_exist', 'bool'),
-                      ('lower_value_exists', 'Union[bool, None]'),
-                      ('upper_value_exists', 'Union[bool, None]'),
                       ('mean_value_exists', 'Union[bool, None]'),
-                      ('sex_restriction_violated', 'Union[bool, None]'),
-                      ('age_restriction_violated', 'Union[bool, None]')),
+                      ('uncertainty_exists', 'Union[bool, None]')),
             'superclass': ('ModelableEntity', modelable_entity_attrs),
             'docstring': 'Container for covariate GBD ids and metadata.'
         },
@@ -31,32 +27,33 @@ def get_base_types():
     }
 
 
-def make_covariate(name, covid, by_age, by_sex, dichotomous, data_exist, low_val_exist,
-                   upper_val_exist, mean_exist, sex_restriction, age_restriction):
+def make_covariate(name, covid, by_age, by_sex, dichotomous, mean_value_exists, uncertainty_exists,
+                   restrictions):
     out = ""
     out += TAB + f"'{name}': Covariate(\n"
-    out += TAB*2 + f"name='{name}',\n"
+    out += TAB * 2 + f"name='{name}',\n"
     out += TAB * 2 + "kind='covariate',\n"
-    out += TAB*2 + f"gbd_id=covid({covid}),\n"
-    out += TAB*2 + f"by_age={bool(by_age)},\n"
-    out += TAB*2 + f"by_sex={bool(by_sex)},\n"
-    out += TAB*2 + f"dichotomous={bool(dichotomous)},\n"
-    out += TAB * 2 + f"data_exist={data_exist},\n"
-    out += TAB * 2 + f"lower_value_exists={low_val_exist},\n"
-    out += TAB * 2 + f"upper_value_exists={upper_val_exist},\n"
-    out += TAB * 2 + f"mean_value_exists={mean_exist},\n"
-    out += TAB * 2 + f"sex_restriction_violated={sex_restriction},\n"
-    out += TAB * 2 + f"age_restriction_violated={age_restriction},\n"
-    out += TAB + "),\n"
+    out += TAB * 2 + f"gbd_id=covid({covid}),\n"
+    out += TAB * 2 + f"by_age={bool(by_age)},\n"
+    out += TAB * 2 + f"by_sex={bool(by_sex)},\n"
+    out += TAB * 2 + f"dichotomous={bool(dichotomous)},\n"
+    out += TAB * 2 + f"mean_value_exists={mean_value_exists},\n"
+    out += TAB * 2 + f"uncertainty_exists={uncertainty_exists},\n"
+    out += TAB * 2 + "restrictions=Restrictions(\n"
+    for name, r in restrictions:
+        if name == "violated":
+            out += text_wrap(f"{TAB * 3 + name}=(", [f"'{v}'" for v in r] + [")"])
+        elif r is not None:
+            out += 3*TAB + f"{name}={r},\n"
+    out += TAB * 2 + "),\n"
     return out
 
 
 def make_covariates(covariate_list):
     out = "covariates = Covariates(**{\n"
-    for name, covid, by_age, by_sex, dichotomous, data_exist, low_val_exist, upper_val_exist, \
-        mean_exist, sex_restriction, age_restriction in covariate_list:
-        out += make_covariate(name, covid, by_age, by_sex, dichotomous, data_exist, low_val_exist,
-                              upper_val_exist, mean_exist, sex_restriction, age_restriction)
+    for name, covid, by_age, by_sex, dichotomous, mean_value_exists, uncertainty_exists, restrictions in covariate_list:
+        out += make_covariate(name, covid, by_age, by_sex, dichotomous, mean_value_exists, uncertainty_exists,
+                              restrictions)
     out += "})\n"
     return out
 
