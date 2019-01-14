@@ -385,7 +385,7 @@ def get_covariate_data():
                     covariates.dichotomous,
                     covariates.mean_value_exists,
                     covariates.uncertainty_exists,
-                    ('violated', covariates.violated_restrictions)))
+                    covariates.violated_restrictions))
 
 
 def get_coverage_gap_metadata(coverage_gap):
