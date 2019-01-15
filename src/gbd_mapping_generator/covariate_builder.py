@@ -15,7 +15,9 @@ def get_base_types():
                       ('by_sex', 'bool'),
                       ('dichotomous', 'bool'),
                       ('mean_value_exists', 'Union[bool, None]'),
-                      ('uncertainty_exists', 'Union[bool, None]')),
+                      ('uncertainty_exists', 'Union[bool, None]'),
+                      ('by_age_violated', 'bool'),
+                      ('by_sex_violated', 'bool')),
             'superclass': ('ModelableEntity', modelable_entity_attrs),
             'docstring': 'Container for covariate GBD ids and metadata.'
         },
