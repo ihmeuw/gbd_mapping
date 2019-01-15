@@ -378,17 +378,20 @@ def get_covariate_data():
     data_survey = data_survey[data_survey.covariate_id.isin(covariates.covariate_id)]
 
     covariates = covariates.merge(data_survey, on='covariate_id')
+
+    # covariates are special
+    covariates['by_age_violated'] = covariates.violated_restrictions.apply(lambda x: "age_restriction_violated" in x)
+    covariates['by_sex_violated'] = covariates.violated_restrictions.apply(lambda x: "sex_restriction_violated" in x)
+
     return list(zip(clean_entity_list(covariates.covariate_name),
                     covariates.covariate_id,
                     covariates.by_age,
                     covariates.by_sex,
                     covariates.dichotomous,
-                    covariates.data_exist,
-                    covariates.lower_value_exists,
-                    covariates.upper_value_exists,
                     covariates.mean_value_exists,
-                    covariates.sex_restriction_violated,
-                    covariates.age_restriction_violated,))
+                    covariates.uncertainty_exists,
+                    covariates.by_age_violated,
+                    covariates.by_sex_violated))
 
 
 def get_coverage_gap_metadata(coverage_gap):
