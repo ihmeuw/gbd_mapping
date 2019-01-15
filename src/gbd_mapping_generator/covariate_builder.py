@@ -43,6 +43,7 @@ def make_covariate(name, covid, by_age, by_sex, dichotomous, mean_value_exists, 
     out += TAB * 2 + f"uncertainty_exists={uncertainty_exists},\n"
     out += TAB * 2 + f"by_age_violated={by_age_violated},\n"
     out += TAB * 2 + f"by_sex_violated={by_sex_violated},\n"
+    out += TAB + "),\n"
 
     return out
 
