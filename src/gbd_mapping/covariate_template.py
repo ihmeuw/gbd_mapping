@@ -13,7 +13,7 @@ from .base_template import ModelableEntity, GbdRecord
 class Covariate(ModelableEntity):
     """Container for covariate GBD ids and metadata."""
     __slots__ = ('name', 'kind', 'gbd_id', 'by_age', 'by_sex', 'dichotomous', 'mean_value_exists',
-                 'uncertainty_exists', )
+                 'uncertainty_exists', 'by_age_violated', 'by_sex_violated', )
 
     def __init__(self,
                  name: str,
@@ -23,7 +23,9 @@ class Covariate(ModelableEntity):
                  by_sex: bool,
                  dichotomous: bool,
                  mean_value_exists: Union[bool, None],
-                 uncertainty_exists: Union[bool, None], ):
+                 uncertainty_exists: Union[bool, None],
+                 by_age_violated: bool,
+                 by_sex_violated: bool, ):
         super().__init__(name=name,
                          kind=kind,
                          gbd_id=gbd_id)
@@ -35,6 +37,8 @@ class Covariate(ModelableEntity):
         self.dichotomous = dichotomous
         self.mean_value_exists = mean_value_exists
         self.uncertainty_exists = uncertainty_exists
+        self.by_age_violated = by_age_violated
+        self.by_sex_violated = by_sex_violated
 
 
 class Covariates(GbdRecord):
