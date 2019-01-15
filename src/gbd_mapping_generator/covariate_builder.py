@@ -28,7 +28,7 @@ def get_base_types():
 
 
 def make_covariate(name, covid, by_age, by_sex, dichotomous, mean_value_exists, uncertainty_exists,
-                   restrictions):
+                   by_age_violated, by_sex_violated):
     out = ""
     out += TAB + f"'{name}': Covariate(\n"
     out += TAB * 2 + f"name='{name}',\n"
@@ -39,16 +39,17 @@ def make_covariate(name, covid, by_age, by_sex, dichotomous, mean_value_exists, 
     out += TAB * 2 + f"dichotomous={bool(dichotomous)},\n"
     out += TAB * 2 + f"mean_value_exists={mean_value_exists},\n"
     out += TAB * 2 + f"uncertainty_exists={uncertainty_exists},\n"
-    out += TAB * 2 + "restrictions=Restrictions(\n"
-    out += text_wrap(f"{TAB * 3}violated=(", [f"'{v}'" for v in restrictions] + [")"]) + TAB * 2 + "),\n"
+    out += TAB * 2 + f"by_age_violated={by_age_violated},\n"
+    out += TAB * 2 + f"by_sex_violated={by_sex_violated},\n"
+
     return out
 
 
 def make_covariates(covariate_list):
     out = "covariates = Covariates(**{\n"
-    for name, covid, by_age, by_sex, dichotomous, mean_value_exists, uncertainty_exists, restrictions in covariate_list:
+    for name, covid, by_age, by_sex, dichotomous, mean_value_exists, uncertainty_exists, by_age_violated, by_sex_violated in covariate_list:
         out += make_covariate(name, covid, by_age, by_sex, dichotomous, mean_value_exists, uncertainty_exists,
-                              restrictions)
+                              by_age_violated, by_sex_violated)
     out += "})\n"
     return out
 
