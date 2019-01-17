@@ -155,7 +155,7 @@ def make_risks(risk_list):
     for (name, *_, parent, sub_risks, affected_risks) in risk_list:
 
         if name != parent:
-            out += f"risk_factors.{name}.parent = risk_factors.{parent}\n"
+            out += f"risk_factors.{name}.parent = (risk_factors.{parent})\n"
             if sub_risks:
                 if name in sub_risks:
                     sub_risks.remove(name)

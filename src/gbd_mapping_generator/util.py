@@ -29,6 +29,8 @@ def make_import(module_to_import, imports=()):
 def text_wrap(start_string, items, sep=', ', implicit=False):
     if len(start_string + sep.join(items)) <= TEXTWIDTH:
         out = start_string + sep.join(items) + '\n'
+        if implicit:
+            out = f"({out})"
     else:
         out = start_string
         if implicit:
