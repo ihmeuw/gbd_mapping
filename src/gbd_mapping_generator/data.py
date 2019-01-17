@@ -53,7 +53,7 @@ def get_covariates():
 
     covariates = pd.DataFrame.from_dict(data, orient='index').reset_index()
     covariates = covariates.rename(columns={'index':'covariate_name', 0:'covariate_id'})
-    return covariates.sort_values('covariate_id')       
+    return covariates.sort_values('covariate_id')
 
 #####################################
 # Lists of entity names in id order #
@@ -248,9 +248,11 @@ def get_risk_data():
     causes = get_causes().set_index('cause_id')
 
     data_survey = gbd.get_survey_summary("risk_factor", SURVEY_LOCATION_ID)
-    risks = risks.join(data_survey, how='left') 
+    risks = risks.join(data_survey, how='left')
 
     out = []
+    # Some polytomous risks have an explicit tmrel category, some do not.
+    contain_tmrel = [84, 128, 136, 240, 241, 339]
 
     for rei_id, risk in risks.iterrows():
         name = risk['rei_name']
@@ -309,7 +311,8 @@ def get_risk_data():
                 levels = sorted([(cat, name) for cat, name in risk['category_map'].items()],
                                 key=lambda x: int(x[0][3:]))
                 max_cat = int(levels[-1][0][3:]) + 1
-                levels.append((f'cat{max_cat}', 'unexposed'))
+                if rei_id not in contain_tmrel:
+                    levels.append((f'cat{max_cat}', 'unexposed'))
                 levels = tuple(levels)
             else:
                 levels = None
@@ -322,7 +325,7 @@ def get_risk_data():
                          ('min', risk['tmrel_lower']),
                          ('max', risk['tmrel_upper']),
                          ('inverted', bool(risk['inv_exp'])))
-        
+
         if risk['affected_cause_ids'] is not np.nan:
             # TODO: WHAT IS CID 311 ??
             affected_causes = tuple(causes.at[cid, 'cause_name'] for cid in risk['affected_cause_ids'] if cid in causes.index)
