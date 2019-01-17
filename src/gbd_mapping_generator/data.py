@@ -262,7 +262,7 @@ def get_risk_data():
         parent = risks.at[risk['parent_id'], 'rei_name']
 
         paf_calculation_type = risk['rei_calculation_type']
-        distribution = risk['exposure_type'] if not risk['exposure_type'] is np.nan else None
+        distribution = risk['exposure_type'].replace(" ", "_") if not risk['exposure_type'] is np.nan else None
 
         exposure_exists = risk['exposure_exists']
         exposure_year_type = risk['exposure_year_type']
