@@ -139,7 +139,7 @@ def make_causes(causes_list):
          sequelae, etiologies, sub_causes) in causes_list:
 
         if name != parent:
-            out += f"causes.{name}.parent = (causes.{parent})\n"
+            out += f"causes.{name}.parent = causes.{parent}\n"
         if sub_causes:
             if name in sub_causes:
                 sub_causes.remove(name)
