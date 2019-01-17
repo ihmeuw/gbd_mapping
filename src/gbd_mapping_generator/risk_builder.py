@@ -45,6 +45,13 @@ def get_base_types():
     }
 
 
+def _abbr_to_full_name(restriction):
+    restriction = restriction.replace('rr', 'relative_risk')
+    restriction = restriction.replace('paf', 'population_attributable_fraction')
+    restriction = restriction.replace('sd', 'standard_deviation')
+    return restriction
+
+
 def make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
               affected_causes, paf_of_one_causes,
               distribution, levels, tmred, scalar,
@@ -72,7 +79,7 @@ def make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
     out += 2*TAB + "restrictions=Restrictions(\n"
     for name, r in restrictions:
         if name == "violated":
-            out += text_wrap(f"{TAB * 3 + name}=(", [f"'{v}'" for v in r] + [")"])
+            out += text_wrap(f"{TAB * 3 + name}=(", [f"'{_abbr_to_full_name(v)}'" for v in r] + [")"])
         elif r is not None:
             out += 3*TAB + f"{name}={r},\n"
     out += 2 * TAB + '),\n'
