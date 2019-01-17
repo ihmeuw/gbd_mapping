@@ -11,10 +11,10 @@ def get_base_types():
             'attrs': (('name', 'str'),
                       ('kind', 'str'),
                       ('gbd_id', 'Union[reiid, None]'),
-                      ('paf_yll_exists', 'bool'),
-                      ('paf_yld_exists', 'bool'),
-                      ('paf_yll_in_range', 'bool'),
-                      ('paf_yld_in_range', 'bool'),),
+                      ('population_attributable_fraction_yll_exists', 'bool'),
+                      ('population_attributable_fraction_yld_exists', 'bool'),
+                      ('population_attributable_fraction_yll_in_range', 'bool'),
+                      ('population_attributable_fraction_yld_in_range', 'bool'),),
             'superclass': ('ModelableEntity', modelable_entity_attrs),
             'docstring': 'Container for etiology GBD ids and metadata.'
         },
@@ -32,10 +32,10 @@ def make_etiology(name, reiid, yll_exist, yld_exist, yll_in_range, yld_in_range)
     out += TAB*2 + f"name='{name}',\n"
     out += TAB * 2 + f"kind='etiology',\n"
     out += TAB*2 + f"gbd_id=reiid({reiid}),\n"
-    out += TAB * 2 + f"paf_yll_exists={yll_exist},\n"
-    out += TAB * 2 + f"paf_yld_exists={yld_exist},\n"
-    out += TAB * 2 + f"paf_yll_in_range={yll_in_range},\n"
-    out += TAB * 2 + f"paf_yld_in_range={yld_in_range},\n"
+    out += TAB * 2 + f"population_attributable_fraction_yll_exists={yll_exist},\n"
+    out += TAB * 2 + f"population_attributable_fraction_yld_exists={yld_exist},\n"
+    out += TAB * 2 + f"population_attributable_fraction_yll_in_range={yll_in_range},\n"
+    out += TAB * 2 + f"population_attributable_fraction_yld_in_range={yld_in_range},\n"
     out += TAB + "),\n"
     return out
 
