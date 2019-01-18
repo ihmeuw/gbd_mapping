@@ -1,6 +1,6 @@
 from .data import get_risk_data, get_risk_list
 from .base_template_builder import modelable_entity_attrs, gbd_record_attrs
-from .util import (make_import, make_module_docstring, make_record, SPACING, TAB, TEXTWIDTH, text_wrap, format_string_none)
+from .util import make_import, make_module_docstring, make_record, SPACING, TAB, TEXTWIDTH, text_wrap, format_string_none
 
 
 IMPORTABLES_DEFINED = ('RiskFactor', 'risk_factors')
@@ -159,7 +159,6 @@ def make_risks(risk_list):
             if sub_risks:
                 if name in sub_risks:
                     sub_risks.remove(name)
-
                     out += text_wrap(f'risk_factors.{name}.sub_risk_factors = (',
                                      [f'risk_factors.{s}' for s in sub_risks] + [')'])
                 if affected_risks:
