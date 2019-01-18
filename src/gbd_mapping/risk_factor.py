@@ -4418,7 +4418,8 @@ risk_factors = RiskFactors(
 risk_factors.unsafe_water_sanitation_and_handwashing.parent = risk_factors.environmental_occupational_risks
 risk_factors.unsafe_water_sanitation_and_handwashing.sub_risk_factors = (risk_factors.unsafe_water_source,
                                                                          risk_factors.unsafe_sanitation,
-                                                                         risk_factors.no_access_to_handwashing_facility)
+                                                                         risk_factors.no_access_to_handwashing_facility,
+                                                                         )
 
 risk_factors.unsafe_water_source.parent = risk_factors.unsafe_water_sanitation_and_handwashing
 
@@ -4426,7 +4427,7 @@ risk_factors.unsafe_sanitation.parent = risk_factors.unsafe_water_sanitation_and
 
 risk_factors.air_pollution.parent = risk_factors.environmental_occupational_risks
 risk_factors.air_pollution.sub_risk_factors = (risk_factors.ambient_ozone_pollution,
-                                               risk_factors.particulate_matter_pollution)
+                                               risk_factors.particulate_matter_pollution, )
 
 risk_factors.ambient_particulate_matter_pollution.parent = risk_factors.particulate_matter_pollution
 
@@ -4435,12 +4436,14 @@ risk_factors.household_air_pollution_from_solid_fuels.parent = risk_factors.part
 risk_factors.ambient_ozone_pollution.parent = risk_factors.air_pollution
 
 risk_factors.other_environmental_risks.parent = risk_factors.environmental_occupational_risks
-risk_factors.other_environmental_risks.sub_risk_factors = risk_factors.residential_radon, risk_factors.lead_exposure
+risk_factors.other_environmental_risks.sub_risk_factors = (risk_factors.residential_radon, risk_factors.lead_exposure,
+                                                           )
 
 risk_factors.residential_radon.parent = risk_factors.other_environmental_risks
 
 risk_factors.lead_exposure.parent = risk_factors.other_environmental_risks
-risk_factors.lead_exposure.sub_risk_factors = risk_factors.lead_exposure_in_blood, risk_factors.lead_exposure_in_bone
+risk_factors.lead_exposure.sub_risk_factors = (risk_factors.lead_exposure_in_blood, risk_factors.lead_exposure_in_bone,
+                                               )
 
 risk_factors.child_and_maternal_malnutrition.parent = risk_factors.behavioral_risks
 risk_factors.child_and_maternal_malnutrition.sub_risk_factors = (risk_factors.suboptimal_breastfeeding,
@@ -4448,11 +4451,11 @@ risk_factors.child_and_maternal_malnutrition.sub_risk_factors = (risk_factors.su
                                                                  risk_factors.vitamin_a_deficiency,
                                                                  risk_factors.zinc_deficiency,
                                                                  risk_factors.child_growth_failure,
-                                                                 risk_factors.low_birth_weight_and_short_gestation)
+                                                                 risk_factors.low_birth_weight_and_short_gestation, )
 
 risk_factors.suboptimal_breastfeeding.parent = risk_factors.child_and_maternal_malnutrition
 risk_factors.suboptimal_breastfeeding.sub_risk_factors = (risk_factors.non_exclusive_breastfeeding,
-                                                          risk_factors.discontinued_breastfeeding)
+                                                          risk_factors.discontinued_breastfeeding, )
 
 risk_factors.child_underweight.parent = risk_factors.child_growth_failure
 
@@ -4464,11 +4467,11 @@ risk_factors.zinc_deficiency.parent = risk_factors.child_and_maternal_malnutriti
 
 risk_factors.tobacco.parent = risk_factors.behavioral_risks
 risk_factors.tobacco.sub_risk_factors = (risk_factors.smoking, risk_factors.secondhand_smoke,
-                                         risk_factors.chewing_tobacco)
+                                         risk_factors.chewing_tobacco, )
 
 risk_factors.smoking.parent = risk_factors.tobacco
 risk_factors.smoking.affected_risk_factors = (risk_factors.low_bone_mineral_density,
-                                              risk_factors.high_fasting_plasma_glucose_continuous)
+                                              risk_factors.high_fasting_plasma_glucose_continuous, )
 
 risk_factors.secondhand_smoke.parent = risk_factors.tobacco
 
@@ -4476,7 +4479,7 @@ risk_factors.alcohol_use.parent = risk_factors.behavioral_risks
 
 risk_factors.drug_use.parent = risk_factors.behavioral_risks
 risk_factors.drug_use.sub_risk_factors = (risk_factors.drug_use_dependence_and_blood_borne_viruses,
-                                          risk_factors.suicide_due_to_drug_use_disorders)
+                                          risk_factors.suicide_due_to_drug_use_disorders, )
 
 risk_factors.metabolic_risks.parent = risk_factors.all_risk_factors
 risk_factors.metabolic_risks.sub_risk_factors = (risk_factors.high_fasting_plasma_glucose,
@@ -4484,18 +4487,18 @@ risk_factors.metabolic_risks.sub_risk_factors = (risk_factors.high_fasting_plasm
                                                  risk_factors.high_body_mass_index,
                                                  risk_factors.low_bone_mineral_density,
                                                  risk_factors.impaired_kidney_function,
-                                                 risk_factors.high_ldl_cholesterol)
+                                                 risk_factors.high_ldl_cholesterol, )
 
 risk_factors.high_fasting_plasma_glucose.parent = risk_factors.metabolic_risks
 risk_factors.high_fasting_plasma_glucose.sub_risk_factors = (risk_factors.high_fasting_plasma_glucose_continuous,
-                                                             risk_factors.high_fasting_plasma_glucose_categorical)
+                                                             risk_factors.high_fasting_plasma_glucose_categorical, )
 
 risk_factors.high_systolic_blood_pressure.parent = risk_factors.metabolic_risks
-risk_factors.high_systolic_blood_pressure.affected_risk_factors = risk_factors.impaired_kidney_function
+risk_factors.high_systolic_blood_pressure.affected_risk_factors = (risk_factors.impaired_kidney_function, )
 
 risk_factors.high_body_mass_index.parent = risk_factors.metabolic_risks
 risk_factors.high_body_mass_index.sub_risk_factors = (risk_factors.high_body_mass_index_in_adults,
-                                                      risk_factors.high_body_mass_index_in_children)
+                                                      risk_factors.high_body_mass_index_in_children, )
 
 risk_factors.low_bone_mineral_density.parent = risk_factors.metabolic_risks
 
@@ -4511,64 +4514,68 @@ risk_factors.dietary_risks.sub_risk_factors = (risk_factors.diet_low_in_fruits, 
                                                risk_factors.diet_low_in_polyunsaturated_fatty_acids,
                                                risk_factors.diet_high_in_trans_fatty_acids,
                                                risk_factors.diet_high_in_sodium, risk_factors.diet_low_in_calcium,
-                                               risk_factors.diet_low_in_legumes)
+                                               risk_factors.diet_low_in_legumes, )
 
 risk_factors.diet_low_in_fruits.parent = risk_factors.dietary_risks
 risk_factors.diet_low_in_fruits.affected_risk_factors = (risk_factors.high_systolic_blood_pressure,
                                                          risk_factors.high_ldl_cholesterol,
-                                                         risk_factors.high_fasting_plasma_glucose_continuous)
+                                                         risk_factors.high_fasting_plasma_glucose_continuous, )
 
 risk_factors.diet_low_in_vegetables.parent = risk_factors.dietary_risks
 risk_factors.diet_low_in_vegetables.affected_risk_factors = (risk_factors.high_systolic_blood_pressure,
                                                              risk_factors.high_fasting_plasma_glucose_continuous,
-                                                             risk_factors.high_ldl_cholesterol)
+                                                             risk_factors.high_ldl_cholesterol, )
 
 risk_factors.diet_low_in_whole_grains.parent = risk_factors.dietary_risks
 risk_factors.diet_low_in_whole_grains.affected_risk_factors = (risk_factors.high_ldl_cholesterol,
-                                                               risk_factors.high_fasting_plasma_glucose_continuous)
+                                                               risk_factors.high_fasting_plasma_glucose_continuous, )
 
 risk_factors.diet_low_in_nuts_and_seeds.parent = risk_factors.dietary_risks
 risk_factors.diet_low_in_nuts_and_seeds.affected_risk_factors = (risk_factors.high_systolic_blood_pressure,
                                                                  risk_factors.high_fasting_plasma_glucose_continuous,
-                                                                 risk_factors.high_ldl_cholesterol)
+                                                                 risk_factors.high_ldl_cholesterol, )
 
 risk_factors.diet_low_in_milk.parent = risk_factors.dietary_risks
-risk_factors.diet_low_in_milk.affected_risk_factors = risk_factors.diet_low_in_calcium
+risk_factors.diet_low_in_milk.affected_risk_factors = (risk_factors.diet_low_in_calcium, )
 
 risk_factors.diet_high_in_red_meat.parent = risk_factors.dietary_risks
-risk_factors.diet_high_in_red_meat.affected_risk_factors = risk_factors.high_fasting_plasma_glucose_continuous
+risk_factors.diet_high_in_red_meat.affected_risk_factors = (risk_factors.high_fasting_plasma_glucose_continuous, )
 
 risk_factors.diet_high_in_processed_meat.parent = risk_factors.dietary_risks
-risk_factors.diet_high_in_processed_meat.affected_risk_factors = risk_factors.high_fasting_plasma_glucose_continuous
+risk_factors.diet_high_in_processed_meat.affected_risk_factors = (risk_factors.high_fasting_plasma_glucose_continuous,
+                                                                  )
 
 risk_factors.diet_high_in_sugar_sweetened_beverages.parent = risk_factors.dietary_risks
 risk_factors.diet_high_in_sugar_sweetened_beverages.affected_risk_factors = (risk_factors.high_systolic_blood_pressure,
                                                                              risk_factors.high_fasting_plasma_glucose_continuous,
                                                                              risk_factors.high_ldl_cholesterol,
-                                                                             risk_factors.high_body_mass_index_in_adults)
+                                                                             risk_factors.high_body_mass_index_in_adults,
+                                                                             )
 
 risk_factors.diet_low_in_fiber.parent = risk_factors.dietary_risks
 risk_factors.diet_low_in_fiber.affected_risk_factors = (risk_factors.diet_low_in_fruits,
                                                         risk_factors.diet_low_in_vegetables,
-                                                        risk_factors.diet_low_in_whole_grains)
+                                                        risk_factors.diet_low_in_whole_grains, )
 
 risk_factors.diet_low_in_seafood_omega_3_fatty_acids.parent = risk_factors.dietary_risks
-risk_factors.diet_low_in_seafood_omega_3_fatty_acids.affected_risk_factors = risk_factors.high_systolic_blood_pressure
+risk_factors.diet_low_in_seafood_omega_3_fatty_acids.affected_risk_factors = (risk_factors.high_systolic_blood_pressure,
+                                                                              )
 
 risk_factors.diet_low_in_polyunsaturated_fatty_acids.parent = risk_factors.dietary_risks
 risk_factors.diet_low_in_polyunsaturated_fatty_acids.affected_risk_factors = (risk_factors.high_systolic_blood_pressure,
-                                                                              risk_factors.high_fasting_plasma_glucose_continuous)
+                                                                              risk_factors.high_fasting_plasma_glucose_continuous,
+                                                                              )
 
 risk_factors.diet_high_in_trans_fatty_acids.parent = risk_factors.dietary_risks
 risk_factors.diet_high_in_trans_fatty_acids.affected_risk_factors = (risk_factors.high_systolic_blood_pressure,
-                                                                     risk_factors.high_ldl_cholesterol)
+                                                                     risk_factors.high_ldl_cholesterol, )
 
 risk_factors.diet_high_in_sodium.parent = risk_factors.dietary_risks
 risk_factors.diet_high_in_sodium.affected_risk_factors = (risk_factors.high_systolic_blood_pressure,
-                                                          risk_factors.impaired_kidney_function)
+                                                          risk_factors.impaired_kidney_function, )
 
 risk_factors.low_physical_activity.parent = risk_factors.behavioral_risks
-risk_factors.low_physical_activity.affected_risk_factors = risk_factors.high_fasting_plasma_glucose_continuous
+risk_factors.low_physical_activity.affected_risk_factors = (risk_factors.high_fasting_plasma_glucose_continuous, )
 
 risk_factors.occupational_risks.parent = risk_factors.environmental_occupational_risks
 risk_factors.occupational_risks.sub_risk_factors = (risk_factors.occupational_carcinogens,
@@ -4576,7 +4583,7 @@ risk_factors.occupational_risks.sub_risk_factors = (risk_factors.occupational_ca
                                                     risk_factors.occupational_particulate_matter_gases_and_fumes,
                                                     risk_factors.occupational_noise,
                                                     risk_factors.occupational_injuries,
-                                                    risk_factors.occupational_ergonomic_factors)
+                                                    risk_factors.occupational_ergonomic_factors, )
 
 risk_factors.occupational_carcinogens.parent = risk_factors.occupational_risks
 risk_factors.occupational_carcinogens.sub_risk_factors = (risk_factors.occupational_exposure_to_asbestos,
@@ -4591,7 +4598,7 @@ risk_factors.occupational_carcinogens.sub_risk_factors = (risk_factors.occupatio
                                                           risk_factors.occupational_exposure_to_polycyclic_aromatic_hydrocarbons,
                                                           risk_factors.occupational_exposure_to_silica,
                                                           risk_factors.occupational_exposure_to_sulfuric_acid,
-                                                          risk_factors.occupational_exposure_to_trichloroethylene)
+                                                          risk_factors.occupational_exposure_to_trichloroethylene, )
 
 risk_factors.occupational_asthmagens.parent = risk_factors.occupational_risks
 
@@ -4605,12 +4612,12 @@ risk_factors.occupational_ergonomic_factors.parent = risk_factors.occupational_r
 
 risk_factors.childhood_sexual_abuse.parent = risk_factors.childhood_maltreatment
 risk_factors.childhood_sexual_abuse.sub_risk_factors = (risk_factors.childhood_sexual_abuse_against_females,
-                                                        risk_factors.childhood_sexual_abuse_against_males)
+                                                        risk_factors.childhood_sexual_abuse_against_males, )
 
 risk_factors.intimate_partner_violence.parent = risk_factors.behavioral_risks
 risk_factors.intimate_partner_violence.sub_risk_factors = (risk_factors.intimate_partner_violence_exposure_approach,
                                                            risk_factors.intimate_partner_violence_direct_paf_approach,
-                                                           risk_factors.intimate_partner_violence_hiv_paf_approach)
+                                                           risk_factors.intimate_partner_violence_hiv_paf_approach, )
 
 risk_factors.non_exclusive_breastfeeding.parent = risk_factors.suboptimal_breastfeeding
 
@@ -4623,7 +4630,7 @@ risk_factors.suicide_due_to_drug_use_disorders.parent = risk_factors.drug_use
 risk_factors.high_fasting_plasma_glucose_continuous.parent = risk_factors.high_fasting_plasma_glucose
 risk_factors.high_fasting_plasma_glucose_continuous.affected_risk_factors = (risk_factors.high_systolic_blood_pressure,
                                                                              risk_factors.high_ldl_cholesterol,
-                                                                             risk_factors.impaired_kidney_function)
+                                                                             risk_factors.impaired_kidney_function, )
 
 risk_factors.high_fasting_plasma_glucose_categorical.parent = risk_factors.high_fasting_plasma_glucose
 
@@ -4665,7 +4672,7 @@ risk_factors.environmental_occupational_risks.parent = risk_factors.all_risk_fac
 risk_factors.environmental_occupational_risks.sub_risk_factors = (risk_factors.unsafe_water_sanitation_and_handwashing,
                                                                   risk_factors.air_pollution,
                                                                   risk_factors.other_environmental_risks,
-                                                                  risk_factors.occupational_risks)
+                                                                  risk_factors.occupational_risks, )
 
 risk_factors.behavioral_risks.parent = risk_factors.all_risk_factors
 risk_factors.behavioral_risks.sub_risk_factors = (risk_factors.child_and_maternal_malnutrition, risk_factors.tobacco,
@@ -4673,7 +4680,7 @@ risk_factors.behavioral_risks.sub_risk_factors = (risk_factors.child_and_materna
                                                   risk_factors.dietary_risks, risk_factors.low_physical_activity,
                                                   risk_factors.intimate_partner_violence, risk_factors.unsafe_sex,
                                                   risk_factors.bullying_victimization,
-                                                  risk_factors.childhood_maltreatment)
+                                                  risk_factors.childhood_maltreatment, )
 
 risk_factors.occupational_exposure_to_trichloroethylene.parent = risk_factors.occupational_carcinogens
 
@@ -4681,7 +4688,7 @@ risk_factors.no_access_to_handwashing_facility.parent = risk_factors.unsafe_wate
 
 risk_factors.child_growth_failure.parent = risk_factors.child_and_maternal_malnutrition
 risk_factors.child_growth_failure.sub_risk_factors = (risk_factors.child_underweight, risk_factors.child_wasting,
-                                                      risk_factors.child_stunting)
+                                                      risk_factors.child_stunting, )
 
 risk_factors.child_wasting.parent = risk_factors.child_growth_failure
 
@@ -4691,13 +4698,13 @@ risk_factors.lead_exposure_in_blood.parent = risk_factors.lead_exposure
 
 risk_factors.lead_exposure_in_bone.parent = risk_factors.lead_exposure
 risk_factors.lead_exposure_in_bone.affected_risk_factors = (risk_factors.high_systolic_blood_pressure,
-                                                            risk_factors.impaired_kidney_function)
+                                                            risk_factors.impaired_kidney_function, )
 
 risk_factors.childhood_sexual_abuse_against_females.parent = risk_factors.childhood_sexual_abuse
-risk_factors.childhood_sexual_abuse_against_females.affected_risk_factors = risk_factors.alcohol_use
+risk_factors.childhood_sexual_abuse_against_females.affected_risk_factors = (risk_factors.alcohol_use, )
 
 risk_factors.childhood_sexual_abuse_against_males.parent = risk_factors.childhood_sexual_abuse
-risk_factors.childhood_sexual_abuse_against_males.affected_risk_factors = risk_factors.alcohol_use
+risk_factors.childhood_sexual_abuse_against_males.affected_risk_factors = (risk_factors.alcohol_use, )
 
 risk_factors.chewing_tobacco.parent = risk_factors.tobacco
 
@@ -4709,27 +4716,27 @@ risk_factors.low_birth_weight_for_gestation.parent = risk_factors.low_birth_weig
 
 risk_factors.low_birth_weight_and_short_gestation.parent = risk_factors.child_and_maternal_malnutrition
 risk_factors.low_birth_weight_and_short_gestation.sub_risk_factors = (risk_factors.short_gestation_for_birth_weight,
-                                                                      risk_factors.low_birth_weight_for_gestation)
+                                                                      risk_factors.low_birth_weight_for_gestation, )
 
 risk_factors.impaired_kidney_function.parent = risk_factors.metabolic_risks
 
 risk_factors.bullying_victimization.parent = risk_factors.behavioral_risks
 
 risk_factors.high_ldl_cholesterol.parent = risk_factors.metabolic_risks
-risk_factors.high_ldl_cholesterol.affected_risk_factors = risk_factors.high_systolic_blood_pressure
+risk_factors.high_ldl_cholesterol.affected_risk_factors = (risk_factors.high_systolic_blood_pressure, )
 
 risk_factors.high_body_mass_index_in_adults.parent = risk_factors.high_body_mass_index
 risk_factors.high_body_mass_index_in_adults.affected_risk_factors = (risk_factors.high_systolic_blood_pressure,
                                                                      risk_factors.high_fasting_plasma_glucose_continuous,
                                                                      risk_factors.high_ldl_cholesterol,
-                                                                     risk_factors.impaired_kidney_function)
+                                                                     risk_factors.impaired_kidney_function, )
 
 risk_factors.high_body_mass_index_in_children.parent = risk_factors.high_body_mass_index
 
 risk_factors.particulate_matter_pollution.parent = risk_factors.air_pollution
 risk_factors.particulate_matter_pollution.sub_risk_factors = (risk_factors.ambient_particulate_matter_pollution,
-                                                              risk_factors.household_air_pollution_from_solid_fuels)
+                                                              risk_factors.household_air_pollution_from_solid_fuels, )
 
 risk_factors.childhood_maltreatment.parent = risk_factors.behavioral_risks
-risk_factors.childhood_maltreatment.sub_risk_factors = risk_factors.childhood_sexual_abuse
+risk_factors.childhood_maltreatment.sub_risk_factors = (risk_factors.childhood_sexual_abuse, )
 

@@ -159,11 +159,11 @@ def make_risks(risk_list):
             if sub_risks:
                 if name in sub_risks:
                     sub_risks.remove(name)
-                out += text_wrap(f'risk_factors.{name}.sub_risk_factors = ',
-                                 [f'risk_factors.{s}' for s in sub_risks], implicit=True)
+                out += text_wrap(f'risk_factors.{name}.sub_risk_factors = (',
+                                 [f'risk_factors.{s}' for s in sub_risks] + [')'])
             if affected_risks:
-                out += text_wrap(f'risk_factors.{name}.affected_risk_factors = ',
-                                 [f'risk_factors.{s}' for s in affected_risks], implicit=True)
+                out += text_wrap(f'risk_factors.{name}.affected_risk_factors = (',
+                                 [f'risk_factors.{s}' for s in affected_risks] + [')'])
             out += '\n'
 
     return out

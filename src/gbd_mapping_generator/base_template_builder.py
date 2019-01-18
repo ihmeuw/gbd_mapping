@@ -101,6 +101,8 @@ def make_gbd_record():
             out += f'\\n{slot}='
             if isinstance(attr, tuple):
                 out += '['+', '.join([entity.name if isinstance(entity, GbdRecord) else entity for entity in attr]) + ']'
+            elif hasattr(attr, "name"):
+                out += attr.name
             else:
                 out += repr(attr)
         return out + ')'

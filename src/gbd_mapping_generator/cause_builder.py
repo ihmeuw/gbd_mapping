@@ -143,7 +143,7 @@ def make_causes(causes_list):
         if sub_causes:
             if name in sub_causes:
                 sub_causes.remove(name)
-            out += text_wrap(f'causes.{name}.sub_causes = ', [f'causes.{s}' for s in sub_causes], implicit=True)
+            out += text_wrap(f'causes.{name}.sub_causes = (', [f'causes.{s}' for s in sub_causes] + [')'])
         out += '\n'
 
     return out
