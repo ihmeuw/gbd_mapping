@@ -84,8 +84,9 @@ def make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
             out += 3*TAB + f"{name}={r},\n"
     out += 2 * TAB + '),\n'
 
-    out += make_entity_list('affected_causes', affected_causes, 'cause')
-    out += make_entity_list('population_attributable_fraction_of_one_causes', paf_of_one_causes, 'cause')
+    out += text_wrap(f"{TAB * 2}affected_causes=(", [f"causes.{c}" for c in affected_causes] + ['),'])
+    out += text_wrap(f"{TAB * 2}population_attributable_fraction_of_one_causes=(",
+                     [f"causes.{c}" for c in paf_of_one_causes] + ['),'])
 
     if levels:
         out += 2*TAB + "categories=Categories(\n"
@@ -108,30 +109,6 @@ def make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
         out += 2*TAB + f'relative_risk_scalar=scalar({scalar}),\n'
 
     out += TAB + '),\n'
-    return out
-
-
-def make_entity_list(name, entity_list, entity_type):
-    field = 2 * TAB + f"{name}=("
-    if not entity_list:
-        return field + "),\n"
-    offset = len(field)
-
-    out = field
-    char_count = offset
-    for entity in entity_list:
-        entity_name = f"{entity_type}s.{entity}, "
-
-        if char_count == offset:
-            out += entity_name
-            char_count += len(entity_name)
-        elif char_count + len(entity_name) > TEXTWIDTH:
-            out += '\n' + ' ' * offset + entity_name
-            char_count = offset + len(entity_name)
-        else:
-            out += entity_name
-            char_count += len(entity_name)
-    out += '),\n'
     return out
 
 
@@ -159,11 +136,12 @@ def make_risks(risk_list):
             if sub_risks:
                 if name in sub_risks:
                     sub_risks.remove(name)
-                out += text_wrap(f'risk_factors.{name}.sub_risk_factors = ',
-                                 [f'risk_factors.{s}' for s in sub_risks], implicit=True)
+
+                out += text_wrap(f'risk_factors.{name}.sub_risk_factors = (',
+                                 [f'risk_factors.{s}' for s in sub_risks] + [')'])
             if affected_risks:
-                out += text_wrap(f'risk_factors.{name}.affected_risk_factors = ',
-                                 [f'risk_factors.{s}' for s in affected_risks], implicit=True)
+                out += text_wrap(f'risk_factors.{name}.affected_risk_factors = (',
+                                 [f'risk_factors.{s}' for s in affected_risks] + [')'])
             out += '\n'
 
     return out
