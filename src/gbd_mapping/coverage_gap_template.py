@@ -39,9 +39,13 @@ class CoverageGap(GbdRecord):
 
 class CoverageGaps(GbdRecord):
     """Container for coverage gap data."""
-    __slots__ = ('lack_of_vitamin_a_fortification', )
+    __slots__ = ('lack_of_breastfeeding_promotion', 'lack_of_eggs', 'lack_of_vitamin_a_fortification', )
 
     def __init__(self,
+                 lack_of_breastfeeding_promotion: CoverageGap,
+                 lack_of_eggs: CoverageGap,
                  lack_of_vitamin_a_fortification: CoverageGap, ):
         super().__init__()
+        self.lack_of_breastfeeding_promotion = lack_of_breastfeeding_promotion
+        self.lack_of_eggs = lack_of_eggs
         self.lack_of_vitamin_a_fortification = lack_of_vitamin_a_fortification
