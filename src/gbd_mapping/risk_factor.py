@@ -125,7 +125,6 @@ risk_factors = RiskFactors(
             cat1='Unsafe sanitation exposure, Unimproved & untreated',
             cat2='Unsafe sanitation exposure, Improved',
             cat3='Unsafe sanitation exposure, Sewer',
-            cat4='unexposed',
         ),
     ),
     air_pollution=RiskFactor(
@@ -801,7 +800,6 @@ risk_factors = RiskFactors(
         categories=Categories(
             cat1='Prevalence of Current Any Smokers',
             cat2='Prevalence of Former Any Smokers',
-            cat3='unexposed',
         ),
         relative_risk_scalar=scalar(1),
     ),
@@ -2013,7 +2011,6 @@ risk_factors = RiskFactors(
             cat7='Occupational asthmagens exposure, Manufact',
             cat8='Occupational asthmagens exposure, Services',
             cat9='Occupational asthmagens exposure, Other',
-            cat10='unexposed',
         ),
     ),
     occupational_particulate_matter_gases_and_fumes=RiskFactor(
@@ -2285,7 +2282,6 @@ risk_factors = RiskFactors(
             cat2='Non-exclusive breastfeeding exposure, partial',
             cat3='Non-exclusive breastfeeding exposure, predominant',
             cat4='Non-exclusive breastfeeding exposure, exclusive',
-            cat5='unexposed',
         ),
     ),
     discontinued_breastfeeding=RiskFactor(
@@ -3649,7 +3645,6 @@ risk_factors = RiskFactors(
             cat2='Child wasting exposure,  -3 to -2 sd, interpolated annual results',
             cat3='Child wasting exposure,  -2 to -1 sd, interpolated annual results',
             cat4='Childhood wasting exposure,  -1 sd and above',
-            cat5='unexposed',
         ),
     ),
     child_stunting=RiskFactor(
@@ -3690,7 +3685,6 @@ risk_factors = RiskFactors(
             cat2='Child stunting exposure,  -3 to -2 sd, interpolated annual results',
             cat3='Child stunting exposure,  -2 to -1 sd, interpolated annual results',
             cat4='Childhood stunting exposure,  -1 sd and above',
-            cat5='unexposed',
         ),
     ),
     lead_exposure_in_blood=RiskFactor(
@@ -4122,7 +4116,6 @@ risk_factors = RiskFactors(
             cat116='Birth prevalence - [38, 40) wks, [1000, 1500) g',
             cat117='Birth prevalence - [38, 40) wks, [1500, 2000) g',
             cat123='Birth prevalence - [40, 42) wks, [1500, 2000) g',
-            cat124='unexposed',
         ),
     ),
     impaired_kidney_function=RiskFactor(
