@@ -87,7 +87,7 @@ risk_factors = RiskFactors(
             cat9='Unsafe water exposure, Piped & filtered',
             cat10='Unsafe water exposure, High quality piped & untreated',
             cat11='Unsafe water exposure, High quality piped & chlorinated',
-            cat12='unexposed',
+            cat12='Unexposed',
         ),
     ),
     unsafe_sanitation=RiskFactor(
@@ -243,8 +243,8 @@ risk_factors = RiskFactors(
                          causes.diabetes_mellitus_type_2, causes.blindness_and_vision_impairment, ),
         population_attributable_fraction_of_one_causes=(),
         categories=Categories(
-            cat1='exposed',
-            cat2='unexposed',
+            cat1='Exposed',
+            cat2='Unexposed',
         ),
     ),
     ambient_ozone_pollution=RiskFactor(
@@ -541,7 +541,7 @@ risk_factors = RiskFactors(
             cat1='Child underweight exposure, <-3 sd, interpolated annual results',
             cat2='Child underweight exposure,  -3 to -2 sd, interpolated annual results',
             cat3='Child underweight exposure,  -2 to -1 sd, interpolated annual results',
-            cat4='unexposed',
+            cat4='Unexposed',
         ),
     ),
     iron_deficiency=RiskFactor(
@@ -626,8 +626,8 @@ risk_factors = RiskFactors(
                          causes.other_infectious_diseases, ),
         population_attributable_fraction_of_one_causes=(causes.vitamin_a_deficiency, ),
         categories=Categories(
-            cat1='exposed',
-            cat2='unexposed',
+            cat1='Exposed',
+            cat2='Unexposed',
         ),
     ),
     zinc_deficiency=RiskFactor(
@@ -663,8 +663,8 @@ risk_factors = RiskFactors(
                          causes.respiratory_infections_and_tuberculosis, causes.enteric_infections, ),
         population_attributable_fraction_of_one_causes=(),
         categories=Categories(
-            cat1='exposed',
-            cat2='unexposed',
+            cat1='Exposed',
+            cat2='Unexposed',
         ),
     ),
     tobacco=RiskFactor(
@@ -841,8 +841,8 @@ risk_factors = RiskFactors(
                          causes.diabetes_and_kidney_diseases, causes.diabetes_mellitus_type_2, ),
         population_attributable_fraction_of_one_causes=(),
         categories=Categories(
-            cat1='exposed',
-            cat2='unexposed',
+            cat1='Exposed',
+            cat2='Unexposed',
         ),
     ),
     alcohol_use=RiskFactor(
@@ -2051,7 +2051,7 @@ risk_factors = RiskFactors(
         categories=Categories(
             cat1='Occupational particulate matter, gases, and fumes exposure, High',
             cat2='Occupational particulate matter, gases, and fumes exposure, Low',
-            cat3='unexposed',
+            cat3='Unexposed',
         ),
     ),
     occupational_noise=RiskFactor(
@@ -2086,7 +2086,7 @@ risk_factors = RiskFactors(
         categories=Categories(
             cat1='Occupational noise exposure, High exposure (>90dB)',
             cat2='Occupational noise exposure, Low exposure (85-90dB)',
-            cat3='unexposed',
+            cat3='Unexposed',
         ),
     ),
     occupational_injuries=RiskFactor(
@@ -2167,7 +2167,7 @@ risk_factors = RiskFactors(
             cat5='Occupational ergonomic factors exposure, Service workers',
             cat6='Occupational ergonomic factors exposure, Agriculture, animal husbandry and forestry workers, fishermen and hunters',
             cat7='Occupational ergonomic factors exposure, Production and related workers, transport equipment operators and labourers',
-            cat8='unexposed',
+            cat8='Unexposed',
         ),
     ),
     childhood_sexual_abuse=RiskFactor(
@@ -2316,8 +2316,8 @@ risk_factors = RiskFactors(
                          causes.diarrheal_diseases, causes.enteric_infections, ),
         population_attributable_fraction_of_one_causes=(),
         categories=Categories(
-            cat1='exposed',
-            cat2='unexposed',
+            cat1='Exposed',
+            cat2='Unexposed',
         ),
     ),
     drug_use_dependence_and_blood_borne_viruses=RiskFactor(
@@ -2493,8 +2493,8 @@ risk_factors = RiskFactors(
                          causes.liver_cancer_due_to_nash, ),
         population_attributable_fraction_of_one_causes=(),
         categories=Categories(
-            cat1='exposed',
-            cat2='unexposed',
+            cat1='Exposed',
+            cat2='Unexposed',
         ),
     ),
     diet_low_in_calcium=RiskFactor(
@@ -2571,8 +2571,8 @@ risk_factors = RiskFactors(
                          causes.chronic_respiratory_diseases, causes.pneumoconiosis, causes.asbestosis, ),
         population_attributable_fraction_of_one_causes=(causes.asbestosis, ),
         categories=Categories(
-            cat1='exposed',
-            cat2='unexposed',
+            cat1='Exposed',
+            cat2='Unexposed',
         ),
     ),
     occupational_exposure_to_arsenic=RiskFactor(
@@ -2609,7 +2609,7 @@ risk_factors = RiskFactors(
         categories=Categories(
             cat1='Occupational exposure to arsenic exposure, High exposure',
             cat2='Occupational exposure to arsenic exposure, Low exposure',
-            cat3='unexposed',
+            cat3='Unexposed',
         ),
     ),
     occupational_exposure_to_benzene=RiskFactor(
@@ -2647,7 +2647,7 @@ risk_factors = RiskFactors(
         categories=Categories(
             cat1='Occupational exposure to benzene exposure, High exposure',
             cat2='Occupational exposure to benzene exposure, Low exposure',
-            cat3='unexposed',
+            cat3='Unexposed',
         ),
     ),
     occupational_exposure_to_beryllium=RiskFactor(
@@ -2684,7 +2684,7 @@ risk_factors = RiskFactors(
         categories=Categories(
             cat1='Occupational exposure to beryllium exposure, High exposure',
             cat2='Occupational exposure to beryllium exposure, Low exposure',
-            cat3='unexposed',
+            cat3='Unexposed',
         ),
     ),
     occupational_exposure_to_cadmium=RiskFactor(
@@ -2721,7 +2721,7 @@ risk_factors = RiskFactors(
         categories=Categories(
             cat1='Occupational exposure to cadmium exposure, High exposure',
             cat2='Occupational exposure to cadmium exposure, Low exposure',
-            cat3='unexposed',
+            cat3='Unexposed',
         ),
     ),
     occupational_exposure_to_chromium=RiskFactor(
@@ -2758,7 +2758,7 @@ risk_factors = RiskFactors(
         categories=Categories(
             cat1='Occupational exposure to chromium exposure, High exposure',
             cat2='Occupational exposure to chromium exposure, Low exposure',
-            cat3='unexposed',
+            cat3='Unexposed',
         ),
     ),
     occupational_exposure_to_diesel_engine_exhaust=RiskFactor(
@@ -2795,7 +2795,7 @@ risk_factors = RiskFactors(
         categories=Categories(
             cat1='Occupational exposure to diesel engine exhaust exposure, High exposure',
             cat2='Occupational exposure to diesel engine exhaust exposure, Low exposure',
-            cat3='unexposed',
+            cat3='Unexposed',
         ),
     ),
     occupational_exposure_to_formaldehyde=RiskFactor(
@@ -2834,7 +2834,7 @@ risk_factors = RiskFactors(
         categories=Categories(
             cat1='Occupational exposure to formaldehyde exposure, High exposure',
             cat2='Occupational exposure to formaldehyde exposure, Low exposure',
-            cat3='unexposed',
+            cat3='Unexposed',
         ),
     ),
     occupational_exposure_to_nickel=RiskFactor(
@@ -2871,7 +2871,7 @@ risk_factors = RiskFactors(
         categories=Categories(
             cat1='Occupational exposure to nickel exposure, High exposure',
             cat2='Occupational exposure to nickel exposure, Low exposure',
-            cat3='unexposed',
+            cat3='Unexposed',
         ),
     ),
     occupational_exposure_to_polycyclic_aromatic_hydrocarbons=RiskFactor(
@@ -2908,7 +2908,7 @@ risk_factors = RiskFactors(
         categories=Categories(
             cat1='Occupational exposure to polycyclic aromatic hydrocarbons exposure, High exposure',
             cat2='Occupational exposure to polycyclic aromatic hydrocarbons exposure, Low exposure',
-            cat3='unexposed',
+            cat3='Unexposed',
         ),
     ),
     occupational_exposure_to_silica=RiskFactor(
@@ -2948,7 +2948,7 @@ risk_factors = RiskFactors(
         categories=Categories(
             cat1='Occupational exposure to silica exposure, High exposure',
             cat2='Occupational exposure to silica exposure, Low exposure',
-            cat3='unexposed',
+            cat3='Unexposed',
         ),
     ),
     occupational_exposure_to_sulfuric_acid=RiskFactor(
@@ -2984,7 +2984,7 @@ risk_factors = RiskFactors(
         categories=Categories(
             cat1='Occupational exposure to sulfuric acid exposure, High exposure',
             cat2='Occupational exposure to sulfuric acid exposure, Low exposure',
-            cat3='unexposed',
+            cat3='Unexposed',
         ),
     ),
     intimate_partner_violence_exposure_approach=RiskFactor(
@@ -3023,8 +3023,8 @@ risk_factors = RiskFactors(
                          causes.maternal_and_neonatal_disorders, causes.maternal_abortion_and_miscarriage, ),
         population_attributable_fraction_of_one_causes=(),
         categories=Categories(
-            cat1='exposed',
-            cat2='unexposed',
+            cat1='Exposed',
+            cat2='Unexposed',
         ),
     ),
     intimate_partner_violence_direct_paf_approach=RiskFactor(
@@ -3530,7 +3530,7 @@ risk_factors = RiskFactors(
         categories=Categories(
             cat1='Occupational exposure to trichloroethylene exposure, High exposure',
             cat2='Occupational exposure to trichloroethylene exposure, Low exposure',
-            cat3='unexposed',
+            cat3='Unexposed',
         ),
     ),
     no_access_to_handwashing_facility=RiskFactor(
@@ -3566,8 +3566,8 @@ risk_factors = RiskFactors(
                          causes.respiratory_infections_and_tuberculosis, causes.enteric_infections, ),
         population_attributable_fraction_of_one_causes=(),
         categories=Categories(
-            cat1='exposed',
-            cat2='unexposed',
+            cat1='Exposed',
+            cat2='Unexposed',
         ),
     ),
     child_growth_failure=RiskFactor(
@@ -3802,8 +3802,8 @@ risk_factors = RiskFactors(
                          causes.substance_use_disorders, ),
         population_attributable_fraction_of_one_causes=(),
         categories=Categories(
-            cat1='exposed',
-            cat2='unexposed',
+            cat1='Exposed',
+            cat2='Unexposed',
         ),
     ),
     childhood_sexual_abuse_against_males=RiskFactor(
@@ -3839,8 +3839,8 @@ risk_factors = RiskFactors(
                          causes.substance_use_disorders, ),
         population_attributable_fraction_of_one_causes=(),
         categories=Categories(
-            cat1='exposed',
-            cat2='unexposed',
+            cat1='Exposed',
+            cat2='Unexposed',
         ),
     ),
     chewing_tobacco=RiskFactor(
@@ -3875,8 +3875,8 @@ risk_factors = RiskFactors(
                          causes.esophageal_cancer, causes.lip_and_oral_cavity_cancer, ),
         population_attributable_fraction_of_one_causes=(),
         categories=Categories(
-            cat1='exposed',
-            cat2='unexposed',
+            cat1='Exposed',
+            cat2='Unexposed',
         ),
     ),
     diet_low_in_legumes=RiskFactor(
@@ -4166,7 +4166,7 @@ risk_factors = RiskFactors(
             cat2='Stage IV chronic kidney disease annual exposure',
             cat3='Stage III chronic kidney disease annual exposure',
             cat4='Albuminuria annual exposure',
-            cat5='unexposed',
+            cat5='Unexposed',
         ),
     ),
     bullying_victimization=RiskFactor(
@@ -4332,7 +4332,7 @@ risk_factors = RiskFactors(
         categories=Categories(
             cat1='Childhood proportion obese',
             cat2='Childhood proportion overweight not obese',
-            cat3='unexposed',
+            cat3='Unexposed',
         ),
     ),
     particulate_matter_pollution=RiskFactor(
