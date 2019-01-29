@@ -291,8 +291,8 @@ def get_risk_data():
         elif distribution == 'dichotomous':
             exposure_sd_exists = None
 
-            levels = (('cat1', 'exposed'),
-                      ('cat2', 'unexposed'))
+            levels = (('cat1', 'Exposed'),
+                      ('cat2', 'Unexposed'))
             scalar = None
             tmred = None
         elif distribution in ['ordered_polytomous', 'unordered_polytomous']:
@@ -301,7 +301,8 @@ def get_risk_data():
             levels = sorted([(cat, name) for cat, name in risk['category_map'].items()],
                             key=lambda x: int(x[0][3:]))
             max_cat = int(levels[-1][0][3:]) + 1
-            levels.append((f'cat{max_cat}', 'unexposed'))
+            if rei_id not in contain_tmrel:
+                levels.append((f'cat{max_cat}', 'Unexposed'))
             levels = tuple(levels)
             scalar = None
             tmred = None
@@ -310,9 +311,6 @@ def get_risk_data():
             if risk['category_map'] is not np.nan:  # It's some strange categorical risk.
                 levels = sorted([(cat, name) for cat, name in risk['category_map'].items()],
                                 key=lambda x: int(x[0][3:]))
-                max_cat = int(levels[-1][0][3:]) + 1
-                if rei_id not in contain_tmrel:
-                    levels.append((f'cat{max_cat}', 'unexposed'))
                 levels = tuple(levels)
             else:
                 levels = None
