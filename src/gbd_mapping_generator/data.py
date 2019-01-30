@@ -195,7 +195,7 @@ def get_cause_data():
     return cause_data
 
 
-def make_cause_restrictions(cause):
+def get_age_restriction_edge(age_restriction, end=False):
     id_map = {0.0: [2, None],
               0.01: [3, 2],
               0.10: [4, 3],
@@ -211,16 +211,24 @@ def make_cause_restrictions(cause):
               55.0: [16, 15],
               65.0: [18, 17],
               95.0: [235, 32]}
+    if not end:
+        edge = id_map[age_restriction][0]
+    else:  # end
+        _edge = id_map[age_restriction][1]
+        edge = 235 if _edge == 32 else _edge
+    return edge
 
+
+def make_cause_restrictions(cause):
     restrictions = (
         ('male_only', not cause['female']),
         ('female_only', not cause['male']),
         ('yll_only', cause['yll_only']),
         ('yld_only', cause['yld_only']),
-        ('yll_age_group_id_start', id_map[cause['yll_age_start']][0] if not cause['yld_only'] else None),
-        ('yll_age_group_id_end', id_map[cause['yll_age_end']][1] if not cause['yld_only'] else None),
-        ('yld_age_group_id_start', id_map[cause['yld_age_start']][0] if not cause['yll_only'] else None),
-        ('yld_age_group_id_end', id_map[cause['yld_age_end']][1] if not cause['yll_only'] else None),
+        ('yll_age_group_id_start', get_age_restriction_edge(cause['yll_age_start']) if not cause['yld_only'] else None),
+        ('yll_age_group_id_end', get_age_restriction_edge(cause['yll_age_end'], end=True) if not cause['yld_only'] else None),
+        ('yld_age_group_id_start', get_age_restriction_edge(cause['yld_age_start']) if not cause['yll_only'] else None),
+        ('yld_age_group_id_end', get_age_restriction_edge(cause['yld_age_end'], end=True) if not cause['yll_only'] else None),
         ('violated', tuple(cause['violated_restrictions']))
     )
     return tuple(restrictions)
