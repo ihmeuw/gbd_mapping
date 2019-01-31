@@ -169,7 +169,7 @@ def make_risks(risk_list):
     return out
 
 
-def build_mapping_template():
+def build_mapping_template(with_survey):
     out = make_module_docstring('Mapping templates for GBD risk factors.', __file__)
     out += make_import('typing', ['Tuple', 'Union']) + '\n'
     out += make_import('.id', ['reiid', 'scalar'])
@@ -183,7 +183,7 @@ def build_mapping_template():
     return out
 
 
-def build_mapping():
+def build_mapping(with_survey):
     out = make_module_docstring('Mapping of GBD risk factors.', __file__)
     out += make_import('.id', ['reiid', 'scalar'])
     out += make_import('.base_template', ['Categories', 'Tmred', 'Restrictions'])

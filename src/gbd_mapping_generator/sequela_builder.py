@@ -74,7 +74,7 @@ def make_sequelae(sequela_list):
     return out
 
 
-def build_mapping_template():
+def build_mapping_template(with_survey):
     out = make_module_docstring('Mapping templates for GBD sequelae.', __file__)
     out += make_import('typing', ['Union']) + '\n'
     out += make_import('.id', ['sid', 'meid', 'hsid'])
@@ -86,7 +86,7 @@ def build_mapping_template():
     return out
 
 
-def build_mapping():
+def build_mapping(with_survey):
     out = make_module_docstring('Mapping of GBD sequelae.', __file__)
     out += make_import('.id', ['sid', 'hsid', 'meid'])
     out += make_import('.sequela_template', ['Healthstate', 'Sequela', 'Sequelae']) + SPACING

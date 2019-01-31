@@ -48,7 +48,7 @@ def make_etiologies(etiology_list):
     return out
 
 
-def build_mapping_template():
+def build_mapping_template(with_survey):
     out = make_module_docstring('Mapping templates for GBD etiologies.', __file__)
     out += make_import('typing', ['Union']) + '\n'
     out += make_import('.id', ['reiid'])
@@ -60,7 +60,7 @@ def build_mapping_template():
     return out
 
 
-def build_mapping():
+def build_mapping(with_survey):
     out = make_module_docstring('Mapping of GBD etiologies.', __file__)
     out += make_import('.id', ['reiid'])
     out += make_import('.etiology_template', ['Etiology', 'Etiologies']) + SPACING

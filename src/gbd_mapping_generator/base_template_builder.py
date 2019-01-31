@@ -110,7 +110,7 @@ def make_gbd_record():
     return out
 
 
-def build_mapping():
+def build_mapping(_):
     templates = make_module_docstring('Template classes for GBD entities', __file__)
     templates += make_import('typing', ['Union', 'Tuple'])
     templates += make_import('.id', ['cid', 'sid', 'hsid', 'meid', 'covid', 'reiid', 'scalar', ]) + SPACING
