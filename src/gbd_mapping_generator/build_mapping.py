@@ -26,7 +26,7 @@ ROOT = Path(__file__).resolve().parent.parent.joinpath('gbd_mapping')  # type: P
 @click.command()
 @click.argument('mapping_type', default='id')
 @click.option('--pdb', 'with_debugger', is_flag=True)
-@click.option('--with-survey', is_flag=True)
+@click.option('--with_survey', is_flag=True)
 def build_mapping(mapping_type, with_debugger, with_survey):
     if mapping_type not in AUTO_MAPPINGS:
         raise ValueError(f'Unknown mapping type {mapping_type}. '
