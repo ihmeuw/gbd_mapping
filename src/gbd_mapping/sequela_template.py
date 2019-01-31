@@ -30,21 +30,13 @@ class Healthstate(ModelableEntity):
 
 class Sequela(ModelableEntity):
     """Container for sequela GBD ids and metadata."""
-    __slots__ = ('name', 'kind', 'gbd_id', 'dismod_id', 'incidence_exists', 'prevalence_exists',
-                 'birth_prevalence_exists', 'incidence_in_range', 'prevalence_in_range', 'birth_prevalence_in_range',
-                 'healthstate', )
+    __slots__ = ('name', 'kind', 'gbd_id', 'dismod_id', 'healthstate', )
 
     def __init__(self,
                  name: str,
                  kind: str,
                  gbd_id: sid,
                  dismod_id: meid,
-                 incidence_exists: bool,
-                 prevalence_exists: bool,
-                 birth_prevalence_exists: bool,
-                 incidence_in_range: Union[bool, None],
-                 prevalence_in_range: Union[bool, None],
-                 birth_prevalence_in_range: Union[bool, None],
                  healthstate: Healthstate, ):
         super().__init__(name=name,
                          kind=kind,
@@ -53,12 +45,6 @@ class Sequela(ModelableEntity):
         self.kind = kind
         self.gbd_id = gbd_id
         self.dismod_id = dismod_id
-        self.incidence_exists = incidence_exists
-        self.prevalence_exists = prevalence_exists
-        self.birth_prevalence_exists = birth_prevalence_exists
-        self.incidence_in_range = incidence_in_range
-        self.prevalence_in_range = prevalence_in_range
-        self.birth_prevalence_in_range = birth_prevalence_in_range
         self.healthstate = healthstate
 
 
@@ -195,8 +181,8 @@ class Sequelae(GbdRecord):
                  'other_maternal_disorders', 'mild_vision_impairment_due_to_retinopathy_of_prematurity',
                  'mild_motor_plus_cognitive_impairments_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma',
                  'mild_motor_impairment_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma',
-                 'severe_infection_due_to_neonatal_sepsis_and_other_neonatal_infections', 'other_neonatal_disorders',
-                 'moderate_wasting_with_edema', 'severe_wasting_without_edema', 'visible_goiter_without_symptoms',
+                 'other_neonatal_disorders', 'moderate_wasting_with_edema', 'severe_wasting_without_edema',
+                 'visible_goiter_without_symptoms',
                  'visible_goiter_with_severe_intellectual_disability_due_to_iodine_deficiency',
                  'visible_goiter_with_profound_intellectual_disability_due_to_iodine_deficiency',
                  'moderate_vision_impairment_loss_due_to_vitamin_a_deficiency',
@@ -244,26 +230,21 @@ class Sequelae(GbdRecord):
                  'controlled_phase_of_liver_cancer_due_to_other_causes',
                  'metastatic_phase_of_liver_cancer_due_to_other_causes',
                  'terminal_phase_of_liver_cancer_due_to_other_causes',
-                 'diagnosis_and_primary_therapy_phase_of_larynx_cancer', 'controlled_phase_of_larynx_cancer',
-                 'metastatic_phase_of_larynx_cancer', 'terminal_phase_of_larynx_cancer',
-                 'laryngectomy_due_to_larynx_cancer',
+                 'diagnosis_and_primary_therapy_phase_of_larynx_cancer', 'metastatic_phase_of_larynx_cancer',
+                 'terminal_phase_of_larynx_cancer',
                  'diagnosis_and_primary_therapy_phase_of_lung_bronchus_and_trachea_cancer',
                  'controlled_phase_of_lung_bronchus_and_trachea_cancer',
                  'metastatic_phase_of_lung_bronchus_and_trachea_cancer',
                  'terminal_phase_of_lung_bronchus_and_trachea_cancer',
-                 'diagnosis_and_primary_therapy_phase_of_breast_cancer', 'controlled_phase_of_breast_cancer',
-                 'metastatic_phase_of_breast_cancer', 'terminal_phase_of_breast_cancer',
-                 'mastectomy_due_to_breast_cancer', 'diagnosis_and_primary_therapy_phase_of_cervical_cancer',
+                 'diagnosis_and_primary_therapy_phase_of_breast_cancer', 'metastatic_phase_of_breast_cancer',
+                 'terminal_phase_of_breast_cancer', 'diagnosis_and_primary_therapy_phase_of_cervical_cancer',
                  'controlled_phase_of_cervical_cancer', 'metastatic_phase_of_cervical_cancer',
                  'terminal_phase_of_cervical_cancer', 'diagnosis_and_primary_therapy_phase_of_uterine_cancer',
                  'controlled_phase_of_uterine_cancer', 'metastatic_phase_of_uterine_cancer',
                  'terminal_phase_of_uterine_cancer', 'diagnosis_and_primary_therapy_phase_of_prostate_cancer',
-                 'controlled_phase_of_prostate_cancer', 'metastatic_phase_of_prostate_cancer',
-                 'terminal_phase_of_prostate_cancer', 'impotence_due_to_prostate_cancer',
-                 'incontinence_due_to_prostate_cancer',
+                 'metastatic_phase_of_prostate_cancer', 'terminal_phase_of_prostate_cancer',
                  'diagnosis_and_primary_therapy_phase_of_colon_and_rectum_cancers',
-                 'controlled_phase_of_colon_and_rectum_cancers', 'metastatic_phase_of_colon_and_rectum_cancers',
-                 'terminal_phase_of_colon_and_rectum_cancers', 'stoma_due_to_colon_and_rectum_cancer',
+                 'metastatic_phase_of_colon_and_rectum_cancers', 'terminal_phase_of_colon_and_rectum_cancers',
                  'diagnosis_and_primary_therapy_phase_of_mouth_cancer', 'controlled_phase_of_mouth_cancer',
                  'metastatic_phase_of_mouth_cancer', 'terminal_phase_of_mouth_cancer',
                  'diagnosis_and_primary_therapy_phase_of_nasopharynx_cancer',
@@ -287,9 +268,8 @@ class Sequelae(GbdRecord):
                  'metastatic_phase_of_testicular_cancer', 'terminal_phase_of_testicular_cancer',
                  'diagnosis_and_primary_therapy_phase_of_kidney_cancer', 'controlled_phase_of_kidney_cancer',
                  'metastatic_phase_of_kidney_cancer', 'terminal_phase_of_kidney_cancer',
-                 'diagnosis_and_primary_therapy_phase_of_bladder_cancer', 'controlled_phase_of_bladder_cancer',
-                 'metastatic_phase_of_bladder_cancer', 'terminal_phase_of_bladder_cancer',
-                 'urinary_incontinence_due_to_bladder_cancer',
+                 'diagnosis_and_primary_therapy_phase_of_bladder_cancer', 'metastatic_phase_of_bladder_cancer',
+                 'terminal_phase_of_bladder_cancer',
                  'diagnosis_and_primary_therapy_phase_of_brain_and_nervous_system_cancers',
                  'controlled_phase_of_brain_and_nervous_system_cancers',
                  'metastatic_phase_of_brain_and_nervous_system_cancers',
@@ -304,9 +284,7 @@ class Sequelae(GbdRecord):
                  'controlled_phase_of_non_hodgkin_lymphoma', 'metastatic_phase_of_non_hodgkin_lymphoma',
                  'terminal_phase_of_non_hodgkin_lymphoma', 'diagnosis_and_primary_therapy_phase_of_multiple_myeloma',
                  'controlled_phase_of_multiple_myeloma', 'metastatic_phase_of_multiple_myeloma',
-                 'terminal_phase_of_multiple_myeloma', 'diagnosis_and_primary_therapy_phase_of_other_neoplasms',
-                 'controlled_phase_of_other_neoplasms', 'metastatic_phase_of_other_neoplasms',
-                 'terminal_phase_of_other_neoplasms', 'acute_myocardial_infarction_first_2_days',
+                 'terminal_phase_of_multiple_myeloma', 'acute_myocardial_infarction_first_2_days',
                  'acute_myocardial_infarction_3_to_28_days', 'mild_angina_due_to_ischemic_heart_disease',
                  'moderate_angina_due_to_ischemic_heart_disease', 'severe_angina_due_to_ischemic_heart_disease',
                  'mild_heart_failure_due_to_ischemic_heart_disease',
@@ -343,9 +321,9 @@ class Sequelae(GbdRecord):
                  'moderate_interstitial_lung_disease_and_pulmonary_sarcoidosis',
                  'other_chronic_respiratory_diseases', 'appendicitis', 'paralytic_ileus_and_intestinal_obstruction',
                  'vascular_intestinal_disorders', 'other_digestive_diseases',
-                 'mild_alzheimer_disease_and_other_dementias', 'moderate_alzheimer_disease_and_other_dementias',
-                 'severe_alzheimer_disease_and_other_dementias', 'mild_parkinson_disease',
-                 'moderate_parkinson_disease', 'severe_parkinson_disease',
+                 'mild_alzheimers_disease_and_other_dementias', 'moderate_alzheimers_disease_and_other_dementias',
+                 'severe_alzheimers_disease_and_other_dementias', 'mild_parkinsons_disease',
+                 'moderate_parkinsons_disease', 'severe_parkinsons_disease',
                  'idiopathic_seizure_free_treated_epilepsy', 'idiopathic_less_severe_epilepsy',
                  'idiopathic_severe_epilepsy', 'mild_multiple_sclerosis', 'moderate_multiple_sclerosis',
                  'severe_multiple_sclerosis', 'other_neurological_disorders',
@@ -365,10 +343,12 @@ class Sequelae(GbdRecord):
                  'end_stage_renal_disease_on_dialysis_due_to_hypertension',
                  'end_stage_renal_disease_after_transplant_due_to_glomerulonephritis',
                  'end_stage_renal_disease_on_dialysis_due_to_glomerulonephritis',
-                 'end_stage_renal_disease_after_transplant_due_to_other_causes',
-                 'end_stage_renal_disease_on_dialysis_due_to_other_causes', 'mild_urinary_tract_infections',
-                 'moderate_urinary_tract_infections', 'other_urinary_diseases',
-                 'primary_infertility_due_to_polycystic_ovarian_syndrome',
+                 'end_stage_renal_disease_after_transplant_due_to_other_and_unspecified_causes',
+                 'end_stage_renal_disease_on_dialysis_due_to_other_and_unspecified_causes',
+                 'mild_urinary_tract_infections', 'moderate_urinary_tract_infections',
+                 'idiopathic_primary_male_infertility', 'idiopathic_secondary_male_infertility',
+                 'other_urinary_diseases', 'primary_infertility_due_to_polycystic_ovarian_syndrome',
+                 'idiopathic_primary_female_infertility', 'idiopathic_secondary_female_infertility',
                  'mild_abdominal_pain_due_to_endometriosis', 'moderate_abdominal_pain_due_to_endometriosis',
                  'primary_infertility_due_to_endometriosis', 'secondary_infertility_due_to_endometriosis',
                  'abdominal_pain_due_to_premenstrual_syndrome', 'mild_anemia_due_to_menstrual_disorders',
@@ -451,9 +431,8 @@ class Sequelae(GbdRecord):
                  'mild_anemia_due_to_hemoglobin_e_trait', 'moderate_anemia_due_to_hemoglobin_e_trait',
                  'severe_anemia_due_to_hemoglobin_e_trait', 'mild_anemia_due_to_sickle_cell_trait',
                  'moderate_anemia_due_to_sickle_cell_trait', 'severe_anemia_due_to_sickle_cell_trait',
-                 'mild_anemia_due_to_hemizygous_g6pd_deficiency',
-                 'moderate_anemia_due_to_hemizygous_g6pd_deficiency',
-                 'severe_anemia_due_to_hemizygous_g6pd_deficiency', 'disfigurement_due_to_basal_cell_carcinoma',
+                 'mild_anemia_due_to_hemizygous_g6pd_trait', 'moderate_anemia_due_to_hemizygous_g6pd_trait',
+                 'severe_anemia_due_to_hemizygous_g6pd_trait', 'disfigurement_due_to_basal_cell_carcinoma',
                  'severe_skin_disease_due_to_onchocerciasis', 'mild_contact_dermatitis',
                  'moderate_contact_dermatitis', 'symptomatic_seborrhoeic_dermatitis',
                  'pain_due_to_caries_of_deciduous_teeth', 'pain_due_to_caries_of_permanent_teeth',
@@ -559,7 +538,7 @@ class Sequelae(GbdRecord):
                  'severe_motor_impairment_with_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice',
                  'mild_motor_impairment_due_to_neonatal_tetanus',
                  'mild_motor_plus_cognitive_impairments_due_to_neonatal_tetanus', 'epilepsy_due_to_echinococcosis',
-                 'symptomatic_genital_herpes', 'other_hemoglobinopathies_and_hemolytic_anemias',
+                 'symptomatic_genital_herpes', 'other_hemoglobinopathies_and_hemolytic_anemias_residual',
                  'mild_behavioral_problems_due_to_encephalitis',
                  'mild_motor_impairment_due_to_long_term_due_to_encephalitis',
                  'mild_motor_plus_cognitive_impairments_due_to_encephalitis',
@@ -570,7 +549,7 @@ class Sequelae(GbdRecord):
                  'moderate_motor_plus_cognitive_impairments_due_to_encephalitis',
                  'severe_motor_plus_cognitive_impairments_due_to_encephalitis', 'epilepsy_due_to_encephalitis',
                  'severe_opioid_dependence', 'severe_cocaine_dependence', 'severe_amphetamine_dependence',
-                 'severe_cannabis_dependence', 'other_sexually_transmitted_diseases',
+                 'severe_cannabis_dependence', 'other_sexually_transmitted_diseases_residual',
                  'asymptomatic_atrial_fibrillation_and_flutter',
                  'symptomatic_attention_deficit_hyperactivity_disorder',
                  'attention_deficit_hyperactivity_disorder_currently_without_symptoms',
@@ -579,10 +558,10 @@ class Sequelae(GbdRecord):
                  'conduct_disorder_currently_without_symptoms', 'asymptomatic_cannabis_dependence',
                  'asymptomatic_opioid_dependence', 'asymptomatic_cocaine_dependence', 'symptomatic_dysthymia',
                  'dysthymia_currently_without_symptoms', 'major_depressive_disorder_currently_without_symptoms',
-                 'symptomatic_episodes_of_gout', 'asymptomatic_gout', 'symptomatic_migraine',
-                 'asymptomatic_migraine', 'symptomatic_tension_type_headache', 'asymptomatic_tension_type_headache',
-                 'severe_infectious_complications_due_to_chronic_otitis_media', 'asymptomatic_asthma',
-                 'asymptomatic_genital_herpes', 'asymptomatic_endometriosis', 'asymptomatic_amphetamine_dependence',
+                 'symptomatic_episodes_of_gout', 'asymptomatic_gout', 'symptomatic_tension_type_headache',
+                 'asymptomatic_tension_type_headache', 'severe_infectious_complications_due_to_chronic_otitis_media',
+                 'asymptomatic_asthma', 'asymptomatic_genital_herpes', 'asymptomatic_endometriosis',
+                 'asymptomatic_amphetamine_dependence',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated',
@@ -659,7 +638,8 @@ class Sequelae(GbdRecord):
                  'asymptomatic_chagas_disease', 'chronic_periodontal_diseases', 'puerperal_sepsis',
                  'other_maternal_infections',
                  'hirsutism_and_secondary_infertility_due_to_polycystic_ovarian_syndrome',
-                 'secondary_infertility_due_to_polycystic_ovarian_syndrome', 'severe_endometriosis',
+                 'secondary_infertility_due_to_polycystic_ovarian_syndrome',
+                 'severe_abdominal_pain_due_to_endometriosis',
                  'moderate_infection_due_to_initial_genital_herpes_episode',
                  'asymptomatic_caries_of_deciduous_teeth', 'asymptomatic_caries_of_permanent_teeth',
                  'asymptomatic_edentulism_and_severe_tooth_loss', 'asymptomatic_chronic_ischemic_stroke',
@@ -671,7 +651,7 @@ class Sequelae(GbdRecord):
                  'asymptomatic_ascariasis', 'asymptomatic_trichuriasis', 'asymptomatic_clonorchiasis',
                  'asymptomatic_fascioliasis', 'asymptomatic_intestinal_fluke_infection',
                  'asymptomatic_opisthorchiasis', 'asymptomatic_paragonimiasis',
-                 'asymptomatic_peripheral_vascular_disease', 'asymptomatic_benign_prostatic_hyperplasia',
+                 'asymptomatic_peripheral_arterial_disease', 'asymptomatic_benign_prostatic_hyperplasia',
                  'symptomatic_benign_prostatic_hyperplasia', 'asymptomatic_uterine_fibroids',
                  'asymptomatic_other_musculoskeletal_disorders', 'mild_cellulitis', 'severe_cellulitis',
                  'gastrointestinal_bleeding_due_to_typhoid',
@@ -706,16 +686,16 @@ class Sequelae(GbdRecord):
                  'stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_glomerulonephritis',
                  'stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_glomerulonephritis',
                  'stage_iii_chronic_kidney_disease_without_anemia_due_to_glomerulonephritis',
-                 'stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_other_causes',
-                 'stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_other_causes',
-                 'stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_other_causes',
-                 'stage_iii_chronic_kidney_disease_without_anemia_due_to_other_causes',
+                 'stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_other_and_unspecified_causes',
+                 'stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_other_and_unspecified_causes',
+                 'stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_other_and_unspecified_causes',
+                 'stage_iii_chronic_kidney_disease_without_anemia_due_to_other_and_unspecified_causes',
                  'asymptomatic_ischemic_heart_disease_following_myocardial_infarction',
-                 'symptomatic_claudication_due_to_peripheral_vascular_disease',
+                 'symptomatic_claudication_due_to_peripheral_arterial_disease',
                  'asymptomatic_seborrhoeic_dermatitis', 'asymptomatic_contact_dermatitis',
                  'mild_other_oral_disorders', 'severe_other_oral_disorders', 'asymptomatic_b_thalassemia_trait',
                  'asymptomatic_hemoglobin_e_trait', 'asymptomatic_sickle_cell_trait',
-                 'asymptomatic_hemizygous_g6pd_deficiency', 'mild_hearing_loss_due_to_chronic_otitis_media',
+                 'asymptomatic_hemizygous_g6pd_trait', 'mild_hearing_loss_due_to_chronic_otitis_media',
                  'mild_hearing_loss_with_ringing_due_to_chronic_otitis_media',
                  'asymptomatic_malaria_parasitemia_pfpr', 'mild_anemia_due_to_malaria_parasitemia_pfpr',
                  'moderate_anemia_due_to_malaria_parasitemia_pfpr', 'severe_anemia_due_to_malaria_parasitemia_pfpr',
@@ -773,7 +753,6 @@ class Sequelae(GbdRecord):
                  'mild_heart_failure_due_to_g6pd_deficiency', 'moderate_heart_failure_due_to_g6pd_deficiency',
                  'severe_heart_failure_due_to_g6pd_deficiency', 'asymptomatic_g6pd_deficiency',
                  'asymptomatic_gallbladder_and_biliary_diseases',
-                 'asymptomatic_inguinal_femoral_and_abdominal_hernia',
                  'moderate_vision_impairment_due_to_pneumococcol_meningitis',
                  'severe_vision_impairment_due_to_pneumococcol_meningitis',
                  'moderate_vision_impairment_due_to_h_influenza_type_b_meningitis',
@@ -943,8 +922,8 @@ class Sequelae(GbdRecord):
                  'autism_spectrum_disorders_with_moderate_intellectual_disability',
                  'autism_spectrum_disorders_with_severe_intellectual_disability',
                  'autism_spectrum_disorders_with_profound_intellectual_disability',
-                 'asymptomatic_acute_sense_organ_diseases', 'mild_acute_sense_organ_diseases',
-                 'moderate_acute_sense_organ_diseases', 'asymptomatic_chronic_other_sense_organ_diseases',
+                 'asymptomatic_acute_other_sense_organ_diseases', 'mild_acute_other_sense_organ_diseases',
+                 'moderate_acute_other_sense_organ_diseases', 'asymptomatic_chronic_other_sense_organ_diseases',
                  'mild_chronic_other_sense_organ_diseases', 'moderate_chronic_other_sense_organ_diseases',
                  'mild_paragonimiasis_due_to_food_borne_trematodiases',
                  'moderate_paragonimiasis_due_to_food_borne_trematodiases',
@@ -961,10 +940,10 @@ class Sequelae(GbdRecord):
                  'stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_glomerulonephritis',
                  'stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_glomerulonephritis',
                  'stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_glomerulonephritis',
-                 'stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_other_causes',
-                 'stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_causes',
-                 'stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_causes',
-                 'stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_causes',
+                 'stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_other_and_unspecified_causes',
+                 'stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_and_unspecified_causes',
+                 'stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_and_unspecified_causes',
+                 'stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_and_unspecified_causes',
                  'stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_hypertension',
                  'stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_hypertension',
                  'stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_hypertension',
@@ -973,15 +952,14 @@ class Sequelae(GbdRecord):
                  'stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_glomerulonephritis',
                  'stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_glomerulonephritis',
                  'stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_glomerulonephritis',
-                 'stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_other_causes',
-                 'stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_causes',
-                 'stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_causes',
-                 'stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_causes',
+                 'stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_other_and_unspecified_causes',
+                 'stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_and_unspecified_causes',
+                 'stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_and_unspecified_causes',
+                 'stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_and_unspecified_causes',
                  'skin_disfigurement_due_to_trypanosoma_brucei_gambiense',
                  'sleeping_sickness_due_to_trypanosoma_brucei_gambiense',
                  'sleeping_sickness_due_to_trypanosoma_brucei_rhodesiense',
-                 'skin_disfigurement_due_to_trypanosoma_brucei_rhodesiense',
-                 'moderate_pain_due_to_guinea_worm_emergence', 'metastatic_phase_of_other_leukemia',
+                 'skin_disfigurement_due_to_trypanosoma_brucei_rhodesiense', 'metastatic_phase_of_other_leukemia',
                  'diagnosis_and_primary_therapy_phase_of_other_leukemia', 'terminal_phase_of_other_leukemia',
                  'controlled_phase_of_other_leukemia', 'drug_susceptible_tuberculosis',
                  'multidrug_resistant_tuberculosis_without_extensive_drug_resistance',
@@ -1132,7 +1110,7 @@ class Sequelae(GbdRecord):
                  'severe_motor_impairment_and_profound_intellectual_disability_due_to_spina_bifida',
                  'mild_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida',
                  'moderate_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida',
-                 'profound_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida',
+                 'severe_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida',
                  'mild_motor_impairment_due_to_encephalocele', 'moderate_motor_impairment_due_to_encephalocele',
                  'severe_motor_impairment_due_to_encephalocele',
                  'mild_motor_impairment_and_incontinence_due_to_encephalocele',
@@ -1169,7 +1147,7 @@ class Sequelae(GbdRecord):
                  'moderate_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele',
                  'severe_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele',
                  'asymptomatic_vitamin_a_deficiency', 'latent_tuberculosis_infection',
-                 'mild_pain_due_to_guinea_worm_emergence', 'moderate_reduced_mobility_due_to_guinea_worm_emergence',
+                 'mild_pain_due_to_guinea_worm_emergence',
                  'mild_symptomatic_episodes_gallbladder_and_biliary_diseases',
                  'moderate_symptomatic_episodes_gallbladder_and_biliary_diseases',
                  'severe_symptomatic_episodes_gallbladder_and_biliary_diseases',
@@ -1283,11 +1261,34 @@ class Sequelae(GbdRecord):
                  'congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
                  'congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
                  'acute_adenolymphangitis_due_to_lymphatic_filariasis', 'asymptomatic_multiple_sclerosis',
-                 'severe_malaria_with_mild_anemia', 'severe_malaria_with_moderate_anemia',
-                 'severe_malaria_with_severe_anemia', 'mild_malaria_with_mild_anemia',
-                 'mild_malaria_with_moderate_anemia', 'mild_malaria_with_severe_anemia',
-                 'moderate_malaria_with_mild_anemia', 'moderate_malaria_with_moderate_anemia',
-                 'moderate_malaria_with_severe_anemia', 'early_hiv_with_mild_anemia',
+                 'mild_symptomatic_peptic_ulcer_disease_with_mild_anemia',
+                 'moderate_symptomatic_peptic_ulcer_disease_with_mild_anemia',
+                 'mild_symptomatic_peptic_ulcer_disease_with_moderate_anemia',
+                 'moderate_symptomatic_peptic_ulcer_disease_with_moderate_anemia',
+                 'mild_symptomatic_peptic_ulcer_disease_with_severe_anemia',
+                 'moderate_symptomatic_peptic_ulcer_disease_with_severe_anemia',
+                 'mild_symptomatic_peptic_ulcer_disease_without_anemia',
+                 'moderate_symptomatic_peptic_ulcer_disease_without_anemia',
+                 'asymptomatic_peptic_ulcer_disease_with_mild_anemia',
+                 'asymptomatic_peptic_ulcer_disease_with_moderate_anemia',
+                 'asymptomatic_peptic_ulcer_disease_with_severe_anemia',
+                 'mild_symptomatic_gastritis_and_duodenitis_with_mild_anemia',
+                 'moderate_symptomatic_gastritis_and_duodenitis_with_mild_anemia',
+                 'mild_symptomatic_gastritis_and_duodenitis_with_moderate_anemia',
+                 'moderate_symptomatic_gastritis_and_duodenitis_with_moderate_anemia',
+                 'mild_symptomatic_gastritis_and_duodenitis_with_severe_anemia',
+                 'moderate_symptomatic_gastritis_and_duodenitis_with_severe_anemia',
+                 'mild_symptomatic_gastritis_and_duodenitis_without_anemia',
+                 'moderate_symptomatic_gastritis_and_duodenitis_without_anemia',
+                 'asymptomatic_gastritis_and_duodenitis_with_mild_anemia',
+                 'asymptomatic_gastritis_and_duodenitis_with_moderate_anemia',
+                 'asymptomatic_gastritis_and_duodenitis_with_severe_anemia', 'severe_malaria_with_mild_anemia',
+                 'severe_malaria_with_moderate_anemia', 'severe_malaria_with_severe_anemia',
+                 'mild_malaria_with_mild_anemia', 'mild_malaria_with_moderate_anemia',
+                 'mild_malaria_with_severe_anemia', 'moderate_malaria_with_mild_anemia',
+                 'moderate_malaria_with_moderate_anemia', 'moderate_malaria_with_severe_anemia',
+                 'asymptomatic_peptic_ulcer_disease_without_anemia',
+                 'asymptomatic_gastritis_and_duodenitis_without_anemia', 'early_hiv_with_mild_anemia',
                  'early_hiv_with_moderate_anemia', 'early_hiv_with_severe_anemia', 'early_hiv_without_anemia',
                  'symptomatic_hiv_with_mild_anemia', 'symptomatic_hiv_with_moderate_anemia',
                  'symptomatic_hiv_with_severe_anemia', 'symptomatic_hiv_without_anemia',
@@ -1296,18 +1297,18 @@ class Sequelae(GbdRecord):
                  'hiv_aids_with_antiretroviral_treatment_with_severe_anemia',
                  'hiv_aids_with_antiretroviral_treatment_without_anemia', 'aids_with_mild_anemia',
                  'aids_with_moderate_anemia', 'aids_with_severe_anemia', 'aids_without_anemia',
-                 'drug_susceptible_hiv_aids_tuberculosis_with_mild_anemia',
-                 'drug_susceptible_hiv_aids_tuberculosis_with_moderate_anemia',
-                 'drug_susceptible_hiv_aids_tuberculosis_with_severe_anemia',
-                 'drug_susceptible_hiv_aids_tuberculosis_without_anemia',
-                 'multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_mild_anemia',
-                 'multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_moderate_anemia',
-                 'multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_severe_anemia',
-                 'multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_without_anemia',
-                 'extensively_drug_resistant_hiv_aids_tuberculosis_with_mild_anemia',
-                 'extensively_drug_resistant_hiv_aids_tuberculosis_with_moderate_anemia',
-                 'extensively_drug_resistant_hiv_aids_tuberculosis_with_severe_anemia',
-                 'extensively_drug_resistant_hiv_aids_tuberculosis_without_anemia',
+                 'hiv_aids_drug_susceptible_tuberculosis_with_mild_anemia',
+                 'hiv_aids_drug_susceptible_tuberculosis_with_moderate_anemia',
+                 'hiv_aids_drug_susceptible_tuberculosis_with_severe_anemia',
+                 'hiv_aids_drug_susceptible_tuberculosis_without_anemia',
+                 'hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance_with_mild_anemia',
+                 'hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance_with_moderate_anemia',
+                 'hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance_with_severe_anemia',
+                 'hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance_without_anemia',
+                 'hiv_aids_extensively_drug_resistant_tuberculosis_with_mild_anemia',
+                 'hiv_aids_extensively_drug_resistant_tuberculosis_with_moderate_anemia',
+                 'hiv_aids_extensively_drug_resistant_tuberculosis_with_severe_anemia',
+                 'hiv_aids_extensively_drug_resistant_tuberculosis_without_anemia',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_compensated',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_compensated',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_compensated',
@@ -1353,11 +1354,12 @@ class Sequelae(GbdRecord):
                  'stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_2_diabetes_mellitus',
                  'stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_type_1_diabetes_mellitus',
                  'stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_type_2_diabetes_mellitus',
-                 'calcific_aortic_valve_disease_after_treatment', 'asymptomatic_calcific_aortic_valve_disease',
+                 'calcific_aortic_valve_disease_after_valve_intervention',
+                 'asymptomatic_calcific_aortic_valve_disease',
                  'mild_heart_failure_due_to_calcific_aortic_valve_disease',
                  'moderate_heart_failure_due_to_calcific_aortic_valve_disease',
                  'severe_heart_failure_due_to_calcific_aortic_valve_disease',
-                 'degenerative_mitral_valve_disease_after_treatment',
+                 'degenerative_mitral_valve_disease_after_valve_intervention',
                  'asymptomatic_degenerative_mitral_valve_disease',
                  'mild_heart_failure_due_to_degenerative_mitral_valve_disease',
                  'moderate_heart_failure_due_to_degenerative_mitral_valve_disease',
@@ -1365,11 +1367,10 @@ class Sequelae(GbdRecord):
                  'mild_heart_failure_due_to_other_non_rheumatic_valve_disease',
                  'moderate_heart_failure_due_to_other_non_rheumatic_valve_disease',
                  'severe_heart_failure_due_to_other_non_rheumatic_valve_disease',
-                 'symptomatic_gastroesophageal_reflux_disease',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_nash_compensated',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated',
                  'vitamin_a_deficiency_with_mild_anemia', 'vitamin_a_deficiency_with_moderate_anemia',
-                 'vitamin_a_deficiency_with_severe_anemia', 'paralytic_polio',
+                 'vitamin_a_deficiency_with_severe_anemia',
                  'myelodysplastic_myeloproliferative_and_other_hematopoietic_neoplasms',
                  'benign_and_in_situ_intestinal_neoplasms', 'benign_and_in_situ_cervical_and_uterine_neoplasms',
                  'other_benign_and_in_situ_neoplasms',
@@ -1377,22 +1378,22 @@ class Sequelae(GbdRecord):
                  'controlled_phase_of_liver_cancer_due_to_nash', 'metastatic_phase_of_liver_cancer_due_to_nash',
                  'terminal_phase_of_liver_cancer_due_to_nash',
                  'diabetic_foot_due_to_neuropathy_due_to_diabetes_mellitus_type_1',
-                 'diabetic_neuropathy_due_to_diabetes_mellitus_type_1',
+                 'diabetic_neuropathy_due_to_diabetes_mellitus_type_1_without_diabetic_foot_or_amputation',
                  'diabetic_neuropathy_and_amputation_with_treatment_due_to_diabetes_mellitus_type_1',
                  'diabetic_neuropathy_and_amputation_without_treatment_due_to_diabetes_mellitus_type_1',
                  'uncomplicated_diabetes_mellitus_type_1',
-                 'moderate_vision_impairment_due_to_diabetes_mellitus_type_1',
-                 'severe_vision_impairment_due_to_diabetes_mellitus_type_1',
-                 'blindness_due_to_diabetes_mellitus_type_1',
+                 'moderate_vision_impairment_due_to_diabetes_mellitus_type_1_retinopathy',
+                 'severe_vision_impairment_due_to_diabetes_mellitus_type_1_retinopathy',
+                 'blindness_due_to_diabetes_mellitus_type_1_retinopathy',
                  'diabetic_foot_due_to_neuropathy_due_to_diabetes_mellitus_type_2',
-                 'diabetic_neuropathy_due_to_diabetes_mellitus_type_2',
+                 'diabetic_neuropathy_due_to_diabetes_mellitus_type_2_without_diabetic_foot_or_amputation',
                  'diabetic_neuropathy_and_amputation_with_treatment_due_to_diabetes_mellitus_type_2',
                  'diabetic_neuropathy_and_amputation_without_treatment_due_to_diabetes_mellitus_type_2',
                  'uncomplicated_diabetes_mellitus_type_2',
-                 'moderate_vision_impairment_due_to_diabetes_mellitus_type_2',
-                 'severe_vision_impairment_due_to_diabetes_mellitus_type_2',
-                 'blindness_due_to_diabetes_mellitus_type_2',
-                 'non_alcoholic_fatty_liver_disease_nafld_non_alcoholic_steatohepatitis_nash', 'presbyopia',
+                 'moderate_vision_impairment_due_to_diabetes_mellitus_type_2_retinopathy',
+                 'severe_vision_impairment_due_to_diabetes_mellitus_type_2_retinopathy',
+                 'blindness_due_to_diabetes_mellitus_type_2_retinopathy',
+                 'non_alcoholic_fatty_liver_disease_nafld_non_alcoholic_steatohepatitis_nash', 'near_vision_loss',
                  'controlled_phase_of_breast_cancer_with_mastectomy',
                  'controlled_phase_of_breast_cancer_without_mastectomy',
                  'mastectomy_from_breast_cancer_beyond_ten_years',
@@ -1415,96 +1416,84 @@ class Sequelae(GbdRecord):
                  'albuminuria_with_preserved_gfr_due_to_type_2_diabetes_mellitus',
                  'albuminuria_with_preserved_gfr_due_to_hypertension',
                  'albuminuria_with_preserved_gfr_due_to_glomerulonephritis',
-                 'albuminuria_with_preserved_gfr_due_to_other_causes', 'severe_acute_ints',
-                 'menstrual_disorders_without_anemia',
-                 'mild_to_moderate_gastroesophageal_reflux_disease_symptoms_typical',
-                 'severe_or_very_severe_gastroesophageal_reflux_disease_symptoms_typical',
-                 'ulcerative_colitis_with_mild_anemia', 'ulcerative_colitis_with_moderate_anemia',
-                 'ulcerative_colitis_with_severe_anemia', 'ulcerative_colitis_without_anemia',
-                 'crohns_disease_with_mild_anemia', 'crohns_disease_with_moderate_anemia',
-                 'crohns_disease_with_severe_anemia', 'crohns_disease_without_anemia',
-                 'moderate_permanent_paralytic_poliomyelitis', 'severe_permanent_paralytic_poliomyelitis',
-                 'moderate_acute_poliomyelitis', 'severe_acute_poliomyelitis', 'post_polio_syndrome',
-                 'mild_anemia_due_to_malaria_vivax_pvpr', 'moderate_anemia_due_to_malaria_vivax_pvpr',
-                 'severe_anemia_due_to_malaria_vivax_pvpr', 'asymptomatic_malaria_vivax_pvpr',
-                 'non_disabling_symptomatic_acne', 'acute_pancreatitis',
+                 'albuminuria_with_preserved_gfr_due_to_other_and_unspecified_causes', 'severe_acute_ints',
+                 'menstrual_disorders_without_anemia', 'ulcerative_colitis_with_mild_anemia',
+                 'ulcerative_colitis_with_moderate_anemia', 'ulcerative_colitis_with_severe_anemia',
+                 'ulcerative_colitis_without_anemia', 'crohns_disease_with_mild_anemia',
+                 'crohns_disease_with_moderate_anemia', 'crohns_disease_with_severe_anemia',
+                 'crohns_disease_without_anemia', 'mild_anemia_due_to_malaria_vivax_pvpr',
+                 'moderate_anemia_due_to_malaria_vivax_pvpr', 'severe_anemia_due_to_malaria_vivax_pvpr',
+                 'asymptomatic_malaria_vivax_pvpr', 'non_disabling_symptomatic_acne', 'acute_pancreatitis',
                  'complicated_peptic_ulcer_disease_with_no_anemia',
                  'complicated_peptic_ulcer_disease_with_mild_anemia',
                  'complicated_peptic_ulcer_disease_with_moderate_anemia',
-                 'complicated_peptic_ulcer_disease_with_severe_anemia', 'acute_uncomplicated_peptic_ulcer_disease',
-                 'chronic_peptic_ulcer_disease_asymptomatic_with_no_anemia',
-                 'chronic_peptic_ulcer_disease_mild_with_no_anemia',
-                 'chronic_peptic_ulcer_disease_moderate_with_no_anemia',
-                 'chronic_peptic_ulcer_disease_asymptomatic_with_mild_anemia',
-                 'chronic_peptic_ulcer_disease_mild_with_mild_anemia',
-                 'chronic_peptic_ulcer_disease_moderate_with_mild_anemia',
-                 'chronic_peptic_ulcer_disease_asymptomatic_with_moderate_anemia',
-                 'chronic_peptic_ulcer_disease_mild_with_moderate_anemia',
-                 'chronic_peptic_ulcer_disease_moderate_with_moderate_anemia',
-                 'chronic_peptic_ulcer_disease_asymptomatic_with_severe_anemia',
-                 'chronic_peptic_ulcer_disease_mild_with_severe_anemia',
-                 'chronic_peptic_ulcer_disease_moderate_with_severe_anemia',
+                 'complicated_peptic_ulcer_disease_with_severe_anemia',
                  'complicated_gastritis_and_duodenitis_with_no_anemia',
                  'complicated_gastritis_and_duodenitis_with_mild_anemia',
                  'complicated_gastritis_and_duodenitis_with_moderate_anemia',
                  'complicated_gastritis_and_duodenitis_with_severe_anemia',
-                 'gastritis_and_duodenitis_uncomplicated_acute',
-                 'chronic_asymptomatic_gastritis_and_duodenitis_with_no_anemia',
-                 'chronic_mild_gastritis_and_duodenitis_with_no_anemia',
-                 'chronic_moderate_gastritis_and_duodenitis_with_no_anemia',
-                 'chronic_asymptomatic_gastritis_and_duodenitis_with_mild_anemia',
-                 'chronic_mild_gastritis_and_duodenitis_with_mild_anemia',
-                 'chronic_moderate_gastritis_and_duodenitis_with_mild_anemia',
-                 'chronic_asymptomatic_gastritis_and_duodenitis_with_moderate_anemia',
-                 'chronic_mild_gastritis_and_duodenitis_with_moderate_anemia',
-                 'chronic_moderate_gastritis_and_duodenitis_with_moderate_anemia',
-                 'chronic_asymptomatic_gastritis_and_duodenitis_with_severe_anemia',
-                 'chronic_mild_gastritis_and_duodenitis_with_severe_anemia',
-                 'chronic_moderate_gastritis_and_duodenitis_with_severe_anemia',
-                 'treated_heart_failure_due_ischemic_heart_disease',
-                 'treated_heart_failure_due_to_alcoholic_cardiomyopathy',
-                 'treated_heart_failure_due_to_calcific_aortic_valve_disease',
-                 'treated_heart_failure_due_to_chagas_disease',
-                 'treated_heart_failure_due_to_degenerative_mitral_valve_disease',
-                 'treated_heart_failure_due_to_endocarditis',
-                 'treated_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders',
-                 'treated_heart_failure_due_to_g6pd_deficiency',
-                 'treated_heart_failure_due_to_hypertensive_heart_disease',
-                 'treated_heart_failure_due_to_myocarditis', 'treated_heart_failure_due_to_other_cardiomyopathy',
-                 'treated_heart_failure_due_to_other_cardiovascular_disease',
-                 'treated_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias',
-                 'treated_heart_failure_due_to_other_non_rheumatic_valve_disease',
-                 'treated_heart_failure_due_to_rheumatic_heart_disease',
-                 'treated_heart_failure_due_to_severe_asbestosis',
-                 'treated_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease',
-                 'treated_heart_failure_due_to_severe_coal_workers_pneumoconiosis',
-                 'treated_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis',
-                 'treated_heart_failure_due_to_severe_other_pneumoconiosis',
-                 'treated_heart_failure_due_to_severe_silicosis', 'treated_heart_failure_due_to_thalassemias',
-                 'congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
-                 'congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
-                 'congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
-                 'congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect',
-                 'congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
-                 'congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
-                 'congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
-                 'congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
-                 'congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
-                 'congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
-                 'congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
-                 'congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
-                 'congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
-                 'congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
-                 'congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
-                 'congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
-                 'congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
-                 'congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
-                 'congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
-                 'congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
-                 'congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
-                 'congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
-                 'congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
-                 'congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect', )
+                 'controlled_medically_managed_heart_failure_due_ischemic_heart_disease',
+                 'controlled_medically_managed_heart_failure_due_to_alcoholic_cardiomyopathy',
+                 'controlled_medically_managed_heart_failure_due_to_calcific_aortic_valve_disease',
+                 'controlled_medically_managed_heart_failure_due_to_chagas_disease',
+                 'controlled_medically_managed_heart_failure_due_to_degenerative_mitral_valve_disease',
+                 'controlled_medically_managed_heart_failure_due_to_endocarditis',
+                 'controlled_medically_managed_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders',
+                 'controlled_medically_managed_heart_failure_due_to_g6pd_deficiency',
+                 'controlled_medically_managed_heart_failure_due_to_hypertensive_heart_disease',
+                 'controlled_medically_managed_heart_failure_due_to_myocarditis',
+                 'controlled_medically_managed_heart_failure_due_to_other_cardiomyopathy',
+                 'controlled_medically_managed_heart_failure_due_to_other_cardiovascular_disease',
+                 'controlled_medically_managed_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias',
+                 'controlled_medically_managed_heart_failure_due_to_other_non_rheumatic_valve_disease',
+                 'controlled_medically_managed_heart_failure_due_to_rheumatic_heart_disease',
+                 'controlled_medically_managed_heart_failure_due_to_severe_asbestosis',
+                 'controlled_medically_managed_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease',
+                 'controlled_medically_managed_heart_failure_due_to_severe_coal_workers_pneumoconiosis',
+                 'controlled_medically_managed_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis',
+                 'controlled_medically_managed_heart_failure_due_to_severe_other_pneumoconiosis',
+                 'controlled_medically_managed_heart_failure_due_to_severe_silicosis',
+                 'controlled_medically_managed_heart_failure_due_to_thalassemias',
+                 'congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+                 'congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+                 'congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+                 'congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+                 'congenital_heart_disease_boderline_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+                 'congenital_heart_disease_boderline_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+                 'congenital_heart_disease_boderline_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+                 'congenital_heart_disease_boderline_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+                 'congenital_heart_disease_mild_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+                 'congenital_heart_disease_mild_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+                 'congenital_heart_disease_mild_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+                 'congenital_heart_disease_mild_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+                 'congenital_heart_disease_moderate_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+                 'congenital_heart_disease_moderate_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+                 'congenital_heart_disease_moderate_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+                 'congenital_heart_disease_moderate_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+                 'congenital_heart_disease_profound_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+                 'congenital_heart_disease_profound_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+                 'congenital_heart_disease_profound_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+                 'congenital_heart_disease_profound_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+                 'congenital_heart_disease_severe_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
+                 'congenital_heart_disease_severe_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
+                 'congenital_heart_disease_severe_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
+                 'congenital_heart_disease_severe_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect',
+                 'diagnosis_and_primary_therapy_phase_of_other_malignant_neoplasms',
+                 'controlled_phase_of_other_malignant_neoplasms', 'metastatic_phase_of_other_malignant_neoplasms',
+                 'terminal_phase_of_other_malignant_neoplasms', 'asymptomatic_rheumatoid_arthritis',
+                 'symptomatic_probable_migraine', 'asymptomatic_probable_migraine', 'symptomatic_definite_migraine',
+                 'asymptomatic_definite_migraine', 'asymptomatic_osteoarthritis_of_the_knee',
+                 'asymptomatic_osteoarthritis_of_the_hip', 'mild_to_moderate_gerd_symptomatic_days',
+                 'mild_to_moderate_gerd_asymptomatic_days', 'severe_gerd_symptomatic_days',
+                 'severe_gerd_asymptomatic_days', 'asymptomatic_chronic_pancreatitis',
+                 'acute_peptic_ulcer_disease_with_no_anemia', 'acute_peptic_ulcer_disease_with_mild_anemia',
+                 'acute_peptic_ulcer_disease_with_moderate_anemia', 'acute_peptic_ulcer_disease_with_severe_anemia',
+                 'acute_gastritis_and_duodenitis_with_no_anemia', 'acute_gastritis_and_duodenitis_with_mild_anemia',
+                 'acute_gastritis_and_duodenitis_with_moderate_anemia',
+                 'acute_gastritis_and_duodenitis_with_severe_anemia',
+                 'extreme_hyperbilirubinemia_due_to_hemolytic_disease_and_other_neonatal_jaundice_without_kernicterus',
+                 'basal_cell_carcinoma_without_disfigurement',
+                 'mild_motor_impairment_and_moderate_respiratory_problems_due_to_motor_neuron_disease', )
 
     def __init__(self, **kwargs):
         super().__init__()
@@ -1695,7 +1684,6 @@ class Sequelae(GbdRecord):
         self.mild_vision_impairment_due_to_retinopathy_of_prematurity = kwargs.get('mild_vision_impairment_due_to_retinopathy_of_prematurity')
         self.mild_motor_plus_cognitive_impairments_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma = kwargs.get('mild_motor_plus_cognitive_impairments_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma')
         self.mild_motor_impairment_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma = kwargs.get('mild_motor_impairment_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma')
-        self.severe_infection_due_to_neonatal_sepsis_and_other_neonatal_infections = kwargs.get('severe_infection_due_to_neonatal_sepsis_and_other_neonatal_infections')
         self.other_neonatal_disorders = kwargs.get('other_neonatal_disorders')
         self.moderate_wasting_with_edema = kwargs.get('moderate_wasting_with_edema')
         self.severe_wasting_without_edema = kwargs.get('severe_wasting_without_edema')
@@ -1762,19 +1750,15 @@ class Sequelae(GbdRecord):
         self.metastatic_phase_of_liver_cancer_due_to_other_causes = kwargs.get('metastatic_phase_of_liver_cancer_due_to_other_causes')
         self.terminal_phase_of_liver_cancer_due_to_other_causes = kwargs.get('terminal_phase_of_liver_cancer_due_to_other_causes')
         self.diagnosis_and_primary_therapy_phase_of_larynx_cancer = kwargs.get('diagnosis_and_primary_therapy_phase_of_larynx_cancer')
-        self.controlled_phase_of_larynx_cancer = kwargs.get('controlled_phase_of_larynx_cancer')
         self.metastatic_phase_of_larynx_cancer = kwargs.get('metastatic_phase_of_larynx_cancer')
         self.terminal_phase_of_larynx_cancer = kwargs.get('terminal_phase_of_larynx_cancer')
-        self.laryngectomy_due_to_larynx_cancer = kwargs.get('laryngectomy_due_to_larynx_cancer')
         self.diagnosis_and_primary_therapy_phase_of_lung_bronchus_and_trachea_cancer = kwargs.get('diagnosis_and_primary_therapy_phase_of_lung_bronchus_and_trachea_cancer')
         self.controlled_phase_of_lung_bronchus_and_trachea_cancer = kwargs.get('controlled_phase_of_lung_bronchus_and_trachea_cancer')
         self.metastatic_phase_of_lung_bronchus_and_trachea_cancer = kwargs.get('metastatic_phase_of_lung_bronchus_and_trachea_cancer')
         self.terminal_phase_of_lung_bronchus_and_trachea_cancer = kwargs.get('terminal_phase_of_lung_bronchus_and_trachea_cancer')
         self.diagnosis_and_primary_therapy_phase_of_breast_cancer = kwargs.get('diagnosis_and_primary_therapy_phase_of_breast_cancer')
-        self.controlled_phase_of_breast_cancer = kwargs.get('controlled_phase_of_breast_cancer')
         self.metastatic_phase_of_breast_cancer = kwargs.get('metastatic_phase_of_breast_cancer')
         self.terminal_phase_of_breast_cancer = kwargs.get('terminal_phase_of_breast_cancer')
-        self.mastectomy_due_to_breast_cancer = kwargs.get('mastectomy_due_to_breast_cancer')
         self.diagnosis_and_primary_therapy_phase_of_cervical_cancer = kwargs.get('diagnosis_and_primary_therapy_phase_of_cervical_cancer')
         self.controlled_phase_of_cervical_cancer = kwargs.get('controlled_phase_of_cervical_cancer')
         self.metastatic_phase_of_cervical_cancer = kwargs.get('metastatic_phase_of_cervical_cancer')
@@ -1784,16 +1768,11 @@ class Sequelae(GbdRecord):
         self.metastatic_phase_of_uterine_cancer = kwargs.get('metastatic_phase_of_uterine_cancer')
         self.terminal_phase_of_uterine_cancer = kwargs.get('terminal_phase_of_uterine_cancer')
         self.diagnosis_and_primary_therapy_phase_of_prostate_cancer = kwargs.get('diagnosis_and_primary_therapy_phase_of_prostate_cancer')
-        self.controlled_phase_of_prostate_cancer = kwargs.get('controlled_phase_of_prostate_cancer')
         self.metastatic_phase_of_prostate_cancer = kwargs.get('metastatic_phase_of_prostate_cancer')
         self.terminal_phase_of_prostate_cancer = kwargs.get('terminal_phase_of_prostate_cancer')
-        self.impotence_due_to_prostate_cancer = kwargs.get('impotence_due_to_prostate_cancer')
-        self.incontinence_due_to_prostate_cancer = kwargs.get('incontinence_due_to_prostate_cancer')
         self.diagnosis_and_primary_therapy_phase_of_colon_and_rectum_cancers = kwargs.get('diagnosis_and_primary_therapy_phase_of_colon_and_rectum_cancers')
-        self.controlled_phase_of_colon_and_rectum_cancers = kwargs.get('controlled_phase_of_colon_and_rectum_cancers')
         self.metastatic_phase_of_colon_and_rectum_cancers = kwargs.get('metastatic_phase_of_colon_and_rectum_cancers')
         self.terminal_phase_of_colon_and_rectum_cancers = kwargs.get('terminal_phase_of_colon_and_rectum_cancers')
-        self.stoma_due_to_colon_and_rectum_cancer = kwargs.get('stoma_due_to_colon_and_rectum_cancer')
         self.diagnosis_and_primary_therapy_phase_of_mouth_cancer = kwargs.get('diagnosis_and_primary_therapy_phase_of_mouth_cancer')
         self.controlled_phase_of_mouth_cancer = kwargs.get('controlled_phase_of_mouth_cancer')
         self.metastatic_phase_of_mouth_cancer = kwargs.get('metastatic_phase_of_mouth_cancer')
@@ -1831,10 +1810,8 @@ class Sequelae(GbdRecord):
         self.metastatic_phase_of_kidney_cancer = kwargs.get('metastatic_phase_of_kidney_cancer')
         self.terminal_phase_of_kidney_cancer = kwargs.get('terminal_phase_of_kidney_cancer')
         self.diagnosis_and_primary_therapy_phase_of_bladder_cancer = kwargs.get('diagnosis_and_primary_therapy_phase_of_bladder_cancer')
-        self.controlled_phase_of_bladder_cancer = kwargs.get('controlled_phase_of_bladder_cancer')
         self.metastatic_phase_of_bladder_cancer = kwargs.get('metastatic_phase_of_bladder_cancer')
         self.terminal_phase_of_bladder_cancer = kwargs.get('terminal_phase_of_bladder_cancer')
-        self.urinary_incontinence_due_to_bladder_cancer = kwargs.get('urinary_incontinence_due_to_bladder_cancer')
         self.diagnosis_and_primary_therapy_phase_of_brain_and_nervous_system_cancers = kwargs.get('diagnosis_and_primary_therapy_phase_of_brain_and_nervous_system_cancers')
         self.controlled_phase_of_brain_and_nervous_system_cancers = kwargs.get('controlled_phase_of_brain_and_nervous_system_cancers')
         self.metastatic_phase_of_brain_and_nervous_system_cancers = kwargs.get('metastatic_phase_of_brain_and_nervous_system_cancers')
@@ -1859,10 +1836,6 @@ class Sequelae(GbdRecord):
         self.controlled_phase_of_multiple_myeloma = kwargs.get('controlled_phase_of_multiple_myeloma')
         self.metastatic_phase_of_multiple_myeloma = kwargs.get('metastatic_phase_of_multiple_myeloma')
         self.terminal_phase_of_multiple_myeloma = kwargs.get('terminal_phase_of_multiple_myeloma')
-        self.diagnosis_and_primary_therapy_phase_of_other_neoplasms = kwargs.get('diagnosis_and_primary_therapy_phase_of_other_neoplasms')
-        self.controlled_phase_of_other_neoplasms = kwargs.get('controlled_phase_of_other_neoplasms')
-        self.metastatic_phase_of_other_neoplasms = kwargs.get('metastatic_phase_of_other_neoplasms')
-        self.terminal_phase_of_other_neoplasms = kwargs.get('terminal_phase_of_other_neoplasms')
         self.acute_myocardial_infarction_first_2_days = kwargs.get('acute_myocardial_infarction_first_2_days')
         self.acute_myocardial_infarction_3_to_28_days = kwargs.get('acute_myocardial_infarction_3_to_28_days')
         self.mild_angina_due_to_ischemic_heart_disease = kwargs.get('mild_angina_due_to_ischemic_heart_disease')
@@ -1923,12 +1896,12 @@ class Sequelae(GbdRecord):
         self.paralytic_ileus_and_intestinal_obstruction = kwargs.get('paralytic_ileus_and_intestinal_obstruction')
         self.vascular_intestinal_disorders = kwargs.get('vascular_intestinal_disorders')
         self.other_digestive_diseases = kwargs.get('other_digestive_diseases')
-        self.mild_alzheimer_disease_and_other_dementias = kwargs.get('mild_alzheimer_disease_and_other_dementias')
-        self.moderate_alzheimer_disease_and_other_dementias = kwargs.get('moderate_alzheimer_disease_and_other_dementias')
-        self.severe_alzheimer_disease_and_other_dementias = kwargs.get('severe_alzheimer_disease_and_other_dementias')
-        self.mild_parkinson_disease = kwargs.get('mild_parkinson_disease')
-        self.moderate_parkinson_disease = kwargs.get('moderate_parkinson_disease')
-        self.severe_parkinson_disease = kwargs.get('severe_parkinson_disease')
+        self.mild_alzheimers_disease_and_other_dementias = kwargs.get('mild_alzheimers_disease_and_other_dementias')
+        self.moderate_alzheimers_disease_and_other_dementias = kwargs.get('moderate_alzheimers_disease_and_other_dementias')
+        self.severe_alzheimers_disease_and_other_dementias = kwargs.get('severe_alzheimers_disease_and_other_dementias')
+        self.mild_parkinsons_disease = kwargs.get('mild_parkinsons_disease')
+        self.moderate_parkinsons_disease = kwargs.get('moderate_parkinsons_disease')
+        self.severe_parkinsons_disease = kwargs.get('severe_parkinsons_disease')
         self.idiopathic_seizure_free_treated_epilepsy = kwargs.get('idiopathic_seizure_free_treated_epilepsy')
         self.idiopathic_less_severe_epilepsy = kwargs.get('idiopathic_less_severe_epilepsy')
         self.idiopathic_severe_epilepsy = kwargs.get('idiopathic_severe_epilepsy')
@@ -1967,12 +1940,16 @@ class Sequelae(GbdRecord):
         self.end_stage_renal_disease_on_dialysis_due_to_hypertension = kwargs.get('end_stage_renal_disease_on_dialysis_due_to_hypertension')
         self.end_stage_renal_disease_after_transplant_due_to_glomerulonephritis = kwargs.get('end_stage_renal_disease_after_transplant_due_to_glomerulonephritis')
         self.end_stage_renal_disease_on_dialysis_due_to_glomerulonephritis = kwargs.get('end_stage_renal_disease_on_dialysis_due_to_glomerulonephritis')
-        self.end_stage_renal_disease_after_transplant_due_to_other_causes = kwargs.get('end_stage_renal_disease_after_transplant_due_to_other_causes')
-        self.end_stage_renal_disease_on_dialysis_due_to_other_causes = kwargs.get('end_stage_renal_disease_on_dialysis_due_to_other_causes')
+        self.end_stage_renal_disease_after_transplant_due_to_other_and_unspecified_causes = kwargs.get('end_stage_renal_disease_after_transplant_due_to_other_and_unspecified_causes')
+        self.end_stage_renal_disease_on_dialysis_due_to_other_and_unspecified_causes = kwargs.get('end_stage_renal_disease_on_dialysis_due_to_other_and_unspecified_causes')
         self.mild_urinary_tract_infections = kwargs.get('mild_urinary_tract_infections')
         self.moderate_urinary_tract_infections = kwargs.get('moderate_urinary_tract_infections')
+        self.idiopathic_primary_male_infertility = kwargs.get('idiopathic_primary_male_infertility')
+        self.idiopathic_secondary_male_infertility = kwargs.get('idiopathic_secondary_male_infertility')
         self.other_urinary_diseases = kwargs.get('other_urinary_diseases')
         self.primary_infertility_due_to_polycystic_ovarian_syndrome = kwargs.get('primary_infertility_due_to_polycystic_ovarian_syndrome')
+        self.idiopathic_primary_female_infertility = kwargs.get('idiopathic_primary_female_infertility')
+        self.idiopathic_secondary_female_infertility = kwargs.get('idiopathic_secondary_female_infertility')
         self.mild_abdominal_pain_due_to_endometriosis = kwargs.get('mild_abdominal_pain_due_to_endometriosis')
         self.moderate_abdominal_pain_due_to_endometriosis = kwargs.get('moderate_abdominal_pain_due_to_endometriosis')
         self.primary_infertility_due_to_endometriosis = kwargs.get('primary_infertility_due_to_endometriosis')
@@ -2098,9 +2075,9 @@ class Sequelae(GbdRecord):
         self.mild_anemia_due_to_sickle_cell_trait = kwargs.get('mild_anemia_due_to_sickle_cell_trait')
         self.moderate_anemia_due_to_sickle_cell_trait = kwargs.get('moderate_anemia_due_to_sickle_cell_trait')
         self.severe_anemia_due_to_sickle_cell_trait = kwargs.get('severe_anemia_due_to_sickle_cell_trait')
-        self.mild_anemia_due_to_hemizygous_g6pd_deficiency = kwargs.get('mild_anemia_due_to_hemizygous_g6pd_deficiency')
-        self.moderate_anemia_due_to_hemizygous_g6pd_deficiency = kwargs.get('moderate_anemia_due_to_hemizygous_g6pd_deficiency')
-        self.severe_anemia_due_to_hemizygous_g6pd_deficiency = kwargs.get('severe_anemia_due_to_hemizygous_g6pd_deficiency')
+        self.mild_anemia_due_to_hemizygous_g6pd_trait = kwargs.get('mild_anemia_due_to_hemizygous_g6pd_trait')
+        self.moderate_anemia_due_to_hemizygous_g6pd_trait = kwargs.get('moderate_anemia_due_to_hemizygous_g6pd_trait')
+        self.severe_anemia_due_to_hemizygous_g6pd_trait = kwargs.get('severe_anemia_due_to_hemizygous_g6pd_trait')
         self.disfigurement_due_to_basal_cell_carcinoma = kwargs.get('disfigurement_due_to_basal_cell_carcinoma')
         self.severe_skin_disease_due_to_onchocerciasis = kwargs.get('severe_skin_disease_due_to_onchocerciasis')
         self.mild_contact_dermatitis = kwargs.get('mild_contact_dermatitis')
@@ -2225,7 +2202,7 @@ class Sequelae(GbdRecord):
         self.mild_motor_plus_cognitive_impairments_due_to_neonatal_tetanus = kwargs.get('mild_motor_plus_cognitive_impairments_due_to_neonatal_tetanus')
         self.epilepsy_due_to_echinococcosis = kwargs.get('epilepsy_due_to_echinococcosis')
         self.symptomatic_genital_herpes = kwargs.get('symptomatic_genital_herpes')
-        self.other_hemoglobinopathies_and_hemolytic_anemias = kwargs.get('other_hemoglobinopathies_and_hemolytic_anemias')
+        self.other_hemoglobinopathies_and_hemolytic_anemias_residual = kwargs.get('other_hemoglobinopathies_and_hemolytic_anemias_residual')
         self.mild_behavioral_problems_due_to_encephalitis = kwargs.get('mild_behavioral_problems_due_to_encephalitis')
         self.mild_motor_impairment_due_to_long_term_due_to_encephalitis = kwargs.get('mild_motor_impairment_due_to_long_term_due_to_encephalitis')
         self.mild_motor_plus_cognitive_impairments_due_to_encephalitis = kwargs.get('mild_motor_plus_cognitive_impairments_due_to_encephalitis')
@@ -2241,7 +2218,7 @@ class Sequelae(GbdRecord):
         self.severe_cocaine_dependence = kwargs.get('severe_cocaine_dependence')
         self.severe_amphetamine_dependence = kwargs.get('severe_amphetamine_dependence')
         self.severe_cannabis_dependence = kwargs.get('severe_cannabis_dependence')
-        self.other_sexually_transmitted_diseases = kwargs.get('other_sexually_transmitted_diseases')
+        self.other_sexually_transmitted_diseases_residual = kwargs.get('other_sexually_transmitted_diseases_residual')
         self.asymptomatic_atrial_fibrillation_and_flutter = kwargs.get('asymptomatic_atrial_fibrillation_and_flutter')
         self.symptomatic_attention_deficit_hyperactivity_disorder = kwargs.get('symptomatic_attention_deficit_hyperactivity_disorder')
         self.attention_deficit_hyperactivity_disorder_currently_without_symptoms = kwargs.get('attention_deficit_hyperactivity_disorder_currently_without_symptoms')
@@ -2258,8 +2235,6 @@ class Sequelae(GbdRecord):
         self.major_depressive_disorder_currently_without_symptoms = kwargs.get('major_depressive_disorder_currently_without_symptoms')
         self.symptomatic_episodes_of_gout = kwargs.get('symptomatic_episodes_of_gout')
         self.asymptomatic_gout = kwargs.get('asymptomatic_gout')
-        self.symptomatic_migraine = kwargs.get('symptomatic_migraine')
-        self.asymptomatic_migraine = kwargs.get('asymptomatic_migraine')
         self.symptomatic_tension_type_headache = kwargs.get('symptomatic_tension_type_headache')
         self.asymptomatic_tension_type_headache = kwargs.get('asymptomatic_tension_type_headache')
         self.severe_infectious_complications_due_to_chronic_otitis_media = kwargs.get('severe_infectious_complications_due_to_chronic_otitis_media')
@@ -2370,7 +2345,7 @@ class Sequelae(GbdRecord):
         self.other_maternal_infections = kwargs.get('other_maternal_infections')
         self.hirsutism_and_secondary_infertility_due_to_polycystic_ovarian_syndrome = kwargs.get('hirsutism_and_secondary_infertility_due_to_polycystic_ovarian_syndrome')
         self.secondary_infertility_due_to_polycystic_ovarian_syndrome = kwargs.get('secondary_infertility_due_to_polycystic_ovarian_syndrome')
-        self.severe_endometriosis = kwargs.get('severe_endometriosis')
+        self.severe_abdominal_pain_due_to_endometriosis = kwargs.get('severe_abdominal_pain_due_to_endometriosis')
         self.moderate_infection_due_to_initial_genital_herpes_episode = kwargs.get('moderate_infection_due_to_initial_genital_herpes_episode')
         self.asymptomatic_caries_of_deciduous_teeth = kwargs.get('asymptomatic_caries_of_deciduous_teeth')
         self.asymptomatic_caries_of_permanent_teeth = kwargs.get('asymptomatic_caries_of_permanent_teeth')
@@ -2391,7 +2366,7 @@ class Sequelae(GbdRecord):
         self.asymptomatic_intestinal_fluke_infection = kwargs.get('asymptomatic_intestinal_fluke_infection')
         self.asymptomatic_opisthorchiasis = kwargs.get('asymptomatic_opisthorchiasis')
         self.asymptomatic_paragonimiasis = kwargs.get('asymptomatic_paragonimiasis')
-        self.asymptomatic_peripheral_vascular_disease = kwargs.get('asymptomatic_peripheral_vascular_disease')
+        self.asymptomatic_peripheral_arterial_disease = kwargs.get('asymptomatic_peripheral_arterial_disease')
         self.asymptomatic_benign_prostatic_hyperplasia = kwargs.get('asymptomatic_benign_prostatic_hyperplasia')
         self.symptomatic_benign_prostatic_hyperplasia = kwargs.get('symptomatic_benign_prostatic_hyperplasia')
         self.asymptomatic_uterine_fibroids = kwargs.get('asymptomatic_uterine_fibroids')
@@ -2434,12 +2409,12 @@ class Sequelae(GbdRecord):
         self.stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_glomerulonephritis = kwargs.get('stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_glomerulonephritis')
         self.stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_glomerulonephritis = kwargs.get('stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_glomerulonephritis')
         self.stage_iii_chronic_kidney_disease_without_anemia_due_to_glomerulonephritis = kwargs.get('stage_iii_chronic_kidney_disease_without_anemia_due_to_glomerulonephritis')
-        self.stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_other_causes = kwargs.get('stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_other_causes')
-        self.stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_other_causes = kwargs.get('stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_other_causes')
-        self.stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_other_causes = kwargs.get('stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_other_causes')
-        self.stage_iii_chronic_kidney_disease_without_anemia_due_to_other_causes = kwargs.get('stage_iii_chronic_kidney_disease_without_anemia_due_to_other_causes')
+        self.stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_other_and_unspecified_causes = kwargs.get('stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_other_and_unspecified_causes')
+        self.stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_other_and_unspecified_causes = kwargs.get('stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_other_and_unspecified_causes')
+        self.stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_other_and_unspecified_causes = kwargs.get('stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_other_and_unspecified_causes')
+        self.stage_iii_chronic_kidney_disease_without_anemia_due_to_other_and_unspecified_causes = kwargs.get('stage_iii_chronic_kidney_disease_without_anemia_due_to_other_and_unspecified_causes')
         self.asymptomatic_ischemic_heart_disease_following_myocardial_infarction = kwargs.get('asymptomatic_ischemic_heart_disease_following_myocardial_infarction')
-        self.symptomatic_claudication_due_to_peripheral_vascular_disease = kwargs.get('symptomatic_claudication_due_to_peripheral_vascular_disease')
+        self.symptomatic_claudication_due_to_peripheral_arterial_disease = kwargs.get('symptomatic_claudication_due_to_peripheral_arterial_disease')
         self.asymptomatic_seborrhoeic_dermatitis = kwargs.get('asymptomatic_seborrhoeic_dermatitis')
         self.asymptomatic_contact_dermatitis = kwargs.get('asymptomatic_contact_dermatitis')
         self.mild_other_oral_disorders = kwargs.get('mild_other_oral_disorders')
@@ -2447,7 +2422,7 @@ class Sequelae(GbdRecord):
         self.asymptomatic_b_thalassemia_trait = kwargs.get('asymptomatic_b_thalassemia_trait')
         self.asymptomatic_hemoglobin_e_trait = kwargs.get('asymptomatic_hemoglobin_e_trait')
         self.asymptomatic_sickle_cell_trait = kwargs.get('asymptomatic_sickle_cell_trait')
-        self.asymptomatic_hemizygous_g6pd_deficiency = kwargs.get('asymptomatic_hemizygous_g6pd_deficiency')
+        self.asymptomatic_hemizygous_g6pd_trait = kwargs.get('asymptomatic_hemizygous_g6pd_trait')
         self.mild_hearing_loss_due_to_chronic_otitis_media = kwargs.get('mild_hearing_loss_due_to_chronic_otitis_media')
         self.mild_hearing_loss_with_ringing_due_to_chronic_otitis_media = kwargs.get('mild_hearing_loss_with_ringing_due_to_chronic_otitis_media')
         self.asymptomatic_malaria_parasitemia_pfpr = kwargs.get('asymptomatic_malaria_parasitemia_pfpr')
@@ -2520,7 +2495,6 @@ class Sequelae(GbdRecord):
         self.severe_heart_failure_due_to_g6pd_deficiency = kwargs.get('severe_heart_failure_due_to_g6pd_deficiency')
         self.asymptomatic_g6pd_deficiency = kwargs.get('asymptomatic_g6pd_deficiency')
         self.asymptomatic_gallbladder_and_biliary_diseases = kwargs.get('asymptomatic_gallbladder_and_biliary_diseases')
-        self.asymptomatic_inguinal_femoral_and_abdominal_hernia = kwargs.get('asymptomatic_inguinal_femoral_and_abdominal_hernia')
         self.moderate_vision_impairment_due_to_pneumococcol_meningitis = kwargs.get('moderate_vision_impairment_due_to_pneumococcol_meningitis')
         self.severe_vision_impairment_due_to_pneumococcol_meningitis = kwargs.get('severe_vision_impairment_due_to_pneumococcol_meningitis')
         self.moderate_vision_impairment_due_to_h_influenza_type_b_meningitis = kwargs.get('moderate_vision_impairment_due_to_h_influenza_type_b_meningitis')
@@ -2701,9 +2675,9 @@ class Sequelae(GbdRecord):
         self.autism_spectrum_disorders_with_moderate_intellectual_disability = kwargs.get('autism_spectrum_disorders_with_moderate_intellectual_disability')
         self.autism_spectrum_disorders_with_severe_intellectual_disability = kwargs.get('autism_spectrum_disorders_with_severe_intellectual_disability')
         self.autism_spectrum_disorders_with_profound_intellectual_disability = kwargs.get('autism_spectrum_disorders_with_profound_intellectual_disability')
-        self.asymptomatic_acute_sense_organ_diseases = kwargs.get('asymptomatic_acute_sense_organ_diseases')
-        self.mild_acute_sense_organ_diseases = kwargs.get('mild_acute_sense_organ_diseases')
-        self.moderate_acute_sense_organ_diseases = kwargs.get('moderate_acute_sense_organ_diseases')
+        self.asymptomatic_acute_other_sense_organ_diseases = kwargs.get('asymptomatic_acute_other_sense_organ_diseases')
+        self.mild_acute_other_sense_organ_diseases = kwargs.get('mild_acute_other_sense_organ_diseases')
+        self.moderate_acute_other_sense_organ_diseases = kwargs.get('moderate_acute_other_sense_organ_diseases')
         self.asymptomatic_chronic_other_sense_organ_diseases = kwargs.get('asymptomatic_chronic_other_sense_organ_diseases')
         self.mild_chronic_other_sense_organ_diseases = kwargs.get('mild_chronic_other_sense_organ_diseases')
         self.moderate_chronic_other_sense_organ_diseases = kwargs.get('moderate_chronic_other_sense_organ_diseases')
@@ -2722,10 +2696,10 @@ class Sequelae(GbdRecord):
         self.stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_glomerulonephritis = kwargs.get('stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_glomerulonephritis')
         self.stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_glomerulonephritis = kwargs.get('stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_glomerulonephritis')
         self.stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_glomerulonephritis = kwargs.get('stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_glomerulonephritis')
-        self.stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_other_causes = kwargs.get('stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_other_causes')
-        self.stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_causes = kwargs.get('stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_causes')
-        self.stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_causes = kwargs.get('stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_causes')
-        self.stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_causes = kwargs.get('stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_causes')
+        self.stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_other_and_unspecified_causes = kwargs.get('stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_other_and_unspecified_causes')
+        self.stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_and_unspecified_causes = kwargs.get('stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_and_unspecified_causes')
+        self.stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_and_unspecified_causes = kwargs.get('stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_and_unspecified_causes')
+        self.stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_and_unspecified_causes = kwargs.get('stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_and_unspecified_causes')
         self.stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_hypertension = kwargs.get('stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_hypertension')
         self.stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_hypertension = kwargs.get('stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_hypertension')
         self.stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_hypertension = kwargs.get('stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_hypertension')
@@ -2734,15 +2708,14 @@ class Sequelae(GbdRecord):
         self.stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_glomerulonephritis = kwargs.get('stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_glomerulonephritis')
         self.stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_glomerulonephritis = kwargs.get('stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_glomerulonephritis')
         self.stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_glomerulonephritis = kwargs.get('stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_glomerulonephritis')
-        self.stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_other_causes = kwargs.get('stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_other_causes')
-        self.stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_causes = kwargs.get('stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_causes')
-        self.stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_causes = kwargs.get('stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_causes')
-        self.stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_causes = kwargs.get('stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_causes')
+        self.stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_other_and_unspecified_causes = kwargs.get('stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_other_and_unspecified_causes')
+        self.stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_and_unspecified_causes = kwargs.get('stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_and_unspecified_causes')
+        self.stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_and_unspecified_causes = kwargs.get('stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_and_unspecified_causes')
+        self.stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_and_unspecified_causes = kwargs.get('stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_and_unspecified_causes')
         self.skin_disfigurement_due_to_trypanosoma_brucei_gambiense = kwargs.get('skin_disfigurement_due_to_trypanosoma_brucei_gambiense')
         self.sleeping_sickness_due_to_trypanosoma_brucei_gambiense = kwargs.get('sleeping_sickness_due_to_trypanosoma_brucei_gambiense')
         self.sleeping_sickness_due_to_trypanosoma_brucei_rhodesiense = kwargs.get('sleeping_sickness_due_to_trypanosoma_brucei_rhodesiense')
         self.skin_disfigurement_due_to_trypanosoma_brucei_rhodesiense = kwargs.get('skin_disfigurement_due_to_trypanosoma_brucei_rhodesiense')
-        self.moderate_pain_due_to_guinea_worm_emergence = kwargs.get('moderate_pain_due_to_guinea_worm_emergence')
         self.metastatic_phase_of_other_leukemia = kwargs.get('metastatic_phase_of_other_leukemia')
         self.diagnosis_and_primary_therapy_phase_of_other_leukemia = kwargs.get('diagnosis_and_primary_therapy_phase_of_other_leukemia')
         self.terminal_phase_of_other_leukemia = kwargs.get('terminal_phase_of_other_leukemia')
@@ -2904,7 +2877,7 @@ class Sequelae(GbdRecord):
         self.severe_motor_impairment_and_profound_intellectual_disability_due_to_spina_bifida = kwargs.get('severe_motor_impairment_and_profound_intellectual_disability_due_to_spina_bifida')
         self.mild_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida = kwargs.get('mild_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida')
         self.moderate_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida = kwargs.get('moderate_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida')
-        self.profound_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida = kwargs.get('profound_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida')
+        self.severe_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida = kwargs.get('severe_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida')
         self.mild_motor_impairment_due_to_encephalocele = kwargs.get('mild_motor_impairment_due_to_encephalocele')
         self.moderate_motor_impairment_due_to_encephalocele = kwargs.get('moderate_motor_impairment_due_to_encephalocele')
         self.severe_motor_impairment_due_to_encephalocele = kwargs.get('severe_motor_impairment_due_to_encephalocele')
@@ -2944,7 +2917,6 @@ class Sequelae(GbdRecord):
         self.asymptomatic_vitamin_a_deficiency = kwargs.get('asymptomatic_vitamin_a_deficiency')
         self.latent_tuberculosis_infection = kwargs.get('latent_tuberculosis_infection')
         self.mild_pain_due_to_guinea_worm_emergence = kwargs.get('mild_pain_due_to_guinea_worm_emergence')
-        self.moderate_reduced_mobility_due_to_guinea_worm_emergence = kwargs.get('moderate_reduced_mobility_due_to_guinea_worm_emergence')
         self.mild_symptomatic_episodes_gallbladder_and_biliary_diseases = kwargs.get('mild_symptomatic_episodes_gallbladder_and_biliary_diseases')
         self.moderate_symptomatic_episodes_gallbladder_and_biliary_diseases = kwargs.get('moderate_symptomatic_episodes_gallbladder_and_biliary_diseases')
         self.severe_symptomatic_episodes_gallbladder_and_biliary_diseases = kwargs.get('severe_symptomatic_episodes_gallbladder_and_biliary_diseases')
@@ -3067,6 +3039,28 @@ class Sequelae(GbdRecord):
         self.congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect = kwargs.get('congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect')
         self.acute_adenolymphangitis_due_to_lymphatic_filariasis = kwargs.get('acute_adenolymphangitis_due_to_lymphatic_filariasis')
         self.asymptomatic_multiple_sclerosis = kwargs.get('asymptomatic_multiple_sclerosis')
+        self.mild_symptomatic_peptic_ulcer_disease_with_mild_anemia = kwargs.get('mild_symptomatic_peptic_ulcer_disease_with_mild_anemia')
+        self.moderate_symptomatic_peptic_ulcer_disease_with_mild_anemia = kwargs.get('moderate_symptomatic_peptic_ulcer_disease_with_mild_anemia')
+        self.mild_symptomatic_peptic_ulcer_disease_with_moderate_anemia = kwargs.get('mild_symptomatic_peptic_ulcer_disease_with_moderate_anemia')
+        self.moderate_symptomatic_peptic_ulcer_disease_with_moderate_anemia = kwargs.get('moderate_symptomatic_peptic_ulcer_disease_with_moderate_anemia')
+        self.mild_symptomatic_peptic_ulcer_disease_with_severe_anemia = kwargs.get('mild_symptomatic_peptic_ulcer_disease_with_severe_anemia')
+        self.moderate_symptomatic_peptic_ulcer_disease_with_severe_anemia = kwargs.get('moderate_symptomatic_peptic_ulcer_disease_with_severe_anemia')
+        self.mild_symptomatic_peptic_ulcer_disease_without_anemia = kwargs.get('mild_symptomatic_peptic_ulcer_disease_without_anemia')
+        self.moderate_symptomatic_peptic_ulcer_disease_without_anemia = kwargs.get('moderate_symptomatic_peptic_ulcer_disease_without_anemia')
+        self.asymptomatic_peptic_ulcer_disease_with_mild_anemia = kwargs.get('asymptomatic_peptic_ulcer_disease_with_mild_anemia')
+        self.asymptomatic_peptic_ulcer_disease_with_moderate_anemia = kwargs.get('asymptomatic_peptic_ulcer_disease_with_moderate_anemia')
+        self.asymptomatic_peptic_ulcer_disease_with_severe_anemia = kwargs.get('asymptomatic_peptic_ulcer_disease_with_severe_anemia')
+        self.mild_symptomatic_gastritis_and_duodenitis_with_mild_anemia = kwargs.get('mild_symptomatic_gastritis_and_duodenitis_with_mild_anemia')
+        self.moderate_symptomatic_gastritis_and_duodenitis_with_mild_anemia = kwargs.get('moderate_symptomatic_gastritis_and_duodenitis_with_mild_anemia')
+        self.mild_symptomatic_gastritis_and_duodenitis_with_moderate_anemia = kwargs.get('mild_symptomatic_gastritis_and_duodenitis_with_moderate_anemia')
+        self.moderate_symptomatic_gastritis_and_duodenitis_with_moderate_anemia = kwargs.get('moderate_symptomatic_gastritis_and_duodenitis_with_moderate_anemia')
+        self.mild_symptomatic_gastritis_and_duodenitis_with_severe_anemia = kwargs.get('mild_symptomatic_gastritis_and_duodenitis_with_severe_anemia')
+        self.moderate_symptomatic_gastritis_and_duodenitis_with_severe_anemia = kwargs.get('moderate_symptomatic_gastritis_and_duodenitis_with_severe_anemia')
+        self.mild_symptomatic_gastritis_and_duodenitis_without_anemia = kwargs.get('mild_symptomatic_gastritis_and_duodenitis_without_anemia')
+        self.moderate_symptomatic_gastritis_and_duodenitis_without_anemia = kwargs.get('moderate_symptomatic_gastritis_and_duodenitis_without_anemia')
+        self.asymptomatic_gastritis_and_duodenitis_with_mild_anemia = kwargs.get('asymptomatic_gastritis_and_duodenitis_with_mild_anemia')
+        self.asymptomatic_gastritis_and_duodenitis_with_moderate_anemia = kwargs.get('asymptomatic_gastritis_and_duodenitis_with_moderate_anemia')
+        self.asymptomatic_gastritis_and_duodenitis_with_severe_anemia = kwargs.get('asymptomatic_gastritis_and_duodenitis_with_severe_anemia')
         self.severe_malaria_with_mild_anemia = kwargs.get('severe_malaria_with_mild_anemia')
         self.severe_malaria_with_moderate_anemia = kwargs.get('severe_malaria_with_moderate_anemia')
         self.severe_malaria_with_severe_anemia = kwargs.get('severe_malaria_with_severe_anemia')
@@ -3076,6 +3070,8 @@ class Sequelae(GbdRecord):
         self.moderate_malaria_with_mild_anemia = kwargs.get('moderate_malaria_with_mild_anemia')
         self.moderate_malaria_with_moderate_anemia = kwargs.get('moderate_malaria_with_moderate_anemia')
         self.moderate_malaria_with_severe_anemia = kwargs.get('moderate_malaria_with_severe_anemia')
+        self.asymptomatic_peptic_ulcer_disease_without_anemia = kwargs.get('asymptomatic_peptic_ulcer_disease_without_anemia')
+        self.asymptomatic_gastritis_and_duodenitis_without_anemia = kwargs.get('asymptomatic_gastritis_and_duodenitis_without_anemia')
         self.early_hiv_with_mild_anemia = kwargs.get('early_hiv_with_mild_anemia')
         self.early_hiv_with_moderate_anemia = kwargs.get('early_hiv_with_moderate_anemia')
         self.early_hiv_with_severe_anemia = kwargs.get('early_hiv_with_severe_anemia')
@@ -3092,18 +3088,18 @@ class Sequelae(GbdRecord):
         self.aids_with_moderate_anemia = kwargs.get('aids_with_moderate_anemia')
         self.aids_with_severe_anemia = kwargs.get('aids_with_severe_anemia')
         self.aids_without_anemia = kwargs.get('aids_without_anemia')
-        self.drug_susceptible_hiv_aids_tuberculosis_with_mild_anemia = kwargs.get('drug_susceptible_hiv_aids_tuberculosis_with_mild_anemia')
-        self.drug_susceptible_hiv_aids_tuberculosis_with_moderate_anemia = kwargs.get('drug_susceptible_hiv_aids_tuberculosis_with_moderate_anemia')
-        self.drug_susceptible_hiv_aids_tuberculosis_with_severe_anemia = kwargs.get('drug_susceptible_hiv_aids_tuberculosis_with_severe_anemia')
-        self.drug_susceptible_hiv_aids_tuberculosis_without_anemia = kwargs.get('drug_susceptible_hiv_aids_tuberculosis_without_anemia')
-        self.multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_mild_anemia = kwargs.get('multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_mild_anemia')
-        self.multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_moderate_anemia = kwargs.get('multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_moderate_anemia')
-        self.multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_severe_anemia = kwargs.get('multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_severe_anemia')
-        self.multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_without_anemia = kwargs.get('multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_without_anemia')
-        self.extensively_drug_resistant_hiv_aids_tuberculosis_with_mild_anemia = kwargs.get('extensively_drug_resistant_hiv_aids_tuberculosis_with_mild_anemia')
-        self.extensively_drug_resistant_hiv_aids_tuberculosis_with_moderate_anemia = kwargs.get('extensively_drug_resistant_hiv_aids_tuberculosis_with_moderate_anemia')
-        self.extensively_drug_resistant_hiv_aids_tuberculosis_with_severe_anemia = kwargs.get('extensively_drug_resistant_hiv_aids_tuberculosis_with_severe_anemia')
-        self.extensively_drug_resistant_hiv_aids_tuberculosis_without_anemia = kwargs.get('extensively_drug_resistant_hiv_aids_tuberculosis_without_anemia')
+        self.hiv_aids_drug_susceptible_tuberculosis_with_mild_anemia = kwargs.get('hiv_aids_drug_susceptible_tuberculosis_with_mild_anemia')
+        self.hiv_aids_drug_susceptible_tuberculosis_with_moderate_anemia = kwargs.get('hiv_aids_drug_susceptible_tuberculosis_with_moderate_anemia')
+        self.hiv_aids_drug_susceptible_tuberculosis_with_severe_anemia = kwargs.get('hiv_aids_drug_susceptible_tuberculosis_with_severe_anemia')
+        self.hiv_aids_drug_susceptible_tuberculosis_without_anemia = kwargs.get('hiv_aids_drug_susceptible_tuberculosis_without_anemia')
+        self.hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance_with_mild_anemia = kwargs.get('hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance_with_mild_anemia')
+        self.hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance_with_moderate_anemia = kwargs.get('hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance_with_moderate_anemia')
+        self.hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance_with_severe_anemia = kwargs.get('hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance_with_severe_anemia')
+        self.hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance_without_anemia = kwargs.get('hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance_without_anemia')
+        self.hiv_aids_extensively_drug_resistant_tuberculosis_with_mild_anemia = kwargs.get('hiv_aids_extensively_drug_resistant_tuberculosis_with_mild_anemia')
+        self.hiv_aids_extensively_drug_resistant_tuberculosis_with_moderate_anemia = kwargs.get('hiv_aids_extensively_drug_resistant_tuberculosis_with_moderate_anemia')
+        self.hiv_aids_extensively_drug_resistant_tuberculosis_with_severe_anemia = kwargs.get('hiv_aids_extensively_drug_resistant_tuberculosis_with_severe_anemia')
+        self.hiv_aids_extensively_drug_resistant_tuberculosis_without_anemia = kwargs.get('hiv_aids_extensively_drug_resistant_tuberculosis_without_anemia')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_compensated = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_compensated')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_compensated = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_compensated')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_compensated = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_compensated')
@@ -3154,12 +3150,12 @@ class Sequelae(GbdRecord):
         self.stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_2_diabetes_mellitus = kwargs.get('stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_2_diabetes_mellitus')
         self.stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_type_1_diabetes_mellitus = kwargs.get('stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_type_1_diabetes_mellitus')
         self.stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_type_2_diabetes_mellitus = kwargs.get('stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_type_2_diabetes_mellitus')
-        self.calcific_aortic_valve_disease_after_treatment = kwargs.get('calcific_aortic_valve_disease_after_treatment')
+        self.calcific_aortic_valve_disease_after_valve_intervention = kwargs.get('calcific_aortic_valve_disease_after_valve_intervention')
         self.asymptomatic_calcific_aortic_valve_disease = kwargs.get('asymptomatic_calcific_aortic_valve_disease')
         self.mild_heart_failure_due_to_calcific_aortic_valve_disease = kwargs.get('mild_heart_failure_due_to_calcific_aortic_valve_disease')
         self.moderate_heart_failure_due_to_calcific_aortic_valve_disease = kwargs.get('moderate_heart_failure_due_to_calcific_aortic_valve_disease')
         self.severe_heart_failure_due_to_calcific_aortic_valve_disease = kwargs.get('severe_heart_failure_due_to_calcific_aortic_valve_disease')
-        self.degenerative_mitral_valve_disease_after_treatment = kwargs.get('degenerative_mitral_valve_disease_after_treatment')
+        self.degenerative_mitral_valve_disease_after_valve_intervention = kwargs.get('degenerative_mitral_valve_disease_after_valve_intervention')
         self.asymptomatic_degenerative_mitral_valve_disease = kwargs.get('asymptomatic_degenerative_mitral_valve_disease')
         self.mild_heart_failure_due_to_degenerative_mitral_valve_disease = kwargs.get('mild_heart_failure_due_to_degenerative_mitral_valve_disease')
         self.moderate_heart_failure_due_to_degenerative_mitral_valve_disease = kwargs.get('moderate_heart_failure_due_to_degenerative_mitral_valve_disease')
@@ -3167,13 +3163,11 @@ class Sequelae(GbdRecord):
         self.mild_heart_failure_due_to_other_non_rheumatic_valve_disease = kwargs.get('mild_heart_failure_due_to_other_non_rheumatic_valve_disease')
         self.moderate_heart_failure_due_to_other_non_rheumatic_valve_disease = kwargs.get('moderate_heart_failure_due_to_other_non_rheumatic_valve_disease')
         self.severe_heart_failure_due_to_other_non_rheumatic_valve_disease = kwargs.get('severe_heart_failure_due_to_other_non_rheumatic_valve_disease')
-        self.symptomatic_gastroesophageal_reflux_disease = kwargs.get('symptomatic_gastroesophageal_reflux_disease')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_nash_compensated = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_nash_compensated')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated')
         self.vitamin_a_deficiency_with_mild_anemia = kwargs.get('vitamin_a_deficiency_with_mild_anemia')
         self.vitamin_a_deficiency_with_moderate_anemia = kwargs.get('vitamin_a_deficiency_with_moderate_anemia')
         self.vitamin_a_deficiency_with_severe_anemia = kwargs.get('vitamin_a_deficiency_with_severe_anemia')
-        self.paralytic_polio = kwargs.get('paralytic_polio')
         self.myelodysplastic_myeloproliferative_and_other_hematopoietic_neoplasms = kwargs.get('myelodysplastic_myeloproliferative_and_other_hematopoietic_neoplasms')
         self.benign_and_in_situ_intestinal_neoplasms = kwargs.get('benign_and_in_situ_intestinal_neoplasms')
         self.benign_and_in_situ_cervical_and_uterine_neoplasms = kwargs.get('benign_and_in_situ_cervical_and_uterine_neoplasms')
@@ -3183,23 +3177,23 @@ class Sequelae(GbdRecord):
         self.metastatic_phase_of_liver_cancer_due_to_nash = kwargs.get('metastatic_phase_of_liver_cancer_due_to_nash')
         self.terminal_phase_of_liver_cancer_due_to_nash = kwargs.get('terminal_phase_of_liver_cancer_due_to_nash')
         self.diabetic_foot_due_to_neuropathy_due_to_diabetes_mellitus_type_1 = kwargs.get('diabetic_foot_due_to_neuropathy_due_to_diabetes_mellitus_type_1')
-        self.diabetic_neuropathy_due_to_diabetes_mellitus_type_1 = kwargs.get('diabetic_neuropathy_due_to_diabetes_mellitus_type_1')
+        self.diabetic_neuropathy_due_to_diabetes_mellitus_type_1_without_diabetic_foot_or_amputation = kwargs.get('diabetic_neuropathy_due_to_diabetes_mellitus_type_1_without_diabetic_foot_or_amputation')
         self.diabetic_neuropathy_and_amputation_with_treatment_due_to_diabetes_mellitus_type_1 = kwargs.get('diabetic_neuropathy_and_amputation_with_treatment_due_to_diabetes_mellitus_type_1')
         self.diabetic_neuropathy_and_amputation_without_treatment_due_to_diabetes_mellitus_type_1 = kwargs.get('diabetic_neuropathy_and_amputation_without_treatment_due_to_diabetes_mellitus_type_1')
         self.uncomplicated_diabetes_mellitus_type_1 = kwargs.get('uncomplicated_diabetes_mellitus_type_1')
-        self.moderate_vision_impairment_due_to_diabetes_mellitus_type_1 = kwargs.get('moderate_vision_impairment_due_to_diabetes_mellitus_type_1')
-        self.severe_vision_impairment_due_to_diabetes_mellitus_type_1 = kwargs.get('severe_vision_impairment_due_to_diabetes_mellitus_type_1')
-        self.blindness_due_to_diabetes_mellitus_type_1 = kwargs.get('blindness_due_to_diabetes_mellitus_type_1')
+        self.moderate_vision_impairment_due_to_diabetes_mellitus_type_1_retinopathy = kwargs.get('moderate_vision_impairment_due_to_diabetes_mellitus_type_1_retinopathy')
+        self.severe_vision_impairment_due_to_diabetes_mellitus_type_1_retinopathy = kwargs.get('severe_vision_impairment_due_to_diabetes_mellitus_type_1_retinopathy')
+        self.blindness_due_to_diabetes_mellitus_type_1_retinopathy = kwargs.get('blindness_due_to_diabetes_mellitus_type_1_retinopathy')
         self.diabetic_foot_due_to_neuropathy_due_to_diabetes_mellitus_type_2 = kwargs.get('diabetic_foot_due_to_neuropathy_due_to_diabetes_mellitus_type_2')
-        self.diabetic_neuropathy_due_to_diabetes_mellitus_type_2 = kwargs.get('diabetic_neuropathy_due_to_diabetes_mellitus_type_2')
+        self.diabetic_neuropathy_due_to_diabetes_mellitus_type_2_without_diabetic_foot_or_amputation = kwargs.get('diabetic_neuropathy_due_to_diabetes_mellitus_type_2_without_diabetic_foot_or_amputation')
         self.diabetic_neuropathy_and_amputation_with_treatment_due_to_diabetes_mellitus_type_2 = kwargs.get('diabetic_neuropathy_and_amputation_with_treatment_due_to_diabetes_mellitus_type_2')
         self.diabetic_neuropathy_and_amputation_without_treatment_due_to_diabetes_mellitus_type_2 = kwargs.get('diabetic_neuropathy_and_amputation_without_treatment_due_to_diabetes_mellitus_type_2')
         self.uncomplicated_diabetes_mellitus_type_2 = kwargs.get('uncomplicated_diabetes_mellitus_type_2')
-        self.moderate_vision_impairment_due_to_diabetes_mellitus_type_2 = kwargs.get('moderate_vision_impairment_due_to_diabetes_mellitus_type_2')
-        self.severe_vision_impairment_due_to_diabetes_mellitus_type_2 = kwargs.get('severe_vision_impairment_due_to_diabetes_mellitus_type_2')
-        self.blindness_due_to_diabetes_mellitus_type_2 = kwargs.get('blindness_due_to_diabetes_mellitus_type_2')
+        self.moderate_vision_impairment_due_to_diabetes_mellitus_type_2_retinopathy = kwargs.get('moderate_vision_impairment_due_to_diabetes_mellitus_type_2_retinopathy')
+        self.severe_vision_impairment_due_to_diabetes_mellitus_type_2_retinopathy = kwargs.get('severe_vision_impairment_due_to_diabetes_mellitus_type_2_retinopathy')
+        self.blindness_due_to_diabetes_mellitus_type_2_retinopathy = kwargs.get('blindness_due_to_diabetes_mellitus_type_2_retinopathy')
         self.non_alcoholic_fatty_liver_disease_nafld_non_alcoholic_steatohepatitis_nash = kwargs.get('non_alcoholic_fatty_liver_disease_nafld_non_alcoholic_steatohepatitis_nash')
-        self.presbyopia = kwargs.get('presbyopia')
+        self.near_vision_loss = kwargs.get('near_vision_loss')
         self.controlled_phase_of_breast_cancer_with_mastectomy = kwargs.get('controlled_phase_of_breast_cancer_with_mastectomy')
         self.controlled_phase_of_breast_cancer_without_mastectomy = kwargs.get('controlled_phase_of_breast_cancer_without_mastectomy')
         self.mastectomy_from_breast_cancer_beyond_ten_years = kwargs.get('mastectomy_from_breast_cancer_beyond_ten_years')
@@ -3222,11 +3216,9 @@ class Sequelae(GbdRecord):
         self.albuminuria_with_preserved_gfr_due_to_type_2_diabetes_mellitus = kwargs.get('albuminuria_with_preserved_gfr_due_to_type_2_diabetes_mellitus')
         self.albuminuria_with_preserved_gfr_due_to_hypertension = kwargs.get('albuminuria_with_preserved_gfr_due_to_hypertension')
         self.albuminuria_with_preserved_gfr_due_to_glomerulonephritis = kwargs.get('albuminuria_with_preserved_gfr_due_to_glomerulonephritis')
-        self.albuminuria_with_preserved_gfr_due_to_other_causes = kwargs.get('albuminuria_with_preserved_gfr_due_to_other_causes')
+        self.albuminuria_with_preserved_gfr_due_to_other_and_unspecified_causes = kwargs.get('albuminuria_with_preserved_gfr_due_to_other_and_unspecified_causes')
         self.severe_acute_ints = kwargs.get('severe_acute_ints')
         self.menstrual_disorders_without_anemia = kwargs.get('menstrual_disorders_without_anemia')
-        self.mild_to_moderate_gastroesophageal_reflux_disease_symptoms_typical = kwargs.get('mild_to_moderate_gastroesophageal_reflux_disease_symptoms_typical')
-        self.severe_or_very_severe_gastroesophageal_reflux_disease_symptoms_typical = kwargs.get('severe_or_very_severe_gastroesophageal_reflux_disease_symptoms_typical')
         self.ulcerative_colitis_with_mild_anemia = kwargs.get('ulcerative_colitis_with_mild_anemia')
         self.ulcerative_colitis_with_moderate_anemia = kwargs.get('ulcerative_colitis_with_moderate_anemia')
         self.ulcerative_colitis_with_severe_anemia = kwargs.get('ulcerative_colitis_with_severe_anemia')
@@ -3235,11 +3227,6 @@ class Sequelae(GbdRecord):
         self.crohns_disease_with_moderate_anemia = kwargs.get('crohns_disease_with_moderate_anemia')
         self.crohns_disease_with_severe_anemia = kwargs.get('crohns_disease_with_severe_anemia')
         self.crohns_disease_without_anemia = kwargs.get('crohns_disease_without_anemia')
-        self.moderate_permanent_paralytic_poliomyelitis = kwargs.get('moderate_permanent_paralytic_poliomyelitis')
-        self.severe_permanent_paralytic_poliomyelitis = kwargs.get('severe_permanent_paralytic_poliomyelitis')
-        self.moderate_acute_poliomyelitis = kwargs.get('moderate_acute_poliomyelitis')
-        self.severe_acute_poliomyelitis = kwargs.get('severe_acute_poliomyelitis')
-        self.post_polio_syndrome = kwargs.get('post_polio_syndrome')
         self.mild_anemia_due_to_malaria_vivax_pvpr = kwargs.get('mild_anemia_due_to_malaria_vivax_pvpr')
         self.moderate_anemia_due_to_malaria_vivax_pvpr = kwargs.get('moderate_anemia_due_to_malaria_vivax_pvpr')
         self.severe_anemia_due_to_malaria_vivax_pvpr = kwargs.get('severe_anemia_due_to_malaria_vivax_pvpr')
@@ -3250,79 +3237,80 @@ class Sequelae(GbdRecord):
         self.complicated_peptic_ulcer_disease_with_mild_anemia = kwargs.get('complicated_peptic_ulcer_disease_with_mild_anemia')
         self.complicated_peptic_ulcer_disease_with_moderate_anemia = kwargs.get('complicated_peptic_ulcer_disease_with_moderate_anemia')
         self.complicated_peptic_ulcer_disease_with_severe_anemia = kwargs.get('complicated_peptic_ulcer_disease_with_severe_anemia')
-        self.acute_uncomplicated_peptic_ulcer_disease = kwargs.get('acute_uncomplicated_peptic_ulcer_disease')
-        self.chronic_peptic_ulcer_disease_asymptomatic_with_no_anemia = kwargs.get('chronic_peptic_ulcer_disease_asymptomatic_with_no_anemia')
-        self.chronic_peptic_ulcer_disease_mild_with_no_anemia = kwargs.get('chronic_peptic_ulcer_disease_mild_with_no_anemia')
-        self.chronic_peptic_ulcer_disease_moderate_with_no_anemia = kwargs.get('chronic_peptic_ulcer_disease_moderate_with_no_anemia')
-        self.chronic_peptic_ulcer_disease_asymptomatic_with_mild_anemia = kwargs.get('chronic_peptic_ulcer_disease_asymptomatic_with_mild_anemia')
-        self.chronic_peptic_ulcer_disease_mild_with_mild_anemia = kwargs.get('chronic_peptic_ulcer_disease_mild_with_mild_anemia')
-        self.chronic_peptic_ulcer_disease_moderate_with_mild_anemia = kwargs.get('chronic_peptic_ulcer_disease_moderate_with_mild_anemia')
-        self.chronic_peptic_ulcer_disease_asymptomatic_with_moderate_anemia = kwargs.get('chronic_peptic_ulcer_disease_asymptomatic_with_moderate_anemia')
-        self.chronic_peptic_ulcer_disease_mild_with_moderate_anemia = kwargs.get('chronic_peptic_ulcer_disease_mild_with_moderate_anemia')
-        self.chronic_peptic_ulcer_disease_moderate_with_moderate_anemia = kwargs.get('chronic_peptic_ulcer_disease_moderate_with_moderate_anemia')
-        self.chronic_peptic_ulcer_disease_asymptomatic_with_severe_anemia = kwargs.get('chronic_peptic_ulcer_disease_asymptomatic_with_severe_anemia')
-        self.chronic_peptic_ulcer_disease_mild_with_severe_anemia = kwargs.get('chronic_peptic_ulcer_disease_mild_with_severe_anemia')
-        self.chronic_peptic_ulcer_disease_moderate_with_severe_anemia = kwargs.get('chronic_peptic_ulcer_disease_moderate_with_severe_anemia')
         self.complicated_gastritis_and_duodenitis_with_no_anemia = kwargs.get('complicated_gastritis_and_duodenitis_with_no_anemia')
         self.complicated_gastritis_and_duodenitis_with_mild_anemia = kwargs.get('complicated_gastritis_and_duodenitis_with_mild_anemia')
         self.complicated_gastritis_and_duodenitis_with_moderate_anemia = kwargs.get('complicated_gastritis_and_duodenitis_with_moderate_anemia')
         self.complicated_gastritis_and_duodenitis_with_severe_anemia = kwargs.get('complicated_gastritis_and_duodenitis_with_severe_anemia')
-        self.gastritis_and_duodenitis_uncomplicated_acute = kwargs.get('gastritis_and_duodenitis_uncomplicated_acute')
-        self.chronic_asymptomatic_gastritis_and_duodenitis_with_no_anemia = kwargs.get('chronic_asymptomatic_gastritis_and_duodenitis_with_no_anemia')
-        self.chronic_mild_gastritis_and_duodenitis_with_no_anemia = kwargs.get('chronic_mild_gastritis_and_duodenitis_with_no_anemia')
-        self.chronic_moderate_gastritis_and_duodenitis_with_no_anemia = kwargs.get('chronic_moderate_gastritis_and_duodenitis_with_no_anemia')
-        self.chronic_asymptomatic_gastritis_and_duodenitis_with_mild_anemia = kwargs.get('chronic_asymptomatic_gastritis_and_duodenitis_with_mild_anemia')
-        self.chronic_mild_gastritis_and_duodenitis_with_mild_anemia = kwargs.get('chronic_mild_gastritis_and_duodenitis_with_mild_anemia')
-        self.chronic_moderate_gastritis_and_duodenitis_with_mild_anemia = kwargs.get('chronic_moderate_gastritis_and_duodenitis_with_mild_anemia')
-        self.chronic_asymptomatic_gastritis_and_duodenitis_with_moderate_anemia = kwargs.get('chronic_asymptomatic_gastritis_and_duodenitis_with_moderate_anemia')
-        self.chronic_mild_gastritis_and_duodenitis_with_moderate_anemia = kwargs.get('chronic_mild_gastritis_and_duodenitis_with_moderate_anemia')
-        self.chronic_moderate_gastritis_and_duodenitis_with_moderate_anemia = kwargs.get('chronic_moderate_gastritis_and_duodenitis_with_moderate_anemia')
-        self.chronic_asymptomatic_gastritis_and_duodenitis_with_severe_anemia = kwargs.get('chronic_asymptomatic_gastritis_and_duodenitis_with_severe_anemia')
-        self.chronic_mild_gastritis_and_duodenitis_with_severe_anemia = kwargs.get('chronic_mild_gastritis_and_duodenitis_with_severe_anemia')
-        self.chronic_moderate_gastritis_and_duodenitis_with_severe_anemia = kwargs.get('chronic_moderate_gastritis_and_duodenitis_with_severe_anemia')
-        self.treated_heart_failure_due_ischemic_heart_disease = kwargs.get('treated_heart_failure_due_ischemic_heart_disease')
-        self.treated_heart_failure_due_to_alcoholic_cardiomyopathy = kwargs.get('treated_heart_failure_due_to_alcoholic_cardiomyopathy')
-        self.treated_heart_failure_due_to_calcific_aortic_valve_disease = kwargs.get('treated_heart_failure_due_to_calcific_aortic_valve_disease')
-        self.treated_heart_failure_due_to_chagas_disease = kwargs.get('treated_heart_failure_due_to_chagas_disease')
-        self.treated_heart_failure_due_to_degenerative_mitral_valve_disease = kwargs.get('treated_heart_failure_due_to_degenerative_mitral_valve_disease')
-        self.treated_heart_failure_due_to_endocarditis = kwargs.get('treated_heart_failure_due_to_endocarditis')
-        self.treated_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders = kwargs.get('treated_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders')
-        self.treated_heart_failure_due_to_g6pd_deficiency = kwargs.get('treated_heart_failure_due_to_g6pd_deficiency')
-        self.treated_heart_failure_due_to_hypertensive_heart_disease = kwargs.get('treated_heart_failure_due_to_hypertensive_heart_disease')
-        self.treated_heart_failure_due_to_myocarditis = kwargs.get('treated_heart_failure_due_to_myocarditis')
-        self.treated_heart_failure_due_to_other_cardiomyopathy = kwargs.get('treated_heart_failure_due_to_other_cardiomyopathy')
-        self.treated_heart_failure_due_to_other_cardiovascular_disease = kwargs.get('treated_heart_failure_due_to_other_cardiovascular_disease')
-        self.treated_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias = kwargs.get('treated_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias')
-        self.treated_heart_failure_due_to_other_non_rheumatic_valve_disease = kwargs.get('treated_heart_failure_due_to_other_non_rheumatic_valve_disease')
-        self.treated_heart_failure_due_to_rheumatic_heart_disease = kwargs.get('treated_heart_failure_due_to_rheumatic_heart_disease')
-        self.treated_heart_failure_due_to_severe_asbestosis = kwargs.get('treated_heart_failure_due_to_severe_asbestosis')
-        self.treated_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease = kwargs.get('treated_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease')
-        self.treated_heart_failure_due_to_severe_coal_workers_pneumoconiosis = kwargs.get('treated_heart_failure_due_to_severe_coal_workers_pneumoconiosis')
-        self.treated_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis = kwargs.get('treated_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis')
-        self.treated_heart_failure_due_to_severe_other_pneumoconiosis = kwargs.get('treated_heart_failure_due_to_severe_other_pneumoconiosis')
-        self.treated_heart_failure_due_to_severe_silicosis = kwargs.get('treated_heart_failure_due_to_severe_silicosis')
-        self.treated_heart_failure_due_to_thalassemias = kwargs.get('treated_heart_failure_due_to_thalassemias')
-        self.congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus = kwargs.get('congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus')
-        self.congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects = kwargs.get('congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects')
-        self.congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects = kwargs.get('congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects')
-        self.congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect = kwargs.get('congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect')
-        self.congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus = kwargs.get('congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus')
-        self.congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects = kwargs.get('congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects')
-        self.congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects = kwargs.get('congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects')
-        self.congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect = kwargs.get('congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect')
-        self.congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus = kwargs.get('congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus')
-        self.congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects = kwargs.get('congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects')
-        self.congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects = kwargs.get('congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects')
-        self.congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect = kwargs.get('congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect')
-        self.congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus = kwargs.get('congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus')
-        self.congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects = kwargs.get('congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects')
-        self.congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects = kwargs.get('congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects')
-        self.congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect = kwargs.get('congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect')
-        self.congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects = kwargs.get('congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects')
-        self.congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects = kwargs.get('congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects')
-        self.congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect = kwargs.get('congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect')
-        self.congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus = kwargs.get('congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus')
-        self.congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus = kwargs.get('congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus')
-        self.congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects = kwargs.get('congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects')
-        self.congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects = kwargs.get('congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects')
-        self.congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect = kwargs.get('congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect')
+        self.controlled_medically_managed_heart_failure_due_ischemic_heart_disease = kwargs.get('controlled_medically_managed_heart_failure_due_ischemic_heart_disease')
+        self.controlled_medically_managed_heart_failure_due_to_alcoholic_cardiomyopathy = kwargs.get('controlled_medically_managed_heart_failure_due_to_alcoholic_cardiomyopathy')
+        self.controlled_medically_managed_heart_failure_due_to_calcific_aortic_valve_disease = kwargs.get('controlled_medically_managed_heart_failure_due_to_calcific_aortic_valve_disease')
+        self.controlled_medically_managed_heart_failure_due_to_chagas_disease = kwargs.get('controlled_medically_managed_heart_failure_due_to_chagas_disease')
+        self.controlled_medically_managed_heart_failure_due_to_degenerative_mitral_valve_disease = kwargs.get('controlled_medically_managed_heart_failure_due_to_degenerative_mitral_valve_disease')
+        self.controlled_medically_managed_heart_failure_due_to_endocarditis = kwargs.get('controlled_medically_managed_heart_failure_due_to_endocarditis')
+        self.controlled_medically_managed_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders = kwargs.get('controlled_medically_managed_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders')
+        self.controlled_medically_managed_heart_failure_due_to_g6pd_deficiency = kwargs.get('controlled_medically_managed_heart_failure_due_to_g6pd_deficiency')
+        self.controlled_medically_managed_heart_failure_due_to_hypertensive_heart_disease = kwargs.get('controlled_medically_managed_heart_failure_due_to_hypertensive_heart_disease')
+        self.controlled_medically_managed_heart_failure_due_to_myocarditis = kwargs.get('controlled_medically_managed_heart_failure_due_to_myocarditis')
+        self.controlled_medically_managed_heart_failure_due_to_other_cardiomyopathy = kwargs.get('controlled_medically_managed_heart_failure_due_to_other_cardiomyopathy')
+        self.controlled_medically_managed_heart_failure_due_to_other_cardiovascular_disease = kwargs.get('controlled_medically_managed_heart_failure_due_to_other_cardiovascular_disease')
+        self.controlled_medically_managed_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias = kwargs.get('controlled_medically_managed_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias')
+        self.controlled_medically_managed_heart_failure_due_to_other_non_rheumatic_valve_disease = kwargs.get('controlled_medically_managed_heart_failure_due_to_other_non_rheumatic_valve_disease')
+        self.controlled_medically_managed_heart_failure_due_to_rheumatic_heart_disease = kwargs.get('controlled_medically_managed_heart_failure_due_to_rheumatic_heart_disease')
+        self.controlled_medically_managed_heart_failure_due_to_severe_asbestosis = kwargs.get('controlled_medically_managed_heart_failure_due_to_severe_asbestosis')
+        self.controlled_medically_managed_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease = kwargs.get('controlled_medically_managed_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease')
+        self.controlled_medically_managed_heart_failure_due_to_severe_coal_workers_pneumoconiosis = kwargs.get('controlled_medically_managed_heart_failure_due_to_severe_coal_workers_pneumoconiosis')
+        self.controlled_medically_managed_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis = kwargs.get('controlled_medically_managed_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis')
+        self.controlled_medically_managed_heart_failure_due_to_severe_other_pneumoconiosis = kwargs.get('controlled_medically_managed_heart_failure_due_to_severe_other_pneumoconiosis')
+        self.controlled_medically_managed_heart_failure_due_to_severe_silicosis = kwargs.get('controlled_medically_managed_heart_failure_due_to_severe_silicosis')
+        self.controlled_medically_managed_heart_failure_due_to_thalassemias = kwargs.get('controlled_medically_managed_heart_failure_due_to_thalassemias')
+        self.congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus = kwargs.get('congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus')
+        self.congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects = kwargs.get('congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects')
+        self.congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects = kwargs.get('congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects')
+        self.congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect = kwargs.get('congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect')
+        self.congenital_heart_disease_boderline_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus = kwargs.get('congenital_heart_disease_boderline_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus')
+        self.congenital_heart_disease_boderline_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects = kwargs.get('congenital_heart_disease_boderline_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects')
+        self.congenital_heart_disease_boderline_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects = kwargs.get('congenital_heart_disease_boderline_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects')
+        self.congenital_heart_disease_boderline_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect = kwargs.get('congenital_heart_disease_boderline_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect')
+        self.congenital_heart_disease_mild_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus = kwargs.get('congenital_heart_disease_mild_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus')
+        self.congenital_heart_disease_mild_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects = kwargs.get('congenital_heart_disease_mild_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects')
+        self.congenital_heart_disease_mild_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects = kwargs.get('congenital_heart_disease_mild_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects')
+        self.congenital_heart_disease_mild_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect = kwargs.get('congenital_heart_disease_mild_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect')
+        self.congenital_heart_disease_moderate_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus = kwargs.get('congenital_heart_disease_moderate_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus')
+        self.congenital_heart_disease_moderate_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects = kwargs.get('congenital_heart_disease_moderate_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects')
+        self.congenital_heart_disease_moderate_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects = kwargs.get('congenital_heart_disease_moderate_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects')
+        self.congenital_heart_disease_moderate_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect = kwargs.get('congenital_heart_disease_moderate_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect')
+        self.congenital_heart_disease_profound_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects = kwargs.get('congenital_heart_disease_profound_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects')
+        self.congenital_heart_disease_profound_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects = kwargs.get('congenital_heart_disease_profound_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects')
+        self.congenital_heart_disease_profound_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect = kwargs.get('congenital_heart_disease_profound_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect')
+        self.congenital_heart_disease_profound_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus = kwargs.get('congenital_heart_disease_profound_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus')
+        self.congenital_heart_disease_severe_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus = kwargs.get('congenital_heart_disease_severe_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus')
+        self.congenital_heart_disease_severe_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects = kwargs.get('congenital_heart_disease_severe_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects')
+        self.congenital_heart_disease_severe_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects = kwargs.get('congenital_heart_disease_severe_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects')
+        self.congenital_heart_disease_severe_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect = kwargs.get('congenital_heart_disease_severe_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect')
+        self.diagnosis_and_primary_therapy_phase_of_other_malignant_neoplasms = kwargs.get('diagnosis_and_primary_therapy_phase_of_other_malignant_neoplasms')
+        self.controlled_phase_of_other_malignant_neoplasms = kwargs.get('controlled_phase_of_other_malignant_neoplasms')
+        self.metastatic_phase_of_other_malignant_neoplasms = kwargs.get('metastatic_phase_of_other_malignant_neoplasms')
+        self.terminal_phase_of_other_malignant_neoplasms = kwargs.get('terminal_phase_of_other_malignant_neoplasms')
+        self.asymptomatic_rheumatoid_arthritis = kwargs.get('asymptomatic_rheumatoid_arthritis')
+        self.symptomatic_probable_migraine = kwargs.get('symptomatic_probable_migraine')
+        self.asymptomatic_probable_migraine = kwargs.get('asymptomatic_probable_migraine')
+        self.symptomatic_definite_migraine = kwargs.get('symptomatic_definite_migraine')
+        self.asymptomatic_definite_migraine = kwargs.get('asymptomatic_definite_migraine')
+        self.asymptomatic_osteoarthritis_of_the_knee = kwargs.get('asymptomatic_osteoarthritis_of_the_knee')
+        self.asymptomatic_osteoarthritis_of_the_hip = kwargs.get('asymptomatic_osteoarthritis_of_the_hip')
+        self.mild_to_moderate_gerd_symptomatic_days = kwargs.get('mild_to_moderate_gerd_symptomatic_days')
+        self.mild_to_moderate_gerd_asymptomatic_days = kwargs.get('mild_to_moderate_gerd_asymptomatic_days')
+        self.severe_gerd_symptomatic_days = kwargs.get('severe_gerd_symptomatic_days')
+        self.severe_gerd_asymptomatic_days = kwargs.get('severe_gerd_asymptomatic_days')
+        self.asymptomatic_chronic_pancreatitis = kwargs.get('asymptomatic_chronic_pancreatitis')
+        self.acute_peptic_ulcer_disease_with_no_anemia = kwargs.get('acute_peptic_ulcer_disease_with_no_anemia')
+        self.acute_peptic_ulcer_disease_with_mild_anemia = kwargs.get('acute_peptic_ulcer_disease_with_mild_anemia')
+        self.acute_peptic_ulcer_disease_with_moderate_anemia = kwargs.get('acute_peptic_ulcer_disease_with_moderate_anemia')
+        self.acute_peptic_ulcer_disease_with_severe_anemia = kwargs.get('acute_peptic_ulcer_disease_with_severe_anemia')
+        self.acute_gastritis_and_duodenitis_with_no_anemia = kwargs.get('acute_gastritis_and_duodenitis_with_no_anemia')
+        self.acute_gastritis_and_duodenitis_with_mild_anemia = kwargs.get('acute_gastritis_and_duodenitis_with_mild_anemia')
+        self.acute_gastritis_and_duodenitis_with_moderate_anemia = kwargs.get('acute_gastritis_and_duodenitis_with_moderate_anemia')
+        self.acute_gastritis_and_duodenitis_with_severe_anemia = kwargs.get('acute_gastritis_and_duodenitis_with_severe_anemia')
+        self.extreme_hyperbilirubinemia_due_to_hemolytic_disease_and_other_neonatal_jaundice_without_kernicterus = kwargs.get('extreme_hyperbilirubinemia_due_to_hemolytic_disease_and_other_neonatal_jaundice_without_kernicterus')
+        self.basal_cell_carcinoma_without_disfigurement = kwargs.get('basal_cell_carcinoma_without_disfigurement')
+        self.mild_motor_impairment_and_moderate_respiratory_problems_due_to_motor_neuron_disease = kwargs.get('mild_motor_impairment_and_moderate_respiratory_problems_due_to_motor_neuron_disease')
