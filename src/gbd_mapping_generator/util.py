@@ -2,7 +2,6 @@ import os
 from pathlib import Path
 
 import numpy as np
-import pandas as pd
 
 
 TEXTWIDTH = 118  # type: int
@@ -198,7 +197,3 @@ def format_string_none(value):
         return None
     else:
         return f"'{value}'"
-
-
-def make_empty_survey(flags, index):
-    return pd.DataFrame(dict(zip(flags, [None]*len(flags))), index=index)
