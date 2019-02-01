@@ -258,12 +258,20 @@ def get_all_risk_metadata():
     return risks
 
 
-def get_risk_data():
+def get_risk_data(with_survey):
     risks = get_all_risk_metadata()
     causes = get_causes().set_index('cause_id')
 
-    data_survey = gbd.get_survey_summary("risk_factor", SURVEY_LOCATION_ID)
-    risks = risks.join(data_survey, how='left')
+    if with_survey:
+        data_survey = gbd.get_survey_summary("risk_factor", SURVEY_LOCATION_ID)
+        assert len(risks) == len(data_survey)
+        risks = risks.join(data_survey, how='left')
+    else:
+        data_survey = make_empty_survey(['exposure_exists', 'exposure_sd_exists', 'exposure_year_type',
+                                         'rr_exists', 'rr_in_range', 'paf_yll_exists', 'paf_yll_in_range',
+                                         'paf_yld_exists', 'paf_yld_in_range'],
+                                        index=risks.index)
+        risks = risks.join(data_survey)
 
     out = []
     # Some polytomous risks have an explicit tmrel category, some do not.
@@ -360,13 +368,16 @@ def get_risk_data():
             rr_exists = None
             rr_in_range = None
 
-        violated_restrictions = []
-        for restr_type in ["exposure_age_restriction_violated", "exposure_sex_restriction_violated",
-                           "rr_age_restriction_violated", "rr_sex_restriction_violated",
-                           "paf_yll_age_restriction_violated", "paf_yll_sex_restriction_violated",
-                           "paf_yld_age_restriction_violated", "paf_yld_sex_restriction_violated"]:
-            if risk[restr_type] is not np.nan and risk[restr_type]:
-                violated_restrictions.append(restr_type)
+        if with_survey:
+            violated_restrictions = []
+            for restr_type in ["exposure_age_restriction_violated", "exposure_sex_restriction_violated",
+                               "rr_age_restriction_violated", "rr_sex_restriction_violated",
+                               "paf_yll_age_restriction_violated", "paf_yll_sex_restriction_violated",
+                               "paf_yld_age_restriction_violated", "paf_yld_sex_restriction_violated"]:
+                if risk[restr_type] is not np.nan and risk[restr_type]:
+                    violated_restrictions.append(restr_type)
+        else:
+            violated_restrictions = None
 
         sub_risks = risks[risks.parent_id == rei_id].rei_name.tolist()
 
