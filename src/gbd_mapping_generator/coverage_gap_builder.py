@@ -96,7 +96,7 @@ def make_coverage_gaps(coverage_gap_data):
     return out
 
 
-def build_mapping_template():
+def build_mapping_template(_):
     out = make_module_docstring('Mapping templates for coverage gap data.', __file__)
     out += make_import('typing', ['Tuple', 'Union']) + '\n'
     out += make_import('.id', ['reiid'])
@@ -110,7 +110,7 @@ def build_mapping_template():
     return out
 
 
-def build_mapping():
+def build_mapping(_):
     out = make_module_docstring('Mapping of coverage gaps.', __file__)
     out += make_import('.id', ['reiid'])
     out += make_import('.base_template', ['Categories', 'Restrictions'])

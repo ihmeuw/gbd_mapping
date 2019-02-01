@@ -23,7 +23,7 @@ def make_unknown_flag():
     return out
 
 
-def build_mapping():
+def build_mapping(with_survey):
     out = make_module_docstring('Custom ID types for GBD entities', __file__)
     for k, v in ID_TYPES:
         out += SPACING

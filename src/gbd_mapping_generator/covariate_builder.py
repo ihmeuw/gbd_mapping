@@ -57,7 +57,7 @@ def make_covariates(covariate_list):
     return out
 
 
-def build_mapping_template():
+def build_mapping_template(with_survey):
     out = make_module_docstring('Mapping templates for GBD covariates.', __file__)
     out += make_import('typing', ['Union']) + '\n'
     out += make_import('.id', ['covid'])
@@ -69,7 +69,7 @@ def build_mapping_template():
     return out
 
 
-def build_mapping():
+def build_mapping(with_survey):
     out = make_module_docstring('Mapping of GBD covariates.', __file__)
     out += make_import('.id', ['covid'])
     out += make_import('.covariate_template', ['Covariate', 'Covariates']) + SPACING
