@@ -128,7 +128,7 @@ def get_etiology_data():
                     etiologies.paf_yld_in_range))
 
 
-def get_cause_data():
+def get_cause_data(with_survey):
     sequelae = gbd.get_sequela_id_mapping().sort_values('sequela_id')
 
     etiologies = gbd.get_rei_metadata(rei_set_id=ETIOLOGY_SET_ID)
@@ -140,8 +140,6 @@ def get_cause_data():
     cause_me_map = cause_me_map[['modelable_entity_id', 'cause_name']].set_index('cause_name')
 
     causes = gbd.get_cause_metadata(cause_set_id=CAUSE_SET_ID)
-    data_survey = gbd.get_survey_summary('cause', SURVEY_LOCATION_ID)
-    assert len(causes) == len(data_survey)
 
     causes = pd.DataFrame({'cause_name': clean_entity_list(causes.cause_name),
                            'cause_id': causes.cause_id,
@@ -157,7 +155,21 @@ def get_cause_data():
                            'yld_age_start': causes.yld_age_start.replace({np.NaN: 0}),
                            'yld_age_end': causes.yld_age_end})
 
-    causes = causes.merge(data_survey, on='cause_id')
+    if with_survey:
+        data_survey = gbd.get_survey_summary('cause', SURVEY_LOCATION_ID)
+        assert len(causes) == len(data_survey)
+        causes = causes.merge(data_survey, on='cause_id')
+
+    else:
+        data_survey = make_empty_survey(['prevalence_exists', 'incidence_exists', 'remission_exists', 'deaths_exists',
+                                         'birth_prevalence_exists', 'prevalence_in_range', 'incidence_in_range',
+                                         'remission_in_range', 'deaths_in_range', 'birth_prevalence_in_range',
+                                         'prevalence_consistent', 'incidence_consistent', 'deaths_consistent',
+                                         'birth_prevalence_consistent', 'prevalence_aggregates', 'incidence_aggregates',
+                                         'deaths_aggregates', 'birth_prevalence_aggregates', 'violated_restrictions'],
+                                        index=causes.index)
+        causes = causes.join(data_survey)
+
     causes = causes.set_index('cause_name').join(cause_me_map).sort_values('cause_id').reset_index()
 
     cause_data = []
@@ -227,6 +239,7 @@ def get_age_restriction_edge(age_restriction, end=False):
 
 
 def make_cause_restrictions(cause):
+    violated_restrictions = cause['violated_restrictions']
     restrictions = (
         ('male_only', not cause['female']),
         ('female_only', not cause['male']),
@@ -236,7 +249,7 @@ def make_cause_restrictions(cause):
         ('yll_age_group_id_end', get_age_restriction_edge(cause['yll_age_end'], end=True) if not cause['yld_only'] else None),
         ('yld_age_group_id_start', get_age_restriction_edge(cause['yld_age_start']) if not cause['yll_only'] else None),
         ('yld_age_group_id_end', get_age_restriction_edge(cause['yld_age_end'], end=True) if not cause['yll_only'] else None),
-        ('violated', tuple(cause['violated_restrictions']))
+        ('violated', tuple(violated_restrictions) if violated_restrictions is not None else None)
     )
     return tuple(restrictions)
 
