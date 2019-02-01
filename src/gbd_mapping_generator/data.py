@@ -48,11 +48,9 @@ def get_risks():
 
 
 def get_covariates():
-    data = get_covariate_data()
-    data = {c[0]: c[1] for c in data}
-
-    covariates = pd.DataFrame.from_dict(data, orient='index').reset_index()
-    covariates = covariates.rename(columns={'index':'covariate_name', 0:'covariate_id'})
+    covariates = gbd.get_covariate_metadata()
+    covariates = pd.DataFrame({'covariate_name': clean_entity_list(covariates.covariate_name),
+                               'covariate_id': covariates.covariate_id})
     return covariates.sort_values('covariate_id')
 
 #####################################
@@ -405,16 +403,22 @@ def get_risk_data():
     return out
 
 
-def get_covariate_data():
+def get_covariate_data(with_survey):
     covariates = gbd.get_covariate_metadata()
-    data_survey = gbd.get_survey_summary('covariate', SURVEY_LOCATION_ID)
-    data_survey = data_survey[data_survey.covariate_id.isin(covariates.covariate_id)]
+    if with_survey:
+        data_survey = gbd.get_survey_summary('covariate', SURVEY_LOCATION_ID)
+        assert len(covariates) == len(data_survey)
 
-    covariates = covariates.merge(data_survey, on='covariate_id')
+        covariates = covariates.merge(data_survey, on='covariate_id')
 
-    # covariates are special
-    covariates['by_age_violated'] = covariates.violated_restrictions.apply(lambda x: "age_restriction_violated" in x)
-    covariates['by_sex_violated'] = covariates.violated_restrictions.apply(lambda x: "sex_restriction_violated" in x)
+        # covariates are special
+        covariates['by_age_violated'] = covariates.violated_restrictions.apply(lambda x: "age_restriction_violated" in x)
+        covariates['by_sex_violated'] = covariates.violated_restrictions.apply(lambda x: "sex_restriction_violated" in x)
+    else:
+        data_survey = make_empty_survey(['mean_value_exists', 'uncertainty_exists',
+                                         'by_age_violated', 'by_sex_violated'],
+                                        index=covariates.index)
+        covariates = covariates.join(data_survey)
 
     return list(zip(clean_entity_list(covariates.covariate_name),
                     covariates.covariate_id,
