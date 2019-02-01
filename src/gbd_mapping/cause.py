@@ -47,8 +47,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'communicable_maternal_neonatal_and_nutritional_diseases': Cause(
         name='communicable_maternal_neonatal_and_nutritional_diseases',
@@ -85,8 +87,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'tuberculosis': Cause(
         name='tuberculosis',
@@ -123,8 +127,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'hiv_aids': Cause(
         name='hiv_aids',
@@ -161,8 +167,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=4,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence'),
+            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence', )
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'hiv_aids_resulting_in_other_diseases': Cause(
         name='hiv_aids_resulting_in_other_diseases',
@@ -199,7 +207,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.early_hiv_with_mild_anemia, sequelae.early_hiv_with_moderate_anemia, 
                   sequelae.early_hiv_with_severe_anemia, sequelae.early_hiv_without_anemia, 
@@ -210,6 +218,7 @@ causes = Causes(**{
                   sequelae.hiv_aids_with_antiretroviral_treatment_with_severe_anemia, 
                   sequelae.hiv_aids_with_antiretroviral_treatment_without_anemia, sequelae.aids_with_mild_anemia, 
                   sequelae.aids_with_moderate_anemia, sequelae.aids_with_severe_anemia, sequelae.aids_without_anemia, ),
+        etiologies=(),
     ),
     'diarrheal_diseases': Cause(
         name='diarrheal_diseases',
@@ -246,7 +255,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_diarrheal_diseases, sequelae.moderate_diarrheal_diseases, 
                   sequelae.severe_diarrheal_diseases, sequelae.guillain_barre_syndrome_due_to_diarrheal_diseases, ),
@@ -290,10 +299,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.acute_typhoid_infection, sequelae.severe_typhoid_fever, 
                   sequelae.intestinal_perforation_due_to_typhoid, sequelae.gastrointestinal_bleeding_due_to_typhoid, ),
+        etiologies=(),
     ),
     'paratyphoid_fever': Cause(
         name='paratyphoid_fever',
@@ -330,10 +340,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.acute_paratyphoid_infection, sequelae.moderate_paratyphoid_fever, 
                   sequelae.severe_paratyphoid_fever, sequelae.intestinal_perforation_due_to_paratyphoid, ),
+        etiologies=(),
     ),
     'other_intestinal_infectious_diseases': Cause(
         name='other_intestinal_infectious_diseases',
@@ -370,9 +381,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=4,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.other_intestinal_infectious_diseases, ),
+        etiologies=(),
     ),
     'lower_respiratory_infections': Cause(
         name='lower_respiratory_infections',
@@ -409,7 +421,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.moderate_lower_respiratory_infections, sequelae.severe_lower_respiratory_infections, 
                   sequelae.guillain_barre_syndrome_due_to_lower_respiratory_infections, ),
@@ -451,10 +463,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_upper_respiratory_infections, sequelae.moderate_upper_respiratory_infections, 
                   sequelae.guillain_barre_syndrome_due_to_upper_respiratory_infections, ),
+        etiologies=(),
     ),
     'otitis_media': Cause(
         name='otitis_media',
@@ -491,7 +504,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.acute_otitis_media, sequelae.severe_infectious_complications_due_to_chronic_otitis_media, 
                   sequelae.vertigo_with_mild_hearing_loss_due_to_chronic_otitis_media, 
@@ -502,6 +515,7 @@ causes = Causes(**{
                   sequelae.vertigo_with_moderate_hearing_loss_and_ringing_due_to_chronic_otitis_media, 
                   sequelae.moderate_hearing_loss_due_to_chronic_otitis_media, 
                   sequelae.moderate_hearing_loss_with_ringing_due_to_chronic_otitis_media, ),
+        etiologies=(),
     ),
     'meningitis': Cause(
         name='meningitis',
@@ -538,8 +552,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'pneumococcal_meningitis': Cause(
         name='pneumococcal_meningitis',
@@ -576,7 +592,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.acute_pneumococcal_meningitis, 
                   sequelae.mild_behavioral_problems_due_to_pneumococcal_meningitis, 
@@ -605,6 +621,7 @@ causes = Causes(**{
                   sequelae.blindness_due_to_pneumococcal_meningitis, 
                   sequelae.moderate_vision_impairment_due_to_pneumococcol_meningitis, 
                   sequelae.severe_vision_impairment_due_to_pneumococcol_meningitis, ),
+        etiologies=(),
     ),
     'h_influenzae_type_b_meningitis': Cause(
         name='h_influenzae_type_b_meningitis',
@@ -641,7 +658,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.acute_h_influenzae_type_b_meningitis, 
                   sequelae.mild_behavioral_problems_due_to_h_influenzae_type_b_meningitis, 
@@ -670,6 +687,7 @@ causes = Causes(**{
                   sequelae.blindness_due_to_h_influenzae_type_b_meningitis, 
                   sequelae.moderate_vision_impairment_due_to_h_influenza_type_b_meningitis, 
                   sequelae.severe_vision_impairment_due_to_h_influenza_type_b_meningitis, ),
+        etiologies=(),
     ),
     'meningococcal_meningitis': Cause(
         name='meningococcal_meningitis',
@@ -706,7 +724,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.acute_meningococcal_meningitis, 
                   sequelae.mild_behavioral_problems_due_to_meningococcal_meningitis, 
@@ -735,6 +753,7 @@ causes = Causes(**{
                   sequelae.blindness_due_to_meningococcal_meningitis, 
                   sequelae.moderate_vision_impairment_due_to_meningococcal_meningitis, 
                   sequelae.severe_vision_impairment_due_to_meningococcal_meningitis, ),
+        etiologies=(),
     ),
     'other_meningitis': Cause(
         name='other_meningitis',
@@ -771,7 +790,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.other_acute_bacterial_meningitis, 
                   sequelae.mild_behavioral_problems_due_to_other_bacterial_meningitis, 
@@ -801,6 +820,7 @@ causes = Causes(**{
                   sequelae.blindness_due_to_other_bacterial_meningitis, 
                   sequelae.moderate_vision_impairment_due_to_other_bacterial_meningitis, 
                   sequelae.severe_vision_impairment_due_to_other_bacterial_meningitis, ),
+        etiologies=(),
     ),
     'encephalitis': Cause(
         name='encephalitis',
@@ -837,7 +857,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.acute_encephalitis, sequelae.mild_behavioral_problems_due_to_encephalitis, 
                   sequelae.mild_motor_impairment_due_to_long_term_due_to_encephalitis, 
@@ -852,6 +872,7 @@ causes = Causes(**{
                   sequelae.epilepsy_due_to_encephalitis, sequelae.blindness_due_to_encephalitis, 
                   sequelae.moderate_vision_impairment_due_to_encephalitis, 
                   sequelae.severe_vision_impairment_due_to_encephalitis, ),
+        etiologies=(),
     ),
     'diphtheria': Cause(
         name='diphtheria',
@@ -888,9 +909,11 @@ causes = Causes(**{
             yll_age_group_id_end=15,
             yld_age_group_id_start=4,
             yld_age_group_id_end=15,
-            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence', 'yll_age_restriction_violated_by_deaths'),
+            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence',
+                      'yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.moderate_diphtheria, sequelae.severe_diphtheria, ),
+        etiologies=(),
     ),
     'whooping_cough': Cause(
         name='whooping_cough',
@@ -927,9 +950,11 @@ causes = Causes(**{
             yll_age_group_id_end=15,
             yld_age_group_id_start=4,
             yld_age_group_id_end=15,
-            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence', 'yll_age_restriction_violated_by_deaths'),
+            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence',
+                      'yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.whooping_cough, ),
+        etiologies=(),
     ),
     'tetanus': Cause(
         name='tetanus',
@@ -966,7 +991,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.severe_tetanus, 
                   sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_tetanus, 
@@ -985,6 +1010,7 @@ causes = Causes(**{
                   sequelae.severe_motor_impairment_with_epilepsy_due_to_neonatal_tetanus, 
                   sequelae.mild_motor_impairment_due_to_neonatal_tetanus, 
                   sequelae.mild_motor_plus_cognitive_impairments_due_to_neonatal_tetanus, ),
+        etiologies=(),
     ),
     'measles': Cause(
         name='measles',
@@ -1021,9 +1047,11 @@ causes = Causes(**{
             yll_age_group_id_end=15,
             yld_age_group_id_start=4,
             yld_age_group_id_end=15,
-            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence', 'yll_age_restriction_violated_by_deaths'),
+            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence',
+                      'yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.moderate_measles, sequelae.severe_measles, ),
+        etiologies=(),
     ),
     'varicella_and_herpes_zoster': Cause(
         name='varicella_and_herpes_zoster',
@@ -1060,9 +1088,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.chickenpox, sequelae.herpes_zoster, ),
+        etiologies=(),
     ),
     'neglected_tropical_diseases_and_malaria': Cause(
         name='neglected_tropical_diseases_and_malaria',
@@ -1099,8 +1128,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'malaria': Cause(
         name='malaria',
@@ -1137,7 +1168,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_malaria, sequelae.moderate_malaria, sequelae.severe_malaria, 
                   sequelae.moderate_motor_impairment_due_to_malaria, 
@@ -1164,6 +1195,7 @@ causes = Causes(**{
                   sequelae.moderate_malaria_with_moderate_anemia, sequelae.moderate_malaria_with_severe_anemia, 
                   sequelae.mild_anemia_due_to_malaria_vivax_pvpr, sequelae.moderate_anemia_due_to_malaria_vivax_pvpr, 
                   sequelae.severe_anemia_due_to_malaria_vivax_pvpr, sequelae.asymptomatic_malaria_vivax_pvpr, ),
+        etiologies=(),
     ),
     'chagas_disease': Cause(
         name='chagas_disease',
@@ -1200,7 +1232,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.acute_chagas_disease, sequelae.atrial_fibrillation_and_flutter_due_to_chagas_disease, 
                   sequelae.mild_chronic_digestive_disease_due_to_chagas_disease, 
@@ -1208,7 +1240,8 @@ causes = Causes(**{
                   sequelae.mild_heart_failure_due_to_chagas_disease, 
                   sequelae.moderate_heart_failure_due_to_chagas_disease, 
                   sequelae.severe_heart_failure_due_to_chagas_disease, sequelae.asymptomatic_chagas_disease, 
-                  sequelae.treated_heart_failure_due_to_chagas_disease, ),
+                  sequelae.controlled_medically_managed_heart_failure_due_to_chagas_disease, ),
+        etiologies=(),
     ),
     'leishmaniasis': Cause(
         name='leishmaniasis',
@@ -1245,8 +1278,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=4,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'visceral_leishmaniasis': Cause(
         name='visceral_leishmaniasis',
@@ -1283,9 +1318,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=4,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.moderate_visceral_leishmaniasis, sequelae.severe_visceral_leishmaniasis, ),
+        etiologies=(),
     ),
     'cutaneous_and_mucocutaneous_leishmaniasis': Cause(
         name='cutaneous_and_mucocutaneous_leishmaniasis',
@@ -1322,9 +1358,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=4,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.cutaneous_and_mucocutaneous_leishmaniasis, ),
+        etiologies=(),
     ),
     'african_trypanosomiasis': Cause(
         name='african_trypanosomiasis',
@@ -1361,12 +1398,13 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.skin_disfigurement_due_to_trypanosoma_brucei_gambiense, 
                   sequelae.sleeping_sickness_due_to_trypanosoma_brucei_gambiense, 
                   sequelae.sleeping_sickness_due_to_trypanosoma_brucei_rhodesiense, 
                   sequelae.skin_disfigurement_due_to_trypanosoma_brucei_rhodesiense, ),
+        etiologies=(),
     ),
     'schistosomiasis': Cause(
         name='schistosomiasis',
@@ -1403,7 +1441,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=4,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_schistosomiasis, sequelae.mild_diarrhea_due_to_schistosomiasis, 
                   sequelae.hematemesis_due_to_schistosomiasis, sequelae.hepatomegaly_due_to_schistosomiasis, 
@@ -1411,6 +1449,7 @@ causes = Causes(**{
                   sequelae.bladder_pathology_due_to_schistosomiasis, sequelae.hydronephrosis_due_to_schistosomiasis, 
                   sequelae.mild_anemia_due_to_schistosomiasis, sequelae.moderate_anemia_due_to_schistosomiasis, 
                   sequelae.severe_anemia_due_to_schistosomiasis, ),
+        etiologies=(),
     ),
     'cysticercosis': Cause(
         name='cysticercosis',
@@ -1447,9 +1486,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=6,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.neurocysticercosis_with_epilepsy, ),
+        etiologies=(),
     ),
     'cystic_echinococcosis': Cause(
         name='cystic_echinococcosis',
@@ -1486,11 +1526,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.abdominal_problems_due_to_cystic_echinococcosis, 
                   sequelae.chronic_respiratory_disease_due_to_cystic_echinococcosis, 
                   sequelae.epilepsy_due_to_echinococcosis, ),
+        etiologies=(),
     ),
     'lymphatic_filariasis': Cause(
         name='lymphatic_filariasis',
@@ -1527,11 +1568,12 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.prevalence_of_detectable_microfiliaria_due_to_lymphatic_filariasis, 
                   sequelae.lymphedema_due_to_lymphatic_filariasis, sequelae.hydrocele_due_to_lymphatic_filariasis, 
                   sequelae.acute_adenolymphangitis_due_to_lymphatic_filariasis, ),
+        etiologies=(),
     ),
     'onchocerciasis': Cause(
         name='onchocerciasis',
@@ -1568,7 +1610,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=6,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_skin_disease_due_to_onchocerciasis, 
                   sequelae.moderate_skin_disease_due_to_onchocerciasis, 
@@ -1578,6 +1620,7 @@ causes = Causes(**{
                   sequelae.blindness_due_to_onchocerciasis, 
                   sequelae.moderate_vision_impairment_due_to_onchocerciasis, 
                   sequelae.severe_vision_impairment_due_to_onchocerciasis, sequelae.asymptomatic_onchocerciasis, ),
+        etiologies=(),
     ),
     'trachoma': Cause(
         name='trachoma',
@@ -1614,10 +1657,11 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.moderate_vision_impairment_due_to_trachoma, 
                   sequelae.severe_vision_impairment_due_to_trachoma, sequelae.blindness_due_to_trachoma, ),
+        etiologies=(),
     ),
     'dengue': Cause(
         name='dengue',
@@ -1654,9 +1698,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=4,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.moderate_dengue, sequelae.severe_dengue, sequelae.post_dengue_chronic_fatigue_syndrome, ),
+        etiologies=(),
     ),
     'yellow_fever': Cause(
         name='yellow_fever',
@@ -1693,9 +1738,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.moderate_yellow_fever, sequelae.severe_yellow_fever, sequelae.asymptomatic_yellow_fever, ),
+        etiologies=(),
     ),
     'rabies': Cause(
         name='rabies',
@@ -1732,9 +1778,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=4,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.rabies, ),
+        etiologies=(),
     ),
     'intestinal_nematode_infections': Cause(
         name='intestinal_nematode_infections',
@@ -1771,8 +1818,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=4,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'ascariasis': Cause(
         name='ascariasis',
@@ -1809,10 +1858,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=4,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.heavy_infestation_of_ascariasis, sequelae.mild_abdominopelvic_problems_due_to_ascariasis, 
                   sequelae.severe_wasting_due_to_ascariasis, sequelae.asymptomatic_ascariasis, ),
+        etiologies=(),
     ),
     'trichuriasis': Cause(
         name='trichuriasis',
@@ -1849,11 +1899,12 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=4,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.heavy_infestation_of_trichuriasis, 
                   sequelae.mild_abdominopelvic_problems_due_to_trichuriasis, 
                   sequelae.severe_wasting_due_to_trichuriasis, sequelae.asymptomatic_trichuriasis, ),
+        etiologies=(),
     ),
     'hookworm_disease': Cause(
         name='hookworm_disease',
@@ -1890,13 +1941,14 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=4,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.heavy_infestation_of_hookworm, 
                   sequelae.mild_abdominopelvic_problems_due_to_hookworm_disease, 
                   sequelae.severe_wasting_due_to_hookworm_disease, sequelae.mild_anemia_due_to_hookworm_disease, 
                   sequelae.moderate_anemia_due_to_hookworm_disease, sequelae.severe_anemia_due_to_hookworm_disease, 
                   sequelae.asymptomatic_hookworm_disease, ),
+        etiologies=(),
     ),
     'food_borne_trematodiases': Cause(
         name='food_borne_trematodiases',
@@ -1933,7 +1985,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.cerebral_paragonimiasis, sequelae.heavy_clonorchiasis_due_to_food_borne_trematodiases, 
                   sequelae.heavy_fascioliasis_due_to_food_borne_trematodiases, 
@@ -1944,6 +1996,7 @@ causes = Causes(**{
                   sequelae.asymptomatic_paragonimiasis, sequelae.mild_paragonimiasis_due_to_food_borne_trematodiases, 
                   sequelae.moderate_paragonimiasis_due_to_food_borne_trematodiases, 
                   sequelae.severe_paragonimiasis_due_to_food_borne_trematodiases, ),
+        etiologies=(),
     ),
     'other_neglected_tropical_diseases': Cause(
         name='other_neglected_tropical_diseases',
@@ -1980,12 +2033,13 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.acute_infection_due_to_other_neglected_tropical_diseases, 
                   sequelae.mild_anemia_due_to_other_neglected_tropical_diseases, 
                   sequelae.moderate_anemia_due_to_other_neglected_tropical_diseases, 
                   sequelae.severe_anemia_due_to_other_neglected_tropical_diseases, ),
+        etiologies=(),
     ),
     'maternal_disorders': Cause(
         name='maternal_disorders',
@@ -2022,8 +2076,10 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'maternal_hemorrhage': Cause(
         name='maternal_hemorrhage',
@@ -2060,13 +2116,15 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=7,
             yld_age_group_id_end=14,
-            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence', 'yll_age_restriction_violated_by_deaths'),
+            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence',
+                      'yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.maternal_hemorrhage_less_than__1l_blood_lost, 
                   sequelae.maternal_hemorrhage_greater_than__1l_blood_lost, 
                   sequelae.mild_anemia_due_to_maternal_hemorrhage, 
                   sequelae.moderate_anemia_due_to_maternal_hemorrhage, 
                   sequelae.severe_anemia_due_to_maternal_hemorrhage, ),
+        etiologies=(),
     ),
     'maternal_sepsis_and_other_maternal_infections': Cause(
         name='maternal_sepsis_and_other_maternal_infections',
@@ -2103,10 +2161,12 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=7,
             yld_age_group_id_end=14,
-            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence', 'yll_age_restriction_violated_by_deaths'),
+            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence',
+                      'yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.infertility_due_to_puerperal_sepsis, sequelae.puerperal_sepsis, 
                   sequelae.other_maternal_infections, ),
+        etiologies=(),
     ),
     'maternal_hypertensive_disorders': Cause(
         name='maternal_hypertensive_disorders',
@@ -2143,11 +2203,13 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=7,
             yld_age_group_id_end=14,
-            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence', 'yll_age_restriction_violated_by_deaths'),
+            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence',
+                      'yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.severe_pre_eclampsia, sequelae.eclampsia, 
                   sequelae.long_term_sequelae_of_severe_pre_eclampsia, 
                   sequelae.other_hypertensive_disorders_of_pregnancy, sequelae.long_term_sequelae_of_eclampsia, ),
+        etiologies=(),
     ),
     'maternal_obstructed_labor_and_uterine_rupture': Cause(
         name='maternal_obstructed_labor_and_uterine_rupture',
@@ -2184,10 +2246,11 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.obstructed_labor_acute_event, sequelae.rectovaginal_fistula, 
                   sequelae.vesicovaginal_fistula, ),
+        etiologies=(),
     ),
     'ectopic_pregnancy': Cause(
         name='ectopic_pregnancy',
@@ -2224,9 +2287,11 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=7,
             yld_age_group_id_end=14,
-            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence', 'yll_age_restriction_violated_by_deaths'),
+            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence',
+                      'yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.ectopic_pregnancy, ),
+        etiologies=(),
     ),
     'indirect_maternal_deaths': Cause(
         name='indirect_maternal_deaths',
@@ -2263,8 +2328,10 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=None,
             yld_age_group_id_end=None,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'late_maternal_deaths': Cause(
         name='late_maternal_deaths',
@@ -2301,8 +2368,10 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=None,
             yld_age_group_id_end=None,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'other_maternal_disorders': Cause(
         name='other_maternal_disorders',
@@ -2339,9 +2408,10 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=7,
             yld_age_group_id_end=14,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.other_maternal_disorders, ),
+        etiologies=(),
     ),
     'neonatal_disorders': Cause(
         name='neonatal_disorders',
@@ -2378,8 +2448,10 @@ causes = Causes(**{
             yll_age_group_id_end=4,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'neonatal_preterm_birth': Cause(
         name='neonatal_preterm_birth',
@@ -2416,7 +2488,7 @@ causes = Causes(**{
             yll_age_group_id_end=4,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.mild_vision_impairment_due_to_retinopathy_of_prematurity, 
                   sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_preterm_birth_complications_28_32wks, 
@@ -2474,6 +2546,7 @@ causes = Causes(**{
                   sequelae.asymptomatic_neonatal_preterm_birth_less_than_28_weeks, 
                   sequelae.asymptomatic_neonatal_preterm_birth_28_less_than_32_wks, 
                   sequelae.asymptomatic_neonatal_preterm_birth_32_less_than_37wks, ),
+        etiologies=(),
     ),
     'neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma': Cause(
         name='neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma',
@@ -2510,7 +2583,7 @@ causes = Causes(**{
             yll_age_group_id_end=4,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.mild_motor_plus_cognitive_impairments_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma, 
                   sequelae.mild_motor_impairment_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma, 
@@ -2529,6 +2602,7 @@ causes = Causes(**{
                   sequelae.severe_motor_impairment_with_blindness_and_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma, 
                   sequelae.severe_motor_impairment_with_epilepsy_due_to_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma, 
                   sequelae.asymptomatic_neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma, ),
+        etiologies=(),
     ),
     'neonatal_sepsis_and_other_neonatal_infections': Cause(
         name='neonatal_sepsis_and_other_neonatal_infections',
@@ -2565,10 +2639,9 @@ causes = Causes(**{
             yll_age_group_id_end=4,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
-        sequelae=(sequelae.severe_infection_due_to_neonatal_sepsis_and_other_neonatal_infections, 
-                  sequelae.asymptomatic_neonatal_sepsis_and_other_neonatal_infections, 
+        sequelae=(sequelae.asymptomatic_neonatal_sepsis_and_other_neonatal_infections, 
                   sequelae.mild_motor_plus_cognitive_impairments_due_to_neonatal_sepsis_and_other_neonatal_infections, 
                   sequelae.mild_motor_impairment_due_to_neonatal_sepsis_and_other_neonatal_infections, 
                   sequelae.moderate_motor_impairment_due_to_neonatal_sepsis_and_other_neonatal_infections, 
@@ -2585,6 +2658,7 @@ causes = Causes(**{
                   sequelae.severe_motor_plus_cognitive_impairment_with_blindness_due_to_neonatal_sepsis_and_other_neonatal_infections, 
                   sequelae.severe_motor_plus_cognitive_impairment_with_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections, 
                   sequelae.severe_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_neonatal_sepsis_and_other_neonatal_infections, ),
+        etiologies=(),
     ),
     'hemolytic_disease_and_other_neonatal_jaundice': Cause(
         name='hemolytic_disease_and_other_neonatal_jaundice',
@@ -2606,11 +2680,11 @@ causes = Causes(**{
         prevalence_consistent=True,
         incidence_consistent=True,
         deaths_consistent=None,
-        birth_prevalence_consistent=False,
-        prevalence_aggregates=False,
+        birth_prevalence_consistent=True,
+        prevalence_aggregates=True,
         incidence_aggregates=None,
         deaths_aggregates=None,
-        birth_prevalence_aggregates=None,
+        birth_prevalence_aggregates=True,
         parent=None,
         restrictions=Restrictions(
             male_only=False,
@@ -2621,7 +2695,7 @@ causes = Causes(**{
             yll_age_group_id_end=4,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_due_to_hemolytic_disease_and_other_neonatal_jaundice, 
                   sequelae.moderate_motor_plus_cognitive_impairment_with_blindness_and_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice, 
@@ -2636,7 +2710,9 @@ causes = Causes(**{
                   sequelae.severe_motor_impairment_severe_due_to_hemolytic_disease_and_other_neonatal_jaundice, 
                   sequelae.severe_motor_impairment_with_blindness_due_to_hemolytic_disease_and_other_neonatal_jaundice, 
                   sequelae.severe_motor_impairment_with_blindness_and_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice, 
-                  sequelae.severe_motor_impairment_with_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice, ),
+                  sequelae.severe_motor_impairment_with_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice, 
+                  sequelae.extreme_hyperbilirubinemia_due_to_hemolytic_disease_and_other_neonatal_jaundice_without_kernicterus, ),
+        etiologies=(),
     ),
     'other_neonatal_disorders': Cause(
         name='other_neonatal_disorders',
@@ -2673,9 +2749,10 @@ causes = Causes(**{
             yll_age_group_id_end=4,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.other_neonatal_disorders, ),
+        etiologies=(),
     ),
     'nutritional_deficiencies': Cause(
         name='nutritional_deficiencies',
@@ -2712,8 +2789,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'protein_energy_malnutrition': Cause(
         name='protein_energy_malnutrition',
@@ -2750,10 +2829,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.moderate_wasting_with_edema, sequelae.severe_wasting_without_edema, 
                   sequelae.moderate_wasting_without_edema, sequelae.severe_wasting_with_edema, ),
+        etiologies=(),
     ),
     'iodine_deficiency': Cause(
         name='iodine_deficiency',
@@ -2790,11 +2870,12 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.visible_goiter_without_symptoms, 
                   sequelae.visible_goiter_with_severe_intellectual_disability_due_to_iodine_deficiency, 
                   sequelae.visible_goiter_with_profound_intellectual_disability_due_to_iodine_deficiency, ),
+        etiologies=(),
     ),
     'vitamin_a_deficiency': Cause(
         name='vitamin_a_deficiency',
@@ -2831,13 +2912,14 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.moderate_vision_impairment_loss_due_to_vitamin_a_deficiency, 
                   sequelae.severe_vision_impairment_loss_due_to_vitamin_a_deficiency, 
                   sequelae.blindness_due_to_vitamin_a_deficiency, sequelae.asymptomatic_vitamin_a_deficiency, 
                   sequelae.vitamin_a_deficiency_with_mild_anemia, sequelae.vitamin_a_deficiency_with_moderate_anemia, 
                   sequelae.vitamin_a_deficiency_with_severe_anemia, ),
+        etiologies=(),
     ),
     'dietary_iron_deficiency': Cause(
         name='dietary_iron_deficiency',
@@ -2874,10 +2956,11 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_iron_deficiency_anemia, sequelae.moderate_iron_deficiency_anemia, 
                   sequelae.severe_iron_deficiency_anemia, ),
+        etiologies=(),
     ),
     'other_nutritional_deficiencies': Cause(
         name='other_nutritional_deficiencies',
@@ -2914,9 +2997,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=4,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.other_nutritional_deficiencies, ),
+        etiologies=(),
     ),
     'sexually_transmitted_infections_excluding_hiv': Cause(
         name='sexually_transmitted_infections_excluding_hiv',
@@ -2953,8 +3037,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'syphilis': Cause(
         name='syphilis',
@@ -2991,7 +3077,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.asymptomatic_early_syphilis_infection, sequelae.mild_early_syphilis_infection, 
                   sequelae.neurological_problems_and_cardiovascular_complications_due_to_adult_tertiary_syphilis, 
@@ -3002,6 +3088,7 @@ causes = Causes(**{
                   sequelae.neurological_problems_due_to_adult_tertiary_syphilis, 
                   sequelae.cardiovascular_complications_due_to_adult_tertiary_syphilis, 
                   sequelae.asymptomatic_adult_tertiary_syphilis, ),
+        etiologies=(),
     ),
     'chlamydial_infection': Cause(
         name='chlamydial_infection',
@@ -3038,7 +3125,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.epididymo_orchitis_due_to_chlamydial_infection, 
                   sequelae.moderate_pelvic_inflammatory_diseases_due_to_chlamydial_infection, 
@@ -3046,6 +3133,7 @@ causes = Causes(**{
                   sequelae.primary_infertility_due_to_chlamydial_infection, 
                   sequelae.secondary_infertility_due_to_chlamydial_infection, sequelae.mild_chlamydial_infection, 
                   sequelae.asymptomatic_chlamydial_infection, ),
+        etiologies=(),
     ),
     'gonococcal_infection': Cause(
         name='gonococcal_infection',
@@ -3082,7 +3170,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.epididymo_orchitis_due_to_gonococcal_infection, 
                   sequelae.moderate_pelvic_inflammatory_diseases_due_to_gonococcal_infection, 
@@ -3090,6 +3178,7 @@ causes = Causes(**{
                   sequelae.primary_infertility_due_to_gonococcal_infection, 
                   sequelae.secondary_infertility_due_to_gonococcal_infection, sequelae.mild_gonococcal_infection, 
                   sequelae.asymptomatic_gonococcal_infection, ),
+        etiologies=(),
     ),
     'trichomoniasis': Cause(
         name='trichomoniasis',
@@ -3126,9 +3215,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.acute_trichomoniasis_infection, sequelae.asymptomatic_trichomoniasis_infection, ),
+        etiologies=(),
     ),
     'genital_herpes': Cause(
         name='genital_herpes',
@@ -3165,10 +3255,11 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.symptomatic_genital_herpes, sequelae.asymptomatic_genital_herpes, 
                   sequelae.moderate_infection_due_to_initial_genital_herpes_episode, ),
+        etiologies=(),
     ),
     'other_sexually_transmitted_infections': Cause(
         name='other_sexually_transmitted_infections',
@@ -3205,13 +3296,14 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.moderate_pelvic_inflammatory_diseases_due_to_other_sexually_transmitted_diseases, 
                   sequelae.severe_pelvic_inflammatory_diseases_due_to_other_sexually_transmitted_diseases, 
                   sequelae.primary_infertility_due_to_other_sexually_transmitted_diseases, 
                   sequelae.secondary_infertility_due_to_other_sexually_transmitted_diseases, 
-                  sequelae.other_sexually_transmitted_diseases, ),
+                  sequelae.other_sexually_transmitted_diseases_residual, ),
+        etiologies=(),
     ),
     'acute_hepatitis': Cause(
         name='acute_hepatitis',
@@ -3248,8 +3340,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'acute_hepatitis_a': Cause(
         name='acute_hepatitis_a',
@@ -3286,10 +3380,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.moderate_acute_hepatitis_a, sequelae.severe_acute_hepatitis_a, 
                   sequelae.asymptomatic_acute_hepatitis_a, ),
+        etiologies=(),
     ),
     'acute_hepatitis_b': Cause(
         name='acute_hepatitis_b',
@@ -3312,7 +3407,7 @@ causes = Causes(**{
         incidence_consistent=True,
         deaths_consistent=None,
         birth_prevalence_consistent=True,
-        prevalence_aggregates=False,
+        prevalence_aggregates=True,
         incidence_aggregates=True,
         deaths_aggregates=None,
         birth_prevalence_aggregates=True,
@@ -3326,10 +3421,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.moderate_acute_hepatitis_b, sequelae.severe_acute_hepatitis_b, 
-                  sequelae.asymptomatic_acute_hepatitis_b, sequelae.chronic_hepatitis_b_without_cirrhosis, ),
+                  sequelae.asymptomatic_acute_hepatitis_b, ),
+        etiologies=(),
     ),
     'acute_hepatitis_c': Cause(
         name='acute_hepatitis_c',
@@ -3352,7 +3448,7 @@ causes = Causes(**{
         incidence_consistent=True,
         deaths_consistent=None,
         birth_prevalence_consistent=True,
-        prevalence_aggregates=False,
+        prevalence_aggregates=True,
         incidence_aggregates=True,
         deaths_aggregates=None,
         birth_prevalence_aggregates=None,
@@ -3366,10 +3462,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.moderate_acute_hepatitis_c, sequelae.severe_acute_hepatitis_c, 
-                  sequelae.asymptomatic_acute_hepatitis_c, sequelae.chronic_hepatitis_c_without_cirrhosis, ),
+                  sequelae.asymptomatic_acute_hepatitis_c, ),
+        etiologies=(),
     ),
     'acute_hepatitis_e': Cause(
         name='acute_hepatitis_e',
@@ -3406,10 +3503,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.moderate_acute_hepatitis_e, sequelae.severe_acute_hepatitis_e, 
                   sequelae.asymptomatic_acute_hepatitis_e, ),
+        etiologies=(),
     ),
     'leprosy': Cause(
         name='leprosy',
@@ -3446,9 +3544,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.disfigurement_level_1_due_to_leprosy, sequelae.disfigurement_level_2_due_to_leprosy, ),
+        etiologies=(),
     ),
     'other_unspecified_infectious_diseases': Cause(
         name='other_unspecified_infectious_diseases',
@@ -3485,13 +3584,14 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_anemia_due_to_other_infectious_diseases, 
                   sequelae.moderate_anemia_due_to_other_infectious_diseases, 
                   sequelae.severe_anemia_due_to_other_infectious_diseases, 
                   sequelae.guillain_barre_syndrome_due_to_other_infectious_diseases, 
                   sequelae.other_infectious_diseases, ),
+        etiologies=(),
     ),
     'non_communicable_diseases': Cause(
         name='non_communicable_diseases',
@@ -3528,8 +3628,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'neoplasms': Cause(
         name='neoplasms',
@@ -3566,8 +3668,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'esophageal_cancer': Cause(
         name='esophageal_cancer',
@@ -3604,11 +3708,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_esophageal_cancer, 
                   sequelae.controlled_phase_of_esophageal_cancer, sequelae.metastatic_phase_of_esophageal_cancer, 
                   sequelae.terminal_phase_of_esophageal_cancer, ),
+        etiologies=(),
     ),
     'stomach_cancer': Cause(
         name='stomach_cancer',
@@ -3645,11 +3750,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_stomach_cancer, 
                   sequelae.controlled_phase_of_stomach_cancer, sequelae.metastatic_phase_of_stomach_cancer, 
                   sequelae.terminal_phase_of_stomach_cancer, ),
+        etiologies=(),
     ),
     'liver_cancer': Cause(
         name='liver_cancer',
@@ -3686,8 +3792,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=6,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'liver_cancer_due_to_hepatitis_b': Cause(
         name='liver_cancer_due_to_hepatitis_b',
@@ -3724,12 +3832,13 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=6,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_hepatitis_b, 
                   sequelae.controlled_phase_of_liver_cancer_due_to_hepatitis_b, 
                   sequelae.metastatic_phase_of_liver_cancer_due_to_hepatitis_b, 
                   sequelae.terminal_phase_of_liver_cancer_due_to_hepatitis_b, ),
+        etiologies=(),
     ),
     'liver_cancer_due_to_hepatitis_c': Cause(
         name='liver_cancer_due_to_hepatitis_c',
@@ -3766,12 +3875,13 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=6,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_hepatitis_c, 
                   sequelae.controlled_phase_of_liver_cancer_due_to_hepatitis_c, 
                   sequelae.metastatic_phase_of_liver_cancer_due_to_hepatitis_c, 
                   sequelae.terminal_phase_of_liver_cancer_due_to_hepatitis_c, ),
+        etiologies=(),
     ),
     'liver_cancer_due_to_alcohol_use': Cause(
         name='liver_cancer_due_to_alcohol_use',
@@ -3808,12 +3918,13 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_alcohol_use, 
                   sequelae.controlled_phase_of_liver_cancer_due_to_alcohol_use, 
                   sequelae.metastatic_phase_of_liver_cancer_due_to_alcohol_use, 
                   sequelae.terminal_phase_of_liver_cancer_due_to_alcohol_use, ),
+        etiologies=(),
     ),
     'liver_cancer_due_to_other_causes': Cause(
         name='liver_cancer_due_to_other_causes',
@@ -3850,12 +3961,13 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_other_causes, 
                   sequelae.controlled_phase_of_liver_cancer_due_to_other_causes, 
                   sequelae.metastatic_phase_of_liver_cancer_due_to_other_causes, 
                   sequelae.terminal_phase_of_liver_cancer_due_to_other_causes, ),
+        etiologies=(),
     ),
     'larynx_cancer': Cause(
         name='larynx_cancer',
@@ -3878,7 +3990,7 @@ causes = Causes(**{
         incidence_consistent=True,
         deaths_consistent=None,
         birth_prevalence_consistent=True,
-        prevalence_aggregates=False,
+        prevalence_aggregates=True,
         incidence_aggregates=True,
         deaths_aggregates=None,
         birth_prevalence_aggregates=None,
@@ -3892,14 +4004,14 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_larynx_cancer, 
-                  sequelae.controlled_phase_of_larynx_cancer, sequelae.metastatic_phase_of_larynx_cancer, 
-                  sequelae.terminal_phase_of_larynx_cancer, sequelae.laryngectomy_due_to_larynx_cancer, 
+                  sequelae.metastatic_phase_of_larynx_cancer, sequelae.terminal_phase_of_larynx_cancer, 
                   sequelae.controlled_phase_of_larynx_cancer_with_laryngectomy, 
                   sequelae.controlled_phase_of_larynx_cancer_without_laryngectomy, 
                   sequelae.laryngectomy_from_larynx_cancer_beyond_ten_years, ),
+        etiologies=(),
     ),
     'tracheal_bronchus_and_lung_cancer': Cause(
         name='tracheal_bronchus_and_lung_cancer',
@@ -3936,12 +4048,13 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_lung_bronchus_and_trachea_cancer, 
                   sequelae.controlled_phase_of_lung_bronchus_and_trachea_cancer, 
                   sequelae.metastatic_phase_of_lung_bronchus_and_trachea_cancer, 
                   sequelae.terminal_phase_of_lung_bronchus_and_trachea_cancer, ),
+        etiologies=(),
     ),
     'breast_cancer': Cause(
         name='breast_cancer',
@@ -3964,7 +4077,7 @@ causes = Causes(**{
         incidence_consistent=True,
         deaths_consistent=None,
         birth_prevalence_consistent=True,
-        prevalence_aggregates=False,
+        prevalence_aggregates=True,
         incidence_aggregates=True,
         deaths_aggregates=None,
         birth_prevalence_aggregates=None,
@@ -3978,14 +4091,14 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_breast_cancer, 
-                  sequelae.controlled_phase_of_breast_cancer, sequelae.metastatic_phase_of_breast_cancer, 
-                  sequelae.terminal_phase_of_breast_cancer, sequelae.mastectomy_due_to_breast_cancer, 
+                  sequelae.metastatic_phase_of_breast_cancer, sequelae.terminal_phase_of_breast_cancer, 
                   sequelae.controlled_phase_of_breast_cancer_with_mastectomy, 
                   sequelae.controlled_phase_of_breast_cancer_without_mastectomy, 
                   sequelae.mastectomy_from_breast_cancer_beyond_ten_years, ),
+        etiologies=(),
     ),
     'cervical_cancer': Cause(
         name='cervical_cancer',
@@ -4022,11 +4135,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_cervical_cancer, 
                   sequelae.controlled_phase_of_cervical_cancer, sequelae.metastatic_phase_of_cervical_cancer, 
                   sequelae.terminal_phase_of_cervical_cancer, ),
+        etiologies=(),
     ),
     'uterine_cancer': Cause(
         name='uterine_cancer',
@@ -4063,11 +4177,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_uterine_cancer, 
                   sequelae.controlled_phase_of_uterine_cancer, sequelae.metastatic_phase_of_uterine_cancer, 
                   sequelae.terminal_phase_of_uterine_cancer, ),
+        etiologies=(),
     ),
     'prostate_cancer': Cause(
         name='prostate_cancer',
@@ -4090,7 +4205,7 @@ causes = Causes(**{
         incidence_consistent=True,
         deaths_consistent=None,
         birth_prevalence_consistent=True,
-        prevalence_aggregates=False,
+        prevalence_aggregates=True,
         incidence_aggregates=True,
         deaths_aggregates=None,
         birth_prevalence_aggregates=None,
@@ -4104,17 +4219,16 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_prostate_cancer, 
-                  sequelae.controlled_phase_of_prostate_cancer, sequelae.metastatic_phase_of_prostate_cancer, 
-                  sequelae.terminal_phase_of_prostate_cancer, sequelae.impotence_due_to_prostate_cancer, 
-                  sequelae.incontinence_due_to_prostate_cancer, 
+                  sequelae.metastatic_phase_of_prostate_cancer, sequelae.terminal_phase_of_prostate_cancer, 
                   sequelae.controlled_phase_of_prostate_cancer_with_impotence, 
                   sequelae.controlled_phase_of_prostate_cancer_with_incontinence, 
                   sequelae.controlled_phase_of_prostate_cancer_without_impotence_or_incontinence, 
                   sequelae.impotence_from_prostate_cancer_beyond_ten_years, 
                   sequelae.incontinence_from_prostate_cancer_beyond_ten_years, ),
+        etiologies=(),
     ),
     'colon_and_rectum_cancer': Cause(
         name='colon_and_rectum_cancer',
@@ -4137,7 +4251,7 @@ causes = Causes(**{
         incidence_consistent=True,
         deaths_consistent=None,
         birth_prevalence_consistent=True,
-        prevalence_aggregates=False,
+        prevalence_aggregates=True,
         incidence_aggregates=True,
         deaths_aggregates=None,
         birth_prevalence_aggregates=None,
@@ -4151,15 +4265,15 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_colon_and_rectum_cancers, 
-                  sequelae.controlled_phase_of_colon_and_rectum_cancers, 
                   sequelae.metastatic_phase_of_colon_and_rectum_cancers, 
-                  sequelae.terminal_phase_of_colon_and_rectum_cancers, sequelae.stoma_due_to_colon_and_rectum_cancer, 
+                  sequelae.terminal_phase_of_colon_and_rectum_cancers, 
                   sequelae.controlled_phase_of_colon_and_rectum_cancers_with_stoma, 
                   sequelae.controlled_phase_of_colon_and_rectum_cancers_without_stoma, 
                   sequelae.stoma_from_colon_and_rectum_cancers_beyond_ten_years, ),
+        etiologies=(),
     ),
     'lip_and_oral_cavity_cancer': Cause(
         name='lip_and_oral_cavity_cancer',
@@ -4196,11 +4310,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_mouth_cancer, 
                   sequelae.controlled_phase_of_mouth_cancer, sequelae.metastatic_phase_of_mouth_cancer, 
                   sequelae.terminal_phase_of_mouth_cancer, ),
+        etiologies=(),
     ),
     'nasopharynx_cancer': Cause(
         name='nasopharynx_cancer',
@@ -4237,11 +4352,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=6,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_nasopharynx_cancer, 
                   sequelae.controlled_phase_of_nasopharynx_cancer, sequelae.metastatic_phase_of_nasopharynx_cancer, 
                   sequelae.terminal_phase_of_nasopharynx_cancer, ),
+        etiologies=(),
     ),
     'other_pharynx_cancer': Cause(
         name='other_pharynx_cancer',
@@ -4278,11 +4394,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_other_pharynx_cancer, 
                   sequelae.controlled_phase_of_other_pharynx_cancer, 
                   sequelae.metastatic_phase_of_other_pharynx_cancer, sequelae.terminal_phase_of_other_pharynx_cancer, ),
+        etiologies=(),
     ),
     'gallbladder_and_biliary_tract_cancer': Cause(
         name='gallbladder_and_biliary_tract_cancer',
@@ -4319,12 +4436,13 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_gallbladder_and_biliary_tract_cancer, 
                   sequelae.controlled_phase_of_gallbladder_and_biliary_tract_cancer, 
                   sequelae.metastatic_phase_of_gallbladder_and_biliary_tract_cancer, 
                   sequelae.terminal_phase_of_gallbladder_and_biliary_tract_cancer, ),
+        etiologies=(),
     ),
     'pancreatic_cancer': Cause(
         name='pancreatic_cancer',
@@ -4361,11 +4479,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_pancreatic_cancer, 
                   sequelae.controlled_phase_of_pancreatic_cancer, sequelae.metastatic_phase_of_pancreatic_cancer, 
                   sequelae.terminal_phase_of_pancreatic_cancer, ),
+        etiologies=(),
     ),
     'malignant_skin_melanoma': Cause(
         name='malignant_skin_melanoma',
@@ -4402,12 +4521,13 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_malignant_skin_melanoma, 
                   sequelae.controlled_phase_of_malignant_skin_melanoma, 
                   sequelae.metastatic_phase_of_malignant_skin_melanoma, 
                   sequelae.terminal_phase_of_malignant_skin_melanoma, ),
+        etiologies=(),
     ),
     'non_melanoma_skin_cancer': Cause(
         name='non_melanoma_skin_cancer',
@@ -4444,8 +4564,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'ovarian_cancer': Cause(
         name='ovarian_cancer',
@@ -4482,11 +4604,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_ovarian_cancer, 
                   sequelae.controlled_phase_of_ovarian_cancer, sequelae.metastatic_phase_of_ovarian_cancer, 
                   sequelae.terminal_phase_of_ovarian_cancer, ),
+        etiologies=(),
     ),
     'testicular_cancer': Cause(
         name='testicular_cancer',
@@ -4523,11 +4646,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_testicular_cancer, 
                   sequelae.controlled_phase_of_testicular_cancer, sequelae.metastatic_phase_of_testicular_cancer, 
                   sequelae.terminal_phase_of_testicular_cancer, ),
+        etiologies=(),
     ),
     'kidney_cancer': Cause(
         name='kidney_cancer',
@@ -4564,11 +4688,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_kidney_cancer, 
                   sequelae.controlled_phase_of_kidney_cancer, sequelae.metastatic_phase_of_kidney_cancer, 
                   sequelae.terminal_phase_of_kidney_cancer, ),
+        etiologies=(),
     ),
     'bladder_cancer': Cause(
         name='bladder_cancer',
@@ -4591,7 +4716,7 @@ causes = Causes(**{
         incidence_consistent=True,
         deaths_consistent=None,
         birth_prevalence_consistent=True,
-        prevalence_aggregates=False,
+        prevalence_aggregates=True,
         incidence_aggregates=True,
         deaths_aggregates=None,
         birth_prevalence_aggregates=None,
@@ -4605,14 +4730,14 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_bladder_cancer, 
-                  sequelae.controlled_phase_of_bladder_cancer, sequelae.metastatic_phase_of_bladder_cancer, 
-                  sequelae.terminal_phase_of_bladder_cancer, sequelae.urinary_incontinence_due_to_bladder_cancer, 
+                  sequelae.metastatic_phase_of_bladder_cancer, sequelae.terminal_phase_of_bladder_cancer, 
                   sequelae.controlled_phase_of_bladder_cancer_with_incontinence, 
                   sequelae.controlled_phase_of_bladder_cancer_without_incontinence, 
                   sequelae.incontinence_from_bladder_cancer_beyond_ten_years, ),
+        etiologies=(),
     ),
     'brain_and_nervous_system_cancer': Cause(
         name='brain_and_nervous_system_cancer',
@@ -4649,12 +4774,13 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_brain_and_nervous_system_cancers, 
                   sequelae.controlled_phase_of_brain_and_nervous_system_cancers, 
                   sequelae.metastatic_phase_of_brain_and_nervous_system_cancers, 
                   sequelae.terminal_phase_of_brain_and_nervous_system_cancers, ),
+        etiologies=(),
     ),
     'thyroid_cancer': Cause(
         name='thyroid_cancer',
@@ -4691,11 +4817,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_thyroid_cancer, 
                   sequelae.controlled_phase_of_thyroid_cancer, sequelae.metastatic_phase_of_thyroid_cancer, 
                   sequelae.terminal_phase_of_thyroid_cancer, ),
+        etiologies=(),
     ),
     'mesothelioma': Cause(
         name='mesothelioma',
@@ -4732,11 +4859,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_mesothelioma, 
                   sequelae.controlled_phase_of_mesothelioma, sequelae.metastatic_phase_of_mesothelioma, 
                   sequelae.terminal_phase_of_mesothelioma, ),
+        etiologies=(),
     ),
     'hodgkin_lymphoma': Cause(
         name='hodgkin_lymphoma',
@@ -4773,11 +4901,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=4,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_hodgkin_disease, 
                   sequelae.controlled_phase_of_hodgkin_disease, sequelae.metastatic_phase_of_hodgkin_disease, 
                   sequelae.terminal_phase_of_hodgkin_disease, ),
+        etiologies=(),
     ),
     'non_hodgkin_lymphoma': Cause(
         name='non_hodgkin_lymphoma',
@@ -4814,11 +4943,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_non_hodgkin_lymphoma, 
                   sequelae.controlled_phase_of_non_hodgkin_lymphoma, 
                   sequelae.metastatic_phase_of_non_hodgkin_lymphoma, sequelae.terminal_phase_of_non_hodgkin_lymphoma, ),
+        etiologies=(),
     ),
     'multiple_myeloma': Cause(
         name='multiple_myeloma',
@@ -4855,11 +4985,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_multiple_myeloma, 
                   sequelae.controlled_phase_of_multiple_myeloma, sequelae.metastatic_phase_of_multiple_myeloma, 
                   sequelae.terminal_phase_of_multiple_myeloma, ),
+        etiologies=(),
     ),
     'leukemia': Cause(
         name='leukemia',
@@ -4896,8 +5027,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=4,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence'),
+            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence', )
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'other_malignant_neoplasms': Cause(
         name='other_malignant_neoplasms',
@@ -4916,12 +5049,12 @@ causes = Causes(**{
         remission_in_range=None,
         deaths_in_range=True,
         birth_prevalence_in_range=None,
-        prevalence_consistent=None,
-        incidence_consistent=None,
+        prevalence_consistent=True,
+        incidence_consistent=True,
         deaths_consistent=None,
-        birth_prevalence_consistent=None,
-        prevalence_aggregates=None,
-        incidence_aggregates=None,
+        birth_prevalence_consistent=True,
+        prevalence_aggregates=True,
+        incidence_aggregates=True,
         deaths_aggregates=None,
         birth_prevalence_aggregates=None,
         parent=None,
@@ -4934,8 +5067,13 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_other_malignant_neoplasms, 
+                  sequelae.controlled_phase_of_other_malignant_neoplasms, 
+                  sequelae.metastatic_phase_of_other_malignant_neoplasms, 
+                  sequelae.terminal_phase_of_other_malignant_neoplasms, ),
+        etiologies=(),
     ),
     'other_neoplasms': Cause(
         name='other_neoplasms',
@@ -4954,10 +5092,10 @@ causes = Causes(**{
         remission_in_range=None,
         deaths_in_range=True,
         birth_prevalence_in_range=None,
-        prevalence_consistent=False,
-        incidence_consistent=False,
+        prevalence_consistent=None,
+        incidence_consistent=None,
         deaths_consistent=True,
-        birth_prevalence_consistent=True,
+        birth_prevalence_consistent=None,
         prevalence_aggregates=None,
         incidence_aggregates=None,
         deaths_aggregates=True,
@@ -4972,11 +5110,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=3,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
-        sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_other_neoplasms, 
-                  sequelae.controlled_phase_of_other_neoplasms, sequelae.metastatic_phase_of_other_neoplasms, 
-                  sequelae.terminal_phase_of_other_neoplasms, ),
+        sequelae=(),
+        etiologies=(),
     ),
     'cardiovascular_diseases': Cause(
         name='cardiovascular_diseases',
@@ -5013,8 +5150,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'rheumatic_heart_disease': Cause(
         name='rheumatic_heart_disease',
@@ -5051,13 +5190,14 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.rheumatic_heart_disease_without_heart_failure, 
                   sequelae.mild_heart_failure_due_to_rheumatic_heart_disease, 
                   sequelae.moderate_heart_failure_due_to_rheumatic_heart_disease, 
                   sequelae.severe_heart_failure_due_to_rheumatic_heart_disease, 
-                  sequelae.treated_heart_failure_due_to_rheumatic_heart_disease, ),
+                  sequelae.controlled_medically_managed_heart_failure_due_to_rheumatic_heart_disease, ),
+        etiologies=(),
     ),
     'ischemic_heart_disease': Cause(
         name='ischemic_heart_disease',
@@ -5094,7 +5234,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.acute_myocardial_infarction_first_2_days, 
                   sequelae.acute_myocardial_infarction_3_to_28_days, 
@@ -5106,7 +5246,8 @@ causes = Causes(**{
                   sequelae.severe_heart_failure_due_to_ischemic_heart_disease, 
                   sequelae.asymptomatic_angina_due_to_ischemic_heart_disease, 
                   sequelae.asymptomatic_ischemic_heart_disease_following_myocardial_infarction, 
-                  sequelae.treated_heart_failure_due_ischemic_heart_disease, ),
+                  sequelae.controlled_medically_managed_heart_failure_due_ischemic_heart_disease, ),
+        etiologies=(),
     ),
     'stroke': Cause(
         name='stroke',
@@ -5143,8 +5284,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_incidence',),
+            violated=('yld_age_restriction_violated_by_incidence', )
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'ischemic_stroke': Cause(
         name='ischemic_stroke',
@@ -5181,7 +5324,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.acute_ischemic_stroke_severity_level_1, sequelae.acute_ischemic_stroke_severity_level_2, 
                   sequelae.acute_ischemic_stroke_severity_level_4, sequelae.acute_ischemic_stroke_severity_level_3, 
@@ -5190,6 +5333,7 @@ causes = Causes(**{
                   sequelae.chronic_ischemic_stroke_severity_level_4, 
                   sequelae.chronic_ischemic_stroke_severity_level_3, 
                   sequelae.chronic_ischemic_stroke_severity_level_5, sequelae.asymptomatic_chronic_ischemic_stroke, ),
+        etiologies=(),
     ),
     'intracerebral_hemorrhage': Cause(
         name='intracerebral_hemorrhage',
@@ -5226,7 +5370,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.acute_intracerebral_hemorrhage_severity_level_1, 
                   sequelae.acute_intracerebral_hemorrhage_severity_level_2, 
@@ -5239,6 +5383,7 @@ causes = Causes(**{
                   sequelae.chronic_intracerebral_hemorrhage_severity_level_3, 
                   sequelae.chronic_intracerebral_hemorrhage_severity_level_5, 
                   sequelae.asymptomatic_chronic_intracerebral_hemorrhage, ),
+        etiologies=(),
     ),
     'subarachnoid_hemorrhage': Cause(
         name='subarachnoid_hemorrhage',
@@ -5275,7 +5420,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.acute_subarachnoid_hemorrhage_severity_level_1, 
                   sequelae.acute_subarachnoid_hemorrhage_severity_level_2, 
@@ -5288,6 +5433,7 @@ causes = Causes(**{
                   sequelae.chronic_subarachnoid_hemorrhage_severity_level_3, 
                   sequelae.chronic_subarachnoid_hemorrhage_severity_level_4, 
                   sequelae.chronic_subarachnoid_hemorrhage_severity_level_5, ),
+        etiologies=(),
     ),
     'hypertensive_heart_disease': Cause(
         name='hypertensive_heart_disease',
@@ -5324,12 +5470,13 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_heart_failure_due_to_hypertensive_heart_disease, 
                   sequelae.moderate_heart_failure_due_to_hypertensive_heart_disease, 
                   sequelae.severe_heart_failure_due_to_hypertensive_heart_disease, 
-                  sequelae.treated_heart_failure_due_to_hypertensive_heart_disease, ),
+                  sequelae.controlled_medically_managed_heart_failure_due_to_hypertensive_heart_disease, ),
+        etiologies=(),
     ),
     'cardiomyopathy_and_myocarditis': Cause(
         name='cardiomyopathy_and_myocarditis',
@@ -5366,8 +5513,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'atrial_fibrillation_and_flutter': Cause(
         name='atrial_fibrillation_and_flutter',
@@ -5404,10 +5553,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=11,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.asymptomatic_atrial_fibrillation_and_flutter, 
                   sequelae.symptomatic_atrial_fibrillation_and_flutter, ),
+        etiologies=(),
     ),
     'aortic_aneurysm': Cause(
         name='aortic_aneurysm',
@@ -5444,8 +5594,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=None,
             yld_age_group_id_end=None,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'peripheral_artery_disease': Cause(
         name='peripheral_artery_disease',
@@ -5482,10 +5634,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=13,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
-        sequelae=(sequelae.asymptomatic_peripheral_vascular_disease, 
-                  sequelae.symptomatic_claudication_due_to_peripheral_vascular_disease, ),
+        sequelae=(sequelae.asymptomatic_peripheral_arterial_disease, 
+                  sequelae.symptomatic_claudication_due_to_peripheral_arterial_disease, ),
+        etiologies=(),
     ),
     'endocarditis': Cause(
         name='endocarditis',
@@ -5522,13 +5675,14 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.moderate_endocarditis, sequelae.severe_endocarditis, 
                   sequelae.mild_heart_failure_due_to_endocarditis, 
                   sequelae.moderate_heart_failure_due_to_endocarditis, 
                   sequelae.severe_heart_failure_due_to_endocarditis, 
-                  sequelae.treated_heart_failure_due_to_endocarditis, ),
+                  sequelae.controlled_medically_managed_heart_failure_due_to_endocarditis, ),
+        etiologies=(),
     ),
     'non_rheumatic_valvular_heart_disease': Cause(
         name='non_rheumatic_valvular_heart_disease',
@@ -5565,8 +5719,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'other_cardiovascular_and_circulatory_diseases': Cause(
         name='other_cardiovascular_and_circulatory_diseases',
@@ -5603,14 +5759,15 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_heart_failure_due_to_other_cardiovascular_diseases, 
                   sequelae.moderate_heart_failure_due_to_other_cardiovascular_diseases, 
                   sequelae.severe_heart_failure_due_to_other_cardiovascular_diseases, 
                   sequelae.asymptomatic_other_cardiovascular_diseases, sequelae.mild_other_cardiovascular_diseases, 
                   sequelae.moderate_other_cardiovascular_diseases, sequelae.severe_other_cardiovascular_diseases, 
-                  sequelae.treated_heart_failure_due_to_other_cardiovascular_disease, ),
+                  sequelae.controlled_medically_managed_heart_failure_due_to_other_cardiovascular_disease, ),
+        etiologies=(),
     ),
     'chronic_respiratory_diseases': Cause(
         name='chronic_respiratory_diseases',
@@ -5647,8 +5804,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'chronic_obstructive_pulmonary_disease': Cause(
         name='chronic_obstructive_pulmonary_disease',
@@ -5685,7 +5844,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_chronic_obstructive_pulmonary_disease, 
                   sequelae.moderate_chronic_obstructive_pulmonary_disease, 
@@ -5694,7 +5853,8 @@ causes = Causes(**{
                   sequelae.moderate_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease, 
                   sequelae.severe_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease, 
                   sequelae.severe_chronic_obstructive_pulmonary_disease_without_heart_failure, 
-                  sequelae.treated_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease, ),
+                  sequelae.controlled_medically_managed_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease, ),
+        etiologies=(),
     ),
     'pneumoconiosis': Cause(
         name='pneumoconiosis',
@@ -5731,8 +5891,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'silicosis': Cause(
         name='silicosis',
@@ -5769,14 +5931,15 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_silicosis, sequelae.moderate_silicosis, sequelae.asymptomatic_silicosis, 
                   sequelae.mild_heart_failure_due_to_severe_silicosis, 
                   sequelae.moderate_heart_failure_due_to_severe_silicosis, 
                   sequelae.severe_heart_failure_due_to_severe_silicosis, 
                   sequelae.severe_silicosis_without_heart_failure, 
-                  sequelae.treated_heart_failure_due_to_severe_silicosis, ),
+                  sequelae.controlled_medically_managed_heart_failure_due_to_severe_silicosis, ),
+        etiologies=(),
     ),
     'asbestosis': Cause(
         name='asbestosis',
@@ -5813,14 +5976,15 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_asbestosis, sequelae.moderate_asbestosis, sequelae.asymptomatic_asbestosis, 
                   sequelae.mild_heart_failure_due_to_severe_asbestosis, 
                   sequelae.moderate_heart_failure_due_to_severe_asbestosis, 
                   sequelae.severe_heart_failure_due_to_severe_asbestosis, 
                   sequelae.severe_asbestosis_without_heart_failure, 
-                  sequelae.treated_heart_failure_due_to_severe_asbestosis, ),
+                  sequelae.controlled_medically_managed_heart_failure_due_to_severe_asbestosis, ),
+        etiologies=(),
     ),
     'coal_workers_pneumoconiosis': Cause(
         name='coal_workers_pneumoconiosis',
@@ -5857,7 +6021,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_coal_workers_pneumoconiosis, sequelae.moderate_coal_workers_pneumoconiosis, 
                   sequelae.asymptomatic_coal_workers_pneumoconiosis, 
@@ -5865,7 +6029,8 @@ causes = Causes(**{
                   sequelae.moderate_heart_failure_due_to_severe_coal_workers_pneumoconiosis, 
                   sequelae.severe_heart_failure_due_to_severe_coal_workers_pneumoconiosis, 
                   sequelae.severe_coal_workers_pneumoconiosis_without_heart_failure, 
-                  sequelae.treated_heart_failure_due_to_severe_coal_workers_pneumoconiosis, ),
+                  sequelae.controlled_medically_managed_heart_failure_due_to_severe_coal_workers_pneumoconiosis, ),
+        etiologies=(),
     ),
     'other_pneumoconiosis': Cause(
         name='other_pneumoconiosis',
@@ -5902,7 +6067,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_other_pneumoconiosis, sequelae.moderate_other_pneumoconiosis, 
                   sequelae.asymptomatic_other_pneumoconiosis, 
@@ -5910,7 +6075,8 @@ causes = Causes(**{
                   sequelae.moderate_heart_failure_due_to_severe_other_pneumoconiosis, 
                   sequelae.severe_heart_failure_due_to_severe_other_pneumoconiosis, 
                   sequelae.severe_other_pneumoconiosis_without_heart_failure, 
-                  sequelae.treated_heart_failure_due_to_severe_other_pneumoconiosis, ),
+                  sequelae.controlled_medically_managed_heart_failure_due_to_severe_other_pneumoconiosis, ),
+        etiologies=(),
     ),
     'asthma': Cause(
         name='asthma',
@@ -5947,10 +6113,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.controlled_asthma, sequelae.partially_controlled_asthma, sequelae.uncontrolled_asthma, 
                   sequelae.asymptomatic_asthma, ),
+        etiologies=(),
     ),
     'interstitial_lung_disease_and_pulmonary_sarcoidosis': Cause(
         name='interstitial_lung_disease_and_pulmonary_sarcoidosis',
@@ -5987,7 +6154,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_interstitial_lung_disease_and_pulmonary_sarcoidosis, 
                   sequelae.moderate_interstitial_lung_disease_and_pulmonary_sarcoidosis, 
@@ -5996,7 +6163,8 @@ causes = Causes(**{
                   sequelae.moderate_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis, 
                   sequelae.severe_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis, 
                   sequelae.severe_interstitial_lung_disease_and_pulmonary_sarcoidosis_without_heart_failure, 
-                  sequelae.treated_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis, ),
+                  sequelae.controlled_medically_managed_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis, ),
+        etiologies=(),
     ),
     'other_chronic_respiratory_diseases': Cause(
         name='other_chronic_respiratory_diseases',
@@ -6033,9 +6201,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.other_chronic_respiratory_diseases, ),
+        etiologies=(),
     ),
     'cirrhosis_and_other_chronic_liver_diseases': Cause(
         name='cirrhosis_and_other_chronic_liver_diseases',
@@ -6072,8 +6241,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b': Cause(
         name='cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b',
@@ -6096,7 +6267,7 @@ causes = Causes(**{
         incidence_consistent=True,
         deaths_consistent=None,
         birth_prevalence_consistent=True,
-        prevalence_aggregates=False,
+        prevalence_aggregates=True,
         incidence_aggregates=True,
         deaths_aggregates=None,
         birth_prevalence_aggregates=None,
@@ -6110,10 +6281,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated, 
+                  sequelae.chronic_hepatitis_b_without_cirrhosis, 
                   sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_compensated, ),
+        etiologies=(),
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c': Cause(
         name='cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c',
@@ -6136,7 +6309,7 @@ causes = Causes(**{
         incidence_consistent=True,
         deaths_consistent=None,
         birth_prevalence_consistent=True,
-        prevalence_aggregates=False,
+        prevalence_aggregates=True,
         incidence_aggregates=True,
         deaths_aggregates=None,
         birth_prevalence_aggregates=None,
@@ -6150,10 +6323,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated, 
+                  sequelae.chronic_hepatitis_c_without_cirrhosis, 
                   sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_compensated, ),
+        etiologies=(),
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_use': Cause(
         name='cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_use',
@@ -6190,10 +6365,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated, 
                   sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_compensated, ),
+        etiologies=(),
     ),
     'cirrhosis_and_other_chronic_liver_diseases_due_to_other_causes': Cause(
         name='cirrhosis_and_other_chronic_liver_diseases_due_to_other_causes',
@@ -6230,10 +6406,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated, 
                   sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_compensated, ),
+        etiologies=(),
     ),
     'digestive_diseases': Cause(
         name='digestive_diseases',
@@ -6270,8 +6447,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'peptic_ulcer_disease': Cause(
         name='peptic_ulcer_disease',
@@ -6291,11 +6470,11 @@ causes = Causes(**{
         deaths_in_range=True,
         birth_prevalence_in_range=None,
         prevalence_consistent=True,
-        incidence_consistent=False,
+        incidence_consistent=True,
         deaths_consistent=None,
         birth_prevalence_consistent=True,
-        prevalence_aggregates=False,
-        incidence_aggregates=None,
+        prevalence_aggregates=True,
+        incidence_aggregates=True,
         deaths_aggregates=None,
         birth_prevalence_aggregates=None,
         parent=None,
@@ -6308,25 +6487,29 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
-        sequelae=(sequelae.complicated_peptic_ulcer_disease_with_no_anemia, 
+        sequelae=(sequelae.mild_symptomatic_peptic_ulcer_disease_with_mild_anemia, 
+                  sequelae.moderate_symptomatic_peptic_ulcer_disease_with_mild_anemia, 
+                  sequelae.mild_symptomatic_peptic_ulcer_disease_with_moderate_anemia, 
+                  sequelae.moderate_symptomatic_peptic_ulcer_disease_with_moderate_anemia, 
+                  sequelae.mild_symptomatic_peptic_ulcer_disease_with_severe_anemia, 
+                  sequelae.moderate_symptomatic_peptic_ulcer_disease_with_severe_anemia, 
+                  sequelae.mild_symptomatic_peptic_ulcer_disease_without_anemia, 
+                  sequelae.moderate_symptomatic_peptic_ulcer_disease_without_anemia, 
+                  sequelae.asymptomatic_peptic_ulcer_disease_with_mild_anemia, 
+                  sequelae.asymptomatic_peptic_ulcer_disease_with_moderate_anemia, 
+                  sequelae.asymptomatic_peptic_ulcer_disease_with_severe_anemia, 
+                  sequelae.asymptomatic_peptic_ulcer_disease_without_anemia, 
+                  sequelae.complicated_peptic_ulcer_disease_with_no_anemia, 
                   sequelae.complicated_peptic_ulcer_disease_with_mild_anemia, 
                   sequelae.complicated_peptic_ulcer_disease_with_moderate_anemia, 
                   sequelae.complicated_peptic_ulcer_disease_with_severe_anemia, 
-                  sequelae.acute_uncomplicated_peptic_ulcer_disease, 
-                  sequelae.chronic_peptic_ulcer_disease_asymptomatic_with_no_anemia, 
-                  sequelae.chronic_peptic_ulcer_disease_mild_with_no_anemia, 
-                  sequelae.chronic_peptic_ulcer_disease_moderate_with_no_anemia, 
-                  sequelae.chronic_peptic_ulcer_disease_asymptomatic_with_mild_anemia, 
-                  sequelae.chronic_peptic_ulcer_disease_mild_with_mild_anemia, 
-                  sequelae.chronic_peptic_ulcer_disease_moderate_with_mild_anemia, 
-                  sequelae.chronic_peptic_ulcer_disease_asymptomatic_with_moderate_anemia, 
-                  sequelae.chronic_peptic_ulcer_disease_mild_with_moderate_anemia, 
-                  sequelae.chronic_peptic_ulcer_disease_moderate_with_moderate_anemia, 
-                  sequelae.chronic_peptic_ulcer_disease_asymptomatic_with_severe_anemia, 
-                  sequelae.chronic_peptic_ulcer_disease_mild_with_severe_anemia, 
-                  sequelae.chronic_peptic_ulcer_disease_moderate_with_severe_anemia, ),
+                  sequelae.acute_peptic_ulcer_disease_with_no_anemia, 
+                  sequelae.acute_peptic_ulcer_disease_with_mild_anemia, 
+                  sequelae.acute_peptic_ulcer_disease_with_moderate_anemia, 
+                  sequelae.acute_peptic_ulcer_disease_with_severe_anemia, ),
+        etiologies=(),
     ),
     'gastritis_and_duodenitis': Cause(
         name='gastritis_and_duodenitis',
@@ -6346,11 +6529,11 @@ causes = Causes(**{
         deaths_in_range=True,
         birth_prevalence_in_range=None,
         prevalence_consistent=True,
-        incidence_consistent=False,
+        incidence_consistent=True,
         deaths_consistent=None,
         birth_prevalence_consistent=True,
-        prevalence_aggregates=False,
-        incidence_aggregates=None,
+        prevalence_aggregates=True,
+        incidence_aggregates=True,
         deaths_aggregates=None,
         birth_prevalence_aggregates=None,
         parent=None,
@@ -6363,25 +6546,29 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
-        sequelae=(sequelae.complicated_gastritis_and_duodenitis_with_no_anemia, 
+        sequelae=(sequelae.mild_symptomatic_gastritis_and_duodenitis_with_mild_anemia, 
+                  sequelae.moderate_symptomatic_gastritis_and_duodenitis_with_mild_anemia, 
+                  sequelae.mild_symptomatic_gastritis_and_duodenitis_with_moderate_anemia, 
+                  sequelae.moderate_symptomatic_gastritis_and_duodenitis_with_moderate_anemia, 
+                  sequelae.mild_symptomatic_gastritis_and_duodenitis_with_severe_anemia, 
+                  sequelae.moderate_symptomatic_gastritis_and_duodenitis_with_severe_anemia, 
+                  sequelae.mild_symptomatic_gastritis_and_duodenitis_without_anemia, 
+                  sequelae.moderate_symptomatic_gastritis_and_duodenitis_without_anemia, 
+                  sequelae.asymptomatic_gastritis_and_duodenitis_with_mild_anemia, 
+                  sequelae.asymptomatic_gastritis_and_duodenitis_with_moderate_anemia, 
+                  sequelae.asymptomatic_gastritis_and_duodenitis_with_severe_anemia, 
+                  sequelae.asymptomatic_gastritis_and_duodenitis_without_anemia, 
+                  sequelae.complicated_gastritis_and_duodenitis_with_no_anemia, 
                   sequelae.complicated_gastritis_and_duodenitis_with_mild_anemia, 
                   sequelae.complicated_gastritis_and_duodenitis_with_moderate_anemia, 
                   sequelae.complicated_gastritis_and_duodenitis_with_severe_anemia, 
-                  sequelae.gastritis_and_duodenitis_uncomplicated_acute, 
-                  sequelae.chronic_asymptomatic_gastritis_and_duodenitis_with_no_anemia, 
-                  sequelae.chronic_mild_gastritis_and_duodenitis_with_no_anemia, 
-                  sequelae.chronic_moderate_gastritis_and_duodenitis_with_no_anemia, 
-                  sequelae.chronic_asymptomatic_gastritis_and_duodenitis_with_mild_anemia, 
-                  sequelae.chronic_mild_gastritis_and_duodenitis_with_mild_anemia, 
-                  sequelae.chronic_moderate_gastritis_and_duodenitis_with_mild_anemia, 
-                  sequelae.chronic_asymptomatic_gastritis_and_duodenitis_with_moderate_anemia, 
-                  sequelae.chronic_mild_gastritis_and_duodenitis_with_moderate_anemia, 
-                  sequelae.chronic_moderate_gastritis_and_duodenitis_with_moderate_anemia, 
-                  sequelae.chronic_asymptomatic_gastritis_and_duodenitis_with_severe_anemia, 
-                  sequelae.chronic_mild_gastritis_and_duodenitis_with_severe_anemia, 
-                  sequelae.chronic_moderate_gastritis_and_duodenitis_with_severe_anemia, ),
+                  sequelae.acute_gastritis_and_duodenitis_with_no_anemia, 
+                  sequelae.acute_gastritis_and_duodenitis_with_mild_anemia, 
+                  sequelae.acute_gastritis_and_duodenitis_with_moderate_anemia, 
+                  sequelae.acute_gastritis_and_duodenitis_with_severe_anemia, ),
+        etiologies=(),
     ),
     'appendicitis': Cause(
         name='appendicitis',
@@ -6418,9 +6605,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.appendicitis, ),
+        etiologies=(),
     ),
     'paralytic_ileus_and_intestinal_obstruction': Cause(
         name='paralytic_ileus_and_intestinal_obstruction',
@@ -6457,9 +6645,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.paralytic_ileus_and_intestinal_obstruction, ),
+        etiologies=(),
     ),
     'inguinal_femoral_and_abdominal_hernia': Cause(
         name='inguinal_femoral_and_abdominal_hernia',
@@ -6496,12 +6685,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
-        sequelae=(sequelae.asymptomatic_inguinal_femoral_and_abdominal_hernia, 
-                  sequelae.mild_symptomatic_inguinal_femoral_and_abdominal_hernia, 
+        sequelae=(sequelae.mild_symptomatic_inguinal_femoral_and_abdominal_hernia, 
                   sequelae.moderate_symptomatic_inguinal_femoral_and_abdominal_hernia, 
                   sequelae.severe_symptomatic_inguinal_femoral_and_abdominal_hernia, ),
+        etiologies=(),
     ),
     'inflammatory_bowel_disease': Cause(
         name='inflammatory_bowel_disease',
@@ -6538,13 +6727,14 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.asymptomatic_ulcerative_colitis, sequelae.asymptomatic_crohns_disease, 
                   sequelae.ulcerative_colitis_with_mild_anemia, sequelae.ulcerative_colitis_with_moderate_anemia, 
                   sequelae.ulcerative_colitis_with_severe_anemia, sequelae.ulcerative_colitis_without_anemia, 
                   sequelae.crohns_disease_with_mild_anemia, sequelae.crohns_disease_with_moderate_anemia, 
                   sequelae.crohns_disease_with_severe_anemia, sequelae.crohns_disease_without_anemia, ),
+        etiologies=(),
     ),
     'vascular_intestinal_disorders': Cause(
         name='vascular_intestinal_disorders',
@@ -6581,9 +6771,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.vascular_intestinal_disorders, ),
+        etiologies=(),
     ),
     'gallbladder_and_biliary_diseases': Cause(
         name='gallbladder_and_biliary_diseases',
@@ -6620,12 +6811,13 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.asymptomatic_gallbladder_and_biliary_diseases, 
                   sequelae.mild_symptomatic_episodes_gallbladder_and_biliary_diseases, 
                   sequelae.moderate_symptomatic_episodes_gallbladder_and_biliary_diseases, 
                   sequelae.severe_symptomatic_episodes_gallbladder_and_biliary_diseases, ),
+        etiologies=(),
     ),
     'pancreatitis': Cause(
         name='pancreatitis',
@@ -6648,8 +6840,8 @@ causes = Causes(**{
         incidence_consistent=True,
         deaths_consistent=None,
         birth_prevalence_consistent=True,
-        prevalence_aggregates=False,
-        incidence_aggregates=False,
+        prevalence_aggregates=True,
+        incidence_aggregates=True,
         deaths_aggregates=None,
         birth_prevalence_aggregates=None,
         parent=None,
@@ -6662,10 +6854,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_chronic_pancreatitis, sequelae.moderate_chronic_pancreatitis, 
-                  sequelae.severe_chronic_pancreatitis, sequelae.acute_pancreatitis, ),
+                  sequelae.severe_chronic_pancreatitis, sequelae.acute_pancreatitis, 
+                  sequelae.asymptomatic_chronic_pancreatitis, ),
+        etiologies=(),
     ),
     'gastroesophageal_reflux_disease': Cause(
         name='gastroesophageal_reflux_disease',
@@ -6684,12 +6878,12 @@ causes = Causes(**{
         remission_in_range=True,
         deaths_in_range=None,
         birth_prevalence_in_range=None,
-        prevalence_consistent=False,
-        incidence_consistent=False,
+        prevalence_consistent=True,
+        incidence_consistent=True,
         deaths_consistent=None,
         birth_prevalence_consistent=True,
-        prevalence_aggregates=None,
-        incidence_aggregates=None,
+        prevalence_aggregates=True,
+        incidence_aggregates=True,
         deaths_aggregates=None,
         birth_prevalence_aggregates=None,
         parent=None,
@@ -6702,11 +6896,11 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
-        sequelae=(sequelae.symptomatic_gastroesophageal_reflux_disease, 
-                  sequelae.mild_to_moderate_gastroesophageal_reflux_disease_symptoms_typical, 
-                  sequelae.severe_or_very_severe_gastroesophageal_reflux_disease_symptoms_typical, ),
+        sequelae=(sequelae.mild_to_moderate_gerd_symptomatic_days, sequelae.mild_to_moderate_gerd_asymptomatic_days, 
+                  sequelae.severe_gerd_symptomatic_days, sequelae.severe_gerd_asymptomatic_days, ),
+        etiologies=(),
     ),
     'other_digestive_diseases': Cause(
         name='other_digestive_diseases',
@@ -6743,9 +6937,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.other_digestive_diseases, ),
+        etiologies=(),
     ),
     'neurological_disorders': Cause(
         name='neurological_disorders',
@@ -6782,8 +6977,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'alzheimers_disease_and_other_dementias': Cause(
         name='alzheimers_disease_and_other_dementias',
@@ -6820,11 +7017,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=13,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
-        sequelae=(sequelae.mild_alzheimer_disease_and_other_dementias, 
-                  sequelae.moderate_alzheimer_disease_and_other_dementias, 
-                  sequelae.severe_alzheimer_disease_and_other_dementias, ),
+        sequelae=(sequelae.mild_alzheimers_disease_and_other_dementias, 
+                  sequelae.moderate_alzheimers_disease_and_other_dementias, 
+                  sequelae.severe_alzheimers_disease_and_other_dementias, ),
+        etiologies=(),
     ),
     'parkinsons_disease': Cause(
         name='parkinsons_disease',
@@ -6861,10 +7059,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=9,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
-        sequelae=(sequelae.mild_parkinson_disease, sequelae.moderate_parkinson_disease, 
-                  sequelae.severe_parkinson_disease, ),
+        sequelae=(sequelae.mild_parkinsons_disease, sequelae.moderate_parkinsons_disease, 
+                  sequelae.severe_parkinsons_disease, ),
+        etiologies=(),
     ),
     'epilepsy': Cause(
         name='epilepsy',
@@ -6901,10 +7100,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.idiopathic_seizure_free_treated_epilepsy, sequelae.idiopathic_less_severe_epilepsy, 
                   sequelae.idiopathic_severe_epilepsy, ),
+        etiologies=(),
     ),
     'multiple_sclerosis': Cause(
         name='multiple_sclerosis',
@@ -6941,10 +7141,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=6,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_multiple_sclerosis, sequelae.moderate_multiple_sclerosis, 
                   sequelae.severe_multiple_sclerosis, sequelae.asymptomatic_multiple_sclerosis, ),
+        etiologies=(),
     ),
     'migraine': Cause(
         name='migraine',
@@ -6964,11 +7165,11 @@ causes = Causes(**{
         deaths_in_range=None,
         birth_prevalence_in_range=None,
         prevalence_consistent=True,
-        incidence_consistent=False,
+        incidence_consistent=True,
         deaths_consistent=None,
         birth_prevalence_consistent=True,
-        prevalence_aggregates=False,
-        incidence_aggregates=None,
+        prevalence_aggregates=True,
+        incidence_aggregates=True,
         deaths_aggregates=None,
         birth_prevalence_aggregates=None,
         parent=None,
@@ -6981,11 +7182,13 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=6,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
-        sequelae=(sequelae.symptomatic_migraine, sequelae.asymptomatic_migraine, 
-                  sequelae.asymptomatic_medication_overuse_headache_due_to_migraine, 
-                  sequelae.symptomatic_medication_overuse_headache_due_to_migraine, ),
+        sequelae=(sequelae.asymptomatic_medication_overuse_headache_due_to_migraine, 
+                  sequelae.symptomatic_medication_overuse_headache_due_to_migraine, 
+                  sequelae.symptomatic_probable_migraine, sequelae.asymptomatic_probable_migraine, 
+                  sequelae.symptomatic_definite_migraine, sequelae.asymptomatic_definite_migraine, ),
+        etiologies=(),
     ),
     'tension_type_headache': Cause(
         name='tension_type_headache',
@@ -7022,11 +7225,12 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=6,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.symptomatic_tension_type_headache, sequelae.asymptomatic_tension_type_headache, 
                   sequelae.asymptomatic_medication_overuse_headache_due_to_tension_type_headache, 
                   sequelae.symptomatic_medication_overuse_headache_due_to_tension_type_headache, ),
+        etiologies=(),
     ),
     'motor_neuron_disease': Cause(
         name='motor_neuron_disease',
@@ -7049,8 +7253,8 @@ causes = Causes(**{
         incidence_consistent=True,
         deaths_consistent=None,
         birth_prevalence_consistent=True,
-        prevalence_aggregates=False,
-        incidence_aggregates=False,
+        prevalence_aggregates=True,
+        incidence_aggregates=True,
         deaths_aggregates=None,
         birth_prevalence_aggregates=None,
         parent=None,
@@ -7063,7 +7267,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_motor_impairment_mild_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease, 
                   sequelae.mild_motor_impairment_moderate_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease, 
@@ -7094,7 +7298,9 @@ causes = Causes(**{
                   sequelae.mild_respiratory_problems_due_to_motor_neuron_disease, 
                   sequelae.moderate_respiratory_problems_due_to_motor_neuron_disease, 
                   sequelae.severe_respiratory_problems_due_to_motor_neuron_disease, 
-                  sequelae.speech_problems_due_to_motor_neuron_disease, sequelae.diagnosis_of_motor_neuron_disease, ),
+                  sequelae.speech_problems_due_to_motor_neuron_disease, sequelae.diagnosis_of_motor_neuron_disease, 
+                  sequelae.mild_motor_impairment_and_moderate_respiratory_problems_due_to_motor_neuron_disease, ),
+        etiologies=(),
     ),
     'other_neurological_disorders': Cause(
         name='other_neurological_disorders',
@@ -7131,10 +7337,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.other_neurological_disorders, 
                   sequelae.guillain_barre_syndrome_due_to_other_neurological_disorders, ),
+        etiologies=(),
     ),
     'mental_disorders': Cause(
         name='mental_disorders',
@@ -7171,8 +7378,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'schizophrenia': Cause(
         name='schizophrenia',
@@ -7209,9 +7418,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.schizophrenia_acute_state, sequelae.schizophrenia_residual_state, ),
+        etiologies=(),
     ),
     'alcohol_use_disorders': Cause(
         name='alcohol_use_disorders',
@@ -7248,13 +7458,14 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_alcohol_dependence, sequelae.moderate_alcohol_dependence, 
                   sequelae.severe_alcohol_dependence, sequelae.mild_fetal_alcohol_syndrome, 
                   sequelae.moderate_fetal_alcohol_syndrome, sequelae.severe_fetal_alcohol_syndrome, 
                   sequelae.very_mild_alcohol_dependence, sequelae.asymptomatic_alcohol_dependence, 
                   sequelae.asymptomatic_fetal_alcohol_syndrome, ),
+        etiologies=(),
     ),
     'drug_use_disorders': Cause(
         name='drug_use_disorders',
@@ -7291,8 +7502,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'opioid_use_disorders': Cause(
         name='opioid_use_disorders',
@@ -7329,10 +7542,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_opioid_dependence, sequelae.severe_opioid_dependence, 
                   sequelae.asymptomatic_opioid_dependence, ),
+        etiologies=(),
     ),
     'cocaine_use_disorders': Cause(
         name='cocaine_use_disorders',
@@ -7369,10 +7583,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_cocaine_dependence, sequelae.severe_cocaine_dependence, 
                   sequelae.asymptomatic_cocaine_dependence, ),
+        etiologies=(),
     ),
     'amphetamine_use_disorders': Cause(
         name='amphetamine_use_disorders',
@@ -7409,10 +7624,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_amphetamine_dependence, sequelae.severe_amphetamine_dependence, 
                   sequelae.asymptomatic_amphetamine_dependence, ),
+        etiologies=(),
     ),
     'cannabis_use_disorders': Cause(
         name='cannabis_use_disorders',
@@ -7449,10 +7665,11 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_cannabis_dependence, sequelae.severe_cannabis_dependence, 
                   sequelae.asymptomatic_cannabis_dependence, ),
+        etiologies=(),
     ),
     'other_drug_use_disorders': Cause(
         name='other_drug_use_disorders',
@@ -7489,9 +7706,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.other_drug_use_disorders, ),
+        etiologies=(),
     ),
     'depressive_disorders': Cause(
         name='depressive_disorders',
@@ -7528,8 +7746,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'major_depressive_disorder': Cause(
         name='major_depressive_disorder',
@@ -7566,11 +7786,12 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.mild_major_depressive_disorder, sequelae.moderate_major_depressive_disorder, 
                   sequelae.severe_major_depressive_disorder, 
                   sequelae.major_depressive_disorder_currently_without_symptoms, ),
+        etiologies=(),
     ),
     'dysthymia': Cause(
         name='dysthymia',
@@ -7607,9 +7828,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.symptomatic_dysthymia, sequelae.dysthymia_currently_without_symptoms, ),
+        etiologies=(),
     ),
     'bipolar_disorder': Cause(
         name='bipolar_disorder',
@@ -7646,10 +7868,11 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.bipolar_disorder_manic_state, sequelae.bipolar_disorder_residual_state, 
                   sequelae.bipolar_disorder_depressive_state, ),
+        etiologies=(),
     ),
     'anxiety_disorders': Cause(
         name='anxiety_disorders',
@@ -7686,10 +7909,11 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_anxiety_disorders, sequelae.moderate_anxiety_disorders, 
                   sequelae.severe_anxiety_disorders, sequelae.anxiety_disorders_currently_without_symptoms, ),
+        etiologies=(),
     ),
     'eating_disorders': Cause(
         name='eating_disorders',
@@ -7726,8 +7950,11 @@ causes = Causes(**{
             yll_age_group_id_end=13,
             yld_age_group_id_start=6,
             yld_age_group_id_end=13,
-            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence', 'yll_age_restriction_violated_by_deaths'),
+            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence',
+                      'yll_age_restriction_violated_by_deaths', )
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'anorexia_nervosa': Cause(
         name='anorexia_nervosa',
@@ -7764,9 +7991,11 @@ causes = Causes(**{
             yll_age_group_id_end=13,
             yld_age_group_id_start=6,
             yld_age_group_id_end=13,
-            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence', 'yld_age_restriction_violated_by_remission', 'yll_age_restriction_violated_by_deaths'),
+            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence',
+                      'yld_age_restriction_violated_by_remission', 'yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.anorexia_nervosa, ),
+        etiologies=(),
     ),
     'bulimia_nervosa': Cause(
         name='bulimia_nervosa',
@@ -7803,9 +8032,11 @@ causes = Causes(**{
             yll_age_group_id_end=13,
             yld_age_group_id_start=6,
             yld_age_group_id_end=13,
-            violated=('yld_age_restriction_violated_by_prevalence', 'yld_age_restriction_violated_by_remission', 'yll_age_restriction_violated_by_deaths'),
+            violated=('yld_age_restriction_violated_by_prevalence', 'yld_age_restriction_violated_by_remission',
+                      'yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.bulimia_nervosa, ),
+        etiologies=(),
     ),
     'autism_spectrum_disorders': Cause(
         name='autism_spectrum_disorders',
@@ -7842,7 +8073,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.autism_spectrum_disorders_without_intellectual_disability, 
                   sequelae.autism_spectrum_disorders_with_borderline_intellectual_disability, 
@@ -7850,6 +8081,7 @@ causes = Causes(**{
                   sequelae.autism_spectrum_disorders_with_moderate_intellectual_disability, 
                   sequelae.autism_spectrum_disorders_with_severe_intellectual_disability, 
                   sequelae.autism_spectrum_disorders_with_profound_intellectual_disability, ),
+        etiologies=(),
     ),
     'attention_deficit_hyperactivity_disorder': Cause(
         name='attention_deficit_hyperactivity_disorder',
@@ -7886,10 +8118,11 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.symptomatic_attention_deficit_hyperactivity_disorder, 
                   sequelae.attention_deficit_hyperactivity_disorder_currently_without_symptoms, ),
+        etiologies=(),
     ),
     'conduct_disorder': Cause(
         name='conduct_disorder',
@@ -7926,9 +8159,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=6,
             yld_age_group_id_end=8,
-            violated=('yld_age_restriction_violated_by_prevalence',),
+            violated=('yld_age_restriction_violated_by_prevalence', )
         ),
         sequelae=(sequelae.symptomatic_conduct_disorder, sequelae.conduct_disorder_currently_without_symptoms, ),
+        etiologies=(),
     ),
     'idiopathic_developmental_intellectual_disability': Cause(
         name='idiopathic_developmental_intellectual_disability',
@@ -7965,13 +8199,14 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.borderline_idiopathic_developmental_intellectual_disability, 
                   sequelae.mild_idiopathic_developmental_intellectual_disability, 
                   sequelae.moderate_idiopathic_developmental_intellectual_disability, 
                   sequelae.severe_idiopathic_developmental_intellectual_disability, 
                   sequelae.profound_idiopathic_developmental_intellectual_disability, ),
+        etiologies=(),
     ),
     'other_mental_disorders': Cause(
         name='other_mental_disorders',
@@ -8008,10 +8243,11 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_other_mental_disorders, sequelae.moderate_other_mental_disorders, 
                   sequelae.severe_other_mental_disorders, sequelae.other_mental_disorders_currently_without_symptoms, ),
+        etiologies=(),
     ),
     'diabetes_mellitus': Cause(
         name='diabetes_mellitus',
@@ -8048,8 +8284,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'acute_glomerulonephritis': Cause(
         name='acute_glomerulonephritis',
@@ -8086,9 +8324,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.acute_glomerulonephritis, ),
+        etiologies=(),
     ),
     'chronic_kidney_disease': Cause(
         name='chronic_kidney_disease',
@@ -8125,8 +8364,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'chronic_kidney_disease_due_to_hypertension': Cause(
         name='chronic_kidney_disease_due_to_hypertension',
@@ -8163,7 +8404,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.end_stage_renal_disease_after_transplant_due_to_hypertension, 
                   sequelae.end_stage_renal_disease_on_dialysis_due_to_hypertension, 
@@ -8180,6 +8421,7 @@ causes = Causes(**{
                   sequelae.stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_hypertension, 
                   sequelae.stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_hypertension, 
                   sequelae.albuminuria_with_preserved_gfr_due_to_hypertension, ),
+        etiologies=(),
     ),
     'chronic_kidney_disease_due_to_glomerulonephritis': Cause(
         name='chronic_kidney_disease_due_to_glomerulonephritis',
@@ -8216,7 +8458,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.end_stage_renal_disease_after_transplant_due_to_glomerulonephritis, 
                   sequelae.end_stage_renal_disease_on_dialysis_due_to_glomerulonephritis, 
@@ -8233,6 +8475,7 @@ causes = Causes(**{
                   sequelae.stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_glomerulonephritis, 
                   sequelae.stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_glomerulonephritis, 
                   sequelae.albuminuria_with_preserved_gfr_due_to_glomerulonephritis, ),
+        etiologies=(),
     ),
     'chronic_kidney_disease_due_to_other_and_unspecified_causes': Cause(
         name='chronic_kidney_disease_due_to_other_and_unspecified_causes',
@@ -8269,23 +8512,24 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
-        sequelae=(sequelae.end_stage_renal_disease_after_transplant_due_to_other_causes, 
-                  sequelae.end_stage_renal_disease_on_dialysis_due_to_other_causes, 
-                  sequelae.stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_other_causes, 
-                  sequelae.stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_other_causes, 
-                  sequelae.stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_other_causes, 
-                  sequelae.stage_iii_chronic_kidney_disease_without_anemia_due_to_other_causes, 
-                  sequelae.stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_other_causes, 
-                  sequelae.stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_causes, 
-                  sequelae.stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_causes, 
-                  sequelae.stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_causes, 
-                  sequelae.stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_other_causes, 
-                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_causes, 
-                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_causes, 
-                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_causes, 
-                  sequelae.albuminuria_with_preserved_gfr_due_to_other_causes, ),
+        sequelae=(sequelae.end_stage_renal_disease_after_transplant_due_to_other_and_unspecified_causes, 
+                  sequelae.end_stage_renal_disease_on_dialysis_due_to_other_and_unspecified_causes, 
+                  sequelae.stage_iii_chronic_kidney_disease_and_mild_anemia_due_to_other_and_unspecified_causes, 
+                  sequelae.stage_iii_chronic_kidney_disease_and_moderate_anemia_due_to_other_and_unspecified_causes, 
+                  sequelae.stage_iii_chronic_kidney_disease_and_severe_anemia_due_to_other_and_unspecified_causes, 
+                  sequelae.stage_iii_chronic_kidney_disease_without_anemia_due_to_other_and_unspecified_causes, 
+                  sequelae.stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_other_and_unspecified_causes, 
+                  sequelae.stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_and_unspecified_causes, 
+                  sequelae.stage_v_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_and_unspecified_causes, 
+                  sequelae.stage_v_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_and_unspecified_causes, 
+                  sequelae.stage_iv_chronic_kidney_disease_untreated_without_anemia_due_to_other_and_unspecified_causes, 
+                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_and_unspecified_causes, 
+                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_and_unspecified_causes, 
+                  sequelae.stage_iv_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_and_unspecified_causes, 
+                  sequelae.albuminuria_with_preserved_gfr_due_to_other_and_unspecified_causes, ),
+        etiologies=(),
     ),
     'urinary_diseases_and_male_infertility': Cause(
         name='urinary_diseases_and_male_infertility',
@@ -8322,8 +8566,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'urinary_tract_infections': Cause(
         name='urinary_tract_infections',
@@ -8360,9 +8606,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_urinary_tract_infections, sequelae.moderate_urinary_tract_infections, ),
+        etiologies=(),
     ),
     'urolithiasis': Cause(
         name='urolithiasis',
@@ -8399,10 +8646,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_urolithiasis_episodes, sequelae.moderate_urolithiasis_episodes, 
                   sequelae.severe_urolithiasis_episodes, ),
+        etiologies=(),
     ),
     'benign_prostatic_hyperplasia': Cause(
         name='benign_prostatic_hyperplasia',
@@ -8439,10 +8687,11 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=13,
             yld_age_group_id_end=235,
-            violated=('sex_restriction_violated_by_remission',),
+            violated=('sex_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.asymptomatic_benign_prostatic_hyperplasia, 
                   sequelae.symptomatic_benign_prostatic_hyperplasia, ),
+        etiologies=(),
     ),
     'male_infertility': Cause(
         name='male_infertility',
@@ -8461,11 +8710,11 @@ causes = Causes(**{
         remission_in_range=None,
         deaths_in_range=None,
         birth_prevalence_in_range=None,
-        prevalence_consistent=None,
-        incidence_consistent=None,
+        prevalence_consistent=True,
+        incidence_consistent=True,
         deaths_consistent=None,
-        birth_prevalence_consistent=None,
-        prevalence_aggregates=None,
+        birth_prevalence_consistent=True,
+        prevalence_aggregates=True,
         incidence_aggregates=None,
         deaths_aggregates=None,
         birth_prevalence_aggregates=None,
@@ -8479,8 +8728,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(sequelae.idiopathic_primary_male_infertility, sequelae.idiopathic_secondary_male_infertility, ),
+        etiologies=(),
     ),
     'other_urinary_diseases': Cause(
         name='other_urinary_diseases',
@@ -8517,9 +8768,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.other_urinary_diseases, ),
+        etiologies=(),
     ),
     'gynecological_diseases': Cause(
         name='gynecological_diseases',
@@ -8556,8 +8808,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'uterine_fibroids': Cause(
         name='uterine_fibroids',
@@ -8594,13 +8848,14 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission', 'sex_restriction_violated_by_remission'),
+            violated=('yld_age_restriction_violated_by_remission', 'sex_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.asymptomatic_uterine_fibroids, 
                   sequelae.mild_abdominal_pain_due_to_uterine_fibroids_with_mild_anemia, 
                   sequelae.mild_abdominal_pain_due_to_uterine_fibroids_with_moderate_anemia, 
                   sequelae.mild_abdominal_pain_due_to_uterine_fibroids_with_severe_anemia, 
                   sequelae.mild_abdominal_pain_due_to_uterine_fibroids_without_anemia, ),
+        etiologies=(),
     ),
     'polycystic_ovarian_syndrome': Cause(
         name='polycystic_ovarian_syndrome',
@@ -8637,7 +8892,9 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=7,
             yld_age_group_id_end=14,
-            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence', 'yld_age_restriction_violated_by_remission', 'sex_restriction_violated_by_remission', 'yll_age_restriction_violated_by_deaths'),
+            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence',
+                      'yld_age_restriction_violated_by_remission', 'sex_restriction_violated_by_remission',
+                      'yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.primary_infertility_due_to_polycystic_ovarian_syndrome, 
                   sequelae.asymptomatic_polycystic_ovarian_syndrome, 
@@ -8645,6 +8902,7 @@ causes = Causes(**{
                   sequelae.hirsutism_and_primary_infertility_due_to_polycystic_ovarian_syndrome, 
                   sequelae.hirsutism_and_secondary_infertility_due_to_polycystic_ovarian_syndrome, 
                   sequelae.secondary_infertility_due_to_polycystic_ovarian_syndrome, ),
+        etiologies=(),
     ),
     'female_infertility': Cause(
         name='female_infertility',
@@ -8663,11 +8921,11 @@ causes = Causes(**{
         remission_in_range=None,
         deaths_in_range=None,
         birth_prevalence_in_range=None,
-        prevalence_consistent=None,
-        incidence_consistent=None,
+        prevalence_consistent=True,
+        incidence_consistent=True,
         deaths_consistent=None,
-        birth_prevalence_consistent=None,
-        prevalence_aggregates=None,
+        birth_prevalence_consistent=True,
+        prevalence_aggregates=True,
         incidence_aggregates=None,
         deaths_aggregates=None,
         birth_prevalence_aggregates=None,
@@ -8681,8 +8939,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=8,
             yld_age_group_id_end=14,
-            violated=(),
+            violated=()
         ),
+        sequelae=(sequelae.idiopathic_primary_female_infertility, sequelae.idiopathic_secondary_female_infertility, ),
+        etiologies=(),
     ),
     'endometriosis': Cause(
         name='endometriosis',
@@ -8719,7 +8979,8 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=8,
             yld_age_group_id_end=14,
-            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence', 'yll_age_restriction_violated_by_deaths'),
+            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence',
+                      'yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.mild_abdominal_pain_due_to_endometriosis, 
                   sequelae.moderate_abdominal_pain_due_to_endometriosis, 
@@ -8731,7 +8992,8 @@ causes = Causes(**{
                   sequelae.mild_abdominal_pain_and_secondary_infertility_due_to_endometriosis, 
                   sequelae.moderate_abdominal_pain_and_secondary_infertility_due_to_endometriosis, 
                   sequelae.severe_abdominal_pain_and_secondary_infertility_due_to_endometriosis, 
-                  sequelae.severe_endometriosis, ),
+                  sequelae.severe_abdominal_pain_due_to_endometriosis, ),
+        etiologies=(),
     ),
     'genital_prolapse': Cause(
         name='genital_prolapse',
@@ -8768,11 +9030,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission', 'sex_restriction_violated_by_remission'),
+            violated=('yld_age_restriction_violated_by_remission', 'sex_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.asymptomatic_genital_prolapse, sequelae.abdominal_pain_due_to_genital_prolapse, 
                   sequelae.stress_incontinence_due_to_genital_prolapse, 
                   sequelae.abdominal_pain_and_stress_incontinence_due_to_genital_prolapse, ),
+        etiologies=(),
     ),
     'premenstrual_syndrome': Cause(
         name='premenstrual_syndrome',
@@ -8809,11 +9072,13 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=8,
             yld_age_group_id_end=14,
-            violated=('yld_age_restriction_violated_by_prevalence', 'yld_age_restriction_violated_by_remission', 'sex_restriction_violated_by_remission'),
+            violated=('yld_age_restriction_violated_by_prevalence', 'yld_age_restriction_violated_by_remission',
+                      'sex_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.abdominal_pain_due_to_premenstrual_syndrome, 
                   sequelae.depression_due_to_premenstrual_syndrome, sequelae.asymptomatic_premenstrual_syndrome, 
                   sequelae.abdominal_pain_and_depression_due_to_premenstrual_syndrome, ),
+        etiologies=(),
     ),
     'other_gynecological_diseases': Cause(
         name='other_gynecological_diseases',
@@ -8850,7 +9115,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=14,
-            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence'),
+            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence', )
         ),
         sequelae=(sequelae.mild_anemia_due_to_menstrual_disorders, 
                   sequelae.moderate_anemia_due_to_menstrual_disorders, 
@@ -8858,6 +9123,7 @@ causes = Causes(**{
                   sequelae.asymptomatic_other_gynecological_disorders, sequelae.mild_other_gynecological_disorders, 
                   sequelae.moderate_other_gynecological_disorders, sequelae.severe_other_gynecological_disorders, 
                   sequelae.menstrual_disorders_without_anemia, ),
+        etiologies=(),
     ),
     'hemoglobinopathies_and_hemolytic_anemias': Cause(
         name='hemoglobinopathies_and_hemolytic_anemias',
@@ -8894,8 +9160,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'thalassemias': Cause(
         name='thalassemias',
@@ -8932,7 +9200,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_heart_failure_due_to_thalassemias, 
                   sequelae.moderate_heart_failure_due_to_thalassemias, 
@@ -8950,7 +9218,8 @@ causes = Causes(**{
                   sequelae.hemoglobin_h_disease_with_severe_anemia, sequelae.hemoglobin_h_disease_without_anemia, 
                   sequelae.beta_thalassemia_major_without_anemia, 
                   sequelae.hemoglobin_e_beta_thalassemia_without_anemia, 
-                  sequelae.treated_heart_failure_due_to_thalassemias, ),
+                  sequelae.controlled_medically_managed_heart_failure_due_to_thalassemias, ),
+        etiologies=(),
     ),
     'sickle_cell_disorders': Cause(
         name='sickle_cell_disorders',
@@ -8987,7 +9256,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_without_anemia, 
                   sequelae.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_without_anemia, 
@@ -9019,6 +9288,7 @@ causes = Causes(**{
                   sequelae.mild_sickle_cell_beta_thalassemia_with_mild_anemia, 
                   sequelae.mild_sickle_cell_beta_thalassemia_with_moderate_anemia, 
                   sequelae.mild_sickle_cell_beta_thalassemia_with_severe_anemia, ),
+        etiologies=(),
     ),
     'g6pd_deficiency': Cause(
         name='g6pd_deficiency',
@@ -9055,13 +9325,14 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_anemia_due_to_g6pd_deficiency, sequelae.moderate_anemia_due_to_g6pd_deficiency, 
                   sequelae.severe_anemia_due_to_g6pd_deficiency, sequelae.mild_heart_failure_due_to_g6pd_deficiency, 
                   sequelae.moderate_heart_failure_due_to_g6pd_deficiency, 
                   sequelae.severe_heart_failure_due_to_g6pd_deficiency, sequelae.asymptomatic_g6pd_deficiency, 
-                  sequelae.treated_heart_failure_due_to_g6pd_deficiency, ),
+                  sequelae.controlled_medically_managed_heart_failure_due_to_g6pd_deficiency, ),
+        etiologies=(),
     ),
     'other_hemoglobinopathies_and_hemolytic_anemias': Cause(
         name='other_hemoglobinopathies_and_hemolytic_anemias',
@@ -9098,7 +9369,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_anemia_due_to_other_hemoglobinopathies_and_hemolytic_anemias, 
                   sequelae.moderate_anemia_due_to_other_hemoglobinopathies_and_hemolytic_anemias, 
@@ -9106,8 +9377,9 @@ causes = Causes(**{
                   sequelae.mild_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias, 
                   sequelae.moderate_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias, 
                   sequelae.severe_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias, 
-                  sequelae.other_hemoglobinopathies_and_hemolytic_anemias, 
-                  sequelae.treated_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias, ),
+                  sequelae.other_hemoglobinopathies_and_hemolytic_anemias_residual, 
+                  sequelae.controlled_medically_managed_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias, ),
+        etiologies=(),
     ),
     'endocrine_metabolic_blood_and_immune_disorders': Cause(
         name='endocrine_metabolic_blood_and_immune_disorders',
@@ -9144,7 +9416,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders, 
                   sequelae.moderate_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders, 
@@ -9156,7 +9428,8 @@ causes = Causes(**{
                   sequelae.mild_endocrine_metabolic_blood_and_immune_disorders, 
                   sequelae.moderate_endocrine_metabolic_blood_and_immune_disorders, 
                   sequelae.severe_endocrine_metabolic_blood_and_immune_disorders, 
-                  sequelae.treated_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders, ),
+                  sequelae.controlled_medically_managed_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders, ),
+        etiologies=(),
     ),
     'musculoskeletal_disorders': Cause(
         name='musculoskeletal_disorders',
@@ -9193,8 +9466,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=6,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'rheumatoid_arthritis': Cause(
         name='rheumatoid_arthritis',
@@ -9214,11 +9489,11 @@ causes = Causes(**{
         deaths_in_range=True,
         birth_prevalence_in_range=None,
         prevalence_consistent=True,
-        incidence_consistent=False,
+        incidence_consistent=True,
         deaths_consistent=None,
         birth_prevalence_consistent=True,
-        prevalence_aggregates=False,
-        incidence_aggregates=None,
+        prevalence_aggregates=True,
+        incidence_aggregates=True,
         deaths_aggregates=None,
         birth_prevalence_aggregates=None,
         parent=None,
@@ -9231,10 +9506,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=6,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.mild_rheumatoid_arthritis, sequelae.moderate_rheumatoid_arthritis, 
-                  sequelae.severe_rheumatoid_arthritis, ),
+                  sequelae.severe_rheumatoid_arthritis, sequelae.asymptomatic_rheumatoid_arthritis, ),
+        etiologies=(),
     ),
     'osteoarthritis': Cause(
         name='osteoarthritis',
@@ -9254,11 +9530,11 @@ causes = Causes(**{
         deaths_in_range=None,
         birth_prevalence_in_range=None,
         prevalence_consistent=True,
-        incidence_consistent=False,
+        incidence_consistent=True,
         deaths_consistent=None,
         birth_prevalence_consistent=True,
-        prevalence_aggregates=False,
-        incidence_aggregates=None,
+        prevalence_aggregates=True,
+        incidence_aggregates=True,
         deaths_aggregates=None,
         birth_prevalence_aggregates=None,
         parent=None,
@@ -9271,11 +9547,13 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=11,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_osteoarthritis_of_the_hip, sequelae.moderate_osteoarthritis_of_the_hip, 
                   sequelae.severe_osteoarthritis_of_the_hip, sequelae.mild_osteoarthritis_of_the_knee, 
-                  sequelae.moderate_osteoarthritis_of_the_knee, sequelae.severe_osteoarthritis_of_the_knee, ),
+                  sequelae.moderate_osteoarthritis_of_the_knee, sequelae.severe_osteoarthritis_of_the_knee, 
+                  sequelae.asymptomatic_osteoarthritis_of_the_knee, sequelae.asymptomatic_osteoarthritis_of_the_hip, ),
+        etiologies=(),
     ),
     'low_back_pain': Cause(
         name='low_back_pain',
@@ -9312,13 +9590,14 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=6,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.severe_low_back_pain_with_leg_pain, sequelae.severe_low_back_pain_without_leg_pain, 
                   sequelae.most_severe_low_back_pain_with_leg_pain, 
                   sequelae.most_severe_low_back_pain_without_leg_pain, sequelae.mild_low_back_pain_with_leg_pain, 
                   sequelae.mild_low_back_pain_without_leg_pain, sequelae.moderate_low_back_pain_with_leg_pain, 
                   sequelae.moderate_low_back_pain_without_leg_pain, ),
+        etiologies=(),
     ),
     'neck_pain': Cause(
         name='neck_pain',
@@ -9355,10 +9634,11 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=6,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.mild_neck_pain, sequelae.severe_neck_pain, sequelae.moderate_neck_pain, 
                   sequelae.most_severe_neck_pain, ),
+        etiologies=(),
     ),
     'gout': Cause(
         name='gout',
@@ -9395,9 +9675,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.polyarticular_gout, sequelae.symptomatic_episodes_of_gout, sequelae.asymptomatic_gout, ),
+        etiologies=(),
     ),
     'other_musculoskeletal_disorders': Cause(
         name='other_musculoskeletal_disorders',
@@ -9434,7 +9715,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.other_musculoskeletal_disorders_severity_level_2, 
                   sequelae.other_musculoskeletal_disorders_severity_level_3, 
@@ -9443,6 +9724,7 @@ causes = Causes(**{
                   sequelae.other_musculoskeletal_disorders_severity_level_1, 
                   sequelae.other_musculoskeletal_disorders_severity_level_4, 
                   sequelae.asymptomatic_other_musculoskeletal_disorders, ),
+        etiologies=(),
     ),
     'other_non_communicable_diseases': Cause(
         name='other_non_communicable_diseases',
@@ -9479,8 +9761,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'congenital_birth_defects': Cause(
         name='congenital_birth_defects',
@@ -9517,8 +9801,10 @@ causes = Causes(**{
             yll_age_group_id_end=17,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'neural_tube_defects': Cause(
         name='neural_tube_defects',
@@ -9555,7 +9841,7 @@ causes = Causes(**{
             yll_age_group_id_end=17,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.severe_motor_and_cognitive_impairment_due_to_anencephaly, 
                   sequelae.asymptomatic_encephalocele_following_treatment, 
@@ -9605,7 +9891,7 @@ causes = Causes(**{
                   sequelae.severe_motor_impairment_and_profound_intellectual_disability_due_to_spina_bifida, 
                   sequelae.mild_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida, 
                   sequelae.moderate_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida, 
-                  sequelae.profound_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida, 
+                  sequelae.severe_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_spina_bifida, 
                   sequelae.mild_motor_impairment_due_to_encephalocele, 
                   sequelae.moderate_motor_impairment_due_to_encephalocele, 
                   sequelae.severe_motor_impairment_due_to_encephalocele, 
@@ -9642,6 +9928,7 @@ causes = Causes(**{
                   sequelae.mild_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele, 
                   sequelae.moderate_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele, 
                   sequelae.severe_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele, ),
+        etiologies=(),
     ),
     'congenital_heart_anomalies': Cause(
         name='congenital_heart_anomalies',
@@ -9678,7 +9965,7 @@ causes = Causes(**{
             yll_age_group_id_end=17,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.asymptomatic_ventricular_septal_defect_and_atrial_septal_defect, 
                   sequelae.congenital_heart_disease_without_intellectual_disability_or_heart_failure_due_to_other_congenital_cardiovascular_anomalies, 
@@ -9783,30 +10070,31 @@ causes = Causes(**{
                   sequelae.congenital_heart_disease_moderate_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
                   sequelae.congenital_heart_disease_severe_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
                   sequelae.congenital_heart_disease_profound_intellectual_disability_and_severe_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_and_treated_heart_failure_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_boderline_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
-                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
-                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
-                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
-                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_treated_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, ),
+                  sequelae.congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
+                  sequelae.congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
+                  sequelae.congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
+                  sequelae.congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
+                  sequelae.congenital_heart_disease_boderline_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
+                  sequelae.congenital_heart_disease_boderline_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
+                  sequelae.congenital_heart_disease_boderline_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
+                  sequelae.congenital_heart_disease_boderline_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
+                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
+                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
+                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
+                  sequelae.congenital_heart_disease_mild_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
+                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
+                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
+                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
+                  sequelae.congenital_heart_disease_moderate_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
+                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
+                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
+                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, 
+                  sequelae.congenital_heart_disease_profound_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
+                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus, 
+                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects, 
+                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects, 
+                  sequelae.congenital_heart_disease_severe_intellectual_disability_and_controlled_medically_managed_heart_failure_due_to_ventricular_septal_defect_and_atrial_septal_defect, ),
+        etiologies=(),
     ),
     'orofacial_clefts': Cause(
         name='orofacial_clefts',
@@ -9843,12 +10131,13 @@ causes = Causes(**{
             yll_age_group_id_end=4,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.disfigurement_level_1_due_to_orofacial_clefts, 
                   sequelae.disfigurement_level_2_due_to_orofacial_clefts, 
                   sequelae.disfigurement_level_2_and_speech_problems_due_to_orofacial_clefts, 
                   sequelae.asymptomatic_orofacial_clefts, ),
+        etiologies=(),
     ),
     'down_syndrome': Cause(
         name='down_syndrome',
@@ -9885,7 +10174,7 @@ causes = Causes(**{
             yll_age_group_id_end=17,
             yld_age_group_id_start=2,
             yld_age_group_id_end=17,
-            violated=('yld_age_restriction_violated_by_prevalence', 'yll_age_restriction_violated_by_deaths'),
+            violated=('yld_age_restriction_violated_by_prevalence', 'yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.isolated_congenital_heart_disease_due_to_down_syndrome, 
                   sequelae.asymptomatic_down_syndrome, 
@@ -9934,6 +10223,7 @@ causes = Causes(**{
                   sequelae.moderate_intellectual_disability_and_severe_dementia_due_to_down_syndrome, 
                   sequelae.mild_intellectual_disability_and_severe_dementia_due_to_down_syndrome, 
                   sequelae.borderline_intellectual_disability_and_severe_dementia_due_to_down_syndrome, ),
+        etiologies=(),
     ),
     'turner_syndrome': Cause(
         name='turner_syndrome',
@@ -9970,12 +10260,13 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.congenital_heart_disease_due_to_turner_syndrome, 
                   sequelae.primary_infertility_due_to_turner_syndrome, 
                   sequelae.congenital_heart_disease_with_infertility_due_to_turner_syndrome, 
                   sequelae.asymptomatic_turner_syndrome, ),
+        etiologies=(),
     ),
     'klinefelter_syndrome': Cause(
         name='klinefelter_syndrome',
@@ -10012,7 +10303,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.borderline_intellectual_disability_due_to_klinefelter_syndrome, 
                   sequelae.mild_intellectual_disability_due_to_klinefelter_syndrome, 
@@ -10020,6 +10311,7 @@ causes = Causes(**{
                   sequelae.borderline_intellectual_disability_with_infertility_due_to_klinefelter_syndrome, 
                   sequelae.primary_infertility_due_to_klinefelter_syndrome, 
                   sequelae.asymptomatic_klinefelter_syndrome, ),
+        etiologies=(),
     ),
     'other_chromosomal_abnormalities': Cause(
         name='other_chromosomal_abnormalities',
@@ -10056,7 +10348,7 @@ causes = Causes(**{
             yll_age_group_id_end=17,
             yld_age_group_id_start=2,
             yld_age_group_id_end=17,
-            violated=('yld_age_restriction_violated_by_prevalence', 'yll_age_restriction_violated_by_deaths'),
+            violated=('yld_age_restriction_violated_by_prevalence', 'yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.asymptomatic_other_chromosomal_abnormalities, 
                   sequelae.isolated_congenital_heart_disease_due_to_other_chromosomal_abnormalities, 
@@ -10108,6 +10400,7 @@ causes = Causes(**{
                   sequelae.borderline_intellectual_disability_and_severe_dementia_due_to_other_chromosomal_abnormalities, 
                   sequelae.severe_motor_and_cognitive_impairment_due_to_edward_syndrome_or_patau_syndrome, 
                   sequelae.severe_motor_and_cognitive_impairment_with_congenital_heart_disease_due_to_edward_syndrome_or_patau_syndrome, ),
+        etiologies=(),
     ),
     'congenital_musculoskeletal_and_limb_anomalies': Cause(
         name='congenital_musculoskeletal_and_limb_anomalies',
@@ -10144,7 +10437,7 @@ causes = Causes(**{
             yll_age_group_id_end=17,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.disfigurement_level_1_due_to_polydactyly_and_syndactyly, 
                   sequelae.disfigurement_level_2_due_to_congenital_limb_deficiency, 
@@ -10159,6 +10452,7 @@ causes = Causes(**{
                   sequelae.disfigurement_level_2_and_moderate_motor_impairment_due_to_other_congenital_musculoskeletal_anomalies, 
                   sequelae.disfigurement_level_2_with_pain_and_mild_motor_impairment_due_to_other_congenital_musculoskeletal_anomalies, 
                   sequelae.disfigurement_level_2_with_pain_and_moderate_motor_impairment_due_to_other_congenital_musculoskeletal_anomalies, ),
+        etiologies=(),
     ),
     'urogenital_congenital_anomalies': Cause(
         name='urogenital_congenital_anomalies',
@@ -10195,7 +10489,7 @@ causes = Causes(**{
             yll_age_group_id_end=17,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.asymptomatic_congenital_genital_anomalies, 
                   sequelae.atypical_genitalia_due_to_congenital_genital_anomalies, 
@@ -10229,6 +10523,7 @@ causes = Causes(**{
                   sequelae.atypical_genitalia_incontinence_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract, 
                   sequelae.incontinence_impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract, 
                   sequelae.atypical_genitalia_incontinence_impotence_and_recurrent_urinary_tract_infections_or_other_abdominal_issues_and_impotence_due_to_congenital_anomalies_of_the_urinary_tract, ),
+        etiologies=(),
     ),
     'digestive_congenital_anomalies': Cause(
         name='digestive_congenital_anomalies',
@@ -10265,7 +10560,7 @@ causes = Causes(**{
             yll_age_group_id_end=17,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.asymptomatic_congenital_diaphragmatic_hernia, 
                   sequelae.chronic_abdominal_pain_due_to_congenital_diaphragmatic_hernia, 
@@ -10303,6 +10598,7 @@ causes = Causes(**{
                   sequelae.acid_reflux_dyspahgia_and_or_constipation_due_to_other_congenital_malformations_of_the_digestive_tract, 
                   sequelae.chronic_abdominal_pain_and_or_nausea_due_to_other_congenital_malformations_of_the_digestive_tract, 
                   sequelae.chronic_abdominal_pain_and_or_nausea_with_acid_reflux_dyspahgia_and_or_constipation_due_to_other_congenital_malformations_of_the_digestive_tract, ),
+        etiologies=(),
     ),
     'other_congenital_birth_defects': Cause(
         name='other_congenital_birth_defects',
@@ -10339,7 +10635,7 @@ causes = Causes(**{
             yll_age_group_id_end=17,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.mild_hearing_loss_due_to_other_congenital_anomalies, 
                   sequelae.mild_hearing_loss_with_ringing_due_to_other_congenital_anomalies, 
@@ -10354,6 +10650,7 @@ causes = Causes(**{
                   sequelae.profound_hearing_loss_due_to_other_congenital_anomalies, 
                   sequelae.profound_hearing_loss_with_ringing_due_to_other_congenital_anomalies, 
                   sequelae.other_congenital_birth_defects, ),
+        etiologies=(),
     ),
     'skin_and_subcutaneous_diseases': Cause(
         name='skin_and_subcutaneous_diseases',
@@ -10390,8 +10687,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'dermatitis': Cause(
         name='dermatitis',
@@ -10428,8 +10727,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'psoriasis': Cause(
         name='psoriasis',
@@ -10466,9 +10767,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.mild_psoriasis, sequelae.moderate_psoriasis, sequelae.severe_psoriasis, ),
+        etiologies=(),
     ),
     'cellulitis': Cause(
         name='cellulitis',
@@ -10505,9 +10807,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_cellulitis, sequelae.severe_cellulitis, sequelae.moderate_cellulitis, ),
+        etiologies=(),
     ),
     'pyoderma': Cause(
         name='pyoderma',
@@ -10544,9 +10847,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.impetigo, sequelae.abscess_and_other_bacterial_skin_diseases, ),
+        etiologies=(),
     ),
     'scabies': Cause(
         name='scabies',
@@ -10583,9 +10887,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.scabies, ),
+        etiologies=(),
     ),
     'fungal_skin_diseases': Cause(
         name='fungal_skin_diseases',
@@ -10622,9 +10927,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.tinea_capitis, sequelae.other_fungal_skin_diseases, ),
+        etiologies=(),
     ),
     'viral_skin_diseases': Cause(
         name='viral_skin_diseases',
@@ -10661,10 +10967,11 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_viral_warts, sequelae.severe_viral_warts, sequelae.mild_molluscum_contagiosum, 
                   sequelae.severe_molluscum_contagiosum, ),
+        etiologies=(),
     ),
     'acne_vulgaris': Cause(
         name='acne_vulgaris',
@@ -10701,10 +11008,11 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=6,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.mild_acne_vulgaris, sequelae.moderate_acne_vulgaris, sequelae.severe_acne_vulgaris, 
                   sequelae.non_disabling_symptomatic_acne, ),
+        etiologies=(),
     ),
     'alopecia_areata': Cause(
         name='alopecia_areata',
@@ -10741,9 +11049,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.mild_alopecia_areata, sequelae.severe_alopecia_areata, ),
+        etiologies=(),
     ),
     'pruritus': Cause(
         name='pruritus',
@@ -10780,9 +11089,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.pruritus, ),
+        etiologies=(),
     ),
     'urticaria': Cause(
         name='urticaria',
@@ -10819,9 +11129,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_urticaria, sequelae.severe_urticaria, ),
+        etiologies=(),
     ),
     'decubitus_ulcer': Cause(
         name='decubitus_ulcer',
@@ -10858,9 +11169,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.mild_decubitus_ulcer, sequelae.moderate_decubitus_ulcer, sequelae.severe_decubitus_ulcer, ),
+        etiologies=(),
     ),
     'other_skin_and_subcutaneous_diseases': Cause(
         name='other_skin_and_subcutaneous_diseases',
@@ -10897,10 +11209,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.asymptomatic_other_skin_and_subcutaneous_diseases, 
                   sequelae.symptomatic_other_skin_and_subcutaneous_diseases, ),
+        etiologies=(),
     ),
     'sense_organ_diseases': Cause(
         name='sense_organ_diseases',
@@ -10937,8 +11250,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'glaucoma': Cause(
         name='glaucoma',
@@ -10975,10 +11290,11 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=9,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.moderate_vision_impairment_due_to_glaucoma, 
                   sequelae.severe_vision_impairment_due_to_glaucoma, sequelae.blindness_due_to_glaucoma, ),
+        etiologies=(),
     ),
     'cataract': Cause(
         name='cataract',
@@ -11015,10 +11331,11 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=9,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.moderate_vision_impairment_due_to_cataract, 
                   sequelae.severe_vision_impairment_due_to_cataract, sequelae.blindness_due_to_cataract, ),
+        etiologies=(),
     ),
     'age_related_macular_degeneration': Cause(
         name='age_related_macular_degeneration',
@@ -11055,11 +11372,12 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=14,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.moderate_vision_impairment_due_to_macular_degeneration, 
                   sequelae.severe_vision_impairment_due_to_macular_degeneration, 
                   sequelae.blindness_due_to_macular_degeneration, ),
+        etiologies=(),
     ),
     'age_related_and_other_hearing_loss': Cause(
         name='age_related_and_other_hearing_loss',
@@ -11096,7 +11414,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_hearing_loss_due_to_age_related_and_other_hearing_loss, 
                   sequelae.mild_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss, 
@@ -11110,6 +11428,7 @@ causes = Causes(**{
                   sequelae.profound_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss, 
                   sequelae.complete_hearing_loss_due_to_age_related_and_other_hearing_loss, 
                   sequelae.complete_hearing_loss_with_ringing_due_to_age_related_and_other_hearing_loss, ),
+        etiologies=(),
     ),
     'other_vision_loss': Cause(
         name='other_vision_loss',
@@ -11146,11 +11465,12 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.moderate_vision_impairment_due_to_other_vision_loss, 
                   sequelae.severe_vision_impairment_due_to_other_vision_loss, 
                   sequelae.blindness_due_to_other_vision_loss, ),
+        etiologies=(),
     ),
     'other_sense_organ_diseases': Cause(
         name='other_sense_organ_diseases',
@@ -11187,13 +11507,14 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
-        sequelae=(sequelae.asymptomatic_acute_sense_organ_diseases, sequelae.mild_acute_sense_organ_diseases, 
-                  sequelae.moderate_acute_sense_organ_diseases, 
+        sequelae=(sequelae.asymptomatic_acute_other_sense_organ_diseases, 
+                  sequelae.mild_acute_other_sense_organ_diseases, sequelae.moderate_acute_other_sense_organ_diseases, 
                   sequelae.asymptomatic_chronic_other_sense_organ_diseases, 
                   sequelae.mild_chronic_other_sense_organ_diseases, 
                   sequelae.moderate_chronic_other_sense_organ_diseases, ),
+        etiologies=(),
     ),
     'oral_disorders': Cause(
         name='oral_disorders',
@@ -11230,8 +11551,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'caries_of_deciduous_teeth': Cause(
         name='caries_of_deciduous_teeth',
@@ -11268,9 +11591,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=6,
-            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence'),
+            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence', )
         ),
         sequelae=(sequelae.pain_due_to_caries_of_deciduous_teeth, sequelae.asymptomatic_caries_of_deciduous_teeth, ),
+        etiologies=(),
     ),
     'caries_of_permanent_teeth': Cause(
         name='caries_of_permanent_teeth',
@@ -11307,9 +11631,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=6,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.pain_due_to_caries_of_permanent_teeth, sequelae.asymptomatic_caries_of_permanent_teeth, ),
+        etiologies=(),
     ),
     'periodontal_diseases': Cause(
         name='periodontal_diseases',
@@ -11346,9 +11671,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.chronic_periodontal_diseases, ),
+        etiologies=(),
     ),
     'edentulism_and_severe_tooth_loss': Cause(
         name='edentulism_and_severe_tooth_loss',
@@ -11385,10 +11711,11 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=9,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.difficulty_eating_due_to_edentulism_and_severe_tooth_loss, 
                   sequelae.asymptomatic_edentulism_and_severe_tooth_loss, ),
+        etiologies=(),
     ),
     'other_oral_disorders': Cause(
         name='other_oral_disorders',
@@ -11425,9 +11752,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=6,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_other_oral_disorders, sequelae.severe_other_oral_disorders, ),
+        etiologies=(),
     ),
     'sudden_infant_death_syndrome': Cause(
         name='sudden_infant_death_syndrome',
@@ -11464,8 +11792,10 @@ causes = Causes(**{
             yll_age_group_id_end=3,
             yld_age_group_id_start=None,
             yld_age_group_id_end=None,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'injuries': Cause(
         name='injuries',
@@ -11502,8 +11832,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'transport_injuries': Cause(
         name='transport_injuries',
@@ -11540,8 +11872,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'road_injuries': Cause(
         name='road_injuries',
@@ -11578,8 +11912,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'pedestrian_road_injuries': Cause(
         name='pedestrian_road_injuries',
@@ -11616,8 +11952,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'cyclist_road_injuries': Cause(
         name='cyclist_road_injuries',
@@ -11654,8 +11992,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'motorcyclist_road_injuries': Cause(
         name='motorcyclist_road_injuries',
@@ -11692,8 +12032,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'motor_vehicle_road_injuries': Cause(
         name='motor_vehicle_road_injuries',
@@ -11730,8 +12072,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'other_road_injuries': Cause(
         name='other_road_injuries',
@@ -11768,8 +12112,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'other_transport_injuries': Cause(
         name='other_transport_injuries',
@@ -11806,8 +12152,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'unintentional_injuries': Cause(
         name='unintentional_injuries',
@@ -11844,8 +12192,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'falls': Cause(
         name='falls',
@@ -11882,8 +12232,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'drowning': Cause(
         name='drowning',
@@ -11920,8 +12272,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'fire_heat_and_hot_substances': Cause(
         name='fire_heat_and_hot_substances',
@@ -11958,8 +12312,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'poisonings': Cause(
         name='poisonings',
@@ -11996,8 +12352,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'poisoning_by_carbon_monoxide': Cause(
         name='poisoning_by_carbon_monoxide',
@@ -12034,8 +12392,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'poisoning_by_other_means': Cause(
         name='poisoning_by_other_means',
@@ -12072,8 +12432,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'exposure_to_mechanical_forces': Cause(
         name='exposure_to_mechanical_forces',
@@ -12110,8 +12472,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'unintentional_firearm_injuries': Cause(
         name='unintentional_firearm_injuries',
@@ -12148,8 +12512,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'other_exposure_to_mechanical_forces': Cause(
         name='other_exposure_to_mechanical_forces',
@@ -12186,8 +12552,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'adverse_effects_of_medical_treatment': Cause(
         name='adverse_effects_of_medical_treatment',
@@ -12224,8 +12592,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'animal_contact': Cause(
         name='animal_contact',
@@ -12262,8 +12632,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'venomous_animal_contact': Cause(
         name='venomous_animal_contact',
@@ -12300,8 +12672,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'non_venomous_animal_contact': Cause(
         name='non_venomous_animal_contact',
@@ -12338,8 +12712,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'foreign_body': Cause(
         name='foreign_body',
@@ -12376,8 +12752,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'pulmonary_aspiration_and_foreign_body_in_airway': Cause(
         name='pulmonary_aspiration_and_foreign_body_in_airway',
@@ -12414,8 +12792,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'foreign_body_in_eyes': Cause(
         name='foreign_body_in_eyes',
@@ -12452,8 +12832,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'foreign_body_in_other_body_part': Cause(
         name='foreign_body_in_other_body_part',
@@ -12490,8 +12872,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'other_unintentional_injuries': Cause(
         name='other_unintentional_injuries',
@@ -12528,8 +12912,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'self_harm_and_interpersonal_violence': Cause(
         name='self_harm_and_interpersonal_violence',
@@ -12566,8 +12952,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'self_harm': Cause(
         name='self_harm',
@@ -12604,8 +12992,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'self_harm_by_firearm': Cause(
         name='self_harm_by_firearm',
@@ -12642,8 +13032,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'self_harm_by_other_specified_means': Cause(
         name='self_harm_by_other_specified_means',
@@ -12680,8 +13072,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=7,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'interpersonal_violence': Cause(
         name='interpersonal_violence',
@@ -12718,8 +13112,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'physical_violence_by_firearm': Cause(
         name='physical_violence_by_firearm',
@@ -12756,8 +13152,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'physical_violence_by_sharp_object': Cause(
         name='physical_violence_by_sharp_object',
@@ -12794,8 +13192,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'physical_violence_by_other_means': Cause(
         name='physical_violence_by_other_means',
@@ -12832,8 +13232,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'exposure_to_forces_of_nature': Cause(
         name='exposure_to_forces_of_nature',
@@ -12870,8 +13272,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'maternal_deaths_aggravated_by_hiv_aids': Cause(
         name='maternal_deaths_aggravated_by_hiv_aids',
@@ -12908,8 +13312,10 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=None,
             yld_age_group_id_end=None,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'thalassemias_trait': Cause(
         name='thalassemias_trait',
@@ -12946,7 +13352,7 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_anemia_due_to_b_thalassemia_trait, 
                   sequelae.moderate_anemia_due_to_b_thalassemia_trait, 
@@ -12954,6 +13360,7 @@ causes = Causes(**{
                   sequelae.moderate_anemia_due_to_hemoglobin_e_trait, 
                   sequelae.severe_anemia_due_to_hemoglobin_e_trait, sequelae.asymptomatic_b_thalassemia_trait, 
                   sequelae.asymptomatic_hemoglobin_e_trait, ),
+        etiologies=(),
     ),
     'sickle_cell_trait': Cause(
         name='sickle_cell_trait',
@@ -12990,10 +13397,11 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_anemia_due_to_sickle_cell_trait, sequelae.moderate_anemia_due_to_sickle_cell_trait, 
                   sequelae.severe_anemia_due_to_sickle_cell_trait, sequelae.asymptomatic_sickle_cell_trait, ),
+        etiologies=(),
     ),
     'g6pd_trait': Cause(
         name='g6pd_trait',
@@ -13030,12 +13438,12 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
-        sequelae=(sequelae.mild_anemia_due_to_hemizygous_g6pd_deficiency, 
-                  sequelae.moderate_anemia_due_to_hemizygous_g6pd_deficiency, 
-                  sequelae.severe_anemia_due_to_hemizygous_g6pd_deficiency, 
-                  sequelae.asymptomatic_hemizygous_g6pd_deficiency, ),
+        sequelae=(sequelae.mild_anemia_due_to_hemizygous_g6pd_trait, 
+                  sequelae.moderate_anemia_due_to_hemizygous_g6pd_trait, 
+                  sequelae.severe_anemia_due_to_hemizygous_g6pd_trait, sequelae.asymptomatic_hemizygous_g6pd_trait, ),
+        etiologies=(),
     ),
     'environmental_heat_and_cold_exposure': Cause(
         name='environmental_heat_and_cold_exposure',
@@ -13072,8 +13480,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'ebola': Cause(
         name='ebola',
@@ -13110,9 +13520,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.ebola_cases, sequelae.post_ebola_chronic_fatigue_syndrome, ),
+        etiologies=(),
     ),
     'acute_lymphoid_leukemia': Cause(
         name='acute_lymphoid_leukemia',
@@ -13149,12 +13560,13 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=4,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_acute_lymphoid_leukemia, 
                   sequelae.controlled_phase_of_acute_lymphoid_leukemia, 
                   sequelae.metastatic_phase_of_acute_lymphoid_leukemia, 
                   sequelae.terminal_phase_of_acute_lymphoid_leukemia, ),
+        etiologies=(),
     ),
     'chronic_lymphoid_leukemia': Cause(
         name='chronic_lymphoid_leukemia',
@@ -13191,12 +13603,13 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_chronic_lymphoid_leukemia, 
                   sequelae.controlled_phase_of_chronic_lymphoid_leukemia, 
                   sequelae.metastatic_phase_of_chronic_lymphoid_leukemia, 
                   sequelae.terminal_phase_of_chronic_lymphoid_leukemia, ),
+        etiologies=(),
     ),
     'acute_myeloid_leukemia': Cause(
         name='acute_myeloid_leukemia',
@@ -13233,12 +13646,13 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_acute_myeloid_leukemia, 
                   sequelae.controlled_phase_of_acute_myeloid_leukemia, 
                   sequelae.metastatic_phase_of_acute_myeloid_leukemia, 
                   sequelae.terminal_phase_of_acute_myeloid_leukemia, ),
+        etiologies=(),
     ),
     'chronic_myeloid_leukemia': Cause(
         name='chronic_myeloid_leukemia',
@@ -13275,12 +13689,13 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_chronic_myeloid_leukemia, 
                   sequelae.controlled_phase_of_chronic_myeloid_leukemia, 
                   sequelae.metastatic_phase_of_chronic_myeloid_leukemia, 
                   sequelae.terminal_phase_of_chronic_myeloid_leukemia, ),
+        etiologies=(),
     ),
     'non_melanoma_skin_cancer_squamous_cell_carcinoma': Cause(
         name='non_melanoma_skin_cancer_squamous_cell_carcinoma',
@@ -13317,11 +13732,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_disfigurement_due_to_squamous_cell_carcinoma, 
                   sequelae.moderate_disfigurement_due_to_squamous_cell_carcinoma, 
                   sequelae.severe_disfigurement_due_to_squamous_cell_carcinoma, ),
+        etiologies=(),
     ),
     'non_melanoma_skin_cancer_basal_cell_carcinoma': Cause(
         name='non_melanoma_skin_cancer_basal_cell_carcinoma',
@@ -13344,8 +13760,8 @@ causes = Causes(**{
         incidence_consistent=True,
         deaths_consistent=None,
         birth_prevalence_consistent=True,
-        prevalence_aggregates=False,
-        incidence_aggregates=False,
+        prevalence_aggregates=True,
+        incidence_aggregates=True,
         deaths_aggregates=None,
         birth_prevalence_aggregates=None,
         parent=None,
@@ -13358,9 +13774,11 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
-        sequelae=(sequelae.disfigurement_due_to_basal_cell_carcinoma, ),
+        sequelae=(sequelae.disfigurement_due_to_basal_cell_carcinoma, 
+                  sequelae.basal_cell_carcinoma_without_disfigurement, ),
+        etiologies=(),
     ),
     'executions_and_police_conflict': Cause(
         name='executions_and_police_conflict',
@@ -13397,8 +13815,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=4,
             yld_age_group_id_end=235,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'drug_susceptible_tuberculosis': Cause(
         name='drug_susceptible_tuberculosis',
@@ -13435,9 +13855,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.drug_susceptible_tuberculosis, ),
+        etiologies=(),
     ),
     'zika_virus': Cause(
         name='zika_virus',
@@ -13474,10 +13895,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.acute_zika_infection, sequelae.guillain_barre_syndrome_due_to_zika_infection, 
                   sequelae.congenital_zika_syndrome, sequelae.asymptomatic_zika_infection, ),
+        etiologies=(),
     ),
     'guinea_worm_disease': Cause(
         name='guinea_worm_disease',
@@ -13514,12 +13936,11 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
-        sequelae=(sequelae.moderate_pain_due_to_guinea_worm_emergence, 
-                  sequelae.mild_pain_due_to_guinea_worm_emergence, 
-                  sequelae.moderate_reduced_mobility_due_to_guinea_worm_emergence, 
+        sequelae=(sequelae.mild_pain_due_to_guinea_worm_emergence, 
                   sequelae.moderate_pain_and_limited_mobility_due_to_guinea_worm, ),
+        etiologies=(),
     ),
     'alcoholic_cardiomyopathy': Cause(
         name='alcoholic_cardiomyopathy',
@@ -13556,12 +13977,13 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_heart_failure_due_to_alcoholic_cardiomyopathy, 
                   sequelae.moderate_heart_failure_due_to_alcoholic_cardiomyopathy, 
                   sequelae.severe_heart_failure_due_to_alcoholic_cardiomyopathy, 
-                  sequelae.treated_heart_failure_due_to_alcoholic_cardiomyopathy, ),
+                  sequelae.controlled_medically_managed_heart_failure_due_to_alcoholic_cardiomyopathy, ),
+        etiologies=(),
     ),
     'sexual_violence': Cause(
         name='sexual_violence',
@@ -13598,8 +14020,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'myocarditis': Cause(
         name='myocarditis',
@@ -13622,7 +14046,7 @@ causes = Causes(**{
         incidence_consistent=True,
         deaths_consistent=None,
         birth_prevalence_consistent=True,
-        prevalence_aggregates=False,
+        prevalence_aggregates=True,
         incidence_aggregates=True,
         deaths_aggregates=None,
         birth_prevalence_aggregates=None,
@@ -13636,19 +14060,19 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.acute_myocarditis, sequelae.mild_heart_failure_due_to_myocarditis, 
                   sequelae.moderate_heart_failure_due_to_myocarditis, 
                   sequelae.severe_heart_failure_due_to_myocarditis, 
-                  sequelae.treated_heart_failure_due_to_myocarditis, 
-                  sequelae.treated_heart_failure_due_to_other_cardiomyopathy, ),
+                  sequelae.controlled_medically_managed_heart_failure_due_to_myocarditis, ),
+        etiologies=(),
     ),
     'other_leukemia': Cause(
         name='other_leukemia',
         kind='cause',
         gbd_id=cid(943),
-        dismod_id=UNKNOWN,
+        dismod_id=meid(23665),
         level=4,
         most_detailed=True,
         prevalence_exists=True,
@@ -13679,11 +14103,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=4,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.metastatic_phase_of_other_leukemia, 
                   sequelae.diagnosis_and_primary_therapy_phase_of_other_leukemia, 
                   sequelae.terminal_phase_of_other_leukemia, sequelae.controlled_phase_of_other_leukemia, ),
+        etiologies=(),
     ),
     'other_cardiomyopathy': Cause(
         name='other_cardiomyopathy',
@@ -13706,7 +14131,7 @@ causes = Causes(**{
         incidence_consistent=True,
         deaths_consistent=None,
         birth_prevalence_consistent=True,
-        prevalence_aggregates=False,
+        prevalence_aggregates=True,
         incidence_aggregates=None,
         deaths_aggregates=None,
         birth_prevalence_aggregates=None,
@@ -13720,11 +14145,13 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_heart_failure_due_to_other_cardiomyopathy, 
                   sequelae.moderate_heart_failure_due_to_other_cardiomyopathy, 
-                  sequelae.severe_heart_failure_due_to_other_cardiomyopathy, ),
+                  sequelae.severe_heart_failure_due_to_other_cardiomyopathy, 
+                  sequelae.controlled_medically_managed_heart_failure_due_to_other_cardiomyopathy, ),
+        etiologies=(),
     ),
     'conflict_and_terrorism': Cause(
         name='conflict_and_terrorism',
@@ -13761,8 +14188,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'multidrug_resistant_tuberculosis_without_extensive_drug_resistance': Cause(
         name='multidrug_resistant_tuberculosis_without_extensive_drug_resistance',
@@ -13799,9 +14228,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.multidrug_resistant_tuberculosis_without_extensive_drug_resistance, ),
+        etiologies=(),
     ),
     'extensively_drug_resistant_tuberculosis': Cause(
         name='extensively_drug_resistant_tuberculosis',
@@ -13838,9 +14268,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.extensively_drug_resistant_tuberculosis, ),
+        etiologies=(),
     ),
     'hiv_aids_drug_susceptible_tuberculosis': Cause(
         name='hiv_aids_drug_susceptible_tuberculosis',
@@ -13877,12 +14308,13 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=4,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
-        sequelae=(sequelae.drug_susceptible_hiv_aids_tuberculosis_with_mild_anemia, 
-                  sequelae.drug_susceptible_hiv_aids_tuberculosis_with_moderate_anemia, 
-                  sequelae.drug_susceptible_hiv_aids_tuberculosis_with_severe_anemia, 
-                  sequelae.drug_susceptible_hiv_aids_tuberculosis_without_anemia, ),
+        sequelae=(sequelae.hiv_aids_drug_susceptible_tuberculosis_with_mild_anemia, 
+                  sequelae.hiv_aids_drug_susceptible_tuberculosis_with_moderate_anemia, 
+                  sequelae.hiv_aids_drug_susceptible_tuberculosis_with_severe_anemia, 
+                  sequelae.hiv_aids_drug_susceptible_tuberculosis_without_anemia, ),
+        etiologies=(),
     ),
     'hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance': Cause(
         name='hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance',
@@ -13919,12 +14351,13 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=4,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
-        sequelae=(sequelae.multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_mild_anemia, 
-                  sequelae.multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_moderate_anemia, 
-                  sequelae.multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_with_severe_anemia, 
-                  sequelae.multidrug_resistant_hiv_aids_tuberculosis_without_extensive_drug_resistance_without_anemia, ),
+        sequelae=(sequelae.hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance_with_mild_anemia, 
+                  sequelae.hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance_with_moderate_anemia, 
+                  sequelae.hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance_with_severe_anemia, 
+                  sequelae.hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance_without_anemia, ),
+        etiologies=(),
     ),
     'hiv_aids_extensively_drug_resistant_tuberculosis': Cause(
         name='hiv_aids_extensively_drug_resistant_tuberculosis',
@@ -13961,12 +14394,13 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=4,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
-        sequelae=(sequelae.extensively_drug_resistant_hiv_aids_tuberculosis_with_mild_anemia, 
-                  sequelae.extensively_drug_resistant_hiv_aids_tuberculosis_with_moderate_anemia, 
-                  sequelae.extensively_drug_resistant_hiv_aids_tuberculosis_with_severe_anemia, 
-                  sequelae.extensively_drug_resistant_hiv_aids_tuberculosis_without_anemia, ),
+        sequelae=(sequelae.hiv_aids_extensively_drug_resistant_tuberculosis_with_mild_anemia, 
+                  sequelae.hiv_aids_extensively_drug_resistant_tuberculosis_with_moderate_anemia, 
+                  sequelae.hiv_aids_extensively_drug_resistant_tuberculosis_with_severe_anemia, 
+                  sequelae.hiv_aids_extensively_drug_resistant_tuberculosis_without_anemia, ),
+        etiologies=(),
     ),
     'latent_tuberculosis_infection': Cause(
         name='latent_tuberculosis_infection',
@@ -14003,9 +14437,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.latent_tuberculosis_infection, ),
+        etiologies=(),
     ),
     'hiv_aids_and_sexually_transmitted_infections': Cause(
         name='hiv_aids_and_sexually_transmitted_infections',
@@ -14042,8 +14477,11 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=3,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence', 'yll_age_restriction_violated_by_deaths'),
+            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence',
+                      'yll_age_restriction_violated_by_deaths', )
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'respiratory_infections_and_tuberculosis': Cause(
         name='respiratory_infections_and_tuberculosis',
@@ -14080,8 +14518,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'enteric_infections': Cause(
         name='enteric_infections',
@@ -14118,8 +14558,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'typhoid_and_paratyphoid': Cause(
         name='typhoid_and_paratyphoid',
@@ -14156,8 +14598,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=3,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'invasive_non_typhoidal_salmonella_ints': Cause(
         name='invasive_non_typhoidal_salmonella_ints',
@@ -14194,9 +14638,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=3,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.severe_acute_ints, ),
+        etiologies=(),
     ),
     'other_infectious_diseases': Cause(
         name='other_infectious_diseases',
@@ -14233,8 +14678,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'maternal_and_neonatal_disorders': Cause(
         name='maternal_and_neonatal_disorders',
@@ -14271,8 +14718,10 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'myelodysplastic_myeloproliferative_and_other_hematopoietic_neoplasms': Cause(
         name='myelodysplastic_myeloproliferative_and_other_hematopoietic_neoplasms',
@@ -14309,9 +14758,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=3,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.myelodysplastic_myeloproliferative_and_other_hematopoietic_neoplasms, ),
+        etiologies=(),
     ),
     'benign_and_in_situ_intestinal_neoplasms': Cause(
         name='benign_and_in_situ_intestinal_neoplasms',
@@ -14348,9 +14798,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=3,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.benign_and_in_situ_intestinal_neoplasms, ),
+        etiologies=(),
     ),
     'benign_and_in_situ_cervical_and_uterine_neoplasms': Cause(
         name='benign_and_in_situ_cervical_and_uterine_neoplasms',
@@ -14387,9 +14838,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=3,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission', 'sex_restriction_violated_by_remission'),
+            violated=('yld_age_restriction_violated_by_remission', 'sex_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.benign_and_in_situ_cervical_and_uterine_neoplasms, ),
+        etiologies=(),
     ),
     'other_benign_and_in_situ_neoplasms': Cause(
         name='other_benign_and_in_situ_neoplasms',
@@ -14426,9 +14878,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=3,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.other_benign_and_in_situ_neoplasms, ),
+        etiologies=(),
     ),
     'non_rheumatic_calcific_aortic_valve_disease': Cause(
         name='non_rheumatic_calcific_aortic_valve_disease',
@@ -14465,14 +14918,15 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
-        sequelae=(sequelae.calcific_aortic_valve_disease_after_treatment, 
+        sequelae=(sequelae.calcific_aortic_valve_disease_after_valve_intervention, 
                   sequelae.asymptomatic_calcific_aortic_valve_disease, 
                   sequelae.mild_heart_failure_due_to_calcific_aortic_valve_disease, 
                   sequelae.moderate_heart_failure_due_to_calcific_aortic_valve_disease, 
                   sequelae.severe_heart_failure_due_to_calcific_aortic_valve_disease, 
-                  sequelae.treated_heart_failure_due_to_calcific_aortic_valve_disease, ),
+                  sequelae.controlled_medically_managed_heart_failure_due_to_calcific_aortic_valve_disease, ),
+        etiologies=(),
     ),
     'non_rheumatic_degenerative_mitral_valve_disease': Cause(
         name='non_rheumatic_degenerative_mitral_valve_disease',
@@ -14509,14 +14963,15 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
-        sequelae=(sequelae.degenerative_mitral_valve_disease_after_treatment, 
+        sequelae=(sequelae.degenerative_mitral_valve_disease_after_valve_intervention, 
                   sequelae.asymptomatic_degenerative_mitral_valve_disease, 
                   sequelae.mild_heart_failure_due_to_degenerative_mitral_valve_disease, 
                   sequelae.moderate_heart_failure_due_to_degenerative_mitral_valve_disease, 
                   sequelae.severe_heart_failure_due_to_degenerative_mitral_valve_disease, 
-                  sequelae.treated_heart_failure_due_to_degenerative_mitral_valve_disease, ),
+                  sequelae.controlled_medically_managed_heart_failure_due_to_degenerative_mitral_valve_disease, ),
+        etiologies=(),
     ),
     'other_non_rheumatic_valve_diseases': Cause(
         name='other_non_rheumatic_valve_diseases',
@@ -14553,12 +15008,13 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.mild_heart_failure_due_to_other_non_rheumatic_valve_disease, 
                   sequelae.moderate_heart_failure_due_to_other_non_rheumatic_valve_disease, 
                   sequelae.severe_heart_failure_due_to_other_non_rheumatic_valve_disease, 
-                  sequelae.treated_heart_failure_due_to_other_non_rheumatic_valve_disease, ),
+                  sequelae.controlled_medically_managed_heart_failure_due_to_other_non_rheumatic_valve_disease, ),
+        etiologies=(),
     ),
     'cirrhosis_due_to_nash': Cause(
         name='cirrhosis_due_to_nash',
@@ -14595,11 +15051,12 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_nash_compensated, 
                   sequelae.cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated, 
                   sequelae.non_alcoholic_fatty_liver_disease_nafld_non_alcoholic_steatohepatitis_nash, ),
+        etiologies=(),
     ),
     'headache_disorders': Cause(
         name='headache_disorders',
@@ -14636,8 +15093,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=6,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'substance_use_disorders': Cause(
         name='substance_use_disorders',
@@ -14674,8 +15133,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'diabetes_and_kidney_diseases': Cause(
         name='diabetes_and_kidney_diseases',
@@ -14712,8 +15173,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'diabetes_mellitus_type_1': Cause(
         name='diabetes_mellitus_type_1',
@@ -14750,16 +15213,17 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diabetic_foot_due_to_neuropathy_due_to_diabetes_mellitus_type_1, 
-                  sequelae.diabetic_neuropathy_due_to_diabetes_mellitus_type_1, 
+                  sequelae.diabetic_neuropathy_due_to_diabetes_mellitus_type_1_without_diabetic_foot_or_amputation, 
                   sequelae.diabetic_neuropathy_and_amputation_with_treatment_due_to_diabetes_mellitus_type_1, 
                   sequelae.diabetic_neuropathy_and_amputation_without_treatment_due_to_diabetes_mellitus_type_1, 
                   sequelae.uncomplicated_diabetes_mellitus_type_1, 
-                  sequelae.moderate_vision_impairment_due_to_diabetes_mellitus_type_1, 
-                  sequelae.severe_vision_impairment_due_to_diabetes_mellitus_type_1, 
-                  sequelae.blindness_due_to_diabetes_mellitus_type_1, ),
+                  sequelae.moderate_vision_impairment_due_to_diabetes_mellitus_type_1_retinopathy, 
+                  sequelae.severe_vision_impairment_due_to_diabetes_mellitus_type_1_retinopathy, 
+                  sequelae.blindness_due_to_diabetes_mellitus_type_1_retinopathy, ),
+        etiologies=(),
     ),
     'diabetes_mellitus_type_2': Cause(
         name='diabetes_mellitus_type_2',
@@ -14796,16 +15260,17 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diabetic_foot_due_to_neuropathy_due_to_diabetes_mellitus_type_2, 
-                  sequelae.diabetic_neuropathy_due_to_diabetes_mellitus_type_2, 
+                  sequelae.diabetic_neuropathy_due_to_diabetes_mellitus_type_2_without_diabetic_foot_or_amputation, 
                   sequelae.diabetic_neuropathy_and_amputation_with_treatment_due_to_diabetes_mellitus_type_2, 
                   sequelae.diabetic_neuropathy_and_amputation_without_treatment_due_to_diabetes_mellitus_type_2, 
                   sequelae.uncomplicated_diabetes_mellitus_type_2, 
-                  sequelae.moderate_vision_impairment_due_to_diabetes_mellitus_type_2, 
-                  sequelae.severe_vision_impairment_due_to_diabetes_mellitus_type_2, 
-                  sequelae.blindness_due_to_diabetes_mellitus_type_2, ),
+                  sequelae.moderate_vision_impairment_due_to_diabetes_mellitus_type_2_retinopathy, 
+                  sequelae.severe_vision_impairment_due_to_diabetes_mellitus_type_2_retinopathy, 
+                  sequelae.blindness_due_to_diabetes_mellitus_type_2_retinopathy, ),
+        etiologies=(),
     ),
     'atopic_dermatitis': Cause(
         name='atopic_dermatitis',
@@ -14842,10 +15307,11 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.mild_atopic_dermatitis, sequelae.moderate_atopic_dermatitis, 
                   sequelae.severe_atopic_dermatitis, ),
+        etiologies=(),
     ),
     'contact_dermatitis': Cause(
         name='contact_dermatitis',
@@ -14882,10 +15348,11 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.mild_contact_dermatitis, sequelae.moderate_contact_dermatitis, 
                   sequelae.asymptomatic_contact_dermatitis, ),
+        etiologies=(),
     ),
     'seborrhoeic_dermatitis': Cause(
         name='seborrhoeic_dermatitis',
@@ -14922,9 +15389,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=('yld_age_restriction_violated_by_remission',),
+            violated=('yld_age_restriction_violated_by_remission', )
         ),
         sequelae=(sequelae.symptomatic_seborrhoeic_dermatitis, sequelae.asymptomatic_seborrhoeic_dermatitis, ),
+        etiologies=(),
     ),
     'bacterial_skin_diseases': Cause(
         name='bacterial_skin_diseases',
@@ -14961,8 +15429,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=('yll_age_restriction_violated_by_deaths',),
+            violated=('yll_age_restriction_violated_by_deaths', )
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'blindness_and_vision_impairment': Cause(
         name='blindness_and_vision_impairment',
@@ -14999,8 +15469,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'upper_digestive_system_diseases': Cause(
         name='upper_digestive_system_diseases',
@@ -15037,8 +15509,10 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=5,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
+        sequelae=(),
+        etiologies=(),
     ),
     'maternal_abortion_and_miscarriage': Cause(
         name='maternal_abortion_and_miscarriage',
@@ -15075,9 +15549,11 @@ causes = Causes(**{
             yll_age_group_id_end=14,
             yld_age_group_id_start=7,
             yld_age_group_id_end=14,
-            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence', 'yll_age_restriction_violated_by_deaths'),
+            violated=('yld_age_restriction_violated_by_incidence', 'yld_age_restriction_violated_by_prevalence',
+                      'yll_age_restriction_violated_by_deaths', )
         ),
         sequelae=(sequelae.maternal_abortive_outcome, ),
+        etiologies=(),
     ),
     'liver_cancer_due_to_nash': Cause(
         name='liver_cancer_due_to_nash',
@@ -15114,12 +15590,13 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=8,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.diagnosis_and_primary_therapy_phase_of_liver_cancer_due_to_nash, 
                   sequelae.controlled_phase_of_liver_cancer_due_to_nash, 
                   sequelae.metastatic_phase_of_liver_cancer_due_to_nash, 
                   sequelae.terminal_phase_of_liver_cancer_due_to_nash, ),
+        etiologies=(),
     ),
     'chronic_kidney_disease_due_to_diabetes_mellitus_type_1': Cause(
         name='chronic_kidney_disease_due_to_diabetes_mellitus_type_1',
@@ -15156,7 +15633,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.end_stage_renal_disease_after_transplant_due_to_type_1_diabetes_mellitus, 
                   sequelae.end_stage_renal_disease_on_dialysis_due_to_type_1_diabetes_mellitus, 
@@ -15173,6 +15650,7 @@ causes = Causes(**{
                   sequelae.stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_1_diabetes_mellitus, 
                   sequelae.stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_type_1_diabetes_mellitus, 
                   sequelae.albuminuria_with_preserved_gfr_due_to_type_1_diabetes_mellitus, ),
+        etiologies=(),
     ),
     'chronic_kidney_disease_due_to_diabetes_mellitus_type_2': Cause(
         name='chronic_kidney_disease_due_to_diabetes_mellitus_type_2',
@@ -15209,7 +15687,7 @@ causes = Causes(**{
             yll_age_group_id_end=235,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.end_stage_renal_disease_after_transplant_due_to_type_2_diabetes_mellitus, 
                   sequelae.end_stage_renal_disease_on_dialysis_due_to_type_2_diabetes_mellitus, 
@@ -15226,6 +15704,7 @@ causes = Causes(**{
                   sequelae.stage_v_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_2_diabetes_mellitus, 
                   sequelae.stage_v_chronic_kidney_disease_untreated_without_anemia_due_to_type_2_diabetes_mellitus, 
                   sequelae.albuminuria_with_preserved_gfr_due_to_type_2_diabetes_mellitus, ),
+        etiologies=(),
     ),
     'refraction_disorders': Cause(
         name='refraction_disorders',
@@ -15262,11 +15741,12 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
         sequelae=(sequelae.moderate_vision_impairment_due_to_uncorrected_refractive_error, 
                   sequelae.severe_vision_impairment_due_to_uncorrected_refractive_error, 
                   sequelae.blindness_due_to_uncorrected_refractive_error, ),
+        etiologies=(),
     ),
     'near_vision_loss': Cause(
         name='near_vision_loss',
@@ -15303,9 +15783,10 @@ causes = Causes(**{
             yll_age_group_id_end=None,
             yld_age_group_id_start=2,
             yld_age_group_id_end=235,
-            violated=(),
+            violated=()
         ),
-        sequelae=(sequelae.presbyopia, ),
+        sequelae=(sequelae.near_vision_loss, ),
+        etiologies=(),
     ),
 })
 
