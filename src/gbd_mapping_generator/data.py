@@ -411,6 +411,10 @@ def get_covariate_data(with_survey):
 
         covariates = covariates.merge(data_survey, on='covariate_id')
 
+        # drop any covariates that threw an error when pulling data in the survey
+        covariates = covariates[(covariates.mean_value_exists.isin([True, False])) &
+                                (covariates.uncertainty_exists.isin([True, False]))]
+
         # covariates are special
         covariates['by_age_violated'] = covariates.violated_restrictions.apply(lambda x: "age_restriction_violated" in x)
         covariates['by_sex_violated'] = covariates.violated_restrictions.apply(lambda x: "sex_restriction_violated" in x)
