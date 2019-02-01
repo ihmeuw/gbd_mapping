@@ -43,107 +43,44 @@ class Covariate(ModelableEntity):
 
 class Covariates(GbdRecord):
     """Container for GBD covariates."""
-    __slots__ = ('abortion_on_demand_illegal_binary', 'legality_of_abortion', 'absolute_value_of_average_latitude',
-                 'average_cholera_cases_across_all_years_over_2010_population', 'adult_hiv_death_rate',
-                 'alcohol_liters_per_capita', 'antenatal_care_1_visit_coverage_proportion',
-                 'antenatal_care_4_visits_coverage_proportion', 'animal_fats_kcal_per_capita',
-                 'arv_coverage_proportion', 'asbestos_production_binary', 'asbestos_production_kg_per_capita',
-                 'age_specific_fertility_rate', 'tobacco_cigarettes_per_capita', 'coal_production_per_capita',
-                 'coastal_population_within_10km_proportion', 'completeness_of_vital_registration',
-                 'contraception_modern_prevalence_proportion_by_age', 'contraception_modern_prevalence_proportion',
-                 'contraception_total_prevalence_proportion_by_age', 'contraception_total_prevalence_proportion',
-                 'contraception_traditional_prevalence_proportion_by_age',
-                 'contraception_traditional_prevalence_proportion', 'cumulative_cigarettes_10_years',
+    __slots__ = ('absolute_value_of_average_latitude', 'adult_hiv_death_rate', 'alcohol_liters_per_capita',
+                 'antenatal_care_1_visit_coverage_proportion', 'antenatal_care_4_visits_coverage_proportion',
+                 'asbestos_production_binary', 'asbestos_production_kg_per_capita', 'age_specific_fertility_rate',
+                 'tobacco_cigarettes_per_capita', 'coal_production_per_capita',
+                 'coastal_population_within_10km_proportion', 'cumulative_cigarettes_10_years',
                  'cumulative_cigarettes_15_years', 'cumulative_cigarettes_20_years', 'cumulative_cigarettes_5_years',
                  'diabetes_fasting_plasma_glucose_mmol_l', 'diabetes_age_standardized_prevalence_proportion',
-                 'diabetes_age_specific_prevalence_proportion', 'disaster_deaths_rate_per_1000',
-                 'dtp3_coverage_proportion', 'education_years_per_capita', 'famine_binary', 'fao_composite_factor_1',
-                 'fao_composite_factor_2', 'fao_composite_factor_3', 'fao_composite_factor_4',
-                 'female_hiv_death_rate_per_1_for_ages_15_49', 'fertility_15_19_year_olds', 'fruits_kcal_per_capita',
-                 'gold_production_binary', 'gold_production_kg_per_capita', 'health_system_access_unitless',
-                 'health_system_access_2_unitless', 'proportion_of_households_using_iodized_salt_adjusted',
-                 'hib3_vaccine_coverage_proportion', 'hiv_prevalence_arv_adjusted_custom_lag__percent',
+                 'diabetes_age_specific_prevalence_proportion', 'dtp3_coverage_proportion',
+                 'education_years_per_capita', 'female_hiv_death_rate_per_1_for_ages_15_49',
+                 'health_system_access_unitless', 'health_system_access_2_unitless',
+                 'proportion_of_households_using_iodized_salt_adjusted', 'hib3_vaccine_coverage_proportion',
                  'hiv_prevalence_unadjusted_proportion', 'hospital_beds_per_1000', 'in_facility_delivery_proportion',
-                 'saturated_fats_kcal_per_capita', 'kcal_of_stimulants_per_capita_per_day', 'sugar_kcal_per_capita',
-                 'landlocked_nation_binary', 'average_latitude', 'ldi_income_per_capita', 'lead_gas_outphase_binary',
-                 'low_elevation_coastal_zone_under_10m_proportion', 'live_births_thousands',
-                 'ln_kcals_of_fiber_consumed_per_capita_per_day', 'ln_total_calories_consumed_as_hydrogenated_oil',
-                 'ln_percent_of_total_calories_consumed_as_eggs',
-                 'ln_percent_of_total_calories_consumed_as_rape_and_mustard_seed_and_oil',
-                 'ln_percent_of_total_calories_consumed_as_soybean_and_soy_oil',
-                 'underweight_proportion_less_than_2sd_weight_for_age_less_than_5_years',
-                 'malnutrition_shock_binary', 'mean_bmi', 'cholesterol_total_mean_per_capita',
-                 'systolic_blood_pressure_mmhg', 'population_weighted_mean_temperature', 'measles_incidence_rate',
-                 'measles_natural_history_death_rate', 'measles_notification_rate',
-                 'measles_vaccine_coverage_proportion', 'measles_vaccine_supp_coverage_binary',
-                 'meningitis_belt_binary', 'ln_milk_kcal_per_capita',
-                 'mortality_rate_due_to_death_shocks_in_last_10_years_per_1_person',
-                 'mortality_rate_due_to_conflict_in_last_10_years_per_1_person', 'nuts_and_seeds_kcal_per_capita',
-                 'opium_cultivation_binary', 'percent_of_total_calories_consumed_as_animal_fat',
-                 'live_births_35_and_up_proportion', 'live_births_40_and_up_proportion',
-                 'percent_of_total_calories_consumed_as_fruits', 'percent_of_total_calories_consumed_as_legumes',
-                 'percent_of_total_calories_consumed_as_milk',
-                 'percent_of_total_calories_consumed_as_nuts_and_seeds',
-                 'percent_of_total_calories_consumed_as_pig_meat', 'percent_of_total_calories_consumed_as_pufa',
-                 'percent_of_total_calories_consumed_as_pufa3', 'percent_of_total_calories_consumed_as_pufa6',
-                 'percent_of_total_calories_consumed_as_red_meat',
-                 'percent_of_total_calories_consumed_as_saturated_fat',
-                 'percent_of_total_calories_consumed_as_sugar', 'percent_of_total_calories_consumed_as_vegetables',
-                 'percent_of_total_calories_consumed_as_non_wheat_whole_grains', 'pig_meat_kg_per_capita',
-                 'pigs_per_capita', 'coal_reserves_binary', 'coal_reserves_teragrams_per_capita',
-                 'indoor_air_pollution_biomass_cooking', 'indoor_air_pollution_coal_cooking',
-                 'indoor_air_pollution_all_cooking_fuels', 'outdoor_air_pollution_pm_2_5',
-                 'latitude_under_15_proportion', 'elevation_100_to_500m_proportion',
+                 'ldi_income_per_capita', 'lead_gas_outphase_binary', 'live_births_thousands',
+                 'underweight_proportion_less_than_2sd_weight_for_age_less_than_5_years', 'mean_bmi',
+                 'cholesterol_total_mean_per_capita', 'systolic_blood_pressure_mmhg',
+                 'population_weighted_mean_temperature', 'measles_vaccine_coverage_proportion',
+                 'mortality_rate_due_to_death_shocks_in_last_10_years_per_1_person', 'opium_cultivation_binary',
+                 'live_births_35_and_up_proportion', 'live_births_40_and_up_proportion', 'pig_meat_kg_per_capita',
+                 'outdoor_air_pollution_pm_2_5', 'latitude_under_15_proportion', 'elevation_100_to_500m_proportion',
                  'elevation_over_1500m_proportion', 'population_15_to_30_proportion', 'latitude_15_to_30_proportion',
                  'latitude_30_to_45_proportion', 'latitude_over_45_proportion', 'elevation_500_to_1500m_proportion',
-                 'population_density_150_300_ppl_sqkm_proportion', 'population_density_300_500_ppl_sqkm_proportion',
-                 'population_density_500_1000_ppl_sqkm_proportion',
-                 'population_density_over_1000_ppl_sqkm_proportion',
-                 'population_density_under_150_ppl_sqkm_proportion', 'population_over_65_proportion',
-                 'elevation_under_100m_proportion', 'population_under_30_proportion', 'pufa_kcal_per_capita',
-                 'pufa_omega_3_seafood_kcal_per_capita', 'pufa_omega_6_vegetable_oils_kcal_per_capita',
-                 'pulses_and_legumes_kcal_per_capita', 'rainfall_population_weighted_mm_yr',
-                 'rainfall_quintiles_2_5', 'rainfall_quintiles_3_5', 'rainfall_quintiles_4_5',
-                 'rainfall_quintile_1_proportion', 'rainfall_quintile_2_proportion',
-                 'rainfall_quintile_3_proportion', 'rainfall_quintile_4_proportion',
-                 'rainfall_quintile_5_proportion', 'red_meat_kcal_per_capita',
-                 'religion_binary_greater_than_50_percent_muslim', '_percent_packaged_foods_sold_via_retail',
-                 '_percent_fats_oils_sold_via_retail', 'rotavirus_vaccine_introduced_binary',
-                 'sahel_region_of_africa_binary', 'sanitation_proportion_with_access',
-                 'skilled_birth_attendance_proportion', 'sheep_per_capita', 'smoking_prevalence',
-                 'smoking_prevalence_reproductive_age_standardized',
-                 'ninetieth_percentile_climatic_temperature_in_the_given_country_year',
+                 'population_over_65_proportion', 'elevation_under_100m_proportion',
+                 'religion_binary_greater_than_50_percent_muslim', 'sahel_region_of_africa_binary',
+                 'skilled_birth_attendance_proportion', 'smoking_prevalence',
                  'tetanus_toxoid_coverage_smooth_proportion', 'total_fertility_rate',
-                 'total_calories_kcal_per_capita', 'total_packaged_foods_sold_via_retail_tonnes_per_capita',
-                 'total_fats_oils_sold_via_retail_tonnes_per_capita', 'vegetables_kcal_per_capita',
                  'vehicles_2_and_up4_wheels_per_capita', 'vehicles_2_wheels_per_capita',
                  'vehicles_4_wheels_per_capita', 'vehicles_2_wheels_fraction_proportion',
-                 'vitamin_a_deficiency_prevalence_children_under_5', 'mortality_rate_due_to_war_shocks_per_1_person',
-                 'improved_water_source_proportion_with_access', 'whole_grains_kcal_per_capita',
-                 'non_wheat_whole_grains_kcal_per_capita', 'itn_adjusted_pfpr_rate',
-                 'itn_mortality_reduction_proportion', 'malaria_any_binary', 'malaria_chloroquine_resistance',
-                 'malaria_chloroquine_resistance_2', 'malaria_endemicity_0_5_percent',
-                 'malaria_endemicity_5_40_percent', 'malaria_endemicity_none', 'malaria_falciparum_binary',
-                 'malaria_lysenko_pfpr_2_hyperendemic', 'malaria_lysenko_pfpr_3_medoendemic',
-                 'malaria_lysenko_pfpr_4_hypoendemic', 'malaria_lysenko_pfpr_5_epidemic',
-                 'map_malaria_mortality_reduction_proportion', 'malaria_s_p_resistance', 'malaria_s_p_resistance_2',
-                 'itn_coverage_proportion', 'malaria_endemicity_40_100_percent', 'malaria_endemicity_5_100_percent',
-                 'malaria_indoor_residual_spraying_coverage', 'malaria_lysenko_pfpr_1_holoendemic',
-                 'malaria_lysenko_pfpr_2_highest_endemicity', 'malaria_lysenko_pfpr_3_highest_endemicity',
-                 'malaria_lysenko_pfpr_4_highest_endemicity', 'malaria_population_at_risk_proportion',
-                 'malaria_pfpr_rate', 'malaria_prevalence_weighted_resistance', 'malaria_vivax_binary',
-                 'malaria_pfpr_with_itn_rate', 'significant_leishmaniasis_endemicity_binary',
-                 'leprosy_endemic_binary', 'yellow_fever_endemicity_binary', 'year',
+                 'mortality_rate_due_to_war_shocks_per_1_person', 'malaria_lysenko_pfpr_1_holoendemic',
+                 'malaria_lysenko_pfpr_2_highest_endemicity', 'malaria_pfpr_rate',
+                 'significant_leishmaniasis_endemicity_binary', 'leprosy_endemic_binary', 'year',
                  'chagas_population_at_risk_2_proportion', 'birth_prevalence_of_chd',
-                 'birth_prevalence_of_congenital_chromosomal_anomalies', 'dengue_incidence_per_1000_v7',
-                 'hemoglobinopathies_prevalence_x_excess_mortality', 'hepatitis_a_prevalence_proportion',
-                 'hepatitis_b_prevalence_proportion', 'hepatitis_c_prevalence_proportion',
-                 'hepatitis_e_prevalence_proportion', 'age_standardize_prevalence_of_severe_anemia',
-                 'schistosomiasis_prevalence_proportion', 'population_at_risk_of_trachoma_proportion',
-                 'maternal_care_and_immunization', 'neonatal_death_rate_modeled_2_per_1000',
-                 'pcv3_coverage_proportion', 'presence_of_leishmaniasis_binary',
-                 'potential_for_leishmaniasis_transmission_binary', 'high_leishmaniasis_endemicity_binary',
-                 'under_5_hiv_death_rate', 'interaction_of_malaria_itn_and_pfpr_rate_covariates',
+                 'birth_prevalence_of_congenital_chromosomal_anomalies',
+                 'hemoglobinopathies_prevalence_x_excess_mortality', 'age_standardize_prevalence_of_severe_anemia',
+                 'schistosomiasis_prevalence_proportion', 'maternal_care_and_immunization',
+                 'neonatal_death_rate_modeled_2_per_1000', 'pcv3_coverage_proportion',
+                 'presence_of_leishmaniasis_binary', 'potential_for_leishmaniasis_transmission_binary',
+                 'high_leishmaniasis_endemicity_binary', 'under_5_hiv_death_rate',
+                 'interaction_of_malaria_itn_and_pfpr_rate_covariates',
                  'interaction_of_malaria_itn_and_log_pfpr_covariates',
                  'malaria_pfpr_adjusted_for_itn_and_irs_coverage', 'syphilis_prevalence_proportion',
                  'year_x_gbd_analytical_region_5', 'year_x_gbd_analytical_region_9',
@@ -164,180 +101,27 @@ class Covariates(GbdRecord):
                  'exponentiated_version_of_dengue_anomalies',
                  'proportion_of_the_population_living_in_the_classic_monsoon_region',
                  'proportion_of_the_population_living_in_the_classic_monsoon_region_low_income_countries',
-                 'dengue_anomalies_deviation_from_mean_dengue_incidence_rate', 'population_at_risk_for_lf_infection',
-                 'pc_treatments_per_person_at_risk_for_lf_infection',
+                 'dengue_anomalies_deviation_from_mean_dengue_incidence_rate',
                  'total_pc_treatments_per_person_at_risk_for_lf_infection_1999_2012',
-                 'smoking_prevalence_age_standardized_females', 'smoking_prevalence_age_standardized_males',
-                 'hiv_prevalence_during_pregnancy_by_age',
-                 'cumulative_to_date_pc_treatment_per_person_at_risk_1999_2012',
                  'indicator_for_high_income_superregion_location_id_64', 'vitamin_a_supplementation_coverage_rate',
                  'hemoglobinopathies_prevalence_x_excess_mortality_excluding_g6pd_deficiency',
-                 'hepatitis_c_prevalence_proportion_capped',
-                 'hepatitis_b_prevalence_based_on_gbd_2013_dismod_models',
-                 'hepatitis_c_prevalence_based_on_gbd_2013_dismod_models',
                  'indicator_for_southeast_asia_east_asia_and_oceania_superregion_location_id_4',
                  'indicator_for_central_europe_eastern_europe_and_central_asia_superregion_location_id_31',
                  'indicator_for_latin_america_and_caribbean_superregion_location_id_103',
                  'indicator_for_north_africa_and_middle_east_superregion_location_id_137',
                  'indicator_for_south_asia_superregion_location_id_158',
-                 'indicator_for_sub_saharan_africa_superregion_location_id_166', 'patterns_of_drinking_score_who',
+                 'indicator_for_sub_saharan_africa_superregion_location_id_166',
                  'alcohol_binge_drinker_proportion_age_standardized',
-                 'patterns_of_drinking_score_who__indicator_for_score_1',
-                 'patterns_of_drinking_score_who__indicator_for_score_2',
-                 'patterns_of_drinking_score_who__indicator_for_score_3',
-                 'patterns_of_drinking_score_who__indicator_for_score_4',
-                 'patterns_of_drinking_score_who__indicator_for_score_5',
-                 '_improved_water_source_proportion_with_access_based_on_gbd_2010_definition',
-                 'pre_control_prevalence_of_infection_with_lymphatic_filariasis_within_endemic_areas',
-                 'seroprevalence_of_varicella', 'smoking_prevalence_age_standardized_both_sexes',
-                 'mortality_rate_due_to_war_and_disaster_greater_than_1_10000_binary',
-                 'mortality_rate_due_to_war_and_disaster_greater_than_1_10000_in_last_ten_years_binary',
-                 'animal_fats_kcal_per_capita_interaction_term_for_eap_super_region',
-                 'ln_total_calories_consumed_as_hydrogenated_oil_interaction_term_for_eap_super_region',
-                 'percent_of_total_calories_consumed_as_fruits_interaction_term_for_eap_super_region',
-                 'percent_of_total_calories_consumed_as_legumes_interaction_term_for_eap_super_region',
-                 'percent_of_total_calories_consumed_as_nuts_and_seeds_interaction_term_for_eap_super_region',
-                 'percent_of_total_calories_consumed_as_pufa3_interaction_term_for_eap_super_region',
-                 'percent_of_total_calories_consumed_as_saturated_fat_interaction_term_for_eap_super_region',
-                 'percent_of_total_calories_consumed_as_sugar_interaction_term_for_eap_super_region',
-                 'percent_of_total_calories_consumed_as_non_wheat_whole_grains_interaction_term_for_eap_super_region',
-                 'pig_meat_kg_per_capita_interaction_term_for_eap_super_region',
-                 'pufa_kcal_per_capita_interaction_term_for_eap_super_region',
-                 'red_meat_kcal_per_capita_interaction_term_for_eap_super_region',
-                 'animal_fats_kcal_per_capita_interaction_term_for_eeca_super_region',
-                 'ln_total_calories_consumed_as_hydrogenated_oil_interaction_term_for_eeca_super_region',
-                 'percent_of_total_calories_consumed_as_fruits_interaction_term_for_eeca_super_region',
-                 'percent_of_total_calories_consumed_as_legumes_interaction_term_for_eeca_super_region',
-                 'percent_of_total_calories_consumed_as_nuts_and_seeds_interaction_term_for_eeca_super_region',
-                 'percent_of_total_calories_consumed_as_pufa3_interaction_term_for_eeca_super_region',
-                 'percent_of_total_calories_consumed_as_saturated_fat_interaction_term_for_eeca_super_region',
-                 'percent_of_total_calories_consumed_as_sugar_interaction_term_for_eeca_super_region',
-                 'percent_of_total_calories_consumed_as_non_wheat_whole_grains_interaction_term_for_eeca_super_region',
-                 'pig_meat_kg_per_capita_interaction_term_for_eeca_super_region',
-                 'pufa_kcal_per_capita_interaction_term_for_eeca_super_region',
-                 'red_meat_kcal_per_capita_interaction_term_for_eeca_super_region',
-                 'animal_fats_kcal_per_capita_interaction_term_for_hi_super_region',
-                 'ln_total_calories_consumed_as_hydrogenated_oil_interaction_term_for_hi_super_region',
-                 'percent_of_total_calories_consumed_as_fruits_interaction_term_for_hi_super_region',
-                 'percent_of_total_calories_consumed_as_legumes_interaction_term_for_hi_super_region',
-                 'percent_of_total_calories_consumed_as_nuts_and_seeds_interaction_term_for_hi_super_region',
-                 'percent_of_total_calories_consumed_as_pufa3_interaction_term_for_hi_super_region',
-                 'percent_of_total_calories_consumed_as_saturated_fat_interaction_term_for_hi_super_region',
-                 'percent_of_total_calories_consumed_as_sugar_interaction_term_for_hi_super_region',
-                 'percent_of_total_calories_consumed_as_non_wheat_whole_grains_interaction_term_for_hi_super_region',
-                 'pig_meat_kg_per_capita_interaction_term_for_hi_super_region',
-                 'pufa_kcal_per_capita_interaction_term_for_hi_super_region',
-                 'red_meat_kcal_per_capita_interaction_term_for_hi_super_region',
-                 'animal_fats_kcal_per_capita_interaction_term_for_lac_super_region',
-                 'ln_total_calories_consumed_as_hydrogenated_oil_interaction_term_for_lac_super_region',
-                 'percent_of_total_calories_consumed_as_fruits_interaction_term_for_lac_super_region',
-                 'percent_of_total_calories_consumed_as_legumes_interaction_term_for_lac_super_region',
-                 'percent_of_total_calories_consumed_as_nuts_and_seeds_interaction_term_for_lac_super_region',
-                 'percent_of_total_calories_consumed_as_pufa3_interaction_term_for_lac_super_region',
-                 'percent_of_total_calories_consumed_as_saturated_fat_interaction_term_for_lac_super_region',
-                 'percent_of_total_calories_consumed_as_sugar_interaction_term_for_lac_super_region',
-                 'percent_of_total_calories_consumed_as_non_wheat_whole_grains_interaction_term_for_lac_super_region',
-                 'pig_meat_kg_per_capita_interaction_term_for_lac_super_region',
-                 'pufa_kcal_per_capita_interaction_term_for_lac_super_region',
-                 'red_meat_kcal_per_capita_interaction_term_for_lac_super_region',
-                 'animal_fats_kcal_per_capita_interaction_term_for_name_super_region',
-                 'ln_total_calories_consumed_as_hydrogenated_oil_interaction_term_for_name_super_region',
-                 'percent_of_total_calories_consumed_as_fruits_interaction_term_for_name_super_region',
-                 'percent_of_total_calories_consumed_as_legumes_interaction_term_for_name_super_region',
-                 'percent_of_total_calories_consumed_as_nuts_and_seeds_interaction_term_for_name_super_region',
-                 'percent_of_total_calories_consumed_as_pufa3_interaction_term_for_name_super_region',
-                 'percent_of_total_calories_consumed_as_saturated_fat_interaction_term_for_name_super_region',
-                 'percent_of_total_calories_consumed_as_sugar_interaction_term_for_name_super_region',
-                 'percent_of_total_calories_consumed_as_non_wheat_whole_grains_interaction_term_for_name_super_region',
-                 'pig_meat_kg_per_capita_interaction_term_for_name_super_region',
-                 'pufa_kcal_per_capita_interaction_term_for_name_super_region',
-                 'red_meat_kcal_per_capita_interaction_term_for_name_super_region',
-                 'animal_fats_kcal_per_capita_interaction_term_for_sa_super_region',
-                 'ln_total_calories_consumed_as_hydrogenated_oil_interaction_term_for_sa_super_region',
-                 'percent_of_total_calories_consumed_as_fruits_interaction_term_for_sa_super_region',
-                 'percent_of_total_calories_consumed_as_legumes_interaction_term_for_sa_super_region',
-                 'percent_of_total_calories_consumed_as_nuts_and_seeds_interaction_term_for_sa_super_region',
-                 'percent_of_total_calories_consumed_as_pufa3_interaction_term_for_sa_super_region',
-                 'percent_of_total_calories_consumed_as_saturated_fat_interaction_term_for_sa_super_region',
-                 'percent_of_total_calories_consumed_as_sugar_interaction_term_for_sa_super_region',
-                 'percent_of_total_calories_consumed_as_non_wheat_whole_grains_interaction_term_for_sa_super_region',
-                 'pig_meat_kg_per_capita_interaction_term_for_sa_super_region',
-                 'pufa_kcal_per_capita_interaction_term_for_sa_super_region',
-                 'red_meat_kcal_per_capita_interaction_term_for_sa_super_region',
-                 'animal_fats_kcal_per_capita_interaction_term_for_ssa_super_region',
-                 'ln_total_calories_consumed_as_hydrogenated_oil_interaction_term_for_ssa_super_region',
-                 'percent_of_total_calories_consumed_as_fruits_interaction_term_for_ssa_super_region',
-                 'percent_of_total_calories_consumed_as_legumes_interaction_term_for_ssa_super_region',
-                 'percent_of_total_calories_consumed_as_nuts_and_seeds_interaction_term_for_ssa_super_region',
-                 'percent_of_total_calories_consumed_as_pufa3_interaction_term_for_ssa_super_region',
-                 'percent_of_total_calories_consumed_as_saturated_fat_interaction_term_for_ssa_super_region',
-                 'percent_of_total_calories_consumed_as_sugar_interaction_term_for_ssa_super_region',
-                 'percent_of_total_calories_consumed_as_non_wheat_whole_grains_interaction_term_for_ssa_super_region',
-                 'pig_meat_kg_per_capita_interaction_term_for_ssa_super_region',
-                 'pufa_kcal_per_capita_interaction_term_for_ssa_super_region',
-                 'red_meat_kcal_per_capita_interaction_term_for_ssa_super_region',
-                 'age_standardized_death_rate_for_endocrince_metabolic_blood_and_immune_disorders',
-                 'log_age_standardized_melanoma_incidence',
-                 'chagas_specific_mortality_rate_among_the_at_risk_population_ten_year_lag',
-                 'asbestos_production_per_capita_offset_by_non_zero_minimum',
-                 'coal_production_per_capita_offset_by_non_zero_minimum',
-                 'gold_production_per_capita_offset_by_non_zero_minimum',
                  'proportion_of_the_population_living_in_the_indian_ocean_monsoon_belt',
-                 'vitamin_a_deficiency_prevalence_age_standardized',
-                 'population_at_risk_of_trachoma_modeled_proportion',
-                 'saturated_fats_and_animal_fats_kcal_per_capita',
-                 'percent_of_total_calories_consumed_as_saturated_and_animal_fats',
-                 'percent_of_total_calories_consumed_as_saturated_and_animal_fats_interaction_term_for_eap_super_region',
-                 'percent_of_total_calories_consumed_as_saturated_and_animal_fats_interaction_term_for_eeca_super_region',
-                 'percent_of_total_calories_consumed_as_saturated_and_animal_fats_interaction_term_for_hi_super_region',
-                 'percent_of_total_calories_consumed_as_saturated_and_animal_fats_interaction_term_for_lac_super_region',
-                 'percent_of_total_calories_consumed_as_saturated_and_animal_fats_interaction_term_for_name_super_region',
-                 'percent_of_total_calories_consumed_as_saturated_and_animal_fats_interaction_term_for_sa_super_region',
-                 'percent_of_total_calories_consumed_as_saturated_and_animal_fats_interaction_term_for_ssa_super_region',
-                 'prevalence_of_obesity', 'prevalence_of_overweight_and_obesity',
-                 'prevalence_of_obesity_age_standardized', 'age_standardized_prevalence_of_ckd_stage_3',
-                 'age_standardized_prevalence_of_ckd_stage_4_dismod_model_33304',
-                 'age_standardized_prevalence_of_ckd_stage_4_dismod_model_33309',
-                 'age_standardized_prevalence_of_ckd_stage_4_dismod_model_33314',
-                 'age_standardized_prevalence_of_ckd_stage_4', 'red_meat_w_o_pig_meat_kcal_per_capita',
-                 'percent_of_total_calories_consumed_as_red_meat_w_o_pig_meat',
-                 'maternal_education_years_per_capita', 'scaled_adult_hiv_rate', 'chagasprevpaho',
-                 'proportion_of_the_land_with_altitude_between_1000_2500_meters_above_sea_level',
-                 'clay_fraction_in_the_soil_mean', 'silt_fraction_in_the_soil_mean',
-                 'enhanced_vegetation_index_long_term_average_2000_2012_mean',
-                 'slope_of_the_land_in_degrees_terrain_steepness_mean', 'log_transformed_sev_scalar_tb',
-                 'log_transformed_sev_scalar_hiv_myco', 'log_transformed_sev_scalar_oth_hiv',
-                 'log_transformed_sev_scalar_diarrhea', 'log_transformed_sev_scalar_intest_inf',
-                 'log_transformed_sev_scalar_typhoid', 'log_transformed_sev_scalar_paratyph',
-                 'log_transformed_sev_scalar_oth_intest', 'log_transformed_sev_scalar_lri',
-                 'log_transformed_sev_scalar_uri', 'log_transformed_sev_scalar_otitis',
-                 'log_transformed_sev_scalar_meningitis', 'log_transformed_sev_scalar_mng_pne',
-                 'log_transformed_sev_scalar_mng_hib', 'log_transformed_sev_scalar_mng_men',
-                 'log_transformed_sev_scalar_oth_mng', 'log_transformed_sev_scalar_encepha',
-                 'log_transformed_sev_scalar_diphtheria', 'log_transformed_sev_scalar_whooping',
-                 'log_transformed_sev_scalar_tetanus', 'log_transformed_sev_scalar_measles',
-                 'log_transformed_sev_scalar_varicella', 'log_transformed_sev_scalar_malaria',
-                 'log_transformed_sev_scalar_chagas', 'log_transformed_sev_scalar_leish',
-                 'log_transformed_sev_scalar_vis_leish', 'log_transformed_sev_scalar_cut_leish',
-                 'log_transformed_sev_scalar_afr_tryp', 'log_transformed_sev_scalar_schisto',
-                 'log_transformed_sev_scalar_cysticer', 'log_transformed_sev_scalar_echino',
-                 'log_transformed_sev_scalar_lf', 'log_transformed_sev_scalar_oncho',
-                 'log_transformed_sev_scalar_trachoma', 'log_transformed_sev_scalar_dengue',
-                 'log_transformed_sev_scalar_yellow_fev', 'log_transformed_sev_scalar_rabies',
-                 'log_transformed_sev_scalar_nematode', 'log_transformed_sev_scalar_ascaria',
-                 'log_transformed_sev_scalar_trichuria', 'log_transformed_sev_scalar_hookworm',
-                 'log_transformed_sev_scalar_fb_trema', 'log_transformed_sev_scalar_oth_ntd',
+                 'vitamin_a_deficiency_prevalence_age_standardized', 'prevalence_of_obesity',
+                 'prevalence_of_overweight_and_obesity', 'prevalence_of_obesity_age_standardized',
+                 'maternal_education_years_per_capita', 'chagasprevpaho', 'log_transformed_sev_scalar_tb',
+                 'log_transformed_sev_scalar_oth_hiv', 'log_transformed_sev_scalar_diarrhea',
+                 'log_transformed_sev_scalar_lri', 'log_transformed_sev_scalar_uri',
+                 'log_transformed_sev_scalar_otitis', 'log_transformed_sev_scalar_measles',
                  'log_transformed_sev_scalar_mat_hem', 'log_transformed_sev_scalar_mat_sepsis',
-                 'log_transformed_sev_scalar_mat_htn', 'log_transformed_sev_scalar_mat_obst',
-                 'log_transformed_sev_scalar_mat_abort', 'log_transformed_sev_scalar_mat_indir',
-                 'log_transformed_sev_scalar_mat_late', 'log_transformed_sev_scalar_oth_mat',
-                 'log_transformed_sev_scalar_nn_preterm', 'log_transformed_sev_scalar_nn_enceph',
-                 'log_transformed_sev_scalar_nn_sepsis', 'log_transformed_sev_scalar_nn_hemol',
-                 'log_transformed_sev_scalar_oth_nn', 'log_transformed_sev_scalar_iodine',
-                 'log_transformed_sev_scalar_oth_nutr', 'log_transformed_sev_scalar_hep',
-                 'log_transformed_sev_scalar_hep_a', 'log_transformed_sev_scalar_hep_b',
-                 'log_transformed_sev_scalar_hep_c', 'log_transformed_sev_scalar_hep_e',
-                 'log_transformed_sev_scalar_leprosy', 'log_transformed_sev_scalar_oth_inf',
+                 'log_transformed_sev_scalar_mat_abort', 'log_transformed_sev_scalar_hep',
+                 'log_transformed_sev_scalar_hep_b', 'log_transformed_sev_scalar_hep_c',
                  'log_transformed_sev_scalar_esophag_c', 'log_transformed_sev_scalar_stomach_c',
                  'log_transformed_sev_scalar_liver_c', 'log_transformed_sev_scalar_liver_c_hepb',
                  'log_transformed_sev_scalar_liver_c_hepc', 'log_transformed_sev_scalar_oth_liver_c',
@@ -346,75 +130,24 @@ class Covariates(GbdRecord):
                  'log_transformed_sev_scalar_prostate_c', 'log_transformed_sev_scalar_colorect_c',
                  'log_transformed_sev_scalar_mouth_c', 'log_transformed_sev_scalar_nasoph_c',
                  'log_transformed_sev_scalar_oth_phar_c', 'log_transformed_sev_scalar_gallblad_c',
-                 'log_transformed_sev_scalar_pancreas_c', 'log_transformed_sev_scalar_melanoma',
-                 'log_transformed_sev_scalar_skin_c', 'log_transformed_sev_scalar_ovary_c',
-                 'log_transformed_sev_scalar_testis_c', 'log_transformed_sev_scalar_kidney_c',
-                 'log_transformed_sev_scalar_bladder_c', 'log_transformed_sev_scalar_brain_c',
+                 'log_transformed_sev_scalar_pancreas_c', 'log_transformed_sev_scalar_ovary_c',
+                 'log_transformed_sev_scalar_kidney_c', 'log_transformed_sev_scalar_bladder_c',
                  'log_transformed_sev_scalar_thyroid_c', 'log_transformed_sev_scalar_mesothel',
-                 'log_transformed_sev_scalar_hodgkin', 'log_transformed_sev_scalar_lymphoma',
-                 'log_transformed_sev_scalar_myeloma', 'log_transformed_sev_scalar_leukemia',
-                 'log_transformed_sev_scalar_oth_neopla', 'log_transformed_sev_scalar_rhd',
+                 'log_transformed_sev_scalar_leukemia', 'log_transformed_sev_scalar_rhd',
                  'log_transformed_sev_scalar_ihd', 'log_transformed_sev_scalar_stroke',
                  'log_transformed_sev_scalar_isch_stroke', 'log_transformed_sev_scalar_hem_stroke',
                  'log_transformed_sev_scalar_cmp', 'log_transformed_sev_scalar_a_fib',
                  'log_transformed_sev_scalar_aort_an', 'log_transformed_sev_scalar_pvd',
                  'log_transformed_sev_scalar_endocar', 'log_transformed_sev_scalar_oth_cardio',
-                 'log_transformed_sev_scalar_copd', 'log_transformed_sev_scalar_pneumocon',
-                 'log_transformed_sev_scalar_silicosis', 'log_transformed_sev_scalar_asbestosis',
-                 'log_transformed_sev_scalar_coal_w', 'log_transformed_sev_scalar_oth_pneum',
-                 'log_transformed_sev_scalar_asthma', 'log_transformed_sev_scalar_ild',
-                 'log_transformed_sev_scalar_oth_resp', 'log_transformed_sev_scalar_cirr_hepb',
-                 'log_transformed_sev_scalar_cirr_hepc', 'log_transformed_sev_scalar_oth_cirr',
-                 'log_transformed_sev_scalar_pud', 'log_transformed_sev_scalar_gastritis',
-                 'log_transformed_sev_scalar_appendicit', 'log_transformed_sev_scalar_ileus',
-                 'log_transformed_sev_scalar_hernia', 'log_transformed_sev_scalar_ibd',
-                 'log_transformed_sev_scalar_vasc_intest', 'log_transformed_sev_scalar_gall_bile',
-                 'log_transformed_sev_scalar_pancreatit', 'log_transformed_sev_scalar_oth_digest',
-                 'log_transformed_sev_scalar_alzheimer', 'log_transformed_sev_scalar_parkinson',
-                 'log_transformed_sev_scalar_epilepsy', 'log_transformed_sev_scalar_ms',
-                 'log_transformed_sev_scalar_migraine', 'log_transformed_sev_scalar_tens_head',
-                 'log_transformed_sev_scalar_med_head', 'log_transformed_sev_scalar_oth_neuro',
-                 'log_transformed_sev_scalar_schizo', 'log_transformed_sev_scalar_depression',
-                 'log_transformed_sev_scalar_mdd', 'log_transformed_sev_scalar_dysthymia',
-                 'log_transformed_sev_scalar_bipolar', 'log_transformed_sev_scalar_anxiety',
-                 'log_transformed_sev_scalar_eating', 'log_transformed_sev_scalar_anorexia',
-                 'log_transformed_sev_scalar_bulimia', 'log_transformed_sev_scalar_asd',
-                 'log_transformed_sev_scalar_autism', 'log_transformed_sev_scalar_asperger',
-                 'log_transformed_sev_scalar_adhd', 'log_transformed_sev_scalar_conduct',
-                 'log_transformed_sev_scalar_id', 'log_transformed_sev_scalar_oth_ment',
-                 'log_transformed_sev_scalar_agn', 'log_transformed_sev_scalar_urinary',
-                 'log_transformed_sev_scalar_int_neph', 'log_transformed_sev_scalar_urolith',
-                 'log_transformed_sev_scalar_bph', 'log_transformed_sev_scalar_infert_m',
-                 'log_transformed_sev_scalar_oth_urin', 'log_transformed_sev_scalar_gyne',
-                 'log_transformed_sev_scalar_fibroids', 'log_transformed_sev_scalar_pcos',
-                 'log_transformed_sev_scalar_infert_f', 'log_transformed_sev_scalar_endomet',
-                 'log_transformed_sev_scalar_prolapse', 'log_transformed_sev_scalar_pms',
-                 'log_transformed_sev_scalar_oth_gyne', 'log_transformed_sev_scalar_hemog',
-                 'log_transformed_sev_scalar_thalass', 'log_transformed_sev_scalar_sickle',
-                 'log_transformed_sev_scalar_g6pd', 'log_transformed_sev_scalar_oth_hem',
-                 'log_transformed_sev_scalar_endocrine', 'log_transformed_sev_scalar_rheu_arth',
-                 'log_transformed_sev_scalar_osteoarth', 'log_transformed_sev_scalar_back_and_upneck',
-                 'log_transformed_sev_scalar_back_pain', 'log_transformed_sev_scalar_neck_pain',
-                 'log_transformed_sev_scalar_gout', 'log_transformed_sev_scalar_oth_msk',
-                 'log_transformed_sev_scalar_congenital', 'log_transformed_sev_scalar_neur_tube',
-                 'log_transformed_sev_scalar_cong_heart', 'log_transformed_sev_scalar_cleft',
-                 'log_transformed_sev_scalar_down', 'log_transformed_sev_scalar_turner',
-                 'log_transformed_sev_scalar_klinefelter', 'log_transformed_sev_scalar_chrom_unb',
-                 'log_transformed_sev_scalar_oth_cong', 'log_transformed_sev_scalar_skin',
-                 'log_transformed_sev_scalar_dermatitis', 'log_transformed_sev_scalar_psoriasis',
-                 'log_transformed_sev_scalar_cellulitis', 'log_transformed_sev_scalar_pyoderma',
-                 'log_transformed_sev_scalar_scabies', 'log_transformed_sev_scalar_skin_fung',
-                 'log_transformed_sev_scalar_skin_viral', 'log_transformed_sev_scalar_acne',
-                 'log_transformed_sev_scalar_alopecia', 'log_transformed_sev_scalar_pruritus',
-                 'log_transformed_sev_scalar_urticaria', 'log_transformed_sev_scalar_decubitus',
-                 'log_transformed_sev_scalar_oth_skin', 'log_transformed_sev_scalar_sense',
-                 'log_transformed_sev_scalar_glaucoma', 'log_transformed_sev_scalar_cataract',
-                 'log_transformed_sev_scalar_macular', 'log_transformed_sev_scalar_refraction',
-                 'log_transformed_sev_scalar_hearing', 'log_transformed_sev_scalar_oth_vision',
-                 'log_transformed_sev_scalar_oth_sense', 'log_transformed_sev_scalar_oral',
-                 'log_transformed_sev_scalar_dec_caries', 'log_transformed_sev_scalar_per_caries',
-                 'log_transformed_sev_scalar_period', 'log_transformed_sev_scalar_edentul',
-                 'log_transformed_sev_scalar_oth_oral', 'log_transformed_sev_scalar_sids',
+                 'log_transformed_sev_scalar_copd', 'log_transformed_sev_scalar_asthma',
+                 'log_transformed_sev_scalar_ild', 'log_transformed_sev_scalar_oth_resp',
+                 'log_transformed_sev_scalar_cirr_hepb', 'log_transformed_sev_scalar_cirr_hepc',
+                 'log_transformed_sev_scalar_pancreatit', 'log_transformed_sev_scalar_epilepsy',
+                 'log_transformed_sev_scalar_depression', 'log_transformed_sev_scalar_mdd',
+                 'log_transformed_sev_scalar_id', 'log_transformed_sev_scalar_osteoarth',
+                 'log_transformed_sev_scalar_back_and_upneck', 'log_transformed_sev_scalar_back_pain',
+                 'log_transformed_sev_scalar_gout', 'log_transformed_sev_scalar_sense',
+                 'log_transformed_sev_scalar_cataract', 'log_transformed_sev_scalar_hearing',
                  'log_transformed_sev_scalar_road_inj', 'log_transformed_sev_scalar_pedest',
                  'log_transformed_sev_scalar_cyclist', 'log_transformed_sev_scalar_mot_cyc',
                  'log_transformed_sev_scalar_mot_veh', 'log_transformed_sev_scalar_oth_road',
@@ -422,23 +155,15 @@ class Covariates(GbdRecord):
                  'log_transformed_sev_scalar_drown', 'log_transformed_sev_scalar_fire',
                  'log_transformed_sev_scalar_poison', 'log_transformed_sev_scalar_mech',
                  'log_transformed_sev_scalar_mech_gun', 'log_transformed_sev_scalar_mech_suff',
-                 'log_transformed_sev_scalar_oth_mech', 'log_transformed_sev_scalar_med_treat',
-                 'log_transformed_sev_scalar_animal', 'log_transformed_sev_scalar_venom',
-                 'log_transformed_sev_scalar_non_ven', 'log_transformed_sev_scalar_f_body',
-                 'log_transformed_sev_scalar_f_body_asp', 'log_transformed_sev_scalar_f_body_eye',
+                 'log_transformed_sev_scalar_oth_mech', 'log_transformed_sev_scalar_animal',
+                 'log_transformed_sev_scalar_venom', 'log_transformed_sev_scalar_non_ven',
+                 'log_transformed_sev_scalar_f_body', 'log_transformed_sev_scalar_f_body_asp',
                  'log_transformed_sev_scalar_oth_f_body', 'log_transformed_sev_scalar_oth_unint',
                  'log_transformed_sev_scalar_self_harm', 'log_transformed_sev_scalar_violence',
                  'log_transformed_sev_scalar_viol_gun', 'log_transformed_sev_scalar_viol_knife',
-                 'log_transformed_sev_scalar_oth_viol', 'log_transformed_sev_scalar_disaster',
-                 'log_transformed_sev_scalar_war', 'log_transformed_sev_scalar_mat_hiv',
-                 'log_transformed_sev_scalar_thalass_trait', 'log_transformed_sev_scalar_sickle_trait',
-                 'log_transformed_sev_scalar_g6pd_trait', 'log_transformed_age_standardized_sev_scalar_tb',
-                 'log_transformed_age_standardized_sev_scalar_hiv_myco',
+                 'log_transformed_sev_scalar_oth_viol', 'log_transformed_age_standardized_sev_scalar_tb',
                  'log_transformed_age_standardized_sev_scalar_oth_hiv',
                  'log_transformed_age_standardized_sev_scalar_diarrhea',
-                 'log_transformed_age_standardized_sev_scalar_intest_inf',
-                 'log_transformed_age_standardized_sev_scalar_typhoid',
-                 'log_transformed_age_standardized_sev_scalar_paratyph',
                  'log_transformed_age_standardized_sev_scalar_lri',
                  'log_transformed_age_standardized_sev_scalar_uri',
                  'log_transformed_age_standardized_sev_scalar_otitis',
@@ -484,23 +209,14 @@ class Covariates(GbdRecord):
                  'log_transformed_age_standardized_sev_scalar_endocar',
                  'log_transformed_age_standardized_sev_scalar_oth_cardio',
                  'log_transformed_age_standardized_sev_scalar_copd',
-                 'log_transformed_age_standardized_sev_scalar_pneumocon',
-                 'log_transformed_age_standardized_sev_scalar_silicosis',
-                 'log_transformed_age_standardized_sev_scalar_asbestosis',
-                 'log_transformed_age_standardized_sev_scalar_coal_w',
-                 'log_transformed_age_standardized_sev_scalar_oth_pneum',
                  'log_transformed_age_standardized_sev_scalar_asthma',
-                 'log_transformed_age_standardized_sev_scalar_ild',
                  'log_transformed_age_standardized_sev_scalar_oth_resp',
                  'log_transformed_age_standardized_sev_scalar_cirr_hepb',
                  'log_transformed_age_standardized_sev_scalar_cirr_hepc',
-                 'log_transformed_age_standardized_sev_scalar_oth_cirr',
                  'log_transformed_age_standardized_sev_scalar_pancreatit',
                  'log_transformed_age_standardized_sev_scalar_epilepsy',
                  'log_transformed_age_standardized_sev_scalar_depression',
-                 'log_transformed_age_standardized_sev_scalar_mdd',
-                 'log_transformed_age_standardized_sev_scalar_dysthymia',
-                 'log_transformed_age_standardized_sev_scalar_id',
+                 'log_transformed_age_standardized_sev_scalar_mdd', 'log_transformed_age_standardized_sev_scalar_id',
                  'log_transformed_age_standardized_sev_scalar_osteoarth',
                  'log_transformed_age_standardized_sev_scalar_back_and_upneck',
                  'log_transformed_age_standardized_sev_scalar_back_pain',
@@ -528,33 +244,26 @@ class Covariates(GbdRecord):
                  'log_transformed_age_standardized_sev_scalar_non_ven',
                  'log_transformed_age_standardized_sev_scalar_f_body',
                  'log_transformed_age_standardized_sev_scalar_f_body_asp',
-                 'log_transformed_age_standardized_sev_scalar_f_body_eye',
                  'log_transformed_age_standardized_sev_scalar_oth_f_body',
                  'log_transformed_age_standardized_sev_scalar_oth_unint',
                  'log_transformed_age_standardized_sev_scalar_self_harm',
                  'log_transformed_age_standardized_sev_scalar_violence',
                  'log_transformed_age_standardized_sev_scalar_viol_gun',
                  'log_transformed_age_standardized_sev_scalar_viol_knife',
-                 'log_transformed_age_standardized_sev_scalar_oth_viol',
-                 'log_transformed_age_standardized_sev_scalar_disaster', 'h5n1_epidemic_years_binary',
-                 'education_age_standardized', 'meningitis_belt_proportion', 'gdp_per_capita_base_2010',
-                 'urbanicity', 'sev_unsafe_water', 'sev_unsafe_sanitation',
-                 'malaria_incidence_from_map_estimates_africa',
+                 'log_transformed_age_standardized_sev_scalar_oth_viol', 'education_age_standardized',
+                 'meningitis_belt_proportion', 'gdp_per_capita_base_2010', 'urbanicity', 'sev_unsafe_water',
+                 'sev_unsafe_sanitation', 'malaria_incidence_from_map_estimates_africa',
                  'dengue_reporting_trends_transformed_into_relative_risks_relative_to_that_countrys_mean_incidence',
-                 'echinococcosis_endemicity', 'echinococcosis_presence', 'socio_demographic_index',
+                 'echinococcosis_endemicity', 'socio_demographic_index',
                  'japanese_encelphalitis_endemic_area_binary', 'calcium_adjusted_g', 'calcium_unadjusted_g',
-                 'diet_cholesterol_adjusted_mg', 'diet_cholesterol_unadjusted_mg', 'fiber_adjusted_g',
-                 'fiber_unadjusted_g', 'omega_3_adjusted_g', 'omega_3_unadjusted_g', 'fruits_adjusted_g',
+                 'fiber_adjusted_g', 'fiber_unadjusted_g', 'omega_3_adjusted_g', 'fruits_adjusted_g',
                  'fruits_unadjusted_g', 'milk_adjusted_g', 'milk_unadjusted_g', 'nuts_seeds_adjusted_g',
-                 'nuts_seeds_unadjusted_g', 'pufa_adjusted_percent', 'pulses_legumes_adjusted_g',
-                 'pulses_legumes_unadjusted_g', 'red_meats_adjusted_g', 'red_meats_unadjusted_g', 'salt_adjusted_mg',
-                 'salt_unadjusted_mg', 'saturated_fats_adjusted_percent', 'stimulants_adjusted_g',
-                 'stimulants_unadjusted_g', 'sugar_adjusted_g', 'sugar_unadjusted_g', 'vegetables_adjusted_g',
-                 'vegetables_unadjusted_g', 'whole_grains_adjusted_g', 'whole_grains_unadjusted_g',
-                 'energy_unadjusted_kcal',
+                 'pufa_adjusted_percent', 'pulses_legumes_adjusted_g', 'red_meats_adjusted_g',
+                 'red_meats_unadjusted_g', 'saturated_fats_adjusted_percent', 'sugar_adjusted_g',
+                 'sugar_unadjusted_g', 'vegetables_adjusted_g', 'vegetables_unadjusted_g', 'energy_unadjusted_kcal',
                  'interaction_of_prevalence_weighted_drug_resistance_and_malaria_incidence',
-                 'migration_rate_per_1000_population', 'hiv_mortality_females_10_54',
-                 'hiv_age_standardized_prevalence', 'log_transformed_age_standardized_sev_scalar_maternal',
+                 'hiv_mortality_females_10_54', 'hiv_age_standardized_prevalence',
+                 'log_transformed_age_standardized_sev_scalar_maternal',
                  'log_transformed_age_standardized_sev_scalar_cvd',
                  'log_transformed_age_standardized_sev_scalar_chr_resp',
                  'log_transformed_age_standardized_sev_scalar_cirrhosis',
@@ -563,11 +272,8 @@ class Covariates(GbdRecord):
                  'log_transformed_age_standardized_sev_scalar_trans_inj', 'log_transformed_sev_scalar_maternal',
                  'log_transformed_sev_scalar_cvd', 'log_transformed_sev_scalar_chr_resp',
                  'log_transformed_sev_scalar_cirrhosis', 'log_transformed_sev_scalar_digestive',
-                 'log_transformed_sev_scalar_msk', 'log_transformed_sev_scalar_trans_inj',
-                 'proportion_of_total_population_in_japanese_encephalitis_endemic_area_india',
-                 'vitamin_a_unadjusted_iu', 'vitamin_a_rae_unadjusted_ug', 'vitamin_a_retinol_unadjusted_ug',
-                 'dietary_zinc_unadjusted_mg', 'death_and_ncc_prevalence_ratio',
-                 'cysticercosis_deaths_to_epilepsy_prevalence_ratio',
+                 'log_transformed_sev_scalar_msk', 'log_transformed_sev_scalar_trans_inj', 'vitamin_a_unadjusted_iu',
+                 'vitamin_a_rae_unadjusted_ug', 'vitamin_a_retinol_unadjusted_ug', 'dietary_zinc_unadjusted_mg',
                  'proportion_of_total_population_covered_by_menafrivac_initiative_meningitis_meningococcal_type_a_vaccine',
                  'stunting_proportion_less_than_2sd_height_for_age_less_than_5_years',
                  'wasting_proportion_less_than_2sd_weight_for_height_less_than_5_years',
@@ -581,85 +287,46 @@ class Covariates(GbdRecord):
                  'proportion_of_liver_cancer_due_to_hepatitis_b_age_standardized',
                  'proportion_of_liver_cancer_due_to_hepatitis_c_age_standardized',
                  'proportion_of_liver_cancer_due_to_other_causes_age_standardized', 'seroprevalence_of_anti_hav_igg',
-                 'seroprevalence_of_anti_hev_igg', 'major_depressive_disorder',
-                 'proportion_of_population_involved_in_agricultural_activities', 'prevalence_of_binge_drinking_male',
-                 'health_expenditure_per_capita', 'risk_of_selfharm_due_to_major_depressive_disorder',
-                 'trans_fatty_acid_bans', 'oop_health_expenditure_per_capita', 'fraction_of_oop_health_expenditure',
-                 'lag_distributed_energy', 'art_coverage', 'tuberculosis_case_detection',
+                 'seroprevalence_of_anti_hev_igg', 'major_depressive_disorder', 'health_expenditure_per_capita',
+                 'risk_of_selfharm_due_to_major_depressive_disorder', 'fraction_of_oop_health_expenditure',
                  'universal_health_coverage', 'maternal_alcohol_consumption_during_pregnancy_proportion',
                  'healthcare_access_and_quality_index', 'age_standardized_proportion_adult_underweight',
-                 'reproductive_age_standardized_diabetes_prevalence_10_54_yrs_females', 'ors_oral_rehydration',
-                 'antibiotics_for_lri', 'zinc_treatment', 'antibiotics_for_diarrhea', 'live_births_by_sex',
-                 'age_standardized_melanoma', 'measles_vaccine_coverage_2_doses_proportion', 'sth_school_based_mda',
-                 'schisto_cumulative_treatments', 'health_worker_density',
-                 'proportion_of_fevers_receiving_effective_treatment', 'iron_energy_unadjusted_mg',
-                 'corn_energy_adjusted_g', 'corn_energy_unadjusted_g', 'eggs_energy_adjusted_g',
-                 'eggs_energy_unadjusted_g', 'fish_energy_adjusted_g', 'fish_energy_unadjusted_g',
-                 'potatoes_energy_adjusted_g', 'potatoes_energy_unadjusted_g', 'poultry_energy_adjusted_g',
-                 'poultry_energy_unadjusted_g', 'rice_energy_adjusted_g', 'rice_energy_unadjusted_g',
-                 'sweet_energy_potato_adjusted_g', 'sweet_energy_potato_unadjusted_g', 'malaria_pfpr_map',
+                 'ors_oral_rehydration', 'antibiotics_for_lri', 'live_births_by_sex', 'age_standardized_melanoma',
+                 'measles_vaccine_coverage_2_doses_proportion', 'schisto_cumulative_treatments',
+                 'iron_energy_unadjusted_mg', 'poultry_energy_unadjusted_g', 'malaria_pfpr_map',
                  'malaria_incidence_map', 'antimalarial_effective_treatment_ratio_map',
-                 'antimalarial_effective_treatment_map', 'risk_of_selfharm_due_to_schizophrenia',
-                 'risk_of_selfharm_due_to_anxiety_disorders', 'risk_of_selfharm_due_to_bipolar_disorder',
-                 'mean_birth_weight', 'mean_weight_for_height_z_score_whz_0_5_years',
-                 'mean_weight_for_age_z_score_waz_0_5_years', 'mean_height_for_age_z_score_haz_0_5_years',
+                 'antimalarial_effective_treatment_map', 'mean_birth_weight',
                  'mean_hemoglobin_concentration_age_standardized',
-                 'birth_prevalence_of_fetal_alcohol_syndrome_per_1000',
                  'age_standardized_prevalence_of_cocaine_dependence_in_women_of_reproductive_age',
-                 'age_standardized_prevalence_of_amphetamine_dependence_in_women_of_reproductive_age',
                  'age_standardized_prevalence_of_opioid_dependence_in_women_of_reproductive_age',
                  'age_standardized_prevalence_of_cannabis_dependence_in_women_of_reproductive_age',
-                 'age_standardized_prevalence_of_total_drug_dependence_in_women_of_reproductive_age',
                  'rubella_vaccine_coverage_proportion',
-                 'tuberculosis_infection_risk_weighted_prevalence_age_standardized', 'presenting_vision_impairment',
-                 'ten_year_lag_distributed_energy_per_capita',
-                 'alcohol_consumption_female_reproductive_age_standardized_grams_per_day',
-                 'alcohol_consumption_female_reproductive_age_standardized_proportion', 'folic_acid_unadjusted_ug',
-                 'smooth_outphase_of_leaded_gasoline', 'no_access_to_handwashing_facility', 'residential_radon',
-                 'lead_exposure', 'discontinued_breastfeeding_sev', 'zinc_deficiency', 'diet_low_in_whole_grains',
-                 'diet_high_in_processed_meat', 'diet_high_in_trans_fatty_acids', 'diet_high_in_sodium',
-                 'low_physical_activity_sev', 'tuberculosis_prevalence_age_standardized', 'low_bone_mineral_density',
+                 'tuberculosis_infection_risk_weighted_prevalence_age_standardized',
+                 'ten_year_lag_distributed_energy_per_capita', 'folic_acid_unadjusted_ug',
+                 'smooth_outphase_of_leaded_gasoline', 'lead_exposure', 'discontinued_breastfeeding_sev',
+                 'zinc_deficiency', 'diet_high_in_trans_fatty_acids', 'diet_high_in_sodium',
+                 'tuberculosis_prevalence_age_standardized', 'low_bone_mineral_density',
                  'age_standardized_bone_mineral_density_among_population_age_60_and_up_years',
                  'malnutrition_shock_log_transformed_mortality_rate', 'malnutrition_shock_mortality_rate',
-                 'mean_war_mortality_rate_in_the_previous_ten_years', 'shock_log_transformed_mortality_rate',
-                 'shock_mortality_rate', 'disaster_log_transformed_mortality_rate', 'disaster_mortality_rate',
-                 'state_actor_violence_log_transformed_mortality_rate', 'state_actor_violence_mortality_rate',
-                 'war_log_transformed_mortality_rate', 'war_mortality_rate', 'age_standardized_melanoma_incidence',
+                 'mean_war_mortality_rate_in_the_previous_ten_years',
                  'alcohol_abstainer_proportion_age_standardized',
                  'log_transformed_age_standardized_sev_scalar_for_both_sexes_combined_tb', 'secondhand_smoke',
-                 'saturated_fatty_acid_consumption__percent_of_total_dietary_energy',
-                 'asbestos_consumption_metric_tons_per_year_per_capita', 'visceral_leishmaniasis_incidence',
-                 'homicide_rate_sex_specific', 'op_visits_per_cap', 'ip_admissons_per_cap',
+                 'visceral_leishmaniasis_incidence', 'homicide_rate_sex_specific',
                  'non_partner_lifetime_prevalence_of_sexual_violence_female_only', 'all_age_underweight',
                  'zinc_treatment_for_diarrhea', 'fortification_standard',
                  'fortification_standard_including_folic_acid', 'adult_hiv_crude_death_rate',
-                 'demand_for_contraception_satisfied_with_modern_methods',
-                 'demand_for_contraception_satisfied_with_modern_methods_by_age',
-                 'long_term_population_weighted_mean_temperature', 'polio_3_dose_coverage_proportion',
-                 'hepatitis_b_3_dose_coverage_proportion',
-                 'proportion_of_the_population_from_east_africa_india_central_asia',
-                 'proportion_of_the_population_from_west_africa', 'proportion_of_the_population_from_euro_america',
-                 'proportion_of_the_population_from_east_asia', 'proportion_of_the_population_from_indo_oceania',
+                 'polio_3_dose_coverage_proportion', 'hepatitis_b_3_dose_coverage_proportion',
                  'composite_fortification_standard_and_folic_acid_inclusion',
-                 'intravenous_drug_use_proportion_by_age', 'intravenous_drug_use_age_standardized_proportion',
-                 'hepatitis_a_infection_incidence', 'alcohol_consumption_age_standardized_in_grams_per_day',
-                 'alcohol_drinker_proportion_age_standardized', 'hepatitis_b_infection_incidence',
-                 'hepatitis_c_infection_incidence', 'hepatitis_e_infection_incidence',
+                 'intravenous_drug_use_age_standardized_proportion',
+                 'alcohol_consumption_age_standardized_in_grams_per_day',
+                 'alcohol_drinker_proportion_age_standardized',
                  'proportion_of_liver_cancer_due_to_nash_age_standardized', 'proportion_of_cirrhosis_due_to_nash',
-                 'muslim_religion_proportion_of_population', 'echino_endemicity_level_1',
-                 'echino_endemicity_level_2', 'echino_endemicity_level_3',
-                 'tb_strain_prevalence_weighted_transmission_rr',
-                 'tb_strain_prevalence_weighted_treatment_failure_rr',
-                 'tb_strain_prevalence_weighted_treatment_delay_rr',
-                 'preterm_birth_prevalence_less_than_37_weeks_of_gestation',
-                 'extremely_preterm_birth_prevalence_less_than_28_weeks_of_gestation',
+                 'muslim_religion_proportion_of_population', 'tb_strain_prevalence_weighted_transmission_rr',
                  'short_gestation_sev_all_ages_by_sex', 'age_and_sex_specific_underweight_weight_for_age_sev',
                  'age_standardized_underweight_weight_for_age_sev',
                  'age_and_sex_specific_stunting_height_for_age_sev', 'age_standardized_stunting_height_for_age_sev',
                  'age_and_sex_specific_wasting_weight_for_height_sev',
                  'age_standardized_wasting_weight_for_height_sev', 'low_birth_weight_sev_all_ages_by_sex',
-                 'low_birth_weight_and_short_gestation_sev_all_ages_by_sex', 'preeclampsia_incidence_ratio_all_ages',
-                 'abo_blood_type_mismatch_at_birth', 'rhesus_blood_type_mismatch_at_birth',
                  'adult_hiv_death_rate_both_sexes', 'fortification_standard_including_iron',
                  'composite_fortification_standard_and_iron_inclusion',
                  'pelvic_inflammatory_disease_age_standardized_prevalence',
@@ -670,82 +337,39 @@ class Covariates(GbdRecord):
                  'age_standardized_death_rate_of_diabetes_0_15_years_per_100_000',
                  'alcohol_sev_age_and_sex_specific', 'alcohol_sev_age_standardized',
                  'underweight_women_of_reproductive_age', 'underweight_women_age_specific',
-                 'underweight_men_age_specific', 'opioids_per_million_population_per_day',
-                 'prevalence_of_mtbc_lineage_1_strains_proportion',
-                 'prevalence_of_mtbc_lineage_2_strains_proportion',
-                 'prevalence_of_mtbc_lineage_3_strains_proportion',
-                 'prevalence_of_mtbc_lineage_4_strains_proportion', 'prevalence_of_maf_lineage_5_and_6_proportion',
-                 'log_transformed_sev_scalar_comm', 'log_transformed_sev_scalar_tb_other',
-                 'log_transformed_sev_scalar_tb_mdr', 'log_transformed_sev_scalar_tb_xdr',
-                 'log_transformed_sev_scalar_hiv', 'log_transformed_sev_scalar_hiv_tb_other',
-                 'log_transformed_sev_scalar_hiv_tb_mdr', 'log_transformed_sev_scalar_hiv_tb_xdr',
+                 'opioids_per_million_population_per_day', 'log_transformed_sev_scalar_tb_other',
+                 'log_transformed_sev_scalar_tb_mdr', 'log_transformed_sev_scalar_hiv',
+                 'log_transformed_sev_scalar_hiv_tb_other', 'log_transformed_sev_scalar_hiv_tb_mdr',
                  'log_transformed_sev_scalar_meningitis_pneumo', 'log_transformed_sev_scalar_meningitis_hib',
                  'log_transformed_sev_scalar_meningitis_meningo', 'log_transformed_sev_scalar_meningitis_other',
-                 'log_transformed_sev_scalar_encephalitis', 'log_transformed_sev_scalar_diptheria',
-                 'log_transformed_sev_scalar_neonatal_preterm', 'log_transformed_sev_scalar_neonatal_enceph',
+                 'log_transformed_sev_scalar_encephalitis', 'log_transformed_sev_scalar_neonatal_enceph',
                  'log_transformed_sev_scalar_neonatal_sepsis', 'log_transformed_sev_scalar_neonatal_hemolytic',
-                 'log_transformed_sev_scalar_neonatal_other', 'log_transformed_sev_scalar_nutrition_pem',
-                 'log_transformed_sev_scalar_nutrition_vitamina', 'log_transformed_sev_scalar_nutrition_iron',
-                 'log_transformed_sev_scalar_std', 'log_transformed_sev_scalar_std_syphilis',
-                 'log_transformed_sev_scalar_std_chlamydia', 'log_transformed_sev_scalar_std_gonnorhea',
-                 'log_transformed_sev_scalar_std_tricho', 'log_transformed_sev_scalar_std_herpes',
-                 'log_transformed_sev_scalar_std_other', 'log_transformed_sev_scalar_ncd',
-                 'log_transformed_sev_scalar_neo_liver_alcohol', 'log_transformed_sev_scalar_neo_cervical',
-                 'log_transformed_sev_scalar_neo_lymphoma', 'log_transformed_sev_scalar_neo_myeloma',
-                 'log_transformed_sev_scalar_neo_leukemia_ll_acute',
+                 'log_transformed_sev_scalar_neonatal_other', 'log_transformed_sev_scalar_neo_lymphoma',
+                 'log_transformed_sev_scalar_neo_myeloma', 'log_transformed_sev_scalar_neo_leukemia_ll_acute',
                  'log_transformed_sev_scalar_neo_leukemia_ll_chronic',
                  'log_transformed_sev_scalar_neo_leukemia_ml_acute',
                  'log_transformed_sev_scalar_neo_leukemia_ml_chronic',
-                 'log_transformed_sev_scalar_neo_leukemia_other', 'log_transformed_sev_scalar_cvd_htn',
-                 'log_transformed_sev_scalar_cvd_cmp_alcoholic', 'log_transformed_sev_scalar_cvd_cmp_other',
-                 'log_transformed_sev_scalar_cirrhosis_alcohol', 'log_transformed_sev_scalar_digest_pud',
-                 'log_transformed_sev_scalar_digest_bile', 'log_transformed_sev_scalar_neuro_dementia',
-                 'log_transformed_sev_scalar_neuro_parkinsons', 'log_transformed_sev_scalar_neuro_ms',
-                 'log_transformed_sev_scalar_mental_alcohol', 'log_transformed_sev_scalar_mental_drug',
-                 'log_transformed_sev_scalar_mental_drug_opioids', 'log_transformed_sev_scalar_mental_drug_cocaine',
-                 'log_transformed_sev_scalar_mental_drug_amphet', 'log_transformed_sev_scalar_mental_drug_cannabis',
-                 'log_transformed_sev_scalar_mental_drug_other', 'log_transformed_sev_scalar_diabetes',
-                 'log_transformed_sev_scalar_ckd', 'log_transformed_sev_scalar_ckd_diabetes',
-                 'log_transformed_sev_scalar_ckd_htn', 'log_transformed_sev_scalar_ckd_glomerulo',
-                 'log_transformed_sev_scalar_ckd_other', 'log_transformed_sev_scalar_msk_rheumarthritis',
-                 'log_transformed_sev_scalar_sense_glaucoma', 'log_transformed_sev_scalar_sense_macular',
-                 'log_transformed_sev_scalar_inj', 'log_transformed_sev_scalar_inj_suicide_firearm',
-                 'log_transformed_sev_scalar_inj_suicide_other', 'log_transformed_sev_scalar_inj_homicide_sexual',
-                 'log_transformed_age_standardized_sev_scalar_comm',
+                 'log_transformed_sev_scalar_neo_leukemia_other', 'log_transformed_sev_scalar_cvd_cmp_other',
+                 'log_transformed_sev_scalar_digest_pud', 'log_transformed_sev_scalar_digest_bile',
+                 'log_transformed_sev_scalar_neuro_dementia', 'log_transformed_sev_scalar_neuro_ms',
+                 'log_transformed_sev_scalar_msk_rheumarthritis', 'log_transformed_sev_scalar_sense_glaucoma',
+                 'log_transformed_sev_scalar_sense_macular', 'log_transformed_sev_scalar_inj_suicide_firearm',
+                 'log_transformed_sev_scalar_inj_suicide_other',
                  'log_transformed_age_standardized_sev_scalar_tb_other',
                  'log_transformed_age_standardized_sev_scalar_tb_mdr',
-                 'log_transformed_age_standardized_sev_scalar_tb_xdr',
                  'log_transformed_age_standardized_sev_scalar_hiv',
                  'log_transformed_age_standardized_sev_scalar_hiv_tb_other',
                  'log_transformed_age_standardized_sev_scalar_hiv_tb_mdr',
-                 'log_transformed_age_standardized_sev_scalar_hiv_tb_xdr',
                  'log_transformed_age_standardized_sev_scalar_meningitis',
                  'log_transformed_age_standardized_sev_scalar_meningitis_pneumo',
                  'log_transformed_age_standardized_sev_scalar_meningitis_hib',
                  'log_transformed_age_standardized_sev_scalar_meningitis_meningo',
                  'log_transformed_age_standardized_sev_scalar_meningitis_other',
                  'log_transformed_age_standardized_sev_scalar_encephalitis',
-                 'log_transformed_age_standardized_sev_scalar_diptheria',
-                 'log_transformed_age_standardized_sev_scalar_whooping',
-                 'log_transformed_age_standardized_sev_scalar_tetanus',
-                 'log_transformed_age_standardized_sev_scalar_neonatal_preterm',
                  'log_transformed_age_standardized_sev_scalar_neonatal_enceph',
                  'log_transformed_age_standardized_sev_scalar_neonatal_sepsis',
                  'log_transformed_age_standardized_sev_scalar_neonatal_hemolytic',
                  'log_transformed_age_standardized_sev_scalar_neonatal_other',
-                 'log_transformed_age_standardized_sev_scalar_nutrition_pem',
-                 'log_transformed_age_standardized_sev_scalar_nutrition_vitamina',
-                 'log_transformed_age_standardized_sev_scalar_nutrition_iron',
-                 'log_transformed_age_standardized_sev_scalar_std',
-                 'log_transformed_age_standardized_sev_scalar_std_syphilis',
-                 'log_transformed_age_standardized_sev_scalar_std_chlamydia',
-                 'log_transformed_age_standardized_sev_scalar_std_gonnorhea',
-                 'log_transformed_age_standardized_sev_scalar_std_tricho',
-                 'log_transformed_age_standardized_sev_scalar_std_herpes',
-                 'log_transformed_age_standardized_sev_scalar_std_other',
-                 'log_transformed_age_standardized_sev_scalar_ncd',
-                 'log_transformed_age_standardized_sev_scalar_neo_liver_alcohol',
-                 'log_transformed_age_standardized_sev_scalar_neo_cervical',
                  'log_transformed_age_standardized_sev_scalar_neo_lymphoma',
                  'log_transformed_age_standardized_sev_scalar_neo_myeloma',
                  'log_transformed_age_standardized_sev_scalar_neo_leukemia_ll_acute',
@@ -753,79 +377,43 @@ class Covariates(GbdRecord):
                  'log_transformed_age_standardized_sev_scalar_neo_leukemia_ml_acute',
                  'log_transformed_age_standardized_sev_scalar_neo_leukemia_ml_chronic',
                  'log_transformed_age_standardized_sev_scalar_neo_leukemia_other',
-                 'log_transformed_age_standardized_sev_scalar_cvd_htn',
-                 'log_transformed_age_standardized_sev_scalar_cvd_cmp_alcoholic',
                  'log_transformed_age_standardized_sev_scalar_cvd_cmp_other',
-                 'log_transformed_age_standardized_sev_scalar_cirrhosis_alcohol',
                  'log_transformed_age_standardized_sev_scalar_digest_pud',
                  'log_transformed_age_standardized_sev_scalar_digest_bile',
                  'log_transformed_age_standardized_sev_scalar_neuro_dementia',
-                 'log_transformed_age_standardized_sev_scalar_neuro_parkinsons',
                  'log_transformed_age_standardized_sev_scalar_neuro_ms',
-                 'log_transformed_age_standardized_sev_scalar_mental_alcohol',
-                 'log_transformed_age_standardized_sev_scalar_mental_drug',
-                 'log_transformed_age_standardized_sev_scalar_mental_drug_opioids',
-                 'log_transformed_age_standardized_sev_scalar_mental_drug_cocaine',
-                 'log_transformed_age_standardized_sev_scalar_mental_drug_amphet',
-                 'log_transformed_age_standardized_sev_scalar_mental_drug_cannabis',
-                 'log_transformed_age_standardized_sev_scalar_mental_drug_other',
-                 'log_transformed_age_standardized_sev_scalar_diabetes',
-                 'log_transformed_age_standardized_sev_scalar_ckd',
-                 'log_transformed_age_standardized_sev_scalar_ckd_diabetes',
-                 'log_transformed_age_standardized_sev_scalar_ckd_htn',
-                 'log_transformed_age_standardized_sev_scalar_ckd_glomerulo',
-                 'log_transformed_age_standardized_sev_scalar_ckd_other',
                  'log_transformed_age_standardized_sev_scalar_msk_rheumarthritis',
                  'log_transformed_age_standardized_sev_scalar_sense_glaucoma',
                  'log_transformed_age_standardized_sev_scalar_sense_macular',
                  'log_transformed_age_standardized_sev_scalar_sids',
-                 'log_transformed_age_standardized_sev_scalar_inj',
                  'log_transformed_age_standardized_sev_scalar_inj_suicide_firearm',
                  'log_transformed_age_standardized_sev_scalar_inj_suicide_other',
-                 'log_transformed_age_standardized_sev_scalar_inj_homicide_sexual',
                  'opioids_per_million_population_per_day_5_year_lag',
                  'opioids_per_million_population_per_day_ten_year_lag', 'occupation_professionals',
                  'health_industry_workers', 'education_years_per_capita_aggregated_by_age_15_and_up_and_sex',
                  'underweight_age_and_sex_specific', 'total_physical_activity_met_min_week_age_specific',
                  'total_physical_activity_met_min_week_age_standardized',
-                 'full_vaccine_coverage_indicator_proportion',
                  'bacille_calmette_guerin_bcg_vaccine_coverage_proportion',
                  'hepatitis_b_vaccine_coverage_proportion_aged_through_time',
-                 'adolescent_birth_rates_10_19_years_of_age', 'percent_well_certified',
-                 'log_total_health_expenditure_per_capita', 'count_of_population_censuses',
-                 'birth_registry_completeness', 'pigs_raised_in_extensive_agricultural_systems_per_capita',
+                 'adolescent_birth_rates_10_19_years_of_age',
+                 'pigs_raised_in_extensive_agricultural_systems_per_capita',
                  'pigs_raised_in_semi_extensive_agricultural_systems_per_capita',
                  'pigs_raised_in_intensive_industrial_agricultural_systems_per_capita',
-                 'implicit_versus_explicitly_defined_nash', 'mean_hemoglobin_age_sex_specific',
-                 'physicians_per_capita', 'nurses_and_midwives_per_capita', 'pharmacists_per_capita',
-                 'hiv_mortality_rate', 'untreated_hiv', 'medical_schools', 'dentists_per_capita',
-                 'full_vaccine_coverage_indicator_proportion_sage_method_dtp3_pcv3_mcv2', 'net_reproductive_rate', )
+                 'mean_hemoglobin_age_sex_specific', 'hiv_mortality_rate', 'medical_schools', )
 
     def __init__(self, **kwargs):
         super().__init__()
-        self.abortion_on_demand_illegal_binary = kwargs.get('abortion_on_demand_illegal_binary')
-        self.legality_of_abortion = kwargs.get('legality_of_abortion')
         self.absolute_value_of_average_latitude = kwargs.get('absolute_value_of_average_latitude')
-        self.average_cholera_cases_across_all_years_over_2010_population = kwargs.get('average_cholera_cases_across_all_years_over_2010_population')
         self.adult_hiv_death_rate = kwargs.get('adult_hiv_death_rate')
         self.alcohol_liters_per_capita = kwargs.get('alcohol_liters_per_capita')
         self.antenatal_care_1_visit_coverage_proportion = kwargs.get('antenatal_care_1_visit_coverage_proportion')
         self.antenatal_care_4_visits_coverage_proportion = kwargs.get('antenatal_care_4_visits_coverage_proportion')
-        self.animal_fats_kcal_per_capita = kwargs.get('animal_fats_kcal_per_capita')
-        self.arv_coverage_proportion = kwargs.get('arv_coverage_proportion')
         self.asbestos_production_binary = kwargs.get('asbestos_production_binary')
         self.asbestos_production_kg_per_capita = kwargs.get('asbestos_production_kg_per_capita')
         self.age_specific_fertility_rate = kwargs.get('age_specific_fertility_rate')
         self.tobacco_cigarettes_per_capita = kwargs.get('tobacco_cigarettes_per_capita')
         self.coal_production_per_capita = kwargs.get('coal_production_per_capita')
         self.coastal_population_within_10km_proportion = kwargs.get('coastal_population_within_10km_proportion')
-        self.completeness_of_vital_registration = kwargs.get('completeness_of_vital_registration')
-        self.contraception_modern_prevalence_proportion_by_age = kwargs.get('contraception_modern_prevalence_proportion_by_age')
-        self.contraception_modern_prevalence_proportion = kwargs.get('contraception_modern_prevalence_proportion')
-        self.contraception_total_prevalence_proportion_by_age = kwargs.get('contraception_total_prevalence_proportion_by_age')
-        self.contraception_total_prevalence_proportion = kwargs.get('contraception_total_prevalence_proportion')
-        self.contraception_traditional_prevalence_proportion_by_age = kwargs.get('contraception_traditional_prevalence_proportion_by_age')
-        self.contraception_traditional_prevalence_proportion = kwargs.get('contraception_traditional_prevalence_proportion')
         self.cumulative_cigarettes_10_years = kwargs.get('cumulative_cigarettes_10_years')
         self.cumulative_cigarettes_15_years = kwargs.get('cumulative_cigarettes_15_years')
         self.cumulative_cigarettes_20_years = kwargs.get('cumulative_cigarettes_20_years')
@@ -833,81 +421,30 @@ class Covariates(GbdRecord):
         self.diabetes_fasting_plasma_glucose_mmol_l = kwargs.get('diabetes_fasting_plasma_glucose_mmol_l')
         self.diabetes_age_standardized_prevalence_proportion = kwargs.get('diabetes_age_standardized_prevalence_proportion')
         self.diabetes_age_specific_prevalence_proportion = kwargs.get('diabetes_age_specific_prevalence_proportion')
-        self.disaster_deaths_rate_per_1000 = kwargs.get('disaster_deaths_rate_per_1000')
         self.dtp3_coverage_proportion = kwargs.get('dtp3_coverage_proportion')
         self.education_years_per_capita = kwargs.get('education_years_per_capita')
-        self.famine_binary = kwargs.get('famine_binary')
-        self.fao_composite_factor_1 = kwargs.get('fao_composite_factor_1')
-        self.fao_composite_factor_2 = kwargs.get('fao_composite_factor_2')
-        self.fao_composite_factor_3 = kwargs.get('fao_composite_factor_3')
-        self.fao_composite_factor_4 = kwargs.get('fao_composite_factor_4')
         self.female_hiv_death_rate_per_1_for_ages_15_49 = kwargs.get('female_hiv_death_rate_per_1_for_ages_15_49')
-        self.fertility_15_19_year_olds = kwargs.get('fertility_15_19_year_olds')
-        self.fruits_kcal_per_capita = kwargs.get('fruits_kcal_per_capita')
-        self.gold_production_binary = kwargs.get('gold_production_binary')
-        self.gold_production_kg_per_capita = kwargs.get('gold_production_kg_per_capita')
         self.health_system_access_unitless = kwargs.get('health_system_access_unitless')
         self.health_system_access_2_unitless = kwargs.get('health_system_access_2_unitless')
         self.proportion_of_households_using_iodized_salt_adjusted = kwargs.get('proportion_of_households_using_iodized_salt_adjusted')
         self.hib3_vaccine_coverage_proportion = kwargs.get('hib3_vaccine_coverage_proportion')
-        self.hiv_prevalence_arv_adjusted_custom_lag__percent = kwargs.get('hiv_prevalence_arv_adjusted_custom_lag__percent')
         self.hiv_prevalence_unadjusted_proportion = kwargs.get('hiv_prevalence_unadjusted_proportion')
         self.hospital_beds_per_1000 = kwargs.get('hospital_beds_per_1000')
         self.in_facility_delivery_proportion = kwargs.get('in_facility_delivery_proportion')
-        self.saturated_fats_kcal_per_capita = kwargs.get('saturated_fats_kcal_per_capita')
-        self.kcal_of_stimulants_per_capita_per_day = kwargs.get('kcal_of_stimulants_per_capita_per_day')
-        self.sugar_kcal_per_capita = kwargs.get('sugar_kcal_per_capita')
-        self.landlocked_nation_binary = kwargs.get('landlocked_nation_binary')
-        self.average_latitude = kwargs.get('average_latitude')
         self.ldi_income_per_capita = kwargs.get('ldi_income_per_capita')
         self.lead_gas_outphase_binary = kwargs.get('lead_gas_outphase_binary')
-        self.low_elevation_coastal_zone_under_10m_proportion = kwargs.get('low_elevation_coastal_zone_under_10m_proportion')
         self.live_births_thousands = kwargs.get('live_births_thousands')
-        self.ln_kcals_of_fiber_consumed_per_capita_per_day = kwargs.get('ln_kcals_of_fiber_consumed_per_capita_per_day')
-        self.ln_total_calories_consumed_as_hydrogenated_oil = kwargs.get('ln_total_calories_consumed_as_hydrogenated_oil')
-        self.ln_percent_of_total_calories_consumed_as_eggs = kwargs.get('ln_percent_of_total_calories_consumed_as_eggs')
-        self.ln_percent_of_total_calories_consumed_as_rape_and_mustard_seed_and_oil = kwargs.get('ln_percent_of_total_calories_consumed_as_rape_and_mustard_seed_and_oil')
-        self.ln_percent_of_total_calories_consumed_as_soybean_and_soy_oil = kwargs.get('ln_percent_of_total_calories_consumed_as_soybean_and_soy_oil')
         self.underweight_proportion_less_than_2sd_weight_for_age_less_than_5_years = kwargs.get('underweight_proportion_less_than_2sd_weight_for_age_less_than_5_years')
-        self.malnutrition_shock_binary = kwargs.get('malnutrition_shock_binary')
         self.mean_bmi = kwargs.get('mean_bmi')
         self.cholesterol_total_mean_per_capita = kwargs.get('cholesterol_total_mean_per_capita')
         self.systolic_blood_pressure_mmhg = kwargs.get('systolic_blood_pressure_mmhg')
         self.population_weighted_mean_temperature = kwargs.get('population_weighted_mean_temperature')
-        self.measles_incidence_rate = kwargs.get('measles_incidence_rate')
-        self.measles_natural_history_death_rate = kwargs.get('measles_natural_history_death_rate')
-        self.measles_notification_rate = kwargs.get('measles_notification_rate')
         self.measles_vaccine_coverage_proportion = kwargs.get('measles_vaccine_coverage_proportion')
-        self.measles_vaccine_supp_coverage_binary = kwargs.get('measles_vaccine_supp_coverage_binary')
-        self.meningitis_belt_binary = kwargs.get('meningitis_belt_binary')
-        self.ln_milk_kcal_per_capita = kwargs.get('ln_milk_kcal_per_capita')
         self.mortality_rate_due_to_death_shocks_in_last_10_years_per_1_person = kwargs.get('mortality_rate_due_to_death_shocks_in_last_10_years_per_1_person')
-        self.mortality_rate_due_to_conflict_in_last_10_years_per_1_person = kwargs.get('mortality_rate_due_to_conflict_in_last_10_years_per_1_person')
-        self.nuts_and_seeds_kcal_per_capita = kwargs.get('nuts_and_seeds_kcal_per_capita')
         self.opium_cultivation_binary = kwargs.get('opium_cultivation_binary')
-        self.percent_of_total_calories_consumed_as_animal_fat = kwargs.get('percent_of_total_calories_consumed_as_animal_fat')
         self.live_births_35_and_up_proportion = kwargs.get('live_births_35_and_up_proportion')
         self.live_births_40_and_up_proportion = kwargs.get('live_births_40_and_up_proportion')
-        self.percent_of_total_calories_consumed_as_fruits = kwargs.get('percent_of_total_calories_consumed_as_fruits')
-        self.percent_of_total_calories_consumed_as_legumes = kwargs.get('percent_of_total_calories_consumed_as_legumes')
-        self.percent_of_total_calories_consumed_as_milk = kwargs.get('percent_of_total_calories_consumed_as_milk')
-        self.percent_of_total_calories_consumed_as_nuts_and_seeds = kwargs.get('percent_of_total_calories_consumed_as_nuts_and_seeds')
-        self.percent_of_total_calories_consumed_as_pig_meat = kwargs.get('percent_of_total_calories_consumed_as_pig_meat')
-        self.percent_of_total_calories_consumed_as_pufa = kwargs.get('percent_of_total_calories_consumed_as_pufa')
-        self.percent_of_total_calories_consumed_as_pufa3 = kwargs.get('percent_of_total_calories_consumed_as_pufa3')
-        self.percent_of_total_calories_consumed_as_pufa6 = kwargs.get('percent_of_total_calories_consumed_as_pufa6')
-        self.percent_of_total_calories_consumed_as_red_meat = kwargs.get('percent_of_total_calories_consumed_as_red_meat')
-        self.percent_of_total_calories_consumed_as_saturated_fat = kwargs.get('percent_of_total_calories_consumed_as_saturated_fat')
-        self.percent_of_total_calories_consumed_as_sugar = kwargs.get('percent_of_total_calories_consumed_as_sugar')
-        self.percent_of_total_calories_consumed_as_vegetables = kwargs.get('percent_of_total_calories_consumed_as_vegetables')
-        self.percent_of_total_calories_consumed_as_non_wheat_whole_grains = kwargs.get('percent_of_total_calories_consumed_as_non_wheat_whole_grains')
         self.pig_meat_kg_per_capita = kwargs.get('pig_meat_kg_per_capita')
-        self.pigs_per_capita = kwargs.get('pigs_per_capita')
-        self.coal_reserves_binary = kwargs.get('coal_reserves_binary')
-        self.coal_reserves_teragrams_per_capita = kwargs.get('coal_reserves_teragrams_per_capita')
-        self.indoor_air_pollution_biomass_cooking = kwargs.get('indoor_air_pollution_biomass_cooking')
-        self.indoor_air_pollution_coal_cooking = kwargs.get('indoor_air_pollution_coal_cooking')
-        self.indoor_air_pollution_all_cooking_fuels = kwargs.get('indoor_air_pollution_all_cooking_fuels')
         self.outdoor_air_pollution_pm_2_5 = kwargs.get('outdoor_air_pollution_pm_2_5')
         self.latitude_under_15_proportion = kwargs.get('latitude_under_15_proportion')
         self.elevation_100_to_500m_proportion = kwargs.get('elevation_100_to_500m_proportion')
@@ -917,99 +454,31 @@ class Covariates(GbdRecord):
         self.latitude_30_to_45_proportion = kwargs.get('latitude_30_to_45_proportion')
         self.latitude_over_45_proportion = kwargs.get('latitude_over_45_proportion')
         self.elevation_500_to_1500m_proportion = kwargs.get('elevation_500_to_1500m_proportion')
-        self.population_density_150_300_ppl_sqkm_proportion = kwargs.get('population_density_150_300_ppl_sqkm_proportion')
-        self.population_density_300_500_ppl_sqkm_proportion = kwargs.get('population_density_300_500_ppl_sqkm_proportion')
-        self.population_density_500_1000_ppl_sqkm_proportion = kwargs.get('population_density_500_1000_ppl_sqkm_proportion')
-        self.population_density_over_1000_ppl_sqkm_proportion = kwargs.get('population_density_over_1000_ppl_sqkm_proportion')
-        self.population_density_under_150_ppl_sqkm_proportion = kwargs.get('population_density_under_150_ppl_sqkm_proportion')
         self.population_over_65_proportion = kwargs.get('population_over_65_proportion')
         self.elevation_under_100m_proportion = kwargs.get('elevation_under_100m_proportion')
-        self.population_under_30_proportion = kwargs.get('population_under_30_proportion')
-        self.pufa_kcal_per_capita = kwargs.get('pufa_kcal_per_capita')
-        self.pufa_omega_3_seafood_kcal_per_capita = kwargs.get('pufa_omega_3_seafood_kcal_per_capita')
-        self.pufa_omega_6_vegetable_oils_kcal_per_capita = kwargs.get('pufa_omega_6_vegetable_oils_kcal_per_capita')
-        self.pulses_and_legumes_kcal_per_capita = kwargs.get('pulses_and_legumes_kcal_per_capita')
-        self.rainfall_population_weighted_mm_yr = kwargs.get('rainfall_population_weighted_mm_yr')
-        self.rainfall_quintiles_2_5 = kwargs.get('rainfall_quintiles_2_5')
-        self.rainfall_quintiles_3_5 = kwargs.get('rainfall_quintiles_3_5')
-        self.rainfall_quintiles_4_5 = kwargs.get('rainfall_quintiles_4_5')
-        self.rainfall_quintile_1_proportion = kwargs.get('rainfall_quintile_1_proportion')
-        self.rainfall_quintile_2_proportion = kwargs.get('rainfall_quintile_2_proportion')
-        self.rainfall_quintile_3_proportion = kwargs.get('rainfall_quintile_3_proportion')
-        self.rainfall_quintile_4_proportion = kwargs.get('rainfall_quintile_4_proportion')
-        self.rainfall_quintile_5_proportion = kwargs.get('rainfall_quintile_5_proportion')
-        self.red_meat_kcal_per_capita = kwargs.get('red_meat_kcal_per_capita')
         self.religion_binary_greater_than_50_percent_muslim = kwargs.get('religion_binary_greater_than_50_percent_muslim')
-        self._percent_packaged_foods_sold_via_retail = kwargs.get('_percent_packaged_foods_sold_via_retail')
-        self._percent_fats_oils_sold_via_retail = kwargs.get('_percent_fats_oils_sold_via_retail')
-        self.rotavirus_vaccine_introduced_binary = kwargs.get('rotavirus_vaccine_introduced_binary')
         self.sahel_region_of_africa_binary = kwargs.get('sahel_region_of_africa_binary')
-        self.sanitation_proportion_with_access = kwargs.get('sanitation_proportion_with_access')
         self.skilled_birth_attendance_proportion = kwargs.get('skilled_birth_attendance_proportion')
-        self.sheep_per_capita = kwargs.get('sheep_per_capita')
         self.smoking_prevalence = kwargs.get('smoking_prevalence')
-        self.smoking_prevalence_reproductive_age_standardized = kwargs.get('smoking_prevalence_reproductive_age_standardized')
-        self.ninetieth_percentile_climatic_temperature_in_the_given_country_year = kwargs.get('ninetieth_percentile_climatic_temperature_in_the_given_country_year')
         self.tetanus_toxoid_coverage_smooth_proportion = kwargs.get('tetanus_toxoid_coverage_smooth_proportion')
         self.total_fertility_rate = kwargs.get('total_fertility_rate')
-        self.total_calories_kcal_per_capita = kwargs.get('total_calories_kcal_per_capita')
-        self.total_packaged_foods_sold_via_retail_tonnes_per_capita = kwargs.get('total_packaged_foods_sold_via_retail_tonnes_per_capita')
-        self.total_fats_oils_sold_via_retail_tonnes_per_capita = kwargs.get('total_fats_oils_sold_via_retail_tonnes_per_capita')
-        self.vegetables_kcal_per_capita = kwargs.get('vegetables_kcal_per_capita')
         self.vehicles_2_and_up4_wheels_per_capita = kwargs.get('vehicles_2_and_up4_wheels_per_capita')
         self.vehicles_2_wheels_per_capita = kwargs.get('vehicles_2_wheels_per_capita')
         self.vehicles_4_wheels_per_capita = kwargs.get('vehicles_4_wheels_per_capita')
         self.vehicles_2_wheels_fraction_proportion = kwargs.get('vehicles_2_wheels_fraction_proportion')
-        self.vitamin_a_deficiency_prevalence_children_under_5 = kwargs.get('vitamin_a_deficiency_prevalence_children_under_5')
         self.mortality_rate_due_to_war_shocks_per_1_person = kwargs.get('mortality_rate_due_to_war_shocks_per_1_person')
-        self.improved_water_source_proportion_with_access = kwargs.get('improved_water_source_proportion_with_access')
-        self.whole_grains_kcal_per_capita = kwargs.get('whole_grains_kcal_per_capita')
-        self.non_wheat_whole_grains_kcal_per_capita = kwargs.get('non_wheat_whole_grains_kcal_per_capita')
-        self.itn_adjusted_pfpr_rate = kwargs.get('itn_adjusted_pfpr_rate')
-        self.itn_mortality_reduction_proportion = kwargs.get('itn_mortality_reduction_proportion')
-        self.malaria_any_binary = kwargs.get('malaria_any_binary')
-        self.malaria_chloroquine_resistance = kwargs.get('malaria_chloroquine_resistance')
-        self.malaria_chloroquine_resistance_2 = kwargs.get('malaria_chloroquine_resistance_2')
-        self.malaria_endemicity_0_5_percent = kwargs.get('malaria_endemicity_0_5_percent')
-        self.malaria_endemicity_5_40_percent = kwargs.get('malaria_endemicity_5_40_percent')
-        self.malaria_endemicity_none = kwargs.get('malaria_endemicity_none')
-        self.malaria_falciparum_binary = kwargs.get('malaria_falciparum_binary')
-        self.malaria_lysenko_pfpr_2_hyperendemic = kwargs.get('malaria_lysenko_pfpr_2_hyperendemic')
-        self.malaria_lysenko_pfpr_3_medoendemic = kwargs.get('malaria_lysenko_pfpr_3_medoendemic')
-        self.malaria_lysenko_pfpr_4_hypoendemic = kwargs.get('malaria_lysenko_pfpr_4_hypoendemic')
-        self.malaria_lysenko_pfpr_5_epidemic = kwargs.get('malaria_lysenko_pfpr_5_epidemic')
-        self.map_malaria_mortality_reduction_proportion = kwargs.get('map_malaria_mortality_reduction_proportion')
-        self.malaria_s_p_resistance = kwargs.get('malaria_s_p_resistance')
-        self.malaria_s_p_resistance_2 = kwargs.get('malaria_s_p_resistance_2')
-        self.itn_coverage_proportion = kwargs.get('itn_coverage_proportion')
-        self.malaria_endemicity_40_100_percent = kwargs.get('malaria_endemicity_40_100_percent')
-        self.malaria_endemicity_5_100_percent = kwargs.get('malaria_endemicity_5_100_percent')
-        self.malaria_indoor_residual_spraying_coverage = kwargs.get('malaria_indoor_residual_spraying_coverage')
         self.malaria_lysenko_pfpr_1_holoendemic = kwargs.get('malaria_lysenko_pfpr_1_holoendemic')
         self.malaria_lysenko_pfpr_2_highest_endemicity = kwargs.get('malaria_lysenko_pfpr_2_highest_endemicity')
-        self.malaria_lysenko_pfpr_3_highest_endemicity = kwargs.get('malaria_lysenko_pfpr_3_highest_endemicity')
-        self.malaria_lysenko_pfpr_4_highest_endemicity = kwargs.get('malaria_lysenko_pfpr_4_highest_endemicity')
-        self.malaria_population_at_risk_proportion = kwargs.get('malaria_population_at_risk_proportion')
         self.malaria_pfpr_rate = kwargs.get('malaria_pfpr_rate')
-        self.malaria_prevalence_weighted_resistance = kwargs.get('malaria_prevalence_weighted_resistance')
-        self.malaria_vivax_binary = kwargs.get('malaria_vivax_binary')
-        self.malaria_pfpr_with_itn_rate = kwargs.get('malaria_pfpr_with_itn_rate')
         self.significant_leishmaniasis_endemicity_binary = kwargs.get('significant_leishmaniasis_endemicity_binary')
         self.leprosy_endemic_binary = kwargs.get('leprosy_endemic_binary')
-        self.yellow_fever_endemicity_binary = kwargs.get('yellow_fever_endemicity_binary')
         self.year = kwargs.get('year')
         self.chagas_population_at_risk_2_proportion = kwargs.get('chagas_population_at_risk_2_proportion')
         self.birth_prevalence_of_chd = kwargs.get('birth_prevalence_of_chd')
         self.birth_prevalence_of_congenital_chromosomal_anomalies = kwargs.get('birth_prevalence_of_congenital_chromosomal_anomalies')
-        self.dengue_incidence_per_1000_v7 = kwargs.get('dengue_incidence_per_1000_v7')
         self.hemoglobinopathies_prevalence_x_excess_mortality = kwargs.get('hemoglobinopathies_prevalence_x_excess_mortality')
-        self.hepatitis_a_prevalence_proportion = kwargs.get('hepatitis_a_prevalence_proportion')
-        self.hepatitis_b_prevalence_proportion = kwargs.get('hepatitis_b_prevalence_proportion')
-        self.hepatitis_c_prevalence_proportion = kwargs.get('hepatitis_c_prevalence_proportion')
-        self.hepatitis_e_prevalence_proportion = kwargs.get('hepatitis_e_prevalence_proportion')
         self.age_standardize_prevalence_of_severe_anemia = kwargs.get('age_standardize_prevalence_of_severe_anemia')
         self.schistosomiasis_prevalence_proportion = kwargs.get('schistosomiasis_prevalence_proportion')
-        self.population_at_risk_of_trachoma_proportion = kwargs.get('population_at_risk_of_trachoma_proportion')
         self.maternal_care_and_immunization = kwargs.get('maternal_care_and_immunization')
         self.neonatal_death_rate_modeled_2_per_1000 = kwargs.get('neonatal_death_rate_modeled_2_per_1000')
         self.pcv3_coverage_proportion = kwargs.get('pcv3_coverage_proportion')
@@ -1055,223 +524,37 @@ class Covariates(GbdRecord):
         self.proportion_of_the_population_living_in_the_classic_monsoon_region = kwargs.get('proportion_of_the_population_living_in_the_classic_monsoon_region')
         self.proportion_of_the_population_living_in_the_classic_monsoon_region_low_income_countries = kwargs.get('proportion_of_the_population_living_in_the_classic_monsoon_region_low_income_countries')
         self.dengue_anomalies_deviation_from_mean_dengue_incidence_rate = kwargs.get('dengue_anomalies_deviation_from_mean_dengue_incidence_rate')
-        self.population_at_risk_for_lf_infection = kwargs.get('population_at_risk_for_lf_infection')
-        self.pc_treatments_per_person_at_risk_for_lf_infection = kwargs.get('pc_treatments_per_person_at_risk_for_lf_infection')
         self.total_pc_treatments_per_person_at_risk_for_lf_infection_1999_2012 = kwargs.get('total_pc_treatments_per_person_at_risk_for_lf_infection_1999_2012')
-        self.smoking_prevalence_age_standardized_females = kwargs.get('smoking_prevalence_age_standardized_females')
-        self.smoking_prevalence_age_standardized_males = kwargs.get('smoking_prevalence_age_standardized_males')
-        self.hiv_prevalence_during_pregnancy_by_age = kwargs.get('hiv_prevalence_during_pregnancy_by_age')
-        self.cumulative_to_date_pc_treatment_per_person_at_risk_1999_2012 = kwargs.get('cumulative_to_date_pc_treatment_per_person_at_risk_1999_2012')
         self.indicator_for_high_income_superregion_location_id_64 = kwargs.get('indicator_for_high_income_superregion_location_id_64')
         self.vitamin_a_supplementation_coverage_rate = kwargs.get('vitamin_a_supplementation_coverage_rate')
         self.hemoglobinopathies_prevalence_x_excess_mortality_excluding_g6pd_deficiency = kwargs.get('hemoglobinopathies_prevalence_x_excess_mortality_excluding_g6pd_deficiency')
-        self.hepatitis_c_prevalence_proportion_capped = kwargs.get('hepatitis_c_prevalence_proportion_capped')
-        self.hepatitis_b_prevalence_based_on_gbd_2013_dismod_models = kwargs.get('hepatitis_b_prevalence_based_on_gbd_2013_dismod_models')
-        self.hepatitis_c_prevalence_based_on_gbd_2013_dismod_models = kwargs.get('hepatitis_c_prevalence_based_on_gbd_2013_dismod_models')
         self.indicator_for_southeast_asia_east_asia_and_oceania_superregion_location_id_4 = kwargs.get('indicator_for_southeast_asia_east_asia_and_oceania_superregion_location_id_4')
         self.indicator_for_central_europe_eastern_europe_and_central_asia_superregion_location_id_31 = kwargs.get('indicator_for_central_europe_eastern_europe_and_central_asia_superregion_location_id_31')
         self.indicator_for_latin_america_and_caribbean_superregion_location_id_103 = kwargs.get('indicator_for_latin_america_and_caribbean_superregion_location_id_103')
         self.indicator_for_north_africa_and_middle_east_superregion_location_id_137 = kwargs.get('indicator_for_north_africa_and_middle_east_superregion_location_id_137')
         self.indicator_for_south_asia_superregion_location_id_158 = kwargs.get('indicator_for_south_asia_superregion_location_id_158')
         self.indicator_for_sub_saharan_africa_superregion_location_id_166 = kwargs.get('indicator_for_sub_saharan_africa_superregion_location_id_166')
-        self.patterns_of_drinking_score_who = kwargs.get('patterns_of_drinking_score_who')
         self.alcohol_binge_drinker_proportion_age_standardized = kwargs.get('alcohol_binge_drinker_proportion_age_standardized')
-        self.patterns_of_drinking_score_who__indicator_for_score_1 = kwargs.get('patterns_of_drinking_score_who__indicator_for_score_1')
-        self.patterns_of_drinking_score_who__indicator_for_score_2 = kwargs.get('patterns_of_drinking_score_who__indicator_for_score_2')
-        self.patterns_of_drinking_score_who__indicator_for_score_3 = kwargs.get('patterns_of_drinking_score_who__indicator_for_score_3')
-        self.patterns_of_drinking_score_who__indicator_for_score_4 = kwargs.get('patterns_of_drinking_score_who__indicator_for_score_4')
-        self.patterns_of_drinking_score_who__indicator_for_score_5 = kwargs.get('patterns_of_drinking_score_who__indicator_for_score_5')
-        self._improved_water_source_proportion_with_access_based_on_gbd_2010_definition = kwargs.get('_improved_water_source_proportion_with_access_based_on_gbd_2010_definition')
-        self.pre_control_prevalence_of_infection_with_lymphatic_filariasis_within_endemic_areas = kwargs.get('pre_control_prevalence_of_infection_with_lymphatic_filariasis_within_endemic_areas')
-        self.seroprevalence_of_varicella = kwargs.get('seroprevalence_of_varicella')
-        self.smoking_prevalence_age_standardized_both_sexes = kwargs.get('smoking_prevalence_age_standardized_both_sexes')
-        self.mortality_rate_due_to_war_and_disaster_greater_than_1_10000_binary = kwargs.get('mortality_rate_due_to_war_and_disaster_greater_than_1_10000_binary')
-        self.mortality_rate_due_to_war_and_disaster_greater_than_1_10000_in_last_ten_years_binary = kwargs.get('mortality_rate_due_to_war_and_disaster_greater_than_1_10000_in_last_ten_years_binary')
-        self.animal_fats_kcal_per_capita_interaction_term_for_eap_super_region = kwargs.get('animal_fats_kcal_per_capita_interaction_term_for_eap_super_region')
-        self.ln_total_calories_consumed_as_hydrogenated_oil_interaction_term_for_eap_super_region = kwargs.get('ln_total_calories_consumed_as_hydrogenated_oil_interaction_term_for_eap_super_region')
-        self.percent_of_total_calories_consumed_as_fruits_interaction_term_for_eap_super_region = kwargs.get('percent_of_total_calories_consumed_as_fruits_interaction_term_for_eap_super_region')
-        self.percent_of_total_calories_consumed_as_legumes_interaction_term_for_eap_super_region = kwargs.get('percent_of_total_calories_consumed_as_legumes_interaction_term_for_eap_super_region')
-        self.percent_of_total_calories_consumed_as_nuts_and_seeds_interaction_term_for_eap_super_region = kwargs.get('percent_of_total_calories_consumed_as_nuts_and_seeds_interaction_term_for_eap_super_region')
-        self.percent_of_total_calories_consumed_as_pufa3_interaction_term_for_eap_super_region = kwargs.get('percent_of_total_calories_consumed_as_pufa3_interaction_term_for_eap_super_region')
-        self.percent_of_total_calories_consumed_as_saturated_fat_interaction_term_for_eap_super_region = kwargs.get('percent_of_total_calories_consumed_as_saturated_fat_interaction_term_for_eap_super_region')
-        self.percent_of_total_calories_consumed_as_sugar_interaction_term_for_eap_super_region = kwargs.get('percent_of_total_calories_consumed_as_sugar_interaction_term_for_eap_super_region')
-        self.percent_of_total_calories_consumed_as_non_wheat_whole_grains_interaction_term_for_eap_super_region = kwargs.get('percent_of_total_calories_consumed_as_non_wheat_whole_grains_interaction_term_for_eap_super_region')
-        self.pig_meat_kg_per_capita_interaction_term_for_eap_super_region = kwargs.get('pig_meat_kg_per_capita_interaction_term_for_eap_super_region')
-        self.pufa_kcal_per_capita_interaction_term_for_eap_super_region = kwargs.get('pufa_kcal_per_capita_interaction_term_for_eap_super_region')
-        self.red_meat_kcal_per_capita_interaction_term_for_eap_super_region = kwargs.get('red_meat_kcal_per_capita_interaction_term_for_eap_super_region')
-        self.animal_fats_kcal_per_capita_interaction_term_for_eeca_super_region = kwargs.get('animal_fats_kcal_per_capita_interaction_term_for_eeca_super_region')
-        self.ln_total_calories_consumed_as_hydrogenated_oil_interaction_term_for_eeca_super_region = kwargs.get('ln_total_calories_consumed_as_hydrogenated_oil_interaction_term_for_eeca_super_region')
-        self.percent_of_total_calories_consumed_as_fruits_interaction_term_for_eeca_super_region = kwargs.get('percent_of_total_calories_consumed_as_fruits_interaction_term_for_eeca_super_region')
-        self.percent_of_total_calories_consumed_as_legumes_interaction_term_for_eeca_super_region = kwargs.get('percent_of_total_calories_consumed_as_legumes_interaction_term_for_eeca_super_region')
-        self.percent_of_total_calories_consumed_as_nuts_and_seeds_interaction_term_for_eeca_super_region = kwargs.get('percent_of_total_calories_consumed_as_nuts_and_seeds_interaction_term_for_eeca_super_region')
-        self.percent_of_total_calories_consumed_as_pufa3_interaction_term_for_eeca_super_region = kwargs.get('percent_of_total_calories_consumed_as_pufa3_interaction_term_for_eeca_super_region')
-        self.percent_of_total_calories_consumed_as_saturated_fat_interaction_term_for_eeca_super_region = kwargs.get('percent_of_total_calories_consumed_as_saturated_fat_interaction_term_for_eeca_super_region')
-        self.percent_of_total_calories_consumed_as_sugar_interaction_term_for_eeca_super_region = kwargs.get('percent_of_total_calories_consumed_as_sugar_interaction_term_for_eeca_super_region')
-        self.percent_of_total_calories_consumed_as_non_wheat_whole_grains_interaction_term_for_eeca_super_region = kwargs.get('percent_of_total_calories_consumed_as_non_wheat_whole_grains_interaction_term_for_eeca_super_region')
-        self.pig_meat_kg_per_capita_interaction_term_for_eeca_super_region = kwargs.get('pig_meat_kg_per_capita_interaction_term_for_eeca_super_region')
-        self.pufa_kcal_per_capita_interaction_term_for_eeca_super_region = kwargs.get('pufa_kcal_per_capita_interaction_term_for_eeca_super_region')
-        self.red_meat_kcal_per_capita_interaction_term_for_eeca_super_region = kwargs.get('red_meat_kcal_per_capita_interaction_term_for_eeca_super_region')
-        self.animal_fats_kcal_per_capita_interaction_term_for_hi_super_region = kwargs.get('animal_fats_kcal_per_capita_interaction_term_for_hi_super_region')
-        self.ln_total_calories_consumed_as_hydrogenated_oil_interaction_term_for_hi_super_region = kwargs.get('ln_total_calories_consumed_as_hydrogenated_oil_interaction_term_for_hi_super_region')
-        self.percent_of_total_calories_consumed_as_fruits_interaction_term_for_hi_super_region = kwargs.get('percent_of_total_calories_consumed_as_fruits_interaction_term_for_hi_super_region')
-        self.percent_of_total_calories_consumed_as_legumes_interaction_term_for_hi_super_region = kwargs.get('percent_of_total_calories_consumed_as_legumes_interaction_term_for_hi_super_region')
-        self.percent_of_total_calories_consumed_as_nuts_and_seeds_interaction_term_for_hi_super_region = kwargs.get('percent_of_total_calories_consumed_as_nuts_and_seeds_interaction_term_for_hi_super_region')
-        self.percent_of_total_calories_consumed_as_pufa3_interaction_term_for_hi_super_region = kwargs.get('percent_of_total_calories_consumed_as_pufa3_interaction_term_for_hi_super_region')
-        self.percent_of_total_calories_consumed_as_saturated_fat_interaction_term_for_hi_super_region = kwargs.get('percent_of_total_calories_consumed_as_saturated_fat_interaction_term_for_hi_super_region')
-        self.percent_of_total_calories_consumed_as_sugar_interaction_term_for_hi_super_region = kwargs.get('percent_of_total_calories_consumed_as_sugar_interaction_term_for_hi_super_region')
-        self.percent_of_total_calories_consumed_as_non_wheat_whole_grains_interaction_term_for_hi_super_region = kwargs.get('percent_of_total_calories_consumed_as_non_wheat_whole_grains_interaction_term_for_hi_super_region')
-        self.pig_meat_kg_per_capita_interaction_term_for_hi_super_region = kwargs.get('pig_meat_kg_per_capita_interaction_term_for_hi_super_region')
-        self.pufa_kcal_per_capita_interaction_term_for_hi_super_region = kwargs.get('pufa_kcal_per_capita_interaction_term_for_hi_super_region')
-        self.red_meat_kcal_per_capita_interaction_term_for_hi_super_region = kwargs.get('red_meat_kcal_per_capita_interaction_term_for_hi_super_region')
-        self.animal_fats_kcal_per_capita_interaction_term_for_lac_super_region = kwargs.get('animal_fats_kcal_per_capita_interaction_term_for_lac_super_region')
-        self.ln_total_calories_consumed_as_hydrogenated_oil_interaction_term_for_lac_super_region = kwargs.get('ln_total_calories_consumed_as_hydrogenated_oil_interaction_term_for_lac_super_region')
-        self.percent_of_total_calories_consumed_as_fruits_interaction_term_for_lac_super_region = kwargs.get('percent_of_total_calories_consumed_as_fruits_interaction_term_for_lac_super_region')
-        self.percent_of_total_calories_consumed_as_legumes_interaction_term_for_lac_super_region = kwargs.get('percent_of_total_calories_consumed_as_legumes_interaction_term_for_lac_super_region')
-        self.percent_of_total_calories_consumed_as_nuts_and_seeds_interaction_term_for_lac_super_region = kwargs.get('percent_of_total_calories_consumed_as_nuts_and_seeds_interaction_term_for_lac_super_region')
-        self.percent_of_total_calories_consumed_as_pufa3_interaction_term_for_lac_super_region = kwargs.get('percent_of_total_calories_consumed_as_pufa3_interaction_term_for_lac_super_region')
-        self.percent_of_total_calories_consumed_as_saturated_fat_interaction_term_for_lac_super_region = kwargs.get('percent_of_total_calories_consumed_as_saturated_fat_interaction_term_for_lac_super_region')
-        self.percent_of_total_calories_consumed_as_sugar_interaction_term_for_lac_super_region = kwargs.get('percent_of_total_calories_consumed_as_sugar_interaction_term_for_lac_super_region')
-        self.percent_of_total_calories_consumed_as_non_wheat_whole_grains_interaction_term_for_lac_super_region = kwargs.get('percent_of_total_calories_consumed_as_non_wheat_whole_grains_interaction_term_for_lac_super_region')
-        self.pig_meat_kg_per_capita_interaction_term_for_lac_super_region = kwargs.get('pig_meat_kg_per_capita_interaction_term_for_lac_super_region')
-        self.pufa_kcal_per_capita_interaction_term_for_lac_super_region = kwargs.get('pufa_kcal_per_capita_interaction_term_for_lac_super_region')
-        self.red_meat_kcal_per_capita_interaction_term_for_lac_super_region = kwargs.get('red_meat_kcal_per_capita_interaction_term_for_lac_super_region')
-        self.animal_fats_kcal_per_capita_interaction_term_for_name_super_region = kwargs.get('animal_fats_kcal_per_capita_interaction_term_for_name_super_region')
-        self.ln_total_calories_consumed_as_hydrogenated_oil_interaction_term_for_name_super_region = kwargs.get('ln_total_calories_consumed_as_hydrogenated_oil_interaction_term_for_name_super_region')
-        self.percent_of_total_calories_consumed_as_fruits_interaction_term_for_name_super_region = kwargs.get('percent_of_total_calories_consumed_as_fruits_interaction_term_for_name_super_region')
-        self.percent_of_total_calories_consumed_as_legumes_interaction_term_for_name_super_region = kwargs.get('percent_of_total_calories_consumed_as_legumes_interaction_term_for_name_super_region')
-        self.percent_of_total_calories_consumed_as_nuts_and_seeds_interaction_term_for_name_super_region = kwargs.get('percent_of_total_calories_consumed_as_nuts_and_seeds_interaction_term_for_name_super_region')
-        self.percent_of_total_calories_consumed_as_pufa3_interaction_term_for_name_super_region = kwargs.get('percent_of_total_calories_consumed_as_pufa3_interaction_term_for_name_super_region')
-        self.percent_of_total_calories_consumed_as_saturated_fat_interaction_term_for_name_super_region = kwargs.get('percent_of_total_calories_consumed_as_saturated_fat_interaction_term_for_name_super_region')
-        self.percent_of_total_calories_consumed_as_sugar_interaction_term_for_name_super_region = kwargs.get('percent_of_total_calories_consumed_as_sugar_interaction_term_for_name_super_region')
-        self.percent_of_total_calories_consumed_as_non_wheat_whole_grains_interaction_term_for_name_super_region = kwargs.get('percent_of_total_calories_consumed_as_non_wheat_whole_grains_interaction_term_for_name_super_region')
-        self.pig_meat_kg_per_capita_interaction_term_for_name_super_region = kwargs.get('pig_meat_kg_per_capita_interaction_term_for_name_super_region')
-        self.pufa_kcal_per_capita_interaction_term_for_name_super_region = kwargs.get('pufa_kcal_per_capita_interaction_term_for_name_super_region')
-        self.red_meat_kcal_per_capita_interaction_term_for_name_super_region = kwargs.get('red_meat_kcal_per_capita_interaction_term_for_name_super_region')
-        self.animal_fats_kcal_per_capita_interaction_term_for_sa_super_region = kwargs.get('animal_fats_kcal_per_capita_interaction_term_for_sa_super_region')
-        self.ln_total_calories_consumed_as_hydrogenated_oil_interaction_term_for_sa_super_region = kwargs.get('ln_total_calories_consumed_as_hydrogenated_oil_interaction_term_for_sa_super_region')
-        self.percent_of_total_calories_consumed_as_fruits_interaction_term_for_sa_super_region = kwargs.get('percent_of_total_calories_consumed_as_fruits_interaction_term_for_sa_super_region')
-        self.percent_of_total_calories_consumed_as_legumes_interaction_term_for_sa_super_region = kwargs.get('percent_of_total_calories_consumed_as_legumes_interaction_term_for_sa_super_region')
-        self.percent_of_total_calories_consumed_as_nuts_and_seeds_interaction_term_for_sa_super_region = kwargs.get('percent_of_total_calories_consumed_as_nuts_and_seeds_interaction_term_for_sa_super_region')
-        self.percent_of_total_calories_consumed_as_pufa3_interaction_term_for_sa_super_region = kwargs.get('percent_of_total_calories_consumed_as_pufa3_interaction_term_for_sa_super_region')
-        self.percent_of_total_calories_consumed_as_saturated_fat_interaction_term_for_sa_super_region = kwargs.get('percent_of_total_calories_consumed_as_saturated_fat_interaction_term_for_sa_super_region')
-        self.percent_of_total_calories_consumed_as_sugar_interaction_term_for_sa_super_region = kwargs.get('percent_of_total_calories_consumed_as_sugar_interaction_term_for_sa_super_region')
-        self.percent_of_total_calories_consumed_as_non_wheat_whole_grains_interaction_term_for_sa_super_region = kwargs.get('percent_of_total_calories_consumed_as_non_wheat_whole_grains_interaction_term_for_sa_super_region')
-        self.pig_meat_kg_per_capita_interaction_term_for_sa_super_region = kwargs.get('pig_meat_kg_per_capita_interaction_term_for_sa_super_region')
-        self.pufa_kcal_per_capita_interaction_term_for_sa_super_region = kwargs.get('pufa_kcal_per_capita_interaction_term_for_sa_super_region')
-        self.red_meat_kcal_per_capita_interaction_term_for_sa_super_region = kwargs.get('red_meat_kcal_per_capita_interaction_term_for_sa_super_region')
-        self.animal_fats_kcal_per_capita_interaction_term_for_ssa_super_region = kwargs.get('animal_fats_kcal_per_capita_interaction_term_for_ssa_super_region')
-        self.ln_total_calories_consumed_as_hydrogenated_oil_interaction_term_for_ssa_super_region = kwargs.get('ln_total_calories_consumed_as_hydrogenated_oil_interaction_term_for_ssa_super_region')
-        self.percent_of_total_calories_consumed_as_fruits_interaction_term_for_ssa_super_region = kwargs.get('percent_of_total_calories_consumed_as_fruits_interaction_term_for_ssa_super_region')
-        self.percent_of_total_calories_consumed_as_legumes_interaction_term_for_ssa_super_region = kwargs.get('percent_of_total_calories_consumed_as_legumes_interaction_term_for_ssa_super_region')
-        self.percent_of_total_calories_consumed_as_nuts_and_seeds_interaction_term_for_ssa_super_region = kwargs.get('percent_of_total_calories_consumed_as_nuts_and_seeds_interaction_term_for_ssa_super_region')
-        self.percent_of_total_calories_consumed_as_pufa3_interaction_term_for_ssa_super_region = kwargs.get('percent_of_total_calories_consumed_as_pufa3_interaction_term_for_ssa_super_region')
-        self.percent_of_total_calories_consumed_as_saturated_fat_interaction_term_for_ssa_super_region = kwargs.get('percent_of_total_calories_consumed_as_saturated_fat_interaction_term_for_ssa_super_region')
-        self.percent_of_total_calories_consumed_as_sugar_interaction_term_for_ssa_super_region = kwargs.get('percent_of_total_calories_consumed_as_sugar_interaction_term_for_ssa_super_region')
-        self.percent_of_total_calories_consumed_as_non_wheat_whole_grains_interaction_term_for_ssa_super_region = kwargs.get('percent_of_total_calories_consumed_as_non_wheat_whole_grains_interaction_term_for_ssa_super_region')
-        self.pig_meat_kg_per_capita_interaction_term_for_ssa_super_region = kwargs.get('pig_meat_kg_per_capita_interaction_term_for_ssa_super_region')
-        self.pufa_kcal_per_capita_interaction_term_for_ssa_super_region = kwargs.get('pufa_kcal_per_capita_interaction_term_for_ssa_super_region')
-        self.red_meat_kcal_per_capita_interaction_term_for_ssa_super_region = kwargs.get('red_meat_kcal_per_capita_interaction_term_for_ssa_super_region')
-        self.age_standardized_death_rate_for_endocrince_metabolic_blood_and_immune_disorders = kwargs.get('age_standardized_death_rate_for_endocrince_metabolic_blood_and_immune_disorders')
-        self.log_age_standardized_melanoma_incidence = kwargs.get('log_age_standardized_melanoma_incidence')
-        self.chagas_specific_mortality_rate_among_the_at_risk_population_ten_year_lag = kwargs.get('chagas_specific_mortality_rate_among_the_at_risk_population_ten_year_lag')
-        self.asbestos_production_per_capita_offset_by_non_zero_minimum = kwargs.get('asbestos_production_per_capita_offset_by_non_zero_minimum')
-        self.coal_production_per_capita_offset_by_non_zero_minimum = kwargs.get('coal_production_per_capita_offset_by_non_zero_minimum')
-        self.gold_production_per_capita_offset_by_non_zero_minimum = kwargs.get('gold_production_per_capita_offset_by_non_zero_minimum')
         self.proportion_of_the_population_living_in_the_indian_ocean_monsoon_belt = kwargs.get('proportion_of_the_population_living_in_the_indian_ocean_monsoon_belt')
         self.vitamin_a_deficiency_prevalence_age_standardized = kwargs.get('vitamin_a_deficiency_prevalence_age_standardized')
-        self.population_at_risk_of_trachoma_modeled_proportion = kwargs.get('population_at_risk_of_trachoma_modeled_proportion')
-        self.saturated_fats_and_animal_fats_kcal_per_capita = kwargs.get('saturated_fats_and_animal_fats_kcal_per_capita')
-        self.percent_of_total_calories_consumed_as_saturated_and_animal_fats = kwargs.get('percent_of_total_calories_consumed_as_saturated_and_animal_fats')
-        self.percent_of_total_calories_consumed_as_saturated_and_animal_fats_interaction_term_for_eap_super_region = kwargs.get('percent_of_total_calories_consumed_as_saturated_and_animal_fats_interaction_term_for_eap_super_region')
-        self.percent_of_total_calories_consumed_as_saturated_and_animal_fats_interaction_term_for_eeca_super_region = kwargs.get('percent_of_total_calories_consumed_as_saturated_and_animal_fats_interaction_term_for_eeca_super_region')
-        self.percent_of_total_calories_consumed_as_saturated_and_animal_fats_interaction_term_for_hi_super_region = kwargs.get('percent_of_total_calories_consumed_as_saturated_and_animal_fats_interaction_term_for_hi_super_region')
-        self.percent_of_total_calories_consumed_as_saturated_and_animal_fats_interaction_term_for_lac_super_region = kwargs.get('percent_of_total_calories_consumed_as_saturated_and_animal_fats_interaction_term_for_lac_super_region')
-        self.percent_of_total_calories_consumed_as_saturated_and_animal_fats_interaction_term_for_name_super_region = kwargs.get('percent_of_total_calories_consumed_as_saturated_and_animal_fats_interaction_term_for_name_super_region')
-        self.percent_of_total_calories_consumed_as_saturated_and_animal_fats_interaction_term_for_sa_super_region = kwargs.get('percent_of_total_calories_consumed_as_saturated_and_animal_fats_interaction_term_for_sa_super_region')
-        self.percent_of_total_calories_consumed_as_saturated_and_animal_fats_interaction_term_for_ssa_super_region = kwargs.get('percent_of_total_calories_consumed_as_saturated_and_animal_fats_interaction_term_for_ssa_super_region')
         self.prevalence_of_obesity = kwargs.get('prevalence_of_obesity')
         self.prevalence_of_overweight_and_obesity = kwargs.get('prevalence_of_overweight_and_obesity')
         self.prevalence_of_obesity_age_standardized = kwargs.get('prevalence_of_obesity_age_standardized')
-        self.age_standardized_prevalence_of_ckd_stage_3 = kwargs.get('age_standardized_prevalence_of_ckd_stage_3')
-        self.age_standardized_prevalence_of_ckd_stage_4_dismod_model_33304 = kwargs.get('age_standardized_prevalence_of_ckd_stage_4_dismod_model_33304')
-        self.age_standardized_prevalence_of_ckd_stage_4_dismod_model_33309 = kwargs.get('age_standardized_prevalence_of_ckd_stage_4_dismod_model_33309')
-        self.age_standardized_prevalence_of_ckd_stage_4_dismod_model_33314 = kwargs.get('age_standardized_prevalence_of_ckd_stage_4_dismod_model_33314')
-        self.age_standardized_prevalence_of_ckd_stage_4 = kwargs.get('age_standardized_prevalence_of_ckd_stage_4')
-        self.red_meat_w_o_pig_meat_kcal_per_capita = kwargs.get('red_meat_w_o_pig_meat_kcal_per_capita')
-        self.percent_of_total_calories_consumed_as_red_meat_w_o_pig_meat = kwargs.get('percent_of_total_calories_consumed_as_red_meat_w_o_pig_meat')
         self.maternal_education_years_per_capita = kwargs.get('maternal_education_years_per_capita')
-        self.scaled_adult_hiv_rate = kwargs.get('scaled_adult_hiv_rate')
         self.chagasprevpaho = kwargs.get('chagasprevpaho')
-        self.proportion_of_the_land_with_altitude_between_1000_2500_meters_above_sea_level = kwargs.get('proportion_of_the_land_with_altitude_between_1000_2500_meters_above_sea_level')
-        self.clay_fraction_in_the_soil_mean = kwargs.get('clay_fraction_in_the_soil_mean')
-        self.silt_fraction_in_the_soil_mean = kwargs.get('silt_fraction_in_the_soil_mean')
-        self.enhanced_vegetation_index_long_term_average_2000_2012_mean = kwargs.get('enhanced_vegetation_index_long_term_average_2000_2012_mean')
-        self.slope_of_the_land_in_degrees_terrain_steepness_mean = kwargs.get('slope_of_the_land_in_degrees_terrain_steepness_mean')
         self.log_transformed_sev_scalar_tb = kwargs.get('log_transformed_sev_scalar_tb')
-        self.log_transformed_sev_scalar_hiv_myco = kwargs.get('log_transformed_sev_scalar_hiv_myco')
         self.log_transformed_sev_scalar_oth_hiv = kwargs.get('log_transformed_sev_scalar_oth_hiv')
         self.log_transformed_sev_scalar_diarrhea = kwargs.get('log_transformed_sev_scalar_diarrhea')
-        self.log_transformed_sev_scalar_intest_inf = kwargs.get('log_transformed_sev_scalar_intest_inf')
-        self.log_transformed_sev_scalar_typhoid = kwargs.get('log_transformed_sev_scalar_typhoid')
-        self.log_transformed_sev_scalar_paratyph = kwargs.get('log_transformed_sev_scalar_paratyph')
-        self.log_transformed_sev_scalar_oth_intest = kwargs.get('log_transformed_sev_scalar_oth_intest')
         self.log_transformed_sev_scalar_lri = kwargs.get('log_transformed_sev_scalar_lri')
         self.log_transformed_sev_scalar_uri = kwargs.get('log_transformed_sev_scalar_uri')
         self.log_transformed_sev_scalar_otitis = kwargs.get('log_transformed_sev_scalar_otitis')
-        self.log_transformed_sev_scalar_meningitis = kwargs.get('log_transformed_sev_scalar_meningitis')
-        self.log_transformed_sev_scalar_mng_pne = kwargs.get('log_transformed_sev_scalar_mng_pne')
-        self.log_transformed_sev_scalar_mng_hib = kwargs.get('log_transformed_sev_scalar_mng_hib')
-        self.log_transformed_sev_scalar_mng_men = kwargs.get('log_transformed_sev_scalar_mng_men')
-        self.log_transformed_sev_scalar_oth_mng = kwargs.get('log_transformed_sev_scalar_oth_mng')
-        self.log_transformed_sev_scalar_encepha = kwargs.get('log_transformed_sev_scalar_encepha')
-        self.log_transformed_sev_scalar_diphtheria = kwargs.get('log_transformed_sev_scalar_diphtheria')
-        self.log_transformed_sev_scalar_whooping = kwargs.get('log_transformed_sev_scalar_whooping')
-        self.log_transformed_sev_scalar_tetanus = kwargs.get('log_transformed_sev_scalar_tetanus')
         self.log_transformed_sev_scalar_measles = kwargs.get('log_transformed_sev_scalar_measles')
-        self.log_transformed_sev_scalar_varicella = kwargs.get('log_transformed_sev_scalar_varicella')
-        self.log_transformed_sev_scalar_malaria = kwargs.get('log_transformed_sev_scalar_malaria')
-        self.log_transformed_sev_scalar_chagas = kwargs.get('log_transformed_sev_scalar_chagas')
-        self.log_transformed_sev_scalar_leish = kwargs.get('log_transformed_sev_scalar_leish')
-        self.log_transformed_sev_scalar_vis_leish = kwargs.get('log_transformed_sev_scalar_vis_leish')
-        self.log_transformed_sev_scalar_cut_leish = kwargs.get('log_transformed_sev_scalar_cut_leish')
-        self.log_transformed_sev_scalar_afr_tryp = kwargs.get('log_transformed_sev_scalar_afr_tryp')
-        self.log_transformed_sev_scalar_schisto = kwargs.get('log_transformed_sev_scalar_schisto')
-        self.log_transformed_sev_scalar_cysticer = kwargs.get('log_transformed_sev_scalar_cysticer')
-        self.log_transformed_sev_scalar_echino = kwargs.get('log_transformed_sev_scalar_echino')
-        self.log_transformed_sev_scalar_lf = kwargs.get('log_transformed_sev_scalar_lf')
-        self.log_transformed_sev_scalar_oncho = kwargs.get('log_transformed_sev_scalar_oncho')
-        self.log_transformed_sev_scalar_trachoma = kwargs.get('log_transformed_sev_scalar_trachoma')
-        self.log_transformed_sev_scalar_dengue = kwargs.get('log_transformed_sev_scalar_dengue')
-        self.log_transformed_sev_scalar_yellow_fev = kwargs.get('log_transformed_sev_scalar_yellow_fev')
-        self.log_transformed_sev_scalar_rabies = kwargs.get('log_transformed_sev_scalar_rabies')
-        self.log_transformed_sev_scalar_nematode = kwargs.get('log_transformed_sev_scalar_nematode')
-        self.log_transformed_sev_scalar_ascaria = kwargs.get('log_transformed_sev_scalar_ascaria')
-        self.log_transformed_sev_scalar_trichuria = kwargs.get('log_transformed_sev_scalar_trichuria')
-        self.log_transformed_sev_scalar_hookworm = kwargs.get('log_transformed_sev_scalar_hookworm')
-        self.log_transformed_sev_scalar_fb_trema = kwargs.get('log_transformed_sev_scalar_fb_trema')
-        self.log_transformed_sev_scalar_oth_ntd = kwargs.get('log_transformed_sev_scalar_oth_ntd')
         self.log_transformed_sev_scalar_mat_hem = kwargs.get('log_transformed_sev_scalar_mat_hem')
         self.log_transformed_sev_scalar_mat_sepsis = kwargs.get('log_transformed_sev_scalar_mat_sepsis')
-        self.log_transformed_sev_scalar_mat_htn = kwargs.get('log_transformed_sev_scalar_mat_htn')
-        self.log_transformed_sev_scalar_mat_obst = kwargs.get('log_transformed_sev_scalar_mat_obst')
         self.log_transformed_sev_scalar_mat_abort = kwargs.get('log_transformed_sev_scalar_mat_abort')
-        self.log_transformed_sev_scalar_mat_indir = kwargs.get('log_transformed_sev_scalar_mat_indir')
-        self.log_transformed_sev_scalar_mat_late = kwargs.get('log_transformed_sev_scalar_mat_late')
-        self.log_transformed_sev_scalar_oth_mat = kwargs.get('log_transformed_sev_scalar_oth_mat')
-        self.log_transformed_sev_scalar_nn_preterm = kwargs.get('log_transformed_sev_scalar_nn_preterm')
-        self.log_transformed_sev_scalar_nn_enceph = kwargs.get('log_transformed_sev_scalar_nn_enceph')
-        self.log_transformed_sev_scalar_nn_sepsis = kwargs.get('log_transformed_sev_scalar_nn_sepsis')
-        self.log_transformed_sev_scalar_nn_hemol = kwargs.get('log_transformed_sev_scalar_nn_hemol')
-        self.log_transformed_sev_scalar_oth_nn = kwargs.get('log_transformed_sev_scalar_oth_nn')
-        self.log_transformed_sev_scalar_iodine = kwargs.get('log_transformed_sev_scalar_iodine')
-        self.log_transformed_sev_scalar_oth_nutr = kwargs.get('log_transformed_sev_scalar_oth_nutr')
         self.log_transformed_sev_scalar_hep = kwargs.get('log_transformed_sev_scalar_hep')
-        self.log_transformed_sev_scalar_hep_a = kwargs.get('log_transformed_sev_scalar_hep_a')
         self.log_transformed_sev_scalar_hep_b = kwargs.get('log_transformed_sev_scalar_hep_b')
         self.log_transformed_sev_scalar_hep_c = kwargs.get('log_transformed_sev_scalar_hep_c')
-        self.log_transformed_sev_scalar_hep_e = kwargs.get('log_transformed_sev_scalar_hep_e')
-        self.log_transformed_sev_scalar_leprosy = kwargs.get('log_transformed_sev_scalar_leprosy')
-        self.log_transformed_sev_scalar_oth_inf = kwargs.get('log_transformed_sev_scalar_oth_inf')
         self.log_transformed_sev_scalar_esophag_c = kwargs.get('log_transformed_sev_scalar_esophag_c')
         self.log_transformed_sev_scalar_stomach_c = kwargs.get('log_transformed_sev_scalar_stomach_c')
         self.log_transformed_sev_scalar_liver_c = kwargs.get('log_transformed_sev_scalar_liver_c')
@@ -1289,20 +572,12 @@ class Covariates(GbdRecord):
         self.log_transformed_sev_scalar_oth_phar_c = kwargs.get('log_transformed_sev_scalar_oth_phar_c')
         self.log_transformed_sev_scalar_gallblad_c = kwargs.get('log_transformed_sev_scalar_gallblad_c')
         self.log_transformed_sev_scalar_pancreas_c = kwargs.get('log_transformed_sev_scalar_pancreas_c')
-        self.log_transformed_sev_scalar_melanoma = kwargs.get('log_transformed_sev_scalar_melanoma')
-        self.log_transformed_sev_scalar_skin_c = kwargs.get('log_transformed_sev_scalar_skin_c')
         self.log_transformed_sev_scalar_ovary_c = kwargs.get('log_transformed_sev_scalar_ovary_c')
-        self.log_transformed_sev_scalar_testis_c = kwargs.get('log_transformed_sev_scalar_testis_c')
         self.log_transformed_sev_scalar_kidney_c = kwargs.get('log_transformed_sev_scalar_kidney_c')
         self.log_transformed_sev_scalar_bladder_c = kwargs.get('log_transformed_sev_scalar_bladder_c')
-        self.log_transformed_sev_scalar_brain_c = kwargs.get('log_transformed_sev_scalar_brain_c')
         self.log_transformed_sev_scalar_thyroid_c = kwargs.get('log_transformed_sev_scalar_thyroid_c')
         self.log_transformed_sev_scalar_mesothel = kwargs.get('log_transformed_sev_scalar_mesothel')
-        self.log_transformed_sev_scalar_hodgkin = kwargs.get('log_transformed_sev_scalar_hodgkin')
-        self.log_transformed_sev_scalar_lymphoma = kwargs.get('log_transformed_sev_scalar_lymphoma')
-        self.log_transformed_sev_scalar_myeloma = kwargs.get('log_transformed_sev_scalar_myeloma')
         self.log_transformed_sev_scalar_leukemia = kwargs.get('log_transformed_sev_scalar_leukemia')
-        self.log_transformed_sev_scalar_oth_neopla = kwargs.get('log_transformed_sev_scalar_oth_neopla')
         self.log_transformed_sev_scalar_rhd = kwargs.get('log_transformed_sev_scalar_rhd')
         self.log_transformed_sev_scalar_ihd = kwargs.get('log_transformed_sev_scalar_ihd')
         self.log_transformed_sev_scalar_stroke = kwargs.get('log_transformed_sev_scalar_stroke')
@@ -1315,117 +590,23 @@ class Covariates(GbdRecord):
         self.log_transformed_sev_scalar_endocar = kwargs.get('log_transformed_sev_scalar_endocar')
         self.log_transformed_sev_scalar_oth_cardio = kwargs.get('log_transformed_sev_scalar_oth_cardio')
         self.log_transformed_sev_scalar_copd = kwargs.get('log_transformed_sev_scalar_copd')
-        self.log_transformed_sev_scalar_pneumocon = kwargs.get('log_transformed_sev_scalar_pneumocon')
-        self.log_transformed_sev_scalar_silicosis = kwargs.get('log_transformed_sev_scalar_silicosis')
-        self.log_transformed_sev_scalar_asbestosis = kwargs.get('log_transformed_sev_scalar_asbestosis')
-        self.log_transformed_sev_scalar_coal_w = kwargs.get('log_transformed_sev_scalar_coal_w')
-        self.log_transformed_sev_scalar_oth_pneum = kwargs.get('log_transformed_sev_scalar_oth_pneum')
         self.log_transformed_sev_scalar_asthma = kwargs.get('log_transformed_sev_scalar_asthma')
         self.log_transformed_sev_scalar_ild = kwargs.get('log_transformed_sev_scalar_ild')
         self.log_transformed_sev_scalar_oth_resp = kwargs.get('log_transformed_sev_scalar_oth_resp')
         self.log_transformed_sev_scalar_cirr_hepb = kwargs.get('log_transformed_sev_scalar_cirr_hepb')
         self.log_transformed_sev_scalar_cirr_hepc = kwargs.get('log_transformed_sev_scalar_cirr_hepc')
-        self.log_transformed_sev_scalar_oth_cirr = kwargs.get('log_transformed_sev_scalar_oth_cirr')
-        self.log_transformed_sev_scalar_pud = kwargs.get('log_transformed_sev_scalar_pud')
-        self.log_transformed_sev_scalar_gastritis = kwargs.get('log_transformed_sev_scalar_gastritis')
-        self.log_transformed_sev_scalar_appendicit = kwargs.get('log_transformed_sev_scalar_appendicit')
-        self.log_transformed_sev_scalar_ileus = kwargs.get('log_transformed_sev_scalar_ileus')
-        self.log_transformed_sev_scalar_hernia = kwargs.get('log_transformed_sev_scalar_hernia')
-        self.log_transformed_sev_scalar_ibd = kwargs.get('log_transformed_sev_scalar_ibd')
-        self.log_transformed_sev_scalar_vasc_intest = kwargs.get('log_transformed_sev_scalar_vasc_intest')
-        self.log_transformed_sev_scalar_gall_bile = kwargs.get('log_transformed_sev_scalar_gall_bile')
         self.log_transformed_sev_scalar_pancreatit = kwargs.get('log_transformed_sev_scalar_pancreatit')
-        self.log_transformed_sev_scalar_oth_digest = kwargs.get('log_transformed_sev_scalar_oth_digest')
-        self.log_transformed_sev_scalar_alzheimer = kwargs.get('log_transformed_sev_scalar_alzheimer')
-        self.log_transformed_sev_scalar_parkinson = kwargs.get('log_transformed_sev_scalar_parkinson')
         self.log_transformed_sev_scalar_epilepsy = kwargs.get('log_transformed_sev_scalar_epilepsy')
-        self.log_transformed_sev_scalar_ms = kwargs.get('log_transformed_sev_scalar_ms')
-        self.log_transformed_sev_scalar_migraine = kwargs.get('log_transformed_sev_scalar_migraine')
-        self.log_transformed_sev_scalar_tens_head = kwargs.get('log_transformed_sev_scalar_tens_head')
-        self.log_transformed_sev_scalar_med_head = kwargs.get('log_transformed_sev_scalar_med_head')
-        self.log_transformed_sev_scalar_oth_neuro = kwargs.get('log_transformed_sev_scalar_oth_neuro')
-        self.log_transformed_sev_scalar_schizo = kwargs.get('log_transformed_sev_scalar_schizo')
         self.log_transformed_sev_scalar_depression = kwargs.get('log_transformed_sev_scalar_depression')
         self.log_transformed_sev_scalar_mdd = kwargs.get('log_transformed_sev_scalar_mdd')
-        self.log_transformed_sev_scalar_dysthymia = kwargs.get('log_transformed_sev_scalar_dysthymia')
-        self.log_transformed_sev_scalar_bipolar = kwargs.get('log_transformed_sev_scalar_bipolar')
-        self.log_transformed_sev_scalar_anxiety = kwargs.get('log_transformed_sev_scalar_anxiety')
-        self.log_transformed_sev_scalar_eating = kwargs.get('log_transformed_sev_scalar_eating')
-        self.log_transformed_sev_scalar_anorexia = kwargs.get('log_transformed_sev_scalar_anorexia')
-        self.log_transformed_sev_scalar_bulimia = kwargs.get('log_transformed_sev_scalar_bulimia')
-        self.log_transformed_sev_scalar_asd = kwargs.get('log_transformed_sev_scalar_asd')
-        self.log_transformed_sev_scalar_autism = kwargs.get('log_transformed_sev_scalar_autism')
-        self.log_transformed_sev_scalar_asperger = kwargs.get('log_transformed_sev_scalar_asperger')
-        self.log_transformed_sev_scalar_adhd = kwargs.get('log_transformed_sev_scalar_adhd')
-        self.log_transformed_sev_scalar_conduct = kwargs.get('log_transformed_sev_scalar_conduct')
         self.log_transformed_sev_scalar_id = kwargs.get('log_transformed_sev_scalar_id')
-        self.log_transformed_sev_scalar_oth_ment = kwargs.get('log_transformed_sev_scalar_oth_ment')
-        self.log_transformed_sev_scalar_agn = kwargs.get('log_transformed_sev_scalar_agn')
-        self.log_transformed_sev_scalar_urinary = kwargs.get('log_transformed_sev_scalar_urinary')
-        self.log_transformed_sev_scalar_int_neph = kwargs.get('log_transformed_sev_scalar_int_neph')
-        self.log_transformed_sev_scalar_urolith = kwargs.get('log_transformed_sev_scalar_urolith')
-        self.log_transformed_sev_scalar_bph = kwargs.get('log_transformed_sev_scalar_bph')
-        self.log_transformed_sev_scalar_infert_m = kwargs.get('log_transformed_sev_scalar_infert_m')
-        self.log_transformed_sev_scalar_oth_urin = kwargs.get('log_transformed_sev_scalar_oth_urin')
-        self.log_transformed_sev_scalar_gyne = kwargs.get('log_transformed_sev_scalar_gyne')
-        self.log_transformed_sev_scalar_fibroids = kwargs.get('log_transformed_sev_scalar_fibroids')
-        self.log_transformed_sev_scalar_pcos = kwargs.get('log_transformed_sev_scalar_pcos')
-        self.log_transformed_sev_scalar_infert_f = kwargs.get('log_transformed_sev_scalar_infert_f')
-        self.log_transformed_sev_scalar_endomet = kwargs.get('log_transformed_sev_scalar_endomet')
-        self.log_transformed_sev_scalar_prolapse = kwargs.get('log_transformed_sev_scalar_prolapse')
-        self.log_transformed_sev_scalar_pms = kwargs.get('log_transformed_sev_scalar_pms')
-        self.log_transformed_sev_scalar_oth_gyne = kwargs.get('log_transformed_sev_scalar_oth_gyne')
-        self.log_transformed_sev_scalar_hemog = kwargs.get('log_transformed_sev_scalar_hemog')
-        self.log_transformed_sev_scalar_thalass = kwargs.get('log_transformed_sev_scalar_thalass')
-        self.log_transformed_sev_scalar_sickle = kwargs.get('log_transformed_sev_scalar_sickle')
-        self.log_transformed_sev_scalar_g6pd = kwargs.get('log_transformed_sev_scalar_g6pd')
-        self.log_transformed_sev_scalar_oth_hem = kwargs.get('log_transformed_sev_scalar_oth_hem')
-        self.log_transformed_sev_scalar_endocrine = kwargs.get('log_transformed_sev_scalar_endocrine')
-        self.log_transformed_sev_scalar_rheu_arth = kwargs.get('log_transformed_sev_scalar_rheu_arth')
         self.log_transformed_sev_scalar_osteoarth = kwargs.get('log_transformed_sev_scalar_osteoarth')
         self.log_transformed_sev_scalar_back_and_upneck = kwargs.get('log_transformed_sev_scalar_back_and_upneck')
         self.log_transformed_sev_scalar_back_pain = kwargs.get('log_transformed_sev_scalar_back_pain')
-        self.log_transformed_sev_scalar_neck_pain = kwargs.get('log_transformed_sev_scalar_neck_pain')
         self.log_transformed_sev_scalar_gout = kwargs.get('log_transformed_sev_scalar_gout')
-        self.log_transformed_sev_scalar_oth_msk = kwargs.get('log_transformed_sev_scalar_oth_msk')
-        self.log_transformed_sev_scalar_congenital = kwargs.get('log_transformed_sev_scalar_congenital')
-        self.log_transformed_sev_scalar_neur_tube = kwargs.get('log_transformed_sev_scalar_neur_tube')
-        self.log_transformed_sev_scalar_cong_heart = kwargs.get('log_transformed_sev_scalar_cong_heart')
-        self.log_transformed_sev_scalar_cleft = kwargs.get('log_transformed_sev_scalar_cleft')
-        self.log_transformed_sev_scalar_down = kwargs.get('log_transformed_sev_scalar_down')
-        self.log_transformed_sev_scalar_turner = kwargs.get('log_transformed_sev_scalar_turner')
-        self.log_transformed_sev_scalar_klinefelter = kwargs.get('log_transformed_sev_scalar_klinefelter')
-        self.log_transformed_sev_scalar_chrom_unb = kwargs.get('log_transformed_sev_scalar_chrom_unb')
-        self.log_transformed_sev_scalar_oth_cong = kwargs.get('log_transformed_sev_scalar_oth_cong')
-        self.log_transformed_sev_scalar_skin = kwargs.get('log_transformed_sev_scalar_skin')
-        self.log_transformed_sev_scalar_dermatitis = kwargs.get('log_transformed_sev_scalar_dermatitis')
-        self.log_transformed_sev_scalar_psoriasis = kwargs.get('log_transformed_sev_scalar_psoriasis')
-        self.log_transformed_sev_scalar_cellulitis = kwargs.get('log_transformed_sev_scalar_cellulitis')
-        self.log_transformed_sev_scalar_pyoderma = kwargs.get('log_transformed_sev_scalar_pyoderma')
-        self.log_transformed_sev_scalar_scabies = kwargs.get('log_transformed_sev_scalar_scabies')
-        self.log_transformed_sev_scalar_skin_fung = kwargs.get('log_transformed_sev_scalar_skin_fung')
-        self.log_transformed_sev_scalar_skin_viral = kwargs.get('log_transformed_sev_scalar_skin_viral')
-        self.log_transformed_sev_scalar_acne = kwargs.get('log_transformed_sev_scalar_acne')
-        self.log_transformed_sev_scalar_alopecia = kwargs.get('log_transformed_sev_scalar_alopecia')
-        self.log_transformed_sev_scalar_pruritus = kwargs.get('log_transformed_sev_scalar_pruritus')
-        self.log_transformed_sev_scalar_urticaria = kwargs.get('log_transformed_sev_scalar_urticaria')
-        self.log_transformed_sev_scalar_decubitus = kwargs.get('log_transformed_sev_scalar_decubitus')
-        self.log_transformed_sev_scalar_oth_skin = kwargs.get('log_transformed_sev_scalar_oth_skin')
         self.log_transformed_sev_scalar_sense = kwargs.get('log_transformed_sev_scalar_sense')
-        self.log_transformed_sev_scalar_glaucoma = kwargs.get('log_transformed_sev_scalar_glaucoma')
         self.log_transformed_sev_scalar_cataract = kwargs.get('log_transformed_sev_scalar_cataract')
-        self.log_transformed_sev_scalar_macular = kwargs.get('log_transformed_sev_scalar_macular')
-        self.log_transformed_sev_scalar_refraction = kwargs.get('log_transformed_sev_scalar_refraction')
         self.log_transformed_sev_scalar_hearing = kwargs.get('log_transformed_sev_scalar_hearing')
-        self.log_transformed_sev_scalar_oth_vision = kwargs.get('log_transformed_sev_scalar_oth_vision')
-        self.log_transformed_sev_scalar_oth_sense = kwargs.get('log_transformed_sev_scalar_oth_sense')
-        self.log_transformed_sev_scalar_oral = kwargs.get('log_transformed_sev_scalar_oral')
-        self.log_transformed_sev_scalar_dec_caries = kwargs.get('log_transformed_sev_scalar_dec_caries')
-        self.log_transformed_sev_scalar_per_caries = kwargs.get('log_transformed_sev_scalar_per_caries')
-        self.log_transformed_sev_scalar_period = kwargs.get('log_transformed_sev_scalar_period')
-        self.log_transformed_sev_scalar_edentul = kwargs.get('log_transformed_sev_scalar_edentul')
-        self.log_transformed_sev_scalar_oth_oral = kwargs.get('log_transformed_sev_scalar_oth_oral')
-        self.log_transformed_sev_scalar_sids = kwargs.get('log_transformed_sev_scalar_sids')
         self.log_transformed_sev_scalar_road_inj = kwargs.get('log_transformed_sev_scalar_road_inj')
         self.log_transformed_sev_scalar_pedest = kwargs.get('log_transformed_sev_scalar_pedest')
         self.log_transformed_sev_scalar_cyclist = kwargs.get('log_transformed_sev_scalar_cyclist')
@@ -1441,13 +622,11 @@ class Covariates(GbdRecord):
         self.log_transformed_sev_scalar_mech_gun = kwargs.get('log_transformed_sev_scalar_mech_gun')
         self.log_transformed_sev_scalar_mech_suff = kwargs.get('log_transformed_sev_scalar_mech_suff')
         self.log_transformed_sev_scalar_oth_mech = kwargs.get('log_transformed_sev_scalar_oth_mech')
-        self.log_transformed_sev_scalar_med_treat = kwargs.get('log_transformed_sev_scalar_med_treat')
         self.log_transformed_sev_scalar_animal = kwargs.get('log_transformed_sev_scalar_animal')
         self.log_transformed_sev_scalar_venom = kwargs.get('log_transformed_sev_scalar_venom')
         self.log_transformed_sev_scalar_non_ven = kwargs.get('log_transformed_sev_scalar_non_ven')
         self.log_transformed_sev_scalar_f_body = kwargs.get('log_transformed_sev_scalar_f_body')
         self.log_transformed_sev_scalar_f_body_asp = kwargs.get('log_transformed_sev_scalar_f_body_asp')
-        self.log_transformed_sev_scalar_f_body_eye = kwargs.get('log_transformed_sev_scalar_f_body_eye')
         self.log_transformed_sev_scalar_oth_f_body = kwargs.get('log_transformed_sev_scalar_oth_f_body')
         self.log_transformed_sev_scalar_oth_unint = kwargs.get('log_transformed_sev_scalar_oth_unint')
         self.log_transformed_sev_scalar_self_harm = kwargs.get('log_transformed_sev_scalar_self_harm')
@@ -1455,19 +634,9 @@ class Covariates(GbdRecord):
         self.log_transformed_sev_scalar_viol_gun = kwargs.get('log_transformed_sev_scalar_viol_gun')
         self.log_transformed_sev_scalar_viol_knife = kwargs.get('log_transformed_sev_scalar_viol_knife')
         self.log_transformed_sev_scalar_oth_viol = kwargs.get('log_transformed_sev_scalar_oth_viol')
-        self.log_transformed_sev_scalar_disaster = kwargs.get('log_transformed_sev_scalar_disaster')
-        self.log_transformed_sev_scalar_war = kwargs.get('log_transformed_sev_scalar_war')
-        self.log_transformed_sev_scalar_mat_hiv = kwargs.get('log_transformed_sev_scalar_mat_hiv')
-        self.log_transformed_sev_scalar_thalass_trait = kwargs.get('log_transformed_sev_scalar_thalass_trait')
-        self.log_transformed_sev_scalar_sickle_trait = kwargs.get('log_transformed_sev_scalar_sickle_trait')
-        self.log_transformed_sev_scalar_g6pd_trait = kwargs.get('log_transformed_sev_scalar_g6pd_trait')
         self.log_transformed_age_standardized_sev_scalar_tb = kwargs.get('log_transformed_age_standardized_sev_scalar_tb')
-        self.log_transformed_age_standardized_sev_scalar_hiv_myco = kwargs.get('log_transformed_age_standardized_sev_scalar_hiv_myco')
         self.log_transformed_age_standardized_sev_scalar_oth_hiv = kwargs.get('log_transformed_age_standardized_sev_scalar_oth_hiv')
         self.log_transformed_age_standardized_sev_scalar_diarrhea = kwargs.get('log_transformed_age_standardized_sev_scalar_diarrhea')
-        self.log_transformed_age_standardized_sev_scalar_intest_inf = kwargs.get('log_transformed_age_standardized_sev_scalar_intest_inf')
-        self.log_transformed_age_standardized_sev_scalar_typhoid = kwargs.get('log_transformed_age_standardized_sev_scalar_typhoid')
-        self.log_transformed_age_standardized_sev_scalar_paratyph = kwargs.get('log_transformed_age_standardized_sev_scalar_paratyph')
         self.log_transformed_age_standardized_sev_scalar_lri = kwargs.get('log_transformed_age_standardized_sev_scalar_lri')
         self.log_transformed_age_standardized_sev_scalar_uri = kwargs.get('log_transformed_age_standardized_sev_scalar_uri')
         self.log_transformed_age_standardized_sev_scalar_otitis = kwargs.get('log_transformed_age_standardized_sev_scalar_otitis')
@@ -1513,22 +682,14 @@ class Covariates(GbdRecord):
         self.log_transformed_age_standardized_sev_scalar_endocar = kwargs.get('log_transformed_age_standardized_sev_scalar_endocar')
         self.log_transformed_age_standardized_sev_scalar_oth_cardio = kwargs.get('log_transformed_age_standardized_sev_scalar_oth_cardio')
         self.log_transformed_age_standardized_sev_scalar_copd = kwargs.get('log_transformed_age_standardized_sev_scalar_copd')
-        self.log_transformed_age_standardized_sev_scalar_pneumocon = kwargs.get('log_transformed_age_standardized_sev_scalar_pneumocon')
-        self.log_transformed_age_standardized_sev_scalar_silicosis = kwargs.get('log_transformed_age_standardized_sev_scalar_silicosis')
-        self.log_transformed_age_standardized_sev_scalar_asbestosis = kwargs.get('log_transformed_age_standardized_sev_scalar_asbestosis')
-        self.log_transformed_age_standardized_sev_scalar_coal_w = kwargs.get('log_transformed_age_standardized_sev_scalar_coal_w')
-        self.log_transformed_age_standardized_sev_scalar_oth_pneum = kwargs.get('log_transformed_age_standardized_sev_scalar_oth_pneum')
         self.log_transformed_age_standardized_sev_scalar_asthma = kwargs.get('log_transformed_age_standardized_sev_scalar_asthma')
-        self.log_transformed_age_standardized_sev_scalar_ild = kwargs.get('log_transformed_age_standardized_sev_scalar_ild')
         self.log_transformed_age_standardized_sev_scalar_oth_resp = kwargs.get('log_transformed_age_standardized_sev_scalar_oth_resp')
         self.log_transformed_age_standardized_sev_scalar_cirr_hepb = kwargs.get('log_transformed_age_standardized_sev_scalar_cirr_hepb')
         self.log_transformed_age_standardized_sev_scalar_cirr_hepc = kwargs.get('log_transformed_age_standardized_sev_scalar_cirr_hepc')
-        self.log_transformed_age_standardized_sev_scalar_oth_cirr = kwargs.get('log_transformed_age_standardized_sev_scalar_oth_cirr')
         self.log_transformed_age_standardized_sev_scalar_pancreatit = kwargs.get('log_transformed_age_standardized_sev_scalar_pancreatit')
         self.log_transformed_age_standardized_sev_scalar_epilepsy = kwargs.get('log_transformed_age_standardized_sev_scalar_epilepsy')
         self.log_transformed_age_standardized_sev_scalar_depression = kwargs.get('log_transformed_age_standardized_sev_scalar_depression')
         self.log_transformed_age_standardized_sev_scalar_mdd = kwargs.get('log_transformed_age_standardized_sev_scalar_mdd')
-        self.log_transformed_age_standardized_sev_scalar_dysthymia = kwargs.get('log_transformed_age_standardized_sev_scalar_dysthymia')
         self.log_transformed_age_standardized_sev_scalar_id = kwargs.get('log_transformed_age_standardized_sev_scalar_id')
         self.log_transformed_age_standardized_sev_scalar_osteoarth = kwargs.get('log_transformed_age_standardized_sev_scalar_osteoarth')
         self.log_transformed_age_standardized_sev_scalar_back_and_upneck = kwargs.get('log_transformed_age_standardized_sev_scalar_back_and_upneck')
@@ -1557,7 +718,6 @@ class Covariates(GbdRecord):
         self.log_transformed_age_standardized_sev_scalar_non_ven = kwargs.get('log_transformed_age_standardized_sev_scalar_non_ven')
         self.log_transformed_age_standardized_sev_scalar_f_body = kwargs.get('log_transformed_age_standardized_sev_scalar_f_body')
         self.log_transformed_age_standardized_sev_scalar_f_body_asp = kwargs.get('log_transformed_age_standardized_sev_scalar_f_body_asp')
-        self.log_transformed_age_standardized_sev_scalar_f_body_eye = kwargs.get('log_transformed_age_standardized_sev_scalar_f_body_eye')
         self.log_transformed_age_standardized_sev_scalar_oth_f_body = kwargs.get('log_transformed_age_standardized_sev_scalar_oth_f_body')
         self.log_transformed_age_standardized_sev_scalar_oth_unint = kwargs.get('log_transformed_age_standardized_sev_scalar_oth_unint')
         self.log_transformed_age_standardized_sev_scalar_self_harm = kwargs.get('log_transformed_age_standardized_sev_scalar_self_harm')
@@ -1565,8 +725,6 @@ class Covariates(GbdRecord):
         self.log_transformed_age_standardized_sev_scalar_viol_gun = kwargs.get('log_transformed_age_standardized_sev_scalar_viol_gun')
         self.log_transformed_age_standardized_sev_scalar_viol_knife = kwargs.get('log_transformed_age_standardized_sev_scalar_viol_knife')
         self.log_transformed_age_standardized_sev_scalar_oth_viol = kwargs.get('log_transformed_age_standardized_sev_scalar_oth_viol')
-        self.log_transformed_age_standardized_sev_scalar_disaster = kwargs.get('log_transformed_age_standardized_sev_scalar_disaster')
-        self.h5n1_epidemic_years_binary = kwargs.get('h5n1_epidemic_years_binary')
         self.education_age_standardized = kwargs.get('education_age_standardized')
         self.meningitis_belt_proportion = kwargs.get('meningitis_belt_proportion')
         self.gdp_per_capita_base_2010 = kwargs.get('gdp_per_capita_base_2010')
@@ -1576,42 +734,29 @@ class Covariates(GbdRecord):
         self.malaria_incidence_from_map_estimates_africa = kwargs.get('malaria_incidence_from_map_estimates_africa')
         self.dengue_reporting_trends_transformed_into_relative_risks_relative_to_that_countrys_mean_incidence = kwargs.get('dengue_reporting_trends_transformed_into_relative_risks_relative_to_that_countrys_mean_incidence')
         self.echinococcosis_endemicity = kwargs.get('echinococcosis_endemicity')
-        self.echinococcosis_presence = kwargs.get('echinococcosis_presence')
         self.socio_demographic_index = kwargs.get('socio_demographic_index')
         self.japanese_encelphalitis_endemic_area_binary = kwargs.get('japanese_encelphalitis_endemic_area_binary')
         self.calcium_adjusted_g = kwargs.get('calcium_adjusted_g')
         self.calcium_unadjusted_g = kwargs.get('calcium_unadjusted_g')
-        self.diet_cholesterol_adjusted_mg = kwargs.get('diet_cholesterol_adjusted_mg')
-        self.diet_cholesterol_unadjusted_mg = kwargs.get('diet_cholesterol_unadjusted_mg')
         self.fiber_adjusted_g = kwargs.get('fiber_adjusted_g')
         self.fiber_unadjusted_g = kwargs.get('fiber_unadjusted_g')
         self.omega_3_adjusted_g = kwargs.get('omega_3_adjusted_g')
-        self.omega_3_unadjusted_g = kwargs.get('omega_3_unadjusted_g')
         self.fruits_adjusted_g = kwargs.get('fruits_adjusted_g')
         self.fruits_unadjusted_g = kwargs.get('fruits_unadjusted_g')
         self.milk_adjusted_g = kwargs.get('milk_adjusted_g')
         self.milk_unadjusted_g = kwargs.get('milk_unadjusted_g')
         self.nuts_seeds_adjusted_g = kwargs.get('nuts_seeds_adjusted_g')
-        self.nuts_seeds_unadjusted_g = kwargs.get('nuts_seeds_unadjusted_g')
         self.pufa_adjusted_percent = kwargs.get('pufa_adjusted_percent')
         self.pulses_legumes_adjusted_g = kwargs.get('pulses_legumes_adjusted_g')
-        self.pulses_legumes_unadjusted_g = kwargs.get('pulses_legumes_unadjusted_g')
         self.red_meats_adjusted_g = kwargs.get('red_meats_adjusted_g')
         self.red_meats_unadjusted_g = kwargs.get('red_meats_unadjusted_g')
-        self.salt_adjusted_mg = kwargs.get('salt_adjusted_mg')
-        self.salt_unadjusted_mg = kwargs.get('salt_unadjusted_mg')
         self.saturated_fats_adjusted_percent = kwargs.get('saturated_fats_adjusted_percent')
-        self.stimulants_adjusted_g = kwargs.get('stimulants_adjusted_g')
-        self.stimulants_unadjusted_g = kwargs.get('stimulants_unadjusted_g')
         self.sugar_adjusted_g = kwargs.get('sugar_adjusted_g')
         self.sugar_unadjusted_g = kwargs.get('sugar_unadjusted_g')
         self.vegetables_adjusted_g = kwargs.get('vegetables_adjusted_g')
         self.vegetables_unadjusted_g = kwargs.get('vegetables_unadjusted_g')
-        self.whole_grains_adjusted_g = kwargs.get('whole_grains_adjusted_g')
-        self.whole_grains_unadjusted_g = kwargs.get('whole_grains_unadjusted_g')
         self.energy_unadjusted_kcal = kwargs.get('energy_unadjusted_kcal')
         self.interaction_of_prevalence_weighted_drug_resistance_and_malaria_incidence = kwargs.get('interaction_of_prevalence_weighted_drug_resistance_and_malaria_incidence')
-        self.migration_rate_per_1000_population = kwargs.get('migration_rate_per_1000_population')
         self.hiv_mortality_females_10_54 = kwargs.get('hiv_mortality_females_10_54')
         self.hiv_age_standardized_prevalence = kwargs.get('hiv_age_standardized_prevalence')
         self.log_transformed_age_standardized_sev_scalar_maternal = kwargs.get('log_transformed_age_standardized_sev_scalar_maternal')
@@ -1628,13 +773,10 @@ class Covariates(GbdRecord):
         self.log_transformed_sev_scalar_digestive = kwargs.get('log_transformed_sev_scalar_digestive')
         self.log_transformed_sev_scalar_msk = kwargs.get('log_transformed_sev_scalar_msk')
         self.log_transformed_sev_scalar_trans_inj = kwargs.get('log_transformed_sev_scalar_trans_inj')
-        self.proportion_of_total_population_in_japanese_encephalitis_endemic_area_india = kwargs.get('proportion_of_total_population_in_japanese_encephalitis_endemic_area_india')
         self.vitamin_a_unadjusted_iu = kwargs.get('vitamin_a_unadjusted_iu')
         self.vitamin_a_rae_unadjusted_ug = kwargs.get('vitamin_a_rae_unadjusted_ug')
         self.vitamin_a_retinol_unadjusted_ug = kwargs.get('vitamin_a_retinol_unadjusted_ug')
         self.dietary_zinc_unadjusted_mg = kwargs.get('dietary_zinc_unadjusted_mg')
-        self.death_and_ncc_prevalence_ratio = kwargs.get('death_and_ncc_prevalence_ratio')
-        self.cysticercosis_deaths_to_epilepsy_prevalence_ratio = kwargs.get('cysticercosis_deaths_to_epilepsy_prevalence_ratio')
         self.proportion_of_total_population_covered_by_menafrivac_initiative_meningitis_meningococcal_type_a_vaccine = kwargs.get('proportion_of_total_population_covered_by_menafrivac_initiative_meningitis_meningococcal_type_a_vaccine')
         self.stunting_proportion_less_than_2sd_height_for_age_less_than_5_years = kwargs.get('stunting_proportion_less_than_2sd_height_for_age_less_than_5_years')
         self.wasting_proportion_less_than_2sd_weight_for_height_less_than_5_years = kwargs.get('wasting_proportion_less_than_2sd_weight_for_height_less_than_5_years')
@@ -1654,143 +796,67 @@ class Covariates(GbdRecord):
         self.seroprevalence_of_anti_hav_igg = kwargs.get('seroprevalence_of_anti_hav_igg')
         self.seroprevalence_of_anti_hev_igg = kwargs.get('seroprevalence_of_anti_hev_igg')
         self.major_depressive_disorder = kwargs.get('major_depressive_disorder')
-        self.proportion_of_population_involved_in_agricultural_activities = kwargs.get('proportion_of_population_involved_in_agricultural_activities')
-        self.prevalence_of_binge_drinking_male = kwargs.get('prevalence_of_binge_drinking_male')
         self.health_expenditure_per_capita = kwargs.get('health_expenditure_per_capita')
         self.risk_of_selfharm_due_to_major_depressive_disorder = kwargs.get('risk_of_selfharm_due_to_major_depressive_disorder')
-        self.trans_fatty_acid_bans = kwargs.get('trans_fatty_acid_bans')
-        self.oop_health_expenditure_per_capita = kwargs.get('oop_health_expenditure_per_capita')
         self.fraction_of_oop_health_expenditure = kwargs.get('fraction_of_oop_health_expenditure')
-        self.lag_distributed_energy = kwargs.get('lag_distributed_energy')
-        self.art_coverage = kwargs.get('art_coverage')
-        self.tuberculosis_case_detection = kwargs.get('tuberculosis_case_detection')
         self.universal_health_coverage = kwargs.get('universal_health_coverage')
         self.maternal_alcohol_consumption_during_pregnancy_proportion = kwargs.get('maternal_alcohol_consumption_during_pregnancy_proportion')
         self.healthcare_access_and_quality_index = kwargs.get('healthcare_access_and_quality_index')
         self.age_standardized_proportion_adult_underweight = kwargs.get('age_standardized_proportion_adult_underweight')
-        self.reproductive_age_standardized_diabetes_prevalence_10_54_yrs_females = kwargs.get('reproductive_age_standardized_diabetes_prevalence_10_54_yrs_females')
         self.ors_oral_rehydration = kwargs.get('ors_oral_rehydration')
         self.antibiotics_for_lri = kwargs.get('antibiotics_for_lri')
-        self.zinc_treatment = kwargs.get('zinc_treatment')
-        self.antibiotics_for_diarrhea = kwargs.get('antibiotics_for_diarrhea')
         self.live_births_by_sex = kwargs.get('live_births_by_sex')
         self.age_standardized_melanoma = kwargs.get('age_standardized_melanoma')
         self.measles_vaccine_coverage_2_doses_proportion = kwargs.get('measles_vaccine_coverage_2_doses_proportion')
-        self.sth_school_based_mda = kwargs.get('sth_school_based_mda')
         self.schisto_cumulative_treatments = kwargs.get('schisto_cumulative_treatments')
-        self.health_worker_density = kwargs.get('health_worker_density')
-        self.proportion_of_fevers_receiving_effective_treatment = kwargs.get('proportion_of_fevers_receiving_effective_treatment')
         self.iron_energy_unadjusted_mg = kwargs.get('iron_energy_unadjusted_mg')
-        self.corn_energy_adjusted_g = kwargs.get('corn_energy_adjusted_g')
-        self.corn_energy_unadjusted_g = kwargs.get('corn_energy_unadjusted_g')
-        self.eggs_energy_adjusted_g = kwargs.get('eggs_energy_adjusted_g')
-        self.eggs_energy_unadjusted_g = kwargs.get('eggs_energy_unadjusted_g')
-        self.fish_energy_adjusted_g = kwargs.get('fish_energy_adjusted_g')
-        self.fish_energy_unadjusted_g = kwargs.get('fish_energy_unadjusted_g')
-        self.potatoes_energy_adjusted_g = kwargs.get('potatoes_energy_adjusted_g')
-        self.potatoes_energy_unadjusted_g = kwargs.get('potatoes_energy_unadjusted_g')
-        self.poultry_energy_adjusted_g = kwargs.get('poultry_energy_adjusted_g')
         self.poultry_energy_unadjusted_g = kwargs.get('poultry_energy_unadjusted_g')
-        self.rice_energy_adjusted_g = kwargs.get('rice_energy_adjusted_g')
-        self.rice_energy_unadjusted_g = kwargs.get('rice_energy_unadjusted_g')
-        self.sweet_energy_potato_adjusted_g = kwargs.get('sweet_energy_potato_adjusted_g')
-        self.sweet_energy_potato_unadjusted_g = kwargs.get('sweet_energy_potato_unadjusted_g')
         self.malaria_pfpr_map = kwargs.get('malaria_pfpr_map')
         self.malaria_incidence_map = kwargs.get('malaria_incidence_map')
         self.antimalarial_effective_treatment_ratio_map = kwargs.get('antimalarial_effective_treatment_ratio_map')
         self.antimalarial_effective_treatment_map = kwargs.get('antimalarial_effective_treatment_map')
-        self.risk_of_selfharm_due_to_schizophrenia = kwargs.get('risk_of_selfharm_due_to_schizophrenia')
-        self.risk_of_selfharm_due_to_anxiety_disorders = kwargs.get('risk_of_selfharm_due_to_anxiety_disorders')
-        self.risk_of_selfharm_due_to_bipolar_disorder = kwargs.get('risk_of_selfharm_due_to_bipolar_disorder')
         self.mean_birth_weight = kwargs.get('mean_birth_weight')
-        self.mean_weight_for_height_z_score_whz_0_5_years = kwargs.get('mean_weight_for_height_z_score_whz_0_5_years')
-        self.mean_weight_for_age_z_score_waz_0_5_years = kwargs.get('mean_weight_for_age_z_score_waz_0_5_years')
-        self.mean_height_for_age_z_score_haz_0_5_years = kwargs.get('mean_height_for_age_z_score_haz_0_5_years')
         self.mean_hemoglobin_concentration_age_standardized = kwargs.get('mean_hemoglobin_concentration_age_standardized')
-        self.birth_prevalence_of_fetal_alcohol_syndrome_per_1000 = kwargs.get('birth_prevalence_of_fetal_alcohol_syndrome_per_1000')
         self.age_standardized_prevalence_of_cocaine_dependence_in_women_of_reproductive_age = kwargs.get('age_standardized_prevalence_of_cocaine_dependence_in_women_of_reproductive_age')
-        self.age_standardized_prevalence_of_amphetamine_dependence_in_women_of_reproductive_age = kwargs.get('age_standardized_prevalence_of_amphetamine_dependence_in_women_of_reproductive_age')
         self.age_standardized_prevalence_of_opioid_dependence_in_women_of_reproductive_age = kwargs.get('age_standardized_prevalence_of_opioid_dependence_in_women_of_reproductive_age')
         self.age_standardized_prevalence_of_cannabis_dependence_in_women_of_reproductive_age = kwargs.get('age_standardized_prevalence_of_cannabis_dependence_in_women_of_reproductive_age')
-        self.age_standardized_prevalence_of_total_drug_dependence_in_women_of_reproductive_age = kwargs.get('age_standardized_prevalence_of_total_drug_dependence_in_women_of_reproductive_age')
         self.rubella_vaccine_coverage_proportion = kwargs.get('rubella_vaccine_coverage_proportion')
         self.tuberculosis_infection_risk_weighted_prevalence_age_standardized = kwargs.get('tuberculosis_infection_risk_weighted_prevalence_age_standardized')
-        self.presenting_vision_impairment = kwargs.get('presenting_vision_impairment')
         self.ten_year_lag_distributed_energy_per_capita = kwargs.get('ten_year_lag_distributed_energy_per_capita')
-        self.alcohol_consumption_female_reproductive_age_standardized_grams_per_day = kwargs.get('alcohol_consumption_female_reproductive_age_standardized_grams_per_day')
-        self.alcohol_consumption_female_reproductive_age_standardized_proportion = kwargs.get('alcohol_consumption_female_reproductive_age_standardized_proportion')
         self.folic_acid_unadjusted_ug = kwargs.get('folic_acid_unadjusted_ug')
         self.smooth_outphase_of_leaded_gasoline = kwargs.get('smooth_outphase_of_leaded_gasoline')
-        self.no_access_to_handwashing_facility = kwargs.get('no_access_to_handwashing_facility')
-        self.residential_radon = kwargs.get('residential_radon')
         self.lead_exposure = kwargs.get('lead_exposure')
         self.discontinued_breastfeeding_sev = kwargs.get('discontinued_breastfeeding_sev')
         self.zinc_deficiency = kwargs.get('zinc_deficiency')
-        self.diet_low_in_whole_grains = kwargs.get('diet_low_in_whole_grains')
-        self.diet_high_in_processed_meat = kwargs.get('diet_high_in_processed_meat')
         self.diet_high_in_trans_fatty_acids = kwargs.get('diet_high_in_trans_fatty_acids')
         self.diet_high_in_sodium = kwargs.get('diet_high_in_sodium')
-        self.low_physical_activity_sev = kwargs.get('low_physical_activity_sev')
         self.tuberculosis_prevalence_age_standardized = kwargs.get('tuberculosis_prevalence_age_standardized')
         self.low_bone_mineral_density = kwargs.get('low_bone_mineral_density')
         self.age_standardized_bone_mineral_density_among_population_age_60_and_up_years = kwargs.get('age_standardized_bone_mineral_density_among_population_age_60_and_up_years')
         self.malnutrition_shock_log_transformed_mortality_rate = kwargs.get('malnutrition_shock_log_transformed_mortality_rate')
         self.malnutrition_shock_mortality_rate = kwargs.get('malnutrition_shock_mortality_rate')
         self.mean_war_mortality_rate_in_the_previous_ten_years = kwargs.get('mean_war_mortality_rate_in_the_previous_ten_years')
-        self.shock_log_transformed_mortality_rate = kwargs.get('shock_log_transformed_mortality_rate')
-        self.shock_mortality_rate = kwargs.get('shock_mortality_rate')
-        self.disaster_log_transformed_mortality_rate = kwargs.get('disaster_log_transformed_mortality_rate')
-        self.disaster_mortality_rate = kwargs.get('disaster_mortality_rate')
-        self.state_actor_violence_log_transformed_mortality_rate = kwargs.get('state_actor_violence_log_transformed_mortality_rate')
-        self.state_actor_violence_mortality_rate = kwargs.get('state_actor_violence_mortality_rate')
-        self.war_log_transformed_mortality_rate = kwargs.get('war_log_transformed_mortality_rate')
-        self.war_mortality_rate = kwargs.get('war_mortality_rate')
-        self.age_standardized_melanoma_incidence = kwargs.get('age_standardized_melanoma_incidence')
         self.alcohol_abstainer_proportion_age_standardized = kwargs.get('alcohol_abstainer_proportion_age_standardized')
         self.log_transformed_age_standardized_sev_scalar_for_both_sexes_combined_tb = kwargs.get('log_transformed_age_standardized_sev_scalar_for_both_sexes_combined_tb')
         self.secondhand_smoke = kwargs.get('secondhand_smoke')
-        self.saturated_fatty_acid_consumption__percent_of_total_dietary_energy = kwargs.get('saturated_fatty_acid_consumption__percent_of_total_dietary_energy')
-        self.asbestos_consumption_metric_tons_per_year_per_capita = kwargs.get('asbestos_consumption_metric_tons_per_year_per_capita')
         self.visceral_leishmaniasis_incidence = kwargs.get('visceral_leishmaniasis_incidence')
         self.homicide_rate_sex_specific = kwargs.get('homicide_rate_sex_specific')
-        self.op_visits_per_cap = kwargs.get('op_visits_per_cap')
-        self.ip_admissons_per_cap = kwargs.get('ip_admissons_per_cap')
         self.non_partner_lifetime_prevalence_of_sexual_violence_female_only = kwargs.get('non_partner_lifetime_prevalence_of_sexual_violence_female_only')
         self.all_age_underweight = kwargs.get('all_age_underweight')
         self.zinc_treatment_for_diarrhea = kwargs.get('zinc_treatment_for_diarrhea')
         self.fortification_standard = kwargs.get('fortification_standard')
         self.fortification_standard_including_folic_acid = kwargs.get('fortification_standard_including_folic_acid')
         self.adult_hiv_crude_death_rate = kwargs.get('adult_hiv_crude_death_rate')
-        self.demand_for_contraception_satisfied_with_modern_methods = kwargs.get('demand_for_contraception_satisfied_with_modern_methods')
-        self.demand_for_contraception_satisfied_with_modern_methods_by_age = kwargs.get('demand_for_contraception_satisfied_with_modern_methods_by_age')
-        self.long_term_population_weighted_mean_temperature = kwargs.get('long_term_population_weighted_mean_temperature')
         self.polio_3_dose_coverage_proportion = kwargs.get('polio_3_dose_coverage_proportion')
         self.hepatitis_b_3_dose_coverage_proportion = kwargs.get('hepatitis_b_3_dose_coverage_proportion')
-        self.proportion_of_the_population_from_east_africa_india_central_asia = kwargs.get('proportion_of_the_population_from_east_africa_india_central_asia')
-        self.proportion_of_the_population_from_west_africa = kwargs.get('proportion_of_the_population_from_west_africa')
-        self.proportion_of_the_population_from_euro_america = kwargs.get('proportion_of_the_population_from_euro_america')
-        self.proportion_of_the_population_from_east_asia = kwargs.get('proportion_of_the_population_from_east_asia')
-        self.proportion_of_the_population_from_indo_oceania = kwargs.get('proportion_of_the_population_from_indo_oceania')
         self.composite_fortification_standard_and_folic_acid_inclusion = kwargs.get('composite_fortification_standard_and_folic_acid_inclusion')
-        self.intravenous_drug_use_proportion_by_age = kwargs.get('intravenous_drug_use_proportion_by_age')
         self.intravenous_drug_use_age_standardized_proportion = kwargs.get('intravenous_drug_use_age_standardized_proportion')
-        self.hepatitis_a_infection_incidence = kwargs.get('hepatitis_a_infection_incidence')
         self.alcohol_consumption_age_standardized_in_grams_per_day = kwargs.get('alcohol_consumption_age_standardized_in_grams_per_day')
         self.alcohol_drinker_proportion_age_standardized = kwargs.get('alcohol_drinker_proportion_age_standardized')
-        self.hepatitis_b_infection_incidence = kwargs.get('hepatitis_b_infection_incidence')
-        self.hepatitis_c_infection_incidence = kwargs.get('hepatitis_c_infection_incidence')
-        self.hepatitis_e_infection_incidence = kwargs.get('hepatitis_e_infection_incidence')
         self.proportion_of_liver_cancer_due_to_nash_age_standardized = kwargs.get('proportion_of_liver_cancer_due_to_nash_age_standardized')
         self.proportion_of_cirrhosis_due_to_nash = kwargs.get('proportion_of_cirrhosis_due_to_nash')
         self.muslim_religion_proportion_of_population = kwargs.get('muslim_religion_proportion_of_population')
-        self.echino_endemicity_level_1 = kwargs.get('echino_endemicity_level_1')
-        self.echino_endemicity_level_2 = kwargs.get('echino_endemicity_level_2')
-        self.echino_endemicity_level_3 = kwargs.get('echino_endemicity_level_3')
         self.tb_strain_prevalence_weighted_transmission_rr = kwargs.get('tb_strain_prevalence_weighted_transmission_rr')
-        self.tb_strain_prevalence_weighted_treatment_failure_rr = kwargs.get('tb_strain_prevalence_weighted_treatment_failure_rr')
-        self.tb_strain_prevalence_weighted_treatment_delay_rr = kwargs.get('tb_strain_prevalence_weighted_treatment_delay_rr')
-        self.preterm_birth_prevalence_less_than_37_weeks_of_gestation = kwargs.get('preterm_birth_prevalence_less_than_37_weeks_of_gestation')
-        self.extremely_preterm_birth_prevalence_less_than_28_weeks_of_gestation = kwargs.get('extremely_preterm_birth_prevalence_less_than_28_weeks_of_gestation')
         self.short_gestation_sev_all_ages_by_sex = kwargs.get('short_gestation_sev_all_ages_by_sex')
         self.age_and_sex_specific_underweight_weight_for_age_sev = kwargs.get('age_and_sex_specific_underweight_weight_for_age_sev')
         self.age_standardized_underweight_weight_for_age_sev = kwargs.get('age_standardized_underweight_weight_for_age_sev')
@@ -1799,10 +865,6 @@ class Covariates(GbdRecord):
         self.age_and_sex_specific_wasting_weight_for_height_sev = kwargs.get('age_and_sex_specific_wasting_weight_for_height_sev')
         self.age_standardized_wasting_weight_for_height_sev = kwargs.get('age_standardized_wasting_weight_for_height_sev')
         self.low_birth_weight_sev_all_ages_by_sex = kwargs.get('low_birth_weight_sev_all_ages_by_sex')
-        self.low_birth_weight_and_short_gestation_sev_all_ages_by_sex = kwargs.get('low_birth_weight_and_short_gestation_sev_all_ages_by_sex')
-        self.preeclampsia_incidence_ratio_all_ages = kwargs.get('preeclampsia_incidence_ratio_all_ages')
-        self.abo_blood_type_mismatch_at_birth = kwargs.get('abo_blood_type_mismatch_at_birth')
-        self.rhesus_blood_type_mismatch_at_birth = kwargs.get('rhesus_blood_type_mismatch_at_birth')
         self.adult_hiv_death_rate_both_sexes = kwargs.get('adult_hiv_death_rate_both_sexes')
         self.fortification_standard_including_iron = kwargs.get('fortification_standard_including_iron')
         self.composite_fortification_standard_and_iron_inclusion = kwargs.get('composite_fortification_standard_and_iron_inclusion')
@@ -1817,45 +879,21 @@ class Covariates(GbdRecord):
         self.alcohol_sev_age_standardized = kwargs.get('alcohol_sev_age_standardized')
         self.underweight_women_of_reproductive_age = kwargs.get('underweight_women_of_reproductive_age')
         self.underweight_women_age_specific = kwargs.get('underweight_women_age_specific')
-        self.underweight_men_age_specific = kwargs.get('underweight_men_age_specific')
         self.opioids_per_million_population_per_day = kwargs.get('opioids_per_million_population_per_day')
-        self.prevalence_of_mtbc_lineage_1_strains_proportion = kwargs.get('prevalence_of_mtbc_lineage_1_strains_proportion')
-        self.prevalence_of_mtbc_lineage_2_strains_proportion = kwargs.get('prevalence_of_mtbc_lineage_2_strains_proportion')
-        self.prevalence_of_mtbc_lineage_3_strains_proportion = kwargs.get('prevalence_of_mtbc_lineage_3_strains_proportion')
-        self.prevalence_of_mtbc_lineage_4_strains_proportion = kwargs.get('prevalence_of_mtbc_lineage_4_strains_proportion')
-        self.prevalence_of_maf_lineage_5_and_6_proportion = kwargs.get('prevalence_of_maf_lineage_5_and_6_proportion')
-        self.log_transformed_sev_scalar_comm = kwargs.get('log_transformed_sev_scalar_comm')
         self.log_transformed_sev_scalar_tb_other = kwargs.get('log_transformed_sev_scalar_tb_other')
         self.log_transformed_sev_scalar_tb_mdr = kwargs.get('log_transformed_sev_scalar_tb_mdr')
-        self.log_transformed_sev_scalar_tb_xdr = kwargs.get('log_transformed_sev_scalar_tb_xdr')
         self.log_transformed_sev_scalar_hiv = kwargs.get('log_transformed_sev_scalar_hiv')
         self.log_transformed_sev_scalar_hiv_tb_other = kwargs.get('log_transformed_sev_scalar_hiv_tb_other')
         self.log_transformed_sev_scalar_hiv_tb_mdr = kwargs.get('log_transformed_sev_scalar_hiv_tb_mdr')
-        self.log_transformed_sev_scalar_hiv_tb_xdr = kwargs.get('log_transformed_sev_scalar_hiv_tb_xdr')
         self.log_transformed_sev_scalar_meningitis_pneumo = kwargs.get('log_transformed_sev_scalar_meningitis_pneumo')
         self.log_transformed_sev_scalar_meningitis_hib = kwargs.get('log_transformed_sev_scalar_meningitis_hib')
         self.log_transformed_sev_scalar_meningitis_meningo = kwargs.get('log_transformed_sev_scalar_meningitis_meningo')
         self.log_transformed_sev_scalar_meningitis_other = kwargs.get('log_transformed_sev_scalar_meningitis_other')
         self.log_transformed_sev_scalar_encephalitis = kwargs.get('log_transformed_sev_scalar_encephalitis')
-        self.log_transformed_sev_scalar_diptheria = kwargs.get('log_transformed_sev_scalar_diptheria')
-        self.log_transformed_sev_scalar_neonatal_preterm = kwargs.get('log_transformed_sev_scalar_neonatal_preterm')
         self.log_transformed_sev_scalar_neonatal_enceph = kwargs.get('log_transformed_sev_scalar_neonatal_enceph')
         self.log_transformed_sev_scalar_neonatal_sepsis = kwargs.get('log_transformed_sev_scalar_neonatal_sepsis')
         self.log_transformed_sev_scalar_neonatal_hemolytic = kwargs.get('log_transformed_sev_scalar_neonatal_hemolytic')
         self.log_transformed_sev_scalar_neonatal_other = kwargs.get('log_transformed_sev_scalar_neonatal_other')
-        self.log_transformed_sev_scalar_nutrition_pem = kwargs.get('log_transformed_sev_scalar_nutrition_pem')
-        self.log_transformed_sev_scalar_nutrition_vitamina = kwargs.get('log_transformed_sev_scalar_nutrition_vitamina')
-        self.log_transformed_sev_scalar_nutrition_iron = kwargs.get('log_transformed_sev_scalar_nutrition_iron')
-        self.log_transformed_sev_scalar_std = kwargs.get('log_transformed_sev_scalar_std')
-        self.log_transformed_sev_scalar_std_syphilis = kwargs.get('log_transformed_sev_scalar_std_syphilis')
-        self.log_transformed_sev_scalar_std_chlamydia = kwargs.get('log_transformed_sev_scalar_std_chlamydia')
-        self.log_transformed_sev_scalar_std_gonnorhea = kwargs.get('log_transformed_sev_scalar_std_gonnorhea')
-        self.log_transformed_sev_scalar_std_tricho = kwargs.get('log_transformed_sev_scalar_std_tricho')
-        self.log_transformed_sev_scalar_std_herpes = kwargs.get('log_transformed_sev_scalar_std_herpes')
-        self.log_transformed_sev_scalar_std_other = kwargs.get('log_transformed_sev_scalar_std_other')
-        self.log_transformed_sev_scalar_ncd = kwargs.get('log_transformed_sev_scalar_ncd')
-        self.log_transformed_sev_scalar_neo_liver_alcohol = kwargs.get('log_transformed_sev_scalar_neo_liver_alcohol')
-        self.log_transformed_sev_scalar_neo_cervical = kwargs.get('log_transformed_sev_scalar_neo_cervical')
         self.log_transformed_sev_scalar_neo_lymphoma = kwargs.get('log_transformed_sev_scalar_neo_lymphoma')
         self.log_transformed_sev_scalar_neo_myeloma = kwargs.get('log_transformed_sev_scalar_neo_myeloma')
         self.log_transformed_sev_scalar_neo_leukemia_ll_acute = kwargs.get('log_transformed_sev_scalar_neo_leukemia_ll_acute')
@@ -1863,70 +901,31 @@ class Covariates(GbdRecord):
         self.log_transformed_sev_scalar_neo_leukemia_ml_acute = kwargs.get('log_transformed_sev_scalar_neo_leukemia_ml_acute')
         self.log_transformed_sev_scalar_neo_leukemia_ml_chronic = kwargs.get('log_transformed_sev_scalar_neo_leukemia_ml_chronic')
         self.log_transformed_sev_scalar_neo_leukemia_other = kwargs.get('log_transformed_sev_scalar_neo_leukemia_other')
-        self.log_transformed_sev_scalar_cvd_htn = kwargs.get('log_transformed_sev_scalar_cvd_htn')
-        self.log_transformed_sev_scalar_cvd_cmp_alcoholic = kwargs.get('log_transformed_sev_scalar_cvd_cmp_alcoholic')
         self.log_transformed_sev_scalar_cvd_cmp_other = kwargs.get('log_transformed_sev_scalar_cvd_cmp_other')
-        self.log_transformed_sev_scalar_cirrhosis_alcohol = kwargs.get('log_transformed_sev_scalar_cirrhosis_alcohol')
         self.log_transformed_sev_scalar_digest_pud = kwargs.get('log_transformed_sev_scalar_digest_pud')
         self.log_transformed_sev_scalar_digest_bile = kwargs.get('log_transformed_sev_scalar_digest_bile')
         self.log_transformed_sev_scalar_neuro_dementia = kwargs.get('log_transformed_sev_scalar_neuro_dementia')
-        self.log_transformed_sev_scalar_neuro_parkinsons = kwargs.get('log_transformed_sev_scalar_neuro_parkinsons')
         self.log_transformed_sev_scalar_neuro_ms = kwargs.get('log_transformed_sev_scalar_neuro_ms')
-        self.log_transformed_sev_scalar_mental_alcohol = kwargs.get('log_transformed_sev_scalar_mental_alcohol')
-        self.log_transformed_sev_scalar_mental_drug = kwargs.get('log_transformed_sev_scalar_mental_drug')
-        self.log_transformed_sev_scalar_mental_drug_opioids = kwargs.get('log_transformed_sev_scalar_mental_drug_opioids')
-        self.log_transformed_sev_scalar_mental_drug_cocaine = kwargs.get('log_transformed_sev_scalar_mental_drug_cocaine')
-        self.log_transformed_sev_scalar_mental_drug_amphet = kwargs.get('log_transformed_sev_scalar_mental_drug_amphet')
-        self.log_transformed_sev_scalar_mental_drug_cannabis = kwargs.get('log_transformed_sev_scalar_mental_drug_cannabis')
-        self.log_transformed_sev_scalar_mental_drug_other = kwargs.get('log_transformed_sev_scalar_mental_drug_other')
-        self.log_transformed_sev_scalar_diabetes = kwargs.get('log_transformed_sev_scalar_diabetes')
-        self.log_transformed_sev_scalar_ckd = kwargs.get('log_transformed_sev_scalar_ckd')
-        self.log_transformed_sev_scalar_ckd_diabetes = kwargs.get('log_transformed_sev_scalar_ckd_diabetes')
-        self.log_transformed_sev_scalar_ckd_htn = kwargs.get('log_transformed_sev_scalar_ckd_htn')
-        self.log_transformed_sev_scalar_ckd_glomerulo = kwargs.get('log_transformed_sev_scalar_ckd_glomerulo')
-        self.log_transformed_sev_scalar_ckd_other = kwargs.get('log_transformed_sev_scalar_ckd_other')
         self.log_transformed_sev_scalar_msk_rheumarthritis = kwargs.get('log_transformed_sev_scalar_msk_rheumarthritis')
         self.log_transformed_sev_scalar_sense_glaucoma = kwargs.get('log_transformed_sev_scalar_sense_glaucoma')
         self.log_transformed_sev_scalar_sense_macular = kwargs.get('log_transformed_sev_scalar_sense_macular')
-        self.log_transformed_sev_scalar_inj = kwargs.get('log_transformed_sev_scalar_inj')
         self.log_transformed_sev_scalar_inj_suicide_firearm = kwargs.get('log_transformed_sev_scalar_inj_suicide_firearm')
         self.log_transformed_sev_scalar_inj_suicide_other = kwargs.get('log_transformed_sev_scalar_inj_suicide_other')
-        self.log_transformed_sev_scalar_inj_homicide_sexual = kwargs.get('log_transformed_sev_scalar_inj_homicide_sexual')
-        self.log_transformed_age_standardized_sev_scalar_comm = kwargs.get('log_transformed_age_standardized_sev_scalar_comm')
         self.log_transformed_age_standardized_sev_scalar_tb_other = kwargs.get('log_transformed_age_standardized_sev_scalar_tb_other')
         self.log_transformed_age_standardized_sev_scalar_tb_mdr = kwargs.get('log_transformed_age_standardized_sev_scalar_tb_mdr')
-        self.log_transformed_age_standardized_sev_scalar_tb_xdr = kwargs.get('log_transformed_age_standardized_sev_scalar_tb_xdr')
         self.log_transformed_age_standardized_sev_scalar_hiv = kwargs.get('log_transformed_age_standardized_sev_scalar_hiv')
         self.log_transformed_age_standardized_sev_scalar_hiv_tb_other = kwargs.get('log_transformed_age_standardized_sev_scalar_hiv_tb_other')
         self.log_transformed_age_standardized_sev_scalar_hiv_tb_mdr = kwargs.get('log_transformed_age_standardized_sev_scalar_hiv_tb_mdr')
-        self.log_transformed_age_standardized_sev_scalar_hiv_tb_xdr = kwargs.get('log_transformed_age_standardized_sev_scalar_hiv_tb_xdr')
         self.log_transformed_age_standardized_sev_scalar_meningitis = kwargs.get('log_transformed_age_standardized_sev_scalar_meningitis')
         self.log_transformed_age_standardized_sev_scalar_meningitis_pneumo = kwargs.get('log_transformed_age_standardized_sev_scalar_meningitis_pneumo')
         self.log_transformed_age_standardized_sev_scalar_meningitis_hib = kwargs.get('log_transformed_age_standardized_sev_scalar_meningitis_hib')
         self.log_transformed_age_standardized_sev_scalar_meningitis_meningo = kwargs.get('log_transformed_age_standardized_sev_scalar_meningitis_meningo')
         self.log_transformed_age_standardized_sev_scalar_meningitis_other = kwargs.get('log_transformed_age_standardized_sev_scalar_meningitis_other')
         self.log_transformed_age_standardized_sev_scalar_encephalitis = kwargs.get('log_transformed_age_standardized_sev_scalar_encephalitis')
-        self.log_transformed_age_standardized_sev_scalar_diptheria = kwargs.get('log_transformed_age_standardized_sev_scalar_diptheria')
-        self.log_transformed_age_standardized_sev_scalar_whooping = kwargs.get('log_transformed_age_standardized_sev_scalar_whooping')
-        self.log_transformed_age_standardized_sev_scalar_tetanus = kwargs.get('log_transformed_age_standardized_sev_scalar_tetanus')
-        self.log_transformed_age_standardized_sev_scalar_neonatal_preterm = kwargs.get('log_transformed_age_standardized_sev_scalar_neonatal_preterm')
         self.log_transformed_age_standardized_sev_scalar_neonatal_enceph = kwargs.get('log_transformed_age_standardized_sev_scalar_neonatal_enceph')
         self.log_transformed_age_standardized_sev_scalar_neonatal_sepsis = kwargs.get('log_transformed_age_standardized_sev_scalar_neonatal_sepsis')
         self.log_transformed_age_standardized_sev_scalar_neonatal_hemolytic = kwargs.get('log_transformed_age_standardized_sev_scalar_neonatal_hemolytic')
         self.log_transformed_age_standardized_sev_scalar_neonatal_other = kwargs.get('log_transformed_age_standardized_sev_scalar_neonatal_other')
-        self.log_transformed_age_standardized_sev_scalar_nutrition_pem = kwargs.get('log_transformed_age_standardized_sev_scalar_nutrition_pem')
-        self.log_transformed_age_standardized_sev_scalar_nutrition_vitamina = kwargs.get('log_transformed_age_standardized_sev_scalar_nutrition_vitamina')
-        self.log_transformed_age_standardized_sev_scalar_nutrition_iron = kwargs.get('log_transformed_age_standardized_sev_scalar_nutrition_iron')
-        self.log_transformed_age_standardized_sev_scalar_std = kwargs.get('log_transformed_age_standardized_sev_scalar_std')
-        self.log_transformed_age_standardized_sev_scalar_std_syphilis = kwargs.get('log_transformed_age_standardized_sev_scalar_std_syphilis')
-        self.log_transformed_age_standardized_sev_scalar_std_chlamydia = kwargs.get('log_transformed_age_standardized_sev_scalar_std_chlamydia')
-        self.log_transformed_age_standardized_sev_scalar_std_gonnorhea = kwargs.get('log_transformed_age_standardized_sev_scalar_std_gonnorhea')
-        self.log_transformed_age_standardized_sev_scalar_std_tricho = kwargs.get('log_transformed_age_standardized_sev_scalar_std_tricho')
-        self.log_transformed_age_standardized_sev_scalar_std_herpes = kwargs.get('log_transformed_age_standardized_sev_scalar_std_herpes')
-        self.log_transformed_age_standardized_sev_scalar_std_other = kwargs.get('log_transformed_age_standardized_sev_scalar_std_other')
-        self.log_transformed_age_standardized_sev_scalar_ncd = kwargs.get('log_transformed_age_standardized_sev_scalar_ncd')
-        self.log_transformed_age_standardized_sev_scalar_neo_liver_alcohol = kwargs.get('log_transformed_age_standardized_sev_scalar_neo_liver_alcohol')
-        self.log_transformed_age_standardized_sev_scalar_neo_cervical = kwargs.get('log_transformed_age_standardized_sev_scalar_neo_cervical')
         self.log_transformed_age_standardized_sev_scalar_neo_lymphoma = kwargs.get('log_transformed_age_standardized_sev_scalar_neo_lymphoma')
         self.log_transformed_age_standardized_sev_scalar_neo_myeloma = kwargs.get('log_transformed_age_standardized_sev_scalar_neo_myeloma')
         self.log_transformed_age_standardized_sev_scalar_neo_leukemia_ll_acute = kwargs.get('log_transformed_age_standardized_sev_scalar_neo_leukemia_ll_acute')
@@ -1934,36 +933,17 @@ class Covariates(GbdRecord):
         self.log_transformed_age_standardized_sev_scalar_neo_leukemia_ml_acute = kwargs.get('log_transformed_age_standardized_sev_scalar_neo_leukemia_ml_acute')
         self.log_transformed_age_standardized_sev_scalar_neo_leukemia_ml_chronic = kwargs.get('log_transformed_age_standardized_sev_scalar_neo_leukemia_ml_chronic')
         self.log_transformed_age_standardized_sev_scalar_neo_leukemia_other = kwargs.get('log_transformed_age_standardized_sev_scalar_neo_leukemia_other')
-        self.log_transformed_age_standardized_sev_scalar_cvd_htn = kwargs.get('log_transformed_age_standardized_sev_scalar_cvd_htn')
-        self.log_transformed_age_standardized_sev_scalar_cvd_cmp_alcoholic = kwargs.get('log_transformed_age_standardized_sev_scalar_cvd_cmp_alcoholic')
         self.log_transformed_age_standardized_sev_scalar_cvd_cmp_other = kwargs.get('log_transformed_age_standardized_sev_scalar_cvd_cmp_other')
-        self.log_transformed_age_standardized_sev_scalar_cirrhosis_alcohol = kwargs.get('log_transformed_age_standardized_sev_scalar_cirrhosis_alcohol')
         self.log_transformed_age_standardized_sev_scalar_digest_pud = kwargs.get('log_transformed_age_standardized_sev_scalar_digest_pud')
         self.log_transformed_age_standardized_sev_scalar_digest_bile = kwargs.get('log_transformed_age_standardized_sev_scalar_digest_bile')
         self.log_transformed_age_standardized_sev_scalar_neuro_dementia = kwargs.get('log_transformed_age_standardized_sev_scalar_neuro_dementia')
-        self.log_transformed_age_standardized_sev_scalar_neuro_parkinsons = kwargs.get('log_transformed_age_standardized_sev_scalar_neuro_parkinsons')
         self.log_transformed_age_standardized_sev_scalar_neuro_ms = kwargs.get('log_transformed_age_standardized_sev_scalar_neuro_ms')
-        self.log_transformed_age_standardized_sev_scalar_mental_alcohol = kwargs.get('log_transformed_age_standardized_sev_scalar_mental_alcohol')
-        self.log_transformed_age_standardized_sev_scalar_mental_drug = kwargs.get('log_transformed_age_standardized_sev_scalar_mental_drug')
-        self.log_transformed_age_standardized_sev_scalar_mental_drug_opioids = kwargs.get('log_transformed_age_standardized_sev_scalar_mental_drug_opioids')
-        self.log_transformed_age_standardized_sev_scalar_mental_drug_cocaine = kwargs.get('log_transformed_age_standardized_sev_scalar_mental_drug_cocaine')
-        self.log_transformed_age_standardized_sev_scalar_mental_drug_amphet = kwargs.get('log_transformed_age_standardized_sev_scalar_mental_drug_amphet')
-        self.log_transformed_age_standardized_sev_scalar_mental_drug_cannabis = kwargs.get('log_transformed_age_standardized_sev_scalar_mental_drug_cannabis')
-        self.log_transformed_age_standardized_sev_scalar_mental_drug_other = kwargs.get('log_transformed_age_standardized_sev_scalar_mental_drug_other')
-        self.log_transformed_age_standardized_sev_scalar_diabetes = kwargs.get('log_transformed_age_standardized_sev_scalar_diabetes')
-        self.log_transformed_age_standardized_sev_scalar_ckd = kwargs.get('log_transformed_age_standardized_sev_scalar_ckd')
-        self.log_transformed_age_standardized_sev_scalar_ckd_diabetes = kwargs.get('log_transformed_age_standardized_sev_scalar_ckd_diabetes')
-        self.log_transformed_age_standardized_sev_scalar_ckd_htn = kwargs.get('log_transformed_age_standardized_sev_scalar_ckd_htn')
-        self.log_transformed_age_standardized_sev_scalar_ckd_glomerulo = kwargs.get('log_transformed_age_standardized_sev_scalar_ckd_glomerulo')
-        self.log_transformed_age_standardized_sev_scalar_ckd_other = kwargs.get('log_transformed_age_standardized_sev_scalar_ckd_other')
         self.log_transformed_age_standardized_sev_scalar_msk_rheumarthritis = kwargs.get('log_transformed_age_standardized_sev_scalar_msk_rheumarthritis')
         self.log_transformed_age_standardized_sev_scalar_sense_glaucoma = kwargs.get('log_transformed_age_standardized_sev_scalar_sense_glaucoma')
         self.log_transformed_age_standardized_sev_scalar_sense_macular = kwargs.get('log_transformed_age_standardized_sev_scalar_sense_macular')
         self.log_transformed_age_standardized_sev_scalar_sids = kwargs.get('log_transformed_age_standardized_sev_scalar_sids')
-        self.log_transformed_age_standardized_sev_scalar_inj = kwargs.get('log_transformed_age_standardized_sev_scalar_inj')
         self.log_transformed_age_standardized_sev_scalar_inj_suicide_firearm = kwargs.get('log_transformed_age_standardized_sev_scalar_inj_suicide_firearm')
         self.log_transformed_age_standardized_sev_scalar_inj_suicide_other = kwargs.get('log_transformed_age_standardized_sev_scalar_inj_suicide_other')
-        self.log_transformed_age_standardized_sev_scalar_inj_homicide_sexual = kwargs.get('log_transformed_age_standardized_sev_scalar_inj_homicide_sexual')
         self.opioids_per_million_population_per_day_5_year_lag = kwargs.get('opioids_per_million_population_per_day_5_year_lag')
         self.opioids_per_million_population_per_day_ten_year_lag = kwargs.get('opioids_per_million_population_per_day_ten_year_lag')
         self.occupation_professionals = kwargs.get('occupation_professionals')
@@ -1972,25 +952,12 @@ class Covariates(GbdRecord):
         self.underweight_age_and_sex_specific = kwargs.get('underweight_age_and_sex_specific')
         self.total_physical_activity_met_min_week_age_specific = kwargs.get('total_physical_activity_met_min_week_age_specific')
         self.total_physical_activity_met_min_week_age_standardized = kwargs.get('total_physical_activity_met_min_week_age_standardized')
-        self.full_vaccine_coverage_indicator_proportion = kwargs.get('full_vaccine_coverage_indicator_proportion')
         self.bacille_calmette_guerin_bcg_vaccine_coverage_proportion = kwargs.get('bacille_calmette_guerin_bcg_vaccine_coverage_proportion')
         self.hepatitis_b_vaccine_coverage_proportion_aged_through_time = kwargs.get('hepatitis_b_vaccine_coverage_proportion_aged_through_time')
         self.adolescent_birth_rates_10_19_years_of_age = kwargs.get('adolescent_birth_rates_10_19_years_of_age')
-        self.percent_well_certified = kwargs.get('percent_well_certified')
-        self.log_total_health_expenditure_per_capita = kwargs.get('log_total_health_expenditure_per_capita')
-        self.count_of_population_censuses = kwargs.get('count_of_population_censuses')
-        self.birth_registry_completeness = kwargs.get('birth_registry_completeness')
         self.pigs_raised_in_extensive_agricultural_systems_per_capita = kwargs.get('pigs_raised_in_extensive_agricultural_systems_per_capita')
         self.pigs_raised_in_semi_extensive_agricultural_systems_per_capita = kwargs.get('pigs_raised_in_semi_extensive_agricultural_systems_per_capita')
         self.pigs_raised_in_intensive_industrial_agricultural_systems_per_capita = kwargs.get('pigs_raised_in_intensive_industrial_agricultural_systems_per_capita')
-        self.implicit_versus_explicitly_defined_nash = kwargs.get('implicit_versus_explicitly_defined_nash')
         self.mean_hemoglobin_age_sex_specific = kwargs.get('mean_hemoglobin_age_sex_specific')
-        self.physicians_per_capita = kwargs.get('physicians_per_capita')
-        self.nurses_and_midwives_per_capita = kwargs.get('nurses_and_midwives_per_capita')
-        self.pharmacists_per_capita = kwargs.get('pharmacists_per_capita')
         self.hiv_mortality_rate = kwargs.get('hiv_mortality_rate')
-        self.untreated_hiv = kwargs.get('untreated_hiv')
         self.medical_schools = kwargs.get('medical_schools')
-        self.dentists_per_capita = kwargs.get('dentists_per_capita')
-        self.full_vaccine_coverage_indicator_proportion_sage_method_dtp3_pcv3_mcv2 = kwargs.get('full_vaccine_coverage_indicator_proportion_sage_method_dtp3_pcv3_mcv2')
-        self.net_reproductive_rate = kwargs.get('net_reproductive_rate')
