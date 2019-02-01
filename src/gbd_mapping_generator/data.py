@@ -74,8 +74,8 @@ def get_risk_list():
     return get_risks().rei_name.tolist()
 
 
-def get_covariate_list():
-    return get_covariates().covariate_name.tolist()
+def get_covariate_list(with_survey=False):
+    return get_covariates(with_survey).covariate_name.tolist()
 
 
 #####################################################
