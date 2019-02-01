@@ -47,11 +47,11 @@ def get_risks():
     return risks.sort_values('rei_id')
 
 
-def get_covariates():
-    covariates = gbd.get_covariate_metadata()
-    covariates = pd.DataFrame({'covariate_name': clean_entity_list(covariates.covariate_name),
-                               'covariate_id': covariates.covariate_id})
-    return covariates.sort_values('covariate_id')
+def get_covariates(with_survey=False):
+    covariates = get_covariate_data(with_survey)
+    covariates = {c[0]: c[1] for c in covariates}
+    covariates = pd.DataFrame.from_dict(covariates, orient='index').reset_index()
+    return covariates.rename(columns={'index': 'covariate_name', 0: 'covariate_id'}).sort_values('covariate_id')
 
 #####################################
 # Lists of entity names in id order #

@@ -25,7 +25,7 @@ def get_base_types(with_survey):
             'docstring': 'Container for covariate GBD ids and metadata.'
         },
         'Covariates': {
-            'attrs': tuple([(name, 'Covariate') for name in get_covariate_list()]),
+            'attrs': tuple([(name, 'Covariate') for name in get_covariate_list(with_survey)]),
             'superclass': ('GbdRecord', gbd_record_attrs),
             'docstring': 'Container for GBD covariates.',
         },
