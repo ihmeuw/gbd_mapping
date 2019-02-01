@@ -88,8 +88,7 @@ def make_cause(name, cid, dismod_id, most_detailed, level, restrictions, prev_ex
     out += TAB * 2 + f"restrictions=Restrictions(\n"
 
     for restriction, value in restrictions:
-        if restriction == 'violated_restrictions':
-            import pdb; pdb.set_trace()
+        if restriction == 'violated':
             if value is not None:
                 out += text_wrap(f"{TAB * 3 + restriction}=(", [f"'{v}'" for v in value] + [")"])
         else:
