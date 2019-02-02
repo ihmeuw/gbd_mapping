@@ -47,11 +47,11 @@ def get_risks():
     return risks.sort_values('rei_id')
 
 
-def get_covariates():
-    covariates = gbd.get_covariate_metadata()
-    covariates = pd.DataFrame({'covariate_name': clean_entity_list(covariates.covariate_name),
-                               'covariate_id': covariates.covariate_id})
-    return covariates.sort_values('covariate_id')
+def get_covariates(with_survey=False):
+    covariates = get_covariate_data(with_survey)
+    covariates = {c[0]: c[1] for c in covariates}
+    covariates = pd.DataFrame.from_dict(covariates, orient='index').reset_index()
+    return covariates.rename(columns={'index': 'covariate_name', 0: 'covariate_id'}).sort_values('covariate_id')
 
 #####################################
 # Lists of entity names in id order #
@@ -74,8 +74,8 @@ def get_risk_list():
     return get_risks().rei_name.tolist()
 
 
-def get_covariate_list():
-    return get_covariates().covariate_name.tolist()
+def get_covariate_list(with_survey=False):
+    return get_covariates(with_survey).covariate_name.tolist()
 
 
 #####################################################
@@ -421,6 +421,10 @@ def get_covariate_data(with_survey):
         assert len(covariates) == len(data_survey)
 
         covariates = covariates.merge(data_survey, on='covariate_id')
+
+        # drop any covariates that threw an error when pulling data in the survey
+        covariates = covariates[(covariates.mean_value_exists.isin([True, False])) &
+                                (covariates.uncertainty_exists.isin([True, False]))]
 
         # covariates are special
         covariates['by_age_violated'] = covariates.violated_restrictions.apply(lambda x: "age_restriction_violated" in x)
