@@ -300,7 +300,7 @@ def get_risk_data(with_survey):
         parent = risks.at[risk['parent_id'], 'rei_name']
 
         paf_calculation_type = risk['rei_calculation_type']
-        distribution = risk['exposure_type'].replace(" ", "_") if not risk['exposure_type'] is np.nan else None
+        distribution = risk['exposure_type'].replace(" ", "_") if not pd.isnull(risk['exposure_type']) else None
 
         exposure_exists = risk['exposure_exists']
         exposure_year_type = risk['exposure_year_type']
@@ -316,16 +316,16 @@ def get_risk_data(with_survey):
 
             levels = None
             scalar = risk['rr_scalar']
-            if risk['tmred_dist'] is np.nan:
+            if pd.isnull(risk['tmred_dist']):
                 tmred = (('distribution', 'draws'),
                          ('min', None),
                          ('max', None),
-                         ('inverted', bool(risk['inv_exp'])))
+                         ('inverted', bool(int(risk['inv_exp']))))
             else:
                 tmred = (('distribution', risk['tmred_dist']),
                          ('min', risk['tmrel_lower']),
                          ('max', risk['tmrel_upper']),
-                         ('inverted', bool(risk['inv_exp'])))
+                         ('inverted', bool(int(risk['inv_exp']))))
         elif distribution == 'dichotomous':
             exposure_sd_exists = None
 
@@ -346,15 +346,15 @@ def get_risk_data(with_survey):
             tmred = None
         else:  # It's either a custom risk or an aggregate, so we have to do a bunch of checking.
             exposure_sd_exists = None
-            if risk['category_map'] is not np.nan:  # It's some strange categorical risk.
+            if not pd.isnull(risk['category_map']):  # It's some strange categorical risk.
                 levels = sorted([(cat, name) for cat, name in risk['category_map'].items()],
                                 key=lambda x: int(x[0][3:]))
                 levels = tuple(levels)
             else:
                 levels = None
 
-            scalar = risk['rr_scalar'] if risk['rr_scalar'] is not np.nan else None
-            if risk['tmred_dist'] is np.nan:
+            scalar = risk['rr_scalar'] if not pd.isnull(risk['rr_scalar']) else None
+            if pd.isnull(risk['tmred_dist']):
                 tmred = None
             else:
                 tmred = (('distribution', risk['tmred_dist']),
@@ -395,15 +395,14 @@ def get_risk_data(with_survey):
             violated_restrictions = None
 
         sub_risks = risks[risks.parent_id == rei_id].rei_name.tolist()
-
-        restrictions = (('male_only', risk['female'] is np.nan),
-                        ('female_only', risk['male'] is np.nan),
-                        ('yll_only', risk['yld'] is np.nan),
-                        ('yld_only', risk['yll'] is np.nan),
-                        ('yll_age_group_id_start', risk['yll_age_group_id_start'] if risk['yll'] is not np.nan else None),
-                        ('yll_age_group_id_end', risk['yll_age_group_id_end'] if risk['yll'] is not np.nan else None),
-                        ('yld_age_group_id_start', risk['yld_age_group_id_start'] if risk['yld'] is not np.nan else None),
-                        ('yld_age_group_id_end', risk['yld_age_group_id_end'] if risk['yld'] is not np.nan else None),
+        restrictions = (('male_only', pd.isnull(risk['female'])),
+                        ('female_only', pd.isnull(risk['male'])),
+                        ('yll_only', pd.isnull(risk['yld'])),
+                        ('yld_only', pd.isnull(risk['yll'])),
+                        ('yll_age_group_id_start', risk['yll_age_group_id_start'] if not pd.isnull(risk['yll']) else None),
+                        ('yll_age_group_id_end', risk['yll_age_group_id_end'] if not pd.isnull(risk['yll']) else None),
+                        ('yld_age_group_id_start', risk['yld_age_group_id_start'] if not pd.isnull(risk['yld']) else None),
+                        ('yld_age_group_id_end', risk['yld_age_group_id_end'] if not pd.isnull(risk['yld']) else None),
                         ('violated', violated_restrictions))
 
         out.append((name, rei_id, most_detailed, level, paf_calculation_type, affected_causes, paf_of_one_causes,
