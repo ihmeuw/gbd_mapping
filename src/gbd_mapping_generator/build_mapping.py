@@ -15,7 +15,7 @@ AUTO_MAPPINGS = {
     'cause': cause_builder,
     'sequela': sequela_builder,
     'etiology': etiology_builder,
-    'risk': risk_builder,
+    'risk_factor': risk_builder,
     'covariate': covariate_builder,
     'coverage_gap': coverage_gap_builder,
 }
@@ -26,7 +26,8 @@ ROOT = Path(__file__).resolve().parent.parent.joinpath('gbd_mapping')  # type: P
 @click.command()
 @click.argument('mapping_type', default='id')
 @click.option('--pdb', 'with_debugger', is_flag=True)
-def build_mapping(mapping_type, with_debugger):
+@click.option('--with-survey', is_flag=True)
+def build_mapping(mapping_type, with_debugger, with_survey):
     if mapping_type not in AUTO_MAPPINGS:
         raise ValueError(f'Unknown mapping type {mapping_type}. '
                          f'Mapping type must be one of {list(AUTO_MAPPINGS.keys())}')
@@ -38,10 +39,10 @@ def build_mapping(mapping_type, with_debugger):
 
         if hasattr(builder, 'build_mapping_template'):
             with ROOT.joinpath(f'{mapping_type}_template.py').open('w') as f:
-                f.write(builder.build_mapping_template())
+                f.write(builder.build_mapping_template(with_survey))
 
         with ROOT.joinpath(f'{mapping_type}.py').open('w') as f:
-            f.write(builder.build_mapping())
+            f.write(builder.build_mapping(with_survey))
     except (BdbQuit, KeyboardInterrupt):
         raise
     except Exception as e:

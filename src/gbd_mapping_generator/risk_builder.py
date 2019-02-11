@@ -1,119 +1,197 @@
-from numbers import Number
-
-import numpy as np
-
 from .data import get_risk_data, get_risk_list
 from .base_template_builder import modelable_entity_attrs, gbd_record_attrs
-from .util import make_import, make_module_docstring, make_record, SPACING, TAB, TEXTWIDTH
+from .util import make_import, make_module_docstring, make_record, SPACING, TAB, TEXTWIDTH, text_wrap, format_string_none
 
 
-IMPORTABLES_DEFINED = ('Risk', 'risk_factors')
+IMPORTABLES_DEFINED = ('RiskFactor', 'risk_factors')
 
 
-base_types = {
-    'Risk': {
-        'attrs': (('name', 'str'),
+def get_base_types(with_survey):
+    risk_attrs = [('name', 'str'),
                   ('kind', 'str'),
                   ('gbd_id', 'reiid'),
-                  ('distribution', 'str'),
-                  ('affected_causes', 'Tuple[Cause, ...]'),
-                  ('restrictions', 'Restrictions'),
-                  ('levels', 'Levels = None'),
-                  ('tmred', 'Tmred = None'),
-                  ('exposure_parameters', 'ExposureParameters = None'),),
-        'superclass': ('ModelableEntity', modelable_entity_attrs),
-        'docstring': 'Container for risk GBD ids and metadata.'
-    },
-    'Risks': {
-        'attrs': tuple([(name, 'Risk') for name in get_risk_list()]),
-        'superclass': ('GbdRecord', gbd_record_attrs),
-        'docstring': 'Container for GBD risks.',
-    },
-}
+                  ('level', 'int'),
+                  ('most_detailed', 'bool'),
+                  ('distribution', 'Union[str, None]'),
+                  ('population_attributable_fraction_calculation_type', 'str'),
+                  ('restrictions', 'Restrictions'),]
+    if with_survey:
+        risk_attrs += [('exposure_exists', 'Union[bool, None]'),
+                       ('exposure_standard_deviation_exists', 'Union[bool, None]'),
+                       ('exposure_year_type', 'Union[str, None]'),
+                       ('relative_risk_exists', 'Union[bool, None]'),
+                       ('relative_risk_in_range', 'Union[bool, None]'),
+                       ('population_attributable_fraction_yll_exists', 'Union[bool, None]'),
+                       ('population_attributable_fraction_yll_in_range', 'Union[bool, None]'),
+                       ('population_attributable_fraction_yld_exists', 'Union[bool, None]'),
+                       ('population_attributable_fraction_yld_in_range', 'Union[bool, None]'),]
+
+    risk_attrs += [('affected_causes', 'Tuple[Cause, ...]'),
+                   ('population_attributable_fraction_of_one_causes', 'Tuple[Cause, ...]'),
+                   ('parent', 'Union["RiskFactor", None] = None'),
+                   ('sub_risk_factors', 'Tuple["RiskFactor", ...] = None'),
+                   ('affected_risk_factors', 'Tuple["RiskFactor", ...] = None'),
+                   ('categories', 'Categories = None'),
+                   ('tmred', 'Tmred = None'),
+                   ('relative_risk_scalar', 'scalar = None')]
+    return {
+        'RiskFactor': {
+            'attrs': tuple(risk_attrs),
+            'superclass': ('ModelableEntity', modelable_entity_attrs),
+            'docstring': 'Container for risk GBD ids and metadata.'
+        },
+        'RiskFactors': {
+            'attrs': tuple([(name, 'RiskFactor') for name in get_risk_list()]),
+            'superclass': ('GbdRecord', gbd_record_attrs),
+            'docstring': 'Container for GBD risks.',
+        },
+    }
 
 
-def make_risk(name, reiid, distribution, restrictions, cause_list,
-                     levels=None, tmred=None, exposure_parameters=None):
+def _abbr_to_full_name(restriction):
+    restriction = restriction.replace('rr', 'relative_risk')
+    restriction = restriction.replace('paf', 'population_attributable_fraction')
+    restriction = restriction.replace('sd', 'standard_deviation')
+    return restriction
+
+
+def make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
+              affected_causes, paf_of_one_causes,
+              distribution, levels, tmred, scalar,
+              exposure_exists, exposure_sd_exists, exposure_year_type, rr_exists, rr_in_range,
+              paf_yll_exists, paf_yll_in_range, paf_yld_exists, paf_yld_in_range,
+              restrictions, with_survey):
     out = ""
-    out += TAB + f"{name}=Risk(\n"
-    out += 2*TAB + f"name='{name}',\n"
+    out += TAB + f"{name}=RiskFactor(\n"
+    out += TAB * 2 + f"name='{name}',\n"
     out += TAB * 2 + f"kind='risk_factor',\n"
-    out += 2*TAB + f"gbd_id=reiid({reiid}),\n"
-    distribution = "UNKNOWN" if distribution == 'unknown' else f"'{distribution}'"
-    out += 2*TAB + f"distribution={distribution},\n"
+    out += TAB * 2 + f"gbd_id=reiid({rei_id}),\n"
+    out += TAB * 2 + f"level={level},\n"
+    out += TAB * 2 + f"most_detailed={bool(most_detailed)},\n"
+    out += TAB * 2 + f"distribution={format_string_none(distribution)},\n"
+    out += TAB * 2 + f"population_attributable_fraction_calculation_type='{paf_calculation_type}',\n"
+    if with_survey:
+        out += TAB * 2 + f"exposure_exists={exposure_exists},\n"
+        out += TAB * 2 + f"exposure_standard_deviation_exists={exposure_sd_exists},\n"
+        out += TAB * 2 + f"exposure_year_type={format_string_none(exposure_year_type)},\n"
+        out += TAB * 2 + f"relative_risk_exists={rr_exists},\n"
+        out += TAB * 2 + f"relative_risk_in_range={rr_in_range},\n"
+        out += TAB * 2 + f"population_attributable_fraction_yll_exists={paf_yll_exists},\n"
+        out += TAB * 2 + f"population_attributable_fraction_yll_in_range={paf_yll_in_range},\n"
+        out += TAB * 2 + f"population_attributable_fraction_yld_exists={paf_yld_exists},\n"
+        out += TAB * 2 + f"population_attributable_fraction_yld_in_range={paf_yld_in_range},\n"
+    out += 2*TAB + "restrictions=Restrictions(\n"
+    for name, r in restrictions:
+        if name == "violated" and r is not None:
+            out += text_wrap(f"{TAB * 3 + name}=(", [f"'{_abbr_to_full_name(v)}'" for v in r] + [")"])
+        elif r is not None:
+            out += 3*TAB + f"{name}={r},\n"
+    out += 2 * TAB + '),\n'
 
-    for field_class_name, field in zip(['Restrictions', 'Levels', 'Tmred', 'ExposureParameters'],
-                                       [restrictions, levels, tmred, exposure_parameters]):
-        field_name = 'exposure_parameters' if field_class_name == 'ExposureParameters' else field_class_name.lower()
-        if field and not isinstance(field, str):
-            out += 2*TAB + f"{field_name}={field_class_name}(\n"
-            for subfield_name, subfield in field:
-                if isinstance(subfield, str):
-                    out += 3*TAB + f"{subfield_name}='{subfield}',\n"
-                elif isinstance(subfield, bool) or not isinstance(subfield, Number):
-                    out += 3 * TAB + f"{subfield_name}={subfield},\n"
-                elif np.isnan(subfield):
-                    out += 3 * TAB + f"{subfield_name}=UNKNOWN,\n"
-                else:
-                    if subfield_name == 'dismod_id':
-                        out += 3 * TAB + f"{subfield_name}=meid({subfield}),\n"
-                    else:
-                        out += 3 * TAB + f"{subfield_name}=scalar({subfield}),\n"
-            out += 2*TAB + '),\n'
-        elif field:
-            out += 2*TAB + f"{field_name}={field},\n"
+    out += make_entity_list('affected_causes', affected_causes, 'cause')
+    out += make_entity_list('population_attributable_fraction_of_one_causes', paf_of_one_causes, 'cause')
 
-    field = 2*TAB + "affected_causes=("
-    offset = len(field)
+    if levels:
+        out += 2*TAB + "categories=Categories(\n"
+        for cat, name in levels:
+            out += 3*TAB + f"{cat}='{name}',\n"
+        out += 2*TAB + '),\n'
 
-    out += field
-    char_count = offset
-    for cause in cause_list:
-        cause_name = f"causes.{cause}, "
+    if tmred:
+        out += 2*TAB + "tmred=Tmred(\n"
+        for name, val in tmred:
+            if val is not None:
+                if name == 'distribution':
+                    val = f"'{val}'"
+                elif name in ['min', 'max']:
+                    val = f"scalar({val})"
+                out += 3*TAB + f"{name}={val},\n"
+        out += 2*TAB + '),\n'
 
-        if char_count == offset:
-            out += cause_name
-            char_count += len(cause_name)
-        elif char_count + len(cause_name) > TEXTWIDTH:
-            out += '\n' + ' ' * offset + cause_name
-            char_count = offset + len(cause_name)
-        else:
-            out += cause_name
-            char_count += len(cause_name)
-    out += '),\n'
+    if scalar:
+        out += 2*TAB + f'relative_risk_scalar=scalar({scalar}),\n'
 
     out += TAB + '),\n'
     return out
 
 
-def make_risks(riskfactor_data):
-    out = "risk_factors = Risks(\n"
-    for name, reiid, distribution, restrictions, cause_list, levels, tmred, exposure_parameters in riskfactor_data:
-        out += make_risk(name, reiid, distribution, restrictions, cause_list,
-                                levels, tmred, exposure_parameters)
-    out += ")\n"
+def make_entity_list(name, entity_list, entity_type):
+    field = 2 * TAB + f"{name}=("
+    if not entity_list:
+        return field + "),\n"
+    offset = len(field)
+
+    out = field
+    char_count = offset
+    for entity in entity_list:
+        entity_name = f"{entity_type}s.{entity}, "
+
+        if char_count == offset:
+            out += entity_name
+            char_count += len(entity_name)
+        elif char_count + len(entity_name) > TEXTWIDTH:
+            out += '\n' + ' ' * offset + entity_name
+            char_count = offset + len(entity_name)
+        else:
+            out += entity_name
+            char_count += len(entity_name)
+    out += '),\n'
     return out
 
 
-def build_mapping_template():
-    out = make_module_docstring('Mapping templates for GBD etiologies.', __file__)
-    out += make_import('typing', ['Tuple']) + '\n'
-    out += make_import('.id', ['reiid'])
-    out += make_import('.base_template', ['ModelableEntity', 'GbdRecord', 'Levels',
-                                          'Tmred', 'ExposureParameters', 'Restrictions'])
+def make_risks(risk_list, with_survey):
+    out = "risk_factors = RiskFactors(\n"
+    for (name, rei_id, most_detailed, level, paf_calculation_type,
+         affected_causes, paf_of_one_causes,
+         distribution, levels, tmred, scalar,
+         exposure_exists, exposure_sd_exists, exposure_year_type, rr_exists, rr_in_range,
+         paf_yll_exists, paf_yll_in_range, paf_yld_exists, paf_yld_in_range,
+         restrictions, *_) in risk_list:
+        out += make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
+                         affected_causes, paf_of_one_causes,
+                         distribution, levels, tmred, scalar,
+                         exposure_exists, exposure_sd_exists, exposure_year_type, rr_exists, rr_in_range,
+                         paf_yll_exists, paf_yll_in_range, paf_yld_exists, paf_yld_in_range,
+                         restrictions, with_survey)
+
+    out += ")\n"
+
+    for (name, *_, parent, sub_risks, affected_risks) in risk_list:
+
+        if name != parent:
+            out += f"risk_factors.{name}.parent = risk_factors.{parent}\n"
+            if sub_risks:
+                if name in sub_risks:
+                    sub_risks.remove(name)
+                out += text_wrap(f'risk_factors.{name}.sub_risk_factors = (',
+                                 [f'risk_factors.{s}' for s in sub_risks] + [')'])
+            if affected_risks:
+                out += text_wrap(f'risk_factors.{name}.affected_risk_factors = (',
+                                 [f'risk_factors.{s}' for s in affected_risks] + [')'])
+            out += '\n'
+
+    return out
+
+
+def build_mapping_template(with_survey):
+    out = make_module_docstring('Mapping templates for GBD risk factors.', __file__)
+    out += make_import('typing', ['Tuple', 'Union']) + '\n'
+    out += make_import('.id', ['reiid', 'scalar'])
+    out += make_import('.base_template', ['ModelableEntity', 'GbdRecord', 'Categories',
+                                          'Tmred', 'Restrictions'])
     out += make_import('.cause_template', ['Cause'])
 
-    for entity, info in base_types.items():
+    for entity, info in get_base_types(with_survey).items():
         out += SPACING
         out += make_record(entity, **info)
     return out
 
 
-def build_mapping():
-    out = make_module_docstring('Mapping of GBD etiologies.', __file__)
-    out += make_import('.id', ['reiid', 'meid', 'scalar', 'UNKNOWN'])
-    out += make_import('.base_template', ['Levels', 'Tmred', 'ExposureParameters', 'Restrictions'])
-    out += make_import('.risk_template', ['Risk', 'Risks'])
+def build_mapping(with_survey):
+    out = make_module_docstring('Mapping of GBD risk factors.', __file__)
+    out += make_import('.id', ['reiid', 'scalar'])
+    out += make_import('.base_template', ['Categories', 'Tmred', 'Restrictions'])
+    out += make_import('.risk_factor_template', ['RiskFactor', 'RiskFactors'])
     out += make_import('.cause', ['causes']) + SPACING
-    out += make_risks(get_risk_data())
+    out += make_risks(get_risk_data(with_survey), with_survey)
     return out
