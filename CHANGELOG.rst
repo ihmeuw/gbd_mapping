@@ -1,4 +1,12 @@
-**1.0.13 - 01/04/18**
+**2.0.0 - 02/11/19**
+
+ - Update all cause, covariate, coverage_gap, etiology and risk_factor mappings
+   to include the GBD 2017 metadata.
+ - Update all the mappings to include the gbd_summary results.
+ - Rename risk as risk_factor.
+ - Fix the recursion and nan errors.
+
+**1.0.13 - 01/04/19**
 
  - Remove covariate flag.
  - Add CI branch synchronization
