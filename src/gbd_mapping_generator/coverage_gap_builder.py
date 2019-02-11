@@ -10,28 +10,29 @@ from .util import make_import, make_module_docstring, make_record, SPACING, TAB,
 IMPORTABLES_DEFINED = ('CoverageGap', 'coverage_gaps')
 
 
-base_types = {
-    'CoverageGap': {
-        'attrs': (('name', 'str'),
-                  ('kind', 'str'),
-                  ('gbd_id', 'Union[reiid, None]'),
-                  ('restrictions', 'Restrictions'),
-                  ('distribution', 'str'),
-                  ('levels', 'Levels'),
-                  ('affected_causes', 'Tuple[Cause, ...] = None'),
-                  ('affected_risk_factors', 'Tuple[Risk, ...] = None'),),
-        'superclass': ('GbdRecord', gbd_record_attrs),
-        'docstring': 'Container for coverage gap GBD ids and metadata.'
-    },
-    'CoverageGaps': {
-        'attrs': tuple([(name, 'CoverageGap') for name in get_coverage_gap_list()]),
-        'superclass': ('GbdRecord', gbd_record_attrs),
-        'docstring': 'Container for coverage gap data.',
-    },
-}
+def get_base_types():
+    return {
+        'CoverageGap': {
+            'attrs': (('name', 'str'),
+                      ('kind', 'str'),
+                      ('gbd_id', 'Union[reiid, None]'),
+                      ('restrictions', 'Restrictions'),
+                      ('distribution', 'str'),
+                      ('categories', 'Categories'),
+                      ('affected_causes', 'Tuple[Cause, ...] = None'),
+                      ('affected_risk_factors', 'Tuple[RiskFactor, ...] = None'),),
+            'superclass': ('GbdRecord', gbd_record_attrs),
+            'docstring': 'Container for coverage gap GBD ids and metadata.'
+        },
+        'CoverageGaps': {
+            'attrs': tuple([(name, 'CoverageGap') for name in get_coverage_gap_list()]),
+            'superclass': ('GbdRecord', gbd_record_attrs),
+            'docstring': 'Container for coverage gap data.',
+        },
+    }
 
 
-def make_coverage_gap(name, gbd_id, distribution, restrictions, levels=None, affected_causes=None, affected_risk_factors=None):
+def make_coverage_gap(name, gbd_id, distribution, restrictions, categories=None, affected_causes=None, affected_risk_factors=None):
     out = ""
     out += TAB + f"{name}=CoverageGap(\n"
     out += 2*TAB + f"name='{name}',\n"
@@ -42,8 +43,8 @@ def make_coverage_gap(name, gbd_id, distribution, restrictions, levels=None, aff
         out += 2 * TAB + f"gbd_id=None,\n"
     out += 2*TAB + f"distribution='{distribution}',\n"
 
-    for field_class_name, field in zip(['Restrictions', 'Levels', ],  # 'Tmred', 'ExposureParameters'],
-                                       [restrictions, levels, ]):  # tmred, exposure_parameters]):
+    for field_class_name, field in zip(['Restrictions', 'Categories', ],  # 'Tmred', 'ExposureParameters'],
+                                       [restrictions, categories, ]):  # tmred, exposure_parameters]):
         field_name = 'exposure_parameters' if field_class_name == 'ExposureParameters' else field_class_name.lower()
         if field and not isinstance(field, str):
             out += 2*TAB + f"{field_name}={field_class_name}(\n"
@@ -89,32 +90,32 @@ def make_coverage_gap(name, gbd_id, distribution, restrictions, levels=None, aff
 
 def make_coverage_gaps(coverage_gap_data):
     out = "coverage_gaps = CoverageGaps(\n"
-    for name, gbd_id, distribution, restrictions, levels, affected_causes, affected_risk_factors in coverage_gap_data:
-        out += make_coverage_gap(name, gbd_id, distribution, restrictions, levels, affected_causes, affected_risk_factors)
+    for name, gbd_id, distribution, restrictions, categories, affected_causes, affected_risk_factors in coverage_gap_data:
+        out += make_coverage_gap(name, gbd_id, distribution, restrictions, categories, affected_causes, affected_risk_factors)
     out += ")\n"
     return out
 
 
-def build_mapping_template():
+def build_mapping_template(_):
     out = make_module_docstring('Mapping templates for coverage gap data.', __file__)
     out += make_import('typing', ['Tuple', 'Union']) + '\n'
     out += make_import('.id', ['reiid'])
-    out += make_import('.base_template', ['GbdRecord', 'Levels', 'Restrictions'])
+    out += make_import('.base_template', ['GbdRecord', 'Categories', 'Restrictions'])
     out += make_import('.cause_template', ['Cause'])
-    out += make_import('.risk_template', ['Risk'])
+    out += make_import('.risk_factor_template', ['RiskFactor'])
 
-    for entity, info in base_types.items():
+    for entity, info in get_base_types().items():
         out += SPACING
         out += make_record(entity, **info)
     return out
 
 
-def build_mapping():
+def build_mapping(_):
     out = make_module_docstring('Mapping of coverage gaps.', __file__)
     out += make_import('.id', ['reiid'])
-    out += make_import('.base_template', ['Levels', 'Restrictions'])
+    out += make_import('.base_template', ['Categories', 'Restrictions'])
     out += make_import('.coverage_gap_template', ['CoverageGap', 'CoverageGaps'])
     out += make_import('.cause', ['causes'])
-    out += make_import('.risk', ['risk_factors']) + SPACING
+    out += make_import('.risk_factor', ['risk_factors']) + SPACING
     out += make_coverage_gaps(get_coverage_gap_data())
     return out
