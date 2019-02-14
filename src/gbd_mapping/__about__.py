@@ -9,4 +9,4 @@ __uri__ = "https://github.com/ihmeuw/gbd_mapping"
 __version__ = "2.0.0"
 
 __author__ = "The vivarium developers"
-__email__ = "collijk@uw.edu"
+__email__ = "vivarium.dev@gmail.com"
