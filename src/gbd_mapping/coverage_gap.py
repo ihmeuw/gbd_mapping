@@ -12,8 +12,8 @@ from .risk_factor import risk_factors
 
 
 coverage_gaps = CoverageGaps(
-    lack_of_vitamin_a_fortification=CoverageGap(
-        name='lack_of_vitamin_a_fortification',
+    lack_of_breastfeeding_promotion=CoverageGap(
+        name='lack_of_breastfeeding_promotion',
         kind='coverage_gap',
         gbd_id=None,
         distribution='dichotomous',
@@ -28,7 +28,7 @@ coverage_gaps = CoverageGaps(
             cat2='unexposed',
         ),
         affected_causes=(),
-        affected_risk_factors=(risk_factors.vitamin_a_deficiency, ),
+        affected_risk_factors=(risk_factors.discontinued_breastfeeding, risk_factors.non_exclusive_breastfeeding, ),
     ),
     lack_of_eggs=CoverageGap(
         name='lack_of_eggs',
@@ -48,8 +48,8 @@ coverage_gaps = CoverageGaps(
         affected_causes=(),
         affected_risk_factors=(risk_factors.child_underweight, risk_factors.child_stunting, ),
     ),
-    lack_of_breastfeeding_promotion=CoverageGap(
-        name='lack_of_breastfeeding_promotion',
+    lack_of_vitamin_a_fortification=CoverageGap(
+        name='lack_of_vitamin_a_fortification',
         kind='coverage_gap',
         gbd_id=None,
         distribution='dichotomous',
@@ -64,6 +64,6 @@ coverage_gaps = CoverageGaps(
             cat2='unexposed',
         ),
         affected_causes=(),
-        affected_risk_factors=(risk_factors.discontinued_breastfeeding, risk_factors.non_exclusive_breastfeeding, ),
+        affected_risk_factors=(risk_factors.vitamin_a_deficiency, ),
     ),
 )
