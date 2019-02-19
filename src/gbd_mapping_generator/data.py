@@ -455,7 +455,7 @@ def get_coverage_gap_list():
 
 def get_coverage_gap_data():
     out = []
-    for c in gbd.get_coverage_gap_list():
+    for c in get_coverage_gap_list():
         metadata = get_coverage_gap_metadata(c)
 
         gbd_id = metadata['gbd_id'] if 'gbd_id' in metadata else None
