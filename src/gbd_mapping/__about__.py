@@ -6,7 +6,7 @@ __title__ = "gbd_mapping"
 __summary__ = "A programmatically accessible mapping of gbd entities."
 __uri__ = "https://github.com/ihmeuw/gbd_mapping"
 
-__version__ = "2.0.1"
+__version__ = "2.0.2"
 
 __author__ = "The vivarium developers"
 __email__ = "vivarium.dev@gmail.com"

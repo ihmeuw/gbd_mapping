@@ -1,3 +1,9 @@
+**2.0.2 - 02/24/19**
+
+ - Remove unused coverage gaps.
+ - Have coverage gap inherit from modelable entity.
+ - Use sorted list for coverage gaps to fix order.
+
 **2.0.1 - 02/14/19**
 
  - Update dependencies.
