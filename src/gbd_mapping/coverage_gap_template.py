@@ -7,12 +7,12 @@ Any manual changes will be lost.
 from typing import Tuple, Union
 
 from .id import reiid
-from .base_template import GbdRecord, Categories, Restrictions
+from .base_template import GbdRecord, Categories, ModelableEntity, Restrictions
 from .cause_template import Cause
 from .risk_factor_template import RiskFactor
 
 
-class CoverageGap(GbdRecord):
+class CoverageGap(ModelableEntity):
     """Container for coverage gap GBD ids and metadata."""
     __slots__ = ('name', 'kind', 'gbd_id', 'restrictions', 'distribution', 'categories', 'affected_causes',
                  'affected_risk_factors', )
@@ -26,7 +26,9 @@ class CoverageGap(GbdRecord):
                  categories: Categories,
                  affected_causes: Tuple[Cause, ...] = None,
                  affected_risk_factors: Tuple[RiskFactor, ...] = None, ):
-        super().__init__()
+        super().__init__(name=name,
+                         kind=kind,
+                         gbd_id=gbd_id)
         self.name = name
         self.kind = kind
         self.gbd_id = gbd_id
@@ -39,13 +41,7 @@ class CoverageGap(GbdRecord):
 
 class CoverageGaps(GbdRecord):
     """Container for coverage gap data."""
-    __slots__ = ('lack_of_breastfeeding_promotion', 'lack_of_eggs', 'lack_of_vitamin_a_fortification', )
+    __slots__ = ()
 
-    def __init__(self,
-                 lack_of_breastfeeding_promotion: CoverageGap,
-                 lack_of_eggs: CoverageGap,
-                 lack_of_vitamin_a_fortification: CoverageGap, ):
+    def __init__(self, ):
         super().__init__()
-        self.lack_of_breastfeeding_promotion = lack_of_breastfeeding_promotion
-        self.lack_of_eggs = lack_of_eggs
-        self.lack_of_vitamin_a_fortification = lack_of_vitamin_a_fortification

@@ -3,7 +3,7 @@ from numbers import Number
 import numpy as np
 
 from .data import get_coverage_gap_list, get_coverage_gap_data
-from .base_template_builder import gbd_record_attrs
+from .base_template_builder import gbd_record_attrs, modelable_entity_attrs
 from .util import make_import, make_module_docstring, make_record, SPACING, TAB, TEXTWIDTH
 
 
@@ -21,7 +21,7 @@ def get_base_types():
                       ('categories', 'Categories'),
                       ('affected_causes', 'Tuple[Cause, ...] = None'),
                       ('affected_risk_factors', 'Tuple[RiskFactor, ...] = None'),),
-            'superclass': ('GbdRecord', gbd_record_attrs),
+            'superclass': ('ModelableEntity', modelable_entity_attrs),
             'docstring': 'Container for coverage gap GBD ids and metadata.'
         },
         'CoverageGaps': {
@@ -100,7 +100,7 @@ def build_mapping_template(_):
     out = make_module_docstring('Mapping templates for coverage gap data.', __file__)
     out += make_import('typing', ['Tuple', 'Union']) + '\n'
     out += make_import('.id', ['reiid'])
-    out += make_import('.base_template', ['GbdRecord', 'Categories', 'Restrictions'])
+    out += make_import('.base_template', ['GbdRecord', 'Categories', 'ModelableEntity', 'Restrictions'])
     out += make_import('.cause_template', ['Cause'])
     out += make_import('.risk_factor_template', ['RiskFactor'])
 
