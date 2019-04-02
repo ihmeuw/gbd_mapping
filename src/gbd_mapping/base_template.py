@@ -137,8 +137,8 @@ class Categories(GbdRecord):
                  'cat141', 'cat142', 'cat143', 'cat144', 'cat145', 'cat146', 'cat147', 'cat148', 'cat149', )
 
     def __init__(self,
-                 cat1: str,
-                 cat2: str,
+                 cat1: str = None,
+                 cat2: str = None,
                  cat3: str = None,
                  cat4: str = None,
                  cat5: str = None,
