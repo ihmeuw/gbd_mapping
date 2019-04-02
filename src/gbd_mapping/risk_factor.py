@@ -538,8 +538,8 @@ risk_factors = RiskFactors(
         population_attributable_fraction_of_one_causes=(causes.protein_energy_malnutrition, ),
         categories=Categories(
             cat1='Child underweight exposure, <-3 sd',
-            cat2='Child underweight exposure, <-2 sd',
-            cat3='Child underweight exposure, <-1 sd',
+            cat2='Child underweight exposure,  -3 to -2 sd',
+            cat3='Child underweight exposure,  -2 to -1 sd',
             cat4='Unexposed',
         ),
     ),
@@ -3639,8 +3639,8 @@ risk_factors = RiskFactors(
         population_attributable_fraction_of_one_causes=(causes.protein_energy_malnutrition, ),
         categories=Categories(
             cat1='Child wasting exposure, <-3 sd',
-            cat2='Child wasting exposure, <-2 sd',
-            cat3='Child wasting exposure, <-1 sd',
+            cat2='Child wasting exposure,  -3 to -2 sd',
+            cat3='Child wasting exposure,  -2 to -1 sd',
         ),
     ),
     child_stunting=RiskFactor(
@@ -3678,8 +3678,8 @@ risk_factors = RiskFactors(
         population_attributable_fraction_of_one_causes=(),
         categories=Categories(
             cat1='Child stunting exposure, <-3 sd',
-            cat2='Child stunting exposure, <-2 sd',
-            cat3='Child stunting exposure, <-1 sd',
+            cat2='Child stunting exposure,  -3 to -2 sd',
+            cat3='Child stunting exposure,  -2 to -1 sd',
         ),
     ),
     lead_exposure_in_blood=RiskFactor(
@@ -4044,19 +4044,12 @@ risk_factors = RiskFactors(
         population_attributable_fraction_of_one_causes=(causes.neonatal_preterm_birth, ),
         categories=Categories(
             cat2='Birth prevalence - [0, 24) wks, [0, 500) g',
-            cat4='Birth prevalence - [24, 26) wks, [0, 500) g',
-            cat5='Birth prevalence - [26, 28) wks, [0, 500) g',
-            cat7='Birth prevalence - [28, 30) wks, [0, 500) g',
             cat8='Birth prevalence - [0, 24) wks, [500, 1000) g',
             cat10='Birth prevalence - [24, 26) wks, [500, 1000) g',
             cat11='Birth prevalence - [26, 28) wks, [500, 1000) g',
-            cat12='Birth prevalence - [32, 34) wks, [500, 1000) g',
-            cat13='Birth prevalence - [0, 24) wks, [1000, 1500) g',
             cat14='Birth prevalence - [30, 32) wks, [500, 1000) g',
             cat15='Birth prevalence - [28, 30) wks, [500, 1000) g',
-            cat16='Birth prevalence - [24, 26) wks, [1000, 1500) g',
             cat17='Birth prevalence - [26, 28) wks, [1000, 1500) g',
-            cat18='Birth prevalence - [26, 28) wks, [1500, 2000) g',
             cat19='Birth prevalence - [34, 36) wks, [1000, 1500) g',
             cat20='Birth prevalence - [28, 30) wks, [1500, 2000) g',
             cat21='Birth prevalence - [28, 30) wks, [1000, 1500) g',
