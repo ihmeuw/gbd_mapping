@@ -20,7 +20,7 @@ tmred_attrs = (('distribution', 'str'),
                ('inverted', 'bool'),
                ('min', 'scalar = None'),
                ('max', 'scalar = None'),)
-categories_attrs = tuple([('cat1', 'str'), ('cat2', 'str')] + [(f'cat{i}', 'str = None') for i in range(3, 150)])
+categories_attrs = tuple([(f'cat{i}', 'str = None') for i in range(1, 150)])
 
 
 def get_base_types():
