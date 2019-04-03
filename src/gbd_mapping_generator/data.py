@@ -290,7 +290,7 @@ def get_risk_data(with_survey):
 
     out = []
     # Some polytomous risks have an explicit tmrel category, some do not.
-    contain_tmrel = [84, 128, 136, 240, 241, 339]
+    contain_tmrel = [128, 339]
 
     for rei_id, risk in risks.iterrows():
         name = risk['rei_name']

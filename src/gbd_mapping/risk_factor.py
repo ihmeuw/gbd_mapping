@@ -124,6 +124,7 @@ risk_factors = RiskFactors(
         categories=Categories(
             cat1='Unsafe sanitation exposure, Unimproved & untreated',
             cat2='Unsafe sanitation exposure, Improved',
+            cat3='Unexposed',
         ),
     ),
     air_pollution=RiskFactor(
@@ -2279,6 +2280,7 @@ risk_factors = RiskFactors(
             cat1='Non-exclusive breastfeeding exposure, none',
             cat2='Non-exclusive breastfeeding exposure, partial',
             cat3='Non-exclusive breastfeeding exposure, predominant',
+            cat4='Unexposed',
         ),
     ),
     discontinued_breastfeeding=RiskFactor(
@@ -3641,6 +3643,7 @@ risk_factors = RiskFactors(
             cat1='Child wasting exposure, <-3 sd',
             cat2='Child wasting exposure,  -3 to -2 sd',
             cat3='Child wasting exposure,  -2 to -1 sd',
+            cat4='Unexposed',
         ),
     ),
     child_stunting=RiskFactor(
@@ -3680,6 +3683,7 @@ risk_factors = RiskFactors(
             cat1='Child stunting exposure, <-3 sd',
             cat2='Child stunting exposure,  -3 to -2 sd',
             cat3='Child stunting exposure,  -2 to -1 sd',
+            cat4='Unexposed',
         ),
     ),
     lead_exposure_in_blood=RiskFactor(
