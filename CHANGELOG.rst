@@ -1,3 +1,7 @@
+**2.0.3 - 04/09/19**
+
+ - Remove incorrect risk categories from previous GBD rounds.
+
 **2.0.2 - 02/24/19**
 
  - Remove unused coverage gaps.
