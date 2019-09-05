@@ -30,19 +30,19 @@ class Healthstate(ModelableEntity):
 
 class Sequela(ModelableEntity):
     """Container for sequela GBD ids and metadata."""
-    __slots__ = ('name', 'kind', 'gbd_id', 'dismod_id', 'incidence_exists', 'prevalence_exists',
-                 'birth_prevalence_exists', 'incidence_in_range', 'prevalence_in_range', 'birth_prevalence_in_range',
-                 'healthstate', )
+    __slots__ = ('name', 'kind', 'gbd_id', 'dismod_id', 'incidence_rate_exists', 'prevalence_exists',
+                 'birth_prevalence_exists', 'incidence_rate_in_range', 'prevalence_in_range',
+                 'birth_prevalence_in_range', 'healthstate', )
 
     def __init__(self,
                  name: str,
                  kind: str,
                  gbd_id: sid,
                  dismod_id: meid,
-                 incidence_exists: bool,
+                 incidence_rate_exists: bool,
                  prevalence_exists: bool,
                  birth_prevalence_exists: bool,
-                 incidence_in_range: Union[bool, None],
+                 incidence_rate_in_range: Union[bool, None],
                  prevalence_in_range: Union[bool, None],
                  birth_prevalence_in_range: Union[bool, None],
                  healthstate: Healthstate, ):
@@ -53,10 +53,10 @@ class Sequela(ModelableEntity):
         self.kind = kind
         self.gbd_id = gbd_id
         self.dismod_id = dismod_id
-        self.incidence_exists = incidence_exists
+        self.incidence_rate_exists = incidence_rate_exists
         self.prevalence_exists = prevalence_exists
         self.birth_prevalence_exists = birth_prevalence_exists
-        self.incidence_in_range = incidence_in_range
+        self.incidence_rate_in_range = incidence_rate_in_range
         self.prevalence_in_range = prevalence_in_range
         self.birth_prevalence_in_range = birth_prevalence_in_range
         self.healthstate = healthstate

@@ -9,3 +9,5 @@ from gbd_mapping.risk_factor import RiskFactor, risk_factors
 
 from gbd_mapping.__about__ import (__author__, __copyright__, __email__, __license__,
                                    __summary__, __title__, __uri__, __version__, )
+from .cause import Cause, causes
+from .sequela import Sequela, Healthstate, sequelae
