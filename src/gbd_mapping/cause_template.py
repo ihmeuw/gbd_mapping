@@ -15,12 +15,12 @@ from .etiology_template import Etiology
 class Cause(ModelableEntity):
     """Container for cause GBD ids and metadata"""
     __slots__ = ('name', 'kind', 'gbd_id', 'dismod_id', 'most_detailed', 'level', 'restrictions',
-                 'prevalence_exists', 'incidence_exists', 'remission_exists', 'deaths_exists',
-                 'birth_prevalence_exists', 'prevalence_in_range', 'incidence_in_range', 'remission_in_range',
-                 'deaths_in_range', 'birth_prevalence_in_range', 'prevalence_consistent', 'incidence_consistent',
-                 'deaths_consistent', 'birth_prevalence_consistent', 'prevalence_aggregates', 'incidence_aggregates',
-                 'deaths_aggregates', 'birth_prevalence_aggregates', 'parent', 'sub_causes', 'sequelae',
-                 'etiologies', )
+                 'prevalence_exists', 'incidence_rate_exists', 'remission_rate_exists', 'deaths_exists',
+                 'birth_prevalence_exists', 'prevalence_in_range', 'incidence_rate_in_range',
+                 'remission_rate_in_range', 'deaths_in_range', 'birth_prevalence_in_range', 'prevalence_consistent',
+                 'incidence_rate_consistent', 'deaths_consistent', 'birth_prevalence_consistent',
+                 'prevalence_aggregates', 'incidence_rate_aggregates', 'deaths_aggregates',
+                 'birth_prevalence_aggregates', 'parent', 'sub_causes', 'sequelae', 'etiologies', )
 
     def __init__(self,
                  name: str,
@@ -31,21 +31,21 @@ class Cause(ModelableEntity):
                  level: int,
                  restrictions: Restrictions,
                  prevalence_exists: Union[bool, None],
-                 incidence_exists: Union[bool, None],
-                 remission_exists: Union[bool, None],
+                 incidence_rate_exists: Union[bool, None],
+                 remission_rate_exists: Union[bool, None],
                  deaths_exists: Union[bool, None],
                  birth_prevalence_exists: Union[bool, None],
                  prevalence_in_range: Union[bool, None],
-                 incidence_in_range: Union[bool, None],
-                 remission_in_range: Union[bool, None],
+                 incidence_rate_in_range: Union[bool, None],
+                 remission_rate_in_range: Union[bool, None],
                  deaths_in_range: Union[bool, None],
                  birth_prevalence_in_range: Union[bool, None],
                  prevalence_consistent: Union[bool, None],
-                 incidence_consistent: Union[bool, None],
+                 incidence_rate_consistent: Union[bool, None],
                  deaths_consistent: Union[bool, None],
                  birth_prevalence_consistent: Union[bool, None],
                  prevalence_aggregates: Union[bool, None],
-                 incidence_aggregates: Union[bool, None],
+                 incidence_rate_aggregates: Union[bool, None],
                  deaths_aggregates: Union[bool, None],
                  birth_prevalence_aggregates: Union[bool, None],
                  parent: "Cause" = None,
@@ -63,21 +63,21 @@ class Cause(ModelableEntity):
         self.level = level
         self.restrictions = restrictions
         self.prevalence_exists = prevalence_exists
-        self.incidence_exists = incidence_exists
-        self.remission_exists = remission_exists
+        self.incidence_rate_exists = incidence_rate_exists
+        self.remission_rate_exists = remission_rate_exists
         self.deaths_exists = deaths_exists
         self.birth_prevalence_exists = birth_prevalence_exists
         self.prevalence_in_range = prevalence_in_range
-        self.incidence_in_range = incidence_in_range
-        self.remission_in_range = remission_in_range
+        self.incidence_rate_in_range = incidence_rate_in_range
+        self.remission_rate_in_range = remission_rate_in_range
         self.deaths_in_range = deaths_in_range
         self.birth_prevalence_in_range = birth_prevalence_in_range
         self.prevalence_consistent = prevalence_consistent
-        self.incidence_consistent = incidence_consistent
+        self.incidence_rate_consistent = incidence_rate_consistent
         self.deaths_consistent = deaths_consistent
         self.birth_prevalence_consistent = birth_prevalence_consistent
         self.prevalence_aggregates = prevalence_aggregates
-        self.incidence_aggregates = incidence_aggregates
+        self.incidence_rate_aggregates = incidence_rate_aggregates
         self.deaths_aggregates = deaths_aggregates
         self.birth_prevalence_aggregates = birth_prevalence_aggregates
         self.parent = parent
