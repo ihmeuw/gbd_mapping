@@ -16,21 +16,21 @@ def get_base_types(with_survey):
                    ('restrictions', 'Restrictions'),]
     if with_survey:
         cause_attrs += [('prevalence_exists', "Union[bool, None]"),
-                        ('incidence_exists', "Union[bool, None]"),
-                        ('remission_exists', "Union[bool, None]"),
+                        ('incidence_rate_exists', "Union[bool, None]"),
+                        ('remission_rate_exists', "Union[bool, None]"),
                         ('deaths_exists', "Union[bool, None]"),
                         ('birth_prevalence_exists', "Union[bool, None]"),
                         ('prevalence_in_range', "Union[bool, None]"),
-                        ('incidence_in_range', "Union[bool, None]"),
-                        ('remission_in_range', "Union[bool, None]"),
+                        ('incidence_rate_in_range', "Union[bool, None]"),
+                        ('remission_rate_in_range', "Union[bool, None]"),
                         ('deaths_in_range', "Union[bool, None]"),
                         ('birth_prevalence_in_range', "Union[bool, None]"),
                         ('prevalence_consistent', "Union[bool, None]"),
-                        ('incidence_consistent', "Union[bool, None]"),
+                        ('incidence_rate_consistent', "Union[bool, None]"),
                         ('deaths_consistent', "Union[bool, None]"),
                         ('birth_prevalence_consistent', "Union[bool, None]"),
                         ('prevalence_aggregates', "Union[bool, None]"),
-                        ('incidence_aggregates', "Union[bool, None]"),
+                        ('incidence_rate_aggregates', "Union[bool, None]"),
                         ('deaths_aggregates', "Union[bool, None]"),
                         ('birth_prevalence_aggregates', "Union[bool, None]"),]
     cause_attrs += [('parent', '"Cause" = None'),
@@ -67,21 +67,21 @@ def make_cause(name, cid, dismod_id, most_detailed, level, restrictions, prev_ex
     out += TAB * 2 + f"most_detailed={bool(most_detailed)},\n"
     if with_survey:
         out += TAB * 2 + f"prevalence_exists={prev_exists},\n"
-        out += TAB * 2 + f"incidence_exists={inc_exists},\n"
-        out += TAB * 2 + f"remission_exists={remission_exists},\n"
+        out += TAB * 2 + f"incidence_rate_exists={inc_exists},\n"
+        out += TAB * 2 + f"remission_rate_exists={remission_exists},\n"
         out += TAB * 2 + f"deaths_exists={deaths_exists},\n"
         out += TAB * 2 + f"birth_prevalence_exists={birth_prevalence_exists},\n"
         out += TAB * 2 + f"prevalence_in_range={prev_in_range},\n"
-        out += TAB * 2 + f"incidence_in_range={inc_in_range},\n"
-        out += TAB * 2 + f"remission_in_range={remission_in_range},\n"
+        out += TAB * 2 + f"incidence_rate_in_range={inc_in_range},\n"
+        out += TAB * 2 + f"remission_rate_in_range={remission_in_range},\n"
         out += TAB * 2 + f"deaths_in_range={deaths_in_range},\n"
         out += TAB * 2 + f"birth_prevalence_in_range={birth_prev_in_range},\n"
         out += TAB * 2 + f"prevalence_consistent={prev_consistent},\n"
-        out += TAB * 2 + f"incidence_consistent={inc_consistent},\n"
+        out += TAB * 2 + f"incidence_rate_consistent={inc_consistent},\n"
         out += TAB * 2 + f"deaths_consistent={deaths_consistent},\n"
         out += TAB * 2 + f"birth_prevalence_consistent={birth_prev_consistent},\n"
         out += TAB * 2 + f"prevalence_aggregates={prev_aggregates},\n"
-        out += TAB * 2 + f"incidence_aggregates={inc_aggregates},\n"
+        out += TAB * 2 + f"incidence_rate_aggregates={inc_aggregates},\n"
         out += TAB * 2 + f"deaths_aggregates={deaths_aggregates},\n"
         out += TAB * 2 + f"birth_prevalence_aggregates={birth_prev_aggregates},\n"
     out += TAB * 2 + f"parent=None,\n"

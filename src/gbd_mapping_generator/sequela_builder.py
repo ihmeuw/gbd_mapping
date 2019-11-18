@@ -11,10 +11,10 @@ def get_base_types(with_survey):
                       ('gbd_id', 'sid'),
                       ('dismod_id', 'meid')]
     if with_survey:
-        sequela_attrs += [('incidence_exists', 'bool'),
+        sequela_attrs += [('incidence_rate_exists', 'bool'),
                           ('prevalence_exists', 'bool'),
                           ('birth_prevalence_exists', 'bool'),
-                          ('incidence_in_range', 'Union[bool, None]'),
+                          ('incidence_rate_in_range', 'Union[bool, None]'),
                           ('prevalence_in_range', 'Union[bool, None]'),
                           ('birth_prevalence_in_range', 'Union[bool, None]')]
     sequela_attrs += [('healthstate', 'Healthstate'),]
@@ -50,10 +50,10 @@ def make_sequela(name, sid, mei_id, hs_name, hsid, dw_exists, inc_exists, prev_e
     out += TAB*2 + f"gbd_id={to_id(sid, 'sid')},\n"
     out += TAB*2 + f"dismod_id={to_id(mei_id, 'meid')},\n"
     if with_survey:
-        out += TAB * 2 + f"incidence_exists={inc_exists},\n"
+        out += TAB * 2 + f"incidence_rate_exists={inc_exists},\n"
         out += TAB * 2 + f"prevalence_exists={prev_exists},\n"
         out += TAB * 2 + f"birth_prevalence_exists={birth_prev_exists},\n"
-        out += TAB * 2 + f"incidence_in_range={inc_in_range},\n"
+        out += TAB * 2 + f"incidence_rate_in_range={inc_in_range},\n"
         out += TAB * 2 + f"prevalence_in_range={prev_in_range},\n"
         out += TAB * 2 + f"birth_prevalence_in_range={birth_prev_in_range},\n"
     out += TAB*2 + f"healthstate=Healthstate(\n"
