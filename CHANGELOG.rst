@@ -1,8 +1,12 @@
+**2.1.0 - 11/18/19**
+
+ - Be consistent about rate names.
+
 **2.0.4 - 06/18/19**
 
  - Add CI script to handle upstream dependencies properly.
  - Update metadata.
- 
+
 **2.0.3 - 04/09/19**
 
  - Remove incorrect risk categories from previous GBD rounds.
