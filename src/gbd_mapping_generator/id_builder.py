@@ -1,13 +1,13 @@
 from .util import TAB, SPACING, make_module_docstring
 
-ID_TYPES = (('meid', 'Modelable Entity ID'),
-            ('reiid', 'Risk-Etiology-Impairment ID'),
-            ('cid', 'Cause ID'),
-            ('sid', 'Sequela ID'),
-            ('covid', 'Covariate ID'),
-            ('hsid', 'Health State ID'))
+_ID_TYPES = (('me_id', 'Modelable Entity ID'),
+             ('rei_id', 'Risk-Etiology-Impairment ID'),
+             ('c_id', 'Cause ID'),
+             ('s_id', 'Sequela ID'),
+             ('cov_id', 'Covariate ID'),
+             ('hs_id', 'Health State ID'))
 
-IMPORTABLES_DEFINED = tuple([id_type[0] for id_type in ID_TYPES] + ['scalar', 'UNKNOWN', 'UnknownEntityError'])
+IMPORTABLES_DEFINED = tuple([id_type[0] for id_type in _ID_TYPES] + ['scalar', 'UNKNOWN', 'UnknownEntityError'])
 
 
 def make_unknown_flag():
@@ -18,14 +18,14 @@ def make_unknown_flag():
     out += 2*TAB + 'return "UNKNOWN"\n' + SPACING
     out += 'UNKNOWN = _Unknown()\n' + SPACING
     out += 'class UnknownEntityError(Exception):\n'
-    out += TAB + '"""Exception raised when a quantity is requested from ceam_inputs with an `UNKNOWN` id."""\n'
+    out += TAB + '"""Exception raised when a quantity is requested from vivarium_inputs with an `UNKNOWN` id."""\n'
     out += TAB + 'pass\n'
     return out
 
 
-def build_mapping(with_survey):
+def build_mapping():
     out = make_module_docstring('Custom ID types for GBD entities', __file__)
-    for k, v in ID_TYPES:
+    for k, v in _ID_TYPES:
         out += SPACING
         out += f'class {k}(int):\n'
         out += TAB + f'"""{v}"""\n'
