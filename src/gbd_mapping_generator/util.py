@@ -193,7 +193,7 @@ def make_slots(field_list: List[str]) -> str:
     return out
 
 
-def make_init(field_dtype_tuples: Dict[str, Any]) -> str:
+def make_init(field_dtype_tuples: Tuple[Tuple[str, str], ...]) -> str:
     """Generate the __init__ function as part of class generation.
 
     Parameters
@@ -223,13 +223,13 @@ def make_init(field_dtype_tuples: Dict[str, Any]) -> str:
     return out
 
 
-def make_super_call(superclass: Tuple[str, str]) -> str:
+def make_super_call(superclass: Tuple[str, Tuple[Tuple[str, str], ...]]) -> str:
     """Generate the call to initialize the parent class.
 
     Parameters
     ----------
     superclass
-        Tuple composed of name and attributes for the superclass.
+        Nested tuples composed of name and attributes for the superclass.
 
     Returns
     -------
@@ -276,8 +276,10 @@ def make_attribute_assignment(field_names: List[str]) -> str:
     return out
 
 
-def make_record(name: str, attrs: Tuple[str, ...]=None,
-                superclass: Tuple[str, str]=None, docstring: str=None) -> str:
+def make_record(name: str,
+                attrs: Tuple[Tuple[str, str], ...] = None,
+                superclass: Tuple[str, Tuple[Tuple[str, str], ...]] = None,
+                docstring: str = None):
     """Generate class definitions from a name and additional information.
 
     Parameters
