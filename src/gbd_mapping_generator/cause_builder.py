@@ -2,11 +2,12 @@
 from .data import get_cause_list, get_cause_data
 from .util import make_import, make_module_docstring, make_record, to_id, SPACING, TAB, TEXTWIDTH, text_wrap
 from .base_template_builder import gbd_record_attrs, modelable_entity_attrs
+from .globals import ID_TYPES
 
 IMPORTABLES_DEFINED = ('Cause', 'causes')
 
 
-def get_base_types(with_survey):
+def get_base_types():
     cause_attrs = [('name', 'str'),
                    ('kind', 'str'),
                    ('gbd_id', 'cid'),
@@ -14,25 +15,6 @@ def get_base_types(with_survey):
                    ('most_detailed', 'bool'),
                    ('level', 'int'),
                    ('restrictions', 'Restrictions'),]
-    if with_survey:
-        cause_attrs += [('prevalence_exists', "Union[bool, None]"),
-                        ('incidence_rate_exists', "Union[bool, None]"),
-                        ('remission_rate_exists', "Union[bool, None]"),
-                        ('deaths_exists', "Union[bool, None]"),
-                        ('birth_prevalence_exists', "Union[bool, None]"),
-                        ('prevalence_in_range', "Union[bool, None]"),
-                        ('incidence_rate_in_range', "Union[bool, None]"),
-                        ('remission_rate_in_range', "Union[bool, None]"),
-                        ('deaths_in_range', "Union[bool, None]"),
-                        ('birth_prevalence_in_range', "Union[bool, None]"),
-                        ('prevalence_consistent', "Union[bool, None]"),
-                        ('incidence_rate_consistent', "Union[bool, None]"),
-                        ('deaths_consistent', "Union[bool, None]"),
-                        ('birth_prevalence_consistent', "Union[bool, None]"),
-                        ('prevalence_aggregates', "Union[bool, None]"),
-                        ('incidence_rate_aggregates', "Union[bool, None]"),
-                        ('deaths_aggregates', "Union[bool, None]"),
-                        ('birth_prevalence_aggregates', "Union[bool, None]"),]
     cause_attrs += [('parent', '"Cause" = None'),
                       ('sub_causes', 'Tuple["Cause", ...] = None'),
                       ('sequelae', 'Tuple[Sequela, ...] = None'),
@@ -52,47 +34,20 @@ def get_base_types(with_survey):
     }
 
 
-def make_cause(name, cid, dismod_id, most_detailed, level, restrictions, prev_exists, inc_exists, remission_exists,
-               deaths_exists, birth_prevalence_exists, prev_in_range, inc_in_range, remission_in_range,
-               deaths_in_range, birth_prev_in_range, prev_consistent, inc_consistent, deaths_consistent,
-               birth_prev_consistent, prev_aggregates, inc_aggregates,
-               deaths_aggregates, birth_prev_aggregates, sequelae=None, etiologies=None, with_survey=False):
+def make_cause(name, cid, dismod_id, most_detailed, level, restrictions, sequelae=None, etiologies=None):
     out = ""
     out += TAB + f"'{name}': Cause(\n"
     out += TAB * 2 + f"name='{name}',\n"
     out += TAB * 2 + f"kind='cause',\n"
-    out += TAB * 2 + f"gbd_id=cid({cid}),\n"
-    out += TAB * 2 + f"dismod_id={to_id(dismod_id, 'meid')},\n"
+    out += TAB * 2 + f"gbd_id={ID_TYPES.C_ID}({cid}),\n"
+    out += TAB * 2 + f"dismod_id={to_id(dismod_id, ID_TYPES.ME_ID)},\n"
     out += TAB * 2 + f"level={level},\n"
     out += TAB * 2 + f"most_detailed={bool(most_detailed)},\n"
-    if with_survey:
-        out += TAB * 2 + f"prevalence_exists={prev_exists},\n"
-        out += TAB * 2 + f"incidence_rate_exists={inc_exists},\n"
-        out += TAB * 2 + f"remission_rate_exists={remission_exists},\n"
-        out += TAB * 2 + f"deaths_exists={deaths_exists},\n"
-        out += TAB * 2 + f"birth_prevalence_exists={birth_prevalence_exists},\n"
-        out += TAB * 2 + f"prevalence_in_range={prev_in_range},\n"
-        out += TAB * 2 + f"incidence_rate_in_range={inc_in_range},\n"
-        out += TAB * 2 + f"remission_rate_in_range={remission_in_range},\n"
-        out += TAB * 2 + f"deaths_in_range={deaths_in_range},\n"
-        out += TAB * 2 + f"birth_prevalence_in_range={birth_prev_in_range},\n"
-        out += TAB * 2 + f"prevalence_consistent={prev_consistent},\n"
-        out += TAB * 2 + f"incidence_rate_consistent={inc_consistent},\n"
-        out += TAB * 2 + f"deaths_consistent={deaths_consistent},\n"
-        out += TAB * 2 + f"birth_prevalence_consistent={birth_prev_consistent},\n"
-        out += TAB * 2 + f"prevalence_aggregates={prev_aggregates},\n"
-        out += TAB * 2 + f"incidence_rate_aggregates={inc_aggregates},\n"
-        out += TAB * 2 + f"deaths_aggregates={deaths_aggregates},\n"
-        out += TAB * 2 + f"birth_prevalence_aggregates={birth_prev_aggregates},\n"
     out += TAB * 2 + f"parent=None,\n"
     out += TAB * 2 + f"restrictions=Restrictions(\n"
 
     for restriction, value in restrictions:
-        if restriction == 'violated':
-            if value is not None:
-                out += text_wrap(f"{TAB * 3 + restriction}=(", [f"'{v}'" for v in value] + ["),"])
-        else:
-            out += TAB * 3 + f"{restriction}={value},\n"
+        out += TAB * 3 + f"{restriction}={value},\n"
     out += TAB*2 + "),\n"
 
     for entity_name, entity in zip(['sequelae', 'etiologies'], [sequelae, etiologies]):
@@ -123,24 +78,14 @@ def make_cause(name, cid, dismod_id, most_detailed, level, restrictions, prev_ex
     return out
 
 
-def make_causes(causes_list, with_survey):
+def make_causes(causes_list):
     out = f'causes = Causes(**{{\n'
-    for (name, cid, dismod_id, most_detailed, cause_level, parent, restrictions, prev_exists, inc_exists,
-         remission_exists, deaths_exists, birth_prevalence_exists, prev_in_range, inc_in_range, remission_in_range,
-         deaths_in_range, birth_prev_in_range, prev_consistent, inc_consistent, deaths_consistent,
-         birth_prev_consistent, prev_aggregates, inc_aggregates, deaths_aggregates, birth_prev_aggregates,
+    for (name, cid, dismod_id, most_detailed, cause_level, parent, restrictions,
          sequelae, etiologies, sub_causes) in causes_list:
-        out += make_cause(name, cid, dismod_id, most_detailed, cause_level, restrictions, prev_exists, inc_exists,
-                          remission_exists, deaths_exists, birth_prevalence_exists, prev_in_range, inc_in_range,
-                          remission_in_range, deaths_in_range, birth_prev_in_range, prev_consistent, inc_consistent,
-                          deaths_consistent, birth_prev_consistent, prev_aggregates, inc_aggregates, deaths_aggregates, \
-                          birth_prev_aggregates, sequelae, etiologies, with_survey)
+        out += make_cause(name, cid, dismod_id, most_detailed, cause_level, restrictions, sequelae, etiologies)
     out += "})\n\n"
 
-    for (name, cid, dismod_id, most_detailed, cause_level, parent, restrictions,  prev_exists, inc_exists,
-         remission_exists, death_exist, birth_prevalence_exists, prev_in_range, inc_in_range, remission_in_range,
-         deaths_in_range, birth_prev_in_range, prev_consistent, inc_consistent, deaths_consistent,
-         birth_prev_consistent, prev_aggregates, inc_aggregates, deaths_aggregates, birth_prev_aggregates,
+    for (name, cid, dismod_id, most_detailed, cause_level, parent, restrictions,
          sequelae, etiologies, sub_causes) in causes_list:
 
         if name != parent:
@@ -154,26 +99,26 @@ def make_causes(causes_list, with_survey):
     return out
 
 
-def build_mapping_template(with_survey):
+def build_mapping_template():
     out = make_module_docstring('Mapping templates for GBD causes.', __file__)
-    out += make_import('typing', ['Union', 'Tuple', 'List']) + '\n'
-    out += make_import('.id', ['cid', 'meid', '_Unknown'])
-    out += make_import('.base_template', ['Restrictions', 'ModelableEntity', 'GbdRecord'])
-    out += make_import('.sequela_template', ['Sequela'])
-    out += make_import('.etiology_template', ['Etiology'])
+    out += make_import('typing', ('Union', 'Tuple', 'List')) + '\n'
+    out += make_import('.id', (ID_TYPES.C_ID, ID_TYPES.ME_ID, '_Unknown'))
+    out += make_import('.base_template', ('Restrictions', 'ModelableEntity', 'GbdRecord'))
+    out += make_import('.sequela_template', ('Sequela',))
+    out += make_import('.etiology_template', ('Etiology',))
 
-    for entity, info in get_base_types(with_survey).items():
+    for entity, info in get_base_types().items():
         out += SPACING
         out += make_record(entity, **info)
     return out
 
 
-def build_mapping(with_survey):
+def build_mapping():
     out = make_module_docstring('Mapping of GBD causes.', __file__)
-    out += make_import('.id', ['cid', 'meid', 'UNKNOWN', 'scalar'])
-    out += make_import('.base_template', ['Restrictions'])
-    out += make_import('.cause_template', ['Cause', 'Causes'])
-    out += make_import('.sequela', ['sequelae'])
-    out += make_import('.etiology', ['etiologies']) + SPACING
-    out += make_causes(get_cause_data(with_survey), with_survey)
+    out += make_import('.id', (ID_TYPES.C_ID, ID_TYPES.ME_ID, 'UNKNOWN', 'scalar'))
+    out += make_import('.base_template', ('Restrictions',))
+    out += make_import('.cause_template', ('Cause', 'Causes'))
+    out += make_import('.sequela', ('sequelae',))
+    out += make_import('.etiology', ('etiologies',)) + SPACING
+    out += make_causes(get_cause_data())
     return out
