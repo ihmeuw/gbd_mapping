@@ -91,7 +91,7 @@ def text_wrap(start_string, items, sep=', ', implicit=False):
     return out
 
 
-def clean_entity_list(raw_entity_series):
+def clean_entity_list(raw_entity_series) -> List[str]:
     replace_with_underscore_chars = ['/', '(', ')', ' – ', ' - ', '-', ' ', ',', '–', '____', '___', '__', '=']
     replace_chars = {char: '_' for char in replace_with_underscore_chars}
     replace_chars.update({"'": '',

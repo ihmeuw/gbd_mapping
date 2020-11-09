@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-from typing import List
+from typing import List, Tuple
 
 import vivarium_gbd_access.gbd as gbd
 from .util import clean_entity_list, make_empty_survey
@@ -93,7 +93,7 @@ def get_sequela_data() -> List:
                     sequelae.healthstate_id))
 
 
-def get_etiology_data():
+def get_etiology_data() -> List:
     etiologies = gbd.get_rei_metadata(rei_set_id=ETIOLOGY_SET_ID)
     etiologies = etiologies[etiologies['most_detailed'] == 1]
 

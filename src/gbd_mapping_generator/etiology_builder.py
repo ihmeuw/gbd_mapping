@@ -1,3 +1,5 @@
+from typing import List, Tuple
+
 from .data import get_etiology_data, get_etiology_list
 from .base_template_builder import modelable_entity_attrs, gbd_record_attrs
 from .util import make_import, make_module_docstring, make_record, SPACING, TAB
@@ -25,7 +27,7 @@ def get_base_types():
     }
 
 
-def make_etiology(name, rei_id):
+def make_etiology(name: str, rei_id: float) -> str:
     out = ""
     out += TAB + f"{name}=Etiology(\n"
     out += TAB*2 + f"name='{name}',\n"
@@ -35,7 +37,7 @@ def make_etiology(name, rei_id):
     return out
 
 
-def make_etiologies(etiology_list):
+def make_etiologies(etiology_list: List[Tuple[str, float]]) -> str:
     out = "etiologies = Etiologies(\n"
     for name, rei_id in etiology_list:
         out += make_etiology(name, rei_id)
@@ -43,7 +45,7 @@ def make_etiologies(etiology_list):
     return out
 
 
-def build_mapping_template():
+def build_mapping_template() -> str:
     out = make_module_docstring('Mapping templates for GBD etiologies.', __file__)
     out += make_import('typing', ('Union',)) + '\n'
     out += make_import('.id', (ID_TYPES.REI_ID,))
@@ -55,7 +57,7 @@ def build_mapping_template():
     return out
 
 
-def build_mapping():
+def build_mapping() -> str:
     out = make_module_docstring('Mapping of GBD etiologies.', __file__)
     out += make_import('.id', (ID_TYPES.REI_ID,))
     out += make_import('.etiology_template', ('Etiology', 'Etiologies')) + SPACING
