@@ -82,17 +82,8 @@ def get_covariate_list(with_survey=False):
 # Functions to organize data for mapping production #
 #####################################################
 
-def get_sequela_data(with_survey):
+def get_sequela_data():
     sequelae = gbd.get_sequela_id_mapping()
-    if with_survey:
-        data_survey = gbd.get_survey_summary('sequela', SURVEY_LOCATION_ID)
-        assert len(sequelae) == len(data_survey)
-        sequelae = sequelae.merge(data_survey, on='sequela_id')
-    else:
-        data_survey = make_empty_survey(['incidence_exists', 'prevalence_exists', 'birth_prevalence_exists',
-                                         'incidence_in_range', 'prevalence_in_range', 'birth_prevalence_in_range'],
-                                        sequelae.index)
-        sequelae = sequelae.join(data_survey)
 
     dw = gbd.get_auxiliary_data('disability_weight', 'sequela', 'all', 1)
     sequelae['disability_weight_exists'] = sequelae['healthstate_id'].apply(lambda h: bool(h in set(dw.healthstate_id)))
@@ -101,13 +92,7 @@ def get_sequela_data(with_survey):
                     sequelae.modelable_entity_id,
                     clean_entity_list(sequelae.healthstate_name),
                     sequelae.healthstate_id,
-                    sequelae.disability_weight_exists,
-                    sequelae.incidence_exists,
-                    sequelae.prevalence_exists,
-                    sequelae.birth_prevalence_exists,
-                    sequelae.incidence_in_range,
-                    sequelae.prevalence_in_range,
-                    sequelae.birth_prevalence_in_range))
+                    sequelae.disability_weight_exists))
 
 
 def get_etiology_data(with_survey):
