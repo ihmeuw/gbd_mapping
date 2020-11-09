@@ -1,3 +1,5 @@
+from typing import List
+
 from .data import get_sequela_list, get_sequela_data
 from .base_template_builder import modelable_entity_attrs, gbd_record_attrs
 from .util import make_import, make_module_docstring, make_record, to_id, SPACING, TAB
@@ -9,14 +11,14 @@ IMPORTABLES_DEFINED = ('Sequela', 'Healthstate', 'sequelae')
 def get_base_types():
     sequela_attrs = [('name', 'str'),
                       ('kind', 'str'),
-                      ('gbd_id', 'sid'),
-                      ('dismod_id', 'meid')]
+                      ('gbd_id', ID_TYPES.S_ID),
+                      ('dismod_id', ID_TYPES.ME_ID)]
     sequela_attrs += [('healthstate', 'Healthstate'),]
     return {
         'Healthstate': {
             'attrs': (('name', 'str'),
                       ('kind', 'str'),
-                      ('gbd_id', 'hsid'),
+                      ('gbd_id', ID_TYPES.HS_ID),
                       ('disability_weight_exists', 'bool'),),
             'superclass': ('ModelableEntity', modelable_entity_attrs),
             'docstring': 'Container for healthstate GBD ids and metadata.',
@@ -34,7 +36,8 @@ def get_base_types():
     }
 
 
-def make_sequela(name, sid, mei_id, hs_name, hsid, dw_exists):
+def make_sequela(name: str, sid: float, mei_id: float,
+                 hs_name: str, hsid: float, dw_exists: bool) -> str:
     hs_name = 'UNKNOWN' if hs_name == 'nan' else f"'{hs_name}'"
     out = ""
     out += TAB + f"'{name}': Sequela(\n"
@@ -53,7 +56,7 @@ def make_sequela(name, sid, mei_id, hs_name, hsid, dw_exists):
     return out
 
 
-def make_sequelae(sequela_list):
+def make_sequelae(sequela_list: List[str]) -> str:
     out = "sequelae = Sequelae(**{\n"
     for (name, sid, mei_id, hs_name, hsid, dw_exists) in sequela_list:
         out += make_sequela(name, sid, mei_id, hs_name, hsid, dw_exists)
@@ -61,7 +64,7 @@ def make_sequelae(sequela_list):
     return out
 
 
-def build_mapping_template():
+def build_mapping_template() -> str:
     out = make_module_docstring('Mapping templates for GBD sequelae.', __file__)
     out += make_import('typing', ('Union',)) + '\n'
     out += make_import('.id', (ID_TYPES.S_ID, ID_TYPES.ME_ID, ID_TYPES.HS_ID))
@@ -73,7 +76,7 @@ def build_mapping_template():
     return out
 
 
-def build_mapping():
+def build_mapping() -> str:
     out = make_module_docstring('Mapping of GBD sequelae.', __file__)
     out += make_import('.id', (ID_TYPES.S_ID, ID_TYPES.HS_ID, ID_TYPES.ME_ID))
     out += make_import('.sequela_template', ('Healthstate', 'Sequela', 'Sequelae')) + SPACING

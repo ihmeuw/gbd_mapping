@@ -123,7 +123,7 @@ def clean_entity_list(raw_entity_series):
     return cleaned_up_entities
 
 
-def to_id(number, id_type):
+def to_id(number: float, id_type: str) -> str:
     if np.isnan(number):
         return 'UNKNOWN'
     else:

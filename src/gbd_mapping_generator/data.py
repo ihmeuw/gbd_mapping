@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 
+from typing import List
 
 import vivarium_gbd_access.gbd as gbd
 from .util import clean_entity_list, make_empty_survey
@@ -82,7 +83,7 @@ def get_covariate_list(with_survey=False):
 # Functions to organize data for mapping production #
 #####################################################
 
-def get_sequela_data():
+def get_sequela_data() -> List:
     sequelae = gbd.get_sequela_id_mapping()
 
     dw = gbd.get_auxiliary_data('disability_weight', 'sequela', 'all', 1)
