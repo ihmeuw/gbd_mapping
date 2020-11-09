@@ -86,14 +86,11 @@ def get_covariate_list(with_survey=False):
 def get_sequela_data() -> List:
     sequelae = gbd.get_sequela_id_mapping()
 
-    dw = gbd.get_auxiliary_data('disability_weight', 'sequela', 'all', 1)
-    sequelae['disability_weight_exists'] = sequelae['healthstate_id'].apply(lambda h: bool(h in set(dw.healthstate_id)))
     return list(zip(clean_entity_list(sequelae.sequela_name),
                     sequelae.sequela_id,
                     sequelae.modelable_entity_id,
                     clean_entity_list(sequelae.healthstate_name),
-                    sequelae.healthstate_id,
-                    sequelae.disability_weight_exists))
+                    sequelae.healthstate_id))
 
 
 def get_etiology_data(with_survey):

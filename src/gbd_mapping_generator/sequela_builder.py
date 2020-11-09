@@ -18,8 +18,7 @@ def get_base_types():
         'Healthstate': {
             'attrs': (('name', 'str'),
                       ('kind', 'str'),
-                      ('gbd_id', ID_TYPES.HS_ID),
-                      ('disability_weight_exists', 'bool'),),
+                      ('gbd_id', ID_TYPES.HS_ID),),
             'superclass': ('ModelableEntity', modelable_entity_attrs),
             'docstring': 'Container for healthstate GBD ids and metadata.',
         },
@@ -37,7 +36,7 @@ def get_base_types():
 
 
 def make_sequela(name: str, sid: float, mei_id: float,
-                 hs_name: str, hsid: float, dw_exists: bool) -> str:
+                 hs_name: str, hsid: float) -> str:
     hs_name = 'UNKNOWN' if hs_name == 'nan' else f"'{hs_name}'"
     out = ""
     out += TAB + f"'{name}': Sequela(\n"
@@ -50,7 +49,6 @@ def make_sequela(name: str, sid: float, mei_id: float,
     out += TAB*3 + f"name={hs_name},\n"
     out += TAB*3 + f"kind='healthstate',\n"
     out += TAB*3 + f"gbd_id={to_id(hsid, ID_TYPES.HS_ID)},\n"
-    out += TAB * 3 + f"disability_weight_exists={dw_exists},\n"
     out += TAB*2 + f"),\n"
     out += TAB + f"),\n"
     return out
@@ -58,8 +56,8 @@ def make_sequela(name: str, sid: float, mei_id: float,
 
 def make_sequelae(sequela_list: List[str]) -> str:
     out = "sequelae = Sequelae(**{\n"
-    for (name, sid, mei_id, hs_name, hsid, dw_exists) in sequela_list:
-        out += make_sequela(name, sid, mei_id, hs_name, hsid, dw_exists)
+    for (name, sid, mei_id, hs_name, hsid) in sequela_list:
+        out += make_sequela(name, sid, mei_id, hs_name, hsid)
     out += "})\n"
     return out
 
