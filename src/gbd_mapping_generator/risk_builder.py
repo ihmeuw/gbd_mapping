@@ -1,30 +1,20 @@
 from .data import get_risk_data, get_risk_list
 from .base_template_builder import modelable_entity_attrs, gbd_record_attrs
 from .util import make_import, make_module_docstring, make_record, SPACING, TAB, TEXTWIDTH, text_wrap, format_string_none
-
+from .globals import ID_TYPES
 
 IMPORTABLES_DEFINED = ('RiskFactor', 'risk_factors')
 
 
-def get_base_types(with_survey):
+def get_base_types():
     risk_attrs = [('name', 'str'),
                   ('kind', 'str'),
-                  ('gbd_id', 'reiid'),
+                  ('gbd_id', ID_TYPES.REI_ID),
                   ('level', 'int'),
                   ('most_detailed', 'bool'),
                   ('distribution', 'Union[str, None]'),
                   ('population_attributable_fraction_calculation_type', 'str'),
                   ('restrictions', 'Restrictions'),]
-    if with_survey:
-        risk_attrs += [('exposure_exists', 'Union[bool, None]'),
-                       ('exposure_standard_deviation_exists', 'Union[bool, None]'),
-                       ('exposure_year_type', 'Union[str, None]'),
-                       ('relative_risk_exists', 'Union[bool, None]'),
-                       ('relative_risk_in_range', 'Union[bool, None]'),
-                       ('population_attributable_fraction_yll_exists', 'Union[bool, None]'),
-                       ('population_attributable_fraction_yll_in_range', 'Union[bool, None]'),
-                       ('population_attributable_fraction_yld_exists', 'Union[bool, None]'),
-                       ('population_attributable_fraction_yld_in_range', 'Union[bool, None]'),]
 
     risk_attrs += [('affected_causes', 'Tuple[Cause, ...]'),
                    ('population_attributable_fraction_of_one_causes', 'Tuple[Cause, ...]'),
@@ -58,28 +48,16 @@ def _abbr_to_full_name(restriction):
 def make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
               affected_causes, paf_of_one_causes,
               distribution, levels, tmred, scalar,
-              exposure_exists, exposure_sd_exists, exposure_year_type, rr_exists, rr_in_range,
-              paf_yll_exists, paf_yll_in_range, paf_yld_exists, paf_yld_in_range,
-              restrictions, with_survey):
+              restrictions):
     out = ""
     out += TAB + f"{name}=RiskFactor(\n"
     out += TAB * 2 + f"name='{name}',\n"
     out += TAB * 2 + f"kind='risk_factor',\n"
-    out += TAB * 2 + f"gbd_id=reiid({rei_id}),\n"
+    out += TAB * 2 + f"gbd_id={ID_TYPES.REI_ID}({rei_id}),\n"
     out += TAB * 2 + f"level={level},\n"
     out += TAB * 2 + f"most_detailed={bool(most_detailed)},\n"
     out += TAB * 2 + f"distribution={format_string_none(distribution)},\n"
     out += TAB * 2 + f"population_attributable_fraction_calculation_type='{paf_calculation_type}',\n"
-    if with_survey:
-        out += TAB * 2 + f"exposure_exists={exposure_exists},\n"
-        out += TAB * 2 + f"exposure_standard_deviation_exists={exposure_sd_exists},\n"
-        out += TAB * 2 + f"exposure_year_type={format_string_none(exposure_year_type)},\n"
-        out += TAB * 2 + f"relative_risk_exists={rr_exists},\n"
-        out += TAB * 2 + f"relative_risk_in_range={rr_in_range},\n"
-        out += TAB * 2 + f"population_attributable_fraction_yll_exists={paf_yll_exists},\n"
-        out += TAB * 2 + f"population_attributable_fraction_yll_in_range={paf_yll_in_range},\n"
-        out += TAB * 2 + f"population_attributable_fraction_yld_exists={paf_yld_exists},\n"
-        out += TAB * 2 + f"population_attributable_fraction_yld_in_range={paf_yld_in_range},\n"
     out += 2*TAB + "restrictions=Restrictions(\n"
     for name, r in restrictions:
         if name == "violated" and r is not None:
@@ -139,20 +117,16 @@ def make_entity_list(name, entity_list, entity_type):
     return out
 
 
-def make_risks(risk_list, with_survey):
+def make_risks(risk_list):
     out = "risk_factors = RiskFactors(\n"
     for (name, rei_id, most_detailed, level, paf_calculation_type,
          affected_causes, paf_of_one_causes,
          distribution, levels, tmred, scalar,
-         exposure_exists, exposure_sd_exists, exposure_year_type, rr_exists, rr_in_range,
-         paf_yll_exists, paf_yll_in_range, paf_yld_exists, paf_yld_in_range,
          restrictions, *_) in risk_list:
         out += make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
                          affected_causes, paf_of_one_causes,
                          distribution, levels, tmred, scalar,
-                         exposure_exists, exposure_sd_exists, exposure_year_type, rr_exists, rr_in_range,
-                         paf_yll_exists, paf_yll_in_range, paf_yld_exists, paf_yld_in_range,
-                         restrictions, with_survey)
+                         restrictions)
 
     out += ")\n"
 
@@ -173,25 +147,25 @@ def make_risks(risk_list, with_survey):
     return out
 
 
-def build_mapping_template(with_survey):
+def build_mapping_template():
     out = make_module_docstring('Mapping templates for GBD risk factors.', __file__)
-    out += make_import('typing', ['Tuple', 'Union']) + '\n'
-    out += make_import('.id', ['reiid', 'scalar'])
-    out += make_import('.base_template', ['ModelableEntity', 'GbdRecord', 'Categories',
-                                          'Tmred', 'Restrictions'])
-    out += make_import('.cause_template', ['Cause'])
+    out += make_import('typing', ('Tuple', 'Union')) + '\n'
+    out += make_import('.id', (ID_TYPES.REI_ID, 'scalar'))
+    out += make_import('.base_template', ('ModelableEntity', 'GbdRecord', 'Categories',
+                                          'Tmred', 'Restrictions'))
+    out += make_import('.cause_template', ('Cause',))
 
-    for entity, info in get_base_types(with_survey).items():
+    for entity, info in get_base_types().items():
         out += SPACING
         out += make_record(entity, **info)
     return out
 
 
-def build_mapping(with_survey):
+def build_mapping():
     out = make_module_docstring('Mapping of GBD risk factors.', __file__)
-    out += make_import('.id', ['reiid', 'scalar'])
-    out += make_import('.base_template', ['Categories', 'Tmred', 'Restrictions'])
-    out += make_import('.risk_factor_template', ['RiskFactor', 'RiskFactors'])
-    out += make_import('.cause', ['causes']) + SPACING
-    out += make_risks(get_risk_data(with_survey), with_survey)
+    out += make_import('.id', (ID_TYPES.REI_ID, 'scalar'))
+    out += make_import('.base_template', ('Categories', 'Tmred', 'Restrictions'))
+    out += make_import('.risk_factor_template', ('RiskFactor', 'RiskFactors'))
+    out += make_import('.cause', ('causes',)) + SPACING
+    out += make_risks(get_risk_data())
     return out

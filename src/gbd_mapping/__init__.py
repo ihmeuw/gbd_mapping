@@ -3,3 +3,4 @@ from .base_template import GbdRecord, ModelableEntity, Restrictions, Tmred, Cate
 from .cause import Cause, causes
 from .sequela import Sequela, Healthstate, sequelae
 from .etiology import Etiology, etiologies
+from .risk_factor import RiskFactor, risk_factors
