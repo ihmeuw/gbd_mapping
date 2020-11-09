@@ -10,8 +10,8 @@ IMPORTABLES_DEFINED = ('Cause', 'causes')
 def get_base_types():
     cause_attrs = [('name', 'str'),
                    ('kind', 'str'),
-                   ('gbd_id', 'cid'),
-                   ('dismod_id', 'Union[meid, _Unknown]'),
+                   ('gbd_id', ID_TYPES.C_ID),
+                   ('me_id', f'Union[{ID_TYPES.ME_ID}, _Unknown]'),
                    ('most_detailed', 'bool'),
                    ('level', 'int'),
                    ('restrictions', 'Restrictions'),]
@@ -34,13 +34,13 @@ def get_base_types():
     }
 
 
-def make_cause(name, cid, dismod_id, most_detailed, level, restrictions, sequelae=None, etiologies=None):
+def make_cause(name, c_id, me_id, most_detailed, level, restrictions, sequelae=None, etiologies=None):
     out = ""
     out += TAB + f"'{name}': Cause(\n"
     out += TAB * 2 + f"name='{name}',\n"
     out += TAB * 2 + f"kind='cause',\n"
-    out += TAB * 2 + f"gbd_id={ID_TYPES.C_ID}({cid}),\n"
-    out += TAB * 2 + f"dismod_id={to_id(dismod_id, ID_TYPES.ME_ID)},\n"
+    out += TAB * 2 + f"gbd_id={ID_TYPES.C_ID}({c_id}),\n"
+    out += TAB * 2 + f"me_id={to_id(me_id, ID_TYPES.ME_ID)},\n"
     out += TAB * 2 + f"level={level},\n"
     out += TAB * 2 + f"most_detailed={bool(most_detailed)},\n"
     out += TAB * 2 + f"parent=None,\n"
@@ -80,12 +80,12 @@ def make_cause(name, cid, dismod_id, most_detailed, level, restrictions, sequela
 
 def make_causes(causes_list):
     out = f'causes = Causes(**{{\n'
-    for (name, cid, dismod_id, most_detailed, cause_level, parent, restrictions,
+    for (name, c_id, me_id, most_detailed, cause_level, parent, restrictions,
          sequelae, etiologies, sub_causes) in causes_list:
-        out += make_cause(name, cid, dismod_id, most_detailed, cause_level, restrictions, sequelae, etiologies)
+        out += make_cause(name, c_id, me_id, most_detailed, cause_level, restrictions, sequelae, etiologies)
     out += "})\n\n"
 
-    for (name, cid, dismod_id, most_detailed, cause_level, parent, restrictions,
+    for (name, c_id, me_id, most_detailed, cause_level, parent, restrictions,
          sequelae, etiologies, sub_causes) in causes_list:
 
         if name != parent:
