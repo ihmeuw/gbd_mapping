@@ -93,24 +93,11 @@ def get_sequela_data() -> List:
                     sequelae.healthstate_id))
 
 
-def get_etiology_data(with_survey):
+def get_etiology_data():
     etiologies = gbd.get_rei_metadata(rei_set_id=ETIOLOGY_SET_ID)
     etiologies = etiologies[etiologies['most_detailed'] == 1]
-    if with_survey:
-        data_survey = gbd.get_survey_summary('etiology', SURVEY_LOCATION_ID)
-        assert len(etiologies) == len(data_survey)
-        etiologies = pd.merge(data_survey, etiologies, left_on=['etiology_id'], right_on=['rei_id']).sort_values(['rei_id'])
-    else:
-        data_survey = make_empty_survey(['paf_yll_exists', 'paf_yld_exists', 'paf_yll_in_range', 'paf_yld_in_range'],
-                                        index=etiologies.index)
-        etiologies = etiologies.join(data_survey)
 
-    return list(zip(clean_entity_list(etiologies.rei_name),
-                    etiologies.rei_id,
-                    etiologies.paf_yll_exists,
-                    etiologies.paf_yld_exists,
-                    etiologies.paf_yll_in_range,
-                    etiologies.paf_yld_in_range))
+    return list(zip(clean_entity_list(etiologies.rei_name), etiologies.rei_id))
 
 
 def get_cause_data():

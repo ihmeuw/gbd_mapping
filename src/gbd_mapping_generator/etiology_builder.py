@@ -1,19 +1,15 @@
 from .data import get_etiology_data, get_etiology_list
 from .base_template_builder import modelable_entity_attrs, gbd_record_attrs
 from .util import make_import, make_module_docstring, make_record, SPACING, TAB
+from .globals import ID_TYPES
 
 IMPORTABLES_DEFINED = ('Etiology', 'etiologies')
 
 
-def get_base_types(with_survey):
+def get_base_types():
     etiology_attrs = [('name', 'str'),
                       ('kind', 'str'),
-                      ('gbd_id', 'Union[reiid, None]')]
-    if with_survey:
-        etiology_attrs += [('population_attributable_fraction_yll_exists', 'bool'),
-                           ('population_attributable_fraction_yld_exists', 'bool'),
-                           ('population_attributable_fraction_yll_in_range', 'bool'),
-                           ('population_attributable_fraction_yld_in_range', 'bool'),]
+                      ('gbd_id', f'Union[{ID_TYPES.REI_ID}, None]')]
 
     return {
         'Etiology': {
@@ -29,44 +25,39 @@ def get_base_types(with_survey):
     }
 
 
-def make_etiology(name, reiid, yll_exist, yld_exist, yll_in_range, yld_in_range, with_survey):
+def make_etiology(name, rei_id):
     out = ""
     out += TAB + f"{name}=Etiology(\n"
     out += TAB*2 + f"name='{name}',\n"
     out += TAB * 2 + f"kind='etiology',\n"
-    out += TAB*2 + f"gbd_id=reiid({reiid}),\n"
-    if with_survey:
-        out += TAB * 2 + f"population_attributable_fraction_yll_exists={yll_exist},\n"
-        out += TAB * 2 + f"population_attributable_fraction_yld_exists={yld_exist},\n"
-        out += TAB * 2 + f"population_attributable_fraction_yll_in_range={yll_in_range},\n"
-        out += TAB * 2 + f"population_attributable_fraction_yld_in_range={yld_in_range},\n"
+    out += TAB*2 + f"gbd_id={ID_TYPES.REI_ID}({rei_id}),\n"
     out += TAB + "),\n"
     return out
 
 
-def make_etiologies(etiology_list, with_survey):
+def make_etiologies(etiology_list):
     out = "etiologies = Etiologies(\n"
-    for name, reiid, yll_exist, yld_exist, yll_in_range, yld_in_range in etiology_list:
-        out += make_etiology(name, reiid, yll_exist, yld_exist, yll_in_range, yld_in_range, with_survey)
+    for name, rei_id in etiology_list:
+        out += make_etiology(name, rei_id)
     out += ")\n"
     return out
 
 
-def build_mapping_template(with_survey):
+def build_mapping_template():
     out = make_module_docstring('Mapping templates for GBD etiologies.', __file__)
-    out += make_import('typing', ['Union']) + '\n'
-    out += make_import('.id', ['reiid'])
-    out += make_import('.base_template', ['ModelableEntity', 'GbdRecord'])
+    out += make_import('typing', ('Union',)) + '\n'
+    out += make_import('.id', (ID_TYPES.REI_ID,))
+    out += make_import('.base_template', ('ModelableEntity', 'GbdRecord'))
 
-    for entity, info in get_base_types(with_survey).items():
+    for entity, info in get_base_types().items():
         out += SPACING
         out += make_record(entity, **info)
     return out
 
 
-def build_mapping(with_survey):
+def build_mapping():
     out = make_module_docstring('Mapping of GBD etiologies.', __file__)
-    out += make_import('.id', ['reiid'])
-    out += make_import('.etiology_template', ['Etiology', 'Etiologies']) + SPACING
-    out += make_etiologies(get_etiology_data(with_survey), with_survey)
+    out += make_import('.id', (ID_TYPES.REI_ID,))
+    out += make_import('.etiology_template', ('Etiology', 'Etiologies')) + SPACING
+    out += make_etiologies(get_etiology_data())
     return out
