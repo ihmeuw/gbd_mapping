@@ -40,13 +40,6 @@ def get_base_types():
     }
 
 
-def _abbr_to_full_name(restriction):
-    restriction = restriction.replace('rr', 'relative_risk')
-    restriction = restriction.replace('paf', 'population_attributable_fraction')
-    restriction = restriction.replace('sd', 'standard_deviation')
-    return restriction
-
-
 def make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
               affected_causes, paf_of_one_causes, distribution, levels, tmred, scalar,
               restrictions) -> str:
@@ -61,10 +54,7 @@ def make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
     out += TAB * 2 + f"population_attributable_fraction_calculation_type='{paf_calculation_type}',\n"
     out += 2*TAB + "restrictions=Restrictions(\n"
     for name, r in restrictions:
-        # TODO - is this still relevant?
-        if name == "violated" and r is not None:
-            out += text_wrap(f"{TAB * 3 + name}=(", [f"'{_abbr_to_full_name(v)}'" for v in r] + [")"])
-        elif r is not None:
+        if r is not None:
             out += 3*TAB + f"{name}={r},\n"
     out += 2 * TAB + '),\n'
 
