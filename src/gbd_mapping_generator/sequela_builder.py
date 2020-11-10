@@ -12,7 +12,7 @@ def get_base_types():
     sequela_attrs = [('name', 'str'),
                       ('kind', 'str'),
                       ('gbd_id', ID_TYPES.S_ID),
-                      ('dismod_id', ID_TYPES.ME_ID)]
+                      ('me_id', ID_TYPES.ME_ID)]
     sequela_attrs += [('healthstate', 'Healthstate'),]
     return {
         'Healthstate': {
@@ -35,20 +35,20 @@ def get_base_types():
     }
 
 
-def make_sequela(name: str, sid: float, mei_id: float,
-                 hs_name: str, hsid: float) -> str:
+def make_sequela(name: str, s_id: float, mei_id: float,
+                 hs_name: str, hs_id: float) -> str:
     hs_name = 'UNKNOWN' if hs_name == 'nan' else f"'{hs_name}'"
     out = ""
     out += TAB + f"'{name}': Sequela(\n"
     out += TAB*2 + f"name='{name}',\n"
     out += TAB * 2 + f"kind='sequela',\n"
-    out += TAB*2 + f"gbd_id={to_id(sid, ID_TYPES.S_ID)},\n"
-    out += TAB*2 + f"dismod_id={to_id(mei_id, ID_TYPES.ME_ID)},\n"
+    out += TAB*2 + f"gbd_id={to_id(s_id, ID_TYPES.S_ID)},\n"
+    out += TAB*2 + f"me_id={to_id(mei_id, ID_TYPES.ME_ID)},\n"
     out += TAB*2 + f"healthstate=Healthstate(\n"
 
     out += TAB*3 + f"name={hs_name},\n"
     out += TAB*3 + f"kind='healthstate',\n"
-    out += TAB*3 + f"gbd_id={to_id(hsid, ID_TYPES.HS_ID)},\n"
+    out += TAB*3 + f"gbd_id={to_id(hs_id, ID_TYPES.HS_ID)},\n"
     out += TAB*2 + f"),\n"
     out += TAB + f"),\n"
     return out
