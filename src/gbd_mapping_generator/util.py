@@ -123,7 +123,21 @@ def clean_entity_list(raw_entity_series):
     return cleaned_up_entities
 
 
-def to_id(number, id_type):
+def to_id(number: float, id_type: str) -> str:
+    """Wrap the id value with the id type. Be mindful of NaN values.
+
+    Parameters
+    ----------
+    number
+        The id value.
+    id_type
+        The id type.
+
+    Returns
+    -------
+        String with the id type wrapping the value in parentheses.
+
+    """
     if np.isnan(number):
         return 'UNKNOWN'
     else:
