@@ -130,7 +130,7 @@ def get_etiology_data(with_survey):
                     etiologies.paf_yld_in_range))
 
 
-def get_cause_data(with_survey):
+def get_cause_data():
     sequelae = gbd.get_sequela_id_mapping().sort_values('sequela_id')
 
     etiologies = gbd.get_rei_metadata(rei_set_id=ETIOLOGY_SET_ID)
@@ -153,24 +153,9 @@ def get_cause_data(with_survey):
                            'yll_only': causes.yll_only.replace({np.NaN: False, 1: True}),
                            'yld_only': causes.yld_only.replace({np.NaN: False, 1: True}),
                            'yll_age_start': causes.yll_age_start.replace({np.NaN: 0}),
-                           'yll_age_end': causes.yll_age_end,
+                           'yll_age_end': causes.yll_age_end.replace({np.NaN: 95}),
                            'yld_age_start': causes.yld_age_start.replace({np.NaN: 0}),
-                           'yld_age_end': causes.yld_age_end})
-
-    if with_survey:
-        data_survey = gbd.get_survey_summary('cause', SURVEY_LOCATION_ID)
-        assert len(causes) == len(data_survey)
-        causes = causes.merge(data_survey, on='cause_id')
-
-    else:
-        data_survey = make_empty_survey(['prevalence_exists', 'incidence_exists', 'remission_exists', 'deaths_exists',
-                                         'birth_prevalence_exists', 'prevalence_in_range', 'incidence_in_range',
-                                         'remission_in_range', 'deaths_in_range', 'birth_prevalence_in_range',
-                                         'prevalence_consistent', 'incidence_consistent', 'deaths_consistent',
-                                         'birth_prevalence_consistent', 'prevalence_aggregates', 'incidence_aggregates',
-                                         'deaths_aggregates', 'birth_prevalence_aggregates', 'violated_restrictions'],
-                                        index=causes.index)
-        causes = causes.join(data_survey)
+                           'yld_age_end': causes.yld_age_end.replace({np.NaN: 95})})
 
     causes = causes.set_index('cause_name').join(cause_me_map).sort_values('cause_id').reset_index()
 
@@ -183,35 +168,13 @@ def get_cause_data(with_survey):
         most_detailed = cause['most_detailed']
         level = cause['level']
         restrictions = make_cause_restrictions(cause)
-        prev_exists = cause['prevalence_exists']
-        inc_exists = cause['incidence_exists']
-        remission_exists = cause['remission_exists']
-        deaths_exists = cause['deaths_exists']
-        birth_prevalence_exists = cause['birth_prevalence_exists']
-        prev_in_range = cause['prevalence_in_range']
-        inc_in_range = cause['incidence_in_range']
-        remission_in_range = cause['remission_in_range']
-        deaths_in_range = cause['deaths_in_range']
-        birth_prev_in_range = cause['birth_prevalence_in_range']
-        prev_consistent = cause['prevalence_consistent']
-        inc_consistent = cause['incidence_consistent']
-        deaths_consistent = cause['deaths_consistent']
-        birth_prev_consistent = cause['birth_prevalence_consistent']
-        prev_aggregates = cause['prevalence_aggregates']
-        inc_aggregates = cause['incidence_aggregates']
-        deaths_aggregates = cause['deaths_aggregates']
-        birth_prev_aggregates = cause['birth_prevalence_aggregates']
-
         eti_ids = cause_etiology_map[cause_etiology_map.cause_id == cid].rei_id.tolist()
         associated_etiologies = clean_entity_list(etiologies[etiologies.rei_id.isin(eti_ids)].rei_name)
         associated_sequelae = clean_entity_list(sequelae[sequelae.cause_id == cid].sequela_name)
         sub_causes = causes[causes.parent_id == cid].cause_name.tolist()
 
-        cause_data.append((name, cid, dismod_id, most_detailed, level, parent, restrictions, prev_exists, inc_exists,
-                           remission_exists, deaths_exists, birth_prevalence_exists, prev_in_range, inc_in_range,
-                           remission_in_range, deaths_in_range, birth_prev_in_range, prev_consistent, inc_consistent,
-                           deaths_consistent, birth_prev_consistent, prev_aggregates, inc_aggregates, deaths_aggregates,
-                           birth_prev_aggregates, associated_sequelae, associated_etiologies, sub_causes))
+        cause_data.append((name, cid, dismod_id, most_detailed, level, parent, restrictions,
+                           associated_sequelae, associated_etiologies, sub_causes))
 
     return cause_data
 
@@ -230,6 +193,7 @@ def get_age_restriction_edge(age_restriction, end=False):
               45.0: [14, 13],
               50.0: [15, 14],
               55.0: [16, 15],
+              60.0: [17, 16],
               65.0: [18, 17],
               95.0: [235, 32]}
     if not end:
@@ -241,7 +205,6 @@ def get_age_restriction_edge(age_restriction, end=False):
 
 
 def make_cause_restrictions(cause):
-    violated_restrictions = cause['violated_restrictions']
     restrictions = (
         ('male_only', not cause['female']),
         ('female_only', not cause['male']),
@@ -251,7 +214,6 @@ def make_cause_restrictions(cause):
         ('yll_age_group_id_end', get_age_restriction_edge(cause['yll_age_end'], end=True) if not cause['yld_only'] else None),
         ('yld_age_group_id_start', get_age_restriction_edge(cause['yld_age_start']) if not cause['yll_only'] else None),
         ('yld_age_group_id_end', get_age_restriction_edge(cause['yld_age_end'], end=True) if not cause['yll_only'] else None),
-        ('violated', tuple(violated_restrictions) if violated_restrictions is not None else None)
     )
     return tuple(restrictions)
 

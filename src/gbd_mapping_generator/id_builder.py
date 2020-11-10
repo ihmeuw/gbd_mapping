@@ -1,11 +1,12 @@
 from .util import TAB, SPACING, make_module_docstring
+from .globals import ID_TYPES
 
-_ID_TYPES = (('me_id', 'Modelable Entity ID'),
-             ('rei_id', 'Risk-Etiology-Impairment ID'),
-             ('c_id', 'Cause ID'),
-             ('s_id', 'Sequela ID'),
-             ('cov_id', 'Covariate ID'),
-             ('hs_id', 'Health State ID'))
+_ID_TYPES = ((ID_TYPES.ME_ID, 'Modelable Entity ID'),
+             (ID_TYPES.REI_ID, 'Risk-Etiology-Impairment ID'),
+             (ID_TYPES.C_ID, 'Cause ID'),
+             (ID_TYPES.S_ID, 'Sequela ID'),
+             (ID_TYPES.COV_ID, 'Covariate ID'),
+             (ID_TYPES.HS_ID, 'Health State ID'))
 
 IMPORTABLES_DEFINED = tuple([id_type[0] for id_type in _ID_TYPES] + ['scalar', 'UNKNOWN', 'UnknownEntityError'])
 
