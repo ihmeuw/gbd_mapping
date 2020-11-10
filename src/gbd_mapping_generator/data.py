@@ -205,7 +205,7 @@ def get_all_risk_metadata():
     return risks
 
 
-def get_risk_data():
+def get_risk_data() -> List:
     risks = get_all_risk_metadata()
     causes = get_causes().set_index('cause_id')
 

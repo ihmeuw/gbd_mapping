@@ -1,3 +1,5 @@
+from typing import List
+
 from .data import get_risk_data, get_risk_list
 from .base_template_builder import modelable_entity_attrs, gbd_record_attrs
 from .util import make_import, make_module_docstring, make_record, SPACING, TAB, TEXTWIDTH, text_wrap, format_string_none
@@ -46,9 +48,8 @@ def _abbr_to_full_name(restriction):
 
 
 def make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
-              affected_causes, paf_of_one_causes,
-              distribution, levels, tmred, scalar,
-              restrictions):
+              affected_causes, paf_of_one_causes, distribution, levels, tmred, scalar,
+              restrictions) -> str:
     out = ""
     out += TAB + f"{name}=RiskFactor(\n"
     out += TAB * 2 + f"name='{name}',\n"
@@ -60,6 +61,7 @@ def make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
     out += TAB * 2 + f"population_attributable_fraction_calculation_type='{paf_calculation_type}',\n"
     out += 2*TAB + "restrictions=Restrictions(\n"
     for name, r in restrictions:
+        # TODO - is this still relevant?
         if name == "violated" and r is not None:
             out += text_wrap(f"{TAB * 3 + name}=(", [f"'{_abbr_to_full_name(v)}'" for v in r] + [")"])
         elif r is not None:
@@ -93,7 +95,7 @@ def make_risk(name, rei_id, most_detailed, level, paf_calculation_type,
     return out
 
 
-def make_entity_list(name, entity_list, entity_type):
+def make_entity_list(name, entity_list: List, entity_type: str) -> str:
     field = 2 * TAB + f"{name}=("
     if not entity_list:
         return field + "),\n"
@@ -117,7 +119,7 @@ def make_entity_list(name, entity_list, entity_type):
     return out
 
 
-def make_risks(risk_list):
+def make_risks(risk_list: List) -> str:
     out = "risk_factors = RiskFactors(\n"
     for (name, rei_id, most_detailed, level, paf_calculation_type,
          affected_causes, paf_of_one_causes,
@@ -161,7 +163,7 @@ def build_mapping_template():
     return out
 
 
-def build_mapping():
+def build_mapping() -> str:
     out = make_module_docstring('Mapping of GBD risk factors.', __file__)
     out += make_import('.id', (ID_TYPES.REI_ID, 'scalar'))
     out += make_import('.base_template', ('Categories', 'Tmred', 'Restrictions'))
