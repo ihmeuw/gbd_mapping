@@ -1,10 +1,10 @@
 import pandas as pd
 import numpy as np
 
-from typing import List, Tuple
+from typing import List
 
 import vivarium_gbd_access.gbd as gbd
-from .util import clean_entity_list, make_empty_survey
+from .util import clean_entity_list
 
 
 CAUSE_SET_ID = 3
@@ -48,8 +48,8 @@ def get_risks():
     return risks.sort_values('rei_id')
 
 
-def get_covariates(with_survey=False):
-    covariates = get_covariate_data(with_survey)
+def get_covariates():
+    covariates = get_covariate_data()
     covariates = {c[0]: c[1] for c in covariates}
     covariates = pd.DataFrame.from_dict(covariates, orient='index').reset_index()
     return covariates.rename(columns={'index': 'covariate_name', 0: 'covariate_id'}).sort_values('covariate_id')
@@ -76,7 +76,7 @@ def get_risk_list():
 
 
 def get_covariate_list(with_survey=False):
-    return get_covariates(with_survey).covariate_name.tolist()
+    return get_covariates().covariate_name.tolist()
 
 
 #####################################################
@@ -297,36 +297,28 @@ def get_risk_data() -> List:
     return out
 
 
-def get_covariate_data(with_survey):
+def get_covariate_data():
+    def get_duplicate_indices(names: List[str]) -> List[int]:
+        dup_indices = []
+        check = set()
+        for i, v in enumerate(names):
+            if v not in check:
+                check.add(v)
+            else:
+                dup_indices.append(i)
+        return dup_indices
+
     covariates = gbd.get_covariate_metadata()
-    if with_survey:
-        data_survey = gbd.get_survey_summary('covariate', SURVEY_LOCATION_ID)
-        assert len(covariates) == len(data_survey)
+    clean_names = clean_entity_list(covariates.covariate_name)
+    covariates.covariate_name = clean_names
+    dup_indices = get_duplicate_indices(clean_names)
+    covariates = covariates.drop(dup_indices).reset_index(drop=True)
 
-        covariates = covariates.merge(data_survey, on='covariate_id')
-
-        # drop any covariates that threw an error when pulling data in the survey
-        covariates = covariates[(covariates.mean_value_exists.isin([True, False])) &
-                                (covariates.uncertainty_exists.isin([True, False]))]
-
-        # covariates are special
-        covariates['by_age_violated'] = covariates.violated_restrictions.apply(lambda x: "age_restriction_violated" in x)
-        covariates['by_sex_violated'] = covariates.violated_restrictions.apply(lambda x: "sex_restriction_violated" in x)
-    else:
-        data_survey = make_empty_survey(['mean_value_exists', 'uncertainty_exists',
-                                         'by_age_violated', 'by_sex_violated'],
-                                        index=covariates.index)
-        covariates = covariates.join(data_survey)
-
-    return list(zip(clean_entity_list(covariates.covariate_name),
+    return list(zip(covariates.covariate_name,
                     covariates.covariate_id,
                     covariates.by_age,
                     covariates.by_sex,
-                    covariates.dichotomous,
-                    covariates.mean_value_exists,
-                    covariates.uncertainty_exists,
-                    covariates.by_age_violated,
-                    covariates.by_sex_violated))
+                    covariates.dichotomous))
 
 
 def get_coverage_gap_metadata(coverage_gap):

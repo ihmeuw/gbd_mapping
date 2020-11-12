@@ -1,4 +1,5 @@
 import os
+import re
 from pathlib import Path
 
 from typing import Union, Tuple, List, Dict, Any
@@ -91,11 +92,39 @@ def text_wrap(start_string, items, sep=', ', implicit=False):
     return out
 
 
+def replace_numeric_prefix(name: str) -> str:
+    """Variables cannot start with numeric characters. Replace with the word.
+    This only occurs 3 times using GBD 2019 data.
+
+    Parameters
+    ----------
+    name
+        The name of the member variable.
+
+    Returns
+    -------
+        Input string transformed to non-numeric prefix.
+
+    """
+    number_sub_map = {
+        '2': 'two',
+        '4': 'four',
+        '12': 'twelve'
+    }
+    m = re.search('^[0-9]+', name)
+    if m:
+        name = f'{number_sub_map[m.group()]}_{name[m.span()[1]:]}'
+    return name
+
+
 def clean_entity_list(raw_entity_series) -> List[str]:
     replace_with_underscore_chars = ['/', '(', ')', ' – ', ' - ', '-', ' ', ',', '–', '____', '___', '__', '=']
     replace_chars = {char: '_' for char in replace_with_underscore_chars}
     replace_chars.update({"'": '',
                           '’': '',
+                          '[': '',
+                          ']': '',
+                          '^': '',
                           'é': 'e',
                           '<': 'less_than_',
                           '>': 'greater_than_',
@@ -110,6 +139,7 @@ def clean_entity_list(raw_entity_series) -> List[str]:
                           '&': 'and',
                           '10_year': 'ten_year',
                           'year.': 'year',
+                          'PM_2.5': 'pm_2_5',
                           'PM2.5': 'pm_2_5'})
     cleaned_up_entities = []
     for entity in list(raw_entity_series):
@@ -118,6 +148,7 @@ def clean_entity_list(raw_entity_series) -> List[str]:
         for char, rep_char in replace_chars.items():
             entity = entity.replace(char, rep_char)
 
+        entity = replace_numeric_prefix(entity)
         entity = entity.lower().rstrip().rstrip('_')
         cleaned_up_entities.append(entity)
     return cleaned_up_entities
