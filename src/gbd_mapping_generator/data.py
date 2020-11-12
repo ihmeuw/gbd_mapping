@@ -1,11 +1,11 @@
 import pandas as pd
 import numpy as np
 
-from typing import List
+from typing import List, Tuple
 
 import vivarium_gbd_access.gbd as gbd
 from .util import clean_entity_list
-
+from .globals import CovariateData, CovariateDataSeq
 
 CAUSE_SET_ID = 3
 RISK_SET_ID = 2
@@ -297,7 +297,7 @@ def get_risk_data() -> List:
     return out
 
 
-def get_covariate_data():
+def get_covariate_data() -> CovariateDataSeq:
     def get_duplicate_indices(names: List[str]) -> List[int]:
         dup_indices = []
         check = set()
@@ -314,11 +314,12 @@ def get_covariate_data():
     dup_indices = get_duplicate_indices(clean_names)
     covariates = covariates.drop(dup_indices).reset_index(drop=True)
 
-    return list(zip(covariates.covariate_name,
+    vals: CovariateData = list(zip(covariates.covariate_name,
                     covariates.covariate_id,
                     covariates.by_age,
                     covariates.by_sex,
                     covariates.dichotomous))
+    return vals
 
 
 def get_coverage_gap_metadata(coverage_gap):

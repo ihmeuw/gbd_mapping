@@ -1,7 +1,7 @@
 from .data import get_covariate_data, get_covariate_list
 from .base_template_builder import modelable_entity_attrs, gbd_record_attrs
 from .util import make_import, make_module_docstring, make_record, SPACING, TAB
-from .globals import ID_TYPES
+from .globals import ID_TYPES, CovariateDataSeq
 
 IMPORTABLES_DEFINED = ('Covariate', 'covariates')
 
@@ -28,7 +28,27 @@ def get_base_types():
     }
 
 
-def make_covariate(name, cov_id, by_age, by_sex, dichotomous):
+def make_covariate(name: str, cov_id: float, by_age: bool, by_sex: bool, dichotomous: bool) -> str:
+    """Creates a single Covariate based on the supplied parameters.
+
+    Parameters
+    ----------
+    name
+        Covariate name.
+    cov_id
+        The numeric id for the covariate.
+    by_age
+        Adjusted by age
+    by_sex
+        Adjusted by sex
+    dichotomous
+        Is dichotomous
+
+    Returns
+    -------
+        Generated string for a single covariate.
+
+    """
     out = ""
     out += TAB + f"'{name}': Covariate(\n"
     out += TAB * 2 + f"name='{name}',\n"
@@ -37,14 +57,24 @@ def make_covariate(name, cov_id, by_age, by_sex, dichotomous):
     out += TAB * 2 + f"by_age={bool(by_age)},\n"
     out += TAB * 2 + f"by_sex={bool(by_sex)},\n"
     out += TAB * 2 + f"dichotomous={bool(dichotomous)},\n"
-
-
     out += TAB + "),\n"
 
     return out
 
 
-def make_covariates(covariate_list):
+def make_covariates(covariate_list: CovariateDataSeq) -> str:
+    """Generates the list of covariates.
+
+    Parameters
+    ----------
+    covariate_list
+        Sequence of covariate data from which to generate the representation
+
+    Returns
+    -------
+        Generated string all covariates.
+
+    """
     out = "covariates = Covariates(**{\n"
     for name, cov_id, by_age, by_sex, dichotomous in covariate_list:
         out += make_covariate(name, cov_id, by_age, by_sex, dichotomous)
