@@ -205,20 +205,9 @@ def get_all_risk_metadata():
     return risks
 
 
-def get_risk_data(with_survey):
+def get_risk_data() -> List:
     risks = get_all_risk_metadata()
     causes = get_causes().set_index('cause_id')
-
-    if with_survey:
-        data_survey = gbd.get_survey_summary("risk_factor", SURVEY_LOCATION_ID)
-        assert len(risks) == len(data_survey)
-        risks = risks.join(data_survey, how='left')
-    else:
-        data_survey = make_empty_survey(['exposure_exists', 'exposure_sd_exists', 'exposure_year_type',
-                                         'rr_exists', 'rr_in_range', 'paf_yll_exists', 'paf_yll_in_range',
-                                         'paf_yld_exists', 'paf_yld_in_range'],
-                                        index=risks.index)
-        risks = risks.join(data_survey)
 
     out = []
     # Some polytomous risks have an explicit tmrel category, some do not.
@@ -234,18 +223,7 @@ def get_risk_data(with_survey):
         paf_calculation_type = risk['rei_calculation_type']
         distribution = risk['exposure_type'].replace(" ", "_") if not pd.isnull(risk['exposure_type']) else None
 
-        exposure_exists = risk['exposure_exists']
-        exposure_year_type = risk['exposure_year_type']
-
-        paf_yll_exists = risk['paf_yll_exists']
-        paf_yll_in_range = risk['paf_yll_in_range']
-
-        paf_yld_exists = risk['paf_yld_exists']
-        paf_yld_in_range = risk['paf_yld_in_range']
-
         if distribution in ['normal', 'lognormal', 'ensemble']:
-            exposure_sd_exists = risk['exposure_sd_exists']
-
             levels = None
             scalar = risk['rr_scalar']
             if pd.isnull(risk['tmred_dist']):
@@ -259,15 +237,11 @@ def get_risk_data(with_survey):
                          ('max', risk['tmrel_upper']),
                          ('inverted', bool(int(risk['inv_exp']))))
         elif distribution == 'dichotomous':
-            exposure_sd_exists = None
-
             levels = (('cat1', 'Exposed'),
                       ('cat2', 'Unexposed'))
             scalar = None
             tmred = None
         elif distribution in ['ordered_polytomous', 'unordered_polytomous']:
-            exposure_sd_exists = None
-
             levels = sorted([(cat, name) for cat, name in risk['category_map'].items()],
                             key=lambda x: int(x[0][3:]))
             max_cat = int(levels[-1][0][3:]) + 1
@@ -277,7 +251,6 @@ def get_risk_data(with_survey):
             scalar = None
             tmred = None
         else:  # It's either a custom risk or an aggregate, so we have to do a bunch of checking.
-            exposure_sd_exists = None
             if not pd.isnull(risk['category_map']):  # It's some strange categorical risk.
                 levels = sorted([(cat, name) for cat, name in risk['category_map'].items()],
                                 key=lambda x: int(x[0][3:]))
@@ -308,24 +281,6 @@ def get_risk_data(with_survey):
         else:
             paf_of_one_causes = []
 
-        if paf_calculation_type in ['continuous', 'categorical', 'custom']:
-            rr_exists = risk['rr_exists']
-            rr_in_range = risk['rr_in_range']
-        else:
-            rr_exists = None
-            rr_in_range = None
-
-        if with_survey:
-            violated_restrictions = []
-            for restr_type in ["exposure_age_restriction_violated", "exposure_sex_restriction_violated",
-                               "rr_age_restriction_violated", "rr_sex_restriction_violated",
-                               "paf_yll_age_restriction_violated", "paf_yll_sex_restriction_violated",
-                               "paf_yld_age_restriction_violated", "paf_yld_sex_restriction_violated"]:
-                if risk[restr_type] is not np.nan and risk[restr_type]:
-                    violated_restrictions.append(restr_type)
-        else:
-            violated_restrictions = None
-
         sub_risks = risks[risks.parent_id == rei_id].rei_name.tolist()
         restrictions = (('male_only', pd.isnull(risk['female'])),
                         ('female_only', pd.isnull(risk['male'])),
@@ -334,13 +289,10 @@ def get_risk_data(with_survey):
                         ('yll_age_group_id_start', risk['yll_age_group_id_start'] if not pd.isnull(risk['yll']) else None),
                         ('yll_age_group_id_end', risk['yll_age_group_id_end'] if not pd.isnull(risk['yll']) else None),
                         ('yld_age_group_id_start', risk['yld_age_group_id_start'] if not pd.isnull(risk['yld']) else None),
-                        ('yld_age_group_id_end', risk['yld_age_group_id_end'] if not pd.isnull(risk['yld']) else None),
-                        ('violated', violated_restrictions))
+                        ('yld_age_group_id_end', risk['yld_age_group_id_end'] if not pd.isnull(risk['yld']) else None),)
 
         out.append((name, rei_id, most_detailed, level, paf_calculation_type, affected_causes, paf_of_one_causes,
                     distribution, levels, tmred, scalar,
-                    exposure_exists, exposure_sd_exists, exposure_year_type, rr_exists, rr_in_range,
-                    paf_yll_exists, paf_yll_in_range, paf_yld_exists, paf_yld_in_range,
                     restrictions, parent, sub_risks, affected_risks))
     return out
 
