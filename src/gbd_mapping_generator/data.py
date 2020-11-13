@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-from typing import List, Tuple
+from typing import List
 
 import vivarium_gbd_access.gbd as gbd
 from .util import clean_entity_list
@@ -320,29 +320,3 @@ def get_covariate_data() -> CovariateDataSeq:
                     covariates.by_sex,
                     covariates.dichotomous))
     return vals
-
-
-def get_coverage_gap_metadata(coverage_gap):
-    return gbd.get_coverage_gap_metadata(coverage_gap)
-
-
-def get_coverage_gap_list():
-    return sorted(gbd.get_coverage_gap_list())
-
-
-def get_coverage_gap_data():
-    out = []
-    for c in get_coverage_gap_list():
-        metadata = get_coverage_gap_metadata(c)
-
-        gbd_id = metadata['gbd_id'] if 'gbd_id' in metadata else None
-        restrictions = tuple((k, v) for k, v in metadata['restrictions'].items())
-        levels = tuple((k, v) for k, v in metadata['levels'].items())
-
-        affected_causes = metadata.get('affected_causes') if 'affected_causes' in metadata else []
-        affected_risk_factors = metadata.get('affected_risk_factors') if 'affected_risk_factors' in metadata else []
-
-        out.append((c, gbd_id, metadata['distribution'], restrictions, levels, affected_causes,
-                    affected_risk_factors))
-
-    return out

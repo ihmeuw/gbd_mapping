@@ -7,7 +7,7 @@ from pathlib import Path
 import click
 
 from gbd_mapping_generator import (id_builder, base_template_builder, cause_builder, sequela_builder,
-                                   etiology_builder, risk_builder, covariate_builder, coverage_gap_builder)
+                                   etiology_builder, risk_builder, covariate_builder)
 
 AUTO_MAPPINGS = {
     'id': id_builder,
@@ -17,7 +17,6 @@ AUTO_MAPPINGS = {
     'etiology': etiology_builder,
     'risk_factor': risk_builder,
     'covariate': covariate_builder,
-    'coverage_gap': coverage_gap_builder,
 }
 
 ROOT = Path(__file__).resolve().parent.parent.joinpath('gbd_mapping')  # type: Path
