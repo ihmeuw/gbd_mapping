@@ -297,16 +297,18 @@ def get_risk_data() -> List:
     return out
 
 
+def get_duplicate_indices(names: List[str]) -> List[int]:
+    dup_indices = []
+    check = set()
+    for i, v in enumerate(names):
+        if v not in check:
+            check.add(v)
+        else:
+            dup_indices.append(i)
+    return dup_indices
+
+
 def get_covariate_data() -> CovariateDataSeq:
-    def get_duplicate_indices(names: List[str]) -> List[int]:
-        dup_indices = []
-        check = set()
-        for i, v in enumerate(names):
-            if v not in check:
-                check.add(v)
-            else:
-                dup_indices.append(i)
-        return dup_indices
 
     covariates = gbd.get_covariate_metadata()
     clean_names = clean_entity_list(covariates.covariate_name)
