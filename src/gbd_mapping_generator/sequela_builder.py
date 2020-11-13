@@ -64,7 +64,6 @@ def make_sequelae(sequela_list: List[str]) -> str:
 
 def build_mapping_template() -> str:
     out = make_module_docstring('Mapping templates for GBD sequelae.', __file__)
-    out += make_import('typing', ('Union',)) + '\n'
     out += make_import('.id', (ID_TYPES.S_ID, ID_TYPES.ME_ID, ID_TYPES.HS_ID))
     out += make_import('.base_template', ('ModelableEntity', 'GbdRecord'))
 

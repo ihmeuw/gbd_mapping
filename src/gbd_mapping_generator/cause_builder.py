@@ -101,7 +101,7 @@ def make_causes(causes_list):
 
 def build_mapping_template():
     out = make_module_docstring('Mapping templates for GBD causes.', __file__)
-    out += make_import('typing', ('Union', 'Tuple', 'List')) + '\n'
+    out += make_import('typing', ('Union', 'Tuple')) + '\n'
     out += make_import('.id', (ID_TYPES.C_ID, ID_TYPES.ME_ID, '_Unknown'))
     out += make_import('.base_template', ('Restrictions', 'ModelableEntity', 'GbdRecord'))
     out += make_import('.sequela_template', ('Sequela',))
@@ -115,7 +115,7 @@ def build_mapping_template():
 
 def build_mapping():
     out = make_module_docstring('Mapping of GBD causes.', __file__)
-    out += make_import('.id', (ID_TYPES.C_ID, ID_TYPES.ME_ID, 'UNKNOWN', 'scalar'))
+    out += make_import('.id', (ID_TYPES.C_ID, ID_TYPES.ME_ID, 'UNKNOWN'))
     out += make_import('.base_template', ('Restrictions',))
     out += make_import('.cause_template', ('Cause', 'Causes'))
     out += make_import('.sequela', ('sequelae',))
