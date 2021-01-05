@@ -24,7 +24,7 @@ if __name__ == "__main__":
     ]
 
     data_requires = [
-        'vivarium-gbd-access>=2.0.2',
+        'vivarium-gbd-access>=3.0.0',
     ]
 
     test_requirements = [

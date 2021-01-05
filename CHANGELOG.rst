@@ -1,3 +1,7 @@
+**3.0.0 - 1/5/21**
+
+ - Update to GBD 2019
+ 
 **2.1.0 - 11/18/19**
 
  - Be consistent about rate names.
