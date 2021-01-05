@@ -1,10 +1,11 @@
 import pandas as pd
 import numpy as np
 
+from typing import List
 
 import vivarium_gbd_access.gbd as gbd
-from .util import clean_entity_list, make_empty_survey
-
+from .util import clean_entity_list
+from .globals import CovariateData, CovariateDataSeq
 
 CAUSE_SET_ID = 3
 RISK_SET_ID = 2
@@ -47,8 +48,8 @@ def get_risks():
     return risks.sort_values('rei_id')
 
 
-def get_covariates(with_survey=False):
-    covariates = get_covariate_data(with_survey)
+def get_covariates():
+    covariates = get_covariate_data()
     covariates = {c[0]: c[1] for c in covariates}
     covariates = pd.DataFrame.from_dict(covariates, orient='index').reset_index()
     return covariates.rename(columns={'index': 'covariate_name', 0: 'covariate_id'}).sort_values('covariate_id')
@@ -75,62 +76,31 @@ def get_risk_list():
 
 
 def get_covariate_list(with_survey=False):
-    return get_covariates(with_survey).covariate_name.tolist()
+    return get_covariates().covariate_name.tolist()
 
 
 #####################################################
 # Functions to organize data for mapping production #
 #####################################################
 
-def get_sequela_data(with_survey):
+def get_sequela_data() -> List:
     sequelae = gbd.get_sequela_id_mapping()
-    if with_survey:
-        data_survey = gbd.get_survey_summary('sequela', SURVEY_LOCATION_ID)
-        assert len(sequelae) == len(data_survey)
-        sequelae = sequelae.merge(data_survey, on='sequela_id')
-    else:
-        data_survey = make_empty_survey(['incidence_exists', 'prevalence_exists', 'birth_prevalence_exists',
-                                         'incidence_in_range', 'prevalence_in_range', 'birth_prevalence_in_range'],
-                                        sequelae.index)
-        sequelae = sequelae.join(data_survey)
 
-    dw = gbd.get_auxiliary_data('disability_weight', 'sequela', 'all', 1)
-    sequelae['disability_weight_exists'] = sequelae['healthstate_id'].apply(lambda h: bool(h in set(dw.healthstate_id)))
     return list(zip(clean_entity_list(sequelae.sequela_name),
                     sequelae.sequela_id,
                     sequelae.modelable_entity_id,
                     clean_entity_list(sequelae.healthstate_name),
-                    sequelae.healthstate_id,
-                    sequelae.disability_weight_exists,
-                    sequelae.incidence_exists,
-                    sequelae.prevalence_exists,
-                    sequelae.birth_prevalence_exists,
-                    sequelae.incidence_in_range,
-                    sequelae.prevalence_in_range,
-                    sequelae.birth_prevalence_in_range))
+                    sequelae.healthstate_id))
 
 
-def get_etiology_data(with_survey):
+def get_etiology_data() -> List:
     etiologies = gbd.get_rei_metadata(rei_set_id=ETIOLOGY_SET_ID)
     etiologies = etiologies[etiologies['most_detailed'] == 1]
-    if with_survey:
-        data_survey = gbd.get_survey_summary('etiology', SURVEY_LOCATION_ID)
-        assert len(etiologies) == len(data_survey)
-        etiologies = pd.merge(data_survey, etiologies, left_on=['etiology_id'], right_on=['rei_id']).sort_values(['rei_id'])
-    else:
-        data_survey = make_empty_survey(['paf_yll_exists', 'paf_yld_exists', 'paf_yll_in_range', 'paf_yld_in_range'],
-                                        index=etiologies.index)
-        etiologies = etiologies.join(data_survey)
 
-    return list(zip(clean_entity_list(etiologies.rei_name),
-                    etiologies.rei_id,
-                    etiologies.paf_yll_exists,
-                    etiologies.paf_yld_exists,
-                    etiologies.paf_yll_in_range,
-                    etiologies.paf_yld_in_range))
+    return list(zip(clean_entity_list(etiologies.rei_name), etiologies.rei_id))
 
 
-def get_cause_data(with_survey):
+def get_cause_data():
     sequelae = gbd.get_sequela_id_mapping().sort_values('sequela_id')
 
     etiologies = gbd.get_rei_metadata(rei_set_id=ETIOLOGY_SET_ID)
@@ -153,24 +123,9 @@ def get_cause_data(with_survey):
                            'yll_only': causes.yll_only.replace({np.NaN: False, 1: True}),
                            'yld_only': causes.yld_only.replace({np.NaN: False, 1: True}),
                            'yll_age_start': causes.yll_age_start.replace({np.NaN: 0}),
-                           'yll_age_end': causes.yll_age_end,
+                           'yll_age_end': causes.yll_age_end.replace({np.NaN: 95}),
                            'yld_age_start': causes.yld_age_start.replace({np.NaN: 0}),
-                           'yld_age_end': causes.yld_age_end})
-
-    if with_survey:
-        data_survey = gbd.get_survey_summary('cause', SURVEY_LOCATION_ID)
-        assert len(causes) == len(data_survey)
-        causes = causes.merge(data_survey, on='cause_id')
-
-    else:
-        data_survey = make_empty_survey(['prevalence_exists', 'incidence_exists', 'remission_exists', 'deaths_exists',
-                                         'birth_prevalence_exists', 'prevalence_in_range', 'incidence_in_range',
-                                         'remission_in_range', 'deaths_in_range', 'birth_prevalence_in_range',
-                                         'prevalence_consistent', 'incidence_consistent', 'deaths_consistent',
-                                         'birth_prevalence_consistent', 'prevalence_aggregates', 'incidence_aggregates',
-                                         'deaths_aggregates', 'birth_prevalence_aggregates', 'violated_restrictions'],
-                                        index=causes.index)
-        causes = causes.join(data_survey)
+                           'yld_age_end': causes.yld_age_end.replace({np.NaN: 95})})
 
     causes = causes.set_index('cause_name').join(cause_me_map).sort_values('cause_id').reset_index()
 
@@ -183,35 +138,13 @@ def get_cause_data(with_survey):
         most_detailed = cause['most_detailed']
         level = cause['level']
         restrictions = make_cause_restrictions(cause)
-        prev_exists = cause['prevalence_exists']
-        inc_exists = cause['incidence_exists']
-        remission_exists = cause['remission_exists']
-        deaths_exists = cause['deaths_exists']
-        birth_prevalence_exists = cause['birth_prevalence_exists']
-        prev_in_range = cause['prevalence_in_range']
-        inc_in_range = cause['incidence_in_range']
-        remission_in_range = cause['remission_in_range']
-        deaths_in_range = cause['deaths_in_range']
-        birth_prev_in_range = cause['birth_prevalence_in_range']
-        prev_consistent = cause['prevalence_consistent']
-        inc_consistent = cause['incidence_consistent']
-        deaths_consistent = cause['deaths_consistent']
-        birth_prev_consistent = cause['birth_prevalence_consistent']
-        prev_aggregates = cause['prevalence_aggregates']
-        inc_aggregates = cause['incidence_aggregates']
-        deaths_aggregates = cause['deaths_aggregates']
-        birth_prev_aggregates = cause['birth_prevalence_aggregates']
-
         eti_ids = cause_etiology_map[cause_etiology_map.cause_id == cid].rei_id.tolist()
         associated_etiologies = clean_entity_list(etiologies[etiologies.rei_id.isin(eti_ids)].rei_name)
         associated_sequelae = clean_entity_list(sequelae[sequelae.cause_id == cid].sequela_name)
         sub_causes = causes[causes.parent_id == cid].cause_name.tolist()
 
-        cause_data.append((name, cid, dismod_id, most_detailed, level, parent, restrictions, prev_exists, inc_exists,
-                           remission_exists, deaths_exists, birth_prevalence_exists, prev_in_range, inc_in_range,
-                           remission_in_range, deaths_in_range, birth_prev_in_range, prev_consistent, inc_consistent,
-                           deaths_consistent, birth_prev_consistent, prev_aggregates, inc_aggregates, deaths_aggregates,
-                           birth_prev_aggregates, associated_sequelae, associated_etiologies, sub_causes))
+        cause_data.append((name, cid, dismod_id, most_detailed, level, parent, restrictions,
+                           associated_sequelae, associated_etiologies, sub_causes))
 
     return cause_data
 
@@ -230,6 +163,7 @@ def get_age_restriction_edge(age_restriction, end=False):
               45.0: [14, 13],
               50.0: [15, 14],
               55.0: [16, 15],
+              60.0: [17, 16],
               65.0: [18, 17],
               95.0: [235, 32]}
     if not end:
@@ -241,7 +175,6 @@ def get_age_restriction_edge(age_restriction, end=False):
 
 
 def make_cause_restrictions(cause):
-    violated_restrictions = cause['violated_restrictions']
     restrictions = (
         ('male_only', not cause['female']),
         ('female_only', not cause['male']),
@@ -251,7 +184,6 @@ def make_cause_restrictions(cause):
         ('yll_age_group_id_end', get_age_restriction_edge(cause['yll_age_end'], end=True) if not cause['yld_only'] else None),
         ('yld_age_group_id_start', get_age_restriction_edge(cause['yld_age_start']) if not cause['yll_only'] else None),
         ('yld_age_group_id_end', get_age_restriction_edge(cause['yld_age_end'], end=True) if not cause['yll_only'] else None),
-        ('violated', tuple(violated_restrictions) if violated_restrictions is not None else None)
     )
     return tuple(restrictions)
 
@@ -273,20 +205,9 @@ def get_all_risk_metadata():
     return risks
 
 
-def get_risk_data(with_survey):
+def get_risk_data() -> List:
     risks = get_all_risk_metadata()
     causes = get_causes().set_index('cause_id')
-
-    if with_survey:
-        data_survey = gbd.get_survey_summary("risk_factor", SURVEY_LOCATION_ID)
-        assert len(risks) == len(data_survey)
-        risks = risks.join(data_survey, how='left')
-    else:
-        data_survey = make_empty_survey(['exposure_exists', 'exposure_sd_exists', 'exposure_year_type',
-                                         'rr_exists', 'rr_in_range', 'paf_yll_exists', 'paf_yll_in_range',
-                                         'paf_yld_exists', 'paf_yld_in_range'],
-                                        index=risks.index)
-        risks = risks.join(data_survey)
 
     out = []
     # Some polytomous risks have an explicit tmrel category, some do not.
@@ -302,18 +223,7 @@ def get_risk_data(with_survey):
         paf_calculation_type = risk['rei_calculation_type']
         distribution = risk['exposure_type'].replace(" ", "_") if not pd.isnull(risk['exposure_type']) else None
 
-        exposure_exists = risk['exposure_exists']
-        exposure_year_type = risk['exposure_year_type']
-
-        paf_yll_exists = risk['paf_yll_exists']
-        paf_yll_in_range = risk['paf_yll_in_range']
-
-        paf_yld_exists = risk['paf_yld_exists']
-        paf_yld_in_range = risk['paf_yld_in_range']
-
         if distribution in ['normal', 'lognormal', 'ensemble']:
-            exposure_sd_exists = risk['exposure_sd_exists']
-
             levels = None
             scalar = risk['rr_scalar']
             if pd.isnull(risk['tmred_dist']):
@@ -327,15 +237,11 @@ def get_risk_data(with_survey):
                          ('max', risk['tmrel_upper']),
                          ('inverted', bool(int(risk['inv_exp']))))
         elif distribution == 'dichotomous':
-            exposure_sd_exists = None
-
             levels = (('cat1', 'Exposed'),
                       ('cat2', 'Unexposed'))
             scalar = None
             tmred = None
         elif distribution in ['ordered_polytomous', 'unordered_polytomous']:
-            exposure_sd_exists = None
-
             levels = sorted([(cat, name) for cat, name in risk['category_map'].items()],
                             key=lambda x: int(x[0][3:]))
             max_cat = int(levels[-1][0][3:]) + 1
@@ -345,7 +251,6 @@ def get_risk_data(with_survey):
             scalar = None
             tmred = None
         else:  # It's either a custom risk or an aggregate, so we have to do a bunch of checking.
-            exposure_sd_exists = None
             if not pd.isnull(risk['category_map']):  # It's some strange categorical risk.
                 levels = sorted([(cat, name) for cat, name in risk['category_map'].items()],
                                 key=lambda x: int(x[0][3:]))
@@ -376,24 +281,6 @@ def get_risk_data(with_survey):
         else:
             paf_of_one_causes = []
 
-        if paf_calculation_type in ['continuous', 'categorical', 'custom']:
-            rr_exists = risk['rr_exists']
-            rr_in_range = risk['rr_in_range']
-        else:
-            rr_exists = None
-            rr_in_range = None
-
-        if with_survey:
-            violated_restrictions = []
-            for restr_type in ["exposure_age_restriction_violated", "exposure_sex_restriction_violated",
-                               "rr_age_restriction_violated", "rr_sex_restriction_violated",
-                               "paf_yll_age_restriction_violated", "paf_yll_sex_restriction_violated",
-                               "paf_yld_age_restriction_violated", "paf_yld_sex_restriction_violated"]:
-                if risk[restr_type] is not np.nan and risk[restr_type]:
-                    violated_restrictions.append(restr_type)
-        else:
-            violated_restrictions = None
-
         sub_risks = risks[risks.parent_id == rei_id].rei_name.tolist()
         restrictions = (('male_only', pd.isnull(risk['female'])),
                         ('female_only', pd.isnull(risk['male'])),
@@ -402,70 +289,36 @@ def get_risk_data(with_survey):
                         ('yll_age_group_id_start', risk['yll_age_group_id_start'] if not pd.isnull(risk['yll']) else None),
                         ('yll_age_group_id_end', risk['yll_age_group_id_end'] if not pd.isnull(risk['yll']) else None),
                         ('yld_age_group_id_start', risk['yld_age_group_id_start'] if not pd.isnull(risk['yld']) else None),
-                        ('yld_age_group_id_end', risk['yld_age_group_id_end'] if not pd.isnull(risk['yld']) else None),
-                        ('violated', violated_restrictions))
+                        ('yld_age_group_id_end', risk['yld_age_group_id_end'] if not pd.isnull(risk['yld']) else None),)
 
         out.append((name, rei_id, most_detailed, level, paf_calculation_type, affected_causes, paf_of_one_causes,
                     distribution, levels, tmred, scalar,
-                    exposure_exists, exposure_sd_exists, exposure_year_type, rr_exists, rr_in_range,
-                    paf_yll_exists, paf_yll_in_range, paf_yld_exists, paf_yld_in_range,
                     restrictions, parent, sub_risks, affected_risks))
     return out
 
 
-def get_covariate_data(with_survey):
+def get_duplicate_indices(names: List[str]) -> List[int]:
+    dup_indices = []
+    check = set()
+    for i, v in enumerate(names):
+        if v not in check:
+            check.add(v)
+        else:
+            dup_indices.append(i)
+    return dup_indices
+
+
+def get_covariate_data() -> CovariateDataSeq:
+
     covariates = gbd.get_covariate_metadata()
-    if with_survey:
-        data_survey = gbd.get_survey_summary('covariate', SURVEY_LOCATION_ID)
-        assert len(covariates) == len(data_survey)
+    clean_names = clean_entity_list(covariates.covariate_name)
+    covariates.covariate_name = clean_names
+    dup_indices = get_duplicate_indices(clean_names)
+    covariates = covariates.drop(dup_indices).reset_index(drop=True)
 
-        covariates = covariates.merge(data_survey, on='covariate_id')
-
-        # drop any covariates that threw an error when pulling data in the survey
-        covariates = covariates[(covariates.mean_value_exists.isin([True, False])) &
-                                (covariates.uncertainty_exists.isin([True, False]))]
-
-        # covariates are special
-        covariates['by_age_violated'] = covariates.violated_restrictions.apply(lambda x: "age_restriction_violated" in x)
-        covariates['by_sex_violated'] = covariates.violated_restrictions.apply(lambda x: "sex_restriction_violated" in x)
-    else:
-        data_survey = make_empty_survey(['mean_value_exists', 'uncertainty_exists',
-                                         'by_age_violated', 'by_sex_violated'],
-                                        index=covariates.index)
-        covariates = covariates.join(data_survey)
-
-    return list(zip(clean_entity_list(covariates.covariate_name),
+    vals: CovariateData = list(zip(covariates.covariate_name,
                     covariates.covariate_id,
                     covariates.by_age,
                     covariates.by_sex,
-                    covariates.dichotomous,
-                    covariates.mean_value_exists,
-                    covariates.uncertainty_exists,
-                    covariates.by_age_violated,
-                    covariates.by_sex_violated))
-
-
-def get_coverage_gap_metadata(coverage_gap):
-    return gbd.get_coverage_gap_metadata(coverage_gap)
-
-
-def get_coverage_gap_list():
-    return sorted(gbd.get_coverage_gap_list())
-
-
-def get_coverage_gap_data():
-    out = []
-    for c in get_coverage_gap_list():
-        metadata = get_coverage_gap_metadata(c)
-
-        gbd_id = metadata['gbd_id'] if 'gbd_id' in metadata else None
-        restrictions = tuple((k, v) for k, v in metadata['restrictions'].items())
-        levels = tuple((k, v) for k, v in metadata['levels'].items())
-
-        affected_causes = metadata.get('affected_causes') if 'affected_causes' in metadata else []
-        affected_risk_factors = metadata.get('affected_risk_factors') if 'affected_risk_factors' in metadata else []
-
-        out.append((c, gbd_id, metadata['distribution'], restrictions, levels, affected_causes,
-                    affected_risk_factors))
-
-    return out
+                    covariates.dichotomous))
+    return vals

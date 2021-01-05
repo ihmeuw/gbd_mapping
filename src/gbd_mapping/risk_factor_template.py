@@ -6,7 +6,7 @@ Any manual changes will be lost.
 """
 from typing import Tuple, Union
 
-from .id import reiid, scalar
+from .id import rei_id, scalar
 from .base_template import ModelableEntity, GbdRecord, Categories, Tmred, Restrictions
 from .cause_template import Cause
 
@@ -14,32 +14,19 @@ from .cause_template import Cause
 class RiskFactor(ModelableEntity):
     """Container for risk GBD ids and metadata."""
     __slots__ = ('name', 'kind', 'gbd_id', 'level', 'most_detailed', 'distribution',
-                 'population_attributable_fraction_calculation_type', 'restrictions', 'exposure_exists',
-                 'exposure_standard_deviation_exists', 'exposure_year_type', 'relative_risk_exists',
-                 'relative_risk_in_range', 'population_attributable_fraction_yll_exists',
-                 'population_attributable_fraction_yll_in_range', 'population_attributable_fraction_yld_exists',
-                 'population_attributable_fraction_yld_in_range', 'affected_causes',
+                 'population_attributable_fraction_calculation_type', 'restrictions', 'affected_causes',
                  'population_attributable_fraction_of_one_causes', 'parent', 'sub_risk_factors',
                  'affected_risk_factors', 'categories', 'tmred', 'relative_risk_scalar', )
 
     def __init__(self,
                  name: str,
                  kind: str,
-                 gbd_id: reiid,
+                 gbd_id: rei_id,
                  level: int,
                  most_detailed: bool,
                  distribution: Union[str, None],
                  population_attributable_fraction_calculation_type: str,
                  restrictions: Restrictions,
-                 exposure_exists: Union[bool, None],
-                 exposure_standard_deviation_exists: Union[bool, None],
-                 exposure_year_type: Union[str, None],
-                 relative_risk_exists: Union[bool, None],
-                 relative_risk_in_range: Union[bool, None],
-                 population_attributable_fraction_yll_exists: Union[bool, None],
-                 population_attributable_fraction_yll_in_range: Union[bool, None],
-                 population_attributable_fraction_yld_exists: Union[bool, None],
-                 population_attributable_fraction_yld_in_range: Union[bool, None],
                  affected_causes: Tuple[Cause, ...],
                  population_attributable_fraction_of_one_causes: Tuple[Cause, ...],
                  parent: Union["RiskFactor", None] = None,
@@ -59,15 +46,6 @@ class RiskFactor(ModelableEntity):
         self.distribution = distribution
         self.population_attributable_fraction_calculation_type = population_attributable_fraction_calculation_type
         self.restrictions = restrictions
-        self.exposure_exists = exposure_exists
-        self.exposure_standard_deviation_exists = exposure_standard_deviation_exists
-        self.exposure_year_type = exposure_year_type
-        self.relative_risk_exists = relative_risk_exists
-        self.relative_risk_in_range = relative_risk_in_range
-        self.population_attributable_fraction_yll_exists = population_attributable_fraction_yll_exists
-        self.population_attributable_fraction_yll_in_range = population_attributable_fraction_yll_in_range
-        self.population_attributable_fraction_yld_exists = population_attributable_fraction_yld_exists
-        self.population_attributable_fraction_yld_in_range = population_attributable_fraction_yld_in_range
         self.affected_causes = affected_causes
         self.population_attributable_fraction_of_one_causes = population_attributable_fraction_of_one_causes
         self.parent = parent
@@ -110,11 +88,11 @@ class RiskFactors(GbdRecord):
                  'occupational_exposure_to_trichloroethylene', 'no_access_to_handwashing_facility',
                  'child_growth_failure', 'child_wasting', 'child_stunting', 'lead_exposure_in_blood',
                  'lead_exposure_in_bone', 'childhood_sexual_abuse_against_females',
-                 'childhood_sexual_abuse_against_males', 'chewing_tobacco', 'diet_low_in_legumes',
-                 'short_gestation_for_birth_weight', 'low_birth_weight_for_gestation',
-                 'low_birth_weight_and_short_gestation', 'impaired_kidney_function', 'bullying_victimization',
+                 'childhood_sexual_abuse_against_males', 'non_optimal_temperature', 'chewing_tobacco',
+                 'diet_low_in_legumes', 'short_gestation', 'low_birth_weight', 'high_temperature', 'low_temperature',
+                 'low_birth_weight_and_short_gestation', 'kidney_dysfunction', 'bullying_victimization',
                  'high_ldl_cholesterol', 'high_body_mass_index_in_adults', 'high_body_mass_index_in_children',
-                 'particulate_matter_pollution', 'childhood_maltreatment', )
+                 'particulate_matter_pollution', 'childhood_sexual_abuse_and_bullying', )
 
     def __init__(self,
                  unsafe_water_sanitation_and_handwashing: RiskFactor,
@@ -202,18 +180,21 @@ class RiskFactors(GbdRecord):
                  lead_exposure_in_bone: RiskFactor,
                  childhood_sexual_abuse_against_females: RiskFactor,
                  childhood_sexual_abuse_against_males: RiskFactor,
+                 non_optimal_temperature: RiskFactor,
                  chewing_tobacco: RiskFactor,
                  diet_low_in_legumes: RiskFactor,
-                 short_gestation_for_birth_weight: RiskFactor,
-                 low_birth_weight_for_gestation: RiskFactor,
+                 short_gestation: RiskFactor,
+                 low_birth_weight: RiskFactor,
+                 high_temperature: RiskFactor,
+                 low_temperature: RiskFactor,
                  low_birth_weight_and_short_gestation: RiskFactor,
-                 impaired_kidney_function: RiskFactor,
+                 kidney_dysfunction: RiskFactor,
                  bullying_victimization: RiskFactor,
                  high_ldl_cholesterol: RiskFactor,
                  high_body_mass_index_in_adults: RiskFactor,
                  high_body_mass_index_in_children: RiskFactor,
                  particulate_matter_pollution: RiskFactor,
-                 childhood_maltreatment: RiskFactor, ):
+                 childhood_sexual_abuse_and_bullying: RiskFactor, ):
         super().__init__()
         self.unsafe_water_sanitation_and_handwashing = unsafe_water_sanitation_and_handwashing
         self.unsafe_water_source = unsafe_water_source
@@ -300,15 +281,18 @@ class RiskFactors(GbdRecord):
         self.lead_exposure_in_bone = lead_exposure_in_bone
         self.childhood_sexual_abuse_against_females = childhood_sexual_abuse_against_females
         self.childhood_sexual_abuse_against_males = childhood_sexual_abuse_against_males
+        self.non_optimal_temperature = non_optimal_temperature
         self.chewing_tobacco = chewing_tobacco
         self.diet_low_in_legumes = diet_low_in_legumes
-        self.short_gestation_for_birth_weight = short_gestation_for_birth_weight
-        self.low_birth_weight_for_gestation = low_birth_weight_for_gestation
+        self.short_gestation = short_gestation
+        self.low_birth_weight = low_birth_weight
+        self.high_temperature = high_temperature
+        self.low_temperature = low_temperature
         self.low_birth_weight_and_short_gestation = low_birth_weight_and_short_gestation
-        self.impaired_kidney_function = impaired_kidney_function
+        self.kidney_dysfunction = kidney_dysfunction
         self.bullying_victimization = bullying_victimization
         self.high_ldl_cholesterol = high_ldl_cholesterol
         self.high_body_mass_index_in_adults = high_body_mass_index_in_adults
         self.high_body_mass_index_in_children = high_body_mass_index_in_children
         self.particulate_matter_pollution = particulate_matter_pollution
-        self.childhood_maltreatment = childhood_maltreatment
+        self.childhood_sexual_abuse_and_bullying = childhood_sexual_abuse_and_bullying

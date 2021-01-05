@@ -6,7 +6,7 @@ IMPORTABLES_DEFINED = ('GbdRecord', 'ModelableEntity', 'Restrictions', 'Tmred', 
 gbd_record_attrs = ()
 modelable_entity_attrs = (('name', 'str'),
                           ('kind', 'str'),
-                          ('gbd_id', 'Union[cid, sid, hsid, meid, covid, reiid, None]'),)
+                          ('gbd_id', 'Union[c_id, s_id, hs_id, me_id, cov_id, rei_id, None]'),)
 restrictions_attrs = (('male_only', 'bool'),
                       ('female_only', 'bool'),
                       ('yll_only', 'bool'),
@@ -14,8 +14,7 @@ restrictions_attrs = (('male_only', 'bool'),
                       ('yll_age_group_id_start', 'int = None'),
                       ('yll_age_group_id_end', 'int = None'),
                       ('yld_age_group_id_start', 'int = None'),
-                      ('yld_age_group_id_end', 'int = None'),
-                      ('violated', 'Tuple = ()'),)
+                      ('yld_age_group_id_end', 'int = None'),)
 tmred_attrs = (('distribution', 'str'),
                ('inverted', 'bool'),
                ('min', 'scalar = None'),
@@ -25,11 +24,6 @@ categories_attrs = tuple([(f'cat{i}', 'str = None') for i in range(1, 150)])
 
 def get_base_types():
     return {
-        'GbdRecord': {
-            'attrs': gbd_record_attrs,
-            'superclass': (None, ()),
-            'docstring': 'Base class for entities modeled in the GBD.',
-        },
         'ModelableEntity': {
             'attrs': modelable_entity_attrs,
             'superclass': ('GbdRecord', gbd_record_attrs),
@@ -100,7 +94,7 @@ def make_gbd_record():
                 out += ','
             out += f'\\n{slot}='
             if isinstance(attr, tuple):
-                out += '['+', '.join([entity.name if isinstance(entity, GbdRecord) else entity for entity in attr]) + ']'
+                out += '['+', '.join([entity.name if hasattr(entity, "name") else entity for entity in attr]) + ']'
             elif hasattr(attr, "name"):
                 out += attr.name
             else:
@@ -110,15 +104,21 @@ def make_gbd_record():
     return out
 
 
-def build_mapping(_):
+def build_mapping() -> str:
+    """
+    Generate string representations of class definitions.
+
+    Returns
+    -------
+        String representation of the base classes.
+
+    """
     templates = make_module_docstring('Template classes for GBD entities', __file__)
     templates += make_import('typing', ['Union', 'Tuple'])
-    templates += make_import('.id', ['cid', 'sid', 'hsid', 'meid', 'covid', 'reiid', 'scalar', ]) + SPACING
+    templates += make_import('.id', ['c_id', 's_id', 'hs_id', 'me_id', 'cov_id', 'rei_id', 'scalar', ]) + SPACING
     templates += make_gbd_record()
 
     for entity, info in get_base_types().items():
-        if entity == 'GbdRecord':
-            continue
         templates += SPACING
         templates += make_record(entity, **info)
 
