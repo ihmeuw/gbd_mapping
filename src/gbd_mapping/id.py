@@ -6,40 +6,40 @@ Any manual changes will be lost.
 """
 
 
-class meid(int):
+class me_id(int):
     """Modelable Entity ID"""
     def __repr__(self):
-        return "meid({:d})".format(self)
+        return "me_id({:d})".format(self)
 
 
-class reiid(int):
+class rei_id(int):
     """Risk-Etiology-Impairment ID"""
     def __repr__(self):
-        return "reiid({:d})".format(self)
+        return "rei_id({:d})".format(self)
 
 
-class cid(int):
+class c_id(int):
     """Cause ID"""
     def __repr__(self):
-        return "cid({:d})".format(self)
+        return "c_id({:d})".format(self)
 
 
-class sid(int):
+class s_id(int):
     """Sequela ID"""
     def __repr__(self):
-        return "sid({:d})".format(self)
+        return "s_id({:d})".format(self)
 
 
-class covid(int):
+class cov_id(int):
     """Covariate ID"""
     def __repr__(self):
-        return "covid({:d})".format(self)
+        return "cov_id({:d})".format(self)
 
 
-class hsid(int):
+class hs_id(int):
     """Health State ID"""
     def __repr__(self):
-        return "hsid({:d})".format(self)
+        return "hs_id({:d})".format(self)
 
 
 class scalar(float):
@@ -58,5 +58,5 @@ UNKNOWN = _Unknown()
 
 
 class UnknownEntityError(Exception):
-    """Exception raised when a quantity is requested from ceam_inputs with an `UNKNOWN` id."""
+    """Exception raised when a quantity is requested from vivarium_inputs with an `UNKNOWN` id."""
     pass

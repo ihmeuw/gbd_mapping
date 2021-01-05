@@ -1,13 +1,14 @@
 from .util import TAB, SPACING, make_module_docstring
+from .globals import ID_TYPES
 
-ID_TYPES = (('meid', 'Modelable Entity ID'),
-            ('reiid', 'Risk-Etiology-Impairment ID'),
-            ('cid', 'Cause ID'),
-            ('sid', 'Sequela ID'),
-            ('covid', 'Covariate ID'),
-            ('hsid', 'Health State ID'))
+_ID_TYPES = ((ID_TYPES.ME_ID, 'Modelable Entity ID'),
+             (ID_TYPES.REI_ID, 'Risk-Etiology-Impairment ID'),
+             (ID_TYPES.C_ID, 'Cause ID'),
+             (ID_TYPES.S_ID, 'Sequela ID'),
+             (ID_TYPES.COV_ID, 'Covariate ID'),
+             (ID_TYPES.HS_ID, 'Health State ID'))
 
-IMPORTABLES_DEFINED = tuple([id_type[0] for id_type in ID_TYPES] + ['scalar', 'UNKNOWN', 'UnknownEntityError'])
+IMPORTABLES_DEFINED = tuple([id_type[0] for id_type in _ID_TYPES] + ['scalar', 'UNKNOWN', 'UnknownEntityError'])
 
 
 def make_unknown_flag():
@@ -18,14 +19,14 @@ def make_unknown_flag():
     out += 2*TAB + 'return "UNKNOWN"\n' + SPACING
     out += 'UNKNOWN = _Unknown()\n' + SPACING
     out += 'class UnknownEntityError(Exception):\n'
-    out += TAB + '"""Exception raised when a quantity is requested from ceam_inputs with an `UNKNOWN` id."""\n'
+    out += TAB + '"""Exception raised when a quantity is requested from vivarium_inputs with an `UNKNOWN` id."""\n'
     out += TAB + 'pass\n'
     return out
 
 
-def build_mapping(with_survey):
+def build_mapping():
     out = make_module_docstring('Custom ID types for GBD entities', __file__)
-    for k, v in ID_TYPES:
+    for k, v in _ID_TYPES:
         out += SPACING
         out += f'class {k}(int):\n'
         out += TAB + f'"""{v}"""\n'

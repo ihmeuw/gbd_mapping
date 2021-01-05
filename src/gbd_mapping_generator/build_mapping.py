@@ -7,7 +7,7 @@ from pathlib import Path
 import click
 
 from gbd_mapping_generator import (id_builder, base_template_builder, cause_builder, sequela_builder,
-                                   etiology_builder, risk_builder, covariate_builder, coverage_gap_builder)
+                                   etiology_builder, risk_builder, covariate_builder)
 
 AUTO_MAPPINGS = {
     'id': id_builder,
@@ -17,7 +17,6 @@ AUTO_MAPPINGS = {
     'etiology': etiology_builder,
     'risk_factor': risk_builder,
     'covariate': covariate_builder,
-    'coverage_gap': coverage_gap_builder,
 }
 
 ROOT = Path(__file__).resolve().parent.parent.joinpath('gbd_mapping')  # type: Path
@@ -26,8 +25,7 @@ ROOT = Path(__file__).resolve().parent.parent.joinpath('gbd_mapping')  # type: P
 @click.command()
 @click.argument('mapping_type', default='id')
 @click.option('--pdb', 'with_debugger', is_flag=True)
-@click.option('--with-survey', is_flag=True)
-def build_mapping(mapping_type, with_debugger, with_survey):
+def build_mapping(mapping_type, with_debugger):
     if mapping_type not in AUTO_MAPPINGS:
         raise ValueError(f'Unknown mapping type {mapping_type}. '
                          f'Mapping type must be one of {list(AUTO_MAPPINGS.keys())}')
@@ -39,10 +37,10 @@ def build_mapping(mapping_type, with_debugger, with_survey):
 
         if hasattr(builder, 'build_mapping_template'):
             with ROOT.joinpath(f'{mapping_type}_template.py').open('w') as f:
-                f.write(builder.build_mapping_template(with_survey))
+                f.write(builder.build_mapping_template())
 
         with ROOT.joinpath(f'{mapping_type}.py').open('w') as f:
-            f.write(builder.build_mapping(with_survey))
+            f.write(builder.build_mapping())
     except (BdbQuit, KeyboardInterrupt):
         raise
     except Exception as e:
