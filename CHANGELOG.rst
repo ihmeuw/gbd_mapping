@@ -1,3 +1,7 @@
+**3.0.1 - 1/6/21**
+
+ - Bugfix: don't install extras
+
 **3.0.0 - 1/5/21**
 
  - Update to GBD 2019
