@@ -1,3 +1,7 @@
+**3.0.2 - 5/21/21**
+
+ - Bugfix: update for gbd_access dependency
+
 **3.0.1 - 1/6/21**
 
  - Bugfix: don't install extras
