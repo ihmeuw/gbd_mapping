@@ -3,7 +3,18 @@ import numpy as np
 
 from typing import List
 
-import vivarium_gbd_access.gbd as gbd
+# The purpose of this import block is to mask the dependency on internal
+# IHME data and allow CI and automated testing to work.
+try:
+    from vivarium_gbd_access import gbd
+except ModuleNotFoundError:
+    class GbdDummy:
+        """Mock class to wrap internal dependency."""
+
+        def __getattr__(self, item):
+            raise ModuleNotFoundError("Required package vivarium_gbd_access not found.")
+    gbd = GbdDummy()
+
 from .util import clean_entity_list
 from .globals import CovariateData, CovariateDataSeq
 
