@@ -1,0 +1,17 @@
+[tool.black]
+line_length = 94
+exclude = '''
+/(
+   src/gbd_mapping
+)/
+
+'''
+
+[tool.isort]
+profile = "black"
+skip = '''
+/(
+   src/gbd_mapping
+)/
+
+'''
