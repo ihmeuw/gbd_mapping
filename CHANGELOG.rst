@@ -1,3 +1,11 @@
+**3.0.3 - 02/12/22**
+
+ - Bugfix in risk data access.
+ - Modernize CI.
+ - Squash warnings in doc building
+ - Fix remote doc builds.
+ - Rebuild mappings.
+
 **3.0.2 - 5/21/21**
 
  - Bugfix: update for gbd_access dependency
