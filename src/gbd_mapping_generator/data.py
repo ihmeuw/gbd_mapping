@@ -242,12 +242,25 @@ def get_risk_data() -> List:
             scalar = None
             tmred = None
         elif distribution in ['ordered_polytomous', 'unordered_polytomous']:
-            levels = sorted([(cat, name) for cat, name in risk['category_map'].items()],
-                            key=lambda x: int(x[0][3:]))
-            max_cat = int(levels[-1][0][3:]) + 1
-            if rei_id not in contain_tmrel:
-                levels.append((f'cat{max_cat}', 'Unexposed'))
-            levels = tuple(levels)
+            try:
+                levels = sorted([(cat, name) for cat, name in risk['category_map'].items()],
+                                key=lambda x: int(x[0][3:]))
+                max_cat = int(levels[-1][0][3:]) + 1
+                if rei_id not in contain_tmrel:
+                    levels.append((f'cat{max_cat}', 'Unexposed'))
+                levels = tuple(levels)
+            except AttributeError:  # sometimes the category map is nan
+                if rei_id == 341:  # They screwed something up in the rei metadata
+                    levels = (
+                        ("cat1", 'Stage 5 chronic kidney disease squeezed'),
+                        ("cat2", 'Stage 4 chronic kidney disease squeezed'),
+                        ("cat3", 'Stage 3 chronic kidney disease squeezed'),
+                        ("cat4", 'Stage 1-2 chronic kidney disease'),
+                        ("cat5", 'Unexposed'),
+                    )
+                else:
+                    print(f'No levels found for {risk["rei_name"]}.')
+                    levels = tuple()
             scalar = None
             tmred = None
         else:  # It's either a custom risk or an aggregate, so we have to do a bunch of checking.
