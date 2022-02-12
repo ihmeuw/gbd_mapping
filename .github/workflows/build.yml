@@ -25,7 +25,7 @@ jobs:
           python -m pip install --upgrade pip
       - name: Install dependencies
         run: |
-          pip install .[test, docs]
+          pip install .[test,docs]
       - name: Test
         run: |
           pytest ./tests
