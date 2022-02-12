@@ -6,7 +6,7 @@ Any manual changes will be lost.
 """
 from typing import Union, Tuple
 
-from .id import c_id, me_id, _Unknown
+from .id import c_id, me_id, Unknown
 from .base_template import Restrictions, ModelableEntity, GbdRecord
 from .sequela_template import Sequela
 from .etiology_template import Etiology
@@ -21,7 +21,7 @@ class Cause(ModelableEntity):
                  name: str,
                  kind: str,
                  gbd_id: c_id,
-                 me_id: Union[me_id, _Unknown],
+                 me_id: Union[me_id, Unknown],
                  most_detailed: bool,
                  level: int,
                  restrictions: Restrictions,

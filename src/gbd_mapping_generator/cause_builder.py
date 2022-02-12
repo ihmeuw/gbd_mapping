@@ -11,7 +11,7 @@ def get_base_types():
     cause_attrs = [('name', 'str'),
                    ('kind', 'str'),
                    ('gbd_id', ID_TYPES.C_ID),
-                   ('me_id', f'Union[{ID_TYPES.ME_ID}, _Unknown]'),
+                   ('me_id', f'Union[{ID_TYPES.ME_ID}, Unknown]'),
                    ('most_detailed', 'bool'),
                    ('level', 'int'),
                    ('restrictions', 'Restrictions'),]
@@ -102,7 +102,7 @@ def make_causes(causes_list):
 def build_mapping_template():
     out = make_module_docstring('Mapping templates for GBD causes.', __file__)
     out += make_import('typing', ('Union', 'Tuple')) + '\n'
-    out += make_import('.id', (ID_TYPES.C_ID, ID_TYPES.ME_ID, '_Unknown'))
+    out += make_import('.id', (ID_TYPES.C_ID, ID_TYPES.ME_ID, 'Unknown'))
     out += make_import('.base_template', ('Restrictions', 'ModelableEntity', 'GbdRecord'))
     out += make_import('.sequela_template', ('Sequela',))
     out += make_import('.etiology_template', ('Etiology',))

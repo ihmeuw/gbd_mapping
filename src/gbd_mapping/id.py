@@ -48,13 +48,13 @@ class scalar(float):
         return "scalar({:f})".format(self)
 
 
-class _Unknown:
+class Unknown:
     """Marker for unknown values."""
     def __repr__(self):
         return "UNKNOWN"
 
 
-UNKNOWN = _Unknown()
+UNKNOWN = Unknown()
 
 
 class UnknownEntityError(Exception):
