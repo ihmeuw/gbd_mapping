@@ -13,11 +13,11 @@ IMPORTABLES_DEFINED = tuple([id_type[0] for id_type in _ID_TYPES] + ['scalar', '
 
 def make_unknown_flag():
     out = ''
-    out += 'class _Unknown:\n'
+    out += 'class Unknown:\n'
     out += TAB + '"""Marker for unknown values."""\n'
     out += TAB + 'def __repr__(self):\n'
     out += 2*TAB + 'return "UNKNOWN"\n' + SPACING
-    out += 'UNKNOWN = _Unknown()\n' + SPACING
+    out += 'UNKNOWN = Unknown()\n' + SPACING
     out += 'class UnknownEntityError(Exception):\n'
     out += TAB + '"""Exception raised when a quantity is requested from vivarium_inputs with an `UNKNOWN` id."""\n'
     out += TAB + 'pass\n'

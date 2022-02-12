@@ -36,13 +36,6 @@ gbd\_mapping\_generator.covariate\_builder module
     :undoc-members:
     :show-inheritance:
 
-gbd\_mapping\_generator.coverage\_gap\_builder module
------------------------------------------------------
-
-.. automodule:: gbd_mapping_generator.coverage_gap_builder
-    :members:
-    :undoc-members:
-    :show-inheritance:
 
 gbd\_mapping\_generator.data module
 -----------------------------------
@@ -60,10 +53,10 @@ gbd\_mapping\_generator.etiology\_builder module
     :undoc-members:
     :show-inheritance:
 
-gbd\_mapping\_generator.gbd\_access module
+gbd\_mapping\_generator.globals module
 ------------------------------------------
 
-.. automodule:: gbd_mapping_generator.gbd_access
+.. automodule:: gbd_mapping_generator.globals
     :members:
     :undoc-members:
     :show-inheritance:
