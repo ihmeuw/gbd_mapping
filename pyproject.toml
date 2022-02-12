@@ -10,4 +10,4 @@ exclude = '''
 
 [tool.isort]
 profile = "black"
-skip = "src/gbd_mapping"
+skip = ["build", "src/gbd_mapping"]
