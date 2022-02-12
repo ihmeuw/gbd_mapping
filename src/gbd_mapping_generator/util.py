@@ -28,6 +28,7 @@ def make_module_docstring(description: str, file: Union[str, Path]) -> str:
 
     Returns
     -------
+    str
         String representation of module doc string.
 
     """
@@ -50,6 +51,7 @@ def make_import(module_to_import: str, imports: Tuple[str, ...] = ()) -> str:
 
     Returns
     -------
+    str
         Generated string for necessary imports.
 
     """
@@ -103,6 +105,7 @@ def replace_numeric_prefix(name: str) -> str:
 
     Returns
     -------
+    str
         Input string transformed to non-numeric prefix.
 
     """
@@ -166,6 +169,7 @@ def to_id(number: float, id_type: str) -> str:
 
     Returns
     -------
+    str
         String with the id type wrapping the value in parentheses.
 
     """
@@ -189,6 +193,7 @@ def make_class_sig(name, superclass=None, docstring=None) -> str:
 
     Returns
     -------
+    str
         String representation of named class.
 
     """
@@ -211,6 +216,7 @@ def make_slots(field_list: List[str]) -> str:
 
     Returns
     -------
+    str
         String representation of slot attributes.
 
     """
@@ -250,6 +256,7 @@ def make_init(field_dtype_tuples: Tuple[Tuple[str, str], ...]) -> str:
 
     Returns
     -------
+    str
         String representation of the __init__ function.
 
     """
@@ -278,6 +285,7 @@ def make_super_call(superclass: Tuple[str, Tuple[Tuple[str, str], ...]]) -> str:
 
     Returns
     -------
+    str
         String representation of the call to the superclass.
 
     """
@@ -306,6 +314,7 @@ def make_attribute_assignment(field_names: List[str]) -> str:
 
     Returns
     -------
+    str
         String representation of the initialized attributes.
 
     """
@@ -340,6 +349,7 @@ def make_record(name: str,
 
     Returns
     -------
+    str
         String representation of named class.
 
     """

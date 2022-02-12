@@ -1,19 +1,9 @@
+# -----------------------------------------------------------------------------
+#   - invoked on push, pull_request, or manual trigger
+#   - test under 3 versions of python
+# -----------------------------------------------------------------------------
 name: build
-
-on:
-  push:
-    branches:
-      - '*'
-    tags-ignore:
-      - v*
-  pull_request:
-    branches:
-      - '*'
-    tags-ignore:
-      - v*
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
@@ -27,12 +17,21 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
-          architecture: x64
-      - name: Install dependencies
+      - name: Print environment values
+        run: |
+          cat $GITHUB_ENV
+      - name: Update pip
         run: |
           python -m pip install --upgrade pip
-          pip install pytest
-          pip install .
+      - name: Install dependencies
+        run: |
+          pip install .[test,docs]
       - name: Test
         run: |
           pytest ./tests
+      - name: Doc build
+        run: |
+          make html -C docs/ SPHINXOPTS="-W --keep-going -n"
+      - name: Doctest
+        run: |
+          make doctest -C docs/

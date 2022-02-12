@@ -46,6 +46,7 @@ def make_covariate(name: str, cov_id: float, by_age: bool, by_sex: bool, dichoto
 
     Returns
     -------
+    str
         Generated string for a single covariate.
 
     """
@@ -72,6 +73,7 @@ def make_covariates(covariate_list: CovariateDataSeq) -> str:
 
     Returns
     -------
+    str
         Generated string all covariates.
 
     """

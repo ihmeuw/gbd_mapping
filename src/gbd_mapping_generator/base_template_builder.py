@@ -110,6 +110,7 @@ def build_mapping() -> str:
 
     Returns
     -------
+    str
         String representation of the base classes.
 
     """

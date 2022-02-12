@@ -806,7 +806,7 @@ class Covariates(GbdRecord):
                  'implicit_versus_explicitly_defined_nash', 'mean_hemoglobin_age_sex_specific',
                  'physicians_per_capita', 'nurses_and_midwives_per_capita', 'pharmacists_per_capita',
                  'hiv_mortality_rate', 'untreated_hiv', 'medical_schools', 'dentists_per_capita',
-                 'full_vaccine_coverage_indicator_proportion_sage_method_dtp3_pcv3_mcv2', 'net_reproductive_rate',
+                 'full_vaccine_coverage_indicator_proportion_sage_method_dtp3_pcv3_mcv2', 'net_reproduction_rate',
                  'log_transformed_coal_production_per_capita', 'systolic_blood_pressure_mmhg_us_r_e',
                  'low_density_lipoprotein_mmol_l_us_r_e', 'mean_bmi_kg_m2_us_r_e',
                  'education_years_per_capita_us_r_e', 'ldi_income_per_capita_us_r_e',
@@ -826,7 +826,7 @@ class Covariates(GbdRecord):
                  'proportion_of_the_population_with_at_least_12_years_of_education_maternal',
                  'proportion_of_the_population_with_at_least_15_years_of_education_maternal',
                  'education_absolute_inequality_aaid_maternal', 'education_relative_inequality_gini_maternal',
-                 'mmr_due_toe_maternal_hemorrhage', 'mmr_due_to_maternal_hypertensive_disorders',
+                 'mmr_due_to_maternal_hemorrhage', 'mmr_due_to_maternal_hypertensive_disorders',
                  'mmr_due_to_abortion_and_miscarriage', 'mmr_due_to_sepsis_and_other_maternal_infections',
                  'mmr_due_to_obstructed_labor', 'mmr_due_to_ectopic_pregnancy', 'mean_hemoglobin',
                  'age_standardized_sev_for_unsafe_water', 'age_standardized_sev_for_unsafe_sanitation',
@@ -1004,7 +1004,55 @@ class Covariates(GbdRecord):
                  'log_transformed_age_standardized_sev_scalar_osteoarth_knee', 'ascariasis_prevalence',
                  'custom_age_standardized_and_sex_specific_sev_for_alcohol_use',
                  '_overweight_women_of_reproductive_age', 'sheep_density', 'leprosy_mb_cure_rate',
-                 'proportion_of_mb_pb_cases_in_leprosy_population', )
+                 'proportion_of_mb_pb_cases_in_leprosy_population', 'burkitt_lymphoma_dummy_variable_deprecated',
+                 'total_fertility_rate_under_25', 'household_vehicles_4_wheels_proportion',
+                 'household_vehicles_2_wheels_proportion', 'household_vehicles_pedal_proportion',
+                 'coverage_of_child_postnatal_care_visit', 'caesarean_section', 'full_maternal_care',
+                 'age_standardized_schistosomiasis_prevalence', 'proportion_in_correctional_facility',
+                 'proportion_in_correctional_facility_by_race_ethnicity', 'alcohol_availability_per_capita',
+                 'alcohol_availability_per_capita_smoothed', 'alcohol_places_per_capita',
+                 'alcohol_stores_per_capita', 'tobacco_stores_per_capita', 'tobacco_stores_per_capita_smoothed',
+                 'proportion_with_ba_and_up', 'proportion_with_ba_and_up_by_race_ethnicity',
+                 'proportion_with_hs_and_up', 'proportion_with_hs_and_up_by_race_ethnicity',
+                 'proportion_foreign_born', 'proportion_foreign_born_by_education',
+                 'proportion_foreign_born_by_race_ethnicity', 'proportion_hispanic', 'income_per_capita',
+                 'income_per_capita_by_race_ethnicity', 'mds_per_capita', 'mds_per_capita_state',
+                 'median_household_income', 'median_property_value', 'log_of_population_density',
+                 'population_density', 'proportion_in_college', 'proportion_in_poverty',
+                 'proportion_in_poverty_by_education', 'proportion_in_poverty_by_race_ethnicity',
+                 'proportion_land_in_reservations', 'proportion_land_in_federal_reservations',
+                 'proportion_land_in_state_reservations', 'proportion_black', 'proportion_other_race',
+                 'proportion_white', 'proportion_non_hispanic_aian', 'proportion_non_hispanic_api',
+                 'proportion_non_hispanic_black', 'proportion_non_hispanic_white', 'proportion_rural',
+                 'proportion_unemployed', 'proportion_unemployed_by_education',
+                 'proportion_with_health_insurance_by_education', 'population_by_age_and_sex',
+                 'population_by_education', 'population_by_race_ethnicity_1977_omb_standard',
+                 'population_by_race_ethnicity_1997_omb_standard',
+                 'bacille_calmette_guerin_bcg_vaccine_coverage_covid_inclusive_proportion',
+                 'dtp3_coverage_covid_inclusive_proportion', 'measles_vaccine_coverage_covid_inclusive_proportion',
+                 'measles_vaccine_coverage_2_doses_covid_inclusive_proportion',
+                 'polio_3_dose_coverage_covid_inclusive_proportion',
+                 'rubella_vaccine_coverage_covid_inclusive_proportion',
+                 'hib3_vaccine_coverage_covid_inclusive_proportion', 'pcv3_coverage_covid_inclusive_proportion',
+                 'rotavirus_coverage_covid_inclusive_proportion',
+                 'hepatitis_b_3_dose_coverage_covid_inclusive_proportion',
+                 'bcg_lagged_five_year_coverage_covid_inclusive_proportion',
+                 'dtp3_lagged_five_year_coverage_covid_inclusive_proportion',
+                 'mcv1_lagged_five_year_coverage_covid_inclusive_proportion',
+                 'mcv2_lagged_five_year_coverage_covid_inclusive_proportion',
+                 'rcv1_lagged_five_year_coverage_covid_inclusive_proportion',
+                 'hib3_lagged_five_year_coverage_covid_inclusive_proportion',
+                 'pcv3_lagged_five_year_coverage_covid_inclusive_proportion',
+                 'rotac_lagged_five_year_coverage_covid_inclusive_proportion',
+                 'hepb3_lagged_five_year_coverage_covid_inclusive_proportion',
+                 'hepatitis_b_3_dose_coverage_proportion_lagged_5_years_covid_inclusive',
+                 'hepatitis_b_3_dose_coverage_proportion_lagged_ten_years_covid_inclusive',
+                 'hepatitis_b_vaccine_coverage_proportion_aged_through_time_covid_inclusive',
+                 'polio3_lagged_five_year_coverage_covid_inclusive_proportion', 'sugar_sweetened_beverages_g_us_r_e',
+                 'processed_meat_g_us_r_e', 'coverage_of_postnatal_care_visit', 'socio_demographic_index_us_r_e',
+                 'college_enrollment_by_race_ethnicity', 'proportion_in_each_primary_race_multiracial',
+                 'race_ethnicity_by_educational_attainment',
+                 'population_by_fips_and_race_ethnicity_1977_omb_standard', )
 
     def __init__(self, **kwargs):
         super().__init__()
@@ -2198,7 +2246,7 @@ class Covariates(GbdRecord):
         self.medical_schools = kwargs.get('medical_schools')
         self.dentists_per_capita = kwargs.get('dentists_per_capita')
         self.full_vaccine_coverage_indicator_proportion_sage_method_dtp3_pcv3_mcv2 = kwargs.get('full_vaccine_coverage_indicator_proportion_sage_method_dtp3_pcv3_mcv2')
-        self.net_reproductive_rate = kwargs.get('net_reproductive_rate')
+        self.net_reproduction_rate = kwargs.get('net_reproduction_rate')
         self.log_transformed_coal_production_per_capita = kwargs.get('log_transformed_coal_production_per_capita')
         self.systolic_blood_pressure_mmhg_us_r_e = kwargs.get('systolic_blood_pressure_mmhg_us_r_e')
         self.low_density_lipoprotein_mmol_l_us_r_e = kwargs.get('low_density_lipoprotein_mmol_l_us_r_e')
@@ -2228,7 +2276,7 @@ class Covariates(GbdRecord):
         self.proportion_of_the_population_with_at_least_15_years_of_education_maternal = kwargs.get('proportion_of_the_population_with_at_least_15_years_of_education_maternal')
         self.education_absolute_inequality_aaid_maternal = kwargs.get('education_absolute_inequality_aaid_maternal')
         self.education_relative_inequality_gini_maternal = kwargs.get('education_relative_inequality_gini_maternal')
-        self.mmr_due_toe_maternal_hemorrhage = kwargs.get('mmr_due_toe_maternal_hemorrhage')
+        self.mmr_due_to_maternal_hemorrhage = kwargs.get('mmr_due_to_maternal_hemorrhage')
         self.mmr_due_to_maternal_hypertensive_disorders = kwargs.get('mmr_due_to_maternal_hypertensive_disorders')
         self.mmr_due_to_abortion_and_miscarriage = kwargs.get('mmr_due_to_abortion_and_miscarriage')
         self.mmr_due_to_sepsis_and_other_maternal_infections = kwargs.get('mmr_due_to_sepsis_and_other_maternal_infections')
@@ -2499,3 +2547,89 @@ class Covariates(GbdRecord):
         self.sheep_density = kwargs.get('sheep_density')
         self.leprosy_mb_cure_rate = kwargs.get('leprosy_mb_cure_rate')
         self.proportion_of_mb_pb_cases_in_leprosy_population = kwargs.get('proportion_of_mb_pb_cases_in_leprosy_population')
+        self.burkitt_lymphoma_dummy_variable_deprecated = kwargs.get('burkitt_lymphoma_dummy_variable_deprecated')
+        self.total_fertility_rate_under_25 = kwargs.get('total_fertility_rate_under_25')
+        self.household_vehicles_4_wheels_proportion = kwargs.get('household_vehicles_4_wheels_proportion')
+        self.household_vehicles_2_wheels_proportion = kwargs.get('household_vehicles_2_wheels_proportion')
+        self.household_vehicles_pedal_proportion = kwargs.get('household_vehicles_pedal_proportion')
+        self.coverage_of_child_postnatal_care_visit = kwargs.get('coverage_of_child_postnatal_care_visit')
+        self.caesarean_section = kwargs.get('caesarean_section')
+        self.full_maternal_care = kwargs.get('full_maternal_care')
+        self.age_standardized_schistosomiasis_prevalence = kwargs.get('age_standardized_schistosomiasis_prevalence')
+        self.proportion_in_correctional_facility = kwargs.get('proportion_in_correctional_facility')
+        self.proportion_in_correctional_facility_by_race_ethnicity = kwargs.get('proportion_in_correctional_facility_by_race_ethnicity')
+        self.alcohol_availability_per_capita = kwargs.get('alcohol_availability_per_capita')
+        self.alcohol_availability_per_capita_smoothed = kwargs.get('alcohol_availability_per_capita_smoothed')
+        self.alcohol_places_per_capita = kwargs.get('alcohol_places_per_capita')
+        self.alcohol_stores_per_capita = kwargs.get('alcohol_stores_per_capita')
+        self.tobacco_stores_per_capita = kwargs.get('tobacco_stores_per_capita')
+        self.tobacco_stores_per_capita_smoothed = kwargs.get('tobacco_stores_per_capita_smoothed')
+        self.proportion_with_ba_and_up = kwargs.get('proportion_with_ba_and_up')
+        self.proportion_with_ba_and_up_by_race_ethnicity = kwargs.get('proportion_with_ba_and_up_by_race_ethnicity')
+        self.proportion_with_hs_and_up = kwargs.get('proportion_with_hs_and_up')
+        self.proportion_with_hs_and_up_by_race_ethnicity = kwargs.get('proportion_with_hs_and_up_by_race_ethnicity')
+        self.proportion_foreign_born = kwargs.get('proportion_foreign_born')
+        self.proportion_foreign_born_by_education = kwargs.get('proportion_foreign_born_by_education')
+        self.proportion_foreign_born_by_race_ethnicity = kwargs.get('proportion_foreign_born_by_race_ethnicity')
+        self.proportion_hispanic = kwargs.get('proportion_hispanic')
+        self.income_per_capita = kwargs.get('income_per_capita')
+        self.income_per_capita_by_race_ethnicity = kwargs.get('income_per_capita_by_race_ethnicity')
+        self.mds_per_capita = kwargs.get('mds_per_capita')
+        self.mds_per_capita_state = kwargs.get('mds_per_capita_state')
+        self.median_household_income = kwargs.get('median_household_income')
+        self.median_property_value = kwargs.get('median_property_value')
+        self.log_of_population_density = kwargs.get('log_of_population_density')
+        self.population_density = kwargs.get('population_density')
+        self.proportion_in_college = kwargs.get('proportion_in_college')
+        self.proportion_in_poverty = kwargs.get('proportion_in_poverty')
+        self.proportion_in_poverty_by_education = kwargs.get('proportion_in_poverty_by_education')
+        self.proportion_in_poverty_by_race_ethnicity = kwargs.get('proportion_in_poverty_by_race_ethnicity')
+        self.proportion_land_in_reservations = kwargs.get('proportion_land_in_reservations')
+        self.proportion_land_in_federal_reservations = kwargs.get('proportion_land_in_federal_reservations')
+        self.proportion_land_in_state_reservations = kwargs.get('proportion_land_in_state_reservations')
+        self.proportion_black = kwargs.get('proportion_black')
+        self.proportion_other_race = kwargs.get('proportion_other_race')
+        self.proportion_white = kwargs.get('proportion_white')
+        self.proportion_non_hispanic_aian = kwargs.get('proportion_non_hispanic_aian')
+        self.proportion_non_hispanic_api = kwargs.get('proportion_non_hispanic_api')
+        self.proportion_non_hispanic_black = kwargs.get('proportion_non_hispanic_black')
+        self.proportion_non_hispanic_white = kwargs.get('proportion_non_hispanic_white')
+        self.proportion_rural = kwargs.get('proportion_rural')
+        self.proportion_unemployed = kwargs.get('proportion_unemployed')
+        self.proportion_unemployed_by_education = kwargs.get('proportion_unemployed_by_education')
+        self.proportion_with_health_insurance_by_education = kwargs.get('proportion_with_health_insurance_by_education')
+        self.population_by_age_and_sex = kwargs.get('population_by_age_and_sex')
+        self.population_by_education = kwargs.get('population_by_education')
+        self.population_by_race_ethnicity_1977_omb_standard = kwargs.get('population_by_race_ethnicity_1977_omb_standard')
+        self.population_by_race_ethnicity_1997_omb_standard = kwargs.get('population_by_race_ethnicity_1997_omb_standard')
+        self.bacille_calmette_guerin_bcg_vaccine_coverage_covid_inclusive_proportion = kwargs.get('bacille_calmette_guerin_bcg_vaccine_coverage_covid_inclusive_proportion')
+        self.dtp3_coverage_covid_inclusive_proportion = kwargs.get('dtp3_coverage_covid_inclusive_proportion')
+        self.measles_vaccine_coverage_covid_inclusive_proportion = kwargs.get('measles_vaccine_coverage_covid_inclusive_proportion')
+        self.measles_vaccine_coverage_2_doses_covid_inclusive_proportion = kwargs.get('measles_vaccine_coverage_2_doses_covid_inclusive_proportion')
+        self.polio_3_dose_coverage_covid_inclusive_proportion = kwargs.get('polio_3_dose_coverage_covid_inclusive_proportion')
+        self.rubella_vaccine_coverage_covid_inclusive_proportion = kwargs.get('rubella_vaccine_coverage_covid_inclusive_proportion')
+        self.hib3_vaccine_coverage_covid_inclusive_proportion = kwargs.get('hib3_vaccine_coverage_covid_inclusive_proportion')
+        self.pcv3_coverage_covid_inclusive_proportion = kwargs.get('pcv3_coverage_covid_inclusive_proportion')
+        self.rotavirus_coverage_covid_inclusive_proportion = kwargs.get('rotavirus_coverage_covid_inclusive_proportion')
+        self.hepatitis_b_3_dose_coverage_covid_inclusive_proportion = kwargs.get('hepatitis_b_3_dose_coverage_covid_inclusive_proportion')
+        self.bcg_lagged_five_year_coverage_covid_inclusive_proportion = kwargs.get('bcg_lagged_five_year_coverage_covid_inclusive_proportion')
+        self.dtp3_lagged_five_year_coverage_covid_inclusive_proportion = kwargs.get('dtp3_lagged_five_year_coverage_covid_inclusive_proportion')
+        self.mcv1_lagged_five_year_coverage_covid_inclusive_proportion = kwargs.get('mcv1_lagged_five_year_coverage_covid_inclusive_proportion')
+        self.mcv2_lagged_five_year_coverage_covid_inclusive_proportion = kwargs.get('mcv2_lagged_five_year_coverage_covid_inclusive_proportion')
+        self.rcv1_lagged_five_year_coverage_covid_inclusive_proportion = kwargs.get('rcv1_lagged_five_year_coverage_covid_inclusive_proportion')
+        self.hib3_lagged_five_year_coverage_covid_inclusive_proportion = kwargs.get('hib3_lagged_five_year_coverage_covid_inclusive_proportion')
+        self.pcv3_lagged_five_year_coverage_covid_inclusive_proportion = kwargs.get('pcv3_lagged_five_year_coverage_covid_inclusive_proportion')
+        self.rotac_lagged_five_year_coverage_covid_inclusive_proportion = kwargs.get('rotac_lagged_five_year_coverage_covid_inclusive_proportion')
+        self.hepb3_lagged_five_year_coverage_covid_inclusive_proportion = kwargs.get('hepb3_lagged_five_year_coverage_covid_inclusive_proportion')
+        self.hepatitis_b_3_dose_coverage_proportion_lagged_5_years_covid_inclusive = kwargs.get('hepatitis_b_3_dose_coverage_proportion_lagged_5_years_covid_inclusive')
+        self.hepatitis_b_3_dose_coverage_proportion_lagged_ten_years_covid_inclusive = kwargs.get('hepatitis_b_3_dose_coverage_proportion_lagged_ten_years_covid_inclusive')
+        self.hepatitis_b_vaccine_coverage_proportion_aged_through_time_covid_inclusive = kwargs.get('hepatitis_b_vaccine_coverage_proportion_aged_through_time_covid_inclusive')
+        self.polio3_lagged_five_year_coverage_covid_inclusive_proportion = kwargs.get('polio3_lagged_five_year_coverage_covid_inclusive_proportion')
+        self.sugar_sweetened_beverages_g_us_r_e = kwargs.get('sugar_sweetened_beverages_g_us_r_e')
+        self.processed_meat_g_us_r_e = kwargs.get('processed_meat_g_us_r_e')
+        self.coverage_of_postnatal_care_visit = kwargs.get('coverage_of_postnatal_care_visit')
+        self.socio_demographic_index_us_r_e = kwargs.get('socio_demographic_index_us_r_e')
+        self.college_enrollment_by_race_ethnicity = kwargs.get('college_enrollment_by_race_ethnicity')
+        self.proportion_in_each_primary_race_multiracial = kwargs.get('proportion_in_each_primary_race_multiracial')
+        self.race_ethnicity_by_educational_attainment = kwargs.get('race_ethnicity_by_educational_attainment')
+        self.population_by_fips_and_race_ethnicity_1977_omb_standard = kwargs.get('population_by_fips_and_race_ethnicity_1977_omb_standard')

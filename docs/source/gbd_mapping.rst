@@ -44,22 +44,6 @@ gbd\_mapping.covariate\_template module
     :undoc-members:
     :show-inheritance:
 
-gbd\_mapping.coverage\_gap module
----------------------------------
-
-.. automodule:: gbd_mapping.coverage_gap
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-gbd\_mapping.coverage\_gap\_template module
--------------------------------------------
-
-.. automodule:: gbd_mapping.coverage_gap_template
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
 gbd\_mapping.etiology module
 ----------------------------
 
@@ -87,7 +71,7 @@ gbd\_mapping.id module
 gbd\_mapping.risk module
 ------------------------
 
-.. automodule:: gbd_mapping.risk
+.. automodule:: gbd_mapping.risk_factor
     :members:
     :undoc-members:
     :show-inheritance:
@@ -95,7 +79,7 @@ gbd\_mapping.risk module
 gbd\_mapping.risk\_template module
 ----------------------------------
 
-.. automodule:: gbd_mapping.risk_template
+.. automodule:: gbd_mapping.risk_factor_template
     :members:
     :undoc-members:
     :show-inheritance:
