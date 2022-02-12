@@ -2,7 +2,8 @@
 line_length = 94
 exclude = '''
 /(
-   src/gbd_mapping
+   build
+   | src/gbd_mapping
 )/
 
 '''
@@ -11,7 +12,8 @@ exclude = '''
 profile = "black"
 skip = '''
 /(
-   src/gbd_mapping
+   build
+   | src/gbd_mapping
 )/
 
 '''
