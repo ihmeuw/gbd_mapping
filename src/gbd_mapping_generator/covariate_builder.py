@@ -1,34 +1,38 @@
+from .base_template_builder import gbd_record_attrs, modelable_entity_attrs
 from .data import get_covariate_data, get_covariate_list
-from .base_template_builder import modelable_entity_attrs, gbd_record_attrs
-from .util import make_import, make_module_docstring, make_record, SPACING, TAB
 from .globals import ID_TYPES, CovariateDataSeq
+from .util import SPACING, TAB, make_import, make_module_docstring, make_record
 
-IMPORTABLES_DEFINED = ('Covariate', 'covariates')
+IMPORTABLES_DEFINED = ("Covariate", "covariates")
 
 
 def get_base_types():
-    cov_attrs = [('name', 'str'),
-                 ('kind', 'str'),
-                 ('gbd_id', f'Union[{ID_TYPES.COV_ID}, None]'),
-                 ('by_age', 'bool'),
-                 ('by_sex', 'bool'),
-                 ('dichotomous', 'bool')]
+    cov_attrs = [
+        ("name", "str"),
+        ("kind", "str"),
+        ("gbd_id", f"Union[{ID_TYPES.COV_ID}, None]"),
+        ("by_age", "bool"),
+        ("by_sex", "bool"),
+        ("dichotomous", "bool"),
+    ]
 
     return {
-        'Covariate': {
-            'attrs': tuple(cov_attrs),
-            'superclass': ('ModelableEntity', modelable_entity_attrs),
-            'docstring': 'Container for covariate GBD ids and metadata.'
+        "Covariate": {
+            "attrs": tuple(cov_attrs),
+            "superclass": ("ModelableEntity", modelable_entity_attrs),
+            "docstring": "Container for covariate GBD ids and metadata.",
         },
-        'Covariates': {
-            'attrs': tuple([(name, 'Covariate') for name in get_covariate_list()]),
-            'superclass': ('GbdRecord', gbd_record_attrs),
-            'docstring': 'Container for GBD covariates.',
+        "Covariates": {
+            "attrs": tuple([(name, "Covariate") for name in get_covariate_list()]),
+            "superclass": ("GbdRecord", gbd_record_attrs),
+            "docstring": "Container for GBD covariates.",
         },
     }
 
 
-def make_covariate(name: str, cov_id: float, by_age: bool, by_sex: bool, dichotomous: bool) -> str:
+def make_covariate(
+    name: str, cov_id: float, by_age: bool, by_sex: bool, dichotomous: bool
+) -> str:
     """Creates a single Covariate based on the supplied parameters.
 
     Parameters
@@ -85,10 +89,10 @@ def make_covariates(covariate_list: CovariateDataSeq) -> str:
 
 
 def build_mapping_template():
-    out = make_module_docstring('Mapping templates for GBD covariates.', __file__)
-    out += make_import('typing', ('Union',)) + '\n'
-    out += make_import('.id', (ID_TYPES.COV_ID,))
-    out += make_import('.base_template', ('ModelableEntity', 'GbdRecord'))
+    out = make_module_docstring("Mapping templates for GBD covariates.", __file__)
+    out += make_import("typing", ("Union",)) + "\n"
+    out += make_import(".id", (ID_TYPES.COV_ID,))
+    out += make_import(".base_template", ("ModelableEntity", "GbdRecord"))
 
     for entity, info in get_base_types().items():
         out += SPACING
@@ -97,8 +101,8 @@ def build_mapping_template():
 
 
 def build_mapping():
-    out = make_module_docstring('Mapping of GBD covariates.', __file__)
-    out += make_import('.id', (ID_TYPES.COV_ID,))
-    out += make_import('.covariate_template', ('Covariate', 'Covariates')) + SPACING
+    out = make_module_docstring("Mapping of GBD covariates.", __file__)
+    out += make_import(".id", (ID_TYPES.COV_ID,))
+    out += make_import(".covariate_template", ("Covariate", "Covariates")) + SPACING
     out += make_covariates(get_covariate_data())
     return out
