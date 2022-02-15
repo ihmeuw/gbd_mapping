@@ -1,0 +1,13 @@
+[tool.black]
+line_length = 94
+exclude = '''
+/(
+   build
+   | src/gbd_mapping
+)/
+
+'''
+
+[tool.isort]
+profile = "black"
+skip = ["build", "src/gbd_mapping"]

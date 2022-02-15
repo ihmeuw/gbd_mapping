@@ -1,48 +1,54 @@
-from .util import make_module_docstring, make_import, make_record, SPACING
+from .util import SPACING, make_import, make_module_docstring, make_record
 
-IMPORTABLES_DEFINED = ('GbdRecord', 'ModelableEntity', 'Restrictions', 'Tmred', 'Categories')
+IMPORTABLES_DEFINED = ("GbdRecord", "ModelableEntity", "Restrictions", "Tmred", "Categories")
 
 
 gbd_record_attrs = ()
-modelable_entity_attrs = (('name', 'str'),
-                          ('kind', 'str'),
-                          ('gbd_id', 'Union[c_id, s_id, hs_id, me_id, cov_id, rei_id, None]'),)
-restrictions_attrs = (('male_only', 'bool'),
-                      ('female_only', 'bool'),
-                      ('yll_only', 'bool'),
-                      ('yld_only', 'bool'),
-                      ('yll_age_group_id_start', 'int = None'),
-                      ('yll_age_group_id_end', 'int = None'),
-                      ('yld_age_group_id_start', 'int = None'),
-                      ('yld_age_group_id_end', 'int = None'),)
-tmred_attrs = (('distribution', 'str'),
-               ('inverted', 'bool'),
-               ('min', 'scalar = None'),
-               ('max', 'scalar = None'),)
-categories_attrs = tuple([(f'cat{i}', 'str = None') for i in range(1, 150)])
+modelable_entity_attrs = (
+    ("name", "str"),
+    ("kind", "str"),
+    ("gbd_id", "Union[c_id, s_id, hs_id, me_id, cov_id, rei_id, None]"),
+)
+restrictions_attrs = (
+    ("male_only", "bool"),
+    ("female_only", "bool"),
+    ("yll_only", "bool"),
+    ("yld_only", "bool"),
+    ("yll_age_group_id_start", "int = None"),
+    ("yll_age_group_id_end", "int = None"),
+    ("yld_age_group_id_start", "int = None"),
+    ("yld_age_group_id_end", "int = None"),
+)
+tmred_attrs = (
+    ("distribution", "str"),
+    ("inverted", "bool"),
+    ("min", "scalar = None"),
+    ("max", "scalar = None"),
+)
+categories_attrs = tuple([(f"cat{i}", "str = None") for i in range(1, 150)])
 
 
 def get_base_types():
     return {
-        'ModelableEntity': {
-            'attrs': modelable_entity_attrs,
-            'superclass': ('GbdRecord', gbd_record_attrs),
-            'docstring': 'Container for general GBD ids and metadata.',
+        "ModelableEntity": {
+            "attrs": modelable_entity_attrs,
+            "superclass": ("GbdRecord", gbd_record_attrs),
+            "docstring": "Container for general GBD ids and metadata.",
         },
-        'Restrictions': {
-            'attrs': restrictions_attrs,
-            'superclass': ('GbdRecord', gbd_record_attrs),
-            'docstring': 'Container for information about sub-populations the entity describes.',
+        "Restrictions": {
+            "attrs": restrictions_attrs,
+            "superclass": ("GbdRecord", gbd_record_attrs),
+            "docstring": "Container for information about sub-populations the entity describes.",
         },
-        'Tmred': {
-            'attrs': tmred_attrs,
-            'superclass': ('GbdRecord', gbd_record_attrs),
-            'docstring': 'Container for theoretical minimum risk exposure distribution data.'
+        "Tmred": {
+            "attrs": tmred_attrs,
+            "superclass": ("GbdRecord", gbd_record_attrs),
+            "docstring": "Container for theoretical minimum risk exposure distribution data.",
         },
-        'Categories': {
-            'attrs': categories_attrs,
-            'superclass': ('GbdRecord', gbd_record_attrs),
-            'docstring': 'Container for categorical risk exposure levels.'
+        "Categories": {
+            "attrs": categories_attrs,
+            "superclass": ("GbdRecord", gbd_record_attrs),
+            "docstring": "Container for categorical risk exposure levels.",
         },
     }
 
@@ -114,9 +120,23 @@ def build_mapping() -> str:
         String representation of the base classes.
 
     """
-    templates = make_module_docstring('Template classes for GBD entities', __file__)
-    templates += make_import('typing', ['Union', 'Tuple'])
-    templates += make_import('.id', ['c_id', 's_id', 'hs_id', 'me_id', 'cov_id', 'rei_id', 'scalar', ]) + SPACING
+    templates = make_module_docstring("Template classes for GBD entities", __file__)
+    templates += make_import("typing", ["Union", "Tuple"])
+    templates += (
+        make_import(
+            ".id",
+            [
+                "c_id",
+                "s_id",
+                "hs_id",
+                "me_id",
+                "cov_id",
+                "rei_id",
+                "scalar",
+            ],
+        )
+        + SPACING
+    )
     templates += make_gbd_record()
 
     for entity, info in get_base_types().items():

@@ -1,3 +1,8 @@
+**3.0.4 - 02/15/22**
+
+ - Autoformat code with black and isort.
+ - Add black and isort checks to CI.
+
 **3.0.3 - 02/12/22**
 
  - Bugfix in risk data access.
