@@ -1,3 +1,7 @@
+**3.0.5 - 05/05/22**
+
+ - Fix black and click dependency conflict in CI.
+
 **3.0.4 - 02/15/22**
 
  - Autoformat code with black and isort.
