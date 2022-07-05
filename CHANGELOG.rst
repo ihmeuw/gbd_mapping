@@ -1,3 +1,7 @@
+**3.0.6 - 07/05/22**
+
+ - Add CODEOWNERS
+
 **3.0.5 - 05/05/22**
 
  - Fix black and click dependency conflict in CI.
