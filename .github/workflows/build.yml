@@ -13,10 +13,11 @@ jobs:
         python-version: ["3.7"]
     steps:
       - uses: actions/checkout@v3
-      - name: Set up Python ${{ matrix.python-version }} >> $GITHUB_OUTPUT
+      - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v3
         with:
-          python-version: ${{ matrix.python-version }} >> $GITHUB_OUTPUT
+          python-version: "${{ matrix.python-version }}"
+          run: echo "Python Version ${{ matrix.python-version }}" >> $GITHUB_OUTPUT
       - name: Print environment values
         run: |
           cat $GITHUB_ENV
