@@ -1,4 +1,4 @@
-**3.0.7 - 06/01/23**
+**3.1.0 - 06/01/23**
 
  - Update vivarium_gbd_access pin 
  - Support Python 3.8-3.11 
