@@ -1,3 +1,9 @@
+**3.0.7 - 06/01/23**
+
+ - Update vivarium_gbd_access pin 
+ - Support Python 3.8-3.11 
+ - Update git actions to remove warnings
+
 **3.0.6 - 07/05/22**
 
  - Add CODEOWNERS
