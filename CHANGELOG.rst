@@ -1,3 +1,8 @@
+**3.1.1 - 07/13/23**
+
+ - Changes version metadata to use setuptools_scm
+
+
 **3.1.0 - 06/01/23**
 
  - Update vivarium_gbd_access pin 
