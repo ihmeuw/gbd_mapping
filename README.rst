@@ -4,8 +4,8 @@ GBD Mapping
 .. image:: https://badge.fury.io/py/gbd-mapping.svg
     :target: https://badge.fury.io/py/gbd-mapping
 
-.. image:: https://travis-ci.org/ihmeuw/gbd_mapping.svg?branch=master
-    :target: https://travis-ci.org/ihmeuw/gbd_mapping
+.. image:: https://github.com/ihmeuw/gbd_mapping/actions/workflows/build.yml/badge.svg?branch=main
+    :target: https://github.com/ihmeuw/gbd_mapping
     :alt: Latest Version
 
 .. image:: https://readthedocs.org/projects/gbd_mapping/badge/?version=latest
