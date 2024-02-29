@@ -56,3 +56,7 @@ Given proper permissions, you can set up this library in development mode with
     ``> cd gbd_mapping``
 
     ``> pip install -e .['dev']``
+
+
+`Check out the docs! <https://vivarium.readthedocs.io/projects/gbd-mapping/en/latest/>`_
+----------------------------------------------------------------------------------------
