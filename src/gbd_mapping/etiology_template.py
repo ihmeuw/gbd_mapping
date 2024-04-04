@@ -30,8 +30,12 @@ class Etiologies(GbdRecord):
     """Container for GBD etiologies."""
     __slots__ = ('cholera', 'non_typhoidal_salmonella', 'shigella', 'enteropathogenic_e_coli',
                  'enterotoxigenic_e_coli', 'campylobacter', 'entamoeba', 'cryptosporidium', 'rotavirus', 'aeromonas',
-                 'clostridium_difficile', 'norovirus', 'adenovirus', 'influenza', 'pneumococcus',
-                 'h_influenzae_type_b', 'respiratory_syncytial_virus', 'meningococcal_meningitis', )
+                 'clostridium_difficile', 'norovirus', 'adenovirus', 'influenza', 'respiratory_syncytial_virus',
+                 'group_b_streptococcus', 'acinetobacter_baumannii', 'chlamydia_spp', 'enterobacter_spp',
+                 'escherichia_coli', 'fungus', 'haemophilus_influenzae', 'klebsiella_pneumoniae', 'legionella_spp',
+                 'listeria_monocytogenes', 'mycoplasma', 'other_bacterial_pathogen', 'other_viral_etiologies_of_lri',
+                 'polymicrobial', 'pseudomonas_aeruginosa', 'staphylococcus_aureus',
+                 'viral_etiologies_of_meningitis', 'streptococcus_pneumoniae', 'neisseria_meningitidis', )
 
     def __init__(self,
                  cholera: Etiology,
@@ -48,10 +52,26 @@ class Etiologies(GbdRecord):
                  norovirus: Etiology,
                  adenovirus: Etiology,
                  influenza: Etiology,
-                 pneumococcus: Etiology,
-                 h_influenzae_type_b: Etiology,
                  respiratory_syncytial_virus: Etiology,
-                 meningococcal_meningitis: Etiology, ):
+                 group_b_streptococcus: Etiology,
+                 acinetobacter_baumannii: Etiology,
+                 chlamydia_spp: Etiology,
+                 enterobacter_spp: Etiology,
+                 escherichia_coli: Etiology,
+                 fungus: Etiology,
+                 haemophilus_influenzae: Etiology,
+                 klebsiella_pneumoniae: Etiology,
+                 legionella_spp: Etiology,
+                 listeria_monocytogenes: Etiology,
+                 mycoplasma: Etiology,
+                 other_bacterial_pathogen: Etiology,
+                 other_viral_etiologies_of_lri: Etiology,
+                 polymicrobial: Etiology,
+                 pseudomonas_aeruginosa: Etiology,
+                 staphylococcus_aureus: Etiology,
+                 viral_etiologies_of_meningitis: Etiology,
+                 streptococcus_pneumoniae: Etiology,
+                 neisseria_meningitidis: Etiology, ):
         super().__init__()
         self.cholera = cholera
         self.non_typhoidal_salmonella = non_typhoidal_salmonella
@@ -67,7 +87,23 @@ class Etiologies(GbdRecord):
         self.norovirus = norovirus
         self.adenovirus = adenovirus
         self.influenza = influenza
-        self.pneumococcus = pneumococcus
-        self.h_influenzae_type_b = h_influenzae_type_b
         self.respiratory_syncytial_virus = respiratory_syncytial_virus
-        self.meningococcal_meningitis = meningococcal_meningitis
+        self.group_b_streptococcus = group_b_streptococcus
+        self.acinetobacter_baumannii = acinetobacter_baumannii
+        self.chlamydia_spp = chlamydia_spp
+        self.enterobacter_spp = enterobacter_spp
+        self.escherichia_coli = escherichia_coli
+        self.fungus = fungus
+        self.haemophilus_influenzae = haemophilus_influenzae
+        self.klebsiella_pneumoniae = klebsiella_pneumoniae
+        self.legionella_spp = legionella_spp
+        self.listeria_monocytogenes = listeria_monocytogenes
+        self.mycoplasma = mycoplasma
+        self.other_bacterial_pathogen = other_bacterial_pathogen
+        self.other_viral_etiologies_of_lri = other_viral_etiologies_of_lri
+        self.polymicrobial = polymicrobial
+        self.pseudomonas_aeruginosa = pseudomonas_aeruginosa
+        self.staphylococcus_aureus = staphylococcus_aureus
+        self.viral_etiologies_of_meningitis = viral_etiologies_of_meningitis
+        self.streptococcus_pneumoniae = streptococcus_pneumoniae
+        self.neisseria_meningitidis = neisseria_meningitidis

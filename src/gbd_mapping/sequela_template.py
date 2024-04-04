@@ -60,12 +60,12 @@ class Sequelae(GbdRecord):
                  'mild_heart_failure_due_to_chagas_disease', 'moderate_heart_failure_due_to_chagas_disease',
                  'severe_heart_failure_due_to_chagas_disease', 'moderate_visceral_leishmaniasis',
                  'severe_visceral_leishmaniasis', 'cutaneous_and_mucocutaneous_leishmaniasis',
-                 'mild_schistosomiasis', 'mild_diarrhea_due_to_schistosomiasis',
-                 'hematemesis_due_to_schistosomiasis', 'hepatomegaly_due_to_schistosomiasis',
-                 'ascites_due_to_schistosomiasis', 'dysuria_due_to_schistosomiasis',
-                 'bladder_pathology_due_to_schistosomiasis', 'hydronephrosis_due_to_schistosomiasis',
-                 'mild_anemia_due_to_schistosomiasis', 'moderate_anemia_due_to_schistosomiasis',
-                 'severe_anemia_due_to_schistosomiasis', 'abdominal_problems_due_to_cystic_echinococcosis',
+                 'mild_diarrhea_due_to_schistosomiasis', 'hematemesis_due_to_schistosomiasis',
+                 'hepatomegaly_due_to_schistosomiasis', 'ascites_due_to_schistosomiasis',
+                 'dysuria_due_to_schistosomiasis', 'bladder_pathology_due_to_schistosomiasis',
+                 'hydronephrosis_due_to_schistosomiasis', 'mild_anemia_due_to_schistosomiasis',
+                 'moderate_anemia_due_to_schistosomiasis', 'severe_anemia_due_to_schistosomiasis',
+                 'abdominal_problems_due_to_cystic_echinococcosis',
                  'chronic_respiratory_disease_due_to_cystic_echinococcosis',
                  'prevalence_of_detectable_microfiliaria_due_to_lymphatic_filariasis',
                  'lymphedema_due_to_lymphatic_filariasis', 'hydrocele_due_to_lymphatic_filariasis',
@@ -95,10 +95,9 @@ class Sequelae(GbdRecord):
                  'visible_goiter_without_symptoms',
                  'visible_goiter_with_severe_intellectual_disability_due_to_iodine_deficiency',
                  'visible_goiter_with_profound_intellectual_disability_due_to_iodine_deficiency',
-                 'moderate_vision_impairment_loss_due_to_vitamin_a_deficiency',
-                 'severe_vision_impairment_loss_due_to_vitamin_a_deficiency',
-                 'blindness_due_to_vitamin_a_deficiency', 'mild_iron_deficiency_anemia',
-                 'moderate_iron_deficiency_anemia', 'severe_iron_deficiency_anemia',
+                 'vitamin_a_deficiency_with_moderate_vision_impairment',
+                 'vitamin_a_deficiency_with_severe_vision_impairment', 'vitamin_a_deficiency_with_blindness',
+                 'mild_iron_deficiency_anemia', 'moderate_iron_deficiency_anemia', 'severe_iron_deficiency_anemia',
                  'other_nutritional_deficiencies', 'epididymo_orchitis_due_to_chlamydial_infection',
                  'moderate_pelvic_inflammatory_diseases_due_to_chlamydial_infection',
                  'severe_pelvic_inflammatory_diseases_due_to_chlamydial_infection',
@@ -197,20 +196,16 @@ class Sequelae(GbdRecord):
                  'severe_angina_due_to_ischemic_heart_disease', 'mild_heart_failure_due_to_ischemic_heart_disease',
                  'moderate_heart_failure_due_to_ischemic_heart_disease',
                  'severe_heart_failure_due_to_ischemic_heart_disease', 'acute_ischemic_stroke_severity_level_1',
-                 'acute_ischemic_stroke_severity_level_2', 'acute_ischemic_stroke_severity_level_4',
-                 'acute_ischemic_stroke_severity_level_3', 'acute_ischemic_stroke_severity_level_5',
-                 'chronic_ischemic_stroke_severity_level_1', 'chronic_ischemic_stroke_severity_level_2',
-                 'chronic_ischemic_stroke_severity_level_4', 'chronic_ischemic_stroke_severity_level_3',
-                 'chronic_ischemic_stroke_severity_level_5', 'acute_intracerebral_hemorrhage_severity_level_1',
-                 'acute_intracerebral_hemorrhage_severity_level_2',
-                 'acute_intracerebral_hemorrhage_severity_level_4',
-                 'acute_intracerebral_hemorrhage_severity_level_3',
-                 'acute_intracerebral_hemorrhage_severity_level_5',
+                 'acute_ischemic_stroke_severity_level_2_without_heart_failure',
+                 'acute_ischemic_stroke_severity_level_4_without_heart_failure',
+                 'acute_ischemic_stroke_severity_level_3_without_heart_failure',
+                 'acute_ischemic_stroke_severity_level_5_without_heart_failure',
+                 'chronic_ischemic_stroke_severity_level_1', 'acute_intracerebral_hemorrhage_severity_level_1',
+                 'acute_intracerebral_hemorrhage_severity_level_2_without_heart_failure',
+                 'acute_intracerebral_hemorrhage_severity_level_4_without_heart_failure',
+                 'acute_intracerebral_hemorrhage_severity_level_3_without_heart_failure',
+                 'acute_intracerebral_hemorrhage_severity_level_5_without_heart_failure',
                  'chronic_intracerebral_hemorrhage_severity_level_1',
-                 'chronic_intracerebral_hemorrhage_severity_level_2',
-                 'chronic_intracerebral_hemorrhage_severity_level_4',
-                 'chronic_intracerebral_hemorrhage_severity_level_3',
-                 'chronic_intracerebral_hemorrhage_severity_level_5',
                  'mild_heart_failure_due_to_hypertensive_heart_disease',
                  'moderate_heart_failure_due_to_hypertensive_heart_disease',
                  'severe_heart_failure_due_to_hypertensive_heart_disease', 'acute_myocarditis',
@@ -255,8 +250,8 @@ class Sequelae(GbdRecord):
                  'idiopathic_primary_female_infertility', 'idiopathic_secondary_female_infertility',
                  'mild_abdominal_pain_due_to_endometriosis', 'moderate_abdominal_pain_due_to_endometriosis',
                  'primary_infertility_due_to_endometriosis', 'secondary_infertility_due_to_endometriosis',
-                 'abdominal_pain_due_to_premenstrual_syndrome', 'mild_anemia_due_to_menstrual_disorders',
-                 'moderate_anemia_due_to_menstrual_disorders', 'severe_anemia_due_to_menstrual_disorders',
+                 'abdominal_pain_due_to_premenstrual_syndrome', 'menstrual_disorders_with_mild_anemia',
+                 'menstrual_disorders_with_moderate_anemia', 'menstrual_disorders_with_severe_anemia',
                  'mild_heart_failure_due_to_thalassemias', 'moderate_heart_failure_due_to_thalassemias',
                  'severe_heart_failure_due_to_thalassemias',
                  'mild_anemia_due_to_other_hemoglobinopathies_and_hemolytic_anemias',
@@ -265,12 +260,6 @@ class Sequelae(GbdRecord):
                  'mild_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias',
                  'moderate_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias',
                  'severe_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias',
-                 'mild_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders',
-                 'moderate_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders',
-                 'severe_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders',
-                 'mild_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders',
-                 'moderate_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders',
-                 'severe_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders',
                  'mild_rheumatoid_arthritis', 'moderate_rheumatoid_arthritis', 'severe_rheumatoid_arthritis',
                  'mild_osteoarthritis_of_the_hip', 'moderate_osteoarthritis_of_the_hip',
                  'severe_osteoarthritis_of_the_hip', 'mild_osteoarthritis_of_the_knee',
@@ -331,8 +320,8 @@ class Sequelae(GbdRecord):
                  'mild_anemia_due_to_hemoglobin_e_trait', 'moderate_anemia_due_to_hemoglobin_e_trait',
                  'severe_anemia_due_to_hemoglobin_e_trait', 'mild_anemia_due_to_sickle_cell_trait',
                  'moderate_anemia_due_to_sickle_cell_trait', 'severe_anemia_due_to_sickle_cell_trait',
-                 'mild_anemia_due_to_hemizygous_g6pd_trait', 'moderate_anemia_due_to_hemizygous_g6pd_trait',
-                 'severe_anemia_due_to_hemizygous_g6pd_trait', 'disfigurement_due_to_basal_cell_carcinoma',
+                 'hemizygous_g6pd_deficiency_with_mild_anemia', 'hemizygous_g6pd_deficiency_with_moderate_anemia',
+                 'hemizygous_g6pd_deficiency_with_severe_anemia', 'disfigurement_due_to_basal_cell_carcinoma',
                  'severe_skin_disease_due_to_onchocerciasis', 'mild_contact_dermatitis',
                  'moderate_contact_dermatitis', 'symptomatic_seborrhoeic_dermatitis',
                  'pain_due_to_caries_of_deciduous_teeth', 'pain_due_to_caries_of_permanent_teeth',
@@ -438,7 +427,8 @@ class Sequelae(GbdRecord):
                  'severe_motor_impairment_with_epilepsy_due_to_hemolytic_disease_and_other_neonatal_jaundice',
                  'mild_motor_impairment_due_to_neonatal_tetanus',
                  'mild_motor_plus_cognitive_impairments_due_to_neonatal_tetanus', 'epilepsy_due_to_echinococcosis',
-                 'symptomatic_genital_herpes', 'other_hemoglobinopathies_and_hemolytic_anemias_residual',
+                 'recurrent_symptomatic_episode_of_genital_herpes',
+                 'other_hemoglobinopathies_and_hemolytic_anemias_residual',
                  'mild_behavioral_problems_due_to_encephalitis',
                  'mild_motor_impairment_due_to_long_term_due_to_encephalitis',
                  'mild_motor_plus_cognitive_impairments_due_to_encephalitis',
@@ -448,9 +438,9 @@ class Sequelae(GbdRecord):
                  'severe_motor_impairment_due_to_encephalitis',
                  'moderate_motor_plus_cognitive_impairments_due_to_encephalitis',
                  'severe_motor_plus_cognitive_impairments_due_to_encephalitis', 'epilepsy_due_to_encephalitis',
-                 'severe_opioid_dependence', 'severe_cocaine_dependence', 'severe_amphetamine_dependence',
-                 'severe_cannabis_dependence', 'other_sexually_transmitted_diseases_residual',
-                 'asymptomatic_atrial_fibrillation_and_flutter',
+                 'severe_opioid_dependence', 'severe_cocaine_dependence_with_no_heart_failure',
+                 'severe_amphetamine_dependence_with_no_heart_failure', 'severe_cannabis_dependence',
+                 'other_sexually_transmitted_diseases_residual', 'asymptomatic_atrial_fibrillation_and_flutter',
                  'symptomatic_attention_deficit_hyperactivity_disorder',
                  'attention_deficit_hyperactivity_disorder_currently_without_symptoms',
                  'asymptomatic_alcohol_dependence', 'asymptomatic_fetal_alcohol_syndrome',
@@ -460,8 +450,8 @@ class Sequelae(GbdRecord):
                  'dysthymia_currently_without_symptoms', 'major_depressive_disorder_currently_without_symptoms',
                  'symptomatic_episodes_of_gout', 'asymptomatic_gout',
                  'severe_infectious_complications_due_to_chronic_otitis_media', 'asymptomatic_asthma',
-                 'asymptomatic_genital_herpes', 'asymptomatic_endometriosis', 'asymptomatic_amphetamine_dependence',
-                 'isolated_congenital_heart_disease_due_to_down_syndrome',
+                 'asymptomatic_herpes_simplex_virus_2_infection', 'asymptomatic_endometriosis',
+                 'asymptomatic_amphetamine_dependence', 'isolated_congenital_heart_disease_due_to_down_syndrome',
                  'asymptomatic_other_cardiovascular_diseases', 'mild_other_cardiovascular_diseases',
                  'moderate_other_cardiovascular_diseases', 'severe_other_cardiovascular_diseases',
                  'asymptomatic_other_gynecological_disorders', 'mild_other_gynecological_disorders',
@@ -507,16 +497,11 @@ class Sequelae(GbdRecord):
                  'asymptomatic_other_skin_and_subcutaneous_diseases',
                  'symptomatic_other_skin_and_subcutaneous_diseases', 'mild_molluscum_contagiosum',
                  'severe_molluscum_contagiosum', 'chronic_hepatitis_b_without_cirrhosis',
-                 'chronic_hepatitis_c_without_cirrhosis',
-                 'asymptomatic_endocrine_metabolic_blood_and_immune_disorders',
-                 'mild_endocrine_metabolic_blood_and_immune_disorders',
-                 'moderate_endocrine_metabolic_blood_and_immune_disorders',
-                 'severe_endocrine_metabolic_blood_and_immune_disorders',
-                 'heavy_clonorchiasis_due_to_food_borne_trematodiases',
+                 'chronic_hepatitis_c_without_cirrhosis', 'heavy_clonorchiasis_due_to_food_borne_trematodiases',
                  'heavy_fascioliasis_due_to_food_borne_trematodiases',
                  'heavy_intestinal_fluke_infection_due_to_food_borne_trematodiases',
                  'heavy_opisthorchiasis_due_to_food_borne_trematodiases',
-                 'symptomatic_atrial_fibrillation_and_flutter', 'asymptomatic_turner_syndrome',
+                 'symptomatic_atrial_fibrillation_with_no_heart_failure', 'asymptomatic_turner_syndrome',
                  'moderate_vision_impairment_due_to_retinopathy_of_prematurity',
                  'severe_vision_impairment_due_to_retinopathy_of_prematurity', 'mild_chlamydial_infection',
                  'asymptomatic_chlamydial_infection', 'mild_gonococcal_infection',
@@ -532,8 +517,7 @@ class Sequelae(GbdRecord):
                  'other_maternal_infections',
                  'hirsutism_and_secondary_infertility_due_to_polycystic_ovarian_syndrome',
                  'secondary_infertility_due_to_polycystic_ovarian_syndrome',
-                 'severe_abdominal_pain_due_to_endometriosis',
-                 'moderate_infection_due_to_initial_genital_herpes_episode',
+                 'severe_abdominal_pain_due_to_endometriosis', 'initial_symptomatic_episode_of_genital_herpes',
                  'asymptomatic_caries_of_deciduous_teeth', 'asymptomatic_caries_of_permanent_teeth',
                  'asymptomatic_edentulism_and_severe_tooth_loss', 'asymptomatic_chronic_ischemic_stroke',
                  'asymptomatic_chronic_intracerebral_hemorrhage', 'asymptomatic_silicosis',
@@ -545,12 +529,11 @@ class Sequelae(GbdRecord):
                  'asymptomatic_fascioliasis', 'asymptomatic_intestinal_fluke_infection',
                  'asymptomatic_opisthorchiasis', 'asymptomatic_paragonimiasis',
                  'asymptomatic_peripheral_arterial_disease', 'asymptomatic_benign_prostatic_hyperplasia',
-                 'symptomatic_benign_prostatic_hyperplasia', 'asymptomatic_uterine_fibroids',
+                 'symptomatic_benign_prostatic_hyperplasia', 'uterine_fibroids_asymptomatic',
                  'asymptomatic_other_musculoskeletal_disorders', 'mild_cellulitis', 'severe_cellulitis',
                  'gastrointestinal_bleeding_due_to_typhoid',
                  'vertigo_with_mild_hearing_loss_due_to_chronic_otitis_media',
-                 'vertigo_with_mild_hearing_loss_and_ringing_due_to_chronic_otitis_media',
-                 'asymptomatic_hookworm_disease',
+                 'vertigo_with_mild_hearing_loss_and_ringing_due_to_chronic_otitis_media', 'asymptomatic_hookworm',
                  'mild_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease',
                  'moderate_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease',
                  'severe_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease',
@@ -571,82 +554,51 @@ class Sequelae(GbdRecord):
                  'moderate_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis',
                  'severe_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis',
                  'severe_interstitial_lung_disease_and_pulmonary_sarcoidosis_without_heart_failure',
-                 'stage_3_chronic_kidney_disease_and_mild_anemia_due_to_hypertension',
-                 'stage_3_chronic_kidney_disease_and_moderate_anemia_due_to_hypertension',
-                 'stage_3_chronic_kidney_disease_and_severe_anemia_due_to_hypertension',
-                 'stage_3_chronic_kidney_disease_without_anemia_due_to_hypertension',
-                 'stage_3_chronic_kidney_disease_and_mild_anemia_due_to_glomerulonephritis',
-                 'stage_3_chronic_kidney_disease_and_moderate_anemia_due_to_glomerulonephritis',
-                 'stage_3_chronic_kidney_disease_and_severe_anemia_due_to_glomerulonephritis',
-                 'stage_3_chronic_kidney_disease_without_anemia_due_to_glomerulonephritis',
-                 'stage_3_chronic_kidney_disease_and_mild_anemia_due_to_other_causes',
-                 'stage_3_chronic_kidney_disease_and_moderate_anemia_due_to_other_causes',
-                 'stage_3_chronic_kidney_disease_and_severe_anemia_due_to_other_causes',
-                 'stage_3_chronic_kidney_disease_without_anemia_due_to_other_causes',
+                 'stage_3_chronic_kidney_disease_due_to_hypertension_with_mild_anemia',
+                 'stage_3_chronic_kidney_disease_due_to_hypertension_with_moderate_anemia',
+                 'stage_3_chronic_kidney_disease_due_to_hypertension_with_severe_anemia',
+                 'stage_3_chronic_kidney_disease_due_to_hypertension_without_anemia',
+                 'stage_3_chronic_kidney_disease_due_to_glomerulonephritis_with_mild_anemia',
+                 'stage_3_chronic_kidney_disease_due_to_glomerulonephritis_with_moderate_anemia',
+                 'stage_3_chronic_kidney_disease_due_to_glomerulonephritis_with_severe_anemia',
+                 'stage_3_chronic_kidney_disease_due_to_glomerulonephritis_without_anemia',
+                 'stage_3_chronic_kidney_disease_due_to_other_and_unspecified_causes_with_mild_anemia',
+                 'stage_3_chronic_kidney_disease_due_to_other_and_unspecified_causes_with_moderate_anemia',
+                 'stage_3_chronic_kidney_disease_due_to_other_and_unspecified_causes_with_severe_anemia',
+                 'stage_3_chronic_kidney_disease_due_to_other_and_unspecified_causes_without_anemia',
                  'asymptomatic_ischemic_heart_disease_following_myocardial_infarction',
                  'symptomatic_claudication_due_to_peripheral_arterial_disease',
                  'asymptomatic_seborrhoeic_dermatitis', 'asymptomatic_contact_dermatitis',
                  'mild_other_oral_disorders', 'severe_other_oral_disorders', 'asymptomatic_b_thalassemia_trait',
                  'asymptomatic_hemoglobin_e_trait', 'asymptomatic_sickle_cell_trait',
-                 'asymptomatic_hemizygous_g6pd_trait', 'mild_hearing_loss_due_to_chronic_otitis_media',
+                 'hemizygous_g6pd_deficiency_asymptomatic', 'mild_hearing_loss_due_to_chronic_otitis_media',
                  'mild_hearing_loss_with_ringing_due_to_chronic_otitis_media',
                  'asymptomatic_malaria_parasitemia_pfpr', 'mild_anemia_due_to_malaria_parasitemia_pfpr',
                  'moderate_anemia_due_to_malaria_parasitemia_pfpr', 'severe_anemia_due_to_malaria_parasitemia_pfpr',
-                 'beta_thalassemia_major_severe_infection_with_severe_anemia',
-                 'beta_thalassemia_major_with_mild_anemia', 'beta_thalassemia_major_with_moderate_anemia',
-                 'beta_thalassemia_major_with_severe_anemia',
-                 'hemoglobin_e_beta_thalassemia_severe_infection_with_severe_anemia',
-                 'hemoglobin_e_beta_thalassemia_with_mild_anemia',
-                 'hemoglobin_e_beta_thalassemia_with_moderate_anemia',
-                 'hemoglobin_e_beta_thalassemia_with_severe_anemia',
-                 'hemoglobin_h_disease_severe_infection_with_severe_anemia', 'hemoglobin_h_disease_with_mild_anemia',
-                 'hemoglobin_h_disease_with_moderate_anemia', 'hemoglobin_h_disease_with_severe_anemia',
-                 'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_without_anemia',
-                 'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_without_anemia',
-                 'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_severe_anemia',
-                 'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_stroke_and_severe_anemia',
-                 'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_stroke_without_anemia',
-                 'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_stroke_and_severe_anemia',
-                 'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_stroke_without_anemia',
-                 'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_mild_anemia',
-                 'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_moderate_anemia',
-                 'homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_severe_anemia',
-                 'hemoglobin_sc_disease_without_anemia',
-                 'hemoglobin_sc_disease_with_vaso_occlusive_crisis_and_severe_anemia',
-                 'hemoglobin_sc_disease_with_vaso_occlusive_crisis_without_anemia',
-                 'hemoglobin_sc_disease_with_stroke_and_severe_anemia',
-                 'hemoglobin_sc_disease_with_stroke_without_anemia',
-                 'hemoglobin_sc_disease_with_vaso_occlusive_crisis_stroke_and_severe_anemia',
-                 'hemoglobin_sc_disease_with_vaso_occlusive_crisis_and_stroke_without_anemia',
-                 'hemoglobin_sc_disease_with_mild_anemia', 'hemoglobin_sc_disease_with_moderate_anemia',
-                 'hemoglobin_sc_disease_with_severe_anemia', 'mild_sickle_cell_beta_thalassemia_without_anemia',
-                 'mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_severe_anemia',
-                 'mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_without_anemia',
-                 'mild_sickle_cell_beta_thalassemia_with_stroke_and_severe_anemia',
-                 'mild_sickle_cell_beta_thalassemia_with_stroke_without_anemia',
-                 'mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_stroke_and_severe_anemia',
-                 'mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_stroke_without_anemia',
-                 'mild_sickle_cell_beta_thalassemia_with_mild_anemia',
-                 'mild_sickle_cell_beta_thalassemia_with_moderate_anemia',
-                 'mild_sickle_cell_beta_thalassemia_with_severe_anemia',
+                 'mild_anemia_due_to_homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia',
+                 'moderate_anemia_due_to_homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia',
+                 'severe_anemia_due_to_homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia',
+                 'mild_anemia_due_to_hemoglobin_sc_disease', 'moderate_anemia_due_to_hemoglobin_sc_disease',
+                 'severe_anemia_due_to_hemoglobin_sc_disease',
+                 'mild_anemia_due_to_mild_sickle_cell_beta_thalassemia',
+                 'moderate_anemia_due_to_mild_sickle_cell_beta_thalassemia',
+                 'severe_anemia_due_to_mild_sickle_cell_beta_thalassemia',
                  'vertigo_with_moderate_hearing_loss_due_to_chronic_otitis_media',
                  'vertigo_with_moderate_hearing_loss_and_ringing_due_to_chronic_otitis_media',
                  'moderate_hearing_loss_due_to_chronic_otitis_media',
                  'moderate_hearing_loss_with_ringing_due_to_chronic_otitis_media',
-                 'mild_abdominal_pain_due_to_uterine_fibroids_with_mild_anemia',
-                 'mild_abdominal_pain_due_to_uterine_fibroids_with_moderate_anemia',
-                 'mild_abdominal_pain_due_to_uterine_fibroids_with_severe_anemia',
-                 'mild_abdominal_pain_due_to_uterine_fibroids_without_anemia', 'asymptomatic_yellow_fever',
-                 'hemoglobin_h_disease_without_anemia', 'beta_thalassemia_major_without_anemia',
-                 'hemoglobin_e_beta_thalassemia_without_anemia', 'rheumatic_heart_disease_without_heart_failure',
+                 'uterine_fibroids_symptomatic_with_mild_anemia',
+                 'uterine_fibroids_symptomatic_with_moderate_anemia',
+                 'uterine_fibroids_symptomatic_with_severe_anemia', 'uterine_fibroids_symptomatic_without_anemia',
+                 'asymptomatic_yellow_fever', 'other_combined_sequelae_of_hemoglobin_h_disease',
+                 'other_combined_sequelae_of_beta_thalassemia_major',
+                 'other_combined_sequelae_of_hemoglobin_e_beta_thalassemia',
+                 'rheumatic_heart_disease_without_heart_failure',
                  'mild_heart_failure_due_to_rheumatic_heart_disease',
                  'moderate_heart_failure_due_to_rheumatic_heart_disease',
-                 'severe_heart_failure_due_to_rheumatic_heart_disease', 'mild_anemia_due_to_g6pd_deficiency',
-                 'moderate_anemia_due_to_g6pd_deficiency', 'severe_anemia_due_to_g6pd_deficiency',
-                 'mild_heart_failure_due_to_g6pd_deficiency', 'moderate_heart_failure_due_to_g6pd_deficiency',
-                 'severe_heart_failure_due_to_g6pd_deficiency', 'asymptomatic_g6pd_deficiency',
-                 'asymptomatic_gallbladder_and_biliary_diseases', 'moderate_vision_impairment_due_to_encephalitis',
-                 'severe_vision_impairment_due_to_encephalitis',
+                 'severe_heart_failure_due_to_rheumatic_heart_disease',
+                 'g6pd_deficiency_without_anemia_or_heart_failure', 'asymptomatic_gallbladder_and_biliary_diseases',
+                 'moderate_vision_impairment_due_to_encephalitis', 'severe_vision_impairment_due_to_encephalitis',
                  'mild_motor_impairment_mild_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease',
                  'mild_motor_impairment_moderate_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease',
                  'mild_motor_impairment_severe_respiratory_problems_and_speech_problems_due_to_motor_neuron_disease',
@@ -818,29 +770,29 @@ class Sequelae(GbdRecord):
                  'asymptomatic_medication_overuse_headache_due_to_tension_type_headache',
                  'symptomatic_medication_overuse_headache_due_to_tension_type_headache',
                  'stage_5_chronic_kidney_disease_untreated_without_anemia_due_to_hypertension',
-                 'stage_5_chronic_kidney_disease_untreated_and_mild_anemia_due_to_hypertension',
-                 'stage_5_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_hypertension',
-                 'stage_5_chronic_kidney_disease_untreated_and_severe_anemia_due_to_hypertension',
-                 'stage_5_chronic_kidney_disease_untreated_without_anemia_due_to_glomerulonephritis',
-                 'stage_5_chronic_kidney_disease_untreated_and_mild_anemia_due_to_glomerulonephritis',
-                 'stage_5_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_glomerulonephritis',
-                 'stage_5_chronic_kidney_disease_untreated_and_severe_anemia_due_to_glomerulonephritis',
-                 'stage_5_chronic_kidney_disease_untreated_without_anemia_due_to_other_causes',
-                 'stage_5_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_causes',
-                 'stage_5_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_causes',
-                 'stage_5_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_causes',
-                 'stage_4_chronic_kidney_disease_untreated_without_anemia_due_to_hypertension',
-                 'stage_4_chronic_kidney_disease_untreated_and_mild_anemia_due_to_hypertension',
-                 'stage_4_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_hypertension',
-                 'stage_4_chronic_kidney_disease_untreated_and_severe_anemia_due_to_hypertension',
-                 'stage_4_chronic_kidney_disease_untreated_without_anemia_due_to_glomerulonephritis',
-                 'stage_4_chronic_kidney_disease_untreated_and_mild_anemia_due_to_glomerulonephritis',
-                 'stage_4_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_glomerulonephritis',
-                 'stage_4_chronic_kidney_disease_untreated_and_severe_anemia_due_to_glomerulonephritis',
-                 'stage_4_chronic_kidney_disease_untreated_without_anemia_due_to_other_causes',
-                 'stage_4_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_causes',
-                 'stage_4_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_causes',
-                 'stage_4_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_causes',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_hypertension_with_mild_anemia',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_hypertension_with_moderate_anemia',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_hypertension_with_severe_anemia',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_glomerulonephritis_without_anemia',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_mild_anemia',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_moderate_anemia',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_severe_anemia',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_without_anemia',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_mild_anemia',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_moderate_anemia',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_severe_anemia',
+                 'stage_4_chronic_kidney_disease_untreated_due_to_hypertension_without_anemia',
+                 'stage_4_chronic_kidney_disease_untreated_due_to_hypertension_with_mild_anemia',
+                 'stage_4_chronic_kidney_disease_untreated_due_to_hypertension_with_moderate_anemia',
+                 'stage_4_chronic_kidney_disease_untreated_due_to_hypertension_with_severe_anemia',
+                 'stage_4_chronic_kidney_disease_untreated_due_to_glomerulonephritis_without_anemia',
+                 'stage_4_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_mild_anemia',
+                 'stage_4_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_moderate_anemia',
+                 'stage_4_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_severe_anemia',
+                 'stage_4_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_without_anemia',
+                 'stage_4_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_mild_anemia',
+                 'stage_4_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_moderate_anemia',
+                 'stage_4_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_severe_anemia',
                  'skin_disfigurement_due_to_trypanosoma_brucei_gambiense',
                  'sleeping_sickness_due_to_trypanosoma_brucei_gambiense',
                  'sleeping_sickness_due_to_trypanosoma_brucei_rhodesiense',
@@ -1031,7 +983,7 @@ class Sequelae(GbdRecord):
                  'mild_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele',
                  'moderate_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele',
                  'severe_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele',
-                 'asymptomatic_vitamin_a_deficiency', 'latent_tuberculosis_infection',
+                 'vitamin_a_deficiency_asymptomatic', 'latent_tuberculosis_infection',
                  'mild_pain_due_to_guinea_worm_emergence',
                  'mild_symptomatic_episodes_gallbladder_and_biliary_diseases',
                  'moderate_symptomatic_episodes_gallbladder_and_biliary_diseases',
@@ -1190,46 +1142,44 @@ class Sequelae(GbdRecord):
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_compensated',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_compensated',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_compensated',
-                 'cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_compensated',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_compensated_asymptomatic',
                  'severe_disfigurement_due_to_adult_tertiary_syphilis',
                  'neurological_problems_due_to_adult_tertiary_syphilis',
                  'cardiovascular_complications_due_to_adult_tertiary_syphilis',
                  'asymptomatic_adult_tertiary_syphilis', 'other_infectious_diseases',
                  'other_congenital_birth_defects', 'ectopic_pregnancy',
-                 'acute_subarachnoid_hemorrhage_severity_level_1', 'acute_subarachnoid_hemorrhage_severity_level_2',
-                 'acute_subarachnoid_hemorrhage_severity_level_3', 'acute_subarachnoid_hemorrhage_severity_level_4',
-                 'acute_subarachnoid_hemorrhage_severity_level_5', 'asymptomatic_chronic_subarachnoid_hemorrhage',
-                 'chronic_subarachnoid_hemorrhage_severity_level_1',
-                 'chronic_subarachnoid_hemorrhage_severity_level_2',
-                 'chronic_subarachnoid_hemorrhage_severity_level_3',
-                 'chronic_subarachnoid_hemorrhage_severity_level_4',
-                 'chronic_subarachnoid_hemorrhage_severity_level_5',
+                 'acute_subarachnoid_hemorrhage_severity_level_1',
+                 'acute_subarachnoid_hemorrhage_severity_level_2_without_heart_failure',
+                 'acute_subarachnoid_hemorrhage_severity_level_3_without_heart_failure',
+                 'acute_subarachnoid_hemorrhage_severity_level_4_without_heart_failure',
+                 'acute_subarachnoid_hemorrhage_severity_level_5_without_heart_failure',
+                 'asymptomatic_chronic_subarachnoid_hemorrhage', 'chronic_subarachnoid_hemorrhage_severity_level_1',
                  'end_stage_renal_disease_after_transplant_due_to_type_1_diabetes_mellitus',
                  'end_stage_renal_disease_after_transplant_due_to_type_2_diabetes_mellitus',
-                 'stage_3_chronic_kidney_disease_and_severe_anemia_due_to_type_1_diabetes_mellitus',
-                 'stage_3_chronic_kidney_disease_and_severe_anemia_due_to_type_2_diabetes_mellitus',
-                 'stage_3_chronic_kidney_disease_and_moderate_anemia_due_to_type_1_diabetes_mellitus',
-                 'stage_3_chronic_kidney_disease_and_moderate_anemia_due_to_type_2_diabetes_mellitus',
-                 'stage_3_chronic_kidney_disease_and_mild_anemia_due_to_type_1_diabetes_mellitus',
-                 'stage_3_chronic_kidney_disease_and_mild_anemia_due_to_type_2_diabetes_mellitus',
-                 'stage_3_chronic_kidney_disease_without_anemia_due_to_type_1_diabetes_mellitus',
-                 'stage_3_chronic_kidney_disease_without_anemia_due_to_type_2_diabetes_mellitus',
-                 'stage_4_chronic_kidney_disease_untreated_and_severe_anemia_due_to_type_1_diabetes_mellitus',
-                 'stage_4_chronic_kidney_disease_untreated_and_severe_anemia_due_to_type_2_diabetes_mellitus',
-                 'stage_4_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_type_1_diabetes_mellitus',
-                 'stage_4_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_type_2_diabetes_mellitus',
-                 'stage_4_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_1_diabetes_mellitus',
-                 'stage_4_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_2_diabetes_mellitus',
-                 'stage_4_chronic_kidney_disease_untreated_without_anemia_due_to_type_1_diabetes_mellitus',
-                 'stage_4_chronic_kidney_disease_untreated_without_anemia_due_to_type_2_diabetes_mellitus',
-                 'stage_5_chronic_kidney_disease_untreated_and_severe_anemia_due_to_type_1_diabetes_mellitus',
-                 'stage_5_chronic_kidney_disease_untreated_and_severe_anemia_due_to_type_2_diabetes_mellitus',
-                 'stage_5_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_type_1_diabetes_mellitus',
-                 'stage_5_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_type_2_diabetes_mellitus',
-                 'stage_5_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_1_diabetes_mellitus',
-                 'stage_5_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_2_diabetes_mellitus',
-                 'stage_5_chronic_kidney_disease_untreated_without_anemia_due_to_type_1_diabetes_mellitus',
-                 'stage_5_chronic_kidney_disease_untreated_without_anemia_due_to_type_2_diabetes_mellitus',
+                 'stage_3_chronic_kidney_disease_due_to_type_1_diabetes_mellitus_with_severe_anemia',
+                 'stage_3_chronic_kidney_disease_due_to_type_2_diabetes_mellitus_with_severe_anemia',
+                 'stage_3_chronic_kidney_disease_due_to_type_1_diabetes_mellitus_with_moderate_anemia',
+                 'stage_3_chronic_kidney_disease_due_to_type_2_diabetes_mellitus_with_mdoerate_anemia',
+                 'stage_3_chronic_kidney_disease_due_to_type_1_diabetes_mellitus_with_mild_anemia',
+                 'stage_3_chronic_kidney_disease_due_to_type_2_diabetes_mellitus_with_mild_anemia',
+                 'stage_3_chronic_kidney_disease_due_to_type_1_diabetes_mellitus_without_anemia',
+                 'stage_3_chronic_kidney_disease_due_to_type_2_diabetes_mellitus_without_anemia',
+                 'stage_4_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_severe_anemia',
+                 'stage_4_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_severe_anemia',
+                 'stage_4_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_moderate_anemia',
+                 'stage_4_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_mdoerate_anemia',
+                 'stage_4_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_mild_anemia',
+                 'stage_4_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_mild_anemia',
+                 'stage_4_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_without_anemia',
+                 'stage_4_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_without_anemia',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_severe_anemia',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_severe_anemia',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_moderate_anemia',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_moderate_anemia',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_mild_anemia',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_mild_anemia',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_without_anemia_or_heart_faliure',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_without_anemia',
                  'calcific_aortic_valve_disease_after_valve_intervention',
                  'asymptomatic_calcific_aortic_valve_disease',
                  'mild_heart_failure_due_to_calcific_aortic_valve_disease',
@@ -1294,9 +1244,8 @@ class Sequelae(GbdRecord):
                  'stage_1_2_chronic_kidney_disease_with_preserved_gfr_due_to_other_causes', 'severe_acute_ints',
                  'menstrual_disorders_without_anemia', 'ulcerative_colitis_with_mild_anemia',
                  'ulcerative_colitis_with_moderate_anemia', 'ulcerative_colitis_with_severe_anemia',
-                 'ulcerative_colitis_without_anemia', 'crohns_disease_with_mild_anemia',
-                 'crohns_disease_with_moderate_anemia', 'crohns_disease_with_severe_anemia',
-                 'crohns_disease_without_anemia', 'mild_anemia_due_to_malaria_vivax_pvpr',
+                 'crohns_disease_with_mild_anemia', 'crohns_disease_with_moderate_anemia',
+                 'crohns_disease_with_severe_anemia', 'mild_anemia_due_to_malaria_vivax_pvpr',
                  'moderate_anemia_due_to_malaria_vivax_pvpr', 'severe_anemia_due_to_malaria_vivax_pvpr',
                  'asymptomatic_malaria_vivax_pvpr', 'non_disabling_symptomatic_acne', 'acute_pancreatitis',
                  'complicated_pud_with_no_anemia', 'complicated_pud_with_mild_anemia',
@@ -1311,8 +1260,7 @@ class Sequelae(GbdRecord):
                  'controlled_medically_managed_heart_failure_due_to_chagas_disease',
                  'controlled_medically_managed_heart_failure_due_to_degenerative_mitral_valve_disease',
                  'controlled_medically_managed_heart_failure_due_to_endocarditis',
-                 'controlled_medically_managed_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders',
-                 'controlled_medically_managed_heart_failure_due_to_g6pd_deficiency',
+                 'g6pd_deficiency_with_asymptomatic_heart_failure',
                  'controlled_medically_managed_heart_failure_due_to_hypertensive_heart_disease',
                  'controlled_medically_managed_heart_failure_due_to_myocarditis',
                  'controlled_medically_managed_heart_failure_due_to_other_cardiomyopathy',
@@ -1326,7 +1274,7 @@ class Sequelae(GbdRecord):
                  'controlled_medically_managed_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis',
                  'controlled_medically_managed_heart_failure_due_to_severe_other_pneumoconiosis',
                  'controlled_medically_managed_heart_failure_due_to_severe_silicosis',
-                 'controlled_medically_managed_heart_failure_due_to_thalassemias',
+                 'asymptomatic_heart_failure_due_to_thalassemias',
                  'congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus',
                  'congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects',
                  'congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects',
@@ -1417,43 +1365,38 @@ class Sequelae(GbdRecord):
                  'mild_heart_failure_due_to_pulmonary_arterial_hypertension',
                  'moderate_heart_failure_due_to_pulmonary_arterial_hypertension',
                  'severe_heart_failure_due_to_pulmonary_arterial_hypertension',
-                 'end_stage_renal_disease_on_dialysis_and_mild_anemia_due_to_type_1_diabetes_mellitus',
-                 'end_stage_renal_disease_on_dialysis_and_mild_anemia_due_to_type_2_diabetes_mellitus',
-                 'end_stage_renal_disease_on_dialysis_and_mild_anemia_due_to_hypertension',
-                 'end_stage_renal_disease_on_dialysis_and_mild_anemia_due_to_glomerulonephritis',
-                 'end_stage_renal_disease_on_dialysis_and_mild_anemia_due_to_other_and_unspecified_causes',
-                 'end_stage_renal_disease_on_dialysis_and_moderate_anemia_due_to_type_1_diabetes_mellitus',
-                 'end_stage_renal_disease_on_dialysis_and_moderate_anemia_due_to_type_2_diabetes_mellitus',
-                 'end_stage_renal_disease_on_dialysis_and_moderate_anemia_due_to_hypertension',
-                 'end_stage_renal_disease_on_dialysis_and_moderate_anemia_due_to_glomerulonephritis',
-                 'end_stage_renal_disease_on_dialysis_and_moderate_anemia_due_to_other_and_unspecified_causes',
-                 'end_stage_renal_disease_on_dialysis_and_severe_anemia_due_to_type_1_diabetes_mellitus',
-                 'end_stage_renal_disease_on_dialysis_and_severe_anemia_due_to_type_2_diabetes_mellitus',
-                 'end_stage_renal_disease_on_dialysis_and_severe_anemia_due_to_hypertension',
-                 'end_stage_renal_disease_on_dialysis_and_severe_anemia_due_to_glomerulonephritis',
-                 'end_stage_renal_disease_on_dialysis_and_severe_anemia_due_to_other_and_unspecified_causes',
-                 'end_stage_renal_disease_on_dialysis_without_anemia_due_to_type_1_diabetes_mellitus',
-                 'end_stage_renal_disease_on_dialysis_without_anemia_due_to_type_2_diabetes_mellitus',
-                 'end_stage_renal_disease_on_dialysis_without_anemia_due_to_hypertension',
-                 'end_stage_renal_disease_on_dialysis_without_anemia_due_to_glomerulonephritis',
-                 'end_stage_renal_disease_on_dialysis_without_anemia_due_to_other_and_unspecified_causes',
-                 'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_without_anemia',
+                 'end_stage_renal_disease_on_dialysis_due_to_type_1_diabetes_mellitus_with_mild_anemia',
+                 'end_stage_renal_disease_on_dialysis_due_to_type_2_diabetes_mellitus_with_mild_anemia',
+                 'end_stage_renal_disease_on_dialysis_due_to_hypertension_with_mild_anemia',
+                 'end_stage_renal_disease_on_dialysis_due_to_glomerulonephritis_with_mild_anemia',
+                 'end_stage_renal_disease_on_dialysis_due_to_other_and_unspecified_causes_with_mild_anemia',
+                 'end_stage_renal_disease_on_dialysis_due_to_type_1_diabetes_mellitus_with_moderate_anemia',
+                 'end_stage_renal_disease_on_dialysis_due_to_type_2_diabetes_mellitus_with_moderate_anemia',
+                 'end_stage_renal_disease_on_dialysis_due_to_hypertension_with_moderate_anemia',
+                 'end_stage_renal_disease_on_dialysis_due_to_glomerulonephritis_with_moderate_anemia',
+                 'end_stage_renal_disease_on_dialysis_due_to_other_and_unspecified_causes_with_moderate_anemia',
+                 'end_stage_renal_disease_on_dialysis_due_to_type_1_diabetes_mellitus_with_severe_anemia',
+                 'end_stage_renal_disease_on_dialysis_due_to_type_2_diabetes_mellitus_with_severe_anemia',
+                 'end_stage_renal_disease_on_dialysis_due_to_hypertension_with_severe_anemia',
+                 'end_stage_renal_disease_on_dialysis_due_to_glomerulonephritis_with_severe_anemia',
+                 'end_stage_renal_disease_on_dialysis_due_to_other_and_unspecified_causes_with_severe_anemia',
+                 'end_stage_renal_disease_on_dialysis_due_to_type_1_diabetes_mellitus_without_anemia',
+                 'end_stage_renal_disease_on_dialysis_due_to_type_2_diabetes_mellitus_without_anemia',
+                 'end_stage_renal_disease_on_dialysis_due_to_hypertension_without_anemia',
+                 'end_stage_renal_disease_on_dialysis_due_to_glomerulonephritis_without_anemia',
+                 'end_stage_renal_disease_on_dialysis_due_to_other_and_unspecified_causes_without_anemia',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_mild_anemia',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_moderate_anemia',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_severe_anemia',
-                 'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_no_anemia',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_mild_anemia',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_moderate_anemia',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_severe_anemia',
-                 'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_without_anemia',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_mild_anemia',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_moderate_anemia',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_severe_anemia',
-                 'cirrhosis_and_other_chronic_liver_diseases_due_to_other_decompensated_with_no_anemia',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_other_decompensated_with_mild_anemia',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_other_decompensated_with_moderate_anemia',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_other_decompensated_with_severe_anemia',
-                 'cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_no_anemia',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_mild_anemia',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_moderate_anemia',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_severe_anemia',
@@ -1463,7 +1406,332 @@ class Sequelae(GbdRecord):
                  'symptomatic_definite_tension_type_headache', 'asymptomatic_definite_tension_type_headache',
                  'other_combined_sequelae_of_homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia',
                  'other_combined_sequelae_of_hemoglobin_sc_disease',
-                 'other_combined_sequelae_of_mild_sickle_cell_beta_thalassemia_exclusivity_adjustment', )
+                 'other_combined_sequelae_of_mild_sickle_cell_beta_thalassemia_exclusivity_adjustment',
+                 'mild_schistosomiasis_without_anemia', 'asymptomatic_congenital_syphilis',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_asymptomatic_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_mild_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_moderate_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_severe_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_without_anemia_or_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_asymptomatic_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_mild_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_moderate_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_severe_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_without_anemia_or_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_asymptomatic_managed_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_mild_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_moderate_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_severe_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_without_anemia_or_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_asymptomatic_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_asymptomatic_and_mild_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_moderate_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_severe_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_other_causes_decompensated_without_anemia_or_heart_failure',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_hypertension_with_asymptomatic_heart_failure',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_hypertension_with_mild_heart_failure',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_hypertension_with_moderate_heart_failure',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_hypertension_with_severe_heart_failure',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_asymptomatic_heart_failure',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_mild_heart_failure',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_moderate_heart_failure',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_severe_heart_failure',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_asymptomatic_heart_failure',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_mild_heart_failure',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_moderate_heart_failure',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_severe_heart_failure',
+                 'severe_infection_associated_with_beta_thalassemia_major',
+                 'mild_anemia_due_to_beta_thalassemia_major', 'moderate_anemia_due_to_beta_thalassemia_major',
+                 'severe_anemia_due_to_beta_thalassemia_major',
+                 'severe_infection_associated_with_hemoglobin_e_beta_thalassemia',
+                 'hemoglobin_e_beta_thalassemia_with_mild_anemia',
+                 'hemoglobin_e_beta_thalassemia_with_moderate_anemia',
+                 'hemoglobin_e_beta_thalassemia_with_severe_anemia',
+                 'severe_infection_associated_with_hemoglobin_h_disease', 'hemoglobin_h_disease_with_mild_anemia',
+                 'hemoglobin_h_disease_with_moderate_anemia', 'hemoglobin_h_disease_with_severe_anemia',
+                 'vaso_occlusive_crises_due_to_homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia',
+                 'stroke_due_to_homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia',
+                 'vaso_occlusive_crises_and_stroke_due_to_homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia',
+                 'vaso_occlusive_crises_due_to_hemoglobin_sc_disease', 'stroke_due_to_hemoglobin_sc_disease',
+                 'vaso_occlusive_crises_and_stroke_due_to_hemoglobin_sc_disease',
+                 'vaso_occlusive_crises_due_to_mild_sickle_cell_beta_thalassemia',
+                 'stroke_due_to_mild_sickle_cell_beta_thalassemia',
+                 'vaso_occlusive_crises_and_stroke_due_to_mild_sickle_cell_beta_thalassemia',
+                 'g6pd_deficiency_with_mild_anemia', 'g6pd_deficiency_with_moderate_anemia',
+                 'g6pd_deficiency_with_severe_anemia', 'g6pd_deficiency_with_mild_heart_failure',
+                 'g6pd_deficiency_with_moderate_heart_failure', 'g6pd_deficiency_with_severe_heart_failure',
+                 'mild_anemia_due_to_other_endocrine_metabolic_blood_immune_disorders',
+                 'moderate_anemia_due_to_other_endocrine_metabolic_blood_immune_disorders',
+                 'severe_anemia_due_to_other_endocrine_metabolic_blood_immune_disorders',
+                 'asymptomatic_other_endocrine_metabolic_blood_immune_disorders',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_asymptomatic_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_mild_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_moderate_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_severe_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_without_anemia_or_heart_failure',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_asymptomatic_heart_failure',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_mild_heart_failure',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_moderate_heart_failure',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_severe_heart_failure',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_asymptomatic_heart_failure',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_mild_heart_failure',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_moderate_heart_failure',
+                 'stage_5_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_severe_heart_failure',
+                 'mild_anemia_due_to_hypothyroidism', 'moderate_anemia_due_to_hypothyroidism',
+                 'severe_anemia_due_to_hypothyroidism', 'mild_heart_failure_due_to_hypothyroidism',
+                 'moderate_heart_failure_due_to_hypothyroidism', 'severe_heart_failure_due_to_hypothyroidism',
+                 'controlled_medically_managed_heart_failure_due_to_hypothyroidism', 'asymptomatic_hypothyroidism',
+                 'mild_anemia_due_to_hyperthyroidism', 'moderate_anemia_due_to_hyperthyroidism',
+                 'severe_anemia_due_to_hyperthyroidism', 'mild_heart_failure_due_to_hyperthyroidism',
+                 'moderate_heart_failure_due_to_hyperthyroidism', 'severe_heart_failure_due_to_hyperthyroidism',
+                 'controlled_medically_managed_heart_failure_due_to_hyperthyroidism', 'asymptomatic_hyperthyroidism',
+                 'acute_intracerebral_hemorrhage_severity_level_2_with_asymptomatic_heart_failure',
+                 'acute_intracerebral_hemorrhage_severity_level_2_with_mild_heart_failure',
+                 'acute_intracerebral_hemorrhage_severity_level_2_with_moderate_heart_failure',
+                 'acute_intracerebral_hemorrhage_severity_level_2_with_severe_heart_failure',
+                 'acute_intracerebral_hemorrhage_severity_level_3_with_asymptomatic_heart_failure',
+                 'acute_intracerebral_hemorrhage_severity_level_3_with_mild_heart_failure',
+                 'acute_intracerebral_hemorrhage_severity_level_3_with_moderate_heart_failure',
+                 'acute_intracerebral_hemorrhage_severity_level_3_with_severe_heart_failure',
+                 'acute_intracerebral_hemorrhage_severity_level_4_with_asymptomatic_heart_failure',
+                 'acute_intracerebral_hemorrhage_severity_level_4_with_mild_heart_failure',
+                 'acute_intracerebral_hemorrhage_severity_level_4_with_moderate_heart_failure',
+                 'acute_intracerebral_hemorrhage_severity_level_4_with_severe_heart_failure',
+                 'acute_intracerebral_hemorrhage_severity_level_5_with_asymptomatic_heart_failure',
+                 'acute_intracerebral_hemorrhage_severity_level_5_with_mild_heart_failure',
+                 'acute_intracerebral_hemorrhage_severity_level_5_with_moderate_heart_failure',
+                 'acute_intracerebral_hemorrhage_severity_level_5_with_severe_heart_failure',
+                 'acute_ischemic_stroke_severity_level_2_with_asymptomatic_heart_failure',
+                 'acute_ischemic_stroke_severity_level_2_with_mild_heart_failure',
+                 'acute_ischemic_stroke_severity_level_2_with_moderate_heart_failure',
+                 'acute_ischemic_stroke_severity_level_2_with_severe_heart_failure',
+                 'acute_ischemic_stroke_severity_level_3_with_asymptomatic_heart_failure',
+                 'acute_ischemic_stroke_severity_level_3_with_mild_heart_failure',
+                 'acute_ischemic_stroke_severity_level_3_with_moderate_heart_failure',
+                 'acute_ischemic_stroke_severity_level_3_with_severe_heart_failure',
+                 'acute_ischemic_stroke_severity_level_4_with_asymptomatic_heart_failure',
+                 'acute_ischemic_stroke_severity_level_4_with_mild_heart_failure',
+                 'acute_ischemic_stroke_severity_level_4_with_moderate_heart_failure',
+                 'acute_ischemic_stroke_severity_level_4_with_severe_heart_failure',
+                 'acute_ischemic_stroke_severity_level_5_with_asymptomatic_heart_failure',
+                 'acute_ischemic_stroke_severity_level_5_with_mild_heart_failure',
+                 'acute_ischemic_stroke_severity_level_5_with_moderate_heart_failure',
+                 'acute_ischemic_stroke_severity_level_5_with_severe_heart_failure',
+                 'acute_subarachnoid_hemorrhage_severity_level_2_with_asymptomatic_heart_failure',
+                 'acute_subarachnoid_hemorrhage_severity_level_2_with_mild_heart_failure',
+                 'acute_subarachnoid_hemorrhage_severity_level_2_with_moderate_heart_failure',
+                 'acute_subarachnoid_hemorrhage_severity_level_2_with_severe_heart_failure',
+                 'acute_subarachnoid_hemorrhage_severity_level_3_with_asymptomatic_heart_failure',
+                 'acute_subarachnoid_hemorrhage_severity_level_3_with_mild_heart_failure',
+                 'acute_subarachnoid_hemorrhage_severity_level_3_with_moderate_heart_failure',
+                 'acute_subarachnoid_hemorrhage_severity_level_3_with_severe_heart_failure',
+                 'acute_subarachnoid_hemorrhage_severity_level_4_with_asymptomatic_heart_failure',
+                 'acute_subarachnoid_hemorrhage_severity_level_4_with_mild_heart_failure',
+                 'acute_subarachnoid_hemorrhage_severity_level_4_with_moderate_heart_failure',
+                 'acute_subarachnoid_hemorrhage_severity_level_4_with_severe_heart_failure',
+                 'acute_subarachnoid_hemorrhage_severity_level_5_with_asymptomatic_heart_failure',
+                 'acute_subarachnoid_hemorrhage_severity_level_5_with_mild_heart_failure',
+                 'acute_subarachnoid_hemorrhage_severity_level_5_with_moderate_heart_failure',
+                 'acute_subarachnoid_hemorrhage_severity_level_5_with_severe_heart_failure',
+                 'asymptomatic_heart_failure_due_to_severe_amphetamine_dependence',
+                 'asymptomatic_heart_failure_due_to_severe_cocaine_dependence',
+                 'mild_heart_failure_due_to_severe_amphetamine_dependence',
+                 'mild_heart_failure_due_to_severe_cocaine_dependence',
+                 'moderate_heart_failure_due_to_severe_amphetamine_dependence',
+                 'moderate_heart_failure_due_to_severe_cocaine_dependence',
+                 'pulmonary_arterial_hypertension_with_no_heart_failure',
+                 'severe_heart_failure_due_to_severe_amphetamine_dependence',
+                 'severe_heart_failure_due_to_severe_cocaine_dependence',
+                 'symptomatic_atrial_fibrilation_with_mild_heart_failure',
+                 'symptomatic_atrial_fibrilation_with_moderate_heart_failure',
+                 'symptomatic_atrial_fibrillation_with_asymptomatic_heart_failure',
+                 'symptomatic_atrial_fibrillation_with_severe_heart_failure',
+                 'ulcerative_colitis_symptomatic_without_anemia', 'crohns_disease_symptomatic_without_anemia',
+                 'symptomatic_hypothyroidism_without_anemia_or_heart_failure',
+                 'mild_symptomatic_hyperthyroidism_without_anemia_or_heart_failure',
+                 'moderate_severe_symptomatic_hyperthyroidism_without_anemia_or_heart_failure',
+                 'moderate_symptomatic_other_endocrine_metabolic_blood_immune_disorders_without_anemia_or_heart_failure',
+                 'severe_symptomatic_other_endocrine_metabolic_blood_immune_disorders_without_anemia_or_heart_failure',
+                 'early_symptomatic_congenital_syphilis_infectious_syndrome',
+                 'early_symptomatic_congenital_syphilis_slight_disfigurement',
+                 'late_symptomatic_congenital_syphilis_slight_disfigurement',
+                 'late_symptomatic_congenital_syphilis_neurosyphilis',
+                 'late_symptomatic_congenital_syphilis_unilateral_hearing_loss',
+                 'late_symptomatic_congenital_syphilis_interstitial_keratitis',
+                 'chronic_ischemic_stroke_severity_level_2_with_asymptomatic_heart_failure',
+                 'chronic_ischemic_stroke_severity_level_2_with_mild_heart_failure',
+                 'chronic_ischemic_stroke_severity_level_2_with_moderate_heart_failure',
+                 'chronic_ischemic_stroke_severity_level_2_with_severe_heart_failure',
+                 'chronic_ischemic_stroke_severity_level_2_without_heart_failure',
+                 'chronic_ischemic_stroke_severity_level_3_with_asymptomatic_heart_failure_no_dementia',
+                 'chronic_ischemic_stroke_severity_level_3_with_mild_heart_failure_no_dementia',
+                 'chronic_ischemic_stroke_severity_level_3_with_moderate_heart_failure_no_dementia',
+                 'chronic_ischemic_stroke_severity_level_3_with_severe_heart_failure_no_dementia',
+                 'chronic_ischemic_stroke_severity_level_3_without_heart_failure_no_dementia',
+                 'chronic_ischemic_stroke_severity_level_4_with_asymptomatic_heart_failure',
+                 'chronic_ischemic_stroke_severity_level_4_with_mild_heart_failure',
+                 'chronic_ischemic_stroke_severity_level_4_with_moderate_heart_failure',
+                 'chronic_ischemic_stroke_severity_level_4_with_severe_heart_failure',
+                 'chronic_ischemic_stroke_severity_level_4_without_heart_failure',
+                 'chronic_ischemic_stroke_severity_level_5_without_heart_failure_no_dementia',
+                 'chronic_ischemic_stroke_severity_level_5_with_asymptomatic_heart_failure_no_dementia',
+                 'chronic_ischemic_stroke_severity_level_5_with_mild_heart_failure_no_dementia',
+                 'chronic_ischemic_stroke_severity_level_5_with_moderate_heart_failure_no_dementia',
+                 'chronic_ischemic_stroke_severity_level_5_with_severe_heart_failure_no_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_2_with_asymptomatic_heart_failure',
+                 'chronic_subarachnoid_hemorrhage_severity_level_2_with_mild_heart_failure',
+                 'chronic_subarachnoid_hemorrhage_severity_level_2_with_moderate_heart_failure',
+                 'chronic_subarachnoid_hemorrhage_severity_level_2_with_severe_heart_failure',
+                 'chronic_subarachnoid_hemorrhage_severity_level_2_without_heart_failure',
+                 'chronic_subarachnoid_hemorrhage_severity_level_3_with_asymptomatic_heart_failure_no_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_3_with_mild_heart_failure_no_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_3_with_moderate_heart_failure_no_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_3_with_severe_heart_failure_no_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_3_without_heart_failure_no_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_4_with_asymptomatic_heart_failure',
+                 'chronic_subarachnoid_hemorrhage_severity_level_4_with_mild_heart_failure',
+                 'chronic_subarachnoid_hemorrhage_severity_level_4_with_moderate_heart_failure',
+                 'chronic_subarachnoid_hemorrhage_severity_level_4_with_severe_heart_failure',
+                 'chronic_subarachnoid_hemorrhage_severity_level_4_without_heart_failure',
+                 'chronic_subarachnoid_hemorrhage_severity_level_5_with_asymptomatic_heart_failure_no_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_5_with_mild_heart_failure_no_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_5_with_moderate_heart_failure_no_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_5_with_severe_heart_failure_no_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_5_without_heart_failure_no_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_2_with_asymptomatic_heart_failure',
+                 'chronic_intracerebral_hemorrhage_severity_level_2_with_mild_heart_failure',
+                 'chronic_intracerebral_hemorrhage_severity_level_2_with_moderate_heart_failure',
+                 'chronic_intracerebral_hemorrhage_severity_level_2_with_severe_heart_failure',
+                 'chronic_intracerebral_hemorrhage_severity_level_2_without_heart_failure',
+                 'chronic_intracerebral_hemorrhage_severity_level_3_with_asymptomatic_heart_failure_no_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_3_with_mild_heart_failure_no_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_3_with_moderate_heart_failure_no_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_3_with_severe_heart_failure_no_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_3_without_heart_failure_no_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_4_with_asymptomatic_heart_failure',
+                 'chronic_intracerebral_hemorrhage_severity_level_4_with_mild_heart_failure',
+                 'chronic_intracerebral_hemorrhage_severity_level_4_with_moderate_heart_failure',
+                 'chronic_intracerebral_hemorrhage_severity_level_4_with_severe_heart_failure',
+                 'chronic_intracerebral_hemorrhage_severity_level_4_without_heart_failure',
+                 'chronic_intracerebral_hemorrhage_severity_level_5_with_asymptomatic_heart_failure_no_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_5_with_mild_heart_failure_no_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_5_with_moderate_heart_failure_no_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_5_with_severe_heart_failure_no_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_5_without_heart_failure_no_dementia',
+                 'chronic_ischemic_stroke_severity_level_3_with_asymptomatic_heart_failure_with_mild_dementia',
+                 'chronic_ischemic_stroke_severity_level_3_with_mild_heart_failure_with_mild_dementia',
+                 'chronic_ischemic_stroke_severity_level_3_with_moderate_heart_failure_with_mild_dementia',
+                 'chronic_ischemic_stroke_severity_level_3_with_severe_heart_failure_with_mild_dementia',
+                 'chronic_ischemic_stroke_severity_level_3_without_heart_failure_with_mild_dementia',
+                 'chronic_ischemic_stroke_severity_level_5_without_heart_failure_with_mild_dementia',
+                 'chronic_ischemic_stroke_severity_level_5_with_asymptomatic_heart_failure_with_mild_dementia',
+                 'chronic_ischemic_stroke_severity_level_5_with_mild_heart_failure_with_mild_dementia',
+                 'chronic_ischemic_stroke_severity_level_5_with_moderate_heart_failure_with_mild_dementia',
+                 'chronic_ischemic_stroke_severity_level_5_with_severe_heart_failure_with_mild_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_3_with_asymptomatic_heart_failure_with_mild_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_3_with_mild_heart_failure_with_mild_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_3_with_moderate_heart_failure_with_mild_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_3_with_severe_heart_failure_with_mild_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_3_without_heart_failure_with_mild_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_5_with_asymptomatic_heart_failure_with_mild_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_5_with_mild_heart_failure_with_mild_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_5_with_moderate_heart_failure_with_mild_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_5_with_severe_heart_failure_with_mild_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_5_without_heart_failure_with_mild_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_3_with_asymptomatic_heart_failure_with_mild_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_3_with_mild_heart_failure_with_mild_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_3_with_moderate_heart_failure_with_mild_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_3_with_severe_heart_failure_with_mild_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_3_without_heart_failure_with_mild_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_5_with_asymptomatic_heart_failure_with_mild_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_5_with_mild_heart_failure_with_mild_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_5_with_moderate_heart_failure_with_mild_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_5_with_severe_heart_failure_with_mild_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_5_without_heart_failure_with_mild_dementia',
+                 'chronic_ischemic_stroke_severity_level_3_with_asymptomatic_heart_failure_with_moderate_dementia',
+                 'chronic_ischemic_stroke_severity_level_3_with_mild_heart_failure_with_moderate_dementia',
+                 'chronic_ischemic_stroke_severity_level_3_with_moderate_heart_failure_with_moderate_dementia',
+                 'chronic_ischemic_stroke_severity_level_3_with_severe_heart_failure_with_moderate_dementia',
+                 'chronic_ischemic_stroke_severity_level_3_without_heart_failure_with_moderate_dementia',
+                 'chronic_ischemic_stroke_severity_level_5_without_heart_failure_with_moderate_dementia',
+                 'chronic_ischemic_stroke_severity_level_5_with_asymptomatic_heart_failure_with_moderate_dementia',
+                 'chronic_ischemic_stroke_severity_level_5_with_mild_heart_failure_with_moderate_dementia',
+                 'chronic_ischemic_stroke_severity_level_5_with_moderate_heart_failure_with_moderate_dementia',
+                 'chronic_ischemic_stroke_severity_level_5_with_severe_heart_failure_with_moderate_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_3_with_asymptomatic_heart_failure_with_moderate_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_3_with_mild_heart_failure_with_moderate_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_3_with_moderate_heart_failure_with_moderate_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_3_with_severe_heart_failure_with_moderate_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_3_without_heart_failure_with_moderate_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_5_with_asymptomatic_heart_failure_with_moderate_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_5_with_mild_heart_failure_with_moderate_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_5_with_moderate_heart_failure_with_moderate_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_5_with_severe_heart_failure_with_moderate_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_5_without_heart_failure_with_moderate_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_3_with_asymptomatic_heart_failure_with_moderate_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_3_with_mild_heart_failure_with_moderate_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_3_with_moderate_heart_failure_with_moderate_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_3_with_severe_heart_failure_with_moderate_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_3_without_heart_failure_with_moderate_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_5_with_asymptomatic_heart_failure_with_moderate_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_5_with_mild_heart_failure_with_moderate_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_5_with_moderate_heart_failure_with_moderate_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_5_with_severe_heart_failure_with_moderate_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_5_without_heart_failure_with_moderate_dementia',
+                 'chronic_ischemic_stroke_severity_level_3_with_asymptomatic_heart_failure_with_severe_dementia',
+                 'chronic_ischemic_stroke_severity_level_3_with_mild_heart_failure_with_severe_dementia',
+                 'chronic_ischemic_stroke_severity_level_3_with_moderate_heart_failure_with_severe_dementia',
+                 'chronic_ischemic_stroke_severity_level_3_with_severe_heart_failure_with_severe_dementia',
+                 'chronic_ischemic_stroke_severity_level_3_without_heart_failure_with_severe_dementia',
+                 'chronic_ischemic_stroke_severity_level_5_without_heart_failure_with_severe_dementia',
+                 'chronic_ischemic_stroke_severity_level_5_with_asymptomatic_heart_failure_with_severe_dementia',
+                 'chronic_ischemic_stroke_severity_level_5_with_mild_heart_failure_with_severe_dementia',
+                 'chronic_ischemic_stroke_severity_level_5_with_moderate_heart_failure_with_severe_dementia',
+                 'chronic_ischemic_stroke_severity_level_5_with_severe_heart_failure_with_severe_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_3_with_asymptomatic_heart_failure_with_severe_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_3_with_mild_heart_failure_with_severe_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_3_with_moderate_heart_failure_with_severe_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_3_with_severe_heart_failure_with_severe_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_3_without_heart_failure_with_severe_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_5_with_asymptomatic_heart_failure_with_severe_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_5_with_mild_heart_failure_with_severe_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_5_with_moderate_heart_failure_with_severe_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_5_with_severe_heart_failure_with_severe_dementia',
+                 'chronic_subarachnoid_hemorrhage_severity_level_5_without_heart_failure_with_severe_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_3_with_asymptomatic_heart_failure_with_severe_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_3_with_mild_heart_failure_with_severe_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_3_with_moderate_heart_failure_with_severe_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_3_with_severe_heart_failure_with_severe_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_3_without_heart_failure_with_severe_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_5_with_asymptomatic_heart_failure_with_severe_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_5_with_mild_heart_failure_with_severe_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_5_with_moderate_heart_failure_with_severe_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_5_with_severe_heart_failure_with_severe_dementia',
+                 'chronic_intracerebral_hemorrhage_severity_level_5_without_heart_failure_with_severe_dementia',
+                 'post_acute_fatigue_syndrome_due_to_covid_19', 'post_acute_mild_cognitive_symptoms_due_to_covid_19',
+                 'post_acute_severe_cognitive_symptoms_due_to_covid_19',
+                 'post_acute_mild_respiratory_symptoms_due_to_covid_19',
+                 'post_acute_moderate_respiratory_symptoms_due_to_covid_19',
+                 'post_acute_severe_respiratory_symptoms_due_to_covid_19',
+                 'post_acute_fatigue_syndrome_and_mild_cognitive_symptoms_due_to_covid_19',
+                 'post_acute_fatigue_syndrome_and_severe_cognitive_symptoms_due_to_covid_19',
+                 'post_acute_fatigue_syndrome_and_mild_respiratory_symptoms_due_to_covid_19',
+                 'post_acute_fatigue_syndrome_and_moderate_respiratory_symptoms_due_to_covid_19',
+                 'post_acute_fatigue_syndrome_and_severe_respiratory_symptoms_due_to_covid_19',
+                 'post_acute_mild_respiratory_and_mild_cognitive_symptoms_due_to_covid_19',
+                 'post_acute_mild_respiratory_and_severe_cognitive_symptoms_due_to_covid_19',
+                 'post_acute_moderate_respiratory_and_mild_cognitive_symptoms_due_to_covid_19',
+                 'post_acute_moderate_respiratory_and_severe_cognitive_symptoms_due_to_covid_19',
+                 'post_acute_severe_respiratory_and_mild_cognitive_symptoms_due_to_covid_19',
+                 'post_acute_severe_respiratory_and_severe_cognitive_symptoms_due_to_covid_19',
+                 'post_acute_fatigue_syndrome_and_mild_respiratory_and_mild_cognitive_symptoms_due_to_covid_19',
+                 'post_acute_fatigue_syndrome_and_mild_respiratory_and_severe_cognitive_symptoms_due_to_covid_19',
+                 'post_acute_fatigue_syndrome_and_moderate_respiratory_and_mild_cognitive_symptoms_due_to_covid_19',
+                 'post_acute_fatigue_syndrome_and_moderate_respiratory_and_severe_cognitive_symptoms_due_to_covid_19',
+                 'post_acute_fatigue_syndrome_and_severe_respiratory_and_mild_cognitive_symptoms_due_to_covid_19',
+                 'post_acute_fatigue_syndrome_and_severe_respiratory_and_severe_cognitive_symptoms_due_to_covid_19',
+                 'asymptomatic_covid_19_cases', 'mild_acute_covid_19', 'moderate_acute_covid_19',
+                 'severe_acute_covid_19', 'critical_acute_covid_19', 'guillain_barre_syndrome_due_to_covid_19', )
 
     def __init__(self, **kwargs):
         super().__init__()
@@ -1502,7 +1770,6 @@ class Sequelae(GbdRecord):
         self.moderate_visceral_leishmaniasis = kwargs.get('moderate_visceral_leishmaniasis')
         self.severe_visceral_leishmaniasis = kwargs.get('severe_visceral_leishmaniasis')
         self.cutaneous_and_mucocutaneous_leishmaniasis = kwargs.get('cutaneous_and_mucocutaneous_leishmaniasis')
-        self.mild_schistosomiasis = kwargs.get('mild_schistosomiasis')
         self.mild_diarrhea_due_to_schistosomiasis = kwargs.get('mild_diarrhea_due_to_schistosomiasis')
         self.hematemesis_due_to_schistosomiasis = kwargs.get('hematemesis_due_to_schistosomiasis')
         self.hepatomegaly_due_to_schistosomiasis = kwargs.get('hepatomegaly_due_to_schistosomiasis')
@@ -1568,9 +1835,9 @@ class Sequelae(GbdRecord):
         self.visible_goiter_without_symptoms = kwargs.get('visible_goiter_without_symptoms')
         self.visible_goiter_with_severe_intellectual_disability_due_to_iodine_deficiency = kwargs.get('visible_goiter_with_severe_intellectual_disability_due_to_iodine_deficiency')
         self.visible_goiter_with_profound_intellectual_disability_due_to_iodine_deficiency = kwargs.get('visible_goiter_with_profound_intellectual_disability_due_to_iodine_deficiency')
-        self.moderate_vision_impairment_loss_due_to_vitamin_a_deficiency = kwargs.get('moderate_vision_impairment_loss_due_to_vitamin_a_deficiency')
-        self.severe_vision_impairment_loss_due_to_vitamin_a_deficiency = kwargs.get('severe_vision_impairment_loss_due_to_vitamin_a_deficiency')
-        self.blindness_due_to_vitamin_a_deficiency = kwargs.get('blindness_due_to_vitamin_a_deficiency')
+        self.vitamin_a_deficiency_with_moderate_vision_impairment = kwargs.get('vitamin_a_deficiency_with_moderate_vision_impairment')
+        self.vitamin_a_deficiency_with_severe_vision_impairment = kwargs.get('vitamin_a_deficiency_with_severe_vision_impairment')
+        self.vitamin_a_deficiency_with_blindness = kwargs.get('vitamin_a_deficiency_with_blindness')
         self.mild_iron_deficiency_anemia = kwargs.get('mild_iron_deficiency_anemia')
         self.moderate_iron_deficiency_anemia = kwargs.get('moderate_iron_deficiency_anemia')
         self.severe_iron_deficiency_anemia = kwargs.get('severe_iron_deficiency_anemia')
@@ -1719,25 +1986,17 @@ class Sequelae(GbdRecord):
         self.moderate_heart_failure_due_to_ischemic_heart_disease = kwargs.get('moderate_heart_failure_due_to_ischemic_heart_disease')
         self.severe_heart_failure_due_to_ischemic_heart_disease = kwargs.get('severe_heart_failure_due_to_ischemic_heart_disease')
         self.acute_ischemic_stroke_severity_level_1 = kwargs.get('acute_ischemic_stroke_severity_level_1')
-        self.acute_ischemic_stroke_severity_level_2 = kwargs.get('acute_ischemic_stroke_severity_level_2')
-        self.acute_ischemic_stroke_severity_level_4 = kwargs.get('acute_ischemic_stroke_severity_level_4')
-        self.acute_ischemic_stroke_severity_level_3 = kwargs.get('acute_ischemic_stroke_severity_level_3')
-        self.acute_ischemic_stroke_severity_level_5 = kwargs.get('acute_ischemic_stroke_severity_level_5')
+        self.acute_ischemic_stroke_severity_level_2_without_heart_failure = kwargs.get('acute_ischemic_stroke_severity_level_2_without_heart_failure')
+        self.acute_ischemic_stroke_severity_level_4_without_heart_failure = kwargs.get('acute_ischemic_stroke_severity_level_4_without_heart_failure')
+        self.acute_ischemic_stroke_severity_level_3_without_heart_failure = kwargs.get('acute_ischemic_stroke_severity_level_3_without_heart_failure')
+        self.acute_ischemic_stroke_severity_level_5_without_heart_failure = kwargs.get('acute_ischemic_stroke_severity_level_5_without_heart_failure')
         self.chronic_ischemic_stroke_severity_level_1 = kwargs.get('chronic_ischemic_stroke_severity_level_1')
-        self.chronic_ischemic_stroke_severity_level_2 = kwargs.get('chronic_ischemic_stroke_severity_level_2')
-        self.chronic_ischemic_stroke_severity_level_4 = kwargs.get('chronic_ischemic_stroke_severity_level_4')
-        self.chronic_ischemic_stroke_severity_level_3 = kwargs.get('chronic_ischemic_stroke_severity_level_3')
-        self.chronic_ischemic_stroke_severity_level_5 = kwargs.get('chronic_ischemic_stroke_severity_level_5')
         self.acute_intracerebral_hemorrhage_severity_level_1 = kwargs.get('acute_intracerebral_hemorrhage_severity_level_1')
-        self.acute_intracerebral_hemorrhage_severity_level_2 = kwargs.get('acute_intracerebral_hemorrhage_severity_level_2')
-        self.acute_intracerebral_hemorrhage_severity_level_4 = kwargs.get('acute_intracerebral_hemorrhage_severity_level_4')
-        self.acute_intracerebral_hemorrhage_severity_level_3 = kwargs.get('acute_intracerebral_hemorrhage_severity_level_3')
-        self.acute_intracerebral_hemorrhage_severity_level_5 = kwargs.get('acute_intracerebral_hemorrhage_severity_level_5')
+        self.acute_intracerebral_hemorrhage_severity_level_2_without_heart_failure = kwargs.get('acute_intracerebral_hemorrhage_severity_level_2_without_heart_failure')
+        self.acute_intracerebral_hemorrhage_severity_level_4_without_heart_failure = kwargs.get('acute_intracerebral_hemorrhage_severity_level_4_without_heart_failure')
+        self.acute_intracerebral_hemorrhage_severity_level_3_without_heart_failure = kwargs.get('acute_intracerebral_hemorrhage_severity_level_3_without_heart_failure')
+        self.acute_intracerebral_hemorrhage_severity_level_5_without_heart_failure = kwargs.get('acute_intracerebral_hemorrhage_severity_level_5_without_heart_failure')
         self.chronic_intracerebral_hemorrhage_severity_level_1 = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_1')
-        self.chronic_intracerebral_hemorrhage_severity_level_2 = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_2')
-        self.chronic_intracerebral_hemorrhage_severity_level_4 = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_4')
-        self.chronic_intracerebral_hemorrhage_severity_level_3 = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_3')
-        self.chronic_intracerebral_hemorrhage_severity_level_5 = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_5')
         self.mild_heart_failure_due_to_hypertensive_heart_disease = kwargs.get('mild_heart_failure_due_to_hypertensive_heart_disease')
         self.moderate_heart_failure_due_to_hypertensive_heart_disease = kwargs.get('moderate_heart_failure_due_to_hypertensive_heart_disease')
         self.severe_heart_failure_due_to_hypertensive_heart_disease = kwargs.get('severe_heart_failure_due_to_hypertensive_heart_disease')
@@ -1826,9 +2085,9 @@ class Sequelae(GbdRecord):
         self.primary_infertility_due_to_endometriosis = kwargs.get('primary_infertility_due_to_endometriosis')
         self.secondary_infertility_due_to_endometriosis = kwargs.get('secondary_infertility_due_to_endometriosis')
         self.abdominal_pain_due_to_premenstrual_syndrome = kwargs.get('abdominal_pain_due_to_premenstrual_syndrome')
-        self.mild_anemia_due_to_menstrual_disorders = kwargs.get('mild_anemia_due_to_menstrual_disorders')
-        self.moderate_anemia_due_to_menstrual_disorders = kwargs.get('moderate_anemia_due_to_menstrual_disorders')
-        self.severe_anemia_due_to_menstrual_disorders = kwargs.get('severe_anemia_due_to_menstrual_disorders')
+        self.menstrual_disorders_with_mild_anemia = kwargs.get('menstrual_disorders_with_mild_anemia')
+        self.menstrual_disorders_with_moderate_anemia = kwargs.get('menstrual_disorders_with_moderate_anemia')
+        self.menstrual_disorders_with_severe_anemia = kwargs.get('menstrual_disorders_with_severe_anemia')
         self.mild_heart_failure_due_to_thalassemias = kwargs.get('mild_heart_failure_due_to_thalassemias')
         self.moderate_heart_failure_due_to_thalassemias = kwargs.get('moderate_heart_failure_due_to_thalassemias')
         self.severe_heart_failure_due_to_thalassemias = kwargs.get('severe_heart_failure_due_to_thalassemias')
@@ -1838,12 +2097,6 @@ class Sequelae(GbdRecord):
         self.mild_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias = kwargs.get('mild_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias')
         self.moderate_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias = kwargs.get('moderate_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias')
         self.severe_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias = kwargs.get('severe_heart_failure_due_to_other_hemoglobinopathies_and_hemolytic_anemias')
-        self.mild_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders = kwargs.get('mild_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders')
-        self.moderate_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders = kwargs.get('moderate_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders')
-        self.severe_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders = kwargs.get('severe_anemia_due_to_endocrine_metabolic_blood_and_immune_disorders')
-        self.mild_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders = kwargs.get('mild_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders')
-        self.moderate_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders = kwargs.get('moderate_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders')
-        self.severe_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders = kwargs.get('severe_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders')
         self.mild_rheumatoid_arthritis = kwargs.get('mild_rheumatoid_arthritis')
         self.moderate_rheumatoid_arthritis = kwargs.get('moderate_rheumatoid_arthritis')
         self.severe_rheumatoid_arthritis = kwargs.get('severe_rheumatoid_arthritis')
@@ -1942,9 +2195,9 @@ class Sequelae(GbdRecord):
         self.mild_anemia_due_to_sickle_cell_trait = kwargs.get('mild_anemia_due_to_sickle_cell_trait')
         self.moderate_anemia_due_to_sickle_cell_trait = kwargs.get('moderate_anemia_due_to_sickle_cell_trait')
         self.severe_anemia_due_to_sickle_cell_trait = kwargs.get('severe_anemia_due_to_sickle_cell_trait')
-        self.mild_anemia_due_to_hemizygous_g6pd_trait = kwargs.get('mild_anemia_due_to_hemizygous_g6pd_trait')
-        self.moderate_anemia_due_to_hemizygous_g6pd_trait = kwargs.get('moderate_anemia_due_to_hemizygous_g6pd_trait')
-        self.severe_anemia_due_to_hemizygous_g6pd_trait = kwargs.get('severe_anemia_due_to_hemizygous_g6pd_trait')
+        self.hemizygous_g6pd_deficiency_with_mild_anemia = kwargs.get('hemizygous_g6pd_deficiency_with_mild_anemia')
+        self.hemizygous_g6pd_deficiency_with_moderate_anemia = kwargs.get('hemizygous_g6pd_deficiency_with_moderate_anemia')
+        self.hemizygous_g6pd_deficiency_with_severe_anemia = kwargs.get('hemizygous_g6pd_deficiency_with_severe_anemia')
         self.disfigurement_due_to_basal_cell_carcinoma = kwargs.get('disfigurement_due_to_basal_cell_carcinoma')
         self.severe_skin_disease_due_to_onchocerciasis = kwargs.get('severe_skin_disease_due_to_onchocerciasis')
         self.mild_contact_dermatitis = kwargs.get('mild_contact_dermatitis')
@@ -2068,7 +2321,7 @@ class Sequelae(GbdRecord):
         self.mild_motor_impairment_due_to_neonatal_tetanus = kwargs.get('mild_motor_impairment_due_to_neonatal_tetanus')
         self.mild_motor_plus_cognitive_impairments_due_to_neonatal_tetanus = kwargs.get('mild_motor_plus_cognitive_impairments_due_to_neonatal_tetanus')
         self.epilepsy_due_to_echinococcosis = kwargs.get('epilepsy_due_to_echinococcosis')
-        self.symptomatic_genital_herpes = kwargs.get('symptomatic_genital_herpes')
+        self.recurrent_symptomatic_episode_of_genital_herpes = kwargs.get('recurrent_symptomatic_episode_of_genital_herpes')
         self.other_hemoglobinopathies_and_hemolytic_anemias_residual = kwargs.get('other_hemoglobinopathies_and_hemolytic_anemias_residual')
         self.mild_behavioral_problems_due_to_encephalitis = kwargs.get('mild_behavioral_problems_due_to_encephalitis')
         self.mild_motor_impairment_due_to_long_term_due_to_encephalitis = kwargs.get('mild_motor_impairment_due_to_long_term_due_to_encephalitis')
@@ -2082,8 +2335,8 @@ class Sequelae(GbdRecord):
         self.severe_motor_plus_cognitive_impairments_due_to_encephalitis = kwargs.get('severe_motor_plus_cognitive_impairments_due_to_encephalitis')
         self.epilepsy_due_to_encephalitis = kwargs.get('epilepsy_due_to_encephalitis')
         self.severe_opioid_dependence = kwargs.get('severe_opioid_dependence')
-        self.severe_cocaine_dependence = kwargs.get('severe_cocaine_dependence')
-        self.severe_amphetamine_dependence = kwargs.get('severe_amphetamine_dependence')
+        self.severe_cocaine_dependence_with_no_heart_failure = kwargs.get('severe_cocaine_dependence_with_no_heart_failure')
+        self.severe_amphetamine_dependence_with_no_heart_failure = kwargs.get('severe_amphetamine_dependence_with_no_heart_failure')
         self.severe_cannabis_dependence = kwargs.get('severe_cannabis_dependence')
         self.other_sexually_transmitted_diseases_residual = kwargs.get('other_sexually_transmitted_diseases_residual')
         self.asymptomatic_atrial_fibrillation_and_flutter = kwargs.get('asymptomatic_atrial_fibrillation_and_flutter')
@@ -2104,7 +2357,7 @@ class Sequelae(GbdRecord):
         self.asymptomatic_gout = kwargs.get('asymptomatic_gout')
         self.severe_infectious_complications_due_to_chronic_otitis_media = kwargs.get('severe_infectious_complications_due_to_chronic_otitis_media')
         self.asymptomatic_asthma = kwargs.get('asymptomatic_asthma')
-        self.asymptomatic_genital_herpes = kwargs.get('asymptomatic_genital_herpes')
+        self.asymptomatic_herpes_simplex_virus_2_infection = kwargs.get('asymptomatic_herpes_simplex_virus_2_infection')
         self.asymptomatic_endometriosis = kwargs.get('asymptomatic_endometriosis')
         self.asymptomatic_amphetamine_dependence = kwargs.get('asymptomatic_amphetamine_dependence')
         self.isolated_congenital_heart_disease_due_to_down_syndrome = kwargs.get('isolated_congenital_heart_disease_due_to_down_syndrome')
@@ -2168,15 +2421,11 @@ class Sequelae(GbdRecord):
         self.severe_molluscum_contagiosum = kwargs.get('severe_molluscum_contagiosum')
         self.chronic_hepatitis_b_without_cirrhosis = kwargs.get('chronic_hepatitis_b_without_cirrhosis')
         self.chronic_hepatitis_c_without_cirrhosis = kwargs.get('chronic_hepatitis_c_without_cirrhosis')
-        self.asymptomatic_endocrine_metabolic_blood_and_immune_disorders = kwargs.get('asymptomatic_endocrine_metabolic_blood_and_immune_disorders')
-        self.mild_endocrine_metabolic_blood_and_immune_disorders = kwargs.get('mild_endocrine_metabolic_blood_and_immune_disorders')
-        self.moderate_endocrine_metabolic_blood_and_immune_disorders = kwargs.get('moderate_endocrine_metabolic_blood_and_immune_disorders')
-        self.severe_endocrine_metabolic_blood_and_immune_disorders = kwargs.get('severe_endocrine_metabolic_blood_and_immune_disorders')
         self.heavy_clonorchiasis_due_to_food_borne_trematodiases = kwargs.get('heavy_clonorchiasis_due_to_food_borne_trematodiases')
         self.heavy_fascioliasis_due_to_food_borne_trematodiases = kwargs.get('heavy_fascioliasis_due_to_food_borne_trematodiases')
         self.heavy_intestinal_fluke_infection_due_to_food_borne_trematodiases = kwargs.get('heavy_intestinal_fluke_infection_due_to_food_borne_trematodiases')
         self.heavy_opisthorchiasis_due_to_food_borne_trematodiases = kwargs.get('heavy_opisthorchiasis_due_to_food_borne_trematodiases')
-        self.symptomatic_atrial_fibrillation_and_flutter = kwargs.get('symptomatic_atrial_fibrillation_and_flutter')
+        self.symptomatic_atrial_fibrillation_with_no_heart_failure = kwargs.get('symptomatic_atrial_fibrillation_with_no_heart_failure')
         self.asymptomatic_turner_syndrome = kwargs.get('asymptomatic_turner_syndrome')
         self.moderate_vision_impairment_due_to_retinopathy_of_prematurity = kwargs.get('moderate_vision_impairment_due_to_retinopathy_of_prematurity')
         self.severe_vision_impairment_due_to_retinopathy_of_prematurity = kwargs.get('severe_vision_impairment_due_to_retinopathy_of_prematurity')
@@ -2202,7 +2451,7 @@ class Sequelae(GbdRecord):
         self.hirsutism_and_secondary_infertility_due_to_polycystic_ovarian_syndrome = kwargs.get('hirsutism_and_secondary_infertility_due_to_polycystic_ovarian_syndrome')
         self.secondary_infertility_due_to_polycystic_ovarian_syndrome = kwargs.get('secondary_infertility_due_to_polycystic_ovarian_syndrome')
         self.severe_abdominal_pain_due_to_endometriosis = kwargs.get('severe_abdominal_pain_due_to_endometriosis')
-        self.moderate_infection_due_to_initial_genital_herpes_episode = kwargs.get('moderate_infection_due_to_initial_genital_herpes_episode')
+        self.initial_symptomatic_episode_of_genital_herpes = kwargs.get('initial_symptomatic_episode_of_genital_herpes')
         self.asymptomatic_caries_of_deciduous_teeth = kwargs.get('asymptomatic_caries_of_deciduous_teeth')
         self.asymptomatic_caries_of_permanent_teeth = kwargs.get('asymptomatic_caries_of_permanent_teeth')
         self.asymptomatic_edentulism_and_severe_tooth_loss = kwargs.get('asymptomatic_edentulism_and_severe_tooth_loss')
@@ -2225,14 +2474,14 @@ class Sequelae(GbdRecord):
         self.asymptomatic_peripheral_arterial_disease = kwargs.get('asymptomatic_peripheral_arterial_disease')
         self.asymptomatic_benign_prostatic_hyperplasia = kwargs.get('asymptomatic_benign_prostatic_hyperplasia')
         self.symptomatic_benign_prostatic_hyperplasia = kwargs.get('symptomatic_benign_prostatic_hyperplasia')
-        self.asymptomatic_uterine_fibroids = kwargs.get('asymptomatic_uterine_fibroids')
+        self.uterine_fibroids_asymptomatic = kwargs.get('uterine_fibroids_asymptomatic')
         self.asymptomatic_other_musculoskeletal_disorders = kwargs.get('asymptomatic_other_musculoskeletal_disorders')
         self.mild_cellulitis = kwargs.get('mild_cellulitis')
         self.severe_cellulitis = kwargs.get('severe_cellulitis')
         self.gastrointestinal_bleeding_due_to_typhoid = kwargs.get('gastrointestinal_bleeding_due_to_typhoid')
         self.vertigo_with_mild_hearing_loss_due_to_chronic_otitis_media = kwargs.get('vertigo_with_mild_hearing_loss_due_to_chronic_otitis_media')
         self.vertigo_with_mild_hearing_loss_and_ringing_due_to_chronic_otitis_media = kwargs.get('vertigo_with_mild_hearing_loss_and_ringing_due_to_chronic_otitis_media')
-        self.asymptomatic_hookworm_disease = kwargs.get('asymptomatic_hookworm_disease')
+        self.asymptomatic_hookworm = kwargs.get('asymptomatic_hookworm')
         self.mild_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease = kwargs.get('mild_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease')
         self.moderate_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease = kwargs.get('moderate_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease')
         self.severe_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease = kwargs.get('severe_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease')
@@ -2257,18 +2506,18 @@ class Sequelae(GbdRecord):
         self.moderate_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis = kwargs.get('moderate_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis')
         self.severe_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis = kwargs.get('severe_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis')
         self.severe_interstitial_lung_disease_and_pulmonary_sarcoidosis_without_heart_failure = kwargs.get('severe_interstitial_lung_disease_and_pulmonary_sarcoidosis_without_heart_failure')
-        self.stage_3_chronic_kidney_disease_and_mild_anemia_due_to_hypertension = kwargs.get('stage_3_chronic_kidney_disease_and_mild_anemia_due_to_hypertension')
-        self.stage_3_chronic_kidney_disease_and_moderate_anemia_due_to_hypertension = kwargs.get('stage_3_chronic_kidney_disease_and_moderate_anemia_due_to_hypertension')
-        self.stage_3_chronic_kidney_disease_and_severe_anemia_due_to_hypertension = kwargs.get('stage_3_chronic_kidney_disease_and_severe_anemia_due_to_hypertension')
-        self.stage_3_chronic_kidney_disease_without_anemia_due_to_hypertension = kwargs.get('stage_3_chronic_kidney_disease_without_anemia_due_to_hypertension')
-        self.stage_3_chronic_kidney_disease_and_mild_anemia_due_to_glomerulonephritis = kwargs.get('stage_3_chronic_kidney_disease_and_mild_anemia_due_to_glomerulonephritis')
-        self.stage_3_chronic_kidney_disease_and_moderate_anemia_due_to_glomerulonephritis = kwargs.get('stage_3_chronic_kidney_disease_and_moderate_anemia_due_to_glomerulonephritis')
-        self.stage_3_chronic_kidney_disease_and_severe_anemia_due_to_glomerulonephritis = kwargs.get('stage_3_chronic_kidney_disease_and_severe_anemia_due_to_glomerulonephritis')
-        self.stage_3_chronic_kidney_disease_without_anemia_due_to_glomerulonephritis = kwargs.get('stage_3_chronic_kidney_disease_without_anemia_due_to_glomerulonephritis')
-        self.stage_3_chronic_kidney_disease_and_mild_anemia_due_to_other_causes = kwargs.get('stage_3_chronic_kidney_disease_and_mild_anemia_due_to_other_causes')
-        self.stage_3_chronic_kidney_disease_and_moderate_anemia_due_to_other_causes = kwargs.get('stage_3_chronic_kidney_disease_and_moderate_anemia_due_to_other_causes')
-        self.stage_3_chronic_kidney_disease_and_severe_anemia_due_to_other_causes = kwargs.get('stage_3_chronic_kidney_disease_and_severe_anemia_due_to_other_causes')
-        self.stage_3_chronic_kidney_disease_without_anemia_due_to_other_causes = kwargs.get('stage_3_chronic_kidney_disease_without_anemia_due_to_other_causes')
+        self.stage_3_chronic_kidney_disease_due_to_hypertension_with_mild_anemia = kwargs.get('stage_3_chronic_kidney_disease_due_to_hypertension_with_mild_anemia')
+        self.stage_3_chronic_kidney_disease_due_to_hypertension_with_moderate_anemia = kwargs.get('stage_3_chronic_kidney_disease_due_to_hypertension_with_moderate_anemia')
+        self.stage_3_chronic_kidney_disease_due_to_hypertension_with_severe_anemia = kwargs.get('stage_3_chronic_kidney_disease_due_to_hypertension_with_severe_anemia')
+        self.stage_3_chronic_kidney_disease_due_to_hypertension_without_anemia = kwargs.get('stage_3_chronic_kidney_disease_due_to_hypertension_without_anemia')
+        self.stage_3_chronic_kidney_disease_due_to_glomerulonephritis_with_mild_anemia = kwargs.get('stage_3_chronic_kidney_disease_due_to_glomerulonephritis_with_mild_anemia')
+        self.stage_3_chronic_kidney_disease_due_to_glomerulonephritis_with_moderate_anemia = kwargs.get('stage_3_chronic_kidney_disease_due_to_glomerulonephritis_with_moderate_anemia')
+        self.stage_3_chronic_kidney_disease_due_to_glomerulonephritis_with_severe_anemia = kwargs.get('stage_3_chronic_kidney_disease_due_to_glomerulonephritis_with_severe_anemia')
+        self.stage_3_chronic_kidney_disease_due_to_glomerulonephritis_without_anemia = kwargs.get('stage_3_chronic_kidney_disease_due_to_glomerulonephritis_without_anemia')
+        self.stage_3_chronic_kidney_disease_due_to_other_and_unspecified_causes_with_mild_anemia = kwargs.get('stage_3_chronic_kidney_disease_due_to_other_and_unspecified_causes_with_mild_anemia')
+        self.stage_3_chronic_kidney_disease_due_to_other_and_unspecified_causes_with_moderate_anemia = kwargs.get('stage_3_chronic_kidney_disease_due_to_other_and_unspecified_causes_with_moderate_anemia')
+        self.stage_3_chronic_kidney_disease_due_to_other_and_unspecified_causes_with_severe_anemia = kwargs.get('stage_3_chronic_kidney_disease_due_to_other_and_unspecified_causes_with_severe_anemia')
+        self.stage_3_chronic_kidney_disease_due_to_other_and_unspecified_causes_without_anemia = kwargs.get('stage_3_chronic_kidney_disease_due_to_other_and_unspecified_causes_without_anemia')
         self.asymptomatic_ischemic_heart_disease_following_myocardial_infarction = kwargs.get('asymptomatic_ischemic_heart_disease_following_myocardial_infarction')
         self.symptomatic_claudication_due_to_peripheral_arterial_disease = kwargs.get('symptomatic_claudication_due_to_peripheral_arterial_disease')
         self.asymptomatic_seborrhoeic_dermatitis = kwargs.get('asymptomatic_seborrhoeic_dermatitis')
@@ -2278,78 +2527,39 @@ class Sequelae(GbdRecord):
         self.asymptomatic_b_thalassemia_trait = kwargs.get('asymptomatic_b_thalassemia_trait')
         self.asymptomatic_hemoglobin_e_trait = kwargs.get('asymptomatic_hemoglobin_e_trait')
         self.asymptomatic_sickle_cell_trait = kwargs.get('asymptomatic_sickle_cell_trait')
-        self.asymptomatic_hemizygous_g6pd_trait = kwargs.get('asymptomatic_hemizygous_g6pd_trait')
+        self.hemizygous_g6pd_deficiency_asymptomatic = kwargs.get('hemizygous_g6pd_deficiency_asymptomatic')
         self.mild_hearing_loss_due_to_chronic_otitis_media = kwargs.get('mild_hearing_loss_due_to_chronic_otitis_media')
         self.mild_hearing_loss_with_ringing_due_to_chronic_otitis_media = kwargs.get('mild_hearing_loss_with_ringing_due_to_chronic_otitis_media')
         self.asymptomatic_malaria_parasitemia_pfpr = kwargs.get('asymptomatic_malaria_parasitemia_pfpr')
         self.mild_anemia_due_to_malaria_parasitemia_pfpr = kwargs.get('mild_anemia_due_to_malaria_parasitemia_pfpr')
         self.moderate_anemia_due_to_malaria_parasitemia_pfpr = kwargs.get('moderate_anemia_due_to_malaria_parasitemia_pfpr')
         self.severe_anemia_due_to_malaria_parasitemia_pfpr = kwargs.get('severe_anemia_due_to_malaria_parasitemia_pfpr')
-        self.beta_thalassemia_major_severe_infection_with_severe_anemia = kwargs.get('beta_thalassemia_major_severe_infection_with_severe_anemia')
-        self.beta_thalassemia_major_with_mild_anemia = kwargs.get('beta_thalassemia_major_with_mild_anemia')
-        self.beta_thalassemia_major_with_moderate_anemia = kwargs.get('beta_thalassemia_major_with_moderate_anemia')
-        self.beta_thalassemia_major_with_severe_anemia = kwargs.get('beta_thalassemia_major_with_severe_anemia')
-        self.hemoglobin_e_beta_thalassemia_severe_infection_with_severe_anemia = kwargs.get('hemoglobin_e_beta_thalassemia_severe_infection_with_severe_anemia')
-        self.hemoglobin_e_beta_thalassemia_with_mild_anemia = kwargs.get('hemoglobin_e_beta_thalassemia_with_mild_anemia')
-        self.hemoglobin_e_beta_thalassemia_with_moderate_anemia = kwargs.get('hemoglobin_e_beta_thalassemia_with_moderate_anemia')
-        self.hemoglobin_e_beta_thalassemia_with_severe_anemia = kwargs.get('hemoglobin_e_beta_thalassemia_with_severe_anemia')
-        self.hemoglobin_h_disease_severe_infection_with_severe_anemia = kwargs.get('hemoglobin_h_disease_severe_infection_with_severe_anemia')
-        self.hemoglobin_h_disease_with_mild_anemia = kwargs.get('hemoglobin_h_disease_with_mild_anemia')
-        self.hemoglobin_h_disease_with_moderate_anemia = kwargs.get('hemoglobin_h_disease_with_moderate_anemia')
-        self.hemoglobin_h_disease_with_severe_anemia = kwargs.get('hemoglobin_h_disease_with_severe_anemia')
-        self.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_without_anemia = kwargs.get('homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_without_anemia')
-        self.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_without_anemia = kwargs.get('homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_without_anemia')
-        self.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_severe_anemia = kwargs.get('homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_severe_anemia')
-        self.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_stroke_and_severe_anemia = kwargs.get('homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_stroke_and_severe_anemia')
-        self.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_stroke_without_anemia = kwargs.get('homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_stroke_without_anemia')
-        self.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_stroke_and_severe_anemia = kwargs.get('homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_stroke_and_severe_anemia')
-        self.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_stroke_without_anemia = kwargs.get('homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_stroke_without_anemia')
-        self.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_mild_anemia = kwargs.get('homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_mild_anemia')
-        self.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_moderate_anemia = kwargs.get('homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_moderate_anemia')
-        self.homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_severe_anemia = kwargs.get('homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia_with_severe_anemia')
-        self.hemoglobin_sc_disease_without_anemia = kwargs.get('hemoglobin_sc_disease_without_anemia')
-        self.hemoglobin_sc_disease_with_vaso_occlusive_crisis_and_severe_anemia = kwargs.get('hemoglobin_sc_disease_with_vaso_occlusive_crisis_and_severe_anemia')
-        self.hemoglobin_sc_disease_with_vaso_occlusive_crisis_without_anemia = kwargs.get('hemoglobin_sc_disease_with_vaso_occlusive_crisis_without_anemia')
-        self.hemoglobin_sc_disease_with_stroke_and_severe_anemia = kwargs.get('hemoglobin_sc_disease_with_stroke_and_severe_anemia')
-        self.hemoglobin_sc_disease_with_stroke_without_anemia = kwargs.get('hemoglobin_sc_disease_with_stroke_without_anemia')
-        self.hemoglobin_sc_disease_with_vaso_occlusive_crisis_stroke_and_severe_anemia = kwargs.get('hemoglobin_sc_disease_with_vaso_occlusive_crisis_stroke_and_severe_anemia')
-        self.hemoglobin_sc_disease_with_vaso_occlusive_crisis_and_stroke_without_anemia = kwargs.get('hemoglobin_sc_disease_with_vaso_occlusive_crisis_and_stroke_without_anemia')
-        self.hemoglobin_sc_disease_with_mild_anemia = kwargs.get('hemoglobin_sc_disease_with_mild_anemia')
-        self.hemoglobin_sc_disease_with_moderate_anemia = kwargs.get('hemoglobin_sc_disease_with_moderate_anemia')
-        self.hemoglobin_sc_disease_with_severe_anemia = kwargs.get('hemoglobin_sc_disease_with_severe_anemia')
-        self.mild_sickle_cell_beta_thalassemia_without_anemia = kwargs.get('mild_sickle_cell_beta_thalassemia_without_anemia')
-        self.mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_severe_anemia = kwargs.get('mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_severe_anemia')
-        self.mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_without_anemia = kwargs.get('mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_without_anemia')
-        self.mild_sickle_cell_beta_thalassemia_with_stroke_and_severe_anemia = kwargs.get('mild_sickle_cell_beta_thalassemia_with_stroke_and_severe_anemia')
-        self.mild_sickle_cell_beta_thalassemia_with_stroke_without_anemia = kwargs.get('mild_sickle_cell_beta_thalassemia_with_stroke_without_anemia')
-        self.mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_stroke_and_severe_anemia = kwargs.get('mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_stroke_and_severe_anemia')
-        self.mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_stroke_without_anemia = kwargs.get('mild_sickle_cell_beta_thalassemia_with_vaso_occlusive_crisis_and_stroke_without_anemia')
-        self.mild_sickle_cell_beta_thalassemia_with_mild_anemia = kwargs.get('mild_sickle_cell_beta_thalassemia_with_mild_anemia')
-        self.mild_sickle_cell_beta_thalassemia_with_moderate_anemia = kwargs.get('mild_sickle_cell_beta_thalassemia_with_moderate_anemia')
-        self.mild_sickle_cell_beta_thalassemia_with_severe_anemia = kwargs.get('mild_sickle_cell_beta_thalassemia_with_severe_anemia')
+        self.mild_anemia_due_to_homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia = kwargs.get('mild_anemia_due_to_homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia')
+        self.moderate_anemia_due_to_homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia = kwargs.get('moderate_anemia_due_to_homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia')
+        self.severe_anemia_due_to_homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia = kwargs.get('severe_anemia_due_to_homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia')
+        self.mild_anemia_due_to_hemoglobin_sc_disease = kwargs.get('mild_anemia_due_to_hemoglobin_sc_disease')
+        self.moderate_anemia_due_to_hemoglobin_sc_disease = kwargs.get('moderate_anemia_due_to_hemoglobin_sc_disease')
+        self.severe_anemia_due_to_hemoglobin_sc_disease = kwargs.get('severe_anemia_due_to_hemoglobin_sc_disease')
+        self.mild_anemia_due_to_mild_sickle_cell_beta_thalassemia = kwargs.get('mild_anemia_due_to_mild_sickle_cell_beta_thalassemia')
+        self.moderate_anemia_due_to_mild_sickle_cell_beta_thalassemia = kwargs.get('moderate_anemia_due_to_mild_sickle_cell_beta_thalassemia')
+        self.severe_anemia_due_to_mild_sickle_cell_beta_thalassemia = kwargs.get('severe_anemia_due_to_mild_sickle_cell_beta_thalassemia')
         self.vertigo_with_moderate_hearing_loss_due_to_chronic_otitis_media = kwargs.get('vertigo_with_moderate_hearing_loss_due_to_chronic_otitis_media')
         self.vertigo_with_moderate_hearing_loss_and_ringing_due_to_chronic_otitis_media = kwargs.get('vertigo_with_moderate_hearing_loss_and_ringing_due_to_chronic_otitis_media')
         self.moderate_hearing_loss_due_to_chronic_otitis_media = kwargs.get('moderate_hearing_loss_due_to_chronic_otitis_media')
         self.moderate_hearing_loss_with_ringing_due_to_chronic_otitis_media = kwargs.get('moderate_hearing_loss_with_ringing_due_to_chronic_otitis_media')
-        self.mild_abdominal_pain_due_to_uterine_fibroids_with_mild_anemia = kwargs.get('mild_abdominal_pain_due_to_uterine_fibroids_with_mild_anemia')
-        self.mild_abdominal_pain_due_to_uterine_fibroids_with_moderate_anemia = kwargs.get('mild_abdominal_pain_due_to_uterine_fibroids_with_moderate_anemia')
-        self.mild_abdominal_pain_due_to_uterine_fibroids_with_severe_anemia = kwargs.get('mild_abdominal_pain_due_to_uterine_fibroids_with_severe_anemia')
-        self.mild_abdominal_pain_due_to_uterine_fibroids_without_anemia = kwargs.get('mild_abdominal_pain_due_to_uterine_fibroids_without_anemia')
+        self.uterine_fibroids_symptomatic_with_mild_anemia = kwargs.get('uterine_fibroids_symptomatic_with_mild_anemia')
+        self.uterine_fibroids_symptomatic_with_moderate_anemia = kwargs.get('uterine_fibroids_symptomatic_with_moderate_anemia')
+        self.uterine_fibroids_symptomatic_with_severe_anemia = kwargs.get('uterine_fibroids_symptomatic_with_severe_anemia')
+        self.uterine_fibroids_symptomatic_without_anemia = kwargs.get('uterine_fibroids_symptomatic_without_anemia')
         self.asymptomatic_yellow_fever = kwargs.get('asymptomatic_yellow_fever')
-        self.hemoglobin_h_disease_without_anemia = kwargs.get('hemoglobin_h_disease_without_anemia')
-        self.beta_thalassemia_major_without_anemia = kwargs.get('beta_thalassemia_major_without_anemia')
-        self.hemoglobin_e_beta_thalassemia_without_anemia = kwargs.get('hemoglobin_e_beta_thalassemia_without_anemia')
+        self.other_combined_sequelae_of_hemoglobin_h_disease = kwargs.get('other_combined_sequelae_of_hemoglobin_h_disease')
+        self.other_combined_sequelae_of_beta_thalassemia_major = kwargs.get('other_combined_sequelae_of_beta_thalassemia_major')
+        self.other_combined_sequelae_of_hemoglobin_e_beta_thalassemia = kwargs.get('other_combined_sequelae_of_hemoglobin_e_beta_thalassemia')
         self.rheumatic_heart_disease_without_heart_failure = kwargs.get('rheumatic_heart_disease_without_heart_failure')
         self.mild_heart_failure_due_to_rheumatic_heart_disease = kwargs.get('mild_heart_failure_due_to_rheumatic_heart_disease')
         self.moderate_heart_failure_due_to_rheumatic_heart_disease = kwargs.get('moderate_heart_failure_due_to_rheumatic_heart_disease')
         self.severe_heart_failure_due_to_rheumatic_heart_disease = kwargs.get('severe_heart_failure_due_to_rheumatic_heart_disease')
-        self.mild_anemia_due_to_g6pd_deficiency = kwargs.get('mild_anemia_due_to_g6pd_deficiency')
-        self.moderate_anemia_due_to_g6pd_deficiency = kwargs.get('moderate_anemia_due_to_g6pd_deficiency')
-        self.severe_anemia_due_to_g6pd_deficiency = kwargs.get('severe_anemia_due_to_g6pd_deficiency')
-        self.mild_heart_failure_due_to_g6pd_deficiency = kwargs.get('mild_heart_failure_due_to_g6pd_deficiency')
-        self.moderate_heart_failure_due_to_g6pd_deficiency = kwargs.get('moderate_heart_failure_due_to_g6pd_deficiency')
-        self.severe_heart_failure_due_to_g6pd_deficiency = kwargs.get('severe_heart_failure_due_to_g6pd_deficiency')
-        self.asymptomatic_g6pd_deficiency = kwargs.get('asymptomatic_g6pd_deficiency')
+        self.g6pd_deficiency_without_anemia_or_heart_failure = kwargs.get('g6pd_deficiency_without_anemia_or_heart_failure')
         self.asymptomatic_gallbladder_and_biliary_diseases = kwargs.get('asymptomatic_gallbladder_and_biliary_diseases')
         self.moderate_vision_impairment_due_to_encephalitis = kwargs.get('moderate_vision_impairment_due_to_encephalitis')
         self.severe_vision_impairment_due_to_encephalitis = kwargs.get('severe_vision_impairment_due_to_encephalitis')
@@ -2537,29 +2747,29 @@ class Sequelae(GbdRecord):
         self.asymptomatic_medication_overuse_headache_due_to_tension_type_headache = kwargs.get('asymptomatic_medication_overuse_headache_due_to_tension_type_headache')
         self.symptomatic_medication_overuse_headache_due_to_tension_type_headache = kwargs.get('symptomatic_medication_overuse_headache_due_to_tension_type_headache')
         self.stage_5_chronic_kidney_disease_untreated_without_anemia_due_to_hypertension = kwargs.get('stage_5_chronic_kidney_disease_untreated_without_anemia_due_to_hypertension')
-        self.stage_5_chronic_kidney_disease_untreated_and_mild_anemia_due_to_hypertension = kwargs.get('stage_5_chronic_kidney_disease_untreated_and_mild_anemia_due_to_hypertension')
-        self.stage_5_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_hypertension = kwargs.get('stage_5_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_hypertension')
-        self.stage_5_chronic_kidney_disease_untreated_and_severe_anemia_due_to_hypertension = kwargs.get('stage_5_chronic_kidney_disease_untreated_and_severe_anemia_due_to_hypertension')
-        self.stage_5_chronic_kidney_disease_untreated_without_anemia_due_to_glomerulonephritis = kwargs.get('stage_5_chronic_kidney_disease_untreated_without_anemia_due_to_glomerulonephritis')
-        self.stage_5_chronic_kidney_disease_untreated_and_mild_anemia_due_to_glomerulonephritis = kwargs.get('stage_5_chronic_kidney_disease_untreated_and_mild_anemia_due_to_glomerulonephritis')
-        self.stage_5_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_glomerulonephritis = kwargs.get('stage_5_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_glomerulonephritis')
-        self.stage_5_chronic_kidney_disease_untreated_and_severe_anemia_due_to_glomerulonephritis = kwargs.get('stage_5_chronic_kidney_disease_untreated_and_severe_anemia_due_to_glomerulonephritis')
-        self.stage_5_chronic_kidney_disease_untreated_without_anemia_due_to_other_causes = kwargs.get('stage_5_chronic_kidney_disease_untreated_without_anemia_due_to_other_causes')
-        self.stage_5_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_causes = kwargs.get('stage_5_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_causes')
-        self.stage_5_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_causes = kwargs.get('stage_5_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_causes')
-        self.stage_5_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_causes = kwargs.get('stage_5_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_causes')
-        self.stage_4_chronic_kidney_disease_untreated_without_anemia_due_to_hypertension = kwargs.get('stage_4_chronic_kidney_disease_untreated_without_anemia_due_to_hypertension')
-        self.stage_4_chronic_kidney_disease_untreated_and_mild_anemia_due_to_hypertension = kwargs.get('stage_4_chronic_kidney_disease_untreated_and_mild_anemia_due_to_hypertension')
-        self.stage_4_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_hypertension = kwargs.get('stage_4_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_hypertension')
-        self.stage_4_chronic_kidney_disease_untreated_and_severe_anemia_due_to_hypertension = kwargs.get('stage_4_chronic_kidney_disease_untreated_and_severe_anemia_due_to_hypertension')
-        self.stage_4_chronic_kidney_disease_untreated_without_anemia_due_to_glomerulonephritis = kwargs.get('stage_4_chronic_kidney_disease_untreated_without_anemia_due_to_glomerulonephritis')
-        self.stage_4_chronic_kidney_disease_untreated_and_mild_anemia_due_to_glomerulonephritis = kwargs.get('stage_4_chronic_kidney_disease_untreated_and_mild_anemia_due_to_glomerulonephritis')
-        self.stage_4_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_glomerulonephritis = kwargs.get('stage_4_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_glomerulonephritis')
-        self.stage_4_chronic_kidney_disease_untreated_and_severe_anemia_due_to_glomerulonephritis = kwargs.get('stage_4_chronic_kidney_disease_untreated_and_severe_anemia_due_to_glomerulonephritis')
-        self.stage_4_chronic_kidney_disease_untreated_without_anemia_due_to_other_causes = kwargs.get('stage_4_chronic_kidney_disease_untreated_without_anemia_due_to_other_causes')
-        self.stage_4_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_causes = kwargs.get('stage_4_chronic_kidney_disease_untreated_and_mild_anemia_due_to_other_causes')
-        self.stage_4_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_causes = kwargs.get('stage_4_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_other_causes')
-        self.stage_4_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_causes = kwargs.get('stage_4_chronic_kidney_disease_untreated_and_severe_anemia_due_to_other_causes')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_hypertension_with_mild_anemia = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_hypertension_with_mild_anemia')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_hypertension_with_moderate_anemia = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_hypertension_with_moderate_anemia')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_hypertension_with_severe_anemia = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_hypertension_with_severe_anemia')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_glomerulonephritis_without_anemia = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_glomerulonephritis_without_anemia')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_mild_anemia = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_mild_anemia')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_moderate_anemia = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_moderate_anemia')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_severe_anemia = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_severe_anemia')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_without_anemia = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_without_anemia')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_mild_anemia = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_mild_anemia')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_moderate_anemia = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_moderate_anemia')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_severe_anemia = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_severe_anemia')
+        self.stage_4_chronic_kidney_disease_untreated_due_to_hypertension_without_anemia = kwargs.get('stage_4_chronic_kidney_disease_untreated_due_to_hypertension_without_anemia')
+        self.stage_4_chronic_kidney_disease_untreated_due_to_hypertension_with_mild_anemia = kwargs.get('stage_4_chronic_kidney_disease_untreated_due_to_hypertension_with_mild_anemia')
+        self.stage_4_chronic_kidney_disease_untreated_due_to_hypertension_with_moderate_anemia = kwargs.get('stage_4_chronic_kidney_disease_untreated_due_to_hypertension_with_moderate_anemia')
+        self.stage_4_chronic_kidney_disease_untreated_due_to_hypertension_with_severe_anemia = kwargs.get('stage_4_chronic_kidney_disease_untreated_due_to_hypertension_with_severe_anemia')
+        self.stage_4_chronic_kidney_disease_untreated_due_to_glomerulonephritis_without_anemia = kwargs.get('stage_4_chronic_kidney_disease_untreated_due_to_glomerulonephritis_without_anemia')
+        self.stage_4_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_mild_anemia = kwargs.get('stage_4_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_mild_anemia')
+        self.stage_4_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_moderate_anemia = kwargs.get('stage_4_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_moderate_anemia')
+        self.stage_4_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_severe_anemia = kwargs.get('stage_4_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_severe_anemia')
+        self.stage_4_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_without_anemia = kwargs.get('stage_4_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_without_anemia')
+        self.stage_4_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_mild_anemia = kwargs.get('stage_4_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_mild_anemia')
+        self.stage_4_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_moderate_anemia = kwargs.get('stage_4_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_moderate_anemia')
+        self.stage_4_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_severe_anemia = kwargs.get('stage_4_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_severe_anemia')
         self.skin_disfigurement_due_to_trypanosoma_brucei_gambiense = kwargs.get('skin_disfigurement_due_to_trypanosoma_brucei_gambiense')
         self.sleeping_sickness_due_to_trypanosoma_brucei_gambiense = kwargs.get('sleeping_sickness_due_to_trypanosoma_brucei_gambiense')
         self.sleeping_sickness_due_to_trypanosoma_brucei_rhodesiense = kwargs.get('sleeping_sickness_due_to_trypanosoma_brucei_rhodesiense')
@@ -2762,7 +2972,7 @@ class Sequelae(GbdRecord):
         self.mild_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele = kwargs.get('mild_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele')
         self.moderate_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele = kwargs.get('moderate_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele')
         self.severe_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele = kwargs.get('severe_motor_impairment_profound_intellectual_disability_and_incontinence_due_to_encephalocele')
-        self.asymptomatic_vitamin_a_deficiency = kwargs.get('asymptomatic_vitamin_a_deficiency')
+        self.vitamin_a_deficiency_asymptomatic = kwargs.get('vitamin_a_deficiency_asymptomatic')
         self.latent_tuberculosis_infection = kwargs.get('latent_tuberculosis_infection')
         self.mild_pain_due_to_guinea_worm_emergence = kwargs.get('mild_pain_due_to_guinea_worm_emergence')
         self.mild_symptomatic_episodes_gallbladder_and_biliary_diseases = kwargs.get('mild_symptomatic_episodes_gallbladder_and_biliary_diseases')
@@ -2951,7 +3161,7 @@ class Sequelae(GbdRecord):
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_compensated = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_compensated')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_compensated = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_compensated')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_compensated = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_compensated')
-        self.cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_compensated = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_compensated')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_compensated_asymptomatic = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_compensated_asymptomatic')
         self.severe_disfigurement_due_to_adult_tertiary_syphilis = kwargs.get('severe_disfigurement_due_to_adult_tertiary_syphilis')
         self.neurological_problems_due_to_adult_tertiary_syphilis = kwargs.get('neurological_problems_due_to_adult_tertiary_syphilis')
         self.cardiovascular_complications_due_to_adult_tertiary_syphilis = kwargs.get('cardiovascular_complications_due_to_adult_tertiary_syphilis')
@@ -2960,42 +3170,38 @@ class Sequelae(GbdRecord):
         self.other_congenital_birth_defects = kwargs.get('other_congenital_birth_defects')
         self.ectopic_pregnancy = kwargs.get('ectopic_pregnancy')
         self.acute_subarachnoid_hemorrhage_severity_level_1 = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_1')
-        self.acute_subarachnoid_hemorrhage_severity_level_2 = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_2')
-        self.acute_subarachnoid_hemorrhage_severity_level_3 = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_3')
-        self.acute_subarachnoid_hemorrhage_severity_level_4 = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_4')
-        self.acute_subarachnoid_hemorrhage_severity_level_5 = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_5')
+        self.acute_subarachnoid_hemorrhage_severity_level_2_without_heart_failure = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_2_without_heart_failure')
+        self.acute_subarachnoid_hemorrhage_severity_level_3_without_heart_failure = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_3_without_heart_failure')
+        self.acute_subarachnoid_hemorrhage_severity_level_4_without_heart_failure = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_4_without_heart_failure')
+        self.acute_subarachnoid_hemorrhage_severity_level_5_without_heart_failure = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_5_without_heart_failure')
         self.asymptomatic_chronic_subarachnoid_hemorrhage = kwargs.get('asymptomatic_chronic_subarachnoid_hemorrhage')
         self.chronic_subarachnoid_hemorrhage_severity_level_1 = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_1')
-        self.chronic_subarachnoid_hemorrhage_severity_level_2 = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_2')
-        self.chronic_subarachnoid_hemorrhage_severity_level_3 = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_3')
-        self.chronic_subarachnoid_hemorrhage_severity_level_4 = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_4')
-        self.chronic_subarachnoid_hemorrhage_severity_level_5 = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_5')
         self.end_stage_renal_disease_after_transplant_due_to_type_1_diabetes_mellitus = kwargs.get('end_stage_renal_disease_after_transplant_due_to_type_1_diabetes_mellitus')
         self.end_stage_renal_disease_after_transplant_due_to_type_2_diabetes_mellitus = kwargs.get('end_stage_renal_disease_after_transplant_due_to_type_2_diabetes_mellitus')
-        self.stage_3_chronic_kidney_disease_and_severe_anemia_due_to_type_1_diabetes_mellitus = kwargs.get('stage_3_chronic_kidney_disease_and_severe_anemia_due_to_type_1_diabetes_mellitus')
-        self.stage_3_chronic_kidney_disease_and_severe_anemia_due_to_type_2_diabetes_mellitus = kwargs.get('stage_3_chronic_kidney_disease_and_severe_anemia_due_to_type_2_diabetes_mellitus')
-        self.stage_3_chronic_kidney_disease_and_moderate_anemia_due_to_type_1_diabetes_mellitus = kwargs.get('stage_3_chronic_kidney_disease_and_moderate_anemia_due_to_type_1_diabetes_mellitus')
-        self.stage_3_chronic_kidney_disease_and_moderate_anemia_due_to_type_2_diabetes_mellitus = kwargs.get('stage_3_chronic_kidney_disease_and_moderate_anemia_due_to_type_2_diabetes_mellitus')
-        self.stage_3_chronic_kidney_disease_and_mild_anemia_due_to_type_1_diabetes_mellitus = kwargs.get('stage_3_chronic_kidney_disease_and_mild_anemia_due_to_type_1_diabetes_mellitus')
-        self.stage_3_chronic_kidney_disease_and_mild_anemia_due_to_type_2_diabetes_mellitus = kwargs.get('stage_3_chronic_kidney_disease_and_mild_anemia_due_to_type_2_diabetes_mellitus')
-        self.stage_3_chronic_kidney_disease_without_anemia_due_to_type_1_diabetes_mellitus = kwargs.get('stage_3_chronic_kidney_disease_without_anemia_due_to_type_1_diabetes_mellitus')
-        self.stage_3_chronic_kidney_disease_without_anemia_due_to_type_2_diabetes_mellitus = kwargs.get('stage_3_chronic_kidney_disease_without_anemia_due_to_type_2_diabetes_mellitus')
-        self.stage_4_chronic_kidney_disease_untreated_and_severe_anemia_due_to_type_1_diabetes_mellitus = kwargs.get('stage_4_chronic_kidney_disease_untreated_and_severe_anemia_due_to_type_1_diabetes_mellitus')
-        self.stage_4_chronic_kidney_disease_untreated_and_severe_anemia_due_to_type_2_diabetes_mellitus = kwargs.get('stage_4_chronic_kidney_disease_untreated_and_severe_anemia_due_to_type_2_diabetes_mellitus')
-        self.stage_4_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_type_1_diabetes_mellitus = kwargs.get('stage_4_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_type_1_diabetes_mellitus')
-        self.stage_4_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_type_2_diabetes_mellitus = kwargs.get('stage_4_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_type_2_diabetes_mellitus')
-        self.stage_4_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_1_diabetes_mellitus = kwargs.get('stage_4_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_1_diabetes_mellitus')
-        self.stage_4_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_2_diabetes_mellitus = kwargs.get('stage_4_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_2_diabetes_mellitus')
-        self.stage_4_chronic_kidney_disease_untreated_without_anemia_due_to_type_1_diabetes_mellitus = kwargs.get('stage_4_chronic_kidney_disease_untreated_without_anemia_due_to_type_1_diabetes_mellitus')
-        self.stage_4_chronic_kidney_disease_untreated_without_anemia_due_to_type_2_diabetes_mellitus = kwargs.get('stage_4_chronic_kidney_disease_untreated_without_anemia_due_to_type_2_diabetes_mellitus')
-        self.stage_5_chronic_kidney_disease_untreated_and_severe_anemia_due_to_type_1_diabetes_mellitus = kwargs.get('stage_5_chronic_kidney_disease_untreated_and_severe_anemia_due_to_type_1_diabetes_mellitus')
-        self.stage_5_chronic_kidney_disease_untreated_and_severe_anemia_due_to_type_2_diabetes_mellitus = kwargs.get('stage_5_chronic_kidney_disease_untreated_and_severe_anemia_due_to_type_2_diabetes_mellitus')
-        self.stage_5_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_type_1_diabetes_mellitus = kwargs.get('stage_5_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_type_1_diabetes_mellitus')
-        self.stage_5_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_type_2_diabetes_mellitus = kwargs.get('stage_5_chronic_kidney_disease_untreated_and_moderate_anemia_due_to_type_2_diabetes_mellitus')
-        self.stage_5_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_1_diabetes_mellitus = kwargs.get('stage_5_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_1_diabetes_mellitus')
-        self.stage_5_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_2_diabetes_mellitus = kwargs.get('stage_5_chronic_kidney_disease_untreated_and_mild_anemia_due_to_type_2_diabetes_mellitus')
-        self.stage_5_chronic_kidney_disease_untreated_without_anemia_due_to_type_1_diabetes_mellitus = kwargs.get('stage_5_chronic_kidney_disease_untreated_without_anemia_due_to_type_1_diabetes_mellitus')
-        self.stage_5_chronic_kidney_disease_untreated_without_anemia_due_to_type_2_diabetes_mellitus = kwargs.get('stage_5_chronic_kidney_disease_untreated_without_anemia_due_to_type_2_diabetes_mellitus')
+        self.stage_3_chronic_kidney_disease_due_to_type_1_diabetes_mellitus_with_severe_anemia = kwargs.get('stage_3_chronic_kidney_disease_due_to_type_1_diabetes_mellitus_with_severe_anemia')
+        self.stage_3_chronic_kidney_disease_due_to_type_2_diabetes_mellitus_with_severe_anemia = kwargs.get('stage_3_chronic_kidney_disease_due_to_type_2_diabetes_mellitus_with_severe_anemia')
+        self.stage_3_chronic_kidney_disease_due_to_type_1_diabetes_mellitus_with_moderate_anemia = kwargs.get('stage_3_chronic_kidney_disease_due_to_type_1_diabetes_mellitus_with_moderate_anemia')
+        self.stage_3_chronic_kidney_disease_due_to_type_2_diabetes_mellitus_with_mdoerate_anemia = kwargs.get('stage_3_chronic_kidney_disease_due_to_type_2_diabetes_mellitus_with_mdoerate_anemia')
+        self.stage_3_chronic_kidney_disease_due_to_type_1_diabetes_mellitus_with_mild_anemia = kwargs.get('stage_3_chronic_kidney_disease_due_to_type_1_diabetes_mellitus_with_mild_anemia')
+        self.stage_3_chronic_kidney_disease_due_to_type_2_diabetes_mellitus_with_mild_anemia = kwargs.get('stage_3_chronic_kidney_disease_due_to_type_2_diabetes_mellitus_with_mild_anemia')
+        self.stage_3_chronic_kidney_disease_due_to_type_1_diabetes_mellitus_without_anemia = kwargs.get('stage_3_chronic_kidney_disease_due_to_type_1_diabetes_mellitus_without_anemia')
+        self.stage_3_chronic_kidney_disease_due_to_type_2_diabetes_mellitus_without_anemia = kwargs.get('stage_3_chronic_kidney_disease_due_to_type_2_diabetes_mellitus_without_anemia')
+        self.stage_4_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_severe_anemia = kwargs.get('stage_4_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_severe_anemia')
+        self.stage_4_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_severe_anemia = kwargs.get('stage_4_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_severe_anemia')
+        self.stage_4_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_moderate_anemia = kwargs.get('stage_4_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_moderate_anemia')
+        self.stage_4_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_mdoerate_anemia = kwargs.get('stage_4_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_mdoerate_anemia')
+        self.stage_4_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_mild_anemia = kwargs.get('stage_4_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_mild_anemia')
+        self.stage_4_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_mild_anemia = kwargs.get('stage_4_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_mild_anemia')
+        self.stage_4_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_without_anemia = kwargs.get('stage_4_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_without_anemia')
+        self.stage_4_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_without_anemia = kwargs.get('stage_4_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_without_anemia')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_severe_anemia = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_severe_anemia')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_severe_anemia = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_severe_anemia')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_moderate_anemia = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_moderate_anemia')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_moderate_anemia = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_moderate_anemia')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_mild_anemia = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_mild_anemia')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_mild_anemia = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_mild_anemia')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_without_anemia_or_heart_faliure = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_without_anemia_or_heart_faliure')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_without_anemia = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_without_anemia')
         self.calcific_aortic_valve_disease_after_valve_intervention = kwargs.get('calcific_aortic_valve_disease_after_valve_intervention')
         self.asymptomatic_calcific_aortic_valve_disease = kwargs.get('asymptomatic_calcific_aortic_valve_disease')
         self.mild_heart_failure_due_to_calcific_aortic_valve_disease = kwargs.get('mild_heart_failure_due_to_calcific_aortic_valve_disease')
@@ -3067,11 +3273,9 @@ class Sequelae(GbdRecord):
         self.ulcerative_colitis_with_mild_anemia = kwargs.get('ulcerative_colitis_with_mild_anemia')
         self.ulcerative_colitis_with_moderate_anemia = kwargs.get('ulcerative_colitis_with_moderate_anemia')
         self.ulcerative_colitis_with_severe_anemia = kwargs.get('ulcerative_colitis_with_severe_anemia')
-        self.ulcerative_colitis_without_anemia = kwargs.get('ulcerative_colitis_without_anemia')
         self.crohns_disease_with_mild_anemia = kwargs.get('crohns_disease_with_mild_anemia')
         self.crohns_disease_with_moderate_anemia = kwargs.get('crohns_disease_with_moderate_anemia')
         self.crohns_disease_with_severe_anemia = kwargs.get('crohns_disease_with_severe_anemia')
-        self.crohns_disease_without_anemia = kwargs.get('crohns_disease_without_anemia')
         self.mild_anemia_due_to_malaria_vivax_pvpr = kwargs.get('mild_anemia_due_to_malaria_vivax_pvpr')
         self.moderate_anemia_due_to_malaria_vivax_pvpr = kwargs.get('moderate_anemia_due_to_malaria_vivax_pvpr')
         self.severe_anemia_due_to_malaria_vivax_pvpr = kwargs.get('severe_anemia_due_to_malaria_vivax_pvpr')
@@ -3092,8 +3296,7 @@ class Sequelae(GbdRecord):
         self.controlled_medically_managed_heart_failure_due_to_chagas_disease = kwargs.get('controlled_medically_managed_heart_failure_due_to_chagas_disease')
         self.controlled_medically_managed_heart_failure_due_to_degenerative_mitral_valve_disease = kwargs.get('controlled_medically_managed_heart_failure_due_to_degenerative_mitral_valve_disease')
         self.controlled_medically_managed_heart_failure_due_to_endocarditis = kwargs.get('controlled_medically_managed_heart_failure_due_to_endocarditis')
-        self.controlled_medically_managed_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders = kwargs.get('controlled_medically_managed_heart_failure_due_to_endocrine_metabolic_blood_and_immune_disorders')
-        self.controlled_medically_managed_heart_failure_due_to_g6pd_deficiency = kwargs.get('controlled_medically_managed_heart_failure_due_to_g6pd_deficiency')
+        self.g6pd_deficiency_with_asymptomatic_heart_failure = kwargs.get('g6pd_deficiency_with_asymptomatic_heart_failure')
         self.controlled_medically_managed_heart_failure_due_to_hypertensive_heart_disease = kwargs.get('controlled_medically_managed_heart_failure_due_to_hypertensive_heart_disease')
         self.controlled_medically_managed_heart_failure_due_to_myocarditis = kwargs.get('controlled_medically_managed_heart_failure_due_to_myocarditis')
         self.controlled_medically_managed_heart_failure_due_to_other_cardiomyopathy = kwargs.get('controlled_medically_managed_heart_failure_due_to_other_cardiomyopathy')
@@ -3107,7 +3310,7 @@ class Sequelae(GbdRecord):
         self.controlled_medically_managed_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis = kwargs.get('controlled_medically_managed_heart_failure_due_to_severe_interstitial_lung_disease_and_pulmonary_sarcoidosis')
         self.controlled_medically_managed_heart_failure_due_to_severe_other_pneumoconiosis = kwargs.get('controlled_medically_managed_heart_failure_due_to_severe_other_pneumoconiosis')
         self.controlled_medically_managed_heart_failure_due_to_severe_silicosis = kwargs.get('controlled_medically_managed_heart_failure_due_to_severe_silicosis')
-        self.controlled_medically_managed_heart_failure_due_to_thalassemias = kwargs.get('controlled_medically_managed_heart_failure_due_to_thalassemias')
+        self.asymptomatic_heart_failure_due_to_thalassemias = kwargs.get('asymptomatic_heart_failure_due_to_thalassemias')
         self.congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus = kwargs.get('congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_critical_malformations_of_great_vessels_congenital_valvular_heart_disease_and_patent_ductus_arteriosus')
         self.congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects = kwargs.get('congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_severe_congenital_heart_anomalies_excluding_single_ventricle_heart_defects')
         self.congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects = kwargs.get('congenital_heart_disease_and_controlled_medically_managed_heart_failure_without_intellectual_disability_due_to_single_ventricle_and_single_ventricle_pathway_heart_defects')
@@ -3228,43 +3431,38 @@ class Sequelae(GbdRecord):
         self.mild_heart_failure_due_to_pulmonary_arterial_hypertension = kwargs.get('mild_heart_failure_due_to_pulmonary_arterial_hypertension')
         self.moderate_heart_failure_due_to_pulmonary_arterial_hypertension = kwargs.get('moderate_heart_failure_due_to_pulmonary_arterial_hypertension')
         self.severe_heart_failure_due_to_pulmonary_arterial_hypertension = kwargs.get('severe_heart_failure_due_to_pulmonary_arterial_hypertension')
-        self.end_stage_renal_disease_on_dialysis_and_mild_anemia_due_to_type_1_diabetes_mellitus = kwargs.get('end_stage_renal_disease_on_dialysis_and_mild_anemia_due_to_type_1_diabetes_mellitus')
-        self.end_stage_renal_disease_on_dialysis_and_mild_anemia_due_to_type_2_diabetes_mellitus = kwargs.get('end_stage_renal_disease_on_dialysis_and_mild_anemia_due_to_type_2_diabetes_mellitus')
-        self.end_stage_renal_disease_on_dialysis_and_mild_anemia_due_to_hypertension = kwargs.get('end_stage_renal_disease_on_dialysis_and_mild_anemia_due_to_hypertension')
-        self.end_stage_renal_disease_on_dialysis_and_mild_anemia_due_to_glomerulonephritis = kwargs.get('end_stage_renal_disease_on_dialysis_and_mild_anemia_due_to_glomerulonephritis')
-        self.end_stage_renal_disease_on_dialysis_and_mild_anemia_due_to_other_and_unspecified_causes = kwargs.get('end_stage_renal_disease_on_dialysis_and_mild_anemia_due_to_other_and_unspecified_causes')
-        self.end_stage_renal_disease_on_dialysis_and_moderate_anemia_due_to_type_1_diabetes_mellitus = kwargs.get('end_stage_renal_disease_on_dialysis_and_moderate_anemia_due_to_type_1_diabetes_mellitus')
-        self.end_stage_renal_disease_on_dialysis_and_moderate_anemia_due_to_type_2_diabetes_mellitus = kwargs.get('end_stage_renal_disease_on_dialysis_and_moderate_anemia_due_to_type_2_diabetes_mellitus')
-        self.end_stage_renal_disease_on_dialysis_and_moderate_anemia_due_to_hypertension = kwargs.get('end_stage_renal_disease_on_dialysis_and_moderate_anemia_due_to_hypertension')
-        self.end_stage_renal_disease_on_dialysis_and_moderate_anemia_due_to_glomerulonephritis = kwargs.get('end_stage_renal_disease_on_dialysis_and_moderate_anemia_due_to_glomerulonephritis')
-        self.end_stage_renal_disease_on_dialysis_and_moderate_anemia_due_to_other_and_unspecified_causes = kwargs.get('end_stage_renal_disease_on_dialysis_and_moderate_anemia_due_to_other_and_unspecified_causes')
-        self.end_stage_renal_disease_on_dialysis_and_severe_anemia_due_to_type_1_diabetes_mellitus = kwargs.get('end_stage_renal_disease_on_dialysis_and_severe_anemia_due_to_type_1_diabetes_mellitus')
-        self.end_stage_renal_disease_on_dialysis_and_severe_anemia_due_to_type_2_diabetes_mellitus = kwargs.get('end_stage_renal_disease_on_dialysis_and_severe_anemia_due_to_type_2_diabetes_mellitus')
-        self.end_stage_renal_disease_on_dialysis_and_severe_anemia_due_to_hypertension = kwargs.get('end_stage_renal_disease_on_dialysis_and_severe_anemia_due_to_hypertension')
-        self.end_stage_renal_disease_on_dialysis_and_severe_anemia_due_to_glomerulonephritis = kwargs.get('end_stage_renal_disease_on_dialysis_and_severe_anemia_due_to_glomerulonephritis')
-        self.end_stage_renal_disease_on_dialysis_and_severe_anemia_due_to_other_and_unspecified_causes = kwargs.get('end_stage_renal_disease_on_dialysis_and_severe_anemia_due_to_other_and_unspecified_causes')
-        self.end_stage_renal_disease_on_dialysis_without_anemia_due_to_type_1_diabetes_mellitus = kwargs.get('end_stage_renal_disease_on_dialysis_without_anemia_due_to_type_1_diabetes_mellitus')
-        self.end_stage_renal_disease_on_dialysis_without_anemia_due_to_type_2_diabetes_mellitus = kwargs.get('end_stage_renal_disease_on_dialysis_without_anemia_due_to_type_2_diabetes_mellitus')
-        self.end_stage_renal_disease_on_dialysis_without_anemia_due_to_hypertension = kwargs.get('end_stage_renal_disease_on_dialysis_without_anemia_due_to_hypertension')
-        self.end_stage_renal_disease_on_dialysis_without_anemia_due_to_glomerulonephritis = kwargs.get('end_stage_renal_disease_on_dialysis_without_anemia_due_to_glomerulonephritis')
-        self.end_stage_renal_disease_on_dialysis_without_anemia_due_to_other_and_unspecified_causes = kwargs.get('end_stage_renal_disease_on_dialysis_without_anemia_due_to_other_and_unspecified_causes')
-        self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_without_anemia = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_without_anemia')
+        self.end_stage_renal_disease_on_dialysis_due_to_type_1_diabetes_mellitus_with_mild_anemia = kwargs.get('end_stage_renal_disease_on_dialysis_due_to_type_1_diabetes_mellitus_with_mild_anemia')
+        self.end_stage_renal_disease_on_dialysis_due_to_type_2_diabetes_mellitus_with_mild_anemia = kwargs.get('end_stage_renal_disease_on_dialysis_due_to_type_2_diabetes_mellitus_with_mild_anemia')
+        self.end_stage_renal_disease_on_dialysis_due_to_hypertension_with_mild_anemia = kwargs.get('end_stage_renal_disease_on_dialysis_due_to_hypertension_with_mild_anemia')
+        self.end_stage_renal_disease_on_dialysis_due_to_glomerulonephritis_with_mild_anemia = kwargs.get('end_stage_renal_disease_on_dialysis_due_to_glomerulonephritis_with_mild_anemia')
+        self.end_stage_renal_disease_on_dialysis_due_to_other_and_unspecified_causes_with_mild_anemia = kwargs.get('end_stage_renal_disease_on_dialysis_due_to_other_and_unspecified_causes_with_mild_anemia')
+        self.end_stage_renal_disease_on_dialysis_due_to_type_1_diabetes_mellitus_with_moderate_anemia = kwargs.get('end_stage_renal_disease_on_dialysis_due_to_type_1_diabetes_mellitus_with_moderate_anemia')
+        self.end_stage_renal_disease_on_dialysis_due_to_type_2_diabetes_mellitus_with_moderate_anemia = kwargs.get('end_stage_renal_disease_on_dialysis_due_to_type_2_diabetes_mellitus_with_moderate_anemia')
+        self.end_stage_renal_disease_on_dialysis_due_to_hypertension_with_moderate_anemia = kwargs.get('end_stage_renal_disease_on_dialysis_due_to_hypertension_with_moderate_anemia')
+        self.end_stage_renal_disease_on_dialysis_due_to_glomerulonephritis_with_moderate_anemia = kwargs.get('end_stage_renal_disease_on_dialysis_due_to_glomerulonephritis_with_moderate_anemia')
+        self.end_stage_renal_disease_on_dialysis_due_to_other_and_unspecified_causes_with_moderate_anemia = kwargs.get('end_stage_renal_disease_on_dialysis_due_to_other_and_unspecified_causes_with_moderate_anemia')
+        self.end_stage_renal_disease_on_dialysis_due_to_type_1_diabetes_mellitus_with_severe_anemia = kwargs.get('end_stage_renal_disease_on_dialysis_due_to_type_1_diabetes_mellitus_with_severe_anemia')
+        self.end_stage_renal_disease_on_dialysis_due_to_type_2_diabetes_mellitus_with_severe_anemia = kwargs.get('end_stage_renal_disease_on_dialysis_due_to_type_2_diabetes_mellitus_with_severe_anemia')
+        self.end_stage_renal_disease_on_dialysis_due_to_hypertension_with_severe_anemia = kwargs.get('end_stage_renal_disease_on_dialysis_due_to_hypertension_with_severe_anemia')
+        self.end_stage_renal_disease_on_dialysis_due_to_glomerulonephritis_with_severe_anemia = kwargs.get('end_stage_renal_disease_on_dialysis_due_to_glomerulonephritis_with_severe_anemia')
+        self.end_stage_renal_disease_on_dialysis_due_to_other_and_unspecified_causes_with_severe_anemia = kwargs.get('end_stage_renal_disease_on_dialysis_due_to_other_and_unspecified_causes_with_severe_anemia')
+        self.end_stage_renal_disease_on_dialysis_due_to_type_1_diabetes_mellitus_without_anemia = kwargs.get('end_stage_renal_disease_on_dialysis_due_to_type_1_diabetes_mellitus_without_anemia')
+        self.end_stage_renal_disease_on_dialysis_due_to_type_2_diabetes_mellitus_without_anemia = kwargs.get('end_stage_renal_disease_on_dialysis_due_to_type_2_diabetes_mellitus_without_anemia')
+        self.end_stage_renal_disease_on_dialysis_due_to_hypertension_without_anemia = kwargs.get('end_stage_renal_disease_on_dialysis_due_to_hypertension_without_anemia')
+        self.end_stage_renal_disease_on_dialysis_due_to_glomerulonephritis_without_anemia = kwargs.get('end_stage_renal_disease_on_dialysis_due_to_glomerulonephritis_without_anemia')
+        self.end_stage_renal_disease_on_dialysis_due_to_other_and_unspecified_causes_without_anemia = kwargs.get('end_stage_renal_disease_on_dialysis_due_to_other_and_unspecified_causes_without_anemia')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_mild_anemia = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_mild_anemia')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_moderate_anemia = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_moderate_anemia')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_severe_anemia = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_severe_anemia')
-        self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_no_anemia = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_no_anemia')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_mild_anemia = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_mild_anemia')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_moderate_anemia = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_moderate_anemia')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_severe_anemia = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_severe_anemia')
-        self.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_without_anemia = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_without_anemia')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_mild_anemia = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_mild_anemia')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_moderate_anemia = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_moderate_anemia')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_severe_anemia = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_severe_anemia')
-        self.cirrhosis_and_other_chronic_liver_diseases_due_to_other_decompensated_with_no_anemia = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_other_decompensated_with_no_anemia')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_other_decompensated_with_mild_anemia = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_other_decompensated_with_mild_anemia')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_other_decompensated_with_moderate_anemia = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_other_decompensated_with_moderate_anemia')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_other_decompensated_with_severe_anemia = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_other_decompensated_with_severe_anemia')
-        self.cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_no_anemia = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_no_anemia')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_mild_anemia = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_mild_anemia')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_moderate_anemia = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_moderate_anemia')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_severe_anemia = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_severe_anemia')
@@ -3278,3 +3476,350 @@ class Sequelae(GbdRecord):
         self.other_combined_sequelae_of_homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia = kwargs.get('other_combined_sequelae_of_homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia')
         self.other_combined_sequelae_of_hemoglobin_sc_disease = kwargs.get('other_combined_sequelae_of_hemoglobin_sc_disease')
         self.other_combined_sequelae_of_mild_sickle_cell_beta_thalassemia_exclusivity_adjustment = kwargs.get('other_combined_sequelae_of_mild_sickle_cell_beta_thalassemia_exclusivity_adjustment')
+        self.mild_schistosomiasis_without_anemia = kwargs.get('mild_schistosomiasis_without_anemia')
+        self.asymptomatic_congenital_syphilis = kwargs.get('asymptomatic_congenital_syphilis')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_asymptomatic_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_asymptomatic_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_mild_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_mild_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_moderate_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_moderate_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_severe_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_severe_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_without_anemia_or_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_without_anemia_or_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_asymptomatic_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_asymptomatic_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_mild_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_mild_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_moderate_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_moderate_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_severe_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_severe_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_without_anemia_or_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_without_anemia_or_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_asymptomatic_managed_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_asymptomatic_managed_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_mild_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_mild_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_moderate_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_moderate_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_severe_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_severe_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_without_anemia_or_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_without_anemia_or_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_asymptomatic_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_asymptomatic_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_asymptomatic_and_mild_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_asymptomatic_and_mild_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_moderate_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_moderate_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_severe_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_severe_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_other_causes_decompensated_without_anemia_or_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_other_causes_decompensated_without_anemia_or_heart_failure')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_hypertension_with_asymptomatic_heart_failure = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_hypertension_with_asymptomatic_heart_failure')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_hypertension_with_mild_heart_failure = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_hypertension_with_mild_heart_failure')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_hypertension_with_moderate_heart_failure = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_hypertension_with_moderate_heart_failure')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_hypertension_with_severe_heart_failure = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_hypertension_with_severe_heart_failure')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_asymptomatic_heart_failure = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_asymptomatic_heart_failure')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_mild_heart_failure = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_mild_heart_failure')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_moderate_heart_failure = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_moderate_heart_failure')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_severe_heart_failure = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_glomerulonephritis_with_severe_heart_failure')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_asymptomatic_heart_failure = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_asymptomatic_heart_failure')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_mild_heart_failure = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_mild_heart_failure')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_moderate_heart_failure = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_moderate_heart_failure')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_severe_heart_failure = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_other_and_unspecified_causes_with_severe_heart_failure')
+        self.severe_infection_associated_with_beta_thalassemia_major = kwargs.get('severe_infection_associated_with_beta_thalassemia_major')
+        self.mild_anemia_due_to_beta_thalassemia_major = kwargs.get('mild_anemia_due_to_beta_thalassemia_major')
+        self.moderate_anemia_due_to_beta_thalassemia_major = kwargs.get('moderate_anemia_due_to_beta_thalassemia_major')
+        self.severe_anemia_due_to_beta_thalassemia_major = kwargs.get('severe_anemia_due_to_beta_thalassemia_major')
+        self.severe_infection_associated_with_hemoglobin_e_beta_thalassemia = kwargs.get('severe_infection_associated_with_hemoglobin_e_beta_thalassemia')
+        self.hemoglobin_e_beta_thalassemia_with_mild_anemia = kwargs.get('hemoglobin_e_beta_thalassemia_with_mild_anemia')
+        self.hemoglobin_e_beta_thalassemia_with_moderate_anemia = kwargs.get('hemoglobin_e_beta_thalassemia_with_moderate_anemia')
+        self.hemoglobin_e_beta_thalassemia_with_severe_anemia = kwargs.get('hemoglobin_e_beta_thalassemia_with_severe_anemia')
+        self.severe_infection_associated_with_hemoglobin_h_disease = kwargs.get('severe_infection_associated_with_hemoglobin_h_disease')
+        self.hemoglobin_h_disease_with_mild_anemia = kwargs.get('hemoglobin_h_disease_with_mild_anemia')
+        self.hemoglobin_h_disease_with_moderate_anemia = kwargs.get('hemoglobin_h_disease_with_moderate_anemia')
+        self.hemoglobin_h_disease_with_severe_anemia = kwargs.get('hemoglobin_h_disease_with_severe_anemia')
+        self.vaso_occlusive_crises_due_to_homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia = kwargs.get('vaso_occlusive_crises_due_to_homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia')
+        self.stroke_due_to_homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia = kwargs.get('stroke_due_to_homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia')
+        self.vaso_occlusive_crises_and_stroke_due_to_homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia = kwargs.get('vaso_occlusive_crises_and_stroke_due_to_homozygous_sickle_cell_and_severe_sickle_cell_beta_thalassemia')
+        self.vaso_occlusive_crises_due_to_hemoglobin_sc_disease = kwargs.get('vaso_occlusive_crises_due_to_hemoglobin_sc_disease')
+        self.stroke_due_to_hemoglobin_sc_disease = kwargs.get('stroke_due_to_hemoglobin_sc_disease')
+        self.vaso_occlusive_crises_and_stroke_due_to_hemoglobin_sc_disease = kwargs.get('vaso_occlusive_crises_and_stroke_due_to_hemoglobin_sc_disease')
+        self.vaso_occlusive_crises_due_to_mild_sickle_cell_beta_thalassemia = kwargs.get('vaso_occlusive_crises_due_to_mild_sickle_cell_beta_thalassemia')
+        self.stroke_due_to_mild_sickle_cell_beta_thalassemia = kwargs.get('stroke_due_to_mild_sickle_cell_beta_thalassemia')
+        self.vaso_occlusive_crises_and_stroke_due_to_mild_sickle_cell_beta_thalassemia = kwargs.get('vaso_occlusive_crises_and_stroke_due_to_mild_sickle_cell_beta_thalassemia')
+        self.g6pd_deficiency_with_mild_anemia = kwargs.get('g6pd_deficiency_with_mild_anemia')
+        self.g6pd_deficiency_with_moderate_anemia = kwargs.get('g6pd_deficiency_with_moderate_anemia')
+        self.g6pd_deficiency_with_severe_anemia = kwargs.get('g6pd_deficiency_with_severe_anemia')
+        self.g6pd_deficiency_with_mild_heart_failure = kwargs.get('g6pd_deficiency_with_mild_heart_failure')
+        self.g6pd_deficiency_with_moderate_heart_failure = kwargs.get('g6pd_deficiency_with_moderate_heart_failure')
+        self.g6pd_deficiency_with_severe_heart_failure = kwargs.get('g6pd_deficiency_with_severe_heart_failure')
+        self.mild_anemia_due_to_other_endocrine_metabolic_blood_immune_disorders = kwargs.get('mild_anemia_due_to_other_endocrine_metabolic_blood_immune_disorders')
+        self.moderate_anemia_due_to_other_endocrine_metabolic_blood_immune_disorders = kwargs.get('moderate_anemia_due_to_other_endocrine_metabolic_blood_immune_disorders')
+        self.severe_anemia_due_to_other_endocrine_metabolic_blood_immune_disorders = kwargs.get('severe_anemia_due_to_other_endocrine_metabolic_blood_immune_disorders')
+        self.asymptomatic_other_endocrine_metabolic_blood_immune_disorders = kwargs.get('asymptomatic_other_endocrine_metabolic_blood_immune_disorders')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_asymptomatic_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_asymptomatic_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_mild_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_mild_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_moderate_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_moderate_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_severe_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_severe_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_without_anemia_or_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_without_anemia_or_heart_failure')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_asymptomatic_heart_failure = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_asymptomatic_heart_failure')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_mild_heart_failure = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_mild_heart_failure')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_moderate_heart_failure = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_moderate_heart_failure')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_severe_heart_failure = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_type_1_diabetes_mellitus_with_severe_heart_failure')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_asymptomatic_heart_failure = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_asymptomatic_heart_failure')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_mild_heart_failure = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_mild_heart_failure')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_moderate_heart_failure = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_moderate_heart_failure')
+        self.stage_5_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_severe_heart_failure = kwargs.get('stage_5_chronic_kidney_disease_untreated_due_to_type_2_diabetes_mellitus_with_severe_heart_failure')
+        self.mild_anemia_due_to_hypothyroidism = kwargs.get('mild_anemia_due_to_hypothyroidism')
+        self.moderate_anemia_due_to_hypothyroidism = kwargs.get('moderate_anemia_due_to_hypothyroidism')
+        self.severe_anemia_due_to_hypothyroidism = kwargs.get('severe_anemia_due_to_hypothyroidism')
+        self.mild_heart_failure_due_to_hypothyroidism = kwargs.get('mild_heart_failure_due_to_hypothyroidism')
+        self.moderate_heart_failure_due_to_hypothyroidism = kwargs.get('moderate_heart_failure_due_to_hypothyroidism')
+        self.severe_heart_failure_due_to_hypothyroidism = kwargs.get('severe_heart_failure_due_to_hypothyroidism')
+        self.controlled_medically_managed_heart_failure_due_to_hypothyroidism = kwargs.get('controlled_medically_managed_heart_failure_due_to_hypothyroidism')
+        self.asymptomatic_hypothyroidism = kwargs.get('asymptomatic_hypothyroidism')
+        self.mild_anemia_due_to_hyperthyroidism = kwargs.get('mild_anemia_due_to_hyperthyroidism')
+        self.moderate_anemia_due_to_hyperthyroidism = kwargs.get('moderate_anemia_due_to_hyperthyroidism')
+        self.severe_anemia_due_to_hyperthyroidism = kwargs.get('severe_anemia_due_to_hyperthyroidism')
+        self.mild_heart_failure_due_to_hyperthyroidism = kwargs.get('mild_heart_failure_due_to_hyperthyroidism')
+        self.moderate_heart_failure_due_to_hyperthyroidism = kwargs.get('moderate_heart_failure_due_to_hyperthyroidism')
+        self.severe_heart_failure_due_to_hyperthyroidism = kwargs.get('severe_heart_failure_due_to_hyperthyroidism')
+        self.controlled_medically_managed_heart_failure_due_to_hyperthyroidism = kwargs.get('controlled_medically_managed_heart_failure_due_to_hyperthyroidism')
+        self.asymptomatic_hyperthyroidism = kwargs.get('asymptomatic_hyperthyroidism')
+        self.acute_intracerebral_hemorrhage_severity_level_2_with_asymptomatic_heart_failure = kwargs.get('acute_intracerebral_hemorrhage_severity_level_2_with_asymptomatic_heart_failure')
+        self.acute_intracerebral_hemorrhage_severity_level_2_with_mild_heart_failure = kwargs.get('acute_intracerebral_hemorrhage_severity_level_2_with_mild_heart_failure')
+        self.acute_intracerebral_hemorrhage_severity_level_2_with_moderate_heart_failure = kwargs.get('acute_intracerebral_hemorrhage_severity_level_2_with_moderate_heart_failure')
+        self.acute_intracerebral_hemorrhage_severity_level_2_with_severe_heart_failure = kwargs.get('acute_intracerebral_hemorrhage_severity_level_2_with_severe_heart_failure')
+        self.acute_intracerebral_hemorrhage_severity_level_3_with_asymptomatic_heart_failure = kwargs.get('acute_intracerebral_hemorrhage_severity_level_3_with_asymptomatic_heart_failure')
+        self.acute_intracerebral_hemorrhage_severity_level_3_with_mild_heart_failure = kwargs.get('acute_intracerebral_hemorrhage_severity_level_3_with_mild_heart_failure')
+        self.acute_intracerebral_hemorrhage_severity_level_3_with_moderate_heart_failure = kwargs.get('acute_intracerebral_hemorrhage_severity_level_3_with_moderate_heart_failure')
+        self.acute_intracerebral_hemorrhage_severity_level_3_with_severe_heart_failure = kwargs.get('acute_intracerebral_hemorrhage_severity_level_3_with_severe_heart_failure')
+        self.acute_intracerebral_hemorrhage_severity_level_4_with_asymptomatic_heart_failure = kwargs.get('acute_intracerebral_hemorrhage_severity_level_4_with_asymptomatic_heart_failure')
+        self.acute_intracerebral_hemorrhage_severity_level_4_with_mild_heart_failure = kwargs.get('acute_intracerebral_hemorrhage_severity_level_4_with_mild_heart_failure')
+        self.acute_intracerebral_hemorrhage_severity_level_4_with_moderate_heart_failure = kwargs.get('acute_intracerebral_hemorrhage_severity_level_4_with_moderate_heart_failure')
+        self.acute_intracerebral_hemorrhage_severity_level_4_with_severe_heart_failure = kwargs.get('acute_intracerebral_hemorrhage_severity_level_4_with_severe_heart_failure')
+        self.acute_intracerebral_hemorrhage_severity_level_5_with_asymptomatic_heart_failure = kwargs.get('acute_intracerebral_hemorrhage_severity_level_5_with_asymptomatic_heart_failure')
+        self.acute_intracerebral_hemorrhage_severity_level_5_with_mild_heart_failure = kwargs.get('acute_intracerebral_hemorrhage_severity_level_5_with_mild_heart_failure')
+        self.acute_intracerebral_hemorrhage_severity_level_5_with_moderate_heart_failure = kwargs.get('acute_intracerebral_hemorrhage_severity_level_5_with_moderate_heart_failure')
+        self.acute_intracerebral_hemorrhage_severity_level_5_with_severe_heart_failure = kwargs.get('acute_intracerebral_hemorrhage_severity_level_5_with_severe_heart_failure')
+        self.acute_ischemic_stroke_severity_level_2_with_asymptomatic_heart_failure = kwargs.get('acute_ischemic_stroke_severity_level_2_with_asymptomatic_heart_failure')
+        self.acute_ischemic_stroke_severity_level_2_with_mild_heart_failure = kwargs.get('acute_ischemic_stroke_severity_level_2_with_mild_heart_failure')
+        self.acute_ischemic_stroke_severity_level_2_with_moderate_heart_failure = kwargs.get('acute_ischemic_stroke_severity_level_2_with_moderate_heart_failure')
+        self.acute_ischemic_stroke_severity_level_2_with_severe_heart_failure = kwargs.get('acute_ischemic_stroke_severity_level_2_with_severe_heart_failure')
+        self.acute_ischemic_stroke_severity_level_3_with_asymptomatic_heart_failure = kwargs.get('acute_ischemic_stroke_severity_level_3_with_asymptomatic_heart_failure')
+        self.acute_ischemic_stroke_severity_level_3_with_mild_heart_failure = kwargs.get('acute_ischemic_stroke_severity_level_3_with_mild_heart_failure')
+        self.acute_ischemic_stroke_severity_level_3_with_moderate_heart_failure = kwargs.get('acute_ischemic_stroke_severity_level_3_with_moderate_heart_failure')
+        self.acute_ischemic_stroke_severity_level_3_with_severe_heart_failure = kwargs.get('acute_ischemic_stroke_severity_level_3_with_severe_heart_failure')
+        self.acute_ischemic_stroke_severity_level_4_with_asymptomatic_heart_failure = kwargs.get('acute_ischemic_stroke_severity_level_4_with_asymptomatic_heart_failure')
+        self.acute_ischemic_stroke_severity_level_4_with_mild_heart_failure = kwargs.get('acute_ischemic_stroke_severity_level_4_with_mild_heart_failure')
+        self.acute_ischemic_stroke_severity_level_4_with_moderate_heart_failure = kwargs.get('acute_ischemic_stroke_severity_level_4_with_moderate_heart_failure')
+        self.acute_ischemic_stroke_severity_level_4_with_severe_heart_failure = kwargs.get('acute_ischemic_stroke_severity_level_4_with_severe_heart_failure')
+        self.acute_ischemic_stroke_severity_level_5_with_asymptomatic_heart_failure = kwargs.get('acute_ischemic_stroke_severity_level_5_with_asymptomatic_heart_failure')
+        self.acute_ischemic_stroke_severity_level_5_with_mild_heart_failure = kwargs.get('acute_ischemic_stroke_severity_level_5_with_mild_heart_failure')
+        self.acute_ischemic_stroke_severity_level_5_with_moderate_heart_failure = kwargs.get('acute_ischemic_stroke_severity_level_5_with_moderate_heart_failure')
+        self.acute_ischemic_stroke_severity_level_5_with_severe_heart_failure = kwargs.get('acute_ischemic_stroke_severity_level_5_with_severe_heart_failure')
+        self.acute_subarachnoid_hemorrhage_severity_level_2_with_asymptomatic_heart_failure = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_2_with_asymptomatic_heart_failure')
+        self.acute_subarachnoid_hemorrhage_severity_level_2_with_mild_heart_failure = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_2_with_mild_heart_failure')
+        self.acute_subarachnoid_hemorrhage_severity_level_2_with_moderate_heart_failure = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_2_with_moderate_heart_failure')
+        self.acute_subarachnoid_hemorrhage_severity_level_2_with_severe_heart_failure = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_2_with_severe_heart_failure')
+        self.acute_subarachnoid_hemorrhage_severity_level_3_with_asymptomatic_heart_failure = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_3_with_asymptomatic_heart_failure')
+        self.acute_subarachnoid_hemorrhage_severity_level_3_with_mild_heart_failure = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_3_with_mild_heart_failure')
+        self.acute_subarachnoid_hemorrhage_severity_level_3_with_moderate_heart_failure = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_3_with_moderate_heart_failure')
+        self.acute_subarachnoid_hemorrhage_severity_level_3_with_severe_heart_failure = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_3_with_severe_heart_failure')
+        self.acute_subarachnoid_hemorrhage_severity_level_4_with_asymptomatic_heart_failure = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_4_with_asymptomatic_heart_failure')
+        self.acute_subarachnoid_hemorrhage_severity_level_4_with_mild_heart_failure = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_4_with_mild_heart_failure')
+        self.acute_subarachnoid_hemorrhage_severity_level_4_with_moderate_heart_failure = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_4_with_moderate_heart_failure')
+        self.acute_subarachnoid_hemorrhage_severity_level_4_with_severe_heart_failure = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_4_with_severe_heart_failure')
+        self.acute_subarachnoid_hemorrhage_severity_level_5_with_asymptomatic_heart_failure = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_5_with_asymptomatic_heart_failure')
+        self.acute_subarachnoid_hemorrhage_severity_level_5_with_mild_heart_failure = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_5_with_mild_heart_failure')
+        self.acute_subarachnoid_hemorrhage_severity_level_5_with_moderate_heart_failure = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_5_with_moderate_heart_failure')
+        self.acute_subarachnoid_hemorrhage_severity_level_5_with_severe_heart_failure = kwargs.get('acute_subarachnoid_hemorrhage_severity_level_5_with_severe_heart_failure')
+        self.asymptomatic_heart_failure_due_to_severe_amphetamine_dependence = kwargs.get('asymptomatic_heart_failure_due_to_severe_amphetamine_dependence')
+        self.asymptomatic_heart_failure_due_to_severe_cocaine_dependence = kwargs.get('asymptomatic_heart_failure_due_to_severe_cocaine_dependence')
+        self.mild_heart_failure_due_to_severe_amphetamine_dependence = kwargs.get('mild_heart_failure_due_to_severe_amphetamine_dependence')
+        self.mild_heart_failure_due_to_severe_cocaine_dependence = kwargs.get('mild_heart_failure_due_to_severe_cocaine_dependence')
+        self.moderate_heart_failure_due_to_severe_amphetamine_dependence = kwargs.get('moderate_heart_failure_due_to_severe_amphetamine_dependence')
+        self.moderate_heart_failure_due_to_severe_cocaine_dependence = kwargs.get('moderate_heart_failure_due_to_severe_cocaine_dependence')
+        self.pulmonary_arterial_hypertension_with_no_heart_failure = kwargs.get('pulmonary_arterial_hypertension_with_no_heart_failure')
+        self.severe_heart_failure_due_to_severe_amphetamine_dependence = kwargs.get('severe_heart_failure_due_to_severe_amphetamine_dependence')
+        self.severe_heart_failure_due_to_severe_cocaine_dependence = kwargs.get('severe_heart_failure_due_to_severe_cocaine_dependence')
+        self.symptomatic_atrial_fibrilation_with_mild_heart_failure = kwargs.get('symptomatic_atrial_fibrilation_with_mild_heart_failure')
+        self.symptomatic_atrial_fibrilation_with_moderate_heart_failure = kwargs.get('symptomatic_atrial_fibrilation_with_moderate_heart_failure')
+        self.symptomatic_atrial_fibrillation_with_asymptomatic_heart_failure = kwargs.get('symptomatic_atrial_fibrillation_with_asymptomatic_heart_failure')
+        self.symptomatic_atrial_fibrillation_with_severe_heart_failure = kwargs.get('symptomatic_atrial_fibrillation_with_severe_heart_failure')
+        self.ulcerative_colitis_symptomatic_without_anemia = kwargs.get('ulcerative_colitis_symptomatic_without_anemia')
+        self.crohns_disease_symptomatic_without_anemia = kwargs.get('crohns_disease_symptomatic_without_anemia')
+        self.symptomatic_hypothyroidism_without_anemia_or_heart_failure = kwargs.get('symptomatic_hypothyroidism_without_anemia_or_heart_failure')
+        self.mild_symptomatic_hyperthyroidism_without_anemia_or_heart_failure = kwargs.get('mild_symptomatic_hyperthyroidism_without_anemia_or_heart_failure')
+        self.moderate_severe_symptomatic_hyperthyroidism_without_anemia_or_heart_failure = kwargs.get('moderate_severe_symptomatic_hyperthyroidism_without_anemia_or_heart_failure')
+        self.moderate_symptomatic_other_endocrine_metabolic_blood_immune_disorders_without_anemia_or_heart_failure = kwargs.get('moderate_symptomatic_other_endocrine_metabolic_blood_immune_disorders_without_anemia_or_heart_failure')
+        self.severe_symptomatic_other_endocrine_metabolic_blood_immune_disorders_without_anemia_or_heart_failure = kwargs.get('severe_symptomatic_other_endocrine_metabolic_blood_immune_disorders_without_anemia_or_heart_failure')
+        self.early_symptomatic_congenital_syphilis_infectious_syndrome = kwargs.get('early_symptomatic_congenital_syphilis_infectious_syndrome')
+        self.early_symptomatic_congenital_syphilis_slight_disfigurement = kwargs.get('early_symptomatic_congenital_syphilis_slight_disfigurement')
+        self.late_symptomatic_congenital_syphilis_slight_disfigurement = kwargs.get('late_symptomatic_congenital_syphilis_slight_disfigurement')
+        self.late_symptomatic_congenital_syphilis_neurosyphilis = kwargs.get('late_symptomatic_congenital_syphilis_neurosyphilis')
+        self.late_symptomatic_congenital_syphilis_unilateral_hearing_loss = kwargs.get('late_symptomatic_congenital_syphilis_unilateral_hearing_loss')
+        self.late_symptomatic_congenital_syphilis_interstitial_keratitis = kwargs.get('late_symptomatic_congenital_syphilis_interstitial_keratitis')
+        self.chronic_ischemic_stroke_severity_level_2_with_asymptomatic_heart_failure = kwargs.get('chronic_ischemic_stroke_severity_level_2_with_asymptomatic_heart_failure')
+        self.chronic_ischemic_stroke_severity_level_2_with_mild_heart_failure = kwargs.get('chronic_ischemic_stroke_severity_level_2_with_mild_heart_failure')
+        self.chronic_ischemic_stroke_severity_level_2_with_moderate_heart_failure = kwargs.get('chronic_ischemic_stroke_severity_level_2_with_moderate_heart_failure')
+        self.chronic_ischemic_stroke_severity_level_2_with_severe_heart_failure = kwargs.get('chronic_ischemic_stroke_severity_level_2_with_severe_heart_failure')
+        self.chronic_ischemic_stroke_severity_level_2_without_heart_failure = kwargs.get('chronic_ischemic_stroke_severity_level_2_without_heart_failure')
+        self.chronic_ischemic_stroke_severity_level_3_with_asymptomatic_heart_failure_no_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_3_with_asymptomatic_heart_failure_no_dementia')
+        self.chronic_ischemic_stroke_severity_level_3_with_mild_heart_failure_no_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_3_with_mild_heart_failure_no_dementia')
+        self.chronic_ischemic_stroke_severity_level_3_with_moderate_heart_failure_no_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_3_with_moderate_heart_failure_no_dementia')
+        self.chronic_ischemic_stroke_severity_level_3_with_severe_heart_failure_no_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_3_with_severe_heart_failure_no_dementia')
+        self.chronic_ischemic_stroke_severity_level_3_without_heart_failure_no_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_3_without_heart_failure_no_dementia')
+        self.chronic_ischemic_stroke_severity_level_4_with_asymptomatic_heart_failure = kwargs.get('chronic_ischemic_stroke_severity_level_4_with_asymptomatic_heart_failure')
+        self.chronic_ischemic_stroke_severity_level_4_with_mild_heart_failure = kwargs.get('chronic_ischemic_stroke_severity_level_4_with_mild_heart_failure')
+        self.chronic_ischemic_stroke_severity_level_4_with_moderate_heart_failure = kwargs.get('chronic_ischemic_stroke_severity_level_4_with_moderate_heart_failure')
+        self.chronic_ischemic_stroke_severity_level_4_with_severe_heart_failure = kwargs.get('chronic_ischemic_stroke_severity_level_4_with_severe_heart_failure')
+        self.chronic_ischemic_stroke_severity_level_4_without_heart_failure = kwargs.get('chronic_ischemic_stroke_severity_level_4_without_heart_failure')
+        self.chronic_ischemic_stroke_severity_level_5_without_heart_failure_no_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_5_without_heart_failure_no_dementia')
+        self.chronic_ischemic_stroke_severity_level_5_with_asymptomatic_heart_failure_no_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_5_with_asymptomatic_heart_failure_no_dementia')
+        self.chronic_ischemic_stroke_severity_level_5_with_mild_heart_failure_no_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_5_with_mild_heart_failure_no_dementia')
+        self.chronic_ischemic_stroke_severity_level_5_with_moderate_heart_failure_no_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_5_with_moderate_heart_failure_no_dementia')
+        self.chronic_ischemic_stroke_severity_level_5_with_severe_heart_failure_no_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_5_with_severe_heart_failure_no_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_2_with_asymptomatic_heart_failure = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_2_with_asymptomatic_heart_failure')
+        self.chronic_subarachnoid_hemorrhage_severity_level_2_with_mild_heart_failure = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_2_with_mild_heart_failure')
+        self.chronic_subarachnoid_hemorrhage_severity_level_2_with_moderate_heart_failure = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_2_with_moderate_heart_failure')
+        self.chronic_subarachnoid_hemorrhage_severity_level_2_with_severe_heart_failure = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_2_with_severe_heart_failure')
+        self.chronic_subarachnoid_hemorrhage_severity_level_2_without_heart_failure = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_2_without_heart_failure')
+        self.chronic_subarachnoid_hemorrhage_severity_level_3_with_asymptomatic_heart_failure_no_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_3_with_asymptomatic_heart_failure_no_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_3_with_mild_heart_failure_no_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_3_with_mild_heart_failure_no_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_3_with_moderate_heart_failure_no_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_3_with_moderate_heart_failure_no_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_3_with_severe_heart_failure_no_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_3_with_severe_heart_failure_no_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_3_without_heart_failure_no_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_3_without_heart_failure_no_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_4_with_asymptomatic_heart_failure = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_4_with_asymptomatic_heart_failure')
+        self.chronic_subarachnoid_hemorrhage_severity_level_4_with_mild_heart_failure = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_4_with_mild_heart_failure')
+        self.chronic_subarachnoid_hemorrhage_severity_level_4_with_moderate_heart_failure = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_4_with_moderate_heart_failure')
+        self.chronic_subarachnoid_hemorrhage_severity_level_4_with_severe_heart_failure = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_4_with_severe_heart_failure')
+        self.chronic_subarachnoid_hemorrhage_severity_level_4_without_heart_failure = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_4_without_heart_failure')
+        self.chronic_subarachnoid_hemorrhage_severity_level_5_with_asymptomatic_heart_failure_no_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_5_with_asymptomatic_heart_failure_no_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_5_with_mild_heart_failure_no_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_5_with_mild_heart_failure_no_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_5_with_moderate_heart_failure_no_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_5_with_moderate_heart_failure_no_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_5_with_severe_heart_failure_no_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_5_with_severe_heart_failure_no_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_5_without_heart_failure_no_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_5_without_heart_failure_no_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_2_with_asymptomatic_heart_failure = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_2_with_asymptomatic_heart_failure')
+        self.chronic_intracerebral_hemorrhage_severity_level_2_with_mild_heart_failure = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_2_with_mild_heart_failure')
+        self.chronic_intracerebral_hemorrhage_severity_level_2_with_moderate_heart_failure = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_2_with_moderate_heart_failure')
+        self.chronic_intracerebral_hemorrhage_severity_level_2_with_severe_heart_failure = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_2_with_severe_heart_failure')
+        self.chronic_intracerebral_hemorrhage_severity_level_2_without_heart_failure = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_2_without_heart_failure')
+        self.chronic_intracerebral_hemorrhage_severity_level_3_with_asymptomatic_heart_failure_no_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_3_with_asymptomatic_heart_failure_no_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_3_with_mild_heart_failure_no_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_3_with_mild_heart_failure_no_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_3_with_moderate_heart_failure_no_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_3_with_moderate_heart_failure_no_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_3_with_severe_heart_failure_no_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_3_with_severe_heart_failure_no_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_3_without_heart_failure_no_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_3_without_heart_failure_no_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_4_with_asymptomatic_heart_failure = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_4_with_asymptomatic_heart_failure')
+        self.chronic_intracerebral_hemorrhage_severity_level_4_with_mild_heart_failure = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_4_with_mild_heart_failure')
+        self.chronic_intracerebral_hemorrhage_severity_level_4_with_moderate_heart_failure = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_4_with_moderate_heart_failure')
+        self.chronic_intracerebral_hemorrhage_severity_level_4_with_severe_heart_failure = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_4_with_severe_heart_failure')
+        self.chronic_intracerebral_hemorrhage_severity_level_4_without_heart_failure = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_4_without_heart_failure')
+        self.chronic_intracerebral_hemorrhage_severity_level_5_with_asymptomatic_heart_failure_no_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_5_with_asymptomatic_heart_failure_no_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_5_with_mild_heart_failure_no_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_5_with_mild_heart_failure_no_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_5_with_moderate_heart_failure_no_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_5_with_moderate_heart_failure_no_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_5_with_severe_heart_failure_no_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_5_with_severe_heart_failure_no_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_5_without_heart_failure_no_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_5_without_heart_failure_no_dementia')
+        self.chronic_ischemic_stroke_severity_level_3_with_asymptomatic_heart_failure_with_mild_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_3_with_asymptomatic_heart_failure_with_mild_dementia')
+        self.chronic_ischemic_stroke_severity_level_3_with_mild_heart_failure_with_mild_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_3_with_mild_heart_failure_with_mild_dementia')
+        self.chronic_ischemic_stroke_severity_level_3_with_moderate_heart_failure_with_mild_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_3_with_moderate_heart_failure_with_mild_dementia')
+        self.chronic_ischemic_stroke_severity_level_3_with_severe_heart_failure_with_mild_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_3_with_severe_heart_failure_with_mild_dementia')
+        self.chronic_ischemic_stroke_severity_level_3_without_heart_failure_with_mild_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_3_without_heart_failure_with_mild_dementia')
+        self.chronic_ischemic_stroke_severity_level_5_without_heart_failure_with_mild_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_5_without_heart_failure_with_mild_dementia')
+        self.chronic_ischemic_stroke_severity_level_5_with_asymptomatic_heart_failure_with_mild_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_5_with_asymptomatic_heart_failure_with_mild_dementia')
+        self.chronic_ischemic_stroke_severity_level_5_with_mild_heart_failure_with_mild_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_5_with_mild_heart_failure_with_mild_dementia')
+        self.chronic_ischemic_stroke_severity_level_5_with_moderate_heart_failure_with_mild_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_5_with_moderate_heart_failure_with_mild_dementia')
+        self.chronic_ischemic_stroke_severity_level_5_with_severe_heart_failure_with_mild_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_5_with_severe_heart_failure_with_mild_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_3_with_asymptomatic_heart_failure_with_mild_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_3_with_asymptomatic_heart_failure_with_mild_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_3_with_mild_heart_failure_with_mild_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_3_with_mild_heart_failure_with_mild_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_3_with_moderate_heart_failure_with_mild_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_3_with_moderate_heart_failure_with_mild_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_3_with_severe_heart_failure_with_mild_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_3_with_severe_heart_failure_with_mild_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_3_without_heart_failure_with_mild_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_3_without_heart_failure_with_mild_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_5_with_asymptomatic_heart_failure_with_mild_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_5_with_asymptomatic_heart_failure_with_mild_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_5_with_mild_heart_failure_with_mild_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_5_with_mild_heart_failure_with_mild_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_5_with_moderate_heart_failure_with_mild_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_5_with_moderate_heart_failure_with_mild_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_5_with_severe_heart_failure_with_mild_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_5_with_severe_heart_failure_with_mild_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_5_without_heart_failure_with_mild_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_5_without_heart_failure_with_mild_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_3_with_asymptomatic_heart_failure_with_mild_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_3_with_asymptomatic_heart_failure_with_mild_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_3_with_mild_heart_failure_with_mild_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_3_with_mild_heart_failure_with_mild_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_3_with_moderate_heart_failure_with_mild_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_3_with_moderate_heart_failure_with_mild_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_3_with_severe_heart_failure_with_mild_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_3_with_severe_heart_failure_with_mild_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_3_without_heart_failure_with_mild_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_3_without_heart_failure_with_mild_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_5_with_asymptomatic_heart_failure_with_mild_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_5_with_asymptomatic_heart_failure_with_mild_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_5_with_mild_heart_failure_with_mild_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_5_with_mild_heart_failure_with_mild_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_5_with_moderate_heart_failure_with_mild_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_5_with_moderate_heart_failure_with_mild_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_5_with_severe_heart_failure_with_mild_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_5_with_severe_heart_failure_with_mild_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_5_without_heart_failure_with_mild_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_5_without_heart_failure_with_mild_dementia')
+        self.chronic_ischemic_stroke_severity_level_3_with_asymptomatic_heart_failure_with_moderate_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_3_with_asymptomatic_heart_failure_with_moderate_dementia')
+        self.chronic_ischemic_stroke_severity_level_3_with_mild_heart_failure_with_moderate_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_3_with_mild_heart_failure_with_moderate_dementia')
+        self.chronic_ischemic_stroke_severity_level_3_with_moderate_heart_failure_with_moderate_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_3_with_moderate_heart_failure_with_moderate_dementia')
+        self.chronic_ischemic_stroke_severity_level_3_with_severe_heart_failure_with_moderate_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_3_with_severe_heart_failure_with_moderate_dementia')
+        self.chronic_ischemic_stroke_severity_level_3_without_heart_failure_with_moderate_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_3_without_heart_failure_with_moderate_dementia')
+        self.chronic_ischemic_stroke_severity_level_5_without_heart_failure_with_moderate_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_5_without_heart_failure_with_moderate_dementia')
+        self.chronic_ischemic_stroke_severity_level_5_with_asymptomatic_heart_failure_with_moderate_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_5_with_asymptomatic_heart_failure_with_moderate_dementia')
+        self.chronic_ischemic_stroke_severity_level_5_with_mild_heart_failure_with_moderate_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_5_with_mild_heart_failure_with_moderate_dementia')
+        self.chronic_ischemic_stroke_severity_level_5_with_moderate_heart_failure_with_moderate_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_5_with_moderate_heart_failure_with_moderate_dementia')
+        self.chronic_ischemic_stroke_severity_level_5_with_severe_heart_failure_with_moderate_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_5_with_severe_heart_failure_with_moderate_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_3_with_asymptomatic_heart_failure_with_moderate_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_3_with_asymptomatic_heart_failure_with_moderate_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_3_with_mild_heart_failure_with_moderate_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_3_with_mild_heart_failure_with_moderate_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_3_with_moderate_heart_failure_with_moderate_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_3_with_moderate_heart_failure_with_moderate_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_3_with_severe_heart_failure_with_moderate_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_3_with_severe_heart_failure_with_moderate_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_3_without_heart_failure_with_moderate_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_3_without_heart_failure_with_moderate_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_5_with_asymptomatic_heart_failure_with_moderate_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_5_with_asymptomatic_heart_failure_with_moderate_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_5_with_mild_heart_failure_with_moderate_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_5_with_mild_heart_failure_with_moderate_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_5_with_moderate_heart_failure_with_moderate_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_5_with_moderate_heart_failure_with_moderate_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_5_with_severe_heart_failure_with_moderate_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_5_with_severe_heart_failure_with_moderate_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_5_without_heart_failure_with_moderate_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_5_without_heart_failure_with_moderate_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_3_with_asymptomatic_heart_failure_with_moderate_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_3_with_asymptomatic_heart_failure_with_moderate_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_3_with_mild_heart_failure_with_moderate_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_3_with_mild_heart_failure_with_moderate_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_3_with_moderate_heart_failure_with_moderate_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_3_with_moderate_heart_failure_with_moderate_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_3_with_severe_heart_failure_with_moderate_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_3_with_severe_heart_failure_with_moderate_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_3_without_heart_failure_with_moderate_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_3_without_heart_failure_with_moderate_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_5_with_asymptomatic_heart_failure_with_moderate_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_5_with_asymptomatic_heart_failure_with_moderate_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_5_with_mild_heart_failure_with_moderate_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_5_with_mild_heart_failure_with_moderate_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_5_with_moderate_heart_failure_with_moderate_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_5_with_moderate_heart_failure_with_moderate_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_5_with_severe_heart_failure_with_moderate_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_5_with_severe_heart_failure_with_moderate_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_5_without_heart_failure_with_moderate_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_5_without_heart_failure_with_moderate_dementia')
+        self.chronic_ischemic_stroke_severity_level_3_with_asymptomatic_heart_failure_with_severe_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_3_with_asymptomatic_heart_failure_with_severe_dementia')
+        self.chronic_ischemic_stroke_severity_level_3_with_mild_heart_failure_with_severe_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_3_with_mild_heart_failure_with_severe_dementia')
+        self.chronic_ischemic_stroke_severity_level_3_with_moderate_heart_failure_with_severe_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_3_with_moderate_heart_failure_with_severe_dementia')
+        self.chronic_ischemic_stroke_severity_level_3_with_severe_heart_failure_with_severe_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_3_with_severe_heart_failure_with_severe_dementia')
+        self.chronic_ischemic_stroke_severity_level_3_without_heart_failure_with_severe_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_3_without_heart_failure_with_severe_dementia')
+        self.chronic_ischemic_stroke_severity_level_5_without_heart_failure_with_severe_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_5_without_heart_failure_with_severe_dementia')
+        self.chronic_ischemic_stroke_severity_level_5_with_asymptomatic_heart_failure_with_severe_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_5_with_asymptomatic_heart_failure_with_severe_dementia')
+        self.chronic_ischemic_stroke_severity_level_5_with_mild_heart_failure_with_severe_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_5_with_mild_heart_failure_with_severe_dementia')
+        self.chronic_ischemic_stroke_severity_level_5_with_moderate_heart_failure_with_severe_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_5_with_moderate_heart_failure_with_severe_dementia')
+        self.chronic_ischemic_stroke_severity_level_5_with_severe_heart_failure_with_severe_dementia = kwargs.get('chronic_ischemic_stroke_severity_level_5_with_severe_heart_failure_with_severe_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_3_with_asymptomatic_heart_failure_with_severe_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_3_with_asymptomatic_heart_failure_with_severe_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_3_with_mild_heart_failure_with_severe_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_3_with_mild_heart_failure_with_severe_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_3_with_moderate_heart_failure_with_severe_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_3_with_moderate_heart_failure_with_severe_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_3_with_severe_heart_failure_with_severe_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_3_with_severe_heart_failure_with_severe_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_3_without_heart_failure_with_severe_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_3_without_heart_failure_with_severe_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_5_with_asymptomatic_heart_failure_with_severe_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_5_with_asymptomatic_heart_failure_with_severe_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_5_with_mild_heart_failure_with_severe_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_5_with_mild_heart_failure_with_severe_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_5_with_moderate_heart_failure_with_severe_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_5_with_moderate_heart_failure_with_severe_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_5_with_severe_heart_failure_with_severe_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_5_with_severe_heart_failure_with_severe_dementia')
+        self.chronic_subarachnoid_hemorrhage_severity_level_5_without_heart_failure_with_severe_dementia = kwargs.get('chronic_subarachnoid_hemorrhage_severity_level_5_without_heart_failure_with_severe_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_3_with_asymptomatic_heart_failure_with_severe_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_3_with_asymptomatic_heart_failure_with_severe_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_3_with_mild_heart_failure_with_severe_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_3_with_mild_heart_failure_with_severe_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_3_with_moderate_heart_failure_with_severe_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_3_with_moderate_heart_failure_with_severe_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_3_with_severe_heart_failure_with_severe_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_3_with_severe_heart_failure_with_severe_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_3_without_heart_failure_with_severe_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_3_without_heart_failure_with_severe_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_5_with_asymptomatic_heart_failure_with_severe_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_5_with_asymptomatic_heart_failure_with_severe_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_5_with_mild_heart_failure_with_severe_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_5_with_mild_heart_failure_with_severe_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_5_with_moderate_heart_failure_with_severe_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_5_with_moderate_heart_failure_with_severe_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_5_with_severe_heart_failure_with_severe_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_5_with_severe_heart_failure_with_severe_dementia')
+        self.chronic_intracerebral_hemorrhage_severity_level_5_without_heart_failure_with_severe_dementia = kwargs.get('chronic_intracerebral_hemorrhage_severity_level_5_without_heart_failure_with_severe_dementia')
+        self.post_acute_fatigue_syndrome_due_to_covid_19 = kwargs.get('post_acute_fatigue_syndrome_due_to_covid_19')
+        self.post_acute_mild_cognitive_symptoms_due_to_covid_19 = kwargs.get('post_acute_mild_cognitive_symptoms_due_to_covid_19')
+        self.post_acute_severe_cognitive_symptoms_due_to_covid_19 = kwargs.get('post_acute_severe_cognitive_symptoms_due_to_covid_19')
+        self.post_acute_mild_respiratory_symptoms_due_to_covid_19 = kwargs.get('post_acute_mild_respiratory_symptoms_due_to_covid_19')
+        self.post_acute_moderate_respiratory_symptoms_due_to_covid_19 = kwargs.get('post_acute_moderate_respiratory_symptoms_due_to_covid_19')
+        self.post_acute_severe_respiratory_symptoms_due_to_covid_19 = kwargs.get('post_acute_severe_respiratory_symptoms_due_to_covid_19')
+        self.post_acute_fatigue_syndrome_and_mild_cognitive_symptoms_due_to_covid_19 = kwargs.get('post_acute_fatigue_syndrome_and_mild_cognitive_symptoms_due_to_covid_19')
+        self.post_acute_fatigue_syndrome_and_severe_cognitive_symptoms_due_to_covid_19 = kwargs.get('post_acute_fatigue_syndrome_and_severe_cognitive_symptoms_due_to_covid_19')
+        self.post_acute_fatigue_syndrome_and_mild_respiratory_symptoms_due_to_covid_19 = kwargs.get('post_acute_fatigue_syndrome_and_mild_respiratory_symptoms_due_to_covid_19')
+        self.post_acute_fatigue_syndrome_and_moderate_respiratory_symptoms_due_to_covid_19 = kwargs.get('post_acute_fatigue_syndrome_and_moderate_respiratory_symptoms_due_to_covid_19')
+        self.post_acute_fatigue_syndrome_and_severe_respiratory_symptoms_due_to_covid_19 = kwargs.get('post_acute_fatigue_syndrome_and_severe_respiratory_symptoms_due_to_covid_19')
+        self.post_acute_mild_respiratory_and_mild_cognitive_symptoms_due_to_covid_19 = kwargs.get('post_acute_mild_respiratory_and_mild_cognitive_symptoms_due_to_covid_19')
+        self.post_acute_mild_respiratory_and_severe_cognitive_symptoms_due_to_covid_19 = kwargs.get('post_acute_mild_respiratory_and_severe_cognitive_symptoms_due_to_covid_19')
+        self.post_acute_moderate_respiratory_and_mild_cognitive_symptoms_due_to_covid_19 = kwargs.get('post_acute_moderate_respiratory_and_mild_cognitive_symptoms_due_to_covid_19')
+        self.post_acute_moderate_respiratory_and_severe_cognitive_symptoms_due_to_covid_19 = kwargs.get('post_acute_moderate_respiratory_and_severe_cognitive_symptoms_due_to_covid_19')
+        self.post_acute_severe_respiratory_and_mild_cognitive_symptoms_due_to_covid_19 = kwargs.get('post_acute_severe_respiratory_and_mild_cognitive_symptoms_due_to_covid_19')
+        self.post_acute_severe_respiratory_and_severe_cognitive_symptoms_due_to_covid_19 = kwargs.get('post_acute_severe_respiratory_and_severe_cognitive_symptoms_due_to_covid_19')
+        self.post_acute_fatigue_syndrome_and_mild_respiratory_and_mild_cognitive_symptoms_due_to_covid_19 = kwargs.get('post_acute_fatigue_syndrome_and_mild_respiratory_and_mild_cognitive_symptoms_due_to_covid_19')
+        self.post_acute_fatigue_syndrome_and_mild_respiratory_and_severe_cognitive_symptoms_due_to_covid_19 = kwargs.get('post_acute_fatigue_syndrome_and_mild_respiratory_and_severe_cognitive_symptoms_due_to_covid_19')
+        self.post_acute_fatigue_syndrome_and_moderate_respiratory_and_mild_cognitive_symptoms_due_to_covid_19 = kwargs.get('post_acute_fatigue_syndrome_and_moderate_respiratory_and_mild_cognitive_symptoms_due_to_covid_19')
+        self.post_acute_fatigue_syndrome_and_moderate_respiratory_and_severe_cognitive_symptoms_due_to_covid_19 = kwargs.get('post_acute_fatigue_syndrome_and_moderate_respiratory_and_severe_cognitive_symptoms_due_to_covid_19')
+        self.post_acute_fatigue_syndrome_and_severe_respiratory_and_mild_cognitive_symptoms_due_to_covid_19 = kwargs.get('post_acute_fatigue_syndrome_and_severe_respiratory_and_mild_cognitive_symptoms_due_to_covid_19')
+        self.post_acute_fatigue_syndrome_and_severe_respiratory_and_severe_cognitive_symptoms_due_to_covid_19 = kwargs.get('post_acute_fatigue_syndrome_and_severe_respiratory_and_severe_cognitive_symptoms_due_to_covid_19')
+        self.asymptomatic_covid_19_cases = kwargs.get('asymptomatic_covid_19_cases')
+        self.mild_acute_covid_19 = kwargs.get('mild_acute_covid_19')
+        self.moderate_acute_covid_19 = kwargs.get('moderate_acute_covid_19')
+        self.severe_acute_covid_19 = kwargs.get('severe_acute_covid_19')
+        self.critical_acute_covid_19 = kwargs.get('critical_acute_covid_19')
+        self.guillain_barre_syndrome_due_to_covid_19 = kwargs.get('guillain_barre_syndrome_due_to_covid_19')

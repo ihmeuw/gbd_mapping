@@ -221,6 +221,7 @@ def get_age_restriction_edge(age_restriction, end=False):
         55.0: [16, 15],
         60.0: [17, 16],
         65.0: [18, 17],
+        90.0: [32, 31],
         95.0: [235, 32],
     }
     if not end:
