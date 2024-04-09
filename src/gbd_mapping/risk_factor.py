@@ -244,33 +244,6 @@ risk_factors = RiskFactors(
         ),
         relative_risk_scalar=scalar(1),
     ),
-    ambient_ozone_pollution=RiskFactor(
-        name='ambient_ozone_pollution',
-        kind='risk_factor',
-        gbd_id=rei_id(88),
-        level=3,
-        most_detailed=True,
-        distribution='custom',
-        population_attributable_fraction_calculation_type='custom',
-        restrictions=Restrictions(
-            male_only=False,
-            female_only=False,
-            yll_only=True,
-            yld_only=False,
-            yll_age_group_id_start=10.0,
-            yll_age_group_id_end=235.0,
-        ),
-        affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.chronic_respiratory_diseases, 
-                         causes.chronic_obstructive_pulmonary_disease, ),
-        population_attributable_fraction_of_one_causes=(),
-        tmred=Tmred(
-            distribution='uniform',
-            min=scalar(30),
-            max=scalar(50),
-            inverted=True,
-        ),
-        relative_risk_scalar=scalar(10),
-    ),
     other_environmental_risks=RiskFactor(
         name='other_environmental_risks',
         kind='risk_factor',
@@ -768,69 +741,6 @@ risk_factors = RiskFactors(
                                                         causes.alcohol_use_disorders, 
                                                         causes.alcoholic_cardiomyopathy, ),
     ),
-    high_alcohol_use=RiskFactor(
-        name='high_alcohol_use',
-        kind='risk_factor',
-        gbd_id=rei_id(102),
-        level=2,
-        most_detailed=True,
-        distribution='custom',
-        population_attributable_fraction_calculation_type='custom',
-        restrictions=Restrictions(
-            male_only=False,
-            female_only=False,
-            yll_only=False,
-            yld_only=False,
-            yll_age_group_id_start=6.0,
-            yll_age_group_id_end=235.0,
-            yld_age_group_id_start=2.0,
-            yld_age_group_id_end=235.0,
-        ),
-        affected_causes=(causes.all_causes, causes.communicable_maternal_neonatal_and_nutritional_diseases, 
-                         causes.tuberculosis, causes.non_communicable_diseases, causes.neoplasms, 
-                         causes.esophageal_cancer, causes.liver_cancer, causes.liver_cancer_due_to_hepatitis_b, 
-                         causes.liver_cancer_due_to_hepatitis_c, causes.liver_cancer_due_to_alcohol_use, 
-                         causes.liver_cancer_due_to_other_causes, causes.larynx_cancer, causes.breast_cancer, 
-                         causes.colon_and_rectum_cancer, causes.lip_and_oral_cavity_cancer, 
-                         causes.nasopharynx_cancer, causes.other_pharynx_cancer, causes.cardiovascular_diseases, 
-                         causes.ischemic_heart_disease, causes.stroke, causes.ischemic_stroke, 
-                         causes.intracerebral_hemorrhage, causes.hypertensive_heart_disease, 
-                         causes.cardiomyopathy_and_myocarditis, causes.atrial_fibrillation_and_flutter, 
-                         causes.cirrhosis_and_other_chronic_liver_diseases, 
-                         causes.chronic_hepatitis_b_including_cirrhosis, 
-                         causes.chronic_hepatitis_c_including_cirrhosis, causes.cirrhosis_due_to_alcohol, 
-                         causes.cirrhosis_due_to_other_causes, causes.digestive_diseases, causes.pancreatitis, 
-                         causes.neurological_disorders, causes.idiopathic_epilepsy, causes.alcohol_use_disorders, 
-                         causes.diabetes_mellitus, causes.injuries, causes.transport_injuries, causes.road_injuries, 
-                         causes.pedestrian_road_injuries, causes.cyclist_road_injuries, 
-                         causes.motorcyclist_road_injuries, causes.motor_vehicle_road_injuries, 
-                         causes.other_road_injuries, causes.other_transport_injuries, causes.unintentional_injuries, 
-                         causes.falls, causes.drowning, causes.fire_heat_and_hot_substances, causes.poisonings, 
-                         causes.poisoning_by_carbon_monoxide, causes.poisoning_by_other_means, 
-                         causes.exposure_to_mechanical_forces, causes.unintentional_firearm_injuries, 
-                         causes.other_exposure_to_mechanical_forces, causes.animal_contact, 
-                         causes.venomous_animal_contact, causes.non_venomous_animal_contact, 
-                         causes.self_harm_and_interpersonal_violence, causes.self_harm, causes.self_harm_by_firearm, 
-                         causes.self_harm_by_other_specified_means, causes.interpersonal_violence, 
-                         causes.physical_violence_by_firearm, causes.physical_violence_by_sharp_object, 
-                         causes.physical_violence_by_other_means, causes.environmental_heat_and_cold_exposure, 
-                         causes.drug_susceptible_tuberculosis, causes.alcoholic_cardiomyopathy, 
-                         causes.sexual_violence, 
-                         causes.multidrug_resistant_tuberculosis_without_extensive_drug_resistance, 
-                         causes.extensively_drug_resistant_tuberculosis, causes.latent_tuberculosis_infection, 
-                         causes.respiratory_infections_and_tuberculosis, 
-                         causes.nonalcoholic_fatty_liver_disease_including_cirrhosis, causes.substance_use_disorders, 
-                         causes.diabetes_and_kidney_diseases, causes.diabetes_mellitus_type_2, 
-                         causes.liver_cancer_due_to_nash, causes.total_burden_related_to_hepatitis_b, 
-                         causes.total_burden_related_to_hepatitis_c, 
-                         causes.total_burden_related_to_non_alcoholic_fatty_liver_disease_nafld, 
-                         causes.total_cancers, causes.other_unintentional_injuries, 
-                         causes.total_cancers_excluding_non_melanoma_skin_cancer, ),
-        population_attributable_fraction_of_one_causes=(causes.liver_cancer_due_to_alcohol_use, 
-                                                        causes.cirrhosis_due_to_alcohol, 
-                                                        causes.alcohol_use_disorders, 
-                                                        causes.alcoholic_cardiomyopathy, ),
-    ),
     drug_use=RiskFactor(
         name='drug_use',
         kind='risk_factor',
@@ -1027,43 +937,6 @@ risk_factors = RiskFactors(
         tmred=Tmred(
             distribution='uniform',
             min=scalar(105),
-            max=scalar(115),
-            inverted=False,
-        ),
-        relative_risk_scalar=scalar(10),
-    ),
-    high_systolic_blood_pressure=RiskFactor(
-        name='high_systolic_blood_pressure',
-        kind='risk_factor',
-        gbd_id=rei_id(107),
-        level=2,
-        most_detailed=True,
-        distribution='ensemble',
-        population_attributable_fraction_calculation_type='continuous',
-        restrictions=Restrictions(
-            male_only=False,
-            female_only=False,
-            yll_only=False,
-            yld_only=False,
-            yll_age_group_id_start=10.0,
-            yll_age_group_id_end=235.0,
-            yld_age_group_id_start=10.0,
-            yld_age_group_id_end=235.0,
-        ),
-        affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.cardiovascular_diseases, 
-                         causes.ischemic_heart_disease, causes.stroke, causes.ischemic_stroke, 
-                         causes.intracerebral_hemorrhage, causes.subarachnoid_hemorrhage, 
-                         causes.hypertensive_heart_disease, causes.atrial_fibrillation_and_flutter, 
-                         causes.aortic_aneurysm, causes.lower_extremity_peripheral_arterial_disease, 
-                         causes.chronic_kidney_disease, causes.chronic_kidney_disease_due_to_hypertension, 
-                         causes.chronic_kidney_disease_due_to_glomerulonephritis, 
-                         causes.chronic_kidney_disease_due_to_other_and_unspecified_causes, 
-                         causes.diabetes_and_kidney_diseases, 
-                         causes.chronic_kidney_disease_due_to_diabetes_mellitus_type_2, ),
-        population_attributable_fraction_of_one_causes=(causes.hypertensive_heart_disease, ),
-        tmred=Tmred(
-            distribution='uniform',
-            min=scalar(110),
             max=scalar(115),
             inverted=False,
         ),
@@ -1569,35 +1442,6 @@ risk_factors = RiskFactors(
             inverted=True,
         ),
         relative_risk_scalar=scalar(100),
-    ),
-    diet_low_in_omega_6_polyunsaturated_fatty_acids=RiskFactor(
-        name='diet_low_in_omega_6_polyunsaturated_fatty_acids',
-        kind='risk_factor',
-        gbd_id=rei_id(122),
-        level=3,
-        most_detailed=True,
-        distribution='ensemble',
-        population_attributable_fraction_calculation_type='continuous',
-        restrictions=Restrictions(
-            male_only=False,
-            female_only=False,
-            yll_only=False,
-            yld_only=False,
-            yll_age_group_id_start=10.0,
-            yll_age_group_id_end=235.0,
-            yld_age_group_id_start=10.0,
-            yld_age_group_id_end=235.0,
-        ),
-        affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.cardiovascular_diseases, 
-                         causes.ischemic_heart_disease, causes.stroke, causes.ischemic_stroke, ),
-        population_attributable_fraction_of_one_causes=(),
-        tmred=Tmred(
-            distribution='uniform',
-            min=scalar(0.07),
-            max=scalar(0.09),
-            inverted=True,
-        ),
-        relative_risk_scalar=scalar(0.05),
     ),
     diet_low_in_omega_6_polyunsaturated_fatty_acids=RiskFactor(
         name='diet_low_in_omega_6_polyunsaturated_fatty_acids',
@@ -3643,35 +3487,6 @@ risk_factors = RiskFactors(
         ),
         relative_risk_scalar=scalar(1),
     ),
-    high_ldl_cholesterol=RiskFactor(
-        name='high_ldl_cholesterol',
-        kind='risk_factor',
-        gbd_id=rei_id(367),
-        level=2,
-        most_detailed=True,
-        distribution='ensemble',
-        population_attributable_fraction_calculation_type='continuous',
-        restrictions=Restrictions(
-            male_only=False,
-            female_only=False,
-            yll_only=False,
-            yld_only=False,
-            yll_age_group_id_start=10.0,
-            yll_age_group_id_end=235.0,
-            yld_age_group_id_start=10.0,
-            yld_age_group_id_end=235.0,
-        ),
-        affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.cardiovascular_diseases, 
-                         causes.ischemic_heart_disease, causes.stroke, causes.ischemic_stroke, ),
-        population_attributable_fraction_of_one_causes=(),
-        tmred=Tmred(
-            distribution='uniform',
-            min=scalar(0.7),
-            max=scalar(1.3),
-            inverted=False,
-        ),
-        relative_risk_scalar=scalar(1),
-    ),
     high_body_mass_index_in_adults=RiskFactor(
         name='high_body_mass_index_in_adults',
         kind='risk_factor',
@@ -3913,15 +3728,12 @@ risk_factors.unsafe_sanitation.parent = risk_factors.unsafe_water_sanitation_and
 
 risk_factors.air_pollution.parent = risk_factors.environmental_occupational_risks
 risk_factors.air_pollution.sub_risk_factors = (risk_factors.ambient_ozone_pollution,
-                                               risk_factors.ambient_ozone_pollution,
                                                risk_factors.particulate_matter_pollution,
                                                risk_factors.nitrogen_dioxide_pollution, )
 
 risk_factors.ambient_particulate_matter_pollution.parent = risk_factors.particulate_matter_pollution
 
 risk_factors.household_air_pollution_from_solid_fuels.parent = risk_factors.particulate_matter_pollution
-
-risk_factors.ambient_ozone_pollution.parent = risk_factors.air_pollution
 
 risk_factors.ambient_ozone_pollution.parent = risk_factors.air_pollution
 
@@ -3966,28 +3778,18 @@ risk_factors.secondhand_smoke.parent = risk_factors.tobacco
 
 risk_factors.high_alcohol_use.parent = risk_factors.behavioral_risks
 
-risk_factors.high_alcohol_use.parent = risk_factors.behavioral_risks
-
 risk_factors.drug_use.parent = risk_factors.behavioral_risks
 risk_factors.drug_use.sub_risk_factors = (risk_factors.injected_drug_use, risk_factors.drug_dependence, )
 
 risk_factors.metabolic_risks.parent = risk_factors.all_risk_factors
 risk_factors.metabolic_risks.sub_risk_factors = (risk_factors.high_fasting_plasma_glucose,
                                                  risk_factors.high_systolic_blood_pressure,
-                                                 risk_factors.high_systolic_blood_pressure,
                                                  risk_factors.high_body_mass_index,
                                                  risk_factors.low_bone_mineral_density,
-                                                 risk_factors.kidney_dysfunction, risk_factors.high_ldl_cholesterol,
-                                                 risk_factors.high_ldl_cholesterol, )
+                                                 risk_factors.kidney_dysfunction, risk_factors.high_ldl_cholesterol, )
 
 risk_factors.high_fasting_plasma_glucose.parent = risk_factors.metabolic_risks
-risk_factors.high_fasting_plasma_glucose.affected_risk_factors = (risk_factors.rei_id
-367    high_ldl_cholesterol
-367    high_ldl_cholesterol
-Name: rei_name, dtype: object,
-                                                                  )
-
-risk_factors.high_systolic_blood_pressure.parent = risk_factors.metabolic_risks
+risk_factors.high_fasting_plasma_glucose.affected_risk_factors = (risk_factors.high_ldl_cholesterol, )
 
 risk_factors.high_systolic_blood_pressure.parent = risk_factors.metabolic_risks
 
@@ -4007,49 +3809,26 @@ risk_factors.dietary_risks.sub_risk_factors = (risk_factors.diet_low_in_fruits, 
                                                risk_factors.diet_low_in_fiber,
                                                risk_factors.diet_low_in_seafood_omega_3_fatty_acids,
                                                risk_factors.diet_low_in_omega_6_polyunsaturated_fatty_acids,
-                                               risk_factors.diet_low_in_omega_6_polyunsaturated_fatty_acids,
                                                risk_factors.diet_high_in_trans_fatty_acids,
                                                risk_factors.diet_high_in_sodium, risk_factors.diet_low_in_calcium,
                                                risk_factors.diet_low_in_legumes, )
 
 risk_factors.diet_low_in_fruits.parent = risk_factors.dietary_risks
 risk_factors.diet_low_in_fruits.affected_risk_factors = (risk_factors.high_fasting_plasma_glucose,
-                                                         risk_factors.rei_id
-107    high_systolic_blood_pressure
-107    high_systolic_blood_pressure
-Name: rei_name, dtype: object,
-                                                         risk_factors.rei_id
-367    high_ldl_cholesterol
-367    high_ldl_cholesterol
-Name: rei_name, dtype: object,
-                                                         )
+                                                         risk_factors.high_systolic_blood_pressure,
+                                                         risk_factors.high_ldl_cholesterol, )
 
 risk_factors.diet_low_in_vegetables.parent = risk_factors.dietary_risks
 risk_factors.diet_low_in_vegetables.affected_risk_factors = (risk_factors.high_fasting_plasma_glucose,
-                                                             risk_factors.rei_id
-107    high_systolic_blood_pressure
-107    high_systolic_blood_pressure
-Name: rei_name, dtype: object,
-                                                             risk_factors.rei_id
-367    high_ldl_cholesterol
-367    high_ldl_cholesterol
-Name: rei_name, dtype: object,
-                                                             )
+                                                             risk_factors.high_systolic_blood_pressure,
+                                                             risk_factors.high_ldl_cholesterol, )
 
 risk_factors.diet_low_in_whole_grains.parent = risk_factors.dietary_risks
 risk_factors.diet_low_in_whole_grains.affected_risk_factors = (risk_factors.high_fasting_plasma_glucose,
-                                                               risk_factors.rei_id
-367    high_ldl_cholesterol
-367    high_ldl_cholesterol
-Name: rei_name, dtype: object,
-                                                               )
+                                                               risk_factors.high_ldl_cholesterol, )
 
 risk_factors.diet_low_in_nuts_and_seeds.parent = risk_factors.dietary_risks
-risk_factors.diet_low_in_nuts_and_seeds.affected_risk_factors = (risk_factors.rei_id
-367    high_ldl_cholesterol
-367    high_ldl_cholesterol
-Name: rei_name, dtype: object,
-                                                                 )
+risk_factors.diet_low_in_nuts_and_seeds.affected_risk_factors = (risk_factors.high_ldl_cholesterol, )
 
 risk_factors.diet_low_in_milk.parent = risk_factors.dietary_risks
 risk_factors.diet_low_in_milk.affected_risk_factors = (risk_factors.diet_low_in_calcium, )
@@ -4069,32 +3848,14 @@ risk_factors.diet_low_in_fiber.parent = risk_factors.dietary_risks
 risk_factors.diet_low_in_seafood_omega_3_fatty_acids.parent = risk_factors.dietary_risks
 
 risk_factors.diet_low_in_omega_6_polyunsaturated_fatty_acids.parent = risk_factors.dietary_risks
-risk_factors.diet_low_in_omega_6_polyunsaturated_fatty_acids.affected_risk_factors = (risk_factors.rei_id
-367    high_ldl_cholesterol
-367    high_ldl_cholesterol
-Name: rei_name, dtype: object,
-                                                                                      )
-
-risk_factors.diet_low_in_omega_6_polyunsaturated_fatty_acids.parent = risk_factors.dietary_risks
-risk_factors.diet_low_in_omega_6_polyunsaturated_fatty_acids.affected_risk_factors = (risk_factors.rei_id
-367    high_ldl_cholesterol
-367    high_ldl_cholesterol
-Name: rei_name, dtype: object,
+risk_factors.diet_low_in_omega_6_polyunsaturated_fatty_acids.affected_risk_factors = (risk_factors.high_ldl_cholesterol,
                                                                                       )
 
 risk_factors.diet_high_in_trans_fatty_acids.parent = risk_factors.dietary_risks
-risk_factors.diet_high_in_trans_fatty_acids.affected_risk_factors = (risk_factors.rei_id
-367    high_ldl_cholesterol
-367    high_ldl_cholesterol
-Name: rei_name, dtype: object,
-                                                                     )
+risk_factors.diet_high_in_trans_fatty_acids.affected_risk_factors = (risk_factors.high_ldl_cholesterol, )
 
 risk_factors.diet_high_in_sodium.parent = risk_factors.dietary_risks
-risk_factors.diet_high_in_sodium.affected_risk_factors = (risk_factors.rei_id
-107    high_systolic_blood_pressure
-107    high_systolic_blood_pressure
-Name: rei_name, dtype: object,
-                                                          )
+risk_factors.diet_high_in_sodium.affected_risk_factors = (risk_factors.high_systolic_blood_pressure, )
 
 risk_factors.low_physical_activity.parent = risk_factors.behavioral_risks
 risk_factors.low_physical_activity.affected_risk_factors = (risk_factors.high_fasting_plasma_glucose, )
@@ -4192,9 +3953,8 @@ risk_factors.environmental_occupational_risks.sub_risk_factors = (risk_factors.u
 
 risk_factors.behavioral_risks.parent = risk_factors.all_risk_factors
 risk_factors.behavioral_risks.sub_risk_factors = (risk_factors.child_and_maternal_malnutrition, risk_factors.tobacco,
-                                                  risk_factors.high_alcohol_use, risk_factors.high_alcohol_use,
-                                                  risk_factors.drug_use, risk_factors.dietary_risks,
-                                                  risk_factors.low_physical_activity,
+                                                  risk_factors.high_alcohol_use, risk_factors.drug_use,
+                                                  risk_factors.dietary_risks, risk_factors.low_physical_activity,
                                                   risk_factors.intimate_partner_violence, risk_factors.unsafe_sex,
                                                   risk_factors.childhood_sexual_abuse_and_bullying, )
 
@@ -4213,25 +3973,13 @@ risk_factors.child_stunting.parent = risk_factors.child_growth_failure
 risk_factors.lead_exposure_in_blood.parent = risk_factors.lead_exposure
 
 risk_factors.lead_exposure_in_bone.parent = risk_factors.lead_exposure
-risk_factors.lead_exposure_in_bone.affected_risk_factors = (risk_factors.rei_id
-107    high_systolic_blood_pressure
-107    high_systolic_blood_pressure
-Name: rei_name, dtype: object,
-                                                            )
+risk_factors.lead_exposure_in_bone.affected_risk_factors = (risk_factors.high_systolic_blood_pressure, )
 
 risk_factors.childhood_sexual_abuse_against_females.parent = risk_factors.childhood_sexual_abuse
-risk_factors.childhood_sexual_abuse_against_females.affected_risk_factors = (risk_factors.rei_id
-102    high_alcohol_use
-102    high_alcohol_use
-Name: rei_name, dtype: object,
-                                                                             )
+risk_factors.childhood_sexual_abuse_against_females.affected_risk_factors = (risk_factors.high_alcohol_use, )
 
 risk_factors.childhood_sexual_abuse_against_males.parent = risk_factors.childhood_sexual_abuse
-risk_factors.childhood_sexual_abuse_against_males.affected_risk_factors = (risk_factors.rei_id
-102    high_alcohol_use
-102    high_alcohol_use
-Name: rei_name, dtype: object,
-                                                                           )
+risk_factors.childhood_sexual_abuse_against_males.affected_risk_factors = (risk_factors.high_alcohol_use, )
 
 risk_factors.non_optimal_temperature.parent = risk_factors.environmental_occupational_risks
 risk_factors.non_optimal_temperature.sub_risk_factors = (risk_factors.high_temperature, risk_factors.low_temperature,
@@ -4259,19 +4007,10 @@ risk_factors.bullying_victimization.parent = risk_factors.childhood_sexual_abuse
 
 risk_factors.high_ldl_cholesterol.parent = risk_factors.metabolic_risks
 
-risk_factors.high_ldl_cholesterol.parent = risk_factors.metabolic_risks
-
 risk_factors.high_body_mass_index_in_adults.parent = risk_factors.high_body_mass_index
 risk_factors.high_body_mass_index_in_adults.affected_risk_factors = (risk_factors.high_fasting_plasma_glucose,
-                                                                     risk_factors.rei_id
-107    high_systolic_blood_pressure
-107    high_systolic_blood_pressure
-Name: rei_name, dtype: object,
-                                                                     risk_factors.rei_id
-367    high_ldl_cholesterol
-367    high_ldl_cholesterol
-Name: rei_name, dtype: object,
-                                                                     )
+                                                                     risk_factors.high_systolic_blood_pressure,
+                                                                     risk_factors.high_ldl_cholesterol, )
 
 risk_factors.high_body_mass_index_in_children.parent = risk_factors.high_body_mass_index
 
