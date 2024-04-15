@@ -21,6 +21,7 @@ from .globals import CovariateData, CovariateDataSeq
 from .util import clean_entity_list
 
 CAUSE_SET_ID = 3
+COMPUTATION_CAUSE_SET_ID = 2
 RISK_SET_ID = 2
 ETIOLOGY_SET_ID = 3
 
@@ -52,6 +53,7 @@ def get_etiologies():
 
 def get_causes(level=None):
     causes = gbd.get_cause_metadata(cause_set_id=CAUSE_SET_ID)
+
     if level is not None:
         causes = causes[causes.level == level]
     causes = pd.DataFrame(
@@ -140,6 +142,11 @@ def get_cause_data():
     cause_me_map = cause_me_map[["modelable_entity_id", "cause_name"]].set_index("cause_name")
 
     causes = gbd.get_cause_metadata(cause_set_id=CAUSE_SET_ID)
+    # add causes we use for computation but not reporting
+    computational_causes = gbd.get_cause_metadata(cause_set_id=COMPUTATION_CAUSE_SET_ID)
+    missing_cause_ids = [cause_id for cause_id in computational_causes['cause_id'].values if cause_id not in causes['cause_id'].values]
+    missing_causes = computational_causes[computational_causes['cause_id'].isin(missing_cause_ids)]
+    causes = pd.concat([causes, missing_causes])
 
     causes = pd.DataFrame(
         {
