@@ -53,6 +53,11 @@ def get_etiologies():
 
 def get_causes(level=None):
     causes = gbd.get_cause_metadata(cause_set_id=CAUSE_SET_ID)
+    # add causes we use for computation but not reporting
+    computational_causes = gbd.get_cause_metadata(cause_set_id=COMPUTATION_CAUSE_SET_ID)
+    missing_cause_ids = [cause_id for cause_id in computational_causes['cause_id'].values if cause_id not in causes['cause_id'].values]
+    missing_causes = computational_causes[computational_causes['cause_id'].isin(missing_cause_ids)]
+    causes = pd.concat([causes, missing_causes])
 
     if level is not None:
         causes = causes[causes.level == level]
