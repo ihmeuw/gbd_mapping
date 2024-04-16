@@ -113,7 +113,8 @@ class Causes(GbdRecord):
                  'endometriosis', 'genital_prolapse', 'premenstrual_syndrome', 'other_gynecological_diseases',
                  'hemoglobinopathies_and_hemolytic_anemias', 'thalassemias', 'sickle_cell_disorders',
                  'g6pd_deficiency', 'other_hemoglobinopathies_and_hemolytic_anemias',
-                 'endocrine_metabolic_blood_and_immune_disorders', 'musculoskeletal_disorders',
+                 'endocrine_metabolic_blood_and_immune_disorders',
+                 'other_endocrine_metabolic_blood_and_immune_disorders', 'musculoskeletal_disorders',
                  'rheumatoid_arthritis', 'osteoarthritis', 'low_back_pain', 'neck_pain', 'gout',
                  'other_musculoskeletal_disorders', 'other_non_communicable_diseases', 'congenital_birth_defects',
                  'neural_tube_defects', 'congenital_heart_anomalies', 'orofacial_clefts', 'down_syndrome',
@@ -134,18 +135,18 @@ class Causes(GbdRecord):
                  'unintentional_firearm_injuries', 'other_exposure_to_mechanical_forces',
                  'adverse_effects_of_medical_treatment', 'animal_contact', 'venomous_animal_contact',
                  'non_venomous_animal_contact', 'foreign_body', 'pulmonary_aspiration_and_foreign_body_in_airway',
-                 'foreign_body_in_eyes', 'foreign_body_in_other_body_part', 'self_harm_and_interpersonal_violence',
-                 'self_harm', 'self_harm_by_firearm', 'self_harm_by_other_specified_means', 'interpersonal_violence',
-                 'physical_violence_by_firearm', 'physical_violence_by_sharp_object',
-                 'physical_violence_by_other_means', 'exposure_to_forces_of_nature',
-                 'maternal_deaths_aggravated_by_hiv_aids', 'thalassemias_trait', 'sickle_cell_trait', 'g6pd_trait',
-                 'environmental_heat_and_cold_exposure', 'ebola', 'acute_lymphoid_leukemia',
-                 'chronic_lymphoid_leukemia', 'acute_myeloid_leukemia', 'chronic_myeloid_leukemia',
-                 'non_melanoma_skin_cancer_squamous_cell_carcinoma', 'non_melanoma_skin_cancer_basal_cell_carcinoma',
-                 'police_conflict_and_executions', 'drug_susceptible_tuberculosis', 'zika_virus',
-                 'guinea_worm_disease', 'alcoholic_cardiomyopathy', 'sexual_violence', 'myocarditis',
-                 'other_leukemia', 'other_cardiomyopathy', 'conflict_and_terrorism',
-                 'multidrug_resistant_tuberculosis_without_extensive_drug_resistance',
+                 'foreign_body_in_eyes', 'foreign_body_in_other_body_part', 'other_unintentional_injuries_internal',
+                 'self_harm_and_interpersonal_violence', 'self_harm', 'self_harm_by_firearm',
+                 'self_harm_by_other_specified_means', 'interpersonal_violence', 'physical_violence_by_firearm',
+                 'physical_violence_by_sharp_object', 'physical_violence_by_other_means',
+                 'exposure_to_forces_of_nature', 'maternal_deaths_aggravated_by_hiv_aids', 'thalassemias_trait',
+                 'sickle_cell_trait', 'g6pd_trait', 'environmental_heat_and_cold_exposure', 'ebola',
+                 'acute_lymphoid_leukemia', 'chronic_lymphoid_leukemia', 'acute_myeloid_leukemia',
+                 'chronic_myeloid_leukemia', 'non_melanoma_skin_cancer_squamous_cell_carcinoma',
+                 'non_melanoma_skin_cancer_basal_cell_carcinoma', 'police_conflict_and_executions',
+                 'drug_susceptible_tuberculosis', 'zika_virus', 'guinea_worm_disease', 'alcoholic_cardiomyopathy',
+                 'electrocution', 'sexual_violence', 'myocarditis', 'other_leukemia', 'other_cardiomyopathy',
+                 'conflict_and_terrorism', 'multidrug_resistant_tuberculosis_without_extensive_drug_resistance',
                  'extensively_drug_resistant_tuberculosis', 'hiv_aids_drug_susceptible_tuberculosis',
                  'hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance',
                  'hiv_aids_extensively_drug_resistant_tuberculosis', 'latent_tuberculosis_infection',
@@ -167,11 +168,11 @@ class Causes(GbdRecord):
                  'other_non_hodgkin_lymphoma', 'eye_cancer', 'retinoblastoma', 'other_eye_cancers',
                  'soft_tissue_and_other_extraosseous_sarcomas', 'malignant_neoplasm_of_bone_and_articular_cartilage',
                  'neuroblastoma_and_other_peripheral_nervous_cell_tumors', 'osteoarthritis_hip',
-                 'osteoarthritis_knee', 'osteoarthritis_hand', 'osteoarthritis_other',
-                 'total_burden_related_to_hepatitis_b', 'total_burden_related_to_hepatitis_c',
-                 'total_burden_related_to_non_alcoholic_fatty_liver_disease_nafld', 'total_cancers', 'covid_19',
-                 'other_unintentional_injuries', 'other_covid_19_pandemic_related_outcomes',
-                 'total_cancers_excluding_non_melanoma_skin_cancer', )
+                 'osteoarthritis_knee', 'osteoarthritis_hand', 'osteoarthritis_other', 'ulcerative_colitis',
+                 'crohns_disease', 'total_burden_related_to_hepatitis_b', 'total_burden_related_to_hepatitis_c',
+                 'total_burden_related_to_non_alcoholic_fatty_liver_disease_nafld', 'total_cancers',
+                 'thyroid_diseases', 'covid_19', 'other_unintentional_injuries',
+                 'other_covid_19_pandemic_related_outcomes', 'total_cancers_excluding_non_melanoma_skin_cancer', )
 
     def __init__(self, **kwargs):
         super().__init__()
@@ -386,6 +387,7 @@ class Causes(GbdRecord):
         self.g6pd_deficiency = kwargs.get('g6pd_deficiency')
         self.other_hemoglobinopathies_and_hemolytic_anemias = kwargs.get('other_hemoglobinopathies_and_hemolytic_anemias')
         self.endocrine_metabolic_blood_and_immune_disorders = kwargs.get('endocrine_metabolic_blood_and_immune_disorders')
+        self.other_endocrine_metabolic_blood_and_immune_disorders = kwargs.get('other_endocrine_metabolic_blood_and_immune_disorders')
         self.musculoskeletal_disorders = kwargs.get('musculoskeletal_disorders')
         self.rheumatoid_arthritis = kwargs.get('rheumatoid_arthritis')
         self.osteoarthritis = kwargs.get('osteoarthritis')
@@ -461,6 +463,7 @@ class Causes(GbdRecord):
         self.pulmonary_aspiration_and_foreign_body_in_airway = kwargs.get('pulmonary_aspiration_and_foreign_body_in_airway')
         self.foreign_body_in_eyes = kwargs.get('foreign_body_in_eyes')
         self.foreign_body_in_other_body_part = kwargs.get('foreign_body_in_other_body_part')
+        self.other_unintentional_injuries_internal = kwargs.get('other_unintentional_injuries_internal')
         self.self_harm_and_interpersonal_violence = kwargs.get('self_harm_and_interpersonal_violence')
         self.self_harm = kwargs.get('self_harm')
         self.self_harm_by_firearm = kwargs.get('self_harm_by_firearm')
@@ -487,6 +490,7 @@ class Causes(GbdRecord):
         self.zika_virus = kwargs.get('zika_virus')
         self.guinea_worm_disease = kwargs.get('guinea_worm_disease')
         self.alcoholic_cardiomyopathy = kwargs.get('alcoholic_cardiomyopathy')
+        self.electrocution = kwargs.get('electrocution')
         self.sexual_violence = kwargs.get('sexual_violence')
         self.myocarditis = kwargs.get('myocarditis')
         self.other_leukemia = kwargs.get('other_leukemia')
@@ -544,10 +548,13 @@ class Causes(GbdRecord):
         self.osteoarthritis_knee = kwargs.get('osteoarthritis_knee')
         self.osteoarthritis_hand = kwargs.get('osteoarthritis_hand')
         self.osteoarthritis_other = kwargs.get('osteoarthritis_other')
+        self.ulcerative_colitis = kwargs.get('ulcerative_colitis')
+        self.crohns_disease = kwargs.get('crohns_disease')
         self.total_burden_related_to_hepatitis_b = kwargs.get('total_burden_related_to_hepatitis_b')
         self.total_burden_related_to_hepatitis_c = kwargs.get('total_burden_related_to_hepatitis_c')
         self.total_burden_related_to_non_alcoholic_fatty_liver_disease_nafld = kwargs.get('total_burden_related_to_non_alcoholic_fatty_liver_disease_nafld')
         self.total_cancers = kwargs.get('total_cancers')
+        self.thyroid_diseases = kwargs.get('thyroid_diseases')
         self.covid_19 = kwargs.get('covid_19')
         self.other_unintentional_injuries = kwargs.get('other_unintentional_injuries')
         self.other_covid_19_pandemic_related_outcomes = kwargs.get('other_covid_19_pandemic_related_outcomes')
