@@ -430,6 +430,11 @@ def get_risk_data() -> List:
             ),
         )
 
+        if rei_id==95: # iron deficiency fix
+            restrictions = list(restrictions)
+            restrictions[1] = ('female_only', False)
+            restrictions = tuple(restrictions)
+
         out.append(
             (
                 name,
