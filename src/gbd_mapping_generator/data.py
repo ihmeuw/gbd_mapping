@@ -55,8 +55,14 @@ def get_causes(level=None):
     causes = gbd.get_cause_metadata(cause_set_id=CAUSE_SET_ID)
     # add causes we use for computation but not reporting
     computational_causes = gbd.get_cause_metadata(cause_set_id=COMPUTATION_CAUSE_SET_ID)
-    missing_cause_ids = [cause_id for cause_id in computational_causes['cause_id'].values if cause_id not in causes['cause_id'].values]
-    missing_causes = computational_causes[computational_causes['cause_id'].isin(missing_cause_ids)]
+    missing_cause_ids = [
+        cause_id
+        for cause_id in computational_causes["cause_id"].values
+        if cause_id not in causes["cause_id"].values
+    ]
+    missing_causes = computational_causes[
+        computational_causes["cause_id"].isin(missing_cause_ids)
+    ]
     causes = pd.concat([causes, missing_causes])
 
     if level is not None:
@@ -149,8 +155,14 @@ def get_cause_data():
     causes = gbd.get_cause_metadata(cause_set_id=CAUSE_SET_ID)
     # add causes we use for computation but not reporting
     computational_causes = gbd.get_cause_metadata(cause_set_id=COMPUTATION_CAUSE_SET_ID)
-    missing_cause_ids = [cause_id for cause_id in computational_causes['cause_id'].values if cause_id not in causes['cause_id'].values]
-    missing_causes = computational_causes[computational_causes['cause_id'].isin(missing_cause_ids)]
+    missing_cause_ids = [
+        cause_id
+        for cause_id in computational_causes["cause_id"].values
+        if cause_id not in causes["cause_id"].values
+    ]
+    missing_causes = computational_causes[
+        computational_causes["cause_id"].isin(missing_cause_ids)
+    ]
     causes = pd.concat([causes, missing_causes])
 
     causes = pd.DataFrame(
@@ -252,27 +264,35 @@ def make_cause_restrictions(cause):
         ("yld_only", cause["yld_only"]),
         (
             "yll_age_group_id_start",
-            get_age_restriction_edge(cause["yll_age_start"])
-            if not cause["yld_only"]
-            else None,
+            (
+                get_age_restriction_edge(cause["yll_age_start"])
+                if not cause["yld_only"]
+                else None
+            ),
         ),
         (
             "yll_age_group_id_end",
-            get_age_restriction_edge(cause["yll_age_end"], end=True)
-            if not cause["yld_only"]
-            else None,
+            (
+                get_age_restriction_edge(cause["yll_age_end"], end=True)
+                if not cause["yld_only"]
+                else None
+            ),
         ),
         (
             "yld_age_group_id_start",
-            get_age_restriction_edge(cause["yld_age_start"])
-            if not cause["yll_only"]
-            else None,
+            (
+                get_age_restriction_edge(cause["yld_age_start"])
+                if not cause["yll_only"]
+                else None
+            ),
         ),
         (
             "yld_age_group_id_end",
-            get_age_restriction_edge(cause["yld_age_end"], end=True)
-            if not cause["yll_only"]
-            else None,
+            (
+                get_age_restriction_edge(cause["yld_age_end"], end=True)
+                if not cause["yll_only"]
+                else None
+            ),
         ),
     )
     return tuple(restrictions)
@@ -435,9 +455,9 @@ def get_risk_data() -> List:
             ),
         )
 
-        if rei_id==95: # iron deficiency fix
+        if rei_id == 95:  # iron deficiency fix
             restrictions = list(restrictions)
-            restrictions[1] = ('female_only', False)
+            restrictions[1] = ("female_only", False)
             restrictions = tuple(restrictions)
 
         out.append(
