@@ -379,18 +379,8 @@ def get_risk_data() -> List:
                     levels.append((f"cat{max_cat}", "Unexposed"))
                 levels = tuple(levels)
             except AttributeError:  # sometimes the category map is nan
-                breakpoint()
-                if rei_id == 341:  # They screwed something up in the rei metadata
-                    levels = (
-                        ("cat1", "Stage 5 chronic kidney disease squeezed"),
-                        ("cat2", "Stage 4 chronic kidney disease squeezed"),
-                        ("cat3", "Stage 3 chronic kidney disease squeezed"),
-                        ("cat4", "Stage 1-2 chronic kidney disease"),
-                        ("cat5", "Unexposed"),
-                    )
-                else:
-                    print(f'No levels found for {risk["rei_name"]}.')
-                    levels = tuple()
+                print(f'No levels found for {risk["rei_name"]}.')
+                levels = tuple()
             scalar = None
             tmred = None
         else:  # It's either a custom risk or an aggregate, so we have to do a bunch of checking.
@@ -463,6 +453,20 @@ def get_risk_data() -> List:
         if rei_id == 95:  # iron deficiency fix
             restrictions = list(restrictions)
             restrictions[1] = ("female_only", False)
+            restrictions = tuple(restrictions)
+
+        if rei_id == 136:  # non-exclusive breastfeeding fix
+            restrictions = list(restrictions)
+            restrictions[5] = ("yll_age_group_id_end", 388)
+            restrictions[7] = ("yld_age_group_id_end", 388)
+            restrictions = tuple(restrictions)
+
+        if rei_id == 137:  # discounted breastfeeding fix
+            restrictions = list(restrictions)
+            restrictions[4] = ("yll_age_group_id_start", 238)
+            restrictions[5] = ("yll_age_group_id_end", 389)
+            restrictions[6] = ("yld_age_group_id_start", 238)
+            restrictions[7] = ("yld_age_group_id_end", 389)
             restrictions = tuple(restrictions)
 
         out.append(
