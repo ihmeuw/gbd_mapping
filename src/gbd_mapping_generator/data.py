@@ -405,7 +405,6 @@ def get_risk_data() -> List:
                 )
 
         if risk["affected_cause_ids"] is not np.nan:
-            # TODO: WHAT IS CID 311 ??
             affected_causes = tuple(
                 causes.at[cid, "cause_name"]
                 for cid in risk["affected_cause_ids"]
