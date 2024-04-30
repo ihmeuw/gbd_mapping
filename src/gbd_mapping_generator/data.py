@@ -295,6 +295,10 @@ def make_cause_restrictions(cause):
             ),
         ),
     )
+    if cause.cause_id==367:
+        restrictions = list(restrictions)
+        restrictions[5] = ("yll_age_group_id_end", 15)
+        restrictions[7] = ("yld_age_group_id_end", 15)
     return tuple(restrictions)
 
 
@@ -375,6 +379,7 @@ def get_risk_data() -> List:
                     levels.append((f"cat{max_cat}", "Unexposed"))
                 levels = tuple(levels)
             except AttributeError:  # sometimes the category map is nan
+                breakpoint()
                 if rei_id == 341:  # They screwed something up in the rei metadata
                     levels = (
                         ("cat1", "Stage 5 chronic kidney disease squeezed"),
