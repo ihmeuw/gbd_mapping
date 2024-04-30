@@ -457,16 +457,16 @@ def get_risk_data() -> List:
 
         if rei_id == 136:  # non-exclusive breastfeeding fix
             restrictions = list(restrictions)
-            restrictions[5] = ("yll_age_group_id_end", 388)
-            restrictions[7] = ("yld_age_group_id_end", 388)
+            restrictions[5] = ("yll_age_group_id_end", 388.0)
+            restrictions[7] = ("yld_age_group_id_end", 388.0)
             restrictions = tuple(restrictions)
 
         if rei_id == 137:  # discounted breastfeeding fix
             restrictions = list(restrictions)
-            restrictions[4] = ("yll_age_group_id_start", 238)
-            restrictions[5] = ("yll_age_group_id_end", 389)
-            restrictions[6] = ("yld_age_group_id_start", 238)
-            restrictions[7] = ("yld_age_group_id_end", 389)
+            restrictions[4] = ("yll_age_group_id_start", 238.0)
+            restrictions[5] = ("yll_age_group_id_end", 389.0)
+            restrictions[6] = ("yld_age_group_id_start", 238.0)
+            restrictions[7] = ("yld_age_group_id_end", 389.0)
             restrictions = tuple(restrictions)
 
         out.append(
