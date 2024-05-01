@@ -1057,9 +1057,9 @@ causes = Causes(**{
             yll_only=False,
             yld_only=False,
             yll_age_group_id_start=7,
-            yll_age_group_id_end=14,
+            yll_age_group_id_end=15,
             yld_age_group_id_start=7,
-            yld_age_group_id_end=14,
+            yld_age_group_id_end=15,
         ),
         sequelae=(sequelae.maternal_hemorrhage_less_than__1l_blood_lost, 
                   sequelae.maternal_hemorrhage_greater_than__1l_blood_lost, 
@@ -1082,9 +1082,9 @@ causes = Causes(**{
             yll_only=False,
             yld_only=False,
             yll_age_group_id_start=7,
-            yll_age_group_id_end=14,
+            yll_age_group_id_end=15,
             yld_age_group_id_start=7,
-            yld_age_group_id_end=14,
+            yld_age_group_id_end=15,
         ),
         sequelae=(sequelae.infertility_due_to_puerperal_sepsis, sequelae.puerperal_sepsis, 
                   sequelae.other_maternal_infections, ),
@@ -1104,9 +1104,9 @@ causes = Causes(**{
             yll_only=False,
             yld_only=False,
             yll_age_group_id_start=7,
-            yll_age_group_id_end=14,
+            yll_age_group_id_end=15,
             yld_age_group_id_start=7,
-            yld_age_group_id_end=235,
+            yld_age_group_id_end=15,
         ),
         sequelae=(sequelae.severe_pre_eclampsia, sequelae.eclampsia, 
                   sequelae.long_term_sequelae_of_severe_pre_eclampsia, 
@@ -1127,9 +1127,9 @@ causes = Causes(**{
             yll_only=False,
             yld_only=False,
             yll_age_group_id_start=7,
-            yll_age_group_id_end=14,
+            yll_age_group_id_end=15,
             yld_age_group_id_start=7,
-            yld_age_group_id_end=235,
+            yld_age_group_id_end=15,
         ),
         sequelae=(sequelae.obstructed_labor_acute_event, sequelae.rectovaginal_fistula, 
                   sequelae.vesicovaginal_fistula, ),
@@ -1149,9 +1149,9 @@ causes = Causes(**{
             yll_only=False,
             yld_only=False,
             yll_age_group_id_start=7,
-            yll_age_group_id_end=14,
+            yll_age_group_id_end=15,
             yld_age_group_id_start=7,
-            yld_age_group_id_end=14,
+            yld_age_group_id_end=15,
         ),
         sequelae=(sequelae.ectopic_pregnancy, ),
         etiologies=(),
@@ -1170,9 +1170,9 @@ causes = Causes(**{
             yll_only=True,
             yld_only=False,
             yll_age_group_id_start=7,
-            yll_age_group_id_end=14,
+            yll_age_group_id_end=15,
             yld_age_group_id_start=None,
-            yld_age_group_id_end=None,
+            yld_age_group_id_end=15,
         ),
         sequelae=(),
         etiologies=(),
@@ -1191,9 +1191,9 @@ causes = Causes(**{
             yll_only=True,
             yld_only=False,
             yll_age_group_id_start=7,
-            yll_age_group_id_end=14,
+            yll_age_group_id_end=15,
             yld_age_group_id_start=None,
-            yld_age_group_id_end=None,
+            yld_age_group_id_end=15,
         ),
         sequelae=(),
         etiologies=(),
@@ -1212,9 +1212,9 @@ causes = Causes(**{
             yll_only=False,
             yld_only=False,
             yll_age_group_id_start=7,
-            yll_age_group_id_end=14,
+            yll_age_group_id_end=15,
             yld_age_group_id_start=7,
-            yld_age_group_id_end=14,
+            yld_age_group_id_end=15,
         ),
         sequelae=(sequelae.other_maternal_disorders, ),
         etiologies=(),
@@ -5402,6 +5402,32 @@ causes = Causes(**{
         sequelae=(),
         etiologies=(),
     ),
+    'other_endocrine_metabolic_blood_and_immune_disorders': Cause(
+        name='other_endocrine_metabolic_blood_and_immune_disorders',
+        kind='cause',
+        gbd_id=c_id(625),
+        me_id=me_id(25029),
+        level=4,
+        most_detailed=True,
+        parent=None,
+        restrictions=Restrictions(
+            male_only=False,
+            female_only=False,
+            yll_only=False,
+            yld_only=False,
+            yll_age_group_id_start=2,
+            yll_age_group_id_end=235,
+            yld_age_group_id_start=2,
+            yld_age_group_id_end=235,
+        ),
+        sequelae=(sequelae.mild_anemia_due_to_other_endocrine_metabolic_blood_immune_disorders, 
+                  sequelae.moderate_anemia_due_to_other_endocrine_metabolic_blood_immune_disorders, 
+                  sequelae.severe_anemia_due_to_other_endocrine_metabolic_blood_immune_disorders, 
+                  sequelae.asymptomatic_other_endocrine_metabolic_blood_immune_disorders, 
+                  sequelae.moderate_symptomatic_other_endocrine_metabolic_blood_immune_disorders_without_anemia_or_heart_failure, 
+                  sequelae.severe_symptomatic_other_endocrine_metabolic_blood_immune_disorders_without_anemia_or_heart_failure, ),
+        etiologies=(),
+    ),
     'musculoskeletal_disorders': Cause(
         name='musculoskeletal_disorders',
         kind='cause',
@@ -7419,6 +7445,27 @@ causes = Causes(**{
         sequelae=(),
         etiologies=(),
     ),
+    'other_unintentional_injuries_internal': Cause(
+        name='other_unintentional_injuries_internal',
+        kind='cause',
+        gbd_id=c_id(716),
+        me_id=UNKNOWN,
+        level=3,
+        most_detailed=True,
+        parent=None,
+        restrictions=Restrictions(
+            male_only=False,
+            female_only=False,
+            yll_only=False,
+            yld_only=False,
+            yll_age_group_id_start=2,
+            yll_age_group_id_end=235,
+            yld_age_group_id_start=2,
+            yld_age_group_id_end=235,
+        ),
+        sequelae=(),
+        etiologies=(),
+    ),
     'self_harm_and_interpersonal_violence': Cause(
         name='self_harm_and_interpersonal_violence',
         kind='cause',
@@ -7622,9 +7669,9 @@ causes = Causes(**{
             yll_only=True,
             yld_only=False,
             yll_age_group_id_start=7,
-            yll_age_group_id_end=14,
+            yll_age_group_id_end=15,
             yld_age_group_id_start=None,
-            yld_age_group_id_end=None,
+            yld_age_group_id_end=15,
         ),
         sequelae=(),
         etiologies=(),
@@ -7992,6 +8039,27 @@ causes = Causes(**{
                   sequelae.moderate_heart_failure_due_to_alcoholic_cardiomyopathy, 
                   sequelae.severe_heart_failure_due_to_alcoholic_cardiomyopathy, 
                   sequelae.controlled_medically_managed_heart_failure_due_to_alcoholic_cardiomyopathy, ),
+        etiologies=(),
+    ),
+    'electrocution': Cause(
+        name='electrocution',
+        kind='cause',
+        gbd_id=c_id(940),
+        me_id=me_id(25033),
+        level=3,
+        most_detailed=True,
+        parent=None,
+        restrictions=Restrictions(
+            male_only=False,
+            female_only=False,
+            yll_only=False,
+            yld_only=False,
+            yll_age_group_id_start=2,
+            yll_age_group_id_end=235,
+            yld_age_group_id_start=2,
+            yld_age_group_id_end=235,
+        ),
+        sequelae=(),
         etiologies=(),
     ),
     'sexual_violence': Cause(
@@ -8840,9 +8908,9 @@ causes = Causes(**{
             yll_only=False,
             yld_only=False,
             yll_age_group_id_start=7,
-            yll_age_group_id_end=14,
+            yll_age_group_id_end=15,
             yld_age_group_id_start=7,
-            yld_age_group_id_end=14,
+            yld_age_group_id_end=15,
         ),
         sequelae=(sequelae.maternal_abortive_outcome, ),
         etiologies=(),
@@ -9323,6 +9391,52 @@ causes = Causes(**{
                   sequelae.severe_osteoarthritis_other, sequelae.asymptomatic_osteoarthritis_other, ),
         etiologies=(),
     ),
+    'ulcerative_colitis': Cause(
+        name='ulcerative_colitis',
+        kind='cause',
+        gbd_id=c_id(1024),
+        me_id=me_id(3103),
+        level=4,
+        most_detailed=True,
+        parent=None,
+        restrictions=Restrictions(
+            male_only=False,
+            female_only=False,
+            yll_only=False,
+            yld_only=False,
+            yll_age_group_id_start=34,
+            yll_age_group_id_end=235,
+            yld_age_group_id_start=34,
+            yld_age_group_id_end=235,
+        ),
+        sequelae=(sequelae.asymptomatic_ulcerative_colitis, sequelae.ulcerative_colitis_with_mild_anemia, 
+                  sequelae.ulcerative_colitis_with_moderate_anemia, sequelae.ulcerative_colitis_with_severe_anemia, 
+                  sequelae.ulcerative_colitis_symptomatic_without_anemia, ),
+        etiologies=(),
+    ),
+    'crohns_disease': Cause(
+        name='crohns_disease',
+        kind='cause',
+        gbd_id=c_id(1025),
+        me_id=me_id(3104),
+        level=4,
+        most_detailed=True,
+        parent=None,
+        restrictions=Restrictions(
+            male_only=False,
+            female_only=False,
+            yll_only=False,
+            yld_only=False,
+            yll_age_group_id_start=34,
+            yll_age_group_id_end=235,
+            yld_age_group_id_start=34,
+            yld_age_group_id_end=235,
+        ),
+        sequelae=(sequelae.asymptomatic_crohns_disease, sequelae.crohns_disease_with_mild_anemia, 
+                  sequelae.crohns_disease_with_moderate_anemia, sequelae.crohns_disease_with_severe_anemia, 
+                  sequelae.crohns_disease_symptomatic_without_anemia, ),
+        etiologies=(),
+    ),
     'total_burden_related_to_hepatitis_b': Cause(
         name='total_burden_related_to_hepatitis_b',
         kind='cause',
@@ -9405,6 +9519,41 @@ causes = Causes(**{
             yld_age_group_id_end=235,
         ),
         sequelae=(),
+        etiologies=(),
+    ),
+    'thyroid_diseases': Cause(
+        name='thyroid_diseases',
+        kind='cause',
+        gbd_id=c_id(1032),
+        me_id=UNKNOWN,
+        level=4,
+        most_detailed=True,
+        parent=None,
+        restrictions=Restrictions(
+            male_only=False,
+            female_only=False,
+            yll_only=False,
+            yld_only=False,
+            yll_age_group_id_start=2,
+            yll_age_group_id_end=235,
+            yld_age_group_id_start=2,
+            yld_age_group_id_end=235,
+        ),
+        sequelae=(sequelae.mild_anemia_due_to_hypothyroidism, sequelae.moderate_anemia_due_to_hypothyroidism, 
+                  sequelae.severe_anemia_due_to_hypothyroidism, sequelae.mild_heart_failure_due_to_hypothyroidism, 
+                  sequelae.moderate_heart_failure_due_to_hypothyroidism, 
+                  sequelae.severe_heart_failure_due_to_hypothyroidism, 
+                  sequelae.controlled_medically_managed_heart_failure_due_to_hypothyroidism, 
+                  sequelae.asymptomatic_hypothyroidism, sequelae.mild_anemia_due_to_hyperthyroidism, 
+                  sequelae.moderate_anemia_due_to_hyperthyroidism, sequelae.severe_anemia_due_to_hyperthyroidism, 
+                  sequelae.mild_heart_failure_due_to_hyperthyroidism, 
+                  sequelae.moderate_heart_failure_due_to_hyperthyroidism, 
+                  sequelae.severe_heart_failure_due_to_hyperthyroidism, 
+                  sequelae.controlled_medically_managed_heart_failure_due_to_hyperthyroidism, 
+                  sequelae.asymptomatic_hyperthyroidism, 
+                  sequelae.symptomatic_hypothyroidism_without_anemia_or_heart_failure, 
+                  sequelae.mild_symptomatic_hyperthyroidism_without_anemia_or_heart_failure, 
+                  sequelae.moderate_severe_symptomatic_hyperthyroidism_without_anemia_or_heart_failure, ),
         etiologies=(),
     ),
     'covid_19': Cause(
@@ -9936,6 +10085,7 @@ causes.paralytic_ileus_and_intestinal_obstruction.parent = causes.digestive_dise
 causes.inguinal_femoral_and_abdominal_hernia.parent = causes.digestive_diseases
 
 causes.inflammatory_bowel_disease.parent = causes.digestive_diseases
+causes.inflammatory_bowel_disease.sub_causes = (causes.ulcerative_colitis, causes.crohns_disease, )
 
 causes.vascular_intestinal_disorders.parent = causes.digestive_diseases
 
@@ -10092,6 +10242,10 @@ causes.g6pd_deficiency.parent = causes.hemoglobinopathies_and_hemolytic_anemias
 causes.other_hemoglobinopathies_and_hemolytic_anemias.parent = causes.hemoglobinopathies_and_hemolytic_anemias
 
 causes.endocrine_metabolic_blood_and_immune_disorders.parent = causes.other_non_communicable_diseases
+causes.endocrine_metabolic_blood_and_immune_disorders.sub_causes = (causes.other_endocrine_metabolic_blood_and_immune_disorders,
+                                                                    causes.thyroid_diseases, )
+
+causes.other_endocrine_metabolic_blood_and_immune_disorders.parent = causes.endocrine_metabolic_blood_and_immune_disorders
 
 causes.musculoskeletal_disorders.parent = causes.non_communicable_diseases
 causes.musculoskeletal_disorders.sub_causes = (causes.rheumatoid_arthritis, causes.osteoarthritis,
@@ -10246,8 +10400,9 @@ causes.unintentional_injuries.parent = causes.injuries
 causes.unintentional_injuries.sub_causes = (causes.falls, causes.drowning, causes.fire_heat_and_hot_substances,
                                             causes.poisonings, causes.exposure_to_mechanical_forces,
                                             causes.adverse_effects_of_medical_treatment, causes.animal_contact,
-                                            causes.foreign_body, causes.exposure_to_forces_of_nature,
-                                            causes.environmental_heat_and_cold_exposure,
+                                            causes.foreign_body, causes.other_unintentional_injuries_internal,
+                                            causes.exposure_to_forces_of_nature,
+                                            causes.environmental_heat_and_cold_exposure, causes.electrocution,
                                             causes.other_unintentional_injuries, )
 
 causes.falls.parent = causes.unintentional_injuries
@@ -10289,6 +10444,8 @@ causes.pulmonary_aspiration_and_foreign_body_in_airway.parent = causes.foreign_b
 causes.foreign_body_in_eyes.parent = causes.foreign_body
 
 causes.foreign_body_in_other_body_part.parent = causes.foreign_body
+
+causes.other_unintentional_injuries_internal.parent = causes.unintentional_injuries
 
 causes.self_harm_and_interpersonal_violence.parent = causes.injuries
 causes.self_harm_and_interpersonal_violence.sub_causes = (causes.self_harm, causes.interpersonal_violence,
@@ -10348,6 +10505,8 @@ causes.zika_virus.parent = causes.neglected_tropical_diseases_and_malaria
 causes.guinea_worm_disease.parent = causes.neglected_tropical_diseases_and_malaria
 
 causes.alcoholic_cardiomyopathy.parent = causes.cardiomyopathy_and_myocarditis
+
+causes.electrocution.parent = causes.unintentional_injuries
 
 causes.sexual_violence.parent = causes.interpersonal_violence
 
@@ -10489,6 +10648,10 @@ causes.osteoarthritis_hand.parent = causes.osteoarthritis
 
 causes.osteoarthritis_other.parent = causes.osteoarthritis
 
+causes.ulcerative_colitis.parent = causes.inflammatory_bowel_disease
+
+causes.crohns_disease.parent = causes.inflammatory_bowel_disease
+
 causes.total_burden_related_to_hepatitis_b.parent = causes.all_causes
 
 causes.total_burden_related_to_hepatitis_c.parent = causes.all_causes
@@ -10496,6 +10659,8 @@ causes.total_burden_related_to_hepatitis_c.parent = causes.all_causes
 causes.total_burden_related_to_non_alcoholic_fatty_liver_disease_nafld.parent = causes.all_causes
 
 causes.total_cancers.parent = causes.all_causes
+
+causes.thyroid_diseases.parent = causes.endocrine_metabolic_blood_and_immune_disorders
 
 causes.covid_19.parent = causes.respiratory_infections_and_tuberculosis
 
