@@ -51,7 +51,7 @@ class Causes(GbdRecord):
                  'hiv_aids_resulting_in_other_diseases', 'diarrheal_diseases', 'typhoid_fever', 'paratyphoid_fever',
                  'other_intestinal_infectious_diseases', 'lower_respiratory_infections',
                  'upper_respiratory_infections', 'otitis_media', 'meningitis', 'encephalitis', 'diphtheria',
-                 'whooping_cough', 'tetanus', 'measles', 'varicella_and_herpes_zoster',
+                 'pertussis', 'tetanus', 'measles', 'varicella_and_herpes_zoster',
                  'neglected_tropical_diseases_and_malaria', 'malaria', 'chagas_disease', 'leishmaniasis',
                  'visceral_leishmaniasis', 'cutaneous_and_mucocutaneous_leishmaniasis', 'african_trypanosomiasis',
                  'schistosomiasis', 'cysticercosis', 'cystic_echinococcosis', 'lymphatic_filariasis',
@@ -60,8 +60,8 @@ class Causes(GbdRecord):
                  'other_neglected_tropical_diseases', 'maternal_disorders', 'maternal_hemorrhage',
                  'maternal_sepsis_and_other_maternal_infections', 'maternal_hypertensive_disorders',
                  'maternal_obstructed_labor_and_uterine_rupture', 'ectopic_pregnancy', 'indirect_maternal_deaths',
-                 'late_maternal_deaths', 'other_maternal_disorders', 'neonatal_disorders', 'neonatal_preterm_birth',
-                 'neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma',
+                 'late_maternal_deaths', 'other_direct_maternal_disorders', 'neonatal_disorders',
+                 'neonatal_preterm_birth', 'neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma',
                  'neonatal_sepsis_and_other_neonatal_infections', 'hemolytic_disease_and_other_neonatal_jaundice',
                  'other_neonatal_disorders', 'nutritional_deficiencies', 'protein_energy_malnutrition',
                  'iodine_deficiency', 'vitamin_a_deficiency', 'dietary_iron_deficiency',
@@ -71,38 +71,38 @@ class Causes(GbdRecord):
                  'acute_hepatitis_b', 'acute_hepatitis_c', 'acute_hepatitis_e', 'leprosy',
                  'other_unspecified_infectious_diseases', 'non_communicable_diseases', 'neoplasms',
                  'esophageal_cancer', 'stomach_cancer', 'liver_cancer', 'liver_cancer_due_to_hepatitis_b',
-                 'liver_cancer_due_to_hepatitis_c', 'liver_cancer_due_to_alcohol_use', 'larynx_cancer',
-                 'tracheal_bronchus_and_lung_cancer', 'breast_cancer', 'cervical_cancer', 'uterine_cancer',
-                 'prostate_cancer', 'colon_and_rectum_cancer', 'lip_and_oral_cavity_cancer', 'nasopharynx_cancer',
-                 'other_pharynx_cancer', 'gallbladder_and_biliary_tract_cancer', 'pancreatic_cancer',
-                 'malignant_skin_melanoma', 'non_melanoma_skin_cancer', 'ovarian_cancer', 'testicular_cancer',
-                 'kidney_cancer', 'bladder_cancer', 'brain_and_central_nervous_system_cancer', 'thyroid_cancer',
-                 'mesothelioma', 'hodgkin_lymphoma', 'non_hodgkin_lymphoma', 'multiple_myeloma', 'leukemia',
-                 'other_neoplasms', 'cardiovascular_diseases', 'rheumatic_heart_disease', 'ischemic_heart_disease',
-                 'stroke', 'ischemic_stroke', 'intracerebral_hemorrhage', 'subarachnoid_hemorrhage',
-                 'hypertensive_heart_disease', 'cardiomyopathy_and_myocarditis', 'atrial_fibrillation_and_flutter',
-                 'aortic_aneurysm', 'peripheral_artery_disease', 'endocarditis',
-                 'non_rheumatic_valvular_heart_disease', 'chronic_respiratory_diseases',
-                 'chronic_obstructive_pulmonary_disease', 'pneumoconiosis', 'silicosis', 'asbestosis',
-                 'coal_workers_pneumoconiosis', 'other_pneumoconiosis', 'asthma',
+                 'liver_cancer_due_to_hepatitis_c', 'liver_cancer_due_to_alcohol_use',
+                 'liver_cancer_due_to_other_causes', 'larynx_cancer', 'tracheal_bronchus_and_lung_cancer',
+                 'breast_cancer', 'cervical_cancer', 'uterine_cancer', 'prostate_cancer', 'colon_and_rectum_cancer',
+                 'lip_and_oral_cavity_cancer', 'nasopharynx_cancer', 'other_pharynx_cancer',
+                 'gallbladder_and_biliary_tract_cancer', 'pancreatic_cancer', 'malignant_skin_melanoma',
+                 'non_melanoma_skin_cancer', 'ovarian_cancer', 'testicular_cancer', 'kidney_cancer',
+                 'bladder_cancer', 'brain_and_central_nervous_system_cancer', 'thyroid_cancer', 'mesothelioma',
+                 'hodgkin_lymphoma', 'non_hodgkin_lymphoma', 'multiple_myeloma', 'leukemia',
+                 'other_malignant_neoplasms', 'other_neoplasms', 'cardiovascular_diseases',
+                 'rheumatic_heart_disease', 'ischemic_heart_disease', 'stroke', 'ischemic_stroke',
+                 'intracerebral_hemorrhage', 'subarachnoid_hemorrhage', 'hypertensive_heart_disease',
+                 'cardiomyopathy_and_myocarditis', 'atrial_fibrillation_and_flutter', 'aortic_aneurysm',
+                 'lower_extremity_peripheral_arterial_disease', 'endocarditis',
+                 'non_rheumatic_valvular_heart_disease', 'other_cardiovascular_and_circulatory_diseases',
+                 'chronic_respiratory_diseases', 'chronic_obstructive_pulmonary_disease', 'pneumoconiosis',
+                 'silicosis', 'asbestosis', 'coal_workers_pneumoconiosis', 'other_pneumoconiosis', 'asthma',
                  'interstitial_lung_disease_and_pulmonary_sarcoidosis', 'other_chronic_respiratory_diseases',
-                 'cirrhosis_and_other_chronic_liver_diseases',
-                 'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b',
-                 'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c',
-                 'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_use',
-                 'cirrhosis_and_other_chronic_liver_diseases_due_to_other_causes', 'digestive_diseases',
-                 'peptic_ulcer_disease', 'gastritis_and_duodenitis', 'appendicitis',
-                 'paralytic_ileus_and_intestinal_obstruction', 'inguinal_femoral_and_abdominal_hernia',
-                 'inflammatory_bowel_disease', 'vascular_intestinal_disorders', 'gallbladder_and_biliary_diseases',
-                 'pancreatitis', 'gastroesophageal_reflux_disease', 'other_digestive_diseases',
-                 'neurological_disorders', 'alzheimers_disease_and_other_dementias', 'parkinsons_disease',
-                 'idiopathic_epilepsy', 'multiple_sclerosis', 'migraine', 'tension_type_headache',
-                 'motor_neuron_disease', 'other_neurological_disorders', 'mental_disorders', 'schizophrenia',
-                 'alcohol_use_disorders', 'drug_use_disorders', 'opioid_use_disorders', 'cocaine_use_disorders',
-                 'amphetamine_use_disorders', 'cannabis_use_disorders', 'other_drug_use_disorders',
-                 'depressive_disorders', 'major_depressive_disorder', 'dysthymia', 'bipolar_disorder',
-                 'anxiety_disorders', 'eating_disorders', 'anorexia_nervosa', 'bulimia_nervosa',
-                 'autism_spectrum_disorders', 'attention_deficit_hyperactivity_disorder', 'conduct_disorder',
+                 'cirrhosis_and_other_chronic_liver_diseases', 'chronic_hepatitis_b_including_cirrhosis',
+                 'chronic_hepatitis_c_including_cirrhosis', 'cirrhosis_due_to_alcohol',
+                 'cirrhosis_due_to_other_causes', 'digestive_diseases', 'peptic_ulcer_disease',
+                 'gastritis_and_duodenitis', 'appendicitis', 'paralytic_ileus_and_intestinal_obstruction',
+                 'inguinal_femoral_and_abdominal_hernia', 'inflammatory_bowel_disease',
+                 'vascular_intestinal_disorders', 'gallbladder_and_biliary_diseases', 'pancreatitis',
+                 'gastroesophageal_reflux_disease', 'other_digestive_diseases', 'neurological_disorders',
+                 'alzheimers_disease_and_other_dementias', 'parkinsons_disease', 'idiopathic_epilepsy',
+                 'multiple_sclerosis', 'migraine', 'tension_type_headache', 'motor_neuron_disease',
+                 'other_neurological_disorders', 'mental_disorders', 'schizophrenia', 'alcohol_use_disorders',
+                 'drug_use_disorders', 'opioid_use_disorders', 'cocaine_use_disorders', 'amphetamine_use_disorders',
+                 'cannabis_use_disorders', 'other_drug_use_disorders', 'depressive_disorders',
+                 'major_depressive_disorder', 'dysthymia', 'bipolar_disorder', 'anxiety_disorders',
+                 'eating_disorders', 'anorexia_nervosa', 'bulimia_nervosa', 'autism_spectrum_disorders',
+                 'attention_deficit_hyperactivity_disorder', 'conduct_disorder',
                  'idiopathic_developmental_intellectual_disability', 'other_mental_disorders', 'diabetes_mellitus',
                  'acute_glomerulonephritis', 'chronic_kidney_disease', 'chronic_kidney_disease_due_to_hypertension',
                  'chronic_kidney_disease_due_to_glomerulonephritis',
@@ -113,7 +113,8 @@ class Causes(GbdRecord):
                  'endometriosis', 'genital_prolapse', 'premenstrual_syndrome', 'other_gynecological_diseases',
                  'hemoglobinopathies_and_hemolytic_anemias', 'thalassemias', 'sickle_cell_disorders',
                  'g6pd_deficiency', 'other_hemoglobinopathies_and_hemolytic_anemias',
-                 'endocrine_metabolic_blood_and_immune_disorders', 'musculoskeletal_disorders',
+                 'endocrine_metabolic_blood_and_immune_disorders',
+                 'other_endocrine_metabolic_blood_and_immune_disorders', 'musculoskeletal_disorders',
                  'rheumatoid_arthritis', 'osteoarthritis', 'low_back_pain', 'neck_pain', 'gout',
                  'other_musculoskeletal_disorders', 'other_non_communicable_diseases', 'congenital_birth_defects',
                  'neural_tube_defects', 'congenital_heart_anomalies', 'orofacial_clefts', 'down_syndrome',
@@ -134,7 +135,7 @@ class Causes(GbdRecord):
                  'unintentional_firearm_injuries', 'other_exposure_to_mechanical_forces',
                  'adverse_effects_of_medical_treatment', 'animal_contact', 'venomous_animal_contact',
                  'non_venomous_animal_contact', 'foreign_body', 'pulmonary_aspiration_and_foreign_body_in_airway',
-                 'foreign_body_in_eyes', 'foreign_body_in_other_body_part', 'other_unintentional_injuries',
+                 'foreign_body_in_eyes', 'foreign_body_in_other_body_part', 'other_unintentional_injuries_internal',
                  'self_harm_and_interpersonal_violence', 'self_harm', 'self_harm_by_firearm',
                  'self_harm_by_other_specified_means', 'interpersonal_violence', 'physical_violence_by_firearm',
                  'physical_violence_by_sharp_object', 'physical_violence_by_other_means',
@@ -142,9 +143,9 @@ class Causes(GbdRecord):
                  'sickle_cell_trait', 'g6pd_trait', 'environmental_heat_and_cold_exposure', 'ebola',
                  'acute_lymphoid_leukemia', 'chronic_lymphoid_leukemia', 'acute_myeloid_leukemia',
                  'chronic_myeloid_leukemia', 'non_melanoma_skin_cancer_squamous_cell_carcinoma',
-                 'non_melanoma_skin_cancer_basal_cell_carcinoma', 'executions_and_police_conflict',
+                 'non_melanoma_skin_cancer_basal_cell_carcinoma', 'police_conflict_and_executions',
                  'drug_susceptible_tuberculosis', 'zika_virus', 'guinea_worm_disease', 'alcoholic_cardiomyopathy',
-                 'sexual_violence', 'myocarditis', 'other_leukemia', 'other_cardiomyopathy',
+                 'electrocution', 'sexual_violence', 'myocarditis', 'other_leukemia', 'other_cardiomyopathy',
                  'conflict_and_terrorism', 'multidrug_resistant_tuberculosis_without_extensive_drug_resistance',
                  'extensively_drug_resistant_tuberculosis', 'hiv_aids_drug_susceptible_tuberculosis',
                  'hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance',
@@ -156,18 +157,22 @@ class Causes(GbdRecord):
                  'benign_and_in_situ_intestinal_neoplasms', 'benign_and_in_situ_cervical_and_uterine_neoplasms',
                  'other_benign_and_in_situ_neoplasms', 'non_rheumatic_calcific_aortic_valve_disease',
                  'non_rheumatic_degenerative_mitral_valve_disease', 'other_non_rheumatic_valve_diseases',
-                 'cirrhosis_and_other_chronic_liver_diseases_due_to_nafld', 'headache_disorders',
+                 'nonalcoholic_fatty_liver_disease_including_cirrhosis', 'headache_disorders',
                  'substance_use_disorders', 'diabetes_and_kidney_diseases', 'diabetes_mellitus_type_1',
                  'diabetes_mellitus_type_2', 'atopic_dermatitis', 'contact_dermatitis', 'seborrhoeic_dermatitis',
                  'bacterial_skin_diseases', 'blindness_and_vision_loss', 'upper_digestive_system_diseases',
                  'maternal_abortion_and_miscarriage', 'liver_cancer_due_to_nash',
                  'chronic_kidney_disease_due_to_diabetes_mellitus_type_1',
                  'chronic_kidney_disease_due_to_diabetes_mellitus_type_2', 'refraction_disorders',
-                 'near_vision_loss', 'osteoarthritis_hip', 'osteoarthritis_knee', 'osteoarthritis_hand',
-                 'osteoarthritis_other', 'liver_cancer_due_to_other_causes', 'other_malignant_neoplasms',
-                 'other_cardiovascular_and_circulatory_diseases', 'total_burden_related_to_hepatitis_b',
-                 'total_burden_related_to_hepatitis_c',
-                 'total_burden_related_to_non_alcoholic_fatty_liver_disease_nafld', 'total_cancers', )
+                 'near_vision_loss', 'pulmonary_arterial_hypertension', 'hepatoblastoma', 'burkitt_lymphoma',
+                 'other_non_hodgkin_lymphoma', 'eye_cancer', 'retinoblastoma', 'other_eye_cancers',
+                 'soft_tissue_and_other_extraosseous_sarcomas', 'malignant_neoplasm_of_bone_and_articular_cartilage',
+                 'neuroblastoma_and_other_peripheral_nervous_cell_tumors', 'osteoarthritis_hip',
+                 'osteoarthritis_knee', 'osteoarthritis_hand', 'osteoarthritis_other', 'ulcerative_colitis',
+                 'crohns_disease', 'total_burden_related_to_hepatitis_b', 'total_burden_related_to_hepatitis_c',
+                 'total_burden_related_to_non_alcoholic_fatty_liver_disease_nafld', 'total_cancers',
+                 'thyroid_diseases', 'covid_19', 'other_unintentional_injuries',
+                 'other_covid_19_pandemic_related_outcomes', 'total_cancers_excluding_non_melanoma_skin_cancer', )
 
     def __init__(self, **kwargs):
         super().__init__()
@@ -186,7 +191,7 @@ class Causes(GbdRecord):
         self.meningitis = kwargs.get('meningitis')
         self.encephalitis = kwargs.get('encephalitis')
         self.diphtheria = kwargs.get('diphtheria')
-        self.whooping_cough = kwargs.get('whooping_cough')
+        self.pertussis = kwargs.get('pertussis')
         self.tetanus = kwargs.get('tetanus')
         self.measles = kwargs.get('measles')
         self.varicella_and_herpes_zoster = kwargs.get('varicella_and_herpes_zoster')
@@ -220,7 +225,7 @@ class Causes(GbdRecord):
         self.ectopic_pregnancy = kwargs.get('ectopic_pregnancy')
         self.indirect_maternal_deaths = kwargs.get('indirect_maternal_deaths')
         self.late_maternal_deaths = kwargs.get('late_maternal_deaths')
-        self.other_maternal_disorders = kwargs.get('other_maternal_disorders')
+        self.other_direct_maternal_disorders = kwargs.get('other_direct_maternal_disorders')
         self.neonatal_disorders = kwargs.get('neonatal_disorders')
         self.neonatal_preterm_birth = kwargs.get('neonatal_preterm_birth')
         self.neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma = kwargs.get('neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma')
@@ -255,6 +260,7 @@ class Causes(GbdRecord):
         self.liver_cancer_due_to_hepatitis_b = kwargs.get('liver_cancer_due_to_hepatitis_b')
         self.liver_cancer_due_to_hepatitis_c = kwargs.get('liver_cancer_due_to_hepatitis_c')
         self.liver_cancer_due_to_alcohol_use = kwargs.get('liver_cancer_due_to_alcohol_use')
+        self.liver_cancer_due_to_other_causes = kwargs.get('liver_cancer_due_to_other_causes')
         self.larynx_cancer = kwargs.get('larynx_cancer')
         self.tracheal_bronchus_and_lung_cancer = kwargs.get('tracheal_bronchus_and_lung_cancer')
         self.breast_cancer = kwargs.get('breast_cancer')
@@ -280,6 +286,7 @@ class Causes(GbdRecord):
         self.non_hodgkin_lymphoma = kwargs.get('non_hodgkin_lymphoma')
         self.multiple_myeloma = kwargs.get('multiple_myeloma')
         self.leukemia = kwargs.get('leukemia')
+        self.other_malignant_neoplasms = kwargs.get('other_malignant_neoplasms')
         self.other_neoplasms = kwargs.get('other_neoplasms')
         self.cardiovascular_diseases = kwargs.get('cardiovascular_diseases')
         self.rheumatic_heart_disease = kwargs.get('rheumatic_heart_disease')
@@ -292,9 +299,10 @@ class Causes(GbdRecord):
         self.cardiomyopathy_and_myocarditis = kwargs.get('cardiomyopathy_and_myocarditis')
         self.atrial_fibrillation_and_flutter = kwargs.get('atrial_fibrillation_and_flutter')
         self.aortic_aneurysm = kwargs.get('aortic_aneurysm')
-        self.peripheral_artery_disease = kwargs.get('peripheral_artery_disease')
+        self.lower_extremity_peripheral_arterial_disease = kwargs.get('lower_extremity_peripheral_arterial_disease')
         self.endocarditis = kwargs.get('endocarditis')
         self.non_rheumatic_valvular_heart_disease = kwargs.get('non_rheumatic_valvular_heart_disease')
+        self.other_cardiovascular_and_circulatory_diseases = kwargs.get('other_cardiovascular_and_circulatory_diseases')
         self.chronic_respiratory_diseases = kwargs.get('chronic_respiratory_diseases')
         self.chronic_obstructive_pulmonary_disease = kwargs.get('chronic_obstructive_pulmonary_disease')
         self.pneumoconiosis = kwargs.get('pneumoconiosis')
@@ -306,10 +314,10 @@ class Causes(GbdRecord):
         self.interstitial_lung_disease_and_pulmonary_sarcoidosis = kwargs.get('interstitial_lung_disease_and_pulmonary_sarcoidosis')
         self.other_chronic_respiratory_diseases = kwargs.get('other_chronic_respiratory_diseases')
         self.cirrhosis_and_other_chronic_liver_diseases = kwargs.get('cirrhosis_and_other_chronic_liver_diseases')
-        self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b')
-        self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c')
-        self.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_use = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_use')
-        self.cirrhosis_and_other_chronic_liver_diseases_due_to_other_causes = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_other_causes')
+        self.chronic_hepatitis_b_including_cirrhosis = kwargs.get('chronic_hepatitis_b_including_cirrhosis')
+        self.chronic_hepatitis_c_including_cirrhosis = kwargs.get('chronic_hepatitis_c_including_cirrhosis')
+        self.cirrhosis_due_to_alcohol = kwargs.get('cirrhosis_due_to_alcohol')
+        self.cirrhosis_due_to_other_causes = kwargs.get('cirrhosis_due_to_other_causes')
         self.digestive_diseases = kwargs.get('digestive_diseases')
         self.peptic_ulcer_disease = kwargs.get('peptic_ulcer_disease')
         self.gastritis_and_duodenitis = kwargs.get('gastritis_and_duodenitis')
@@ -379,6 +387,7 @@ class Causes(GbdRecord):
         self.g6pd_deficiency = kwargs.get('g6pd_deficiency')
         self.other_hemoglobinopathies_and_hemolytic_anemias = kwargs.get('other_hemoglobinopathies_and_hemolytic_anemias')
         self.endocrine_metabolic_blood_and_immune_disorders = kwargs.get('endocrine_metabolic_blood_and_immune_disorders')
+        self.other_endocrine_metabolic_blood_and_immune_disorders = kwargs.get('other_endocrine_metabolic_blood_and_immune_disorders')
         self.musculoskeletal_disorders = kwargs.get('musculoskeletal_disorders')
         self.rheumatoid_arthritis = kwargs.get('rheumatoid_arthritis')
         self.osteoarthritis = kwargs.get('osteoarthritis')
@@ -454,7 +463,7 @@ class Causes(GbdRecord):
         self.pulmonary_aspiration_and_foreign_body_in_airway = kwargs.get('pulmonary_aspiration_and_foreign_body_in_airway')
         self.foreign_body_in_eyes = kwargs.get('foreign_body_in_eyes')
         self.foreign_body_in_other_body_part = kwargs.get('foreign_body_in_other_body_part')
-        self.other_unintentional_injuries = kwargs.get('other_unintentional_injuries')
+        self.other_unintentional_injuries_internal = kwargs.get('other_unintentional_injuries_internal')
         self.self_harm_and_interpersonal_violence = kwargs.get('self_harm_and_interpersonal_violence')
         self.self_harm = kwargs.get('self_harm')
         self.self_harm_by_firearm = kwargs.get('self_harm_by_firearm')
@@ -476,11 +485,12 @@ class Causes(GbdRecord):
         self.chronic_myeloid_leukemia = kwargs.get('chronic_myeloid_leukemia')
         self.non_melanoma_skin_cancer_squamous_cell_carcinoma = kwargs.get('non_melanoma_skin_cancer_squamous_cell_carcinoma')
         self.non_melanoma_skin_cancer_basal_cell_carcinoma = kwargs.get('non_melanoma_skin_cancer_basal_cell_carcinoma')
-        self.executions_and_police_conflict = kwargs.get('executions_and_police_conflict')
+        self.police_conflict_and_executions = kwargs.get('police_conflict_and_executions')
         self.drug_susceptible_tuberculosis = kwargs.get('drug_susceptible_tuberculosis')
         self.zika_virus = kwargs.get('zika_virus')
         self.guinea_worm_disease = kwargs.get('guinea_worm_disease')
         self.alcoholic_cardiomyopathy = kwargs.get('alcoholic_cardiomyopathy')
+        self.electrocution = kwargs.get('electrocution')
         self.sexual_violence = kwargs.get('sexual_violence')
         self.myocarditis = kwargs.get('myocarditis')
         self.other_leukemia = kwargs.get('other_leukemia')
@@ -506,7 +516,7 @@ class Causes(GbdRecord):
         self.non_rheumatic_calcific_aortic_valve_disease = kwargs.get('non_rheumatic_calcific_aortic_valve_disease')
         self.non_rheumatic_degenerative_mitral_valve_disease = kwargs.get('non_rheumatic_degenerative_mitral_valve_disease')
         self.other_non_rheumatic_valve_diseases = kwargs.get('other_non_rheumatic_valve_diseases')
-        self.cirrhosis_and_other_chronic_liver_diseases_due_to_nafld = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_nafld')
+        self.nonalcoholic_fatty_liver_disease_including_cirrhosis = kwargs.get('nonalcoholic_fatty_liver_disease_including_cirrhosis')
         self.headache_disorders = kwargs.get('headache_disorders')
         self.substance_use_disorders = kwargs.get('substance_use_disorders')
         self.diabetes_and_kidney_diseases = kwargs.get('diabetes_and_kidney_diseases')
@@ -524,14 +534,28 @@ class Causes(GbdRecord):
         self.chronic_kidney_disease_due_to_diabetes_mellitus_type_2 = kwargs.get('chronic_kidney_disease_due_to_diabetes_mellitus_type_2')
         self.refraction_disorders = kwargs.get('refraction_disorders')
         self.near_vision_loss = kwargs.get('near_vision_loss')
+        self.pulmonary_arterial_hypertension = kwargs.get('pulmonary_arterial_hypertension')
+        self.hepatoblastoma = kwargs.get('hepatoblastoma')
+        self.burkitt_lymphoma = kwargs.get('burkitt_lymphoma')
+        self.other_non_hodgkin_lymphoma = kwargs.get('other_non_hodgkin_lymphoma')
+        self.eye_cancer = kwargs.get('eye_cancer')
+        self.retinoblastoma = kwargs.get('retinoblastoma')
+        self.other_eye_cancers = kwargs.get('other_eye_cancers')
+        self.soft_tissue_and_other_extraosseous_sarcomas = kwargs.get('soft_tissue_and_other_extraosseous_sarcomas')
+        self.malignant_neoplasm_of_bone_and_articular_cartilage = kwargs.get('malignant_neoplasm_of_bone_and_articular_cartilage')
+        self.neuroblastoma_and_other_peripheral_nervous_cell_tumors = kwargs.get('neuroblastoma_and_other_peripheral_nervous_cell_tumors')
         self.osteoarthritis_hip = kwargs.get('osteoarthritis_hip')
         self.osteoarthritis_knee = kwargs.get('osteoarthritis_knee')
         self.osteoarthritis_hand = kwargs.get('osteoarthritis_hand')
         self.osteoarthritis_other = kwargs.get('osteoarthritis_other')
-        self.liver_cancer_due_to_other_causes = kwargs.get('liver_cancer_due_to_other_causes')
-        self.other_malignant_neoplasms = kwargs.get('other_malignant_neoplasms')
-        self.other_cardiovascular_and_circulatory_diseases = kwargs.get('other_cardiovascular_and_circulatory_diseases')
+        self.ulcerative_colitis = kwargs.get('ulcerative_colitis')
+        self.crohns_disease = kwargs.get('crohns_disease')
         self.total_burden_related_to_hepatitis_b = kwargs.get('total_burden_related_to_hepatitis_b')
         self.total_burden_related_to_hepatitis_c = kwargs.get('total_burden_related_to_hepatitis_c')
         self.total_burden_related_to_non_alcoholic_fatty_liver_disease_nafld = kwargs.get('total_burden_related_to_non_alcoholic_fatty_liver_disease_nafld')
         self.total_cancers = kwargs.get('total_cancers')
+        self.thyroid_diseases = kwargs.get('thyroid_diseases')
+        self.covid_19 = kwargs.get('covid_19')
+        self.other_unintentional_injuries = kwargs.get('other_unintentional_injuries')
+        self.other_covid_19_pandemic_related_outcomes = kwargs.get('other_covid_19_pandemic_related_outcomes')
+        self.total_cancers_excluding_non_melanoma_skin_cancer = kwargs.get('total_cancers_excluding_non_melanoma_skin_cancer')

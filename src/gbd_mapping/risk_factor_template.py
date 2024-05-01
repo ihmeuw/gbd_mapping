@@ -63,36 +63,34 @@ class RiskFactors(GbdRecord):
                  'ambient_ozone_pollution', 'other_environmental_risks', 'residential_radon', 'lead_exposure',
                  'child_and_maternal_malnutrition', 'suboptimal_breastfeeding', 'child_underweight',
                  'iron_deficiency', 'vitamin_a_deficiency', 'zinc_deficiency', 'tobacco', 'smoking',
-                 'secondhand_smoke', 'alcohol_use', 'drug_use', 'metabolic_risks', 'high_fasting_plasma_glucose',
-                 'high_systolic_blood_pressure', 'high_body_mass_index', 'low_bone_mineral_density', 'dietary_risks',
-                 'diet_low_in_fruits', 'diet_low_in_vegetables', 'diet_low_in_whole_grains',
-                 'diet_low_in_nuts_and_seeds', 'diet_low_in_milk', 'diet_high_in_red_meat',
-                 'diet_high_in_processed_meat', 'diet_high_in_sugar_sweetened_beverages', 'diet_low_in_fiber',
-                 'diet_low_in_seafood_omega_3_fatty_acids', 'diet_low_in_polyunsaturated_fatty_acids',
-                 'diet_high_in_trans_fatty_acids', 'diet_high_in_sodium', 'low_physical_activity',
-                 'occupational_risks', 'occupational_carcinogens', 'occupational_asthmagens',
-                 'occupational_particulate_matter_gases_and_fumes', 'occupational_noise', 'occupational_injuries',
-                 'occupational_ergonomic_factors', 'childhood_sexual_abuse', 'intimate_partner_violence',
-                 'non_exclusive_breastfeeding', 'discontinued_breastfeeding',
-                 'drug_use_dependence_and_blood_borne_viruses', 'suicide_due_to_drug_use_disorders',
-                 'high_fasting_plasma_glucose_continuous', 'high_fasting_plasma_glucose_categorical',
-                 'diet_low_in_calcium', 'occupational_exposure_to_asbestos', 'occupational_exposure_to_arsenic',
-                 'occupational_exposure_to_benzene', 'occupational_exposure_to_beryllium',
-                 'occupational_exposure_to_cadmium', 'occupational_exposure_to_chromium',
-                 'occupational_exposure_to_diesel_engine_exhaust', 'occupational_exposure_to_formaldehyde',
-                 'occupational_exposure_to_nickel', 'occupational_exposure_to_polycyclic_aromatic_hydrocarbons',
-                 'occupational_exposure_to_silica', 'occupational_exposure_to_sulfuric_acid',
-                 'intimate_partner_violence_exposure_approach', 'intimate_partner_violence_direct_paf_approach',
-                 'all_risk_factors', 'unsafe_sex', 'intimate_partner_violence_hiv_paf_approach',
-                 'environmental_occupational_risks', 'behavioral_risks',
-                 'occupational_exposure_to_trichloroethylene', 'no_access_to_handwashing_facility',
-                 'child_growth_failure', 'child_wasting', 'child_stunting', 'lead_exposure_in_blood',
-                 'lead_exposure_in_bone', 'childhood_sexual_abuse_against_females',
+                 'secondhand_smoke', 'high_alcohol_use', 'drug_use', 'metabolic_risks',
+                 'high_fasting_plasma_glucose', 'high_systolic_blood_pressure', 'high_body_mass_index',
+                 'low_bone_mineral_density', 'dietary_risks', 'diet_low_in_fruits', 'diet_low_in_vegetables',
+                 'diet_low_in_whole_grains', 'diet_low_in_nuts_and_seeds', 'diet_low_in_milk',
+                 'diet_high_in_red_meat', 'diet_high_in_processed_meat', 'diet_high_in_sugar_sweetened_beverages',
+                 'diet_low_in_fiber', 'diet_low_in_seafood_omega_3_fatty_acids',
+                 'diet_low_in_omega_6_polyunsaturated_fatty_acids', 'diet_high_in_trans_fatty_acids',
+                 'diet_high_in_sodium', 'low_physical_activity', 'occupational_risks', 'occupational_carcinogens',
+                 'occupational_asthmagens', 'occupational_particulate_matter_gases_and_fumes', 'occupational_noise',
+                 'occupational_injuries', 'occupational_ergonomic_factors', 'childhood_sexual_abuse',
+                 'intimate_partner_violence', 'non_exclusive_breastfeeding', 'discontinued_breastfeeding',
+                 'injected_drug_use', 'drug_dependence', 'diet_low_in_calcium', 'occupational_exposure_to_asbestos',
+                 'occupational_exposure_to_arsenic', 'occupational_exposure_to_benzene',
+                 'occupational_exposure_to_beryllium', 'occupational_exposure_to_cadmium',
+                 'occupational_exposure_to_chromium', 'occupational_exposure_to_diesel_engine_exhaust',
+                 'occupational_exposure_to_formaldehyde', 'occupational_exposure_to_nickel',
+                 'occupational_exposure_to_polycyclic_aromatic_hydrocarbons', 'occupational_exposure_to_silica',
+                 'occupational_exposure_to_sulfuric_acid', 'intimate_partner_violence_exposure_approach',
+                 'intimate_partner_violence_direct_paf_approach', 'all_risk_factors', 'unsafe_sex',
+                 'intimate_partner_violence_hiv_paf_approach', 'environmental_occupational_risks',
+                 'behavioral_risks', 'occupational_exposure_to_trichloroethylene',
+                 'no_access_to_handwashing_facility', 'child_growth_failure', 'child_wasting', 'child_stunting',
+                 'lead_exposure_in_blood', 'lead_exposure_in_bone', 'childhood_sexual_abuse_against_females',
                  'childhood_sexual_abuse_against_males', 'non_optimal_temperature', 'chewing_tobacco',
                  'diet_low_in_legumes', 'short_gestation', 'low_birth_weight', 'high_temperature', 'low_temperature',
                  'low_birth_weight_and_short_gestation', 'kidney_dysfunction', 'bullying_victimization',
                  'high_ldl_cholesterol', 'high_body_mass_index_in_adults', 'high_body_mass_index_in_children',
-                 'particulate_matter_pollution', 'childhood_sexual_abuse_and_bullying', )
+                 'particulate_matter_pollution', 'childhood_sexual_abuse_and_bullying', 'nitrogen_dioxide_pollution', )
 
     def __init__(self,
                  unsafe_water_sanitation_and_handwashing: RiskFactor,
@@ -114,7 +112,7 @@ class RiskFactors(GbdRecord):
                  tobacco: RiskFactor,
                  smoking: RiskFactor,
                  secondhand_smoke: RiskFactor,
-                 alcohol_use: RiskFactor,
+                 high_alcohol_use: RiskFactor,
                  drug_use: RiskFactor,
                  metabolic_risks: RiskFactor,
                  high_fasting_plasma_glucose: RiskFactor,
@@ -132,7 +130,7 @@ class RiskFactors(GbdRecord):
                  diet_high_in_sugar_sweetened_beverages: RiskFactor,
                  diet_low_in_fiber: RiskFactor,
                  diet_low_in_seafood_omega_3_fatty_acids: RiskFactor,
-                 diet_low_in_polyunsaturated_fatty_acids: RiskFactor,
+                 diet_low_in_omega_6_polyunsaturated_fatty_acids: RiskFactor,
                  diet_high_in_trans_fatty_acids: RiskFactor,
                  diet_high_in_sodium: RiskFactor,
                  low_physical_activity: RiskFactor,
@@ -147,10 +145,8 @@ class RiskFactors(GbdRecord):
                  intimate_partner_violence: RiskFactor,
                  non_exclusive_breastfeeding: RiskFactor,
                  discontinued_breastfeeding: RiskFactor,
-                 drug_use_dependence_and_blood_borne_viruses: RiskFactor,
-                 suicide_due_to_drug_use_disorders: RiskFactor,
-                 high_fasting_plasma_glucose_continuous: RiskFactor,
-                 high_fasting_plasma_glucose_categorical: RiskFactor,
+                 injected_drug_use: RiskFactor,
+                 drug_dependence: RiskFactor,
                  diet_low_in_calcium: RiskFactor,
                  occupational_exposure_to_asbestos: RiskFactor,
                  occupational_exposure_to_arsenic: RiskFactor,
@@ -194,7 +190,8 @@ class RiskFactors(GbdRecord):
                  high_body_mass_index_in_adults: RiskFactor,
                  high_body_mass_index_in_children: RiskFactor,
                  particulate_matter_pollution: RiskFactor,
-                 childhood_sexual_abuse_and_bullying: RiskFactor, ):
+                 childhood_sexual_abuse_and_bullying: RiskFactor,
+                 nitrogen_dioxide_pollution: RiskFactor, ):
         super().__init__()
         self.unsafe_water_sanitation_and_handwashing = unsafe_water_sanitation_and_handwashing
         self.unsafe_water_source = unsafe_water_source
@@ -215,7 +212,7 @@ class RiskFactors(GbdRecord):
         self.tobacco = tobacco
         self.smoking = smoking
         self.secondhand_smoke = secondhand_smoke
-        self.alcohol_use = alcohol_use
+        self.high_alcohol_use = high_alcohol_use
         self.drug_use = drug_use
         self.metabolic_risks = metabolic_risks
         self.high_fasting_plasma_glucose = high_fasting_plasma_glucose
@@ -233,7 +230,7 @@ class RiskFactors(GbdRecord):
         self.diet_high_in_sugar_sweetened_beverages = diet_high_in_sugar_sweetened_beverages
         self.diet_low_in_fiber = diet_low_in_fiber
         self.diet_low_in_seafood_omega_3_fatty_acids = diet_low_in_seafood_omega_3_fatty_acids
-        self.diet_low_in_polyunsaturated_fatty_acids = diet_low_in_polyunsaturated_fatty_acids
+        self.diet_low_in_omega_6_polyunsaturated_fatty_acids = diet_low_in_omega_6_polyunsaturated_fatty_acids
         self.diet_high_in_trans_fatty_acids = diet_high_in_trans_fatty_acids
         self.diet_high_in_sodium = diet_high_in_sodium
         self.low_physical_activity = low_physical_activity
@@ -248,10 +245,8 @@ class RiskFactors(GbdRecord):
         self.intimate_partner_violence = intimate_partner_violence
         self.non_exclusive_breastfeeding = non_exclusive_breastfeeding
         self.discontinued_breastfeeding = discontinued_breastfeeding
-        self.drug_use_dependence_and_blood_borne_viruses = drug_use_dependence_and_blood_borne_viruses
-        self.suicide_due_to_drug_use_disorders = suicide_due_to_drug_use_disorders
-        self.high_fasting_plasma_glucose_continuous = high_fasting_plasma_glucose_continuous
-        self.high_fasting_plasma_glucose_categorical = high_fasting_plasma_glucose_categorical
+        self.injected_drug_use = injected_drug_use
+        self.drug_dependence = drug_dependence
         self.diet_low_in_calcium = diet_low_in_calcium
         self.occupational_exposure_to_asbestos = occupational_exposure_to_asbestos
         self.occupational_exposure_to_arsenic = occupational_exposure_to_arsenic
@@ -296,3 +291,4 @@ class RiskFactors(GbdRecord):
         self.high_body_mass_index_in_children = high_body_mass_index_in_children
         self.particulate_matter_pollution = particulate_matter_pollution
         self.childhood_sexual_abuse_and_bullying = childhood_sexual_abuse_and_bullying
+        self.nitrogen_dioxide_pollution = nitrogen_dioxide_pollution

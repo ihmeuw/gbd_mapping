@@ -21,6 +21,7 @@ from .globals import CovariateData, CovariateDataSeq
 from .util import clean_entity_list
 
 CAUSE_SET_ID = 3
+COMPUTATION_CAUSE_SET_ID = 2
 RISK_SET_ID = 2
 ETIOLOGY_SET_ID = 3
 
@@ -52,6 +53,18 @@ def get_etiologies():
 
 def get_causes(level=None):
     causes = gbd.get_cause_metadata(cause_set_id=CAUSE_SET_ID)
+    # add causes we use for computation but not reporting
+    computational_causes = gbd.get_cause_metadata(cause_set_id=COMPUTATION_CAUSE_SET_ID)
+    missing_cause_ids = [
+        cause_id
+        for cause_id in computational_causes["cause_id"].values
+        if cause_id not in causes["cause_id"].values
+    ]
+    missing_causes = computational_causes[
+        computational_causes["cause_id"].isin(missing_cause_ids)
+    ]
+    causes = pd.concat([causes, missing_causes])
+
     if level is not None:
         causes = causes[causes.level == level]
     causes = pd.DataFrame(
@@ -140,6 +153,17 @@ def get_cause_data():
     cause_me_map = cause_me_map[["modelable_entity_id", "cause_name"]].set_index("cause_name")
 
     causes = gbd.get_cause_metadata(cause_set_id=CAUSE_SET_ID)
+    # add causes we use for computation but not reporting
+    computational_causes = gbd.get_cause_metadata(cause_set_id=COMPUTATION_CAUSE_SET_ID)
+    missing_cause_ids = [
+        cause_id
+        for cause_id in computational_causes["cause_id"].values
+        if cause_id not in causes["cause_id"].values
+    ]
+    missing_causes = computational_causes[
+        computational_causes["cause_id"].isin(missing_cause_ids)
+    ]
+    causes = pd.concat([causes, missing_causes])
 
     causes = pd.DataFrame(
         {
@@ -221,6 +245,7 @@ def get_age_restriction_edge(age_restriction, end=False):
         55.0: [16, 15],
         60.0: [17, 16],
         65.0: [18, 17],
+        90.0: [32, 31],
         95.0: [235, 32],
     }
     if not end:
@@ -239,29 +264,41 @@ def make_cause_restrictions(cause):
         ("yld_only", cause["yld_only"]),
         (
             "yll_age_group_id_start",
-            get_age_restriction_edge(cause["yll_age_start"])
-            if not cause["yld_only"]
-            else None,
+            (
+                get_age_restriction_edge(cause["yll_age_start"])
+                if not cause["yld_only"]
+                else None
+            ),
         ),
         (
             "yll_age_group_id_end",
-            get_age_restriction_edge(cause["yll_age_end"], end=True)
-            if not cause["yld_only"]
-            else None,
+            (
+                get_age_restriction_edge(cause["yll_age_end"], end=True)
+                if not cause["yld_only"]
+                else None
+            ),
         ),
         (
             "yld_age_group_id_start",
-            get_age_restriction_edge(cause["yld_age_start"])
-            if not cause["yll_only"]
-            else None,
+            (
+                get_age_restriction_edge(cause["yld_age_start"])
+                if not cause["yll_only"]
+                else None
+            ),
         ),
         (
             "yld_age_group_id_end",
-            get_age_restriction_edge(cause["yld_age_end"], end=True)
-            if not cause["yll_only"]
-            else None,
+            (
+                get_age_restriction_edge(cause["yld_age_end"], end=True)
+                if not cause["yll_only"]
+                else None
+            ),
         ),
     )
+    if cause.cause_id in [367, 368, 369, 370, 374, 375, 376, 379, 741, 995]:
+        restrictions = list(restrictions)
+        restrictions[5] = ("yll_age_group_id_end", 15)
+        restrictions[7] = ("yld_age_group_id_end", 15)
     return tuple(restrictions)
 
 
@@ -342,17 +379,8 @@ def get_risk_data() -> List:
                     levels.append((f"cat{max_cat}", "Unexposed"))
                 levels = tuple(levels)
             except AttributeError:  # sometimes the category map is nan
-                if rei_id == 341:  # They screwed something up in the rei metadata
-                    levels = (
-                        ("cat1", "Stage 5 chronic kidney disease squeezed"),
-                        ("cat2", "Stage 4 chronic kidney disease squeezed"),
-                        ("cat3", "Stage 3 chronic kidney disease squeezed"),
-                        ("cat4", "Stage 1-2 chronic kidney disease"),
-                        ("cat5", "Unexposed"),
-                    )
-                else:
-                    print(f'No levels found for {risk["rei_name"]}.')
-                    levels = tuple()
+                print(f'No levels found for {risk["rei_name"]}.')
+                levels = tuple()
             scalar = None
             tmred = None
         else:  # It's either a custom risk or an aggregate, so we have to do a bunch of checking.
@@ -377,7 +405,6 @@ def get_risk_data() -> List:
                 )
 
         if risk["affected_cause_ids"] is not np.nan:
-            # TODO: WHAT IS CID 311 ??
             affected_causes = tuple(
                 causes.at[cid, "cause_name"]
                 for cid in risk["affected_cause_ids"]
@@ -421,6 +448,25 @@ def get_risk_data() -> List:
                 risk["yld_age_group_id_end"] if not pd.isnull(risk["yld"]) else None,
             ),
         )
+
+        if rei_id == 95:  # iron deficiency fix
+            restrictions = list(restrictions)
+            restrictions[1] = ("female_only", False)
+            restrictions = tuple(restrictions)
+
+        if rei_id == 136:  # non-exclusive breastfeeding fix
+            restrictions = list(restrictions)
+            restrictions[5] = ("yll_age_group_id_end", 388.0)
+            restrictions[7] = ("yld_age_group_id_end", 388.0)
+            restrictions = tuple(restrictions)
+
+        if rei_id == 137:  # discounted breastfeeding fix
+            restrictions = list(restrictions)
+            restrictions[4] = ("yll_age_group_id_start", 238.0)
+            restrictions[5] = ("yll_age_group_id_end", 389.0)
+            restrictions[6] = ("yld_age_group_id_start", 238.0)
+            restrictions[7] = ("yld_age_group_id_end", 389.0)
+            restrictions = tuple(restrictions)
 
         out.append(
             (
