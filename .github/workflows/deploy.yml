@@ -7,6 +7,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python
@@ -17,11 +19,32 @@ jobs:
         run: |
           python --version
           python -m pip install --upgrade pip
-          pip install setuptools wheel twine
-      - name: Build and publish
-        env:
-          TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
-          TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+          pip install setuptools wheel build
+      - name: Test
         run: |
-          python setup.py sdist bdist_wheel
-          twine upload dist/*
+          pip install .[test]
+          pytest --runslow ./tests
+      - name: Build
+        run: python -m build
+      - name: Publish
+        uses: pypa/gh-action-pypi-publish@release/v1
+      - name: Send mail
+        # Notify when cron job fails
+        if: failure()
+        uses: dawidd6/action-send-mail@v2
+        with:
+          # mail server settings
+          server_address: smtp.gmail.com
+          server_port: 465
+          # user credentials
+          username: ${{ secrets.NOTIFY_EMAIL }}
+          password: ${{ secrets.NOTIFY_PASSWORD }}
+          # email subject
+          subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
+          # email body as text
+          body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
+          # comma-separated string, send email to
+          to: uw_ihme_simulationscience@uw.edu
+          # from email name
+          from: Vivarium Notifications
+          

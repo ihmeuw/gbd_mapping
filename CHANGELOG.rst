@@ -2,6 +2,10 @@
 
  - Rebuild with GBD 2021 data
 
+**3.1.2 - 01/09/24**
+
+ - Update PyPI to 2FA with trusted publisher (GitHub Actions)
+
 **3.1.1 - 07/13/23**
 
  - Changes version metadata to use setuptools_scm

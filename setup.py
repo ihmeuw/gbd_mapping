@@ -33,7 +33,7 @@ if __name__ == "__main__":
     ]
 
     doc_requirements = [
-        "sphinx",
+        "sphinx>=6.2.1, <7.0",
         "sphinx-rtd-theme",
     ]
 
