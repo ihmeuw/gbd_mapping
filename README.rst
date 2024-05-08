@@ -4,8 +4,8 @@ GBD Mapping
 .. image:: https://badge.fury.io/py/gbd-mapping.svg
     :target: https://badge.fury.io/py/gbd-mapping
 
-.. image:: https://travis-ci.org/ihmeuw/gbd_mapping.svg?branch=master
-    :target: https://travis-ci.org/ihmeuw/gbd_mapping
+.. image:: https://github.com/ihmeuw/gbd_mapping/actions/workflows/build.yml/badge.svg?branch=main
+    :target: https://github.com/ihmeuw/gbd_mapping
     :alt: Latest Version
 
 .. image:: https://readthedocs.org/projects/gbd_mapping/badge/?version=latest
@@ -56,3 +56,7 @@ Given proper permissions, you can set up this library in development mode with
     ``> cd gbd_mapping``
 
     ``> pip install -e .['dev']``
+
+
+`Check out the docs! <https://vivarium.readthedocs.io/projects/gbd-mapping/en/latest/>`_
+----------------------------------------------------------------------------------------

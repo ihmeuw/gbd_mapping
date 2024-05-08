@@ -4,7 +4,6 @@ import os
 from setuptools import find_packages, setup
 
 if __name__ == "__main__":
-
     base_dir = os.path.dirname(__file__)
     src_dir = os.path.join(base_dir, "src")
 
@@ -22,8 +21,10 @@ if __name__ == "__main__":
         "pyyaml",
     ]
 
+    setup_requires = ["setuptools_scm"]
+
     data_requires = [
-        "vivarium-gbd-access>=3.0.5",
+        "vivarium-gbd-access>=3.0.7",
     ]
 
     test_requirements = [
@@ -32,13 +33,12 @@ if __name__ == "__main__":
     ]
 
     doc_requirements = [
-        "sphinx",
+        "sphinx>=6.2.1, <7.0",
         "sphinx-rtd-theme",
     ]
 
     setup(
         name=about["__title__"],
-        version=about["__version__"],
         description=about["__summary__"],
         long_description=long_description,
         url=about["__uri__"],
@@ -60,4 +60,10 @@ if __name__ == "__main__":
                 build_mapping=gbd_mapping_generator.build_mapping:build_mapping
             """,
         zip_safe=False,
+        use_scm_version={
+            "write_to": "src/gbd_mapping/_version.py",
+            "write_to_template": '__version__ = "{version}"\n',
+            "tag_regex": r"^(?P<prefix>v)?(?P<version>[^\+]+)(?P<suffix>.*)?$",
+        },
+        setup_requires=setup_requires,
     )
