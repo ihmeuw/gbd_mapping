@@ -24,7 +24,7 @@ if __name__ == "__main__":
     setup_requires = ["setuptools_scm"]
 
     data_requires = [
-        "vivarium-gbd-access>=3.0.7",
+        "vivarium-gbd-access>=4.0.0, <5.0.0",
     ]
 
     test_requirements = [
