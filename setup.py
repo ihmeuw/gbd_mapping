@@ -37,6 +37,11 @@ if __name__ == "__main__":
         "sphinx-rtd-theme",
     ]
 
+    lint_requirements = [
+        "black==22.3.0",
+        "isort",
+    ]
+
     setup(
         name=about["__title__"],
         description=about["__summary__"],
@@ -53,7 +58,7 @@ if __name__ == "__main__":
             "docs": doc_requirements,
             "test": test_requirements,
             "data": data_requires,
-            "dev": doc_requirements + test_requirements + data_requires,
+            "dev": doc_requirements + test_requirements + data_requires + lint_requirements,
         },
         entry_points="""
                 [console_scripts]

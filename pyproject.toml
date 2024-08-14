@@ -11,3 +11,12 @@ exclude = '''
 [tool.isort]
 profile = "black"
 skip = ["build", "src/gbd_mapping"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests/"]
+
+[tool.coverage.run]
+source = ["gbd_mapping"]
+
+[tool.coverage.report]
+show_missing = true
