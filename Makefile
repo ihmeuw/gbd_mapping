@@ -59,8 +59,6 @@ install: # Install setuptools, install this package in editable mode
 	# TODO: We run into permission issues trying to clone vivarium_gbd_access
 	# pip install git+https://stash.ihme.washington.edu/scm/sims/vivarium_gbd_access@${GIT_BRANCH}
 
-
-
 format: setup.py pyproject.toml $(MAKE_SOURCES) # Run the code formatter and import sorter
 	black $(LOCATIONS)
 	isort $(LOCATIONS)
