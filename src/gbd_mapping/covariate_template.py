@@ -6,8 +6,8 @@ Any manual changes will be lost.
 """
 from typing import Union
 
+from .base_template import GbdRecord, ModelableEntity
 from .id import cov_id
-from .base_template import ModelableEntity, GbdRecord
 
 
 class Covariate(ModelableEntity):

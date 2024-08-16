@@ -6,9 +6,9 @@ Any manual changes will be lost.
 """
 from typing import Tuple, Union
 
-from .id import rei_id, scalar
-from .base_template import ModelableEntity, GbdRecord, Categories, Tmred, Restrictions
+from .base_template import Categories, GbdRecord, ModelableEntity, Restrictions, Tmred
 from .cause_template import Cause
+from .id import rei_id, scalar
 
 
 class RiskFactor(ModelableEntity):
