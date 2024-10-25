@@ -13,8 +13,9 @@ on:
 jobs:
   call_build:
     uses: 
-      ihmeuw/vivarium_build_utils/.github/workflows/build.yml@main
+      ihmeuw/vivarium_build_utils/.github/workflows/build.yml@add-install-arg
     with:
       # FIXME: We can't clone gbd access but the install branch script should handle that
       dependencies: "vivarium_gbd_access"
       use_mypy: false
+      install_type: "test,docs"
