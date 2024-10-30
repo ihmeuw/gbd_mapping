@@ -21,7 +21,7 @@ jobs:
       # FIXME: We can't clone gbd access but the install branch script should handle that
       dependencies: "vivarium_gbd_access"
       skip_mypy: true
-      install_type: "test,docs"
+      install_type: "[test,docs]"
     secrets:
       NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
       NOTIFY_PASSWORD: ${{ secrets.NOTIFY_PASSWORD }}
