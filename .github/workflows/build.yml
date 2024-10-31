@@ -11,11 +11,17 @@ on:
     - cron: "0 8 * * *"
   
 jobs:
-  call_build:
+  build:
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.10", "3.11"]
     uses: 
       ihmeuw/vivarium_build_utils/.github/workflows/build.yml@main
     with:
       # FIXME: We can't clone gbd access but the install branch script should handle that
       dependencies: "vivarium_gbd_access"
-      use_mypy: false
-      install_type: "test,docs"
+      skip_mypy: true
+      install_type: "[test,docs]"
+    secrets:
+      NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+      NOTIFY_PASSWORD: ${{ secrets.NOTIFY_PASSWORD }}
