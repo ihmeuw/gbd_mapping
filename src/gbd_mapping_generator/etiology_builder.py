@@ -1,5 +1,3 @@
-from typing import List, Tuple
-
 from .base_template_builder import gbd_record_attrs, modelable_entity_attrs
 from .data import get_etiology_data, get_etiology_list
 from .globals import ID_TYPES
@@ -39,7 +37,7 @@ def make_etiology(name: str, rei_id: float) -> str:
     return out
 
 
-def make_etiologies(etiology_list: List[Tuple[str, float]]) -> str:
+def make_etiologies(etiology_list: list[tuple[str, float]]) -> str:
     out = "etiologies = Etiologies(\n"
     for name, rei_id in etiology_list:
         out += make_etiology(name, rei_id)

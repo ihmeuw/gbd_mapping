@@ -1,5 +1,3 @@
-from typing import List
-
 import numpy as np
 import pandas as pd
 
@@ -120,7 +118,7 @@ def get_covariate_list(with_survey=False):
 #####################################################
 
 
-def get_sequela_data() -> List:
+def get_sequela_data() -> list:
     sequelae = gbd.get_sequela_id_mapping()
 
     return list(
@@ -134,7 +132,7 @@ def get_sequela_data() -> List:
     )
 
 
-def get_etiology_data() -> List:
+def get_etiology_data() -> list:
     etiologies = gbd.get_rei_metadata(rei_set_id=ETIOLOGY_SET_ID)
     etiologies = etiologies[etiologies["most_detailed"] == 1]
 
@@ -325,7 +323,7 @@ def get_all_risk_metadata():
     return risks
 
 
-def get_risk_data() -> List:
+def get_risk_data() -> list:
     risks = get_all_risk_metadata()
     causes = get_causes().set_index("cause_id")
 
@@ -490,7 +488,7 @@ def get_risk_data() -> List:
     return out
 
 
-def get_duplicate_indices(names: List[str]) -> List[int]:
+def get_duplicate_indices(names: list[str]) -> list[int]:
     dup_indices = []
     check = set()
     for i, v in enumerate(names):

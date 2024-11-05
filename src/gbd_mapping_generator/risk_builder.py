@@ -1,5 +1,3 @@
-from typing import List
-
 from .base_template_builder import gbd_record_attrs, modelable_entity_attrs
 from .data import get_risk_data, get_risk_list
 from .globals import ID_TYPES
@@ -30,8 +28,8 @@ def get_base_types():
     ]
 
     risk_attrs += [
-        ("affected_causes", "Tuple[Cause, ...]"),
-        ("population_attributable_fraction_of_one_causes", "Tuple[Cause, ...]"),
+        ("affected_causes", "tuple[Cause, ...]"),
+        ("population_attributable_fraction_of_one_causes", "tuple[Cause, ...]"),
         ("parent", '"RiskFactor" | None = None'),
         ("sub_risk_factors", 'tuple["RiskFactor", ...] = None'),
         ("affected_risk_factors", 'tuple["RiskFactor", ...] = None'),
@@ -114,7 +112,7 @@ def make_risk(
     return out
 
 
-def make_entity_list(name, entity_list: List, entity_type: str) -> str:
+def make_entity_list(name, entity_list: list, entity_type: str) -> str:
     field = 2 * TAB + f"{name}=("
     if not entity_list:
         return field + "),\n"
@@ -138,7 +136,7 @@ def make_entity_list(name, entity_list: List, entity_type: str) -> str:
     return out
 
 
-def make_risks(risk_list: List) -> str:
+def make_risks(risk_list: list) -> str:
     out = "risk_factors = RiskFactors(\n"
     for (
         name,

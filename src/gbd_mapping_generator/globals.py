@@ -1,4 +1,4 @@
-from typing import List, NamedTuple, Tuple
+from typing import NamedTuple
 
 
 class __IdTypes(NamedTuple):
@@ -14,5 +14,5 @@ ID_TYPES = __IdTypes()
 
 
 # Type aliases
-CovariateData = Tuple[str, float, bool, bool, bool]
-CovariateDataSeq = List[CovariateData]
+CovariateData = tuple[str, float, bool, bool, bool]
+CovariateDataSeq = list[CovariateData]

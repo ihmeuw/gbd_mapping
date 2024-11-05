@@ -1,5 +1,3 @@
-from typing import List
-
 from .base_template_builder import gbd_record_attrs, modelable_entity_attrs
 from .data import get_sequela_data, get_sequela_list
 from .globals import ID_TYPES
@@ -59,7 +57,7 @@ def make_sequela(name: str, s_id: float, mei_id: float, hs_name: str, hs_id: flo
     return out
 
 
-def make_sequelae(sequela_list: List[str]) -> str:
+def make_sequelae(sequela_list: list[str]) -> str:
     out = "sequelae = Sequelae(**{\n"
     for (name, sid, mei_id, hs_name, hsid) in sequela_list:
         out += make_sequela(name, sid, mei_id, hs_name, hsid)

@@ -17,7 +17,7 @@ class GbdRecord:
             attr = getattr(self, item)
             if isinstance(attr, GbdRecord):
                 out[item] = attr.to_dict()
-            elif isinstance(attr, Tuple) and attr:
+            elif isinstance(attr, tuple) and attr:
                 if isinstance(attr[0], GbdRecord):
                     out[item] = tuple(r.to_dict() for r in attr)
             elif attr is not None:
