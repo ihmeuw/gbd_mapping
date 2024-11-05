@@ -24,7 +24,7 @@ def get_base_types():
         ("gbd_id", ID_TYPES.REI_ID),
         ("level", "int"),
         ("most_detailed", "bool"),
-        ("distribution", "Union[str, None]"),
+        ("distribution", "str | None"),
         ("population_attributable_fraction_calculation_type", "str"),
         ("restrictions", "Restrictions"),
     ]
@@ -32,9 +32,9 @@ def get_base_types():
     risk_attrs += [
         ("affected_causes", "Tuple[Cause, ...]"),
         ("population_attributable_fraction_of_one_causes", "Tuple[Cause, ...]"),
-        ("parent", 'Union["RiskFactor", None] = None'),
-        ("sub_risk_factors", 'Tuple["RiskFactor", ...] = None'),
-        ("affected_risk_factors", 'Tuple["RiskFactor", ...] = None'),
+        ("parent", '"RiskFactor" | None = None'),
+        ("sub_risk_factors", 'tuple["RiskFactor", ...] = None'),
+        ("affected_risk_factors", 'tuple["RiskFactor", ...] = None'),
         ("categories", "Categories = None"),
         ("tmred", "Tmred = None"),
         ("relative_risk_scalar", "scalar = None"),
@@ -195,7 +195,6 @@ def make_risks(risk_list: List) -> str:
 
 def build_mapping_template():
     out = make_module_docstring("Mapping templates for GBD risk factors.", __file__)
-    out += make_import("typing", ("Tuple", "Union")) + "\n"
     out += make_import(".id", (ID_TYPES.REI_ID, "scalar"))
     out += make_import(
         ".base_template",

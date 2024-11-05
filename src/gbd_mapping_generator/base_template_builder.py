@@ -7,7 +7,7 @@ gbd_record_attrs = ()
 modelable_entity_attrs = (
     ("name", "str"),
     ("kind", "str"),
-    ("gbd_id", "Union[c_id, s_id, hs_id, me_id, cov_id, rei_id, None]"),
+    ("gbd_id", "c_id | s_id | hs_id | me_id | cov_id | rei_id | None"),
 )
 restrictions_attrs = (
     ("male_only", "bool"),
@@ -121,7 +121,6 @@ def build_mapping() -> str:
 
     """
     templates = make_module_docstring("Template classes for GBD entities", __file__)
-    templates += make_import("typing", ["Union", "Tuple"])
     templates += (
         make_import(
             ".id",

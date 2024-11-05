@@ -12,7 +12,7 @@ def get_base_types():
     etiology_attrs = [
         ("name", "str"),
         ("kind", "str"),
-        ("gbd_id", f"Union[{ID_TYPES.REI_ID}, None]"),
+        ("gbd_id", f"{ID_TYPES.REI_ID} | None"),
     ]
 
     return {
@@ -49,7 +49,6 @@ def make_etiologies(etiology_list: List[Tuple[str, float]]) -> str:
 
 def build_mapping_template() -> str:
     out = make_module_docstring("Mapping templates for GBD etiologies.", __file__)
-    out += make_import("typing", ("Union",)) + "\n"
     out += make_import(".id", (ID_TYPES.REI_ID,))
     out += make_import(".base_template", ("ModelableEntity", "GbdRecord"))
 

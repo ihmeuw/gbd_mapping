@@ -3,7 +3,7 @@ from .base_template import Categories, GbdRecord, ModelableEntity, Restrictions,
 from .cause import Cause, causes
 from .covariate import Covariate, covariates
 from .etiology import Etiology, etiologies
-from .id import (
+from .id import me_id, rei_id, c_id, s_id, cov_id, hs_id, scalar, UNKNOWN, UnknownEntityError
     UNKNOWN,
     UnknownEntityError,
     c_id,

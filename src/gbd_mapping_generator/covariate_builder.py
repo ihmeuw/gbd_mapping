@@ -10,7 +10,7 @@ def get_base_types():
     cov_attrs = [
         ("name", "str"),
         ("kind", "str"),
-        ("gbd_id", f"Union[{ID_TYPES.COV_ID}, None]"),
+        ("gbd_id", f"{ID_TYPES.COV_ID} | None"),
         ("by_age", "bool"),
         ("by_sex", "bool"),
         ("dichotomous", "bool"),
@@ -90,7 +90,6 @@ def make_covariates(covariate_list: CovariateDataSeq) -> str:
 
 def build_mapping_template():
     out = make_module_docstring("Mapping templates for GBD covariates.", __file__)
-    out += make_import("typing", ("Union",)) + "\n"
     out += make_import(".id", (ID_TYPES.COV_ID,))
     out += make_import(".base_template", ("ModelableEntity", "GbdRecord"))
 

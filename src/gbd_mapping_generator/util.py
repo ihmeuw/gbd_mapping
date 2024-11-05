@@ -1,7 +1,7 @@
 import os
 import re
 from pathlib import Path
-from typing import Any, Dict, List, Tuple, Union
+from typing import Any
 
 import numpy as np
 import pandas as pd
@@ -14,7 +14,7 @@ SPACING = "\n\n"  # type: str
 MAX_PYTHON_3_6_ARG_COUNT = 255  # type: int
 
 
-def make_module_docstring(description: str, file: Union[str, Path]) -> str:
+def make_module_docstring(description: str, file: str | Path) -> str:
     """Generates standard header with additional information from the description.
 
     Parameters
@@ -37,7 +37,7 @@ def make_module_docstring(description: str, file: Union[str, Path]) -> str:
     return out
 
 
-def make_import(module_to_import: str, imports: Tuple[str, ...] = ()) -> str:
+def make_import(module_to_import: str, imports: tuple[str, ...] = ()) -> str:
     """Generates the necessary imports. Smart about importing modules or names.
 
     Parameters
@@ -114,7 +114,7 @@ def replace_numeric_prefix(name: str) -> str:
     return name
 
 
-def clean_entity_list(raw_entity_series) -> List[str]:
+def clean_entity_list(raw_entity_series) -> list[str]:
     replace_with_underscore_chars = [
         "/",
         "(",
@@ -218,7 +218,7 @@ def make_class_sig(name, superclass=None, docstring=None) -> str:
     return out
 
 
-def make_slots(field_list: List[str]) -> str:
+def make_slots(field_list: list[str]) -> str:
     """Generate explicit object attributes using slots (instead of dict).
 
     Parameters
@@ -256,7 +256,7 @@ def make_slots(field_list: List[str]) -> str:
     return out
 
 
-def make_init(field_dtype_tuples: Tuple[Tuple[str, str], ...]) -> str:
+def make_init(field_dtype_tuples: tuple[tuple[str, str], ...]) -> str:
     """Generate the __init__ function as part of class generation.
 
     Parameters
@@ -287,7 +287,7 @@ def make_init(field_dtype_tuples: Tuple[Tuple[str, str], ...]) -> str:
     return out
 
 
-def make_super_call(superclass: Tuple[str, Tuple[Tuple[str, str], ...]]) -> str:
+def make_super_call(superclass: tuple[str, tuple[tuple[str, str], ...]]) -> str:
     """Generate the call to initialize the parent class.
 
     Parameters
@@ -316,7 +316,7 @@ def make_super_call(superclass: Tuple[str, Tuple[Tuple[str, str], ...]]) -> str:
     return out
 
 
-def make_attribute_assignment(field_names: List[str]) -> str:
+def make_attribute_assignment(field_names: list[str]) -> str:
     """Generate the class attributes and initialize them.
 
     Parameters
@@ -344,8 +344,8 @@ def make_attribute_assignment(field_names: List[str]) -> str:
 
 def make_record(
     name: str,
-    attrs: Tuple[Tuple[str, str], ...] = None,
-    superclass: Tuple[str, Tuple[Tuple[str, str], ...]] = None,
+    attrs: tuple[tuple[str, str], ...] = None,
+    superclass: tuple[str, tuple[tuple[str, str], ...]] = None,
     docstring: str = None,
 ):
     """Generate class definitions from a name and additional information.
