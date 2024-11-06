@@ -18,8 +18,7 @@ class Covariate(ModelableEntity):
                  gbd_id: cov_id | None,
                  by_age: bool,
                  by_sex: bool,
-                 dichotomous: bool,
-    ):
+                 dichotomous: bool, ):
         super().__init__(name=name,
                          kind=kind,
                          gbd_id=gbd_id)

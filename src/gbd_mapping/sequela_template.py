@@ -15,8 +15,7 @@ class Healthstate(ModelableEntity):
     def __init__(self,
                  name: str,
                  kind: str,
-                 gbd_id: hs_id,
-    ):
+                 gbd_id: hs_id, ):
         super().__init__(name=name,
                          kind=kind,
                          gbd_id=gbd_id)
@@ -34,8 +33,7 @@ class Sequela(ModelableEntity):
                  kind: str,
                  gbd_id: s_id,
                  me_id: me_id,
-                 healthstate: Healthstate,
-    ):
+                 healthstate: Healthstate, ):
         super().__init__(name=name,
                          kind=kind,
                          gbd_id=gbd_id)

@@ -34,8 +34,7 @@ class RiskFactor(ModelableEntity):
                  affected_risk_factors: tuple[RiskFactor, ...] = None,
                  categories: Categories = None,
                  tmred: Tmred = None,
-                 relative_risk_scalar: scalar = None,
-    ):
+                 relative_risk_scalar: scalar = None, ):
         super().__init__(name=name,
                          kind=kind,
                          gbd_id=gbd_id)
@@ -192,8 +191,7 @@ class RiskFactors(GbdRecord):
                  high_body_mass_index_in_children: RiskFactor,
                  particulate_matter_pollution: RiskFactor,
                  childhood_sexual_abuse_and_bullying: RiskFactor,
-                 nitrogen_dioxide_pollution: RiskFactor,
-    ):
+                 nitrogen_dioxide_pollution: RiskFactor, ):
         super().__init__()
         self.unsafe_water_sanitation_and_handwashing = unsafe_water_sanitation_and_handwashing
         self.unsafe_water_source = unsafe_water_source
