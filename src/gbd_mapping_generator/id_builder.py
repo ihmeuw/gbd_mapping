@@ -1,5 +1,5 @@
 from .globals import ID_TYPES
-from .util import SPACING, TAB, make_module_docstring
+from .util import DOUBLE_SPACING, TAB, make_module_docstring
 
 _ID_TYPES = (
     (ID_TYPES.ME_ID, "Modelable Entity ID"),
@@ -20,8 +20,8 @@ def make_unknown_flag():
     out += "class Unknown:\n"
     out += TAB + '"""Marker for unknown values."""\n'
     out += TAB + "def __repr__(self):\n"
-    out += 2 * TAB + 'return "UNKNOWN"\n' + SPACING
-    out += "UNKNOWN = Unknown()\n" + SPACING
+    out += 2 * TAB + 'return "UNKNOWN"\n' + DOUBLE_SPACING
+    out += "UNKNOWN = Unknown()\n" + DOUBLE_SPACING
     out += "class UnknownEntityError(Exception):\n"
     out += (
         TAB
@@ -34,18 +34,18 @@ def make_unknown_flag():
 def build_mapping():
     out = make_module_docstring("Custom ID types for GBD entities", __file__)
     for k, v in _ID_TYPES:
-        out += SPACING
+        out += DOUBLE_SPACING
         out += f"class {k}(int):\n"
         out += TAB + f'"""{v}"""\n'
         out += TAB + "def __repr__(self):\n"
         out += 2 * TAB + f'return "{k}({{:d}})".format(self)\n'
 
-    out += SPACING
+    out += DOUBLE_SPACING
     out += "class scalar(float):\n"
     out += TAB + '"""Raw Measure Value"""\n'
     out += TAB + "def __repr__(self):\n"
     out += 2 * TAB + 'return "scalar({:f})".format(self)\n'
-    out += SPACING
+    out += DOUBLE_SPACING
 
     out += make_unknown_flag()
 

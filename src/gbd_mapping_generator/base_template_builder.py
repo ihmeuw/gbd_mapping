@@ -1,4 +1,4 @@
-from .util import SPACING, make_import, make_module_docstring, make_record
+from .util import DOUBLE_SPACING, make_import, make_module_docstring, make_record
 
 IMPORTABLES_DEFINED = ("GbdRecord", "ModelableEntity", "Restrictions", "Tmred", "Categories")
 
@@ -134,12 +134,12 @@ def build_mapping() -> str:
                 "scalar",
             ],
         )
-        + SPACING
+        + DOUBLE_SPACING
     )
     templates += make_gbd_record()
 
     for entity, info in get_base_types().items():
-        templates += SPACING
+        templates += DOUBLE_SPACING
         templates += make_record(entity, **info)
 
     return templates

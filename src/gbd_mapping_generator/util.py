@@ -8,7 +8,8 @@ import pandas as pd
 
 TEXTWIDTH = 118  # type: int
 TAB = "    "  # type: str
-SPACING = "\n\n"  # type: str
+SINGLE_SPACING = "\n"  # type: str
+DOUBLE_SPACING = "\n\n"  # type: str
 
 # In Python 3.7 and newer, there is no limit. This limit applies to positional and keyword arguments.
 MAX_PYTHON_3_6_ARG_COUNT = 255  # type: int
