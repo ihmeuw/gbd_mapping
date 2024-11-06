@@ -63,7 +63,7 @@ class GbdRecord:
 
 class ModelableEntity(GbdRecord):
     """Container for general GBD ids and metadata."""
-    __slots__ = ('name', 'kind', 'gbd_id')
+    __slots__ = ('name', 'kind', 'gbd_id', )
 
     def __init__(self,
                  name: str,
@@ -89,8 +89,7 @@ class Restrictions(GbdRecord):
                  yll_age_group_id_start: int = None,
                  yll_age_group_id_end: int = None,
                  yld_age_group_id_start: int = None,
-                 yld_age_group_id_end: int = None,
-    ):
+                 yld_age_group_id_end: int = None, ):
         super().__init__()
         self.male_only = male_only
         self.female_only = female_only
@@ -110,8 +109,7 @@ class Tmred(GbdRecord):
                  distribution: str,
                  inverted: bool,
                  min: scalar = None,
-                 max: scalar = None,
-    ):
+                 max: scalar = None, ):
         super().__init__()
         self.distribution = distribution
         self.inverted = inverted
@@ -285,8 +283,7 @@ class Categories(GbdRecord):
                  cat146: str = None,
                  cat147: str = None,
                  cat148: str = None,
-                 cat149: str = None,
-    ):
+                 cat149: str = None, ):
         super().__init__()
         self.cat1 = cat1
         self.cat2 = cat2
