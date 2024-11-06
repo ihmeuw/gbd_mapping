@@ -4,6 +4,7 @@ from .data import get_cause_data, get_cause_list
 from .globals import ID_TYPES
 from .util import (
     DOUBLE_SPACING,
+    SINGLE_SPACING,
     TAB,
     TEXTWIDTH,
     make_import,
@@ -143,7 +144,7 @@ def build_mapping_template():
     out += make_import("__future__", ("annotations",)) + "\n"
     out += make_import(".base_template", ("GbdRecord", "ModelableEntity", "Restrictions"))
     out += make_import(".etiology_template", ("Etiology",))
-    out += make_import(".id", (ID_TYPES.C_ID, ID_TYPES.ME_ID, "Unknown"))
+    out += make_import(".id", ("Unknown", ID_TYPES.C_ID, ID_TYPES.ME_ID))
     out += make_import(".sequela_template", ("Sequela",))
 
     for entity, info in get_base_types().items():
@@ -157,7 +158,7 @@ def build_mapping():
     out += make_import(".base_template", ("Restrictions",))
     out += make_import(".cause_template", ("Cause", "Causes"))
     out += make_import(".etiology", ("etiologies",))
-    out += make_import(".id", (ID_TYPES.C_ID, ID_TYPES.ME_ID, "UNKNOWN"))
-    out += make_import(".sequela", ("sequelae",)) + DOUBLE_SPACING
+    out += make_import(".id", ("UNKNOWN", ID_TYPES.C_ID, ID_TYPES.ME_ID))
+    out += make_import(".sequela", ("sequelae",)) + SINGLE_SPACING
     out += make_causes(get_cause_data())
     return out

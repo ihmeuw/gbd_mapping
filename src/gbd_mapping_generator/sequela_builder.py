@@ -3,7 +3,7 @@ from .data import get_sequela_data, get_sequela_list
 from .globals import ID_TYPES
 from .util import DOUBLE_SPACING, SINGLE_SPACING, TAB, make_import, make_module_docstring, make_record, to_id
 
-IMPORTABLES_DEFINED = ("Sequela", "Healthstate", "sequelae")
+IMPORTABLES_DEFINED = ("Healthstate", "Sequela", "sequelae")
 
 
 def get_base_types():
