@@ -213,6 +213,8 @@ def build_mapping() -> str:
     out += make_import(".base_template", ("Categories", "Restrictions", "Tmred"))
     out += make_import(".cause", ("causes",))
     out += make_import(".id", (ID_TYPES.REI_ID, "scalar"))
-    out += make_import(".risk_factor_template", ("RiskFactor", "RiskFactors")) + SINGLE_SPACING
+    out += (
+        make_import(".risk_factor_template", ("RiskFactor", "RiskFactors")) + SINGLE_SPACING
+    )
     out += make_risks(get_risk_data())
     return out

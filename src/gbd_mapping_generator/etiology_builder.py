@@ -1,7 +1,14 @@
 from .base_template_builder import gbd_record_attrs, modelable_entity_attrs
 from .data import get_etiology_data, get_etiology_list
 from .globals import ID_TYPES
-from .util import DOUBLE_SPACING, SINGLE_SPACING, TAB, make_import, make_module_docstring, make_record
+from .util import (
+    DOUBLE_SPACING,
+    SINGLE_SPACING,
+    TAB,
+    make_import,
+    make_module_docstring,
+    make_record,
+)
 
 IMPORTABLES_DEFINED = ("Etiology", "etiologies")
 

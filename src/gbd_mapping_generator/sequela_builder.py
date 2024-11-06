@@ -1,7 +1,15 @@
 from .base_template_builder import gbd_record_attrs, modelable_entity_attrs
 from .data import get_sequela_data, get_sequela_list
 from .globals import ID_TYPES
-from .util import DOUBLE_SPACING, SINGLE_SPACING, TAB, make_import, make_module_docstring, make_record, to_id
+from .util import (
+    DOUBLE_SPACING,
+    SINGLE_SPACING,
+    TAB,
+    make_import,
+    make_module_docstring,
+    make_record,
+    to_id,
+)
 
 IMPORTABLES_DEFINED = ("Healthstate", "Sequela", "sequelae")
 
@@ -79,6 +87,9 @@ def build_mapping_template() -> str:
 def build_mapping() -> str:
     out = make_module_docstring("Mapping of GBD sequelae.", __file__)
     out += make_import(".id", (ID_TYPES.HS_ID, ID_TYPES.ME_ID, ID_TYPES.S_ID))
-    out += make_import(".sequela_template", ("Healthstate", "Sequela", "Sequelae")) + SINGLE_SPACING
+    out += (
+        make_import(".sequela_template", ("Healthstate", "Sequela", "Sequelae"))
+        + SINGLE_SPACING
+    )
     out += make_sequelae(get_sequela_data())
     return out
