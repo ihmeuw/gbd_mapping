@@ -193,12 +193,13 @@ def make_risks(risk_list: list) -> str:
 
 def build_mapping_template():
     out = make_module_docstring("Mapping templates for GBD risk factors.", __file__)
-    out += make_import(".id", (ID_TYPES.REI_ID, "scalar"))
+    out += make_import("__future__", ("annotations",)) + "\n"
     out += make_import(
         ".base_template",
         ("ModelableEntity", "GbdRecord", "Categories", "Tmred", "Restrictions"),
     )
     out += make_import(".cause_template", ("Cause",))
+    out += make_import(".id", (ID_TYPES.REI_ID, "scalar"))
 
     for entity, info in get_base_types().items():
         out += SPACING

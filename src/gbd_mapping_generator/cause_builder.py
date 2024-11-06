@@ -140,10 +140,11 @@ def make_causes(causes_list):
 
 def build_mapping_template():
     out = make_module_docstring("Mapping templates for GBD causes.", __file__)
+    out += make_import("__future__", ("annotations",)) + "\n"
     out += make_import(".id", (ID_TYPES.C_ID, ID_TYPES.ME_ID, "Unknown"))
     out += make_import(".base_template", ("Restrictions", "ModelableEntity", "GbdRecord"))
-    out += make_import(".sequela_template", ("Sequela",))
     out += make_import(".etiology_template", ("Etiology",))
+    out += make_import(".sequela_template", ("Sequela",))
 
     for entity, info in get_base_types().items():
         out += SPACING
