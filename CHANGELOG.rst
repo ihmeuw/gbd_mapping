@@ -1,3 +1,7 @@
+**4.1.0 - 11/06/24**
+
+ - Drop support for Python 3.9
+
 **4.0.0 - 05/20/24**
 
  - Rebuild with GBD 2021 data
