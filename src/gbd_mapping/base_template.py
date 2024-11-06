@@ -285,7 +285,7 @@ class Categories(GbdRecord):
                  cat146: str = None,
                  cat147: str = None,
                  cat148: str = None,
-                 cat149: str = None
+                 cat149: str = None,
     ):
         super().__init__()
         self.cat1 = cat1

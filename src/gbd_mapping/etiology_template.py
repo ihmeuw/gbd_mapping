@@ -15,7 +15,7 @@ class Etiology(ModelableEntity):
     def __init__(self,
                  name: str,
                  kind: str,
-                 gbd_id: rei_id | None
+                 gbd_id: rei_id | None,
     ):
         super().__init__(name=name,
                          kind=kind,
@@ -70,7 +70,7 @@ class Etiologies(GbdRecord):
                  staphylococcus_aureus: Etiology,
                  viral_etiologies_of_meningitis: Etiology,
                  streptococcus_pneumoniae: Etiology,
-                 neisseria_meningitidis: Etiology
+                 neisseria_meningitidis: Etiology,
     ):
         super().__init__()
         self.cholera = cholera

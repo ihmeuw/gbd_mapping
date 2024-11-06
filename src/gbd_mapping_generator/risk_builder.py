@@ -30,9 +30,9 @@ def get_base_types():
     risk_attrs += [
         ("affected_causes", "tuple[Cause, ...]"),
         ("population_attributable_fraction_of_one_causes", "tuple[Cause, ...]"),
-        ("parent", '"RiskFactor" | None = None'),
-        ("sub_risk_factors", 'tuple["RiskFactor", ...] = None'),
-        ("affected_risk_factors", 'tuple["RiskFactor", ...] = None'),
+        ("parent", 'RiskFactor | None = None'),
+        ("sub_risk_factors", 'tuple[RiskFactor, ...] = None'),
+        ("affected_risk_factors", 'tuple[RiskFactor, ...] = None'),
         ("categories", "Categories = None"),
         ("tmred", "Tmred = None"),
         ("relative_risk_scalar", "scalar = None"),
