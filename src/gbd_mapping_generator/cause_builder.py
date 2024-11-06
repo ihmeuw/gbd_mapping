@@ -27,8 +27,8 @@ def get_base_types():
         ("restrictions", "Restrictions"),
     ]
     cause_attrs += [
-        ("parent", 'Cause | None = None'),
-        ("sub_causes", 'tuple[Cause, ...] | None = None'),
+        ("parent", "Cause | None = None"),
+        ("sub_causes", "tuple[Cause, ...] | None = None"),
         ("sequelae", "tuple[Sequela, ...] | None = None"),
         ("etiologies", "tuple[Etiology, ...] | None = None"),
     ]
