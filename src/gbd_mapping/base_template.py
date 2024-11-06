@@ -9,8 +9,9 @@ from .id import c_id, cov_id, hs_id, me_id, rei_id, s_id, scalar
 
 class GbdRecord:
     """Base class for entities modeled in the GBD."""
+
     __slots__ = ()
-    
+
     def to_dict(self):
         out = {}
         for item in self.__slots__:
@@ -24,7 +25,7 @@ class GbdRecord:
                 out[item] = attr
             else:
                 continue
-        return out        
+        return out
 
     def __contains__(self, item):
         return item in self.__slots__
@@ -38,37 +39,58 @@ class GbdRecord:
     def __iter__(self):
         for item in self.__slots__:
             yield getattr(self, item)
-            
+
     def __eq__(self, other):
-        return all([getattr(self, item) == getattr(other, item) for item in self.__slots__
-                    if not isinstance(getattr(self, item), GbdRecord)])
+        return all(
+            [
+                getattr(self, item) == getattr(other, item)
+                for item in self.__slots__
+                if not isinstance(getattr(self, item), GbdRecord)
+            ]
+        )
 
     def __repr__(self):
-        out = f'{self.__class__.__name__}('
+        out = f"{self.__class__.__name__}("
         for i, slot in enumerate(self.__slots__):
             attr = self[slot]
             if attr is None:
                 continue
             if i != 0:
-                out += ','
-            out += f'\n{slot}='
+                out += ","
+            out += f"\n{slot}="
             if isinstance(attr, tuple):
-                out += '['+', '.join([entity.name if hasattr(entity, "name") else entity for entity in attr]) + ']'
+                out += (
+                    "["
+                    + ", ".join(
+                        [
+                            entity.name if hasattr(entity, "name") else entity
+                            for entity in attr
+                        ]
+                    )
+                    + "]"
+                )
             elif hasattr(attr, "name"):
                 out += attr.name
             else:
                 out += repr(attr)
-        return out + ')'
+        return out + ")"
 
 
 class ModelableEntity(GbdRecord):
     """Container for general GBD ids and metadata."""
-    __slots__ = ('name', 'kind', 'gbd_id', )
 
-    def __init__(self,
-                 name: str,
-                 kind: str,
-                 gbd_id: c_id | s_id | hs_id | me_id | cov_id | rei_id | None, ):
+    __slots__ = (
+        "name",
+        "kind",
+        "gbd_id",
+    )
+
+    def __init__(
+        self,
+        name: str,
+        kind: str,
+        gbd_id: c_id | s_id | hs_id | me_id | cov_id | rei_id | None,
+    ):
         super().__init__()
         self.name = name
         self.kind = kind
@@ -77,18 +99,29 @@ class ModelableEntity(GbdRecord):
 
 class Restrictions(GbdRecord):
     """Container for information about sub-populations the entity describes."""
-    __slots__ = ('male_only', 'female_only', 'yll_only', 'yld_only', 'yll_age_group_id_start',
-                 'yll_age_group_id_end', 'yld_age_group_id_start', 'yld_age_group_id_end', )
 
-    def __init__(self,
-                 male_only: bool,
-                 female_only: bool,
-                 yll_only: bool,
-                 yld_only: bool,
-                 yll_age_group_id_start: int = None,
-                 yll_age_group_id_end: int = None,
-                 yld_age_group_id_start: int = None,
-                 yld_age_group_id_end: int = None, ):
+    __slots__ = (
+        "male_only",
+        "female_only",
+        "yll_only",
+        "yld_only",
+        "yll_age_group_id_start",
+        "yll_age_group_id_end",
+        "yld_age_group_id_start",
+        "yld_age_group_id_end",
+    )
+
+    def __init__(
+        self,
+        male_only: bool,
+        female_only: bool,
+        yll_only: bool,
+        yld_only: bool,
+        yll_age_group_id_start: int = None,
+        yll_age_group_id_end: int = None,
+        yld_age_group_id_start: int = None,
+        yld_age_group_id_end: int = None,
+    ):
         super().__init__()
         self.male_only = male_only
         self.female_only = female_only
@@ -102,13 +135,21 @@ class Restrictions(GbdRecord):
 
 class Tmred(GbdRecord):
     """Container for theoretical minimum risk exposure distribution data."""
-    __slots__ = ('distribution', 'inverted', 'min', 'max', )
 
-    def __init__(self,
-                 distribution: str,
-                 inverted: bool,
-                 min: scalar = None,
-                 max: scalar = None, ):
+    __slots__ = (
+        "distribution",
+        "inverted",
+        "min",
+        "max",
+    )
+
+    def __init__(
+        self,
+        distribution: str,
+        inverted: bool,
+        min: scalar = None,
+        max: scalar = None,
+    ):
         super().__init__()
         self.distribution = distribution
         self.inverted = inverted
@@ -118,171 +159,311 @@ class Tmred(GbdRecord):
 
 class Categories(GbdRecord):
     """Container for categorical risk exposure levels."""
-    __slots__ = ('cat1', 'cat2', 'cat3', 'cat4', 'cat5', 'cat6', 'cat7', 'cat8', 'cat9', 'cat10', 'cat11', 'cat12',
-                 'cat13', 'cat14', 'cat15', 'cat16', 'cat17', 'cat18', 'cat19', 'cat20', 'cat21', 'cat22', 'cat23',
-                 'cat24', 'cat25', 'cat26', 'cat27', 'cat28', 'cat29', 'cat30', 'cat31', 'cat32', 'cat33', 'cat34',
-                 'cat35', 'cat36', 'cat37', 'cat38', 'cat39', 'cat40', 'cat41', 'cat42', 'cat43', 'cat44', 'cat45',
-                 'cat46', 'cat47', 'cat48', 'cat49', 'cat50', 'cat51', 'cat52', 'cat53', 'cat54', 'cat55', 'cat56',
-                 'cat57', 'cat58', 'cat59', 'cat60', 'cat61', 'cat62', 'cat63', 'cat64', 'cat65', 'cat66', 'cat67',
-                 'cat68', 'cat69', 'cat70', 'cat71', 'cat72', 'cat73', 'cat74', 'cat75', 'cat76', 'cat77', 'cat78',
-                 'cat79', 'cat80', 'cat81', 'cat82', 'cat83', 'cat84', 'cat85', 'cat86', 'cat87', 'cat88', 'cat89',
-                 'cat90', 'cat91', 'cat92', 'cat93', 'cat94', 'cat95', 'cat96', 'cat97', 'cat98', 'cat99', 'cat100',
-                 'cat101', 'cat102', 'cat103', 'cat104', 'cat105', 'cat106', 'cat107', 'cat108', 'cat109', 'cat110',
-                 'cat111', 'cat112', 'cat113', 'cat114', 'cat115', 'cat116', 'cat117', 'cat118', 'cat119', 'cat120',
-                 'cat121', 'cat122', 'cat123', 'cat124', 'cat125', 'cat126', 'cat127', 'cat128', 'cat129', 'cat130',
-                 'cat131', 'cat132', 'cat133', 'cat134', 'cat135', 'cat136', 'cat137', 'cat138', 'cat139', 'cat140',
-                 'cat141', 'cat142', 'cat143', 'cat144', 'cat145', 'cat146', 'cat147', 'cat148', 'cat149', )
 
-    def __init__(self,
-                 cat1: str = None,
-                 cat2: str = None,
-                 cat3: str = None,
-                 cat4: str = None,
-                 cat5: str = None,
-                 cat6: str = None,
-                 cat7: str = None,
-                 cat8: str = None,
-                 cat9: str = None,
-                 cat10: str = None,
-                 cat11: str = None,
-                 cat12: str = None,
-                 cat13: str = None,
-                 cat14: str = None,
-                 cat15: str = None,
-                 cat16: str = None,
-                 cat17: str = None,
-                 cat18: str = None,
-                 cat19: str = None,
-                 cat20: str = None,
-                 cat21: str = None,
-                 cat22: str = None,
-                 cat23: str = None,
-                 cat24: str = None,
-                 cat25: str = None,
-                 cat26: str = None,
-                 cat27: str = None,
-                 cat28: str = None,
-                 cat29: str = None,
-                 cat30: str = None,
-                 cat31: str = None,
-                 cat32: str = None,
-                 cat33: str = None,
-                 cat34: str = None,
-                 cat35: str = None,
-                 cat36: str = None,
-                 cat37: str = None,
-                 cat38: str = None,
-                 cat39: str = None,
-                 cat40: str = None,
-                 cat41: str = None,
-                 cat42: str = None,
-                 cat43: str = None,
-                 cat44: str = None,
-                 cat45: str = None,
-                 cat46: str = None,
-                 cat47: str = None,
-                 cat48: str = None,
-                 cat49: str = None,
-                 cat50: str = None,
-                 cat51: str = None,
-                 cat52: str = None,
-                 cat53: str = None,
-                 cat54: str = None,
-                 cat55: str = None,
-                 cat56: str = None,
-                 cat57: str = None,
-                 cat58: str = None,
-                 cat59: str = None,
-                 cat60: str = None,
-                 cat61: str = None,
-                 cat62: str = None,
-                 cat63: str = None,
-                 cat64: str = None,
-                 cat65: str = None,
-                 cat66: str = None,
-                 cat67: str = None,
-                 cat68: str = None,
-                 cat69: str = None,
-                 cat70: str = None,
-                 cat71: str = None,
-                 cat72: str = None,
-                 cat73: str = None,
-                 cat74: str = None,
-                 cat75: str = None,
-                 cat76: str = None,
-                 cat77: str = None,
-                 cat78: str = None,
-                 cat79: str = None,
-                 cat80: str = None,
-                 cat81: str = None,
-                 cat82: str = None,
-                 cat83: str = None,
-                 cat84: str = None,
-                 cat85: str = None,
-                 cat86: str = None,
-                 cat87: str = None,
-                 cat88: str = None,
-                 cat89: str = None,
-                 cat90: str = None,
-                 cat91: str = None,
-                 cat92: str = None,
-                 cat93: str = None,
-                 cat94: str = None,
-                 cat95: str = None,
-                 cat96: str = None,
-                 cat97: str = None,
-                 cat98: str = None,
-                 cat99: str = None,
-                 cat100: str = None,
-                 cat101: str = None,
-                 cat102: str = None,
-                 cat103: str = None,
-                 cat104: str = None,
-                 cat105: str = None,
-                 cat106: str = None,
-                 cat107: str = None,
-                 cat108: str = None,
-                 cat109: str = None,
-                 cat110: str = None,
-                 cat111: str = None,
-                 cat112: str = None,
-                 cat113: str = None,
-                 cat114: str = None,
-                 cat115: str = None,
-                 cat116: str = None,
-                 cat117: str = None,
-                 cat118: str = None,
-                 cat119: str = None,
-                 cat120: str = None,
-                 cat121: str = None,
-                 cat122: str = None,
-                 cat123: str = None,
-                 cat124: str = None,
-                 cat125: str = None,
-                 cat126: str = None,
-                 cat127: str = None,
-                 cat128: str = None,
-                 cat129: str = None,
-                 cat130: str = None,
-                 cat131: str = None,
-                 cat132: str = None,
-                 cat133: str = None,
-                 cat134: str = None,
-                 cat135: str = None,
-                 cat136: str = None,
-                 cat137: str = None,
-                 cat138: str = None,
-                 cat139: str = None,
-                 cat140: str = None,
-                 cat141: str = None,
-                 cat142: str = None,
-                 cat143: str = None,
-                 cat144: str = None,
-                 cat145: str = None,
-                 cat146: str = None,
-                 cat147: str = None,
-                 cat148: str = None,
-                 cat149: str = None, ):
+    __slots__ = (
+        "cat1",
+        "cat2",
+        "cat3",
+        "cat4",
+        "cat5",
+        "cat6",
+        "cat7",
+        "cat8",
+        "cat9",
+        "cat10",
+        "cat11",
+        "cat12",
+        "cat13",
+        "cat14",
+        "cat15",
+        "cat16",
+        "cat17",
+        "cat18",
+        "cat19",
+        "cat20",
+        "cat21",
+        "cat22",
+        "cat23",
+        "cat24",
+        "cat25",
+        "cat26",
+        "cat27",
+        "cat28",
+        "cat29",
+        "cat30",
+        "cat31",
+        "cat32",
+        "cat33",
+        "cat34",
+        "cat35",
+        "cat36",
+        "cat37",
+        "cat38",
+        "cat39",
+        "cat40",
+        "cat41",
+        "cat42",
+        "cat43",
+        "cat44",
+        "cat45",
+        "cat46",
+        "cat47",
+        "cat48",
+        "cat49",
+        "cat50",
+        "cat51",
+        "cat52",
+        "cat53",
+        "cat54",
+        "cat55",
+        "cat56",
+        "cat57",
+        "cat58",
+        "cat59",
+        "cat60",
+        "cat61",
+        "cat62",
+        "cat63",
+        "cat64",
+        "cat65",
+        "cat66",
+        "cat67",
+        "cat68",
+        "cat69",
+        "cat70",
+        "cat71",
+        "cat72",
+        "cat73",
+        "cat74",
+        "cat75",
+        "cat76",
+        "cat77",
+        "cat78",
+        "cat79",
+        "cat80",
+        "cat81",
+        "cat82",
+        "cat83",
+        "cat84",
+        "cat85",
+        "cat86",
+        "cat87",
+        "cat88",
+        "cat89",
+        "cat90",
+        "cat91",
+        "cat92",
+        "cat93",
+        "cat94",
+        "cat95",
+        "cat96",
+        "cat97",
+        "cat98",
+        "cat99",
+        "cat100",
+        "cat101",
+        "cat102",
+        "cat103",
+        "cat104",
+        "cat105",
+        "cat106",
+        "cat107",
+        "cat108",
+        "cat109",
+        "cat110",
+        "cat111",
+        "cat112",
+        "cat113",
+        "cat114",
+        "cat115",
+        "cat116",
+        "cat117",
+        "cat118",
+        "cat119",
+        "cat120",
+        "cat121",
+        "cat122",
+        "cat123",
+        "cat124",
+        "cat125",
+        "cat126",
+        "cat127",
+        "cat128",
+        "cat129",
+        "cat130",
+        "cat131",
+        "cat132",
+        "cat133",
+        "cat134",
+        "cat135",
+        "cat136",
+        "cat137",
+        "cat138",
+        "cat139",
+        "cat140",
+        "cat141",
+        "cat142",
+        "cat143",
+        "cat144",
+        "cat145",
+        "cat146",
+        "cat147",
+        "cat148",
+        "cat149",
+    )
+
+    def __init__(
+        self,
+        cat1: str = None,
+        cat2: str = None,
+        cat3: str = None,
+        cat4: str = None,
+        cat5: str = None,
+        cat6: str = None,
+        cat7: str = None,
+        cat8: str = None,
+        cat9: str = None,
+        cat10: str = None,
+        cat11: str = None,
+        cat12: str = None,
+        cat13: str = None,
+        cat14: str = None,
+        cat15: str = None,
+        cat16: str = None,
+        cat17: str = None,
+        cat18: str = None,
+        cat19: str = None,
+        cat20: str = None,
+        cat21: str = None,
+        cat22: str = None,
+        cat23: str = None,
+        cat24: str = None,
+        cat25: str = None,
+        cat26: str = None,
+        cat27: str = None,
+        cat28: str = None,
+        cat29: str = None,
+        cat30: str = None,
+        cat31: str = None,
+        cat32: str = None,
+        cat33: str = None,
+        cat34: str = None,
+        cat35: str = None,
+        cat36: str = None,
+        cat37: str = None,
+        cat38: str = None,
+        cat39: str = None,
+        cat40: str = None,
+        cat41: str = None,
+        cat42: str = None,
+        cat43: str = None,
+        cat44: str = None,
+        cat45: str = None,
+        cat46: str = None,
+        cat47: str = None,
+        cat48: str = None,
+        cat49: str = None,
+        cat50: str = None,
+        cat51: str = None,
+        cat52: str = None,
+        cat53: str = None,
+        cat54: str = None,
+        cat55: str = None,
+        cat56: str = None,
+        cat57: str = None,
+        cat58: str = None,
+        cat59: str = None,
+        cat60: str = None,
+        cat61: str = None,
+        cat62: str = None,
+        cat63: str = None,
+        cat64: str = None,
+        cat65: str = None,
+        cat66: str = None,
+        cat67: str = None,
+        cat68: str = None,
+        cat69: str = None,
+        cat70: str = None,
+        cat71: str = None,
+        cat72: str = None,
+        cat73: str = None,
+        cat74: str = None,
+        cat75: str = None,
+        cat76: str = None,
+        cat77: str = None,
+        cat78: str = None,
+        cat79: str = None,
+        cat80: str = None,
+        cat81: str = None,
+        cat82: str = None,
+        cat83: str = None,
+        cat84: str = None,
+        cat85: str = None,
+        cat86: str = None,
+        cat87: str = None,
+        cat88: str = None,
+        cat89: str = None,
+        cat90: str = None,
+        cat91: str = None,
+        cat92: str = None,
+        cat93: str = None,
+        cat94: str = None,
+        cat95: str = None,
+        cat96: str = None,
+        cat97: str = None,
+        cat98: str = None,
+        cat99: str = None,
+        cat100: str = None,
+        cat101: str = None,
+        cat102: str = None,
+        cat103: str = None,
+        cat104: str = None,
+        cat105: str = None,
+        cat106: str = None,
+        cat107: str = None,
+        cat108: str = None,
+        cat109: str = None,
+        cat110: str = None,
+        cat111: str = None,
+        cat112: str = None,
+        cat113: str = None,
+        cat114: str = None,
+        cat115: str = None,
+        cat116: str = None,
+        cat117: str = None,
+        cat118: str = None,
+        cat119: str = None,
+        cat120: str = None,
+        cat121: str = None,
+        cat122: str = None,
+        cat123: str = None,
+        cat124: str = None,
+        cat125: str = None,
+        cat126: str = None,
+        cat127: str = None,
+        cat128: str = None,
+        cat129: str = None,
+        cat130: str = None,
+        cat131: str = None,
+        cat132: str = None,
+        cat133: str = None,
+        cat134: str = None,
+        cat135: str = None,
+        cat136: str = None,
+        cat137: str = None,
+        cat138: str = None,
+        cat139: str = None,
+        cat140: str = None,
+        cat141: str = None,
+        cat142: str = None,
+        cat143: str = None,
+        cat144: str = None,
+        cat145: str = None,
+        cat146: str = None,
+        cat147: str = None,
+        cat148: str = None,
+        cat149: str = None,
+    ):
         super().__init__()
         self.cat1 = cat1
         self.cat2 = cat2

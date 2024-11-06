@@ -10,15 +10,15 @@ from .id import rei_id
 
 class Etiology(ModelableEntity):
     """Container for etiology GBD ids and metadata."""
-    __slots__ = ('name', 'kind', 'gbd_id', )
 
-    def __init__(self,
-                 name: str,
-                 kind: str,
-                 gbd_id: rei_id | None, ):
-        super().__init__(name=name,
-                         kind=kind,
-                         gbd_id=gbd_id)
+    __slots__ = (
+        "name",
+        "kind",
+        "gbd_id",
+    )
+
+    def __init__(self, name: str, kind: str, gbd_id: rei_id | None):
+        super().__init__(name=name, kind=kind, gbd_id=gbd_id)
         self.name = name
         self.kind = kind
         self.gbd_id = gbd_id
@@ -26,50 +26,81 @@ class Etiology(ModelableEntity):
 
 class Etiologies(GbdRecord):
     """Container for GBD etiologies."""
-    __slots__ = ('cholera', 'non_typhoidal_salmonella', 'shigella', 'enteropathogenic_e_coli',
-                 'enterotoxigenic_e_coli', 'campylobacter', 'entamoeba', 'cryptosporidium', 'rotavirus', 'aeromonas',
-                 'clostridium_difficile', 'norovirus', 'adenovirus', 'influenza', 'respiratory_syncytial_virus',
-                 'group_b_streptococcus', 'acinetobacter_baumannii', 'chlamydia_spp', 'enterobacter_spp',
-                 'escherichia_coli', 'fungus', 'haemophilus_influenzae', 'klebsiella_pneumoniae', 'legionella_spp',
-                 'listeria_monocytogenes', 'mycoplasma', 'other_bacterial_pathogen', 'other_viral_etiologies_of_lri',
-                 'polymicrobial', 'pseudomonas_aeruginosa', 'staphylococcus_aureus',
-                 'viral_etiologies_of_meningitis', 'streptococcus_pneumoniae', 'neisseria_meningitidis', )
 
-    def __init__(self,
-                 cholera: Etiology,
-                 non_typhoidal_salmonella: Etiology,
-                 shigella: Etiology,
-                 enteropathogenic_e_coli: Etiology,
-                 enterotoxigenic_e_coli: Etiology,
-                 campylobacter: Etiology,
-                 entamoeba: Etiology,
-                 cryptosporidium: Etiology,
-                 rotavirus: Etiology,
-                 aeromonas: Etiology,
-                 clostridium_difficile: Etiology,
-                 norovirus: Etiology,
-                 adenovirus: Etiology,
-                 influenza: Etiology,
-                 respiratory_syncytial_virus: Etiology,
-                 group_b_streptococcus: Etiology,
-                 acinetobacter_baumannii: Etiology,
-                 chlamydia_spp: Etiology,
-                 enterobacter_spp: Etiology,
-                 escherichia_coli: Etiology,
-                 fungus: Etiology,
-                 haemophilus_influenzae: Etiology,
-                 klebsiella_pneumoniae: Etiology,
-                 legionella_spp: Etiology,
-                 listeria_monocytogenes: Etiology,
-                 mycoplasma: Etiology,
-                 other_bacterial_pathogen: Etiology,
-                 other_viral_etiologies_of_lri: Etiology,
-                 polymicrobial: Etiology,
-                 pseudomonas_aeruginosa: Etiology,
-                 staphylococcus_aureus: Etiology,
-                 viral_etiologies_of_meningitis: Etiology,
-                 streptococcus_pneumoniae: Etiology,
-                 neisseria_meningitidis: Etiology, ):
+    __slots__ = (
+        "cholera",
+        "non_typhoidal_salmonella",
+        "shigella",
+        "enteropathogenic_e_coli",
+        "enterotoxigenic_e_coli",
+        "campylobacter",
+        "entamoeba",
+        "cryptosporidium",
+        "rotavirus",
+        "aeromonas",
+        "clostridium_difficile",
+        "norovirus",
+        "adenovirus",
+        "influenza",
+        "respiratory_syncytial_virus",
+        "group_b_streptococcus",
+        "acinetobacter_baumannii",
+        "chlamydia_spp",
+        "enterobacter_spp",
+        "escherichia_coli",
+        "fungus",
+        "haemophilus_influenzae",
+        "klebsiella_pneumoniae",
+        "legionella_spp",
+        "listeria_monocytogenes",
+        "mycoplasma",
+        "other_bacterial_pathogen",
+        "other_viral_etiologies_of_lri",
+        "polymicrobial",
+        "pseudomonas_aeruginosa",
+        "staphylococcus_aureus",
+        "viral_etiologies_of_meningitis",
+        "streptococcus_pneumoniae",
+        "neisseria_meningitidis",
+    )
+
+    def __init__(
+        self,
+        cholera: Etiology,
+        non_typhoidal_salmonella: Etiology,
+        shigella: Etiology,
+        enteropathogenic_e_coli: Etiology,
+        enterotoxigenic_e_coli: Etiology,
+        campylobacter: Etiology,
+        entamoeba: Etiology,
+        cryptosporidium: Etiology,
+        rotavirus: Etiology,
+        aeromonas: Etiology,
+        clostridium_difficile: Etiology,
+        norovirus: Etiology,
+        adenovirus: Etiology,
+        influenza: Etiology,
+        respiratory_syncytial_virus: Etiology,
+        group_b_streptococcus: Etiology,
+        acinetobacter_baumannii: Etiology,
+        chlamydia_spp: Etiology,
+        enterobacter_spp: Etiology,
+        escherichia_coli: Etiology,
+        fungus: Etiology,
+        haemophilus_influenzae: Etiology,
+        klebsiella_pneumoniae: Etiology,
+        legionella_spp: Etiology,
+        listeria_monocytogenes: Etiology,
+        mycoplasma: Etiology,
+        other_bacterial_pathogen: Etiology,
+        other_viral_etiologies_of_lri: Etiology,
+        polymicrobial: Etiology,
+        pseudomonas_aeruginosa: Etiology,
+        staphylococcus_aureus: Etiology,
+        viral_etiologies_of_meningitis: Etiology,
+        streptococcus_pneumoniae: Etiology,
+        neisseria_meningitidis: Etiology,
+    ):
         super().__init__()
         self.cholera = cholera
         self.non_typhoidal_salmonella = non_typhoidal_salmonella
