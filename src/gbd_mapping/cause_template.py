@@ -23,8 +23,8 @@ class Cause(ModelableEntity):
                  most_detailed: bool,
                  level: int,
                  restrictions: Restrictions,
-                 parent: "Cause" = None,
-                 sub_causes: tuple["Cause", ...] | None = None,
+                 parent: Cause | None = None,
+                 sub_causes: tuple[Cause, ...] | None = None,
                  sequelae: tuple[Sequela, ...] | None = None,
                  etiologies: tuple[Etiology, ...] | None = None, ):
         super().__init__(name=name,
