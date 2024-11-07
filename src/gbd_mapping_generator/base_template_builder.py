@@ -1,4 +1,4 @@
-from .util import SPACING, make_import, make_module_docstring, make_record
+from .util import DOUBLE_SPACING, make_import, make_module_docstring, make_record
 
 IMPORTABLES_DEFINED = ("GbdRecord", "ModelableEntity", "Restrictions", "Tmred", "Categories")
 
@@ -7,7 +7,7 @@ gbd_record_attrs = ()
 modelable_entity_attrs = (
     ("name", "str"),
     ("kind", "str"),
-    ("gbd_id", "Union[c_id, s_id, hs_id, me_id, cov_id, rei_id, None]"),
+    ("gbd_id", "c_id | s_id | hs_id | me_id | cov_id | rei_id | None"),
 )
 restrictions_attrs = (
     ("male_only", "bool"),
@@ -64,7 +64,7 @@ def make_gbd_record():
             attr = getattr(self, item)
             if isinstance(attr, GbdRecord):
                 out[item] = attr.to_dict()
-            elif isinstance(attr, Tuple) and attr:
+            elif isinstance(attr, tuple) and attr:
                 if isinstance(attr[0], GbdRecord):
                     out[item] = tuple(r.to_dict() for r in attr)
             elif attr is not None:
@@ -121,7 +121,6 @@ def build_mapping() -> str:
 
     """
     templates = make_module_docstring("Template classes for GBD entities", __file__)
-    templates += make_import("typing", ["Union", "Tuple"])
     templates += (
         make_import(
             ".id",
@@ -135,12 +134,12 @@ def build_mapping() -> str:
                 "scalar",
             ],
         )
-        + SPACING
+        + DOUBLE_SPACING
     )
     templates += make_gbd_record()
 
     for entity, info in get_base_types().items():
-        templates += SPACING
+        templates += DOUBLE_SPACING
         templates += make_record(entity, **info)
 
     return templates

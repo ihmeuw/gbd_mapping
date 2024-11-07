@@ -1,10 +1,9 @@
-from typing import List
-
 from .base_template_builder import gbd_record_attrs, modelable_entity_attrs
 from .data import get_risk_data, get_risk_list
 from .globals import ID_TYPES
 from .util import (
-    SPACING,
+    DOUBLE_SPACING,
+    SINGLE_SPACING,
     TAB,
     TEXTWIDTH,
     format_string_none,
@@ -24,17 +23,17 @@ def get_base_types():
         ("gbd_id", ID_TYPES.REI_ID),
         ("level", "int"),
         ("most_detailed", "bool"),
-        ("distribution", "Union[str, None]"),
+        ("distribution", "str | None"),
         ("population_attributable_fraction_calculation_type", "str"),
         ("restrictions", "Restrictions"),
     ]
 
     risk_attrs += [
-        ("affected_causes", "Tuple[Cause, ...]"),
-        ("population_attributable_fraction_of_one_causes", "Tuple[Cause, ...]"),
-        ("parent", 'Union["RiskFactor", None] = None'),
-        ("sub_risk_factors", 'Tuple["RiskFactor", ...] = None'),
-        ("affected_risk_factors", 'Tuple["RiskFactor", ...] = None'),
+        ("affected_causes", "tuple[Cause, ...]"),
+        ("population_attributable_fraction_of_one_causes", "tuple[Cause, ...]"),
+        ("parent", "RiskFactor | None = None"),
+        ("sub_risk_factors", "tuple[RiskFactor, ...] = None"),
+        ("affected_risk_factors", "tuple[RiskFactor, ...] = None"),
         ("categories", "Categories = None"),
         ("tmred", "Tmred = None"),
         ("relative_risk_scalar", "scalar = None"),
@@ -114,7 +113,7 @@ def make_risk(
     return out
 
 
-def make_entity_list(name, entity_list: List, entity_type: str) -> str:
+def make_entity_list(name, entity_list: list, entity_type: str) -> str:
     field = 2 * TAB + f"{name}=("
     if not entity_list:
         return field + "),\n"
@@ -138,7 +137,7 @@ def make_entity_list(name, entity_list: List, entity_type: str) -> str:
     return out
 
 
-def make_risks(risk_list: List) -> str:
+def make_risks(risk_list: list) -> str:
     out = "risk_factors = RiskFactors(\n"
     for (
         name,
@@ -195,25 +194,27 @@ def make_risks(risk_list: List) -> str:
 
 def build_mapping_template():
     out = make_module_docstring("Mapping templates for GBD risk factors.", __file__)
-    out += make_import("typing", ("Tuple", "Union")) + "\n"
-    out += make_import(".id", (ID_TYPES.REI_ID, "scalar"))
+    out += make_import("__future__", ("annotations",)) + "\n"
     out += make_import(
         ".base_template",
-        ("ModelableEntity", "GbdRecord", "Categories", "Tmred", "Restrictions"),
+        ("Categories", "GbdRecord", "ModelableEntity", "Restrictions", "Tmred"),
     )
     out += make_import(".cause_template", ("Cause",))
+    out += make_import(".id", (ID_TYPES.REI_ID, "scalar"))
 
     for entity, info in get_base_types().items():
-        out += SPACING
+        out += DOUBLE_SPACING
         out += make_record(entity, **info)
     return out
 
 
 def build_mapping() -> str:
     out = make_module_docstring("Mapping of GBD risk factors.", __file__)
+    out += make_import(".base_template", ("Categories", "Restrictions", "Tmred"))
+    out += make_import(".cause", ("causes",))
     out += make_import(".id", (ID_TYPES.REI_ID, "scalar"))
-    out += make_import(".base_template", ("Categories", "Tmred", "Restrictions"))
-    out += make_import(".risk_factor_template", ("RiskFactor", "RiskFactors"))
-    out += make_import(".cause", ("causes",)) + SPACING
+    out += (
+        make_import(".risk_factor_template", ("RiskFactor", "RiskFactors")) + SINGLE_SPACING
+    )
     out += make_risks(get_risk_data())
     return out
