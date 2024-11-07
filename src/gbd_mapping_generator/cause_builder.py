@@ -3,7 +3,8 @@ from .base_template_builder import gbd_record_attrs, modelable_entity_attrs
 from .data import get_cause_data, get_cause_list
 from .globals import ID_TYPES
 from .util import (
-    SPACING,
+    DOUBLE_SPACING,
+    SINGLE_SPACING,
     TAB,
     TEXTWIDTH,
     make_import,
@@ -140,23 +141,24 @@ def make_causes(causes_list):
 
 def build_mapping_template():
     out = make_module_docstring("Mapping templates for GBD causes.", __file__)
-    out += make_import(".id", (ID_TYPES.C_ID, ID_TYPES.ME_ID, "Unknown"))
-    out += make_import(".base_template", ("Restrictions", "ModelableEntity", "GbdRecord"))
-    out += make_import(".sequela_template", ("Sequela",))
+    out += make_import("__future__", ("annotations",)) + "\n"
+    out += make_import(".base_template", ("GbdRecord", "ModelableEntity", "Restrictions"))
     out += make_import(".etiology_template", ("Etiology",))
+    out += make_import(".id", ("Unknown", ID_TYPES.C_ID, ID_TYPES.ME_ID))
+    out += make_import(".sequela_template", ("Sequela",))
 
     for entity, info in get_base_types().items():
-        out += SPACING
+        out += DOUBLE_SPACING
         out += make_record(entity, **info)
     return out
 
 
 def build_mapping():
     out = make_module_docstring("Mapping of GBD causes.", __file__)
-    out += make_import(".id", (ID_TYPES.C_ID, ID_TYPES.ME_ID, "UNKNOWN"))
     out += make_import(".base_template", ("Restrictions",))
     out += make_import(".cause_template", ("Cause", "Causes"))
-    out += make_import(".sequela", ("sequelae",))
-    out += make_import(".etiology", ("etiologies",)) + SPACING
+    out += make_import(".etiology", ("etiologies",))
+    out += make_import(".id", ("UNKNOWN", ID_TYPES.C_ID, ID_TYPES.ME_ID))
+    out += make_import(".sequela", ("sequelae",)) + SINGLE_SPACING
     out += make_causes(get_cause_data())
     return out

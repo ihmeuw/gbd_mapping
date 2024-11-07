@@ -1,7 +1,14 @@
 from .base_template_builder import gbd_record_attrs, modelable_entity_attrs
 from .data import get_covariate_data, get_covariate_list
 from .globals import ID_TYPES, CovariateDataSeq
-from .util import SPACING, TAB, make_import, make_module_docstring, make_record
+from .util import (
+    DOUBLE_SPACING,
+    SINGLE_SPACING,
+    TAB,
+    make_import,
+    make_module_docstring,
+    make_record,
+)
 
 IMPORTABLES_DEFINED = ("Covariate", "covariates")
 
@@ -90,18 +97,18 @@ def make_covariates(covariate_list: CovariateDataSeq) -> str:
 
 def build_mapping_template():
     out = make_module_docstring("Mapping templates for GBD covariates.", __file__)
+    out += make_import(".base_template", ("GbdRecord", "ModelableEntity"))
     out += make_import(".id", (ID_TYPES.COV_ID,))
-    out += make_import(".base_template", ("ModelableEntity", "GbdRecord"))
 
     for entity, info in get_base_types().items():
-        out += SPACING
+        out += DOUBLE_SPACING
         out += make_record(entity, **info)
     return out
 
 
 def build_mapping():
     out = make_module_docstring("Mapping of GBD covariates.", __file__)
-    out += make_import(".id", (ID_TYPES.COV_ID,))
-    out += make_import(".covariate_template", ("Covariate", "Covariates")) + SPACING
+    out += make_import(".covariate_template", ("Covariate", "Covariates"))
+    out += make_import(".id", (ID_TYPES.COV_ID,)) + SINGLE_SPACING
     out += make_covariates(get_covariate_data())
     return out

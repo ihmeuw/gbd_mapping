@@ -6,9 +6,10 @@ from typing import Any
 import numpy as np
 import pandas as pd
 
-TEXTWIDTH = 118  # type: int
-TAB = "    "  # type: str
-SPACING = "\n\n"  # type: str
+TEXTWIDTH: int = 118
+TAB: str = "    "
+SINGLE_SPACING: str = "\n"
+DOUBLE_SPACING: str = "\n\n"
 
 # In Python 3.7 and newer, there is no limit. This limit applies to positional and keyword arguments.
 MAX_PYTHON_3_6_ARG_COUNT = 255  # type: int

@@ -2,6 +2,7 @@
 
  - Drop support for Python 3.9
  - Modernize type hints
+ - Update imports written by builders to be isort compliant
 
 **4.0.0 - 05/20/24**
 
