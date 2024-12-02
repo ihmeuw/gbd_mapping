@@ -203,8 +203,6 @@ pipeline {
         } // stages bracket within Python matrix
         post {
           always {
-            sh "${ACTIVATE} && make clean"
-            sh "rm -rf ${CONDA_ENV_PATH}"
             // Generate a message to send to Slack.
             script {
               if (env.BRANCH == "main") {
@@ -226,9 +224,6 @@ pipeline {
                 Build details: <${env.BUILD_URL}/console|See in web console>
             """.stripIndent()
             }
-
-            // Delete the workspace directory.
-            deleteDir()
           }
           failure {
             echo "This build triggered by ${developerID} failed on ${GIT_BRANCH}. Sending a failure message to Slack."
@@ -250,8 +245,24 @@ pipeline {
               }
             }
           }
+          cleanup {  // cleanup for python matrix workspaces
+            sh "${ACTIVATE} && make clean"
+            sh "rm -rf ${CONDA_ENV_PATH}"
+            cleanWs()
+            dir("${WORKSPACE}@tmp"){
+              deleteDir()
+            }
+          }
         } // post bracket
       } // Python matrix bracket
     } // Python matrix stage bracket
   } // stages bracket
+  post {
+    cleanup { // cleanup for outer workspace
+      cleanWs()
+      dir("${WORKSPACE}@tmp"){
+        deleteDir()
+      }
+    }
+  }
 }

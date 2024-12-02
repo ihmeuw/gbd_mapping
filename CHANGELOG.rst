@@ -1,3 +1,7 @@
+**4.1.1 - 12/2/24**
+
+ - Properly clean up Jenkins workspaces
+
 **4.1.0 - 11/06/24**
 
  - Drop support for Python 3.9
