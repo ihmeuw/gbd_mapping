@@ -1,3 +1,7 @@
+**4.1.2 - 12/3/24**
+
+ - Fix infinite recursion bug
+
 **4.1.1 - 12/2/24**
 
  - Properly clean up Jenkins workspaces
