@@ -16,7 +16,7 @@ class GbdRecord:
         for item in self.__slots__:
             attr = getattr(self, item)
             if item == "parent":
-                out[item] = attr
+                out[item] = attr.name if hasattr(attr, "name") else attr.__repr__()
             elif isinstance(attr, GbdRecord):
                 out[item] = attr.to_dict()
             elif isinstance(attr, tuple) and attr:
