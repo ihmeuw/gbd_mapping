@@ -10,12 +10,14 @@ from .id import c_id, cov_id, hs_id, me_id, rei_id, s_id, scalar
 class GbdRecord:
     """Base class for entities modeled in the GBD."""
     __slots__ = ()
-    
+
     def to_dict(self):
         out = {}
         for item in self.__slots__:
             attr = getattr(self, item)
-            if isinstance(attr, GbdRecord):
+            if item == "parent":
+                out[item] = attr
+            elif isinstance(attr, GbdRecord):
                 out[item] = attr.to_dict()
             elif isinstance(attr, tuple) and attr:
                 if isinstance(attr[0], GbdRecord):
@@ -38,7 +40,7 @@ class GbdRecord:
     def __iter__(self):
         for item in self.__slots__:
             yield getattr(self, item)
-            
+
     def __eq__(self, other):
         return all([getattr(self, item) == getattr(other, item) for item in self.__slots__
                     if not isinstance(getattr(self, item), GbdRecord)])
