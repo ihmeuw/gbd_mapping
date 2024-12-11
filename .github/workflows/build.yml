@@ -22,6 +22,7 @@ jobs:
       dependencies: "vivarium_gbd_access"
       skip_mypy: true
       install_type: "[test,docs]"
+      python_version: ${{ matrix.python-version }}
     secrets:
       NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
       NOTIFY_PASSWORD: ${{ secrets.NOTIFY_PASSWORD }}
