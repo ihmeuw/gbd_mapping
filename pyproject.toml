@@ -19,7 +19,3 @@ source = ["gbd_mapping"]
 
 [tool.coverage.report]
 show_missing = true
-
-[[tool.uv.index]]
-name = "ihme_artifactory"
-url = "https://artifactory.ihme.washington.edu/artifactory/api/pypi/pypi-shared/simple/"
