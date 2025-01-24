@@ -22,5 +22,4 @@ show_missing = true
 
 [[tool.uv.index]]
 name = "ihme_artifactory"
-# Required URL for the index.
-url = "https://artifactory.ihme.washington.edu/artifactory/api/pypi/pypi-shared/"
+url = "https://artifactory.ihme.washington.edu/artifactory/api/pypi/pypi-shared/simple/"
