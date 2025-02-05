@@ -1,3 +1,7 @@
+**4.1.3 - 02/05/25**
+
+ - Add python versions file
+
 **4.1.2 - 12/3/24**
 
  - Fix infinite recursion bug
