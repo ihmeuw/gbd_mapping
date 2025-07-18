@@ -43,10 +43,9 @@ if __name__ == "__main__":
         long_description = f.read()
 
     install_requirements = [
-        "vivarium_build_utils>=1.1.0,<2.0.0",
-        "click",
+        "vivarium_build_utils>=1.2.0,<2.0.0",
+        "vivarium_build_utils[pandas,click]",
         "numpy",
-        "pandas",
         "pyyaml",
     ]
 
@@ -57,20 +56,16 @@ if __name__ == "__main__":
     ]
 
     test_requirements = [
-        "pytest",
-        "pytest-cov",
-        "pytest-mock",
+        "vivarium_build_utils[testing]",
     ]
 
     doc_requirements = [
+        "vivarium_build_utils[sphinx-rtd-theme,sphinx-autodoc-typehints]",
         "sphinx>=6.2.1, <7.0",
-        "sphinx-rtd-theme",
-        "sphinx-autodoc-typehints",
     ]
 
     lint_requirements = [
-        "black==22.3.0",
-        "isort==5.13.2",
+        "vivarium_build_utils[linting]",
     ]
 
     setup(
