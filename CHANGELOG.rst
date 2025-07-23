@@ -1,3 +1,7 @@
+**4.1.5 - TBD**
+
+ - Feature: Support new environment creation via 'make build-env'
+
 **4.1.4 - 07/16/25**
 
  - Support pinning of vivarium_build_utils; pin vivarium_build_utils>=1.1.0,<2.0.0
