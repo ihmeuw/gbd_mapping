@@ -64,6 +64,10 @@ if __name__ == "__main__":
         "sphinx>=6.2.1, <7.0",
     ]
 
+    interactive_requirements = [
+        "vivarium_dependencies[interactive]",
+    ]
+
     lint_requirements = [
         "vivarium_dependencies[formatting]",
     ]
@@ -82,9 +86,14 @@ if __name__ == "__main__":
         tests_require=test_requirements,
         extras_require={
             "docs": doc_requirements,
+            "interactive": interactive_requirements,
             "test": test_requirements,
             "data": data_requires,
-            "dev": doc_requirements + test_requirements + data_requires + lint_requirements,
+            "dev": doc_requirements
+            + interactive_requirements
+            + test_requirements
+            + data_requires
+            + lint_requirements,
         },
         entry_points="""
                 [console_scripts]
