@@ -8,6 +8,11 @@ from .etiology_template import Etiologies, Etiology
 from .id import rei_id
 
 etiologies = Etiologies(
+    acinetobacter_baumannii=Etiology(
+        name='acinetobacter_baumannii',
+        kind='etiology',
+        gbd_id=rei_id(414),
+    ),
     adenovirus=Etiology(
         name='adenovirus',
         kind='etiology',
@@ -18,30 +23,60 @@ etiologies = Etiologies(
         kind='etiology',
         gbd_id=rei_id(182),
     ),
-    entamoeba=Etiology(
-        name='entamoeba',
+    aspergillus_spp.=Etiology(
+        name='aspergillus_spp.',
         kind='etiology',
-        gbd_id=rei_id(179),
+        gbd_id=rei_id(620),
+    ),
+    campylobacter=Etiology(
+        name='campylobacter',
+        kind='etiology',
+        gbd_id=rei_id(178),
+    ),
+    candida_spp.=Etiology(
+        name='candida_spp.',
+        kind='etiology',
+        gbd_id=rei_id(631),
+    ),
+    chlamydia_spp=Etiology(
+        name='chlamydia_spp',
+        kind='etiology',
+        gbd_id=rei_id(415),
     ),
     cholera=Etiology(
         name='cholera',
         kind='etiology',
         gbd_id=rei_id(173),
     ),
+    citrobacter_spp.=Etiology(
+        name='citrobacter_spp.',
+        kind='etiology',
+        gbd_id=rei_id(622),
+    ),
     clostridium_difficile=Etiology(
         name='clostridium_difficile',
         kind='etiology',
         gbd_id=rei_id(183),
+    ),
+    coagulase_negative_staphylococci=Etiology(
+        name='coagulase_negative_staphylococci',
+        kind='etiology',
+        gbd_id=rei_id(632),
     ),
     cryptosporidium=Etiology(
         name='cryptosporidium',
         kind='etiology',
         gbd_id=rei_id(180),
     ),
-    campylobacter=Etiology(
-        name='campylobacter',
+    entamoeba=Etiology(
+        name='entamoeba',
         kind='etiology',
-        gbd_id=rei_id(178),
+        gbd_id=rei_id(179),
+    ),
+    enterobacter_spp=Etiology(
+        name='enterobacter_spp',
+        kind='etiology',
+        gbd_id=rei_id(416),
     ),
     enteropathogenic_e_coli=Etiology(
         name='enteropathogenic_e_coli',
@@ -53,50 +88,15 @@ etiologies = Etiologies(
         kind='etiology',
         gbd_id=rei_id(177),
     ),
-    norovirus=Etiology(
-        name='norovirus',
-        kind='etiology',
-        gbd_id=rei_id(184),
-    ),
-    rotavirus=Etiology(
-        name='rotavirus',
-        kind='etiology',
-        gbd_id=rei_id(181),
-    ),
-    non_typhoidal_salmonella=Etiology(
-        name='non_typhoidal_salmonella',
-        kind='etiology',
-        gbd_id=rei_id(174),
-    ),
-    shigella=Etiology(
-        name='shigella',
-        kind='etiology',
-        gbd_id=rei_id(175),
-    ),
-    acinetobacter_baumannii=Etiology(
-        name='acinetobacter_baumannii',
-        kind='etiology',
-        gbd_id=rei_id(414),
-    ),
-    chlamydia_spp=Etiology(
-        name='chlamydia_spp',
-        kind='etiology',
-        gbd_id=rei_id(415),
-    ),
-    enterobacter_spp=Etiology(
-        name='enterobacter_spp',
-        kind='etiology',
-        gbd_id=rei_id(416),
-    ),
     escherichia_coli=Etiology(
         name='escherichia_coli',
         kind='etiology',
         gbd_id=rei_id(417),
     ),
-    fungus=Etiology(
-        name='fungus',
+    group_a_streptococcus=Etiology(
+        name='group_a_streptococcus',
         kind='etiology',
-        gbd_id=rei_id(418),
+        gbd_id=rei_id(630),
     ),
     group_b_streptococcus=Etiology(
         name='group_b_streptococcus',
@@ -123,25 +123,80 @@ etiologies = Etiologies(
         kind='etiology',
         gbd_id=rei_id(421),
     ),
+    listeria_monocytogenes=Etiology(
+        name='listeria_monocytogenes',
+        kind='etiology',
+        gbd_id=rei_id(422),
+    ),
+    morganella_spp.=Etiology(
+        name='morganella_spp.',
+        kind='etiology',
+        gbd_id=rei_id(626),
+    ),
     mycoplasma=Etiology(
         name='mycoplasma',
         kind='etiology',
         gbd_id=rei_id(423),
     ),
-    other_bacterial_pathogen=Etiology(
-        name='other_bacterial_pathogen',
+    neisseria_meningitidis=Etiology(
+        name='neisseria_meningitidis',
+        kind='etiology',
+        gbd_id=rei_id(431),
+    ),
+    non_polio_enteroviruses=Etiology(
+        name='non_polio_enteroviruses',
+        kind='etiology',
+        gbd_id=rei_id(633),
+    ),
+    non_typhoidal_salmonella=Etiology(
+        name='non_typhoidal_salmonella',
+        kind='etiology',
+        gbd_id=rei_id(174),
+    ),
+    norovirus=Etiology(
+        name='norovirus',
+        kind='etiology',
+        gbd_id=rei_id(184),
+    ),
+    other_acinetobacter_species=Etiology(
+        name='other_acinetobacter_species',
+        kind='etiology',
+        gbd_id=rei_id(621),
+    ),
+    other_bacterial_and_viral_pathogens=Etiology(
+        name='other_bacterial_and_viral_pathogens',
         kind='etiology',
         gbd_id=rei_id(424),
     ),
-    other_viral_etiologies_of_lri=Etiology(
-        name='other_viral_etiologies_of_lri',
+    other_fungi=Etiology(
+        name='other_fungi',
         kind='etiology',
-        gbd_id=rei_id(425),
+        gbd_id=rei_id(623),
     ),
-    polymicrobial=Etiology(
-        name='polymicrobial',
+    other_gram_negative_bacteria=Etiology(
+        name='other_gram_negative_bacteria',
         kind='etiology',
-        gbd_id=rei_id(426),
+        gbd_id=rei_id(624),
+    ),
+    other_klebsiella_species=Etiology(
+        name='other_klebsiella_species',
+        kind='etiology',
+        gbd_id=rei_id(625),
+    ),
+    other_mycobacterium_species_non_tb_non_leprosy=Etiology(
+        name='other_mycobacterium_species_non_tb_non_leprosy',
+        kind='etiology',
+        gbd_id=rei_id(627),
+    ),
+    other_streptococcus_species=Etiology(
+        name='other_streptococcus_species',
+        kind='etiology',
+        gbd_id=rei_id(634),
+    ),
+    proteus_spp.=Etiology(
+        name='proteus_spp.',
+        kind='etiology',
+        gbd_id=rei_id(628),
     ),
     pseudomonas_aeruginosa=Etiology(
         name='pseudomonas_aeruginosa',
@@ -153,6 +208,21 @@ etiologies = Etiologies(
         kind='etiology',
         gbd_id=rei_id(190),
     ),
+    rotavirus=Etiology(
+        name='rotavirus',
+        kind='etiology',
+        gbd_id=rei_id(181),
+    ),
+    serratia_spp.=Etiology(
+        name='serratia_spp.',
+        kind='etiology',
+        gbd_id=rei_id(629),
+    ),
+    shigella=Etiology(
+        name='shigella',
+        kind='etiology',
+        gbd_id=rei_id(175),
+    ),
     staphylococcus_aureus=Etiology(
         name='staphylococcus_aureus',
         kind='etiology',
@@ -163,19 +233,9 @@ etiologies = Etiologies(
         kind='etiology',
         gbd_id=rei_id(430),
     ),
-    listeria_monocytogenes=Etiology(
-        name='listeria_monocytogenes',
+    other_viral_etiologies_of_meningitis=Etiology(
+        name='other_viral_etiologies_of_meningitis',
         kind='etiology',
-        gbd_id=rei_id(422),
-    ),
-    neisseria_meningitidis=Etiology(
-        name='neisseria_meningitidis',
-        kind='etiology',
-        gbd_id=rei_id(431),
-    ),
-    viral_etiologies_of_meningitis=Etiology(
-        name='viral_etiologies_of_meningitis',
-        kind='etiology',
-        gbd_id=rei_id(429),
+        gbd_id=rei_id(917),
     ),
 )
