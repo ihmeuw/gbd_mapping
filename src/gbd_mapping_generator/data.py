@@ -227,7 +227,8 @@ def get_cause_data():
 def get_age_restriction_edge(age_restriction, end=False):
     id_map = {
         0.0: [2, None],
-        0.01: [3, 2],
+        0.01917808: [3, 2],
+        0.07671233: [4, 3],
         0.10: [388, 3],
         0.5: [389, 388],
         1.0: [238, 389],
