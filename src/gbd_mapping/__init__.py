@@ -1,5 +1,5 @@
 from ._version import __version__
-from .base_template import Categories, GbdRecord, ModelableEntity, Restrictions, Tmred
+from .base_template import GbdRecord, ModelableEntity, Restrictions, Tmred, Categories
 from .cause import Cause, causes
 from .covariate import Covariate, covariates
 from .etiology import Etiology, etiologies
