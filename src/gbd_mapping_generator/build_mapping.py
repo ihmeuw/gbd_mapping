@@ -90,7 +90,3 @@ def make_dirs_and_init(mapping_type):
 
         os.remove(str(init_path))
         shutil.move(temp_path, str(init_path))
-
-
-if __name__ == "__main__":
-    build_mapping()
