@@ -30,10 +30,14 @@ class Etiologies(GbdRecord):
                  'enterotoxigenic_e_coli', 'campylobacter', 'entamoeba', 'cryptosporidium', 'rotavirus', 'aeromonas',
                  'clostridium_difficile', 'norovirus', 'adenovirus', 'influenza', 'respiratory_syncytial_virus',
                  'group_b_streptococcus', 'acinetobacter_baumannii', 'chlamydia_spp', 'enterobacter_spp',
-                 'escherichia_coli', 'fungus', 'haemophilus_influenzae', 'klebsiella_pneumoniae', 'legionella_spp',
-                 'listeria_monocytogenes', 'mycoplasma', 'other_bacterial_pathogen', 'other_viral_etiologies_of_lri',
-                 'polymicrobial', 'pseudomonas_aeruginosa', 'staphylococcus_aureus',
-                 'viral_etiologies_of_meningitis', 'streptococcus_pneumoniae', 'neisseria_meningitidis', )
+                 'escherichia_coli', 'haemophilus_influenzae', 'klebsiella_pneumoniae', 'legionella_spp',
+                 'listeria_monocytogenes', 'mycoplasma', 'other_bacterial_and_viral_pathogens',
+                 'pseudomonas_aeruginosa', 'staphylococcus_aureus', 'streptococcus_pneumoniae',
+                 'neisseria_meningitidis', 'aspergillus_spp.', 'other_acinetobacter_species', 'citrobacter_spp.',
+                 'other_fungi', 'other_gram_negative_bacteria', 'other_klebsiella_species', 'morganella_spp.',
+                 'other_mycobacterium_species_non_tb_non_leprosy', 'proteus_spp.', 'serratia_spp.',
+                 'group_a_streptococcus', 'candida_spp.', 'coagulase_negative_staphylococci',
+                 'non_polio_enteroviruses', 'other_streptococcus_species', 'other_viral_etiologies_of_meningitis', )
 
     def __init__(self,
                  cholera: Etiology,
@@ -56,20 +60,32 @@ class Etiologies(GbdRecord):
                  chlamydia_spp: Etiology,
                  enterobacter_spp: Etiology,
                  escherichia_coli: Etiology,
-                 fungus: Etiology,
                  haemophilus_influenzae: Etiology,
                  klebsiella_pneumoniae: Etiology,
                  legionella_spp: Etiology,
                  listeria_monocytogenes: Etiology,
                  mycoplasma: Etiology,
-                 other_bacterial_pathogen: Etiology,
-                 other_viral_etiologies_of_lri: Etiology,
-                 polymicrobial: Etiology,
+                 other_bacterial_and_viral_pathogens: Etiology,
                  pseudomonas_aeruginosa: Etiology,
                  staphylococcus_aureus: Etiology,
-                 viral_etiologies_of_meningitis: Etiology,
                  streptococcus_pneumoniae: Etiology,
-                 neisseria_meningitidis: Etiology, ):
+                 neisseria_meningitidis: Etiology,
+                 aspergillus_spp.: Etiology,
+                 other_acinetobacter_species: Etiology,
+                 citrobacter_spp.: Etiology,
+                 other_fungi: Etiology,
+                 other_gram_negative_bacteria: Etiology,
+                 other_klebsiella_species: Etiology,
+                 morganella_spp.: Etiology,
+                 other_mycobacterium_species_non_tb_non_leprosy: Etiology,
+                 proteus_spp.: Etiology,
+                 serratia_spp.: Etiology,
+                 group_a_streptococcus: Etiology,
+                 candida_spp.: Etiology,
+                 coagulase_negative_staphylococci: Etiology,
+                 non_polio_enteroviruses: Etiology,
+                 other_streptococcus_species: Etiology,
+                 other_viral_etiologies_of_meningitis: Etiology, ):
         super().__init__()
         self.cholera = cholera
         self.non_typhoidal_salmonella = non_typhoidal_salmonella
@@ -91,17 +107,29 @@ class Etiologies(GbdRecord):
         self.chlamydia_spp = chlamydia_spp
         self.enterobacter_spp = enterobacter_spp
         self.escherichia_coli = escherichia_coli
-        self.fungus = fungus
         self.haemophilus_influenzae = haemophilus_influenzae
         self.klebsiella_pneumoniae = klebsiella_pneumoniae
         self.legionella_spp = legionella_spp
         self.listeria_monocytogenes = listeria_monocytogenes
         self.mycoplasma = mycoplasma
-        self.other_bacterial_pathogen = other_bacterial_pathogen
-        self.other_viral_etiologies_of_lri = other_viral_etiologies_of_lri
-        self.polymicrobial = polymicrobial
+        self.other_bacterial_and_viral_pathogens = other_bacterial_and_viral_pathogens
         self.pseudomonas_aeruginosa = pseudomonas_aeruginosa
         self.staphylococcus_aureus = staphylococcus_aureus
-        self.viral_etiologies_of_meningitis = viral_etiologies_of_meningitis
         self.streptococcus_pneumoniae = streptococcus_pneumoniae
         self.neisseria_meningitidis = neisseria_meningitidis
+        self.aspergillus_spp. = aspergillus_spp.
+        self.other_acinetobacter_species = other_acinetobacter_species
+        self.citrobacter_spp. = citrobacter_spp.
+        self.other_fungi = other_fungi
+        self.other_gram_negative_bacteria = other_gram_negative_bacteria
+        self.other_klebsiella_species = other_klebsiella_species
+        self.morganella_spp. = morganella_spp.
+        self.other_mycobacterium_species_non_tb_non_leprosy = other_mycobacterium_species_non_tb_non_leprosy
+        self.proteus_spp. = proteus_spp.
+        self.serratia_spp. = serratia_spp.
+        self.group_a_streptococcus = group_a_streptococcus
+        self.candida_spp. = candida_spp.
+        self.coagulase_negative_staphylococci = coagulase_negative_staphylococci
+        self.non_polio_enteroviruses = non_polio_enteroviruses
+        self.other_streptococcus_species = other_streptococcus_species
+        self.other_viral_etiologies_of_meningitis = other_viral_etiologies_of_meningitis
