@@ -43,10 +43,8 @@ if __name__ == "__main__":
         long_description = f.read()
 
     install_requirements = [
+        "vivarium_dependencies[pandas,numpy,click]",
         "vivarium_build_utils>=2.0.0,<3.0.0",
-        "click",
-        "numpy",
-        "pandas",
         "pyyaml",
     ]
 
@@ -57,20 +55,19 @@ if __name__ == "__main__":
     ]
 
     test_requirements = [
-        "pytest",
-        "pytest-cov",
-        "pytest-mock",
+        "vivarium_dependencies[pytest]",
     ]
 
     doc_requirements = [
-        "sphinx>=6.2.1, <7.0",
-        "sphinx-rtd-theme",
-        "sphinx-autodoc-typehints",
+        "vivarium_dependencies[sphinx]",
+    ]
+
+    interactive_requirements = [
+        "vivarium_dependencies[interactive]",
     ]
 
     lint_requirements = [
-        "black==22.3.0",
-        "isort==5.13.2",
+        "vivarium_dependencies[lint]",
     ]
 
     setup(
@@ -87,9 +84,14 @@ if __name__ == "__main__":
         tests_require=test_requirements,
         extras_require={
             "docs": doc_requirements,
+            "interactive": interactive_requirements,
             "test": test_requirements,
             "data": data_requires,
-            "dev": doc_requirements + test_requirements + data_requires + lint_requirements,
+            "dev": doc_requirements
+            + interactive_requirements
+            + test_requirements
+            + data_requires
+            + lint_requirements,
         },
         entry_points="""
                 [console_scripts]
