@@ -353,14 +353,20 @@ def get_risk_data() -> list:
                     ("distribution", "draws"),
                     ("min", None),
                     ("max", None),
-                    ("inverted", bool(int(risk["inv_exp"]))),
+                    (
+                        "inverted",
+                        bool(risk["inv_exp"]) if not pd.isnull(risk["inv_exp"]) else None,
+                    ),
                 )
             else:
                 tmred = (
                     ("distribution", risk["tmred_dist"]),
                     ("min", risk["tmrel_lower"]),
                     ("max", risk["tmrel_upper"]),
-                    ("inverted", bool(int(risk["inv_exp"]))),
+                    (
+                        "inverted",
+                        bool(risk["inv_exp"]) if not pd.isnull(risk["inv_exp"]) else None,
+                    ),
                 )
         elif distribution == "dichotomous":
             levels = (("cat1", "Exposed"), ("cat2", "Unexposed"))
@@ -399,7 +405,10 @@ def get_risk_data() -> list:
                     ("distribution", risk["tmred_dist"]),
                     ("min", risk["tmrel_lower"]),
                     ("max", risk["tmrel_upper"]),
-                    ("inverted", bool(risk["inv_exp"])),
+                    (
+                        "inverted",
+                        bool(risk["inv_exp"]) if not pd.isnull(risk["inv_exp"]) else None,
+                    ),
                 )
 
         if risk["affected_cause_ids"] is not np.nan:
