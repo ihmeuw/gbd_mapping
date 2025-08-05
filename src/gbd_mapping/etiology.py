@@ -24,7 +24,7 @@ etiologies = Etiologies(
         gbd_id=rei_id(182),
     ),
     aspergillus_spp=Etiology(
-        name="aspergillus_spp",
+        name="aspergillus_spp.",
         kind="etiology",
         gbd_id=rei_id(620),
     ),
@@ -34,12 +34,12 @@ etiologies = Etiologies(
         gbd_id=rei_id(178),
     ),
     candida_spp=Etiology(
-        name="candida_spp",
+        name="candida_spp.",
         kind="etiology",
         gbd_id=rei_id(631),
     ),
     chlamydia_spp=Etiology(
-        name="chlamydia_spp",
+        name="chlamydia_spp.",
         kind="etiology",
         gbd_id=rei_id(415),
     ),
@@ -49,7 +49,7 @@ etiologies = Etiologies(
         gbd_id=rei_id(173),
     ),
     citrobacter_spp=Etiology(
-        name="citrobacter_spp",
+        name="citrobacter_spp.",
         kind="etiology",
         gbd_id=rei_id(622),
     ),
@@ -74,7 +74,7 @@ etiologies = Etiologies(
         gbd_id=rei_id(179),
     ),
     enterobacter_spp=Etiology(
-        name="enterobacter_spp",
+        name="enterobacter_spp.",
         kind="etiology",
         gbd_id=rei_id(416),
     ),
@@ -119,7 +119,7 @@ etiologies = Etiologies(
         gbd_id=rei_id(420),
     ),
     legionella_spp=Etiology(
-        name="legionella_spp",
+        name="legionella_spp.",
         kind="etiology",
         gbd_id=rei_id(421),
     ),
@@ -129,7 +129,7 @@ etiologies = Etiologies(
         gbd_id=rei_id(422),
     ),
     morganella_spp=Etiology(
-        name="morganella_spp",
+        name="morganella_spp.",
         kind="etiology",
         gbd_id=rei_id(626),
     ),
@@ -194,7 +194,7 @@ etiologies = Etiologies(
         gbd_id=rei_id(634),
     ),
     proteus_spp=Etiology(
-        name="proteus_spp",
+        name="proteus_spp.",
         kind="etiology",
         gbd_id=rei_id(628),
     ),
@@ -214,7 +214,7 @@ etiologies = Etiologies(
         gbd_id=rei_id(181),
     ),
     serratia_spp=Etiology(
-        name="serratia_spp",
+        name="serratia_spp.",
         kind="etiology",
         gbd_id=rei_id(629),
     ),
