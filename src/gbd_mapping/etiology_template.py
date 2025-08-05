@@ -70,18 +70,18 @@ class Etiologies(GbdRecord):
                  staphylococcus_aureus: Etiology,
                  streptococcus_pneumoniae: Etiology,
                  neisseria_meningitidis: Etiology,
-                 aspergillus_spp.: Etiology,
+                 aspergillus_spp: Etiology,
                  other_acinetobacter_species: Etiology,
-                 citrobacter_spp.: Etiology,
+                 citrobacter_spp: Etiology,
                  other_fungi: Etiology,
                  other_gram_negative_bacteria: Etiology,
                  other_klebsiella_species: Etiology,
-                 morganella_spp.: Etiology,
+                 morganella_spp: Etiology,
                  other_mycobacterium_species_non_tb_non_leprosy: Etiology,
-                 proteus_spp.: Etiology,
-                 serratia_spp.: Etiology,
+                 proteus_spp: Etiology,
+                 serratia_spp: Etiology,
                  group_a_streptococcus: Etiology,
-                 candida_spp.: Etiology,
+                 candida_spp: Etiology,
                  coagulase_negative_staphylococci: Etiology,
                  non_polio_enteroviruses: Etiology,
                  other_streptococcus_species: Etiology,
@@ -117,18 +117,18 @@ class Etiologies(GbdRecord):
         self.staphylococcus_aureus = staphylococcus_aureus
         self.streptococcus_pneumoniae = streptococcus_pneumoniae
         self.neisseria_meningitidis = neisseria_meningitidis
-        self.aspergillus_spp. = aspergillus_spp.
+        self.aspergillus_spp = aspergillus_spp.
         self.other_acinetobacter_species = other_acinetobacter_species
-        self.citrobacter_spp. = citrobacter_spp.
+        self.citrobacter_spp = citrobacter_spp.
         self.other_fungi = other_fungi
         self.other_gram_negative_bacteria = other_gram_negative_bacteria
         self.other_klebsiella_species = other_klebsiella_species
-        self.morganella_spp. = morganella_spp.
+        self.morganella_spp = morganella_spp.
         self.other_mycobacterium_species_non_tb_non_leprosy = other_mycobacterium_species_non_tb_non_leprosy
-        self.proteus_spp. = proteus_spp.
-        self.serratia_spp. = serratia_spp.
+        self.proteus_spp = proteus_spp.
+        self.serratia_spp = serratia_spp.
         self.group_a_streptococcus = group_a_streptococcus
-        self.candida_spp. = candida_spp.
+        self.candida_spp = candida_spp.
         self.coagulase_negative_staphylococci = coagulase_negative_staphylococci
         self.non_polio_enteroviruses = non_polio_enteroviruses
         self.other_streptococcus_species = other_streptococcus_species
