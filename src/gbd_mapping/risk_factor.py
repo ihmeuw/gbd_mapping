@@ -246,6 +246,33 @@ risk_factors = RiskFactors(
         ),
         relative_risk_scalar=scalar(1),
     ),
+    ambient_ozone_pollution=RiskFactor(
+        name='ambient_ozone_pollution',
+        kind='risk_factor',
+        gbd_id=rei_id(88),
+        level=3,
+        most_detailed=True,
+        distribution='custom',
+        population_attributable_fraction_calculation_type='custom',
+        restrictions=Restrictions(
+            male_only=False,
+            female_only=False,
+            yll_only=True,
+            yld_only=False,
+            yll_age_group_id_start=10.0,
+            yll_age_group_id_end=235.0,
+        ),
+        affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.chronic_respiratory_diseases, 
+                         causes.chronic_obstructive_pulmonary_disease, ),
+        population_attributable_fraction_of_one_causes=(),
+        tmred=Tmred(
+            distribution='uniform',
+            min=scalar(30),
+            max=scalar(50),
+            inverted=True,
+        ),
+        relative_risk_scalar=scalar(1),
+    ),
     other_environmental_risks=RiskFactor(
         name='other_environmental_risks',
         kind='risk_factor',
@@ -3067,6 +3094,43 @@ risk_factors = RiskFactors(
         ),
         relative_risk_scalar=scalar(10),
     ),
+    lead_exposure_in_bone=RiskFactor(
+        name='lead_exposure_in_bone',
+        kind='risk_factor',
+        gbd_id=rei_id(243),
+        level=4,
+        most_detailed=True,
+        distribution='ensemble',
+        population_attributable_fraction_calculation_type='continuous',
+        restrictions=Restrictions(
+            male_only=False,
+            female_only=False,
+            yll_only=False,
+            yld_only=False,
+            yll_age_group_id_start=10.0,
+            yll_age_group_id_end=235.0,
+            yld_age_group_id_start=10.0,
+            yld_age_group_id_end=235.0,
+        ),
+        affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.cardiovascular_diseases, 
+                         causes.ischemic_heart_disease, causes.stroke, causes.ischemic_stroke, 
+                         causes.intracerebral_hemorrhage, causes.subarachnoid_hemorrhage, 
+                         causes.hypertensive_heart_disease, causes.atrial_fibrillation_and_flutter, 
+                         causes.aortic_aneurysm, causes.lower_extremity_peripheral_arterial_disease, 
+                         causes.chronic_kidney_disease, causes.chronic_kidney_disease_due_to_hypertension, 
+                         causes.chronic_kidney_disease_due_to_glomerulonephritis, 
+                         causes.chronic_kidney_disease_due_to_other_and_unspecified_causes, 
+                         causes.diabetes_and_kidney_diseases, 
+                         causes.chronic_kidney_disease_due_to_diabetes_mellitus_type_2, ),
+        population_attributable_fraction_of_one_causes=(),
+        tmred=Tmred(
+            distribution='uniform',
+            min=scalar(0),
+            max=scalar(20),
+            inverted=True,
+        ),
+        relative_risk_scalar=scalar(10),
+    ),
     non_optimal_temperature=RiskFactor(
         name='non_optimal_temperature',
         kind='risk_factor',
@@ -3722,12 +3786,15 @@ risk_factors.unsafe_sanitation.parent = risk_factors.unsafe_water_sanitation_and
 
 risk_factors.air_pollution.parent = risk_factors.environmental_occupational_risks
 risk_factors.air_pollution.sub_risk_factors = (risk_factors.ambient_ozone_pollution,
+                                               risk_factors.ambient_ozone_pollution,
                                                risk_factors.particulate_matter_pollution,
                                                risk_factors.nitrogen_dioxide_pollution, )
 
 risk_factors.ambient_particulate_matter_pollution.parent = risk_factors.particulate_matter_pollution
 
 risk_factors.household_air_pollution_from_solid_fuels.parent = risk_factors.particulate_matter_pollution
+
+risk_factors.ambient_ozone_pollution.parent = risk_factors.air_pollution
 
 risk_factors.ambient_ozone_pollution.parent = risk_factors.air_pollution
 
@@ -3739,7 +3806,7 @@ risk_factors.residential_radon.parent = risk_factors.other_environmental_risks
 
 risk_factors.lead_exposure.parent = risk_factors.other_environmental_risks
 risk_factors.lead_exposure.sub_risk_factors = (risk_factors.lead_exposure_in_blood, risk_factors.lead_exposure_in_bone,
-                                               )
+                                               risk_factors.lead_exposure_in_bone, )
 
 risk_factors.child_and_maternal_malnutrition.parent = risk_factors.behavioral_risks
 risk_factors.child_and_maternal_malnutrition.sub_risk_factors = (risk_factors.suboptimal_breastfeeding,
@@ -3963,6 +4030,9 @@ risk_factors.child_wasting.parent = risk_factors.child_growth_failure
 risk_factors.child_stunting.parent = risk_factors.child_growth_failure
 
 risk_factors.lead_exposure_in_blood.parent = risk_factors.lead_exposure
+
+risk_factors.lead_exposure_in_bone.parent = risk_factors.lead_exposure
+risk_factors.lead_exposure_in_bone.affected_risk_factors = (risk_factors.high_systolic_blood_pressure, )
 
 risk_factors.lead_exposure_in_bone.parent = risk_factors.lead_exposure
 risk_factors.lead_exposure_in_bone.affected_risk_factors = (risk_factors.high_systolic_blood_pressure, )
