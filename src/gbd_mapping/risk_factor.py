@@ -2945,6 +2945,7 @@ risk_factors = RiskFactors(
         population_attributable_fraction_of_one_causes=(causes.protein_energy_malnutrition, ),
         tmred=Tmred(
             distribution='draws',
+            inverted=True,
         ),
         relative_risk_scalar=scalar(nan),
     ),
