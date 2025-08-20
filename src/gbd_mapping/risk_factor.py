@@ -246,33 +246,6 @@ risk_factors = RiskFactors(
         ),
         relative_risk_scalar=scalar(1),
     ),
-    ambient_ozone_pollution=RiskFactor(
-        name='ambient_ozone_pollution',
-        kind='risk_factor',
-        gbd_id=rei_id(88),
-        level=3,
-        most_detailed=True,
-        distribution='custom',
-        population_attributable_fraction_calculation_type='custom',
-        restrictions=Restrictions(
-            male_only=False,
-            female_only=False,
-            yll_only=True,
-            yld_only=False,
-            yll_age_group_id_start=10.0,
-            yll_age_group_id_end=235.0,
-        ),
-        affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.chronic_respiratory_diseases, 
-                         causes.chronic_obstructive_pulmonary_disease, ),
-        population_attributable_fraction_of_one_causes=(),
-        tmred=Tmred(
-            distribution='uniform',
-            min=scalar(30),
-            max=scalar(50),
-            inverted=True,
-        ),
-        relative_risk_scalar=scalar(1),
-    ),
     other_environmental_risks=RiskFactor(
         name='other_environmental_risks',
         kind='risk_factor',
@@ -1944,9 +1917,9 @@ risk_factors = RiskFactors(
                          causes.respiratory_infections_and_tuberculosis, causes.enteric_infections, ),
         population_attributable_fraction_of_one_causes=(),
         categories=Categories(
-            cat1='Non-exclusive breastfeeding, None',
-            cat2='Non-exclusive breastfeeding, Partial',
-            cat3='Non-exclusive breastfeeding, Predominant',
+            cat1='Non-exclusive breastfeeding, None (deprecated)',
+            cat2='Non-exclusive breastfeeding, Partial (deprecated)',
+            cat3='Non-exclusive breastfeeding, Predominant (deprecated)',
             cat4='Unexposed',
         ),
     ),
@@ -3786,15 +3759,12 @@ risk_factors.unsafe_sanitation.parent = risk_factors.unsafe_water_sanitation_and
 
 risk_factors.air_pollution.parent = risk_factors.environmental_occupational_risks
 risk_factors.air_pollution.sub_risk_factors = (risk_factors.ambient_ozone_pollution,
-                                               risk_factors.ambient_ozone_pollution,
                                                risk_factors.particulate_matter_pollution,
                                                risk_factors.nitrogen_dioxide_pollution, )
 
 risk_factors.ambient_particulate_matter_pollution.parent = risk_factors.particulate_matter_pollution
 
 risk_factors.household_air_pollution_from_solid_fuels.parent = risk_factors.particulate_matter_pollution
-
-risk_factors.ambient_ozone_pollution.parent = risk_factors.air_pollution
 
 risk_factors.ambient_ozone_pollution.parent = risk_factors.air_pollution
 
@@ -3955,6 +3925,8 @@ risk_factors.occupational_injuries.parent = risk_factors.occupational_risks
 risk_factors.occupational_ergonomic_factors.parent = risk_factors.occupational_risks
 
 risk_factors.sexual_violence_against_children.parent = risk_factors.sexual_violence_against_children_and_bullying
+risk_factors.sexual_violence_against_children.affected_risk_factors = (risk_factors.high_alcohol_use,
+                                                                       risk_factors.unsafe_sex, )
 
 risk_factors.intimate_partner_violence.parent = risk_factors.behavioral_risks
 risk_factors.intimate_partner_violence.sub_risk_factors = (risk_factors.intimate_partner_violence_exposure_approach,
@@ -4002,6 +3974,7 @@ risk_factors.intimate_partner_violence_direct_paf_approach.parent = risk_factors
 risk_factors.unsafe_sex.parent = risk_factors.behavioral_risks
 
 risk_factors.intimate_partner_violence_hiv_paf_approach.parent = risk_factors.intimate_partner_violence
+risk_factors.intimate_partner_violence_hiv_paf_approach.affected_risk_factors = (risk_factors.unsafe_sex, )
 
 risk_factors.environmental_occupational_risks.parent = risk_factors.all_risk_factors
 risk_factors.environmental_occupational_risks.sub_risk_factors = (risk_factors.unsafe_water_sanitation_and_handwashing,
