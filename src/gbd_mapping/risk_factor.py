@@ -242,7 +242,7 @@ risk_factors = RiskFactors(
             distribution='uniform',
             min=scalar(29.1),
             max=scalar(35.7),
-            inverted=True,
+            inverted=False,
         ),
         relative_risk_scalar=scalar(1),
     ),
@@ -305,7 +305,7 @@ risk_factors = RiskFactors(
             distribution='uniform',
             min=scalar(0),
             max=scalar(0),
-            inverted=True,
+            inverted=False,
         ),
         relative_risk_scalar=scalar(1),
     ),
@@ -467,10 +467,6 @@ risk_factors = RiskFactors(
                          causes.maternal_and_neonatal_disorders, causes.maternal_abortion_and_miscarriage, 
                          causes.other_direct_maternal_disorders, ),
         population_attributable_fraction_of_one_causes=(causes.dietary_iron_deficiency, ),
-        tmred=Tmred(
-            distribution='draws',
-            inverted=True,
-        ),
         relative_risk_scalar=scalar(10),
     ),
     vitamin_a_deficiency=RiskFactor(
@@ -905,7 +901,7 @@ risk_factors = RiskFactors(
             distribution='uniform',
             min=scalar(4.88488),
             max=scalar(5.301205),
-            inverted=True,
+            inverted=False,
         ),
         relative_risk_scalar=scalar(1),
     ),
@@ -942,7 +938,7 @@ risk_factors = RiskFactors(
             distribution='uniform',
             min=scalar(105),
             max=scalar(115),
-            inverted=True,
+            inverted=False,
         ),
         relative_risk_scalar=scalar(10),
     ),
@@ -1301,7 +1297,7 @@ risk_factors = RiskFactors(
             distribution='uniform',
             min=scalar(0),
             max=scalar(0),
-            inverted=True,
+            inverted=False,
         ),
         relative_risk_scalar=scalar(100),
     ),
@@ -1343,7 +1339,7 @@ risk_factors = RiskFactors(
             distribution='uniform',
             min=scalar(0),
             max=scalar(0),
-            inverted=True,
+            inverted=False,
         ),
         relative_risk_scalar=scalar(50),
     ),
@@ -1383,7 +1379,7 @@ risk_factors = RiskFactors(
             distribution='uniform',
             min=scalar(0),
             max=scalar(0),
-            inverted=True,
+            inverted=False,
         ),
         relative_risk_scalar=scalar(226.8),
     ),
@@ -1503,7 +1499,7 @@ risk_factors = RiskFactors(
             distribution='uniform',
             min=scalar(0.00538),
             max=scalar(0.00735),
-            inverted=True,
+            inverted=False,
         ),
         relative_risk_scalar=scalar(0.02),
     ),
@@ -1542,7 +1538,7 @@ risk_factors = RiskFactors(
             distribution='uniform',
             min=scalar(1),
             max=scalar(5),
-            inverted=True,
+            inverted=False,
         ),
         relative_risk_scalar=scalar(1),
     ),
@@ -2943,11 +2939,6 @@ risk_factors = RiskFactors(
                          causes.respiratory_infections_and_tuberculosis, causes.enteric_infections, 
                          causes.other_infectious_diseases, ),
         population_attributable_fraction_of_one_causes=(causes.protein_energy_malnutrition, ),
-        tmred=Tmred(
-            distribution='draws',
-            inverted=True,
-        ),
-        relative_risk_scalar=scalar(nan),
     ),
     child_wasting=RiskFactor(
         name='child_wasting',
@@ -3064,44 +3055,7 @@ risk_factors = RiskFactors(
             distribution='uniform',
             min=scalar(0),
             max=scalar(20),
-            inverted=True,
-        ),
-        relative_risk_scalar=scalar(10),
-    ),
-    lead_exposure_in_bone=RiskFactor(
-        name='lead_exposure_in_bone',
-        kind='risk_factor',
-        gbd_id=rei_id(243),
-        level=4,
-        most_detailed=True,
-        distribution='ensemble',
-        population_attributable_fraction_calculation_type='continuous',
-        restrictions=Restrictions(
-            male_only=False,
-            female_only=False,
-            yll_only=False,
-            yld_only=False,
-            yll_age_group_id_start=10.0,
-            yll_age_group_id_end=235.0,
-            yld_age_group_id_start=10.0,
-            yld_age_group_id_end=235.0,
-        ),
-        affected_causes=(causes.all_causes, causes.non_communicable_diseases, causes.cardiovascular_diseases, 
-                         causes.ischemic_heart_disease, causes.stroke, causes.ischemic_stroke, 
-                         causes.intracerebral_hemorrhage, causes.subarachnoid_hemorrhage, 
-                         causes.hypertensive_heart_disease, causes.atrial_fibrillation_and_flutter, 
-                         causes.aortic_aneurysm, causes.lower_extremity_peripheral_arterial_disease, 
-                         causes.chronic_kidney_disease, causes.chronic_kidney_disease_due_to_hypertension, 
-                         causes.chronic_kidney_disease_due_to_glomerulonephritis, 
-                         causes.chronic_kidney_disease_due_to_other_and_unspecified_causes, 
-                         causes.diabetes_and_kidney_diseases, 
-                         causes.chronic_kidney_disease_due_to_diabetes_mellitus_type_2, ),
-        population_attributable_fraction_of_one_causes=(),
-        tmred=Tmred(
-            distribution='uniform',
-            min=scalar(0),
-            max=scalar(20),
-            inverted=True,
+            inverted=False,
         ),
         relative_risk_scalar=scalar(10),
     ),
@@ -3550,7 +3504,7 @@ risk_factors = RiskFactors(
             distribution='uniform',
             min=scalar(0.9),
             max=scalar(1.4),
-            inverted=True,
+            inverted=False,
         ),
         relative_risk_scalar=scalar(1),
     ),
@@ -3611,7 +3565,7 @@ risk_factors = RiskFactors(
             distribution='uniform',
             min=scalar(20),
             max=scalar(22.5),
-            inverted=True,
+            inverted=False,
         ),
         relative_risk_scalar=scalar(5),
     ),
@@ -3777,7 +3731,7 @@ risk_factors.residential_radon.parent = risk_factors.other_environmental_risks
 
 risk_factors.lead_exposure.parent = risk_factors.other_environmental_risks
 risk_factors.lead_exposure.sub_risk_factors = (risk_factors.lead_exposure_in_blood, risk_factors.lead_exposure_in_bone,
-                                               risk_factors.lead_exposure_in_bone, )
+                                               )
 
 risk_factors.child_and_maternal_malnutrition.parent = risk_factors.behavioral_risks
 risk_factors.child_and_maternal_malnutrition.sub_risk_factors = (risk_factors.suboptimal_breastfeeding,
@@ -4004,9 +3958,6 @@ risk_factors.child_wasting.parent = risk_factors.child_growth_failure
 risk_factors.child_stunting.parent = risk_factors.child_growth_failure
 
 risk_factors.lead_exposure_in_blood.parent = risk_factors.lead_exposure
-
-risk_factors.lead_exposure_in_bone.parent = risk_factors.lead_exposure
-risk_factors.lead_exposure_in_bone.affected_risk_factors = (risk_factors.high_systolic_blood_pressure, )
 
 risk_factors.lead_exposure_in_bone.parent = risk_factors.lead_exposure
 risk_factors.lead_exposure_in_bone.affected_risk_factors = (risk_factors.high_systolic_blood_pressure, )
