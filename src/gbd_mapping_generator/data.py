@@ -394,7 +394,7 @@ def get_risk_data() -> list:
                     ("distribution", risk["tmred_dist"]),
                     ("min", risk["tmrel_lower"]),
                     ("max", risk["tmrel_upper"]),
-                    ("inverted", bool(int(risk["inv_exp"]))),
+                    ("inverted", bool(risk["inv_exp"])),
                 )
 
         if risk["affected_cause_ids"] is not np.nan:
