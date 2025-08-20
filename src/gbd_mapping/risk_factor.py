@@ -242,7 +242,7 @@ risk_factors = RiskFactors(
             distribution='uniform',
             min=scalar(29.1),
             max=scalar(35.7),
-            inverted=False,
+            inverted=True,
         ),
         relative_risk_scalar=scalar(1),
     ),
