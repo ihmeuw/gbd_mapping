@@ -3059,7 +3059,7 @@ sequelae = Sequelae(**{
         name='whooping_cough',
         kind='sequela',
         gbd_id=s_id(115),
-        me_id=me_id(26945),
+        me_id=me_id(1424),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_moderate',
             kind='healthstate',
@@ -3561,11 +3561,11 @@ sequelae = Sequelae(**{
             gbd_id=hs_id(352),
         ),
     ),
-    'puerperal_sepsis': Sequela(
-        name='puerperal_sepsis',
+    'puerperal_sepsis_without_anemia': Sequela(
+        name='puerperal_sepsis_without_anemia',
         kind='sequela',
         gbd_id=s_id(937),
-        me_id=me_id(3623),
+        me_id=me_id(28858),
         healthstate=Healthstate(
             name='infectious_disease_acute_episode_severe',
             kind='healthstate',
@@ -7246,8 +7246,8 @@ sequelae = Sequelae(**{
             gbd_id=hs_id(799),
         ),
     ),
-    'mild_angina_due_to_ischemic_heart_disease': Sequela(
-        name='mild_angina_due_to_ischemic_heart_disease',
+    'mild_ischemic_heart_disease': Sequela(
+        name='mild_ischemic_heart_disease',
         kind='sequela',
         gbd_id=s_id(380),
         me_id=me_id(1818),
@@ -7257,8 +7257,8 @@ sequelae = Sequelae(**{
             gbd_id=hs_id(376),
         ),
     ),
-    'moderate_angina_due_to_ischemic_heart_disease': Sequela(
-        name='moderate_angina_due_to_ischemic_heart_disease',
+    'moderate_ischemic_heart_disease': Sequela(
+        name='moderate_ischemic_heart_disease',
         kind='sequela',
         gbd_id=s_id(381),
         me_id=me_id(1819),
@@ -7268,8 +7268,8 @@ sequelae = Sequelae(**{
             gbd_id=hs_id(377),
         ),
     ),
-    'severe_angina_due_to_ischemic_heart_disease': Sequela(
-        name='severe_angina_due_to_ischemic_heart_disease',
+    'severe_ischemic_heart_disease': Sequela(
+        name='severe_ischemic_heart_disease',
         kind='sequela',
         gbd_id=s_id(382),
         me_id=me_id(1820),
@@ -7279,8 +7279,8 @@ sequelae = Sequelae(**{
             gbd_id=hs_id(378),
         ),
     ),
-    'asymptomatic_angina_due_to_ischemic_heart_disease': Sequela(
-        name='asymptomatic_angina_due_to_ischemic_heart_disease',
+    'asymptomatic_ischemic_heart_disease': Sequela(
+        name='asymptomatic_ischemic_heart_disease',
         kind='sequela',
         gbd_id=s_id(953),
         me_id=me_id(3102),
@@ -9358,8 +9358,8 @@ sequelae = Sequelae(**{
             gbd_id=hs_id(639),
         ),
     ),
-    'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_asymptomatic_heart_failure': Sequela(
-        name='cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_asymptomatic_heart_failure',
+    'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_controlled_medically_managed_heart_failure': Sequela(
+        name='cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_controlled_medically_managed_heart_failure',
         kind='sequela',
         gbd_id=s_id(23087),
         me_id=me_id(25422),
@@ -9468,8 +9468,8 @@ sequelae = Sequelae(**{
             gbd_id=hs_id(799),
         ),
     ),
-    'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_asymptomatic_heart_failure': Sequela(
-        name='cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_asymptomatic_heart_failure',
+    'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_controlled_medically_managed_heart_failure': Sequela(
+        name='cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_controlled_medically_managed_heart_failure',
         kind='sequela',
         gbd_id=s_id(23092),
         me_id=me_id(25423),
@@ -9578,8 +9578,8 @@ sequelae = Sequelae(**{
             gbd_id=hs_id(799),
         ),
     ),
-    'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_asymptomatic_managed_heart_failure': Sequela(
-        name='cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_asymptomatic_managed_heart_failure',
+    'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_controlled_medically_managed_heart_failure': Sequela(
+        name='cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_controlled_medically_managed_heart_failure',
         kind='sequela',
         gbd_id=s_id(23097),
         me_id=me_id(25421),
@@ -9688,8 +9688,8 @@ sequelae = Sequelae(**{
             gbd_id=hs_id(799),
         ),
     ),
-    'cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_asymptomatic_heart_failure': Sequela(
-        name='cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_asymptomatic_heart_failure',
+    'cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_controlled_medically_managed_heart_failure': Sequela(
+        name='cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_controlled_medically_managed_heart_failure',
         kind='sequela',
         gbd_id=s_id(23166),
         me_id=me_id(25430),
@@ -9787,8 +9787,8 @@ sequelae = Sequelae(**{
             gbd_id=hs_id(799),
         ),
     ),
-    'cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_asymptomatic_and_mild_heart_failure': Sequela(
-        name='cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_asymptomatic_and_mild_heart_failure',
+    'cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_mild_heart_failure': Sequela(
+        name='cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_mild_heart_failure',
         kind='sequela',
         gbd_id=s_id(23103),
         me_id=me_id(25467),
@@ -9798,8 +9798,8 @@ sequelae = Sequelae(**{
             gbd_id=hs_id(2745),
         ),
     ),
-    'cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_asymptomatic_heart_failure': Sequela(
-        name='cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_asymptomatic_heart_failure',
+    'cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_controlled_medically_managed_heart_failure': Sequela(
+        name='cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_controlled_medically_managed_heart_failure',
         kind='sequela',
         gbd_id=s_id(23102),
         me_id=me_id(25424),
@@ -11573,22 +11573,11 @@ sequelae = Sequelae(**{
         name='symptomatic_attention_deficit_hyperactivity_disorder',
         kind='sequela',
         gbd_id=s_id(810),
-        me_id=me_id(2852),
+        me_id=me_id(1997),
         healthstate=Healthstate(
             name='attention_deficit_hyperactivity_disorder',
             kind='healthstate',
             gbd_id=hs_id(446),
-        ),
-    ),
-    'attention_deficit_hyperactivity_disorder_currently_without_symptoms': Sequela(
-        name='attention_deficit_hyperactivity_disorder_currently_without_symptoms',
-        kind='sequela',
-        gbd_id=s_id(811),
-        me_id=me_id(2853),
-        healthstate=Healthstate(
-            name='asymptomatic',
-            kind='healthstate',
-            gbd_id=hs_id(799),
         ),
     ),
     'symptomatic_conduct_disorder': Sequela(
@@ -19451,9 +19440,9 @@ sequelae = Sequelae(**{
         gbd_id=s_id(939),
         me_id=me_id(3087),
         healthstate=Healthstate(
-            name='infertility_secondary',
+            name='disfigurement_level_1_and_secondary_infertility',
             kind='healthstate',
-            gbd_id=hs_id(401),
+            gbd_id=hs_id(821),
         ),
     ),
     'hirsutism_due_to_polycystic_ovarian_syndrome': Sequela(
@@ -19495,9 +19484,9 @@ sequelae = Sequelae(**{
         gbd_id=s_id(940),
         me_id=me_id(3088),
         healthstate=Healthstate(
-            name='disfigurement_level_1_and_secondary_infertility',
+            name='infertility_secondary',
             kind='healthstate',
-            gbd_id=hs_id(821),
+            gbd_id=hs_id(401),
         ),
     ),
     'idiopathic_primary_female_infertility': Sequela(
@@ -22974,6 +22963,215 @@ sequelae = Sequelae(**{
             name='spinal_cord_lesion_below_neck_level_treated',
             kind='healthstate',
             gbd_id=hs_id(540),
+        ),
+    ),
+    'diagnosis_and_primary_therapy_phase_of_low_grade_brain_and_other_central_nervous_system_neoplasms': Sequela(
+        name='diagnosis_and_primary_therapy_phase_of_low_grade_brain_and_other_central_nervous_system_neoplasms',
+        kind='sequela',
+        gbd_id=s_id(23457),
+        me_id=me_id(27981),
+        healthstate=Healthstate(
+            name='cancer_diagnosis_and_primary_therapy',
+            kind='healthstate',
+            gbd_id=hs_id(368),
+        ),
+    ),
+    'controlled_phase_of_low_grade_brain_and_other_central_nervous_system_neoplasms': Sequela(
+        name='controlled_phase_of_low_grade_brain_and_other_central_nervous_system_neoplasms',
+        kind='sequela',
+        gbd_id=s_id(23458),
+        me_id=me_id(27982),
+        healthstate=Healthstate(
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
+            gbd_id=hs_id(559),
+        ),
+    ),
+    'metastatic_phase_of_low_grade_brain_and_other_central_nervous_system': Sequela(
+        name='metastatic_phase_of_low_grade_brain_and_other_central_nervous_system',
+        kind='sequela',
+        gbd_id=s_id(23459),
+        me_id=me_id(27983),
+        healthstate=Healthstate(
+            name='cancer_metastatic',
+            kind='healthstate',
+            gbd_id=hs_id(369),
+        ),
+    ),
+    'terminal_phase_of_low_grade_brain_and_other_central_nervous_system': Sequela(
+        name='terminal_phase_of_low_grade_brain_and_other_central_nervous_system',
+        kind='sequela',
+        gbd_id=s_id(23460),
+        me_id=me_id(27984),
+        healthstate=Healthstate(
+            name='terminal_phase_with_medication_for_cancers_end_stage_kidney_liver_disease',
+            kind='healthstate',
+            gbd_id=hs_id(372),
+        ),
+    ),
+    'moderate_vision_impairment_due_to_other_corneal_opacities': Sequela(
+        name='moderate_vision_impairment_due_to_other_corneal_opacities',
+        kind='sequela',
+        gbd_id=s_id(23461),
+        me_id=me_id(24860),
+        healthstate=Healthstate(
+            name='distance_vision_moderate_impairment',
+            kind='healthstate',
+            gbd_id=hs_id(466),
+        ),
+    ),
+    'severe_vision_impairment_due_to_other_corneal_opacities': Sequela(
+        name='severe_vision_impairment_due_to_other_corneal_opacities',
+        kind='sequela',
+        gbd_id=s_id(23462),
+        me_id=me_id(24861),
+        healthstate=Healthstate(
+            name='distance_vision_severe_impairment',
+            kind='healthstate',
+            gbd_id=hs_id(467),
+        ),
+    ),
+    'blindness_due_to_other_corneal_opacities': Sequela(
+        name='blindness_due_to_other_corneal_opacities',
+        kind='sequela',
+        gbd_id=s_id(23463),
+        me_id=me_id(24862),
+        healthstate=Healthstate(
+            name='distance_vision_blindness',
+            kind='healthstate',
+            gbd_id=hs_id(468),
+        ),
+    ),
+    'mild_heart_failure_due_to_peripartum_cardiomyopathy': Sequela(
+        name='mild_heart_failure_due_to_peripartum_cardiomyopathy',
+        kind='sequela',
+        gbd_id=s_id(23464),
+        me_id=me_id(27702),
+        healthstate=Healthstate(
+            name='heart_failure_mild',
+            kind='healthstate',
+            gbd_id=hs_id(381),
+        ),
+    ),
+    'moderate_heart_failure_due_to_peripartum_cardiomyopathy': Sequela(
+        name='moderate_heart_failure_due_to_peripartum_cardiomyopathy',
+        kind='sequela',
+        gbd_id=s_id(23465),
+        me_id=me_id(27703),
+        healthstate=Healthstate(
+            name='heart_failure_moderate',
+            kind='healthstate',
+            gbd_id=hs_id(382),
+        ),
+    ),
+    'severe_heart_failure_due_to_peripartum_cardiomyopathy': Sequela(
+        name='severe_heart_failure_due_to_peripartum_cardiomyopathy',
+        kind='sequela',
+        gbd_id=s_id(23466),
+        me_id=me_id(27704),
+        healthstate=Healthstate(
+            name='heart_failure_severe',
+            kind='healthstate',
+            gbd_id=hs_id(383),
+        ),
+    ),
+    'controlled_medically_managed_heart_failure_due_to_peripartum_cardiomyopathy': Sequela(
+        name='controlled_medically_managed_heart_failure_due_to_peripartum_cardiomyopathy',
+        kind='sequela',
+        gbd_id=s_id(23467),
+        me_id=me_id(27705),
+        healthstate=Healthstate(
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
+            gbd_id=hs_id(559),
+        ),
+    ),
+    'gestational_diabetes_mellitus': Sequela(
+        name='gestational_diabetes_mellitus',
+        kind='sequela',
+        gbd_id=s_id(23468),
+        me_id=me_id(27715),
+        healthstate=Healthstate(
+            name='generic_uncomplicated_disease_worry_and_daily_medication',
+            kind='healthstate',
+            gbd_id=hs_id(559),
+        ),
+    ),
+    'asymptomatic_diverticular_disease': Sequela(
+        name='asymptomatic_diverticular_disease',
+        kind='sequela',
+        gbd_id=s_id(23469),
+        me_id=me_id(27710),
+        healthstate=Healthstate(
+            name='asymptomatic',
+            kind='healthstate',
+            gbd_id=hs_id(799),
+        ),
+    ),
+    'mild_abdominopelvic_problems_due_to_diverticular_disease': Sequela(
+        name='mild_abdominopelvic_problems_due_to_diverticular_disease',
+        kind='sequela',
+        gbd_id=s_id(23470),
+        me_id=me_id(27711),
+        healthstate=Healthstate(
+            name='abdominopelvic_problem_mild',
+            kind='healthstate',
+            gbd_id=hs_id(544),
+        ),
+    ),
+    'moderate_abdominopelvic_problems_due_to_diverticular_disease': Sequela(
+        name='moderate_abdominopelvic_problems_due_to_diverticular_disease',
+        kind='sequela',
+        gbd_id=s_id(23471),
+        me_id=me_id(27712),
+        healthstate=Healthstate(
+            name='abdominopelvic_problem_moderate',
+            kind='healthstate',
+            gbd_id=hs_id(545),
+        ),
+    ),
+    'severe_abdominopelvic_problems_due_to_diverticular_disease': Sequela(
+        name='severe_abdominopelvic_problems_due_to_diverticular_disease',
+        kind='sequela',
+        gbd_id=s_id(23472),
+        me_id=me_id(27713),
+        healthstate=Healthstate(
+            name='abdominopelvic_problem_severe',
+            kind='healthstate',
+            gbd_id=hs_id(546),
+        ),
+    ),
+    'puerperal_sepsis_with_mild_anemia': Sequela(
+        name='puerperal_sepsis_with_mild_anemia',
+        kind='sequela',
+        gbd_id=s_id(23488),
+        me_id=me_id(28814),
+        healthstate=Healthstate(
+            name='infectious_disease_acute_episode_severe_with_mild_anemia',
+            kind='healthstate',
+            gbd_id=hs_id(2474),
+        ),
+    ),
+    'puerperal_sepsis_with_moderate_anemia': Sequela(
+        name='puerperal_sepsis_with_moderate_anemia',
+        kind='sequela',
+        gbd_id=s_id(23489),
+        me_id=me_id(28815),
+        healthstate=Healthstate(
+            name='infectious_disease_acute_episode_severe_with_moderate_anemia',
+            kind='healthstate',
+            gbd_id=hs_id(2477),
+        ),
+    ),
+    'puerperal_sepsis_with_severe_anemia': Sequela(
+        name='puerperal_sepsis_with_severe_anemia',
+        kind='sequela',
+        gbd_id=s_id(23490),
+        me_id=me_id(28816),
+        healthstate=Healthstate(
+            name='infectious_disease_acute_episode_severe_with_severe_anemia',
+            kind='healthstate',
+            gbd_id=hs_id(2480),
         ),
     ),
 })

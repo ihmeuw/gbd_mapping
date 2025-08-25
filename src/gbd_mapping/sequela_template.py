@@ -192,8 +192,8 @@ class Sequelae(GbdRecord):
                  'diagnosis_and_primary_therapy_phase_of_multiple_myeloma', 'controlled_phase_of_multiple_myeloma',
                  'metastatic_phase_of_multiple_myeloma', 'terminal_phase_of_multiple_myeloma',
                  'acute_myocardial_infarction_first_2_days', 'acute_myocardial_infarction_3_to_28_days',
-                 'mild_angina_due_to_ischemic_heart_disease', 'moderate_angina_due_to_ischemic_heart_disease',
-                 'severe_angina_due_to_ischemic_heart_disease', 'mild_heart_failure_due_to_ischemic_heart_disease',
+                 'mild_ischemic_heart_disease', 'moderate_ischemic_heart_disease', 'severe_ischemic_heart_disease',
+                 'mild_heart_failure_due_to_ischemic_heart_disease',
                  'moderate_heart_failure_due_to_ischemic_heart_disease',
                  'severe_heart_failure_due_to_ischemic_heart_disease', 'acute_ischemic_stroke_severity_level_1',
                  'acute_ischemic_stroke_severity_level_2_without_heart_failure',
@@ -441,17 +441,16 @@ class Sequelae(GbdRecord):
                  'severe_opioid_dependence', 'severe_cocaine_dependence_with_no_heart_failure',
                  'severe_amphetamine_dependence_with_no_heart_failure', 'severe_cannabis_dependence',
                  'other_sexually_transmitted_diseases_residual', 'asymptomatic_atrial_fibrillation_and_flutter',
-                 'symptomatic_attention_deficit_hyperactivity_disorder',
-                 'attention_deficit_hyperactivity_disorder_currently_without_symptoms',
-                 'asymptomatic_alcohol_dependence', 'asymptomatic_fetal_alcohol_syndrome',
-                 'anxiety_disorders_currently_without_symptoms', 'symptomatic_conduct_disorder',
-                 'conduct_disorder_currently_without_symptoms', 'asymptomatic_cannabis_dependence',
-                 'asymptomatic_opioid_dependence', 'asymptomatic_cocaine_dependence', 'symptomatic_dysthymia',
-                 'dysthymia_currently_without_symptoms', 'major_depressive_disorder_currently_without_symptoms',
-                 'symptomatic_episodes_of_gout', 'asymptomatic_gout',
-                 'severe_infectious_complications_due_to_chronic_otitis_media', 'asymptomatic_asthma',
-                 'asymptomatic_herpes_simplex_virus_2_infection', 'asymptomatic_endometriosis',
-                 'asymptomatic_amphetamine_dependence', 'isolated_congenital_heart_disease_due_to_down_syndrome',
+                 'symptomatic_attention_deficit_hyperactivity_disorder', 'asymptomatic_alcohol_dependence',
+                 'asymptomatic_fetal_alcohol_syndrome', 'anxiety_disorders_currently_without_symptoms',
+                 'symptomatic_conduct_disorder', 'conduct_disorder_currently_without_symptoms',
+                 'asymptomatic_cannabis_dependence', 'asymptomatic_opioid_dependence',
+                 'asymptomatic_cocaine_dependence', 'symptomatic_dysthymia', 'dysthymia_currently_without_symptoms',
+                 'major_depressive_disorder_currently_without_symptoms', 'symptomatic_episodes_of_gout',
+                 'asymptomatic_gout', 'severe_infectious_complications_due_to_chronic_otitis_media',
+                 'asymptomatic_asthma', 'asymptomatic_herpes_simplex_virus_2_infection',
+                 'asymptomatic_endometriosis', 'asymptomatic_amphetamine_dependence',
+                 'isolated_congenital_heart_disease_due_to_down_syndrome',
                  'asymptomatic_other_cardiovascular_diseases', 'mild_other_cardiovascular_diseases',
                  'moderate_other_cardiovascular_diseases', 'severe_other_cardiovascular_diseases',
                  'asymptomatic_other_gynecological_disorders', 'mild_other_gynecological_disorders',
@@ -513,7 +512,7 @@ class Sequelae(GbdRecord):
                  'asymptomatic_other_chromosomal_abnormalities', 'primary_infertility_due_to_klinefelter_syndrome',
                  'asymptomatic_klinefelter_syndrome',
                  'isolated_congenital_heart_disease_due_to_other_chromosomal_abnormalities',
-                 'asymptomatic_chagas_disease', 'chronic_periodontal_diseases', 'puerperal_sepsis',
+                 'asymptomatic_chagas_disease', 'chronic_periodontal_diseases', 'puerperal_sepsis_without_anemia',
                  'other_maternal_infections',
                  'hirsutism_and_secondary_infertility_due_to_polycystic_ovarian_syndrome',
                  'secondary_infertility_due_to_polycystic_ovarian_syndrome',
@@ -524,14 +523,13 @@ class Sequelae(GbdRecord):
                  'asymptomatic_asbestosis', 'asymptomatic_coal_workers_pneumoconiosis',
                  'asymptomatic_other_pneumoconiosis',
                  'asymptomatic_interstitial_lung_disease_and_pulmonary_sarcoidosis',
-                 'asymptomatic_angina_due_to_ischemic_heart_disease', 'asymptomatic_onchocerciasis',
-                 'asymptomatic_ascariasis', 'asymptomatic_trichuriasis', 'asymptomatic_clonorchiasis',
-                 'asymptomatic_fascioliasis', 'asymptomatic_intestinal_fluke_infection',
-                 'asymptomatic_opisthorchiasis', 'asymptomatic_paragonimiasis',
-                 'asymptomatic_peripheral_arterial_disease', 'asymptomatic_benign_prostatic_hyperplasia',
-                 'symptomatic_benign_prostatic_hyperplasia', 'uterine_fibroids_asymptomatic',
-                 'asymptomatic_other_musculoskeletal_disorders', 'mild_cellulitis', 'severe_cellulitis',
-                 'gastrointestinal_bleeding_due_to_typhoid',
+                 'asymptomatic_ischemic_heart_disease', 'asymptomatic_onchocerciasis', 'asymptomatic_ascariasis',
+                 'asymptomatic_trichuriasis', 'asymptomatic_clonorchiasis', 'asymptomatic_fascioliasis',
+                 'asymptomatic_intestinal_fluke_infection', 'asymptomatic_opisthorchiasis',
+                 'asymptomatic_paragonimiasis', 'asymptomatic_peripheral_arterial_disease',
+                 'asymptomatic_benign_prostatic_hyperplasia', 'symptomatic_benign_prostatic_hyperplasia',
+                 'uterine_fibroids_asymptomatic', 'asymptomatic_other_musculoskeletal_disorders', 'mild_cellulitis',
+                 'severe_cellulitis', 'gastrointestinal_bleeding_due_to_typhoid',
                  'vertigo_with_mild_hearing_loss_due_to_chronic_otitis_media',
                  'vertigo_with_mild_hearing_loss_and_ringing_due_to_chronic_otitis_media', 'asymptomatic_hookworm',
                  'mild_heart_failure_due_to_severe_chronic_obstructive_pulmonary_disease',
@@ -1408,23 +1406,23 @@ class Sequelae(GbdRecord):
                  'other_combined_sequelae_of_hemoglobin_sc_disease',
                  'other_combined_sequelae_of_mild_sickle_cell_beta_thalassemia_exclusivity_adjustment',
                  'mild_schistosomiasis_without_anemia', 'asymptomatic_congenital_syphilis',
-                 'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_asymptomatic_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_controlled_medically_managed_heart_failure',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_mild_heart_failure',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_moderate_heart_failure',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_severe_heart_failure',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_without_anemia_or_heart_failure',
-                 'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_asymptomatic_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_controlled_medically_managed_heart_failure',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_mild_heart_failure',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_moderate_heart_failure',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_severe_heart_failure',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_without_anemia_or_heart_failure',
-                 'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_asymptomatic_managed_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_controlled_medically_managed_heart_failure',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_mild_heart_failure',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_moderate_heart_failure',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_severe_heart_failure',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_without_anemia_or_heart_failure',
-                 'cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_asymptomatic_heart_failure',
-                 'cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_asymptomatic_and_mild_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_controlled_medically_managed_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_mild_heart_failure',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_moderate_heart_failure',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_severe_heart_failure',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_other_causes_decompensated_without_anemia_or_heart_failure',
@@ -1464,7 +1462,7 @@ class Sequelae(GbdRecord):
                  'moderate_anemia_due_to_other_endocrine_metabolic_blood_immune_disorders',
                  'severe_anemia_due_to_other_endocrine_metabolic_blood_immune_disorders',
                  'asymptomatic_other_endocrine_metabolic_blood_immune_disorders',
-                 'cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_asymptomatic_heart_failure',
+                 'cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_controlled_medically_managed_heart_failure',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_mild_heart_failure',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_moderate_heart_failure',
                  'cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_severe_heart_failure',
@@ -1731,7 +1729,22 @@ class Sequelae(GbdRecord):
                  'post_acute_fatigue_syndrome_and_severe_respiratory_and_mild_cognitive_symptoms_due_to_covid_19',
                  'post_acute_fatigue_syndrome_and_severe_respiratory_and_severe_cognitive_symptoms_due_to_covid_19',
                  'asymptomatic_covid_19_cases', 'mild_acute_covid_19', 'moderate_acute_covid_19',
-                 'severe_acute_covid_19', 'critical_acute_covid_19', 'guillain_barre_syndrome_due_to_covid_19', )
+                 'severe_acute_covid_19', 'critical_acute_covid_19', 'guillain_barre_syndrome_due_to_covid_19',
+                 'diagnosis_and_primary_therapy_phase_of_low_grade_brain_and_other_central_nervous_system_neoplasms',
+                 'controlled_phase_of_low_grade_brain_and_other_central_nervous_system_neoplasms',
+                 'metastatic_phase_of_low_grade_brain_and_other_central_nervous_system',
+                 'terminal_phase_of_low_grade_brain_and_other_central_nervous_system',
+                 'moderate_vision_impairment_due_to_other_corneal_opacities',
+                 'severe_vision_impairment_due_to_other_corneal_opacities',
+                 'blindness_due_to_other_corneal_opacities', 'mild_heart_failure_due_to_peripartum_cardiomyopathy',
+                 'moderate_heart_failure_due_to_peripartum_cardiomyopathy',
+                 'severe_heart_failure_due_to_peripartum_cardiomyopathy',
+                 'controlled_medically_managed_heart_failure_due_to_peripartum_cardiomyopathy',
+                 'gestational_diabetes_mellitus', 'asymptomatic_diverticular_disease',
+                 'mild_abdominopelvic_problems_due_to_diverticular_disease',
+                 'moderate_abdominopelvic_problems_due_to_diverticular_disease',
+                 'severe_abdominopelvic_problems_due_to_diverticular_disease', 'puerperal_sepsis_with_mild_anemia',
+                 'puerperal_sepsis_with_moderate_anemia', 'puerperal_sepsis_with_severe_anemia', )
 
     def __init__(self, **kwargs):
         super().__init__()
@@ -1979,9 +1992,9 @@ class Sequelae(GbdRecord):
         self.terminal_phase_of_multiple_myeloma = kwargs.get('terminal_phase_of_multiple_myeloma')
         self.acute_myocardial_infarction_first_2_days = kwargs.get('acute_myocardial_infarction_first_2_days')
         self.acute_myocardial_infarction_3_to_28_days = kwargs.get('acute_myocardial_infarction_3_to_28_days')
-        self.mild_angina_due_to_ischemic_heart_disease = kwargs.get('mild_angina_due_to_ischemic_heart_disease')
-        self.moderate_angina_due_to_ischemic_heart_disease = kwargs.get('moderate_angina_due_to_ischemic_heart_disease')
-        self.severe_angina_due_to_ischemic_heart_disease = kwargs.get('severe_angina_due_to_ischemic_heart_disease')
+        self.mild_ischemic_heart_disease = kwargs.get('mild_ischemic_heart_disease')
+        self.moderate_ischemic_heart_disease = kwargs.get('moderate_ischemic_heart_disease')
+        self.severe_ischemic_heart_disease = kwargs.get('severe_ischemic_heart_disease')
         self.mild_heart_failure_due_to_ischemic_heart_disease = kwargs.get('mild_heart_failure_due_to_ischemic_heart_disease')
         self.moderate_heart_failure_due_to_ischemic_heart_disease = kwargs.get('moderate_heart_failure_due_to_ischemic_heart_disease')
         self.severe_heart_failure_due_to_ischemic_heart_disease = kwargs.get('severe_heart_failure_due_to_ischemic_heart_disease')
@@ -2341,7 +2354,6 @@ class Sequelae(GbdRecord):
         self.other_sexually_transmitted_diseases_residual = kwargs.get('other_sexually_transmitted_diseases_residual')
         self.asymptomatic_atrial_fibrillation_and_flutter = kwargs.get('asymptomatic_atrial_fibrillation_and_flutter')
         self.symptomatic_attention_deficit_hyperactivity_disorder = kwargs.get('symptomatic_attention_deficit_hyperactivity_disorder')
-        self.attention_deficit_hyperactivity_disorder_currently_without_symptoms = kwargs.get('attention_deficit_hyperactivity_disorder_currently_without_symptoms')
         self.asymptomatic_alcohol_dependence = kwargs.get('asymptomatic_alcohol_dependence')
         self.asymptomatic_fetal_alcohol_syndrome = kwargs.get('asymptomatic_fetal_alcohol_syndrome')
         self.anxiety_disorders_currently_without_symptoms = kwargs.get('anxiety_disorders_currently_without_symptoms')
@@ -2446,7 +2458,7 @@ class Sequelae(GbdRecord):
         self.isolated_congenital_heart_disease_due_to_other_chromosomal_abnormalities = kwargs.get('isolated_congenital_heart_disease_due_to_other_chromosomal_abnormalities')
         self.asymptomatic_chagas_disease = kwargs.get('asymptomatic_chagas_disease')
         self.chronic_periodontal_diseases = kwargs.get('chronic_periodontal_diseases')
-        self.puerperal_sepsis = kwargs.get('puerperal_sepsis')
+        self.puerperal_sepsis_without_anemia = kwargs.get('puerperal_sepsis_without_anemia')
         self.other_maternal_infections = kwargs.get('other_maternal_infections')
         self.hirsutism_and_secondary_infertility_due_to_polycystic_ovarian_syndrome = kwargs.get('hirsutism_and_secondary_infertility_due_to_polycystic_ovarian_syndrome')
         self.secondary_infertility_due_to_polycystic_ovarian_syndrome = kwargs.get('secondary_infertility_due_to_polycystic_ovarian_syndrome')
@@ -2462,7 +2474,7 @@ class Sequelae(GbdRecord):
         self.asymptomatic_coal_workers_pneumoconiosis = kwargs.get('asymptomatic_coal_workers_pneumoconiosis')
         self.asymptomatic_other_pneumoconiosis = kwargs.get('asymptomatic_other_pneumoconiosis')
         self.asymptomatic_interstitial_lung_disease_and_pulmonary_sarcoidosis = kwargs.get('asymptomatic_interstitial_lung_disease_and_pulmonary_sarcoidosis')
-        self.asymptomatic_angina_due_to_ischemic_heart_disease = kwargs.get('asymptomatic_angina_due_to_ischemic_heart_disease')
+        self.asymptomatic_ischemic_heart_disease = kwargs.get('asymptomatic_ischemic_heart_disease')
         self.asymptomatic_onchocerciasis = kwargs.get('asymptomatic_onchocerciasis')
         self.asymptomatic_ascariasis = kwargs.get('asymptomatic_ascariasis')
         self.asymptomatic_trichuriasis = kwargs.get('asymptomatic_trichuriasis')
@@ -3478,23 +3490,23 @@ class Sequelae(GbdRecord):
         self.other_combined_sequelae_of_mild_sickle_cell_beta_thalassemia_exclusivity_adjustment = kwargs.get('other_combined_sequelae_of_mild_sickle_cell_beta_thalassemia_exclusivity_adjustment')
         self.mild_schistosomiasis_without_anemia = kwargs.get('mild_schistosomiasis_without_anemia')
         self.asymptomatic_congenital_syphilis = kwargs.get('asymptomatic_congenital_syphilis')
-        self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_asymptomatic_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_asymptomatic_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_controlled_medically_managed_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_controlled_medically_managed_heart_failure')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_mild_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_mild_heart_failure')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_moderate_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_moderate_heart_failure')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_severe_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_with_severe_heart_failure')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_without_anemia_or_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_b_decompensated_without_anemia_or_heart_failure')
-        self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_asymptomatic_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_asymptomatic_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_controlled_medically_managed_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_controlled_medically_managed_heart_failure')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_mild_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_mild_heart_failure')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_moderate_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_moderate_heart_failure')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_severe_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_with_severe_heart_failure')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_without_anemia_or_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_hepatitis_c_decompensated_without_anemia_or_heart_failure')
-        self.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_asymptomatic_managed_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_asymptomatic_managed_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_controlled_medically_managed_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_controlled_medically_managed_heart_failure')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_mild_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_mild_heart_failure')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_moderate_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_moderate_heart_failure')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_severe_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_with_severe_heart_failure')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_without_anemia_or_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_alcohol_decompensated_without_anemia_or_heart_failure')
-        self.cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_asymptomatic_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_asymptomatic_heart_failure')
-        self.cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_asymptomatic_and_mild_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_asymptomatic_and_mild_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_controlled_medically_managed_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_controlled_medically_managed_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_mild_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_mild_heart_failure')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_moderate_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_moderate_heart_failure')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_severe_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_other_cause_decompensated_with_severe_heart_failure')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_other_causes_decompensated_without_anemia_or_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_other_causes_decompensated_without_anemia_or_heart_failure')
@@ -3541,7 +3553,7 @@ class Sequelae(GbdRecord):
         self.moderate_anemia_due_to_other_endocrine_metabolic_blood_immune_disorders = kwargs.get('moderate_anemia_due_to_other_endocrine_metabolic_blood_immune_disorders')
         self.severe_anemia_due_to_other_endocrine_metabolic_blood_immune_disorders = kwargs.get('severe_anemia_due_to_other_endocrine_metabolic_blood_immune_disorders')
         self.asymptomatic_other_endocrine_metabolic_blood_immune_disorders = kwargs.get('asymptomatic_other_endocrine_metabolic_blood_immune_disorders')
-        self.cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_asymptomatic_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_asymptomatic_heart_failure')
+        self.cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_controlled_medically_managed_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_controlled_medically_managed_heart_failure')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_mild_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_mild_heart_failure')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_moderate_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_moderate_heart_failure')
         self.cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_severe_heart_failure = kwargs.get('cirrhosis_and_other_chronic_liver_diseases_due_to_nash_decompensated_with_severe_heart_failure')
@@ -3823,3 +3835,22 @@ class Sequelae(GbdRecord):
         self.severe_acute_covid_19 = kwargs.get('severe_acute_covid_19')
         self.critical_acute_covid_19 = kwargs.get('critical_acute_covid_19')
         self.guillain_barre_syndrome_due_to_covid_19 = kwargs.get('guillain_barre_syndrome_due_to_covid_19')
+        self.diagnosis_and_primary_therapy_phase_of_low_grade_brain_and_other_central_nervous_system_neoplasms = kwargs.get('diagnosis_and_primary_therapy_phase_of_low_grade_brain_and_other_central_nervous_system_neoplasms')
+        self.controlled_phase_of_low_grade_brain_and_other_central_nervous_system_neoplasms = kwargs.get('controlled_phase_of_low_grade_brain_and_other_central_nervous_system_neoplasms')
+        self.metastatic_phase_of_low_grade_brain_and_other_central_nervous_system = kwargs.get('metastatic_phase_of_low_grade_brain_and_other_central_nervous_system')
+        self.terminal_phase_of_low_grade_brain_and_other_central_nervous_system = kwargs.get('terminal_phase_of_low_grade_brain_and_other_central_nervous_system')
+        self.moderate_vision_impairment_due_to_other_corneal_opacities = kwargs.get('moderate_vision_impairment_due_to_other_corneal_opacities')
+        self.severe_vision_impairment_due_to_other_corneal_opacities = kwargs.get('severe_vision_impairment_due_to_other_corneal_opacities')
+        self.blindness_due_to_other_corneal_opacities = kwargs.get('blindness_due_to_other_corneal_opacities')
+        self.mild_heart_failure_due_to_peripartum_cardiomyopathy = kwargs.get('mild_heart_failure_due_to_peripartum_cardiomyopathy')
+        self.moderate_heart_failure_due_to_peripartum_cardiomyopathy = kwargs.get('moderate_heart_failure_due_to_peripartum_cardiomyopathy')
+        self.severe_heart_failure_due_to_peripartum_cardiomyopathy = kwargs.get('severe_heart_failure_due_to_peripartum_cardiomyopathy')
+        self.controlled_medically_managed_heart_failure_due_to_peripartum_cardiomyopathy = kwargs.get('controlled_medically_managed_heart_failure_due_to_peripartum_cardiomyopathy')
+        self.gestational_diabetes_mellitus = kwargs.get('gestational_diabetes_mellitus')
+        self.asymptomatic_diverticular_disease = kwargs.get('asymptomatic_diverticular_disease')
+        self.mild_abdominopelvic_problems_due_to_diverticular_disease = kwargs.get('mild_abdominopelvic_problems_due_to_diverticular_disease')
+        self.moderate_abdominopelvic_problems_due_to_diverticular_disease = kwargs.get('moderate_abdominopelvic_problems_due_to_diverticular_disease')
+        self.severe_abdominopelvic_problems_due_to_diverticular_disease = kwargs.get('severe_abdominopelvic_problems_due_to_diverticular_disease')
+        self.puerperal_sepsis_with_mild_anemia = kwargs.get('puerperal_sepsis_with_mild_anemia')
+        self.puerperal_sepsis_with_moderate_anemia = kwargs.get('puerperal_sepsis_with_moderate_anemia')
+        self.puerperal_sepsis_with_severe_anemia = kwargs.get('puerperal_sepsis_with_severe_anemia')
