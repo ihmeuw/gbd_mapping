@@ -302,7 +302,7 @@ def make_cause_restrictions(cause):
 
 
 def get_all_risk_metadata():
-    risks = gbd.get_rei_metadata(RISK_SET_ID).sort_values("rei_id")
+    risks = gbd.get_rei_metadata(RISK_SET_ID, include_all_metadata=True).sort_values("rei_id")
     risks = risks[
         [
             "rei_id",
