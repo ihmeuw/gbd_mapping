@@ -377,7 +377,12 @@ def get_risk_data() -> list:
             levels = None
             scalar = risk["rr_scalar"] if not pd.isnull(risk["rr_scalar"]) else None
             if pd.isnull(risk["tmred_dist"]):
-                tmred = None
+                tmred = (
+                    ("distribution", "draws"),
+                    ("min", None),
+                    ("max", None),
+                    ("inverted", bool(int(risk["inv_exp"])) if not pd.isnull(risk["inv_exp"]) else False),
+                )
             else:
                 tmred = (
                     ("distribution", risk["tmred_dist"]),

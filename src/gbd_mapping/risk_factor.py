@@ -467,6 +467,10 @@ risk_factors = RiskFactors(
                          causes.maternal_and_neonatal_disorders, causes.maternal_abortion_and_miscarriage, 
                          causes.other_direct_maternal_disorders, ),
         population_attributable_fraction_of_one_causes=(causes.dietary_iron_deficiency, ),
+        tmred=Tmred(
+            distribution='draws',
+            inverted=True,
+        ),
         relative_risk_scalar=scalar(10),
     ),
     vitamin_a_deficiency=RiskFactor(
@@ -2939,6 +2943,10 @@ risk_factors = RiskFactors(
                          causes.respiratory_infections_and_tuberculosis, causes.enteric_infections, 
                          causes.other_infectious_diseases, ),
         population_attributable_fraction_of_one_causes=(causes.protein_energy_malnutrition, ),
+        tmred=Tmred(
+            distribution='draws',
+            inverted=False,
+        ),
     ),
     child_wasting=RiskFactor(
         name='child_wasting',
