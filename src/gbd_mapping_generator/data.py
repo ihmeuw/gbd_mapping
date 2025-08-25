@@ -227,7 +227,8 @@ def get_cause_data():
 def get_age_restriction_edge(age_restriction, end=False):
     id_map = {
         0.0: [2, None],
-        0.01: [3, 2],
+        0.01917808: [3, 2],
+        0.07671233: [4, 3],
         0.10: [388, 3],
         0.5: [389, 388],
         1.0: [238, 389],
@@ -302,15 +303,42 @@ def make_cause_restrictions(cause):
 
 def get_all_risk_metadata():
     risks = gbd.get_rei_metadata(RISK_SET_ID).sort_values("rei_id")
-    risks = risks[["rei_id", "level", "rei_name", "parent_id", "most_detailed"]].set_index(
-        "rei_id"
-    )
+    risks = risks[
+        [
+            "rei_id",
+            "level",
+            "rei_name",
+            "parent_id",
+            "most_detailed",
+            "age_specific_exp",
+            "exposure_type",
+            "female",
+            "has_sev",
+            "inv_exp",
+            "lancet_label",
+            "lancet_label_short",
+            "male",
+            "rei_calculation_type",
+            "rr_scalar",
+            "rrmax_at_sequela_level",
+            "rrmax_from_parent_rei",
+            "tmred_dist",
+            "tmrel_lower",
+            "tmrel_upper",
+            "unit",
+            "yld",
+            "yld_age_group_id_end",
+            "yld_age_group_id_start",
+            "yll",
+            "yll_age_group_id_end",
+            "yll_age_group_id_start",
+        ]
+    ].set_index("rei_id")
     risks["rei_name"] = clean_entity_list(risks["rei_name"])
     risks = risks.join(gbd.get_paf_of_one().set_index("rei_id"))
     risks = risks.join(gbd.get_cause_risk_mapping().set_index("rei_id"))
     risks = risks.join(gbd.get_category_mapping().set_index("rei_id"))
     risks = risks.join(gbd.get_mediation_mapping().set_index("rei_id"))
-    risks = risks.join(gbd.get_risk_metadata().set_index("rei_id"))
     risks.rei_calculation_type = risks.rei_calculation_type.map(
         {
             "0": "aggregation",
