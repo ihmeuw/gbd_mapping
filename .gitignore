@@ -109,6 +109,5 @@ venv.bak/
 # Version file
 src/gbd_mapping/_version.py
 
-# Visual Studio Code project settings
+# Vscode settings
 .vscode/
-
