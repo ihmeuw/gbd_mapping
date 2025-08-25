@@ -60,7 +60,7 @@ class Causes(GbdRecord):
                  'other_neglected_tropical_diseases', 'maternal_disorders', 'maternal_hemorrhage',
                  'maternal_sepsis_and_other_maternal_infections', 'maternal_hypertensive_disorders',
                  'maternal_obstructed_labor_and_uterine_rupture', 'ectopic_pregnancy', 'indirect_maternal_deaths',
-                 'late_maternal_deaths', 'other_direct_maternal_disorders', 'neonatal_disorders',
+                 'late_maternal_deaths', 'other_direct_maternal_disorders_internal', 'neonatal_disorders',
                  'neonatal_preterm_birth', 'neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma',
                  'neonatal_sepsis_and_other_neonatal_infections', 'hemolytic_disease_and_other_neonatal_jaundice',
                  'other_neonatal_disorders', 'nutritional_deficiencies', 'protein_energy_malnutrition',
@@ -94,7 +94,8 @@ class Causes(GbdRecord):
                  'gastritis_and_duodenitis', 'appendicitis', 'paralytic_ileus_and_intestinal_obstruction',
                  'inguinal_femoral_and_abdominal_hernia', 'inflammatory_bowel_disease',
                  'vascular_intestinal_disorders', 'gallbladder_and_biliary_diseases', 'pancreatitis',
-                 'gastroesophageal_reflux_disease', 'other_digestive_diseases', 'neurological_disorders',
+                 'gastroesophageal_reflux_disease', 'diverticular_disease_of_intestines',
+                 'other_digestive_diseases_internal', 'neurological_disorders',
                  'alzheimers_disease_and_other_dementias', 'parkinsons_disease', 'idiopathic_epilepsy',
                  'multiple_sclerosis', 'migraine', 'tension_type_headache', 'motor_neuron_disease',
                  'other_neurological_disorders', 'mental_disorders', 'schizophrenia', 'alcohol_use_disorders',
@@ -125,28 +126,31 @@ class Causes(GbdRecord):
                  'fungal_skin_diseases', 'viral_skin_diseases', 'acne_vulgaris', 'alopecia_areata', 'pruritus',
                  'urticaria', 'decubitus_ulcer', 'other_skin_and_subcutaneous_diseases', 'sense_organ_diseases',
                  'glaucoma', 'cataract', 'age_related_macular_degeneration', 'age_related_and_other_hearing_loss',
-                 'other_vision_loss', 'other_sense_organ_diseases', 'oral_disorders', 'caries_of_deciduous_teeth',
-                 'caries_of_permanent_teeth', 'periodontal_diseases', 'edentulism', 'other_oral_disorders',
-                 'sudden_infant_death_syndrome', 'injuries', 'transport_injuries', 'road_injuries',
-                 'pedestrian_road_injuries', 'cyclist_road_injuries', 'motorcyclist_road_injuries',
+                 'other_vision_loss_internal', 'other_sense_organ_diseases', 'oral_disorders',
+                 'caries_of_deciduous_teeth', 'caries_of_permanent_teeth', 'periodontal_diseases', 'edentulism',
+                 'other_oral_disorders', 'sudden_infant_death_syndrome', 'injuries', 'transport_injuries',
+                 'road_injuries', 'pedestrian_road_injuries', 'cyclist_road_injuries', 'motorcyclist_road_injuries',
                  'motor_vehicle_road_injuries', 'other_road_injuries', 'other_transport_injuries',
                  'unintentional_injuries', 'falls', 'drowning', 'fire_heat_and_hot_substances', 'poisonings',
                  'poisoning_by_carbon_monoxide', 'poisoning_by_other_means', 'exposure_to_mechanical_forces',
                  'unintentional_firearm_injuries', 'other_exposure_to_mechanical_forces',
                  'adverse_effects_of_medical_treatment', 'animal_contact', 'venomous_animal_contact',
                  'non_venomous_animal_contact', 'foreign_body', 'pulmonary_aspiration_and_foreign_body_in_airway',
-                 'foreign_body_in_eyes', 'foreign_body_in_other_body_part', 'other_unintentional_injuries_internal',
-                 'self_harm_and_interpersonal_violence', 'self_harm', 'self_harm_by_firearm',
-                 'self_harm_by_other_specified_means', 'interpersonal_violence', 'physical_violence_by_firearm',
-                 'physical_violence_by_sharp_object', 'physical_violence_by_other_means',
-                 'exposure_to_forces_of_nature', 'maternal_deaths_aggravated_by_hiv_aids', 'thalassemias_trait',
-                 'sickle_cell_trait', 'g6pd_trait', 'environmental_heat_and_cold_exposure', 'ebola',
-                 'acute_lymphoid_leukemia', 'chronic_lymphoid_leukemia', 'acute_myeloid_leukemia',
-                 'chronic_myeloid_leukemia', 'non_melanoma_skin_cancer_squamous_cell_carcinoma',
-                 'non_melanoma_skin_cancer_basal_cell_carcinoma', 'police_conflict_and_executions',
-                 'drug_susceptible_tuberculosis', 'zika_virus', 'guinea_worm_disease', 'alcoholic_cardiomyopathy',
-                 'electrocution', 'sexual_violence', 'myocarditis', 'other_leukemia', 'other_cardiomyopathy',
-                 'conflict_and_terrorism', 'multidrug_resistant_tuberculosis_without_extensive_drug_resistance',
+                 'foreign_body_in_eyes', 'foreign_body_in_other_body_part', 'other_unintentional_injuries',
+                 'self_harm_and_interpersonal_violence', 'self_harm',
+                 'self_harm_by_hanging_strangulation_and_suffocation', 'self_harm_by_fire_heat_and_hot_substances',
+                 'self_harm_by_firearm', 'self_harm_by_poisoning_pesticides',
+                 'self_harm_by_other_specified_means_internal', 'interpersonal_violence',
+                 'physical_violence_by_firearm', 'physical_violence_by_sharp_object',
+                 'physical_violence_by_other_means', 'exposure_to_forces_of_nature',
+                 'maternal_deaths_aggravated_by_hiv_aids', 'thalassemias_trait', 'sickle_cell_trait', 'g6pd_trait',
+                 'environmental_heat_and_cold_exposure', 'ebola', 'acute_lymphoid_leukemia',
+                 'chronic_lymphoid_leukemia', 'acute_myeloid_leukemia', 'chronic_myeloid_leukemia',
+                 'non_melanoma_skin_cancer_squamous_cell_carcinoma', 'non_melanoma_skin_cancer_basal_cell_carcinoma',
+                 'police_conflict_and_executions', 'drug_susceptible_tuberculosis', 'zika_virus',
+                 'guinea_worm_disease', 'alcoholic_cardiomyopathy', 'electrocution', 'sexual_violence',
+                 'myocarditis', 'other_leukemia', 'other_cardiomyopathy', 'conflict_and_terrorism',
+                 'multidrug_resistant_tuberculosis_without_extensive_drug_resistance',
                  'extensively_drug_resistant_tuberculosis', 'hiv_aids_drug_susceptible_tuberculosis',
                  'hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance',
                  'hiv_aids_extensively_drug_resistant_tuberculosis', 'latent_tuberculosis_infection',
@@ -155,12 +159,13 @@ class Causes(GbdRecord):
                  'other_infectious_diseases', 'maternal_and_neonatal_disorders',
                  'myelodysplastic_myeloproliferative_and_other_hematopoietic_neoplasms',
                  'benign_and_in_situ_intestinal_neoplasms', 'benign_and_in_situ_cervical_and_uterine_neoplasms',
-                 'other_benign_and_in_situ_neoplasms', 'non_rheumatic_calcific_aortic_valve_disease',
+                 'other_benign_and_in_situ_neoplasms_internal', 'non_rheumatic_calcific_aortic_valve_disease',
                  'non_rheumatic_degenerative_mitral_valve_disease', 'other_non_rheumatic_valve_diseases',
                  'nonalcoholic_fatty_liver_disease_including_cirrhosis', 'headache_disorders',
                  'substance_use_disorders', 'diabetes_and_kidney_diseases', 'diabetes_mellitus_type_1',
                  'diabetes_mellitus_type_2', 'atopic_dermatitis', 'contact_dermatitis', 'seborrhoeic_dermatitis',
-                 'bacterial_skin_diseases', 'blindness_and_vision_loss', 'upper_digestive_system_diseases',
+                 'bacterial_skin_diseases', 'blindness_and_vision_loss',
+                 'non_malignant_brain_and_other_central_nervous_system_neoplasms', 'upper_digestive_system_diseases',
                  'maternal_abortion_and_miscarriage', 'liver_cancer_due_to_nash',
                  'chronic_kidney_disease_due_to_diabetes_mellitus_type_1',
                  'chronic_kidney_disease_due_to_diabetes_mellitus_type_2', 'refraction_disorders',
@@ -171,8 +176,10 @@ class Causes(GbdRecord):
                  'osteoarthritis_knee', 'osteoarthritis_hand', 'osteoarthritis_other', 'ulcerative_colitis',
                  'crohns_disease', 'total_burden_related_to_hepatitis_b', 'total_burden_related_to_hepatitis_c',
                  'total_burden_related_to_non_alcoholic_fatty_liver_disease_nafld', 'total_cancers',
-                 'thyroid_diseases', 'covid_19', 'other_unintentional_injuries',
-                 'other_covid_19_pandemic_related_outcomes', 'total_cancers_excluding_non_melanoma_skin_cancer', )
+                 'thyroid_diseases', 'covid_19', 'total_cancers_excluding_non_melanoma_skin_cancer',
+                 'self_harm_by_non_pesticide_substance_and_gas', 'other_corneal_opacities', 'gestational_diabetes',
+                 'peripartum_cardiomyopathy', 'other_direct_maternal_disorders', 'other_digestive_diseases',
+                 'other_vision_loss', 'self_harm_by_other_specified_means', 'other_benign_and_in_situ_neoplasms', )
 
     def __init__(self, **kwargs):
         super().__init__()
@@ -225,7 +232,7 @@ class Causes(GbdRecord):
         self.ectopic_pregnancy = kwargs.get('ectopic_pregnancy')
         self.indirect_maternal_deaths = kwargs.get('indirect_maternal_deaths')
         self.late_maternal_deaths = kwargs.get('late_maternal_deaths')
-        self.other_direct_maternal_disorders = kwargs.get('other_direct_maternal_disorders')
+        self.other_direct_maternal_disorders_internal = kwargs.get('other_direct_maternal_disorders_internal')
         self.neonatal_disorders = kwargs.get('neonatal_disorders')
         self.neonatal_preterm_birth = kwargs.get('neonatal_preterm_birth')
         self.neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma = kwargs.get('neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma')
@@ -329,7 +336,8 @@ class Causes(GbdRecord):
         self.gallbladder_and_biliary_diseases = kwargs.get('gallbladder_and_biliary_diseases')
         self.pancreatitis = kwargs.get('pancreatitis')
         self.gastroesophageal_reflux_disease = kwargs.get('gastroesophageal_reflux_disease')
-        self.other_digestive_diseases = kwargs.get('other_digestive_diseases')
+        self.diverticular_disease_of_intestines = kwargs.get('diverticular_disease_of_intestines')
+        self.other_digestive_diseases_internal = kwargs.get('other_digestive_diseases_internal')
         self.neurological_disorders = kwargs.get('neurological_disorders')
         self.alzheimers_disease_and_other_dementias = kwargs.get('alzheimers_disease_and_other_dementias')
         self.parkinsons_disease = kwargs.get('parkinsons_disease')
@@ -427,7 +435,7 @@ class Causes(GbdRecord):
         self.cataract = kwargs.get('cataract')
         self.age_related_macular_degeneration = kwargs.get('age_related_macular_degeneration')
         self.age_related_and_other_hearing_loss = kwargs.get('age_related_and_other_hearing_loss')
-        self.other_vision_loss = kwargs.get('other_vision_loss')
+        self.other_vision_loss_internal = kwargs.get('other_vision_loss_internal')
         self.other_sense_organ_diseases = kwargs.get('other_sense_organ_diseases')
         self.oral_disorders = kwargs.get('oral_disorders')
         self.caries_of_deciduous_teeth = kwargs.get('caries_of_deciduous_teeth')
@@ -463,11 +471,14 @@ class Causes(GbdRecord):
         self.pulmonary_aspiration_and_foreign_body_in_airway = kwargs.get('pulmonary_aspiration_and_foreign_body_in_airway')
         self.foreign_body_in_eyes = kwargs.get('foreign_body_in_eyes')
         self.foreign_body_in_other_body_part = kwargs.get('foreign_body_in_other_body_part')
-        self.other_unintentional_injuries_internal = kwargs.get('other_unintentional_injuries_internal')
+        self.other_unintentional_injuries = kwargs.get('other_unintentional_injuries')
         self.self_harm_and_interpersonal_violence = kwargs.get('self_harm_and_interpersonal_violence')
         self.self_harm = kwargs.get('self_harm')
+        self.self_harm_by_hanging_strangulation_and_suffocation = kwargs.get('self_harm_by_hanging_strangulation_and_suffocation')
+        self.self_harm_by_fire_heat_and_hot_substances = kwargs.get('self_harm_by_fire_heat_and_hot_substances')
         self.self_harm_by_firearm = kwargs.get('self_harm_by_firearm')
-        self.self_harm_by_other_specified_means = kwargs.get('self_harm_by_other_specified_means')
+        self.self_harm_by_poisoning_pesticides = kwargs.get('self_harm_by_poisoning_pesticides')
+        self.self_harm_by_other_specified_means_internal = kwargs.get('self_harm_by_other_specified_means_internal')
         self.interpersonal_violence = kwargs.get('interpersonal_violence')
         self.physical_violence_by_firearm = kwargs.get('physical_violence_by_firearm')
         self.physical_violence_by_sharp_object = kwargs.get('physical_violence_by_sharp_object')
@@ -512,7 +523,7 @@ class Causes(GbdRecord):
         self.myelodysplastic_myeloproliferative_and_other_hematopoietic_neoplasms = kwargs.get('myelodysplastic_myeloproliferative_and_other_hematopoietic_neoplasms')
         self.benign_and_in_situ_intestinal_neoplasms = kwargs.get('benign_and_in_situ_intestinal_neoplasms')
         self.benign_and_in_situ_cervical_and_uterine_neoplasms = kwargs.get('benign_and_in_situ_cervical_and_uterine_neoplasms')
-        self.other_benign_and_in_situ_neoplasms = kwargs.get('other_benign_and_in_situ_neoplasms')
+        self.other_benign_and_in_situ_neoplasms_internal = kwargs.get('other_benign_and_in_situ_neoplasms_internal')
         self.non_rheumatic_calcific_aortic_valve_disease = kwargs.get('non_rheumatic_calcific_aortic_valve_disease')
         self.non_rheumatic_degenerative_mitral_valve_disease = kwargs.get('non_rheumatic_degenerative_mitral_valve_disease')
         self.other_non_rheumatic_valve_diseases = kwargs.get('other_non_rheumatic_valve_diseases')
@@ -527,6 +538,7 @@ class Causes(GbdRecord):
         self.seborrhoeic_dermatitis = kwargs.get('seborrhoeic_dermatitis')
         self.bacterial_skin_diseases = kwargs.get('bacterial_skin_diseases')
         self.blindness_and_vision_loss = kwargs.get('blindness_and_vision_loss')
+        self.non_malignant_brain_and_other_central_nervous_system_neoplasms = kwargs.get('non_malignant_brain_and_other_central_nervous_system_neoplasms')
         self.upper_digestive_system_diseases = kwargs.get('upper_digestive_system_diseases')
         self.maternal_abortion_and_miscarriage = kwargs.get('maternal_abortion_and_miscarriage')
         self.liver_cancer_due_to_nash = kwargs.get('liver_cancer_due_to_nash')
@@ -556,6 +568,13 @@ class Causes(GbdRecord):
         self.total_cancers = kwargs.get('total_cancers')
         self.thyroid_diseases = kwargs.get('thyroid_diseases')
         self.covid_19 = kwargs.get('covid_19')
-        self.other_unintentional_injuries = kwargs.get('other_unintentional_injuries')
-        self.other_covid_19_pandemic_related_outcomes = kwargs.get('other_covid_19_pandemic_related_outcomes')
         self.total_cancers_excluding_non_melanoma_skin_cancer = kwargs.get('total_cancers_excluding_non_melanoma_skin_cancer')
+        self.self_harm_by_non_pesticide_substance_and_gas = kwargs.get('self_harm_by_non_pesticide_substance_and_gas')
+        self.other_corneal_opacities = kwargs.get('other_corneal_opacities')
+        self.gestational_diabetes = kwargs.get('gestational_diabetes')
+        self.peripartum_cardiomyopathy = kwargs.get('peripartum_cardiomyopathy')
+        self.other_direct_maternal_disorders = kwargs.get('other_direct_maternal_disorders')
+        self.other_digestive_diseases = kwargs.get('other_digestive_diseases')
+        self.other_vision_loss = kwargs.get('other_vision_loss')
+        self.self_harm_by_other_specified_means = kwargs.get('self_harm_by_other_specified_means')
+        self.other_benign_and_in_situ_neoplasms = kwargs.get('other_benign_and_in_situ_neoplasms')
