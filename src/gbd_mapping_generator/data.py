@@ -302,7 +302,7 @@ def make_cause_restrictions(cause):
 
 
 def get_all_risk_metadata():
-    risks = gbd.get_rei_metadata(RISK_SET_ID).sort_values("rei_id")
+    risks = gbd.get_rei_metadata(RISK_SET_ID, include_all_metadata=True).sort_values("rei_id")
     risks = risks[
         [
             "rei_id",
@@ -375,13 +375,13 @@ def get_risk_data() -> list:
 
         if distribution in ["normal", "lognormal", "ensemble"]:
             levels = None
-            scalar = risk["rr_scalar"]
+            scalar = risk["rr_scalar"] if not pd.isnull(risk["rr_scalar"]) else None
             if pd.isnull(risk["tmred_dist"]):
                 tmred = (
                     ("distribution", "draws"),
                     ("min", None),
                     ("max", None),
-                    ("inverted", bool(int(risk["inv_exp"]))),
+                    ("inverted", bool(int(risk["inv_exp"])) if not pd.isnull(risk["inv_exp"]) else False),
                 )
             else:
                 tmred = (

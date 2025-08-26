@@ -72,7 +72,7 @@ class RiskFactors(GbdRecord):
                  'diet_low_in_omega_6_polyunsaturated_fatty_acids', 'diet_high_in_trans_fatty_acids',
                  'diet_high_in_sodium', 'low_physical_activity', 'occupational_risks', 'occupational_carcinogens',
                  'occupational_asthmagens', 'occupational_particulate_matter_gases_and_fumes', 'occupational_noise',
-                 'occupational_injuries', 'occupational_ergonomic_factors', 'childhood_sexual_abuse',
+                 'occupational_injuries', 'occupational_ergonomic_factors', 'sexual_violence_against_children',
                  'intimate_partner_violence', 'non_exclusive_breastfeeding', 'discontinued_breastfeeding',
                  'injected_drug_use', 'drug_dependence', 'diet_low_in_calcium', 'occupational_exposure_to_asbestos',
                  'occupational_exposure_to_arsenic', 'occupational_exposure_to_benzene',
@@ -85,12 +85,12 @@ class RiskFactors(GbdRecord):
                  'intimate_partner_violence_hiv_paf_approach', 'environmental_occupational_risks',
                  'behavioral_risks', 'occupational_exposure_to_trichloroethylene',
                  'no_access_to_handwashing_facility', 'child_growth_failure', 'child_wasting', 'child_stunting',
-                 'lead_exposure_in_blood', 'lead_exposure_in_bone', 'childhood_sexual_abuse_against_females',
-                 'childhood_sexual_abuse_against_males', 'non_optimal_temperature', 'chewing_tobacco',
+                 'lead_exposure_in_blood', 'lead_exposure_in_bone', 'non_optimal_temperature', 'chewing_tobacco',
                  'diet_low_in_legumes', 'short_gestation', 'low_birth_weight', 'high_temperature', 'low_temperature',
                  'low_birth_weight_and_short_gestation', 'kidney_dysfunction', 'bullying_victimization',
                  'high_ldl_cholesterol', 'high_body_mass_index_in_adults', 'high_body_mass_index_in_children',
-                 'particulate_matter_pollution', 'childhood_sexual_abuse_and_bullying', 'nitrogen_dioxide_pollution', )
+                 'particulate_matter_pollution', 'sexual_violence_against_children_and_bullying',
+                 'nitrogen_dioxide_pollution', )
 
     def __init__(self,
                  unsafe_water_sanitation_and_handwashing: RiskFactor,
@@ -141,7 +141,7 @@ class RiskFactors(GbdRecord):
                  occupational_noise: RiskFactor,
                  occupational_injuries: RiskFactor,
                  occupational_ergonomic_factors: RiskFactor,
-                 childhood_sexual_abuse: RiskFactor,
+                 sexual_violence_against_children: RiskFactor,
                  intimate_partner_violence: RiskFactor,
                  non_exclusive_breastfeeding: RiskFactor,
                  discontinued_breastfeeding: RiskFactor,
@@ -174,8 +174,6 @@ class RiskFactors(GbdRecord):
                  child_stunting: RiskFactor,
                  lead_exposure_in_blood: RiskFactor,
                  lead_exposure_in_bone: RiskFactor,
-                 childhood_sexual_abuse_against_females: RiskFactor,
-                 childhood_sexual_abuse_against_males: RiskFactor,
                  non_optimal_temperature: RiskFactor,
                  chewing_tobacco: RiskFactor,
                  diet_low_in_legumes: RiskFactor,
@@ -190,7 +188,7 @@ class RiskFactors(GbdRecord):
                  high_body_mass_index_in_adults: RiskFactor,
                  high_body_mass_index_in_children: RiskFactor,
                  particulate_matter_pollution: RiskFactor,
-                 childhood_sexual_abuse_and_bullying: RiskFactor,
+                 sexual_violence_against_children_and_bullying: RiskFactor,
                  nitrogen_dioxide_pollution: RiskFactor, ):
         super().__init__()
         self.unsafe_water_sanitation_and_handwashing = unsafe_water_sanitation_and_handwashing
@@ -241,7 +239,7 @@ class RiskFactors(GbdRecord):
         self.occupational_noise = occupational_noise
         self.occupational_injuries = occupational_injuries
         self.occupational_ergonomic_factors = occupational_ergonomic_factors
-        self.childhood_sexual_abuse = childhood_sexual_abuse
+        self.sexual_violence_against_children = sexual_violence_against_children
         self.intimate_partner_violence = intimate_partner_violence
         self.non_exclusive_breastfeeding = non_exclusive_breastfeeding
         self.discontinued_breastfeeding = discontinued_breastfeeding
@@ -274,8 +272,6 @@ class RiskFactors(GbdRecord):
         self.child_stunting = child_stunting
         self.lead_exposure_in_blood = lead_exposure_in_blood
         self.lead_exposure_in_bone = lead_exposure_in_bone
-        self.childhood_sexual_abuse_against_females = childhood_sexual_abuse_against_females
-        self.childhood_sexual_abuse_against_males = childhood_sexual_abuse_against_males
         self.non_optimal_temperature = non_optimal_temperature
         self.chewing_tobacco = chewing_tobacco
         self.diet_low_in_legumes = diet_low_in_legumes
@@ -290,5 +286,5 @@ class RiskFactors(GbdRecord):
         self.high_body_mass_index_in_adults = high_body_mass_index_in_adults
         self.high_body_mass_index_in_children = high_body_mass_index_in_children
         self.particulate_matter_pollution = particulate_matter_pollution
-        self.childhood_sexual_abuse_and_bullying = childhood_sexual_abuse_and_bullying
+        self.sexual_violence_against_children_and_bullying = sexual_violence_against_children_and_bullying
         self.nitrogen_dioxide_pollution = nitrogen_dioxide_pollution
