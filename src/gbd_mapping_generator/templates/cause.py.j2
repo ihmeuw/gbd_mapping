@@ -11,7 +11,7 @@ from .id import UNKNOWN, {{ c_id_type }}, {{ me_id_type }}
 from .sequela import sequelae
 
 causes = Causes(**{
-{%- for cause in causes_data %}
+{% for cause in causes_data %}
     '{{ cause.name }}': Cause(
         name='{{ cause.name }}',
         kind='cause',
@@ -21,22 +21,14 @@ causes = Causes(**{
         most_detailed={{ cause.most_detailed }},
         parent=None,
         restrictions=Restrictions(
-{%- for restriction, value in cause.restrictions %}
+{% for restriction, value in cause.restrictions %}
             {{ restriction }}={{ value }},
-{%- endfor %}
+{% endfor %}
         ),
-        sequelae=(
-{%- for sequela in cause.sequelae %}
-            sequelae.{{ sequela }},
-{%- endfor %}
-        ),
-        etiologies=(
-{%- for etiology in cause.etiologies %}
-            etiologies.{{ etiology }},
-{%- endfor %}
-        ),
+        sequelae={{ cause.sequelae|format_tuple(prefix='sequelae.') }},
+        etiologies={{ cause.etiologies|format_tuple(prefix='etiologies.') }},
     ),
-{%- endfor %}
+{% endfor %}
 })
 
 {%- for cause in causes_data %}
