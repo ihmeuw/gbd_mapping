@@ -381,7 +381,12 @@ def get_risk_data() -> list:
                     ("distribution", "draws"),
                     ("min", None),
                     ("max", None),
-                    ("inverted", bool(int(risk["inv_exp"])) if not pd.isnull(risk["inv_exp"]) else False),
+                    (
+                        "inverted",
+                        bool(int(risk["inv_exp"]))
+                        if not pd.isnull(risk["inv_exp"])
+                        else False,
+                    ),
                 )
             else:
                 tmred = (
