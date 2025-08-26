@@ -45,10 +45,10 @@ if __name__ == "__main__":
     install_requirements = [
         "vivarium_build_utils>=2.0.0,<3.0.0",
         "click",
+        "jinja2",
         "numpy",
         "pandas",
         "pyyaml",
-        "jinja2",
     ]
 
     setup_requires = ["setuptools_scm"]

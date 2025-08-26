@@ -11,5 +11,4 @@ prune docs/_build
 include src/gbd_mapping/__about__.py
 recursive-include src/gbd_mapping *.py
 recursive-include src/gbd_mapping_generator *.py
-recursive-include src/gbd_mapping_generator/templates *.j2
 recursive-include tests *.py *txt *.yaml
