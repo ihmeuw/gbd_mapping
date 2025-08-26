@@ -1,0 +1,10 @@
+{{ module_doc -}}
+{{ future_import -}}
+{{ base_template_import -}}
+{{ etiology_template_import -}}
+{{ id_import -}}
+{{ sequela_template_import -}}
+
+{% for class_def in class_defs -%}
+{{ class_def }}
+{%- endfor %}

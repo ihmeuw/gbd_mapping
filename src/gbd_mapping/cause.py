@@ -239,7 +239,7 @@ causes = Causes(**{
                     etiologies.escherichia_coli, etiologies.haemophilus_influenzae, etiologies.klebsiella_pneumoniae, 
                     etiologies.legionella_spp, etiologies.mycoplasma, etiologies.other_bacterial_and_viral_pathogens, 
                     etiologies.pseudomonas_aeruginosa, etiologies.staphylococcus_aureus, 
-                    etiologies.streptococcus_pneumoniae, etiologies.aspergillus_spp, 
+                    etiologies.streptococcus_pneumoniae, etiologies.aspergillus_spp,
                     etiologies.other_acinetobacter_species, etiologies.citrobacter_spp, etiologies.other_fungi, 
                     etiologies.other_gram_negative_bacteria, etiologies.other_klebsiella_species, 
                     etiologies.morganella_spp, etiologies.other_mycobacterium_species_non_tb_non_leprosy, 

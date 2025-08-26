@@ -48,6 +48,7 @@ if __name__ == "__main__":
         "numpy",
         "pandas",
         "pyyaml",
+        "jinja2",
     ]
 
     setup_requires = ["setuptools_scm"]

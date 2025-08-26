@@ -1,0 +1,16 @@
+{{ module_doc -}}
+{{ base_template_import -}}
+{{ cause_template_import -}}
+{{ etiology_import -}}
+{{ id_import -}}
+{{ sequela_import -}}
+
+causes = Causes(**{
+{% for cause_block in cause_blocks -%}
+{{ cause_block }}
+{%- endfor %}
+})
+
+{% for relation in relations -%}
+{{ relation }}
+{%- endfor %}

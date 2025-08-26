@@ -1,4 +1,8 @@
 """Tools for automatically generating the GBD cause mapping."""
+from pathlib import Path
+
+from jinja2 import Environment, FileSystemLoader
+
 from .base_template_builder import gbd_record_attrs, modelable_entity_attrs
 from .data import get_cause_data, get_cause_list
 from .globals import ID_TYPES
@@ -139,26 +143,100 @@ def make_causes(causes_list):
     return out
 
 
-def build_mapping_template():
-    out = make_module_docstring("Mapping templates for GBD causes.", __file__)
-    out += make_import("__future__", ("annotations",)) + "\n"
-    out += make_import(".base_template", ("GbdRecord", "ModelableEntity", "Restrictions"))
-    out += make_import(".etiology_template", ("Etiology",))
-    out += make_import(".id", ("Unknown", ID_TYPES.C_ID, ID_TYPES.ME_ID))
-    out += make_import(".sequela_template", ("Sequela",))
+def _get_jinja_env() -> Environment:
+    templates_dir = Path(__file__).resolve().parent / "templates"
+    return Environment(loader=FileSystemLoader(str(templates_dir)), autoescape=False, trim_blocks=True, lstrip_blocks=True)
 
+
+def build_mapping_template():
+    env = _get_jinja_env()
+    template = env.get_template("cause_template.py.j2")
+
+    module_doc = make_module_docstring("Mapping templates for GBD causes.", __file__)
+    future_import = make_import("__future__", ("annotations",)) + "\n"
+    base_template_import = make_import(".base_template", ("GbdRecord", "ModelableEntity", "Restrictions"))
+    etiology_template_import = make_import(".etiology_template", ("Etiology",))
+    id_import = make_import(".id", ("Unknown", ID_TYPES.C_ID, ID_TYPES.ME_ID))
+    sequela_template_import = make_import(".sequela_template", ("Sequela",))
+
+    class_defs = []
     for entity, info in get_base_types().items():
-        out += DOUBLE_SPACING
-        out += make_record(entity, **info)
-    return out
+        class_defs.append(DOUBLE_SPACING + make_record(entity, **info))
+
+    return template.render(
+        module_doc=module_doc,
+        future_import=future_import,
+        base_template_import=base_template_import,
+        etiology_template_import=etiology_template_import,
+        id_import=id_import,
+        sequela_template_import=sequela_template_import,
+        class_defs=class_defs,
+    )
 
 
 def build_mapping():
-    out = make_module_docstring("Mapping of GBD causes.", __file__)
-    out += make_import(".base_template", ("Restrictions",))
-    out += make_import(".cause_template", ("Cause", "Causes"))
-    out += make_import(".etiology", ("etiologies",))
-    out += make_import(".id", ("UNKNOWN", ID_TYPES.C_ID, ID_TYPES.ME_ID))
-    out += make_import(".sequela", ("sequelae",)) + SINGLE_SPACING
-    out += make_causes(get_cause_data())
-    return out
+    env = _get_jinja_env()
+    template = env.get_template("cause.py.j2")
+
+    module_doc = make_module_docstring("Mapping of GBD causes.", __file__)
+    base_template_import = make_import(".base_template", ("Restrictions",))
+    cause_template_import = make_import(".cause_template", ("Cause", "Causes"))
+    etiology_import = make_import(".etiology", ("etiologies",))
+    id_import = make_import(".id", ("UNKNOWN", ID_TYPES.C_ID, ID_TYPES.ME_ID))
+    sequela_import = make_import(".sequela", ("sequelae",)) + SINGLE_SPACING
+
+    causes_list = list(get_cause_data())
+
+    cause_blocks = []
+    relations = []
+
+    # Build cause blocks for the mapping dict
+    for (
+        name,
+        c_id,
+        me_id,
+        most_detailed,
+        cause_level,
+        parent,
+        restrictions,
+        sequelae,
+        etiologies,
+        sub_causes,
+    ) in causes_list:
+        cause_blocks.append(
+            make_cause(name, c_id, me_id, most_detailed, cause_level, restrictions, sequelae, etiologies)
+        )
+
+    # Build relation assignments (parents and sub_causes)
+    for (
+        name,
+        c_id,
+        me_id,
+        most_detailed,
+        cause_level,
+        parent,
+        restrictions,
+        sequelae,
+        etiologies,
+        sub_causes,
+    ) in causes_list:
+        if name != parent:
+            relations.append(f"causes.{name}.parent = causes.{parent}\n")
+        if sub_causes:
+            if name in sub_causes:
+                sub_causes.remove(name)
+            relations.append(
+                text_wrap(f"causes.{name}.sub_causes = (", [f"causes.{s}" for s in sub_causes] + [")"])
+            )
+        relations.append("\n")
+
+    return template.render(
+        module_doc=module_doc,
+        base_template_import=base_template_import,
+        cause_template_import=cause_template_import,
+        etiology_import=etiology_import,
+        id_import=id_import,
+        sequela_import=sequela_import,
+        cause_blocks=cause_blocks,
+        relations=relations,
+    )
