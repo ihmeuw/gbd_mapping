@@ -8,31 +8,46 @@ from __future__ import annotations
 
 from .base_template import GbdRecord, ModelableEntity, Restrictions
 from .etiology_template import Etiology
-from .id import Unknown, {{ c_id_type }}, {{ me_id_type }}
+from .id import Unknown, {{ c_id_type|lower }}, {{ me_id_type|lower }}
 from .sequela_template import Sequela
 
 
 class Cause(ModelableEntity):
     """Container for cause GBD ids and metadata"""
+
     __slots__ = (
-{%- for attr, _ in cause_attrs %}
-        '{{ attr }}',
-{%- endfor %}
+{% for attr_name, attr_type in cause_attrs %}
+        "{{ attr_name }}",
+{% endfor %}
     )
 
     def __init__(
         self,
-{%- for attr, attr_type in cause_attrs %}
-        {{ attr }}: {{ attr_type }},
-{%- endfor %}
+{% for attr_name, attr_type in cause_attrs %}
+{% if attr_name in ["parent", "sub_causes", "sequelae", "etiologies"] %}
+        {{ attr_name }}: {{ attr_type }},
+{% else %}
+        {{ attr_name }}: {{ attr_type }},
+{% endif %}
+{% endfor %}
     ):
-{%- for attr, _ in cause_attrs %}
-        self.{{ attr }} = {{ attr }}
-{%- endfor %}
+        super().__init__(name=name, kind=kind, gbd_id=gbd_id)
+{% for attr_name, attr_type in cause_attrs %}
+        self.{{ attr_name }} = {{ attr_name }}
+{% endfor %}
 
 
 class Causes(GbdRecord):
     """Container for GBD causes."""
-{%- for cause_name in cause_names %}
-    {{ cause_name }}: Cause
-{%- endfor %}
+
+    __slots__ = (
+{% for cause_name in cause_names %}
+        "{{ cause_name }}",
+{% endfor %}
+    )
+
+    def __init__(self, **kwargs):
+        super().__init__()
+{% for cause_name in cause_names %}
+        self.{{ cause_name }} = kwargs.get("{{ cause_name }}")
+{% endfor %}
