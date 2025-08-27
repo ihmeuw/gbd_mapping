@@ -1,5 +1,6 @@
 import os
 import shutil
+import subprocess
 import tempfile
 from bdb import BdbQuit
 from pathlib import Path
@@ -29,6 +30,20 @@ AUTO_MAPPINGS = {
 ROOT = Path(__file__).resolve().parent.parent.joinpath("gbd_mapping")  # type: Path
 
 
+def format_python_file(file_path: Path):
+    """Format a Python file with isort and black."""
+    try:
+        # Run isort first
+        subprocess.run(["isort", str(file_path)], check=True, capture_output=True)
+        # Then run black
+        subprocess.run(["black", str(file_path)], check=True, capture_output=True)
+        print(f"Formatted {file_path.name} with isort and black")
+    except subprocess.CalledProcessError as e:
+        print(f"Warning: Failed to format {file_path.name}: {e}")
+    except FileNotFoundError:
+        print(f"Warning: isort or black not found. Skipping formatting for {file_path.name}")
+
+
 @click.command()
 @click.argument("mapping_type", default="id")
 @click.option("--pdb", "with_debugger", is_flag=True)
@@ -43,13 +58,23 @@ def build_mapping(mapping_type, with_debugger):
         make_dirs_and_init(mapping_type)
 
         builder = AUTO_MAPPINGS[mapping_type]
+        generated_files = []
 
         if hasattr(builder, "build_mapping_template"):
-            with ROOT.joinpath(f"{mapping_type}_template.py").open("w") as f:
+            template_file = ROOT.joinpath(f"{mapping_type}_template.py")
+            with template_file.open("w") as f:
                 f.write(builder.build_mapping_template())
+            generated_files.append(template_file)
 
-        with ROOT.joinpath(f"{mapping_type}.py").open("w") as f:
+        mapping_file = ROOT.joinpath(f"{mapping_type}.py")
+        with mapping_file.open("w") as f:
             f.write(builder.build_mapping())
+        generated_files.append(mapping_file)
+
+        # Format all generated files with isort and black
+        for file_path in generated_files:
+            format_python_file(file_path)
+
     except (BdbQuit, KeyboardInterrupt):
         raise
     except Exception as e:
