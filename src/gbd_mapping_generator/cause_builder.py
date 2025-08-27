@@ -4,14 +4,13 @@ from jinja2 import Environment, FileSystemLoader
 from .base_template_builder import gbd_record_attrs, modelable_entity_attrs
 from .data import get_cause_data, get_cause_list
 from .globals import ID_TYPES
-from .util import to_id, format_tuple_params
+from .util import to_id
 
 IMPORTABLES_DEFINED = ("Cause", "causes")
 
 # Initialize Jinja2 environment
 TEMPLATE_DIR = Path(__file__).parent / "templates"
 jinja_env = Environment(loader=FileSystemLoader(TEMPLATE_DIR), trim_blocks=True, lstrip_blocks=True)
-jinja_env.filters['format_tuple'] = format_tuple_params
 
 
 def get_base_types():
