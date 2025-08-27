@@ -15,9 +15,9 @@ jinja_env = Environment(loader=FileSystemLoader(TEMPLATE_DIR), trim_blocks=True,
 
 class CauseData:
     """Helper class to format cause data for Jinja2 templates."""
-    
-    def __init__(self, name, c_id, me_id, most_detailed, level, parent, restrictions, 
-                 sequelae=None, etiologies=None, sub_causes=None):
+
+    def __init__(self, name: str, c_id: int, me_id: int, most_detailed: bool, level: int, parent: str, restrictions: dict,
+                 sequelae: list[str] | None = None, etiologies: list[str] | None = None, sub_causes: list[str] | None = None):
         self.name = name
         self.c_id = c_id
         self.me_id_formatted = to_id(me_id, ID_TYPES.ME_ID)
@@ -30,7 +30,7 @@ class CauseData:
         self.sub_causes = [sc for sc in (sub_causes or []) if sc != name]
 
 
-def prepare_causes_data():
+def prepare_causes_data() -> list[CauseData]:
     """Transform raw cause data into template-friendly format."""
     raw_data = get_cause_data()
     causes_data = []
@@ -55,7 +55,7 @@ def prepare_causes_data():
     return causes_data
 
 
-def build_mapping_template():
+def build_mapping_template() -> str:
     """Generate cause_template.py using Jinja2."""
     template = jinja_env.get_template("cause_template.py.j2")
     
@@ -68,7 +68,7 @@ def build_mapping_template():
     return template.render(**context)
 
 
-def build_mapping():
+def build_mapping() -> str:
     """Generate cause.py using Jinja2."""
     template = jinja_env.get_template("cause.py.j2")
     
