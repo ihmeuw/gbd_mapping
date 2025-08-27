@@ -139,7 +139,7 @@ def get_etiology_data() -> list:
 
     return list(zip(clean_entity_list(etiologies.rei_name), etiologies.rei_id))
 
-class CauseData:
+class CauseRow:
     """Helper class to format cause data for Jinja2 templates."""
 
     def __init__(self, name: str, c_id: int, me_id: int, most_detailed: int, level: int, parent: str, restrictions: tuple[tuple[str, bool| int], ...],
@@ -152,10 +152,10 @@ class CauseData:
         self.parent = parent
         self.restrictions = restrictions
         self.sequelae = sequelae or []
-        self.etiologies = [etiology.rstrip(".") for etiology in etiologies] if etiologies else []
+        self.etiologies = etiologies or []
         self.sub_causes = [sc for sc in (sub_causes or []) if sc != name]
 
-def get_cause_data() -> list[CauseData]:
+def get_cause_data() -> list[CauseRow]:
     sequelae = gbd.get_sequela_id_mapping().sort_values("sequela_id")
 
     etiologies = gbd.get_rei_metadata(rei_set_id=ETIOLOGY_SET_ID)
@@ -222,7 +222,7 @@ def get_cause_data() -> list[CauseData]:
         )
         sub_causes = causes[causes.parent_id == cid].cause_name.tolist()
 
-        cause_data.append(CauseData(
+        cause_data.append(CauseRow(
                 name,
                 cid,
                 dismod_id,

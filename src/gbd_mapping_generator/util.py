@@ -130,6 +130,7 @@ def clean_entity_list(raw_entity_series) -> list[str]:
         "___",
         "__",
         "=",
+        ".",
     ]
     replace_chars = {char: "_" for char in replace_with_underscore_chars}
     replace_chars.update(
