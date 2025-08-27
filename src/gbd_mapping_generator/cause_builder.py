@@ -13,37 +13,6 @@ TEMPLATE_DIR = Path(__file__).parent / "templates"
 jinja_env = Environment(loader=FileSystemLoader(TEMPLATE_DIR), trim_blocks=True, lstrip_blocks=True)
 
 
-def get_base_types():
-    cause_attrs = [
-        ("name", "str"),
-        ("kind", "str"),
-        ("gbd_id", ID_TYPES.C_ID),
-        ("me_id", f"{ID_TYPES.ME_ID} | Unknown"),
-        ("most_detailed", "bool"),
-        ("level", "int"),
-        ("restrictions", "Restrictions"),
-    ]
-    cause_attrs += [
-        ("parent", "Cause | None = None"),
-        ("sub_causes", "tuple[Cause, ...] | None = None"),
-        ("sequelae", "tuple[Sequela, ...] | None = None"),
-        ("etiologies", "tuple[Etiology, ...] | None = None"),
-    ]
-
-    return {
-        "Cause": {
-            "attrs": tuple(cause_attrs),
-            "superclass": ("ModelableEntity", modelable_entity_attrs),
-            "docstring": "Container for cause GBD ids and metadata",
-        },
-        "Causes": {
-            "attrs": tuple([(name, "Cause") for name in get_cause_list()]),
-            "superclass": ("GbdRecord", gbd_record_attrs),
-            "docstring": "Container for GBD causes.",
-        },
-    }
-
-
 class CauseData:
     """Helper class to format cause data for Jinja2 templates."""
     
@@ -89,11 +58,9 @@ def prepare_causes_data():
 def build_mapping_template():
     """Generate cause_template.py using Jinja2."""
     template = jinja_env.get_template("cause_template.py.j2")
-    base_types = get_base_types()
     
     context = {
-        "cause_attrs": base_types["Cause"]["attrs"],
-        "cause_names": [name for name, _ in base_types["Causes"]["attrs"]],
+        "cause_names": get_cause_list(),
         "c_id_type": ID_TYPES.C_ID,
         "me_id_type": ID_TYPES.ME_ID,
     }
@@ -104,10 +71,9 @@ def build_mapping_template():
 def build_mapping():
     """Generate cause.py using Jinja2."""
     template = jinja_env.get_template("cause.py.j2")
-    causes_data = prepare_causes_data()
     
     context = {
-        "causes_data": causes_data,
+        "causes_data": prepare_causes_data(),
         "c_id_type": ID_TYPES.C_ID,
         "me_id_type": ID_TYPES.ME_ID,
     }
