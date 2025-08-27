@@ -10675,9 +10675,9 @@ causes.all_causes.sub_causes = (
     causes.total_cancers,
     causes.total_cancers_excluding_non_melanoma_skin_cancer,
 )
-causes.communicable_maternal_neonatal_and_nutritional_diseases.parent = (
-    causes.all_causescauses.communicable_maternal_neonatal_and_nutritional_diseases.sub_causes
-) = (
+
+causes.communicable_maternal_neonatal_and_nutritional_diseases.parent = causes.all_causes
+causes.communicable_maternal_neonatal_and_nutritional_diseases.sub_causes = (
     causes.neglected_tropical_diseases_and_malaria,
     causes.nutritional_deficiencies,
     causes.hiv_aids_and_sexually_transmitted_infections,
@@ -10686,40 +10686,57 @@ causes.communicable_maternal_neonatal_and_nutritional_diseases.parent = (
     causes.other_infectious_diseases,
     causes.maternal_and_neonatal_disorders,
 )
-causes.tuberculosis.parent = (
-    causes.respiratory_infections_and_tuberculosiscauses.tuberculosis.sub_causes
-) = (
+
+causes.tuberculosis.parent = causes.respiratory_infections_and_tuberculosis
+causes.tuberculosis.sub_causes = (
     causes.drug_susceptible_tuberculosis,
     causes.multidrug_resistant_tuberculosis_without_extensive_drug_resistance,
     causes.extensively_drug_resistant_tuberculosis,
     causes.latent_tuberculosis_infection,
 )
-causes.hiv_aids.parent = (
-    causes.hiv_aids_and_sexually_transmitted_infectionscauses.hiv_aids.sub_causes
-) = (
+
+causes.hiv_aids.parent = causes.hiv_aids_and_sexually_transmitted_infections
+causes.hiv_aids.sub_causes = (
     causes.hiv_aids_resulting_in_other_diseases,
     causes.hiv_aids_drug_susceptible_tuberculosis,
     causes.hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance,
     causes.hiv_aids_extensively_drug_resistant_tuberculosis,
 )
+
 causes.hiv_aids_resulting_in_other_diseases.parent = causes.hiv_aids
+
 causes.diarrheal_diseases.parent = causes.enteric_infections
+
 causes.typhoid_fever.parent = causes.typhoid_and_paratyphoid
+
 causes.paratyphoid_fever.parent = causes.typhoid_and_paratyphoid
+
 causes.other_intestinal_infectious_diseases.parent = causes.enteric_infections
+
 causes.lower_respiratory_infections.parent = causes.respiratory_infections_and_tuberculosis
+
 causes.upper_respiratory_infections.parent = causes.respiratory_infections_and_tuberculosis
+
 causes.otitis_media.parent = causes.respiratory_infections_and_tuberculosis
+
 causes.meningitis.parent = causes.other_infectious_diseases
+
 causes.encephalitis.parent = causes.other_infectious_diseases
+
 causes.diphtheria.parent = causes.other_infectious_diseases
+
 causes.pertussis.parent = causes.other_infectious_diseases
+
 causes.tetanus.parent = causes.other_infectious_diseases
+
 causes.measles.parent = causes.other_infectious_diseases
+
 causes.varicella_and_herpes_zoster.parent = causes.other_infectious_diseases
+
 causes.neglected_tropical_diseases_and_malaria.parent = (
-    causes.communicable_maternal_neonatal_and_nutritional_diseasescauses.neglected_tropical_diseases_and_malaria.sub_causes
-) = (
+    causes.communicable_maternal_neonatal_and_nutritional_diseases
+)
+causes.neglected_tropical_diseases_and_malaria.sub_causes = (
     causes.malaria,
     causes.chagas_disease,
     causes.leishmaniasis,
@@ -10741,43 +10758,62 @@ causes.neglected_tropical_diseases_and_malaria.parent = (
     causes.zika_virus,
     causes.guinea_worm_disease,
 )
+
 causes.malaria.parent = causes.neglected_tropical_diseases_and_malaria
+
 causes.chagas_disease.parent = causes.neglected_tropical_diseases_and_malaria
-causes.leishmaniasis.parent = (
-    causes.neglected_tropical_diseases_and_malariacauses.leishmaniasis.sub_causes
-) = (
+
+causes.leishmaniasis.parent = causes.neglected_tropical_diseases_and_malaria
+causes.leishmaniasis.sub_causes = (
     causes.visceral_leishmaniasis,
     causes.cutaneous_and_mucocutaneous_leishmaniasis,
 )
+
 causes.visceral_leishmaniasis.parent = causes.leishmaniasis
+
 causes.cutaneous_and_mucocutaneous_leishmaniasis.parent = causes.leishmaniasis
+
 causes.african_trypanosomiasis.parent = causes.neglected_tropical_diseases_and_malaria
+
 causes.schistosomiasis.parent = causes.neglected_tropical_diseases_and_malaria
+
 causes.cysticercosis.parent = causes.neglected_tropical_diseases_and_malaria
+
 causes.cystic_echinococcosis.parent = causes.neglected_tropical_diseases_and_malaria
+
 causes.lymphatic_filariasis.parent = causes.neglected_tropical_diseases_and_malaria
+
 causes.onchocerciasis.parent = causes.neglected_tropical_diseases_and_malaria
+
 causes.trachoma.parent = causes.neglected_tropical_diseases_and_malaria
+
 causes.dengue.parent = causes.neglected_tropical_diseases_and_malaria
+
 causes.yellow_fever.parent = causes.neglected_tropical_diseases_and_malaria
+
 causes.rabies.parent = causes.neglected_tropical_diseases_and_malaria
-causes.intestinal_nematode_infections.parent = (
-    causes.neglected_tropical_diseases_and_malariacauses.intestinal_nematode_infections.sub_causes
-) = (
+
+causes.intestinal_nematode_infections.parent = causes.neglected_tropical_diseases_and_malaria
+causes.intestinal_nematode_infections.sub_causes = (
     causes.ascariasis,
     causes.trichuriasis,
     causes.hookworm_disease,
 )
+
 causes.ascariasis.parent = causes.intestinal_nematode_infections
+
 causes.trichuriasis.parent = causes.intestinal_nematode_infections
+
 causes.hookworm_disease.parent = causes.intestinal_nematode_infections
+
 causes.food_borne_trematodiases.parent = causes.neglected_tropical_diseases_and_malaria
+
 causes.other_neglected_tropical_diseases.parent = (
     causes.neglected_tropical_diseases_and_malaria
 )
-causes.maternal_disorders.parent = (
-    causes.maternal_and_neonatal_disorderscauses.maternal_disorders.sub_causes
-) = (
+
+causes.maternal_disorders.parent = causes.maternal_and_neonatal_disorders
+causes.maternal_disorders.sub_causes = (
     causes.maternal_hemorrhage,
     causes.maternal_sepsis_and_other_maternal_infections,
     causes.maternal_hypertensive_disorders,
@@ -10792,47 +10828,69 @@ causes.maternal_disorders.parent = (
     causes.peripartum_cardiomyopathy,
     causes.other_direct_maternal_disorders,
 )
+
 causes.maternal_hemorrhage.parent = causes.maternal_disorders
+
 causes.maternal_sepsis_and_other_maternal_infections.parent = causes.maternal_disorders
+
 causes.maternal_hypertensive_disorders.parent = causes.maternal_disorders
+
 causes.maternal_obstructed_labor_and_uterine_rupture.parent = causes.maternal_disorders
+
 causes.ectopic_pregnancy.parent = causes.maternal_disorders
+
 causes.indirect_maternal_deaths.parent = causes.maternal_disorders
+
 causes.late_maternal_deaths.parent = causes.maternal_disorders
+
 causes.other_direct_maternal_disorders_internal.parent = causes.maternal_disorders
-causes.neonatal_disorders.parent = (
-    causes.maternal_and_neonatal_disorderscauses.neonatal_disorders.sub_causes
-) = (
+
+causes.neonatal_disorders.parent = causes.maternal_and_neonatal_disorders
+causes.neonatal_disorders.sub_causes = (
     causes.neonatal_preterm_birth,
     causes.neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma,
     causes.neonatal_sepsis_and_other_neonatal_infections,
     causes.hemolytic_disease_and_other_neonatal_jaundice,
     causes.other_neonatal_disorders,
 )
+
 causes.neonatal_preterm_birth.parent = causes.neonatal_disorders
+
 causes.neonatal_encephalopathy_due_to_birth_asphyxia_and_trauma.parent = (
     causes.neonatal_disorders
 )
+
 causes.neonatal_sepsis_and_other_neonatal_infections.parent = causes.neonatal_disorders
+
 causes.hemolytic_disease_and_other_neonatal_jaundice.parent = causes.neonatal_disorders
+
 causes.other_neonatal_disorders.parent = causes.neonatal_disorders
+
 causes.nutritional_deficiencies.parent = (
-    causes.communicable_maternal_neonatal_and_nutritional_diseasescauses.nutritional_deficiencies.sub_causes
-) = (
+    causes.communicable_maternal_neonatal_and_nutritional_diseases
+)
+causes.nutritional_deficiencies.sub_causes = (
     causes.protein_energy_malnutrition,
     causes.iodine_deficiency,
     causes.vitamin_a_deficiency,
     causes.dietary_iron_deficiency,
     causes.other_nutritional_deficiencies,
 )
+
 causes.protein_energy_malnutrition.parent = causes.nutritional_deficiencies
+
 causes.iodine_deficiency.parent = causes.nutritional_deficiencies
+
 causes.vitamin_a_deficiency.parent = causes.nutritional_deficiencies
+
 causes.dietary_iron_deficiency.parent = causes.nutritional_deficiencies
+
 causes.other_nutritional_deficiencies.parent = causes.nutritional_deficiencies
+
 causes.sexually_transmitted_infections_excluding_hiv.parent = (
-    causes.hiv_aids_and_sexually_transmitted_infectionscauses.sexually_transmitted_infections_excluding_hiv.sub_causes
-) = (
+    causes.hiv_aids_and_sexually_transmitted_infections
+)
+causes.sexually_transmitted_infections_excluding_hiv.sub_causes = (
     causes.syphilis,
     causes.chlamydial_infection,
     causes.gonococcal_infection,
@@ -10840,31 +10898,43 @@ causes.sexually_transmitted_infections_excluding_hiv.parent = (
     causes.genital_herpes,
     causes.other_sexually_transmitted_infections,
 )
+
 causes.syphilis.parent = causes.sexually_transmitted_infections_excluding_hiv
+
 causes.chlamydial_infection.parent = causes.sexually_transmitted_infections_excluding_hiv
+
 causes.gonococcal_infection.parent = causes.sexually_transmitted_infections_excluding_hiv
+
 causes.trichomoniasis.parent = causes.sexually_transmitted_infections_excluding_hiv
+
 causes.genital_herpes.parent = causes.sexually_transmitted_infections_excluding_hiv
+
 causes.other_sexually_transmitted_infections.parent = (
     causes.sexually_transmitted_infections_excluding_hiv
 )
-causes.acute_hepatitis.parent = (
-    causes.other_infectious_diseasescauses.acute_hepatitis.sub_causes
-) = (
+
+causes.acute_hepatitis.parent = causes.other_infectious_diseases
+causes.acute_hepatitis.sub_causes = (
     causes.acute_hepatitis_a,
     causes.acute_hepatitis_b,
     causes.acute_hepatitis_c,
     causes.acute_hepatitis_e,
 )
+
 causes.acute_hepatitis_a.parent = causes.acute_hepatitis
+
 causes.acute_hepatitis_b.parent = causes.acute_hepatitis
+
 causes.acute_hepatitis_c.parent = causes.acute_hepatitis
+
 causes.acute_hepatitis_e.parent = causes.acute_hepatitis
+
 causes.leprosy.parent = causes.neglected_tropical_diseases_and_malaria
+
 causes.other_unspecified_infectious_diseases.parent = causes.other_infectious_diseases
-causes.non_communicable_diseases.parent = (
-    causes.all_causescauses.non_communicable_diseases.sub_causes
-) = (
+
+causes.non_communicable_diseases.parent = causes.all_causes
+causes.non_communicable_diseases.sub_causes = (
     causes.neoplasms,
     causes.cardiovascular_diseases,
     causes.chronic_respiratory_diseases,
@@ -10878,7 +10948,9 @@ causes.non_communicable_diseases.parent = (
     causes.substance_use_disorders,
     causes.diabetes_and_kidney_diseases,
 )
-causes.neoplasms.parent = causes.non_communicable_diseasescauses.neoplasms.sub_causes = (
+
+causes.neoplasms.parent = causes.non_communicable_diseases
+causes.neoplasms.sub_causes = (
     causes.esophageal_cancer,
     causes.stomach_cancer,
     causes.liver_cancer,
@@ -10914,9 +10986,13 @@ causes.neoplasms.parent = causes.non_communicable_diseasescauses.neoplasms.sub_c
     causes.malignant_neoplasm_of_bone_and_articular_cartilage,
     causes.neuroblastoma_and_other_peripheral_nervous_cell_tumors,
 )
+
 causes.esophageal_cancer.parent = causes.neoplasms
+
 causes.stomach_cancer.parent = causes.neoplasms
-causes.liver_cancer.parent = causes.neoplasmscauses.liver_cancer.sub_causes = (
+
+causes.liver_cancer.parent = causes.neoplasms
+causes.liver_cancer.sub_causes = (
     causes.liver_cancer_due_to_hepatitis_b,
     causes.liver_cancer_due_to_hepatitis_c,
     causes.liver_cancer_due_to_alcohol_use,
@@ -10924,53 +11000,84 @@ causes.liver_cancer.parent = causes.neoplasmscauses.liver_cancer.sub_causes = (
     causes.liver_cancer_due_to_nash,
     causes.hepatoblastoma,
 )
+
 causes.liver_cancer_due_to_hepatitis_b.parent = causes.liver_cancer
+
 causes.liver_cancer_due_to_hepatitis_c.parent = causes.liver_cancer
+
 causes.liver_cancer_due_to_alcohol_use.parent = causes.liver_cancer
+
 causes.liver_cancer_due_to_other_causes.parent = causes.liver_cancer
+
 causes.larynx_cancer.parent = causes.neoplasms
+
 causes.tracheal_bronchus_and_lung_cancer.parent = causes.neoplasms
+
 causes.breast_cancer.parent = causes.neoplasms
+
 causes.cervical_cancer.parent = causes.neoplasms
+
 causes.uterine_cancer.parent = causes.neoplasms
+
 causes.prostate_cancer.parent = causes.neoplasms
+
 causes.colon_and_rectum_cancer.parent = causes.neoplasms
+
 causes.lip_and_oral_cavity_cancer.parent = causes.neoplasms
+
 causes.nasopharynx_cancer.parent = causes.neoplasms
+
 causes.other_pharynx_cancer.parent = causes.neoplasms
+
 causes.gallbladder_and_biliary_tract_cancer.parent = causes.neoplasms
+
 causes.pancreatic_cancer.parent = causes.neoplasms
+
 causes.malignant_skin_melanoma.parent = causes.neoplasms
-causes.non_melanoma_skin_cancer.parent = (
-    causes.neoplasmscauses.non_melanoma_skin_cancer.sub_causes
-) = (
+
+causes.non_melanoma_skin_cancer.parent = causes.neoplasms
+causes.non_melanoma_skin_cancer.sub_causes = (
     causes.non_melanoma_skin_cancer_squamous_cell_carcinoma,
     causes.non_melanoma_skin_cancer_basal_cell_carcinoma,
 )
+
 causes.ovarian_cancer.parent = causes.neoplasms
+
 causes.testicular_cancer.parent = causes.neoplasms
+
 causes.kidney_cancer.parent = causes.neoplasms
+
 causes.bladder_cancer.parent = causes.neoplasms
+
 causes.brain_and_central_nervous_system_cancer.parent = causes.neoplasms
+
 causes.thyroid_cancer.parent = causes.neoplasms
+
 causes.mesothelioma.parent = causes.neoplasms
+
 causes.hodgkin_lymphoma.parent = causes.neoplasms
-causes.non_hodgkin_lymphoma.parent = (
-    causes.neoplasmscauses.non_hodgkin_lymphoma.sub_causes
-) = (
+
+causes.non_hodgkin_lymphoma.parent = causes.neoplasms
+causes.non_hodgkin_lymphoma.sub_causes = (
     causes.burkitt_lymphoma,
     causes.other_non_hodgkin_lymphoma,
 )
+
 causes.multiple_myeloma.parent = causes.neoplasms
-causes.leukemia.parent = causes.neoplasmscauses.leukemia.sub_causes = (
+
+causes.leukemia.parent = causes.neoplasms
+causes.leukemia.sub_causes = (
     causes.acute_lymphoid_leukemia,
     causes.chronic_lymphoid_leukemia,
     causes.acute_myeloid_leukemia,
     causes.chronic_myeloid_leukemia,
     causes.other_leukemia,
 )
+
 causes.other_malignant_neoplasms.parent = causes.neoplasms
-causes.other_neoplasms.parent = causes.neoplasmscauses.other_neoplasms.sub_causes = (
+
+causes.other_neoplasms.parent = causes.neoplasms
+causes.other_neoplasms.sub_causes = (
     causes.myelodysplastic_myeloproliferative_and_other_hematopoietic_neoplasms,
     causes.benign_and_in_situ_intestinal_neoplasms,
     causes.benign_and_in_situ_cervical_and_uterine_neoplasms,
@@ -10978,9 +11085,9 @@ causes.other_neoplasms.parent = causes.neoplasmscauses.other_neoplasms.sub_cause
     causes.non_malignant_brain_and_other_central_nervous_system_neoplasms,
     causes.other_benign_and_in_situ_neoplasms,
 )
-causes.cardiovascular_diseases.parent = (
-    causes.non_communicable_diseasescauses.cardiovascular_diseases.sub_causes
-) = (
+
+causes.cardiovascular_diseases.parent = causes.non_communicable_diseases
+causes.cardiovascular_diseases.sub_causes = (
     causes.rheumatic_heart_disease,
     causes.ischemic_heart_disease,
     causes.stroke,
@@ -10994,85 +11101,110 @@ causes.cardiovascular_diseases.parent = (
     causes.other_cardiovascular_and_circulatory_diseases,
     causes.pulmonary_arterial_hypertension,
 )
+
 causes.rheumatic_heart_disease.parent = causes.cardiovascular_diseases
+
 causes.ischemic_heart_disease.parent = causes.cardiovascular_diseases
-causes.stroke.parent = causes.cardiovascular_diseasescauses.stroke.sub_causes = (
+
+causes.stroke.parent = causes.cardiovascular_diseases
+causes.stroke.sub_causes = (
     causes.ischemic_stroke,
     causes.intracerebral_hemorrhage,
     causes.subarachnoid_hemorrhage,
 )
+
 causes.ischemic_stroke.parent = causes.stroke
+
 causes.intracerebral_hemorrhage.parent = causes.stroke
+
 causes.subarachnoid_hemorrhage.parent = causes.stroke
+
 causes.hypertensive_heart_disease.parent = causes.cardiovascular_diseases
-causes.cardiomyopathy_and_myocarditis.parent = (
-    causes.cardiovascular_diseasescauses.cardiomyopathy_and_myocarditis.sub_causes
-) = (
+
+causes.cardiomyopathy_and_myocarditis.parent = causes.cardiovascular_diseases
+causes.cardiomyopathy_and_myocarditis.sub_causes = (
     causes.alcoholic_cardiomyopathy,
     causes.myocarditis,
     causes.other_cardiomyopathy,
 )
+
 causes.atrial_fibrillation_and_flutter.parent = causes.cardiovascular_diseases
+
 causes.aortic_aneurysm.parent = causes.cardiovascular_diseases
+
 causes.lower_extremity_peripheral_arterial_disease.parent = causes.cardiovascular_diseases
+
 causes.endocarditis.parent = causes.cardiovascular_diseases
-causes.non_rheumatic_valvular_heart_disease.parent = (
-    causes.cardiovascular_diseasescauses.non_rheumatic_valvular_heart_disease.sub_causes
-) = (
+
+causes.non_rheumatic_valvular_heart_disease.parent = causes.cardiovascular_diseases
+causes.non_rheumatic_valvular_heart_disease.sub_causes = (
     causes.non_rheumatic_calcific_aortic_valve_disease,
     causes.non_rheumatic_degenerative_mitral_valve_disease,
     causes.other_non_rheumatic_valve_diseases,
 )
+
 causes.other_cardiovascular_and_circulatory_diseases.parent = causes.cardiovascular_diseases
-causes.chronic_respiratory_diseases.parent = (
-    causes.non_communicable_diseasescauses.chronic_respiratory_diseases.sub_causes
-) = (
+
+causes.chronic_respiratory_diseases.parent = causes.non_communicable_diseases
+causes.chronic_respiratory_diseases.sub_causes = (
     causes.chronic_obstructive_pulmonary_disease,
     causes.pneumoconiosis,
     causes.asthma,
     causes.interstitial_lung_disease_and_pulmonary_sarcoidosis,
     causes.other_chronic_respiratory_diseases,
 )
+
 causes.chronic_obstructive_pulmonary_disease.parent = causes.chronic_respiratory_diseases
-causes.pneumoconiosis.parent = (
-    causes.chronic_respiratory_diseasescauses.pneumoconiosis.sub_causes
-) = (
+
+causes.pneumoconiosis.parent = causes.chronic_respiratory_diseases
+causes.pneumoconiosis.sub_causes = (
     causes.silicosis,
     causes.asbestosis,
     causes.coal_workers_pneumoconiosis,
     causes.other_pneumoconiosis,
 )
+
 causes.silicosis.parent = causes.pneumoconiosis
+
 causes.asbestosis.parent = causes.pneumoconiosis
+
 causes.coal_workers_pneumoconiosis.parent = causes.pneumoconiosis
+
 causes.other_pneumoconiosis.parent = causes.pneumoconiosis
+
 causes.asthma.parent = causes.chronic_respiratory_diseases
+
 causes.interstitial_lung_disease_and_pulmonary_sarcoidosis.parent = (
     causes.chronic_respiratory_diseases
 )
+
 causes.other_chronic_respiratory_diseases.parent = causes.chronic_respiratory_diseases
-causes.cirrhosis_and_other_chronic_liver_diseases.parent = (
-    causes.digestive_diseasescauses.cirrhosis_and_other_chronic_liver_diseases.sub_causes
-) = (
+
+causes.cirrhosis_and_other_chronic_liver_diseases.parent = causes.digestive_diseases
+causes.cirrhosis_and_other_chronic_liver_diseases.sub_causes = (
     causes.chronic_hepatitis_b_including_cirrhosis,
     causes.chronic_hepatitis_c_including_cirrhosis,
     causes.cirrhosis_due_to_alcohol,
     causes.cirrhosis_due_to_other_causes,
     causes.nonalcoholic_fatty_liver_disease_including_cirrhosis,
 )
+
 causes.chronic_hepatitis_b_including_cirrhosis.parent = (
     causes.cirrhosis_and_other_chronic_liver_diseases
 )
+
 causes.chronic_hepatitis_c_including_cirrhosis.parent = (
     causes.cirrhosis_and_other_chronic_liver_diseases
 )
+
 causes.cirrhosis_due_to_alcohol.parent = causes.cirrhosis_and_other_chronic_liver_diseases
+
 causes.cirrhosis_due_to_other_causes.parent = (
     causes.cirrhosis_and_other_chronic_liver_diseases
 )
-causes.digestive_diseases.parent = (
-    causes.non_communicable_diseasescauses.digestive_diseases.sub_causes
-) = (
+
+causes.digestive_diseases.parent = causes.non_communicable_diseases
+causes.digestive_diseases.sub_causes = (
     causes.cirrhosis_and_other_chronic_liver_diseases,
     causes.appendicitis,
     causes.paralytic_ileus_and_intestinal_obstruction,
@@ -11086,26 +11218,37 @@ causes.digestive_diseases.parent = (
     causes.upper_digestive_system_diseases,
     causes.other_digestive_diseases,
 )
+
 causes.peptic_ulcer_disease.parent = causes.upper_digestive_system_diseases
+
 causes.gastritis_and_duodenitis.parent = causes.upper_digestive_system_diseases
+
 causes.appendicitis.parent = causes.digestive_diseases
+
 causes.paralytic_ileus_and_intestinal_obstruction.parent = causes.digestive_diseases
+
 causes.inguinal_femoral_and_abdominal_hernia.parent = causes.digestive_diseases
-causes.inflammatory_bowel_disease.parent = (
-    causes.digestive_diseasescauses.inflammatory_bowel_disease.sub_causes
-) = (
+
+causes.inflammatory_bowel_disease.parent = causes.digestive_diseases
+causes.inflammatory_bowel_disease.sub_causes = (
     causes.ulcerative_colitis,
     causes.crohns_disease,
 )
+
 causes.vascular_intestinal_disorders.parent = causes.digestive_diseases
+
 causes.gallbladder_and_biliary_diseases.parent = causes.digestive_diseases
+
 causes.pancreatitis.parent = causes.digestive_diseases
+
 causes.gastroesophageal_reflux_disease.parent = causes.upper_digestive_system_diseases
+
 causes.diverticular_disease_of_intestines.parent = causes.digestive_diseases
+
 causes.other_digestive_diseases_internal.parent = causes.digestive_diseases
-causes.neurological_disorders.parent = (
-    causes.non_communicable_diseasescauses.neurological_disorders.sub_causes
-) = (
+
+causes.neurological_disorders.parent = causes.non_communicable_diseases
+causes.neurological_disorders.sub_causes = (
     causes.alzheimers_disease_and_other_dementias,
     causes.parkinsons_disease,
     causes.idiopathic_epilepsy,
@@ -11114,17 +11257,25 @@ causes.neurological_disorders.parent = (
     causes.other_neurological_disorders,
     causes.headache_disorders,
 )
+
 causes.alzheimers_disease_and_other_dementias.parent = causes.neurological_disorders
+
 causes.parkinsons_disease.parent = causes.neurological_disorders
+
 causes.idiopathic_epilepsy.parent = causes.neurological_disorders
+
 causes.multiple_sclerosis.parent = causes.neurological_disorders
+
 causes.migraine.parent = causes.headache_disorders
+
 causes.tension_type_headache.parent = causes.headache_disorders
+
 causes.motor_neuron_disease.parent = causes.neurological_disorders
+
 causes.other_neurological_disorders.parent = causes.neurological_disorders
-causes.mental_disorders.parent = (
-    causes.non_communicable_diseasescauses.mental_disorders.sub_causes
-) = (
+
+causes.mental_disorders.parent = causes.non_communicable_diseases
+causes.mental_disorders.sub_causes = (
     causes.schizophrenia,
     causes.depressive_disorders,
     causes.bipolar_disorder,
@@ -11136,83 +11287,112 @@ causes.mental_disorders.parent = (
     causes.idiopathic_developmental_intellectual_disability,
     causes.other_mental_disorders,
 )
+
 causes.schizophrenia.parent = causes.mental_disorders
+
 causes.alcohol_use_disorders.parent = causes.substance_use_disorders
-causes.drug_use_disorders.parent = (
-    causes.substance_use_disorderscauses.drug_use_disorders.sub_causes
-) = (
+
+causes.drug_use_disorders.parent = causes.substance_use_disorders
+causes.drug_use_disorders.sub_causes = (
     causes.opioid_use_disorders,
     causes.cocaine_use_disorders,
     causes.amphetamine_use_disorders,
     causes.cannabis_use_disorders,
     causes.other_drug_use_disorders,
 )
+
 causes.opioid_use_disorders.parent = causes.drug_use_disorders
+
 causes.cocaine_use_disorders.parent = causes.drug_use_disorders
+
 causes.amphetamine_use_disorders.parent = causes.drug_use_disorders
+
 causes.cannabis_use_disorders.parent = causes.drug_use_disorders
+
 causes.other_drug_use_disorders.parent = causes.drug_use_disorders
-causes.depressive_disorders.parent = (
-    causes.mental_disorderscauses.depressive_disorders.sub_causes
-) = (
+
+causes.depressive_disorders.parent = causes.mental_disorders
+causes.depressive_disorders.sub_causes = (
     causes.major_depressive_disorder,
     causes.dysthymia,
 )
+
 causes.major_depressive_disorder.parent = causes.depressive_disorders
+
 causes.dysthymia.parent = causes.depressive_disorders
+
 causes.bipolar_disorder.parent = causes.mental_disorders
+
 causes.anxiety_disorders.parent = causes.mental_disorders
-causes.eating_disorders.parent = causes.mental_disorderscauses.eating_disorders.sub_causes = (
+
+causes.eating_disorders.parent = causes.mental_disorders
+causes.eating_disorders.sub_causes = (
     causes.anorexia_nervosa,
     causes.bulimia_nervosa,
 )
+
 causes.anorexia_nervosa.parent = causes.eating_disorders
+
 causes.bulimia_nervosa.parent = causes.eating_disorders
+
 causes.autism_spectrum_disorders.parent = causes.mental_disorders
+
 causes.attention_deficit_hyperactivity_disorder.parent = causes.mental_disorders
+
 causes.conduct_disorder.parent = causes.mental_disorders
+
 causes.idiopathic_developmental_intellectual_disability.parent = causes.mental_disorders
+
 causes.other_mental_disorders.parent = causes.mental_disorders
-causes.diabetes_mellitus.parent = (
-    causes.diabetes_and_kidney_diseasescauses.diabetes_mellitus.sub_causes
-) = (
+
+causes.diabetes_mellitus.parent = causes.diabetes_and_kidney_diseases
+causes.diabetes_mellitus.sub_causes = (
     causes.diabetes_mellitus_type_1,
     causes.diabetes_mellitus_type_2,
 )
+
 causes.acute_glomerulonephritis.parent = causes.diabetes_and_kidney_diseases
-causes.chronic_kidney_disease.parent = (
-    causes.diabetes_and_kidney_diseasescauses.chronic_kidney_disease.sub_causes
-) = (
+
+causes.chronic_kidney_disease.parent = causes.diabetes_and_kidney_diseases
+causes.chronic_kidney_disease.sub_causes = (
     causes.chronic_kidney_disease_due_to_hypertension,
     causes.chronic_kidney_disease_due_to_glomerulonephritis,
     causes.chronic_kidney_disease_due_to_other_and_unspecified_causes,
     causes.chronic_kidney_disease_due_to_diabetes_mellitus_type_1,
     causes.chronic_kidney_disease_due_to_diabetes_mellitus_type_2,
 )
+
 causes.chronic_kidney_disease_due_to_hypertension.parent = causes.chronic_kidney_disease
+
 causes.chronic_kidney_disease_due_to_glomerulonephritis.parent = causes.chronic_kidney_disease
+
 causes.chronic_kidney_disease_due_to_other_and_unspecified_causes.parent = (
     causes.chronic_kidney_disease
 )
-causes.urinary_diseases_and_male_infertility.parent = (
-    causes.other_non_communicable_diseasescauses.urinary_diseases_and_male_infertility.sub_causes
-) = (
+
+causes.urinary_diseases_and_male_infertility.parent = causes.other_non_communicable_diseases
+causes.urinary_diseases_and_male_infertility.sub_causes = (
     causes.urinary_tract_infections_and_interstitial_nephritis,
     causes.urolithiasis,
     causes.benign_prostatic_hyperplasia,
     causes.male_infertility,
     causes.other_urinary_diseases,
 )
+
 causes.urinary_tract_infections_and_interstitial_nephritis.parent = (
     causes.urinary_diseases_and_male_infertility
 )
+
 causes.urolithiasis.parent = causes.urinary_diseases_and_male_infertility
+
 causes.benign_prostatic_hyperplasia.parent = causes.urinary_diseases_and_male_infertility
+
 causes.male_infertility.parent = causes.urinary_diseases_and_male_infertility
+
 causes.other_urinary_diseases.parent = causes.urinary_diseases_and_male_infertility
-causes.gynecological_diseases.parent = (
-    causes.other_non_communicable_diseasescauses.gynecological_diseases.sub_causes
-) = (
+
+causes.gynecological_diseases.parent = causes.other_non_communicable_diseases
+causes.gynecological_diseases.sub_causes = (
     causes.uterine_fibroids,
     causes.polycystic_ovarian_syndrome,
     causes.female_infertility,
@@ -11221,16 +11401,25 @@ causes.gynecological_diseases.parent = (
     causes.premenstrual_syndrome,
     causes.other_gynecological_diseases,
 )
+
 causes.uterine_fibroids.parent = causes.gynecological_diseases
+
 causes.polycystic_ovarian_syndrome.parent = causes.gynecological_diseases
+
 causes.female_infertility.parent = causes.gynecological_diseases
+
 causes.endometriosis.parent = causes.gynecological_diseases
+
 causes.genital_prolapse.parent = causes.gynecological_diseases
+
 causes.premenstrual_syndrome.parent = causes.gynecological_diseases
+
 causes.other_gynecological_diseases.parent = causes.gynecological_diseases
+
 causes.hemoglobinopathies_and_hemolytic_anemias.parent = (
-    causes.other_non_communicable_diseasescauses.hemoglobinopathies_and_hemolytic_anemias.sub_causes
-) = (
+    causes.other_non_communicable_diseases
+)
+causes.hemoglobinopathies_and_hemolytic_anemias.sub_causes = (
     causes.thalassemias,
     causes.sickle_cell_disorders,
     causes.g6pd_deficiency,
@@ -11239,24 +11428,31 @@ causes.hemoglobinopathies_and_hemolytic_anemias.parent = (
     causes.sickle_cell_trait,
     causes.g6pd_trait,
 )
+
 causes.thalassemias.parent = causes.hemoglobinopathies_and_hemolytic_anemias
+
 causes.sickle_cell_disorders.parent = causes.hemoglobinopathies_and_hemolytic_anemias
+
 causes.g6pd_deficiency.parent = causes.hemoglobinopathies_and_hemolytic_anemias
+
 causes.other_hemoglobinopathies_and_hemolytic_anemias.parent = (
     causes.hemoglobinopathies_and_hemolytic_anemias
 )
+
 causes.endocrine_metabolic_blood_and_immune_disorders.parent = (
-    causes.other_non_communicable_diseasescauses.endocrine_metabolic_blood_and_immune_disorders.sub_causes
-) = (
+    causes.other_non_communicable_diseases
+)
+causes.endocrine_metabolic_blood_and_immune_disorders.sub_causes = (
     causes.other_endocrine_metabolic_blood_and_immune_disorders,
     causes.thyroid_diseases,
 )
+
 causes.other_endocrine_metabolic_blood_and_immune_disorders.parent = (
     causes.endocrine_metabolic_blood_and_immune_disorders
 )
-causes.musculoskeletal_disorders.parent = (
-    causes.non_communicable_diseasescauses.musculoskeletal_disorders.sub_causes
-) = (
+
+causes.musculoskeletal_disorders.parent = causes.non_communicable_diseases
+causes.musculoskeletal_disorders.sub_causes = (
     causes.rheumatoid_arthritis,
     causes.osteoarthritis,
     causes.low_back_pain,
@@ -11264,22 +11460,27 @@ causes.musculoskeletal_disorders.parent = (
     causes.gout,
     causes.other_musculoskeletal_disorders,
 )
+
 causes.rheumatoid_arthritis.parent = causes.musculoskeletal_disorders
-causes.osteoarthritis.parent = (
-    causes.musculoskeletal_disorderscauses.osteoarthritis.sub_causes
-) = (
+
+causes.osteoarthritis.parent = causes.musculoskeletal_disorders
+causes.osteoarthritis.sub_causes = (
     causes.osteoarthritis_hip,
     causes.osteoarthritis_knee,
     causes.osteoarthritis_hand,
     causes.osteoarthritis_other,
 )
+
 causes.low_back_pain.parent = causes.musculoskeletal_disorders
+
 causes.neck_pain.parent = causes.musculoskeletal_disorders
+
 causes.gout.parent = causes.musculoskeletal_disorders
+
 causes.other_musculoskeletal_disorders.parent = causes.musculoskeletal_disorders
-causes.other_non_communicable_diseases.parent = (
-    causes.non_communicable_diseasescauses.other_non_communicable_diseases.sub_causes
-) = (
+
+causes.other_non_communicable_diseases.parent = causes.non_communicable_diseases
+causes.other_non_communicable_diseases.sub_causes = (
     causes.urinary_diseases_and_male_infertility,
     causes.gynecological_diseases,
     causes.hemoglobinopathies_and_hemolytic_anemias,
@@ -11288,9 +11489,9 @@ causes.other_non_communicable_diseases.parent = (
     causes.oral_disorders,
     causes.sudden_infant_death_syndrome,
 )
-causes.congenital_birth_defects.parent = (
-    causes.other_non_communicable_diseasescauses.congenital_birth_defects.sub_causes
-) = (
+
+causes.congenital_birth_defects.parent = causes.other_non_communicable_diseases
+causes.congenital_birth_defects.sub_causes = (
     causes.neural_tube_defects,
     causes.congenital_heart_anomalies,
     causes.orofacial_clefts,
@@ -11303,20 +11504,31 @@ causes.congenital_birth_defects.parent = (
     causes.digestive_congenital_anomalies,
     causes.other_congenital_birth_defects,
 )
+
 causes.neural_tube_defects.parent = causes.congenital_birth_defects
+
 causes.congenital_heart_anomalies.parent = causes.congenital_birth_defects
+
 causes.orofacial_clefts.parent = causes.congenital_birth_defects
+
 causes.down_syndrome.parent = causes.congenital_birth_defects
+
 causes.turner_syndrome.parent = causes.congenital_birth_defects
+
 causes.klinefelter_syndrome.parent = causes.congenital_birth_defects
+
 causes.other_chromosomal_abnormalities.parent = causes.congenital_birth_defects
+
 causes.congenital_musculoskeletal_and_limb_anomalies.parent = causes.congenital_birth_defects
+
 causes.urogenital_congenital_anomalies.parent = causes.congenital_birth_defects
+
 causes.digestive_congenital_anomalies.parent = causes.congenital_birth_defects
+
 causes.other_congenital_birth_defects.parent = causes.congenital_birth_defects
-causes.skin_and_subcutaneous_diseases.parent = (
-    causes.non_communicable_diseasescauses.skin_and_subcutaneous_diseases.sub_causes
-) = (
+
+causes.skin_and_subcutaneous_diseases.parent = causes.non_communicable_diseases
+causes.skin_and_subcutaneous_diseases.sub_causes = (
     causes.dermatitis,
     causes.psoriasis,
     causes.scabies,
@@ -11330,78 +11542,114 @@ causes.skin_and_subcutaneous_diseases.parent = (
     causes.other_skin_and_subcutaneous_diseases,
     causes.bacterial_skin_diseases,
 )
-causes.dermatitis.parent = (
-    causes.skin_and_subcutaneous_diseasescauses.dermatitis.sub_causes
-) = (
+
+causes.dermatitis.parent = causes.skin_and_subcutaneous_diseases
+causes.dermatitis.sub_causes = (
     causes.atopic_dermatitis,
     causes.contact_dermatitis,
     causes.seborrhoeic_dermatitis,
 )
+
 causes.psoriasis.parent = causes.skin_and_subcutaneous_diseases
+
 causes.cellulitis.parent = causes.bacterial_skin_diseases
+
 causes.pyoderma.parent = causes.bacterial_skin_diseases
+
 causes.scabies.parent = causes.skin_and_subcutaneous_diseases
+
 causes.fungal_skin_diseases.parent = causes.skin_and_subcutaneous_diseases
+
 causes.viral_skin_diseases.parent = causes.skin_and_subcutaneous_diseases
+
 causes.acne_vulgaris.parent = causes.skin_and_subcutaneous_diseases
+
 causes.alopecia_areata.parent = causes.skin_and_subcutaneous_diseases
+
 causes.pruritus.parent = causes.skin_and_subcutaneous_diseases
+
 causes.urticaria.parent = causes.skin_and_subcutaneous_diseases
+
 causes.decubitus_ulcer.parent = causes.skin_and_subcutaneous_diseases
+
 causes.other_skin_and_subcutaneous_diseases.parent = causes.skin_and_subcutaneous_diseases
-causes.sense_organ_diseases.parent = (
-    causes.non_communicable_diseasescauses.sense_organ_diseases.sub_causes
-) = (
+
+causes.sense_organ_diseases.parent = causes.non_communicable_diseases
+causes.sense_organ_diseases.sub_causes = (
     causes.age_related_and_other_hearing_loss,
     causes.other_sense_organ_diseases,
     causes.blindness_and_vision_loss,
 )
+
 causes.glaucoma.parent = causes.blindness_and_vision_loss
+
 causes.cataract.parent = causes.blindness_and_vision_loss
+
 causes.age_related_macular_degeneration.parent = causes.blindness_and_vision_loss
+
 causes.age_related_and_other_hearing_loss.parent = causes.sense_organ_diseases
+
 causes.other_vision_loss_internal.parent = causes.blindness_and_vision_loss
+
 causes.other_sense_organ_diseases.parent = causes.sense_organ_diseases
-causes.oral_disorders.parent = (
-    causes.other_non_communicable_diseasescauses.oral_disorders.sub_causes
-) = (
+
+causes.oral_disorders.parent = causes.other_non_communicable_diseases
+causes.oral_disorders.sub_causes = (
     causes.caries_of_deciduous_teeth,
     causes.caries_of_permanent_teeth,
     causes.periodontal_diseases,
     causes.edentulism,
     causes.other_oral_disorders,
 )
+
 causes.caries_of_deciduous_teeth.parent = causes.oral_disorders
+
 causes.caries_of_permanent_teeth.parent = causes.oral_disorders
+
 causes.periodontal_diseases.parent = causes.oral_disorders
+
 causes.edentulism.parent = causes.oral_disorders
+
 causes.other_oral_disorders.parent = causes.oral_disorders
+
 causes.sudden_infant_death_syndrome.parent = causes.other_non_communicable_diseases
-causes.injuries.parent = causes.all_causescauses.injuries.sub_causes = (
+
+causes.injuries.parent = causes.all_causes
+causes.injuries.sub_causes = (
     causes.transport_injuries,
     causes.unintentional_injuries,
     causes.self_harm_and_interpersonal_violence,
 )
-causes.transport_injuries.parent = causes.injuriescauses.transport_injuries.sub_causes = (
+
+causes.transport_injuries.parent = causes.injuries
+causes.transport_injuries.sub_causes = (
     causes.road_injuries,
     causes.other_transport_injuries,
 )
-causes.road_injuries.parent = causes.transport_injuriescauses.road_injuries.sub_causes = (
+
+causes.road_injuries.parent = causes.transport_injuries
+causes.road_injuries.sub_causes = (
     causes.pedestrian_road_injuries,
     causes.cyclist_road_injuries,
     causes.motorcyclist_road_injuries,
     causes.motor_vehicle_road_injuries,
     causes.other_road_injuries,
 )
+
 causes.pedestrian_road_injuries.parent = causes.road_injuries
+
 causes.cyclist_road_injuries.parent = causes.road_injuries
+
 causes.motorcyclist_road_injuries.parent = causes.road_injuries
+
 causes.motor_vehicle_road_injuries.parent = causes.road_injuries
+
 causes.other_road_injuries.parent = causes.road_injuries
+
 causes.other_transport_injuries.parent = causes.transport_injuries
-causes.unintentional_injuries.parent = (
-    causes.injuriescauses.unintentional_injuries.sub_causes
-) = (
+
+causes.unintentional_injuries.parent = causes.injuries
+causes.unintentional_injuries.sub_causes = (
     causes.falls,
     causes.drowning,
     causes.fire_heat_and_hot_substances,
@@ -11415,52 +11663,70 @@ causes.unintentional_injuries.parent = (
     causes.environmental_heat_and_cold_exposure,
     causes.electrocution,
 )
+
 causes.falls.parent = causes.unintentional_injuries
+
 causes.drowning.parent = causes.unintentional_injuries
+
 causes.fire_heat_and_hot_substances.parent = causes.unintentional_injuries
-causes.poisonings.parent = causes.unintentional_injuriescauses.poisonings.sub_causes = (
+
+causes.poisonings.parent = causes.unintentional_injuries
+causes.poisonings.sub_causes = (
     causes.poisoning_by_carbon_monoxide,
     causes.poisoning_by_other_means,
 )
+
 causes.poisoning_by_carbon_monoxide.parent = causes.poisonings
+
 causes.poisoning_by_other_means.parent = causes.poisonings
-causes.exposure_to_mechanical_forces.parent = (
-    causes.unintentional_injuriescauses.exposure_to_mechanical_forces.sub_causes
-) = (
+
+causes.exposure_to_mechanical_forces.parent = causes.unintentional_injuries
+causes.exposure_to_mechanical_forces.sub_causes = (
     causes.unintentional_firearm_injuries,
     causes.other_exposure_to_mechanical_forces,
 )
+
 causes.unintentional_firearm_injuries.parent = causes.exposure_to_mechanical_forces
+
 causes.other_exposure_to_mechanical_forces.parent = causes.exposure_to_mechanical_forces
+
 causes.adverse_effects_of_medical_treatment.parent = causes.unintentional_injuries
-causes.animal_contact.parent = (
-    causes.unintentional_injuriescauses.animal_contact.sub_causes
-) = (
+
+causes.animal_contact.parent = causes.unintentional_injuries
+causes.animal_contact.sub_causes = (
     causes.venomous_animal_contact,
     causes.non_venomous_animal_contact,
 )
+
 causes.venomous_animal_contact.parent = causes.animal_contact
+
 causes.non_venomous_animal_contact.parent = causes.animal_contact
-causes.foreign_body.parent = causes.unintentional_injuriescauses.foreign_body.sub_causes = (
+
+causes.foreign_body.parent = causes.unintentional_injuries
+causes.foreign_body.sub_causes = (
     causes.pulmonary_aspiration_and_foreign_body_in_airway,
     causes.foreign_body_in_eyes,
     causes.foreign_body_in_other_body_part,
 )
+
 causes.pulmonary_aspiration_and_foreign_body_in_airway.parent = causes.foreign_body
+
 causes.foreign_body_in_eyes.parent = causes.foreign_body
+
 causes.foreign_body_in_other_body_part.parent = causes.foreign_body
+
 causes.other_unintentional_injuries.parent = causes.unintentional_injuries
-causes.self_harm_and_interpersonal_violence.parent = (
-    causes.injuriescauses.self_harm_and_interpersonal_violence.sub_causes
-) = (
+
+causes.self_harm_and_interpersonal_violence.parent = causes.injuries
+causes.self_harm_and_interpersonal_violence.sub_causes = (
     causes.self_harm,
     causes.interpersonal_violence,
     causes.police_conflict_and_executions,
     causes.conflict_and_terrorism,
 )
-causes.self_harm.parent = (
-    causes.self_harm_and_interpersonal_violencecauses.self_harm.sub_causes
-) = (
+
+causes.self_harm.parent = causes.self_harm_and_interpersonal_violence
+causes.self_harm.sub_causes = (
     causes.self_harm_by_hanging_strangulation_and_suffocation,
     causes.self_harm_by_fire_heat_and_hot_substances,
     causes.self_harm_by_firearm,
@@ -11469,91 +11735,138 @@ causes.self_harm.parent = (
     causes.self_harm_by_non_pesticide_substance_and_gas,
     causes.self_harm_by_other_specified_means,
 )
+
 causes.self_harm_by_hanging_strangulation_and_suffocation.parent = causes.self_harm
+
 causes.self_harm_by_fire_heat_and_hot_substances.parent = causes.self_harm
+
 causes.self_harm_by_firearm.parent = causes.self_harm
+
 causes.self_harm_by_poisoning_pesticides.parent = causes.self_harm
+
 causes.self_harm_by_other_specified_means_internal.parent = causes.self_harm
-causes.interpersonal_violence.parent = (
-    causes.self_harm_and_interpersonal_violencecauses.interpersonal_violence.sub_causes
-) = (
+
+causes.interpersonal_violence.parent = causes.self_harm_and_interpersonal_violence
+causes.interpersonal_violence.sub_causes = (
     causes.physical_violence_by_firearm,
     causes.physical_violence_by_sharp_object,
     causes.physical_violence_by_other_means,
     causes.sexual_violence,
 )
+
 causes.physical_violence_by_firearm.parent = causes.interpersonal_violence
+
 causes.physical_violence_by_sharp_object.parent = causes.interpersonal_violence
+
 causes.physical_violence_by_other_means.parent = causes.interpersonal_violence
+
 causes.exposure_to_forces_of_nature.parent = causes.unintentional_injuries
+
 causes.maternal_deaths_aggravated_by_hiv_aids.parent = causes.maternal_disorders
+
 causes.thalassemias_trait.parent = causes.hemoglobinopathies_and_hemolytic_anemias
+
 causes.sickle_cell_trait.parent = causes.hemoglobinopathies_and_hemolytic_anemias
+
 causes.g6pd_trait.parent = causes.hemoglobinopathies_and_hemolytic_anemias
+
 causes.environmental_heat_and_cold_exposure.parent = causes.unintentional_injuries
+
 causes.ebola.parent = causes.neglected_tropical_diseases_and_malaria
+
 causes.acute_lymphoid_leukemia.parent = causes.leukemia
+
 causes.chronic_lymphoid_leukemia.parent = causes.leukemia
+
 causes.acute_myeloid_leukemia.parent = causes.leukemia
+
 causes.chronic_myeloid_leukemia.parent = causes.leukemia
+
 causes.non_melanoma_skin_cancer_squamous_cell_carcinoma.parent = (
     causes.non_melanoma_skin_cancer
 )
+
 causes.non_melanoma_skin_cancer_basal_cell_carcinoma.parent = causes.non_melanoma_skin_cancer
+
 causes.police_conflict_and_executions.parent = causes.self_harm_and_interpersonal_violence
+
 causes.drug_susceptible_tuberculosis.parent = causes.tuberculosis
+
 causes.zika_virus.parent = causes.neglected_tropical_diseases_and_malaria
+
 causes.guinea_worm_disease.parent = causes.neglected_tropical_diseases_and_malaria
+
 causes.alcoholic_cardiomyopathy.parent = causes.cardiomyopathy_and_myocarditis
+
 causes.electrocution.parent = causes.unintentional_injuries
+
 causes.sexual_violence.parent = causes.interpersonal_violence
+
 causes.myocarditis.parent = causes.cardiomyopathy_and_myocarditis
+
 causes.other_leukemia.parent = causes.leukemia
+
 causes.other_cardiomyopathy.parent = causes.cardiomyopathy_and_myocarditis
+
 causes.conflict_and_terrorism.parent = causes.self_harm_and_interpersonal_violence
+
 causes.multidrug_resistant_tuberculosis_without_extensive_drug_resistance.parent = (
     causes.tuberculosis
 )
+
 causes.extensively_drug_resistant_tuberculosis.parent = causes.tuberculosis
+
 causes.hiv_aids_drug_susceptible_tuberculosis.parent = causes.hiv_aids
+
 causes.hiv_aids_multidrug_resistant_tuberculosis_without_extensive_drug_resistance.parent = (
     causes.hiv_aids
 )
+
 causes.hiv_aids_extensively_drug_resistant_tuberculosis.parent = causes.hiv_aids
+
 causes.latent_tuberculosis_infection.parent = causes.tuberculosis
+
 causes.hiv_aids_and_sexually_transmitted_infections.parent = (
-    causes.communicable_maternal_neonatal_and_nutritional_diseasescauses.hiv_aids_and_sexually_transmitted_infections.sub_causes
-) = (
+    causes.communicable_maternal_neonatal_and_nutritional_diseases
+)
+causes.hiv_aids_and_sexually_transmitted_infections.sub_causes = (
     causes.hiv_aids,
     causes.sexually_transmitted_infections_excluding_hiv,
 )
+
 causes.respiratory_infections_and_tuberculosis.parent = (
-    causes.communicable_maternal_neonatal_and_nutritional_diseasescauses.respiratory_infections_and_tuberculosis.sub_causes
-) = (
+    causes.communicable_maternal_neonatal_and_nutritional_diseases
+)
+causes.respiratory_infections_and_tuberculosis.sub_causes = (
     causes.tuberculosis,
     causes.lower_respiratory_infections,
     causes.upper_respiratory_infections,
     causes.otitis_media,
     causes.covid_19,
 )
+
 causes.enteric_infections.parent = (
-    causes.communicable_maternal_neonatal_and_nutritional_diseasescauses.enteric_infections.sub_causes
-) = (
+    causes.communicable_maternal_neonatal_and_nutritional_diseases
+)
+causes.enteric_infections.sub_causes = (
     causes.diarrheal_diseases,
     causes.other_intestinal_infectious_diseases,
     causes.typhoid_and_paratyphoid,
     causes.invasive_non_typhoidal_salmonella_ints,
 )
-causes.typhoid_and_paratyphoid.parent = (
-    causes.enteric_infectionscauses.typhoid_and_paratyphoid.sub_causes
-) = (
+
+causes.typhoid_and_paratyphoid.parent = causes.enteric_infections
+causes.typhoid_and_paratyphoid.sub_causes = (
     causes.typhoid_fever,
     causes.paratyphoid_fever,
 )
+
 causes.invasive_non_typhoidal_salmonella_ints.parent = causes.enteric_infections
+
 causes.other_infectious_diseases.parent = (
-    causes.communicable_maternal_neonatal_and_nutritional_diseasescauses.other_infectious_diseases.sub_causes
-) = (
+    causes.communicable_maternal_neonatal_and_nutritional_diseases
+)
+causes.other_infectious_diseases.sub_causes = (
     causes.meningitis,
     causes.encephalitis,
     causes.diphtheria,
@@ -11564,61 +11877,76 @@ causes.other_infectious_diseases.parent = (
     causes.acute_hepatitis,
     causes.other_unspecified_infectious_diseases,
 )
+
 causes.maternal_and_neonatal_disorders.parent = (
-    causes.communicable_maternal_neonatal_and_nutritional_diseasescauses.maternal_and_neonatal_disorders.sub_causes
-) = (
+    causes.communicable_maternal_neonatal_and_nutritional_diseases
+)
+causes.maternal_and_neonatal_disorders.sub_causes = (
     causes.maternal_disorders,
     causes.neonatal_disorders,
 )
+
 causes.myelodysplastic_myeloproliferative_and_other_hematopoietic_neoplasms.parent = (
     causes.other_neoplasms
 )
+
 causes.benign_and_in_situ_intestinal_neoplasms.parent = causes.other_neoplasms
+
 causes.benign_and_in_situ_cervical_and_uterine_neoplasms.parent = causes.other_neoplasms
+
 causes.other_benign_and_in_situ_neoplasms_internal.parent = causes.other_neoplasms
+
 causes.non_rheumatic_calcific_aortic_valve_disease.parent = (
     causes.non_rheumatic_valvular_heart_disease
 )
+
 causes.non_rheumatic_degenerative_mitral_valve_disease.parent = (
     causes.non_rheumatic_valvular_heart_disease
 )
+
 causes.other_non_rheumatic_valve_diseases.parent = causes.non_rheumatic_valvular_heart_disease
+
 causes.nonalcoholic_fatty_liver_disease_including_cirrhosis.parent = (
     causes.cirrhosis_and_other_chronic_liver_diseases
 )
-causes.headache_disorders.parent = (
-    causes.neurological_disorderscauses.headache_disorders.sub_causes
-) = (
+
+causes.headache_disorders.parent = causes.neurological_disorders
+causes.headache_disorders.sub_causes = (
     causes.migraine,
     causes.tension_type_headache,
 )
-causes.substance_use_disorders.parent = (
-    causes.non_communicable_diseasescauses.substance_use_disorders.sub_causes
-) = (
+
+causes.substance_use_disorders.parent = causes.non_communicable_diseases
+causes.substance_use_disorders.sub_causes = (
     causes.alcohol_use_disorders,
     causes.drug_use_disorders,
 )
-causes.diabetes_and_kidney_diseases.parent = (
-    causes.non_communicable_diseasescauses.diabetes_and_kidney_diseases.sub_causes
-) = (
+
+causes.diabetes_and_kidney_diseases.parent = causes.non_communicable_diseases
+causes.diabetes_and_kidney_diseases.sub_causes = (
     causes.diabetes_mellitus,
     causes.acute_glomerulonephritis,
     causes.chronic_kidney_disease,
 )
+
 causes.diabetes_mellitus_type_1.parent = causes.diabetes_mellitus
+
 causes.diabetes_mellitus_type_2.parent = causes.diabetes_mellitus
+
 causes.atopic_dermatitis.parent = causes.dermatitis
+
 causes.contact_dermatitis.parent = causes.dermatitis
+
 causes.seborrhoeic_dermatitis.parent = causes.dermatitis
-causes.bacterial_skin_diseases.parent = (
-    causes.skin_and_subcutaneous_diseasescauses.bacterial_skin_diseases.sub_causes
-) = (
+
+causes.bacterial_skin_diseases.parent = causes.skin_and_subcutaneous_diseases
+causes.bacterial_skin_diseases.sub_causes = (
     causes.cellulitis,
     causes.pyoderma,
 )
-causes.blindness_and_vision_loss.parent = (
-    causes.sense_organ_diseasescauses.blindness_and_vision_loss.sub_causes
-) = (
+
+causes.blindness_and_vision_loss.parent = causes.sense_organ_diseases
+causes.blindness_and_vision_loss.sub_causes = (
     causes.glaucoma,
     causes.cataract,
     causes.age_related_macular_degeneration,
@@ -11628,60 +11956,100 @@ causes.blindness_and_vision_loss.parent = (
     causes.other_corneal_opacities,
     causes.other_vision_loss,
 )
+
 causes.non_malignant_brain_and_other_central_nervous_system_neoplasms.parent = (
     causes.other_neoplasms
 )
-causes.upper_digestive_system_diseases.parent = (
-    causes.digestive_diseasescauses.upper_digestive_system_diseases.sub_causes
-) = (
+
+causes.upper_digestive_system_diseases.parent = causes.digestive_diseases
+causes.upper_digestive_system_diseases.sub_causes = (
     causes.peptic_ulcer_disease,
     causes.gastritis_and_duodenitis,
     causes.gastroesophageal_reflux_disease,
 )
+
 causes.maternal_abortion_and_miscarriage.parent = causes.maternal_disorders
+
 causes.liver_cancer_due_to_nash.parent = causes.liver_cancer
+
 causes.chronic_kidney_disease_due_to_diabetes_mellitus_type_1.parent = (
     causes.chronic_kidney_disease
 )
+
 causes.chronic_kidney_disease_due_to_diabetes_mellitus_type_2.parent = (
     causes.chronic_kidney_disease
 )
+
 causes.refraction_disorders.parent = causes.blindness_and_vision_loss
+
 causes.near_vision_loss.parent = causes.blindness_and_vision_loss
+
 causes.pulmonary_arterial_hypertension.parent = causes.cardiovascular_diseases
+
 causes.hepatoblastoma.parent = causes.liver_cancer
+
 causes.burkitt_lymphoma.parent = causes.non_hodgkin_lymphoma
+
 causes.other_non_hodgkin_lymphoma.parent = causes.non_hodgkin_lymphoma
-causes.eye_cancer.parent = causes.neoplasmscauses.eye_cancer.sub_causes = (
+
+causes.eye_cancer.parent = causes.neoplasms
+causes.eye_cancer.sub_causes = (
     causes.retinoblastoma,
     causes.other_eye_cancers,
 )
+
 causes.retinoblastoma.parent = causes.eye_cancer
+
 causes.other_eye_cancers.parent = causes.eye_cancer
+
 causes.soft_tissue_and_other_extraosseous_sarcomas.parent = causes.neoplasms
+
 causes.malignant_neoplasm_of_bone_and_articular_cartilage.parent = causes.neoplasms
+
 causes.neuroblastoma_and_other_peripheral_nervous_cell_tumors.parent = causes.neoplasms
+
 causes.osteoarthritis_hip.parent = causes.osteoarthritis
+
 causes.osteoarthritis_knee.parent = causes.osteoarthritis
+
 causes.osteoarthritis_hand.parent = causes.osteoarthritis
+
 causes.osteoarthritis_other.parent = causes.osteoarthritis
+
 causes.ulcerative_colitis.parent = causes.inflammatory_bowel_disease
+
 causes.crohns_disease.parent = causes.inflammatory_bowel_disease
+
 causes.total_burden_related_to_hepatitis_b.parent = causes.all_causes
+
 causes.total_burden_related_to_hepatitis_c.parent = causes.all_causes
+
 causes.total_burden_related_to_non_alcoholic_fatty_liver_disease_nafld.parent = (
     causes.all_causes
 )
+
 causes.total_cancers.parent = causes.all_causes
+
 causes.thyroid_diseases.parent = causes.endocrine_metabolic_blood_and_immune_disorders
+
 causes.covid_19.parent = causes.respiratory_infections_and_tuberculosis
+
 causes.total_cancers_excluding_non_melanoma_skin_cancer.parent = causes.all_causes
+
 causes.self_harm_by_non_pesticide_substance_and_gas.parent = causes.self_harm
+
 causes.other_corneal_opacities.parent = causes.blindness_and_vision_loss
+
 causes.gestational_diabetes.parent = causes.maternal_disorders
+
 causes.peripartum_cardiomyopathy.parent = causes.maternal_disorders
+
 causes.other_direct_maternal_disorders.parent = causes.maternal_disorders
+
 causes.other_digestive_diseases.parent = causes.digestive_diseases
+
 causes.other_vision_loss.parent = causes.blindness_and_vision_loss
+
 causes.self_harm_by_other_specified_means.parent = causes.self_harm
+
 causes.other_benign_and_in_situ_neoplasms.parent = causes.other_neoplasms
