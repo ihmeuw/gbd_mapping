@@ -15,7 +15,7 @@ jinja_env = Environment(loader=FileSystemLoader(TEMPLATE_DIR), trim_blocks=True,
 class CauseData:
     """Helper class to format cause data for Jinja2 templates."""
 
-    def __init__(self, name: str, c_id: int, me_id: int, most_detailed: bool, level: int, parent: str, restrictions: dict,
+    def __init__(self, name: str, c_id: int, me_id: int, most_detailed: int, level: int, parent: str, restrictions: tuple[tuple[str, bool| int], ...],
                  sequelae: list[str] | None = None, etiologies: list[str] | None = None, sub_causes: list[str] | None = None):
         self.name = name
         self.c_id = c_id
