@@ -15,8 +15,9 @@ except ModuleNotFoundError:
 
     gbd = GbdDummy()
 
-from .globals import CovariateData, CovariateDataSeq
+from .globals import ID_TYPES, CovariateData, CovariateDataSeq
 from .util import clean_entity_list
+from .util import to_id
 
 CAUSE_SET_ID = 3
 COMPUTATION_CAUSE_SET_ID = 2
@@ -138,8 +139,23 @@ def get_etiology_data() -> list:
 
     return list(zip(clean_entity_list(etiologies.rei_name), etiologies.rei_id))
 
+class CauseData:
+    """Helper class to format cause data for Jinja2 templates."""
 
-def get_cause_data():
+    def __init__(self, name: str, c_id: int, me_id: int, most_detailed: int, level: int, parent: str, restrictions: tuple[tuple[str, bool| int], ...],
+                 sequelae: list[str] | None = None, etiologies: list[str] | None = None, sub_causes: list[str] | None = None):
+        self.name = name
+        self.c_id = c_id
+        self.me_id_formatted = to_id(me_id, ID_TYPES.ME_ID)
+        self.most_detailed = bool(most_detailed)
+        self.level = level
+        self.parent = parent
+        self.restrictions = restrictions
+        self.sequelae = sequelae or []
+        self.etiologies = [etiology.rstrip(".") for etiology in etiologies] if etiologies else []
+        self.sub_causes = [sc for sc in (sub_causes or []) if sc != name]
+
+def get_cause_data() -> list[CauseData]:
     sequelae = gbd.get_sequela_id_mapping().sort_values("sequela_id")
 
     etiologies = gbd.get_rei_metadata(rei_set_id=ETIOLOGY_SET_ID)
@@ -206,8 +222,7 @@ def get_cause_data():
         )
         sub_causes = causes[causes.parent_id == cid].cause_name.tolist()
 
-        cause_data.append(
-            (
+        cause_data.append(CauseData(
                 name,
                 cid,
                 dismod_id,
