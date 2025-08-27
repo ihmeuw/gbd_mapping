@@ -1,7 +1,6 @@
 """Tools for automatically generating the GBD cause mapping."""
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
-from .base_template_builder import gbd_record_attrs, modelable_entity_attrs
 from .data import get_cause_data, get_cause_list
 from .globals import ID_TYPES
 from .util import to_id
@@ -26,7 +25,7 @@ class CauseData:
         self.parent = parent
         self.restrictions = restrictions
         self.sequelae = sequelae or []
-        self.etiologies = etiologies or []
+        self.etiologies = [etiology.rstrip(".") for etiology in self.etiologies] if etiologies else []
         self.sub_causes = [sc for sc in (sub_causes or []) if sc != name]
 
 
