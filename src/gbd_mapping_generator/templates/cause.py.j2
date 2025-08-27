@@ -10,37 +10,47 @@ from .etiology import etiologies
 from .id import UNKNOWN, {{ c_id_type }}, {{ me_id_type }}
 from .sequela import sequelae
 
-causes = Causes(**{
-{% for cause in causes_data %}
-    '{{ cause.name }}': Cause(
-        name='{{ cause.name }}',
-        kind='cause',
-        gbd_id={{ c_id_type }}({{ cause.c_id }}),
-        me_id={{ cause.me_id_formatted }},
-        level={{ cause.level }},
-        most_detailed={{ cause.most_detailed }},
-        parent=None,
-        restrictions=Restrictions(
-{% for restriction, value in cause.restrictions %}
-            {{ restriction }}={{ value }},
-{% endfor %}
+causes = Causes(
+    **{
+    {% for cause in causes_data %}
+        "{{ cause.name }}": Cause(
+            name="{{ cause.name }}",
+            kind="cause",
+            gbd_id={{ c_id_type }}({{ cause.c_id }}),
+            me_id={{ cause.me_id_formatted }},
+            level={{ cause.level }},
+            most_detailed={{ cause.most_detailed }},
+            parent=None,
+            restrictions=Restrictions(
+            {% for restriction, value in cause.restrictions %}
+                {{ restriction }}={{ value }},
+            {% endfor %}
+            ),
+            sequelae=(
+            {% for sequela in cause.sequelae %}
+                sequelae.{{ sequela }},
+            {% endfor %}
+            ),
+            etiologies=(
+            {% for etiology in cause.etiologies %}
+                etiologies.{{ etiology }},
+            {% endfor %}
+            ),
         ),
-        sequelae={{ cause.sequelae|format_tuple(prefix='sequelae.') }},
-        etiologies={{ cause.etiologies|format_tuple(prefix='etiologies.') }},
-    ),
-{% endfor %}
-})
-
-{%- for cause in causes_data %}
-{%- if cause.name != cause.parent %}
-causes.{{ cause.name }}.parent = causes.{{ cause.parent }}
-{%- endif %}
-{%- if cause.sub_causes %}
-causes.{{ cause.name }}.sub_causes = (
-{%- for sub_cause in cause.sub_causes %}
-    causes.{{ sub_cause }},
-{%- endfor %}
+    {% endfor %}
+    }
 )
-{%- endif %}
 
-{%- endfor %}
+{% for cause in causes_data %}
+{% if cause.name != cause.parent %}
+causes.{{ cause.name }}.parent = causes.{{ cause.parent }}
+{% endif %}
+{% if cause.sub_causes %}
+causes.{{ cause.name }}.sub_causes = (
+{% for sub_cause in cause.sub_causes %}
+    causes.{{ sub_cause }},
+{% endfor %}
+)
+{% endif %}
+
+{% endfor %}
