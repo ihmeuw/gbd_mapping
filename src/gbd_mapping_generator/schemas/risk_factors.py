@@ -1,8 +1,7 @@
 from pandera import DataFrameSchema, Column, Check, Index
 
 risk_schema = DataFrameSchema(
-    index=Index(int, name="rei_id", unique=False),
-    # index=Index(int, name="rei_id",  unique=True),
+    index=Index(int, name="rei_id",  unique=True),
     columns={
         "level": Column(
             dtype="int64",
