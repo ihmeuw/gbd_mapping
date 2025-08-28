@@ -6,12 +6,7 @@ risk_schema = DataFrameSchema(
         "level": Column(
             dtype="int64",
             checks=[
-                Check.greater_than_or_equal_to(
-                    min_value=0.0, raise_warning=False, ignore_na=True
-                ),
-                Check.less_than_or_equal_to(
-                    max_value=4.0, raise_warning=False, ignore_na=True
-                ),
+                Check.between(0, 4)
             ],
         ),
         "rei_name": Column(
@@ -19,51 +14,42 @@ risk_schema = DataFrameSchema(
         ),
         "parent_id": Column(
             dtype="int64",
-            checks=[
-                Check.greater_than_or_equal_to(
-                    min_value=82.0, raise_warning=False, ignore_na=True
-                ),
-                Check.less_than_or_equal_to(
-                    max_value=381.0, raise_warning=False, ignore_na=True
-                ),
-            ],
         ),
         "most_detailed": Column(
             dtype="int64",
             checks=[
-                Check.greater_than_or_equal_to(
-                    min_value=0.0, raise_warning=False, ignore_na=True
-                ),
-                Check.less_than_or_equal_to(
-                    max_value=1.0, raise_warning=False, ignore_na=True
-                ),
+                Check.isin([0, 1])
             ],
         ),
         "age_specific_exp": Column(
             dtype="object",
+            checks=[
+                Check.isin(['0', '1'])
+            ],
             nullable=True,
         ),
         "exposure_type": Column(
-            dtype="object",
+            dtype="str",
             nullable=True,
         ),
         "female": Column(
             dtype="int64",
             checks=[
-                Check.greater_than_or_equal_to(
-                    min_value=1.0, raise_warning=False, ignore_na=True
-                ),
-                Check.less_than_or_equal_to(
-                    max_value=1.0, raise_warning=False, ignore_na=True
-                ),
+                Check.isin([0, 1])
             ],
         ),
         "has_sev": Column(
             dtype="object",
+            checks=[
+                Check.isin(['0', '1'])
+            ],
             nullable=True,
         ),
         "inv_exp": Column(
             dtype="object",
+            checks=[
+                Check.isin(['0', '1'])
+            ],
             nullable=True,
         ),
         "lancet_label": Column(
@@ -75,12 +61,7 @@ risk_schema = DataFrameSchema(
         "male": Column(
             dtype="float64",
             checks=[
-                Check.greater_than_or_equal_to(
-                    min_value=1.0, raise_warning=False, ignore_na=True
-                ),
-                Check.less_than_or_equal_to(
-                    max_value=1.0, raise_warning=False, ignore_na=True
-                ),
+                Check.isin([0, 1])
             ],
             nullable=True,
         ),
@@ -100,7 +81,7 @@ risk_schema = DataFrameSchema(
             nullable=True,
         ),
         "tmred_dist": Column(
-            dtype="object",
+            dtype="str",
             nullable=True,
         ),
         "tmrel_lower": Column(
@@ -118,73 +99,31 @@ risk_schema = DataFrameSchema(
         "yld": Column(
             dtype="float64",
             checks=[
-                Check.greater_than_or_equal_to(
-                    min_value=1.0, raise_warning=False, ignore_na=True
-                ),
-                Check.less_than_or_equal_to(
-                    max_value=1.0, raise_warning=False, ignore_na=True
-                ),
+                Check.isin([0, 1])
             ],
             nullable=True,
         ),
         "yld_age_group_id_end": Column(
             dtype="float64",
-            checks=[
-                Check.greater_than_or_equal_to(
-                    min_value=8.0, raise_warning=False, ignore_na=True
-                ),
-                Check.less_than_or_equal_to(
-                    max_value=388.0, raise_warning=False, ignore_na=True
-                ),
-            ],
             nullable=True,
         ),
         "yld_age_group_id_start": Column(
             dtype="float64",
-            checks=[
-                Check.greater_than_or_equal_to(
-                    min_value=2.0, raise_warning=False, ignore_na=True
-                ),
-                Check.less_than_or_equal_to(
-                    max_value=389.0, raise_warning=False, ignore_na=True
-                ),
-            ],
             nullable=True,
         ),
         "yll": Column(
             dtype="float64",
             checks=[
-                Check.greater_than_or_equal_to(
-                    min_value=1.0, raise_warning=False, ignore_na=True
-                ),
-                Check.less_than_or_equal_to(
-                    max_value=1.0, raise_warning=False, ignore_na=True
-                ),
+                Check.isin([0, 1])
             ],
             nullable=True,
         ),
         "yll_age_group_id_end": Column(
             dtype="float64",
-            checks=[
-                Check.greater_than_or_equal_to(
-                    min_value=8.0, raise_warning=False, ignore_na=True
-                ),
-                Check.less_than_or_equal_to(
-                    max_value=388.0, raise_warning=False, ignore_na=True
-                ),
-            ],
             nullable=True,
         ),
         "yll_age_group_id_start": Column(
             dtype="float64",
-            checks=[
-                Check.greater_than_or_equal_to(
-                    min_value=2.0, raise_warning=False, ignore_na=True
-                ),
-                Check.less_than_or_equal_to(
-                    max_value=389.0, raise_warning=False, ignore_na=True
-                ),
-            ],
             nullable=True,
         ),
         "paf_of_one_cause_ids": Column(
@@ -203,6 +142,6 @@ risk_schema = DataFrameSchema(
             nullable=True,
         ),
     },
-    coerce=True,
+
     strict=True,
 )
