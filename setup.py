@@ -47,6 +47,7 @@ if __name__ == "__main__":
         "click",
         "numpy",
         "pandas",
+        "pandera",
         "pyyaml",
     ]
 
