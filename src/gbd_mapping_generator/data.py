@@ -295,6 +295,10 @@ def make_cause_restrictions(cause):
         ),
     )
     if cause.cause_id in [367, 368, 369, 370, 374, 375, 376, 379, 741, 995, 1160]:
+        # These causes have some estimates for age group 15, but have cause restrictions
+        # listed as age group 14, since GBD reports based on a "standard" set of age groups
+        # for certain maternal causes, but does the computation for a somewhat wider interval
+        # for consistency.
         restrictions = list(restrictions)
         restrictions[5] = ("yll_age_group_id_end", 15)
         restrictions[7] = ("yld_age_group_id_end", 15)
