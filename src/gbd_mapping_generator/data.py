@@ -391,9 +391,22 @@ def get_risk_data() -> list:
             else:
                 tmred = (
                     ("distribution", risk["tmred_dist"]),
-                    ("min", risk["tmrel_lower"]),
-                    ("max", risk["tmrel_upper"]),
-                    ("inverted", bool(int(risk["inv_exp"]))),
+                    (
+                        "min",
+                        risk["tmrel_lower"] if not pd.isnull(risk["tmrel_lower"]) else None,
+                    ),
+                    (
+                        "max",
+                        risk["tmrel_upper"] if not pd.isnull(risk["tmrel_upper"]) else None,
+                    ),
+                    (
+                        "inverted",
+                        (
+                            bool(int(risk["inv_exp"]))
+                            if not pd.isnull(risk["inv_exp"])
+                            else False
+                        ),
+                    ),
                 )
         elif distribution == "dichotomous":
             levels = (("cat1", "Exposed"), ("cat2", "Unexposed"))

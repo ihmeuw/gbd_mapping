@@ -89,8 +89,12 @@ class RiskFactors(GbdRecord):
                  'diet_low_in_legumes', 'short_gestation', 'low_birth_weight', 'high_temperature', 'low_temperature',
                  'low_birth_weight_and_short_gestation', 'kidney_dysfunction', 'bullying_victimization',
                  'high_ldl_cholesterol', 'high_body_mass_index_in_adults', 'high_body_mass_index_in_children',
-                 'particulate_matter_pollution', 'sexual_violence_against_children_and_bullying',
-                 'nitrogen_dioxide_pollution', )
+                 'low_hemoglobin', 'particulate_matter_pollution', 'sexual_violence_against_children_and_bullying',
+                 'nitrogen_dioxide_pollution', 'hearing_loss_dementia_grant',
+                 'traumatic_brain_injury_and_spinal_cord_injury_dementia_grant', 'social_isolation_dementia_grant',
+                 'depression_dementia_grant', 'childhood_physical_abuse', 'low_body_mass_index',
+                 'low_educational_attainment', 'stunting_in_children_and_adults',
+                 'high_body_mass_index_experimental_for_maternal_and_neonatal_outcomes', )
 
     def __init__(self,
                  unsafe_water_sanitation_and_handwashing: RiskFactor,
@@ -187,9 +191,19 @@ class RiskFactors(GbdRecord):
                  high_ldl_cholesterol: RiskFactor,
                  high_body_mass_index_in_adults: RiskFactor,
                  high_body_mass_index_in_children: RiskFactor,
+                 low_hemoglobin: RiskFactor,
                  particulate_matter_pollution: RiskFactor,
                  sexual_violence_against_children_and_bullying: RiskFactor,
-                 nitrogen_dioxide_pollution: RiskFactor, ):
+                 nitrogen_dioxide_pollution: RiskFactor,
+                 hearing_loss_dementia_grant: RiskFactor,
+                 traumatic_brain_injury_and_spinal_cord_injury_dementia_grant: RiskFactor,
+                 social_isolation_dementia_grant: RiskFactor,
+                 depression_dementia_grant: RiskFactor,
+                 childhood_physical_abuse: RiskFactor,
+                 low_body_mass_index: RiskFactor,
+                 low_educational_attainment: RiskFactor,
+                 stunting_in_children_and_adults: RiskFactor,
+                 high_body_mass_index_experimental_for_maternal_and_neonatal_outcomes: RiskFactor, ):
         super().__init__()
         self.unsafe_water_sanitation_and_handwashing = unsafe_water_sanitation_and_handwashing
         self.unsafe_water_source = unsafe_water_source
@@ -285,6 +299,16 @@ class RiskFactors(GbdRecord):
         self.high_ldl_cholesterol = high_ldl_cholesterol
         self.high_body_mass_index_in_adults = high_body_mass_index_in_adults
         self.high_body_mass_index_in_children = high_body_mass_index_in_children
+        self.low_hemoglobin = low_hemoglobin
         self.particulate_matter_pollution = particulate_matter_pollution
         self.sexual_violence_against_children_and_bullying = sexual_violence_against_children_and_bullying
         self.nitrogen_dioxide_pollution = nitrogen_dioxide_pollution
+        self.hearing_loss_dementia_grant = hearing_loss_dementia_grant
+        self.traumatic_brain_injury_and_spinal_cord_injury_dementia_grant = traumatic_brain_injury_and_spinal_cord_injury_dementia_grant
+        self.social_isolation_dementia_grant = social_isolation_dementia_grant
+        self.depression_dementia_grant = depression_dementia_grant
+        self.childhood_physical_abuse = childhood_physical_abuse
+        self.low_body_mass_index = low_body_mass_index
+        self.low_educational_attainment = low_educational_attainment
+        self.stunting_in_children_and_adults = stunting_in_children_and_adults
+        self.high_body_mass_index_experimental_for_maternal_and_neonatal_outcomes = high_body_mass_index_experimental_for_maternal_and_neonatal_outcomes
