@@ -454,8 +454,7 @@ class Covariates(GbdRecord):
                  'log_transformed_age_standardized_sev_scalar_mat_abort', 'log_transformed_sev_scalar_mat_abort',
                  'proportion_of_the_population_with_0_years_of_education_maternal',
                  'stillbirth_28_weeks_to_live_birth_ratio', 'proportion_pnn_pop_aged_1_5_mo',
-                 'proportion_1_4_pop_aged_1_year', 'gallup_negative_experience_index',
-                 'proportion_of_the_population_working_in_mining_with_20_year_lag',
+                 'proportion_1_4_pop_aged_1_year', 'proportion_of_the_population_working_in_mining_with_20_year_lag',
                  'gold_production_kg_per_capita_smoothed_with_20_year_lag',
                  'diabetes_fasting_plasma_glucose_mmol_l_by_age',
                  'hepatitis_a_seroprevalence_anti_hav_age_standardized',
@@ -582,8 +581,8 @@ class Covariates(GbdRecord):
                  'log_transformed_age_standardized_sev_scalar_mat_and_upneonat',
                  'log_transformed_sev_scalar_diabetes_and_upckd',
                  'log_transformed_age_standardized_sev_scalar_diabetes_and_upckd', 'who_sth_mda_coverage_by_age',
-                 'normal_hemoglobin', 'covid_19_age_standardized_death_rate',
-                 '_legality_of_abortion__and_up_fetal_impairment', 'hiv_art_coverage_from_unaids_reports',
+                 'normal_hemoglobin', 'covid_19_age_standardized_death_rate', 'gallup_world_poll_sadness',
+                 'gallup_world_poll_worry', '_legality_of_abortion__and_up_fetal_impairment', '_hiv_art_coverage',
                  'covid_19_crude_death_rate', 'covid_19_age_specific_death_rate',
                  'covid_19_reproductive_age_crude_death_rate', 'island_binary', 'all_risk_paf',
                  'antipsychotic_use_rates_in_schizophrenia', 'hiv_epidemic_start_year',
@@ -604,7 +603,10 @@ class Covariates(GbdRecord):
                  'log_transformed_age_standardized_sev_scalar_conduct', 'proportion_white_alone',
                  'proportion_black_alone', 'proportion_aian_alone', 'proportion_api_alone', 'proportion_multiracial',
                  'rural_urban_continuum_code_2023', 'rural_urban_continuum_code_2013',
-                 'rural_urban_continuum_code_2003', 'rural_urban_continuum_code_1993', )
+                 'rural_urban_continuum_code_2003', 'rural_urban_continuum_code_1993',
+                 'cystic_echinococcosis_low_endemicity_binary', 'cystic_echinococcosis_moderate_endemicity_binary',
+                 'cystic_echinococcosis_high_endemicity_binary', 'low_density_lipoprotein_mmol_l_by_age',
+                 'systolic_blood_pressure_mmhg_by_age', )
 
     def __init__(self, **kwargs):
         super().__init__()
@@ -1267,7 +1269,6 @@ class Covariates(GbdRecord):
         self.stillbirth_28_weeks_to_live_birth_ratio = kwargs.get('stillbirth_28_weeks_to_live_birth_ratio')
         self.proportion_pnn_pop_aged_1_5_mo = kwargs.get('proportion_pnn_pop_aged_1_5_mo')
         self.proportion_1_4_pop_aged_1_year = kwargs.get('proportion_1_4_pop_aged_1_year')
-        self.gallup_negative_experience_index = kwargs.get('gallup_negative_experience_index')
         self.proportion_of_the_population_working_in_mining_with_20_year_lag = kwargs.get('proportion_of_the_population_working_in_mining_with_20_year_lag')
         self.gold_production_kg_per_capita_smoothed_with_20_year_lag = kwargs.get('gold_production_kg_per_capita_smoothed_with_20_year_lag')
         self.diabetes_fasting_plasma_glucose_mmol_l_by_age = kwargs.get('diabetes_fasting_plasma_glucose_mmol_l_by_age')
@@ -1467,8 +1468,10 @@ class Covariates(GbdRecord):
         self.who_sth_mda_coverage_by_age = kwargs.get('who_sth_mda_coverage_by_age')
         self.normal_hemoglobin = kwargs.get('normal_hemoglobin')
         self.covid_19_age_standardized_death_rate = kwargs.get('covid_19_age_standardized_death_rate')
+        self.gallup_world_poll_sadness = kwargs.get('gallup_world_poll_sadness')
+        self.gallup_world_poll_worry = kwargs.get('gallup_world_poll_worry')
         self._legality_of_abortion__and_up_fetal_impairment = kwargs.get('_legality_of_abortion__and_up_fetal_impairment')
-        self.hiv_art_coverage_from_unaids_reports = kwargs.get('hiv_art_coverage_from_unaids_reports')
+        self._hiv_art_coverage = kwargs.get('_hiv_art_coverage')
         self.covid_19_crude_death_rate = kwargs.get('covid_19_crude_death_rate')
         self.covid_19_age_specific_death_rate = kwargs.get('covid_19_age_specific_death_rate')
         self.covid_19_reproductive_age_crude_death_rate = kwargs.get('covid_19_reproductive_age_crude_death_rate')
@@ -1506,3 +1509,8 @@ class Covariates(GbdRecord):
         self.rural_urban_continuum_code_2013 = kwargs.get('rural_urban_continuum_code_2013')
         self.rural_urban_continuum_code_2003 = kwargs.get('rural_urban_continuum_code_2003')
         self.rural_urban_continuum_code_1993 = kwargs.get('rural_urban_continuum_code_1993')
+        self.cystic_echinococcosis_low_endemicity_binary = kwargs.get('cystic_echinococcosis_low_endemicity_binary')
+        self.cystic_echinococcosis_moderate_endemicity_binary = kwargs.get('cystic_echinococcosis_moderate_endemicity_binary')
+        self.cystic_echinococcosis_high_endemicity_binary = kwargs.get('cystic_echinococcosis_high_endemicity_binary')
+        self.low_density_lipoprotein_mmol_l_by_age = kwargs.get('low_density_lipoprotein_mmol_l_by_age')
+        self.systolic_blood_pressure_mmhg_by_age = kwargs.get('systolic_blood_pressure_mmhg_by_age')
