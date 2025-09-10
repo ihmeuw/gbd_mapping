@@ -1,5 +1,7 @@
 import numpy as np
 import pandas as pd
+import pandera as pa
+from .schemas import risk_schema
 
 # The purpose of this import block is to mask the dependency on internal
 # IHME data and allow CI and automated testing to work.
@@ -304,7 +306,7 @@ def make_cause_restrictions(cause):
         restrictions[7] = ("yld_age_group_id_end", 15)
     return tuple(restrictions)
 
-
+@pa.check_output(risk_schema)
 def get_all_risk_metadata():
     risks = gbd.get_rei_metadata(RISK_SET_ID, include_all_metadata=True).sort_values("rei_id")
     risks = risks[
