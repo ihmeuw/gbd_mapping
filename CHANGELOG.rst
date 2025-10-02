@@ -1,3 +1,7 @@
+**5.0.0 - 10/02/25**
+
+ - Update GBD Mapping for 2023
+
 **4.1.6 - 08/01/25**
 
  - Use vivarium_dependencies for common setup constraints
