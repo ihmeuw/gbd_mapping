@@ -1,3 +1,7 @@
+**5.0.1 - 11/20/25**
+
+ - Make name optional and handle bar args to 'make build-env'
+
 **5.0.0 - 10/02/25**
 
  - Update GBD Mapping for 2023
