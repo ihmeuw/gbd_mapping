@@ -1,5 +1,6 @@
 **5.0.2 - 03/16/26**
 
+ - Validate version and CHANGELOG date prior to deploying
  - Bugfix: Update intersphinx mapping for python and pandas
 
 **5.0.1 - 11/20/25**
