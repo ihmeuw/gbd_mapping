@@ -1,3 +1,7 @@
+**5.0.3 - 04/14/26**
+
+  - Use vivarium_dependencies for VBU
+
 **5.0.2 - 03/16/26**
 
  - Validate version and CHANGELOG date prior to deploying
