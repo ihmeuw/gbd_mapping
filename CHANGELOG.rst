@@ -1,3 +1,7 @@
+**5.0.3 - 04/15/26**
+
+ - Update vivarium_build_utils pin
+
 **5.0.2 - 03/16/26**
 
  - Validate version and CHANGELOG date prior to deploying
