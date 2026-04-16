@@ -1,3 +1,7 @@
+**5.0.4 - 04/16/26**
+
+ - Tighten vivarium_build_utils pin
+
 **5.0.3 - 04/15/26**
 
  - Update vivarium_build_utils pin
