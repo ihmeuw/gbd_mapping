@@ -1,3 +1,19 @@
+**5.1.0 - 05/19/26**
+
+Final release. This is a backward-compatibility shim - it ships no code and
+exists only so ``pip install gbd_mapping`` continues to resolve. The real
+package has been renamed to ``vivarium-gbd-mapping`` and the import paths
+have moved to ``vivarium.gbd_mapping`` and ``vivarium.gbd_mapping_generator``.
+
+- Installing this version pulls in ``vivarium-gbd-mapping>=6.0.0`` (the real
+  implementation, which also provides the ``build_mapping`` console script)
+  and ``vivarium-compat>=0.5.0`` (an import hook that redirects
+  ``import gbd_mapping`` and ``import gbd_mapping_generator`` to their
+  ``vivarium.*`` equivalents with a ``DeprecationWarning``).
+- The standalone ``ihmeuw/gbd_mapping`` repository has been archived;
+  development continues in the ``ihmeuw/vivarium-suite`` monorepo under
+  ``libs/gbd-mapping/``.
+
 **5.0.4 - 04/16/26**
 
  - Tighten vivarium_build_utils pin

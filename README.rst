@@ -1,6 +1,40 @@
 GBD Mapping
 ===========
 
+** NOTE: This repository has been archived.**
+
+The ``gbd_mapping`` package has been renamed and migrated into the
+`vivarium-suite monorepo <https://github.com/ihmeuw/vivarium-suite>`_.
+
+What changed
+------------
+
+- **PyPI distribution:** ``gbd_mapping`` -> ``vivarium-gbd-mapping``
+- **Import paths:**
+  - ``gbd_mapping`` -> ``vivarium.gbd_mapping``
+  - ``gbd_mapping_generator`` -> ``vivarium.gbd_mapping_generator``
+- **Source:** ``ihmeuw/gbd_mapping`` (archived) ->
+  ``ihmeuw/vivarium-suite`` (under ``libs/gbd-mapping/``)
+- **Docs:** https://vivarium-gbd-mapping.readthedocs.io/
+
+What this last release (v5.1.0) is
+----------------------------------
+
+A backward-compatibility shim. It contains no code; installing it pulls in:
+
+- ``vivarium-gbd-mapping>=6.0.0`` - the real implementation under the new import
+  paths. Also provides the ``build_mapping`` console script.
+- ``vivarium-compat>=0.5.0`` - an import hook that lets ``import gbd_mapping`` and
+  ``import gbd_mapping_generator`` continue to work, emitting a ``DeprecationWarning``.
+  Update your imports before the hook is removed.
+
+If you depend on a specific pre-rename version (e.g. ``gbd_mapping==5.0.4``),
+pin to that version - those earlier releases still ship the original modules
+and continue to install standalone.
+
+To migrate fully to the new package
+-----------------------------------
+
 .. image:: https://badge.fury.io/py/gbd-mapping.svg
     :target: https://badge.fury.io/py/gbd-mapping
 

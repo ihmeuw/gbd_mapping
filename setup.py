@@ -1,107 +1,56 @@
-#!/usr/bin/env python
-import json
-import os
-import sys
+"""Backward-compatibility shim for the standalone ``gbd_mapping`` package.
 
-from packaging.version import parse
-from setuptools import find_packages, setup
+The real code has moved to ``vivarium-gbd-mapping`` (importable as
+``vivarium.gbd_mapping``; the generator subpackage is at
+``vivarium.gbd_mapping_generator``). This empty wheel exists so that
 
-with open("python_versions.json", "r") as f:
-    supported_python_versions = json.load(f)
+    pip install gbd_mapping
 
-python_versions = [parse(v) for v in supported_python_versions]
-min_version = min(python_versions)
-max_version = max(python_versions)
-if not (
-    min_version <= parse(".".join([str(v) for v in sys.version_info[:2]])) <= max_version
-):
-    py_version = ".".join([str(v) for v in sys.version_info[:3]])
-    # NOTE: Python 3.5 does not support f-strings
-    error = (
-        "\n--------------------------------------------\n"
-        "Error: gbd_mapping runs under python {min_version}-{max_version}.\n"
-        "You are running python {py_version}.\n".format(
-            min_version=min_version.base_version,
-            max_version=max_version.base_version,
-            py_version=py_version,
-        )
-        + "--------------------------------------------\n"
-    )
-    print(error, file=sys.stderr)
-    sys.exit(1)
+continues to resolve and pulls in the new package plus the ``vivarium-compat``
+import hook. The hook redirects ``import gbd_mapping`` and
+``import gbd_mapping_generator`` to their ``vivarium.*`` equivalents with a
+``DeprecationWarning``. The ``build_mapping`` console script is provided by
+``vivarium-gbd-mapping`` directly, so it continues to work via the transitive
+install.
 
+See https://github.com/ihmeuw/vivarium-suite for the new location.
+"""
 
-if __name__ == "__main__":
-    base_dir = os.path.dirname(__file__)
-    src_dir = os.path.join(base_dir, "src")
+from setuptools import setup
 
-    about = {}
-    with open(os.path.join(src_dir, "gbd_mapping", "__about__.py")) as f:
-        exec(f.read(), about)
-
-    with open(os.path.join(base_dir, "README.rst")) as f:
-        long_description = f.read()
-
-    install_requirements = [
-        "vivarium_dependencies[pandas,numpy,click]",
-        "vivarium_build_utils>=3.0.2,<4.0.0",
-        "pyyaml",
-    ]
-
-    setup_requires = ["setuptools_scm"]
-
-    data_requires = [
-        "vivarium-gbd-access>=5.0.0, <6.0.0",
-    ]
-
-    test_requirements = [
-        "vivarium_dependencies[pytest]",
-    ]
-
-    doc_requirements = [
-        "vivarium_dependencies[sphinx]",
-    ]
-
-    interactive_requirements = [
-        "vivarium_dependencies[interactive]",
-    ]
-
-    lint_requirements = [
-        "vivarium_dependencies[lint]",
-    ]
-
-    setup(
-        name=about["__title__"],
-        description=about["__summary__"],
-        long_description=long_description,
-        url=about["__uri__"],
-        author=about["__author__"],
-        author_email=about["__email__"],
-        package_dir={"": "src"},
-        packages=find_packages(where="src"),
-        include_package_data=True,
-        install_requires=install_requirements,
-        tests_require=test_requirements,
-        extras_require={
-            "docs": doc_requirements,
-            "interactive": interactive_requirements,
-            "test": test_requirements,
-            "data": data_requires,
-            "dev": doc_requirements
-            + interactive_requirements
-            + test_requirements
-            + data_requires
-            + lint_requirements,
-        },
-        entry_points="""
-                [console_scripts]
-                build_mapping=gbd_mapping_generator.build_mapping:build_mapping
-            """,
-        zip_safe=False,
-        use_scm_version={
-            "write_to": "src/gbd_mapping/_version.py",
-            "write_to_template": '__version__ = "{version}"\n',
-            "tag_regex": r"^(?P<prefix>v)?(?P<version>[^\+]+)(?P<suffix>.*)?$",
-        },
-        setup_requires=setup_requires,
-    )
+setup(
+    name="gbd_mapping",
+    description=(
+        "Backward-compatibility shim. The real package is now "
+        "vivarium-gbd-mapping."
+    ),
+    long_description=open("README.rst").read(),
+    long_description_content_type="text/x-rst",
+    url="https://github.com/ihmeuw/vivarium-suite",
+    author="The vivarium developers",
+    author_email="vivarium.dev@gmail.com",
+    license="BSD-3-Clause",
+    classifiers=[
+        "Development Status :: 7 - Inactive",
+        "Intended Audience :: Developers",
+        "Intended Audience :: Science/Research",
+        "License :: OSI Approved :: BSD License",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: Implementation :: CPython",
+        "Topic :: Scientific/Engineering",
+        "Topic :: Software Development :: Libraries",
+    ],
+    packages=[],
+    py_modules=[],
+    install_requires=[
+        "vivarium-gbd-mapping>=6.0.0",
+        "vivarium-compat>=0.5.0",
+    ],
+    python_requires=">=3.10",
+    # Version is derived from the git tag at build time (e.g. v5.1.0 -> 5.1.0).
+    # Tag, then `python -m build`, then `twine upload`.
+    use_scm_version={
+        "tag_regex": r"^(?P<prefix>v)?(?P<version>[^\+]+)(?P<suffix>.*)?$",
+    },
+    setup_requires=["setuptools_scm"],
+)
