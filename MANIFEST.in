@@ -1,14 +1,3 @@
-include AUTHORS.rst
 include CHANGELOG.rst
-include CODE_OF_CONDUCT.rst
-include CONTRIBUTING.rst
 include LICENSE.txt
 include README.rst
-
-recursive-include docs *
-prune docs/_build
-
-include src/gbd_mapping/__about__.py
-recursive-include src/gbd_mapping *.py
-recursive-include src/gbd_mapping_generator *.py
-recursive-include tests *.py *txt *.yaml
