@@ -1,6 +1,48 @@
 GBD Mapping
 ===========
 
+**NOTE: This repository is archived and will receive no further updates.**
+
+The ``gbd_mapping`` package has been renamed and migrated into the
+`vivarium-suite monorepo <https://github.com/ihmeuw/vivarium-suite>`_.
+
+What changed
+------------
+
+- **PyPI distribution:** ``gbd_mapping`` -> ``vivarium-gbd-mapping``
+- **Import paths:**
+
+  - ``gbd_mapping`` -> ``vivarium.gbd_mapping``
+  - ``gbd_mapping_generator`` -> ``vivarium.gbd_mapping_generator``
+
+- **Source:** ``ihmeuw/gbd_mapping`` (archived) ->
+  ``ihmeuw/vivarium-suite`` (under ``libs/gbd-mapping/``)
+- **Docs:** https://vivarium-gbd-mapping.readthedocs.io/
+
+The final release on PyPI (``v5.0.5``) ships the same code as ``v5.0.4`` with
+this banner added. ``v5.1.0`` shipped a metapackage/shim that has since been
+yanked; the archived repo's final release is ``v5.0.5``. ``pip install gbd_mapping``
+will keep resolving and importing as it did in ``v5.0.4``, but the code is frozen
+and will not receive updates.
+
+To migrate fully to the new package
+-----------------------------------
+
+**Install:**
+
+.. code-block:: bash
+
+    pip install vivarium-gbd-mapping  # was: pip install gbd_mapping
+
+**Import:**
+
+.. code-block:: python
+
+    from vivarium.gbd_mapping import causes, risk_factors  # was: from gbd_mapping import ...
+
+Original package overview
+=========================
+
 .. image:: https://badge.fury.io/py/gbd-mapping.svg
     :target: https://badge.fury.io/py/gbd-mapping
 
@@ -43,7 +85,7 @@ or build it from source with
 
 
 Development and Mapping Generation
-++++++++++++++++++++++++++++++++++
+----------------------------------
 
 In order to generate or regenerate the mappings from data, you must have access to
 the Institute for Health Metrics and Evaluation cluster and internal PyPI server.

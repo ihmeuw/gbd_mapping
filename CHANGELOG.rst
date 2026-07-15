@@ -1,3 +1,17 @@
+**5.0.5 - 07/15/26**
+
+Final release. Adds an archive banner to the README pointing at the ``vivarium-suite``
+monorepo (``libs/gbd-mapping/``, published as ``vivarium-gbd-mapping``).
+
+**5.1.0 - 05/19/26** (YANKED)
+
+Metapackage/shim approach: shipped no code and pulled ``vivarium-gbd-mapping``
++ ``vivarium-compat`` to bridge ``import gbd_mapping`` and
+``import gbd_mapping_generator`` to their ``vivarium.*`` equivalents.
+Yanked because the team abandoned the compat-bridge path; the final release
+of this repo is ``v5.0.5`` instead, which ships ``v5.0.4``'s code with an
+archive banner.
+
 **5.0.4 - 04/16/26**
 
  - Tighten vivarium_build_utils pin
